@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="splash_loading">جاري تشغيل Web Browser...</string>
+    <string name="cd_back">رجوع</string>
+    <string name="language_title">اللغة</string>
+    <string name="language_confirm">تأكيد</string>
+    <string name="onboarding_next">التالي</string>
+    <string name="onboarding_start">ابدأ</string>
+    <string name="onboarding_title_1">اكتشف Web Browser</string>
+    <string name="onboarding_subtitle_1">افتح عالمًا من العناصر والشخصيات والأسلحة والحيوانات الأليفة والمكافآت الحصرية في تجربة ألعاب مليئة بالإثارة.</string>
+    <string name="onboarding_title_2">جهز نفسك بطريقتك</string>
+    <string name="onboarding_subtitle_2">اختر الشخصيات، واحصل على أسلحة قوية، ورافق الحيوانات الأليفة، واصنع أسلوبك الخاص لكل معركة.</string>
+    <string name="onboarding_title_3">دوران محظوظ، مكافآت نادرة</string>
+    <string name="onboarding_subtitle_3">جرب حظك مع Lucky Spin للحصول على الألماس ومظاهر الأسلحة والحيوانات الأليفة والشخصيات والعديد من المكافآت القيمة يوميًا.</string>
+    <string name="settings_general_language">لغة</string>
+    <string name="language_save_error">تعذر حفظ اختيارك. يُرجى المحاولة مرة أخرى.</string>
+    <string name="home_welcome">مرحبًا</string>
+    <string name="home_description">اختر لغة أو استكشف الإعدادات.</string>
+    <string name="network_offline_title">لا يوجد اتصال بالإنترنت</string>
+    <string name="network_offline_message">اتصل بالإنترنت لمتابعة استخدام التطبيق.</string>
+    <string name="network_try_again">حاول مرة أخرى</string>
+    <string name="ui_exit_the_app">الخروج من التطبيق</string>
+    <string name="ui_are_you_sure_you_want_to_exit_the_app_now">هل أنت متأكد أنك تريد الخروج من التطبيق الآن؟</string>
+    <string name="ui_no">لا</string>
+    <string name="ui_yes_exit">نعم، اخرج</string>
+</resources>

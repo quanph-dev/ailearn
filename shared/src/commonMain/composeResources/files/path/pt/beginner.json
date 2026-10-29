@@ -1,0 +1,5842 @@
+{
+ "beginner-u1-l1": {
+  "title": "Hello",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual cumprimento você usa de manhã?",
+    "options": [
+     "Boa noite",
+     "Tchau",
+     "Bom dia",
+     "Até logo"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual palavra NÃO é um cumprimento?",
+    "options": [
+     "Oi",
+     "Obrigado",
+     "Olá",
+     "Bom dia"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Oi, Ana! Como você _____?”",
+    "options": [
+     "estou",
+     "estão",
+     "está",
+     "estamos"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que você diz quando conhece alguém pela primeira vez?",
+    "options": [
+     "Até amanhã.",
+     "Muito prazer.",
+     "Boa noite.",
+     "Com licença."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Oi! Eu está bem, obrigado.”",
+    "options": [
+     "Oi! Eu estão bem, obrigado.",
+     "Oi! Eu é bem, obrigado.",
+     "Oi! Eu sou bem, obrigado.",
+     "Oi! Eu estou bem, obrigado."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Cumprimente um colega novo e pergunte como ele está.",
+    "start": "Oi! Tudo bem? Eu me chamo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "São três da tarde. O que você diz? “_____, Sara!”",
+    "options": [
+     "Bom dia",
+     "Boa noite",
+     "Tchau",
+     "Boa tarde"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Ana, _____ é o meu amigo Pedro.”",
+    "options": [
+     "este",
+     "esta",
+     "estes",
+     "estas"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Um amigo visita a sua casa. O que você diz para ele?",
+    "start": "Oi! Que bom te ver…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Alguém pergunta “Tudo bem?”. Qual é uma boa resposta?",
+    "options": [
+     "Tudo bem, e você?",
+     "De nada.",
+     "Até amanhã.",
+     "Com licença."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Bom dia, senhor Silva. Como o senhor _____?”",
+    "options": [
+     "estou",
+     "está",
+     "estamos",
+     "estão"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Como você cumprimenta o seu professor? E um amigo?",
+    "start": "Para o meu professor eu digo “Bom dia” e para o meu amigo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complete: “Prazer em _____ você.”",
+    "options": [
+     "fazer",
+     "ter",
+     "conhecer",
+     "dar"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Oi, gente! Como vocês _____?”",
+    "options": [
+     "está",
+     "estou",
+     "estamos",
+     "estão"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Cumprimente um amigo e diga como você está hoje.",
+    "start": "Oi! Hoje eu estou…"
+   }
+  ]
+ },
+ "beginner-u1-l2": {
+  "title": "Goodbye",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual palavra usamos para nos despedir?",
+    "options": [
+     "Oi",
+     "Olá",
+     "Bom dia",
+     "Tchau"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "São dez da noite e você vai dormir. O que você diz?",
+    "options": [
+     "Bom dia!",
+     "Boa noite!",
+     "Boa tarde!",
+     "Muito prazer!"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu _____ embora agora. Tchau!”",
+    "options": [
+     "vou",
+     "vai",
+     "vamos",
+     "vão"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Até logo” significa...",
+    "options": [
+     "Nos vemos mais tarde.",
+     "Muito obrigado.",
+     "Desculpe.",
+     "Prazer em conhecer você."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Tchau, gente! Nós vai para casa.”",
+    "options": [
+     "Tchau, gente! Nós vou para casa.",
+     "Tchau, gente! Nós vão para casa.",
+     "Tchau, gente! Nós ir para casa.",
+     "Tchau, gente! Nós vamos para casa."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Despeça-se de um colega no fim da aula.",
+    "start": "Tchau! Até…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "É sexta-feira à tarde. O que você diz para um colega?",
+    "options": [
+     "Bom dia!",
+     "Muito prazer!",
+     "Bem-vindo!",
+     "Bom fim de semana!"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Tchau, Dona Maria! A senhora _____ muito gentil.”",
+    "options": [
+     "sou",
+     "são",
+     "é",
+     "somos"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Você sai de uma festa. Despeça-se dos seus amigos.",
+    "start": "Tchau, gente! Eu preciso…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Seu amigo vai viajar. O que você diz?",
+    "options": [
+     "Bom apetite!",
+     "Boa viagem!",
+     "Muito prazer!",
+     "Bom dia!"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “A gente se _____ amanhã!”",
+    "options": [
+     "vejo",
+     "vemos",
+     "vê",
+     "veem"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Despeça-se do seu professor e diga quando vocês vão se ver de novo.",
+    "start": "Tchau, professor! Até…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual expressão NÃO é uma despedida?",
+    "options": [
+     "Até mais.",
+     "Tudo bem?",
+     "Tchau.",
+     "Até amanhã."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Até a próxima _____!”",
+    "options": [
+     "dia",
+     "mês",
+     "semana",
+     "ano"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Você vai embora do trabalho. O que você diz para os seus colegas?",
+    "start": "Tchau, pessoal! Até…"
+   }
+  ]
+ },
+ "beginner-u1-l3": {
+  "title": "Name",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual pergunta usamos para saber o nome de alguém?",
+    "options": [
+     "Quantos anos você tem?",
+     "De onde você é?",
+     "Qual é o seu nome?",
+     "Onde você mora?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Sobrenome” é...",
+    "options": [
+     "o nome da cidade",
+     "o nome da família",
+     "o nome da rua",
+     "o nome da escola"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu me _____ Lucas.”",
+    "options": [
+     "chama",
+     "chamamos",
+     "chamam",
+     "chamo"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Como você pergunta como se escreve um nome?",
+    "options": [
+     "Como você está?",
+     "Onde é o seu nome?",
+     "Como se escreve o seu nome?",
+     "Quando é o seu nome?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Qual é a seu nome?”",
+    "options": [
+     "Qual é os seu nome?",
+     "Qual são o seu nome?",
+     "Qual é o seu nome?",
+     "Qual é o sua nome?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Apresente-se: diga o seu nome e o seu sobrenome.",
+    "start": "Oi! Meu nome é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Um nome curto e carinhoso, como “Bia” para Beatriz, é um...",
+    "options": [
+     "sobrenome",
+     "apelido",
+     "endereço",
+     "número"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Ela se _____ Mariana.”",
+    "options": [
+     "chamo",
+     "chamamos",
+     "chamam",
+     "chama"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte o nome de um colega novo.",
+    "start": "Oi! Qual…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Em um formulário, “nome completo” é...",
+    "options": [
+     "nome e sobrenome",
+     "só o apelido",
+     "a idade",
+     "o país"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Como _____ chama o seu irmão?”",
+    "options": [
+     "se",
+     "me",
+     "te",
+     "nos"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Diga o nome de um amigo e de uma pessoa da sua família.",
+    "start": "O meu amigo se chama…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você não ouviu bem o nome. O que você diz?",
+    "options": [
+     "Desculpe, pode repetir?",
+     "Boa noite!",
+     "Tchau!",
+     "Muito bem!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eles se _____ Pedro e Paulo.”",
+    "options": [
+     "chama",
+     "chamo",
+     "chamamos",
+     "chamam"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Explique como se escreve o seu nome, letra por letra.",
+    "start": "O meu nome se escreve…"
+   }
+  ]
+ },
+ "beginner-u1-l4": {
+  "title": "Age",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual pergunta usamos para saber a idade?",
+    "options": [
+     "Qual é o seu nome?",
+     "Quantos anos você tem?",
+     "Como você está?",
+     "De onde você é?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Uma pessoa com 80 anos é...",
+    "options": [
+     "idosa",
+     "jovem",
+     "criança",
+     "bebê"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu _____ vinte anos.”",
+    "options": [
+     "sou",
+     "estou",
+     "é",
+     "tenho"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Hoje é o dia em que a Ana nasceu. Hoje é o _____ dela.",
+    "options": [
+     "aniversário",
+     "presente",
+     "nome",
+     "ano"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Minha irmã é dez anos.”",
+    "options": [
+     "Minha irmã tem dez anos.",
+     "Minha irmã está dez anos.",
+     "Minha irmã têm dez anos.",
+     "Minha irmã são dez anos."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Diga quantos anos você tem e quando é o seu aniversário.",
+    "start": "Eu tenho… anos e o meu aniversário é em…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Uma pessoa com 15 anos é...",
+    "options": [
+     "bebê",
+     "idosa",
+     "adolescente",
+     "criança pequena"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Meus pais _____ cinquenta anos.”",
+    "options": [
+     "tem",
+     "tenho",
+     "temos",
+     "têm"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte a idade de um colega e diga a sua.",
+    "start": "Quantos anos você…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Como se escreve o número 30?",
+    "options": [
+     "treze",
+     "três",
+     "trinta",
+     "trezentos"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Quantos anos _____ o seu irmão?”",
+    "options": [
+     "têm",
+     "tenho",
+     "tem",
+     "temos"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Fale sobre a idade das pessoas da sua família.",
+    "start": "Minha mãe tem…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O contrário de “velho”, para uma pessoa, é...",
+    "options": [
+     "alto",
+     "jovem",
+     "grande",
+     "feio"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Minha filha tem _____ anos.”",
+    "options": [
+     "duas",
+     "uma",
+     "um",
+     "dois"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Diga a idade de um amigo e o que vocês fazem juntos.",
+    "start": "Meu amigo tem…"
+   }
+  ]
+ },
+ "beginner-u1-l5": {
+  "title": "Country",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Uma mulher do Brasil é...",
+    "options": [
+     "portuguesa",
+     "brasileira",
+     "espanhola",
+     "argentina"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual pergunta usamos para saber o país de alguém?",
+    "options": [
+     "Quantos anos você tem?",
+     "Como você se chama?",
+     "De onde você é?",
+     "Que horas são?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu sou _____ Japão.”",
+    "options": [
+     "da",
+     "do",
+     "de",
+     "dos"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual é a língua oficial do Brasil?",
+    "options": [
+     "espanhol",
+     "inglês",
+     "português",
+     "francês"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Ela é do Itália.”",
+    "options": [
+     "Ela é de a Itália.",
+     "Ela é dos Itália.",
+     "Ela é no Itália.",
+     "Ela é da Itália."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Diga de onde você é e que língua você fala.",
+    "start": "Eu sou de… e falo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Uma mulher de Portugal é...",
+    "options": [
+     "italiana",
+     "portuguesa",
+     "francesa",
+     "alemã"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Ele é dos _____.”",
+    "options": [
+     "França",
+     "Brasil",
+     "China",
+     "Estados Unidos"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte a um colega de onde ele é.",
+    "start": "De onde…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Eu _____ em Lisboa” significa que a minha casa é em Lisboa.",
+    "options": [
+     "moro",
+     "sou",
+     "vou",
+     "tenho"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Maria é do México. Ela é _____.”",
+    "options": [
+     "mexicana",
+     "mexicano",
+     "mexicanos",
+     "mexicanas"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Fale sobre um país que você quer visitar.",
+    "start": "Eu quero visitar…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual país fica na América do Sul?",
+    "options": [
+     "Argentina",
+     "Japão",
+     "Canadá",
+     "Itália"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Nós moramos _____ Brasil.”",
+    "options": [
+     "na",
+     "em o",
+     "no",
+     "do"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Diga onde você mora agora e de onde é a sua família.",
+    "start": "Agora eu moro em… e a minha família é de…"
+   }
+  ]
+ },
+ "beginner-u2-l1": {
+  "title": "Personal information",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual pergunta usamos para saber onde alguém mora?",
+    "options": [
+     "Onde você mora?",
+     "Como você está?",
+     "O que é isso?",
+     "Quem é ele?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Rua, número e cidade formam o seu...",
+    "options": [
+     "telefone",
+     "nome",
+     "endereço",
+     "e-mail"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu _____ professora.”",
+    "options": [
+     "somos",
+     "tenho",
+     "é",
+     "sou"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual é a profissão de quem trabalha em um hospital e cuida de doentes?",
+    "options": [
+     "cozinheiro",
+     "motorista",
+     "professor",
+     "médico"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Eu sou casado e tenho dois filhas.”",
+    "options": [
+     "Eu sou casado e tenho dois filha.",
+     "Eu sou casado e tem duas filhas.",
+     "Eu sou casado e tenho duas filhas.",
+     "Eu sou casado e tenho duas filhos."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Diga o seu nome, a sua idade e onde você mora.",
+    "start": "Meu nome é…, eu tenho… anos e moro em…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Uma pessoa que nunca se casou é...",
+    "options": [
+     "solteira",
+     "casada",
+     "divorciada",
+     "viúva"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Qual é o _____ número de telefone?”",
+    "options": [
+     "sua",
+     "seus",
+     "seu",
+     "suas"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Diga qual é a sua profissão e onde você trabalha.",
+    "start": "Eu sou… e trabalho…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Para mandar mensagens para você, um amigo pede o seu...",
+    "options": [
+     "sobrenome",
+     "número de celular",
+     "aniversário",
+     "endereço"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Nós _____ estudantes.”",
+    "options": [
+     "somos",
+     "são",
+     "sou",
+     "é"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Dê o seu número de telefone para um colega.",
+    "start": "O meu número é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Em um formulário, “data de nascimento” é...",
+    "options": [
+     "o seu endereço",
+     "o dia em que você nasceu",
+     "a sua profissão",
+     "o seu país"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “A minha cidade _____ muito bonita.”",
+    "options": [
+     "são",
+     "sou",
+     "somos",
+     "é"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Fale sobre você para um novo amigo.",
+    "start": "Oi! Eu me chamo… e sou de…"
+   }
+  ]
+ },
+ "beginner-u2-l2": {
+  "title": "Likes and dislikes",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "“Adorar” significa...",
+    "options": [
+     "não gostar",
+     "gostar pouco",
+     "comer",
+     "gostar muito"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual verbo é o contrário de “amar”?",
+    "options": [
+     "odiar",
+     "gostar",
+     "adorar",
+     "querer"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu gosto _____ dançar.”",
+    "options": [
+     "do",
+     "da",
+     "de",
+     "em"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual atividade é um esporte?",
+    "options": [
+     "leitura",
+     "futebol",
+     "pintura",
+     "música"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Eu gosto chocolate.”",
+    "options": [
+     "Eu gosta de chocolate.",
+     "Eu gosto de chocolate.",
+     "Eu gosto em chocolate.",
+     "Eu gosto a chocolate."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Diga uma comida de que você gosta muito.",
+    "start": "Eu adoro…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você gosta muito de ler. O seu passatempo é a...",
+    "options": [
+     "natação",
+     "leitura",
+     "culinária",
+     "dança"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “A minha mãe _____ de cozinhar.”",
+    "options": [
+     "gosta",
+     "gosto",
+     "gostam",
+     "gostamos"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Diga uma coisa de que você não gosta e explique por quê.",
+    "start": "Eu não gosto de… porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Tanto faz” significa...",
+    "options": [
+     "eu gosto muito",
+     "estou doente",
+     "não tenho preferência",
+     "não entendo"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Você gosta _____ Brasil?”",
+    "options": [
+     "da",
+     "de",
+     "dos",
+     "do"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte a um amigo de que tipo de música ele gosta.",
+    "start": "De que tipo de música você…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Prefiro chá a café” significa que eu gosto _____ de chá do que de café.",
+    "options": [
+     "menos",
+     "nunca",
+     "igual",
+     "mais"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Nós _____ de assistir filmes.”",
+    "options": [
+     "gostamos",
+     "gosto",
+     "gosta",
+     "gostam"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Fale sobre o que você gosta de fazer no fim de semana.",
+    "start": "No fim de semana eu gosto de…"
+   }
+  ]
+ },
+ "beginner-u3-l1": {
+  "title": "Family members",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "A mãe da sua mãe é a sua...",
+    "options": [
+     "tia",
+     "irmã",
+     "avó",
+     "prima"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "O filho do seu tio é o seu...",
+    "options": [
+     "irmão",
+     "avô",
+     "primo",
+     "sobrinho"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “_____ irmã se chama Júlia.”",
+    "options": [
+     "Meu",
+     "Meus",
+     "Minhas",
+     "Minha"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "O pai e a mãe são os...",
+    "options": [
+     "avós",
+     "tios",
+     "pais",
+     "primos"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Eu tenho dois irmã.”",
+    "options": [
+     "Eu tenho dois irmãs.",
+     "Eu tenho duas irmãs.",
+     "Eu tenho duas irmã.",
+     "Eu tem duas irmãs."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Fale sobre a sua família: quantas pessoas são?",
+    "start": "Na minha família somos…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "A filha da sua irmã é a sua...",
+    "options": [
+     "sobrinha",
+     "prima",
+     "neta",
+     "tia"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Os meus avós _____ no interior.”",
+    "options": [
+     "mora",
+     "moram",
+     "moro",
+     "moramos"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Fale sobre o seu irmão, a sua irmã ou um primo.",
+    "start": "Eu tenho um… que se chama…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Os filhos dos seus filhos são os seus...",
+    "options": [
+     "sobrinhos",
+     "primos",
+     "tios",
+     "netos"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “O nome _____ mãe do Lucas é Ana.”",
+    "options": [
+     "da",
+     "do",
+     "de",
+     "dos"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte a um colega se ele tem irmãos.",
+    "start": "Você tem…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O irmão do seu pai é o seu...",
+    "options": [
+     "tio",
+     "primo",
+     "avô",
+     "sobrinho"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “_____ pais são simpáticos.”",
+    "options": [
+     "Meu",
+     "Minha",
+     "Minhas",
+     "Meus"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Diga com quem você mora.",
+    "start": "Eu moro com…"
+   }
+  ]
+ },
+ "beginner-u3-l2": {
+  "title": "Relationships",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Uma pessoa que mora na casa ao lado é o seu...",
+    "options": [
+     "colega de trabalho",
+     "vizinho",
+     "namorado",
+     "primo"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Uma pessoa que trabalha com você é o seu...",
+    "options": [
+     "colega de trabalho",
+     "avô",
+     "namorado",
+     "sobrinho"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Ana e eu _____ amigas há dez anos.”",
+    "options": [
+     "são",
+     "é",
+     "sou",
+     "somos"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Duas pessoas que se amam e vão se casar são...",
+    "options": [
+     "primos",
+     "noivos",
+     "colegas",
+     "vizinhos"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “O João é o meu melhor amiga.”",
+    "options": [
+     "O João é o meu melhor amigo.",
+     "O João é a minha melhor amiga.",
+     "O João é o meu melhores amigo.",
+     "O João é meu melhor amigos."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Fale sobre o seu melhor amigo ou a sua melhor amiga.",
+    "start": "O meu melhor amigo se chama…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O homem com quem uma mulher é casada é o...",
+    "options": [
+     "irmão",
+     "filho",
+     "vizinho",
+     "marido"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu converso _____ os meus amigos todos os dias.”",
+    "options": [
+     "com",
+     "de",
+     "em",
+     "para"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Diga o que você faz com os seus amigos.",
+    "start": "Com os meus amigos eu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Uma pessoa que estuda na mesma turma que você é um...",
+    "options": [
+     "chefe",
+     "avô",
+     "colega de classe",
+     "vizinho"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Os meus amigos _____ muito engraçados.”",
+    "options": [
+     "é",
+     "são",
+     "somos",
+     "sou"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Apresente um amigo para outra pessoa.",
+    "start": "Este é o meu amigo… Ele…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual palavra significa uma pessoa que você não conhece?",
+    "options": [
+     "amigo",
+     "parente",
+     "desconhecido",
+     "colega"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “A Carla é _____ namorada do meu irmão.”",
+    "options": [
+     "o",
+     "os",
+     "a",
+     "um"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Fale sobre uma pessoa importante na sua vida.",
+    "start": "Uma pessoa importante para mim é…"
+   }
+  ]
+ },
+ "beginner-u3-l3": {
+  "title": "Describing people",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "O contrário de “alto” é...",
+    "options": [
+     "gordo",
+     "magro",
+     "baixo",
+     "velho"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Uma pessoa que fala pouco e tem vergonha é...",
+    "options": [
+     "simpática",
+     "engraçada",
+     "alta",
+     "tímida"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “A minha irmã é muito _____.”",
+    "options": [
+     "bonito",
+     "bonita",
+     "bonitos",
+     "bonitas"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual palavra descreve o cabelo?",
+    "options": [
+     "alto",
+     "simpático",
+     "cacheado",
+     "inteligente"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Ele tem os olhos azul.”",
+    "options": [
+     "Ele tem os olho azuis.",
+     "Ele tem os olhos azuis.",
+     "Ele tem o olhos azuis.",
+     "Ele têm os olhos azuis."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva o seu melhor amigo.",
+    "start": "O meu melhor amigo é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Uma pessoa que faz todo mundo rir é...",
+    "options": [
+     "séria",
+     "tímida",
+     "chata",
+     "engraçada"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Hoje o Pedro _____ cansado.”",
+    "options": [
+     "está",
+     "é",
+     "são",
+     "estão"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva uma pessoa da sua família: como ela é?",
+    "start": "A minha mãe é… e tem…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O contrário de “simpático” é...",
+    "options": [
+     "alto",
+     "antipático",
+     "bonito",
+     "jovem"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Os meus primos são _____.”",
+    "options": [
+     "altos",
+     "alto",
+     "alta",
+     "altas"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva uma pessoa famosa de que você gosta.",
+    "start": "Eu gosto de… porque ele é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual palavra descreve o jeito de ser, e não o corpo?",
+    "options": [
+     "alto",
+     "magro",
+     "generoso",
+     "loiro"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “A Ana _____ inteligente e tem cabelo castanho.”",
+    "options": [
+     "está",
+     "tem",
+     "são",
+     "é"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva como você é.",
+    "start": "Eu sou… e tenho…"
+   }
+  ]
+ },
+ "beginner-u4-l1": {
+  "title": "Numbers",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Como se escreve 15?",
+    "options": [
+     "cinco",
+     "quinze",
+     "cinquenta",
+     "quarenta"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quanto é dez mais doze?",
+    "options": [
+     "doze",
+     "vinte",
+     "trinta e dois",
+     "vinte e dois"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu tenho _____ irmãs.”",
+    "options": [
+     "dois",
+     "dos",
+     "duas",
+     "das"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual número vem depois de dezenove?",
+    "options": [
+     "vinte",
+     "dezoito",
+     "noventa",
+     "dezessete"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Eu tenho um caneta e dois livros.”",
+    "options": [
+     "Eu tenho uma caneta e dois livros.",
+     "Eu tenho uma caneta e duas livros.",
+     "Eu tenho um caneta e duas livros.",
+     "Eu tem uma caneta e dois livros."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Diga o seu endereço com o número da sua casa.",
+    "start": "Eu moro na rua…, número…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "No Brasil, ao dizer um número de telefone, muitas pessoas dizem “meia” para o número...",
+    "options": [
+     "seis",
+     "sete",
+     "cinco",
+     "oito"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Na sala tem _____ cadeiras.”",
+    "options": [
+     "vinte e dois",
+     "vinte dois",
+     "vinte e duas",
+     "vinte e doze"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Conte de um a dez em português.",
+    "start": "Um, dois, três…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Como se escreve 100?",
+    "options": [
+     "mil",
+     "dez",
+     "cem",
+     "cinquenta"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “O livro tem _____ páginas.”",
+    "options": [
+     "duzentos",
+     "dois cem",
+     "dois centos",
+     "duzentas"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Diga quantas pessoas moram na sua casa.",
+    "start": "Na minha casa moram…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quanto é cinco vezes dois?",
+    "options": [
+     "sete",
+     "dez",
+     "três",
+     "doze"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Ela tem _____ filha.”",
+    "options": [
+     "um",
+     "dois",
+     "duas",
+     "uma"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Diga quanto custa um café na sua cidade.",
+    "start": "Um café custa…"
+   }
+  ]
+ },
+ "beginner-u4-l2": {
+  "title": "Dates",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual é o primeiro mês do ano?",
+    "options": [
+     "janeiro",
+     "junho",
+     "julho",
+     "dezembro"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual mês vem depois de março?",
+    "options": [
+     "maio",
+     "fevereiro",
+     "abril",
+     "agosto"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “O meu aniversário é _____ maio.”",
+    "options": [
+     "no",
+     "em",
+     "na",
+     "de"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quantos meses tem um ano?",
+    "options": [
+     "dez",
+     "trinta",
+     "doze",
+     "sete"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Hoje é dia dez do julho.”",
+    "options": [
+     "Hoje é dia dez da julho.",
+     "Hoje é dia dez em julho.",
+     "Hoje é dez dia de julho.",
+     "Hoje é dia dez de julho."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Diga a data de hoje.",
+    "start": "Hoje é dia…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O Natal é em...",
+    "options": [
+     "março",
+     "junho",
+     "dezembro",
+     "setembro"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Que dia _____ hoje?”",
+    "options": [
+     "são",
+     "está",
+     "tem",
+     "é"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Qual é a data do aniversário da sua mãe?",
+    "start": "O aniversário da minha mãe é no dia…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "No Brasil, a data 1º de janeiro se lê...",
+    "options": [
+     "um de janeiro",
+     "uno de janeiro",
+     "primo de janeiro",
+     "primeiro de janeiro"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “A festa é _____ dia 20 de junho.”",
+    "options": [
+     "na",
+     "no",
+     "em",
+     "do"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Diga uma data importante para você e por quê.",
+    "start": "Uma data importante para mim é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O mês entre julho e setembro é...",
+    "options": [
+     "agosto",
+     "outubro",
+     "junho",
+     "maio"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Janeiro _____ trinta e um dias.”",
+    "options": [
+     "têm",
+     "tem",
+     "é",
+     "são"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Em que mês você prefere viajar? Diga por quê.",
+    "start": "Eu prefiro viajar em…"
+   }
+  ]
+ },
+ "beginner-u4-l3": {
+  "title": "Days",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual dia vem depois de segunda-feira?",
+    "options": [
+     "quarta-feira",
+     "terça-feira",
+     "domingo",
+     "sexta-feira"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Sábado e domingo formam o...",
+    "options": [
+     "fim de semana",
+     "feriado",
+     "mês",
+     "ano"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu jogo futebol _____ sábado.”",
+    "options": [
+     "na",
+     "em",
+     "no",
+     "do"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quantos dias tem uma semana?",
+    "options": [
+     "cinco",
+     "sete",
+     "dez",
+     "seis"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “A aula é no segunda-feira.”",
+    "options": [
+     "A aula é em o segunda-feira.",
+     "A aula é da segunda-feira.",
+     "A aula é nas segunda-feira.",
+     "A aula é na segunda-feira."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Diga o que você faz no domingo.",
+    "start": "No domingo eu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O dia antes de hoje é...",
+    "options": [
+     "ontem",
+     "amanhã",
+     "depois",
+     "semana"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Hoje _____ quarta-feira.”",
+    "options": [
+     "está",
+     "são",
+     "tem",
+     "é"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Qual é o seu dia favorito da semana? Por quê?",
+    "start": "O meu dia favorito é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O dia depois de hoje é...",
+    "options": [
+     "ontem",
+     "agora",
+     "cedo",
+     "amanhã"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu trabalho de segunda _____ sexta.”",
+    "options": [
+     "a",
+     "de",
+     "em",
+     "no"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Fale sobre a sua semana: o que você faz em cada dia?",
+    "start": "Na segunda eu… e na terça…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "No Brasil, qual é o último dia da semana de trabalho?",
+    "options": [
+     "domingo",
+     "segunda-feira",
+     "sexta-feira",
+     "quarta-feira"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “_____ sábados, eu vou à feira.”",
+    "options": [
+     "Ao",
+     "Às",
+     "Aos",
+     "À"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "O que você vai fazer amanhã?",
+    "start": "Amanhã eu vou…"
+   }
+  ]
+ },
+ "beginner-u4-l4": {
+  "title": "Telling time",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Como se diz 3:30?",
+    "options": [
+     "três em ponto",
+     "três e quinze",
+     "três e meia",
+     "quinze para as três"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual expressão significa exatamente 7:00?",
+    "options": [
+     "sete e meia",
+     "sete e quinze",
+     "sete em ponto",
+     "quinze para as sete"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a pergunta correta para saber a hora:",
+    "options": [
+     "Que hora é?",
+     "Que horas são?",
+     "Quais horas são?",
+     "Horas que são?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Como chamamos 12:00, no meio do dia?",
+    "options": [
+     "meia-noite",
+     "meio-dia",
+     "meia hora",
+     "madrugada"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “_____ uma hora.”",
+    "options": [
+     "São",
+     "Está",
+     "É",
+     "Tem"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "A que horas você acorda de manhã?",
+    "start": "Eu acordo às…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "São 15:00. Também dizemos “três da...”",
+    "options": [
+     "manhã",
+     "noite",
+     "madrugada",
+     "tarde"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “É cinco e dez.”",
+    "options": [
+     "São cinco e dez.",
+     "Está cinco e dez.",
+     "Tem cinco e dez.",
+     "Estão cinco e dez."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "A que horas você almoça? Diga a hora.",
+    "start": "Eu almoço…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O contrário de “cedo” é...",
+    "options": [
+     "tarde",
+     "rápido",
+     "perto",
+     "logo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “A aula começa _____ nove horas.”",
+    "options": [
+     "as",
+     "às",
+     "nas",
+     "na"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "O que você faz normalmente às seis da tarde?",
+    "start": "Às seis da tarde eu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Meia hora tem quantos minutos?",
+    "options": [
+     "quinze",
+     "sessenta",
+     "quarenta",
+     "trinta"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Qual é a forma correta de dizer 7:45?",
+    "options": [
+     "quinze para as sete",
+     "sete e quinze",
+     "oito e meia",
+     "quinze para as oito"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Você precisa saber a hora. Pergunte a alguém com educação.",
+    "start": "Com licença, você sabe que…"
+   }
+  ]
+ },
+ "beginner-u5-l1": {
+  "title": "Wake up",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "O aparelho que toca de manhã para você acordar é o...",
+    "options": [
+     "travesseiro",
+     "chuveiro",
+     "espelho",
+     "despertador"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "A primeira refeição do dia é o...",
+    "options": [
+     "café da manhã",
+     "almoço",
+     "jantar",
+     "lanche da tarde"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu _____ às seis horas.”",
+    "options": [
+     "acordo",
+     "acorda",
+     "acordam",
+     "acordamos"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você usa a escova e a pasta para...",
+    "options": [
+     "tomar banho",
+     "dormir",
+     "cozinhar",
+     "escovar os dentes"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Ela acordo cedo todos os dias.”",
+    "options": [
+     "Ela acordam cedo todos os dias.",
+     "Ela acorda cedo todos os dias.",
+     "Ela acordamos cedo todos os dias.",
+     "Ela acordar cedo todos os dias."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Diga a que horas você acorda e o que você faz primeiro.",
+    "start": "Eu acordo às… e primeiro eu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Depois de acordar, muitas pessoas tomam _____ no chuveiro.",
+    "options": [
+     "banho",
+     "café",
+     "ônibus",
+     "sono"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu me _____ às sete.”",
+    "options": [
+     "levanta",
+     "levanto",
+     "levantam",
+     "levantamos"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva a sua manhã antes de sair de casa.",
+    "start": "De manhã eu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quando você ainda quer dormir, você está com...",
+    "options": [
+     "fome",
+     "sono",
+     "sede",
+     "calor"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Nós _____ café da manhã juntos.”",
+    "options": [
+     "toma",
+     "tomo",
+     "tomamos",
+     "tomam"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Você acorda cedo ou tarde no fim de semana?",
+    "start": "No fim de semana eu acordo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O contrário de “acordar” é...",
+    "options": [
+     "levantar",
+     "comer",
+     "dormir",
+     "andar"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Você _____ cedo ou tarde?”",
+    "options": [
+     "acordo",
+     "acordamos",
+     "acorda",
+     "acordam"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "O que você come no café da manhã?",
+    "start": "No café da manhã eu como…"
+   }
+  ]
+ },
+ "beginner-u5-l2": {
+  "title": "Work",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "A pessoa que ensina em uma escola é o...",
+    "options": [
+     "professor",
+     "médico",
+     "motorista",
+     "garçom"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "O lugar onde muitas pessoas trabalham com computador é o...",
+    "options": [
+     "quarto",
+     "escritório",
+     "parque",
+     "banheiro"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Ele _____ em um hospital.”",
+    "options": [
+     "trabalho",
+     "trabalham",
+     "trabalhamos",
+     "trabalha"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "A pessoa que dirige um ônibus é o...",
+    "options": [
+     "cozinheiro",
+     "motorista",
+     "dentista",
+     "vendedor"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Eles trabalha em uma loja.”",
+    "options": [
+     "Eles trabalhamos em uma loja.",
+     "Eles trabalho em uma loja.",
+     "Eles trabalham em uma loja.",
+     "Eles trabalhar em uma loja."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Diga qual é o seu trabalho ou o trabalho que você quer ter.",
+    "start": "Eu trabalho…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O dinheiro que você recebe todo mês pelo seu trabalho é o...",
+    "options": [
+     "salário",
+     "troco",
+     "preço",
+     "presente"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “A Maria cuida dos doentes no hospital. Ela é _____.”",
+    "options": [
+     "enfermeiro",
+     "enfermeiras",
+     "enfermeira",
+     "enfermeiros"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva um dia normal no seu trabalho ou na sua escola.",
+    "start": "Eu chego às… e depois…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Um encontro de trabalho para conversar sobre um projeto é uma...",
+    "options": [
+     "festa",
+     "reunião",
+     "viagem",
+     "aula"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Nós _____ de segunda a sexta.”",
+    "options": [
+     "trabalham",
+     "trabalha",
+     "trabalhamos",
+     "trabalho"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Diga a que horas você começa e termina de trabalhar.",
+    "start": "Eu começo a trabalhar às…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "A pessoa que manda no trabalho é o...",
+    "options": [
+     "cliente",
+     "colega",
+     "aluno",
+     "chefe"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Você trabalha _____ casa ou no escritório?”",
+    "options": [
+     "em",
+     "no",
+     "na",
+     "de"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qual trabalho você acha interessante? Por quê?",
+    "start": "Eu acho interessante o trabalho de…"
+   }
+  ]
+ },
+ "beginner-u5-l3": {
+  "title": "Study",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Você escreve as anotações da aula no...",
+    "options": [
+     "prato",
+     "copo",
+     "caderno",
+     "sapato"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Um teste na escola para ver o que você aprendeu é uma...",
+    "options": [
+     "festa",
+     "férias",
+     "aula",
+     "prova"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu _____ português todos os dias.”",
+    "options": [
+     "estuda",
+     "estudo",
+     "estudam",
+     "estudamos"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "A pessoa que estuda em uma escola é o...",
+    "options": [
+     "chefe",
+     "garçom",
+     "aluno",
+     "vendedor"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Nós estuda na biblioteca.”",
+    "options": [
+     "Nós estudam na biblioteca.",
+     "Nós estudo na biblioteca.",
+     "Nós estudar na biblioteca.",
+     "Nós estudamos na biblioteca."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Diga o que você estuda e por quê.",
+    "start": "Eu estudo… porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O lugar com muitos livros, onde você pode ler e estudar em silêncio, é a...",
+    "options": [
+     "biblioteca",
+     "padaria",
+     "cozinha",
+     "farmácia"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Os alunos _____ muitas perguntas.”",
+    "options": [
+     "fazem",
+     "faz",
+     "faço",
+     "fazemos"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Fale sobre a sua matéria favorita.",
+    "start": "A minha matéria favorita é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O trabalho da escola que você faz em casa é a...",
+    "options": [
+     "lição de casa",
+     "prova",
+     "merenda",
+     "mochila"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu preciso _____ para a prova.”",
+    "options": [
+     "estudo",
+     "estudar",
+     "estuda",
+     "estudando"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Diga onde e quando você estuda.",
+    "start": "Eu estudo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Matemática, história e geografia são...",
+    "options": [
+     "professores",
+     "escolas",
+     "matérias",
+     "provas"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “A professora _____ muito bem.”",
+    "options": [
+     "explicam",
+     "explica",
+     "explico",
+     "explicamos"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Dê uma dica para estudar português.",
+    "start": "Para aprender português, eu…"
+   }
+  ]
+ },
+ "beginner-u5-l4": {
+  "title": "Sleep",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Você dorme em uma...",
+    "options": [
+     "mesa",
+     "cadeira",
+     "cama",
+     "pia"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você coloca a cabeça no _____ para dormir.",
+    "options": [
+     "cobertor",
+     "travesseiro",
+     "tapete",
+     "armário"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu _____ oito horas por noite.”",
+    "options": [
+     "dorme",
+     "dormimos",
+     "dormem",
+     "durmo"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Um sonho ruim e assustador é um...",
+    "options": [
+     "cochilo",
+     "pesadelo",
+     "descanso",
+     "sono"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “O bebê dormo muito.”",
+    "options": [
+     "O bebê dorme muito.",
+     "O bebê durmo muito.",
+     "O bebê dormem muito.",
+     "O bebê dormir muito."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Diga a que horas você vai dormir.",
+    "start": "Eu vou dormir às…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Um sono curto depois do almoço é um...",
+    "options": [
+     "pesadelo",
+     "cochilo",
+     "jantar",
+     "banho"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu estou _____ sono.”",
+    "options": [
+     "de",
+     "em",
+     "com",
+     "para"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "O que você faz antes de dormir?",
+    "start": "Antes de dormir, eu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que você diz para a sua família antes de dormir?",
+    "options": [
+     "Boa noite!",
+     "Bom dia!",
+     "Bom apetite!",
+     "Boa tarde!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Vocês _____ cedo ou tarde?”",
+    "options": [
+     "dorme",
+     "durmo",
+     "dormimos",
+     "dormem"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Você dorme bem? Diga quantas horas você dorme.",
+    "start": "Eu durmo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quando você trabalha muito, no fim do dia você está...",
+    "options": [
+     "cansado",
+     "molhado",
+     "rápido",
+     "alto"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu vou _____ cama às onze.”",
+    "options": [
+     "no",
+     "em o",
+     "do",
+     "para a"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva o seu quarto ideal para dormir bem.",
+    "start": "O meu quarto ideal tem…"
+   }
+  ]
+ },
+ "beginner-u5-l5": {
+  "title": "Daily activities",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "A refeição do meio-dia é o...",
+    "options": [
+     "jantar",
+     "almoço",
+     "café da manhã",
+     "lanche da tarde"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Lavar a roupa, limpar a casa e cozinhar são...",
+    "options": [
+     "esportes",
+     "tarefas de casa",
+     "matérias",
+     "profissões"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Depois do trabalho, eu _____ para casa.”",
+    "options": [
+     "volto",
+     "volta",
+     "voltam",
+     "voltamos"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Sempre” significa...",
+    "options": [
+     "nenhuma vez",
+     "poucas vezes",
+     "todas as vezes",
+     "só hoje"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Meu pai cozinham todos os dias.”",
+    "options": [
+     "Meu pai cozinho todos os dias.",
+     "Meu pai cozinhamos todos os dias.",
+     "Meu pai cozinhar todos os dias.",
+     "Meu pai cozinha todos os dias."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva o seu dia, da manhã até a noite.",
+    "start": "De manhã eu… à tarde… e à noite…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Uma refeição pequena entre o almoço e o jantar é o...",
+    "options": [
+     "almoço",
+     "café da manhã",
+     "lanche",
+     "banho"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Nós _____ compras no sábado.”",
+    "options": [
+     "fazemos",
+     "fazem",
+     "faz",
+     "faço"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "O que você faz à noite, depois do jantar?",
+    "start": "Depois do jantar, eu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Às vezes” significa...",
+    "options": [
+     "todos os dias",
+     "nunca",
+     "agora",
+     "de vez em quando"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Ela _____ a casa no sábado.”",
+    "options": [
+     "limpo",
+     "limpam",
+     "limpa",
+     "limpamos"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Diga uma coisa que você faz todos os dias.",
+    "start": "Todos os dias eu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O contrário de “nunca” é...",
+    "options": [
+     "às vezes",
+     "sempre",
+     "hoje",
+     "tarde"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eles _____ televisão à noite.”",
+    "options": [
+     "assiste",
+     "assisto",
+     "assistimos",
+     "assistem"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte a um colega o que ele faz no fim de semana.",
+    "start": "O que você…"
+   }
+  ]
+ },
+ "beginner-u6-l1": {
+  "title": "Common foods",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual destes é uma fruta?",
+    "options": [
+     "arroz",
+     "feijão",
+     "pão",
+     "banana"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "O prato do dia a dia no Brasil é arroz com...",
+    "options": [
+     "feijão",
+     "chocolate",
+     "sorvete",
+     "bolo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu _____ pão no café da manhã.”",
+    "options": [
+     "come",
+     "comem",
+     "como",
+     "comemos"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual destes é uma bebida?",
+    "options": [
+     "suco",
+     "queijo",
+     "frango",
+     "ovo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Eu gosto de as maçãs.”",
+    "options": [
+     "Eu gosto dos maçãs.",
+     "Eu gosto da maçãs.",
+     "Eu gosto do maçãs.",
+     "Eu gosto das maçãs."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Diga o que você come no almoço.",
+    "start": "No almoço eu como…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual destes vem do mar?",
+    "options": [
+     "frango",
+     "arroz",
+     "peixe",
+     "pão"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “A salada está _____.”",
+    "options": [
+     "gostoso",
+     "gostosa",
+     "gostosos",
+     "gostosas"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Fale sobre uma comida típica do seu país.",
+    "start": "No meu país, uma comida típica é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quando você precisa comer, você está com...",
+    "options": [
+     "sede",
+     "frio",
+     "sono",
+     "fome"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu _____ água todos os dias.”",
+    "options": [
+     "bebe",
+     "bebem",
+     "bebo",
+     "bebemos"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Diga o que você bebe quando está com sede.",
+    "start": "Quando estou com sede, eu bebo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que a galinha põe?",
+    "options": [
+     "leite",
+     "ovo",
+     "queijo",
+     "mel"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Os ovos _____ na geladeira.”",
+    "options": [
+     "está",
+     "estão",
+     "são",
+     "é"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Qual é a sua comida favorita? Por quê?",
+    "start": "A minha comida favorita é…"
+   }
+  ]
+ },
+ "beginner-u6-l2": {
+  "title": "Preferences",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "“Preferir” significa...",
+    "options": [
+     "gostar menos",
+     "não comer",
+     "gostar mais",
+     "cozinhar"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Uma comida com muito açúcar é...",
+    "options": [
+     "salgada",
+     "amarga",
+     "azeda",
+     "doce"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Você _____ café ou chá?”",
+    "options": [
+     "prefiro",
+     "preferem",
+     "preferimos",
+     "prefere"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Uma comida com muito sal é...",
+    "options": [
+     "doce",
+     "salgada",
+     "fria",
+     "leve"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Eu prefero peixe.”",
+    "options": [
+     "Eu prefere peixe.",
+     "Eu prefiro peixe.",
+     "Eu preferem peixe.",
+     "Eu preferimos peixe."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Diga se você prefere comida doce ou salgada.",
+    "start": "Eu prefiro…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Uma pessoa que não come carne é...",
+    "options": [
+     "vegetariana",
+     "cozinheira",
+     "garçonete",
+     "faminta"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu gosto mais _____ pizza do que de hambúrguer.”",
+    "options": [
+     "de",
+     "em",
+     "com",
+     "para"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte a um colega qual é a bebida favorita dele.",
+    "start": "Qual é a sua…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Detestar” significa...",
+    "options": [
+     "gostar muito",
+     "preferir",
+     "não gostar nada",
+     "provar"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “O meu doce _____ é o brigadeiro.”",
+    "options": [
+     "favorita",
+     "favoritos",
+     "favorito",
+     "favoritas"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Diga uma comida que você detesta.",
+    "start": "Eu detesto…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O sorvete é uma comida...",
+    "options": [
+     "quente",
+     "gelada",
+     "salgada",
+     "picante"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Nós _____ comer em casa.”",
+    "options": [
+     "prefere",
+     "prefiro",
+     "preferem",
+     "preferimos"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Você prefere cozinhar ou comer fora? Por quê?",
+    "start": "Eu prefiro… porque…"
+   }
+  ]
+ },
+ "beginner-u6-l3": {
+  "title": "Ordering basics",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "A lista de comidas e preços do restaurante é o...",
+    "options": [
+     "troco",
+     "garçom",
+     "cardápio",
+     "prato"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "A pessoa que serve a comida no restaurante é o...",
+    "options": [
+     "garçom",
+     "cozinheiro",
+     "cliente",
+     "caixa"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu _____ um suco de laranja, por favor.”",
+    "options": [
+     "quero",
+     "quer",
+     "querem",
+     "queremos"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "No fim da refeição, você pede...",
+    "options": [
+     "o cardápio",
+     "a mesa",
+     "a conta",
+     "o garçom"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Uma água, para favor.”",
+    "options": [
+     "Uma água, pelo favor.",
+     "Uma água, por favor.",
+     "Uma água, de favor.",
+     "Uma água, em favor."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Peça um café e um pão de queijo em uma padaria.",
+    "start": "Oi, eu queria…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O garçom pergunta: “Para beber?”. Ele quer saber...",
+    "options": [
+     "a sua bebida",
+     "o seu nome",
+     "a sua idade",
+     "o seu endereço"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Um suco _____ laranja, por favor.”",
+    "options": [
+     "da",
+     "do",
+     "de",
+     "em"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Você está em um restaurante. Peça o seu prato principal.",
+    "start": "Eu vou querer…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Comida para comer em casa, e não no restaurante, é comida para...",
+    "options": [
+     "mesa",
+     "sobremesa",
+     "garçom",
+     "viagem"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Vocês _____ sobremesa?”",
+    "options": [
+     "quer",
+     "querem",
+     "quero",
+     "queremos"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Peça a conta e pergunte se pode pagar com cartão.",
+    "start": "A conta, por favor. Posso…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O doce que você come depois da refeição é a...",
+    "options": [
+     "entrada",
+     "bebida",
+     "conta",
+     "sobremesa"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “O senhor _____ uma mesa para dois?”",
+    "options": [
+     "têm",
+     "tenho",
+     "temos",
+     "tem"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte ao garçom o que ele recomenda.",
+    "start": "O que o senhor…"
+   }
+  ]
+ },
+ "beginner-u7-l1": {
+  "title": "Prices",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual pergunta usamos para saber o preço?",
+    "options": [
+     "Quanto custa?",
+     "Que horas são?",
+     "Onde fica?",
+     "Quem é?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "A moeda do Brasil é o...",
+    "options": [
+     "real",
+     "euro",
+     "dólar",
+     "peso"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Quanto _____ estes sapatos?”",
+    "options": [
+     "custam",
+     "custa",
+     "custo",
+     "custamos"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "O contrário de “caro” é...",
+    "options": [
+     "grande",
+     "barato",
+     "novo",
+     "bonito"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “A camiseta custam trinta reais.”",
+    "options": [
+     "A camiseta custo trinta reais.",
+     "A camiseta custa trinta reais.",
+     "A camiseta custamos trinta reais.",
+     "A camiseta custar trinta reais."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte o preço de uma camiseta em uma loja.",
+    "start": "Com licença, quanto…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Um preço mais baixo por pouco tempo é uma...",
+    "options": [
+     "conta",
+     "nota",
+     "promoção",
+     "fila"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “O pão custa dois _____.”",
+    "options": [
+     "real",
+     "reals",
+     "reais",
+     "realos"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Diga uma coisa que é cara no seu país.",
+    "start": "No meu país, uma coisa cara é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O dinheiro que a loja devolve quando você paga a mais é o...",
+    "options": [
+     "preço",
+     "desconto",
+     "salário",
+     "troco"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Essas bolsas são muito _____.”",
+    "options": [
+     "cara",
+     "caro",
+     "caros",
+     "caras"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "O preço está alto. Peça um desconto.",
+    "start": "Está muito caro. Você pode…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "R$ 50 se lê...",
+    "options": [
+     "quinze reais",
+     "cinquenta reais",
+     "cinco reais",
+     "quinhentos reais"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Quanto custa _____ bolsa?”",
+    "options": [
+     "este",
+     "estes",
+     "estas",
+     "esta"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Compare o preço de duas coisas.",
+    "start": "O… custa mais do que…"
+   }
+  ]
+ },
+ "beginner-u7-l2": {
+  "title": "Sizes",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Na etiqueta de uma roupa, a letra “P” significa...",
+    "options": [
+     "pequeno",
+     "preto",
+     "pesado",
+     "perto"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "O contrário de “grande” é...",
+    "options": [
+     "largo",
+     "pequeno",
+     "alto",
+     "comprido"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Esta calça é _____ apertada.”",
+    "options": [
+     "muita",
+     "muitos",
+     "muito",
+     "muitas"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "O lugar da loja onde você experimenta a roupa é o...",
+    "options": [
+     "caixa",
+     "estoque",
+     "provador",
+     "balcão"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Essa camisa é pequeno para mim.”",
+    "options": [
+     "Essa camisa é pequenos para mim.",
+     "Essa camisa são pequena para mim.",
+     "Essa camisa é pequena para mim.",
+     "Essa camisa é pequenas para mim."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte se a loja tem esta calça em outro tamanho.",
+    "start": "Vocês têm esta calça no…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Uma roupa que não é apertada é...",
+    "options": [
+     "curta",
+     "larga",
+     "pequena",
+     "justa"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “— Que número você calça? — Eu _____ 40.”",
+    "options": [
+     "calça",
+     "calço",
+     "calçam",
+     "calçamos"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Diga o seu tamanho de roupa e o número do seu sapato.",
+    "start": "Eu uso tamanho… e calço…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Para saber se a roupa serve, você _____ a roupa no provador.",
+    "options": [
+     "experimenta",
+     "compra",
+     "lava",
+     "vende"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Você tem um tamanho _____?”",
+    "options": [
+     "mais grande",
+     "grando",
+     "grandes",
+     "maior"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "O sapato está apertado. Peça um número maior.",
+    "start": "Este sapato está apertado. Você tem…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O contrário de “curto” é...",
+    "options": [
+     "largo",
+     "pequeno",
+     "baixo",
+     "comprido"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Estes sapatos _____ grandes demais.”",
+    "options": [
+     "está",
+     "estou",
+     "estamos",
+     "estão"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Explique para o vendedor o que você está procurando.",
+    "start": "Eu estou procurando…"
+   }
+  ]
+ },
+ "beginner-u7-l3": {
+  "title": "Colors",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "A cor do céu em um dia de sol é...",
+    "options": [
+     "verde",
+     "preto",
+     "azul",
+     "marrom"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Misturando preto e branco, temos...",
+    "options": [
+     "cinza",
+     "rosa",
+     "laranja",
+     "roxo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu tenho uma bolsa _____.”",
+    "options": [
+     "vermelho",
+     "vermelha",
+     "vermelhos",
+     "vermelhas"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "A cor da banana madura é...",
+    "options": [
+     "azul",
+     "roxa",
+     "preta",
+     "amarela"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Ela tem dois gatos preto.”",
+    "options": [
+     "Ela tem dois gato pretos.",
+     "Ela tem duas gatos pretos.",
+     "Ela tem dois gatos pretos.",
+     "Ela tem dois gatos pretas."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Diga qual é a sua cor favorita e por quê.",
+    "start": "A minha cor favorita é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "A cor da grama é...",
+    "options": [
+     "verde",
+     "branca",
+     "rosa",
+     "cinza"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “As camisas _____ são bonitas.”",
+    "options": [
+     "branca",
+     "brancos",
+     "brancas",
+     "branco"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva a roupa que você está usando hoje.",
+    "start": "Hoje eu estou usando…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "A cor do leite é...",
+    "options": [
+     "preta",
+     "vermelha",
+     "verde",
+     "branca"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Os meus olhos são _____.”",
+    "options": [
+     "azuis",
+     "azul",
+     "azuls",
+     "azules"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva as cores da bandeira do seu país.",
+    "start": "A bandeira do meu país é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual cor NÃO está na bandeira do Brasil?",
+    "options": [
+     "verde",
+     "amarelo",
+     "azul",
+     "vermelho"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “O meu carro novo é _____.”",
+    "options": [
+     "preta",
+     "preto",
+     "pretos",
+     "pretas"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte a um vendedor se a camiseta tem em outra cor.",
+    "start": "Vocês têm esta camiseta em…"
+   }
+  ]
+ },
+ "beginner-u7-l4": {
+  "title": "Buying something",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "A pessoa que trabalha na loja e ajuda os clientes é o...",
+    "options": [
+     "garçom",
+     "professor",
+     "motorista",
+     "vendedor"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "O lugar onde você paga na loja é o...",
+    "options": [
+     "provador",
+     "estoque",
+     "caixa",
+     "banheiro"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu vou _____ esta camiseta.”",
+    "options": [
+     "levo",
+     "leva",
+     "levamos",
+     "levar"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "O vendedor pergunta: “Posso ajudar?”. Você só quer olhar. O que você diz?",
+    "options": [
+     "Só estou olhando, obrigado.",
+     "Vou levar.",
+     "Quanto custa?",
+     "Tem troco?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Eu quero comprar este calça.”",
+    "options": [
+     "Eu quero comprar esta calça.",
+     "Eu quero comprar estes calça.",
+     "Eu quero comprar estas calça.",
+     "Eu quer comprar esta calça."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Você quer comprar um presente. Peça ajuda ao vendedor.",
+    "start": "Oi, eu estou procurando…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pagar no cartão em várias vezes é pagar...",
+    "options": [
+     "à vista",
+     "em dinheiro",
+     "com desconto",
+     "parcelado"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Posso pagar _____ cartão?”",
+    "options": [
+     "de",
+     "com",
+     "para",
+     "até"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Diga que você vai levar o produto e pergunte como pode pagar.",
+    "start": "Eu vou levar. Posso pagar…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O saco para levar as compras é a...",
+    "options": [
+     "sacola",
+     "carteira",
+     "conta",
+     "nota"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu _____ comprar um presente para a minha mãe.”",
+    "options": [
+     "quer",
+     "querem",
+     "quero",
+     "queremos"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Você comprou uma camiseta e ela ficou pequena. Peça para trocar.",
+    "start": "Com licença, eu queria trocar…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você paga R$ 20 e a compra custa R$ 15. O troco é de...",
+    "options": [
+     "quinze reais",
+     "cinco reais",
+     "vinte reais",
+     "trinta e cinco reais"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Os dois tênis são bonitos. Eu vou levar _____ dois.”",
+    "options": [
+     "as",
+     "os",
+     "o",
+     "a"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva a última coisa que você comprou.",
+    "start": "A última coisa que eu comprei foi…"
+   }
+  ]
+ },
+ "beginner-u8-l1": {
+  "title": "Rooms",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "O lugar da casa onde você cozinha é a...",
+    "options": [
+     "cozinha",
+     "sala",
+     "garagem",
+     "varanda"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "O lugar da casa onde você dorme é o...",
+    "options": [
+     "banheiro",
+     "quintal",
+     "corredor",
+     "quarto"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “O sofá está _____ sala.”",
+    "options": [
+     "na",
+     "no",
+     "em",
+     "da"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você toma banho no...",
+    "options": [
+     "banheiro",
+     "quarto",
+     "jardim",
+     "escritório"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Minha casa têm três quartos.”",
+    "options": [
+     "Minha casa tenho três quartos.",
+     "Minha casa temos três quartos.",
+     "Minha casa tem três quartos.",
+     "Minha casa ter três quartos."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva a sua casa: quantos cômodos ela tem?",
+    "start": "A minha casa tem…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O lugar onde você guarda o carro é a...",
+    "options": [
+     "cozinha",
+     "sala",
+     "lavanderia",
+     "garagem"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Os meus pais estão _____ quarto.”",
+    "options": [
+     "na",
+     "nos",
+     "nas",
+     "no"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Qual é o seu cômodo favorito da casa? Por quê?",
+    "start": "O meu cômodo favorito é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "A parte aberta do apartamento, com vista para a rua, é a...",
+    "options": [
+     "garagem",
+     "cozinha",
+     "varanda",
+     "banheiro"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “A cozinha é _____ e clara.”",
+    "options": [
+     "grandes",
+     "grande",
+     "grando",
+     "granda"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "O que você faz na sala?",
+    "start": "Na sala eu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O lugar onde você lava e seca a roupa é a...",
+    "options": [
+     "garagem",
+     "sala",
+     "lavanderia",
+     "varanda"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “A minha casa _____ em uma rua tranquila.”",
+    "options": [
+     "ficam",
+     "fica",
+     "fico",
+     "ficamos"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva o seu quarto.",
+    "start": "O meu quarto é…"
+   }
+  ]
+ },
+ "beginner-u8-l2": {
+  "title": "Objects",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Você guarda comida gelada na...",
+    "options": [
+     "geladeira",
+     "cama",
+     "janela",
+     "estante"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você senta em uma...",
+    "options": [
+     "pia",
+     "cadeira",
+     "porta",
+     "parede"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “_____ chaves estão na mesa.”",
+    "options": [
+     "Os",
+     "A",
+     "O",
+     "As"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você olha o seu rosto no...",
+    "options": [
+     "fogão",
+     "tapete",
+     "sofá",
+     "espelho"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “O lâmpada está quebrada.”",
+    "options": [
+     "A lâmpada está quebrado.",
+     "O lâmpada está quebrado.",
+     "A lâmpada está quebrada.",
+     "A lâmpada é quebrado."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Diga três objetos que estão no seu quarto.",
+    "start": "No meu quarto tem…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você cozinha no...",
+    "options": [
+     "fogão",
+     "armário",
+     "sofá",
+     "chuveiro"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Onde _____ o meu celular?”",
+    "options": [
+     "é",
+     "está",
+     "estão",
+     "são"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Você não acha as suas chaves. Pergunte a alguém da sua casa onde elas estão.",
+    "start": "Onde estão…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você guarda roupas no...",
+    "options": [
+     "fogão",
+     "forno",
+     "armário",
+     "chuveiro"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “O livro está _____ mesa.”",
+    "options": [
+     "em cima do",
+     "em cima de o",
+     "em cima das",
+     "em cima da"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva um objeto importante para você.",
+    "start": "Um objeto importante para mim é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você usa _____ para abrir a porta.",
+    "options": [
+     "a chave",
+     "o garfo",
+     "a toalha",
+     "o copo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Os copos estão _____ armário.”",
+    "options": [
+     "na",
+     "no",
+     "nos",
+     "nas"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Diga o que você precisa comprar para a sua casa.",
+    "start": "Eu preciso comprar…"
+   }
+  ]
+ },
+ "beginner-u8-l3": {
+  "title": "Places near home",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Você compra pão na...",
+    "options": [
+     "farmácia",
+     "padaria",
+     "escola",
+     "biblioteca"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você compra remédio na...",
+    "options": [
+     "farmácia",
+     "padaria",
+     "praça",
+     "academia"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Tem um supermercado _____ minha casa.”",
+    "options": [
+     "perto do",
+     "perto de a",
+     "perto da",
+     "perto das"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Um lugar com árvores, onde as crianças brincam, é o...",
+    "options": [
+     "banco",
+     "hospital",
+     "correio",
+     "parque"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Eu vou ao padaria.”",
+    "options": [
+     "Eu vou às padaria.",
+     "Eu vou o padaria.",
+     "Eu vou à padaria.",
+     "Eu vou aos padaria."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Diga o que tem perto da sua casa.",
+    "start": "Perto da minha casa tem…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você faz exercícios na...",
+    "options": [
+     "padaria",
+     "academia",
+     "farmácia",
+     "biblioteca"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “O banco fica _____ lado da farmácia.”",
+    "options": [
+     "ao",
+     "à",
+     "aos",
+     "em"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explique onde fica a padaria mais perto da sua casa.",
+    "start": "A padaria fica…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você guarda o seu dinheiro no...",
+    "options": [
+     "mercado",
+     "parque",
+     "banco",
+     "cinema"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Com licença, onde _____ o hospital?”",
+    "options": [
+     "ficam",
+     "fica",
+     "fico",
+     "ficamos"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Explique como você vai da sua casa ao supermercado.",
+    "start": "Eu saio de casa e…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O lugar onde você compra frutas e verduras ao ar livre é a...",
+    "options": [
+     "feira",
+     "farmácia",
+     "escola",
+     "academia"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “A escola fica _____ do parque.”",
+    "options": [
+     "perta",
+     "pertos",
+     "pertas",
+     "perto"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Fale sobre o seu bairro: do que você gosta nele?",
+    "start": "No meu bairro eu gosto de…"
+   }
+  ]
+ },
+ "beginner-u9-l1": {
+  "title": "Basic directions",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "O contrário de “direita” é...",
+    "options": [
+     "esquerda",
+     "reto",
+     "perto",
+     "longe"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Siga reto” significa...",
+    "options": [
+     "vire à direita",
+     "volte",
+     "vá em frente",
+     "pare aqui"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Vire _____ esquerda.”",
+    "options": [
+     "a",
+     "à",
+     "ao",
+     "às"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "O lugar onde duas ruas se encontram é a...",
+    "options": [
+     "esquina",
+     "calçada",
+     "praça",
+     "ponte"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “O museu fica perto de o parque.”",
+    "options": [
+     "O museu fica perto da parque.",
+     "O museu fica perto dos parque.",
+     "O museu fica perto do parque.",
+     "O museu fica perto em o parque."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explique como chegar da sua casa até a escola.",
+    "start": "Saindo da minha casa, você…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O contrário de “perto” é...",
+    "options": [
+     "atrás",
+     "longe",
+     "embaixo",
+     "dentro"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Siga reto e _____ à direita na esquina.”",
+    "options": [
+     "viro",
+     "vire",
+     "viram",
+     "viramos"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte a um desconhecido como chegar à estação de metrô.",
+    "start": "Com licença, como eu chego…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "A parte da rua onde as pessoas andam a pé é a...",
+    "options": [
+     "esquina",
+     "ponte",
+     "calçada",
+     "garagem"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “A farmácia fica _____ banco e o mercado.”",
+    "options": [
+     "entre a",
+     "entre os",
+     "entre as",
+     "entre o"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Diga o que fica ao lado da sua casa.",
+    "start": "Ao lado da minha casa fica…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quando você não sabe o caminho, você está...",
+    "options": [
+     "perdido",
+     "cansado",
+     "atrasado",
+     "doente"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “O hotel fica na _____ rua à direita.”",
+    "options": [
+     "primeiro",
+     "primeiros",
+     "primeiras",
+     "primeira"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Um turista pergunta onde fica o banco. Ajude-o.",
+    "start": "O banco fica…"
+   }
+  ]
+ },
+ "beginner-u9-l2": {
+  "title": "Transportation",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "O transporte que anda embaixo da terra na cidade é o...",
+    "options": [
+     "avião",
+     "barco",
+     "táxi",
+     "metrô"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "O lugar onde você espera o ônibus é o...",
+    "options": [
+     "aeroporto",
+     "porto",
+     "estacionamento",
+     "ponto de ônibus"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu vou para o trabalho _____ ônibus.”",
+    "options": [
+     "por",
+     "com",
+     "em o",
+     "de"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Para viajar de São Paulo a Lisboa, você pega um...",
+    "options": [
+     "avião",
+     "ônibus",
+     "metrô",
+     "trem"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Eu vou de pé para a escola.”",
+    "options": [
+     "Eu vou pelo pé para a escola.",
+     "Eu vou a pé para a escola.",
+     "Eu vou no pé para a escola.",
+     "Eu vou do pé para a escola."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Diga como você vai para o trabalho ou para a escola.",
+    "start": "Eu vou de…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O bilhete que você compra para andar de ônibus ou de trem é a...",
+    "options": [
+     "conta",
+     "passagem",
+     "receita",
+     "nota"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Nós _____ o metrô todos os dias.”",
+    "options": [
+     "pegamos",
+     "pega",
+     "pego",
+     "pegam"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qual meio de transporte você prefere? Por quê?",
+    "start": "Eu prefiro ir de…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Um carro com motorista que você paga para levar você a um lugar é um...",
+    "options": [
+     "ônibus",
+     "metrô",
+     "táxi",
+     "trem"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “O trem _____ às oito horas.”",
+    "options": [
+     "saio",
+     "sai",
+     "saem",
+     "saímos"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte a que horas sai o próximo ônibus.",
+    "start": "Com licença, a que horas…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O lugar onde os trens param é a...",
+    "options": [
+     "garagem",
+     "calçada",
+     "estação",
+     "esquina"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu ando _____ bicicleta no parque.”",
+    "options": [
+     "de",
+     "em",
+     "com",
+     "para"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva o transporte público na sua cidade.",
+    "start": "Na minha cidade tem…"
+   }
+  ]
+ },
+ "beginner-u10-l1": {
+  "title": "Who",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual palavra usamos para perguntar sobre uma pessoa?",
+    "options": [
+     "Onde",
+     "Quem",
+     "Quando",
+     "Quanto"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Quem é ela?” — “Ela é a minha...”",
+    "options": [
+     "casa",
+     "cidade",
+     "mesa",
+     "irmã"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Quem _____ aqueles meninos?”",
+    "options": [
+     "é",
+     "são",
+     "está",
+     "sou"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Quem é o seu professor?” Uma boa resposta é...",
+    "options": [
+     "É às nove.",
+     "É na sala 3.",
+     "É o senhor Carlos.",
+     "É muito fácil."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “De quem é estes livros?”",
+    "options": [
+     "De quem são estes livros?",
+     "De quem é estes livro?",
+     "De quem está estes livros?",
+     "De quem são este livros?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Mostre uma foto da sua família e diga quem é cada pessoa.",
+    "start": "Esta é a minha… e este é o meu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você quer saber o dono de uma bolsa. O que você pergunta?",
+    "options": [
+     "De quem é esta bolsa?",
+     "Quanto custa esta bolsa?",
+     "Onde está a bolsa?",
+     "Como é a bolsa?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “_____ quem você mora?”",
+    "options": [
+     "De",
+     "Em",
+     "Para",
+     "Com"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte a um colega quem é o cantor favorito dele.",
+    "start": "Quem é o seu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Ninguém” significa...",
+    "options": [
+     "nenhuma pessoa",
+     "todas as pessoas",
+     "uma pessoa",
+     "muitas pessoas"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Quem _____ a sua professora de português?”",
+    "options": [
+     "são",
+     "sou",
+     "é",
+     "somos"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Você atende o telefone e não sabe quem é. Pergunte.",
+    "start": "Alô? Quem…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Todo mundo” significa...",
+    "options": [
+     "ninguém",
+     "um país",
+     "todas as pessoas",
+     "uma pessoa"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “— Quem _____ a Ana? — Eu conheço!”",
+    "options": [
+     "conheço",
+     "conhece",
+     "conhecem",
+     "conhecemos"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quem faz a comida na sua casa? E quem limpa?",
+    "start": "Na minha casa, quem cozinha é…"
+   }
+  ]
+ },
+ "beginner-u10-l2": {
+  "title": "What",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual pergunta usamos para saber o nome de uma coisa?",
+    "options": [
+     "Quem é ele?",
+     "O que é isso?",
+     "Onde fica?",
+     "Quando é?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "“O que você faz?” pode ser uma pergunta sobre...",
+    "options": [
+     "a sua idade",
+     "o seu endereço",
+     "a sua cor favorita",
+     "a sua profissão"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “_____ é o seu número de telefone?”",
+    "options": [
+     "Qual",
+     "O que",
+     "Quem",
+     "Quanto"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "“O que você quer beber?” Uma boa resposta é...",
+    "options": [
+     "Um suco, por favor.",
+     "Às oito horas.",
+     "Em casa.",
+     "Com a minha mãe."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “O que é o seu nome?”",
+    "options": [
+     "Quem é o seu nome?",
+     "Quanto é o seu nome?",
+     "Onde é o seu nome?",
+     "Qual é o seu nome?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte a um colega o que ele quer comer hoje.",
+    "start": "O que você…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você não ouviu o que a pessoa disse. O que você pergunta?",
+    "options": [
+     "Quem?",
+     "O quê?",
+     "Quando?",
+     "Quanto?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “O que vocês _____ hoje à noite?”",
+    "options": [
+     "faz",
+     "faço",
+     "fazem",
+     "fazemos"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Diga o que você tem na sua bolsa ou mochila.",
+    "start": "Na minha mochila tem…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Que horas são?” é uma pergunta sobre...",
+    "options": [
+     "o dia",
+     "o lugar",
+     "a hora",
+     "a pessoa"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “_____ é a sua cor favorita?”",
+    "options": [
+     "O que",
+     "Quem",
+     "Qual",
+     "Onde"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Diga o que você quer fazer nas próximas férias.",
+    "start": "Nas próximas férias eu quero…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você vê um amigo chorando. O que você pergunta?",
+    "options": [
+     "Que horas são?",
+     "Quanto custa?",
+     "De onde você é?",
+     "O que aconteceu?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “O que você _____ no café da manhã?”",
+    "options": [
+     "como",
+     "come",
+     "comem",
+     "comemos"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "O que você faz para relaxar?",
+    "start": "Para relaxar, eu…"
+   }
+  ]
+ },
+ "beginner-u10-l3": {
+  "title": "Where",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual palavra usamos para perguntar sobre um lugar?",
+    "options": [
+     "Quem",
+     "Onde",
+     "Quando",
+     "Como"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Onde você mora?” Uma boa resposta é...",
+    "options": [
+     "Em Salvador.",
+     "Às dez.",
+     "Com a minha irmã.",
+     "Muito bem."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “_____ onde você é?”",
+    "options": [
+     "Em",
+     "De",
+     "Para",
+     "Com"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Aqui” é o contrário de...",
+    "options": [
+     "agora",
+     "lá",
+     "sempre",
+     "muito"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Onde é as chaves?”",
+    "options": [
+     "Onde está as chaves?",
+     "Onde é a chaves?",
+     "Onde são as chave?",
+     "Onde estão as chaves?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Diga onde você trabalha ou estuda.",
+    "start": "Eu trabalho em…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você procura o banheiro em um restaurante. O que você pergunta?",
+    "options": [
+     "Quem é o banheiro?",
+     "Quanto custa o banheiro?",
+     "Quando é o banheiro?",
+     "Onde fica o banheiro?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “O gato está _____ mesa.”",
+    "options": [
+     "embaixo do",
+     "embaixo de o",
+     "embaixo da",
+     "embaixo das"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte a um colega onde ele mora.",
+    "start": "Onde você…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Um lugar do outro lado da cidade fica...",
+    "options": [
+     "longe",
+     "perto",
+     "aqui",
+     "ao lado"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Os meus pais moram _____ Curitiba.”",
+    "options": [
+     "em",
+     "no",
+     "na",
+     "de"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Diga para onde você gosta de ir nas férias.",
+    "start": "Nas férias, eu gosto de ir…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Dentro” é o contrário de...",
+    "options": [
+     "embaixo",
+     "perto",
+     "atrás",
+     "fora"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Onde _____ os meus óculos?”",
+    "options": [
+     "está",
+     "é",
+     "estão",
+     "são"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva onde fica a sua casa.",
+    "start": "A minha casa fica…"
+   }
+  ]
+ },
+ "beginner-u10-l4": {
+  "title": "When",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual palavra usamos para perguntar o dia ou a hora de algo?",
+    "options": [
+     "Quando",
+     "Onde",
+     "Quem",
+     "Como"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Quando é o seu aniversário?” Uma boa resposta é...",
+    "options": [
+     "Na cozinha.",
+     "Em outubro.",
+     "Com os meus amigos.",
+     "Vinte anos."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Quando _____ a sua aula de português?”",
+    "options": [
+     "são",
+     "está",
+     "estão",
+     "é"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Depois” é o contrário de...",
+    "options": [
+     "agora",
+     "sempre",
+     "antes",
+     "nunca"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Quando vocês viaja?”",
+    "options": [
+     "Quando vocês viajo?",
+     "Quando vocês viajamos?",
+     "Quando vocês viajar?",
+     "Quando vocês viajam?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Diga quando você estuda português.",
+    "start": "Eu estudo português…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Agora” significa...",
+    "options": [
+     "amanhã",
+     "neste momento",
+     "no ano passado",
+     "nunca"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu vou visitar a minha avó _____ dezembro.”",
+    "options": [
+     "em",
+     "no",
+     "na",
+     "às"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte a um colega quando é o aniversário dele.",
+    "start": "Quando é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "A semana antes desta é a semana...",
+    "options": [
+     "que vem",
+     "próxima",
+     "passada",
+     "de hoje"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “A reunião é amanhã _____ manhã.”",
+    "options": [
+     "na",
+     "de",
+     "em",
+     "às"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quando você tem tempo livre? O que você faz?",
+    "start": "Eu tenho tempo livre…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você quer saber a hora de um filme. O que você pergunta?",
+    "options": [
+     "Onde começa?",
+     "Quem começa?",
+     "A que horas começa?",
+     "Por que começa?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Quando _____ as férias?”",
+    "options": [
+     "começa",
+     "começo",
+     "começamos",
+     "começam"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Diga quando é o seu feriado favorito e o que você faz.",
+    "start": "O meu feriado favorito é em…"
+   }
+  ]
+ },
+ "beginner-u10-l5": {
+  "title": "Why",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual palavra usamos para perguntar o motivo de algo?",
+    "options": [
+     "Quando",
+     "Onde",
+     "Por que",
+     "Quem"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual palavra usamos na resposta a uma pergunta com “por que”?",
+    "options": [
+     "Por que",
+     "Porque",
+     "Porquê",
+     "Por quê"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “_____ você estuda português?”",
+    "options": [
+     "Por que",
+     "Porque",
+     "Porquê",
+     "Por quê"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Por que você está de casaco?” — “Porque estou com...”",
+    "options": [
+     "calor",
+     "sede",
+     "frio",
+     "fome"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Eu não vou à aula por que estou doente.”",
+    "options": [
+     "Eu não vou à aula porquê estou doente.",
+     "Eu não vou à aula por quê estou doente.",
+     "Eu não vou na aula por que estou doente.",
+     "Eu não vou à aula porque estou doente."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Diga por que você estuda português.",
+    "start": "Eu estudo português porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complete: “Estou com fome, _____ vou comer.”",
+    "options": [
+     "então",
+     "porque",
+     "mas",
+     "ou"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Por que você não _____ ao cinema com a gente?”",
+    "options": [
+     "venho",
+     "vem",
+     "vêm",
+     "viemos"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Explique por que você gosta da sua cidade.",
+    "start": "Eu gosto da minha cidade porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“O motivo” significa o mesmo que...",
+    "options": [
+     "a resposta",
+     "a pergunta",
+     "a razão",
+     "o problema"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Eu não como carne _____ sou vegetariano.”",
+    "options": [
+     "porque",
+     "por que",
+     "porquê",
+     "por isso"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Você chega atrasado à aula. Explique o motivo.",
+    "start": "Desculpe o atraso. Eu cheguei tarde porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complete: “Eu abro a janela _____ está calor.”",
+    "options": [
+     "mas",
+     "ou",
+     "então",
+     "porque"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Você está triste _____?”",
+    "options": [
+     "por que",
+     "por quê",
+     "porque",
+     "porquê"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Explique por que você gosta da sua comida favorita.",
+    "start": "Eu gosto de… porque…"
+   }
+  ]
+ },
+ "beginner-u10-l6": {
+  "title": "How",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual pergunta usamos para saber como alguém está?",
+    "options": [
+     "Como você está?",
+     "Onde você está?",
+     "Quem é você?",
+     "Quando você vem?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Como você vai para a escola?” Uma boa resposta é...",
+    "options": [
+     "De ônibus.",
+     "Às sete.",
+     "Na sala 5.",
+     "Com fome."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “_____ anos você tem?”",
+    "options": [
+     "Quantas",
+     "Quanto",
+     "Quantos",
+     "Como"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Como é a sua casa?” pede uma...",
+    "options": [
+     "data",
+     "descrição",
+     "hora",
+     "idade"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Quantas irmãos você tem?”",
+    "options": [
+     "Quanto irmãos você tem?",
+     "Quantos irmãos você tem?",
+     "Quantas irmãos você têm?",
+     "Quantos irmão você tem?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte a um colega como ele vai para o trabalho.",
+    "start": "Como você…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Como se escreve?” é uma pergunta sobre...",
+    "options": [
+     "o preço",
+     "a hora",
+     "o lugar",
+     "as letras de uma palavra"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “_____ custa este livro?”",
+    "options": [
+     "Quantos",
+     "Como",
+     "Quantas",
+     "Quanto"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Explique como se faz um café.",
+    "start": "Primeiro você…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Tudo bem?” Uma resposta comum é...",
+    "options": [
+     "Às três.",
+     "Tudo ótimo!",
+     "Na escola.",
+     "Trinta reais."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Como _____ os seus pais?”",
+    "options": [
+     "está",
+     "estou",
+     "estão",
+     "estamos"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Diga como é a sua cidade.",
+    "start": "A minha cidade é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Mais ou menos” significa...",
+    "options": [
+     "muito bem",
+     "muito mal",
+     "nem bem, nem mal",
+     "excelente"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Quantas _____ você fala?”",
+    "options": [
+     "língua",
+     "idioma",
+     "idiomas",
+     "línguas"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Diga como você aprende palavras novas em português.",
+    "start": "Eu aprendo palavras novas…"
+   }
+  ]
+ },
+ "beginner-u11-l1": {
+  "title": "Weather",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quando cai água do céu, está...",
+    "options": [
+     "ventando",
+     "nevando",
+     "chovendo",
+     "fazendo sol"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você usa _____ quando chove.",
+    "options": [
+     "óculos de sol",
+     "chinelo",
+     "guarda-chuva",
+     "boné"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Hoje _____ muito calor.”",
+    "options": [
+     "é",
+     "está",
+     "são",
+     "tem"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual pergunta usamos para saber se faz frio ou calor?",
+    "options": [
+     "Que horas são?",
+     "Como está o tempo?",
+     "Quanto custa?",
+     "Onde fica?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Hoje está chovento.”",
+    "options": [
+     "Hoje está chovendo.",
+     "Hoje está chovindo.",
+     "Hoje está chove.",
+     "Hoje estão chovendo."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Diga como está o tempo hoje na sua cidade.",
+    "start": "Hoje na minha cidade está…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quando o céu está cinza e sem sol, está...",
+    "options": [
+     "nublado",
+     "ensolarado",
+     "quente",
+     "seco"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Amanhã vai _____ frio.”",
+    "options": [
+     "fazer",
+     "faz",
+     "fazendo",
+     "feito"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Que tempo você prefere: frio ou calor? Por quê?",
+    "start": "Eu prefiro…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Vento forte com chuva e raios é uma...",
+    "options": [
+     "brisa",
+     "tempestade",
+     "nuvem",
+     "garoa"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Está _____ hoje, use casaco!”",
+    "options": [
+     "fria",
+     "frios",
+     "frias",
+     "frio"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "O que você faz quando está chovendo?",
+    "start": "Quando está chovendo, eu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "A previsão do tempo diz...",
+    "options": [
+     "o preço das coisas",
+     "o horário do ônibus",
+     "como vai estar o tempo",
+     "o nome das ruas"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “O céu _____ azul hoje.”",
+    "options": [
+     "estão",
+     "estou",
+     "estamos",
+     "está"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva o tempo no seu dia perfeito.",
+    "start": "No meu dia perfeito, está…"
+   }
+  ]
+ },
+ "beginner-u11-l2": {
+  "title": "Seasons",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quantas estações tem o ano?",
+    "options": [
+     "duas",
+     "quatro",
+     "três",
+     "cinco"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "A estação mais quente do ano é o...",
+    "options": [
+     "inverno",
+     "verão",
+     "outono",
+     "outubro"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “_____ verão, eu vou à praia.”",
+    "options": [
+     "Na",
+     "Em o",
+     "No",
+     "Do"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Em qual estação nascem muitas flores?",
+    "options": [
+     "no inverno",
+     "no verão",
+     "no outono",
+     "na primavera"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “No inverno faz muita frio.”",
+    "options": [
+     "No inverno faz muito frio.",
+     "No inverno faz muitos frio.",
+     "No inverno faz muitas frio.",
+     "No inverno fazem muito frio."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qual é a sua estação favorita? Por quê?",
+    "start": "A minha estação favorita é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "No outono, as _____ caem das árvores.",
+    "options": [
+     "folhas",
+     "flores",
+     "nuvens",
+     "neves"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “No Brasil, o Natal _____ no verão.”",
+    "options": [
+     "são",
+     "está",
+     "é",
+     "estão"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "O que você gosta de fazer no inverno?",
+    "start": "No inverno eu gosto de…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "A roupa quente para o inverno é o...",
+    "options": [
+     "biquíni",
+     "chinelo",
+     "short",
+     "casaco"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “No inverno, os dias são mais _____.”",
+    "options": [
+     "curto",
+     "curtos",
+     "curta",
+     "curtas"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva o verão no seu país.",
+    "start": "No verão, no meu país…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "No Brasil, o verão começa em...",
+    "options": [
+     "dezembro",
+     "junho",
+     "março",
+     "setembro"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “Na primavera, as flores _____ bonitas.”",
+    "options": [
+     "fica",
+     "fico",
+     "ficamos",
+     "ficam"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Fale sobre uma viagem que você quer fazer em uma estação do ano.",
+    "start": "No… eu quero viajar para…"
+   }
+  ]
+ },
+ "beginner-u12-l1": {
+  "title": "Combining everything in short real-life dialogues",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Em uma lanchonete, o atendente pergunta: “O que vai ser?”. Ele quer saber...",
+    "options": [
+     "como você se chama",
+     "onde você mora",
+     "que horas são",
+     "o que você quer pedir"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Alguém diz “Obrigado!”. O que você responde?",
+    "options": [
+     "De nada.",
+     "Muito prazer.",
+     "Desculpe.",
+     "Bom dia."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “— Tudo bem? — Tudo, e _____?”",
+    "options": [
+     "eu",
+     "ele",
+     "você",
+     "nós"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você não entendeu uma palavra. O que você diz?",
+    "options": [
+     "Que bom!",
+     "Pode repetir, por favor?",
+     "De nada.",
+     "Até amanhã."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Oi, eu sou de Brasil e moro em Lisboa.”",
+    "options": [
+     "Oi, eu sou da Brasil e moro em Lisboa.",
+     "Oi, eu estou do Brasil e moro em Lisboa.",
+     "Oi, eu sou do Brasil e moro em Lisboa.",
+     "Oi, eu sou do Brasil e moro no Lisboa."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Apresente-se para um colega novo: nome, país e idade.",
+    "start": "Oi, eu me chamo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Em uma loja, você pergunta o preço. O que o vendedor responde?",
+    "options": [
+     "É do Peru.",
+     "São trinta reais.",
+     "Fica à direita.",
+     "São três horas."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a resposta correta para “De onde você é?”:",
+    "options": [
+     "Eu estou do Chile.",
+     "Eu sou do Chile.",
+     "Eu sou no Chile.",
+     "Eu tenho do Chile."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Peça um suco e um sanduíche em uma lanchonete.",
+    "start": "Boa tarde! Para mim, um…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você vai embora de uma festa. O que você diz para o dono da casa?",
+    "options": [
+     "Obrigado pela festa, tchau!",
+     "Muito prazer!",
+     "Bom apetite!",
+     "Seja bem-vindo!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “— Você gosta de futebol? — Sim, eu _____ muito.”",
+    "options": [
+     "gosta",
+     "gostam",
+     "gostamos",
+     "gosto"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Pergunte a um turista de onde ele é e se ele gosta do Brasil.",
+    "start": "De onde você é? Você gosta…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Um amigo convida você para o cinema e você aceita. O que você diz?",
+    "options": [
+     "Não, obrigado.",
+     "De nada.",
+     "Com licença.",
+     "Claro, vamos!"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a palavra correta: “— Vamos ao cinema hoje? — Vamos! A que horas _____ o filme?”",
+    "options": [
+     "começo",
+     "começam",
+     "começa",
+     "começamos"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Convide um amigo para tomar um café e diga a hora.",
+    "start": "Vamos tomar um café? Podemos nos encontrar às…"
+   }
+  ]
+ }
+}

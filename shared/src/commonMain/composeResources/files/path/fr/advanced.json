@@ -1,0 +1,3214 @@
+{
+ "advanced-u1-l1": {
+  "title": "Fluency",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "« Parler couramment » veut dire parler…",
+    "options": [
+     "avec un accent parfait",
+     "avec aisance, sans chercher ses mots",
+     "uniquement dans un registre soutenu",
+     "très vite et très fort"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète : « Attends, j'ai le mot sur le bout de _____. »",
+    "options": [
+     "la tête",
+     "la bouche",
+     "la langue",
+     "les doigts"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Bien que j'_____ le français depuis dix ans, je cherche encore mes mots. »",
+    "options": [
+     "apprends",
+     "apprendrais",
+     "apprenne",
+     "apprenais"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour gagner un peu de temps avant de répondre, on peut dire…",
+    "options": [
+     "Comment dire…",
+     "Bien entendu.",
+     "Tout à fait.",
+     "Ça marche."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « C'est en _____ régulièrement qu'on progresse à l'oral. »",
+    "options": [
+     "pratiquant",
+     "pratique",
+     "pratiquer",
+     "pratiqué"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explique comment tu entretiens ton français au quotidien, sans t'arrêter.",
+    "start": "Au quotidien, j'essaie de…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Je me débrouille en français » veut dire…",
+    "options": [
+     "je m'en sors, sans être parfait",
+     "je ne parle pas du tout",
+     "je suis bilingue",
+     "je refuse de parler"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Si j'avais vécu en France plus jeune, je _____ bilingue aujourd'hui. »",
+    "options": [
+     "étais",
+     "serai",
+     "suis",
+     "serais"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte une situation où tu as réussi à te faire comprendre malgré tes erreurs.",
+    "start": "Une fois, alors que je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quelqu'un qui s'exprime « avec aisance » parle…",
+    "options": [
+     "avec colère",
+     "avec difficulté",
+     "avec facilité",
+     "avec lenteur"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je regrette que tu n'_____ pas pu venir au groupe de conversation hier. »",
+    "options": [
+     "aurais",
+     "as",
+     "aies",
+     "avais"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explique à un ami pourquoi il ne faut pas avoir peur de faire des fautes.",
+    "start": "Franchement, les fautes, c'est…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète : « Plus on parle, plus on gagne en _____. »",
+    "options": [
+     "assurance",
+     "silence",
+     "hésitation",
+     "timidité"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il parle comme s'il _____ toujours vécu à Paris. »",
+    "options": [
+     "a",
+     "avait",
+     "ait",
+     "aurait"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Selon toi, qu'est-ce qui compte le plus : la fluidité ou la précision ? Justifie.",
+    "start": "À mon avis, ce qui compte le plus, c'est…"
+   }
+  ]
+ },
+ "advanced-u1-l2": {
+  "title": "Fillers",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "À l'oral, « euh », « ben » et « bon » servent surtout à…",
+    "options": [
+     "exprimer la colère",
+     "remplir une pause pendant qu'on réfléchit",
+     "remercier quelqu'un",
+     "terminer une lettre"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "En début de phrase, « Bon, … » sert souvent à…",
+    "options": [
+     "marquer une transition ou une conclusion",
+     "poser une question",
+     "s'excuser",
+     "dire qu'un plat est délicieux"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le train a été annulé, _____ on a pris un taxi. »",
+    "options": [
+     "du coup",
+     "pourtant",
+     "en revanche",
+     "bien que"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "À l'oral, « en fait » sert souvent à…",
+    "options": [
+     "commander au restaurant",
+     "dire au revoir",
+     "saluer quelqu'un",
+     "corriger ou préciser ce qu'on vient de dire"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ben, je sais pas trop, il faudrait que j'y _____. »",
+    "options": [
+     "réfléchirai",
+     "réfléchissais",
+     "réfléchis",
+     "réfléchisse"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Ton ami te demande ce que tu penses de son nouveau projet. Réponds en hésitant avec « ben » ou « euh ».",
+    "start": "Ben, euh… disons que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Dans « C'était trop bien, quoi ! », le mot « quoi » sert à…",
+    "options": [
+     "exprimer un doute",
+     "renforcer et clore la phrase",
+     "poser une question",
+     "demander de répéter"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Bref, je ne sais plus ce que je _____ dire. »",
+    "options": [
+     "voulu",
+     "veuille",
+     "voudrai",
+     "voulais"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte ta journée d'hier de façon naturelle, avec « du coup » et « en fait ».",
+    "start": "En fait, hier, j'ai…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel mot sert à résumer et à aller à l'essentiel ?",
+    "options": [
+     "Néanmoins",
+     "Pourtant",
+     "Bref",
+     "Ainsi que"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Euh… je doute qu'il _____ raison, mais bon. »",
+    "options": [
+     "aura",
+     "ait",
+     "avait",
+     "a"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "On te pose une question difficile. Gagne du temps avec « voyons voir » ou « comment dire ».",
+    "start": "Voyons voir… comment dire…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Dans un discours formel, quel tic de langage vaut-il mieux éviter ?",
+    "options": [
+     "« toutefois »",
+     "« en outre »",
+     "« par conséquent »",
+     "« du coup » à chaque phrase"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « En fait, si j'avais su, je ne _____ pas venu. »",
+    "options": [
+     "suis",
+     "aurais",
+     "serai",
+     "serais"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Résume un film que tu as vu, avec des mots comme « bon », « bref » ou « voilà ».",
+    "start": "Bon, alors, c'est l'histoire de…"
+   }
+  ]
+ },
+ "advanced-u1-l3": {
+  "title": "Natural responses",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Ton ami dit : « J'ai eu ma promotion ! » Quelle réponse est naturelle ?",
+    "options": [
+     "Tant pis pour toi.",
+     "Ça m'est égal.",
+     "Ce n'est pas grave.",
+     "Génial ! Tu l'as bien mérité !"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour montrer ta surprise, tu dis…",
+    "options": [
+     "Volontiers.",
+     "Ça marche.",
+     "Sans blague ?",
+     "Pas de souci."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je suis ravi que tu _____ réussi ton examen ! »",
+    "options": [
+     "auras",
+     "as",
+     "avais",
+     "aies"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Ça me dit bien » veut dire…",
+    "options": [
+     "C'est trop cher",
+     "Ça me tente",
+     "Ça me fait peur",
+     "Je ne comprends pas"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu as parlé de la fête à Marc ? » — « Non, je ne _____ ai pas encore parlé. »",
+    "options": [
+     "en lui",
+     "y en",
+     "lui en",
+     "le lui"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Un collègue te propose un café, mais tu es débordé. Refuse gentiment et propose un autre moment.",
+    "start": "Ah, c'est gentil, mais là…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Je veux bien » signifie…",
+    "options": [
+     "Je ne sais pas",
+     "Oui, volontiers",
+     "Je refuse",
+     "Je suis en colère"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « C'est dommage que vous _____ partis si tôt hier soir. »",
+    "options": [
+     "seriez",
+     "soyez",
+     "êtes",
+     "étiez"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Ton ami t'annonce une mauvaise nouvelle. Réagis avec empathie.",
+    "start": "Oh mince, je suis vraiment désolé…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quand tu es d'accord sans enthousiasme, tu dis…",
+    "options": [
+     "Absolument génial !",
+     "Avec un immense plaisir !",
+     "Bon, si tu veux.",
+     "Carrément, trop bien !"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il est étonnant qu'elle ne nous _____ rien dit. »",
+    "options": [
+     "aurait",
+     "a",
+     "ait",
+     "avait"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Quelqu'un te fait un compliment sur ton français. Réponds avec modestie.",
+    "start": "Oh, merci, c'est gentil, mais…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Tant mieux ! » exprime…",
+    "options": [
+     "la déception",
+     "la peur",
+     "l'ennui",
+     "la satisfaction"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu crois qu'il va pleuvoir pendant le pique-nique ? » — « J'espère bien que _____ ! »",
+    "options": [
+     "non",
+     "pas",
+     "si",
+     "ne"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Un ami te demande ton avis sur un restaurant que tu n'as pas aimé. Réponds avec tact.",
+    "start": "Disons que ce n'était pas…"
+   }
+  ]
+ },
+ "advanced-u2-l1": {
+  "title": "Common expressions used by native speakers",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "« Coûter les yeux de la tête » veut dire…",
+    "options": [
+     "être gratuit",
+     "faire mal aux yeux",
+     "coûter très cher",
+     "être difficile à voir"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Poser un lapin à quelqu'un » veut dire…",
+    "options": [
+     "lui offrir un cadeau",
+     "lui faire une blague",
+     "cuisiner pour lui",
+     "ne pas venir au rendez-vous"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il a beau _____ des efforts, il n'y arrive pas. »",
+    "options": [
+     "fait",
+     "faire",
+     "qu'il fasse",
+     "faisant"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Avoir du pain sur la planche », c'est…",
+    "options": [
+     "avoir beaucoup de travail",
+     "avoir faim",
+     "être riche",
+     "être boulanger"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il pleut des cordes, il vaut mieux que nous _____ à la maison. »",
+    "options": [
+     "restions",
+     "restons",
+     "resterons",
+     "resterions"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Avec une expression imagée, raconte une journée où tout est allé de travers.",
+    "start": "Ce jour-là, j'étais vraiment dans le pétrin…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Mettre les pieds dans le plat » veut dire…",
+    "options": [
+     "renverser le dîner",
+     "arriver en avance",
+     "marcher dans la cuisine",
+     "aborder maladroitement un sujet délicat"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Si j'avais su que ça coûtait les yeux de la tête, je ne l'_____ jamais acheté. »",
+    "options": [
+     "aurais",
+     "avais",
+     "aurai",
+     "ai"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explique à un ami étranger le sens de « avoir le cafard », avec un exemple.",
+    "start": "« Avoir le cafard », ça veut dire…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Tomber dans les pommes », c'est…",
+    "options": [
+     "glisser dans la rue",
+     "s'évanouir",
+     "tomber amoureux",
+     "faire de la compote"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « C'est une expression _____ je ne me souviens jamais. »",
+    "options": [
+     "où",
+     "laquelle",
+     "que",
+     "dont"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte une fois où quelqu'un t'a posé un lapin. Comment as-tu réagi ?",
+    "start": "Une fois, un ami m'a posé un lapin…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Avoir un poil dans la main » se dit d'une personne…",
+    "options": [
+     "maladroite",
+     "généreuse",
+     "poilue",
+     "paresseuse"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il faut que tu _____ les points sur les i avec ton chef. »",
+    "options": [
+     "mettras",
+     "mettes",
+     "mettrais",
+     "mets"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quelle est ton expression française préférée ? Explique pourquoi.",
+    "start": "Mon expression préférée, c'est…"
+   }
+  ]
+ },
+ "advanced-u3-l1": {
+  "title": "Detailed and engaging stories",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Pour introduire un événement soudain dans un récit, on dit…",
+    "options": [
+     "En général",
+     "Tous les jours",
+     "Tout à coup",
+     "D'habitude"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour créer du suspense, un conteur peut dire…",
+    "options": [
+     "Et c'est là que tout a basculé…",
+     "Bon appétit à tous.",
+     "Merci de votre attention.",
+     "Je vous en prie."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Quand je suis arrivé à la gare, le train _____ déjà parti. »",
+    "options": [
+     "serait",
+     "était",
+     "est",
+     "avait"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Une anecdote », c'est…",
+    "options": [
+     "un médicament",
+     "un long roman",
+     "une dispute",
+     "une petite histoire amusante ou curieuse"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Elle m'a raconté qu'elle _____ son portefeuille la veille. »",
+    "options": [
+     "avait perdu",
+     "a perdu",
+     "perdrait",
+     "perdra"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte un voyage qui ne s'est pas passé comme prévu, avec des détails.",
+    "start": "C'était il y a quelques années, je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour conclure une histoire, on peut dire…",
+    "options": [
+     "Il était une fois…",
+     "Tout à coup…",
+     "Finalement, tout est bien qui finit bien.",
+     "Au début…"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ la porte, j'ai entendu un bruit étrange. »",
+    "options": [
+     "En ouvert",
+     "Ouvert",
+     "En ouvrant",
+     "Ouvrir"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte la rencontre la plus surprenante de ta vie.",
+    "start": "Je ne m'y attendais pas du tout…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Raconter des salades » veut dire…",
+    "options": [
+     "raconter des mensonges",
+     "raconter une histoire drôle",
+     "parler de cuisine",
+     "parler de jardinage"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Si nous étions partis plus tôt, nous _____ l'orage. »",
+    "options": [
+     "évitions",
+     "éviterions",
+     "aurions évité",
+     "avions évité"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte un souvenir d'enfance en alternant l'imparfait et le passé composé.",
+    "start": "Quand j'étais enfant…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Dans un récit, « la veille » désigne…",
+    "options": [
+     "le jour d'après",
+     "le soir même",
+     "la semaine suivante",
+     "le jour d'avant"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Après _____ le film, nous sommes allés dîner. »",
+    "options": [
+     "avons vu",
+     "ayant voir",
+     "voir",
+     "avoir vu"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte une histoire drôle qui t'est arrivée au travail ou à l'école.",
+    "start": "Il faut que je te raconte un truc…"
+   }
+  ]
+ },
+ "advanced-u4-l1": {
+  "title": "Developing and supporting an argument",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Pour ajouter un argument, on dit…",
+    "options": [
+     "Sinon",
+     "De plus",
+     "Bref",
+     "Pourtant"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour faire une concession avant d'objecter, on peut dire…",
+    "options": [
+     "Par conséquent…",
+     "En plus…",
+     "Donc…",
+     "Certes…, mais…"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Bien que cette idée _____ séduisante, elle coûte trop cher. »",
+    "options": [
+     "soit",
+     "serait",
+     "est",
+     "sera"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "« En revanche » sert à…",
+    "options": [
+     "conclure",
+     "ajouter un exemple",
+     "opposer deux idées",
+     "exprimer une cause"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il est peu probable que cette mesure _____ effet rapidement. »",
+    "options": [
+     "fait",
+     "ferait",
+     "fera",
+     "fasse"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Défends l'idée que le télétravail est bénéfique, avec deux arguments.",
+    "start": "Tout d'abord, le télétravail permet de…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel connecteur exprime la conséquence ?",
+    "options": [
+     "Bien que",
+     "Tandis que",
+     "Par conséquent",
+     "Néanmoins"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ que l'on en dise, les réseaux sociaux ont changé nos vies. »",
+    "options": [
+     "Quoique",
+     "Quel",
+     "Quoi",
+     "Ce"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Donne ton avis sur l'interdiction des téléphones à l'école et justifie-le.",
+    "start": "À mon sens, interdire les téléphones…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Étayer un argument », c'est…",
+    "options": [
+     "l'abandonner",
+     "le répéter",
+     "le soutenir avec des preuves",
+     "le cacher"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il faudrait des preuves _____ cette théorie soit acceptée. »",
+    "options": [
+     "dès que",
+     "alors que",
+     "pour que",
+     "parce que"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Présente un argument, puis réponds à une objection possible.",
+    "start": "On pourrait m'objecter que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour conclure un raisonnement, on dit…",
+    "options": [
+     "Par exemple",
+     "D'une part",
+     "En outre",
+     "En définitive"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « C'est l'argument _____ je tiens le plus. »",
+    "options": [
+     "auquel",
+     "dont",
+     "duquel",
+     "lequel"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Faut-il rendre les transports en commun gratuits ? Développe ton point de vue.",
+    "start": "D'un côté, ce serait…"
+   }
+  ]
+ },
+ "advanced-u5-l1": {
+  "title": "Leading",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Pour ouvrir une réunion, l'animateur dit…",
+    "options": [
+     "Merci à tous, bonne fin de journée.",
+     "Bon, si tout le monde est là, on peut commencer.",
+     "Je vous laisse, j'ai un autre rendez-vous.",
+     "On s'arrête là pour aujourd'hui."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« L'ordre du jour », c'est…",
+    "options": [
+     "l'heure de la pause",
+     "la liste des points à traiter",
+     "le résumé écrit après la réunion",
+     "la date du jour"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je propose que nous _____ par le budget. »",
+    "options": [
+     "commencerons",
+     "commençons",
+     "commencions",
+     "commencerions"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour passer au point suivant, on dit…",
+    "options": [
+     "On s'arrête là pour aujourd'hui.",
+     "Passons maintenant au deuxième point.",
+     "Revenons à nos moutons.",
+     "Quelqu'un veut un café ?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Avant que nous _____, j'aimerais résumer les décisions. »",
+    "options": [
+     "partions",
+     "partirons",
+     "sommes partis",
+     "partons"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Tu animes une réunion. Présente l'ordre du jour à l'équipe.",
+    "start": "Bonjour à tous, merci d'être là. Aujourd'hui, nous allons…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Donner la parole à quelqu'un », c'est…",
+    "options": [
+     "lui écrire un message",
+     "lui couper la parole",
+     "lui promettre quelque chose",
+     "l'inviter à parler"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Veillez à ce que chacun _____ la possibilité de s'exprimer. »",
+    "options": [
+     "avait",
+     "ait",
+     "aura",
+     "a"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Un participant parle trop longtemps. Recadre la discussion poliment.",
+    "start": "Merci pour ces précisions. Pour respecter le temps, je propose…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le document qui résume ce qui a été dit et décidé s'appelle…",
+    "options": [
+     "l'ordre du jour",
+     "le compte rendu",
+     "le devis",
+     "la convocation"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « D'ici la prochaine réunion, chacun _____ préparé sa partie. »",
+    "options": [
+     "aura",
+     "a",
+     "avait",
+     "aurait"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Clôture la réunion en résumant les décisions et les prochaines étapes.",
+    "start": "Pour résumer, nous avons décidé de…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Faire un tour de table », c'est…",
+    "options": [
+     "quitter la salle",
+     "demander l'avis de chaque participant",
+     "servir des boissons",
+     "déplacer les meubles"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le point _____ je voudrais attirer votre attention concerne le budget. »",
+    "options": [
+     "que",
+     "sur lequel",
+     "dont",
+     "auquel"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Lance un tour de table : invite chaque participant à donner son avis.",
+    "start": "Je propose qu'on fasse un tour de table…"
+   }
+  ]
+ },
+ "advanced-u5-l2": {
+  "title": "Interrupting politely",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Pour interrompre poliment, on dit…",
+    "options": [
+     "Excusez-moi de vous interrompre, mais…",
+     "Vous avez tort !",
+     "Laissez-moi parler !",
+     "Taisez-vous, s'il vous plaît !"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Couper la parole à quelqu'un », c'est…",
+    "options": [
+     "le remercier",
+     "parler moins fort",
+     "lui donner la parole",
+     "l'interrompre pendant qu'il parle"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Pardon de vous interrompre, mais je crains que nous _____ en retard. »",
+    "options": [
+     "sommes",
+     "serions",
+     "serons",
+     "soyons"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour reprendre le fil après une interruption, on dit…",
+    "options": [
+     "Pour revenir à ce que je disais…",
+     "À bientôt…",
+     "C'est noté, merci…",
+     "Bonne journée…"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Si je _____ me permettre, j'aimerais ajouter un point. »",
+    "options": [
+     "puis",
+     "puisse",
+     "pourrais",
+     "pourrai"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Ton collègue parle, mais tu dois signaler une erreur urgente. Interromps-le poliment.",
+    "start": "Pardon de vous couper, mais…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Je me permets de rebondir sur ce que vous venez de dire » sert à…",
+    "options": [
+     "changer complètement de sujet",
+     "prolonger l'idée de quelqu'un",
+     "refuser de parler",
+     "quitter la réunion"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Pardon, je ne voudrais pas que vous _____ que je suis contre. »",
+    "options": [
+     "penseriez",
+     "pensez",
+     "penserez",
+     "pensiez"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Quelqu'un t'interrompt. Demande poliment de pouvoir finir ta phrase.",
+    "start": "Si vous me permettez de terminer…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Avoir voix au chapitre » veut dire…",
+    "options": [
+     "lire un livre à voix haute",
+     "avoir le droit de donner son avis",
+     "écrire un chapitre",
+     "chanter dans une chorale"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Désolé, j'ai cru que vous _____ fini de parler. »",
+    "options": [
+     "aviez",
+     "ayez",
+     "aurez",
+     "avez"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Tu veux intervenir dans une discussion animée. Demande la parole poliment.",
+    "start": "Est-ce que je pourrais dire un mot…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour signaler qu'on veut ajouter quelque chose brièvement, on dit…",
+    "options": [
+     "Continuez sans moi.",
+     "Ce n'est pas mon problème.",
+     "Juste une petite remarque…",
+     "Je n'ai rien à ajouter."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je m'excuse de vous _____ coupé la parole tout à l'heure. »",
+    "options": [
+     "ayant",
+     "être",
+     "avoir",
+     "ai"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "En réunion, deux personnes parlent en même temps. Rétablis l'ordre poliment.",
+    "start": "Un instant, s'il vous plaît, parlons l'un après l'autre…"
+   }
+  ]
+ },
+ "advanced-u5-l3": {
+  "title": "Contributing ideas",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Pour proposer une idée avec prudence, on dit…",
+    "options": [
+     "Et si on essayait de…",
+     "Il faut absolument que…",
+     "C'est évident que…",
+     "Vous devez…"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Un remue-méninges », c'est…",
+    "options": [
+     "un jeu de cartes",
+     "une séance où l'on cherche des idées",
+     "un mal de tête",
+     "une pause café"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il serait utile que nous _____ l'avis des clients. »",
+    "options": [
+     "demanderons",
+     "demandions",
+     "demanderions",
+     "demandons"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Rebondir sur une idée » veut dire…",
+    "options": [
+     "l'oublier",
+     "la reprendre pour la développer",
+     "la critiquer sévèrement",
+     "la rejeter"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « À votre place, je _____ les délais avant de valider. »",
+    "options": [
+     "vérifie",
+     "vérifiais",
+     "vérifierai",
+     "vérifierais"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "En réunion, propose une idée pour améliorer la communication de l'équipe.",
+    "start": "J'ai une suggestion : pourquoi ne pas…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour compléter l'idée d'un collègue, on dit…",
+    "options": [
+     "Je ne suis pas du tout d'accord…",
+     "Passons à autre chose…",
+     "Ça n'a rien à voir…",
+     "Dans le même ordre d'idées…"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ce n'est pas que l'idée _____ mauvaise, mais elle est prématurée. »",
+    "options": [
+     "est",
+     "serait",
+     "sera",
+     "soit"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Un collègue propose une idée. Développe-la en ajoutant un élément.",
+    "start": "Pour aller dans votre sens, on pourrait aussi…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Mettre son grain de sel », c'est…",
+    "options": [
+     "donner son avis sans y être invité",
+     "refuser de participer",
+     "cuisiner pour l'équipe",
+     "économiser de l'argent"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ce _____ nous avons besoin, c'est d'une vision claire. »",
+    "options": [
+     "à quoi",
+     "que",
+     "dont",
+     "qui"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Propose deux options au groupe et indique celle que tu préfères.",
+    "start": "Je vois deux possibilités…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une idée « novatrice » est une idée…",
+    "options": [
+     "inutile",
+     "ancienne",
+     "nouvelle et originale",
+     "dangereuse"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Si on avait suivi son idée hier, on _____ deux heures. »",
+    "options": [
+     "aurait gagné",
+     "gagnera",
+     "avait gagné",
+     "a gagné"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Ton équipe manque d'idées pour un événement. Fais une proposition originale.",
+    "start": "Ce qui pourrait être sympa, c'est…"
+   }
+  ]
+ },
+ "advanced-u6-l1": {
+  "title": "Explaining ideas clearly and confidently",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Pour annoncer le plan d'une présentation, on dit…",
+    "options": [
+     "Merci et au revoir.",
+     "Je n'ai rien préparé.",
+     "Des questions ?",
+     "Mon exposé s'articule en trois parties."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Un support visuel », c'est…",
+    "options": [
+     "une chaise",
+     "une diapositive, un graphique ou une image",
+     "un micro",
+     "un discours écrit"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Comme le montre ce graphique, les ventes _____ en un an. »",
+    "options": [
+     "avaient doublée",
+     "ont doublé",
+     "sont doublé",
+     "ont doublées"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour passer à la partie suivante, on dit…",
+    "options": [
+     "Merci de votre attention.",
+     "Bonjour à tous.",
+     "Je vous remercie d'être venus.",
+     "J'en viens maintenant à…"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il est essentiel que le public _____ le message principal. »",
+    "options": [
+     "retiendrait",
+     "retient",
+     "retienne",
+     "retiendra"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Commence une présentation sur ton entreprise ou ton école. Annonce le plan.",
+    "start": "Bonjour à tous. Aujourd'hui, je vais vous présenter…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Vulgariser », c'est…",
+    "options": [
+     "raccourcir un texte",
+     "dire des gros mots",
+     "rendre un sujet complexe accessible à tous",
+     "parler très fort"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Voici l'outil grâce _____ nous avons réalisé cette étude. »",
+    "options": [
+     "auquel",
+     "lequel",
+     "duquel",
+     "à qui"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explique simplement une idée complexe de ton domaine à un public non spécialiste.",
+    "start": "Pour faire simple, imaginez que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour vérifier que le public a compris, on dit…",
+    "options": [
+     "Est-ce que c'est clair pour tout le monde ?",
+     "Taisez-vous.",
+     "Vous n'avez rien compris.",
+     "C'est fini."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Bien que le sujet _____ technique, je vais essayer d'être clair. »",
+    "options": [
+     "paraisse",
+     "paraîtrait",
+     "paraîtra",
+     "paraît"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Présente un graphique : décris une tendance et explique-la.",
+    "start": "Comme vous pouvez le voir sur ce graphique…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Avoir le trac », c'est…",
+    "options": [
+     "être en retard",
+     "oublier son ordinateur",
+     "être très confiant",
+     "être nerveux avant de parler en public"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Vos questions ? Nous _____ répondrons à la fin. »",
+    "options": [
+     "les",
+     "en",
+     "leur",
+     "y"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Conclus ta présentation avec assurance et invite le public à poser des questions.",
+    "start": "Pour conclure, je retiendrai trois idées…"
+   }
+  ]
+ },
+ "advanced-u7-l1": {
+  "title": "Detailed professional answers and follow-ups",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "En entretien, « un point faible », c'est…",
+    "options": [
+     "un diplôme",
+     "un salaire",
+     "un défaut qu'on travaille à améliorer",
+     "une compétence clé"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Les prétentions salariales », ce sont…",
+    "options": [
+     "les collègues",
+     "le salaire que l'on souhaite",
+     "les horaires de travail",
+     "les vacances prévues"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'ai quitté mon dernier poste parce que j'_____ fait le tour de mes missions. »",
+    "options": [
+     "aie",
+     "aurai",
+     "aurais",
+     "avais"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Être force de proposition » signifie…",
+    "options": [
+     "refuser le changement",
+     "travailler seul",
+     "obéir sans discuter",
+     "proposer régulièrement des idées"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Si ma candidature était retenue, je _____ disponible dès le mois prochain. »",
+    "options": [
+     "suis",
+     "étais",
+     "serais",
+     "serai"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Présente ton parcours professionnel en quelques phrases.",
+    "start": "Après mes études, j'ai…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Face à une question difficile, on peut répondre…",
+    "options": [
+     "Ça ne vous regarde pas.",
+     "Je n'en sais rien.",
+     "Question suivante.",
+     "C'est une bonne question, laissez-moi y réfléchir."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « C'est le projet _____ je suis le plus fier. »",
+    "options": [
+     "que",
+     "auquel",
+     "dont",
+     "où"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Décris une difficulté professionnelle et comment tu l'as surmontée.",
+    "start": "Dans mon précédent poste, j'ai dû faire face à…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« L'esprit d'équipe », c'est…",
+    "options": [
+     "le fait de travailler seul",
+     "la capacité à bien travailler avec les autres",
+     "un bureau partagé",
+     "un poste de chef"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le recruteur m'a demandé pourquoi je _____ travailler chez eux. »",
+    "options": [
+     "voudrai",
+     "voulu",
+     "veuille",
+     "voulais"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Le recruteur te demande : « Où vous voyez-vous dans cinq ans ? » Réponds.",
+    "start": "Dans cinq ans, j'aimerais…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "À la fin de l'entretien, quelle question est judicieuse ?",
+    "options": [
+     "Est-ce que je peux arriver en retard ?",
+     "Avez-vous vraiment besoin de quelqu'un ?",
+     "Combien de pauses peut-on prendre ?",
+     "Quelles sont les prochaines étapes du recrutement ?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je souhaiterais savoir quand vous _____ votre décision. »",
+    "options": [
+     "pris",
+     "preniez",
+     "prendre",
+     "prendrez"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "« Pourquoi devrions-nous vous embaucher ? » Réponds avec assurance.",
+    "start": "Je pense correspondre au poste parce que…"
+   }
+  ]
+ },
+ "advanced-u8-l1": {
+  "title": "Proposals",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "« Faire une offre », c'est…",
+    "options": [
+     "proposer des conditions",
+     "partir sans rien dire",
+     "refuser un accord",
+     "signer un contrat"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Un devis », c'est…",
+    "options": [
+     "une facture déjà payée",
+     "une estimation écrite du prix",
+     "un contrat de travail",
+     "un reçu"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Nous pourrions baisser le prix, à condition que vous _____ cent unités. »",
+    "options": [
+     "commanderiez",
+     "commandez",
+     "commandiez",
+     "commanderez"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour présenter une proposition de façon ouverte, on dit…",
+    "options": [
+     "C'est à prendre ou à laisser.",
+     "Nous refusons de discuter.",
+     "Voici ce que nous pourrions vous proposer.",
+     "Ce n'est pas notre problème."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Que diriez-vous _____ nous signions le contrat lundi ? »",
+    "options": [
+     "pour",
+     "que",
+     "si",
+     "quand"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Propose à un client une remise en échange d'un engagement d'un an.",
+    "start": "Nous pourrions vous accorder une remise de 10 % si…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Une marge de manœuvre », c'est…",
+    "options": [
+     "une certaine liberté pour négocier",
+     "un contrat signé",
+     "une date limite",
+     "un bénéfice"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Si vous acceptiez nos conditions, nous _____ livrer dès la semaine prochaine. »",
+    "options": [
+     "puissions",
+     "pourrions",
+     "pourrons",
+     "pouvions"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Présente ta proposition à un partenaire et mets en avant ses avantages.",
+    "start": "Notre proposition présente plusieurs avantages…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Faire une contre-proposition », c'est…",
+    "options": [
+     "répondre par une autre offre",
+     "arrêter la négociation",
+     "signer le contrat",
+     "accepter tout de suite"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Nous vous accordons ce tarif, _____ que la commande soit passée avant vendredi. »",
+    "options": [
+     "pourvu",
+     "parce",
+     "tandis",
+     "bien"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Ton fournisseur propose un prix trop élevé. Fais une contre-proposition.",
+    "start": "Je comprends votre position, mais nous pensions plutôt à…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Le prix plancher », c'est…",
+    "options": [
+     "le prix le plus bas acceptable",
+     "le prix d'un parquet",
+     "le prix moyen",
+     "le prix le plus élevé"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Nous aurions préféré que vous nous _____ plus tôt. »",
+    "options": [
+     "aviez prévenus",
+     "aurez prévenus",
+     "ayez prévenus",
+     "avez prévenus"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Termine la négociation en résumant l'accord proposé.",
+    "start": "Si je résume, nous nous engageons à…"
+   }
+  ]
+ },
+ "advanced-u8-l2": {
+  "title": "Compromises",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "« Couper la poire en deux », c'est…",
+    "options": [
+     "faire un compromis à parts égales",
+     "doubler le prix",
+     "rompre un accord",
+     "partager un fruit"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Faire des concessions », c'est…",
+    "options": [
+     "accepter de céder sur certains points",
+     "refuser toute discussion",
+     "gagner la négociation",
+     "vendre une entreprise"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je veux bien baisser le prix, à moins que vous ne _____ des délais plus courts. »",
+    "options": [
+     "demanderez",
+     "demanderiez",
+     "demandez",
+     "demandiez"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Trouver un terrain d'entente », c'est…",
+    "options": [
+     "trouver un accord acceptable pour tous",
+     "acheter un terrain",
+     "se disputer",
+     "abandonner"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Nous accepterons ce délai, quitte à _____ le week-end. »",
+    "options": [
+     "travaillé",
+     "travaillant",
+     "travailler",
+     "travaillions"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Ton collègue et toi voulez les mêmes dates de vacances. Propose un compromis.",
+    "start": "Et si on faisait chacun un pas…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Mettre de l'eau dans son vin », c'est…",
+    "options": [
+     "cuisiner",
+     "refuser un accord",
+     "modérer ses exigences",
+     "boire moins"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'accepte, _____ vous preniez en charge la livraison. »",
+    "options": [
+     "parce que",
+     "à condition que",
+     "alors que",
+     "après que"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Explique à ton interlocuteur ce que tu es prêt à accepter et ce que tu refuses.",
+    "start": "Je peux accepter ce point ; en revanche…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un accord « gagnant-gagnant » est un accord…",
+    "options": [
+     "avantageux pour les deux parties",
+     "impossible à signer",
+     "provisoire",
+     "qui favorise une seule partie"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Nous aurions accepté votre offre si vous _____ un peu plus souples. »",
+    "options": [
+     "aviez été",
+     "auriez été",
+     "ayez été",
+     "étiez été"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Deux amis ne savent pas quel film regarder. Propose une solution qui convient à tous.",
+    "start": "Ce que je propose, c'est qu'on…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour accepter un compromis, on dit…",
+    "options": [
+     "Jamais de la vie.",
+     "Ça me paraît raisonnable.",
+     "Hors de question.",
+     "Je refuse catégoriquement."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Quelles que _____ vos contraintes, nous trouverons une solution. »",
+    "options": [
+     "soient",
+     "seront",
+     "soit",
+     "sont"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Un client refuse ton prix. Propose un compromis sans trop céder.",
+    "start": "Je comprends. Pour avancer, je vous propose…"
+   }
+  ]
+ },
+ "advanced-u8-l3": {
+  "title": "Persuasion",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "« Convaincre », c'est…",
+    "options": [
+     "se taire",
+     "changer d'avis",
+     "amener quelqu'un à partager son avis",
+     "obliger quelqu'un par la force"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un argument « de poids » est un argument…",
+    "options": [
+     "trop long",
+     "ridicule",
+     "important et convaincant",
+     "faible"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je suis persuadé que vous _____ satisfait de ce produit. »",
+    "options": [
+     "soyez",
+     "serez",
+     "fussiez",
+     "sera"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour ajouter un avantage décisif, on dit…",
+    "options": [
+     "Tant pis…",
+     "Sans compter que…",
+     "Peu importe…",
+     "À la limite…"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Imaginez tout ce que vous _____ économiser en un an ! »",
+    "options": [
+     "pouvant",
+     "puissiez",
+     "pussiez",
+     "pourriez"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Convaincs un ami de faire du sport avec toi le week-end.",
+    "start": "Écoute, tu verras, ça va te…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Avoir de la répartie », c'est…",
+    "options": [
+     "partager les tâches",
+     "rester silencieux",
+     "partir rapidement",
+     "savoir répondre vite et avec esprit"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il est grand temps que nous _____ une décision. »",
+    "options": [
+     "prendrions",
+     "prenons",
+     "prendrons",
+     "prenions"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Persuade ton responsable de t'accorder une journée de télétravail par semaine.",
+    "start": "Je pense sincèrement que cela permettrait…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Enfoncer le clou » veut dire…",
+    "options": [
+     "insister pour convaincre",
+     "faire du bricolage",
+     "abandonner",
+     "faire une erreur"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Si vous aviez essayé notre service, vous _____ convaincu. »",
+    "options": [
+     "seriez été",
+     "aviez été",
+     "auriez été",
+     "aurez été"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Convaincs un client d'essayer ton produit gratuitement pendant un mois.",
+    "start": "Vous n'avez rien à perdre…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel connecteur sert à renforcer un argument ?",
+    "options": [
+     "Pourtant",
+     "Toutefois",
+     "Sinon",
+     "D'ailleurs"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Plus vous attendrez, _____ les prix augmenteront. »",
+    "options": [
+     "autant",
+     "d'autant",
+     "plus",
+     "le plus"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Persuade un ami de passer ses vacances dans ta région préférée.",
+    "start": "Crois-moi, tu ne le regretteras pas…"
+   }
+  ]
+ },
+ "advanced-u9-l1": {
+  "title": "Formal vs casual workplace language",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Pour terminer un courrier très formel, on écrit…",
+    "options": [
+     "À plus !",
+     "Salut, bonne journée !",
+     "Bisous !",
+     "Je vous prie d'agréer mes salutations distinguées."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le mot familier « boulot » correspond au mot standard…",
+    "options": [
+     "salaire",
+     "patron",
+     "travail",
+     "bureau"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je vous serais reconnaissant de bien vouloir me _____ le dossier. »",
+    "options": [
+     "faire parvenir",
+     "faisant parvenir",
+     "fait parvenir",
+     "faites parvenir"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quelle phrase est la plus formelle ?",
+    "options": [
+     "La réunion, c'est quand déjà ?",
+     "C'est quand, la réunion ?",
+     "Tu sais quand c'est, la réunion ?",
+     "Pourriez-vous m'indiquer la date de la réunion ?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Quelle question est formulée dans un registre soutenu ?",
+    "options": [
+     "Je peux te poser une question ?",
+     "Je peux poser une question, là ?",
+     "Puis-je vous poser une question ?",
+     "J'peux poser une question ?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Dicte un court e-mail formel pour demander un rendez-vous à un client.",
+    "start": "Madame, Monsieur, je me permets de vous contacter afin de…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Au bureau, « le patron » désigne familièrement…",
+    "options": [
+     "un collègue",
+     "un client",
+     "le stagiaire",
+     "le directeur ou la directrice"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Veuillez trouver _____ le document demandé. »",
+    "options": [
+     "ci-jointe",
+     "si-joint",
+     "ci-joints",
+     "ci-joint"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Un collègue proche te demande un service. Réponds-lui de façon détendue et familière.",
+    "start": "Pas de souci, je m'en occupe…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Dans un e-mail, « Dans l'attente de votre retour » signifie…",
+    "options": [
+     "J'attends que vous reveniez de vacances.",
+     "J'attends votre réponse.",
+     "Je ne veux pas de réponse.",
+     "Je reviens bientôt."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je me permets de vous relancer, n'ayant pas encore _____ de réponse. »",
+    "options": [
+     "reçu",
+     "reçus",
+     "reçue",
+     "recevoir"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Ta supérieure te demande un rapport urgent. Réponds de façon formelle.",
+    "start": "Bien entendu, je vous le transmets…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Bosser » est la version familière de…",
+    "options": [
+     "dormir",
+     "manger",
+     "partir",
+     "travailler"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je vous prie de m'excuser pour la gêne _____. »",
+    "options": [
+     "occasionné",
+     "occasionnées",
+     "occasionner",
+     "occasionnée"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Explique à un nouveau collègue quand utiliser « tu » ou « vous » au travail.",
+    "start": "En général, au travail, on vouvoie…"
+   }
+  ]
+ },
+ "advanced-u10-l1": {
+  "title": "Complaints",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "« Faire une réclamation », c'est…",
+    "options": [
+     "payer une facture",
+     "se plaindre officiellement",
+     "commander un produit",
+     "faire un compliment"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Être remboursé », c'est…",
+    "options": [
+     "payer deux fois",
+     "perdre son ticket",
+     "récupérer son argent",
+     "recevoir un cadeau"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je suis déçu que le colis ne _____ toujours pas arrivé. »",
+    "options": [
+     "sera",
+     "soit",
+     "est",
+     "serait"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quelle phrase introduit une réclamation polie ?",
+    "options": [
+     "Je me permets de vous signaler un problème.",
+     "C'est n'importe quoi !",
+     "Vous êtes nuls !",
+     "J'en ai ras le bol de vous !"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « On m'avait assuré que la livraison _____ lieu lundi. »",
+    "options": [
+     "aurait",
+     "ait",
+     "aura",
+     "a eu"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Tu appelles un service client : ta commande est arrivée abîmée. Explique le problème.",
+    "start": "Bonjour, je vous appelle au sujet de ma commande…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« En avoir ras le bol », c'est…",
+    "options": [
+     "avoir trop mangé",
+     "avoir faim",
+     "en avoir assez",
+     "être très content"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Si vous m'aviez prévenu du retard, je ne _____ pas déplacé pour rien. »",
+    "options": [
+     "m'aurais",
+     "me suis",
+     "me serai",
+     "me serais"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Le service d'un restaurant était très lent. Plains-toi poliment au responsable.",
+    "start": "Excusez-moi, je ne voudrais pas faire d'histoires, mais…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Un geste commercial », c'est…",
+    "options": [
+     "une publicité",
+     "une compensation offerte au client",
+     "un nouveau produit",
+     "une poignée de main"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'exige que vous me _____ dans les plus brefs délais. »",
+    "options": [
+     "remboursez",
+     "remboursiez",
+     "rembourseriez",
+     "rembourserez"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Ton voisin fait du bruit tous les soirs. Exprime ton mécontentement avec diplomatie.",
+    "start": "Excusez-moi de vous déranger, mais…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« C'est inadmissible ! » exprime…",
+    "options": [
+     "une grande joie",
+     "une forte indignation",
+     "de la reconnaissance",
+     "une simple question"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « C'est la troisième fois que je vous _____ pour ce problème. »",
+    "options": [
+     "contactais",
+     "contacterai",
+     "contacterais",
+     "contacte"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Formule oralement une réclamation officielle pour une facture erronée.",
+    "start": "Madame, Monsieur, je constate une erreur sur…"
+   }
+  ]
+ },
+ "advanced-u10-l2": {
+  "title": "Disagreements",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Pour exprimer un désaccord avec nuance, on dit…",
+    "options": [
+     "Ça ne tient pas debout.",
+     "Tu dis n'importe quoi.",
+     "C'est complètement faux.",
+     "Je ne suis pas tout à fait de cet avis."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Être sur la même longueur d'onde », c'est…",
+    "options": [
+     "écouter la même radio",
+     "bien se comprendre et être d'accord",
+     "parler trop longtemps",
+     "se disputer"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je doute que cette solution _____ la meilleure. »",
+    "options": [
+     "était",
+     "sera",
+     "soit",
+     "est"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Je n'irais pas jusque-là » sert à…",
+    "options": [
+     "approuver totalement",
+     "refuser un voyage",
+     "remercier",
+     "nuancer poliment ce que dit l'autre"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ton idée est intéressante, _____ un peu risquée. »",
+    "options": [
+     "parce que",
+     "puisque",
+     "pour que",
+     "quoique"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Un ami dit que les jeux vidéo sont une perte de temps. Exprime poliment ton désaccord.",
+    "start": "Je vois ce que tu veux dire, mais…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Avoir une prise de bec », c'est…",
+    "options": [
+     "chanter faux",
+     "se disputer brièvement",
+     "s'embrasser",
+     "manger un oiseau"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il n'est pas certain que nous _____ raison. »",
+    "options": [
+     "aurions",
+     "avons",
+     "ayons",
+     "aurons"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte un désaccord que tu as eu et comment vous l'avez réglé.",
+    "start": "On n'était pas d'accord sur…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Chacun ses goûts » est une façon de…",
+    "options": [
+     "commander à manger",
+     "faire un compliment",
+     "imposer son avis",
+     "accepter qu'on ne soit pas d'accord"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ce n'est pas que je _____ contre ton projet, c'est juste que j'ai des doutes. »",
+    "options": [
+     "serai",
+     "sois",
+     "suis",
+     "serais"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Ton collègue critique ton travail injustement. Défends-toi calmement.",
+    "start": "Je comprends ta remarque, mais permets-moi de…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quelle expression NE marque PAS un désaccord ?",
+    "options": [
+     "Permets-moi d'en douter.",
+     "Je vois les choses autrement.",
+     "Je ne partage pas ton avis.",
+     "Je suis entièrement d'accord."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu aurais dû me dire que tu n'_____ pas d'accord. »",
+    "options": [
+     "étant",
+     "étais",
+     "aies été",
+     "eusses été"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Faut-il interdire les voitures en centre-ville ? Donne un avis nuancé.",
+    "start": "C'est une question délicate. D'un côté…"
+   }
+  ]
+ },
+ "advanced-u10-l3": {
+  "title": "Misunderstandings",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "« Un malentendu », c'est…",
+    "options": [
+     "une dispute violente",
+     "une erreur de compréhension",
+     "un mensonge",
+     "un problème d'audition"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Un quiproquo », c'est…",
+    "options": [
+     "un accord parfait",
+     "un plat italien",
+     "une situation où l'on prend une chose pour une autre",
+     "une question piège"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je croyais que tu _____ dit samedi, pas dimanche ! »",
+    "options": [
+     "aies",
+     "avais",
+     "auras",
+     "as"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour faire préciser une remarque, on demande…",
+    "options": [
+     "Tu viens d'où ?",
+     "Quelle heure est-il ?",
+     "Ça va bien ?",
+     "Qu'entends-tu par là ?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il m'a dit qu'il _____ le lendemain, mais il n'est jamais venu. »",
+    "options": [
+     "vint",
+     "vienne",
+     "viendrait",
+     "viendra"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Ton ami pense que tu étais fâché contre lui. Explique que c'est un malentendu.",
+    "start": "Attends, je crois qu'il y a un malentendu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Prendre la mouche », c'est…",
+    "options": [
+     "attraper un insecte",
+     "se vexer facilement",
+     "comprendre vite",
+     "partir en vacances"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je ne voulais pas que tu le _____ mal. »",
+    "options": [
+     "prendras",
+     "prenais",
+     "prends",
+     "prennes"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Tu as mal compris une consigne au travail. Explique à ton responsable ce qui s'est passé.",
+    "start": "Je pense que j'ai mal interprété…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Se mettre le doigt dans l'œil », c'est…",
+    "options": [
+     "regarder attentivement",
+     "se blesser",
+     "pleurer",
+     "se tromper complètement"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Elle m'a demandé _____ j'avais bien compris son message. »",
+    "options": [
+     "que",
+     "qu'est-ce que",
+     "si",
+     "ce que"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Un collègue a mal interprété ton message. Reformule ce que tu voulais dire.",
+    "start": "Ce que je voulais dire, c'est que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour reformuler et vérifier, on dit…",
+    "options": [
+     "Si je comprends bien, tu veux dire que…",
+     "C'est ton problème.",
+     "Laisse tomber.",
+     "Je n'ai pas le temps."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il m'a demandé ce _____ je pensais de son idée. »",
+    "options": [
+     "dont",
+     "que",
+     "qui",
+     "quoi"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte un quiproquo amusant qui t'est arrivé.",
+    "start": "Un jour, j'ai confondu…"
+   }
+  ]
+ },
+ "advanced-u11-l1": {
+  "title": "Casual expressions",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "« Avoir la flemme », c'est…",
+    "options": [
+     "ne pas avoir envie de faire un effort",
+     "avoir de la fièvre",
+     "être pressé",
+     "avoir peur"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "« C'est chelou » veut dire…",
+    "options": [
+     "c'est bizarre",
+     "c'est génial",
+     "c'est cher",
+     "c'est chaud"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "À l'oral familier, « Je ne sais pas » devient souvent…",
+    "options": [
+     "Ne sais pas",
+     "Je sais ne pas",
+     "Je sais pas",
+     "Je ne sais"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Être crevé » veut dire…",
+    "options": [
+     "être affamé",
+     "être en colère",
+     "être très fatigué",
+     "être malade"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il est trop relou, il arrête pas de _____ plaindre. »",
+    "options": [
+     "lui",
+     "se",
+     "y",
+     "le"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte à un ami ta soirée d'hier en langage familier.",
+    "start": "Franchement, hier soir, c'était…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Kiffer » veut dire…",
+    "options": [
+     "danser",
+     "dormir",
+     "adorer, aimer beaucoup",
+     "détester"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « T'as vu le match hier ? » — « Ouais, je l'ai _____ avec mes potes. »",
+    "options": [
+     "regardée",
+     "regardés",
+     "regarder",
+     "regardé"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Ton ami te propose une sortie, mais tu as la flemme. Refuse de façon décontractée.",
+    "start": "Ah non, ce soir, j'ai trop la flemme…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le mot familier « une bagnole » désigne…",
+    "options": [
+     "un bateau",
+     "une bague",
+     "une voiture",
+     "une baignoire"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'en ai marre qu'il _____ toujours en retard. »",
+    "options": [
+     "serait",
+     "sera",
+     "est",
+     "soit"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Décris quelque chose que tu kiffes en ce moment (série, musique, appli).",
+    "start": "En ce moment, je kiffe trop…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Ça fait un bail ! » veut dire…",
+    "options": [
+     "C'est un contrat !",
+     "Ça fait longtemps !",
+     "C'est fini !",
+     "C'est trop cher !"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Laisse tomber, c'est pas la peine que tu _____. »",
+    "options": [
+     "viens",
+     "venais",
+     "viennes",
+     "viendras"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explique à un ami étranger trois mots familiers que tu utilises souvent.",
+    "start": "Alors, « bouffer », ça veut dire…"
+   }
+  ]
+ },
+ "advanced-u11-l2": {
+  "title": "Jokes",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "« Un jeu de mots », c'est…",
+    "options": [
+     "un jeu de société",
+     "une dictée",
+     "une plaisanterie sur le sens ou le son des mots",
+     "un mot difficile"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Faire une farce à quelqu'un », c'est…",
+    "options": [
+     "lui jouer un tour pour rire",
+     "lui cuisiner un plat",
+     "le critiquer",
+     "lui faire un cadeau"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je ne pense pas qu'il _____ compris la blague. »",
+    "options": [
+     "ait",
+     "aura",
+     "avait",
+     "a"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Avoir de l'humour », c'est…",
+    "options": [
+     "raconter des secrets",
+     "être toujours triste",
+     "être très sérieux",
+     "savoir faire rire et rire de soi"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il riait tellement qu'il _____ du mal à finir sa blague. »",
+    "options": [
+     "avoir",
+     "avait",
+     "ait",
+     "aie"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte une blague courte que tu connais.",
+    "start": "Tu connais celle de…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une blague qui « tombe à plat » est une blague…",
+    "options": [
+     "racontée par terre",
+     "très drôle",
+     "trop longue",
+     "qui ne fait rire personne"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Si tu m'avais raconté la fin, j'_____ ri ! »",
+    "options": [
+     "avais",
+     "aurai",
+     "aurais",
+     "aie"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte un moment où tu as eu un fou rire.",
+    "start": "Je me souviens d'un fou rire…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une personne « pince-sans-rire »…",
+    "options": [
+     "pince les gens",
+     "fait de l'humour avec un air sérieux",
+     "rit très fort",
+     "déteste les blagues"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « La blague _____ tout le monde a ri était un peu limite. »",
+    "options": [
+     "que",
+     "dont",
+     "qui",
+     "où"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Explique pourquoi une blague est souvent difficile à traduire.",
+    "start": "Souvent, une blague ne se traduit pas parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« C'est à mourir de rire » veut dire…",
+    "options": [
+     "c'est ennuyeux",
+     "c'est dangereux",
+     "c'est extrêmement drôle",
+     "c'est triste"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il m'a demandé si je _____ la blague du perroquet. »",
+    "options": [
+     "connaisse",
+     "connaîtrais",
+     "connais",
+     "connaissais"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Décris le type d'humour que tu préfères et donne un exemple.",
+    "start": "Moi, ce qui me fait rire, c'est…"
+   }
+  ]
+ },
+ "advanced-u11-l3": {
+  "title": "Conversational tone",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Pour adoucir une demande, on ajoute souvent…",
+    "options": [
+     "« immédiatement »",
+     "« sinon »",
+     "« juste » ou « deux secondes »",
+     "« obligatoirement »"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Tu vois ce que je veux dire ? » sert à…",
+    "options": [
+     "mettre fin à une dispute",
+     "demander l'heure",
+     "vérifier que l'autre suit",
+     "refuser une invitation"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ça te dérangerait que j'_____ la fenêtre ? »",
+    "options": [
+     "ouvrirais",
+     "ouvrirai",
+     "ouvre",
+     "ouvrais"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un ton « détendu » est un ton…",
+    "options": [
+     "décontracté et amical",
+     "très solennel",
+     "froid et distant",
+     "agressif"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu _____ pas me passer le sel, par hasard ? »",
+    "options": [
+     "pourrais",
+     "puisses",
+     "pouvais",
+     "pourras"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Demande un petit service à un ami sur un ton léger et amical.",
+    "start": "Dis, je peux te demander un petit service…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Dans « Il était là, genre, super stressé », « genre » signifie…",
+    "options": [
+     "une catégorie de film",
+     "un style de musique",
+     "comme, en quelque sorte",
+     "le masculin ou le féminin"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu sais pas où j'ai _____ mes clés ? »",
+    "options": [
+     "mis",
+     "mit",
+     "mettre",
+     "mises"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte une anecdote à un ami en gardant un ton naturel et vivant.",
+    "start": "Attends, tu vas pas me croire…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour montrer que tu écoutes avec intérêt, tu dis…",
+    "options": [
+     "Silence, s'il vous plaît.",
+     "Pas maintenant.",
+     "Je m'en vais.",
+     "Ah ouais ? Et alors ?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « On se voit demain ? » — « Ouais, à moins que tu _____ un empêchement. »",
+    "options": [
+     "avais",
+     "aies",
+     "as",
+     "auras"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Un ami te confie ses soucis. Réagis de façon chaleureuse et naturelle.",
+    "start": "Oh là là, je comprends…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel choix rend une phrase plus familière ?",
+    "options": [
+     "« néanmoins » au lieu de « pourtant »",
+     "« ouais » au lieu de « oui »",
+     "« toutefois » au lieu de « mais »",
+     "« afin de » au lieu de « pour »"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « C'est toi qui _____ choisi le resto, donc tu paies ! »",
+    "options": [
+     "a",
+     "as",
+     "ai",
+     "avez"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Propose à des amis un plan pour le week-end, sur un ton enthousiaste.",
+    "start": "Ça vous dirait qu'on…"
+   }
+  ]
+ },
+ "advanced-u12-l1": {
+  "title": "Unscripted, longer conversations across situations",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Pour relancer une conversation, on peut dire…",
+    "options": [
+     "Je n'ai rien à dire.",
+     "Bon, au revoir.",
+     "Arrête de parler.",
+     "Et sinon, quoi de neuf de ton côté ?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Rebondir » dans une conversation, c'est…",
+    "options": [
+     "sauter sur place",
+     "changer de pièce",
+     "réagir à ce qui vient d'être dit pour continuer",
+     "raccrocher"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je suis content que tu _____ pu venir ce soir ! »",
+    "options": [
+     "auras",
+     "as",
+     "avais",
+     "aies"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour changer de sujet en douceur, on dit…",
+    "options": [
+     "Tais-toi un peu.",
+     "Bref, salut.",
+     "À propos, tu as des nouvelles de Léa ?",
+     "Bon, ça suffit."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu te souviens du voyage _____ on avait parlé l'an dernier ? »",
+    "options": [
+     "que",
+     "où",
+     "dont",
+     "lequel"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Tu retrouves un ami perdu de vue depuis des années. Prends de ses nouvelles et donne les tiennes.",
+    "start": "Ça alors, ça fait combien de temps ? Moi, depuis la dernière fois…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Prendre des nouvelles de quelqu'un », c'est…",
+    "options": [
+     "lui demander comment il va",
+     "lui apporter un cadeau",
+     "lui envoyer une facture",
+     "lire le journal"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il m'a dit qu'il _____ déjà visité Lyon deux fois. »",
+    "options": [
+     "avait",
+     "ait",
+     "eut",
+     "aura"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Au téléphone, un ami te demande conseil pour un voyage en France. Réponds en détail.",
+    "start": "Alors, si j'étais toi, je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Faire la conversation » à quelqu'un, c'est…",
+    "options": [
+     "lui couper la parole",
+     "entretenir l'échange pour qu'il ne s'ennuie pas",
+     "écrire un dialogue",
+     "parler tout seul"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Où que tu _____ cet été, envoie-moi des photos ! »",
+    "options": [
+     "allais",
+     "iras",
+     "vas",
+     "ailles"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Lors d'un dîner, on te demande ce que tu fais dans la vie. Réponds et relance la conversation.",
+    "start": "Alors moi, je travaille dans…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour terminer poliment une conversation, on dit…",
+    "options": [
+     "Bon, je ne vais pas te retenir plus longtemps.",
+     "Tu m'ennuies.",
+     "C'est nul, salut.",
+     "Laisse-moi tranquille."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « On aurait dû réserver avant que tous les billets _____ vendus. »",
+    "options": [
+     "sont",
+     "soient",
+     "seront",
+     "étaient"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte à un nouvel ami un événement important de ta vie et ce qu'il a changé pour toi.",
+    "start": "Il y a quelques années, il m'est arrivé…"
+   }
+  ]
+ }
+}

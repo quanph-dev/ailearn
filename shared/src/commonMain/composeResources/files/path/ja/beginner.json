@@ -1,0 +1,5842 @@
+{
+ "beginner-u1-l1": {
+  "title": "Hello",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「おはよう ございます」は いつ いいますか？",
+    "options": [
+     "あさ",
+     "ゆうがた",
+     "ねる まえ",
+     "よる"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "あいさつでは ない ことばは どれ？",
+    "options": [
+     "いす",
+     "こんにちは",
+     "こんばんは",
+     "おはよう"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「おげんき_____か。」",
+    "options": [
+     "ます",
+     "が",
+     "です",
+     "を"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "はじめて あった 人に いう ことばは？",
+    "options": [
+     "おやすみなさい",
+     "いただきます",
+     "はじめまして",
+     "さようなら"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしい 文は どれ？",
+    "options": [
+     "わたしで げんきです。",
+     "わたしは げんきです。",
+     "わたしを げんきです。",
+     "わたしに げんきです。"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "あたらしい クラスメートに あいさつして、 げんきか きいて ください。",
+    "start": "こんにちは！ おげんき…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "よる 8じです。 なんと いいますか？",
+    "options": [
+     "こんばんは",
+     "いってきます",
+     "はじめまして",
+     "おはよう ございます"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「こちら_____ ともだちの オマルさんです。」",
+    "options": [
+     "へ",
+     "を",
+     "で",
+     "は"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちが うちに きました。 あいさつして ください。",
+    "start": "いらっしゃい！ どうぞ…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "うちに きた おきゃくさんに いう ことばは？",
+    "options": [
+     "おやすみなさい",
+     "ようこそ",
+     "すみません",
+     "さようなら"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ていねいな あいさつは どれ？",
+    "options": [
+     "おっす",
+     "やあ",
+     "おはよう",
+     "おはよう ございます"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "せんせいと ともだちに、 あさの あいさつを して ください。",
+    "start": "せんせいには「おはよう ございます」、 ともだちには…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "ことばを えらんで：「どうぞ よろしく_____ します。」",
+    "options": [
+     "ください",
+     "おねがい",
+     "ありがとう",
+     "すみません"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ことばの じゅんばんが ただしい 文は？",
+    "options": [
+     "はわたし たなかです。",
+     "です わたしは たなか。",
+     "わたしは たなかです。",
+     "わたし たなかはです。"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちに あいさつして、 きょうの きぶんを いって ください。",
+    "start": "こんにちは！ きょうは…"
+   }
+  ]
+ },
+ "beginner-u1-l2": {
+  "title": "Goodbye",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「さようなら」は どんな ときに いいますか？",
+    "options": [
+     "はじめて あった とき",
+     "わかれる とき",
+     "ごはんを たべる まえ",
+     "あさ おきた とき"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "ねる まえに いう ことばは？",
+    "options": [
+     "おやすみなさい",
+     "おはよう ございます",
+     "はじめまして",
+     "いただきます"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ともだちに いう カジュアルな「さようなら」は？",
+    "options": [
+     "じゃあね",
+     "ごきげんよう",
+     "しつれいします",
+     "おせわに なりました"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "「また あした」。 つぎは いつ あいますか？",
+    "options": [
+     "らいねん",
+     "きょう",
+     "あした",
+     "きのう"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「また あした あい_____。」",
+    "options": [
+     "です",
+     "でした",
+     "だ",
+     "ましょう"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "クラスの あとで、 せんせいに さようならを いって ください。",
+    "start": "せんせい、 さようなら。 また…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "かいしゃで、 みんなより さきに かえる とき、 なんと いいますか？",
+    "options": [
+     "おさきに しつれいします",
+     "はじめまして",
+     "いってきます",
+     "いただきます"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ていねいな いいかたは？「おやすみ_____。」",
+    "options": [
+     "だ",
+     "でした",
+     "ませ",
+     "なさい"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちと わかれます。 つぎに あう 日を いって ください。",
+    "start": "じゃあね！ また…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "うちを でる とき いう ことばは？",
+    "options": [
+     "おかえりなさい",
+     "いってきます",
+     "ただいま",
+     "いただきます"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「えきで ともだち_____ わかれました。」",
+    "options": [
+     "へ",
+     "の",
+     "と",
+     "を"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "よる、 かぞくに おやすみの あいさつを して ください。",
+    "start": "おやすみなさい。 あしたも…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "らいしゅう また あいます。 なんと いいますか？",
+    "options": [
+     "また きのう",
+     "また らいしゅう",
+     "また きょねん",
+     "また せんしゅう"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしい 文は どれ？",
+    "options": [
+     "そろそろ かえるます。",
+     "そろそろ かえますり。",
+     "そろそろ かえります。",
+     "そろそろ かえりです。"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "パーティーから さきに かえります。 みんなに いって ください。",
+    "start": "すみません、 そろそろ…"
+   }
+  ]
+ },
+ "beginner-u1-l3": {
+  "title": "Name",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「おなまえは？」と きかれました。 こたえは？",
+    "options": [
+     "たなかです。",
+     "げんきです。",
+     "にじゅっさいです。",
+     "にほんです。"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "「たなか ゆき」。 みょうじは どれ？",
+    "options": [
+     "ゆき",
+     "さん",
+     "たなか ゆき",
+     "たなか"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたし_____ なまえは マリアです。」",
+    "options": [
+     "を",
+     "に",
+     "の",
+     "で"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "人の なまえの あとに つける ていねいな ことばは？",
+    "options": [
+     "から",
+     "さん",
+     "ます",
+     "です"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "なまえを ていねいに きく 文は？",
+    "options": [
+     "おなまえは なんですか。",
+     "おなまえは どこですか。",
+     "おなまえは いつですか。",
+     "おなまえは いくらですか。"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "じぶんの なまえを いって、 あいての なまえを きいて ください。",
+    "start": "わたしの なまえは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "アメリカ人の なまえは、 ふつう なにで かきますか？",
+    "options": [
+     "すうじ",
+     "かんじだけ",
+     "カタカナ",
+     "ひらがな"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "じぶんの なまえを いう ただしい 文は？",
+    "options": [
+     "わたしは マリアさんです。",
+     "わたしは マリアです。",
+     "わたしを マリアです。",
+     "わたしは マリアさまです。"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "せんせいに あなたの なまえを おしえて ください。",
+    "start": "はじめまして。 わたしは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「めいし」は なんですか？",
+    "options": [
+     "てがみ",
+     "たべもの",
+     "のりもの",
+     "なまえが かいて ある 小さい カード"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あの 人は _____ですか。」「やまださんです。」",
+    "options": [
+     "いつ",
+     "だれ",
+     "なに",
+     "どこ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちに、 あなたの かぞくの なまえを おしえて ください。",
+    "start": "ちちの なまえは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "日本では ふつう、 さきに いうのは どちら？",
+    "options": [
+     "ニックネーム",
+     "したの なまえ",
+     "みょうじ",
+     "ミドルネーム"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「はじめまして。 やまだ_____ もうします。」",
+    "options": [
+     "と",
+     "を",
+     "が",
+     "に"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "あいての なまえが よく きこえませんでした。 もう いちど きいて ください。",
+    "start": "すみません、 もう いちど…"
+   }
+  ]
+ },
+ "beginner-u1-l4": {
+  "title": "Age",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「なんさいですか」は なにを きいて いますか？",
+    "options": [
+     "なまえ",
+     "くに",
+     "とし",
+     "しごと"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "「はたち」は なんさい？",
+    "options": [
+     "12さい",
+     "20さい",
+     "2さい",
+     "10さい"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あなたは なん_____ですか。」",
+    "options": [
+     "さい",
+     "まい",
+     "ほん",
+     "にん"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "「1さい」の よみかたは？",
+    "options": [
+     "いつさい",
+     "ひとさい",
+     "いっさい",
+     "いちさい"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "としを ていねいに きく 文は？",
+    "options": [
+     "なんにんですか。",
+     "おいくつですか。",
+     "いくらですか。",
+     "なんじですか。"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの としを いって ください。",
+    "start": "わたしは いま…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「あに」は わたしより…？",
+    "options": [
+     "あかちゃん",
+     "としした",
+     "おなじ とし",
+     "としうえ"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたしは 25さい_____。」",
+    "options": [
+     "です",
+     "に",
+     "ます",
+     "を"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "かぞくの だれかの としを いって ください。",
+    "start": "わたしの あには…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "0さいの 子どもは？",
+    "options": [
+     "こうこうせい",
+     "おじいさん",
+     "あかちゃん",
+     "おとな"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「いもうとは わたし_____ 3さい わかいです。」",
+    "options": [
+     "まで",
+     "ほど",
+     "から",
+     "より"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちに、 としを ていねいに きいて ください。",
+    "start": "しつれいですが…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「たんじょうび」は なんの 日？",
+    "options": [
+     "がっこうの 日",
+     "うまれた 日",
+     "やすみの 日",
+     "しごとの 日"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「らいねん、 わたしは 30さいに _____。」",
+    "options": [
+     "なります",
+     "あります",
+     "います",
+     "します"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの たんじょうびと、 つぎの としを いって ください。",
+    "start": "わたしの たんじょうびは…"
+   }
+  ]
+ },
+ "beginner-u1-l5": {
+  "title": "Country",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "くにの なまえでは ない ものは？",
+    "options": [
+     "かんこく",
+     "にほん",
+     "ブラジル",
+     "とうきょう"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "ちゅうごくの 人は なにじん？",
+    "options": [
+     "ちゅうごくさん",
+     "ちゅうごくご",
+     "ちゅうごくじん",
+     "ちゅうごくびと"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたしは インド_____ きました。」",
+    "options": [
+     "を",
+     "で",
+     "から",
+     "が"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "フランスで つかう ことばは？",
+    "options": [
+     "フランスご",
+     "フランスじん",
+     "フランスや",
+     "フランスこく"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "くにを ていねいに きく 文は？",
+    "options": [
+     "おくには どちらですか。",
+     "おくには だれですか。",
+     "おくには なんさいですか。",
+     "おくには いくらですか。"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの くにと、 すんで いる まちを いって ください。",
+    "start": "わたしの くには…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「がいこくじん」は どんな 人？",
+    "options": [
+     "せんせい",
+     "ほかの くにの 人",
+     "にほんの 子ども",
+     "かぞく"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「マリアさんは ブラジル_____です。」",
+    "options": [
+     "ご",
+     "じん",
+     "ほう",
+     "こく"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちに、 どこの くにから きたか きいて ください。",
+    "start": "すみません、 おくには…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「えいご」を つかう くには？",
+    "options": [
+     "にほん",
+     "イギリス",
+     "かんこく",
+     "ちゅうごく"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたしは いま にほん_____ すんで います。」",
+    "options": [
+     "を",
+     "が",
+     "へ",
+     "に"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの くにで はなす ことばを いって ください。",
+    "start": "わたしの くにでは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「かんこく」は どこ？",
+    "options": [
+     "にほんの ちかくの くに",
+     "にほんの まち",
+     "ヨーロッパの くに",
+     "アメリカの まち"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「どこ_____ きましたか。」「ベトナムからです。」",
+    "options": [
+     "が",
+     "を",
+     "から",
+     "の"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "いちど いきたい くにと、 その りゆうを はなして ください。",
+    "start": "いちど いきたい くには…"
+   }
+  ]
+ },
+ "beginner-u2-l1": {
+  "title": "Personal information",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「おしごとは？」に あう こたえは？",
+    "options": [
+     "げんきです。",
+     "かいしゃいんです。",
+     "25さいです。",
+     "にほんです。"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "「でんわばんごう」は どれ？",
+    "options": [
+     "マリア",
+     "3がつ 5か",
+     "とうきょう",
+     "090-1234-5678"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたしは がくせい_____。」",
+    "options": [
+     "です",
+     "で",
+     "ます",
+     "を"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "「じゅうしょ」は なんですか？",
+    "options": [
+     "すんで いる ところ",
+     "しごと",
+     "とし",
+     "なまえ"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「マリアさんは だいがく_____ がくせいです。」",
+    "options": [
+     "が",
+     "を",
+     "の",
+     "に"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの しごとか がっこうに ついて はなして ください。",
+    "start": "わたしの しごとは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「かいしゃいん」は どんな 人？",
+    "options": [
+     "がっこうで ならう 人",
+     "びょういんの 人",
+     "かいしゃで はたらく 人",
+     "みせの きゃく"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「でんわばんごうは _____ですか。」",
+    "options": [
+     "なんにん",
+     "なんさい",
+     "なんじ",
+     "なんばん"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの すんで いる まちに ついて はなして ください。",
+    "start": "わたしは いま…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「どくしん」は どういう いみ？",
+    "options": [
+     "子どもが いる",
+     "けっこん して いない",
+     "がくせい",
+     "けっこん して いる"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あねは けっこん_____ います。」",
+    "options": [
+     "した",
+     "して",
+     "しない",
+     "する"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの しゅみを ひとつ いって ください。",
+    "start": "わたしの しゅみは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「しゅっしん」は どういう いみ？",
+    "options": [
+     "うまれた ところ",
+     "かぞくの かず",
+     "すきな もの",
+     "いまの しごと"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「おしごとは _____ですか。」「エンジニアです。」",
+    "options": [
+     "どこ",
+     "いつ",
+     "なん",
+     "だれ"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "じこしょうかいを して ください。 なまえ、 くに、 しごとを いいましょう。",
+    "start": "はじめまして。 わたしは…"
+   }
+  ]
+ },
+ "beginner-u2-l2": {
+  "title": "Likes and dislikes",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「すき」の はんたいは？",
+    "options": [
+     "じょうず",
+     "へた",
+     "ほしい",
+     "きらい"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "いちばん つよい「すき」は どれ？",
+    "options": [
+     "すこし すき",
+     "あまり すきじゃない",
+     "だいすき",
+     "すき"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたしは ねこ_____ すきです。」",
+    "options": [
+     "が",
+     "に",
+     "を",
+     "で"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "スポーツでは ない ものは？",
+    "options": [
+     "やきゅう",
+     "どくしょ",
+     "サッカー",
+     "テニス"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「にんじんは _____ すきじゃないです。」",
+    "options": [
+     "たくさん",
+     "よく",
+     "あまり",
+     "ぜひ"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "すきな たべものと きらいな たべものを いって ください。",
+    "start": "わたしの すきな たべものは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「とくい」は どういう いみ？",
+    "options": [
+     "あたらしい こと",
+     "じょうずで、 よく できる こと",
+     "きらいな こと",
+     "へたな こと"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「なに_____ すきですか。」",
+    "options": [
+     "が",
+     "で",
+     "へ",
+     "を"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "やすみの 日に する ことで、 すきな ことを はなして ください。",
+    "start": "やすみの 日は…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "えいがを みるのが すきです。 どこへ いきますか？",
+    "options": [
+     "びょういん",
+     "ぎんこう",
+     "としょかん",
+     "えいがかん"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたしは りょうりを する_____ すきです。」",
+    "options": [
+     "のが",
+     "ことを",
+     "のを",
+     "がの"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "きらいな ことを ひとつ いって、 りゆうも いって ください。",
+    "start": "わたしが きらいなのは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「たのしい」の はんたいは？",
+    "options": [
+     "おもしろい",
+     "すずしい",
+     "つまらない",
+     "うれしい"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「コーヒーと こうちゃと、 _____が すきですか。」",
+    "options": [
+     "だれ",
+     "どちら",
+     "どれ",
+     "どこ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちに、 すきな おんがくを きいて ください。",
+    "start": "どんな おんがくが…"
+   }
+  ]
+ },
+ "beginner-u3-l1": {
+  "title": "Family members",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "じぶんの おかあさんの ことを ほかの 人に はなす ときは？",
+    "options": [
+     "ちち",
+     "はは",
+     "あね",
+     "そぼ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "「あに」は だれ？",
+    "options": [
+     "おとうさん",
+     "とししたの おとこの きょうだい",
+     "としうえの おんなの きょうだい",
+     "としうえの おとこの きょうだい"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「かぞくは 4_____です。」",
+    "options": [
+     "ほん",
+     "さつ",
+     "にん",
+     "まい"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "「そふ」は だれ？",
+    "options": [
+     "おじいさん",
+     "おじさん",
+     "おばあさん",
+     "いとこ"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたし_____ ちちは いしゃです。」",
+    "options": [
+     "に",
+     "を",
+     "の",
+     "で"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの かぞくに ついて はなして ください。",
+    "start": "わたしの かぞくは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "ほかの 人の おとうさんを なんと よびますか？",
+    "options": [
+     "ちち",
+     "おとうさん",
+     "そふ",
+     "あに"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたしは あねが 2人 _____。」",
+    "options": [
+     "あります",
+     "します",
+     "います",
+     "です"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "きょうだいが いますか。 はなして ください。",
+    "start": "わたしには…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「いもうと」の おとこの 子は？",
+    "options": [
+     "おとうと",
+     "あに",
+     "むすめ",
+     "あね"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「かぞくは _____ですか。」「5人です。」",
+    "options": [
+     "なんさい",
+     "なんじ",
+     "なんまい",
+     "なんにん"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "かぞくの ひとりの しごとを いって ください。",
+    "start": "ちちの しごとは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「りょうしん」は だれ？",
+    "options": [
+     "ちちと はは",
+     "おじと おば",
+     "そふと そぼ",
+     "あにと あね"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あには とうきょうに すんで _____。」",
+    "options": [
+     "です",
+     "います",
+     "あります",
+     "します"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "かぞくで いっしょに する ことを はなして ください。",
+    "start": "かぞくと いっしょに…"
+   }
+  ]
+ },
+ "beginner-u3-l2": {
+  "title": "Relationships",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「しんゆう」は どんな ともだち？",
+    "options": [
+     "いちばん なかが いい ともだち",
+     "あたらしい ともだち",
+     "きらいな 人",
+     "しらない 人"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "いっしょに はたらく 人は？",
+    "options": [
+     "となりの 人",
+     "クラスメート",
+     "おきゃくさん",
+     "どうりょう"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたしは マリアさん_____ ともだちです。」",
+    "options": [
+     "へ",
+     "と",
+     "に",
+     "を"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "けっこん して いる おんなの 人の パートナーは？",
+    "options": [
+     "むすこ",
+     "つま",
+     "おっと",
+     "あね"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「かれは わたし_____ こいびとです。」",
+    "options": [
+     "が",
+     "の",
+     "で",
+     "を"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの いちばんの ともだちに ついて はなして ください。",
+    "start": "わたしの しんゆうは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "いえの ちかくに すんで いる 人は？",
+    "options": [
+     "クラスメート",
+     "きんじょの 人",
+     "どうりょう",
+     "せんぱい"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「ともだちと よく こうえんへ いき_____。」",
+    "options": [
+     "ます",
+     "った",
+     "です",
+     "だ"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "その ともだちと どこで しりあいましたか。",
+    "start": "はじめて あったのは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "がっこうで、 じぶんより 上の がくねんの 人は？",
+    "options": [
+     "せんぱい",
+     "どうきゅうせい",
+     "せんせい",
+     "こうはい"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「これは ともだち_____ もらった プレゼントです。」",
+    "options": [
+     "を",
+     "で",
+     "から",
+     "まで"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちと しゅうまつに よく する ことを はなして ください。",
+    "start": "しゅうまつは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「クラスメート」は どんな 人？",
+    "options": [
+     "かぞく",
+     "せんせい",
+     "おなじ クラスの 人",
+     "おなじ かいしゃの 人"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたしたちは なか_____ いいです。」",
+    "options": [
+     "へ",
+     "を",
+     "で",
+     "が"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちを、 ほかの ともだちに しょうかいして ください。",
+    "start": "こちらは わたしの…"
+   }
+  ]
+ },
+ "beginner-u3-l3": {
+  "title": "Describing people",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「せが たかい」の はんたいは？",
+    "options": [
+     "せが ひくい",
+     "せが みじかい",
+     "せが おもい",
+     "せが わかい"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "「やさしい」人は どんな 人？",
+    "options": [
+     "いじわるな 人",
+     "しんせつな 人",
+     "こわい 人",
+     "うるさい 人"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「かのじょは かみ_____ ながいです。」",
+    "options": [
+     "で",
+     "に",
+     "が",
+     "を"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "「かわいい」と よく いうのは？",
+    "options": [
+     "あかちゃん",
+     "えきの ホーム",
+     "しゅくだい",
+     "やま"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「たなかさんは しんせつ_____ 人です。」",
+    "options": [
+     "の",
+     "だ",
+     "い",
+     "な"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの ともだちの みためを はなして ください。",
+    "start": "わたしの ともだちは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「げんきな 人」は どんな 人？",
+    "options": [
+     "しずかで よわい 人",
+     "よく うごいて、 あかるい 人",
+     "いつも ねて いる 人",
+     "びょうきの 人"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あには せが _____、 かっこいいです。」",
+    "options": [
+     "たかいて",
+     "たかで",
+     "たかくて",
+     "たかいで"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "かぞくの ひとりの せいかくを はなして ください。",
+    "start": "わたしの ちちは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「おもしろい 人」は どんな 人？",
+    "options": [
+     "いつも おくれる 人",
+     "ぜんぜん はなさない 人",
+     "よく 人を わらわせる 人",
+     "いつも おこる 人"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あの せんせいは わかく_____。」",
+    "options": [
+     "ないだ",
+     "ます",
+     "じゃないです",
+     "ないです"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "すきな ゆうめいじんの みためと せいかくを はなして ください。",
+    "start": "わたしの すきな…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ぼうし」を かぶる ところは？",
+    "options": [
+     "あし",
+     "あたま",
+     "おなか",
+     "て"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「いもうとは しずか_____ やさしいです。」",
+    "options": [
+     "で",
+     "と",
+     "な",
+     "くて"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "クラスの だれかを、 なまえを いわないで せつめいして ください。",
+    "start": "その 人は…"
+   }
+  ]
+ },
+ "beginner-u4-l1": {
+  "title": "Numbers",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「よん」は どの すうじ？",
+    "options": [
+     "9",
+     "4",
+     "6",
+     "5"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "「100」の よみかたは？",
+    "options": [
+     "じゅう",
+     "まん",
+     "ひゃく",
+     "せん"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「ペンが 3_____ あります。」",
+    "options": [
+     "さつ",
+     "ぼん",
+     "にん",
+     "まい"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "「なな」と おなじ すうじは？",
+    "options": [
+     "しち",
+     "きゅう",
+     "ろく",
+     "はち"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「りんごを ふた_____ ください。」",
+    "options": [
+     "まい",
+     "ほん",
+     "にん",
+     "つ"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "1から 10まで かぞえて ください。",
+    "start": "いち、 に、 さん…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「300」の よみかたは？",
+    "options": [
+     "さんひゃく",
+     "さんびゃく",
+     "さんぴゃく",
+     "みひゃく"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「かみを 5_____ ください。」",
+    "options": [
+     "ひき",
+     "だい",
+     "まい",
+     "ほん"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの いえに へやが いくつ ありますか。",
+    "start": "わたしの いえには…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「0」の よみかたは？",
+    "options": [
+     "いち",
+     "ひゃく",
+     "じゅう",
+     "ゼロ"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「こうえんに ねこが 2_____ います。」",
+    "options": [
+     "ひき",
+     "まい",
+     "さつ",
+     "ほん"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの かばんの 中の ものを かぞえて いって ください。",
+    "start": "かばんの 中に…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「1000」の よみかたは？",
+    "options": [
+     "せん",
+     "おく",
+     "ひゃく",
+     "まん"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「ほんが _____ ありますか。」「3さつです。」",
+    "options": [
+     "なんぼん",
+     "なんまい",
+     "なんさつ",
+     "なんにん"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "きょうしつに 人が なんにん いますか。",
+    "start": "きょうしつには…"
+   }
+  ]
+ },
+ "beginner-u4-l2": {
+  "title": "Dates",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「ついたち」は なんにち？",
+    "options": [
+     "20日",
+     "1日",
+     "10日",
+     "2日"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "「はつか」は なんにち？",
+    "options": [
+     "20日",
+     "2日",
+     "10日",
+     "8日"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたしは 4がつ_____ にほんへ いきます。」",
+    "options": [
+     "に",
+     "を",
+     "が",
+     "で"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "1ねんで さいごの つきは？",
+    "options": [
+     "じゅういちがつ",
+     "くがつ",
+     "いちがつ",
+     "じゅうにがつ"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「きょうは _____ですか。」「6がつ 10日です。」",
+    "options": [
+     "なんにん",
+     "なんさい",
+     "なんがつ なんにち",
+     "なんじ"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの たんじょうびを いって ください。",
+    "start": "たんじょうびは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「4がつ」の よみかたは？",
+    "options": [
+     "しいがつ",
+     "よつがつ",
+     "しがつ",
+     "よんがつ"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「きのうは 5日_____。」",
+    "options": [
+     "でした",
+     "です",
+     "ました",
+     "ます"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "いちばん すきな やすみの 日と、 その 日に する ことを いって ください。",
+    "start": "いちばん すきな やすみの 日は…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ここのか」は なんにち？",
+    "options": [
+     "4日",
+     "8日",
+     "9日",
+     "5日"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「しけんは 7がつ 20日_____ 25日までです。」",
+    "options": [
+     "まで",
+     "から",
+     "に",
+     "を"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "こんげつ する ことを ひとつ いって ください。",
+    "start": "こんげつは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「こんげつ」の つぎの つきは？",
+    "options": [
+     "らいねん",
+     "らいげつ",
+     "こんしゅう",
+     "せんげつ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「たんじょうびは _____ですか。」「3がつ 5日です。」",
+    "options": [
+     "だれ",
+     "どこ",
+     "なに",
+     "いつ"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちに、 たんじょうびが いつか きいて ください。",
+    "start": "あの、 たんじょうびは…"
+   }
+  ]
+ },
+ "beginner-u4-l3": {
+  "title": "Days",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「げつようび」の つぎは？",
+    "options": [
+     "かようび",
+     "もくようび",
+     "にちようび",
+     "すいようび"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "「どようび」と「にちようび」を あわせて なんと いう？",
+    "options": [
+     "へいじつ",
+     "まいにち",
+     "らいしゅう",
+     "しゅうまつ"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「にちようび_____ えいがを みます。」",
+    "options": [
+     "に",
+     "へ",
+     "が",
+     "を"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "「きのう」の まえの 日は？",
+    "options": [
+     "あした",
+     "あさって",
+     "きょう",
+     "おととい"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あした、 ともだちに あい_____。」",
+    "options": [
+     "でした",
+     "です",
+     "ます",
+     "ました"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "どようびに なにを しますか。",
+    "start": "どようびは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「まいにち」は どういう いみ？",
+    "options": [
+     "ときどき",
+     "どの 日も",
+     "いちども",
+     "しゅうまつだけ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「げつようび_____ すいようびに テニスを します。」",
+    "options": [
+     "が",
+     "を",
+     "と",
+     "で"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "いちばん すきな ようびと、 その りゆうを いって ください。",
+    "start": "いちばん すきな ようびは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「へいじつ」は どの 日？",
+    "options": [
+     "どようびと にちようび",
+     "まつりの 日",
+     "げつようびから きんようび",
+     "やすみの 日"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「せんしゅうの きんようび、 がっこうへ いき_____。」",
+    "options": [
+     "ません",
+     "ました",
+     "ましょう",
+     "ます"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "げつようびの あさ、 いつも なにを しますか。",
+    "start": "げつようびの あさは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「あさって」は いつ？",
+    "options": [
+     "あしたの つぎの 日",
+     "きょう",
+     "きのうの まえの 日",
+     "らいげつ"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「まいしゅう どようびに なに_____ しますか。」",
+    "options": [
+     "へ",
+     "を",
+     "の",
+     "が"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "らいしゅうの よていを はなして ください。",
+    "start": "らいしゅうの…"
+   }
+  ]
+ },
+ "beginner-u4-l4": {
+  "title": "Telling time",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「3じはん」は なんじ？",
+    "options": [
+     "3:15",
+     "3:30",
+     "2:30",
+     "3:45"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "「4じ」の よみかたは？",
+    "options": [
+     "しじ",
+     "よっじ",
+     "よじ",
+     "よんじ"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "じかんを きく ただしい 文は？",
+    "options": [
+     "いま なんじですか。",
+     "いま なんじますか。",
+     "いま なんじをですか。",
+     "いま なんのじですか。"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "よるの 12じは？",
+    "options": [
+     "あさ",
+     "ゆうがた",
+     "しょうご",
+     "まよなか"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「じゅぎょうは 9じ_____ はじまります。」",
+    "options": [
+     "に",
+     "を",
+     "が",
+     "で"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "あさ なんじに おきますか。",
+    "start": "わたしは まいあさ…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ごぜん」は いつ？",
+    "options": [
+     "ゆうがた",
+     "ひるの まえ",
+     "よるだけ",
+     "ひるの あと"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「ひるやすみは 12じ_____ 1じまでです。」",
+    "options": [
+     "に",
+     "から",
+     "を",
+     "へ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "なんじに ひるごはんを たべますか。",
+    "start": "ひるごはんは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「おそい」の はんたいは？",
+    "options": [
+     "ひくい",
+     "ながい",
+     "ちいさい",
+     "はやい"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「まいあさ 7じ_____ おきます。」",
+    "options": [
+     "ごろ",
+     "だけ",
+     "しか",
+     "など"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "ゆうがた 6じごろ、 いつも なにを して いますか。",
+    "start": "ゆうがた 6じごろは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「10ぷん」の よみかたは？",
+    "options": [
+     "じゅっふん",
+     "とおぷん",
+     "じゅっぷん",
+     "じゅうふん"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「けさ 6じに おき_____。」",
+    "options": [
+     "ます",
+     "ましょう",
+     "ました",
+     "ません"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "しらない 人に、 ていねいに じかんを きいて ください。",
+    "start": "すみません、 いま…"
+   }
+  ]
+ },
+ "beginner-u5-l1": {
+  "title": "Wake up",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「おきる」の はんたいは？",
+    "options": [
+     "たべる",
+     "ねる",
+     "みる",
+     "いく"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "はを みがく ときに つかう ものは？",
+    "options": [
+     "はブラシ",
+     "かさ",
+     "まくら",
+     "タオル"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あさ、 かお_____ あらいます。」",
+    "options": [
+     "が",
+     "で",
+     "に",
+     "を"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "あさ、 おきる じかんに なる ものは？",
+    "options": [
+     "れいぞうこ",
+     "めざましどけい",
+     "せんたくき",
+     "テレビ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あさごはんを たべて_____、 がっこうへ いきます。」",
+    "options": [
+     "まで",
+     "から",
+     "より",
+     "ので"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "あさ おきてから、 なにを しますか。 じゅんばんに いって ください。",
+    "start": "あさ おきて…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "ことばを えらんで：「あさ、 シャワーを _____。」",
+    "options": [
+     "はきます",
+     "のみます",
+     "あびます",
+     "きます"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「おきて、 はを みがいて、 シャワーを _____。」",
+    "options": [
+     "あびるます",
+     "あびった",
+     "あびます",
+     "あびって"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "きのうの あさ、 なんじに おきましたか。",
+    "start": "きのうは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ねぼう」は どういう いみ？",
+    "options": [
+     "はやく ねる こと",
+     "あさごはんを たべる こと",
+     "ゆめを みる こと",
+     "おきるのが おそく なる こと"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「きのうは 7じに おきません_____。」",
+    "options": [
+     "だった",
+     "ました",
+     "でした",
+     "です"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "やすみの 日は なんじごろ おきますか。",
+    "start": "どようびは ふつう…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "ことばを えらんで：「あさ、 ふくを _____。」",
+    "options": [
+     "きます",
+     "かぶります",
+     "のみます",
+     "はきます"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「まいあさ ジョギング_____ します。」",
+    "options": [
+     "を",
+     "で",
+     "へ",
+     "が"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "あさ おきて、 いちばん さいしょに なにを しますか。",
+    "start": "あさ、 いちばん さいしょに する ことは…"
+   }
+  ]
+ },
+ "beginner-u5-l2": {
+  "title": "Work",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "いしゃは どこで はたらきますか？",
+    "options": [
+     "がっこう",
+     "びょういん",
+     "えき",
+     "ぎんこう"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "「きゅうりょう」は どういう いみ？",
+    "options": [
+     "かいしゃの なまえ",
+     "やすみの 日",
+     "しごとで もらう おかね",
+     "しごとの じかん"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あには ぎんこう_____ はたらいて います。」",
+    "options": [
+     "が",
+     "に",
+     "を",
+     "で"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "せんせいは どこで はたらきますか？",
+    "options": [
+     "レストラン",
+     "がっこう",
+     "びょういん",
+     "くうこう"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「しごとは 9じから 5じ_____です。」",
+    "options": [
+     "に",
+     "から",
+     "まで",
+     "を"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの まいにちの しごとに ついて はなして ください。",
+    "start": "わたしは まいにち…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「かいぎ」は どういう いみ？",
+    "options": [
+     "やすみ",
+     "みんなで はなしあう こと",
+     "でんしゃ",
+     "ひるごはん"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「でんしゃ_____ かいしゃへ いきます。」",
+    "options": [
+     "を",
+     "に",
+     "で",
+     "が"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "しごとの あとで、 いつも なにを しますか。",
+    "start": "しごとの あとで…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "レストランで りょうりを つくる 人は？",
+    "options": [
+     "コック",
+     "ウェイター",
+     "いしゃ",
+     "けいかん"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あしたは やすみです。 しごとが _____。」",
+    "options": [
+     "ありません",
+     "いません",
+     "しません",
+     "なりません"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの しごとで すきな ところを はなして ください。",
+    "start": "わたしの しごとで すきなのは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「つうきん」は どういう いみ？",
+    "options": [
+     "いえで ねる こと",
+     "かいもの",
+     "りょこう",
+     "かいしゃへ かよう こと"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「しごとは なんじ_____ おわりますか。」",
+    "options": [
+     "に",
+     "へ",
+     "が",
+     "を"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちに、 どんな しごとを して いるか きいて ください。",
+    "start": "どんな おしごとを…"
+   }
+  ]
+ },
+ "beginner-u5-l3": {
+  "title": "Study",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「しゅくだい」は どういう いみ？",
+    "options": [
+     "いえで する べんきょう",
+     "がっこうの なまえ",
+     "やすみの 日",
+     "せんせいの へや"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "ほんを かりる ところは？",
+    "options": [
+     "スーパー",
+     "こうえん",
+     "としょかん",
+     "びょういん"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「まいにち にほんご_____ べんきょうします。」",
+    "options": [
+     "が",
+     "と",
+     "へ",
+     "を"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "「しけん」と おなじ いみの ことばは？",
+    "options": [
+     "ノート",
+     "テスト",
+     "クラス",
+     "ペン"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「まいばん 2じかん べんきょう_____。」",
+    "options": [
+     "です",
+     "します",
+     "います",
+     "あります"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "いま、 なにを べんきょうして いますか。",
+    "start": "いま わたしは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「きょうかしょ」は どういう いみ？",
+    "options": [
+     "べんきょうで つかう ほん",
+     "しんぶん",
+     "てがみ",
+     "ざっし"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わからない ことばは じしょ_____ しらべます。」",
+    "options": [
+     "が",
+     "に",
+     "へ",
+     "で"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "どこで べんきょうするのが すきですか。",
+    "start": "わたしが いつも べんきょうする ところは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ならう」に いみが ちかいのは？",
+    "options": [
+     "わすれる",
+     "おしえる",
+     "まなぶ",
+     "あそぶ"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「にほんごが もっと じょうずに なり_____です。」",
+    "options": [
+     "ない",
+     "たい",
+     "たがる",
+     "たく"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "にほんごを べんきょうする りゆうを いって ください。",
+    "start": "わたしが にほんごを べんきょうする りゆうは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「しつもん」の はんたいは？",
+    "options": [
+     "テスト",
+     "しゅくだい",
+     "こたえ",
+     "ノート"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「せんせい、 しつもんを しても _____ですか。」",
+    "options": [
+     "いい",
+     "よくて",
+     "よく",
+     "いいで"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "せんせいに、 わからない ことばの いみを きいて ください。",
+    "start": "せんせい、 この ことばの いみは…"
+   }
+  ]
+ },
+ "beginner-u5-l4": {
+  "title": "Sleep",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "ねる とき、 あたまの 下に おく ものは？",
+    "options": [
+     "まくら",
+     "かさ",
+     "さいふ",
+     "くつ"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ねむい」は どういう いみ？",
+    "options": [
+     "おなかが すいた",
+     "うれしい",
+     "さむい",
+     "ねたい かんじ"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「ゆうべは 7じかん ね_____。」",
+    "options": [
+     "ましょう",
+     "ます",
+     "ません",
+     "ました"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "ねて いる ときに みる ものは？",
+    "options": [
+     "えいが",
+     "ほし",
+     "ゆめ",
+     "しんぶん"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「ねる _____に、 はを みがきます。」",
+    "options": [
+     "あと",
+     "ながら",
+     "まえ",
+     "から"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "あなたは ふつう なんじに ねますか。",
+    "start": "わたしは ふつう…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ひるね」は どういう いみ？",
+    "options": [
+     "ひるに すこし ねる こと",
+     "よる おそく ねる こと",
+     "あさ はやく おきる こと",
+     "ぜんぜん ねない こと"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「きのうは つかれた_____、 はやく ねました。」",
+    "options": [
+     "より",
+     "でも",
+     "ので",
+     "まで"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "ねる まえに、 いつも なにを しますか。",
+    "start": "ねる まえに…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ふとん」は ふつう どこに しきますか？",
+    "options": [
+     "テーブルの 上",
+     "ゆかの 上",
+     "かべ",
+     "やねの 上"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「よる コーヒーを のむ_____、 ねられません。」",
+    "options": [
+     "を",
+     "と",
+     "の",
+     "が"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "よく ねるために、 なにを しますか。",
+    "start": "よく ねるために…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ぐっすり ねる」は どういう いみ？",
+    "options": [
+     "ねない",
+     "よく ねる",
+     "すこしだけ ねる",
+     "はやく おきる"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「きのうは うるさくて、 よく ねられ_____。」",
+    "options": [
+     "ませんでした",
+     "たいです",
+     "ましょう",
+     "ます"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "きのうの よる、 よく ねましたか。",
+    "start": "きのうの よるは…"
+   }
+  ]
+ },
+ "beginner-u5-l5": {
+  "title": "Daily activities",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「せんたく」は どういう いみ？",
+    "options": [
+     "ふくを あらう こと",
+     "へやを きれいに する こと",
+     "りょうりを つくる こと",
+     "かいものを する こと"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "「そうじ」は なにを する こと？",
+    "options": [
+     "へやを きれいに する",
+     "ふくを あらう",
+     "ねる",
+     "ごはんを つくる"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「まいにち スーパー_____ かいものを します。」",
+    "options": [
+     "を",
+     "に",
+     "で",
+     "が"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "「りょうりを する」と おなじ いみは？",
+    "options": [
+     "ごはんを たべる",
+     "みずを のむ",
+     "ごはんを つくる",
+     "さらを あらう"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「おんがくを きき_____、 さんぽします。」",
+    "options": [
+     "ながら",
+     "たり",
+     "まで",
+     "て"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの いちにちを はなして ください。",
+    "start": "わたしは あさ…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「さんぽ」は どういう いみ？",
+    "options": [
+     "はしる こと",
+     "およぐ こと",
+     "ゆっくり あるく こと",
+     "ねる こと"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「しゅうまつは そうじを したり、 せんたくを _____ します。」",
+    "options": [
+     "した",
+     "したり",
+     "して",
+     "する"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "しゅうまつに かならず する ことを いって ください。",
+    "start": "しゅうまつは かならず…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "ことばを えらんで：「ごはんの あと、 さらを _____。」",
+    "options": [
+     "かきます",
+     "ききます",
+     "よみます",
+     "あらいます"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「ときどき ともだち_____ でんわします。」",
+    "options": [
+     "を",
+     "に",
+     "で",
+     "の"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "いえの しごとで、 すきな ことと きらいな ことを いって ください。",
+    "start": "いえの しごとで…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「まいにち する」と おなじ いみは？",
+    "options": [
+     "ときどき する",
+     "いつも する",
+     "ぜんぜん しない",
+     "あまり しない"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「テレビは ぜんぜん _____。」",
+    "options": [
+     "みましょう",
+     "みます",
+     "みました",
+     "みません"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "きのう した ことを みっつ いって ください。",
+    "start": "きのうは…"
+   }
+  ]
+ },
+ "beginner-u6-l1": {
+  "title": "Common foods",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "さかなは どれ？",
+    "options": [
+     "まぐろ",
+     "にんじん",
+     "ぎゅうにゅう",
+     "りんご"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "くだものでは ない ものは？",
+    "options": [
+     "みかん",
+     "バナナ",
+     "たまねぎ",
+     "りんご"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あさは いつも パン_____ たべます。」",
+    "options": [
+     "へ",
+     "を",
+     "が",
+     "に"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ぎゅうにゅう」は なにいろ？",
+    "options": [
+     "あお",
+     "くろ",
+     "あか",
+     "しろ"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「きのう すしと てんぷら_____ たべました。」",
+    "options": [
+     "へ",
+     "を",
+     "に",
+     "で"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの くにで にんきの たべものを しょうかいして ください。",
+    "start": "わたしの くにで にんきの たべものは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "やさいは どれ？",
+    "options": [
+     "ぶたにく",
+     "たまご",
+     "ごはん",
+     "キャベツ"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「この りんごは とても あま_____です。」",
+    "options": [
+     "い",
+     "の",
+     "な",
+     "く"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "きのうの ばんごはんに なにを たべましたか。",
+    "start": "きのうの ばんごはんは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「おちゃ」は なんですか？",
+    "options": [
+     "やさい",
+     "おかし",
+     "のみもの",
+     "くだもの"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたしは にくも さかな_____ すきです。」",
+    "options": [
+     "を",
+     "で",
+     "も",
+     "に"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "すきな のみものを いって ください。",
+    "start": "わたしが よく のむのは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ぶたにく」は どの どうぶつの にく？",
+    "options": [
+     "ぶた",
+     "うし",
+     "ひつじ",
+     "とり"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしい 文は どれ？",
+    "options": [
+     "この ラーメンは おいしくです。",
+     "この ラーメンは おいしいです。",
+     "この ラーメンは おいしいだです。",
+     "この ラーメンは おいしなです。"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "にほんの たべもので、 たべて みたい ものを いって ください。",
+    "start": "たべて みたいのは…"
+   }
+  ]
+ },
+ "beginner-u6-l2": {
+  "title": "Preferences",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "からい ものは どれ？",
+    "options": [
+     "ケーキ",
+     "アイスクリーム",
+     "バナナ",
+     "とうがらし"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "あまい ものは どれ？",
+    "options": [
+     "レモン",
+     "しお",
+     "チョコレート",
+     "わさび"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたしは さかなより にく_____ すきです。」",
+    "options": [
+     "のほうが",
+     "より",
+     "がほう",
+     "ほど"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "すっぱい ものは どれ？",
+    "options": [
+     "レモン",
+     "パン",
+     "さとう",
+     "ごはん"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「くだものの 中で、 なに_____ いちばん すきですか。」",
+    "options": [
+     "が",
+     "に",
+     "を",
+     "で"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "すきな たべものと、 その りゆうを はなして ください。",
+    "start": "わたしが すきなのは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "にがい のみものは どれ？",
+    "options": [
+     "ココア",
+     "ブラックコーヒー",
+     "ジュース",
+     "ミルク"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「なっとうは あまり たべ_____。」",
+    "options": [
+     "ましょう",
+     "ます",
+     "たい",
+     "ません"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "あまり すきじゃない たべものと、 その りゆうを はなして ください。",
+    "start": "あまり すきじゃないのは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "ことばを えらんで：「わたしは たまごの _____が あります。」",
+    "options": [
+     "メニュー",
+     "アレルギー",
+     "おかわり",
+     "デザート"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「コーヒーと おちゃと どちらが すきですか。」「おちゃ_____ ほうが すきです。」",
+    "options": [
+     "に",
+     "を",
+     "の",
+     "が"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちに、 すきな たべものを きいて ください。",
+    "start": "どんな たべものが…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「しょっぱい」に いみが ちかいのは？",
+    "options": [
+     "さとうが おおい",
+     "つめたい",
+     "しおが おおい",
+     "やわらかい"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「からい ものは すき_____ ありません。」",
+    "options": [
+     "くは",
+     "では",
+     "を",
+     "には"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "レストランで なにを たべるか、 ともだちと えらんで ください。",
+    "start": "わたしは、 きょうは…"
+   }
+  ]
+ },
+ "beginner-u6-l3": {
+  "title": "Ordering basics",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "みせの 人が おきゃくさんに いう ことばは？",
+    "options": [
+     "いただきます",
+     "ごちそうさま",
+     "いらっしゃいませ",
+     "いってきます"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "「メニュー」は どういう もの？",
+    "options": [
+     "おかね",
+     "いす",
+     "おさら",
+     "たべものの リスト"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「すみません、 おみず_____ ください。」",
+    "options": [
+     "を",
+     "が",
+     "に",
+     "で"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "たべおわった あとで いう ことばは？",
+    "options": [
+     "ごちそうさまでした",
+     "いただきます",
+     "いらっしゃいませ",
+     "はじめまして"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「ラーメンを _____ ください。」（2）",
+    "options": [
+     "ふたつ",
+     "にまい",
+     "ふたり",
+     "にほん"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "カフェで のみものを ちゅうもんして ください。",
+    "start": "すみません、 コーヒーを…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "ことばを えらんで：「すみません、 お_____ おねがいします。」（おかねを はらう とき）",
+    "options": [
+     "みず",
+     "さら",
+     "かいけい",
+     "メニュー"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「ごちゅうもんは？」「カレー_____ します。」",
+    "options": [
+     "を",
+     "が",
+     "に",
+     "で"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "レストランで、 おすすめを きいて ください。",
+    "start": "すみません、 おすすめは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「おかわり」は どういう いみ？",
+    "options": [
+     "おかねを はらう こと",
+     "もう たべない こと",
+     "せきを よやくする こと",
+     "おなじ ものを もう いっぱい"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「すみません、 メニュー_____ ありますか。」",
+    "options": [
+     "へ",
+     "は",
+     "を",
+     "で"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "てんいんに、 みずを もう いっぱい たのんで ください。",
+    "start": "すみません、 おみずを…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「テイクアウト」と おなじ いみは？",
+    "options": [
+     "てんない",
+     "もちかえり",
+     "よやく",
+     "おかわり"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「おかいけいは ぜんぶで _____ですか。」",
+    "options": [
+     "いくつ",
+     "いくら",
+     "どこ",
+     "なんにん"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "レストランで、 たべものと のみものを ちゅうもんして ください。",
+    "start": "えっと、 わたしは…"
+   }
+  ]
+ },
+ "beginner-u7-l1": {
+  "title": "Prices",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「いくらですか」は なにを きいて いますか？",
+    "options": [
+     "じかん",
+     "なまえ",
+     "ばしょ",
+     "ねだん"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "にほんの おかねの たんいは？",
+    "options": [
+     "えん",
+     "ユーロ",
+     "ウォン",
+     "ドル"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「この ペンは _____ですか。」「100えんです。」",
+    "options": [
+     "なんじ",
+     "いくつ",
+     "いくら",
+     "どれ"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "ねだんが「たかい」の はんたいは？",
+    "options": [
+     "やすい",
+     "ちいさい",
+     "みじかい",
+     "ひくい"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「りんごは ひとつ 100えん_____、 みかんは 50えんです。」",
+    "options": [
+     "で",
+     "と",
+     "に",
+     "を"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "みせの 人に ねだんを きいて ください。",
+    "start": "すみません、 これは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「500えん」の よみかたは？",
+    "options": [
+     "ごびゃくえん",
+     "ごひゃくえん",
+     "ごせんえん",
+     "ごぴゃくえん"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「ぜんぶ_____ 1000えんです。」",
+    "options": [
+     "に",
+     "で",
+     "を",
+     "へ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "たかい ものを みました。 もっと やすい ものが あるか きいて ください。",
+    "start": "もう すこし やすい…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "セールの とき、 ねだんは どう なりますか？",
+    "options": [
+     "たかく なる",
+     "なくなる",
+     "やすく なる",
+     "かわらない"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「この とけいは あまり たかく _____。」",
+    "options": [
+     "くないです",
+     "じゃないです",
+     "ないです",
+     "ありです"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "さいきん かった ものと、 その ねだんを いって ください。",
+    "start": "さいきん かったのは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「8000えん」の よみかたは？",
+    "options": [
+     "やっせんえん",
+     "はちせんえん",
+     "はっぜんえん",
+     "はっせんえん"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「この シャツは あの シャツ_____ やすいです。」",
+    "options": [
+     "まで",
+     "より",
+     "ほう",
+     "から"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちに、 その くつは いくらだったか きいて ください。",
+    "start": "その くつ、 いくら…"
+   }
+  ]
+ },
+ "beginner-u7-l2": {
+  "title": "Sizes",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「おおきい」の はんたいは？",
+    "options": [
+     "ひくい",
+     "ちいさい",
+     "みじかい",
+     "ほそい"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Mサイズより おおきいのは？",
+    "options": [
+     "SSサイズ",
+     "Lサイズ",
+     "XSサイズ",
+     "Sサイズ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「もう すこし おおきい_____は ありますか。」",
+    "options": [
+     "の",
+     "に",
+     "が",
+     "を"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ながい」の はんたいは？",
+    "options": [
+     "みじかい",
+     "ちいさい",
+     "せまい",
+     "ひくい"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「この くつは わたしには ちいさ_____ぎます。」",
+    "options": [
+     "く",
+     "な",
+     "す",
+     "い"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "てんいんに、 ちがう サイズが あるか きいて ください。",
+    "start": "すみません、 もっと…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ぴったり」は どういう いみ？",
+    "options": [
+     "ふるい",
+     "おおきすぎる",
+     "ちいさすぎる",
+     "サイズが ちょうど いい"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「これ、 きて みて_____ いいですか。」",
+    "options": [
+     "が",
+     "を",
+     "は",
+     "も"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "この シャツは おおきすぎます。 てんいんに いって ください。",
+    "start": "この シャツは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「しちゃくしつ」は なにを する ところ？",
+    "options": [
+     "たべる ところ",
+     "ふくを きて みる ところ",
+     "おかねを はらう ところ",
+     "ねる ところ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「くつの サイズは _____ですか。」「25センチです。」",
+    "options": [
+     "なんさい",
+     "なんじ",
+     "なんセンチ",
+     "なんにん"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの くつの サイズを いって ください。",
+    "start": "わたしの くつの サイズは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ゆるい」の はんたいは？",
+    "options": [
+     "ながい",
+     "たかい",
+     "きつい",
+     "おもい"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「Lサイズは おおきかった_____、 Mサイズを かいました。」",
+    "options": [
+     "ので",
+     "まで",
+     "でも",
+     "のを"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "ふくやで、 サイズと ねだんを きいて ください。",
+    "start": "すみません、 この ふくの…"
+   }
+  ]
+ },
+ "beginner-u7-l3": {
+  "title": "Colors",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "トマトは なにいろ？",
+    "options": [
+     "あお",
+     "きいろ",
+     "あか",
+     "しろ"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "はれた 日の そらは なにいろ？",
+    "options": [
+     "あお",
+     "ちゃいろ",
+     "くろ",
+     "ピンク"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたしは _____ くるまが すきです。」",
+    "options": [
+     "あかだ",
+     "あかな",
+     "あかい",
+     "あかく"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "バナナは なにいろ？",
+    "options": [
+     "くろ",
+     "あお",
+     "むらさき",
+     "きいろ"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「この シャツは みどり_____です。」",
+    "options": [
+     "い",
+     "な",
+     "いろ",
+     "く"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの すきな いろを いって ください。",
+    "start": "わたしの すきな いろは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「しろ」の はんたいは？",
+    "options": [
+     "くろ",
+     "きいろ",
+     "あか",
+     "あお"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あおい かばんと くろい かばん、 _____が いいですか。」",
+    "options": [
+     "いつ",
+     "どっち",
+     "だれ",
+     "どこ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "きょう きて いる ふくの いろを いって ください。",
+    "start": "きょうは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "ちゃいろの ものは どれ？",
+    "options": [
+     "レモン",
+     "そら",
+     "ゆき",
+     "チョコレート"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「その しろい_____を ください。」",
+    "options": [
+     "だ",
+     "の",
+     "く",
+     "な"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの へやに ある、 すきな いろの ものを せつめいして ください。",
+    "start": "わたしの へやには…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ピンク」は どんな いろ？",
+    "options": [
+     "あかと あおを まぜた いろ",
+     "あかと しろを まぜた いろ",
+     "あおと きいろを まぜた いろ",
+     "くろと しろを まぜた いろ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「その くつは あかく_____、 くろいです。」",
+    "options": [
+     "なくて",
+     "くて",
+     "ないで",
+     "じゃなくて"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちに、 すきな いろを きいて ください。",
+    "start": "なにいろが…"
+   }
+  ]
+ },
+ "beginner-u7-l4": {
+  "title": "Buying something",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "おかねを はらう ところは？",
+    "options": [
+     "しちゃくしつ",
+     "レジ",
+     "いりぐち",
+     "トイレ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "「レシート」は いつ もらいますか？",
+    "options": [
+     "かった あと",
+     "あさごはんの とき",
+     "みせに はいる まえ",
+     "ねる まえ"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「すみません、 これ_____ ください。」",
+    "options": [
+     "に",
+     "が",
+     "を",
+     "で"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "「げんきん」は どういう いみ？",
+    "options": [
+     "クレジットカード",
+     "レシート",
+     "ふくろ",
+     "おさつや コイン"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「カード_____ はらえますか。」",
+    "options": [
+     "に",
+     "を",
+     "が",
+     "で"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "みせで、 ほしい ものを かって ください。",
+    "start": "すみません、 これを…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ふくろ」は なにに つかいますか？",
+    "options": [
+     "かった ものを いれる",
+     "あめの とき さす",
+     "おかねを かぞえる",
+     "あしに はく"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「ふくろは いります_____。」",
+    "options": [
+     "を",
+     "か",
+     "が",
+     "に"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "てんいんに、 ふくろは いらないと いって ください。",
+    "start": "ふくろは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「おつり」は どういう いみ？",
+    "options": [
+     "かえって くる おかね",
+     "ぜいきん",
+     "ねだん",
+     "しなもの"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたしは この とけいを かい_____です。」",
+    "options": [
+     "て",
+     "ます",
+     "たい",
+     "たく"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "てんいんに、 ほかの いろが あるか きいて ください。",
+    "start": "ほかの いろは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「やおや」は なにを うる みせ？",
+    "options": [
+     "くつ",
+     "やさい",
+     "くすり",
+     "ほん"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「ちょっと みて いる_____です。」",
+    "options": [
+     "しか",
+     "まで",
+     "だけ",
+     "ほど"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "デパートで、 くつうりばが どこか きいて ください。",
+    "start": "すみません、 くつうりばは…"
+   }
+  ]
+ },
+ "beginner-u8-l1": {
+  "title": "Rooms",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "りょうりを する へやは？",
+    "options": [
+     "げんかん",
+     "だいどころ",
+     "しんしつ",
+     "トイレ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "ねる へやは？",
+    "options": [
+     "ふろば",
+     "げんかん",
+     "だいどころ",
+     "しんしつ"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「だいどころ_____ れいぞうこが あります。」",
+    "options": [
+     "に",
+     "が",
+     "を",
+     "で"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "にほんの いえで、 くつを ぬぐ ところは？",
+    "options": [
+     "ベランダ",
+     "げんかん",
+     "だいどころ",
+     "しんしつ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたしの へやは 2かい_____ あります。」",
+    "options": [
+     "が",
+     "を",
+     "で",
+     "に"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの いえの へやに ついて はなして ください。",
+    "start": "わたしの いえには…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ふろば」で なにを しますか？",
+    "options": [
+     "りょうりを する",
+     "べんきょうする",
+     "からだを あらう",
+     "ねる"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「よる、 リビング_____ テレビを みます。」",
+    "options": [
+     "に",
+     "で",
+     "が",
+     "を"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "あなたが いちばん すきな へやと、 その りゆうを いって ください。",
+    "start": "いちばん すきな へやは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ひろい」の はんたいは？",
+    "options": [
+     "ほそい",
+     "みじかい",
+     "せまい",
+     "ひくい"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あなたの いえに へや_____ いくつ ありますか。」",
+    "options": [
+     "は",
+     "へ",
+     "を",
+     "で"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの へやに ある ものを いって ください。",
+    "start": "わたしの へやには…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「かいだん」は なにに つかいますか？",
+    "options": [
+     "上や 下の かいへ いく",
+     "そとを みる",
+     "てを あらう",
+     "ふくを いれる"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「わたしの へやは あまり ひろく _____。」",
+    "options": [
+     "じゃありません",
+     "いません",
+     "ありません",
+     "ません"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "どんな へやに すみたいですか。",
+    "start": "わたしが すみたいのは…"
+   }
+  ]
+ },
+ "beginner-u8-l2": {
+  "title": "Objects",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "すわる ものは？",
+    "options": [
+     "いす",
+     "まど",
+     "つくえ",
+     "ドア"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "じかんを みる ものは？",
+    "options": [
+     "かさ",
+     "とけい",
+     "かがみ",
+     "さら"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「つくえの 上_____ ほんが あります。」",
+    "options": [
+     "で",
+     "に",
+     "が",
+     "を"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "れいぞうこに いれる ものは？",
+    "options": [
+     "ぎゅうにゅう",
+     "ふく",
+     "くつ",
+     "ほん"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「これは _____の かさですか。」「わたしのです。」",
+    "options": [
+     "だれ",
+     "どこ",
+     "なに",
+     "いつ"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの つくえの 上に ある ものを いって ください。",
+    "start": "つくえの 上には…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「かがみ」で なにを みますか？",
+    "options": [
+     "そと",
+     "テレビ",
+     "ほん",
+     "じぶんの かお"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "あいての ちかくに ある ものを きく とき：「_____は なんですか。」",
+    "options": [
+     "どこ",
+     "あれ",
+     "それ",
+     "これ"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの へやで、 いちばん たいせつな ものを いって ください。",
+    "start": "いちばん たいせつな ものは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「でんき」を つけると どう なりますか？",
+    "options": [
+     "へやが くらく なる",
+     "へやが あかるく なる",
+     "さむく なる",
+     "みずが でる"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「テーブルの 上に りんごが みっつ _____。」",
+    "options": [
+     "します",
+     "います",
+     "です",
+     "あります"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "かぎが ありません。 かぞくに きいて ください。",
+    "start": "ねえ、 わたしの かぎ…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "まどを あけると、 なにが はいって きますか？",
+    "options": [
+     "ベッド",
+     "テレビ",
+     "かぜ",
+     "いす"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あそこに ある _____ かばんは だれのですか。」",
+    "options": [
+     "あそこ",
+     "あれ",
+     "あの",
+     "あちら"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "あなたが ほしい かぐ（つくえ、 ソファなど）を いって ください。",
+    "start": "わたしは あたらしい…"
+   }
+  ]
+ },
+ "beginner-u8-l3": {
+  "title": "Places near home",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "くすりを かう ところは？",
+    "options": [
+     "くすりや",
+     "ほんや",
+     "パンや",
+     "はなや"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "てがみを おくる ところは？",
+    "options": [
+     "びょういん",
+     "ぎんこう",
+     "ゆうびんきょく",
+     "としょかん"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「えきの ちかく_____ コンビニが あります。」",
+    "options": [
+     "を",
+     "で",
+     "に",
+     "が"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "おかねを あずける ところは？",
+    "options": [
+     "えき",
+     "ぎんこう",
+     "スーパー",
+     "こうえん"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「こうえんで 子ども_____ あそんで います。」",
+    "options": [
+     "に",
+     "で",
+     "が",
+     "を"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの いえの ちかくに ある ものを いって ください。",
+    "start": "わたしの いえの ちかくに…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "24じかん あいて いる 小さい みせは？",
+    "options": [
+     "コンビニ",
+     "デパート",
+     "がっこう",
+     "びょういん"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「スーパーは いえ_____ あるいて 5ふんです。」",
+    "options": [
+     "に",
+     "へ",
+     "を",
+     "から"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "よく いく みせに ついて はなして ください。",
+    "start": "よく いく みせは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「となり」は どういう いみ？",
+    "options": [
+     "ちかの 下",
+     "すぐ よこ",
+     "ずっと 上",
+     "とても とおい"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「この ちかくに びょういん_____ ありますか。」",
+    "options": [
+     "へ",
+     "が",
+     "で",
+     "を"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの まちの すきな ばしょを はなして ください。",
+    "start": "わたしの まちで すきな ばしょは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「こうばん」に いるのは だれ？",
+    "options": [
+     "けいさつかん",
+     "せんせい",
+     "てんいん",
+     "いしゃ"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「すみません、 この へんに ゆうびんきょくは _____か。」",
+    "options": [
+     "しません",
+     "いません",
+     "なりません",
+     "ありません"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "あたらしい きんじょの 人に、 ちかくの スーパーを きいて ください。",
+    "start": "すみません、 この へんに…"
+   }
+  ]
+ },
+ "beginner-u9-l1": {
+  "title": "Basic directions",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「みぎ」の はんたいは？",
+    "options": [
+     "うえ",
+     "まえ",
+     "うしろ",
+     "ひだり"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "「まっすぐ」は どういう いみ？",
+    "options": [
+     "みぎに まがる",
+     "まがらないで すすむ",
+     "もどる",
+     "とまる"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「この みち_____ まっすぐ いって ください。」",
+    "options": [
+     "の",
+     "に",
+     "が",
+     "を"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "「しんごう」は どういう もの？",
+    "options": [
+     "えき",
+     "あか・きいろ・あおの ライト",
+     "ちず",
+     "はし"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「すみません、 えきは _____ですか。」",
+    "options": [
+     "だれ",
+     "どこ",
+     "なに",
+     "いくら"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "みちを きいて ください。",
+    "start": "すみません、 えきは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ちず」は どういう もの？",
+    "options": [
+     "みちや ばしょが かいて ある もの",
+     "でんしゃの きっぷ",
+     "じしょ",
+     "てがみ"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「はしを わたって、 ひだり_____ まがって ください。」",
+    "options": [
+     "を",
+     "が",
+     "に",
+     "で"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの いえから えきまでの みちを せつめいして ください。",
+    "start": "いえを でて…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ちかい」の はんたいは？",
+    "options": [
+     "とおい",
+     "ながい",
+     "ふかい",
+     "ひろい"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「ここから あるいて なんぷん_____ かかりますか。」",
+    "options": [
+     "ごろ",
+     "しか",
+     "ぐらい",
+     "まで"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちを、 あなたの すきな カフェに あんないして ください。",
+    "start": "カフェは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「かど」は どういう ところ？",
+    "options": [
+     "いえの 中",
+     "えきの ホーム",
+     "みちが まがる ところ",
+     "みちの まんなか"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「ぎんこうは あの ビル_____ となりです。」",
+    "options": [
+     "の",
+     "が",
+     "を",
+     "に"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "みちに まよいました。 人に たすけを たのんで ください。",
+    "start": "すみません、 みちに…"
+   }
+  ]
+ },
+ "beginner-u9-l2": {
+  "title": "Transportation",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "そらを とぶ のりものは？",
+    "options": [
+     "ふね",
+     "でんしゃ",
+     "じてんしゃ",
+     "ひこうき"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "でんしゃに のる ところは？",
+    "options": [
+     "くうこう",
+     "えき",
+     "みなと",
+     "ちゅうしゃじょう"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「えきの まえで バス_____ のります。」",
+    "options": [
+     "に",
+     "が",
+     "を",
+     "で"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ちかてつ」は どこを はしりますか？",
+    "options": [
+     "じめんの 下",
+     "うみの 上",
+     "かわの 上",
+     "そら"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「つぎの えきで でんしゃ_____ おります。」",
+    "options": [
+     "へ",
+     "が",
+     "を",
+     "に"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "いつも どうやって かいしゃや がっこうへ いきますか。",
+    "start": "わたしは いつも…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「きっぷ」は どういう もの？",
+    "options": [
+     "ちず",
+     "おかね",
+     "でんしゃに のるための かみ",
+     "レシート"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「とうきょう_____ おおさかまで しんかんせんで いきます。」",
+    "options": [
+     "まで",
+     "が",
+     "から",
+     "を"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの くにで、 よく つかう のりものを はなして ください。",
+    "start": "わたしの くにでは よく…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「のりかえ」は どういう いみ？",
+    "options": [
+     "えきで ねる こと",
+     "べつの でんしゃや バスに かわる こと",
+     "でんしゃを そうじする こと",
+     "きっぷを なくす こと"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「えきまで _____で いきますか。」「バスです。」",
+    "options": [
+     "だれ",
+     "どこ",
+     "いつ",
+     "なん"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "えきで、 きっぷの かいかたを きいて ください。",
+    "start": "すみません、 きっぷは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ちゅうしゃじょう」は なにを とめる ところ？",
+    "options": [
+     "くるま",
+     "ふね",
+     "でんしゃ",
+     "ひこうき"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「つぎの でんしゃは なんじ_____ でますか。」",
+    "options": [
+     "へ",
+     "に",
+     "が",
+     "を"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "タクシーの うんてんしゅに、 いきたい ところを いって ください。",
+    "start": "すみません、 とうきょうえき…"
+   }
+  ]
+ },
+ "beginner-u10-l1": {
+  "title": "Who",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「だれ」は なにを きく ことば？",
+    "options": [
+     "もの",
+     "じかん",
+     "人",
+     "ばしょ"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "「だれ」の ていねいな いいかたは？",
+    "options": [
+     "どなた",
+     "なに",
+     "どれ",
+     "どこ"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「_____が きましたか。」「たなかさんです。」",
+    "options": [
+     "なに",
+     "いつ",
+     "どこ",
+     "だれ"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "「かれ」は どんな 人を さしますか？",
+    "options": [
+     "どうぶつ",
+     "子どもだけ",
+     "おんなの 人",
+     "おとこの 人"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「これは _____の ほんですか。」",
+    "options": [
+     "だれが",
+     "だれ",
+     "だれを",
+     "だれに"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "あなたが いちばん あいたい 人は だれですか。",
+    "start": "わたしが いちばん あいたいのは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「かのじょ」は どんな 人を さしますか？",
+    "options": [
+     "いぬ",
+     "おんなの 人",
+     "おとこの 人",
+     "あかちゃんだけ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「きのう、 だれ_____ あいましたか。」",
+    "options": [
+     "に",
+     "で",
+     "へ",
+     "を"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "しゃしんの 人を ともだちに しょうかいして ください。",
+    "start": "この 人は…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「みんな」は どういう いみ？",
+    "options": [
+     "あなただけ",
+     "ひとりの 人",
+     "ぜんぶの 人",
+     "だれも いない"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「へやに だれ_____ いません。」",
+    "options": [
+     "が",
+     "を",
+     "も",
+     "に"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちに、 だれと いっしょに すんで いるか きいて ください。",
+    "start": "だれと…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「わたしたち」は どういう いみ？",
+    "options": [
+     "わたしと ほかの 人",
+     "わたしだけ",
+     "かれ ひとり",
+     "あなた ひとり"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「だれ_____ この ケーキを つくりましたか。」",
+    "options": [
+     "は",
+     "が",
+     "を",
+     "の"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの クラスの だれかに ついて はなして ください。",
+    "start": "わたしの クラスに…"
+   }
+  ]
+ },
+ "beginner-u10-l2": {
+  "title": "What",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「なに」は なにを きく ことば？",
+    "options": [
+     "もの・こと",
+     "じかん",
+     "人",
+     "ばしょ"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "「これ」は どこに ある もの？",
+    "options": [
+     "ふたりから とおい ところ",
+     "わからない ところ",
+     "あいての ちかく",
+     "わたしの ちかく"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「なに_____ のみますか。」",
+    "options": [
+     "が",
+     "へ",
+     "に",
+     "を"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "「何じ」の よみかたは？",
+    "options": [
+     "なにじ",
+     "なんじ",
+     "なんに",
+     "なじ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「へやに なに_____ ありますか。」「つくえと いすが あります。」",
+    "options": [
+     "で",
+     "が",
+     "を",
+     "へ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "いま、 なにを して いますか。",
+    "start": "いま…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「なにか」は どういう いみ？",
+    "options": [
+     "なにも ない こと",
+     "ぜんぶの もの",
+     "はっきり わからない もの",
+     "わからない 人"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「きょうは なに_____ たべたくないです。」",
+    "options": [
+     "も",
+     "が",
+     "を",
+     "に"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "あしたは なにを しますか。",
+    "start": "あしたは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「なにいろ」は なにを きく ことば？",
+    "options": [
+     "いろ",
+     "かたち",
+     "じかん",
+     "ねだん"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「これは _____の ほんですか。」「にほんごの ほんです。」",
+    "options": [
+     "どこ",
+     "なん",
+     "いつ",
+     "だれ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちに、 すきな スポーツを きいて ください。",
+    "start": "すきな スポーツは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「どんな」は なにを きく ことば？",
+    "options": [
+     "人の なまえ",
+     "かず",
+     "ようすや しゅるい",
+     "ばしょ"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「たんじょうびに なに_____ ほしいですか。」",
+    "options": [
+     "に",
+     "で",
+     "が",
+     "を"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "しらない ものを みました。 なにか きいて ください。",
+    "start": "すみません、 これは…"
+   }
+  ]
+ },
+ "beginner-u10-l3": {
+  "title": "Where",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「どこ」は なにを きく ことば？",
+    "options": [
+     "りゆう",
+     "じかん",
+     "ばしょ",
+     "人"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "いちばん とおい ところを さす ことばは？",
+    "options": [
+     "あそこ",
+     "ここ",
+     "これ",
+     "そこ"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「すみません、 トイレは _____ですか。」",
+    "options": [
+     "いつ",
+     "だれ",
+     "なに",
+     "どこ"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "「どこ」の ていねいな いいかたは？",
+    "options": [
+     "どれ",
+     "どちら",
+     "どの",
+     "どなた"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あした、 どこ_____ いきますか。」",
+    "options": [
+     "が",
+     "と",
+     "へ",
+     "で"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "あなたが すんで いる ところを いって ください。",
+    "start": "わたしが すんで いるのは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「なか」の はんたいは？",
+    "options": [
+     "みぎ",
+     "そと",
+     "まえ",
+     "うえ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「いつも どこ_____ ひるごはんを たべますか。」",
+    "options": [
+     "で",
+     "を",
+     "に",
+     "が"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "しゅうまつに どこへ いきたいですか。",
+    "start": "しゅうまつに いきたいのは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「うしろ」の はんたいは？",
+    "options": [
+     "よこ",
+     "した",
+     "まえ",
+     "なか"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「ねこは どこ_____ いますか。」",
+    "options": [
+     "を",
+     "に",
+     "へ",
+     "で"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの さいふは いま どこに ありますか。",
+    "start": "わたしの さいふは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ばしょ」と おなじ いみの ことばは？",
+    "options": [
+     "じかん",
+     "もの",
+     "ひと",
+     "ところ"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「えきが どこ_____ しって いますか。」",
+    "options": [
+     "か",
+     "が",
+     "を",
+     "に"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "みちで、 ちかくの トイレを きいて ください。",
+    "start": "すみません、 この ちかくに…"
+   }
+  ]
+ },
+ "beginner-u10-l4": {
+  "title": "When",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「いつ」は なにを きく ことば？",
+    "options": [
+     "ばしょ",
+     "ねだん",
+     "じかんや 日",
+     "人"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "「きのう・きょう・あした」で、 これからの 日は？",
+    "options": [
+     "きょう",
+     "あした",
+     "おととい",
+     "きのう"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「_____ にほんへ きましたか。」「きょねんです。」",
+    "options": [
+     "いつ",
+     "なに",
+     "だれ",
+     "どこ"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "「せんしゅう」は いつ？",
+    "options": [
+     "らいげつ",
+     "こんしゅうの つぎの しゅう",
+     "こんしゅうの まえの しゅう",
+     "きょう"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「なつやすみは いつ_____ いつまでですか。」",
+    "options": [
+     "を",
+     "に",
+     "から",
+     "まで"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "いつ にほんごの べんきょうを はじめましたか。",
+    "start": "べんきょうを はじめたのは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「まいあさ」は どういう いみ？",
+    "options": [
+     "どの 日の あさも",
+     "ときどき",
+     "あさ いちどだけ",
+     "どの 日の よるも"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あしたは いつ_____ いいですよ。」",
+    "options": [
+     "と",
+     "を",
+     "へ",
+     "でも"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "つぎの やすみは いつですか。 なにを しますか。",
+    "start": "つぎの やすみは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「さいきん」は どういう いみ？",
+    "options": [
+     "らいねん",
+     "ずっと あと",
+     "とても むかし",
+     "すこし まえから いままで"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「ごはんを たべた _____、 しゅくだいを します。」",
+    "options": [
+     "まえに",
+     "あとで",
+     "ながら",
+     "までに"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちに、 こんど いつ あえるか きいて ください。",
+    "start": "こんど…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ときどき」に いみが ちかいのは？",
+    "options": [
+     "たまに",
+     "まいにち",
+     "いつも",
+     "ぜんぜん"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「らいしゅう_____ どようびに あいましょう。」",
+    "options": [
+     "に",
+     "の",
+     "が",
+     "を"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの たいせつな 日は いつですか。",
+    "start": "わたしの たいせつな 日は…"
+   }
+  ]
+ },
+ "beginner-u10-l5": {
+  "title": "Why",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「どうして」は なにを きく ことば？",
+    "options": [
+     "人",
+     "ばしょ",
+     "りゆう",
+     "じかん"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "「どうして」と おなじ いみの ことばは？",
+    "options": [
+     "いつ",
+     "なぜ",
+     "だれ",
+     "どこ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「おなかが すいた_____、 なにか たべます。」",
+    "options": [
+     "から",
+     "へ",
+     "でも",
+     "まで"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "「りゆう」は どういう いみ？",
+    "options": [
+     "じかん",
+     "「どうして？」の こたえ",
+     "ばしょ",
+     "なまえ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「どうして きのう こなかったんですか。」「びょうきだった_____です。」",
+    "options": [
+     "から",
+     "まで",
+     "より",
+     "ので"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "なぜ にほんごを べんきょうして いますか。",
+    "start": "にほんごを べんきょうして いるのは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "ともだちに「なんで？」と きく。 いみは？",
+    "options": [
+     "いつ？",
+     "だれ？",
+     "どうして？",
+     "どこ？"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あめが ふって いる_____、 かさを もって いきます。」",
+    "options": [
+     "でも",
+     "より",
+     "まで",
+     "ので"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "すきな たべものと、 すきな りゆうを はなして ください。",
+    "start": "わたしが すきな たべものは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「だから」に いみが ちかいのは？",
+    "options": [
+     "それで",
+     "しかし",
+     "または",
+     "でも"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「どうしたんですか。」「あたまが いたい_____です。」",
+    "options": [
+     "に",
+     "を",
+     "が",
+     "ん"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちが げんきが ありません。 どうしてか きいて ください。",
+    "start": "どうしたの？ なにか…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「なぜなら」の あとに くるのは？",
+    "options": [
+     "なまえ",
+     "じかん",
+     "りゆう",
+     "しつもん"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「どうして たべない_____か。」",
+    "options": [
+     "でした",
+     "んです",
+     "ません",
+     "ます"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "しゅくだいを わすれました。 せんせいに りゆうを いって ください。",
+    "start": "すみません、 きのう…"
+   }
+  ]
+ },
+ "beginner-u10-l6": {
+  "title": "How",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「どうやって」は なにを きく ことば？",
+    "options": [
+     "じかん",
+     "ばしょ",
+     "やりかた",
+     "人"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "「にほんは どうですか。」の こたえは？",
+    "options": [
+     "とても たのしいです。",
+     "とうきょうです。",
+     "3じです。",
+     "マリアさんです。"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「がっこうまで どう_____ いきますか。」",
+    "options": [
+     "やって",
+     "いって",
+     "きて",
+     "なって"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "「いかが」は「どう」の なんですか？",
+    "options": [
+     "はんたいの いみ",
+     "カジュアルな いいかた",
+     "かこの かたち",
+     "ていねいな いいかた"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「この かんじは _____ よみますか。」",
+    "options": [
+     "どこ",
+     "どう",
+     "いつ",
+     "だれ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの すきな りょうりの つくりかたを すこし はなして ください。",
+    "start": "まず…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「どのくらい」は なにを きく ことば？",
+    "options": [
+     "人",
+     "なまえ",
+     "いろ",
+     "かずや じかんや ながさ"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「えきまで _____ かかりますか。」「10ぷんです。」",
+    "options": [
+     "どこ",
+     "だれ",
+     "どのくらい",
+     "どうして"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちに、 しゅうまつは どうだったか きいて ください。",
+    "start": "しゅうまつは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「おげんきですか。」の こたえは？",
+    "options": [
+     "はい、 げんきです。",
+     "はい、 3さいです。",
+     "はい、 えきです。",
+     "はい、 あしたです。"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「コーヒーは _____ですか。」（ていねいに すすめる）",
+    "options": [
+     "どちらへ",
+     "いかが",
+     "いつか",
+     "どなた"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "にほんごの べんきょうは どうですか。",
+    "start": "にほんごの べんきょうは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「いくつ」は なにを きく ことば？",
+    "options": [
+     "いろ",
+     "人",
+     "かず",
+     "ばしょ"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「その えいがは _____でしたか。」「おもしろかったです。」",
+    "options": [
+     "だれ",
+     "どう",
+     "どこ",
+     "いつ"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "えきまでの いきかたを きいて ください。",
+    "start": "すみません、 えきまで どうやって…"
+   }
+  ]
+ },
+ "beginner-u11-l1": {
+  "title": "Weather",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「はれ」は どんな てんき？",
+    "options": [
+     "そらが あおくて、 たいようが でて いる",
+     "かぜが とても つよい",
+     "あめが ふって いる",
+     "ゆきが ふって いる"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "あめが ふる とき、 つかう ものは？",
+    "options": [
+     "とけい",
+     "かさ",
+     "まくら",
+     "めがね"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「そとは あめ_____ ふって います。」",
+    "options": [
+     "で",
+     "を",
+     "が",
+     "に"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "「さむい」の はんたいは？",
+    "options": [
+     "つめたい",
+     "あつい",
+     "すずしい",
+     "くらい"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「きのうは とても さむ_____。」",
+    "options": [
+     "かったです",
+     "いでした",
+     "かったでした",
+     "いです"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "きょうの てんきを いって ください。",
+    "start": "きょうは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「くもり」は どんな てんき？",
+    "options": [
+     "ゆきが ふる",
+     "そらに くもが おおい",
+     "たいようが つよい",
+     "あめが つよい"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「あしたは はれる_____。」",
+    "options": [
+     "だった",
+     "ました",
+     "でした",
+     "でしょう"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの まちの きょうの てんきと、 きおんを いって ください。",
+    "start": "わたしの まちは きょう…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「たいふう」は どんな てんき？",
+    "options": [
+     "とても よく はれて いる",
+     "すずしくて きもちいい",
+     "あめと かぜが とても つよい",
+     "ゆきが すこし ふる"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「そとは さむい_____、 コートを きて ください。」",
+    "options": [
+     "でも",
+     "まで",
+     "より",
+     "から"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "あめの 日は いつも なにを しますか。",
+    "start": "あめの 日は…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "ゆきは なにいろ？",
+    "options": [
+     "くろ",
+     "あか",
+     "しろ",
+     "みどり"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「だんだん さむく _____ました。」",
+    "options": [
+     "なり",
+     "き",
+     "あり",
+     "い"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちと、 あしたの てんきに ついて はなして ください。",
+    "start": "あしたの てんきは…"
+   }
+  ]
+ },
+ "beginner-u11-l2": {
+  "title": "Seasons",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "にほんの きせつは いくつ？",
+    "options": [
+     "ふたつ",
+     "みっつ",
+     "いつつ",
+     "よっつ"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "「なつ」の つぎの きせつは？",
+    "options": [
+     "つゆ",
+     "はる",
+     "あき",
+     "ふゆ"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「はる_____ さくらが さきます。」",
+    "options": [
+     "に",
+     "を",
+     "が",
+     "へ"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "いちばん さむい きせつは？",
+    "options": [
+     "あき",
+     "なつ",
+     "ふゆ",
+     "はる"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「なつは ふゆ_____ あついです。」",
+    "options": [
+     "ほど",
+     "まで",
+     "から",
+     "より"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの すきな きせつと、 その りゆうを いって ください。",
+    "start": "わたしの すきな きせつは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "あきに あかや きいろに なるのは？",
+    "options": [
+     "うみ",
+     "もみじ",
+     "さくら",
+     "ゆき"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「なつやすみに うみ_____ およぎました。」",
+    "options": [
+     "の",
+     "で",
+     "と",
+     "が"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの くにの なつは どうですか。",
+    "start": "わたしの くにの なつは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「つゆ」は どんな きせつ？",
+    "options": [
+     "あめが おおい",
+     "ゆきが おおい",
+     "かぜが ぜんぜん ない",
+     "とても さむい"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「はるは あたたか_____、 きもちが いいです。」",
+    "options": [
+     "な",
+     "くて",
+     "かって",
+     "いて"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "ふゆに よく する ことを はなして ください。",
+    "start": "ふゆには よく…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "なつの あとで、 すずしく なる きせつは？",
+    "options": [
+     "はる",
+     "つゆ",
+     "あき",
+     "ふゆ"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "ただしいのは？「らいねんの はる、 にほんへ いき_____です。」",
+    "options": [
+     "たい",
+     "ません",
+     "ました",
+     "ます"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "あなたの くにに いく 人に、 いちばん いい きせつを おしえて ください。",
+    "start": "わたしの くにに いくなら…"
+   }
+  ]
+ },
+ "beginner-u12-l1": {
+  "title": "Combining everything in short real-life dialogues",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "「ありがとう」と いわれました。 こたえは？",
+    "options": [
+     "いただきます",
+     "おやすみなさい",
+     "いってきます",
+     "どういたしまして"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "「すみません」は どんな ときに つかいますか？",
+    "options": [
+     "人を よぶ ときや、 あやまる とき",
+     "うちに かえった とき",
+     "たべる とき",
+     "ねる とき"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "A「コーヒー、 のみませんか。」 B「はい、 のみ_____。」",
+    "options": [
+     "ませんでした",
+     "ません",
+     "でした",
+     "ましょう"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "「もう いちど おねがいします」は どんな とき？",
+    "options": [
+     "うちに かえる とき",
+     "よく きこえなかった とき",
+     "たべた あと",
+     "はじめて あった とき"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "A「しゅうまつ、 なにを しましたか。」 B「ともだちと えいがを み_____。」",
+    "options": [
+     "ます",
+     "ましょう",
+     "ました",
+     "ません"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "カフェで ともだちに あいました。 あいさつして、 のみものを きめて ください。",
+    "start": "あ、 こんにちは！ なにを…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「ちょっと まって ください」の いみは？",
+    "options": [
+     "もう かえって",
+     "すこし まって",
+     "たくさん たべて",
+     "はやく して"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "A「いっしょに ひるごはんを たべ_____か。」 B「いいですね。」",
+    "options": [
+     "ません",
+     "まし",
+     "るです",
+     "です"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "ともだちを、 どようびの えいがに さそって ください。",
+    "start": "どようび、 いっしょに…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「わかりました」に いみが ちかいのは？",
+    "options": [
+     "まちがえました",
+     "はい、 りかいしました",
+     "いいえ、 しりません",
+     "もう わすれました"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "A「だれと きましたか。」 B「あね_____ きました。」",
+    "options": [
+     "を",
+     "の",
+     "と",
+     "へ"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "てんいんに、 パンが どこに あるか きいて ください。",
+    "start": "すみません、 パンは…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "「おつかれさまでした」は いつ いいますか？",
+    "options": [
+     "たべる まえ",
+     "はじめて あった とき",
+     "しごとが おわった とき",
+     "あさ おきた とき"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "A「にほんごが わかりますか。」 B「はい、 すこし _____。」",
+    "options": [
+     "わかります",
+     "わかるです",
+     "わかりの",
+     "わかって"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "あたらしい ともだちに じこしょうかいして、 しつもんを ひとつ して ください。",
+    "start": "はじめまして。 わたしは…"
+   }
+  ]
+ }
+}

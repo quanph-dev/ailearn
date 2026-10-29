@@ -1,0 +1,4528 @@
+{
+ "intermediate-u1-l1": {
+  "title": "Invitations",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "朋友下个月结婚，寄给你一张_____，请你去参加婚礼。",
+    "options": [
+     "车票",
+     "发票",
+     "名片",
+     "请帖"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "“邀请 (yāoqǐng)” 的意思最接近_____。",
+    "options": [
+     "问",
+     "请",
+     "找",
+     "送"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“如果你周六有空，我们_____去爬山吧。”",
+    "options": [
+     "就",
+     "被",
+     "却",
+     "才"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "邀请朋友吃饭，哪句话最自然？",
+    "options": [
+     "饭已经吃完了。",
+     "你请我吃饭吧。",
+     "这周五一起吃个饭，怎么样？",
+     "我不想吃饭。"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择语序正确的句子：",
+    "options": [
+     "我邀请想你来参加我的生日聚会。",
+     "我想邀请你来参加我的生日聚会。",
+     "我想你邀请来参加我的生日聚会。",
+     "我想邀请你参加来我的生日聚会。"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "邀请朋友这个周末跟你一起做点儿什么。",
+    "start": "这个周末你有空吗？我们一起…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "哪个不是可以邀请别人参加的活动？",
+    "options": [
+     "野餐",
+     "聚会",
+     "发票",
+     "婚礼"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我已经_____小李发了邀请，他说一定来。”",
+    "options": [
+     "被",
+     "给",
+     "比",
+     "把"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说最近有人邀请你参加的一个活动。",
+    "start": "最近，我的朋友邀请我…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "约好见面时说“不见不散”，意思是_____。",
+    "options": [
+     "见不到就算了",
+     "不想见面",
+     "一定要等到对方来",
+     "见了面就走"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我们邀请了十个人，可是只来_____五个。”",
+    "options": [
+     "过",
+     "着",
+     "的",
+     "了"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "邀请朋友来你的生日聚会，说清楚时间和地点。",
+    "start": "下个星期六是我的生日，我想请你…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "选择正确的词：“我想_____一个派对，请几个朋友来家里玩儿。”",
+    "options": [
+     "参观",
+     "报名",
+     "打扫",
+     "举办"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“周末我们去公园野餐，_____？”",
+    "options": [
+     "怎么样",
+     "为什么",
+     "什么样",
+     "怎么"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "很有礼貌地邀请一位很忙的同事跟你喝杯咖啡。",
+    "start": "不好意思，如果你有时间的话，…"
+   }
+  ]
+ },
+ "intermediate-u1-l2": {
+  "title": "Accepting/declining",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "朋友请你去看电影，你想去，你说：“好啊，_____！”",
+    "options": [
+     "没关系",
+     "不客气",
+     "没问题",
+     "对不起"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "拒绝 (jùjué) 别人的邀请时，常常先说：“_____，我那天有事。”",
+    "options": [
+     "欢迎欢迎",
+     "太好了",
+     "不用谢",
+     "不好意思"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“_____我很想去，但是那天我要加班。”",
+    "options": [
+     "虽然",
+     "所以",
+     "因为",
+     "如果"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "朋友说：“今天不行，改天吧。”“改天”的意思是_____。",
+    "options": [
+     "马上改变",
+     "永远不去",
+     "今天就去",
+     "换一天再说"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“谢谢你的邀请，可是我周六去_____。”",
+    "options": [
+     "不懂",
+     "不完",
+     "不了",
+     "不见"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "朋友请你周末去爬山，你很想去。接受他的邀请。",
+    "start": "太好了！我…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "哪句话是接受邀请？",
+    "options": [
+     "我一定准时到。",
+     "真不巧，我有事。",
+     "我恐怕去不了。",
+     "下次吧。"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“下次有机会，我一定_____你一起去。”",
+    "options": [
+     "被",
+     "比",
+     "跟",
+     "把"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "同事请你今晚去唱歌，可是你很累。礼貌地拒绝他。",
+    "start": "谢谢你请我，不过…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "选择正确的词：“真_____，那天我正好要出差。”",
+    "options": [
+     "好玩",
+     "不巧",
+     "方便",
+     "不错"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这家餐厅我去_____三次了，这次就不去了。”",
+    "options": [
+     "着",
+     "在",
+     "得",
+     "过"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "朋友请你明天吃晚饭，你有事去不了。拒绝他，再约一个别的时间。",
+    "start": "真不好意思，明天…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“我恐怕去不了。”这句话是_____。",
+    "options": [
+     "生气地批评",
+     "委婉地拒绝",
+     "马上答应",
+     "高兴地接受"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我很想参加，但是我不_____能准时到。”",
+    "options": [
+     "应该",
+     "一定",
+     "必须",
+     "需要"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "你收到朋友的婚礼邀请，你很高兴。告诉他你会去。",
+    "start": "恭喜恭喜！我…"
+   }
+  ]
+ },
+ "intermediate-u1-l3": {
+  "title": "Arranging times",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "跟朋友约时间，你问：“你什么时候_____？”",
+    "options": [
+     "有空",
+     "有钱",
+     "有用",
+     "有名"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "“我们约在三点半吧。”“三点半”也可以说成_____。",
+    "options": [
+     "三点四十五分",
+     "三点三十分",
+     "三点十五分",
+     "四点半"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择语序正确的句子：",
+    "options": [
+     "我们明天下午三点在咖啡馆见面吧。",
+     "我们在咖啡馆明天下午三点见面吧。",
+     "我们见面明天下午三点在咖啡馆吧。",
+     "明天下午三点我们见面在咖啡馆吧。"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "“准时 (zhǔnshí)” 的意思是_____。",
+    "options": [
+     "早到一个小时",
+     "没有时间",
+     "晚了很多",
+     "不早也不晚"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我们把见面的时间_____到周六吧。”",
+    "options": [
+     "关",
+     "开",
+     "拿",
+     "改"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "跟朋友约一个见面的时间和地点。",
+    "start": "我们明天…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "你九点有事，想晚一点儿见面，你说：“我们能不能_____一点儿？”",
+    "options": [
+     "提前",
+     "按时",
+     "推迟",
+     "准时"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“周六比周日_____方便。”",
+    "options": [
+     "太",
+     "更",
+     "很",
+     "非常"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "朋友想周五见面，可是你周五没空。建议另一个时间。",
+    "start": "周五我不太方便，…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "选择正确的词：“我先看看我的_____，再告诉你哪天有空。”",
+    "options": [
+     "地图",
+     "钱包",
+     "日程",
+     "菜单"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“见面的时间定_____了吗？”",
+    "options": [
+     "到",
+     "完",
+     "见",
+     "好"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "你要迟到十分钟，给朋友打电话说一下。",
+    "start": "不好意思，我可能要…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "选择正确的词：“我们_____了明天上午十点见。”",
+    "options": [
+     "约好",
+     "问好",
+     "请好",
+     "见好"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“周五不行的话，周六_____？”",
+    "options": [
+     "是不是",
+     "行不行",
+     "对不对",
+     "有没有"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你一般什么时候有空，什么时候比较忙。",
+    "start": "我一般…比较有空，…"
+   }
+  ]
+ },
+ "intermediate-u2-l1": {
+  "title": "Ordering",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "服务员问：“您要点什么？”你说：“我要一_____牛肉面。”",
+    "options": [
+     "张",
+     "碗",
+     "件",
+     "杯"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "你问服务员：“你们这儿的_____菜是什么？”（饭馆最有名的菜）",
+    "options": [
+     "门牌",
+     "名牌",
+     "车牌",
+     "招牌"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“服务员，再来一_____饺子。”",
+    "options": [
+     "把",
+     "条",
+     "盘",
+     "张"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "点菜以前，服务员先拿来_____让你看。",
+    "options": [
+     "菜单",
+     "筷子",
+     "账单",
+     "发票"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（用“把”）：",
+    "options": [
+     "请把给我菜单看看。",
+     "请给我把看看菜单。",
+     "请把菜单给我看看。",
+     "请菜单把给我看看。"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你在饭馆，点一个主菜和一个饮料。",
+    "start": "服务员，我要…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "你想知道菜什么时候好，问：“菜大概要等多_____？”",
+    "options": [
+     "大",
+     "高",
+     "久",
+     "远"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我们_____点了三个菜，够了吗？”",
+    "options": [
+     "已经",
+     "将要",
+     "正在",
+     "刚要"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "问服务员有什么菜可以推荐 (tuījiàn)。",
+    "start": "请问，你们这儿…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“筷子 (kuàizi)” 的量词是_____。",
+    "options": [
+     "条",
+     "双",
+     "个",
+     "张"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这个菜我以前吃_____，很好吃。”",
+    "options": [
+     "得",
+     "过",
+     "在",
+     "着"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "跟朋友一起吃饭，说说你想吃什么，为什么。",
+    "start": "我想吃…，因为…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "选择正确的词：“先上_____菜，再上热菜。”",
+    "options": [
+     "低",
+     "冷静",
+     "雪",
+     "凉"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我点的菜_____别人拿走了。”",
+    "options": [
+     "被",
+     "从",
+     "比",
+     "把"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "你在咖啡馆，点一杯咖啡和一块蛋糕，再问一共多少钱。",
+    "start": "你好，我要一杯…"
+   }
+  ]
+ },
+ "intermediate-u2-l2": {
+  "title": "Special requests",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "我不吃肉也不吃鱼，我只吃_____。",
+    "options": [
+     "牛排",
+     "荤",
+     "海鲜",
+     "素"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "你吃花生会生病，你说：“我对花生_____。”",
+    "options": [
+     "头疼",
+     "过敏",
+     "发烧",
+     "感冒"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“麻烦你_____汤热一下，好吗？”",
+    "options": [
+     "把",
+     "被",
+     "比",
+     "对"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "我嗓子不舒服，不想喝冰的，请给我一杯_____水。",
+    "options": [
+     "冻",
+     "雪",
+     "冰",
+     "温"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“请问，这个菜能不能_____放辣椒？”",
+    "options": [
+     "无",
+     "不",
+     "非",
+     "没"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "你对海鲜过敏。点菜的时候告诉服务员。",
+    "start": "服务员，我对…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "菜太淡了，你想要一点儿_____。",
+    "options": [
+     "醋",
+     "盐",
+     "冰",
+     "糖"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“如果没有牛肉，_____鸡肉也可以。”",
+    "options": [
+     "换到",
+     "换在",
+     "换成",
+     "换给"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你想要一个安静的位子，跟服务员说一下。",
+    "start": "你好，我们想要…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "吃不完的菜，可以请服务员帮你_____带走。",
+    "options": [
+     "打开",
+     "打扫",
+     "打折",
+     "打包"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（用“被”）：",
+    "options": [
+     "我的汤把服务员拿走了。",
+     "我的汤被拿走服务员了。",
+     "我的汤被服务员拿走了。",
+     "服务员被我的汤拿走了。"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你的咖啡太凉了，请服务员帮你换一杯。",
+    "start": "不好意思，我的咖啡…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“请不要放味精。”“味精 (wèijīng)” 是一种_____。",
+    "options": [
+     "调料",
+     "水果",
+     "餐具",
+     "饮料"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“麻烦你，能_____我们拿两个小碗吗？”",
+    "options": [
+     "给",
+     "被",
+     "比",
+     "把"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "你给朋友点菜，他不吃辣也不吃肉。跟服务员说说。",
+    "start": "我朋友不…，所以…"
+   }
+  ]
+ },
+ "intermediate-u2-l3": {
+  "title": "Paying",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "吃完饭要付钱，你说：“服务员，_____！”",
+    "options": [
+     "买单",
+     "干杯",
+     "上菜",
+     "点菜"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "在中国，很多人用手机_____付钱。",
+    "options": [
+     "打码",
+     "扫码",
+     "写码",
+     "看码"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“今天我请你，下次你_____请我。”",
+    "options": [
+     "已经",
+     "又",
+     "再",
+     "才"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "“AA制”的意思是_____。",
+    "options": [
+     "一个人付所有的钱",
+     "只能用信用卡付钱",
+     "不用付钱",
+     "每个人付自己的钱"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“用手机付钱_____用现金方便多了。”",
+    "options": [
+     "比",
+     "被",
+     "把",
+     "跟"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "吃完饭，你想请客。跟朋友说你来付钱。",
+    "start": "今天我请客，…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "在超市付钱以后，收银员给你的小纸条叫“_____”。",
+    "options": [
+     "车票",
+     "邮票",
+     "小票",
+     "门票"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我已经_____钱付了，我们走吧。”",
+    "options": [
+     "把",
+     "给",
+     "被",
+     "让"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "你觉得账单上的钱不对，礼貌地问问服务员。",
+    "start": "不好意思，这个账单…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "在中国的饭馆吃饭，一般不用给_____。",
+    "options": [
+     "饭钱",
+     "菜钱",
+     "小费",
+     "服务"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“账单上多了一个菜，我们没_____这个菜。”",
+    "options": [
+     "点着",
+     "点",
+     "点得",
+     "点了"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "跟朋友说今天你们AA制。",
+    "start": "我们今天…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "公司要报销，你说：“请给我开一张_____。”",
+    "options": [
+     "菜单",
+     "发票",
+     "车票",
+     "名片"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“一共一百二，我给你两百，你应该找_____我八十。”",
+    "options": [
+     "着",
+     "到",
+     "在",
+     "给"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "你在咖啡馆付钱，问问可不可以用手机支付。",
+    "start": "请问，这儿可以…"
+   }
+  ]
+ },
+ "intermediate-u3-l1": {
+  "title": "Comparing products",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "这两件衣服差不多，可是这件_____一点儿，我买这件。",
+    "options": [
+     "便利",
+     "便宜",
+     "便当",
+     "顺便"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "“质量 (zhìliàng)” 好的东西，一般_____。",
+    "options": [
+     "很难看",
+     "用得久",
+     "很快就坏",
+     "不能用"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（用“比”）：",
+    "options": [
+     "这个手机贵比那个一点儿。",
+     "这个手机比那个很贵。",
+     "这个手机比那个贵一点儿。",
+     "这个手机比那个一点儿贵。"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "这两个包颜色一样，不过_____不一样：一个大，一个小。",
+    "options": [
+     "大小",
+     "快慢",
+     "高低",
+     "长短"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这双鞋没有那双_____舒服。”",
+    "options": [
+     "很",
+     "更",
+     "那么",
+     "比较"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "比较两个你用过的手机，说说哪个更好。",
+    "start": "我觉得…比…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "买东西以前，可以先看看网上别人写的_____。",
+    "options": [
+     "评价",
+     "地址",
+     "密码",
+     "价格"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这台电脑比那台贵_____。”",
+    "options": [
+     "太",
+     "非常",
+     "多了",
+     "很"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你想买一台新电脑。问店员这两台有什么不一样。",
+    "start": "请问，这两台电脑…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "选择正确的词：“这件衣服今天打八_____，比平时便宜。”",
+    "options": [
+     "分",
+     "成",
+     "块",
+     "折"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这两个牌子，哪个_____好？”",
+    "options": [
+     "比",
+     "最多",
+     "很多",
+     "更"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你买东西的时候更看重价格还是质量，为什么。",
+    "start": "我买东西的时候更看重…，因为…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "这个牌子的东西又便宜又好，_____很高。",
+    "options": [
+     "价格",
+     "温度",
+     "速度",
+     "性价比"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这个跟那个一_____，我买哪个都行。”",
+    "options": [
+     "样",
+     "下",
+     "起",
+     "些"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "你在帮朋友挑一个礼物。比较一下两个选择。",
+    "start": "这两个都不错，不过…"
+   }
+  ]
+ },
+ "intermediate-u3-l2": {
+  "title": "Refunds",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "东西有问题，你想把钱拿回来，你要求_____。",
+    "options": [
+     "退款",
+     "借款",
+     "付款",
+     "存款"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "商店说：“七天内可以无理由_____。”",
+    "options": [
+     "送货",
+     "订货",
+     "进货",
+     "退货"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这件衣服我只穿_____一次，就坏了。”",
+    "options": [
+     "着",
+     "了",
+     "得",
+     "在"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "这个包有_____问题，拉链一拉就坏了。",
+    "options": [
+     "能量",
+     "数量",
+     "质量",
+     "重量"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我买的盘子_____快递员摔坏了。”",
+    "options": [
+     "比",
+     "把",
+     "被",
+     "向"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你买的耳机坏了。跟店员说你想退款。",
+    "start": "你好，我上个星期买的耳机…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "退货的时候，店员一般要看你的_____。",
+    "options": [
+     "菜单",
+     "名片",
+     "护照",
+     "小票"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“钱什么时候能退_____我的卡里？”",
+    "options": [
+     "在",
+     "到",
+     "成",
+     "给"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "店员问你为什么要退款。说明原因。",
+    "start": "因为这个…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "商店门口写着：“特价商品，不能_____。”",
+    "options": [
+     "出售",
+     "付款",
+     "购买",
+     "退换"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“_____这件衣服打了折，但是质量有问题，我还是想退。”",
+    "options": [
+     "虽然",
+     "如果",
+     "因为",
+     "所以"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "你在网上买的衣服太小了。打电话问能不能退。",
+    "start": "你好，我在你们网店买了…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“退款已经_____了，请查收。”",
+    "options": [
+     "到站",
+     "到账",
+     "到点",
+     "到家"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我想退这件衣服，可是小票找不_____了。”",
+    "options": [
+     "起",
+     "完",
+     "到",
+     "懂"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你以前退过的一件东西，为什么退。",
+    "start": "我以前退过…"
+   }
+  ]
+ },
+ "intermediate-u3-l3": {
+  "title": "Exchanges",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "鞋太小了，你想_____一双大一点儿的。",
+    "options": [
+     "借",
+     "租",
+     "换",
+     "还"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "衣服和鞋子的大小也叫“_____”。",
+    "options": [
+     "价码",
+     "尺码",
+     "页码",
+     "密码"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这件太大了，能不能换_____小号的？”",
+    "options": [
+     "在",
+     "给",
+     "成",
+     "着"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "选择正确的词：“我不喜欢红色，想换一_____颜色。”",
+    "options": [
+     "张",
+     "个",
+     "条",
+     "件"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（用“把”）：",
+    "options": [
+     "我想把这条裤子换成大一号的。",
+     "把我想这条裤子换成大一号的。",
+     "我想这条裤子把换成大一号的。",
+     "我想把换成这条裤子大一号的。"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "你买的衬衫太大了。去商店换一件小号的。",
+    "start": "你好，这件衬衫…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "想知道衣服合不合适，可以先去_____试一试。",
+    "options": [
+     "试衣间",
+     "休息室",
+     "办公室",
+     "洗手间"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这件衣服我穿_____有点儿紧。”",
+    "options": [
+     "出来",
+     "下去",
+     "上来",
+     "起来"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "店员说你想要的颜色没有了。问问有没有别的办法。",
+    "start": "那…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "裤子太长了，店里可以帮你_____短一点儿。",
+    "options": [
+     "换",
+     "改",
+     "买",
+     "退"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这双鞋我还没穿_____，可以换吗？”",
+    "options": [
+     "在",
+     "得",
+     "着",
+     "过"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "朋友送你的礼物不太合适，你想去换。说说你想换什么。",
+    "start": "朋友送我的…不太合适，我想换…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "衣服上的_____还在，说明我还没穿过。",
+    "options": [
+     "门牌",
+     "车牌",
+     "吊牌",
+     "名牌"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“大号的卖完了，中号的你穿得_____吗？”",
+    "options": [
+     "到",
+     "完",
+     "去",
+     "下"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "你想把一个包换成别的颜色。跟店员说说。",
+    "start": "我想把这个包换成…"
+   }
+  ]
+ },
+ "intermediate-u4-l1": {
+  "title": "Check-in",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "到了机场，你先去_____办登机 (dēngjī) 手续。",
+    "options": [
+     "收银台",
+     "前台",
+     "值机柜台",
+     "阳台"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "办完登机手续，你会拿到一张_____。",
+    "options": [
+     "发票",
+     "名片",
+     "身份证",
+     "登机牌"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“请把护照从包里拿_____给我看看。”",
+    "options": [
+     "出去",
+     "下去",
+     "过去",
+     "出来"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "你想坐在窗户旁边，你说：“我想要一个_____的座位。”",
+    "options": [
+     "靠窗",
+     "中间",
+     "最后面",
+     "靠过道"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“飞机还有一个小时就要起飞_____。”",
+    "options": [
+     "过",
+     "了",
+     "着",
+     "的"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "你在值机柜台。告诉工作人员你去哪儿，想要什么座位。",
+    "start": "你好，我去…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "这个小包不用托运，可以_____带上飞机。",
+    "options": [
+     "随身",
+     "随意",
+     "随时",
+     "随便"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你可以在网上_____值机，就不用排队了。”",
+    "options": [
+     "从前",
+     "以前",
+     "提前",
+     "前面"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "问工作人员你的行李最多可以带多少公斤。",
+    "start": "请问，我的行李…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "只买去的票叫单程票，去和回来的票一起买叫_____。",
+    "options": [
+     "月票",
+     "往返票",
+     "门票",
+     "年票"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“您的登机牌已经打印_____了，请拿好。”",
+    "options": [
+     "在",
+     "好",
+     "到",
+     "着"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "你的行李超重了。问工作人员怎么办。",
+    "start": "我的行李超重了，…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "托运 (tuōyùn) 的行李上要贴一张行李_____。",
+    "options": [
+     "标签",
+     "邮票",
+     "发票",
+     "名片"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你的箱子_____我的大，可能要托运。”",
+    "options": [
+     "把",
+     "被",
+     "比",
+     "跟"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你的航班是几点的，你打算几点到机场。",
+    "start": "我的航班是…，所以我应该…"
+   }
+  ]
+ },
+ "intermediate-u4-l2": {
+  "title": "Immigration",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "入境 (rùjìng) 的时候，要排队过_____。",
+    "options": [
+     "边检",
+     "路边",
+     "海边",
+     "旁边"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "去很多国家以前，你要先办_____。",
+    "options": [
+     "签证",
+     "签字笔",
+     "签名",
+     "签到"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这是我第一次来中国，以前没来_____。”",
+    "options": [
+     "过",
+     "了",
+     "着",
+     "在"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "工作人员问：“你来中国的_____是什么？”你说：“旅游。”",
+    "options": [
+     "题目",
+     "目录",
+     "目光",
+     "目的"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我这次住_____我姐姐家。”",
+    "options": [
+     "给",
+     "向",
+     "从",
+     "在"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "边检人员问你来这儿做什么。回答他。",
+    "start": "我是来…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "下飞机以前，空乘给你一张_____，让你填写。",
+    "options": [
+     "明信片",
+     "会员卡",
+     "入境卡",
+     "银行卡"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（“是……的”）：",
+    "options": [
+     "我是坐飞机来的从北京。",
+     "我是坐飞机的从北京来。",
+     "我是坐飞机从北京来的。",
+     "我坐飞机是从北京来的了。"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "告诉边检人员你要在这儿待多久，住在哪儿。",
+    "start": "我打算待…，住在…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "护照的_____快到了，要办一本新的。",
+    "options": [
+     "星期",
+     "假期",
+     "有效期",
+     "生日"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“请_____你的护照和入境卡给我看一下。”",
+    "options": [
+     "比",
+     "把",
+     "被",
+     "让"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "工作人员问你什么时候回国。告诉他你的回程时间。",
+    "start": "我的回程机票是…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "过边检的时候，工作人员可能会让你按_____。",
+    "options": [
+     "门铃",
+     "指纹",
+     "电梯",
+     "喇叭"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“对不起，您说的话我没听_____，请再说一遍。”",
+    "options": [
+     "高兴",
+     "干净",
+     "漂亮",
+     "清楚"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "你的签证好像有问题。礼貌地问工作人员该怎么办。",
+    "start": "不好意思，请问我的签证…"
+   }
+  ]
+ },
+ "intermediate-u4-l3": {
+  "title": "Baggage",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "下飞机以后，去_____取行李。",
+    "options": [
+     "登机口",
+     "行李提取处",
+     "售票处",
+     "安检口"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "箱子太多太重，可以用_____推行李。",
+    "options": [
+     "行李车",
+     "公交车",
+     "出租车",
+     "自行车"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我的行李箱找不到了，好像被人拿_____了。”",
+    "options": [
+     "起",
+     "走",
+     "来",
+     "下"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "我的箱子是黑色的，下面有四个_____，很好推。",
+    "options": [
+     "轮子",
+     "灯",
+     "窗户",
+     "门"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我的箱子上贴_____一张红色的标签。”",
+    "options": [
+     "过",
+     "把",
+     "着",
+     "得"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你的行李没有出来。去服务台说明一下情况。",
+    "start": "你好，我的行李…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "箱子里有容易碎的东西，要贴“_____”的标签。",
+    "options": [
+     "禁止停车",
+     "小心地滑",
+     "小心轻放",
+     "请勿吸烟"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我等了一个小时，行李还没_____。”",
+    "options": [
+     "出来",
+     "上去",
+     "起来",
+     "出去"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "描述一下你的行李箱：颜色、大小、有什么特点。",
+    "start": "我的行李箱是…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "行李太重了，要多付_____。",
+    "options": [
+     "房费",
+     "小费",
+     "学费",
+     "超重费"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“您的行李_____到，我们就给您打电话。”",
+    "options": [
+     "才",
+     "刚才",
+     "一",
+     "都"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "工作人员说你的行李明天才能到。问问他们能不能送到你的酒店。",
+    "start": "那能不能…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "有的东西不能放在托运的行李里，比如_____。",
+    "options": [
+     "书",
+     "鞋子",
+     "衣服",
+     "充电宝"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“箱子太满了，拉链拉不_____。”",
+    "options": [
+     "懂",
+     "完",
+     "起",
+     "上"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你出去旅行的时候一般带多少行李。",
+    "start": "我出去旅行的时候，一般带…"
+   }
+  ]
+ },
+ "intermediate-u4-l4": {
+  "title": "Boarding",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "在机场，上飞机的地方叫_____。",
+    "options": [
+     "入口",
+     "出口",
+     "登机口",
+     "门口"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "广播说：“对不起，飞机_____了，要晚一个小时起飞。”",
+    "options": [
+     "到达",
+     "延误",
+     "降落",
+     "落地"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“请大家拿_____登机牌，准备登机。”",
+    "options": [
+     "见",
+     "完",
+     "出",
+     "懂"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "你的座位号写在_____上。",
+    "options": [
+     "护照",
+     "菜单",
+     "行李箱",
+     "登机牌"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“飞机马上要起飞了，请系_____安全带。”",
+    "options": [
+     "好",
+     "完",
+     "见",
+     "懂"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "你的航班延误了。问工作人员要等多久。",
+    "start": "请问，这个航班…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "登机以前要过_____，检查有没有危险的东西。",
+    "options": [
+     "体检",
+     "考试",
+     "安检",
+     "年检"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“广播里叫我的名字，我马上跑_____登机口。”",
+    "options": [
+     "在",
+     "到",
+     "出",
+     "起"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "你在飞机上，有点儿冷。跟空乘要一条毯子。",
+    "start": "你好，可以…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "老人和带孩子的人可以先上飞机，这叫“_____登机”。",
+    "options": [
+     "准时",
+     "最后",
+     "马上",
+     "优先"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“如果你_____晚到十分钟，就上不了飞机了。”",
+    "options": [
+     "已经",
+     "再",
+     "才",
+     "又"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "你快要赶不上飞机了。问前面排队的人能不能让你先过去。",
+    "start": "不好意思，我的飞机…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "在飞机上为乘客服务的人叫_____。",
+    "options": [
+     "空乘",
+     "厨师",
+     "司机",
+     "导游"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“还有二十分钟才登机，别着急，你赶得_____。”",
+    "options": [
+     "完",
+     "下",
+     "出",
+     "上"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你坐飞机的时候最不喜欢什么。",
+    "start": "坐飞机的时候，我最不喜欢…"
+   }
+  ]
+ },
+ "intermediate-u5-l1": {
+  "title": "Reservations",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "去旅行以前，最好先在网上_____酒店房间。",
+    "options": [
+     "预习",
+     "预订",
+     "预报",
+     "预算"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "一个人住，最便宜的一般是_____。",
+    "options": [
+     "单人间",
+     "套房",
+     "总统套房",
+     "双人间"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“我想订一_____双人间，住两个晚上。”",
+    "options": [
+     "把",
+     "张",
+     "间",
+     "条"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "离开酒店以前，要去前台办_____手续。",
+    "options": [
+     "退房",
+     "订房",
+     "签证",
+     "入住"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我们是三号_____的，五号走。”",
+    "options": [
+     "到了",
+     "到",
+     "到着",
+     "到过"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "打电话给酒店，预订一个房间。说清楚日期和人数。",
+    "start": "你好，我想订…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "到了酒店，在前台办_____手续，然后拿房卡。",
+    "options": [
+     "登机",
+     "退房",
+     "入住",
+     "退款"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“_____你帮我查一下，还有没有空房间。”",
+    "options": [
+     "对不起",
+     "麻烦",
+     "可以",
+     "请问"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "问问酒店房间一晚多少钱，包不包早餐。",
+    "start": "请问，你们的房间…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "酒店说：“对不起，这几天的房间都_____了。”",
+    "options": [
+     "开满",
+     "吃饱",
+     "住好",
+     "订满"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“_____这家酒店离地铁站很近，所以我订了它。”",
+    "options": [
+     "但是",
+     "虽然",
+     "如果",
+     "因为"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "你想改一下你的预订。打电话给酒店说说。",
+    "start": "你好，我想改一下…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "订房以后，网站给你一个_____号，入住的时候可能要用。",
+    "options": [
+     "订单",
+     "座位",
+     "车",
+     "电话"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择语序正确的句子：",
+    "options": [
+     "我们想订一间比较安静房间的。",
+     "我们想一间订比较安静的房间。",
+     "我们比较想订安静一间的房间。",
+     "我们想订一间比较安静的房间。"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你选酒店的时候最看重什么。",
+    "start": "我选酒店的时候最看重…"
+   }
+  ]
+ },
+ "intermediate-u5-l2": {
+  "title": "Requests",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "晚上房间太冷，你想多要一条_____。",
+    "options": [
+     "被子",
+     "拖鞋",
+     "毛巾",
+     "牙刷"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "明天早上六点要起床，你请前台给你打_____电话。",
+    "options": [
+     "预订",
+     "投诉",
+     "打扫",
+     "叫醒"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“麻烦你_____房间打扫一下。”",
+    "options": [
+     "向",
+     "比",
+     "把",
+     "被"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "你想上网，问前台：“无线网的_____是多少？”",
+    "options": [
+     "价码",
+     "尺码",
+     "号码",
+     "密码"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我的衣服洗好了吗？能不能送_____我的房间？”",
+    "options": [
+     "起",
+     "出",
+     "在",
+     "到"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "给前台打电话，多要一个枕头 (zhěntou)。",
+    "start": "你好，我是…房间的，…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "你的行李很多，可以请酒店的人帮你_____行李。",
+    "options": [
+     "写",
+     "搬",
+     "洗",
+     "吃"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“退房以后，我可以把行李放_____前台吗？”",
+    "options": [
+     "在",
+     "向",
+     "被",
+     "从"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "请酒店帮你叫一辆出租车去机场。",
+    "start": "你好，麻烦你帮我…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "你的飞机晚上才起飞，想问能不能_____退房。",
+    "options": [
+     "准时",
+     "延迟",
+     "提前",
+     "马上"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“从大厅坐电梯_____二楼，餐厅就在左边。”",
+    "options": [
+     "起",
+     "出",
+     "上",
+     "下"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你想换一个高一点儿的楼层。跟前台说说。",
+    "start": "请问，能不能给我换…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "前台二十四小时都有人，你_____都可以打电话。",
+    "options": [
+     "随时",
+     "随身",
+     "随意",
+     "随便"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“可以_____我寄一封信吗？”",
+    "options": [
+     "被",
+     "把",
+     "帮",
+     "比"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你需要一个熨斗 (yùndǒu) 熨衣服。给前台打电话。",
+    "start": "你好，我需要…"
+   }
+  ]
+ },
+ "intermediate-u5-l3": {
+  "title": "Common problems",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "房间太热了，空调不工作。你说：“空调_____了。”",
+    "options": [
+     "坏",
+     "破",
+     "断",
+     "碎"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "洗澡的时候没有_____，只有冷水。",
+    "options": [
+     "热水",
+     "冰水",
+     "汽水",
+     "开水"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“房卡好像坏了，门打不_____。”",
+    "options": [
+     "上",
+     "关",
+     "下",
+     "开"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "隔壁 (gébì) 太_____了，我睡不着。",
+    "options": [
+     "吵",
+     "暗",
+     "静",
+     "干净"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "房卡忘在房间里了。选择正确的句子：",
+    "options": [
+     "我被房卡锁在房间里了。",
+     "房卡把我锁在房间里了。",
+     "我把房卡锁在房间里了。",
+     "我把房间锁在房卡里了。"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你房间的空调坏了。给前台打电话说说。",
+    "start": "你好，我房间的空调…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "房间里有很大的烟味，你想_____一个房间。",
+    "options": [
+     "还",
+     "卖",
+     "换",
+     "借"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我已经等了半个小时了，可是还没有人_____修。”",
+    "options": [
+     "着",
+     "了",
+     "过",
+     "来"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "你的房间不干净。礼貌地请前台派人来打扫。",
+    "start": "不好意思，我的房间…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "水龙头 (shuǐlóngtóu) 一直在_____水。",
+    "options": [
+     "吃",
+     "漏",
+     "喝",
+     "洗"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“台灯怎么开都开不_____。”",
+    "options": [
+     "黑",
+     "亮",
+     "暗",
+     "低"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "你在酒店丢了东西。告诉前台。",
+    "start": "我好像把我的…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "你对酒店的服务很不满意，想_____。",
+    "options": [
+     "预订",
+     "表扬",
+     "感谢",
+     "投诉"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“_____房间的问题很多，但是服务员的态度很好。”",
+    "options": [
+     "如果",
+     "所以",
+     "虽然",
+     "因为"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你住酒店时遇到过的一个问题，后来是怎么解决的。",
+    "start": "有一次我住酒店的时候，…"
+   }
+  ]
+ },
+ "intermediate-u6-l1": {
+  "title": "Tasks",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "经理交给你的工作叫“_____”。",
+    "options": [
+     "任务",
+     "义务",
+     "服务",
+     "家务"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "这个报告星期五以前一定要交，星期五是_____。",
+    "options": [
+     "截止日期",
+     "假期",
+     "生日",
+     "出生日期"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我已经把报告写_____了，你看看吧。”",
+    "options": [
+     "见",
+     "懂",
+     "到",
+     "完"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "开会以前，你要先_____一下资料。",
+    "options": [
+     "预报",
+     "准备",
+     "练习",
+     "参观"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这件事很急，你最好今天_____做完。”",
+    "options": [
+     "就",
+     "曾",
+     "才",
+     "被"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "告诉同事你今天要做哪些工作。",
+    "start": "我今天要先…，然后…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "工作太多了，我今天得_____，晚上九点才能回家。",
+    "options": [
+     "请假",
+     "加班",
+     "放假",
+     "下班"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“经理让我_____这份文件翻译成英文。”",
+    "options": [
+     "给",
+     "被",
+     "比",
+     "把"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "经理问你报告写得怎么样了。回答他。",
+    "start": "报告我已经…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "经理把任务_____给了三个人，每个人做一部分。",
+    "options": [
+     "分钟",
+     "分手",
+     "分配",
+     "分开"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这个问题太难了，我一个人解决不_____。”",
+    "options": [
+     "得",
+     "着",
+     "过",
+     "了"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "你的工作太多了。请同事帮你一个忙。",
+    "start": "你现在忙吗？能不能…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "工作做好了，没有问题了，就是“_____”了。",
+    "options": [
+     "开始",
+     "安排",
+     "完成",
+     "准备"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“因为这个项目很重要，_____我们要多花点儿时间。”",
+    "options": [
+     "如果",
+     "所以",
+     "但是",
+     "虽然"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你怎么安排一天的工作。",
+    "start": "每天早上，我先…"
+   }
+  ]
+ },
+ "intermediate-u6-l2": {
+  "title": "Colleagues",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "在同一个公司一起工作的人叫“_____”。",
+    "options": [
+     "同事",
+     "邻居",
+     "同学",
+     "亲戚"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "职位比你高、管你的工作的人，是你的_____。",
+    "options": [
+     "同学",
+     "客户",
+     "上司",
+     "下属"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我跟小李在一起工作_____三年了。”",
+    "options": [
+     "在",
+     "了",
+     "着",
+     "得"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "新同事刚来，你带他_____一下办公室。",
+    "options": [
+     "参加",
+     "出差",
+     "看病",
+     "参观"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“王经理是一_____很好的领导。”",
+    "options": [
+     "位",
+     "张",
+     "本",
+     "条"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "介绍一下你的一个同事。",
+    "start": "我的同事…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "大家一起做一件工作，叫“_____”。",
+    "options": [
+     "合同",
+     "合作",
+     "合格",
+     "合适"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“小张的中文说_____比我好。”",
+    "options": [
+     "地",
+     "的",
+     "得",
+     "了"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "新同事第一天上班。欢迎他，再介绍一下你自己。",
+    "start": "欢迎你！我叫…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "他工作很认真，对人也很好，大家都很_____他。",
+    "options": [
+     "批评",
+     "尊重",
+     "打扰",
+     "麻烦"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我常常_____同事一起吃午饭。”",
+    "options": [
+     "比",
+     "把",
+     "被",
+     "跟"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "你想请同事帮你看一下你的报告。礼貌地问他。",
+    "start": "麻烦你…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "同事生病了，你说：“你好好_____吧，工作的事别担心。”",
+    "options": [
+     "休息",
+     "加班",
+     "工作",
+     "出差"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我们部门的人虽然不多，_____大家关系很好。”",
+    "options": [
+     "如果",
+     "因为",
+     "但是",
+     "所以"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你喜欢跟什么样的同事一起工作。",
+    "start": "我喜欢跟…的同事一起工作，因为…"
+   }
+  ]
+ },
+ "intermediate-u6-l3": {
+  "title": "Schedules",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "你这个星期的工作安排，可以写在_____上。",
+    "options": [
+     "课程表",
+     "菜单",
+     "日程表",
+     "地图"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "星期一到星期五叫“_____”。",
+    "options": [
+     "周末",
+     "工作日",
+     "节日",
+     "假日"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“会议从下午两点开_____四点。”",
+    "options": [
+     "向",
+     "往",
+     "在",
+     "到"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "你明天要去医院，不能来上班，要向经理_____。",
+    "options": [
+     "度假",
+     "放假",
+     "请假",
+     "假期"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我们能不能把会议改_____周四？”",
+    "options": [
+     "从",
+     "给",
+     "向",
+     "到"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你下个星期的工作安排。",
+    "start": "下个星期一，我要…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "明天的会_____了，改到下个星期。",
+    "options": [
+     "结束",
+     "提前",
+     "开始",
+     "推迟"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这个星期我忙_____不得了，下个星期吧。”",
+    "options": [
+     "得",
+     "了",
+     "地",
+     "的"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "跟经理说你下周一想请一天假。",
+    "start": "经理，我下周一…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "每个星期一上午都要开的会，叫“_____”。",
+    "options": [
+     "约会",
+     "例会",
+     "舞会",
+     "晚会"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我九点_____到办公室，会议就开始了。”",
+    "options": [
+     "刚",
+     "又",
+     "再",
+     "曾"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "跟同事约一个开会的时间。",
+    "start": "我想跟你约个时间开会，…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "我们公司上班时间很_____，八点到十点来都可以。",
+    "options": [
+     "严格",
+     "准时",
+     "灵活",
+     "紧张"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“如果时间来不_____，我们就改天再开会。”",
+    "options": [
+     "及",
+     "完",
+     "到",
+     "着"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你一个星期里哪天最忙，为什么。",
+    "start": "我一个星期里…最忙，因为…"
+   }
+  ]
+ },
+ "intermediate-u6-l4": {
+  "title": "Workplace vocabulary",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "公司里管钱和工资的部门是_____部。",
+    "options": [
+     "财务",
+     "市场",
+     "技术",
+     "人事"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "每个月公司给你的钱叫“_____”。",
+    "options": [
+     "小费",
+     "学费",
+     "工资",
+     "房租"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“我们公司一共有五_____部门。”",
+    "options": [
+     "个",
+     "本",
+     "条",
+     "张"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "跟客户谈好了，双方要签_____。",
+    "options": [
+     "同事",
+     "合同",
+     "同意",
+     "合作"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这份合同经理已经签_____字了。”",
+    "options": [
+     "着",
+     "地",
+     "了",
+     "得"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "介绍一下你的公司，或者你想去的公司。",
+    "start": "我的公司是…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "买我们公司产品的人和公司，是我们的_____。",
+    "options": [
+     "邻居",
+     "司机",
+     "客户",
+     "对手"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我_____用这台新打印机，你能教教我吗？”",
+    "options": [
+     "不能",
+     "不要",
+     "别",
+     "不会"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你每天在办公室用哪些东西。",
+    "start": "我每天在办公室用…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "开大会的时候，经理给大家_____了新的计划。",
+    "options": [
+     "认识",
+     "旅游",
+     "参观",
+     "介绍"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“会议室里放_____很多椅子。”",
+    "options": [
+     "地",
+     "过",
+     "得",
+     "着"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "你想升职 (shēngzhí)。说说你应该怎么做。",
+    "start": "如果我想升职，我应该…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "你不想在这家公司干了，要离开，你要_____。",
+    "options": [
+     "请假",
+     "辞职",
+     "出差",
+     "加班"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“他的办公桌上有一_____电脑。”",
+    "options": [
+     "张",
+     "台",
+     "本",
+     "条"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你理想的工作是什么样的。",
+    "start": "我理想的工作…"
+   }
+  ]
+ },
+ "intermediate-u7-l1": {
+  "title": "Calling",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "打电话的时候，第一句话常常是：“_____，请问是王先生吗？”",
+    "options": [
+     "喂",
+     "哦",
+     "啊",
+     "嗯"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "电话响了很久，可是没有人_____。",
+    "options": [
+     "收",
+     "接",
+     "拿",
+     "打"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“请问李经理在吗？我想_____他说几句话。”",
+    "options": [
+     "被",
+     "比",
+     "把",
+     "跟"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "对方说：“请_____，我帮您转一下。”",
+    "options": [
+     "慢走",
+     "再见",
+     "稍等",
+     "不客气"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“对不起，你打错_____，这里没有姓张的。”",
+    "options": [
+     "得",
+     "了",
+     "过",
+     "着"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "给一家饭馆打电话，问他们晚上几点关门。",
+    "start": "喂，你好，请问…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "对方一直在打电话，你打不进去，说明他的电话_____。",
+    "options": [
+     "在线",
+     "下线",
+     "上线",
+     "占线"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我给他打了三次电话，都没打_____。”",
+    "options": [
+     "通",
+     "见",
+     "完",
+     "开"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "给朋友打电话，问他今天晚上有没有空。",
+    "start": "喂，是我，…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "手机快没电了，我得找个地方_____。",
+    "options": [
+     "停电",
+     "放电",
+     "开电",
+     "充电"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我现在有点儿忙，一会儿再_____你打过去。”",
+    "options": [
+     "被",
+     "给",
+     "比",
+     "把"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "你打电话找一个人，可是他不在。问问他什么时候回来。",
+    "start": "请问，他…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "你不知道饭馆的电话号码，可以在网上_____一下。",
+    "options": [
+     "查",
+     "想",
+     "算",
+     "改"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你的声音太小了，能说得大声_____吗？”",
+    "options": [
+     "有点儿",
+     "一下",
+     "一点儿",
+     "一会儿"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "打电话给医院，问问王医生明天上午在不在。",
+    "start": "你好，我想问一下…"
+   }
+  ]
+ },
+ "intermediate-u7-l2": {
+  "title": "Taking messages",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "你要找的人不在，你可以给他_____。",
+    "options": [
+     "留学",
+     "留级",
+     "留言",
+     "留念"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "你接电话，对方找的人不在。你问：“需要我_____他吗？”",
+    "options": [
+     "转告",
+     "转身",
+     "转弯",
+     "转车"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“请你告诉他，回来以后_____我回个电话。”",
+    "options": [
+     "把",
+     "给",
+     "被",
+     "比"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "对方说得很快，我把他的话都_____在本子上了。",
+    "options": [
+     "看",
+     "说",
+     "听",
+     "记"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“经理现在正_____开会呢，请您留个言吧。”",
+    "options": [
+     "了",
+     "着",
+     "在",
+     "过"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "有人打电话找你的同事，可是他不在。帮对方留个言。",
+    "start": "他现在不在，您要不要…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“请他_____给我回电话，这件事很急。”",
+    "options": [
+     "尽快",
+     "愉快",
+     "凉快",
+     "快乐"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“他让我告诉你，明天的会议_____取消了。”",
+    "options": [
+     "被",
+     "把",
+     "对",
+     "比"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "给同事留言：告诉他明天的会议改时间了。",
+    "start": "你好，我是…，明天的会议…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "留言的时候，最好留下你的_____，方便他给你回电话。",
+    "options": [
+     "生日",
+     "联系方式",
+     "爱好",
+     "护照"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“请您把电话号码再说一_____，好吗？”",
+    "options": [
+     "本",
+     "张",
+     "遍",
+     "条"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你帮同事接了一个电话。告诉他是谁打来的，说了什么。",
+    "start": "刚才…给你打电话，他说…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "手机上显示的、你没接到的电话叫“_____”。",
+    "options": [
+     "微信",
+     "短信",
+     "彩铃",
+     "未接来电"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“他一回来，我_____让他给您打电话。”",
+    "options": [
+     "都",
+     "就",
+     "再",
+     "才"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "你打电话找人，他不在。请接电话的人帮你转告几句话。",
+    "start": "麻烦你告诉他…"
+   }
+  ]
+ },
+ "intermediate-u7-l3": {
+  "title": "Clarifying information",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "对方说得太快了，你说：“请你说得_____一点儿。”",
+    "options": [
+     "多",
+     "早",
+     "快",
+     "慢"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "你没听清楚，你说：“对不起，你能_____一遍吗？”",
+    "options": [
+     "再见",
+     "再来",
+     "再说",
+     "再走"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你说的是十四号吗？我把它听_____‘四十号’了。”",
+    "options": [
+     "到",
+     "见",
+     "成",
+     "懂"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "你想再问一下，看看自己记得对不对：“我_____一下，是明天下午三点，对吗？”",
+    "options": [
+     "认为",
+     "认识",
+     "承认",
+     "确认"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你是说会议是下午开始_____吗？”",
+    "options": [
+     "了",
+     "过",
+     "的",
+     "着"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你没听清楚对方的电话号码。请他再说一遍。",
+    "start": "不好意思，…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“我没听懂”的意思是_____。",
+    "options": [
+     "我不想听",
+     "我不明白你说的话",
+     "我听不见你的声音",
+     "我已经知道了"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你说的话我只听懂_____一半。”",
+    "options": [
+     "了",
+     "过",
+     "得",
+     "着"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "跟对方确认一下见面的时间和地点。",
+    "start": "我确认一下，我们是…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "你问：“你的意思是……？”，是想让对方_____。",
+    "options": [
+     "挂电话",
+     "解释一下",
+     "说再见",
+     "停下来"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“是‘公司’的‘公’，_____‘工作’的‘工’？”",
+    "options": [
+     "还是",
+     "而且",
+     "和",
+     "或者"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "对方说了一个你不懂的词。问问他是什么意思。",
+    "start": "对不起，你刚才说的…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "电话信号不好，你说：“你的声音_____的，我听不清楚。”",
+    "options": [
+     "干干净净",
+     "断断续续",
+     "清清楚楚",
+     "高高兴兴"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“如果你没听明白，_____再问我一遍。”",
+    "options": [
+     "可以",
+     "刚才",
+     "曾经",
+     "已经"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你听不懂别人说话的时候，一般怎么办。",
+    "start": "我听不懂的时候，一般会…"
+   }
+  ]
+ },
+ "intermediate-u8-l1": {
+  "title": "Describing basic symptoms",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "体温三十八度五，你_____了。",
+    "options": [
+     "发财",
+     "发音",
+     "发现",
+     "发烧"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "你一直打喷嚏 (pēntì)、流鼻涕，可能是_____了。",
+    "options": [
+     "睡着",
+     "迟到",
+     "感冒",
+     "吃饱"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我头疼_____三天了，还没好。”",
+    "options": [
+     "得",
+     "了",
+     "着",
+     "过"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "嗓子 (sǎngzi) 疼，说话的时候很_____。",
+    "options": [
+     "舒服",
+     "好受",
+     "难受",
+     "开心"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我可能吃_____东西了，肚子很疼。”",
+    "options": [
+     "够",
+     "晚",
+     "饱",
+     "坏"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "你觉得不舒服。告诉医生你哪儿不舒服。",
+    "start": "医生，我…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "我浑身没_____，什么都不想做。",
+    "options": [
+     "天气",
+     "力气",
+     "运气",
+     "空气"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我的腿_____自行车撞了一下，现在很疼。”",
+    "options": [
+     "向",
+     "把",
+     "比",
+     "被"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你上次生病的时候有什么症状 (zhèngzhuàng)。",
+    "start": "我上次生病的时候，…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "皮肤上红红的、很痒 (yǎng)，可能是_____了。",
+    "options": [
+     "过敏",
+     "感冒",
+     "咳嗽",
+     "发烧"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我从来没这么累_____。”",
+    "options": [
+     "了",
+     "的",
+     "过",
+     "着"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你的朋友看起来不舒服。问问他怎么了。",
+    "start": "你怎么了？你…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "我觉得头很_____，站起来的时候差点儿摔倒。",
+    "options": [
+     "晚",
+     "晕",
+     "远",
+     "圆"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你发烧了，_____多喝水，多休息。”",
+    "options": [
+     "应该",
+     "可能",
+     "会",
+     "能"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你感冒的时候一般怎么做。",
+    "start": "我感冒的时候，一般…"
+   }
+  ]
+ },
+ "intermediate-u8-l2": {
+  "title": "Making appointments",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "在中国的医院看病，要先_____，再去找医生。",
+    "options": [
+     "挂衣服",
+     "挂号",
+     "挂电话",
+     "挂灯笼"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "看牙医最好先_____，不要直接去。",
+    "options": [
+     "预约",
+     "预报",
+     "预习",
+     "预算"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“请问，我可以_____周三下午来看病吗？”",
+    "options": [
+     "在",
+     "把",
+     "向",
+     "被"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "医生给你开了药，你要去_____拿药。",
+    "options": [
+     "房东",
+     "药房",
+     "厨房",
+     "书房"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“对不起，王医生明天的号已经约_____了。”",
+    "options": [
+     "饱",
+     "足",
+     "满",
+     "够"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "打电话给诊所 (zhěnsuǒ)，预约看医生。",
+    "start": "你好，我想预约…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "不是很急的病，可以看_____，不用去急诊。",
+    "options": [
+     "门诊",
+     "住院",
+     "救护车",
+     "手术"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我约的是九点，可是路上堵车，可能_____晚到十分钟。”",
+    "options": [
+     "应该",
+     "可以",
+     "会",
+     "能"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你今天不能去看医生了。打电话取消预约。",
+    "start": "你好，我想取消…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "每年去医院做一次全身检查，叫“_____”。",
+    "options": [
+     "考试",
+     "安检",
+     "体检",
+     "体育"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“医生让我一个星期以后再来_____一次。”",
+    "options": [
+     "检查着",
+     "检查过",
+     "检查了",
+     "检查"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "跟护士说你想换一个时间看医生。",
+    "start": "请问，可以把我的预约…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "医生工作、给病人看病的房间叫“_____”。",
+    "options": [
+     "客厅",
+     "教室",
+     "卧室",
+     "诊室"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“请你提前十分钟_____，先填一张表。”",
+    "options": [
+     "在",
+     "到",
+     "往",
+     "向"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你一般多久做一次体检，在哪儿做。",
+    "start": "我一般每…"
+   }
+  ]
+ },
+ "intermediate-u9-l1": {
+  "title": "Explaining a problem and asking for help",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "电梯坏了，门口贴着：“_____”。",
+    "options": [
+     "请勿吸烟",
+     "正在营业",
+     "欢迎光临",
+     "暂停使用"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "东西不能正常工作了，我们常说它“出_____了”。",
+    "options": [
+     "来",
+     "问题",
+     "去",
+     "门"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我的手机从昨天开始就开不_____机了。”",
+    "options": [
+     "过",
+     "着",
+     "了",
+     "得"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "你需要别人帮忙，可以客气地说：“能不能_____你一下？”",
+    "options": [
+     "麻烦",
+     "批评",
+     "表扬",
+     "感谢"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我的电脑_____病毒弄坏了。”",
+    "options": [
+     "向",
+     "把",
+     "被",
+     "比"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你的手机开不了机了。跟店员说明问题，请他帮忙。",
+    "start": "你好，我的手机…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "洗衣机坏了，要请师傅来_____。",
+    "options": [
+     "整理",
+     "修理",
+     "管理",
+     "处理器"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你能帮我_____这个箱子搬到楼上吗？”",
+    "options": [
+     "被",
+     "把",
+     "给",
+     "比"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "你的钥匙丢了，进不了家门。打电话请朋友帮忙。",
+    "start": "我的钥匙…，你能不能…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "我遇到了一个_____，你能帮帮我吗？",
+    "options": [
+     "麻烦",
+     "麻木",
+     "麻辣",
+     "麻将"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我试了好几次，还是没弄_____。”",
+    "options": [
+     "见",
+     "懂",
+     "起",
+     "好"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你遇到过的一个问题，你是怎么解决的。",
+    "start": "有一次我…，后来我…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "别着急，我们一起想个_____。",
+    "options": [
+     "办法",
+     "方向",
+     "时间",
+     "地方"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“_____你帮了我，所以问题很快就解决了。”",
+    "options": [
+     "虽然",
+     "即使",
+     "如果",
+     "因为"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "朋友家的网络连不上了。给他两个建议。",
+    "start": "你可以试试…"
+   }
+  ]
+ },
+ "intermediate-u10-l1": {
+  "title": "Talking about past events and experiences",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "他去过很多国家，有很多旅行的_____。",
+    "options": [
+     "经历",
+     "经常",
+     "经理",
+     "经济"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "那次旅行很难忘，我对它_____。",
+    "options": [
+     "觉得很一般",
+     "印象很深",
+     "没有印象",
+     "不太记得"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我去_____长城，那里非常壮观。”",
+    "options": [
+     "过",
+     "得",
+     "在",
+     "着"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "上个月我们去海边_____了一个星期。",
+    "options": [
+     "假日",
+     "度假",
+     "假期",
+     "请假"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我们到电影院的时候，电影已经开始_____。”",
+    "options": [
+     "着",
+     "过",
+     "了",
+     "的"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你去过的一个有意思的地方。",
+    "start": "我去过…，那里…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "那天发生了一件很_____的事，我们都哈哈大笑。",
+    "options": [
+     "难过",
+     "伤心",
+     "好笑",
+     "可怕"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我一走进房间，就看见桌子上放_____一个蛋糕。”",
+    "options": [
+     "地",
+     "得",
+     "过",
+     "着"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你小时候的一件难忘的事。",
+    "start": "我小时候…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "你有没有_____过潜水 (qiánshuǐ)？",
+    "options": [
+     "试试",
+     "试着",
+     "尝尝",
+     "尝试"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“那次旅行，我的钱包在地铁上_____偷了。”",
+    "options": [
+     "把",
+     "被",
+     "往",
+     "比"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你做过的一件很勇敢 (yǒnggǎn) 的事。",
+    "start": "有一次，我…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "讲故事的时候，“后来”的意思是_____。",
+    "options": [
+     "那以后",
+     "那以前",
+     "现在",
+     "明天"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我们爬_____山顶的时候，太阳正好出来了。”",
+    "options": [
+     "向",
+     "给",
+     "在",
+     "到"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说去年你做过的最开心的一件事。",
+    "start": "去年我最开心的事是…"
+   }
+  ]
+ },
+ "intermediate-u11-l1": {
+  "title": "Agreeing",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "你同意朋友的看法，可以说：“我也这么_____。”",
+    "options": [
+     "想",
+     "做",
+     "吃",
+     "走"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "“没错！”的意思是_____。",
+    "options": [
+     "不一定",
+     "错",
+     "对",
+     "不知道"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你说_____很对，我完全同意。”",
+    "options": [
+     "的",
+     "了",
+     "得",
+     "地"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "你非常同意，可以说：“我_____同意。”",
+    "options": [
+     "完了",
+     "完全",
+     "完成",
+     "完美"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我的看法_____你的一样。”",
+    "options": [
+     "跟",
+     "把",
+     "比",
+     "被"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "朋友说：“学外语最好每天练习。”你同意。说说你的看法。",
+    "start": "我同意，因为…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“英雄所见略同”的意思是：聪明人的_____。",
+    "options": [
+     "名字都一样",
+     "工作都很忙",
+     "爱好都不同",
+     "想法差不多"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这个想法不错，我_____觉得可以试试。”",
+    "options": [
+     "又",
+     "才",
+     "再",
+     "也"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "同事说：“我们应该早点儿开始准备。”你同意，再补充一点。",
+    "start": "对，而且…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "你大部分同意，可是不是全部同意，可以说：“我_____同意。”",
+    "options": [
+     "根本不",
+     "从来不",
+     "基本上",
+     "一点儿也不"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你说得有道理，那我们_____这么做吧。”",
+    "options": [
+     "被",
+     "就",
+     "却",
+     "才"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "朋友觉得周末去爬山是个好主意。你同意，说说为什么。",
+    "start": "好主意！我觉得…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "大家的看法都一样，叫“_____一致”。",
+    "options": [
+     "主意",
+     "意见",
+     "注意",
+     "意思"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“虽然他的看法跟我不太一样，_____我觉得他说得也对。”",
+    "options": [
+     "但是",
+     "所以",
+     "因为",
+     "如果"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说一件你和朋友看法一样的事。",
+    "start": "我和我的朋友都觉得…"
+   }
+  ]
+ },
+ "intermediate-u11-l2": {
+  "title": "Disagreeing",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "你不同意，可以礼貌地说：“我不太_____你的看法。”",
+    "options": [
+     "同时",
+     "同意",
+     "同事",
+     "同学"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "选择正确的词：“对这个问题，我有不同的_____。”",
+    "options": [
+     "看病",
+     "看见",
+     "看书",
+     "看法"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这个计划好是好，_____太贵了。”",
+    "options": [
+     "因为",
+     "而且",
+     "可是",
+     "所以"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "不想直接说“你错了”，可以说：“_____不是这样吧？”",
+    "options": [
+     "肯定",
+     "当然",
+     "恐怕",
+     "一定"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我不是不想去，_____是没有时间。”",
+    "options": [
+     "因为",
+     "但",
+     "而",
+     "所以"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "朋友说：“住在城市比住在农村好。”你不同意。说说你的看法。",
+    "start": "我不太同意，我觉得…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "两个人看法不一样，很生气地大声说话，叫“_____”。",
+    "options": [
+     "吵架",
+     "聊天",
+     "开会",
+     "讨论"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择语序正确的词：“这个问题_____你想的那么简单。”",
+    "options": [
+     "并像不",
+     "并不像",
+     "像并不",
+     "不并像"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "同事想周末加班，你觉得没有必要。礼貌地说说你的看法。",
+    "start": "我明白你的意思，不过…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“你说得有道理，不过……”是在_____地说出不同的意见。",
+    "options": [
+     "高兴",
+     "委婉",
+     "大声",
+     "生气"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“就算很便宜，我_____不想买这种质量的东西。”",
+    "options": [
+     "也",
+     "被",
+     "再",
+     "就"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "朋友说网上买东西比去商店好。你不完全同意。说说为什么。",
+    "start": "网上买东西是方便，但是…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“我反对”的意思是_____。",
+    "options": [
+     "我同意",
+     "我不知道",
+     "我很高兴",
+     "我不同意"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我不同意你的看法，_____我还是尊重你。”",
+    "options": [
+     "不过",
+     "所以",
+     "如果",
+     "因为"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说一件你和家人看法不一样的事。",
+    "start": "我和我的…看法不一样，…"
+   }
+  ]
+ },
+ "intermediate-u11-l3": {
+  "title": "Explaining reasons",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "说明为什么，就是说出_____。",
+    "options": [
+     "原价",
+     "原谅",
+     "原来",
+     "原因"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "“结果”的意思跟“原因”_____。",
+    "options": [
+     "相反",
+     "相同",
+     "差不多",
+     "一样"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我_____喜欢住在这儿，是因为交通很方便。”",
+    "options": [
+     "因此",
+     "之所以",
+     "所以",
+     "因为"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "“由于 (yóuyú)” 的意思跟“_____”差不多。",
+    "options": [
+     "但是",
+     "因为",
+     "如果",
+     "所以"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我学中文，一是因为工作需要，_____是因为我喜欢中国文化。”",
+    "options": [
+     "再",
+     "第二个",
+     "二",
+     "两"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你为什么学中文。",
+    "start": "我学中文是因为…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "你这样做的_____是什么？（就是“为什么这样做”）",
+    "options": [
+     "理由",
+     "理发",
+     "整理",
+     "理想"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“_____天气不好，飞机晚点了。”",
+    "options": [
+     "由于",
+     "所以",
+     "但是",
+     "虽然"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你为什么喜欢你最喜欢的季节。",
+    "start": "我最喜欢…，因为…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "你说得很有_____，我明白了。",
+    "options": [
+     "道路",
+     "地理",
+     "道理",
+     "理想"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我觉得在家工作比在办公室好，_____不用每天坐车。”",
+    "options": [
+     "虽然",
+     "但是",
+     "所以",
+     "因为"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "你更喜欢在家吃饭还是在外面吃饭？说说原因。",
+    "start": "我更喜欢…，主要是因为…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "说好几个原因的时候，第一个原因前面可以说“_____”。",
+    "options": [
+     "后来",
+     "最后",
+     "首先",
+     "然后"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“_____你觉得这个办法不好，那你有什么更好的主意？”",
+    "options": [
+     "但是",
+     "因为",
+     "虽然",
+     "既然"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你为什么选择现在的工作或专业。",
+    "start": "我选…，是因为…"
+   }
+  ]
+ },
+ "intermediate-u12-l1": {
+  "title": "Longer, more natural everyday conversations",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "跟朋友随便说说话，叫“_____”。",
+    "options": [
+     "上课",
+     "吵架",
+     "聊天",
+     "开会"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "见到很久没见的朋友，你说：“好久_____！”",
+    "options": [
+     "不看",
+     "不见",
+     "没有",
+     "不来"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我们已经三年没见面_____！”",
+    "options": [
+     "地",
+     "着",
+     "过",
+     "了"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "聊天的时候想换个话题，可以说：“_____，你最近工作怎么样？”",
+    "options": [
+     "对了",
+     "不客气",
+     "没关系",
+     "对不起"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你周末一般做_____什么？”",
+    "options": [
+     "个",
+     "些",
+     "本",
+     "张"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "你在聚会上认识了一个新朋友。跟他聊聊天。",
+    "start": "你好，我叫…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "朋友说他找到了新工作，你说：“真为你_____！”",
+    "options": [
+     "高兴",
+     "生气",
+     "担心",
+     "难过"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“听说你搬家了，新家住_____习惯吗？”",
+    "options": [
+     "了",
+     "的",
+     "得",
+     "地"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "跟老朋友聊聊你最近的生活。",
+    "start": "我最近…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "别人说话的时候，你轻轻地说“_____”，表示你在听。",
+    "options": [
+     "嗯",
+     "哎呀",
+     "喂",
+     "哼"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我们刚才说到哪儿了？接_____聊吧。”",
+    "options": [
+     "过",
+     "得",
+     "了",
+     "着"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "朋友问你周末过得怎么样。告诉他你做了什么。",
+    "start": "我周末过得…，我…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "要走的时候，你可以说：“时间不早了，我该_____了。”",
+    "options": [
+     "吃",
+     "到",
+     "来",
+     "走"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“今天聊得很开心，下次有空我们_____聚聚。”",
+    "options": [
+     "才",
+     "已经",
+     "再",
+     "又"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你在咖啡馆碰到了一个以前的同学。跟他聊几句，然后说再见。",
+    "start": "哎，好巧啊！…"
+   }
+  ]
+ }
+}

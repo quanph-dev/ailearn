@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>config_ads_v1</key>
+        <value>{&quot;status&quot;:false,&quot;ads_type&quot;:&quot;admob&quot;,&quot;app_open&quot;:{&quot;status&quot;:false,&quot;values&quot;:[]},&quot;splash&quot;:{&quot;status&quot;:false,&quot;values&quot;:[]},&quot;interstitials&quot;:{&quot;status&quot;:false,&quot;values&quot;:[]},&quot;rewards&quot;:{&quot;status&quot;:false,&quot;values&quot;:[]},&quot;banners&quot;:{&quot;status&quot;:false,&quot;values&quot;:[]},&quot;natives&quot;:{&quot;status&quot;:false,&quot;values&quot;:[]}}</value>
+    </entry>
+</defaultsMap>

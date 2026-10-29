@@ -1,0 +1,4528 @@
+{
+ "intermediate-u1-l1": {
+  "title": "Invitations",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Sur un carton d'invitation, « RSVP » demande aux invités de…",
+    "options": [
+     "répondre à l'hôte",
+     "apporter un cadeau",
+     "arriver en avance",
+     "s'habiller en noir"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une fête organisée sans que la personne fêtée le sache, c'est une fête…",
+    "options": [
+     "costumée",
+     "d'adieu",
+     "surprise",
+     "de famille"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Est-ce que tu _____ venir dîner samedi ? »",
+    "options": [
+     "voudrais",
+     "voudrait",
+     "voudrai",
+     "voudrions"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour inviter un ami, tu peux dire :",
+    "options": [
+     "Je n'ai pas le temps.",
+     "Ça te dirait d'aller au ciné ?",
+     "C'était un bon film hier.",
+     "Tu me dois dix euros."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu viens à la fête _____ Marc organise samedi ? »",
+    "options": [
+     "qui",
+     "où",
+     "que",
+     "dont"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Invite un ami à faire quelque chose avec toi ce week-end.",
+    "start": "Ça te dirait de…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel mot n'est PAS un événement où on peut être invité ?",
+    "options": [
+     "un mariage",
+     "un anniversaire",
+     "une pendaison de crémaillère",
+     "une facture"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Si tu es libre samedi, nous _____ au cinéma. »",
+    "options": [
+     "irions",
+     "allions",
+     "irons",
+     "sommes allés"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Parle d'une fête ou d'un événement où tu as été invité récemment.",
+    "start": "Récemment, j'ai été invité à…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Que veut dire « décliner une invitation » ?",
+    "options": [
+     "l'accepter avec joie",
+     "la refuser poliment",
+     "l'envoyer à un ami",
+     "l'oublier complètement"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu as appelé Julie ? » — « Oui, je _____ ai invitée à dîner. »",
+    "options": [
+     "lui",
+     "leur",
+     "l'",
+     "y"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Invite tes amis à ton anniversaire. Donne le jour, l'heure et le lieu.",
+    "start": "Vous êtes tous invités à…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète : « Pour mes 30 ans, je _____ une grande fête. »",
+    "options": [
+     "porte",
+     "prends",
+     "organise",
+     "achète"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la phrase correcte pour proposer une sortie :",
+    "options": [
+     "Et si on irait au parc ?",
+     "Et si on allons au parc ?",
+     "Et si on aller au parc ?",
+     "Et si on allait au parc ?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Invite poliment un collègue très occupé à prendre un café avec toi.",
+    "start": "Je me demandais si vous auriez le temps de…"
+   }
+  ]
+ },
+ "intermediate-u1-l2": {
+  "title": "Accepting/declining",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Pour accepter une invitation avec enthousiasme, tu dis :",
+    "options": [
+     "Avec plaisir !",
+     "Désolé, je ne peux pas.",
+     "Peut-être une autre fois.",
+     "Je suis déjà pris."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Je suis déjà pris ce soir » veut dire :",
+    "options": [
+     "Je suis malade.",
+     "J'ai déjà mangé.",
+     "J'ai déjà quelque chose de prévu.",
+     "Je suis très fatigué."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'_____ bien venir, mais je travaille samedi. »",
+    "options": [
+     "aimerai",
+     "aimerais",
+     "aimais",
+     "aime"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quelle phrase sert à refuser poliment ?",
+    "options": [
+     "Volontiers !",
+     "Ça marche !",
+     "C'est gentil, mais je ne pourrai pas.",
+     "Pourquoi pas !"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ta fête ? Oui, j'_____ vais avec plaisir ! »",
+    "options": [
+     "en",
+     "y",
+     "le",
+     "lui"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Un ami t'invite au cinéma ce soir. Accepte et propose une heure.",
+    "start": "Avec plaisir ! On se retrouve…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si tu dis « Ce sera pour une autre fois », tu…",
+    "options": [
+     "acceptes tout de suite",
+     "refuses mais proposes plus tard",
+     "invites quelqu'un d'autre",
+     "annules ton travail"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Désolé, il faut que je _____ mon rapport ce soir. »",
+    "options": [
+     "finis",
+     "finirai",
+     "finissais",
+     "finisse"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Un collègue t'invite à une soirée, mais tu ne peux pas venir. Refuse poliment et donne une raison.",
+    "start": "C'est très gentil, mais…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète : « Je ne suis pas sûr de pouvoir venir. Je te _____ ma réponse demain. »",
+    "options": [
+     "remercie",
+     "donne",
+     "félicite",
+     "rencontre"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Si j'avais le temps, je _____ avec plaisir. »",
+    "options": [
+     "viendrai",
+     "viens",
+     "venais",
+     "viendrais"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Accepte une invitation à dîner et demande ce que tu peux apporter.",
+    "start": "Oui, volontiers ! Est-ce que je peux apporter…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel mot veut dire « avec plaisir » ?",
+    "options": [
+     "volontiers",
+     "malheureusement",
+     "désormais",
+     "pourtant"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la phrase correcte :",
+    "options": [
+     "Je n'ai pu pas venir hier soir.",
+     "Je ne pas ai pu venir hier soir.",
+     "Je n'ai pas pu venir hier soir.",
+     "Je n'ai pas pouvoir venir hier soir."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Tu as accepté une invitation, mais tu dois annuler. Excuse-toi et explique pourquoi.",
+    "start": "Je suis vraiment désolé, mais finalement…"
+   }
+  ]
+ },
+ "intermediate-u1-l3": {
+  "title": "Arranging times",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "« On se donne rendez-vous à 18 h » veut dire :",
+    "options": [
+     "On s'appelle à 18 h.",
+     "On se retrouve à 18 h.",
+     "On finit le travail à 18 h.",
+     "On mange à 18 h."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète : « Je suis _____ jeudi, on peut se voir ce jour-là. »",
+    "options": [
+     "occupé",
+     "pris",
+     "absent",
+     "disponible"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Demain, nous _____ nous voir à midi. »",
+    "options": [
+     "allez",
+     "vont",
+     "aller",
+     "allons"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Que veut dire « avancer un rendez-vous » ?",
+    "options": [
+     "le mettre plus tard",
+     "le mettre plus tôt",
+     "l'annuler",
+     "le confirmer"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ça te va _____ on se voit vers 15 h ? »",
+    "options": [
+     "que",
+     "où",
+     "si",
+     "quand"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Propose à un ami un jour et une heure pour vous voir cette semaine.",
+    "start": "Est-ce que ça te va si on se voit…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Vers 19 h » veut dire :",
+    "options": [
+     "à peu près à 19 h",
+     "exactement à 19 h",
+     "seulement après 19 h",
+     "seulement avant 19 h"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je te rappellerai dès que je _____ mon emploi du temps. »",
+    "options": [
+     "connu",
+     "connaîtrai",
+     "connaisse",
+     "connaissais"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Ton ami propose lundi, mais tu n'es pas libre. Propose un autre moment.",
+    "start": "Lundi, ça ne va pas pour moi. Plutôt…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète : « Désolé, j'ai un _____ : je serai en retard de dix minutes. »",
+    "options": [
+     "agenda",
+     "empêchement",
+     "calendrier",
+     "horaire"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Rendez-vous au restaurant _____ nous avons dîné la dernière fois. »",
+    "options": [
+     "où",
+     "que",
+     "qui",
+     "dont"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Organise une sortie avec deux amis : propose un lieu et une heure.",
+    "start": "Et si on se retrouvait…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« À tout à l'heure » veut dire qu'on se revoit…",
+    "options": [
+     "la semaine prochaine",
+     "l'année prochaine",
+     "plus tard aujourd'hui",
+     "le mois prochain"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Si tu arrives avant moi, attends-_____ devant le cinéma. »",
+    "options": [
+     "moi",
+     "me",
+     "je",
+     "m'"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Tu vas être en retard. Laisse un message vocal à ton ami pour changer l'heure.",
+    "start": "Désolé, je vais avoir un peu de retard. On peut dire…"
+   }
+  ]
+ },
+ "intermediate-u2-l1": {
+  "title": "Ordering",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Au restaurant, un repas entrée-plat-dessert à prix fixe s'appelle…",
+    "options": [
+     "l'addition",
+     "une formule",
+     "le pourboire",
+     "la recette"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu veux ta viande très peu cuite. Tu la commandes…",
+    "options": [
+     "bien cuite",
+     "à point",
+     "brûlée",
+     "saignante"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je _____ un steak-frites, s'il vous plaît. »",
+    "options": [
+     "voudrait",
+     "voudrais",
+     "voudras",
+     "voudrions"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le serveur demande : « Et comme boisson ? » Il veut savoir…",
+    "options": [
+     "si tu as réservé",
+     "où tu veux t'asseoir",
+     "ce que tu veux boire",
+     "combien tu paies"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Des frites ? Oui, j'_____ voudrais une portion. »",
+    "options": [
+     "y",
+     "en",
+     "les",
+     "le"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Tu es au restaurant. Commande une entrée, un plat et une boisson.",
+    "start": "Pour commencer, je voudrais…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Que veut savoir le serveur quand il dit « Vous avez choisi ? »",
+    "options": [
+     "si tu es prêt à commander",
+     "si tu veux payer",
+     "si tu veux une autre table",
+     "si tu aimes le restaurant"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____-vous nous apporter de l'eau, s'il vous plaît ? »",
+    "options": [
+     "Pourrions",
+     "Pourrais",
+     "Pourrait",
+     "Pourriez"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Demande au serveur de te conseiller un plat.",
+    "start": "Qu'est-ce que vous me conseillez…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le « plat du jour », c'est…",
+    "options": [
+     "le plat le plus cher",
+     "le plat spécial proposé aujourd'hui",
+     "le dessert gratuit",
+     "le petit-déjeuner"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le gâteau au chocolat est _____ que la tarte aux pommes. »",
+    "options": [
+     "meilleur",
+     "plus bon",
+     "mieux",
+     "bien"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Commande un café et un dessert à la fin du repas.",
+    "start": "Pour finir, on va prendre…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel mot n'est PAS une partie d'un repas ?",
+    "options": [
+     "l'entrée",
+     "le plat principal",
+     "le dessert",
+     "le comptoir"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne forme : « Hier, nous _____ dans un restaurant italien. »",
+    "options": [
+     "sommes mangé",
+     "avons mangés",
+     "avons mangé",
+     "sommes mangés"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explique au serveur la cuisson de ta viande et l'accompagnement que tu veux.",
+    "start": "Je voudrais la viande…, avec…"
+   }
+  ]
+ },
+ "intermediate-u2-l2": {
+  "title": "Special requests",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Une personne qui ne mange ni viande ni poisson est…",
+    "options": [
+     "végétarienne",
+     "allergique",
+     "gourmande",
+     "pressée"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel mot désigne une mauvaise réaction du corps à un aliment ?",
+    "options": [
+     "une recette",
+     "une portion",
+     "une allergie",
+     "une épice"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Pour mon fils, il faut que le plat _____ sans gluten. »",
+    "options": [
+     "soit",
+     "est",
+     "sera",
+     "était"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Dans « la sauce à part, s'il vous plaît », « à part » veut dire…",
+    "options": [
+     "en plus",
+     "séparément",
+     "très chaude",
+     "partout"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il y a des noix dans ce gâteau ? » — « Non, il n'y _____ a pas. »",
+    "options": [
+     "en",
+     "y",
+     "le",
+     "les"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Dis au serveur que tu es allergique à quelque chose et pose une question sur un plat.",
+    "start": "Excusez-moi, je suis allergique à…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un plat très « épicé » est…",
+    "options": [
+     "très sucré",
+     "très froid",
+     "très cher",
+     "très piquant"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Pourriez-vous nous changer de table ? Celle-ci est _____ près de la porte. »",
+    "options": [
+     "trop",
+     "beaucoup",
+     "tant",
+     "assez de"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Demande au serveur de remplacer un ingrédient dans ton plat.",
+    "start": "Est-ce que ce serait possible de remplacer…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu veux emporter les restes de ton repas. Tu demandes…",
+    "options": [
+     "l'addition",
+     "la carte des vins",
+     "une boîte à emporter",
+     "une réservation"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le serveur ? Je _____ ai demandé un verre d'eau. »",
+    "options": [
+     "le",
+     "lui",
+     "l'",
+     "leur"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Tu es végétarien. Demande quels plats tu peux manger.",
+    "start": "Je suis végétarien. Qu'est-ce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une boisson « sans glaçons » est servie…",
+    "options": [
+     "sans morceaux de glace",
+     "sans sucre",
+     "sans verre",
+     "sans paille"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'aimerais que vous _____ la sauce à part. »",
+    "options": [
+     "mettez",
+     "mettrez",
+     "mettiez",
+     "mettre"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "C'est l'anniversaire de ton amie. Demande au restaurant d'apporter un gâteau avec une bougie.",
+    "start": "C'est l'anniversaire de mon amie. Est-ce que vous pourriez…"
+   }
+  ]
+ },
+ "intermediate-u2-l3": {
+  "title": "Paying",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "À la fin du repas, pour payer, tu demandes…",
+    "options": [
+     "la carte",
+     "l'addition",
+     "l'entrée",
+     "le plat du jour"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "L'argent qu'on laisse en plus au serveur, c'est…",
+    "options": [
+     "la monnaie",
+     "la facture",
+     "le reçu",
+     "le pourboire"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « On peut payer _____ carte ? »",
+    "options": [
+     "par",
+     "en",
+     "avec",
+     "à"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Payer en espèces » veut dire payer…",
+    "options": [
+     "par carte bancaire",
+     "par téléphone",
+     "avec des billets et des pièces",
+     "plus tard"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ne sors pas ton portefeuille, c'est moi qui _____ ce soir ! »",
+    "options": [
+     "invites",
+     "invite",
+     "invitent",
+     "invitons"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Demande l'addition et demande si tu peux payer par carte.",
+    "start": "Excusez-moi, l'addition, s'il vous plaît. Est-ce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Partager l'addition » veut dire…",
+    "options": [
+     "que chacun paie sa part",
+     "que le serveur paie",
+     "ne pas payer",
+     "payer deux fois"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il y a une erreur : nous _____ pas commandé de vin. »",
+    "options": [
+     "n'avons",
+     "ne sommes",
+     "n'avez",
+     "ne avons"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Il y a une erreur sur l'addition. Explique-la poliment au serveur.",
+    "start": "Excusez-moi, je crois qu'il y a une erreur…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le petit papier qui prouve que tu as payé, c'est…",
+    "options": [
+     "le menu",
+     "le reçu",
+     "le pourboire",
+     "la commande"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le service est compris, mais vous pouvez laisser un pourboire si vous _____. »",
+    "options": [
+     "voudriez",
+     "voudrez",
+     "voulez",
+     "vouliez"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Propose à ton ami de partager l'addition.",
+    "start": "On partage…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète : « Gardez la _____, c'est pour vous. »",
+    "options": [
+     "carte",
+     "table",
+     "facture",
+     "monnaie"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ce restaurant est _____ cher que celui d'hier. »",
+    "options": [
+     "moins",
+     "pire",
+     "meilleur",
+     "autant"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Ton ami veut payer pour toi. Remercie-le et propose de payer la prochaine fois.",
+    "start": "Merci, c'est gentil ! La prochaine fois…"
+   }
+  ]
+ },
+ "intermediate-u3-l1": {
+  "title": "Comparing products",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Un produit « bon marché » est…",
+    "options": [
+     "très cher",
+     "pas cher",
+     "en panne",
+     "épuisé"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Le rapport qualité-prix » compare…",
+    "options": [
+     "la qualité et le prix",
+     "deux magasins",
+     "la taille et la couleur",
+     "le vendeur et le client"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ce téléphone est _____ cher que l'autre, mais il est meilleur. »",
+    "options": [
+     "plus de",
+     "le plus",
+     "plus",
+     "autant"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel adjectif décrit un objet qui dure longtemps ?",
+    "options": [
+     "fragile",
+     "léger",
+     "démodé",
+     "résistant"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ce nouveau modèle marche _____ que l'ancien. »",
+    "options": [
+     "meilleur",
+     "plus bon",
+     "mieux",
+     "plus bien"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Compare deux téléphones que tu connais. Lequel est le meilleur ?",
+    "start": "À mon avis, celui-ci est plus… que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un produit qui n'est plus disponible en magasin est…",
+    "options": [
+     "soldé",
+     "neuf",
+     "épuisé",
+     "garanti"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « C'est l'ordinateur _____ léger du magasin. »",
+    "options": [
+     "plus",
+     "le plus",
+     "très",
+     "le mieux"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Tu hésites entre deux vestes. Explique au vendeur ce que tu cherches.",
+    "start": "J'hésite entre ces deux vestes, parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quand un produit est « en solde », il est…",
+    "options": [
+     "vendu moins cher",
+     "vendu plus cher",
+     "cassé",
+     "réservé"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ces chaussures sont _____ confortables que les miennes. »",
+    "options": [
+     "autant",
+     "si",
+     "tant",
+     "aussi"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Demande au vendeur quelle est la différence entre deux modèles.",
+    "start": "Quelle est la différence entre…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel mot désigne la promesse de réparer un produit s'il tombe en panne ?",
+    "options": [
+     "la remise",
+     "la garantie",
+     "la livraison",
+     "la marque"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Lequel préférez-vous ? » — « Je préfère _____ qui est en vitrine. »",
+    "options": [
+     "celle",
+     "ceux",
+     "celui",
+     "celles"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explique pourquoi tu as choisi un produit plutôt qu'un autre.",
+    "start": "J'ai choisi celui-ci plutôt que l'autre parce que…"
+   }
+  ]
+ },
+ "intermediate-u3-l2": {
+  "title": "Refunds",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Se faire « rembourser », c'est…",
+    "options": [
+     "acheter un deuxième article",
+     "payer plus cher",
+     "récupérer son argent",
+     "réparer un objet"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour obtenir un remboursement, il faut souvent montrer…",
+    "options": [
+     "le ticket de caisse",
+     "son passeport",
+     "son carnet de notes",
+     "la vitrine"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'_____ cette robe la semaine dernière. »",
+    "options": [
+     "ai achetée",
+     "suis acheté",
+     "ai acheté",
+     "ai acheter"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un produit « défectueux » est un produit…",
+    "options": [
+     "très cher",
+     "qui ne marche pas bien",
+     "tout neuf",
+     "à la mode"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « La robe ? Je l'ai _____ hier. »",
+    "options": [
+     "acheté",
+     "achetés",
+     "achetées",
+     "achetée"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Explique au vendeur pourquoi tu veux rapporter un article.",
+    "start": "Bonjour, je voudrais rapporter cet article parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Au lieu de rendre l'argent, le magasin peut proposer…",
+    "options": [
+     "un pourboire",
+     "un emprunt",
+     "un avoir",
+     "un salaire"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Quand j'ai ouvert la boîte, l'écran _____ déjà cassé. »",
+    "options": [
+     "était",
+     "a été",
+     "est",
+     "sera"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Le vendeur refuse de te rembourser. Demande à parler au responsable.",
+    "start": "Je comprends, mais est-ce que je pourrais…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le « délai de retour », c'est…",
+    "options": [
+     "l'heure d'ouverture",
+     "le prix de la livraison",
+     "la date de fabrication",
+     "le temps qu'on a pour rapporter un article"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Pour être remboursé, il faut que vous _____ le ticket de caisse. »",
+    "options": [
+     "avez",
+     "ayez",
+     "aurez",
+     "aviez"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Tu as acheté un produit en ligne et il est arrivé abîmé. Explique le problème.",
+    "start": "J'ai commandé… et quand je l'ai reçu,…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète : « Je voudrais être _____, pas échanger l'article. »",
+    "options": [
+     "réparé",
+     "remboursé",
+     "livré",
+     "vendu"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le vendeur _____ m'a servi hier n'est pas là aujourd'hui. »",
+    "options": [
+     "que",
+     "où",
+     "qui",
+     "dont"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte une fois où tu as dû rapporter quelque chose dans un magasin.",
+    "start": "Une fois, j'ai acheté… mais…"
+   }
+  ]
+ },
+ "intermediate-u3-l3": {
+  "title": "Exchanges",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "« Échanger » un article, c'est…",
+    "options": [
+     "le rendre contre de l'argent",
+     "le changer contre un autre",
+     "le réparer",
+     "le donner à quelqu'un"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ton pantalon est trop petit. Tu demandes…",
+    "options": [
+     "la taille en dessous",
+     "une autre couleur",
+     "un sac plus grand",
+     "la taille au-dessus"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'aime ce pull. Est-ce que vous l'avez _____ bleu ? »",
+    "options": [
+     "en",
+     "dans",
+     "de",
+     "à"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "La petite pièce où on essaie les vêtements s'appelle…",
+    "options": [
+     "la caisse",
+     "la vitrine",
+     "la cabine d'essayage",
+     "le rayon"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Cette chemise ne me va pas. Je peux _____ essayer une autre ? »",
+    "options": [
+     "y",
+     "en",
+     "la",
+     "lui"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Tu veux échanger un pull trop grand. Explique-le au vendeur.",
+    "start": "Bonjour, j'ai acheté ce pull, mais il est…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Ça ne me va pas » veut dire…",
+    "options": [
+     "ce vêtement n'est pas bien sur moi",
+     "je ne vais pas au magasin",
+     "je n'aime pas le vendeur",
+     "ce n'est pas cher"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Si vous n'avez pas ma taille, je _____ une autre couleur. »",
+    "options": [
+     "prenais",
+     "pris",
+     "prendrai",
+     "prendre"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Demande si tu peux échanger un cadeau sans le ticket de caisse.",
+    "start": "On m'a offert ce… mais je n'ai pas…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "La partie du magasin réservée à un type de produit s'appelle…",
+    "options": [
+     "la caisse",
+     "l'étiquette",
+     "le sac",
+     "le rayon"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ces chaussures sont trop petites, je voudrais _____ échanger. »",
+    "options": [
+     "les",
+     "leur",
+     "en",
+     "y"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Le vendeur te propose un autre modèle. Dis si tu es d'accord et pourquoi.",
+    "start": "Oui, celui-là me plaît, parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Sur un vêtement, le petit papier avec le prix s'appelle…",
+    "options": [
+     "le reçu",
+     "l'étiquette",
+     "la marque",
+     "la facture"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « La veste que j'ai _____ hier est trop serrée. »",
+    "options": [
+     "essayée",
+     "essayé",
+     "essayés",
+     "essayer"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explique ce qui ne va pas avec l'article. Préfères-tu un échange ou un avoir ?",
+    "start": "Le problème, c'est que… Je préférerais…"
+   }
+  ]
+ },
+ "intermediate-u4-l1": {
+  "title": "Check-in",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Au comptoir d'enregistrement, on te donne…",
+    "options": [
+     "ton billet de train",
+     "ta valise",
+     "ta carte d'embarquement",
+     "ton visa"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu veux voir le paysage pendant le vol. Tu demandes une place…",
+    "options": [
+     "côté hublot",
+     "côté couloir",
+     "en soute",
+     "au comptoir"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Dépêchez-vous, l'enregistrement _____ fermer dans dix minutes ! »",
+    "options": [
+     "vas",
+     "va",
+     "vont",
+     "allez"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Enregistrer une valise » veut dire…",
+    "options": [
+     "l'acheter à l'aéroport",
+     "la donner pour qu'elle voyage en soute",
+     "l'ouvrir pour un contrôle",
+     "la peser à la maison"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Votre carte d'embarquement ? Je vous _____ ai envoyée par e-mail. »",
+    "options": [
+     "la",
+     "lui",
+     "l'",
+     "en"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Tu es au comptoir d'enregistrement. Donne ton nom et demande une place côté hublot.",
+    "start": "Bonjour, je m'appelle… Est-ce que je pourrais…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ta valise est trop lourde. Tu dois payer un…",
+    "options": [
+     "pourboire",
+     "loyer",
+     "salaire",
+     "supplément"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il faut que vous _____ à l'aéroport deux heures avant le départ. »",
+    "options": [
+     "êtes",
+     "soyez",
+     "serez",
+     "étiez"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Demande à l'agent combien de bagages tu peux prendre en cabine.",
+    "start": "Excusez-moi, combien de…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le « bagage à main », c'est le sac que tu…",
+    "options": [
+     "gardes avec toi dans l'avion",
+     "envoies en soute",
+     "oublies à l'hôtel",
+     "achètes à l'aéroport"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Nous _____ arrivés en retard, mais l'enregistrement était encore ouvert. »",
+    "options": [
+     "sommes",
+     "avons",
+     "ont",
+     "sont"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explique à l'agent que tu as déjà fait l'enregistrement en ligne.",
+    "start": "J'ai déjà fait l'enregistrement en ligne, donc…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "L'endroit où tu montes dans l'avion s'appelle…",
+    "options": [
+     "la sortie de secours",
+     "le tapis à bagages",
+     "la porte d'embarquement",
+     "le hublot"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le vol _____ je prends part à 14 h. »",
+    "options": [
+     "qui",
+     "que",
+     "où",
+     "dont"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Ton vol est complet et l'agent te propose un autre vol. Réponds-lui.",
+    "start": "D'accord, mais à quelle heure…"
+   }
+  ]
+ },
+ "intermediate-u4-l2": {
+  "title": "Immigration",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Au contrôle des passeports, l'agent vérifie…",
+    "options": [
+     "ta valise",
+     "tes papiers d'identité",
+     "ton billet de train",
+     "ton repas"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le document qui permet d'entrer dans certains pays s'appelle…",
+    "options": [
+     "un reçu",
+     "un ticket",
+     "un avoir",
+     "un visa"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Combien de temps allez-vous _____ en France ? »",
+    "options": [
+     "restez",
+     "resté",
+     "rester",
+     "restiez"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Le motif de votre séjour », c'est…",
+    "options": [
+     "la raison de votre voyage",
+     "le prix de votre hôtel",
+     "la date de votre retour",
+     "votre nationalité"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ma femme et moi, nous _____ venus pour les vacances. »",
+    "options": [
+     "avons",
+     "sommes",
+     "êtes",
+     "sont"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "L'agent te demande pourquoi tu viens dans le pays. Réponds.",
+    "start": "Je viens ici pour…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le formulaire à remplir à l'arrivée dans certains pays s'appelle…",
+    "options": [
+     "une carte postale",
+     "un horaire",
+     "une fiche de débarquement",
+     "un ticket de caisse"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « C'est la première fois que vous _____ en France ? »",
+    "options": [
+     "veniez",
+     "viendrez",
+     "venu",
+     "venez"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Explique à l'agent où tu vas loger et combien de temps tu restes.",
+    "start": "Je vais loger… et je reste…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "À la douane, certains objets doivent être…",
+    "options": [
+     "déclarés",
+     "décorés",
+     "déplacés",
+     "dessinés"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Avez-vous quelque chose à déclarer ? » — « Non, je n'ai _____ à déclarer. »",
+    "options": [
+     "pas",
+     "rien",
+     "personne",
+     "aucun"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "L'agent te demande ce que tu fais dans la vie. Réponds et parle de ton voyage.",
+    "start": "Je travaille comme… et je suis ici pour…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Sur le formulaire, la case « nationalité » demande…",
+    "options": [
+     "ton adresse",
+     "ta date de naissance",
+     "de quel pays tu es citoyen",
+     "ton métier"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je suis déjà venu en France quand j'_____ étudiant. »",
+    "options": [
+     "suis",
+     "serai",
+     "étais",
+     "été"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "L'agent te demande quand tu repars. Réponds et montre ton billet.",
+    "start": "Je repars le… Voici…"
+   }
+  ]
+ },
+ "intermediate-u4-l3": {
+  "title": "Baggage",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "À l'arrivée, tu récupères ta valise sur…",
+    "options": [
+     "le comptoir",
+     "le tapis à bagages",
+     "la piste",
+     "le hublot"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une valise « abîmée » est…",
+    "options": [
+     "perdue",
+     "légère",
+     "neuve",
+     "endommagée"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ma valise n'est pas _____ sur le tapis. »",
+    "options": [
+     "arrivé",
+     "arrivées",
+     "arrivée",
+     "arriver"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour signaler une valise perdue, tu vas…",
+    "options": [
+     "à la douane",
+     "à la boutique",
+     "au service des bagages",
+     "au contrôle des passeports"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ma valise ? Je ne _____ trouve pas ! »",
+    "options": [
+     "lui",
+     "la",
+     "le",
+     "en"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Ta valise n'est pas arrivée. Explique le problème à l'agent.",
+    "start": "Excusez-moi, ma valise n'est pas…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ta valise pèse 25 kg, mais la limite est de 23 kg. Elle est…",
+    "options": [
+     "en surpoids",
+     "en retard",
+     "en solde",
+     "en panne"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « La dernière fois que je l'ai vue, ma valise _____ une étiquette rouge. »",
+    "options": [
+     "a eu",
+     "aura",
+     "ait",
+     "avait"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Décris ta valise à l'agent : sa taille, sa couleur et ce qu'il y a dedans.",
+    "start": "C'est une valise… Dedans, il y a…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "En cabine, les liquides doivent être dans…",
+    "options": [
+     "une valise en soute",
+     "un sachet transparent",
+     "une boîte en carton",
+     "un sac poubelle"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Et mon sac ? » — « On vous _____ livrera demain à votre hôtel. »",
+    "options": [
+     "lui",
+     "la",
+     "le",
+     "en"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Demande à l'agent quand et où on va te rapporter ta valise.",
+    "start": "Quand est-ce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel objet est INTERDIT dans un bagage à main ?",
+    "options": [
+     "un livre",
+     "un pull",
+     "un chargeur",
+     "un grand couteau"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il faut que je _____ ce formulaire pour ma valise perdue. »",
+    "options": [
+     "remplisse",
+     "remplis",
+     "remplirai",
+     "remplissais"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explique ce que tu vas faire si ta valise n'arrive pas aujourd'hui.",
+    "start": "Si ma valise n'arrive pas aujourd'hui, je…"
+   }
+  ]
+ },
+ "intermediate-u4-l4": {
+  "title": "Boarding",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "« L'embarquement », c'est le moment où les passagers…",
+    "options": [
+     "descendent de l'avion",
+     "récupèrent leurs bagages",
+     "montent dans l'avion",
+     "achètent leur billet"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un vol « retardé » part…",
+    "options": [
+     "plus tard que prévu",
+     "plus tôt que prévu",
+     "à l'heure",
+     "d'un autre aéroport"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Restez assis, l'avion _____ décoller dans quelques minutes. »",
+    "options": [
+     "vas",
+     "va",
+     "vont",
+     "aller"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Attachez vos ceintures » veut dire…",
+    "options": [
+     "enlevez vos chaussures",
+     "levez-vous",
+     "éteignez la lumière",
+     "bouclez vos ceintures"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Les passagers _____ sont assis aux rangs 20 à 30 peuvent embarquer. »",
+    "options": [
+     "que",
+     "qui",
+     "où",
+     "dont"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "On annonce que ton vol est retardé. Demande des informations à l'agent.",
+    "start": "Excusez-moi, mon vol est retardé. Savez-vous…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un vol « annulé »…",
+    "options": [
+     "part en avance",
+     "est complet",
+     "n'aura pas lieu",
+     "est direct"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Pendant que nous _____, l'heure du vol a changé. »",
+    "options": [
+     "attendions",
+     "attendrions",
+     "attendrons",
+     "attendons"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Dans l'avion, quelqu'un est assis à ta place. Explique-lui poliment.",
+    "start": "Excusez-moi, je crois que vous êtes à…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un vol « direct » est un vol…",
+    "options": [
+     "avec escale",
+     "sans escale",
+     "de nuit",
+     "en retard"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Si le vol a du retard, je _____ ma correspondance. »",
+    "options": [
+     "raterais",
+     "ratais",
+     "raterai",
+     "raté"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Ton vol est annulé. Demande à l'agent quelles sont les solutions.",
+    "start": "Mon vol vient d'être annulé. Qu'est-ce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "La personne qui s'occupe des passagers pendant le vol est…",
+    "options": [
+     "le douanier",
+     "le bagagiste",
+     "le contrôleur",
+     "l'hôtesse de l'air"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Les passagers du vol AF 123 sont priés de se _____ à la porte 12. »",
+    "options": [
+     "présenter",
+     "présentent",
+     "présenté",
+     "présentant"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte un voyage en avion où il y a eu un problème.",
+    "start": "Une fois, mon vol…"
+   }
+  ]
+ },
+ "intermediate-u5-l1": {
+  "title": "Reservations",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Une chambre pour deux personnes avec un grand lit est une chambre…",
+    "options": [
+     "simple",
+     "double",
+     "individuelle",
+     "commune"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Demi-pension » veut dire que…",
+    "options": [
+     "seule la nuit est comprise",
+     "tous les repas sont compris",
+     "le petit-déjeuner et un repas sont compris",
+     "la chambre est à moitié prix"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je _____ réserver une chambre pour trois nuits, s'il vous plaît. »",
+    "options": [
+     "voudrais",
+     "voudrait",
+     "voudrions",
+     "voudras"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un hôtel « complet » est un hôtel…",
+    "options": [
+     "avec petit-déjeuner compris",
+     "fermé le dimanche",
+     "avec de grandes chambres",
+     "qui n'a plus de chambres libres"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je voudrais une chambre _____ donne sur la mer. »",
+    "options": [
+     "que",
+     "qui",
+     "où",
+     "dont"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Téléphone à un hôtel pour réserver une chambre. Donne les dates et le nombre de personnes.",
+    "start": "Bonjour, je voudrais réserver une chambre pour…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Deux lits simples côte à côte dans une chambre d'hôtel sont des lits…",
+    "options": [
+     "jumeaux",
+     "doubles",
+     "superposés",
+     "pliants"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Est-ce que le petit-déjeuner est _____ dans le prix ? »",
+    "options": [
+     "comprise",
+     "comprend",
+     "compris",
+     "compréhensif"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Demande si l'hôtel a un parking et si le petit-déjeuner est compris.",
+    "start": "Est-ce que vous avez… ? Et est-ce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour garantir la réservation, l'hôtel demande souvent…",
+    "options": [
+     "un pourboire",
+     "un acompte",
+     "un avoir",
+     "un visa"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Nous _____ vers 22 h demain soir. Est-ce un problème ? »",
+    "options": [
+     "arrivions",
+     "arrivé",
+     "arriver",
+     "arriverons"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Tu dois annuler ta réservation. Appelle l'hôtel et explique pourquoi.",
+    "start": "Bonjour, j'ai une réservation au nom de… et je dois…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Annulation sans frais » veut dire qu'on peut annuler…",
+    "options": [
+     "en payant plus",
+     "seulement en ligne",
+     "gratuitement",
+     "seulement par téléphone"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « La semaine prochaine, nous _____ deux nuits dans cet hôtel. »",
+    "options": [
+     "passerons",
+     "passions",
+     "avons passé",
+     "passé"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explique quel type de chambre tu veux et pourquoi.",
+    "start": "Je voudrais une chambre… parce que…"
+   }
+  ]
+ },
+ "intermediate-u5-l2": {
+  "title": "Requests",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Tu veux une couverture en plus. Tu demandes une couverture…",
+    "options": [
+     "simple",
+     "supplémentaire",
+     "complète",
+     "cassée"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le service qui apporte les repas dans la chambre s'appelle…",
+    "options": [
+     "la réception",
+     "le ménage",
+     "le parking",
+     "le service en chambre"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Pourriez-vous me _____ un taxi pour demain matin ? »",
+    "options": [
+     "réserver",
+     "réservez",
+     "réservé",
+     "réserverez"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "À l'hôtel, « faire le ménage », c'est…",
+    "options": [
+     "servir le petit-déjeuner",
+     "préparer la facture",
+     "nettoyer la chambre",
+     "garer la voiture"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il me faudrait un oreiller. Vous pourriez m'_____ apporter un ? »",
+    "options": [
+     "en",
+     "y",
+     "le",
+     "lui"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Appelle la réception et demande des serviettes propres.",
+    "start": "Bonjour, c'est la chambre… Est-ce que vous pourriez…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un « réveil téléphonique » sert à…",
+    "options": [
+     "commander à manger",
+     "te réveiller à une heure précise",
+     "appeler un taxi",
+     "ouvrir la porte"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'aimerais que quelqu'un _____ nettoyer la salle de bains. »",
+    "options": [
+     "vient",
+     "viendra",
+     "venir",
+     "vienne"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Demande au réceptionniste de te conseiller un bon restaurant près de l'hôtel.",
+    "start": "Vous pourriez me conseiller…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour te connecter à Internet, tu demandes…",
+    "options": [
+     "le code postal",
+     "le code de la route",
+     "le code wifi",
+     "le numéro de chambre"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « On peut laisser nos bagages ici ? On _____ reprendra à 17 h. »",
+    "options": [
+     "leur",
+     "les",
+     "en",
+     "y"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Demande à la réception si tu peux quitter ta chambre plus tard.",
+    "start": "Est-ce qu'il serait possible de…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Rendre la chambre le dernier jour, c'est…",
+    "options": [
+     "libérer la chambre",
+     "réserver la chambre",
+     "louer la chambre",
+     "changer de chambre"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « La clé _____ vous m'avez donnée ne marche pas. »",
+    "options": [
+     "qui",
+     "où",
+     "que",
+     "dont"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Tu as besoin d'un adaptateur pour ton chargeur. Demande-le à la réception.",
+    "start": "Excusez-moi, est-ce que vous auriez…"
+   }
+  ]
+ },
+ "intermediate-u5-l3": {
+  "title": "Common problems",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "La « climatisation » sert à…",
+    "options": [
+     "chauffer l'eau",
+     "éclairer la chambre",
+     "fermer la porte",
+     "refroidir la chambre"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "L'eau ne s'écoule pas du lavabo. Il est sans doute…",
+    "options": [
+     "bouché",
+     "allumé",
+     "branché",
+     "rangé"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Quand je suis entré dans la chambre, elle n'_____ pas propre. »",
+    "options": [
+     "a été",
+     "était",
+     "est été",
+     "été"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Les voisins font beaucoup de bruit. Ta chambre est…",
+    "options": [
+     "calme",
+     "propre",
+     "bruyante",
+     "spacieuse"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il faut que vous me _____ une autre chambre. »",
+    "options": [
+     "donniez",
+     "donnez",
+     "donnerez",
+     "donner"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "La télé de ta chambre ne marche pas. Appelle la réception.",
+    "start": "Bonjour, je suis dans la chambre… et la télé…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une ampoule « grillée »…",
+    "options": [
+     "est trop chaude",
+     "ne donne plus de lumière",
+     "est toute neuve",
+     "est très forte"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ma nouvelle chambre est encore _____ bruyante que l'autre ! »",
+    "options": [
+     "plus de",
+     "pire",
+     "mieux",
+     "plus"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Ta chambre ne te plaît pas. Demande à en changer.",
+    "start": "Je suis désolé, mais la chambre ne me convient pas parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si la douche « fuit », …",
+    "options": [
+     "il n'y a pas d'eau chaude",
+     "elle est très propre",
+     "l'eau coule où il ne faut pas",
+     "elle est trop petite"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « On m'a promis une vue sur la mer, mais on ne me l'a pas _____. »",
+    "options": [
+     "donné",
+     "donnée",
+     "données",
+     "donnés"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Il n'y a pas d'eau chaude. Explique le problème et demande quand ce sera réparé.",
+    "start": "Il n'y a pas d'eau chaude dans ma chambre. Quand…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un « dédommagement », c'est…",
+    "options": [
+     "une facture plus chère",
+     "une chambre plus petite",
+     "un nouveau client",
+     "une compensation pour un problème"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le réceptionniste _____ j'ai parlé a été très gentil. »",
+    "options": [
+     "que",
+     "qui",
+     "à qui",
+     "où"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte un problème que tu as eu dans un hôtel.",
+    "start": "Une fois, dans un hôtel, il y avait…"
+   }
+  ]
+ },
+ "intermediate-u6-l1": {
+  "title": "Tasks",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Au travail, « une échéance », c'est…",
+    "options": [
+     "un salaire",
+     "une date limite",
+     "un bureau",
+     "un collègue"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une tâche « urgente » doit être faite…",
+    "options": [
+     "tout de suite",
+     "la semaine prochaine",
+     "un jour",
+     "quand on a le temps"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il faut que je _____ ce rapport avant midi. »",
+    "options": [
+     "termines",
+     "terminerai",
+     "termine",
+     "terminais"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quand tu confies une tâche à quelqu'un d'autre, tu la…",
+    "options": [
+     "démissionnes",
+     "déménages",
+     "dépenses",
+     "délègues"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le dossier ? Je _____ ai déjà envoyé au client. »",
+    "options": [
+     "le",
+     "l'",
+     "lui",
+     "en"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Explique à ton chef ce que tu as fait aujourd'hui au travail.",
+    "start": "Aujourd'hui, j'ai…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "La liste des choses à faire s'appelle…",
+    "options": [
+     "un CV",
+     "un contrat",
+     "une liste de tâches",
+     "un bulletin de salaire"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je _____ t'envoyer le fichier dans cinq minutes. »",
+    "options": [
+     "vais",
+     "vas",
+     "va",
+     "allons"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Un collègue te demande de l'aide pour une tâche. Réponds et propose une solution.",
+    "start": "Pas de problème, je peux…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Être débordé » veut dire…",
+    "options": [
+     "être en vacances",
+     "avoir trop de travail",
+     "être en retard",
+     "être malade"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le client a appelé ? » — « Oui, je _____ ai répondu ce matin. »",
+    "options": [
+     "le",
+     "l'",
+     "y",
+     "lui"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Tu as trop de travail. Demande à ton chef de repousser une échéance.",
+    "start": "Je suis un peu débordé en ce moment. Est-ce qu'il serait possible…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Mettre à jour » un document, c'est…",
+    "options": [
+     "le rendre actuel",
+     "le supprimer",
+     "l'imprimer",
+     "le traduire"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « C'est la tâche _____ prend le plus de temps. »",
+    "options": [
+     "que",
+     "où",
+     "qui",
+     "dont"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explique comment tu organises tes tâches pendant une journée chargée.",
+    "start": "D'abord, je… Ensuite,…"
+   }
+  ]
+ },
+ "intermediate-u6-l2": {
+  "title": "Colleagues",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "La personne qui dirige ton équipe est ton…",
+    "options": [
+     "client",
+     "stagiaire",
+     "responsable",
+     "voisin"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un « stagiaire » est…",
+    "options": [
+     "quelqu'un qui apprend un métier en entreprise",
+     "le directeur",
+     "un client important",
+     "un retraité"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je te présente Sophie, _____ travaille au marketing. »",
+    "options": [
+     "que",
+     "qui",
+     "dont",
+     "où"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un collègue « serviable »…",
+    "options": [
+     "arrive toujours en retard",
+     "parle beaucoup",
+     "travaille seul",
+     "aime aider les autres"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu as vu Marc et Julie ? » — « Oui, je _____ ai parlé ce matin. »",
+    "options": [
+     "les",
+     "lui",
+     "leur",
+     "leurs"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Présente un collègue à un nouvel employé.",
+    "start": "Je te présente… Il travaille…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« S'entendre bien avec quelqu'un » veut dire…",
+    "options": [
+     "l'écouter au téléphone",
+     "avoir de bonnes relations avec lui",
+     "l'entendre de loin",
+     "travailler pour lui"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Quand je suis arrivé dans l'entreprise, Paul _____ déjà là depuis cinq ans. »",
+    "options": [
+     "était",
+     "a été",
+     "sera",
+     "est"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Décris ton collègue ou ton camarade préféré : son caractère et ce qu'il fait.",
+    "start": "Mon collègue préféré s'appelle… Il est…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un « pot de départ », c'est…",
+    "options": [
+     "un vase",
+     "un repas d'affaires",
+     "une petite fête quand un collègue s'en va",
+     "une réunion de travail"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ça te dérange si je _____ la porte ? »",
+    "options": [
+     "fermerai",
+     "ferme",
+     "fermerais",
+     "fermé"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Un nouveau collègue arrive. Accueille-le et propose de l'aider.",
+    "start": "Bienvenue dans l'équipe ! Si tu as besoin…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le contraire de « travailler en équipe », c'est travailler…",
+    "options": [
+     "ensemble",
+     "à plusieurs",
+     "en groupe",
+     "seul"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je ne connais pas bien Léa : je l'ai _____ une seule fois. »",
+    "options": [
+     "rencontrée",
+     "rencontré",
+     "rencontrés",
+     "rencontrer"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte un désaccord avec un collègue et comment vous l'avez réglé.",
+    "start": "Une fois, un collègue et moi…"
+   }
+  ]
+ },
+ "intermediate-u6-l3": {
+  "title": "Schedules",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Ton « emploi du temps », c'est…",
+    "options": [
+     "ton salaire",
+     "ton planning de la semaine",
+     "ton bureau",
+     "ton contrat"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Travailler « à temps partiel » veut dire travailler…",
+    "options": [
+     "seulement la nuit",
+     "seulement le week-end",
+     "moins d'heures qu'à temps plein",
+     "sans salaire"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je travaille du lundi _____ vendredi. »",
+    "options": [
+     "à",
+     "jusqu'",
+     "en",
+     "au"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Faire des heures supplémentaires » veut dire…",
+    "options": [
+     "travailler plus longtemps que prévu",
+     "arriver en retard",
+     "prendre une pause",
+     "partir tôt"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « La semaine prochaine, je _____ en congé. »",
+    "options": [
+     "serais",
+     "étais",
+     "serai",
+     "sois"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Décris ta journée de travail ou d'études : à quelle heure tu commences et tu finis.",
+    "start": "En général, je commence à… et je finis…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Les « congés payés » sont…",
+    "options": [
+     "des heures de travail en plus",
+     "des réunions obligatoires",
+     "des jours de formation",
+     "des vacances payées par l'employeur"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je ne pourrai pas venir à la réunion _____ j'ai rendez-vous chez le médecin. »",
+    "options": [
+     "pourtant",
+     "parce que",
+     "donc",
+     "alors que"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Demande à ton chef si tu peux changer tes horaires vendredi.",
+    "start": "Est-ce que ce serait possible de…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si la réunion est « reportée », elle…",
+    "options": [
+     "est annulée pour toujours",
+     "commence plus tôt",
+     "aura lieu plus tard",
+     "dure plus longtemps"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Hier, nous _____ jusqu'à 20 h parce qu'il y avait trop de travail. »",
+    "options": [
+     "avons travaillé",
+     "sommes travaillés",
+     "travaillerons",
+     "travaillons"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explique à un collègue ton planning de la semaine prochaine.",
+    "start": "La semaine prochaine, lundi, je vais…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une réunion qui a lieu chaque semaine est une réunion…",
+    "options": [
+     "quotidienne",
+     "hebdomadaire",
+     "mensuelle",
+     "annuelle"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le lundi, c'est le jour _____ j'ai le plus de réunions. »",
+    "options": [
+     "qui",
+     "quand",
+     "dont",
+     "où"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Tu dois partir plus tôt demain. Préviens ton chef et propose une solution.",
+    "start": "Demain, je dois partir plus tôt parce que… Je peux…"
+   }
+  ]
+ },
+ "intermediate-u6-l4": {
+  "title": "Workplace vocabulary",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Le document qui résume ton parcours professionnel s'appelle…",
+    "options": [
+     "un contrat",
+     "une facture",
+     "un CV",
+     "un devis"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ton « salaire », c'est…",
+    "options": [
+     "l'argent que tu gagnes en travaillant",
+     "ton bureau",
+     "tes vacances",
+     "ton chef"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « L'imprimante _____ est au deuxième étage ne marche pas. »",
+    "options": [
+     "que",
+     "qui",
+     "où",
+     "dont"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Démissionner » veut dire…",
+    "options": [
+     "être embauché",
+     "partir en vacances",
+     "changer de bureau",
+     "quitter son emploi volontairement"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Cette entreprise m'a _____ il y a deux ans. »",
+    "options": [
+     "embaucher",
+     "embauche",
+     "embauché",
+     "embauchais"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Décris ton travail ou le métier de tes rêves.",
+    "start": "Mon travail consiste à…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un « entretien d'embauche », c'est…",
+    "options": [
+     "une fête au bureau",
+     "un rendez-vous pour obtenir un poste",
+     "un jour de congé",
+     "une formation"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Si j'avais un meilleur salaire, je _____ un appartement plus grand. »",
+    "options": [
+     "louerai",
+     "louais",
+     "loue",
+     "louerais"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Explique ce que tu aimes et ce que tu n'aimes pas dans ton travail ou tes études.",
+    "start": "Ce que j'aime, c'est… mais…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "L'entreprise qui te paie pour travailler est ton…",
+    "options": [
+     "employé",
+     "client",
+     "employeur",
+     "fournisseur"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Des collègues ? J'_____ ai une dizaine. »",
+    "options": [
+     "en",
+     "y",
+     "les",
+     "leur"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Tu passes un entretien d'embauche. Présente-toi en quelques phrases.",
+    "start": "Je m'appelle… et j'ai de l'expérience en…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Être au chômage » veut dire…",
+    "options": [
+     "travailler trop",
+     "ne pas avoir d'emploi",
+     "être en réunion",
+     "être le chef"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il faut que tu _____ ton badge pour entrer dans le bâtiment. »",
+    "options": [
+     "prends",
+     "prendras",
+     "prennes",
+     "prenais"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explique à un ami ce que fait une personne dans un métier que tu connais bien.",
+    "start": "Un… s'occupe de…"
+   }
+  ]
+ },
+ "intermediate-u7-l1": {
+  "title": "Calling",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quand tu décroches le téléphone, tu dis souvent…",
+    "options": [
+     "Bon appétit !",
+     "Allô ?",
+     "À vos souhaits !",
+     "Félicitations !"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Raccrocher » veut dire…",
+    "options": [
+     "commencer l'appel",
+     "laisser un message",
+     "rappeler plus tard",
+     "terminer l'appel"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Est-ce que je _____ parler à Madame Dupont, s'il vous plaît ? »",
+    "options": [
+     "pourrais",
+     "pourrait",
+     "pourriez",
+     "pourrons"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Au téléphone, « Ne quittez pas » veut dire…",
+    "options": [
+     "raccrochez",
+     "partez",
+     "patientez un moment",
+     "rappelez demain"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Allô ? C'est Paul _____ appareil. »",
+    "options": [
+     "sur l'",
+     "à l'",
+     "dans l'",
+     "au"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Appelle un magasin pour demander ses horaires d'ouverture.",
+    "start": "Bonjour, je vous appelle pour savoir…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si personne ne répond, tu tombes sur…",
+    "options": [
+     "le répondeur",
+     "la sonnerie",
+     "le réseau",
+     "la batterie"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Bonjour, je vous appelle _____ la part de Madame Leroy. »",
+    "options": [
+     "par",
+     "pour",
+     "à",
+     "de"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Appelle un ami pour prendre de ses nouvelles et proposer de vous voir.",
+    "start": "Allô, salut ! C'est… Je t'appelle pour…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« La ligne est occupée » veut dire…",
+    "options": [
+     "le téléphone est cassé",
+     "la personne est déjà au téléphone",
+     "il n'y a pas de réseau",
+     "le numéro n'existe pas"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je suis en réunion. Je _____ rappellerai dans dix minutes. »",
+    "options": [
+     "votre",
+     "vos",
+     "vous",
+     "leur"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Tu appelles une entreprise. Présente-toi et demande à parler au service client.",
+    "start": "Bonjour, je m'appelle… Pourriez-vous me passer…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "La secrétaire dit : « Je vous passe M. Martin. » Elle va…",
+    "options": [
+     "raccrocher",
+     "rappeler demain",
+     "prendre un message",
+     "transférer l'appel à M. Martin"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je t'ai appelé hier soir, mais tu ne _____ pas. »",
+    "options": [
+     "répondais",
+     "as répondu",
+     "répondras",
+     "réponds"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Tu appelles un restaurant pour réserver une table pour ce soir.",
+    "start": "Bonsoir, je voudrais réserver une table pour…"
+   }
+  ]
+ },
+ "intermediate-u7-l2": {
+  "title": "Taking messages",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "« Laisser un message » veut dire…",
+    "options": [
+     "raccrocher sans parler",
+     "envoyer un colis",
+     "donner une information à transmettre",
+     "rappeler plus tard"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Au téléphone, « Elle est en ligne » veut dire…",
+    "options": [
+     "elle parle déjà au téléphone",
+     "elle fait la queue",
+     "elle est en retard",
+     "elle est absente"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il n'est pas là. Voulez-vous que je lui _____ un message ? »",
+    "options": [
+     "transmets",
+     "transmette",
+     "transmettrai",
+     "transmettre"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quand on te demande « C'est de la part de qui ? », on veut savoir…",
+    "options": [
+     "pourquoi tu appelles",
+     "ton numéro",
+     "où tu es",
+     "qui appelle"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je lui dirai que vous _____ appelé. »",
+    "options": [
+     "êtes",
+     "aurez",
+     "avez",
+     "ayez"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Quelqu'un appelle ton collègue, qui est absent. Propose de prendre un message.",
+    "start": "Il n'est pas là pour le moment. Voulez-vous…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Épeler » son nom, c'est…",
+    "options": [
+     "le dire très vite",
+     "dire les lettres une par une",
+     "l'écrire en majuscules",
+     "le traduire"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Vous pouvez lui demander de me rappeler ? » — « D'accord, je _____ lui dire. »",
+    "options": [
+     "vais",
+     "vas",
+     "va",
+     "aller"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Laisse un message pour un collègue : dis qui tu es et pourquoi tu appelles.",
+    "start": "Bonjour, c'est… Je voulais…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Je prends note » veut dire…",
+    "options": [
+     "je prends une photo",
+     "j'oublie tout",
+     "j'écris l'information",
+     "je raccroche"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Marie a appelé. Elle veut que tu la _____ ce soir. »",
+    "options": [
+     "rappelleras",
+     "rappellerais",
+     "rappeler",
+     "rappelles"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Lis à ta collègue le message que tu as noté pour elle.",
+    "start": "Monsieur Martin a appelé à… Il voudrait que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Dans une entreprise, un « numéro de poste » est…",
+    "options": [
+     "un code postal",
+     "un numéro de téléphone interne",
+     "un numéro de bus",
+     "une adresse e-mail"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le message ? Je _____ ai laissé sur ton bureau. »",
+    "options": [
+     "te l'",
+     "le te",
+     "lui le",
+     "l'en"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explique au téléphone que la personne est en réunion et quand elle sera disponible.",
+    "start": "Elle est en réunion jusqu'à… Elle pourra…"
+   }
+  ]
+ },
+ "intermediate-u7-l3": {
+  "title": "Clarifying information",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Tu n'as pas compris. Tu dis :",
+    "options": [
+     "Je vous en prie.",
+     "À bientôt !",
+     "Pardon, vous pouvez répéter ?",
+     "Bon courage !"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Au téléphone, « Ça coupe » veut dire…",
+    "options": [
+     "la communication est mauvaise",
+     "l'appel coûte cher",
+     "la personne coupe du pain",
+     "l'appel est gratuit"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Pourriez-vous parler _____ fort, s'il vous plaît ? »",
+    "options": [
+     "plus de",
+     "plus",
+     "meilleur",
+     "le plus de"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour vérifier une information, tu peux dire :",
+    "options": [
+     "Vous êtes d'où ?",
+     "Ça vous plaît ?",
+     "Vous avez faim ?",
+     "Si je comprends bien, … ?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je ne suis pas sûr d'avoir compris _____ vous avez dit. »",
+    "options": [
+     "que",
+     "ce qui",
+     "ce que",
+     "quoi"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Tu n'as pas compris le nom de la personne au téléphone. Demande-lui de l'épeler.",
+    "start": "Excusez-moi, pourriez-vous…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Autrement dit » sert à…",
+    "options": [
+     "changer de sujet",
+     "dire la même chose avec d'autres mots",
+     "terminer l'appel",
+     "dire au revoir"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Vous pouvez me dire à quelle heure le train _____ ? »",
+    "options": [
+     "part",
+     "parte",
+     "partir",
+     "partant"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Vérifie une adresse qu'on vient de te donner au téléphone.",
+    "start": "Si j'ai bien compris, l'adresse est…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si tu « confonds » deux mots, tu…",
+    "options": [
+     "les écris bien",
+     "les traduis",
+     "prends l'un pour l'autre",
+     "les oublies"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Vous m'avez donné un numéro, mais je ne _____ ai pas noté. »",
+    "options": [
+     "le",
+     "en",
+     "lui",
+     "l'"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Ton interlocuteur parle trop vite. Demande-lui gentiment de ralentir.",
+    "start": "Excusez-moi, est-ce que vous pourriez…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Préciser » une information, c'est…",
+    "options": [
+     "la rendre plus claire et exacte",
+     "la cacher",
+     "l'oublier",
+     "la changer complètement"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je voulais savoir _____ la réunion est confirmée. »",
+    "options": [
+     "que",
+     "si",
+     "ce que",
+     "quoi"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Résume une information importante pour être sûr de l'avoir bien comprise.",
+    "start": "Donc, si je résume,…"
+   }
+  ]
+ },
+ "intermediate-u8-l1": {
+  "title": "Describing basic symptoms",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quand tu as de la fièvre, ton corps est…",
+    "options": [
+     "trop froid",
+     "mouillé",
+     "trop chaud",
+     "léger"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "« J'ai le nez qui coule » veut dire…",
+    "options": [
+     "j'ai un rhume",
+     "j'ai mal au dos",
+     "je me suis cassé le nez",
+     "j'ai faim"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'ai mal _____ dents depuis trois jours. »",
+    "options": [
+     "au",
+     "à la",
+     "aux",
+     "des"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu tousses beaucoup. Le pharmacien te donne…",
+    "options": [
+     "un pansement",
+     "un plâtre",
+     "un parapluie",
+     "un sirop"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Hier, Léa s'est _____ la cheville en courant. »",
+    "options": [
+     "tordu",
+     "tordue",
+     "tordus",
+     "tordre"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explique au médecin ce qui ne va pas depuis quelques jours.",
+    "start": "Docteur, depuis quelques jours, j'ai…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Avoir « des nausées », c'est…",
+    "options": [
+     "avoir mal aux pieds",
+     "avoir envie de vomir",
+     "avoir froid",
+     "avoir sommeil"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je suis malade _____ trois jours. »",
+    "options": [
+     "pendant",
+     "il y a",
+     "depuis",
+     "dans"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Décris tes symptômes quand tu as la grippe.",
+    "start": "Quand j'ai la grippe, j'ai…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu éternues souvent au printemps. Tu as sans doute…",
+    "options": [
+     "une allergie",
+     "une jambe cassée",
+     "mal aux dents",
+     "une coupure"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Quand je me suis levé ce matin, j'_____ mal à la gorge. »",
+    "options": [
+     "ai été",
+     "aurai",
+     "avais",
+     "aurais"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Ton ami est malade. Demande-lui comment il se sent et donne-lui un conseil.",
+    "start": "Comment tu te sens ? Tu devrais…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un médicament contre la douleur s'appelle…",
+    "options": [
+     "un pansement",
+     "un antidouleur",
+     "un vaccin",
+     "un thermomètre"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je me sens _____ qu'hier, merci. »",
+    "options": [
+     "meilleur",
+     "plus bien",
+     "bon",
+     "mieux"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Appelle ton chef : tu es malade et tu ne viendras pas aujourd'hui.",
+    "start": "Bonjour, je suis désolé, mais je suis malade : j'ai…"
+   }
+  ]
+ },
+ "intermediate-u8-l2": {
+  "title": "Making appointments",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Pour voir un médecin, il faut souvent prendre…",
+    "options": [
+     "la porte",
+     "un ticket de caisse",
+     "rendez-vous",
+     "l'air"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le lieu où un médecin reçoit ses patients s'appelle…",
+    "options": [
+     "le cabinet",
+     "la cabine",
+     "le comptoir",
+     "le guichet"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Est-ce que le docteur _____ me recevoir demain matin ? »",
+    "options": [
+     "pourrais",
+     "pourrait",
+     "pourriez",
+     "pourrions"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un rendez-vous « en urgence », c'est un rendez-vous…",
+    "options": [
+     "dans un mois",
+     "annulé",
+     "par e-mail",
+     "le plus vite possible"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Vous êtes disponible jeudi ? » — « Non, mais je _____ libre vendredi. »",
+    "options": [
+     "sois",
+     "serai",
+     "été",
+     "étant"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Appelle le cabinet médical pour prendre rendez-vous.",
+    "start": "Bonjour, je voudrais prendre rendez-vous avec…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le papier où le médecin écrit tes médicaments est…",
+    "options": [
+     "une facture",
+     "une ordonnance",
+     "un formulaire",
+     "un CV"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il faut que vous _____ votre carte Vitale. »",
+    "options": [
+     "apportez",
+     "apporterez",
+     "apportiez",
+     "apporter"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Tu ne peux pas aller à ton rendez-vous. Appelle pour le déplacer.",
+    "start": "Bonjour, j'ai un rendez-vous… mais je ne pourrai pas venir. Est-ce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Annuler » un rendez-vous, c'est…",
+    "options": [
+     "arriver en avance",
+     "le confirmer",
+     "le noter dans l'agenda",
+     "dire qu'on ne viendra pas"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « La pharmacie _____ je vais est ouverte le dimanche. »",
+    "options": [
+     "où",
+     "que",
+     "qui",
+     "dont"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Demande à la secrétaire quels documents tu dois apporter.",
+    "start": "Qu'est-ce que je dois…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un médecin « généraliste »…",
+    "options": [
+     "soigne seulement les dents",
+     "soigne les animaux",
+     "soigne les problèmes courants",
+     "opère le cœur"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'ai rendez-vous chez le dentiste. J'_____ vais à 15 h. »",
+    "options": [
+     "en",
+     "y",
+     "le",
+     "lui"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte ta dernière visite chez le médecin.",
+    "start": "La dernière fois que je suis allé chez le médecin,…"
+   }
+  ]
+ },
+ "intermediate-u9-l1": {
+  "title": "Explaining a problem and asking for help",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "« Tomber en panne » veut dire…",
+    "options": [
+     "tomber par terre",
+     "être en retard",
+     "arrêter de fonctionner",
+     "perdre ses clés"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Il y a une fuite d'eau dans la cuisine. Tu appelles…",
+    "options": [
+     "le plombier",
+     "le boulanger",
+     "le serrurier",
+     "le facteur"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Au secours ! J'_____ mon portefeuille dans le métro. »",
+    "options": [
+     "suis perdu",
+     "ai perdu",
+     "ai perdre",
+     "avais perdre"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le « serrurier » s'occupe…",
+    "options": [
+     "des voitures",
+     "des ordinateurs",
+     "des dents",
+     "des portes et des serrures"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ma clé est cassée et je ne sais pas _____ faire. »",
+    "options": [
+     "que",
+     "ce que",
+     "quoi",
+     "qu'est-ce que"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Ta voiture est en panne sur la route. Appelle un garage pour demander de l'aide.",
+    "start": "Bonjour, ma voiture est tombée en panne…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Dépanner » quelqu'un, c'est…",
+    "options": [
+     "le gêner",
+     "l'aider à régler un problème",
+     "le remercier",
+     "le punir"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je marchais dans la rue quand je _____. »",
+    "options": [
+     "suis tombé",
+     "tombais",
+     "ai tombé",
+     "tomberai"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Tu as perdu ton sac. Explique à un agent où et quand tu l'as perdu.",
+    "start": "J'ai perdu mon sac… Je crois que c'était…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« C'est réglé ! » veut dire…",
+    "options": [
+     "c'est interdit",
+     "c'est cher",
+     "le problème est résolu",
+     "c'est cassé"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ça vous dérangerait de m'_____ un instant ? »",
+    "options": [
+     "aidez",
+     "aidé",
+     "aide",
+     "aider"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Ton ordinateur ne s'allume plus. Demande de l'aide à un collègue.",
+    "start": "Tu pourrais m'aider ? Mon ordinateur…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Demander conseil » à quelqu'un, c'est…",
+    "options": [
+     "lui demander de l'argent",
+     "lui demander son avis",
+     "lui demander pardon",
+     "lui demander l'heure"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « On vous a volé votre sac ? Il faut que vous _____ la police tout de suite. »",
+    "options": [
+     "appelez",
+     "appellerez",
+     "appeliez",
+     "appelant"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte un problème que tu as eu et comment quelqu'un t'a aidé.",
+    "start": "Une fois, j'ai eu un problème :… Heureusement,…"
+   }
+  ]
+ },
+ "intermediate-u10-l1": {
+  "title": "Talking about past events and experiences",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Un souvenir « inoubliable » est un souvenir…",
+    "options": [
+     "qu'on a déjà oublié",
+     "très triste",
+     "très récent",
+     "qu'on n'oubliera jamais"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Tomber sur quelqu'un » veut dire…",
+    "options": [
+     "le pousser",
+     "le rencontrer par hasard",
+     "l'appeler",
+     "l'inviter"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu _____ déjà allé au Japon ? »",
+    "options": [
+     "es",
+     "as",
+     "étais",
+     "seras"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quelle expression de temps n'est PAS au passé ?",
+    "options": [
+     "hier",
+     "l'année dernière",
+     "il y a deux ans",
+     "la semaine prochaine"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Quand j'étais petit, je _____ au foot tous les samedis. »",
+    "options": [
+     "ai joué",
+     "joue",
+     "jouais",
+     "jouerai"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Parle du plus beau voyage que tu as fait. Où es-tu allé ?",
+    "start": "Le plus beau voyage que j'ai fait, c'était…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Soudain » veut dire…",
+    "options": [
+     "tout à coup",
+     "lentement",
+     "souvent",
+     "jamais"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Nous dormions quand le téléphone _____. »",
+    "options": [
+     "sonnerait",
+     "a sonné",
+     "sonne",
+     "sonnera"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte la première fois que tu as essayé quelque chose de nouveau.",
+    "start": "La première fois que j'ai essayé…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Finalement » veut dire…",
+    "options": [
+     "au début",
+     "en même temps",
+     "à la fin",
+     "de temps en temps"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ma sœur est _____ en Italie l'été dernier. »",
+    "options": [
+     "parti",
+     "partie",
+     "partis",
+     "partir"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Décris une journée mémorable de ton enfance.",
+    "start": "Quand j'étais petit, un jour,…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Il y a deux ans » veut dire…",
+    "options": [
+     "dans deux ans",
+     "pendant deux ans",
+     "tous les deux ans",
+     "deux ans avant aujourd'hui"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la phrase correcte :",
+    "options": [
+     "Je ne suis jamais allé en Chine.",
+     "Je ne suis allé jamais en Chine.",
+     "Je n'ai jamais allé en Chine.",
+     "Je ne jamais suis allé en Chine."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Quelle chose n'as-tu jamais faite, mais aimerais-tu essayer ?",
+    "start": "Je n'ai jamais… mais j'aimerais…"
+   }
+  ]
+ },
+ "intermediate-u11-l1": {
+  "title": "Agreeing",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Pour dire que tu es d'accord, tu dis…",
+    "options": [
+     "Pas du tout !",
+     "Tout à fait !",
+     "Absolument pas !",
+     "Je ne crois pas."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Tu as raison » veut dire…",
+    "options": [
+     "tu es fatigué",
+     "tu te trompes",
+     "tu es en retard",
+     "ce que tu dis est juste"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je suis d'accord _____ toi. »",
+    "options": [
+     "avec",
+     "de",
+     "à",
+     "pour"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ton ami dit : « Je n'aime pas le froid. » Tu es d'accord. Tu réponds :",
+    "options": [
+     "Moi aussi.",
+     "Moi non plus.",
+     "Moi si.",
+     "Moi oui."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je pense que ce film _____ excellent. »",
+    "options": [
+     "soit",
+     "sois",
+     "est",
+     "être"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Ton ami dit : « Les vacances à la mer, c'est génial. » Dis que tu es d'accord et explique pourquoi.",
+    "start": "Je suis tout à fait d'accord, parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Exactement ! » sert à…",
+    "options": [
+     "dire qu'on est complètement d'accord",
+     "poser une question",
+     "dire au revoir",
+     "s'excuser"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je suis d'accord avec ce _____ tu dis. »",
+    "options": [
+     "qui",
+     "que",
+     "dont",
+     "où"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Un collègue propose de faire une pause. Dis que tu es d'accord.",
+    "start": "Bonne idée ! Moi aussi, je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Je partage ton avis » veut dire…",
+    "options": [
+     "je te donne la moitié",
+     "je ne suis pas sûr",
+     "je pense comme toi",
+     "je change d'avis"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu as raison, il faut que nous _____ une décision ensemble. »",
+    "options": [
+     "prenons",
+     "prendrons",
+     "prendre",
+     "prenions"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Ton ami a une idée. Dis que tu es d'accord et ajoute un argument.",
+    "start": "Tu as raison, et en plus,…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Sans aucun doute » veut dire…",
+    "options": [
+     "peut-être",
+     "certainement",
+     "jamais",
+     "rarement"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu crois qu'il va pleuvoir ? » — « Oui, je _____ crois. »",
+    "options": [
+     "la",
+     "en",
+     "le",
+     "lui"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Sur quel sujet es-tu toujours d'accord avec ta famille ou tes amis ?",
+    "start": "Mes amis et moi, nous sommes toujours d'accord sur…"
+   }
+  ]
+ },
+ "intermediate-u11-l2": {
+  "title": "Disagreeing",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Pour dire poliment que tu n'es pas d'accord, tu dis…",
+    "options": [
+     "Tu dis n'importe quoi !",
+     "Tais-toi !",
+     "Je ne suis pas tout à fait d'accord.",
+     "C'est nul !"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Avoir tort » est le contraire de…",
+    "options": [
+     "avoir raison",
+     "avoir peur",
+     "avoir faim",
+     "avoir lieu"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je ne pense pas que ce _____ une bonne idée. »",
+    "options": [
+     "est",
+     "soit",
+     "étant",
+     "être"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Au contraire » sert à…",
+    "options": [
+     "être d'accord",
+     "remercier",
+     "s'excuser",
+     "dire l'opposé"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je comprends ton point de vue, _____ je ne suis pas d'accord. »",
+    "options": [
+     "donc",
+     "parce que",
+     "mais",
+     "alors"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Ton ami dit : « Les réseaux sociaux sont une perte de temps. » Dis que tu n'es pas d'accord.",
+    "start": "Je ne suis pas d'accord, parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Pas du tout ! » veut dire…",
+    "options": [
+     "un peu",
+     "absolument pas",
+     "peut-être",
+     "oui, bien sûr"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ce n'est pas vrai, je n'ai _____ dit ça ! »",
+    "options": [
+     "jamais",
+     "aucun",
+     "rien",
+     "personne"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Un collègue veut mettre la réunion à 8 h. Dis poliment que tu n'es pas d'accord et propose autre chose.",
+    "start": "Je comprends, mais à mon avis…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Ça dépend » veut dire…",
+    "options": [
+     "c'est absolument sûr",
+     "c'est complètement faux",
+     "la réponse change selon la situation",
+     "je refuse de répondre"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je doute qu'il _____ raison. »",
+    "options": [
+     "a",
+     "aura",
+     "avait",
+     "ait"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Tu n'aimes pas le film choisi par ton ami. Explique pourquoi et propose un autre film.",
+    "start": "Je préférerais regarder… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quelle phrase montre un désaccord ?",
+    "options": [
+     "Je suis de ton avis.",
+     "Je ne vois pas les choses comme ça.",
+     "C'est exactement ça.",
+     "Bien sûr !"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « À mon avis, le train est _____ pratique que la voiture. »",
+    "options": [
+     "meilleur",
+     "mieux",
+     "plus",
+     "le plus"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Parle d'une fois où tu n'étais pas d'accord avec quelqu'un. Qu'est-ce que tu as dit ?",
+    "start": "Une fois, je n'étais pas d'accord avec… J'ai dit que…"
+   }
+  ]
+ },
+ "intermediate-u11-l3": {
+  "title": "Explaining reasons",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quel mot sert à donner une raison ?",
+    "options": [
+     "pourtant",
+     "ensuite",
+     "sinon",
+     "parce que"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "« C'est pour ça que » introduit…",
+    "options": [
+     "une question",
+     "une conséquence",
+     "une salutation",
+     "une comparaison"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je reste à la maison _____ il pleut. »",
+    "options": [
+     "parce qu'",
+     "pourtant",
+     "donc",
+     "mais"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "On utilise « grâce à » pour une cause…",
+    "options": [
+     "négative",
+     "inconnue",
+     "positive",
+     "drôle"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le match a été annulé _____ la pluie. »",
+    "options": [
+     "grâce à",
+     "à cause de",
+     "parce que",
+     "puisque"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Explique pourquoi tu apprends le français.",
+    "start": "J'apprends le français parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "On utilise « puisque » quand la raison est…",
+    "options": [
+     "déjà connue de tous",
+     "fausse",
+     "secrète",
+     "drôle"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'étais fatigué, _____ je me suis couché tôt. »",
+    "options": [
+     "parce que",
+     "car",
+     "puisque",
+     "alors"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Explique pourquoi tu préfères vivre en ville ou à la campagne.",
+    "start": "Je préfère vivre… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Dans « Comme il pleuvait, je suis resté chez moi », « comme » veut dire…",
+    "options": [
+     "mais",
+     "ensuite",
+     "puisque",
+     "pourtant"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je suis arrivé en retard parce que mon bus _____ en panne. »",
+    "options": [
+     "tombe",
+     "était tombé",
+     "tombera",
+     "tomberait"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Explique pourquoi tu as choisi ton travail ou tes études.",
+    "start": "J'ai choisi… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« En effet » sert à…",
+    "options": [
+     "contredire",
+     "confirmer et expliquer",
+     "dire au revoir",
+     "poser une question"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Si j'avais plus de temps, je _____ plus de sport. »",
+    "options": [
+     "ferai",
+     "faisais",
+     "ferais",
+     "fais"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explique pourquoi un livre ou un film t'a plu.",
+    "start": "Ce film m'a plu parce que…"
+   }
+  ]
+ },
+ "intermediate-u12-l1": {
+  "title": "Longer, more natural everyday conversations",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Complète le dialogue : « Quoi de neuf ? » — « _____, et toi ? »",
+    "options": [
+     "Bon appétit",
+     "Je vous en prie",
+     "Pas grand-chose",
+     "À vos souhaits"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "On dit « Ça fait longtemps ! » quand…",
+    "options": [
+     "on n'a pas vu quelqu'un depuis longtemps",
+     "on attend le bus",
+     "on est fatigué",
+     "on part en vacances"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Complète le dialogue : « Tu habites ici depuis quand ? » — « J'_____ ici depuis trois ans. »",
+    "options": [
+     "ai habité",
+     "habite",
+     "habitais",
+     "habiterai"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète le dialogue : « J'ai eu mon permis de conduire ! » — « _____ ! »",
+    "options": [
+     "Bon courage",
+     "Désolé",
+     "Santé",
+     "Félicitations"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Complète le dialogue : « Tu as vu le dernier film de Lucas ? » — « Non, je ne l'ai pas encore _____. »",
+    "options": [
+     "vue",
+     "vus",
+     "vu",
+     "voir"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Tu croises un voisin dans l'ascenseur. Engage la conversation.",
+    "start": "Bonjour ! Il fait beau aujourd'hui, vous…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Dans une conversation, « Au fait… » sert à…",
+    "options": [
+     "terminer la conversation",
+     "changer de sujet ou ajouter une idée",
+     "dire merci",
+     "s'excuser"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Complète le dialogue : « Qu'est-ce que tu feras ce week-end ? » — « J'_____ chez mes parents. »",
+    "options": [
+     "irai",
+     "irais",
+     "allais",
+     "suis allé"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte à un ami ce que tu as fait le week-end dernier.",
+    "start": "Le week-end dernier, je suis…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète le dialogue : « Bon, il faut que j'y aille ! » — « D'accord, _____ ! »",
+    "options": [
+     "enchanté",
+     "bienvenue",
+     "à la prochaine",
+     "bon appétit"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Complète le dialogue : « Tu connais ce café ? » — « Oui, c'est le café _____ on s'est rencontrés ! »",
+    "options": [
+     "que",
+     "qui",
+     "dont",
+     "où"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Un ami te demande des nouvelles de ta famille. Réponds et pose-lui une question.",
+    "start": "Tout le monde va bien, merci ! Et chez toi,…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Ça me fait plaisir de te voir » exprime…",
+    "options": [
+     "la colère",
+     "la joie",
+     "la peur",
+     "la fatigue"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Complète le dialogue : « Il faut qu'on _____ ensemble un de ces jours ! » — « Oui, avec plaisir ! »",
+    "options": [
+     "sorte",
+     "sort",
+     "sortira",
+     "sortait"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Propose à un ami de vous revoir bientôt et fixe une date.",
+    "start": "C'était super de te voir ! Et si on se revoyait…"
+   }
+  ]
+ }
+}

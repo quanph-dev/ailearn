@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="splash_loading">Đang khởi tạo Web Browser...</string>
+    <string name="cd_back">Quay lại</string>
+    <string name="language_title">Ngôn ngữ</string>
+    <string name="language_confirm">Xác nhận</string>
+    <string name="onboarding_next">Tiếp theo</string>
+    <string name="onboarding_start">Bắt đầu</string>
+    <string name="onboarding_title_1">Duyệt web gọn gàng hơn</string>
+    <string name="onboarding_subtitle_1">Mở website nhanh với một trình duyệt nhẹ, tập trung vào nhu cầu dùng hằng ngày.</string>
+    <string name="onboarding_title_2">Tự chọn mức riêng tư</string>
+    <string name="onboarding_subtitle_2">Chỉ bật các lớp bảo vệ khi bạn cần, gồm duyệt web an toàn, kiểm soát cookie và tab riêng tư.</string>
+    <string name="onboarding_title_3">Giữ thao tác quan trọng trong tầm tay</string>
+    <string name="onboarding_subtitle_3">Tìm kiếm, quản lý tab và quay về trang chủ với bố cục đơn giản, dễ dùng.</string>
+    <string name="settings_general_language">Ngôn ngữ</string>
+    <string name="language_save_error">Không thể lưu lựa chọn. Vui lòng thử lại.</string>
+    <string name="home_welcome">Chào mừng</string>
+    <string name="home_description">Chọn ngôn ngữ hoặc xem phần cài đặt.</string>
+    <string name="network_offline_title">Không có kết nối internet</string>
+    <string name="network_offline_message">Hãy kết nối internet để tiếp tục sử dụng ứng dụng.</string>
+    <string name="network_try_again">Thử lại</string>
+    <string name="ui_exit_the_app">Thoát ứng dụng</string>
+    <string name="ui_are_you_sure_you_want_to_exit_the_app_now">Bạn có chắc muốn thoát ứng dụng ngay bây giờ không?</string>
+    <string name="ui_no">Không</string>
+    <string name="ui_yes_exit">Có, thoát</string>
+</resources>

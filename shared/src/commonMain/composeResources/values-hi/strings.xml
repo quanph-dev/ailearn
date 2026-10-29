@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="splash_loading">फायर वॉल्ट बूट हो रहा है...</string>
+    <string name="cd_back">पीछे</string>
+    <string name="language_title">भाषा</string>
+    <string name="language_confirm">पुष्टि करें</string>
+    <string name="onboarding_next">अगला</string>
+    <string name="onboarding_start">शुरू करें</string>
+    <string name="onboarding_title_1">फायर वॉल्ट खोजें</string>
+    <string name="onboarding_subtitle_1">एक्शन से भरपूर गेमिंग अनुभव में विशेष वस्तुओं, पात्रों, हथियारों, पालतू जानवरों और पुरस्कारों की दुनिया को अनलॉक करें।</string>
+    <string name="onboarding_title_2">अपने तरीके से तैयारी करें</string>
+    <string name="onboarding_subtitle_2">पात्र चुनें, शक्तिशाली हथियार प्राप्त करें, पालतू जानवरों के साथ चलें, और हर लड़ाई के लिए अपनी शैली बनाएं।</string>
+    <string name="onboarding_title_3">लकी स्पिन, दुर्लभ पुरस्कार</string>
+    <string name="onboarding_subtitle_3">दैनिक हीरे, गन स्किन, पालतू जानवर, पात्र और कई मूल्यवान पुरस्कार प्राप्त करने के लिए लकी स्पिन के साथ अपनी किस्मत आजमाएं।</string>
+    <string name="settings_general_language">भाषा</string>
+    <string name="language_save_error">आपका चयन सहेजा नहीं जा सका। कृपया फिर से कोशिश करें।</string>
+    <string name="home_welcome">स्वागत है</string>
+    <string name="home_description">भाषा चुनें या अपनी सेटिंग देखें।</string>
+    <string name="network_offline_title">इंटरनेट कनेक्शन नहीं है</string>
+    <string name="network_offline_message">ऐप का इस्तेमाल जारी रखने के लिए इंटरनेट से कनेक्ट करें।</string>
+    <string name="network_try_again">फिर से कोशिश करें</string>
+    <string name="ui_exit_the_app">ऐप से बाहर निकलें</string>
+    <string name="ui_are_you_sure_you_want_to_exit_the_app_now">क्या आप वाकई अभी ऐप से बाहर निकलना चाहते हैं?</string>
+    <string name="ui_no">नहीं</string>
+    <string name="ui_yes_exit">हाँ, बाहर निकलें</string>
+</resources>

@@ -1,0 +1,3214 @@
+{
+ "advanced-u1-l1": {
+  "title": "Fluency",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "O que significa “falar pelos cotovelos”?",
+    "options": [
+     "Falar com sotaque",
+     "Falar baixinho",
+     "Falar demais",
+     "Gesticular muito"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual expressão ajuda a ganhar tempo para pensar sem parar a conversa?",
+    "options": [
+     "Deixa eu ver…",
+     "Com licença.",
+     "Saúde!",
+     "Tchau, até mais."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Se eu _____ mais com nativos, falaria com mais fluência.”",
+    "options": [
+     "conversar",
+     "converso",
+     "conversei",
+     "conversasse"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complete: “Ela fala com tanta _____ que parece nativa.”",
+    "options": [
+     "desenvoltura",
+     "desconfiança",
+     "dificuldade",
+     "demora"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Quando eu ter mais prática, vou falar sem travar.”",
+    "options": [
+     "Quando eu tiver mais prática, vou falar sem travar.",
+     "Quando eu tivesse mais prática, vou falar sem travar.",
+     "Quando eu ter mais prática, vou falar sem travar.",
+     "Quando eu terei mais prática, vou falar sem travar."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Conte, sem pausas longas, como foi o seu fim de semana.",
+    "start": "Então, no fim de semana eu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “travar” numa conversa?",
+    "options": [
+     "Mudar de assunto",
+     "Falar rápido demais",
+     "Ficar sem conseguir falar",
+     "Rir sem parar"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “É fundamental nós _____ todos os dias.”",
+    "options": [
+     "praticarmos",
+     "praticamos",
+     "pratiquemos",
+     "praticávamos"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explique a alguém o que você faz para melhorar a sua fluência.",
+    "start": "O que mais me ajuda é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complete: “Estudei muito; _____, ainda travo às vezes.”",
+    "options": [
+     "então",
+     "mesmo assim",
+     "por isso",
+     "portanto"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Caso você _____ dúvidas, pode me interromper.”",
+    "options": [
+     "tem",
+     "tenha",
+     "teria",
+     "tiver"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva a sua cidade para um amigo estrangeiro, falando de forma contínua.",
+    "start": "Bom, a minha cidade é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual frase soa mais natural numa conversa informal?",
+    "options": [
+     "A gente se vê amanhã, beleza?",
+     "Amanhã ver-nos-emos.",
+     "Vossa Senhoria verá amanhã.",
+     "Nós nos veremos amanhã, correto?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Ele fala como se _____ nascido no Brasil.”",
+    "options": [
+     "tem",
+     "teria",
+     "tiver",
+     "tivesse"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Fale por um minuto, sem parar, sobre um assunto de que você gosta.",
+    "start": "Um assunto que eu adoro é…"
+   }
+  ]
+ },
+ "advanced-u1-l2": {
+  "title": "Fillers",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual destas palavras é um marcador de conversa típico do Brasil?",
+    "options": [
+     "porquanto",
+     "outrossim",
+     "né",
+     "destarte"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "No fim de uma frase, “né?” serve para…",
+    "options": [
+     "encerrar a conversa",
+     "negar o que foi dito",
+     "pedir a concordância do ouvinte",
+     "mudar de assunto"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Tipo, se eu _____ mais tempo, eu ia na festa.”",
+    "options": [
+     "tivesse",
+     "tinha",
+     "tenho",
+     "tiver"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual palavra corrige o que você acabou de dizer: “Chego às seis, _____, às seis e meia.”",
+    "options": [
+     "pois não",
+     "enfim",
+     "beleza",
+     "aliás"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Na verdade, eu queria que você me ajuda com isso.”",
+    "options": [
+     "Na verdade, eu queria que você me ajudasse com isso.",
+     "Na verdade, eu queria que você me ajudar com isso.",
+     "Na verdade, eu queria que você me ajuda com isso.",
+     "Na verdade, eu queria que você me ajudaria com isso."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Conte o que você fez ontem usando marcadores como “então” e “tipo”.",
+    "start": "Então, ontem eu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Pois é” costuma ser usado para…",
+    "options": [
+     "concordar ou mostrar que está ouvindo",
+     "mudar de assunto bruscamente",
+     "se despedir",
+     "pedir desculpas"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Sei lá, acho que ele disse que _____ cansado.”",
+    "options": [
+     "estiver",
+     "esteja",
+     "estava",
+     "estivesse"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explique uma receita simples usando “aí” e “daí” para ligar os passos.",
+    "start": "Primeiro você separa os ingredientes, aí…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual marcador indica que você vai resumir ou encerrar o assunto?",
+    "options": [
+     "Enfim,",
+     "Olha,",
+     "Tipo,",
+     "Né?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Olha, não é que eu não _____, é que estou sem tempo.”",
+    "options": [
+     "queira",
+     "quero",
+     "quisesse",
+     "quiser"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Um amigo pergunta a sua opinião sobre um filme. Responda começando com um marcador natural.",
+    "start": "Olha, sinceramente…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Em qual frase “tipo” indica aproximação?",
+    "options": [
+     "Cheguei tipo umas oito horas.",
+     "Que tipo de música você curte?",
+     "Esse não é o meu tipo.",
+     "Ele é um tipo estranho."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Aliás, eu teria ido se você me convidou.”",
+    "options": [
+     "Aliás, eu teria ido se você me convida.",
+     "Aliás, eu teria ido se você me convidar.",
+     "Aliás, eu teria ido se você tivesse me convidado.",
+     "Aliás, eu teria ido se você me convidou."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Conte uma história curta e use “aliás” para acrescentar um detalhe.",
+    "start": "Outro dia aconteceu uma coisa engraçada…"
+   }
+  ]
+ },
+ "advanced-u1-l3": {
+  "title": "Natural responses",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Alguém diz: “Passei na prova!” Qual resposta soa mais natural?",
+    "options": [
+     "Que bom! Parabéns!",
+     "Que pena!",
+     "Tanto faz.",
+     "Com licença."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que quer dizer responder “Pode deixar!”?",
+    "options": [
+     "Deixe isso no chão",
+     "Pode ir embora",
+     "Não quero",
+     "Eu cuido disso"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Tomara que tudo _____ certo amanhã!”",
+    "options": [
+     "dá",
+     "dê",
+     "desse",
+     "dará"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Alguém diz: “Valeu pela ajuda!” Qual resposta é natural?",
+    "options": [
+     "Imagina!",
+     "Com certeza não.",
+     "Saúde!",
+     "Pois não?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Se precisar de alguma coisa, é só você me chama.”",
+    "options": [
+     "Se precisar de alguma coisa, é só você me chamar.",
+     "Se precisar de alguma coisa, é só você me chamasse.",
+     "Se precisar de alguma coisa, é só você me chama.",
+     "Se precisar de alguma coisa, é só você me chame."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Um colega conta que foi promovido. Reaja de forma natural e faça uma pergunta.",
+    "start": "Nossa, que notícia boa! E…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual resposta mostra surpresa ou descrença?",
+    "options": [
+     "Pode crer.",
+     "Tanto faz.",
+     "Fala sério!",
+     "De nada."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Fico feliz que você _____ gostado do presente.”",
+    "options": [
+     "tenha",
+     "tem",
+     "teria",
+     "terá"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Alguém te convida para um evento ao qual você não pode ir. Recuse com educação.",
+    "start": "Poxa, obrigado pelo convite, mas…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Um atendente diz “Pois não?” para…",
+    "options": [
+     "recusar um pedido",
+     "perguntar em que pode ajudar",
+     "dizer que não entendeu",
+     "encerrar a conversa"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Duvido que ele _____ a verdade.”",
+    "options": [
+     "dizer",
+     "diz",
+     "diga",
+     "dirá"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Um amigo pede um favor grande. Aceite, mas com uma condição.",
+    "start": "Claro, posso te ajudar, desde que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Alguém reclama: “Esse trânsito está horrível!” Qual resposta mostra que você concorda?",
+    "options": [
+     "Nem me fale!",
+     "Sei lá.",
+     "Imagina!",
+     "Será?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Me avisa assim que você _____.”",
+    "options": [
+     "pode",
+     "podia",
+     "poderá",
+     "puder"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Responda a uma crítica sobre o seu trabalho de forma calma e natural.",
+    "start": "Entendo o que você está dizendo…"
+   }
+  ]
+ },
+ "advanced-u2-l1": {
+  "title": "Common expressions used by native speakers",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "O que significa “pagar o pato”?",
+    "options": [
+     "Comprar algo caro",
+     "Perder um prazo",
+     "Pagar a conta do jantar",
+     "Levar a culpa por algo que não fez"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “enfiar o pé na jaca”?",
+    "options": [
+     "Exagerar, passar dos limites",
+     "Mudar de ideia",
+     "Tropeçar na rua",
+     "Comer frutas demais"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Se ele não _____ com a língua nos dentes, a surpresa teria dado certo.”",
+    "options": [
+     "tem dado",
+     "tivesse dado",
+     "teria dado",
+     "tiver dado"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quem “está com a pulga atrás da orelha” está…",
+    "options": [
+     "muito feliz",
+     "com coceira",
+     "atrasado",
+     "desconfiado"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Tomara que ele não chuta o balde de novo.”",
+    "options": [
+     "Tomara que ele não chuta o balde de novo.",
+     "Tomara que ele não chutará o balde de novo.",
+     "Tomara que ele não chutar o balde de novo.",
+     "Tomara que ele não chute o balde de novo."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Conte uma situação em que você “pagou o pato” por algo.",
+    "start": "Uma vez eu paguei o pato quando…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “custar os olhos da cara”?",
+    "options": [
+     "Ser caríssimo",
+     "Demorar muito",
+     "Ser muito bonito",
+     "Machucar a vista"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Não adianta vocês _____ em cima do muro.”",
+    "options": [
+     "ficarem",
+     "ficam",
+     "fiquem",
+     "ficassem"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explique o significado de uma expressão popular do seu país e quando usá-la.",
+    "start": "No meu país, a gente diz que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual expressão significa “desistir de tudo, perder a paciência”?",
+    "options": [
+     "dar uma mãozinha",
+     "quebrar o galho",
+     "chutar o balde",
+     "ficar de boa"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Ele fala como se _____ o rei da cocada preta.”",
+    "options": [
+     "fosse",
+     "seja",
+     "for",
+     "é"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Use “quebrar o galho” para contar como alguém te ajudou.",
+    "start": "Uma vez um amigo quebrou o meu galho quando…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“Ficar de queixo caído” quer dizer…",
+    "options": [
+     "ficar muito surpreso",
+     "ficar triste",
+     "ficar com sono",
+     "ficar calado por educação"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Antes que você _____ o carro na frente dos bois, vamos planejar.”",
+    "options": [
+     "pusesse",
+     "ponha",
+     "puser",
+     "põe"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Fale de um momento em que você ficou com a pulga atrás da orelha.",
+    "start": "Eu fiquei com a pulga atrás da orelha quando…"
+   }
+  ]
+ },
+ "advanced-u3-l1": {
+  "title": "Detailed and engaging stories",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual frase abre uma história de forma envolvente?",
+    "options": [
+     "Resumindo, nada.",
+     "Você não vai acreditar no que aconteceu…",
+     "Em suma, foi isso.",
+     "Por fim, acabou."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual expressão significa “de repente, sem aviso”?",
+    "options": [
+     "à toa",
+     "a duras penas",
+     "do nada",
+     "aos poucos"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Quando cheguei, o filme já _____.”",
+    "options": [
+     "tinha começado",
+     "começará",
+     "comece",
+     "tenha começado"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Para criar suspense, o narrador diz:",
+    "options": [
+     "Nada demais.",
+     "Foi aí que tudo mudou…",
+     "Tanto faz.",
+     "Enfim, é isso."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Enquanto eu dirigia, meu celular tocou e eu atendia.”",
+    "options": [
+     "Enquanto eu dirigia, meu celular tocou e eu atendia.",
+     "Enquanto eu dirigi, meu celular tocava e eu atendia.",
+     "Enquanto eu dirigisse, meu celular tocou e eu atendi.",
+     "Enquanto eu dirigia, meu celular tocou e eu atendi."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Conte a história mais inusitada que já aconteceu com você.",
+    "start": "Você não vai acreditar, mas uma vez…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “para encurtar a história”?",
+    "options": [
+     "Contando com detalhes",
+     "Resumindo os fatos",
+     "Inventando o final",
+     "Voltando ao começo"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Ela me contou que _____ o emprego no dia anterior.”",
+    "options": [
+     "tinha perdido",
+     "perca",
+     "perde",
+     "perder"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Descreva com detalhes o lugar onde uma história sua aconteceu.",
+    "start": "Era um lugar…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual conector mostra uma consequência na história?",
+    "options": [
+     "embora",
+     "apesar de",
+     "a menos que",
+     "de modo que"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Se eu não _____ perdido o ônibus, nunca a teria conhecido.”",
+    "options": [
+     "tiver",
+     "tinha",
+     "tivesse",
+     "teria"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Conte o final de uma viagem inesquecível, criando suspense.",
+    "start": "Foi aí que tudo mudou…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual verbo descreve falar muito baixo, quase sem som?",
+    "options": [
+     "gaguejar",
+     "berrar",
+     "sussurrar",
+     "declamar"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Mal _____ a porta, o telefone tocou.”",
+    "options": [
+     "abrir",
+     "abri",
+     "abrisse",
+     "abra"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Conte uma história engraçada da sua infância usando “de repente” e “no fim”.",
+    "start": "Quando eu era criança…"
+   }
+  ]
+ },
+ "advanced-u4-l1": {
+  "title": "Developing and supporting an argument",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual conector acrescenta mais um argumento na mesma direção?",
+    "options": [
+     "No entanto,",
+     "Por outro lado,",
+     "Além disso,",
+     "Em contrapartida,"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual conector introduz uma ideia contrária?",
+    "options": [
+     "Em contrapartida,",
+     "Inclusive,",
+     "Ademais,",
+     "Além disso,"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “É provável que essa medida _____ o problema.”",
+    "options": [
+     "resolveu",
+     "resolva",
+     "resolver",
+     "resolve"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “sustentar um argumento”?",
+    "options": [
+     "Mudar de opinião",
+     "Defendê-lo com provas e razões",
+     "Interromper alguém",
+     "Repetir a mesma frase"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Embora os dados são claros, alguns ainda discordam.”",
+    "options": [
+     "Embora os dados serem claros, alguns ainda discordam.",
+     "Embora os dados forem claros, alguns ainda discordam.",
+     "Embora os dados sejam claros, alguns ainda discordam.",
+     "Embora os dados são claros, alguns ainda discordam."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Defenda a ideia de que o trabalho remoto deveria ser mais comum.",
+    "start": "Na minha opinião, o trabalho remoto…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual expressão serve para dar um exemplo?",
+    "options": [
+     "a título de exemplo",
+     "todavia",
+     "à medida que",
+     "em suma"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Para _____ a uma conclusão, precisamos de mais dados.”",
+    "options": [
+     "chegamos",
+     "chegássemos",
+     "cheguemos",
+     "chegarmos"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Apresente um argumento contra o uso de celulares nas escolas e dê um exemplo.",
+    "start": "Eu sou contra porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual estrutura reconhece parte do argumento do outro antes de discordar?",
+    "options": [
+     "Ou seja,…",
+     "É verdade que…, mas…",
+     "Sem dúvida nenhuma…",
+     "Logo,…"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Ainda que _____ caro, o investimento vale a pena.”",
+    "options": [
+     "será",
+     "for",
+     "seja",
+     "é"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Responda a quem diz que estudar línguas é perda de tempo, com dois argumentos.",
+    "start": "Discordo, e tenho dois motivos…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual conector introduz a conclusão de um argumento?",
+    "options": [
+     "Em primeiro lugar,",
+     "Portanto,",
+     "Por outro lado,",
+     "Por exemplo,"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Se o governo _____ mais em educação, teríamos menos desigualdade.”",
+    "options": [
+     "investe",
+     "investir",
+     "investisse",
+     "investiu"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Escolha um tema polêmico e apresente a sua posição com uma conclusão clara.",
+    "start": "Depois de pensar bastante, eu concluo que…"
+   }
+  ]
+ },
+ "advanced-u5-l1": {
+  "title": "Leading",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual frase abre uma reunião de forma profissional?",
+    "options": [
+     "E aí, galera, bora?",
+     "Tchau, pessoal.",
+     "Já acabou?",
+     "Bom dia a todos, vamos dar início à reunião."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que é a “pauta” de uma reunião?",
+    "options": [
+     "O registro final da reunião",
+     "A lista de assuntos a tratar",
+     "A sala reservada",
+     "O horário do almoço"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Peço que todos _____ os celulares no silencioso.”",
+    "options": [
+     "colocam",
+     "colocassem",
+     "colocar",
+     "coloquem"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual frase passa a palavra para outra pessoa?",
+    "options": [
+     "Fernanda, a palavra é sua.",
+     "Fernanda, tanto faz.",
+     "Fernanda, cala a boca.",
+     "Fernanda, já chega."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Antes de nós começar, vamos revisar a pauta.”",
+    "options": [
+     "Antes de nós comecemos, vamos revisar a pauta.",
+     "Antes de nós começar, vamos revisar a pauta.",
+     "Antes de nós começamos, vamos revisar a pauta.",
+     "Antes de nós começarmos, vamos revisar a pauta."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Abra uma reunião de equipe e apresente os três pontos da pauta.",
+    "start": "Bom dia a todos. Hoje vamos tratar de…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “fazer uma rodada de opiniões”?",
+    "options": [
+     "Trocar de sala",
+     "Pedir um café",
+     "Dar a palavra a cada participante",
+     "Encerrar a reunião"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Vamos deixar esse ponto para quando o diretor _____ presente.”",
+    "options": [
+     "estiver",
+     "está",
+     "estaria",
+     "estava"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Um tema está tomando tempo demais. Retome o controle da reunião com educação.",
+    "start": "Pessoal, para não estourarmos o horário…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual frase encerra a reunião de forma profissional?",
+    "options": [
+     "Acabou, podem sair.",
+     "Obrigado a todos, envio a ata ainda hoje.",
+     "Sei lá, tchau.",
+     "Bom, fui!"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Gostaria que cada um _____ as suas sugestões até sexta.”",
+    "options": [
+     "envia",
+     "enviará",
+     "enviar",
+     "enviasse"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Distribua as tarefas da semana entre três colegas.",
+    "start": "Então, ficou assim: o Lucas…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “estourar o horário”?",
+    "options": [
+     "Passar do tempo previsto",
+     "Mudar o fuso horário",
+     "Cancelar a reunião",
+     "Começar mais cedo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “É essencial que todos _____ cientes dos prazos.”",
+    "options": [
+     "estão",
+     "estejam",
+     "estariam",
+     "estarem"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Resuma as decisões tomadas e os próximos passos para encerrar a reunião.",
+    "start": "Para resumir, decidimos que…"
+   }
+  ]
+ },
+ "advanced-u5-l2": {
+  "title": "Interrupting politely",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual frase interrompe alguém com educação?",
+    "options": [
+     "Desculpe interromper, mas…",
+     "Para de falar!",
+     "Ninguém perguntou.",
+     "Isso é mentira."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “fazer um aparte”?",
+    "options": [
+     "Dividir a conta",
+     "Interromper brevemente para comentar",
+     "Sair da sala",
+     "Encerrar a reunião"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Você se importa se eu _____ uma coisa?”",
+    "options": [
+     "acrescente",
+     "acrescentei",
+     "acrescentaria",
+     "acrescentar"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Você foi interrompido e quer terminar. O que diz?",
+    "options": [
+     "Pode falar, eu desisto.",
+     "Só um instante, deixa eu concluir.",
+     "Tanto faz.",
+     "Tá, esquece."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Desculpe que eu interrompo, mas é urgente.”",
+    "options": [
+     "Desculpe que eu interrompo, mas é urgente.",
+     "Desculpe de eu interrompia, mas é urgente.",
+     "Desculpe eu interromper, mas é urgente.",
+     "Desculpe eu interrompo, mas é urgente."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Interrompa um colega com educação para corrigir um número que ele disse.",
+    "start": "Desculpe, só uma correção rápida…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual frase retoma o que você dizia depois de uma interrupção?",
+    "options": [
+     "Como eu ia dizendo…",
+     "Mudando de assunto…",
+     "Por falar nisso…",
+     "Antes que eu me esqueça…"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Posso fazer uma pergunta antes que o senhor _____?”",
+    "options": [
+     "continua",
+     "continuar",
+     "continue",
+     "continuasse"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Alguém interrompe você o tempo todo. Peça, com jeito, para terminar a sua ideia.",
+    "start": "Só um minutinho, deixa eu terminar…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual frase é rude demais para uma reunião?",
+    "options": [
+     "Deixa eu falar, você não sabe nada!",
+     "Se me permite, uma observação.",
+     "Perdão, só um aparte.",
+     "Com licença, posso complementar?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Não quero atrapalhar, mas acho que _____ um erro no slide.”",
+    "options": [
+     "houvesse",
+     "haver",
+     "haja",
+     "há"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Interrompa uma reunião para avisar que faltam cinco minutos.",
+    "start": "Perdão interromper, mas…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “cortar a palavra” de alguém?",
+    "options": [
+     "Interromper quem está falando",
+     "Escrever errado",
+     "Esquecer uma palavra",
+     "Falar devagar"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Vocês se importariam se eu _____ a palavra por um instante?”",
+    "options": [
+     "tomo",
+     "tome",
+     "tomasse",
+     "tomar"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explique como você costuma pedir a palavra quando todos falam ao mesmo tempo.",
+    "start": "Quando todo mundo fala ao mesmo tempo, eu…"
+   }
+  ]
+ },
+ "advanced-u5-l3": {
+  "title": "Contributing ideas",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual frase apresenta uma sugestão de forma educada?",
+    "options": [
+     "Isso é óbvio.",
+     "Que tal se a gente testasse outra abordagem?",
+     "Ninguém pensou nisso?",
+     "Faz assim e pronto."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “dar um pitaco”?",
+    "options": [
+     "Dar um presente",
+     "Fazer uma pausa",
+     "Dar uma opinião informal",
+     "Pedir demissão"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Sugiro que a gente _____ uma pesquisa com os clientes.”",
+    "options": [
+     "faz",
+     "fizer",
+     "faça",
+     "fazia"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual frase acrescenta algo à ideia de um colega?",
+    "options": [
+     "Discordo totalmente da Ana…",
+     "Complementando o que a Ana disse…",
+     "Sem querer ser chato…",
+     "Voltando ao início…"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Seria bom se a gente conversar com o cliente antes.”",
+    "options": [
+     "Seria bom se a gente conversasse com o cliente antes.",
+     "Seria bom se a gente converse com o cliente antes.",
+     "Seria bom se a gente conversa com o cliente antes.",
+     "Seria bom se a gente conversar com o cliente antes."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Proponha uma ideia para melhorar a comunicação da sua equipe.",
+    "start": "Eu queria sugerir uma coisa…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que é uma “tempestade de ideias”?",
+    "options": [
+     "Uma previsão do tempo",
+     "Uma apresentação formal",
+     "Uma discussão agressiva",
+     "Uma reunião para gerar muitas ideias"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Talvez _____ melhor dividir o projeto em fases.”",
+    "options": [
+     "sendo",
+     "for",
+     "é",
+     "seja"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Um colega propôs algo. Apoie a ideia e acrescente um detalhe.",
+    "start": "Gostei muito da ideia, e acho que poderíamos…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual expressão apresenta uma ideia com cautela?",
+    "options": [
+     "Posso estar enganado, mas…",
+     "É óbvio que…",
+     "Todo mundo sabe que…",
+     "Com certeza absoluta…"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Seria interessante vocês _____ a opinião dos clientes.”",
+    "options": [
+     "ouvirem",
+     "ouçam",
+     "ouvem",
+     "ouviram"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Sugira uma solução para o atraso nas entregas da empresa.",
+    "start": "Uma possível solução seria…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “ter uma luz”?",
+    "options": [
+     "Ter uma ideia de repente",
+     "Ficar famoso",
+     "Acender a lâmpada",
+     "Sair mais cedo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Não descartaríamos essa ideia sem antes _____ os custos.”",
+    "options": [
+     "analisarmos",
+     "analisamos",
+     "analisaremos",
+     "analisemos"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Apresente uma ideia nova numa reunião e explique o benefício principal.",
+    "start": "A minha proposta é…"
+   }
+  ]
+ },
+ "advanced-u6-l1": {
+  "title": "Explaining ideas clearly and confidently",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual frase anuncia a estrutura de uma apresentação?",
+    "options": [
+     "Não preparei nada.",
+     "Alguém tem um chiclete?",
+     "Vou dividir a minha fala em três partes.",
+     "Bom, é isso aí."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual expressão destaca um ponto importante?",
+    "options": [
+     "Vai que…",
+     "Vale ressaltar que…",
+     "Sei lá se…",
+     "Tanto faz que…"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Como vocês _____ ver no gráfico, as vendas cresceram.”",
+    "options": [
+     "puderem",
+     "possam",
+     "podem",
+     "pudessem"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Uma explicação “sucinta” é…",
+    "options": [
+     "breve e objetiva",
+     "longa e detalhada",
+     "confusa",
+     "engraçada"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Se vocês terem dúvidas, podem perguntar no final.”",
+    "options": [
+     "Se vocês teriam dúvidas, podem perguntar no final.",
+     "Se vocês tenham dúvidas, podem perguntar no final.",
+     "Se vocês terem dúvidas, podem perguntar no final.",
+     "Se vocês tiverem dúvidas, podem perguntar no final."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Abra uma apresentação sobre um projeto seu e diga o objetivo.",
+    "start": "Boa tarde a todos. O objetivo desta apresentação é…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual expressão passa para o próximo tópico?",
+    "options": [
+     "Passando agora ao próximo ponto…",
+     "Concluindo…",
+     "Em resumo…",
+     "Voltando ao início…"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Este gráfico mostra _____ as vendas caíram em julho.”",
+    "options": [
+     "por que",
+     "porquê",
+     "porque",
+     "por quê"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explique um conceito difícil da sua área usando uma comparação simples.",
+    "start": "Para explicar de um jeito simples, é como se…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que indica a expressão “em outras palavras”?",
+    "options": [
+     "Vou falar em outra língua",
+     "Vou mudar de assunto",
+     "Vou encerrar",
+     "Vou dizer o mesmo de outro jeito"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Agradeço a todos por _____ aqui hoje.”",
+    "options": [
+     "estão",
+     "estejam",
+     "estariam",
+     "estarem"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Responda com confiança a uma pergunta da plateia que você não sabe responder.",
+    "start": "Ótima pergunta. Não tenho esse dado agora, mas…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual frase transmite mais confiança numa apresentação?",
+    "options": [
+     "Os resultados mostram claramente que…",
+     "Acho que, sei lá…",
+     "Não sei se isso está certo, mas…",
+     "Desculpem, talvez eu esteja errado…"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Não _____ dúvida de que este é o melhor caminho.”",
+    "options": [
+     "à",
+     "á",
+     "a",
+     "há"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Conclua a sua apresentação com uma frase de impacto e um agradecimento.",
+    "start": "Para concluir, quero deixar uma mensagem…"
+   }
+  ]
+ },
+ "advanced-u7-l1": {
+  "title": "Detailed professional answers and follow-ups",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual expressão descreve alguém que trabalha bem com outras pessoas?",
+    "options": [
+     "É individualista",
+     "Evita reuniões",
+     "É centralizador",
+     "Tem facilidade para trabalhar em equipe"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “vestir a camisa” da empresa?",
+    "options": [
+     "Usar uniforme",
+     "Trabalhar de terno",
+     "Ser comprometido com a empresa",
+     "Mudar de emprego"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Na minha última empresa, eu _____ uma equipe de cinco pessoas.”",
+    "options": [
+     "liderava",
+     "liderar",
+     "lidere",
+     "liderasse"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual é uma boa resposta para “Qual é o seu maior defeito?”",
+    "options": [
+     "Às vezes sou perfeccionista, mas aprendi a priorizar.",
+     "Não tenho defeitos.",
+     "Não gosto de trabalhar.",
+     "Chego sempre atrasado."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Se eu for contratado, vou me dedicar para que a equipe cresce.”",
+    "options": [
+     "Se eu for contratado, vou me dedicar para que a equipe cresce.",
+     "Se eu for contratado, vou me dedicar para que a equipe crescer.",
+     "Se eu for contratado, vou me dedicar para que a equipe crescesse.",
+     "Se eu for contratado, vou me dedicar para que a equipe cresça."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Fale sobre a sua experiência profissional mais relevante para a vaga.",
+    "start": "A minha experiência mais relevante foi…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “pretensão salarial”?",
+    "options": [
+     "O salário mínimo",
+     "Um bônus anual",
+     "Um desconto no salário",
+     "O salário que você espera receber"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Desde que _____ na empresa, aumentei as vendas em 20%.”",
+    "options": [
+     "entrasse",
+     "entre",
+     "entrar",
+     "entrei"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "O entrevistador pergunta: “Por que você quer trabalhar aqui?” Responda com detalhes.",
+    "start": "Eu me identifico muito com…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual frase pede esclarecimento de forma adequada numa entrevista?",
+    "options": [
+     "O senhor poderia reformular a pergunta?",
+     "Não entendi nada.",
+     "Hã? Como assim?",
+     "Fala de novo aí."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Se eu _____ a vaga, poderia começar em duas semanas.”",
+    "options": [
+     "consigo",
+     "conseguir",
+     "consiga",
+     "conseguisse"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Conte sobre um desafio que você superou no trabalho e qual foi o resultado.",
+    "start": "Um grande desafio que enfrentei foi…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "No fim da entrevista, qual pergunta mostra interesse pela vaga?",
+    "options": [
+     "Posso faltar às sextas?",
+     "Vocês controlam o ponto?",
+     "Quanto tempo dura o almoço?",
+     "Quais são os próximos passos do processo?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Procuro uma empresa que _____ oportunidades de crescimento.”",
+    "options": [
+     "oferecendo",
+     "oferecer",
+     "ofereça",
+     "oferecesse"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Responda à pergunta: “Onde você se vê daqui a cinco anos?”",
+    "start": "Daqui a cinco anos, espero…"
+   }
+  ]
+ },
+ "advanced-u8-l1": {
+  "title": "Proposals",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual frase apresenta uma proposta de forma profissional?",
+    "options": [
+     "Gostaríamos de propor o seguinte…",
+     "Fecha aí.",
+     "É isso ou nada.",
+     "Pega ou larga."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que é uma “contraproposta”?",
+    "options": [
+     "Um contrato assinado",
+     "Uma recusa definitiva",
+     "Uma multa por atraso",
+     "Uma nova proposta em resposta a outra"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Podemos reduzir o preço, desde que vocês _____ o contrato por dois anos.”",
+    "options": [
+     "renovem",
+     "renovariam",
+     "renovam",
+     "renovarem"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pagar “à vista” significa…",
+    "options": [
+     "pagar só na entrega do ano seguinte",
+     "pagar tudo de uma vez",
+     "pagar com atraso",
+     "pagar em parcelas"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Contanto que o pagamento é à vista, damos 10% de desconto.”",
+    "options": [
+     "Contanto que o pagamento ser à vista, damos 10% de desconto.",
+     "Contanto que o pagamento seja à vista, damos 10% de desconto.",
+     "Contanto que o pagamento seria à vista, damos 10% de desconto.",
+     "Contanto que o pagamento é à vista, damos 10% de desconto."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Apresente uma proposta de parceria a outra empresa.",
+    "start": "Gostaríamos de propor uma parceria em que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “fechar negócio”?",
+    "options": [
+     "Chegar a um acordo final",
+     "Desistir da compra",
+     "Abrir uma empresa",
+     "Fechar a loja"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Propomos que o pagamento _____ feito em três parcelas.”",
+    "options": [
+     "for",
+     "seja",
+     "é",
+     "será"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Ofereça um desconto a um cliente em troca de um pedido maior.",
+    "start": "Se vocês aumentarem o pedido, nós…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual frase pede tempo para avaliar uma proposta?",
+    "options": [
+     "Vamos analisar com calma e retornamos até sexta.",
+     "Fechado, sem pensar.",
+     "Não quero nem ouvir.",
+     "Isso é um absurdo."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Se vocês _____ o pedido hoje, garantimos a entrega em dez dias.”",
+    "options": [
+     "confirmarem",
+     "confirmassem",
+     "confirmariam",
+     "confirmem"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explique por que a sua proposta é vantajosa para os dois lados.",
+    "start": "Essa proposta é boa para ambos porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa ter “margem de negociação”?",
+    "options": [
+     "Ter que pagar um imposto extra",
+     "Ter espaço para ajustar as condições",
+     "Ter um contrato fechado",
+     "Ter o lucro garantido"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Reduzimos o preço _____ vocês fechem conosco ainda este mês.”",
+    "options": [
+     "para que",
+     "porque",
+     "por quê",
+     "desde"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Apresente a sua proposta final e diga até quando ela é válida.",
+    "start": "Esta é a nossa proposta final, válida até…"
+   }
+  ]
+ },
+ "advanced-u8-l2": {
+  "title": "Compromises",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "O que é um “meio-termo”?",
+    "options": [
+     "Uma solução intermediária",
+     "A metade do preço",
+     "Um prazo curto",
+     "Uma decisão final"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual frase busca um acordo?",
+    "options": [
+     "Vamos encontrar um ponto em comum?",
+     "Problema seu.",
+     "Ou é do meu jeito, ou nada.",
+     "Não abro mão de nada."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Aceitamos o prazo, contanto que o preço não _____.”",
+    "options": [
+     "aumentar",
+     "aumente",
+     "aumenta",
+     "aumentasse"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “abrir mão” de algo?",
+    "options": [
+     "Pedir ajuda",
+     "Assinar um contrato",
+     "Cumprimentar alguém",
+     "Desistir de algo"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Mantemos o preço, a não ser que vocês aumentam o pedido.”",
+    "options": [
+     "Mantemos o preço, a não ser que vocês aumentam o pedido.",
+     "Mantemos o preço, a não ser que vocês aumentar o pedido.",
+     "Mantemos o preço, a não ser que vocês aumentaram o pedido.",
+     "Mantemos o preço, a não ser que vocês aumentem o pedido."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Você e um fornecedor discordam do prazo. Proponha um meio-termo.",
+    "start": "Que tal se a gente dividisse a diferença e…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Numa negociação, “ceder” significa…",
+    "options": [
+     "vencer a discussão",
+     "cobrar mais caro",
+     "encerrar o contrato",
+     "aceitar perder um pouco para chegar a um acordo"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Se cada lado _____ um pouco, chegaríamos a um acordo.”",
+    "options": [
+     "cedesse",
+     "ceda",
+     "cede",
+     "ceder"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explique o que você está disposto a oferecer e o que espera em troca.",
+    "start": "Da nossa parte, podemos oferecer…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que é um acordo “ganha-ganha”?",
+    "options": [
+     "Um acordo em que só um lado ganha",
+     "Um acordo sem valor",
+     "Um acordo provisório",
+     "Um acordo em que os dois lados ganham"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Por mais que _____ difícil, precisamos chegar a um acordo hoje.”",
+    "options": [
+     "é",
+     "seja",
+     "será",
+     "for"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Você quer tirar férias em julho e um colega também. Negocie com ele.",
+    "start": "Olha, eu entendo o seu lado, então…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “chegar a um denominador comum”?",
+    "options": [
+     "Adiar a decisão",
+     "Fazer uma conta de matemática",
+     "Encontrar um acordo aceitável para todos",
+     "Dividir a equipe"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Não vemos problema em vocês _____ o prazo, contanto que avisem antes.”",
+    "options": [
+     "estenderem",
+     "estendem",
+     "estenderiam",
+     "estendam"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Conte uma situação em que você teve que ceder para resolver um conflito.",
+    "start": "Uma vez eu tive que abrir mão de…"
+   }
+  ]
+ },
+ "advanced-u8-l3": {
+  "title": "Persuasion",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual frase é mais persuasiva com um cliente?",
+    "options": [
+     "Tanto faz para mim.",
+     "Imagine quanto tempo o senhor vai economizar.",
+     "Não sei se vale a pena.",
+     "Compra se quiser."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “ter lábia”?",
+    "options": [
+     "Ser tímido",
+     "Ter os lábios rachados",
+     "Falar alto",
+     "Ter facilidade para convencer"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Se o senhor _____ o produto, vai ver a diferença.”",
+    "options": [
+     "experimentasse",
+     "experimentaria",
+     "experimente",
+     "experimentar"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual argumento apela para a urgência?",
+    "options": [
+     "Pense com calma por meses.",
+     "Não há pressa nenhuma.",
+     "Tanto faz quando comprar.",
+     "Essa condição vale só até amanhã."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “É fundamental que o senhor considera os benefícios a longo prazo.”",
+    "options": [
+     "É fundamental que o senhor considera os benefícios a longo prazo.",
+     "É fundamental que o senhor considerar os benefícios a longo prazo.",
+     "É fundamental que o senhor considere os benefícios a longo prazo.",
+     "É fundamental que o senhor considerasse os benefícios a longo prazo."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Convença um amigo a fazer um curso com você.",
+    "start": "Pensa comigo: se a gente fizer junto…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “dar o braço a torcer”?",
+    "options": [
+     "Machucar o braço",
+     "Ganhar a discussão",
+     "Ajudar alguém",
+     "Admitir que estava errado"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Tenho certeza de que, quando o senhor _____ os números, vai concordar.”",
+    "options": [
+     "vir",
+     "verá",
+     "visse",
+     "ver"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Convença o seu chefe a investir numa ferramenta nova.",
+    "start": "Com essa ferramenta, nós poderíamos…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual expressão apresenta uma prova convincente?",
+    "options": [
+     "Quem sabe um dia.",
+     "Os números falam por si.",
+     "Sei lá, pode ser.",
+     "Acho que talvez."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Não estou pedindo que vocês _____ agora, só que pensem no assunto.”",
+    "options": [
+     "decidiriam",
+     "decidem",
+     "decidirem",
+     "decidam"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Responda a um cliente que acha o seu produto caro demais.",
+    "start": "Entendo a preocupação, mas pense no seguinte…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “vender o seu peixe”?",
+    "options": [
+     "Mentir para alguém",
+     "Trabalhar numa peixaria",
+     "Desistir de algo",
+     "Defender bem uma ideia ou um produto"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Imagine como seria se a sua equipe não _____ mais fazer horas extras.”",
+    "options": [
+     "precisa",
+     "precise",
+     "precisar",
+     "precisasse"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Use dados ou exemplos para convencer alguém a mudar um hábito.",
+    "start": "Você sabia que…"
+   }
+  ]
+ },
+ "advanced-u9-l1": {
+  "title": "Formal vs casual workplace language",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual é a forma mais respeitosa de se dirigir a um diretor mais velho?",
+    "options": [
+     "meu querido",
+     "o senhor",
+     "você",
+     "cara"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual é a versão formal de “Valeu!”?",
+    "options": [
+     "Agradeço a atenção.",
+     "Falou!",
+     "Beleza!",
+     "Tamo junto!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Solicito que a senhora _____ o relatório até amanhã.”",
+    "options": [
+     "enviará",
+     "envie",
+     "envia",
+     "enviar"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual despedida é adequada num e-mail formal?",
+    "options": [
+     "Atenciosamente,",
+     "Falou,",
+     "Bjs,",
+     "Abs,"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “A senhora quer que eu te envie o arquivo agora?”",
+    "options": [
+     "A senhora quer que eu ti envie o arquivo agora?",
+     "A senhora quer que eu lhe envio o arquivo agora?",
+     "A senhora quer que eu te envie o arquivo agora?",
+     "A senhora quer que eu lhe envie o arquivo agora?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Peça ao seu diretor, de forma formal, para sair mais cedo amanhã.",
+    "start": "Com licença, senhor. Gostaria de saber se…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual frase é informal demais para um e-mail a um cliente?",
+    "options": [
+     "Prezado cliente, segue o orçamento.",
+     "Fico à disposição para dúvidas.",
+     "Conforme combinado, envio o contrato.",
+     "Fala, cara! Manda o pagamento aí."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Seria possível _____ a reunião para quinta-feira?”",
+    "options": [
+     "remarquemos",
+     "remarcamos",
+     "remarcarmos",
+     "remarcaremos"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Diga de forma formal: “E aí, consegue me mandar o relatório?”",
+    "start": "Bom dia. O senhor poderia…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Num e-mail, o que significa “segue em anexo”?",
+    "options": [
+     "O arquivo está junto com o e-mail",
+     "Responda depressa",
+     "Siga as instruções",
+     "O e-mail foi cancelado"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Venho, por meio deste, _____ o envio dos documentos.”",
+    "options": [
+     "solicitar",
+     "solicitei",
+     "que solicite",
+     "solicito"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explique a um colega novo a diferença entre falar com o chefe e com os colegas.",
+    "start": "Aqui, com o chefe a gente costuma…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual expressão informal significa “sem problema”?",
+    "options": [
+     "Prezado!",
+     "Atenciosamente!",
+     "Cordialmente!",
+     "De boa!"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Senhor Ricardo, nós _____ convidamos para a cerimônia.”",
+    "options": [
+     "o",
+     "lhe",
+     "te",
+     "a"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Responda formalmente a um cliente que pediu um desconto.",
+    "start": "Prezado senhor, agradecemos o contato e…"
+   }
+  ]
+ },
+ "advanced-u10-l1": {
+  "title": "Complaints",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual frase faz uma reclamação de forma educada?",
+    "options": [
+     "Que porcaria de serviço!",
+     "Gostaria de relatar um problema com o meu pedido.",
+     "Vocês são uns incompetentes!",
+     "Nunca mais compro aqui!"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que é um “ressarcimento”?",
+    "options": [
+     "Uma multa",
+     "Um elogio",
+     "Um novo pedido",
+     "A devolução do valor pago"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Exijo que o problema _____ resolvido ainda hoje.”",
+    "options": [
+     "será",
+     "é",
+     "seja",
+     "for"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Como se descreve um produto que veio com problema?",
+    "options": [
+     "de primeira",
+     "sob medida",
+     "com defeito",
+     "em promoção"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Se eu sabia que ia demorar tanto, não teria comprado aqui.”",
+    "options": [
+     "Se eu sabia que ia demorar tanto, não teria comprado aqui.",
+     "Se eu soubesse que ia demorar tanto, não teria comprado aqui.",
+     "Se eu souber que ia demorar tanto, não teria comprado aqui.",
+     "Se eu saberia que ia demorar tanto, não teria comprado aqui."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Ligue para uma loja e reclame de um produto que chegou quebrado.",
+    "start": "Boa tarde. Estou ligando porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “o barato sai caro”?",
+    "options": [
+     "Pagar caro é sempre um erro",
+     "Economizar pode gerar prejuízo depois",
+     "Tudo que é barato é bom",
+     "Preço baixo garante qualidade"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Já é a terceira vez que eu _____ por causa do mesmo problema.”",
+    "options": [
+     "ligar",
+     "ligasse",
+     "ligo",
+     "ligue"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Reclame com um vizinho sobre o barulho, sem perder a educação.",
+    "start": "Oi, desculpa incomodar, mas…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual frase pede uma solução concreta?",
+    "options": [
+     "Tudo bem, deixa pra lá.",
+     "Não precisa fazer nada.",
+     "O que vocês podem fazer para resolver isso?",
+     "Esquece, foi mal."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Eu gostaria que vocês me _____ o valor integral.”",
+    "options": [
+     "devolvem",
+     "devolvessem",
+     "devolverem",
+     "devolveriam"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "A conta do restaurante veio com um valor errado. Reclame com o garçom.",
+    "start": "Com licença, acho que houve um engano na conta…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “acionar o Procon”?",
+    "options": [
+     "Chamar a polícia",
+     "Pedir um desconto",
+     "Cancelar o cartão",
+     "Reclamar no órgão de defesa do consumidor"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Não é possível que ninguém _____ responder à minha reclamação.”",
+    "options": [
+     "poderá",
+     "possa",
+     "puder",
+     "pode"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Faça uma reclamação formal sobre um serviço de internet.",
+    "start": "Prezados, venho por meio desta reclamar…"
+   }
+  ]
+ },
+ "advanced-u10-l2": {
+  "title": "Disagreements",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual frase discorda de forma diplomática?",
+    "options": [
+     "Vejo a questão de outro ângulo.",
+     "Que bobagem!",
+     "Você está completamente errado.",
+     "Nada a ver!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “bater de frente” com alguém?",
+    "options": [
+     "Concordar sem pensar",
+     "Dar um abraço",
+     "Encontrar por acaso",
+     "Entrar em conflito direto"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Respeito a sua opinião, embora não _____ dela.”",
+    "options": [
+     "compartilho",
+     "compartilhe",
+     "compartilhasse",
+     "compartilhar"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual expressão suaviza uma discordância?",
+    "options": [
+     "Com todo o respeito,…",
+     "Deixa de besteira,…",
+     "Presta atenção,…",
+     "Escuta aqui,…"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Mesmo que você tem razão, o tom foi agressivo.”",
+    "options": [
+     "Mesmo que você tem razão, o tom foi agressivo.",
+     "Mesmo que você teria razão, o tom foi agressivo.",
+     "Mesmo que você tenha razão, o tom foi agressivo.",
+     "Mesmo que você tiver razão, o tom foi agressivo."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Um amigo diz que os filmes antigos são melhores que os novos. Discorde com educação.",
+    "start": "Entendo o seu ponto, mas…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que quer dizer “eu não iria tão longe”?",
+    "options": [
+     "Concordo plenamente",
+     "Não tenho opinião",
+     "Não quero viajar",
+     "Acho isso exagerado"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Ela afirmou que não _____ com a decisão.”",
+    "options": [
+     "concordar",
+     "concordava",
+     "concordasse",
+     "concorde"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Conte sobre uma discordância que você teve no trabalho e como a resolveu.",
+    "start": "Uma vez eu discordei de…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual frase NÃO mostra discordância?",
+    "options": [
+     "Vejo de outra forma.",
+     "Concordo plenamente.",
+     "Tenho as minhas dúvidas.",
+     "Não sei se concordo."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “_____ eu respeite a sua opinião, acho que você está enganado.”",
+    "options": [
+     "Já que",
+     "Embora",
+     "Portanto",
+     "Porque"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Um colega sugere um plano arriscado. Discorde sem ofendê-lo.",
+    "start": "Não sei se esse é o melhor caminho…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “concordar em discordar”?",
+    "options": [
+     "Concordar com tudo",
+     "Aceitar que as opiniões são diferentes",
+     "Discutir até vencer",
+     "Mudar de opinião"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Não é que eu discorde; é só que _____ de mais dados.”",
+    "options": [
+     "precisasse",
+     "preciso",
+     "precisar",
+     "precise"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "É melhor ganhar uma discussão ou manter a paz? Dê a sua opinião.",
+    "start": "Na minha visão, é melhor…"
+   }
+  ]
+ },
+ "advanced-u10-l3": {
+  "title": "Misunderstandings",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual frase esclarece um mal-entendido sem acusar ninguém?",
+    "options": [
+     "A culpa é toda sua.",
+     "Você nunca entende nada.",
+     "Acho que houve um mal-entendido.",
+     "Esquece, não importa."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “confundir alhos com bugalhos”?",
+    "options": [
+     "Esquecer um compromisso",
+     "Misturar coisas diferentes",
+     "Falar muito rápido",
+     "Cozinhar mal"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Desculpe, não foi isso que eu _____ dizer.”",
+    "options": [
+     "queira",
+     "quis",
+     "quiser",
+     "quisesse"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual pergunta confirma se você entendeu bem?",
+    "options": [
+     "E daí?",
+     "Deixa eu ver se entendi: você quer dizer que…?",
+     "Por que você fala assim?",
+     "Dá pra parar?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Se eu tivesse entendido direito, não teria chego atrasado.”",
+    "options": [
+     "Se eu tivesse entendido direito, não teria chegando atrasado.",
+     "Se eu tivesse entendido direito, não teria chegou atrasado.",
+     "Se eu tivesse entendido direito, não teria chego atrasado.",
+     "Se eu tivesse entendido direito, não teria chegado atrasado."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Você entendeu errado o horário de uma reunião. Explique o mal-entendido ao seu chefe.",
+    "start": "Peço desculpas, eu entendi que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que é um “ruído na comunicação”?",
+    "options": [
+     "Uma falha que distorce a mensagem",
+     "Uma reunião longa",
+     "Barulho na rua",
+     "Um e-mail com anexos"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Ele me perguntou se eu _____ ido à reunião.”",
+    "options": [
+     "tiver",
+     "tinha",
+     "terei",
+     "tenha"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Um amigo ficou chateado com uma mensagem sua. Explique o que você quis dizer.",
+    "start": "Olha, não foi isso que eu quis dizer…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual expressão significa “dito de outra forma”?",
+    "options": [
+     "contudo",
+     "ou seja",
+     "enquanto isso",
+     "no entanto"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Para não _____ dúvidas, vou mandar tudo por escrito.”",
+    "options": [
+     "há",
+     "haverem",
+     "haja",
+     "haver"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Peça a alguém que repita uma informação que você não entendeu.",
+    "start": "Desculpa, acho que não peguei direito…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “a pergunta ficou no ar”?",
+    "options": [
+     "Foi respondida rápido",
+     "Ficou sem resposta clara",
+     "Foi gritada",
+     "Foi feita num avião"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Talvez eu não _____ me expressado bem.”",
+    "options": [
+     "terei",
+     "tiver",
+     "tinha",
+     "tenha"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Conte um mal-entendido engraçado que aconteceu com você.",
+    "start": "Uma vez rolou um mal-entendido…"
+   }
+  ]
+ },
+ "advanced-u11-l1": {
+  "title": "Casual expressions",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "O que significa “tô nem aí”?",
+    "options": [
+     "Estou preocupado",
+     "Estou chegando",
+     "Não estou aqui",
+     "Não me importo"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Em “Vai rolar uma festa hoje”, “rolar” significa…",
+    "options": [
+     "acontecer",
+     "ser cancelada",
+     "cair no chão",
+     "terminar"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Valeu por _____ comigo ontem, galera!”",
+    "options": [
+     "viessem",
+     "venham",
+     "vieram",
+     "virem"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “mandar bem”?",
+    "options": [
+     "Ser mandão",
+     "Enviar um presente",
+     "Fazer algo muito bem",
+     "Dar ordens"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “A gente vamos sair mais tarde, beleza?”",
+    "options": [
+     "A gente íamos sair mais tarde, beleza?",
+     "A gente vamos sair mais tarde, beleza?",
+     "A gente vão sair mais tarde, beleza?",
+     "A gente vai sair mais tarde, beleza?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Conte para um amigo, bem informalmente, como foi a sua semana.",
+    "start": "Cara, essa semana foi…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “dar um rolê”?",
+    "options": [
+     "Dar uma volta, passear",
+     "Brigar com alguém",
+     "Cozinhar algo",
+     "Dormir cedo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Me avisa quando você _____ por aqui.”",
+    "options": [
+     "passou",
+     "passará",
+     "passasse",
+     "passar"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Convide um amigo para sair no sábado usando expressões informais.",
+    "start": "E aí, bora…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “pagar mico”?",
+    "options": [
+     "Pagar uma dívida",
+     "Passar vergonha",
+     "Comprar um animal",
+     "Ganhar um prêmio"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Se _____, a gente desmarca o churrasco.”",
+    "options": [
+     "chovesse",
+     "chover",
+     "chova",
+     "choveria"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Conte uma vez em que você pagou mico.",
+    "start": "Gente, uma vez eu paguei o maior mico…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "No fim de uma frase, “tá ligado?” quer dizer…",
+    "options": [
+     "Entendeu?",
+     "Está com raiva?",
+     "Está conectado à internet?",
+     "Está aceso?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Vou nessa antes que _____ tarde.”",
+    "options": [
+     "ficar",
+     "fica",
+     "ficasse",
+     "fique"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Explique para um estrangeiro o que significa “de boa” e dê um exemplo.",
+    "start": "“De boa” é quando…"
+   }
+  ]
+ },
+ "advanced-u11-l2": {
+  "title": "Jokes",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "O que é uma “piada de tiozão”?",
+    "options": [
+     "Um comediante famoso",
+     "Uma história triste",
+     "Uma piada muito ofensiva",
+     "Uma piada boba e previsível"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “zoar” alguém?",
+    "options": [
+     "Ajudar alguém",
+     "Brincar com alguém, tirar sarro",
+     "Ignorar alguém",
+     "Elogiar alguém"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Ele contou uma piada tão boa que todo mundo _____ de rir.”",
+    "options": [
+     "morreu",
+     "morra",
+     "morresse",
+     "morrer"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Uma piada “sem graça” é uma piada…",
+    "options": [
+     "muito engraçada",
+     "que não faz ninguém rir",
+     "contada sem pressa",
+     "gratuita"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “A piada foi tão sem graça que ninguém riram.”",
+    "options": [
+     "A piada foi tão sem graça que ninguém riram.",
+     "A piada foi tão sem graça que ninguém riu.",
+     "A piada foi tão sem graça que ninguém rissem.",
+     "A piada foi tão sem graça que ninguém rir."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Conte uma piada curta que você conhece.",
+    "start": "Sabe aquela do…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “chorar de rir”?",
+    "options": [
+     "Rir muito",
+     "Ficar triste",
+     "Rir de nervoso",
+     "Fingir que riu"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Ela riu como se _____ a piada pela primeira vez.”",
+    "options": [
+     "ouvir",
+     "ouça",
+     "ouve",
+     "ouvisse"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Conte uma situação engraçada que aconteceu com você ou com um amigo.",
+    "start": "Foi muito engraçado, porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que é um “trocadilho”?",
+    "options": [
+     "Um jogo de palavras com duplo sentido",
+     "Um erro de digitação",
+     "Uma troca de presentes",
+     "Uma piada longa"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Ninguém vai rir, a não ser que você _____ a piada direito.”",
+    "options": [
+     "conta",
+     "contar",
+     "contasse",
+     "conte"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Explique por que uma piada do seu país é engraçada.",
+    "start": "Essa piada tem graça porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “levar na esportiva”?",
+    "options": [
+     "Praticar esportes",
+     "Ficar irritado",
+     "Competir com alguém",
+     "Não se ofender com brincadeiras"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Se ele não _____ levado a piada a sério, não teria ficado chateado.”",
+    "options": [
+     "tiver",
+     "tivesse",
+     "tinha",
+     "teria"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Fale sobre o tipo de humor de que você mais gosta.",
+    "start": "O tipo de humor que eu mais curto é…"
+   }
+  ]
+ },
+ "advanced-u11-l3": {
+  "title": "Conversational tone",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Qual frase soa mais simpática ao pedir algo a um colega?",
+    "options": [
+     "É sua obrigação.",
+     "Você me dá uma mãozinha aqui?",
+     "Faça isso agora.",
+     "Me ajuda, anda!"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que o diminutivo em “só um minutinho” transmite?",
+    "options": [
+     "Uma ordem rígida",
+     "O tamanho de algo",
+     "Suavidade e gentileza",
+     "Irritação"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Você _____ me passar o sal?”",
+    "options": [
+     "podia",
+     "pudesse",
+     "pôde",
+     "possa"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual expressão suaviza um pedido?",
+    "options": [
+     "Imediatamente…",
+     "Exijo que…",
+     "Obrigatoriamente…",
+     "Será que você poderia…"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Você poderia me ajudar quando ter um tempinho?”",
+    "options": [
+     "Você poderia me ajudar quando teria um tempinho?",
+     "Você poderia me ajudar quando terá um tempinho?",
+     "Você poderia me ajudar quando ter um tempinho?",
+     "Você poderia me ajudar quando tiver um tempinho?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Peça um favor a um colega de forma leve e simpática.",
+    "start": "Oi, tudo bem? Será que você podia…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual frase mostra empatia na conversa?",
+    "options": [
+     "E eu com isso?",
+     "Imagino como deve ter sido difícil.",
+     "Problema seu.",
+     "Já passou, esquece."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Fica à vontade para me ligar sempre que _____.”",
+    "options": [
+     "querer",
+     "quisesse",
+     "quiser",
+     "queria"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Dê uma notícia ruim a um amigo de forma delicada.",
+    "start": "Olha, não sei bem como te dizer isso, mas…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual resposta soa seca demais numa conversa?",
+    "options": [
+     "Tá.",
+     "Nossa, sério? Conta mais!",
+     "Ah, entendi! Que legal.",
+     "Poxa, que chato, hein."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Não leve a mal, mas acho melhor a gente _____ isso depois.”",
+    "options": [
+     "conversa",
+     "conversar",
+     "converse",
+     "conversasse"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Um amigo está chateado. Puxe conversa de um jeito acolhedor.",
+    "start": "Ei, percebi que você está meio pra baixo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “puxar papo”?",
+    "options": [
+     "Começar uma conversa",
+     "Cochichar",
+     "Interromper alguém",
+     "Encerrar uma discussão"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Não sei se _____ tempo hoje, mas vou tentar te ligar.”",
+    "options": [
+     "tenha",
+     "vou ter",
+     "tiver",
+     "tivesse"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Conte uma novidade a um amigo de forma animada e natural.",
+    "start": "Você não sabe da maior…"
+   }
+  ]
+ },
+ "advanced-u12-l1": {
+  "title": "Unscripted, longer conversations across situations",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "No bar, o que é “a saideira”?",
+    "options": [
+     "A porta de saída",
+     "A gorjeta do garçom",
+     "A última bebida antes de ir embora",
+     "A sobremesa"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Depois do médico, o que significa “ficar de molho”?",
+    "options": [
+     "Ficar com fome",
+     "Fazer exercícios",
+     "Ficar em repouso, se recuperando",
+     "Tomar banho"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Assim que você _____ ao hotel, me manda uma mensagem.”",
+    "options": [
+     "chegar",
+     "chega",
+     "chegaria",
+     "chegasse"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual frase é adequada para pedir informação a um desconhecido na rua?",
+    "options": [
+     "Com licença, o senhor sabe onde fica a estação?",
+     "Fala aí, estação?",
+     "Me leva na estação.",
+     "Ei, você, cadê a estação?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrija o erro: “Fazem dois anos que eu moro no Brasil.”",
+    "options": [
+     "Fazem dois anos que eu moro no Brasil.",
+     "Fizeram dois anos que eu moro no Brasil.",
+     "Fazendo dois anos que eu moro no Brasil.",
+     "Faz dois anos que eu moro no Brasil."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Você está num táxi e precisa explicar ao motorista um caminho alternativo.",
+    "start": "Moço, se não for incômodo, dá pra ir por…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “estar por dentro” de um assunto?",
+    "options": [
+     "Estar atrasado",
+     "Estar confuso",
+     "Estar dentro de casa",
+     "Estar bem informado"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “O atendente pediu que eu _____ mais tarde.”",
+    "options": [
+     "voltar",
+     "voltasse",
+     "volte",
+     "voltaria"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Ligue para marcar uma consulta médica e explique os seus sintomas.",
+    "start": "Bom dia, eu gostaria de marcar uma consulta, porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Numa festa, qual frase puxa assunto com um desconhecido?",
+    "options": [
+     "Saia da minha frente.",
+     "E aí, você conhece o pessoal daqui de onde?",
+     "Já vou embora.",
+     "Não falo com estranhos."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Seria bom que vocês _____ mais cedo amanhã.”",
+    "options": [
+     "chegaram",
+     "chegassem",
+     "chegarem",
+     "chegam"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Conte a um amigo sobre um problema que você resolveu sozinho numa viagem.",
+    "start": "Numa viagem, eu me vi numa situação…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "O que significa “jogar conversa fora”?",
+    "options": [
+     "Desligar o telefone",
+     "Esquecer o que ia dizer",
+     "Conversar à toa, sem compromisso",
+     "Brigar com alguém"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Escolha a forma correta: “Se eu _____ no seu lugar, aceitaria a proposta.”",
+    "options": [
+     "estivesse",
+     "estou",
+     "estiver",
+     "estaria"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Fale por dois minutos sobre como você imagina a sua vida daqui a dez anos.",
+    "start": "Daqui a dez anos, se tudo der certo…"
+   }
+  ]
+ }
+}

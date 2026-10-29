@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="splash_loading">Carregando o Web Browser...</string>
+    <string name="cd_back">Voltar</string>
+    <string name="language_title">Idioma</string>
+    <string name="language_confirm">Confirmar</string>
+    <string name="onboarding_next">Próximo</string>
+    <string name="onboarding_start">Iniciar</string>
+    <string name="onboarding_title_1">Descubra o Web Browser</string>
+    <string name="onboarding_subtitle_1">Desbloqueie um mundo de itens, personagens, armas, pets e recompensas exclusivas em uma experiência de jogo cheia de ação.</string>
+    <string name="onboarding_title_2">Equipe-se do seu jeito</string>
+    <string name="onboarding_subtitle_2">Escolha personagens, obtenha armas poderosas, viaje com pets e crie seu próprio estilo para cada batalha.</string>
+    <string name="onboarding_title_3">Giro da sorte, recompensas raras</string>
+    <string name="onboarding_subtitle_3">Tente a sua sorte com o Lucky Spin para ganhar diamantes, skins de armas, pets, personagens e muitas recompensas valiosas todos os dias.</string>
+    <string name="settings_general_language">Linguagem</string>
+    <string name="language_save_error">Não foi possível salvar sua seleção. Tente novamente.</string>
+    <string name="home_welcome">Boas-vindas</string>
+    <string name="home_description">Escolha um idioma ou veja suas configurações.</string>
+    <string name="network_offline_title">Sem conexão com a internet</string>
+    <string name="network_offline_message">Conecte-se à internet para continuar usando o app.</string>
+    <string name="network_try_again">Tentar novamente</string>
+    <string name="ui_exit_the_app">Sair do app</string>
+    <string name="ui_are_you_sure_you_want_to_exit_the_app_now">Tem certeza de que deseja sair do app agora?</string>
+    <string name="ui_no">Não</string>
+    <string name="ui_yes_exit">Sim, sair</string>
+</resources>

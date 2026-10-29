@@ -1,0 +1,3214 @@
+{
+ "advanced-u1-l1": {
+  "title": "Fluency",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire parlare “con scioltezza”?",
+    "options": [
+     "Parlare molto lentamente",
+     "Parlare in modo fluido e naturale",
+     "Parlare solo in modo formale",
+     "Parlare a voce molto alta"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Come si dice “dire la stessa cosa con altre parole”?",
+    "options": [
+     "parafrasare",
+     "balbettare",
+     "sottolineare",
+     "accennare"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Se _____ più spesso con i madrelingua, parlerei con più scioltezza.”",
+    "options": [
+     "parlo",
+     "parlassi",
+     "parlerei",
+     "avrei parlato"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale espressione usi per prendere tempo mentre pensi?",
+    "options": [
+     "Ci mancherebbe!",
+     "Fa lo stesso.",
+     "Ci sto.",
+     "Vediamo un po'…"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Se avessi studiato all'estero, adesso _____ l'italiano meglio.”",
+    "options": [
+     "parlerei",
+     "avessi parlato",
+     "parli",
+     "parlerò"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Parla per un minuto del tuo modo di imparare l'italiano, senza fermarti.",
+    "start": "Allora, per quanto mi riguarda…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “avere la parola pronta”?",
+    "options": [
+     "Parlare troppo",
+     "Ripetere sempre la stessa cosa",
+     "Rispondere in modo rapido e brillante",
+     "Scrivere senza errori"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “_____ ogni giorno, sono migliorato tantissimo.”",
+    "options": [
+     "Esercitandomi",
+     "Esercitarmi",
+     "Esercitato",
+     "Mi esercitando"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Racconta una volta in cui non ti veniva una parola. Come te la sei cavata?",
+    "start": "Una volta non mi veniva la parola…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Completa: “Leggo molto per _____ il mio vocabolario.”",
+    "options": [
+     "accorciare",
+     "arrestare",
+     "arricchire",
+     "aggiustare"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Correggi l'errore: “Benché parla bene, a volte ha paura di sbagliare.”",
+    "options": [
+     "Benché parlerebbe bene, a volte ha paura di sbagliare.",
+     "Benché parlando bene, a volte ha paura di sbagliare.",
+     "Benché ha parlato bene, a volte ha paura di sbagliare.",
+     "Benché parli bene, a volte ha paura di sbagliare."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Spiega a un amico come si fa a parlare in modo più naturale in una lingua straniera.",
+    "start": "Secondo me, il segreto è…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “ce l'ho sulla punta della lingua”?",
+    "options": [
+     "Mi sono morso la lingua",
+     "Sto per ricordare la parola, ma non mi viene",
+     "Parlo troppo velocemente",
+     "Ho appena detto un segreto"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Parla italiano come se _____ nato a Roma.”",
+    "options": [
+     "è",
+     "sia",
+     "fosse",
+     "sarebbe"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Se potessi vivere un anno in Italia, che cosa faresti per migliorare il tuo italiano?",
+    "start": "Se potessi vivere un anno in Italia…"
+   }
+  ]
+ },
+ "advanced-u1-l2": {
+  "title": "Fillers",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Che cos'è un “intercalare”?",
+    "options": [
+     "Una parola ripetuta spesso per riempire le pause",
+     "Un errore di pronuncia",
+     "Una parola usata solo per iscritto",
+     "Un modo di salutare"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale parola usi per riformulare quello che hai appena detto?",
+    "options": [
+     "boh",
+     "magari",
+     "cioè",
+     "tipo"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Insomma, non pensavo che la riunione _____ così tanto.”",
+    "options": [
+     "durasse",
+     "dura",
+     "durerà",
+     "duri"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa esprime “boh”?",
+    "options": [
+     "Entusiasmo",
+     "Che non lo sai",
+     "Che sei d'accordo",
+     "Una sorpresa positiva"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Correggi l'errore: “Cioè, non credo che tu hai ragione.”",
+    "options": [
+     "Cioè, non credo che tu abbi ragione.",
+     "Cioè, non credo che tu avendo ragione.",
+     "Cioè, non credo che tu abbia ragione.",
+     "Cioè, non credo che tu aver ragione."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Racconta il tuo ultimo fine settimana usando “allora”, “tipo” e “insomma”.",
+    "start": "Allora, sabato…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale segnale discorsivo usi per riassumere o concludere?",
+    "options": [
+     "tipo",
+     "ehm",
+     "boh",
+     "insomma"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Mi ha detto, praticamente, che _____ in ritardo.”",
+    "options": [
+     "sarebbe arrivato",
+     "arriverebbe",
+     "arrivasse",
+     "fosse arrivato"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Descrivi un film che hai visto di recente. Usa “cioè” per spiegare meglio un punto.",
+    "start": "Allora, il film parlava di…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “vabbè” in una conversazione?",
+    "options": [
+     "Sono molto arrabbiato",
+     "Va bene, lasciamo perdere",
+     "Ripeti, per favore",
+     "Che bella sorpresa"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la parola corretta: “Ecco, è proprio _____ che volevo dire.”",
+    "options": [
+     "cui",
+     "quale",
+     "ciò",
+     "chi"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Un amico ti chiede un consiglio, ma non sei sicuro. Rispondi prendendo tempo con un riempitivo.",
+    "start": "Mah, non saprei… diciamo che…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "In quale situazione è meglio evitare “tipo” e “cioè”?",
+    "options": [
+     "Una chiacchierata tra amici",
+     "Un messaggio vocale a tua sorella",
+     "Un discorso ufficiale",
+     "Una pausa caffè con un collega"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Comunque, se me l'_____ detto prima, ti avrei aiutato.”",
+    "options": [
+     "avresti",
+     "avessi",
+     "hai",
+     "abbia"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Spiega perché secondo te le persone usano tanti intercalari quando parlano.",
+    "start": "Beh, secondo me…"
+   }
+  ]
+ },
+ "advanced-u1-l3": {
+  "title": "Natural responses",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Un amico ti dice: “Ho superato l'esame!” Qual è la risposta più naturale?",
+    "options": [
+     "Ma dai, complimenti!",
+     "Mi dispiace molto.",
+     "Non fa niente.",
+     "Ci mancherebbe."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “Figurati!” come risposta a “Grazie”?",
+    "options": [
+     "Immagina",
+     "Non ci credo",
+     "Stai attento",
+     "Non c'è di che"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Che bello! Non pensavo che _____ già tornato!”",
+    "options": [
+     "sei",
+     "fossi",
+     "sarai",
+     "sia"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale risposta mostra sorpresa?",
+    "options": [
+     "Esatto.",
+     "Va bene.",
+     "Ma va? Davvero?",
+     "Ci penso io."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Vieni anche tu alla cena?” “Magari! Se non _____ lavorare, verrei subito.”",
+    "options": [
+     "dovessi",
+     "devo",
+     "dovrei",
+     "dovrò"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Un collega ti dice che ha appena perso il treno. Rispondi in modo naturale e partecipe.",
+    "start": "Ma no, che sfortuna!…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa rispondi se qualcuno si scusa per una piccola cosa?",
+    "options": [
+     "In bocca al lupo!",
+     "Salute!",
+     "Buon appetito!",
+     "Non fa niente, tranquillo."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la parola corretta: “Hai visto Marta?” “No, ma _____ ho sentito parlare.”",
+    "options": [
+     "ci",
+     "ne",
+     "la",
+     "le"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Un amico ti propone di andare a correre alle sei del mattino. Rifiuta con gentilezza.",
+    "start": "Mah, guarda, sinceramente…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “Ci mancherebbe!” come risposta a una richiesta?",
+    "options": [
+     "Ci manca qualcosa",
+     "Ci vediamo dopo",
+     "Ma certo, è il minimo!",
+     "Non lo so proprio"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Grazie per l'aiuto!” “Figurati, _____ fatto volentieri.”",
+    "options": [
+     "gli ho",
+     "ne ho",
+     "lo ho",
+     "l'ho"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Qualcuno ti fa un complimento per il tuo italiano. Rispondi con modestia.",
+    "start": "Grazie, sei gentile, ma…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale risposta usi per dire “sì, assolutamente”?",
+    "options": [
+     "Macché!",
+     "Altroché!",
+     "Mica tanto.",
+     "Neanche per sogno."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Correggi l'errore: “Se lo saprei, te l'avrei detto subito.”",
+    "options": [
+     "Se l'avrei saputo, te l'avessi detto subito.",
+     "Se l'ho saputo, te l'avrei detto subito.",
+     "Se l'avessi saputo, te l'avrei detto subito.",
+     "Se lo sapessi, te l'avrei detto subito."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Un amico ti racconta che si sposa. Reagisci in modo spontaneo e fagli una domanda.",
+    "start": "Ma dai! Che notizia!…"
+   }
+  ]
+ },
+ "advanced-u2-l1": {
+  "title": "Common expressions used by native speakers",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “essere al verde”?",
+    "options": [
+     "Non avere soldi",
+     "Essere in campagna",
+     "Essere molto giovane",
+     "Essere arrabbiato"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual è la risposta tradizionale a “In bocca al lupo!”?",
+    "options": [
+     "Salute!",
+     "Prego!",
+     "Crepi!",
+     "Anche a te!"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Magari _____ vinto la lotteria! Non sarei più al verde.”",
+    "options": [
+     "avrei",
+     "avessi",
+     "ho",
+     "abbia"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “costare un occhio della testa”?",
+    "options": [
+     "Essere gratis",
+     "Essere difficile da trovare",
+     "Fare male agli occhi",
+     "Costare tantissimo"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Mi ha guardato come se _____ dalle nuvole.”",
+    "options": [
+     "cadesse",
+     "cade",
+     "cadrebbe",
+     "sia caduto"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Racconta una volta in cui sei “caduto dalle nuvole”.",
+    "start": "Una volta sono proprio caduto dalle nuvole quando…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “prendere due piccioni con una fava”?",
+    "options": [
+     "Cucinare per due persone",
+     "Ottenere due risultati con una sola azione",
+     "Perdere tempo",
+     "Fare un errore doppio"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Bisognava che qualcuno gli _____ le cose come stavano.”",
+    "options": [
+     "dica",
+     "diceva",
+     "dicesse",
+     "direbbe"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Usa l'espressione “non vedo l'ora” per parlare di qualcosa che aspetti con impazienza.",
+    "start": "Non vedo l'ora di…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “tagliare la corda”?",
+    "options": [
+     "Andare dal parrucchiere",
+     "Risparmiare",
+     "Scappare via",
+     "Chiudere un'amicizia"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Se _____ che costava un occhio della testa, non l'avrei preso.”",
+    "options": [
+     "sapessi",
+     "ho saputo",
+     "saprei",
+     "avessi saputo"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Un amico ha un colloquio domani. Fagli gli auguri con un'espressione tipica.",
+    "start": "In bocca al lupo per…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “fare orecchie da mercante”?",
+    "options": [
+     "Ascoltare con attenzione",
+     "Vendere qualcosa al mercato",
+     "Parlare a bassa voce",
+     "Fingere di non sentire"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Nonostante _____ al verde, ci ha offerto la cena.”",
+    "options": [
+     "era",
+     "fosse",
+     "sarebbe",
+     "è stato"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Qual è la tua espressione italiana preferita? Spiega che cosa significa e quando si usa.",
+    "start": "La mia espressione preferita è…"
+   }
+  ]
+ },
+ "advanced-u3-l1": {
+  "title": "Detailed and engaging stories",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quale frase usi per iniziare a raccontare una storia?",
+    "options": [
+     "In conclusione…",
+     "Ricapitolando…",
+     "Ti racconto una cosa: l'altro giorno…",
+     "Comunque, alla fine…"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “all'improvviso”?",
+    "options": [
+     "Lentamente",
+     "Di colpo, senza preavviso",
+     "Alla fine",
+     "Ogni tanto"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli il passato remoto corretto: “Quella sera i miei nonni _____ per la prima volta.”",
+    "options": [
+     "si conobbero",
+     "si conoscerono",
+     "si conosciarono",
+     "si conoscettero"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale espressione crea suspense in un racconto?",
+    "options": [
+     "Infatti",
+     "Quindi",
+     "Anzi",
+     "A un tratto"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Quando arrivammo alla stazione, il treno _____ già partito.”",
+    "options": [
+     "fu",
+     "era",
+     "è",
+     "sarebbe"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Racconta un viaggio che non dimenticherai mai. Aggiungi dettagli ed emozioni.",
+    "start": "Non dimenticherò mai quella volta che…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “Per farla breve…”?",
+    "options": [
+     "Per allungare il racconto",
+     "Per fare una domanda",
+     "Per riassumere",
+     "Per cambiare argomento"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli il participio corretto: “_____ la porta, vidi che la casa era vuota.”",
+    "options": [
+     "Aperto",
+     "Aperte",
+     "Aperta",
+     "Aperti"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Racconta la cosa più strana che ti è successa. Inizia con una frase che crei curiosità.",
+    "start": "Non ci crederai, ma…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “restare a bocca aperta”?",
+    "options": [
+     "Avere fame",
+     "Essere molto stupito",
+     "Parlare troppo",
+     "Sbadigliare per la noia"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Dopo _____ la notizia, mi telefonò subito.”",
+    "options": [
+     "sapendo",
+     "saputo",
+     "aver sapendo",
+     "aver saputo"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Racconta un episodio divertente della tua infanzia, con tanti dettagli.",
+    "start": "Quando ero piccolo, una volta…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale domanda usi per riprendere il filo del racconto?",
+    "options": [
+     "Che ore sono?",
+     "Come stai?",
+     "Dov'ero rimasto?",
+     "Che ne pensi?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Mi disse che il giorno prima _____ un fantasma.”",
+    "options": [
+     "ha visto",
+     "aveva visto",
+     "vedrà",
+     "veda"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Racconta come hai conosciuto il tuo migliore amico, creando un po' di suspense.",
+    "start": "Era una giornata normale, quando all'improvviso…"
+   }
+  ]
+ },
+ "advanced-u4-l1": {
+  "title": "Developing and supporting an argument",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quale espressione usi per presentare il primo argomento?",
+    "options": [
+     "Innanzitutto",
+     "Tuttavia",
+     "Eppure",
+     "Nonostante ciò"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale connettivo introduce un'obiezione?",
+    "options": [
+     "Inoltre",
+     "Tuttavia",
+     "Infatti",
+     "Dunque"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Sebbene la proposta _____ interessante, ha dei limiti evidenti.”",
+    "options": [
+     "è",
+     "sarà",
+     "sia",
+     "sarebbe"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “a mio avviso”?",
+    "options": [
+     "Per fortuna",
+     "Al contrario",
+     "In ogni caso",
+     "Secondo me"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “È fondamentale che i governi _____ subito.”",
+    "options": [
+     "intervengono",
+     "intervengano",
+     "intervenissero",
+     "interverranno"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Lavorare da casa è meglio che lavorare in ufficio? Esponi la tua tesi con almeno due argomenti.",
+    "start": "A mio avviso, innanzitutto…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale espressione usi per introdurre un esempio?",
+    "options": [
+     "Ciononostante…",
+     "In sintesi…",
+     "Basti pensare a…",
+     "Viceversa…"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Il dibattito, _____ ha partecipato anche il sindaco, è stato acceso.”",
+    "options": [
+     "il quale",
+     "del quale",
+     "dal quale",
+     "al quale"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Convinci un amico a leggere di più, con argomenti ed esempi concreti.",
+    "start": "Ti faccio un esempio concreto…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “in fin dei conti”?",
+    "options": [
+     "Durante il calcolo",
+     "Tutto considerato",
+     "All'inizio",
+     "Per caso"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Correggi l'errore: “Non è detto che questa soluzione funziona.”",
+    "options": [
+     "Non è detto che questa soluzione funzionino.",
+     "Non è detto che questa soluzione funzionassi.",
+     "Non è detto che questa soluzione funzioni.",
+     "Non è detto che questa soluzione funzionando."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Qualcuno dice che i social fanno solo male. Riconosci un punto e poi difendi la tua posizione.",
+    "start": "È vero che…, tuttavia…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale parola usi per aggiungere un altro argomento?",
+    "options": [
+     "Invece",
+     "Altrimenti",
+     "Purtroppo",
+     "Inoltre"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Se le città _____ più piste ciclabili, ci sarebbe meno traffico.”",
+    "options": [
+     "avrebbero",
+     "avessero",
+     "hanno",
+     "abbiano"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Qual è secondo te il problema più urgente della tua città? Spiega perché e proponi una soluzione.",
+    "start": "Secondo me il problema più urgente è…"
+   }
+  ]
+ },
+ "advanced-u5-l1": {
+  "title": "Leading",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Che cos'è l'“ordine del giorno” di una riunione?",
+    "options": [
+     "L'elenco dei punti da discutere",
+     "L'orario di fine",
+     "Il verbale della riunione",
+     "La lista dei partecipanti"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase usi per aprire una riunione?",
+    "options": [
+     "Bene, per oggi è tutto.",
+     "Direi di cominciare, se ci siamo tutti.",
+     "Ci aggiorniamo alla prossima.",
+     "Grazie a tutti, a presto."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Prima che _____ via, vorrei riassumere i punti principali.”",
+    "options": [
+     "andate",
+     "andrete",
+     "andiate",
+     "andaste"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “fare il punto della situazione”?",
+    "options": [
+     "Prendere appunti",
+     "Chiudere la riunione",
+     "Cambiare argomento",
+     "Riassumere a che punto si è"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Dottor Rossi, _____ pure: tocca a lei.”",
+    "options": [
+     "parli",
+     "parla",
+     "parlate",
+     "parlerebbe"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Apri una riunione: saluta, presenta l'ordine del giorno e dai la parola al primo collega.",
+    "start": "Buongiorno a tutti, direi di cominciare…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "In una riunione, che cosa vuol dire “dare la parola” a qualcuno?",
+    "options": [
+     "Chiedergli un parere scritto",
+     "Invitarlo a parlare",
+     "Interromperlo",
+     "Ripetere ciò che ha detto"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Vi chiederei di _____ gli interventi entro cinque minuti.”",
+    "options": [
+     "contenete",
+     "conteniate",
+     "contenendo",
+     "contenere"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "La discussione è uscita dal tema. Riporta il gruppo all'ordine del giorno con gentilezza.",
+    "start": "Scusate, torniamo un attimo al punto…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa fa chi “redige il verbale”?",
+    "options": [
+     "Guida la discussione",
+     "Prenota la sala",
+     "Scrive il resoconto della riunione",
+     "Prepara le slide"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Visto che nessuno _____ altro da aggiungere, chiuderei qui.”",
+    "options": [
+     "ha",
+     "abbia",
+     "avesse",
+     "avere"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Chiudi la riunione: riassumi le decisioni e assegna i compiti.",
+    "start": "Bene, ricapitolando…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase usi per invitare tutti a rispettare i tempi?",
+    "options": [
+     "Abbiamo tutto il tempo del mondo.",
+     "Parliamo d'altro.",
+     "Ricominciamo da capo.",
+     "Restano dieci minuti, quindi stringiamo."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Vorrei che ognuno _____ il proprio punto di vista.”",
+    "options": [
+     "esprima",
+     "esprimesse",
+     "esprimerà",
+     "esprime"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Presenta un nuovo collega al team all'inizio della riunione.",
+    "start": "Prima di cominciare, vorrei presentarvi…"
+   }
+  ]
+ },
+ "advanced-u5-l2": {
+  "title": "Interrupting politely",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quale frase usi per interrompere con gentilezza?",
+    "options": [
+     "Scusa se ti interrompo, ma…",
+     "Stai zitto un attimo.",
+     "Basta, adesso parlo io.",
+     "Non mi interessa."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “intromettersi” in una conversazione?",
+    "options": [
+     "Uscire dalla stanza",
+     "Ascoltare in silenzio",
+     "Entrare nel discorso di altri",
+     "Chiudere il discorso"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Scusate se _____, ma vorrei aggiungere una cosa.”",
+    "options": [
+     "mi intrometti",
+     "mi intrometto",
+     "intromettermi",
+     "mi intromettendo"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qualcuno ti interrompe. Che cosa dici per finire il tuo discorso?",
+    "options": [
+     "Fai pure!",
+     "Ti ascolto.",
+     "Dimmi tutto.",
+     "Se mi lasci finire…"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Mi _____ di dire una cosa al volo, signora Bianchi?”",
+    "options": [
+     "permette",
+     "permetti",
+     "permettete",
+     "permettesse"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Un collega parla da troppo tempo. Interrompilo con gentilezza per fare una domanda.",
+    "start": "Scusa se ti interrompo un attimo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “al volo” in “Ti dico una cosa al volo”?",
+    "options": [
+     "In aereo",
+     "Velocemente",
+     "Con rabbia",
+     "Più tardi"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Non vorrei _____, ma credo che ci sia un errore nei dati.”",
+    "options": [
+     "interrompessi",
+     "interrompa",
+     "interrompere",
+     "interrotto"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Durante una riunione online, interrompi per dire che l'audio non si sente bene.",
+    "start": "Scusate, vi interrompo perché…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase usi per riprendere la parola dopo un'interruzione?",
+    "options": [
+     "Hai ragione tu.",
+     "Non importa.",
+     "Buona giornata.",
+     "Come stavo dicendo…"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Le dispiacerebbe se _____ una domanda?”",
+    "options": [
+     "faccio",
+     "facessi",
+     "farei",
+     "faccia"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Qualcuno ti ha interrotto. Chiedi con gentilezza di poter finire.",
+    "start": "Scusa, se mi lasci finire…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase è troppo brusca per interrompere un superiore?",
+    "options": [
+     "Mi scusi, posso aggiungere una cosa?",
+     "Se mi permette…",
+     "Aspetta, fammi parlare!",
+     "Perdoni l'interruzione…"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Mi scusi, non volevo che _____ l'impressione di non essere ascoltata.”",
+    "options": [
+     "abbia",
+     "avrebbe",
+     "ha",
+     "avesse"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Interrompi la tua responsabile per segnalare un problema urgente, usando il Lei.",
+    "start": "Mi scusi se la interrompo, ma…"
+   }
+  ]
+ },
+ "advanced-u5-l3": {
+  "title": "Contributing ideas",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quale frase usi per proporre un'idea?",
+    "options": [
+     "E se provassimo a…?",
+     "Non se ne parla.",
+     "Lasciamo perdere.",
+     "È fuori discussione."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “buttare lì un'idea”?",
+    "options": [
+     "Scartarla",
+     "Rubarla",
+     "Scriverla nel verbale",
+     "Proporla in modo informale"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “E se _____ il lancio a settembre?”",
+    "options": [
+     "sposteremmo",
+     "spostassimo",
+     "spostando",
+     "spostare"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale espressione usi per sviluppare l'idea di un collega?",
+    "options": [
+     "Non sono d'accordo per niente.",
+     "Passiamo ad altro.",
+     "Riprendendo quello che ha detto Luca…",
+     "Non c'entra niente."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Proporrei che il team _____ due volte a settimana.”",
+    "options": [
+     "si riunisse",
+     "si riunisce",
+     "si riunirebbe",
+     "si riunirà"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Proponi un'idea per migliorare la comunicazione nel tuo team.",
+    "start": "Butto lì un'idea: e se…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “fare un brainstorming”?",
+    "options": [
+     "Fare una pausa",
+     "Raccogliere idee liberamente in gruppo",
+     "Prendere una decisione finale",
+     "Valutare un dipendente"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Qualunque idea _____, scrivetela sulla lavagna.”",
+    "options": [
+     "avete",
+     "avreste",
+     "aveste",
+     "abbiate"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Un collega ha proposto una soluzione. Sviluppala e aggiungi un tuo suggerimento.",
+    "start": "Partendo dall'idea di Marco, io aggiungerei…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “pensare fuori dagli schemi”?",
+    "options": [
+     "Non pensare affatto",
+     "Seguire le regole",
+     "Pensare in modo creativo e originale",
+     "Lavorare fuori ufficio"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Avremmo risparmiato tempo se _____ subito la tua proposta.”",
+    "options": [
+     "avremmo accettato",
+     "accettassimo",
+     "abbiamo accettato",
+     "avessimo accettato"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Proponi un'idea alternativa con prudenza, senza criticare quella della collega.",
+    "start": "L'idea di Sara mi piace, però forse potremmo anche…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase usi per chiedere le idee degli altri?",
+    "options": [
+     "Ho deciso io.",
+     "Voi che ne pensate?",
+     "Basta così.",
+     "Non serve discuterne."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Presenterò l'idea al capo, a meno che non _____ contrari.”",
+    "options": [
+     "siate",
+     "siete",
+     "sareste",
+     "foste"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Proponi un'iniziativa per rendere l'ufficio più sostenibile e spiega i vantaggi.",
+    "start": "La mia proposta è questa:…"
+   }
+  ]
+ },
+ "advanced-u6-l1": {
+  "title": "Explaining ideas clearly and confidently",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quale frase usi per aprire una presentazione?",
+    "options": [
+     "Oggi vorrei parlarvi di…",
+     "In conclusione…",
+     "Ci sono domande?",
+     "Grazie dell'attenzione."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “in sintesi”?",
+    "options": [
+     "Nel dettaglio",
+     "In breve, riassumendo",
+     "All'inizio",
+     "Per esempio"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Come _____ vedere da questo grafico, le vendite sono aumentate.”",
+    "options": [
+     "possiate",
+     "poteste",
+     "potete",
+     "potreste"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale espressione usi per passare al punto successivo?",
+    "options": [
+     "Ripeto ancora una volta…",
+     "Per concludere…",
+     "Mi scuso per il ritardo…",
+     "Passiamo ora a…"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Questi risultati _____ letti con attenzione.” (= devono essere letti)",
+    "options": [
+     "vanno",
+     "vengono",
+     "sono",
+     "stanno"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Presenta in un minuto un progetto a cui stai lavorando.",
+    "start": "Oggi vorrei presentarvi…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “sottolineare” un concetto in un discorso?",
+    "options": [
+     "Dimenticarlo",
+     "Cancellarlo",
+     "Metterlo in evidenza",
+     "Rimandarlo"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Vi mostrerò i dati affinché vi _____ un'idea precisa.”",
+    "options": [
+     "fate",
+     "facciate",
+     "fareste",
+     "faceste"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Spiega un grafico al pubblico: che cosa mostra e qual è il dato più importante.",
+    "start": "Come potete vedere da questo grafico…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Come rispondi a una domanda a cui non sai rispondere subito?",
+    "options": [
+     "Non è affar mio.",
+     "La domanda è sbagliata.",
+     "Non rispondo.",
+     "Bella domanda: verifico e vi faccio sapere."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Nell'ultimo anno si _____ molti progressi.”",
+    "options": [
+     "è fatto",
+     "hanno fatto",
+     "sono fatti",
+     "sono fatto"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Concludi una presentazione: riassumi il messaggio chiave e invita il pubblico a fare domande.",
+    "start": "Per concludere, vorrei ribadire che…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “catturare l'attenzione” del pubblico?",
+    "options": [
+     "Arrestare qualcuno",
+     "Farsi ascoltare con interesse",
+     "Spegnere le luci",
+     "Chiudere le porte"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Non appena _____ la presentazione, vi invierò le slide.”",
+    "options": [
+     "finissi",
+     "avessi finito",
+     "avrei finito",
+     "avrò finito"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Presenta con sicurezza una proposta al tuo capo, spiegando perché è vantaggiosa.",
+    "start": "Sono convinto che questa proposta…"
+   }
+  ]
+ },
+ "advanced-u7-l1": {
+  "title": "Detailed professional answers and follow-ups",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “mettersi in gioco”?",
+    "options": [
+     "Accettare nuove sfide",
+     "Giocare a carte",
+     "Rinunciare",
+     "Lavorare poco"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale aggettivo descrive chi lavora bene con gli altri?",
+    "options": [
+     "permaloso",
+     "testardo",
+     "collaborativo",
+     "pignolo"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Mi candido perché vorrei che il mio lavoro _____ un impatto concreto.”",
+    "options": [
+     "abbia",
+     "avesse",
+     "avrà",
+     "ha"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa sono le “competenze trasversali”?",
+    "options": [
+     "I titoli di studio",
+     "Gli anni di esperienza",
+     "Le lingue straniere",
+     "Capacità come comunicare e risolvere problemi"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta (al candidato): “Mi _____ dei suoi punti di forza.”",
+    "options": [
+     "parli",
+     "parla",
+     "parlate",
+     "parlasse"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Parla dei tuoi punti di forza, con un esempio concreto dal tuo lavoro.",
+    "start": "Uno dei miei punti di forza è…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “avere esperienza sul campo”?",
+    "options": [
+     "Aver lavorato in campagna",
+     "Aver studiato solo la teoria",
+     "Aver lavorato davvero nel settore",
+     "Aver fatto molto sport"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Se mi _____ il posto, potrei cominciare già a novembre.”",
+    "options": [
+     "offrireste",
+     "offriste",
+     "offriate",
+     "offrendo"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Racconta una difficoltà che hai affrontato al lavoro e come l'hai superata.",
+    "start": "Mi è capitato di dover…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale domanda è adatta alla fine di un colloquio?",
+    "options": [
+     "Posso andare via adesso?",
+     "Quanti giorni di malattia posso prendere?",
+     "Devo proprio venire in ufficio?",
+     "Quali sarebbero le prossime fasi della selezione?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Mi hanno detto che mi _____ entro una settimana.”",
+    "options": [
+     "contatterebbero",
+     "contattassero",
+     "avrebbero contattato",
+     "avessero contattato"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Il selezionatore ti chiede perché vuoi lasciare il tuo lavoro attuale. Rispondi in modo professionale.",
+    "start": "Sto cercando nuove opportunità perché…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “Dove si vede tra cinque anni?”",
+    "options": [
+     "Dove abiterà?",
+     "Quali sono i suoi obiettivi futuri?",
+     "Ci vede bene?",
+     "Quanti anni ha?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Ho gestito un team di otto persone, _____ ho imparato molto.”",
+    "options": [
+     "il quale",
+     "dal quale",
+     "al quale",
+     "cui"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Fai al selezionatore una domanda sul ruolo e sull'azienda, usando il Lei.",
+    "start": "Potrebbe dirmi qualcosa di più su…"
+   }
+  ]
+ },
+ "advanced-u8-l1": {
+  "title": "Proposals",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “mettere sul tavolo” una proposta?",
+    "options": [
+     "Presentarla per discuterla",
+     "Rifiutarla",
+     "Nasconderla",
+     "Firmarla"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase usi per fare una proposta in modo diplomatico?",
+    "options": [
+     "Prendere o lasciare.",
+     "Non abbiamo altro da dire.",
+     "Potremmo valutare uno sconto del 5%.",
+     "O così o niente."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Accettiamo, a patto che la consegna _____ entro marzo.”",
+    "options": [
+     "avviene",
+     "avvenga",
+     "avvenisse",
+     "avverrebbe"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cos'è una “controproposta”?",
+    "options": [
+     "Un contratto firmato",
+     "Un rifiuto definitivo",
+     "Una lettera di scuse",
+     "Una proposta in risposta a un'altra"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Le _____ una soluzione intermedia, se è d'accordo.”",
+    "options": [
+     "proporrei",
+     "proponerei",
+     "proporei",
+     "propongherei"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Proponi a un fornitore un prezzo migliore in cambio di un ordine più grande.",
+    "start": "Se ordinassimo il doppio, potreste…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "In una trattativa, che cosa vuol dire “venire incontro” a qualcuno?",
+    "options": [
+     "Andarlo a prendere all'aeroporto",
+     "Opporsi alla sua richiesta",
+     "Fare una concessione per aiutarlo",
+     "Interrompere la trattativa"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Vi invieremo il preventivo non appena ci _____ i dettagli.”",
+    "options": [
+     "mandaste",
+     "avreste mandato",
+     "mandiate",
+     "avrete mandato"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Presenta una proposta a un cliente, spiegando i vantaggi per entrambe le parti.",
+    "start": "La nostra proposta prevede…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “un'offerta vantaggiosa”?",
+    "options": [
+     "Un'offerta scaduta",
+     "Un'offerta conveniente",
+     "Un'offerta rischiosa",
+     "Un'offerta segreta"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Se aveste firmato a gennaio, ora _____ uno sconto maggiore.”",
+    "options": [
+     "avrete",
+     "aveste",
+     "avreste",
+     "abbiate"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Il cliente chiede tempi più brevi. Proponi una soluzione con delle condizioni.",
+    "start": "Potremmo accorciare i tempi, a condizione che…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “Prendere o lasciare”?",
+    "options": [
+     "Puoi prenderne quanti vuoi",
+     "Puoi pagare dopo",
+     "C'è uno sconto",
+     "Non c'è margine di trattativa"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Non firmeremo nulla senza che il nostro avvocato _____ il contratto.”",
+    "options": [
+     "ha letto",
+     "abbia letto",
+     "avrà letto",
+     "avrebbe letto"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Proponi a un'altra azienda una collaborazione su un progetto.",
+    "start": "Vi proporrei una collaborazione su…"
+   }
+  ]
+ },
+ "advanced-u8-l2": {
+  "title": "Compromises",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "In una trattativa, che cosa vuol dire “trovare un punto d'incontro”?",
+    "options": [
+     "Trovare un compromesso",
+     "Fissare un appuntamento",
+     "Perdersi in città",
+     "Vincere la discussione"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “fare un passo indietro” in una trattativa?",
+    "options": [
+     "Andare via",
+     "Rinunciare a una parte delle proprie richieste",
+     "Aumentare il prezzo",
+     "Rifiutare tutto"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Va bene, accetto, purché _____ anche le spese di spedizione.”",
+    "options": [
+     "pagate",
+     "paghereste",
+     "paghiate",
+     "pagaste"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “salvare capra e cavoli”?",
+    "options": [
+     "Lavorare in campagna",
+     "Perdere tutto",
+     "Cambiare idea",
+     "Accontentare entrambe le parti"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Se voi abbassaste il prezzo, noi _____ la quantità.”",
+    "options": [
+     "aumenteremmo",
+     "aumentassimo",
+     "aumenteremo",
+     "aumentiamo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Tu e un collega volete le ferie nello stesso periodo. Proponi un compromesso.",
+    "start": "Che ne dici se facciamo così:…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “cedere su un punto”?",
+    "options": [
+     "Vincere su quel punto",
+     "Rimandare la discussione",
+     "Rinunciare a insistere su quel punto",
+     "Cancellare il contratto"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Noi rinunciamo al bonus; in cambio, chiediamo che voi _____ la scadenza.”",
+    "options": [
+     "prolungate",
+     "prolunghiate",
+     "prolunghereste",
+     "prolungaste"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Il cliente vuole uno sconto del 20%; tu puoi arrivare al 10%. Trova una via di mezzo.",
+    "start": "Capisco la sua richiesta. Potremmo venirci incontro con…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “una via di mezzo”?",
+    "options": [
+     "La strada principale",
+     "Un ostacolo",
+     "Una scorciatoia",
+     "Una soluzione intermedia"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Benché non _____ del tutto soddisfatti, abbiamo firmato l'accordo.”",
+    "options": [
+     "siamo",
+     "saremmo",
+     "fossimo",
+     "eravamo"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Il tuo coinquilino vuole un cane, tu no. Proponi un compromesso.",
+    "start": "Senti, potremmo provare così:…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase mostra disponibilità al compromesso?",
+    "options": [
+     "Non cambierò mai idea.",
+     "Sono disposto a rivedere la mia posizione.",
+     "È inutile discutere.",
+     "La mia proposta è definitiva."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Se avessimo ceduto prima, _____ evitare tante discussioni.”",
+    "options": [
+     "potremmo",
+     "avessimo potuto",
+     "abbiamo potuto",
+     "avremmo potuto"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Racconta un compromesso che hai dovuto accettare. Ne è valsa la pena?",
+    "start": "Una volta ho dovuto accettare un compromesso…"
+   }
+  ]
+ },
+ "advanced-u8-l3": {
+  "title": "Persuasion",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quale verbo significa “far cambiare idea a qualcuno con buoni argomenti”?",
+    "options": [
+     "persuadere",
+     "sopportare",
+     "rimandare",
+     "ostacolare"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "In una discussione, che cosa vuol dire “far leva su” un argomento?",
+    "options": [
+     "Ignorarlo",
+     "Criticarlo",
+     "Usarlo come punto di forza per convincere",
+     "Dimenticarlo"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Se provasse il nostro servizio, _____ subito la differenza.”",
+    "options": [
+     "noterà",
+     "noterebbe",
+     "notasse",
+     "avrebbe notato"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase è più persuasiva con un cliente?",
+    "options": [
+     "Faccia come vuole.",
+     "Non so se le conviene.",
+     "È uguale, decida lei.",
+     "Pensi a quanto potrebbe risparmiare ogni mese."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Le conviene decidere prima che l'offerta _____.”",
+    "options": [
+     "scada",
+     "scade",
+     "scadrà",
+     "scadesse"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Convinci un amico a venire in vacanza con te in Sicilia.",
+    "start": "Dai, vieni! Pensa che…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cos'è “un argomento convincente”?",
+    "options": [
+     "Un tema noioso",
+     "Un ragionamento che persuade",
+     "Una lite",
+     "Una domanda difficile"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Se non fosse stato per il suo discorso, non _____ mai il contratto.”",
+    "options": [
+     "firmassimo",
+     "avessimo firmato",
+     "avremmo firmato",
+     "firmiamo"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Convinci il tuo capo a farti lavorare da casa un giorno a settimana.",
+    "start": "Sono convinto che lavorare da casa…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase fa leva sull'urgenza?",
+    "options": [
+     "Si prenda tutto il tempo.",
+     "Ci pensi con calma.",
+     "Non c'è fretta.",
+     "Ultimi posti disponibili!"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Vale la pena che lei _____ almeno una prova gratuita.”",
+    "options": [
+     "fa",
+     "faccia",
+     "farà",
+     "facesse"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Convinci un cliente indeciso a scegliere il vostro prodotto invece di quello della concorrenza.",
+    "start": "A differenza della concorrenza, noi…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “tirare acqua al proprio mulino”?",
+    "options": [
+     "Lavorare in campagna",
+     "Aiutare gli altri",
+     "Fare i propri interessi",
+     "Perdere tempo"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Chiunque _____ il nostro prodotto ne è rimasto soddisfatto.”",
+    "options": [
+     "ha provato",
+     "provasse",
+     "avrà provato",
+     "abbia provato"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Convinci un amico a smettere di fumare, con argomenti forti ma gentili.",
+    "start": "Ti voglio bene, quindi te lo dico:…"
+   }
+  ]
+ },
+ "advanced-u9-l1": {
+  "title": "Formal vs casual workplace language",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quale saluto è adatto all'inizio di un'email formale?",
+    "options": [
+     "Gentile dottoressa Rossi,",
+     "Ciao bella,",
+     "Ehi Rossi!",
+     "Carissima, come va?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale chiusura è adatta a un'email formale?",
+    "options": [
+     "Un abbraccio",
+     "A dopo!",
+     "Cordiali saluti",
+     "Ciaooo"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la versione formale (Lei): “Dimmi quando sei libero.”",
+    "options": [
+     "Mi dici quando è libero.",
+     "Mi dica quando è libero.",
+     "Mi dica quando sei libero.",
+     "Dimmi quando è libero."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase è informale?",
+    "options": [
+     "Resto a disposizione per eventuali chiarimenti.",
+     "La ringrazio per la cortese attenzione.",
+     "In attesa di un Suo riscontro.",
+     "Ci sentiamo dopo, ok?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la parola corretta: “Gentile signora Neri, _____ invio il documento richiesto.”",
+    "options": [
+     "Le",
+     "La",
+     "Ti",
+     "Gli"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Chiedi al tuo capo, usando il Lei, se puoi uscire prima venerdì.",
+    "start": "Mi scusi, volevo chiederle se…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “restare a disposizione” in un'email?",
+    "options": [
+     "Essere in ferie",
+     "Essere pronti ad aiutare se serve",
+     "Non rispondere",
+     "Essere in ritardo"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Dottore, _____ pure, la stavamo aspettando.”",
+    "options": [
+     "accomodati",
+     "si accomoda",
+     "si accomodi",
+     "accomodatevi"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Un collega ti chiede di pranzare insieme. Rispondi in modo informale.",
+    "start": "Certo, volentieri! Ci vediamo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale verbo è un sinonimo più formale di “dare” in “dare informazioni”?",
+    "options": [
+     "passare",
+     "mollare",
+     "buttare",
+     "fornire"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Le sarei grato se _____ rispondermi entro venerdì.”",
+    "options": [
+     "può",
+     "potesse",
+     "potrebbe",
+     "possa"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Lascia un messaggio vocale formale a un cliente per fissare un incontro.",
+    "start": "Buongiorno dottor Bianchi, la chiamo per…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qual è la versione formale di “Non ci ho capito niente”?",
+    "options": [
+     "Boh, non ci ho capito un tubo.",
+     "Che hai detto?",
+     "Non mi è del tutto chiaro.",
+     "Non ci capisco niente."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Correggi l'errore: “Signor Conti, ti ringrazio per la sua email.”",
+    "options": [
+     "Signor Conti, le ringrazio per la sua email.",
+     "Signor Conti, la ringrazio per la sua email.",
+     "Signor Conti, gli ringrazio per la sua email.",
+     "Signor Conti, lo ringrazio per la sua email."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Spiega a un nuovo collega straniero quando usare il tu e quando il Lei in ufficio.",
+    "start": "Di solito, con il capo…"
+   }
+  ]
+ },
+ "advanced-u10-l1": {
+  "title": "Complaints",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “sporgere reclamo”?",
+    "options": [
+     "Presentare una lamentela formale",
+     "Chiedere un'informazione",
+     "Fare un complimento",
+     "Pagare una multa"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase è un reclamo educato?",
+    "options": [
+     "Siete degli incompetenti!",
+     "Mi permetto di segnalarvi un problema con l'ordine.",
+     "Vergognatevi!",
+     "Non comprerò mai più niente da voi!"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Mi aspettavo che il pacco _____ entro lunedì.”",
+    "options": [
+     "arrivi",
+     "arriverà",
+     "arrivasse",
+     "arriva"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “essere risarcito”?",
+    "options": [
+     "Pagare una tassa",
+     "Essere licenziato",
+     "Ricevere una multa",
+     "Ricevere un compenso per un danno"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Se mi _____ avvisato del ritardo, avrei organizzato diversamente.”",
+    "options": [
+     "aveste",
+     "avreste",
+     "avete",
+     "abbiate"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Il tuo ordine online è arrivato danneggiato. Telefona al servizio clienti per lamentarti.",
+    "start": "Buongiorno, la chiamo perché…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “uscire dai gangheri”?",
+    "options": [
+     "Uscire di casa",
+     "Andare in vacanza",
+     "Perdere la calma",
+     "Restare calmo"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “È inaccettabile che nessuno mi _____ ancora risposto.”",
+    "options": [
+     "ha",
+     "abbia",
+     "avrebbe",
+     "avesse"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "In albergo la camera non è quella che hai prenotato. Lamentati con la reception in modo fermo ma cortese.",
+    "start": "Mi scusi, c'è un problema: avevo prenotato…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase usi per chiedere indietro i soldi?",
+    "options": [
+     "Vorrei fare un altro ordine.",
+     "Vorrei lasciare una recensione positiva.",
+     "Vorrei cambiare la password.",
+     "Vorrei essere rimborsato."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Il tecnico _____ venire ieri, ma non si è presentato.”",
+    "options": [
+     "dovrebbe",
+     "dovesse",
+     "sarebbe dovuto",
+     "avesse dovuto"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Al ristorante il tuo piatto è freddo. Fallo notare al cameriere con gentilezza.",
+    "start": "Mi scusi, mi dispiace dirlo, ma…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “la goccia che ha fatto traboccare il vaso”?",
+    "options": [
+     "Un piccolo incidente in cucina",
+     "L'ultimo problema, che fa perdere la pazienza",
+     "Una buona notizia",
+     "Un problema già risolto"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Vi scrivo affinché il problema non si _____ più.”",
+    "options": [
+     "ripete",
+     "ripeterà",
+     "ripetesse",
+     "ripeta"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Fai un reclamo formale per un treno arrivato con tre ore di ritardo.",
+    "start": "Spettabile azienda, vi scrivo per segnalare…"
+   }
+  ]
+ },
+ "advanced-u10-l2": {
+  "title": "Disagreements",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quale frase esprime disaccordo in modo diplomatico?",
+    "options": [
+     "La vedo in modo un po' diverso.",
+     "Ma che dici?",
+     "È una sciocchezza.",
+     "Ti sbagli di grosso."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “essere ai ferri corti”?",
+    "options": [
+     "Essere molto amici",
+     "Lavorare in officina",
+     "Essere in forte contrasto",
+     "Avere pochi soldi"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Non è che io non _____ d'accordo, ma ho qualche dubbio.”",
+    "options": [
+     "sono",
+     "sia",
+     "sarei",
+     "essendo"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “Su questo non ci piove”?",
+    "options": [
+     "Domani farà bel tempo",
+     "Non sono sicuro",
+     "Non mi interessa",
+     "È assolutamente certo"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la parola corretta: “Capisco il tuo punto di vista, _____ non lo condivido.”",
+    "options": [
+     "pur",
+     "anche se",
+     "nonostante",
+     "benché"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Un collega dice che le riunioni sono una perdita di tempo. Esprimi un parere diverso con garbo.",
+    "start": "Capisco cosa intendi, però…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “Non sono del tutto convinto”?",
+    "options": [
+     "Sono completamente d'accordo",
+     "Sono molto stanco",
+     "Ho dei dubbi",
+     "Non ho capito la domanda"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la parola corretta: “_____ rispettando la tua opinione, la penso diversamente.”",
+    "options": [
+     "Sebbene",
+     "Pur",
+     "Benché",
+     "Malgrado"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Un amico pensa che il calcio sia lo sport più bello. Tu non sei d'accordo: spiega perché.",
+    "start": "Sarà, ma secondo me…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase NON esprime disaccordo?",
+    "options": [
+     "Mi permetto di dissentire.",
+     "Non la vedo così.",
+     "Su questo non mi trovi d'accordo.",
+     "Sono pienamente d'accordo."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Due anni fa mi disse che non _____ d'accordo con quel progetto.”",
+    "options": [
+     "sarà",
+     "sia",
+     "sarebbe stato",
+     "fosse"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "In riunione non sei d'accordo con la proposta del capo. Esprimi il tuo dissenso con rispetto.",
+    "start": "Con tutto il rispetto, avrei qualche perplessità su…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “Lasciamo perdere”?",
+    "options": [
+     "Andiamo via subito",
+     "Smettiamo di parlarne",
+     "Abbiamo perso la partita",
+     "Cerchiamo l'oggetto perso"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Non cambierò idea, a meno che tu non mi _____ prove concrete.”",
+    "options": [
+     "dai",
+     "daresti",
+     "dessi",
+     "dia"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "È meglio dire sempre la verità o a volte è meglio tacere? Difendi la tua opinione.",
+    "start": "Personalmente ritengo che…"
+   }
+  ]
+ },
+ "advanced-u10-l3": {
+  "title": "Misunderstandings",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “fraintendere”?",
+    "options": [
+     "Capire male",
+     "Non sentire",
+     "Parlare troppo",
+     "Dimenticare"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase usi per chiarire un malinteso?",
+    "options": [
+     "Hai capito male, come sempre.",
+     "Non è colpa mia.",
+     "Forse mi sono spiegato male: intendevo…",
+     "Non lo ripeto."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Pensavo che _____ detto venerdì, non sabato!”",
+    "options": [
+     "hai",
+     "avessi",
+     "avresti",
+     "abbia"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “prendere fischi per fiaschi”?",
+    "options": [
+     "Bere troppo vino",
+     "Fischiare forte",
+     "Rompere qualcosa",
+     "Capire una cosa per un'altra"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Mi sa che non ci _____ capiti.”",
+    "options": [
+     "siamo",
+     "abbiamo",
+     "siamo stati",
+     "avremo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Hai capito male l'orario di un appuntamento e sei arrivato tardi. Scusati e spiega il malinteso.",
+    "start": "Scusami tanto, avevo capito che…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale parola è un sinonimo di “malinteso”?",
+    "options": [
+     "accordo",
+     "ritardo",
+     "equivoco",
+     "riassunto"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Mi aveva detto che _____ alle otto, ma è arrivato alle dieci.”",
+    "options": [
+     "arriverebbe",
+     "sarebbe arrivato",
+     "arrivasse",
+     "arriverà"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Un collega ha frainteso una tua email e si è offeso. Chiarisci con calma.",
+    "start": "Guarda, credo ci sia stato un malinteso…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase usi per verificare di aver capito bene?",
+    "options": [
+     "Non mi interessa.",
+     "Va' avanti tu.",
+     "Ne parliamo un'altra volta.",
+     "Se ho capito bene, intendi dire che…"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Se io mi _____ spiegato meglio, non ci sarebbe stato questo equivoco.”",
+    "options": [
+     "avessi",
+     "sarei",
+     "fossi",
+     "avrei"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Hai fatto una battuta che un amico ha preso male. Spiega che cosa intendevi.",
+    "start": "Non volevo dire che… Intendevo solo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “Non mettermi in bocca parole che non ho detto”?",
+    "options": [
+     "Non darmi da mangiare",
+     "Non attribuirmi cose che non ho detto",
+     "Parla più piano",
+     "Non interrompermi"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Correggi l'errore: “Credevo che tu dicevi un'altra cosa.”",
+    "options": [
+     "Credevo che tu dica un'altra cosa.",
+     "Credevo che tu diresti un'altra cosa.",
+     "Credevo che tu dicendo un'altra cosa.",
+     "Credevo che tu dicessi un'altra cosa."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Racconta un malinteso divertente che ti è capitato parlando una lingua straniera.",
+    "start": "Una volta, per un malinteso,…"
+   }
+  ]
+ },
+ "advanced-u11-l1": {
+  "title": "Casual expressions",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “Che figata!”?",
+    "options": [
+     "Che cosa fantastica!",
+     "Che peccato!",
+     "Che noia!",
+     "Che paura!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “Sono a pezzi”?",
+    "options": [
+     "Sono felicissimo",
+     "Ho rotto qualcosa",
+     "Sono stanchissimo",
+     "Ho fame"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la parola corretta: “Non è _____ facile come sembra!”",
+    "options": [
+     "magari",
+     "mica",
+     "pure",
+     "manco"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “dare buca” a qualcuno?",
+    "options": [
+     "Fargli un regalo",
+     "Prestargli dei soldi",
+     "Dargli un passaggio",
+     "Non presentarsi a un appuntamento con lui"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Che fatica, ma alla fine _____!”",
+    "options": [
+     "ce l'abbiamo fatta",
+     "ce l'abbiamo fatto",
+     "ce lo abbiamo fatto",
+     "ci l'abbiamo fatta"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Racconta a un amico, in modo informale, una serata pazzesca.",
+    "start": "Ma sai che ieri sera…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “sclerare” nel linguaggio giovanile?",
+    "options": [
+     "Dormire tanto",
+     "Studiare molto",
+     "Perdere la pazienza",
+     "Uscire con gli amici"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Non ne posso più: me ne _____!”",
+    "options": [
+     "vada",
+     "vado",
+     "va",
+     "andando"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Un amico ti propone una cosa che ti piace tantissimo. Rispondi con entusiasmo.",
+    "start": "Ma certo, ci sto!…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "In una chiacchierata, che cosa vuol dire “Ci sta!” come commento a una scelta?",
+    "options": [
+     "C'è troppo poco spazio",
+     "È appena arrivato",
+     "Non mi piace per niente",
+     "Ha senso, va bene"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Tranquillo, non te la _____!”",
+    "options": [
+     "prendi",
+     "presa",
+     "prendere",
+     "prendo"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Lamentati del traffico con un amico, in modo scherzoso e informale.",
+    "start": "Che strazio, oggi…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “un sacco” in “Mi piace un sacco”?",
+    "options": [
+     "Poco",
+     "Moltissimo",
+     "Per niente",
+     "Ogni tanto"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la parola corretta: “Ma quanto ci _____ per arrivare? Siamo in ritardo!”",
+    "options": [
+     "vuoi",
+     "fai",
+     "stai",
+     "metti"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Racconta in modo colloquiale una figuraccia che hai fatto.",
+    "start": "Non ci crederai, ho fatto una figuraccia…"
+   }
+  ]
+ },
+ "advanced-u11-l2": {
+  "title": "Jokes",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Che cos'è una “barzelletta”?",
+    "options": [
+     "Una breve storia comica",
+     "Una canzone triste",
+     "Un dolce tipico",
+     "Un gioco di carte"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “prendere in giro” qualcuno?",
+    "options": [
+     "Portarlo a fare un giro",
+     "Scherzare su di lui",
+     "Aiutarlo",
+     "Ignorarlo"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Ridevamo come se non _____ un domani.”",
+    "options": [
+     "c'è",
+     "ci sarebbe",
+     "ci fosse",
+     "ci sia"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cos'è la “battuta finale” di una barzelletta?",
+    "options": [
+     "Il titolo",
+     "Il primo personaggio",
+     "La pausa iniziale",
+     "La frase che fa ridere alla fine"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Stavo scherzando! Non pensavo che te la _____.”",
+    "options": [
+     "prendessi",
+     "prendi",
+     "prenderesti",
+     "prenda"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Racconta una barzelletta che conosci o una situazione buffa.",
+    "start": "Sai quella di…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “morire dal ridere”?",
+    "options": [
+     "Avere paura",
+     "Stare male",
+     "Ridere tantissimo",
+     "Ridere poco"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Se la barzelletta fosse stata più corta, _____ di più.”",
+    "options": [
+     "ridessimo",
+     "avremmo riso",
+     "avessimo riso",
+     "ridiamo"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Parla di una persona che ti fa sempre ridere e spiega perché.",
+    "start": "C'è una persona che mi fa morire dal ridere:…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “una battuta squallida”?",
+    "options": [
+     "Una battuta molto intelligente",
+     "Una battuta lunga",
+     "Una battuta in dialetto",
+     "Una battuta di cattivo gusto o che non fa ridere"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Mi ha fatto _____ così tanto che piangevo.”",
+    "options": [
+     "riso",
+     "ridendo",
+     "ridere",
+     "rida"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Un amico ti ha fatto uno scherzo che non ti è piaciuto. Diglielo con ironia.",
+    "start": "Ah, molto divertente, davvero…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “Non ho colto la battuta”?",
+    "options": [
+     "Non ho preso la palla",
+     "Non ho capito lo scherzo",
+     "Non ho sentito il telefono",
+     "Non ho fatto in tempo"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Completa il proverbio: “Chi _____ ultimo ride meglio.”",
+    "options": [
+     "rida",
+     "riderebbe",
+     "ridesse",
+     "ride"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Secondo te, su che cosa non si dovrebbe mai scherzare? Spiega perché.",
+    "start": "Secondo me non si dovrebbe scherzare su…"
+   }
+  ]
+ },
+ "advanced-u11-l3": {
+  "title": "Conversational tone",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quale frase ha un tono amichevole?",
+    "options": [
+     "Dai, raccontami com'è andata!",
+     "Riferisca l'esito.",
+     "Comunichi i risultati.",
+     "Si attenga ai fatti."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “alla mano” riferito a una persona?",
+    "options": [
+     "Molto ricca",
+     "Sempre occupata",
+     "Semplice e cordiale",
+     "Antipatica"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “_____ un po', come va con il nuovo lavoro?”",
+    "options": [
+     "Dici",
+     "Dimmi",
+     "Dimmici",
+     "Dirmi"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “rompere il ghiaccio”?",
+    "options": [
+     "Rompere un bicchiere",
+     "Litigare",
+     "Andare a pattinare",
+     "Superare l'imbarazzo iniziale"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Le dispiace se _____ del tu?” “Ma figuriamoci!”",
+    "options": [
+     "ci diamo",
+     "ci diano",
+     "ci daremmo",
+     "darci"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Incontri un vicino in ascensore. Fai due chiacchiere con un tono rilassato.",
+    "start": "Ciao! Che caldo oggi, eh?…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase suona troppo formale tra amici?",
+    "options": [
+     "Ti va un caffè?",
+     "Prendiamo un caffè?",
+     "Gradiresti un caffè?",
+     "Caffè?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Ma dai, non _____ così formale con me!”",
+    "options": [
+     "sii",
+     "essere",
+     "sei",
+     "sia"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Un amico ti ha mandato un messaggio vocale. Rispondigli con tono affettuoso e scherzoso.",
+    "start": "Ehi, ciao! Allora, che combini?…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “Che combini?” tra amici?",
+    "options": [
+     "Dove sei nato?",
+     "Quanto costa?",
+     "Che cosa hai rotto?",
+     "Che fai di bello?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Ti chiamo appena _____ a casa, così parliamo con calma.”",
+    "options": [
+     "arrivato",
+     "arrivo",
+     "arrivassi",
+     "sarei arrivato"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Racconta a un'amica una notizia divertente con un tono vivace.",
+    "start": "Senti questa, ti faccio morire:…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “fare due chiacchiere”?",
+    "options": [
+     "Litigare",
+     "Parlare un po' in modo rilassato",
+     "Fare un discorso ufficiale",
+     "Telefonare due volte"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Mi raccomando, _____ quando arrivi!”",
+    "options": [
+     "fatti sentito",
+     "farti sentire",
+     "fatti sentire",
+     "fattisi sentire"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Spiega la differenza tra come parli con i tuoi amici e come parli con il tuo capo.",
+    "start": "Con i miei amici sono molto più…"
+   }
+  ]
+ },
+ "advanced-u12-l1": {
+  "title": "Unscripted, longer conversations across situations",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “tornando a noi…” in una conversazione?",
+    "options": [
+     "Ritornando all'argomento principale",
+     "Ritornando a casa",
+     "Parlando di altre persone",
+     "Ricominciando da zero"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase usi per prendere tempo prima di rispondere a una domanda difficile?",
+    "options": [
+     "Assolutamente sì.",
+     "Esatto, proprio così.",
+     "Bella domanda… fammi pensare.",
+     "Non ne ho idea, ciao."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Se fossi in te, _____ con il direttore prima di decidere.”",
+    "options": [
+     "parlassi",
+     "parlerei",
+     "parlerò",
+     "avessi parlato"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "A che cosa serve “Non vorrei sembrarti indiscreto, ma…”?",
+    "options": [
+     "A chiudere la conversazione",
+     "A esprimere rabbia",
+     "A chiedere un prestito",
+     "A introdurre una domanda personale"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Discorso indiretto: Luca mi chiese: “Verrai?” → Luca mi chiese se _____.",
+    "options": [
+     "sarei venuto",
+     "verrò",
+     "verrai",
+     "venga"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "A una cena non conosci nessuno. Presentati e avvia una conversazione con il vicino di tavolo.",
+    "start": "Piacere, io sono un amico di Marta. E tu, come…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase usi per cambiare argomento con naturalezza?",
+    "options": [
+     "Ripeti, per favore.",
+     "Stai zitto un attimo.",
+     "Cambiando discorso, hai poi visto Anna?",
+     "Fine della discussione."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Mi pare che l'anno scorso tu _____ in Giappone, giusto?”",
+    "options": [
+     "abbia stato",
+     "sia stato",
+     "avessi stato",
+     "saresti stato"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Al bar un turista ti chiede che cosa vedere nella tua città. Dagli consigli dettagliati.",
+    "start": "Allora, se fossi in te, comincerei da…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Che cosa vuol dire “Non so se mi spiego”?",
+    "options": [
+     "Non so parlare",
+     "Non ho voglia di parlare",
+     "Parlo troppo",
+     "Hai capito che cosa intendo?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Non risponde al telefono: _____ ancora in riunione.”",
+    "options": [
+     "sia",
+     "fosse",
+     "sarà",
+     "sarebbe"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Chiami un ufficio per un problema con una bolletta. Spiega la situazione e chiedi una soluzione.",
+    "start": "Buongiorno, la chiamo perché nell'ultima bolletta…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quale frase usi per chiudere una lunga conversazione senza sembrare scortese?",
+    "options": [
+     "Basta, me ne vado.",
+     "Scusa, adesso devo proprio scappare, ma ci sentiamo presto!",
+     "Non ti sopporto più.",
+     "Mi annoi."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Scegli la forma corretta: “Quella sera conobbi la persona più simpatica che _____ mai incontrato fino ad allora.”",
+    "options": [
+     "abbia",
+     "avrei",
+     "ho",
+     "avessi"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Racconta a un amico un cambiamento importante della tua vita e come ti ha cambiato.",
+    "start": "Sai, qualche anno fa ho deciso di…"
+   }
+  ]
+ }
+}

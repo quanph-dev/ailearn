@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="splash_loading">Web Browser wird gestartet...</string>
+    <string name="cd_back">Zurück</string>
+    <string name="language_title">Sprache</string>
+    <string name="language_confirm">Bestätigen</string>
+    <string name="onboarding_next">Weiter</string>
+    <string name="onboarding_start">Starten</string>
+    <string name="onboarding_title_1">Entdecke den Web Browser</string>
+    <string name="onboarding_subtitle_1">Schalte eine Welt voller exklusiver Gegenstände, Charaktere, Waffen, Haustiere und Belohnungen in einem actiongeladenen Spielerlebnis frei.</string>
+    <string name="onboarding_title_2">Rüste dich nach deinen Wünschen aus</string>
+    <string name="onboarding_subtitle_2">Wähle Charaktere, hole dir mächtige Waffen, begleite Haustiere und erschaffe deinen eigenen Stil für jeden Kampf.</string>
+    <string name="onboarding_title_3">Glücksrad, seltene Belohnungen</string>
+    <string name="onboarding_subtitle_3">Versuche dein Glück beim Lucky Spin, um täglich Diamanten, Waffen-Skins, Haustiere, Charaktere und viele wertvolle Belohnungen zu erhalten.</string>
+    <string name="settings_general_language">Sprache</string>
+    <string name="language_save_error">Deine Auswahl konnte nicht gespeichert werden. Bitte versuche es erneut.</string>
+    <string name="home_welcome">Willkommen</string>
+    <string name="home_description">Wähle eine Sprache oder sieh dir deine Einstellungen an.</string>
+    <string name="network_offline_title">Keine Internetverbindung</string>
+    <string name="network_offline_message">Stelle eine Internetverbindung her, um die App weiter zu nutzen.</string>
+    <string name="network_try_again">Erneut versuchen</string>
+    <string name="ui_exit_the_app">App verlassen</string>
+    <string name="ui_are_you_sure_you_want_to_exit_the_app_now">Möchtest du die App jetzt wirklich verlassen?</string>
+    <string name="ui_no">Nein</string>
+    <string name="ui_yes_exit">Ja, verlassen</string>
+</resources>

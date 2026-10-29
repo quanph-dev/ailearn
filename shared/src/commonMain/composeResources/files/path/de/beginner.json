@@ -1,0 +1,5842 @@
+{
+ "beginner-u1-l1": {
+  "title": "Hello",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Es ist 8 Uhr morgens. Was sagst du?",
+    "options": [
+     "Gute Nacht!",
+     "Guten Morgen!",
+     "Tschüss!",
+     "Danke!"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort ist KEINE Begrüßung?",
+    "options": [
+     "Hallo",
+     "Servus",
+     "Danke",
+     "Grüß Gott"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie _____ es dir?“",
+    "options": [
+     "geht",
+     "gehst",
+     "gehe",
+     "gehen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Es ist 20 Uhr. Du besuchst eine Freundin. Du sagst:",
+    "options": [
+     "Guten Morgen!",
+     "Gute Nacht!",
+     "Guten Appetit!",
+     "Guten Abend!"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Guten Tag, Frau Müller! Wie geht es _____?“",
+    "options": [
+     "dir",
+     "Ihnen",
+     "euch",
+     "dich"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Begrüße eine neue Mitschülerin und frag, wie es ihr geht.",
+    "start": "Hallo! Wie…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was sagst du, wenn du jemanden zum ersten Mal triffst?",
+    "options": [
+     "Bis später!",
+     "Gute Nacht!",
+     "Freut mich!",
+     "Entschuldigung!"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Anna, das _____ mein Freund Omar.“",
+    "options": [
+     "bin",
+     "bist",
+     "sind",
+     "ist"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Ein Freund besucht dich zu Hause. Wie begrüßt du ihn?",
+    "start": "Hallo! Komm rein, schön, dass…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was sagst du zu einem Gast an deiner Tür?",
+    "options": [
+     "Herzlich willkommen!",
+     "Auf Wiedersehen!",
+     "Gute Besserung!",
+     "Schlaf gut!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Mir geht es gut. Und _____?“",
+    "options": [
+     "dich",
+     "dir",
+     "dein",
+     "deiner"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Wie begrüßt du deinen Lehrer? Und einen Freund?",
+    "start": "Zu meinem Lehrer sage ich „Guten Morgen“ und zu meinem Freund…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ergänze: „Wie geht's?“ – „Danke, _____!“",
+    "options": [
+     "hallo",
+     "gut",
+     "tschüss",
+     "bitte"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die Frage mit der richtigen Wortstellung:",
+    "options": [
+     "Wie es geht dir?",
+     "Es wie geht dir?",
+     "Wie geht es dir?",
+     "Geht wie es dir?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Sag einem Freund Hallo und erzähl, wie es dir heute geht.",
+    "start": "Hallo! Heute geht es mir…"
+   }
+  ]
+ },
+ "beginner-u1-l2": {
+  "title": "Goodbye",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Du gehst nach Hause. Was sagst du zu deinen Freunden?",
+    "options": [
+     "Guten Morgen!",
+     "Tschüss!",
+     "Hallo!",
+     "Willkommen!"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welche Verabschiedung ist formell?",
+    "options": [
+     "Auf Wiedersehen!",
+     "Tschüss!",
+     "Ciao!",
+     "Bis dann!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich _____ jetzt leider gehen.“",
+    "options": [
+     "müssen",
+     "musst",
+     "muss",
+     "müsst"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Es ist spät und du gehst ins Bett. Du sagst:",
+    "options": [
+     "Guten Tag!",
+     "Guten Abend!",
+     "Guten Appetit!",
+     "Gute Nacht!"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wir _____ uns morgen.“",
+    "options": [
+     "sieht",
+     "sehen",
+     "seht",
+     "siehst"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Verabschiede dich nach dem Unterricht von deinen Mitschülern.",
+    "start": "Tschüss! Bis…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ergänze: „Bis _____! Wir sehen uns in zehn Minuten.“",
+    "options": [
+     "nächstes Jahr",
+     "Montag",
+     "gleich",
+     "Sommer"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich wünsche _____ einen schönen Tag!“",
+    "options": [
+     "du",
+     "dir",
+     "dich",
+     "dein"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Du gehst nach einer Party nach Hause. Was sagst du zum Gastgeber?",
+    "start": "Danke für den Abend! Ich…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Am Freitag sagst du zu deinen Kollegen: „Schönes _____!“",
+    "options": [
+     "Frühstück",
+     "Zimmer",
+     "Fenster",
+     "Wochenende"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den Satz mit der richtigen Wortstellung:",
+    "options": [
+     "Morgen ich komme wieder.",
+     "Morgen komme ich wieder.",
+     "Morgen wieder ich komme.",
+     "Ich morgen komme wieder."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Wie verabschiedest du dich von deiner Chefin? Und von einem Freund?",
+    "start": "Zu meiner Chefin sage ich „Auf Wiedersehen“ und zu meinem Freund…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ein Freund ist krank. Was sagst du beim Abschied?",
+    "options": [
+     "Guten Appetit!",
+     "Herzlichen Glückwunsch!",
+     "Gute Besserung!",
+     "Gute Reise!"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wann _____ du wieder nach Berlin?“",
+    "options": [
+     "kommst",
+     "kommt",
+     "komme",
+     "kommen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Deine Freundin fliegt morgen in den Urlaub. Verabschiede dich von ihr.",
+    "start": "Tschüss und gute…"
+   }
+  ]
+ },
+ "beginner-u1-l3": {
+  "title": "Name",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wie fragst du nach dem Namen?",
+    "options": [
+     "Wie heißt du?",
+     "Wie alt bist du?",
+     "Wo wohnst du?",
+     "Wie geht's?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Anna Schmidt: „Schmidt“ ist der …",
+    "options": [
+     "Vorname",
+     "Spitzname",
+     "Straßenname",
+     "Nachname"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich _____ Lukas.“",
+    "options": [
+     "heiße",
+     "heißt",
+     "heißen",
+     "heiß"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Anna Schmidt: „Anna“ ist der …",
+    "options": [
+     "Nachname",
+     "Vorname",
+     "Familienname",
+     "Wohnort"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie _____ Sie?“",
+    "options": [
+     "heißt",
+     "heiße",
+     "heißen",
+     "heißest"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Stell dich einer neuen Kollegin vor. Sag deinen Vor- und Nachnamen.",
+    "start": "Hallo, ich heiße… Mein Nachname ist…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie fragst du höflich nach dem Namen?",
+    "options": [
+     "Wer bist du denn?",
+     "Was machst du?",
+     "Wie ist Ihr Name?",
+     "Wo ist dein Name?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Das ist meine Freundin. _____ Name ist Lea.“",
+    "options": [
+     "Sein",
+     "Ihr",
+     "Dein",
+     "Mein"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Frag eine neue Mitschülerin nach ihrem Namen und sag deinen Namen.",
+    "start": "Hallo! Wie heißt du? Ich…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Du hast den Namen nicht gehört. Was sagst du?",
+    "options": [
+     "Wie spät ist es?",
+     "Woher kommst du?",
+     "Wie alt sind Sie?",
+     "Wie bitte?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Heißt du Paul?“ – „Nein, ich heiße _____ Paul, ich heiße Peter.“",
+    "options": [
+     "kein",
+     "keine",
+     "nein",
+     "nicht"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Buchstabiere deinen Namen auf Deutsch.",
+    "start": "Mein Name ist… Man schreibt das…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Du willst wissen, wie man einen Namen schreibt. Du fragst:",
+    "options": [
+     "Wie heißt das?",
+     "Wie schreibt man das?",
+     "Wo ist das?",
+     "Wie viel kostet das?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Fragewort: „_____ ist das?“ – „Das ist Frau Klein.“",
+    "options": [
+     "Was",
+     "Wer",
+     "Wo",
+     "Wie"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Stell deinen besten Freund oder deine beste Freundin vor.",
+    "start": "Das ist mein bester Freund. Er heißt…"
+   }
+  ]
+ },
+ "beginner-u1-l4": {
+  "title": "Age",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wie fragst du nach dem Alter?",
+    "options": [
+     "Wie heißt du?",
+     "Wie alt bist du?",
+     "Wo wohnst du?",
+     "Wie spät ist es?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie schreibt man 20?",
+    "options": [
+     "zwölf",
+     "zweihundert",
+     "zweiundzwanzig",
+     "zwanzig"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Lena _____ 18 Jahre alt.“",
+    "options": [
+     "bin",
+     "bist",
+     "ist",
+     "sind"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ein Mensch zwischen 13 und 17 Jahren ist …",
+    "options": [
+     "ein Baby",
+     "ein Rentner",
+     "ein Jugendlicher",
+     "ein Opa"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie alt _____ deine Eltern?“",
+    "options": [
+     "sind",
+     "ist",
+     "bist",
+     "seid"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Wie alt bist du? Und wie alt ist deine Mutter oder dein Vater?",
+    "start": "Ich bin… Jahre alt. Meine Mutter…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie schreibt man 37?",
+    "options": [
+     "siebenunddreißig",
+     "dreiundsiebzig",
+     "siebzehn",
+     "dreißig"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Mein Bruder ist zehn _____ alt.“",
+    "options": [
+     "Jahr",
+     "Jahren",
+     "Jahre",
+     "Jahres"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Frag eine neue Freundin nach ihrem Alter und sag dein Alter.",
+    "start": "Wie alt bist du? Ich bin…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Heute bist du ein Jahr älter. Du hast …",
+    "options": [
+     "Urlaub",
+     "Hunger",
+     "Feierabend",
+     "Geburtstag"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Korrigiere den Fehler: „Ich habe 30 Jahre.“",
+    "options": [
+     "Ich habe 30 Jahre alt.",
+     "Ich bin 30 Jahre alt.",
+     "Ich bin 30 Jahr alt.",
+     "Ich habe 30 Jahren."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Hast du Geschwister? Wie alt sind sie?",
+    "start": "Mein Bruder ist… und meine Schwester…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Mein Opa ist alt, aber mein Cousin ist noch …",
+    "options": [
+     "kurz",
+     "leer",
+     "jung",
+     "billig"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wann hast _____ Geburtstag?“",
+    "options": [
+     "du",
+     "dich",
+     "dir",
+     "dein"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Wann hast du Geburtstag und wie alt wirst du?",
+    "start": "Ich habe im… Geburtstag. Ich werde…"
+   }
+  ]
+ },
+ "beginner-u1-l5": {
+  "title": "Country",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wie fragst du, aus welchem Land jemand kommt?",
+    "options": [
+     "Woher kommst du?",
+     "Wohin gehst du?",
+     "Wo bist du?",
+     "Wie heißt du?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Die Hauptstadt von Deutschland ist …",
+    "options": [
+     "München",
+     "Hamburg",
+     "Berlin",
+     "Wien"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich komme _____ Spanien.“",
+    "options": [
+     "in",
+     "aus",
+     "nach",
+     "von"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ein Mann aus Italien ist ein …",
+    "options": [
+     "Italien",
+     "Italienisch",
+     "Italienerin",
+     "Italiener"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich komme aus _____ Türkei.“",
+    "options": [
+     "der",
+     "die",
+     "dem",
+     "den"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Woher kommst du und wo wohnst du jetzt?",
+    "start": "Ich komme aus… und wohne jetzt in…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "In Österreich spricht man …",
+    "options": [
+     "Französisch",
+     "Deutsch",
+     "Italienisch",
+     "Englisch"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Woher _____ ihr?“",
+    "options": [
+     "kommst",
+     "kommt",
+     "komme",
+     "kommen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Welche Sprachen sprichst du?",
+    "start": "Ich spreche… und ein bisschen…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Eine Frau aus Frankreich ist eine …",
+    "options": [
+     "Französin",
+     "Franzose",
+     "Frankreich",
+     "Französisch"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Er _____ Englisch und Deutsch.“",
+    "options": [
+     "spreche",
+     "sprichst",
+     "spricht",
+     "sprechen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Welches Land möchtest du besuchen? Warum?",
+    "start": "Ich möchte… besuchen, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wien ist die Hauptstadt von …",
+    "options": [
+     "der Schweiz",
+     "Deutschland",
+     "Österreich",
+     "Polen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich wohne _____ Berlin.“",
+    "options": [
+     "aus",
+     "nach",
+     "zu",
+     "in"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähl etwas über dein Land.",
+    "start": "Mein Land heißt… Dort…"
+   }
+  ]
+ },
+ "beginner-u2-l1": {
+  "title": "Personal information",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "„Wo wohnst du?“ Die Antwort ist deine …",
+    "options": [
+     "Telefonnummer",
+     "Adresse",
+     "Größe",
+     "Sprache"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Du unterrichtest in einer Schule. Du bist …",
+    "options": [
+     "Arzt",
+     "Koch",
+     "Fahrer",
+     "Lehrer"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich _____ in Hamburg.“",
+    "options": [
+     "wohne",
+     "wohnst",
+     "wohnt",
+     "wohnen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "„Wo bist du geboren?“ Die Antwort ist dein …",
+    "options": [
+     "Geburtstag",
+     "Geburtsort",
+     "Wohnort",
+     "Arbeitsplatz"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Was _____ du von Beruf?“",
+    "options": [
+     "bin",
+     "bist",
+     "ist",
+     "sind"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Stell dich vor: Name, Wohnort und Beruf.",
+    "start": "Ich heiße… Ich wohne in… und ich bin…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "0176 1234567 ist eine …",
+    "options": [
+     "Hausnummer",
+     "Postleitzahl",
+     "Adresse",
+     "Telefonnummer"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wo _____ Sie?“ – „Ich arbeite bei einer Bank.“",
+    "options": [
+     "arbeiten",
+     "arbeitest",
+     "arbeitet",
+     "arbeite"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Wie ist deine Adresse? Sag die Straße und die Stadt.",
+    "start": "Ich wohne in der… in…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ein Mensch, der an der Universität studiert, ist ein …",
+    "options": [
+     "Lehrer",
+     "Rentner",
+     "Student",
+     "Kellner"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Fragewort: „_____ wohnst du?“ – „In Köln.“",
+    "options": [
+     "Wer",
+     "Was",
+     "Wo",
+     "Wann"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Was machst du beruflich? Wo arbeitest oder lernst du?",
+    "start": "Von Beruf bin ich… Ich arbeite…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ergänze: „Das ist mein Ehemann. Ich bin _____.“",
+    "options": [
+     "verheiratet",
+     "ledig",
+     "allein",
+     "jung"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie ist _____ Telefonnummer, Frau Klein?“",
+    "options": [
+     "deine",
+     "Ihre",
+     "seine",
+     "eure"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Frag einen neuen Kollegen nach seinem Namen, seinem Wohnort und seinem Beruf.",
+    "start": "Wie heißen Sie? Wo…"
+   }
+  ]
+ },
+ "beginner-u2-l2": {
+  "title": "Likes and dislikes",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort ist ein Hobby?",
+    "options": [
+     "Montag",
+     "Schwimmen",
+     "Küche",
+     "Bruder"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Das Gegenteil von „lieben“ ist …",
+    "options": [
+     "kaufen",
+     "spielen",
+     "hassen",
+     "essen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich _____ gern Fußball.“",
+    "options": [
+     "spiele",
+     "spielst",
+     "spielt",
+     "spielen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ergänze: „Ich höre gern _____.“",
+    "options": [
+     "Brot",
+     "Fenster",
+     "Auto",
+     "Musik"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Ich gern lese Bücher.",
+     "Ich lese gern Bücher.",
+     "Gern ich lese Bücher.",
+     "Ich lesen gern Bücher."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was machst du gern in deiner Freizeit?",
+    "start": "In meiner Freizeit…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Fußball, Tennis und Schwimmen sind …",
+    "options": [
+     "Getränke",
+     "Sportarten",
+     "Farben",
+     "Berufe"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Er _____ keine Tomaten.“",
+    "options": [
+     "mag",
+     "magst",
+     "mögen",
+     "mögt"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Welches Essen magst du nicht? Warum?",
+    "start": "Ich mag… nicht, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ich finde das Buch sehr gut. Es ist …",
+    "options": [
+     "langweilig",
+     "schlecht",
+     "toll",
+     "schrecklich"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich trinke _____ Tee, ich mag ihn nicht.“",
+    "options": [
+     "nicht",
+     "kein",
+     "keinen",
+     "keine"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Was macht deine Familie gern am Wochenende?",
+    "start": "Am Wochenende…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Das Gegenteil von „interessant“ ist …",
+    "options": [
+     "lustig",
+     "schön",
+     "neu",
+     "langweilig"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wir _____ am Abend gern fern.“",
+    "options": [
+     "sehen",
+     "sieht",
+     "siehst",
+     "seht"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Was ist dein Lieblingsfilm oder deine Lieblingsmusik?",
+    "start": "Mein Lieblingsfilm ist…"
+   }
+  ]
+ },
+ "beginner-u3-l1": {
+  "title": "Family members",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Die Mutter von deiner Mutter ist deine …",
+    "options": [
+     "Tante",
+     "Schwester",
+     "Großmutter",
+     "Cousine"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Der Bruder von deinem Vater ist dein …",
+    "options": [
+     "Onkel",
+     "Opa",
+     "Cousin",
+     "Neffe"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Das ist _____ Schwester.“",
+    "options": [
+     "mein",
+     "meine",
+     "meinen",
+     "meiner"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Der Sohn von deinem Onkel ist dein …",
+    "options": [
+     "Bruder",
+     "Opa",
+     "Vater",
+     "Cousin"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich habe zwei _____.“",
+    "options": [
+     "Bruder",
+     "Brüder",
+     "Bruders",
+     "Brudern"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Wie groß ist deine Familie? Wer gehört dazu?",
+    "start": "Meine Familie ist… Ich habe…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Mutter und Vater sind die …",
+    "options": [
+     "Geschwister",
+     "Kinder",
+     "Eltern",
+     "Großeltern"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich habe _____ Bruder.“",
+    "options": [
+     "ein",
+     "eine",
+     "einen",
+     "einem"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähl von deiner Mutter oder deinem Vater.",
+    "start": "Meine Mutter heißt… Sie ist…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Brüder und Schwestern sind …",
+    "options": [
+     "Eltern",
+     "Geschwister",
+     "Großeltern",
+     "Nachbarn"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Das ist mein Vater. _____ heißt Thomas.“",
+    "options": [
+     "Sie",
+     "Es",
+     "Ihr",
+     "Er"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Hast du Geschwister? Wie heißen sie?",
+    "start": "Ich habe… Sie heißen…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Die Tochter von deiner Schwester ist deine …",
+    "options": [
+     "Tante",
+     "Nichte",
+     "Cousine",
+     "Oma"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Meine Großeltern _____ in Bayern.“",
+    "options": [
+     "wohnt",
+     "wohnen",
+     "wohnst",
+     "wohne"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Wer ist deine Lieblingsperson in der Familie? Warum?",
+    "start": "Meine Lieblingsperson ist…, weil…"
+   }
+  ]
+ },
+ "beginner-u3-l2": {
+  "title": "Relationships",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Eine Person, die neben dir wohnt, ist dein …",
+    "options": [
+     "Kollege",
+     "Chef",
+     "Nachbar",
+     "Lehrer"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Eine Person, mit der du zusammen arbeitest, ist dein …",
+    "options": [
+     "Kollege",
+     "Nachbar",
+     "Onkel",
+     "Arzt"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Das ist mein Freund. Ich kenne _____ seit fünf Jahren.“",
+    "options": [
+     "er",
+     "ihn",
+     "ihm",
+     "sein"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ein Mann und eine Frau heiraten. Sie sind jetzt ein …",
+    "options": [
+     "Nachbarn",
+     "Kollegen",
+     "Geschwister",
+     "Ehepaar"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Anna und Tom _____ verheiratet.“",
+    "options": [
+     "sind",
+     "ist",
+     "bist",
+     "seid"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähl von deinem besten Freund oder deiner besten Freundin.",
+    "start": "Mein bester Freund heißt… Wir…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Eine Person, die du nicht kennst, ist ein …",
+    "options": [
+     "Freund",
+     "Fremder",
+     "Opa",
+     "Bruder"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wir treffen _____ Freunde am Samstag.“",
+    "options": [
+     "unser",
+     "unsere",
+     "unseren",
+     "unserem"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Wie oft siehst du deine Freunde? Was macht ihr zusammen?",
+    "start": "Ich sehe meine Freunde… Wir…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ergänze: „Ich bin mit Paul verheiratet. Er ist mein _____.“",
+    "options": [
+     "Sohn",
+     "Vater",
+     "Mann",
+     "Bruder"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ihr _____ gute Freunde.“",
+    "options": [
+     "bist",
+     "ist",
+     "sind",
+     "seid"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe deinen Nachbarn oder deine Nachbarin.",
+    "start": "Mein Nachbar ist… Er…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Zwei Menschen streiten nicht mehr. Sie sind wieder …",
+    "options": [
+     "Feinde",
+     "Fremde",
+     "Kollegen",
+     "Freunde"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den Satz mit der richtigen Wortstellung:",
+    "options": [
+     "Am Wochenende ich besuche meine Freunde.",
+     "Am Wochenende meine Freunde ich besuche.",
+     "Am Wochenende besuche ich meine Freunde.",
+     "Besuche am Wochenende ich meine Freunde."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Was ist für dich ein guter Freund?",
+    "start": "Ein guter Freund ist…"
+   }
+  ]
+ },
+ "beginner-u3-l3": {
+  "title": "Describing people",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Das Gegenteil von „groß“ ist …",
+    "options": [
+     "dick",
+     "klein",
+     "alt",
+     "lang"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Er hat keine Haare. Er hat eine …",
+    "options": [
+     "Brille",
+     "Nase",
+     "Mütze",
+     "Glatze"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Sie _____ lange Haare.“",
+    "options": [
+     "ist",
+     "hat",
+     "habt",
+     "sind"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Sie lacht viel und ist immer gut gelaunt. Sie ist …",
+    "options": [
+     "traurig",
+     "müde",
+     "fröhlich",
+     "böse"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Mein Bruder _____ sehr nett.“",
+    "options": [
+     "ist",
+     "hat",
+     "bist",
+     "sind"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe deine Mutter oder deinen Vater.",
+    "start": "Meine Mutter ist… Sie hat…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Er sieht nicht gut. Er trägt eine …",
+    "options": [
+     "Brille",
+     "Glatze",
+     "Uhr",
+     "Jacke"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Lisa hat _____ Augen.“",
+    "options": [
+     "blau",
+     "blaue",
+     "blauen",
+     "blauer"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe deinen besten Freund: Wie sieht er aus?",
+    "start": "Mein bester Freund ist… und hat…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Er spricht nicht viel mit neuen Leuten. Er ist ein bisschen …",
+    "options": [
+     "laut",
+     "schüchtern",
+     "lustig",
+     "frech"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie _____ deine Schwester aus?“",
+    "options": [
+     "siehst",
+     "sehen",
+     "sieht",
+     "seht"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe dich selbst: Wie bist du?",
+    "start": "Ich bin… und ein bisschen…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Das Gegenteil von „dünn“ ist …",
+    "options": [
+     "klein",
+     "jung",
+     "kurz",
+     "dick"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Meine Großeltern sind alt, aber sehr _____.“",
+    "options": [
+     "aktiv",
+     "aktive",
+     "aktiven",
+     "aktiver"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe eine berühmte Person, die du magst.",
+    "start": "Ich mag… Diese Person ist…"
+   }
+  ]
+ },
+ "beginner-u4-l1": {
+  "title": "Numbers",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wie schreibt man 12?",
+    "options": [
+     "zwanzig",
+     "zwölf",
+     "zwei",
+     "elf"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie schreibt man 45?",
+    "options": [
+     "vierundfünfzig",
+     "vierzig",
+     "fünfzehn",
+     "fünfundvierzig"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Plural: „eine Katze – zwei _____“",
+    "options": [
+     "Katze",
+     "Katzen",
+     "Katzes",
+     "Katzer"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie schreibt man 100?",
+    "options": [
+     "tausend",
+     "zehn",
+     "hundert",
+     "zehntausend"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie _____ Kinder hast du?“",
+    "options": [
+     "viel",
+     "viele",
+     "vielen",
+     "vieles"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Zähl von eins bis zehn.",
+    "start": "Eins, zwei, drei…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Sieben plus acht ist …",
+    "options": [
+     "fünfzehn",
+     "sechzehn",
+     "vierzehn",
+     "achtzehn"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Im Kurs sind zwanzig _____.“ (der Student)",
+    "options": [
+     "Student",
+     "Studente",
+     "Students",
+     "Studenten"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Wie ist deine Telefonnummer?",
+    "start": "Meine Nummer ist null…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie schreibt man 1000?",
+    "options": [
+     "hundert",
+     "eintausend",
+     "zehntausend",
+     "eine Million"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ein Jahr hat zwölf _____.“",
+    "options": [
+     "Monaten",
+     "Monat",
+     "Monate",
+     "Monats"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Wie viele Personen wohnen in deiner Wohnung oder in deinem Haus?",
+    "start": "Bei mir wohnen…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Dreißig minus dreizehn ist …",
+    "options": [
+     "siebzig",
+     "siebzehn",
+     "dreizehn",
+     "sieben"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Plural: „ein Buch – zwei _____“",
+    "options": [
+     "Bücher",
+     "Buchs",
+     "Buche",
+     "Büchern"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Was ist deine Lieblingszahl? Warum?",
+    "start": "Meine Lieblingszahl ist…, weil…"
+   }
+  ]
+ },
+ "beginner-u4-l2": {
+  "title": "Dates",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Welcher Monat kommt nach Januar?",
+    "options": [
+     "März",
+     "Februar",
+     "Dezember",
+     "April"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Der letzte Monat im Jahr ist der …",
+    "options": [
+     "Januar",
+     "November",
+     "Dezember",
+     "Oktober"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich habe _____ Mai Geburtstag.“",
+    "options": [
+     "am",
+     "im",
+     "um",
+     "in"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welcher Monat hat nur 28 oder 29 Tage?",
+    "options": [
+     "Juni",
+     "August",
+     "Mai",
+     "Februar"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Heute ist der _____ März.“ (3.)",
+    "options": [
+     "drei",
+     "dritte",
+     "dritten",
+     "dreite"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Wann hast du Geburtstag?",
+    "start": "Mein Geburtstag ist am…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Der erste Tag im Jahr ist der …",
+    "options": [
+     "31. Dezember",
+     "1. Januar",
+     "1. Mai",
+     "1. Juni"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Der Kurs beginnt am _____ Oktober.“ (1.)",
+    "options": [
+     "erste",
+     "erster",
+     "eins",
+     "ersten"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Welches Datum ist heute?",
+    "start": "Heute ist der…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was feiert man am 31. Dezember?",
+    "options": [
+     "Ostern",
+     "Weihnachten",
+     "Silvester",
+     "Karneval"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Fragewort: „_____ hast du Geburtstag?“ – „Im Juni.“",
+    "options": [
+     "Wo",
+     "Wann",
+     "Wer",
+     "Was"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was ist dein Lieblingsmonat? Warum?",
+    "start": "Mein Lieblingsmonat ist…, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Das Datum 14.02. ist der vierzehnte …",
+    "options": [
+     "April",
+     "Januar",
+     "Februar",
+     "Dezember"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Im Sommer _____ wir nach Italien.“",
+    "options": [
+     "fahre",
+     "fährt",
+     "fahren",
+     "fährst"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Welche Feste feierst du gern? Wann sind sie?",
+    "start": "Ich feiere gern… Das ist im…"
+   }
+  ]
+ },
+ "beginner-u4-l3": {
+  "title": "Days",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Welcher Tag kommt nach Montag?",
+    "options": [
+     "Mittwoch",
+     "Dienstag",
+     "Sonntag",
+     "Freitag"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Samstag und Sonntag sind das …",
+    "options": [
+     "Monatsende",
+     "Jahr",
+     "Wochenende",
+     "Frühstück"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich arbeite _____ Montag.“",
+    "options": [
+     "im",
+     "am",
+     "um",
+     "in"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Heute ist Mittwoch. Gestern war …",
+    "options": [
+     "Donnerstag",
+     "Montag",
+     "Freitag",
+     "Dienstag"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den Satz mit der richtigen Wortstellung:",
+    "options": [
+     "Am Freitag gehe ich ins Kino.",
+     "Am Freitag ich gehe ins Kino.",
+     "Ich am Freitag gehe ins Kino.",
+     "Gehe am Freitag ich ins Kino."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Was machst du am Wochenende?",
+    "start": "Am Samstag… und am Sonntag…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Heute ist Freitag. Morgen ist …",
+    "options": [
+     "Donnerstag",
+     "Sonntag",
+     "Samstag",
+     "Montag"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Montags _____ ich ins Fitnessstudio.“",
+    "options": [
+     "geht",
+     "gehst",
+     "gehe",
+     "gehen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Was ist dein Lieblingstag in der Woche? Warum?",
+    "start": "Mein Lieblingstag ist…, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie viele Tage hat eine Woche?",
+    "options": [
+     "sieben",
+     "fünf",
+     "sechs",
+     "acht"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Welcher Tag _____ heute?“",
+    "options": [
+     "bin",
+     "ist",
+     "sind",
+     "bist"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was machst du am Montag?",
+    "start": "Am Montag stehe ich um… auf und…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Der Tag nach heute ist …",
+    "options": [
+     "gestern",
+     "heute",
+     "vorgestern",
+     "morgen"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Der Sonntag ist _____ Lieblingstag.“",
+    "options": [
+     "mein",
+     "meine",
+     "meinen",
+     "meiner"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "An welchen Tagen arbeitest oder lernst du? Wann hast du frei?",
+    "start": "Ich arbeite von Montag bis… Frei habe ich am…"
+   }
+  ]
+ },
+ "beginner-u4-l4": {
+  "title": "Telling time",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Es ist 12:00 Uhr am Tag. Es ist …",
+    "options": [
+     "Mitternacht",
+     "Mittag",
+     "Morgen",
+     "Abend"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Es ist 3:15 Uhr. Es ist Viertel _____ drei.",
+    "options": [
+     "nach",
+     "vor",
+     "halb",
+     "um"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie spät _____ es?“",
+    "options": [
+     "bin",
+     "hat",
+     "ist",
+     "sind"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Es ist 6:30 Uhr. Es ist …",
+    "options": [
+     "halb sechs",
+     "sechs Uhr",
+     "Viertel nach sechs",
+     "halb sieben"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Der Film beginnt _____ 20 Uhr.“",
+    "options": [
+     "um",
+     "am",
+     "im",
+     "in"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Wann isst du zu Abend?",
+    "start": "Zu Abend esse ich um…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Es ist 9:45 Uhr. Es ist …",
+    "options": [
+     "Viertel nach neun",
+     "Viertel vor zehn",
+     "halb zehn",
+     "zehn Uhr"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Um sieben Uhr _____ ich auf.“",
+    "options": [
+     "stehst",
+     "stehe",
+     "steht",
+     "stehen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Wann beginnt deine Arbeit oder deine Schule?",
+    "start": "Meine Arbeit beginnt um…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Es ist 0:00 Uhr. Es ist …",
+    "options": [
+     "Mittag",
+     "Nachmittag",
+     "Mitternacht",
+     "Morgen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Frage:",
+    "options": [
+     "Wie viele Uhr ist es?",
+     "Wie viel Uhr es ist?",
+     "Wie viel ist Uhr es?",
+     "Wie viel Uhr ist es?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Wie spät ist es jetzt? Was machst du gerade?",
+    "start": "Es ist jetzt… und ich…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "60 Minuten sind eine …",
+    "options": [
+     "Woche",
+     "Stunde",
+     "Sekunde",
+     "Minute"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich arbeite von neun _____ fünf Uhr.“",
+    "options": [
+     "zu",
+     "nach",
+     "bis",
+     "um"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe deinen Tag mit drei Uhrzeiten.",
+    "start": "Um sieben Uhr… Um zwölf Uhr…"
+   }
+  ]
+ },
+ "beginner-u5-l1": {
+  "title": "Wake up",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Am Morgen klingelt der …",
+    "options": [
+     "Kühlschrank",
+     "Wecker",
+     "Teller",
+     "Schrank"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Im Bad putze ich mir die …",
+    "options": [
+     "Bücher",
+     "Fenster",
+     "Zähne",
+     "Teller"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Ich aufstehe um sechs Uhr.",
+     "Ich stehe um sechs Uhr auf.",
+     "Ich um sechs Uhr stehe auf.",
+     "Auf ich stehe um sechs Uhr."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Am Morgen esse ich mein …",
+    "options": [
+     "Abendessen",
+     "Mittagessen",
+     "Dessert",
+     "Frühstück"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wann _____ du morgens auf?“",
+    "options": [
+     "stehst",
+     "stehe",
+     "steht",
+     "stehen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Was machst du jeden Morgen nach dem Aufstehen?",
+    "start": "Zuerst… und dann…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ich bin noch nicht richtig wach. Ich bin …",
+    "options": [
+     "hungrig",
+     "müde",
+     "laut",
+     "schnell"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich bin spät dran. Ich beeile _____.“",
+    "options": [
+     "mir",
+     "dich",
+     "mich",
+     "sich"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Wann stehst du am Wochenende auf?",
+    "start": "Am Wochenende stehe ich um…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Morgens trinke ich eine Tasse …",
+    "options": [
+     "Brot",
+     "Käse",
+     "Butter",
+     "Kaffee"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Mein Bruder _____ immer lange.“",
+    "options": [
+     "schläft",
+     "schlafe",
+     "schläfst",
+     "schlafen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Stehst du gern früh auf? Warum oder warum nicht?",
+    "start": "Früh aufstehen finde ich…, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ergänze: „Der Wecker klingelt und ich _____ die Augen auf.“",
+    "options": [
+     "esse",
+     "mache",
+     "trinke",
+     "sage"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Zuerst dusche ich, dann _____ ich.“",
+    "options": [
+     "frühstückst",
+     "frühstückt",
+     "frühstücken",
+     "frühstücke"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe deinen perfekten Morgen.",
+    "start": "An meinem perfekten Morgen stehe ich…"
+   }
+  ]
+ },
+ "beginner-u5-l2": {
+  "title": "Work",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Ein Arzt arbeitet im …",
+    "options": [
+     "Restaurant",
+     "Supermarkt",
+     "Krankenhaus",
+     "Kino"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ein Koch arbeitet in der …",
+    "options": [
+     "Küche",
+     "Schule",
+     "Bank",
+     "Apotheke"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Meine Mutter _____ als Lehrerin.“",
+    "options": [
+     "arbeite",
+     "arbeitest",
+     "arbeitet",
+     "arbeiten"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Die Person, die in der Firma die Arbeit verteilt, ist dein …",
+    "options": [
+     "Kunde",
+     "Chef",
+     "Nachbar",
+     "Schüler"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Was _____ dein Vater von Beruf?“",
+    "options": [
+     "bist",
+     "ist",
+     "sind",
+     "bin"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was machst du beruflich? Wo arbeitest du?",
+    "start": "Ich arbeite als… bei…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Die Arbeit ist für heute zu Ende. Jetzt hast du …",
+    "options": [
+     "Frühstück",
+     "Wecker",
+     "Geburtstag",
+     "Feierabend"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich schreibe _____ E-Mail an den Chef.“",
+    "options": [
+     "einen",
+     "ein",
+     "einem",
+     "eine"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Was machst du an einem normalen Arbeitstag?",
+    "start": "Ich beginne um… Dann…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wer backt und verkauft Brot?",
+    "options": [
+     "der Arzt",
+     "der Bäcker",
+     "der Lehrer",
+     "der Fahrer"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Am Montag _____ wir ein Meeting.“",
+    "options": [
+     "haben",
+     "habt",
+     "hat",
+     "hast"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Wie findest du deine Arbeit? Warum?",
+    "start": "Meine Arbeit ist…, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wo arbeitet man oft mit Computer und Schreibtisch?",
+    "options": [
+     "im Garten",
+     "im Schwimmbad",
+     "im Büro",
+     "im Bett"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Arbeitest du am Wochenende?“ – „Nein, ich arbeite am Wochenende _____.“",
+    "options": [
+     "kein",
+     "nicht",
+     "keine",
+     "nein"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was ist dein Traumberuf? Warum?",
+    "start": "Mein Traumberuf ist…, weil…"
+   }
+  ]
+ },
+ "beginner-u5-l3": {
+  "title": "Study",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Womit schreibst du in dein Heft?",
+    "options": [
+     "mit einem Stift",
+     "mit einem Teller",
+     "mit einem Löffel",
+     "mit einem Schlüssel"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Die Person, die im Kurs unterrichtet, ist der …",
+    "options": [
+     "Schüler",
+     "Kellner",
+     "Lehrer",
+     "Fahrer"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich _____ Deutsch.“",
+    "options": [
+     "lerne",
+     "lernst",
+     "lernt",
+     "lernen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Nach dem Unterricht machst du zu Hause deine …",
+    "options": [
+     "Ferien",
+     "Hausaufgaben",
+     "Wohnung",
+     "Küche"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Mein Freund _____ ein Buch auf Deutsch.“",
+    "options": [
+     "lese",
+     "liest",
+     "lesen",
+     "lest"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Warum lernst du Deutsch?",
+    "start": "Ich lerne Deutsch, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ein Buch mit vielen Wörtern und ihrer Bedeutung ist ein …",
+    "options": [
+     "Kochbuch",
+     "Heft",
+     "Kalender",
+     "Wörterbuch"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ du mir bitte helfen?“",
+    "options": [
+     "Kann",
+     "Können",
+     "Kannst",
+     "Könnt"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Wie lernst du neue Wörter?",
+    "start": "Ich lerne neue Wörter mit…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Du verstehst die Lehrerin nicht. Was sagst du?",
+    "options": [
+     "Gute Nacht!",
+     "Prost!",
+     "Herzlich willkommen!",
+     "Können Sie das bitte wiederholen?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wir _____ heute einen Test.“",
+    "options": [
+     "schreibt",
+     "schreibst",
+     "schreibe",
+     "schreiben"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Was ist dein Lieblingsfach? Warum?",
+    "start": "Mein Lieblingsfach ist…, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Mathe, Deutsch und Biologie sind …",
+    "options": [
+     "Sportarten",
+     "Berufe",
+     "Schulfächer",
+     "Getränke"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den Satz mit der richtigen Wortstellung:",
+    "options": [
+     "Jeden Tag ich lerne zwanzig Wörter.",
+     "Jeden Tag lerne ich zwanzig Wörter.",
+     "Jeden Tag zwanzig Wörter ich lerne.",
+     "Lerne jeden Tag ich zwanzig Wörter."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Wie viele Stunden lernst du pro Woche?",
+    "start": "Pro Woche lerne ich…"
+   }
+  ]
+ },
+ "beginner-u5-l4": {
+  "title": "Sleep",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Zum Schlafen gehst du ins …",
+    "options": [
+     "Bad",
+     "Bett",
+     "Büro",
+     "Kino"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ich habe nicht gut geschlafen. Ich bin …",
+    "options": [
+     "wach",
+     "fit",
+     "müde",
+     "satt"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wann _____ du ins Bett?“",
+    "options": [
+     "gehe",
+     "gehst",
+     "geht",
+     "gehen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Beim Schlafen siehst du Bilder im Kopf. Das ist ein …",
+    "options": [
+     "Film",
+     "Foto",
+     "Brief",
+     "Traum"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Psst! Das Baby _____ schon.“",
+    "options": [
+     "schlafe",
+     "schläfst",
+     "schläft",
+     "schlafen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Wann gehst du normalerweise ins Bett?",
+    "start": "Normalerweise gehe ich um…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was sagst du am Abend zu deiner Familie, bevor du schlafen gehst?",
+    "options": [
+     "Guten Morgen!",
+     "Gute Nacht!",
+     "Guten Appetit!",
+     "Viel Erfolg!"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich _____ nicht schlafen. Es ist zu laut.“",
+    "options": [
+     "kann",
+     "kannst",
+     "können",
+     "könnt"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Wie viele Stunden schläfst du pro Nacht?",
+    "start": "Ich schlafe ungefähr…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Auf dem Bett liegen ein Kissen und eine …",
+    "options": [
+     "Tisch",
+     "Teller",
+     "Lampe",
+     "Decke"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Vor dem Schlafen lese ich _____ Buch.“",
+    "options": [
+     "eine",
+     "einen",
+     "ein",
+     "einer"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Was machst du am Abend vor dem Schlafen?",
+    "start": "Vor dem Schlafen…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Am Morgen klingelt der Wecker und du …",
+    "options": [
+     "schläfst ein",
+     "wachst auf",
+     "gehst ins Bett",
+     "träumst"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Abends _____ ich oft müde.“",
+    "options": [
+     "habe",
+     "ist",
+     "bist",
+     "bin"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Schläfst du gut? Was hilft dir beim Einschlafen?",
+    "start": "Beim Einschlafen hilft mir…"
+   }
+  ]
+ },
+ "beginner-u5-l5": {
+  "title": "Daily activities",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was macht man in der Küche?",
+    "options": [
+     "duschen",
+     "parken",
+     "kochen",
+     "schwimmen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ich wasche meine Kleidung. Ich mache die …",
+    "options": [
+     "Hausaufgaben",
+     "Wäsche",
+     "Tür",
+     "Musik"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Am Nachmittag _____ ich einkaufen.“",
+    "options": [
+     "geht",
+     "gehst",
+     "gehen",
+     "gehe"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Du machst das Bett, putzt das Bad und räumst auf. Du machst den …",
+    "options": [
+     "Urlaub",
+     "Sport",
+     "Haushalt",
+     "Feierabend"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Mein Vater _____ das Abendessen.“",
+    "options": [
+     "koche",
+     "kochst",
+     "kocht",
+     "kochen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Was machst du jeden Tag nach der Arbeit oder nach der Schule?",
+    "start": "Nach der Arbeit…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Du gehst langsam zu Fuß durch den Park. Du gehst …",
+    "options": [
+     "einkaufen",
+     "tanzen",
+     "kochen",
+     "spazieren"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wir _____ jeden Abend zusammen.“",
+    "options": [
+     "isst",
+     "essen",
+     "esst",
+     "esse"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was machst du gern am Abend?",
+    "start": "Am Abend…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ich mache das Zimmer sauber. Ich …",
+    "options": [
+     "koche",
+     "schlafe",
+     "putze",
+     "singe"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Er _____ jeden Tag den Bus.“",
+    "options": [
+     "nehme",
+     "nimmst",
+     "nimmt",
+     "nehmen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Welche Hausarbeit machst du nicht gern?",
+    "start": "Ich mache nicht gern…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ergänze: „Ich _____ meiner Mutter eine Nachricht.“",
+    "options": [
+     "esse",
+     "fahre",
+     "schlafe",
+     "schicke"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Zuerst frühstücke ich, _____ gehe ich zur Arbeit.“",
+    "options": [
+     "aber",
+     "dann",
+     "oder",
+     "weil"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe einen normalen Tag von morgens bis abends.",
+    "start": "Morgens… Mittags… Abends…"
+   }
+  ]
+ },
+ "beginner-u6-l1": {
+  "title": "Common foods",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein Obst?",
+    "options": [
+     "die Kartoffel",
+     "der Apfel",
+     "der Käse",
+     "das Brot"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was trinkt man?",
+    "options": [
+     "Brot",
+     "Reis",
+     "Fleisch",
+     "Saft"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Artikel: „_____ Brot ist frisch.“",
+    "options": [
+     "Der",
+     "Die",
+     "Das",
+     "Den"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Kuchen, Schokolade und Eis sind …",
+    "options": [
+     "salzig",
+     "sauer",
+     "süß",
+     "scharf"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Artikel: „Ich esse _____ Apfel.“",
+    "options": [
+     "den",
+     "der",
+     "die",
+     "das"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Was isst du gern zum Frühstück?",
+    "start": "Zum Frühstück esse ich gern…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Die Kuh gibt …",
+    "options": [
+     "Saft",
+     "Milch",
+     "Wein",
+     "Tee"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Plural: „eine Tomate – drei _____“",
+    "options": [
+     "Tomate",
+     "Tomates",
+     "Tomatern",
+     "Tomaten"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Was isst du oft zu Mittag?",
+    "start": "Zu Mittag esse ich oft…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein Gemüse?",
+    "options": [
+     "die Banane",
+     "die Erdbeere",
+     "die Karotte",
+     "die Orange"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich esse _____ Fleisch, ich mag es nicht.“",
+    "options": [
+     "nicht",
+     "kein",
+     "keine",
+     "keinen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was ist dein Lieblingsessen?",
+    "start": "Mein Lieblingsessen ist…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Aus Kartoffeln macht man …",
+    "options": [
+     "Käse",
+     "Wurst",
+     "Butter",
+     "Pommes"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Der Käse _____ sehr gut.“",
+    "options": [
+     "schmecke",
+     "schmeckst",
+     "schmeckt",
+     "schmecken"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Welches Essen aus deinem Land magst du?",
+    "start": "In meinem Land isst man… Ich mag…"
+   }
+  ]
+ },
+ "beginner-u6-l2": {
+  "title": "Preferences",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Ich esse kein Fleisch und keinen Fisch. Ich bin …",
+    "options": [
+     "Bäcker",
+     "Vegetarier",
+     "Koch",
+     "Kellner"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ergänze: „Ich trinke _____ Kaffee als Tee.“",
+    "options": [
+     "gern",
+     "am liebsten",
+     "lieber",
+     "gut"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ du Fisch?“",
+    "options": [
+     "Magst",
+     "Mag",
+     "Mögen",
+     "Mögt"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Das Essen hat viel Chili. Es ist …",
+    "options": [
+     "süß",
+     "kalt",
+     "leer",
+     "scharf"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Was isst du _____ liebsten?“",
+    "options": [
+     "im",
+     "am",
+     "um",
+     "an"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Trinkst du lieber Kaffee oder Tee? Warum?",
+    "start": "Ich trinke lieber…, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Das Essen schmeckt sehr gut. Es ist …",
+    "options": [
+     "hässlich",
+     "müde",
+     "lecker",
+     "leer"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Meine Kinder _____ Pizza sehr gern.“",
+    "options": [
+     "isst",
+     "esst",
+     "essen",
+     "esse"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Welches Essen magst du gar nicht?",
+    "start": "Ich esse überhaupt nicht gern…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Zitronen schmecken …",
+    "options": [
+     "süß",
+     "salzig",
+     "scharf",
+     "sauer"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich mag _____ Salat nicht.“",
+    "options": [
+     "der",
+     "dem",
+     "des",
+     "den"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Was isst du am Wochenende am liebsten?",
+    "start": "Am Wochenende esse ich am liebsten…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Nach dem großen Essen habe ich keinen Hunger mehr. Ich bin …",
+    "options": [
+     "satt",
+     "hungrig",
+     "sauer",
+     "leer"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich esse gern Obst, _____ ich esse nicht gern Gemüse.“",
+    "options": [
+     "oder",
+     "aber",
+     "weil",
+     "dass"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was isst und trinkst du gern, wenn es heiß ist?",
+    "start": "Wenn es heiß ist, esse ich gern…"
+   }
+  ]
+ },
+ "beginner-u6-l3": {
+  "title": "Ordering basics",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Im Restaurant wählst du dein Essen aus der …",
+    "options": [
+     "Zeitung",
+     "Speisekarte",
+     "Rechnung",
+     "Tasche"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Die Person, die dir im Restaurant das Essen bringt, ist der …",
+    "options": [
+     "Lehrer",
+     "Fahrer",
+     "Kellner",
+     "Arzt"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich _____ einen Kaffee, bitte.“",
+    "options": [
+     "möchtest",
+     "möchten",
+     "möchtet",
+     "möchte"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Am Ende des Essens sagst du: „Die _____, bitte!“",
+    "options": [
+     "Speisekarte",
+     "Rechnung",
+     "Gabel",
+     "Küche"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich möchte _____ Salat und ein Wasser.“",
+    "options": [
+     "ein",
+     "eine",
+     "einen",
+     "einem"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Du bist im Restaurant. Bestell ein Essen und ein Getränk.",
+    "start": "Ich möchte bitte…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Suppe isst man mit einem …",
+    "options": [
+     "Messer",
+     "Glas",
+     "Teller",
+     "Löffel"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die höfliche Frage:",
+    "options": [
+     "Ich zahlen!",
+     "Zahlen ich?",
+     "Kann ich bitte zahlen?",
+     "Du zahlen bitte?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Du kommst mit einem Freund ins Restaurant. Was sagst du zum Kellner?",
+    "start": "Guten Abend, einen Tisch für…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ergänze: „Ein _____ Wasser, bitte.“",
+    "options": [
+     "Glas",
+     "Teller",
+     "Messer",
+     "Löffel"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wir nehmen zwei _____ Tee, bitte.“",
+    "options": [
+     "Tasse",
+     "Tassen",
+     "Tasses",
+     "Tässe"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Der Kellner fragt: „Noch etwas?“ Was antwortest du?",
+    "start": "Ja, ich hätte gern noch…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Nach dem Hauptgericht isst man oft ein …",
+    "options": [
+     "Frühstück",
+     "Getränk",
+     "Dessert",
+     "Messer"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Fragewort: „_____ bezahlen Sie, mit Karte oder bar?“",
+    "options": [
+     "Wer",
+     "Wo",
+     "Wann",
+     "Wie"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Bestellst du gern auf Deutsch? Warum oder warum nicht?",
+    "start": "Auf Deutsch bestellen ist für mich…"
+   }
+  ]
+ },
+ "beginner-u7-l1": {
+  "title": "Prices",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wie fragst du nach dem Preis?",
+    "options": [
+     "Wie spät ist es?",
+     "Was kostet das?",
+     "Wo ist das?",
+     "Wer ist das?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Das Gegenteil von „teuer“ ist …",
+    "options": [
+     "groß",
+     "neu",
+     "schön",
+     "billig"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie viel _____ die Schuhe?“",
+    "options": [
+     "kostet",
+     "kosten",
+     "kostest",
+     "koste"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "In Deutschland bezahlt man mit …",
+    "options": [
+     "Dollar",
+     "Pfund",
+     "Euro",
+     "Yen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Die Jacke kostet 300 Euro. Sie ist zu _____.“",
+    "options": [
+     "teuer",
+     "teure",
+     "teuren",
+     "teurer"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Frag im Geschäft nach dem Preis von einer Tasche.",
+    "start": "Entschuldigung, was kostet…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie liest man 4,50 €?",
+    "options": [
+     "vierzig Euro fünf",
+     "vier Euro fünfzig",
+     "vier Euro fünfzehn",
+     "fünf Euro vierzig"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Das T-Shirt kostet zehn Euro. Ich nehme _____.“",
+    "options": [
+     "ihn",
+     "sie",
+     "es",
+     "er"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Was ist teuer in deiner Stadt?",
+    "start": "Sehr teuer in meiner Stadt ist…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Heute ist alles 50 % billiger. Es gibt ein …",
+    "options": [
+     "Geschenk",
+     "Problem",
+     "Rezept",
+     "Angebot"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Der Pullover kostet 200 Euro. Ich finde _____ zu teuer.“",
+    "options": [
+     "er",
+     "es",
+     "sie",
+     "ihn"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Du findest einen Preis zu hoch. Was sagst du?",
+    "start": "Das ist mir zu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was gibt dir die Kassiererin nach dem Bezahlen?",
+    "options": [
+     "die Speisekarte",
+     "den Schlüssel",
+     "den Kassenbon",
+     "das Rezept"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich habe nur zwanzig _____.“",
+    "options": [
+     "Euro",
+     "Euros",
+     "Euren",
+     "Eure"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Was hast du zuletzt gekauft? Wie viel hat es gekostet?",
+    "start": "Zuletzt habe ich… gekauft. Der Preis war…"
+   }
+  ]
+ },
+ "beginner-u7-l2": {
+  "title": "Sizes",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Die Hose ist nicht zu groß und nicht zu klein. Sie _____ gut.",
+    "options": [
+     "kostet",
+     "passt",
+     "kauft",
+     "trägt"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Bei den Größen S, M und L bedeutet „S“ …",
+    "options": [
+     "mittel",
+     "groß",
+     "klein",
+     "sehr groß"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Haben Sie die Jacke eine Nummer _____?“",
+    "options": [
+     "groß",
+     "große",
+     "am größten",
+     "größer"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wo probierst du im Geschäft Kleidung an?",
+    "options": [
+     "an der Kasse",
+     "in der Umkleidekabine",
+     "im Schaufenster",
+     "im Lager"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Die Schuhe sind zu klein. Sie passen _____ nicht.“",
+    "options": [
+     "ich",
+     "mich",
+     "mir",
+     "mein"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Welche Größe trägst du bei T-Shirts?",
+    "start": "Bei T-Shirts trage ich Größe…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Die Hose ist nicht lang genug. Sie ist zu …",
+    "options": [
+     "weit",
+     "teuer",
+     "kurz",
+     "dunkel"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Kann ich die Jacke _____?“",
+    "options": [
+     "probiere an",
+     "anprobieren",
+     "anprobiere",
+     "probieren an"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Die Hose ist zu groß. Was sagst du zur Verkäuferin?",
+    "start": "Entschuldigung, die Hose ist zu groß. Haben Sie…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Für Schuhe sagt man nicht „Größe M“, sondern zum Beispiel „Größe …“",
+    "options": [
+     "XL",
+     "Medium",
+     "Liter",
+     "40"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Welche Größe _____ Sie?“",
+    "options": [
+     "brauche",
+     "brauchst",
+     "braucht",
+     "brauchen"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Kaufst du Kleidung lieber im Geschäft oder online? Warum?",
+    "start": "Ich kaufe Kleidung lieber…, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Das Gegenteil von „eng“ ist …",
+    "options": [
+     "kurz",
+     "weit",
+     "billig",
+     "neu"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Der Rock ist zu eng. Haben Sie _____ auch in Größe 40?“",
+    "options": [
+     "er",
+     "ihm",
+     "ihn",
+     "sein"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe deine Lieblingskleidung.",
+    "start": "Meine Lieblingskleidung ist… Sie ist…"
+   }
+  ]
+ },
+ "beginner-u7-l3": {
+  "title": "Colors",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Welche Farbe hat der Himmel bei schönem Wetter?",
+    "options": [
+     "rot",
+     "blau",
+     "schwarz",
+     "braun"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welche Farbe hat Gras?",
+    "options": [
+     "gelb",
+     "lila",
+     "grau",
+     "grün"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Die Tomaten _____ rot.“",
+    "options": [
+     "ist",
+     "sind",
+     "bist",
+     "bin"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Schwarz und Weiß zusammen ergeben …",
+    "options": [
+     "rosa",
+     "grün",
+     "grau",
+     "orange"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich trage ein _____ Kleid.“",
+    "options": [
+     "rot",
+     "rote",
+     "rotes",
+     "roten"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Was ist deine Lieblingsfarbe? Warum?",
+    "start": "Meine Lieblingsfarbe ist…, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Rot und Gelb zusammen ergeben …",
+    "options": [
+     "lila",
+     "orange",
+     "blau",
+     "grau"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Die Jacke ist schwarz. Ich finde _____ schön.“",
+    "options": [
+     "ihn",
+     "es",
+     "er",
+     "sie"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Welche Farben trägst du heute?",
+    "start": "Heute trage ich…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welche Farbe hat Schnee?",
+    "options": [
+     "schwarz",
+     "braun",
+     "weiß",
+     "blau"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Hast du _____ blauen Pullover?“",
+    "options": [
+     "ein",
+     "einen",
+     "eine",
+     "einem"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Welche Farbe hat dein Zimmer? Gefällt sie dir?",
+    "start": "Mein Zimmer ist…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Hell oder dunkel? In der Nacht ist es …",
+    "options": [
+     "hell",
+     "bunt",
+     "weiß",
+     "dunkel"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Welche Farbe hat _____ Tasche?“",
+    "options": [
+     "deine",
+     "dein",
+     "deinen",
+     "deiner"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Welche Farben gibt es in deiner Wohnung?",
+    "start": "In meiner Wohnung gibt es viel…"
+   }
+  ]
+ },
+ "beginner-u7-l4": {
+  "title": "Buying something",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wo bezahlst du im Supermarkt?",
+    "options": [
+     "in der Küche",
+     "im Lager",
+     "an der Kasse",
+     "am Eingang"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Die Frau, die im Geschäft hilft und verkauft, ist die …",
+    "options": [
+     "Ärztin",
+     "Verkäuferin",
+     "Lehrerin",
+     "Köchin"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Das Hemd gefällt mir. Ich _____ es.“",
+    "options": [
+     "nimmst",
+     "nimmt",
+     "nehmen",
+     "nehme"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Du bezahlst nicht bar, sondern mit …",
+    "options": [
+     "Tasche",
+     "Kasse",
+     "Karte",
+     "Tüte"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Die Verkäuferin fragt eine Kundin: „Kann ich _____ helfen?“",
+    "options": [
+     "Sie",
+     "Ihnen",
+     "Ihr",
+     "Ihre"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Du möchtest eine Jacke kaufen. Was sagst du zur Verkäuferin?",
+    "start": "Guten Tag, ich suche…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Für deine Einkäufe brauchst du eine …",
+    "options": [
+     "Kasse",
+     "Gabel",
+     "Uhr",
+     "Tüte"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich suche _____ Geschenk für meine Mutter.“",
+    "options": [
+     "ein",
+     "eine",
+     "einen",
+     "einer"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Die Verkäuferin fragt: „Bar oder mit Karte?“ Was sagst du?",
+    "start": "Ich zahle…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ergänze: „Kann ich mit Karte _____?“",
+    "options": [
+     "schreiben",
+     "bezahlen",
+     "suchen",
+     "finden"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Haben Sie das T-Shirt auch _____ Blau?“",
+    "options": [
+     "mit",
+     "auf",
+     "in",
+     "aus"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Du kaufst Obst auf dem Markt. Was sagst du?",
+    "start": "Ich hätte gern ein Kilo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was sagt die Verkäuferin, wenn sie dir die Tüte gibt?",
+    "options": [
+     "Gute Nacht!",
+     "Prost!",
+     "Bitte schön!",
+     "Gute Besserung!"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich möchte das Kleid umtauschen. Es _____ mir nicht.“",
+    "options": [
+     "passe",
+     "passen",
+     "passest",
+     "passt"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Was kaufst du gern ein? Wo kaufst du es?",
+    "start": "Ich kaufe gern… im…"
+   }
+  ]
+ },
+ "beginner-u8-l1": {
+  "title": "Rooms",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wo kochst du?",
+    "options": [
+     "im Bad",
+     "in der Küche",
+     "im Schlafzimmer",
+     "im Flur"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wo schläfst du?",
+    "options": [
+     "in der Küche",
+     "im Keller",
+     "im Flur",
+     "im Schlafzimmer"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Artikel: „_____ Küche ist groß.“",
+    "options": [
+     "Der",
+     "Die",
+     "Das",
+     "Den"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wo duschst du?",
+    "options": [
+     "im Wohnzimmer",
+     "in der Küche",
+     "im Bad",
+     "im Flur"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Meine Wohnung _____ drei Zimmer.“",
+    "options": [
+     "hat",
+     "ist",
+     "sind",
+     "haben"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe deine Wohnung oder dein Haus.",
+    "start": "Meine Wohnung hat…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Im _____ sitzt die Familie auf dem Sofa und sieht fern.",
+    "options": [
+     "Wohnzimmer",
+     "Bad",
+     "Keller",
+     "Flur"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie viele _____ hat dein Haus?“ (das Zimmer)",
+    "options": [
+     "Zimmers",
+     "Zimmern",
+     "Zimmer",
+     "Zimmeren"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Was ist dein Lieblingszimmer? Warum?",
+    "start": "Mein Lieblingszimmer ist…, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Unter dem Haus ist oft der …",
+    "options": [
+     "Balkon",
+     "Garten",
+     "Flur",
+     "Keller"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Gibt es _____ Balkon?“",
+    "options": [
+     "ein",
+     "einen",
+     "eine",
+     "einem"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was machst du in der Küche?",
+    "start": "In der Küche…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Vor dem Haus wachsen Blumen im …",
+    "options": [
+     "Bad",
+     "Garten",
+     "Flur",
+     "Keller"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wo _____ die Kinder?“ – „Im Kinderzimmer.“",
+    "options": [
+     "ist",
+     "bist",
+     "sind",
+     "seid"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Wie sieht dein Traumhaus aus?",
+    "start": "Mein Traumhaus hat…"
+   }
+  ]
+ },
+ "beginner-u8-l2": {
+  "title": "Objects",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Worauf sitzt du?",
+    "options": [
+     "auf der Lampe",
+     "auf dem Fenster",
+     "auf dem Stuhl",
+     "auf der Uhr"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Milch und Käse bleiben kalt im …",
+    "options": [
+     "Ofen",
+     "Regal",
+     "Schrank",
+     "Kühlschrank"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Artikel: „_____ Tisch ist neu.“",
+    "options": [
+     "Der",
+     "Die",
+     "Das",
+     "Den"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Am Abend ist es dunkel. Ich mache die _____ an.",
+    "options": [
+     "Tür",
+     "Lampe",
+     "Gabel",
+     "Tasse"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Das Buch liegt auf _____ Tisch.“",
+    "options": [
+     "der",
+     "den",
+     "dem",
+     "des"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Was gibt es in deinem Zimmer?",
+    "start": "In meinem Zimmer gibt es…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Die Kleidung hängt im …",
+    "options": [
+     "Kühlschrank",
+     "Ofen",
+     "Schrank",
+     "Waschbecken"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Plural: „ein Stuhl – vier _____“",
+    "options": [
+     "Stuhle",
+     "Stühle",
+     "Stühlen",
+     "Stuhls"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was steht in deinem Wohnzimmer?",
+    "start": "In meinem Wohnzimmer steht…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Durch das _____ siehst du nach draußen.",
+    "options": [
+     "Bett",
+     "Sofa",
+     "Regal",
+     "Fenster"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wo ist _____ Schlüssel?“",
+    "options": [
+     "meine",
+     "meinen",
+     "meinem",
+     "mein"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Welche Dinge brauchst du jeden Tag?",
+    "start": "Jeden Tag brauche ich…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Deine Bücher stehen im …",
+    "options": [
+     "Kühlschrank",
+     "Waschbecken",
+     "Regal",
+     "Ofen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich brauche _____ neue Lampe.“",
+    "options": [
+     "ein",
+     "eine",
+     "einen",
+     "einer"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was möchtest du für dein Zimmer kaufen?",
+    "start": "Für mein Zimmer brauche ich noch…"
+   }
+  ]
+ },
+ "beginner-u8-l3": {
+  "title": "Places near home",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wo kaufst du Brot?",
+    "options": [
+     "in der Apotheke",
+     "in der Bäckerei",
+     "auf der Post",
+     "in der Bank"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wo kaufst du Medikamente?",
+    "options": [
+     "in der Bäckerei",
+     "im Kino",
+     "im Park",
+     "in der Apotheke"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „In meiner Straße _____ es einen Supermarkt.“",
+    "options": [
+     "ist",
+     "gibt",
+     "sind",
+     "macht"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wo kannst du spazieren gehen und Bäume sehen?",
+    "options": [
+     "in der Bank",
+     "im Supermarkt",
+     "im Park",
+     "in der Apotheke"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Die Post ist direkt _____ der Bank.“",
+    "options": [
+     "aus",
+     "zu",
+     "von",
+     "neben"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Was gibt es in der Nähe von deiner Wohnung?",
+    "start": "In der Nähe gibt es…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wo siehst du einen Film?",
+    "options": [
+     "in der Post",
+     "im Kino",
+     "in der Bäckerei",
+     "im Krankenhaus"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich gehe heute _____ Supermarkt.“",
+    "options": [
+     "in die",
+     "in der",
+     "in den",
+     "in das"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Wo kaufst du normalerweise ein?",
+    "start": "Zum Einkaufen gehe ich normalerweise…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wohin bringst du einen Brief?",
+    "options": [
+     "zum Arzt",
+     "zur Bäckerei",
+     "zum Kino",
+     "zur Post"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ist hier _____ Apotheke in der Nähe?“",
+    "options": [
+     "ein",
+     "eine",
+     "einen",
+     "einer"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was ist dein Lieblingsort in deiner Nachbarschaft? Warum?",
+    "start": "Mein Lieblingsort ist…, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wo holst du Geld von deinem Konto?",
+    "options": [
+     "in der Bäckerei",
+     "im Park",
+     "in der Bank",
+     "in der Bibliothek"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Der Park ist _____ weit von hier.“",
+    "options": [
+     "kein",
+     "keine",
+     "nein",
+     "nicht"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe deine Straße.",
+    "start": "In meiner Straße gibt es…"
+   }
+  ]
+ },
+ "beginner-u9-l1": {
+  "title": "Basic directions",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Das Gegenteil von „links“ ist …",
+    "options": [
+     "oben",
+     "rechts",
+     "geradeaus",
+     "hinten"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Du gehst immer weiter nach vorne. Du gehst …",
+    "options": [
+     "zurück",
+     "links",
+     "geradeaus",
+     "rechts"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ Sie die zweite Straße links.“",
+    "options": [
+     "Nehmen",
+     "Nimmt",
+     "Nehme",
+     "Nimmst"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie fragst du nach dem Weg?",
+    "options": [
+     "Wie spät ist es?",
+     "Wie heißt du?",
+     "Wie geht's?",
+     "Wie komme ich zur Post?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie komme ich _____ Bahnhof?“",
+    "options": [
+     "zur",
+     "zum",
+     "zu",
+     "nach"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Erklär einem Touristen den Weg zum Supermarkt.",
+    "start": "Gehen Sie geradeaus und dann…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Die Lichter an der Straße sind rot, gelb und grün. Das ist die …",
+    "options": [
+     "Brücke",
+     "Kreuzung",
+     "Ampel",
+     "Haltestelle"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Die Apotheke ist _____ der Ecke.“",
+    "options": [
+     "auf",
+     "aus",
+     "zu",
+     "an"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Wie kommst du von deiner Wohnung zur nächsten Bushaltestelle?",
+    "start": "Ich gehe aus dem Haus und dann…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Der Bahnhof ist nicht nah. Er ist …",
+    "options": [
+     "links",
+     "weit",
+     "klein",
+     "geradeaus"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Fragewort: „_____ ist die Bank?“ – „Gleich hier rechts.“",
+    "options": [
+     "Wer",
+     "Wann",
+     "Wo",
+     "Was"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Ein Tourist fragt: „Wo ist hier ein Café?“ Was antwortest du?",
+    "start": "Das Café ist…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Der Ort, wo sich zwei Straßen treffen, ist eine …",
+    "options": [
+     "Ampel",
+     "Brücke",
+     "Haltestelle",
+     "Kreuzung"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Du sprichst mit deinem Freund: „_____ an der Ampel nach links!“",
+    "options": [
+     "Gehst",
+     "Geh",
+     "Gehen",
+     "Geht"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe den Weg von deinem Zuhause zu deinem Lieblingsort.",
+    "start": "Von meinem Zuhause gehe ich…"
+   }
+  ]
+ },
+ "beginner-u9-l2": {
+  "title": "Transportation",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Womit fliegst du nach Spanien?",
+    "options": [
+     "mit dem Fahrrad",
+     "mit dem Flugzeug",
+     "mit dem Bus",
+     "mit dem Schiff"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wo wartest du auf den Bus?",
+    "options": [
+     "am Flughafen",
+     "im Hafen",
+     "in der Garage",
+     "an der Haltestelle"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich fahre mit _____ U-Bahn.“",
+    "options": [
+     "die",
+     "dem",
+     "der",
+     "den"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Für den Zug brauchst du eine …",
+    "options": [
+     "Fahrkarte",
+     "Speisekarte",
+     "Postkarte",
+     "Landkarte"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Mein Vater _____ jeden Tag mit dem Auto.“",
+    "options": [
+     "fährt",
+     "fahre",
+     "fährst",
+     "fahren"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Wie kommst du zur Arbeit oder zur Schule?",
+    "start": "Ich fahre mit…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ein Schiff fährt vom …",
+    "options": [
+     "Hafen",
+     "Bahnhof",
+     "Flughafen",
+     "Parkplatz"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wann _____ der Zug in Berlin an?“",
+    "options": [
+     "komme",
+     "kommst",
+     "kommt",
+     "kommen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Fährst du lieber mit dem Bus oder mit dem Fahrrad? Warum?",
+    "start": "Ich fahre lieber mit…, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Du fährst nicht, du gehst. Du gehst zu …",
+    "options": [
+     "Rad",
+     "Bus",
+     "Fuß",
+     "Bahn"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich muss am Hauptbahnhof _____.“",
+    "options": [
+     "umsteige",
+     "steige um",
+     "umgestiegen",
+     "umsteigen"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Wie reist du gern, wenn du Urlaub machst?",
+    "start": "Im Urlaub reise ich gern mit…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ein Auto, das dich gegen Geld fährt, ist ein …",
+    "options": [
+     "Fahrrad",
+     "Taxi",
+     "Motorrad",
+     "Zug"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie lange _____ die Fahrt?“",
+    "options": [
+     "dauern",
+     "dauert",
+     "dauerst",
+     "dauere"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Wie ist der öffentliche Verkehr in deiner Stadt?",
+    "start": "In meiner Stadt gibt es…"
+   }
+  ]
+ },
+ "beginner-u10-l1": {
+  "title": "Who",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Mit welchem Fragewort fragst du nach einer Person?",
+    "options": [
+     "Wo",
+     "Wann",
+     "Was",
+     "Wer"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "„Wer ist das?“ – „Das ist Frau Klein. Sie unterrichtet mich. Sie ist meine _____.“",
+    "options": [
+     "Köchin",
+     "Lehrerin",
+     "Ärztin",
+     "Nachbarin"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wer _____ das?“",
+    "options": [
+     "bist",
+     "bin",
+     "ist",
+     "seid"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wer hilft dir, wenn du krank bist?",
+    "options": [
+     "der Bäcker",
+     "der Kellner",
+     "der Arzt",
+     "der Fahrer"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ besuchst du am Wochenende?“ – „Meine Oma.“",
+    "options": [
+     "Wer",
+     "Wen",
+     "Wem",
+     "Wessen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Wer ist die wichtigste Person in deinem Leben?",
+    "start": "Die wichtigste Person in meinem Leben ist…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wer bringt dir Briefe?",
+    "options": [
+     "der Briefträger",
+     "der Koch",
+     "der Kellner",
+     "der Lehrer"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wer _____ heute Geburtstag?“",
+    "options": [
+     "hat",
+     "ist",
+     "haben",
+     "hast"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Wer ist dein Lieblingssänger oder deine Lieblingssängerin?",
+    "start": "Am liebsten höre ich…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wer fliegt ein Flugzeug?",
+    "options": [
+     "der Bäcker",
+     "der Pilot",
+     "der Schaffner",
+     "der Gärtner"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wer _____ heute mit ins Kino kommen?“",
+    "options": [
+     "möchten",
+     "möchtest",
+     "möchtet",
+     "möchte"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Wer wohnt mit dir zusammen?",
+    "start": "Mit mir zusammen wohnen…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wer schneidet dir die Haare?",
+    "options": [
+     "der Arzt",
+     "der Mechaniker",
+     "der Bäcker",
+     "der Friseur"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Mit _____ gehst du ins Kino?“",
+    "options": [
+     "wer",
+     "wen",
+     "wem",
+     "was"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Wer ist dein bester Freund oder deine beste Freundin? Beschreibe die Person.",
+    "start": "Die Person heißt…"
+   }
+  ]
+ },
+ "beginner-u10-l2": {
+  "title": "What",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Mit welchem Fragewort fragst du nach einer Sache?",
+    "options": [
+     "Wer",
+     "Wo",
+     "Was",
+     "Wie"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "„Was ist das?“ – „Das ist ein _____. Man schreibt damit.“",
+    "options": [
+     "Teller",
+     "Stift",
+     "Schuh",
+     "Stuhl"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Was _____ du heute Abend?“",
+    "options": [
+     "machst",
+     "macht",
+     "mache",
+     "machen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welche Frage bedeutet „Was ist dein Beruf?“",
+    "options": [
+     "Was bist du von Beruf?",
+     "Wo arbeitest du gern?",
+     "Wie alt bist du?",
+     "Was isst du gern?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ Farbe hat dein Auto?“",
+    "options": [
+     "Was",
+     "Welche",
+     "Welcher",
+     "Welches"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was machst du heute nach dem Kurs?",
+    "start": "Nach dem Kurs…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was brauchst du, um die Tür aufzumachen?",
+    "options": [
+     "einen Löffel",
+     "eine Tasse",
+     "ein Kissen",
+     "einen Schlüssel"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Was _____ das auf Deutsch?“",
+    "options": [
+     "heiße",
+     "heißen",
+     "heißt",
+     "heißest"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Was isst du heute zu Abend?",
+    "start": "Heute esse ich…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Die Frage „Was ist los?“ bedeutet …",
+    "options": [
+     "Wo bist du?",
+     "Wie spät ist es?",
+     "Was ist passiert?",
+     "Wer ist da?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Was _____ der Kaffee?“ – „Drei Euro.“",
+    "options": [
+     "kosten",
+     "kostest",
+     "koste",
+     "kostet"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Was ist dein Lieblingshobby? Was machst du da?",
+    "start": "Mein Lieblingshobby ist…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ergänze: „Was _____ du gern?“ – „Musik.“",
+    "options": [
+     "isst",
+     "hörst",
+     "fährst",
+     "schläfst"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Frage zur Antwort: „Ich lese ein Buch.“",
+    "options": [
+     "Wer liest du?",
+     "Was liest du?",
+     "Wo liest du?",
+     "Wann liest du?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was möchtest du dieses Jahr lernen?",
+    "start": "Dieses Jahr lerne ich…"
+   }
+  ]
+ },
+ "beginner-u10-l3": {
+  "title": "Where",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Mit welchem Fragewort fragst du nach einem Ort?",
+    "options": [
+     "Wer",
+     "Wo",
+     "Was",
+     "Wann"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "„Wo ist das Handy?“ – „Es liegt _____ dem Tisch.“",
+    "options": [
+     "aus",
+     "zu",
+     "von",
+     "auf"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Fragewort: „_____ gehst du?“ – „Ins Kino.“",
+    "options": [
+     "Wo",
+     "Wohin",
+     "Woher",
+     "Wann"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Die Katze ist _____ dem Bett. Man sieht sie nicht.",
+    "options": [
+     "auf",
+     "neben",
+     "unter",
+     "vor"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Fragewort: „_____ kommst du?“ – „Aus Polen.“",
+    "options": [
+     "Wo",
+     "Wohin",
+     "Woher",
+     "Wer"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Wo wohnst du und wo arbeitest du?",
+    "start": "Ich wohne in… und arbeite…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Das Gegenteil von „hier“ ist …",
+    "options": [
+     "oben",
+     "jetzt",
+     "rechts",
+     "dort"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wo _____ meine Schlüssel?“",
+    "options": [
+     "ist",
+     "bist",
+     "seid",
+     "sind"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Wo bist du gerade? Was siehst du?",
+    "start": "Ich bin gerade… Ich sehe…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Das Bild hängt _____ der Wand.",
+    "options": [
+     "unter",
+     "an",
+     "in",
+     "zwischen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Heute bleibe ich _____ Hause.“",
+    "options": [
+     "nach",
+     "in",
+     "zu",
+     "bei"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Wo machst du gern Urlaub?",
+    "start": "Ich mache gern Urlaub in…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Das Café ist _____ der Bank und der Post.",
+    "options": [
+     "zwischen",
+     "unter",
+     "über",
+     "hinter"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wo _____ du?“ – „In Berlin.“",
+    "options": [
+     "wohnt",
+     "wohnst",
+     "wohne",
+     "wohnen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Wo ist dein Lieblingsplatz in deiner Stadt?",
+    "start": "Mein Lieblingsplatz ist…"
+   }
+  ]
+ },
+ "beginner-u10-l4": {
+  "title": "When",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Mit welchem Fragewort fragst du nach der Zeit?",
+    "options": [
+     "Wo",
+     "Wer",
+     "Wann",
+     "Was"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Der Tag vor heute ist …",
+    "options": [
+     "morgen",
+     "gestern",
+     "übermorgen",
+     "bald"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wann _____ der Kurs?“",
+    "options": [
+     "beginne",
+     "beginnst",
+     "beginnen",
+     "beginnt"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Nicht jetzt, aber in kurzer Zeit: …",
+    "options": [
+     "bald",
+     "nie",
+     "gestern",
+     "früher"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wir treffen uns _____ Wochenende.“",
+    "options": [
+     "am",
+     "im",
+     "um",
+     "in"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Wann hast du diese Woche Zeit für einen Kaffee?",
+    "start": "Zeit habe ich am…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Etwas passiert jeden Tag. Es passiert …",
+    "options": [
+     "nie",
+     "selten",
+     "jährlich",
+     "täglich"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Morgen _____ ich ins Kino.“",
+    "options": [
+     "geht",
+     "gehe",
+     "gehst",
+     "gehen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Wann hast du Urlaub? Was machst du dann?",
+    "start": "Ich habe im… Urlaub. Dann…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was kommt nach dem Nachmittag?",
+    "options": [
+     "der Morgen",
+     "der Mittag",
+     "der Abend",
+     "der Vormittag"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Der Zug kommt _____ 15:30 Uhr an.“",
+    "options": [
+     "am",
+     "im",
+     "um",
+     "in"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Wann machst du Sport?",
+    "start": "Sport mache ich…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ergänze: „Ich gehe _____ ins Kino, nur zweimal im Jahr.“",
+    "options": [
+     "immer",
+     "selten",
+     "oft",
+     "jeden Tag"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Frage zur Antwort: „Im Juli.“",
+    "options": [
+     "Wo hast du Urlaub?",
+     "Wann hast du Urlaub?",
+     "Wer hat Urlaub?",
+     "Was hast du Urlaub?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was machst du heute, morgen und am Wochenende?",
+    "start": "Heute… Morgen… Am Wochenende…"
+   }
+  ]
+ },
+ "beginner-u10-l5": {
+  "title": "Why",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Mit welchem Fragewort fragst du nach einem Grund?",
+    "options": [
+     "Wann",
+     "Wo",
+     "Wer",
+     "Warum"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ich habe heute nichts gegessen. Ich habe …",
+    "options": [
+     "Durst",
+     "Hunger",
+     "Angst",
+     "Zeit"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich bleibe zu Hause, _____ ich krank bin.“",
+    "options": [
+     "denn",
+     "aber",
+     "weil",
+     "und"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ich möchte etwas trinken. Ich habe …",
+    "options": [
+     "Durst",
+     "Hunger",
+     "Angst",
+     "Glück"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Ich lerne Deutsch, weil arbeite in Berlin ich.",
+     "Ich lerne Deutsch, weil ich in Berlin arbeite.",
+     "Ich lerne Deutsch, weil arbeite ich in Berlin.",
+     "Ich lerne Deutsch, weil in Berlin ich arbeite."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Warum magst du deine Stadt?",
+    "start": "Ich mag meine Stadt, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ich bin sehr _____, weil heute mein Geburtstag ist.",
+    "options": [
+     "traurig",
+     "krank",
+     "glücklich",
+     "müde"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Es regnet, _____ nehme ich einen Regenschirm.“",
+    "options": [
+     "weil",
+     "denn",
+     "aber",
+     "deshalb"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Warum magst du deinen besten Freund oder deine beste Freundin?",
+    "start": "Ich mag diese Person, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Dein Freund sieht traurig aus. Was fragst du?",
+    "options": [
+     "Wie spät ist es?",
+     "Was ist los?",
+     "Wo ist dein Auto?",
+     "Wie alt bist du?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Warum _____ du so müde?“",
+    "options": [
+     "hast",
+     "bist",
+     "ist",
+     "bin"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Warum ist Schlaf wichtig?",
+    "start": "Schlaf ist wichtig, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ergänze: „Ich habe keine Zeit, weil ich viel _____ habe.“",
+    "options": [
+     "Hunger",
+     "Glück",
+     "Urlaub",
+     "Arbeit"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Warum kommst du nicht?“ – „_____ ich keine Zeit habe.“",
+    "options": [
+     "Denn",
+     "Deshalb",
+     "Weil",
+     "Aber"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Warum magst du dein Lieblingsessen?",
+    "start": "Ich mag…, weil es…"
+   }
+  ]
+ },
+ "beginner-u10-l6": {
+  "title": "How",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Mit welchem Fragewort fragst du, auf welche Art man etwas macht?",
+    "options": [
+     "Wo",
+     "Wie",
+     "Wann",
+     "Wer"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "„Wie geht's?“ – „Sehr _____, danke!“",
+    "options": [
+     "alt",
+     "groß",
+     "gut",
+     "teuer"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie _____ ist der Bahnhof?“ – „Zwei Kilometer.“",
+    "options": [
+     "viel",
+     "lang",
+     "alt",
+     "weit"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "„Wie findest du den Film?“ – „Ich finde ihn _____. Er ist super!“",
+    "options": [
+     "schlecht",
+     "langweilig",
+     "doof",
+     "toll"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie _____ kostet das?“",
+    "options": [
+     "viel",
+     "viele",
+     "vielen",
+     "vieles"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Wie kommst du zum Supermarkt?",
+    "start": "Zum Supermarkt…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Die Frage „Wie alt bist du?“ fragt nach dem …",
+    "options": [
+     "Alter",
+     "Namen",
+     "Wohnort",
+     "Beruf"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie _____ das Wetter heute?“",
+    "options": [
+     "sind",
+     "ist",
+     "hat",
+     "bist"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Wie geht es dir heute? Warum?",
+    "start": "Heute geht es mir…, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "„Wie lange dauert der Film?“ – „Zwei _____.“",
+    "options": [
+     "Meter",
+     "Euro",
+     "Stunden",
+     "Kilo"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie _____ ihr?“ – „Wir heißen Tim und Lara.“",
+    "options": [
+     "heißen",
+     "heiße",
+     "heißt",
+     "heißest"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Wie ist dein Deutschkurs? Was gefällt dir?",
+    "start": "Mein Deutschkurs ist… Mir gefällt…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "„Wie schreibt man das?“ – Du _____ das Wort.",
+    "options": [
+     "kochst",
+     "buchstabierst",
+     "zählst",
+     "singst"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Frage zur Antwort: „Mit dem Bus.“",
+    "options": [
+     "Wann fährst du zur Arbeit?",
+     "Wer fährt zur Arbeit?",
+     "Warum fährst du zur Arbeit?",
+     "Wie fährst du zur Arbeit?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Wie verbringst du einen schönen Sonntag?",
+    "start": "An einem schönen Sonntag…"
+   }
+  ]
+ },
+ "beginner-u11-l1": {
+  "title": "Weather",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Es fallen Wassertropfen vom Himmel. Es …",
+    "options": [
+     "schneit",
+     "regnet",
+     "blitzt",
+     "donnert"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Die Sonne scheint und es gibt keine Wolken. Es ist …",
+    "options": [
+     "neblig",
+     "regnerisch",
+     "bewölkt",
+     "sonnig"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Heute _____ es kalt.“",
+    "options": [
+     "hat",
+     "macht",
+     "ist",
+     "gibt"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Im Winter fällt oft …",
+    "options": [
+     "Schnee",
+     "Sonne",
+     "Sand",
+     "Gras"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie _____ das Wetter morgen?“",
+    "options": [
+     "werde",
+     "wirst",
+     "werden",
+     "wird"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Wie ist das Wetter heute bei dir?",
+    "start": "Heute ist es… und…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wenn es regnet, brauchst du einen …",
+    "options": [
+     "Sonnenhut",
+     "Badeanzug",
+     "Regenschirm",
+     "Schlitten"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Artikel: „Heute scheint _____ Sonne.“",
+    "options": [
+     "der",
+     "die",
+     "das",
+     "den"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was machst du gern, wenn es regnet?",
+    "start": "Wenn es regnet, bleibe ich…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Es ist sehr heiß. Es sind …",
+    "options": [
+     "0 Grad",
+     "−10 Grad",
+     "5 Grad",
+     "35 Grad"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Morgen _____ es. Alles wird weiß.“",
+    "options": [
+     "schneit",
+     "schneien",
+     "schneist",
+     "schneie"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Welches Wetter magst du am liebsten? Warum?",
+    "start": "Am liebsten mag ich…, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Am Himmel sind viele graue Wolken. Es ist …",
+    "options": [
+     "sonnig",
+     "bewölkt",
+     "heiß",
+     "trocken"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Es ist kalt. Zieh _____ Jacke an!“",
+    "options": [
+     "dein",
+     "deinen",
+     "deiner",
+     "deine"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Wie ist das Wetter in deinem Land im Sommer?",
+    "start": "Im Sommer ist es in meinem Land…"
+   }
+  ]
+ },
+ "beginner-u11-l2": {
+  "title": "Seasons",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Welche Jahreszeit kommt nach dem Winter?",
+    "options": [
+     "der Herbst",
+     "der Frühling",
+     "der Sommer",
+     "das Wochenende"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Im _____ fallen die Blätter von den Bäumen.",
+    "options": [
+     "Sommer",
+     "Frühling",
+     "Herbst",
+     "Mai"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ Sommer gehe ich oft schwimmen.“",
+    "options": [
+     "Am",
+     "Um",
+     "In",
+     "Im"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie viele Jahreszeiten gibt es?",
+    "options": [
+     "vier",
+     "drei",
+     "fünf",
+     "zwölf"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Artikel: „_____ Frühling ist schön.“",
+    "options": [
+     "Die",
+     "Das",
+     "Der",
+     "Den"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Welche Jahreszeit magst du am liebsten? Warum?",
+    "start": "Am liebsten mag ich den…, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Im Sommer ist es oft …",
+    "options": [
+     "eisig",
+     "dunkel",
+     "verschneit",
+     "heiß"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den Satz mit der richtigen Wortstellung:",
+    "options": [
+     "Im Winter ich fahre Ski.",
+     "Im Winter fahre ich Ski.",
+     "Ich im Winter fahre Ski.",
+     "Im Winter Ski ich fahre."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was machst du gern im Winter?",
+    "start": "Im Winter…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Im Frühling blühen die …",
+    "options": [
+     "Schneemänner",
+     "Jacken",
+     "Blumen",
+     "Fenster"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Im Herbst _____ die Tage kürzer.“",
+    "options": [
+     "werden",
+     "wird",
+     "wirst",
+     "werdet"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Wie ist der Winter in deinem Land?",
+    "start": "In meinem Land ist der Winter…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welcher Monat ist in Deutschland im Sommer?",
+    "options": [
+     "Januar",
+     "August",
+     "November",
+     "März"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Artikel: „Ich mag _____ Herbst.“",
+    "options": [
+     "der",
+     "dem",
+     "den",
+     "des"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Was machst du gern im Sommer?",
+    "start": "Im Sommer…"
+   }
+  ]
+ },
+ "beginner-u12-l1": {
+  "title": "Combining everything in short real-life dialogues",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Lena sagt: „Hallo, ich heiße Lena.“ Was antwortest du?",
+    "options": [
+     "Ich bin 12 Jahre alt.",
+     "Freut mich, Lena!",
+     "Es ist kalt.",
+     "Gute Besserung!"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ergänze den Dialog: „Wer ist das?“ – „Das ist die Mutter von meiner Mutter, meine _____.“",
+    "options": [
+     "Tante",
+     "Schwester",
+     "Cousine",
+     "Oma"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze den Dialog: „Wann öffnet der Laden?“ – „_____ acht Uhr.“",
+    "options": [
+     "Um",
+     "Am",
+     "Im",
+     "An"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ergänze den Dialog: „Ich habe Durst.“ – „Möchtest du ein Glas _____?“",
+    "options": [
+     "Brot",
+     "Käse",
+     "Wasser",
+     "Reis"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze den Dialog: „Was möchten Sie?“ – „Ich hätte gern _____ Kaffee.“",
+    "options": [
+     "ein",
+     "eine",
+     "einen",
+     "einem"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Du triffst eine neue Mitschülerin. Begrüße sie, sag deinen Namen und stell eine Frage.",
+    "start": "Hallo, ich heiße… Woher…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort bedeutet „nicht teuer“?",
+    "options": [
+     "schwer",
+     "billig",
+     "kurz",
+     "langsam"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze den Dialog: „Wie viel _____ die Äpfel?“ – „Drei Euro das Kilo.“",
+    "options": [
+     "kostet",
+     "kostest",
+     "koste",
+     "kosten"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Du möchtest eine Tasche kaufen. Frag nach dem Preis.",
+    "start": "Entschuldigung, was kostet…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ergänze den Dialog: „Wo ist die Bank?“ – „Sie ist direkt _____ der Schule.“",
+    "options": [
+     "neben",
+     "nach",
+     "zwischen",
+     "aus"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze den Dialog: „Es ist so heiß heute!“ – „Ja! _____ wir ins Schwimmbad!“",
+    "options": [
+     "Geht",
+     "Gehst",
+     "Gehe",
+     "Gehen"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Ein Freund fragt: „Was machst du jeden Tag?“ Nenne zwei Dinge.",
+    "start": "Jeden Tag…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie schreibt man 40?",
+    "options": [
+     "vierzehn",
+     "vier",
+     "vierzig",
+     "vierhundert"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze den Dialog: „Kommst du mit ins Kino?“ – „Nein, ich _____ heute arbeiten.“",
+    "options": [
+     "musst",
+     "muss",
+     "müssen",
+     "müsst"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Ein Freund fragt: „Was machst du am Wochenende?“ Antworte mit zwei Plänen.",
+    "start": "Am Wochenende…"
+   }
+  ]
+ }
+}

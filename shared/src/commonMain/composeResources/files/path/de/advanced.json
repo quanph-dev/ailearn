@@ -1,0 +1,3214 @@
+{
+ "advanced-u1-l1": {
+  "title": "Fluency",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "„Sie spricht fließend Deutsch“ bedeutet, dass sie …",
+    "options": [
+     "ohne Mühe und Stocken spricht",
+     "nur langsam liest",
+     "einen starken Akzent hat",
+     "nur Fachwörter benutzt"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „den Faden verlieren“ im Gespräch?",
+    "options": [
+     "etwas nähen",
+     "ein Gespräch höflich beenden",
+     "nicht mehr wissen, was man sagen wollte",
+     "besonders schnell sprechen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Je mehr du sprichst, _____ sicherer wirst du.“",
+    "options": [
+     "desto",
+     "als",
+     "wie",
+     "dann"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie nennt man jemanden, der sich mühelos und gewandt ausdrückt?",
+    "options": [
+     "wortkarg",
+     "redegewandt",
+     "schüchtern",
+     "zerstreut"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Wenn ich früher angefangen _____, spräche ich heute fließend.“",
+    "options": [
+     "hätte",
+     "habe",
+     "hatte",
+     "wäre"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähle eine Minute lang ohne lange Pausen von deinem letzten Wochenende.",
+    "start": "Also, am Wochenende war ich …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „ins Stocken geraten“?",
+    "options": [
+     "nicht mehr flüssig weitersprechen",
+     "lauter sprechen",
+     "das Thema wechseln",
+     "laut lachen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ seiner Nervosität hielt er die Rede ohne einen einzigen Fehler.“",
+    "options": [
+     "Wegen",
+     "Trotz",
+     "Obwohl",
+     "Statt"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe deinen Weg zur Arbeit oder zur Uni so ausführlich wie möglich.",
+    "start": "Jeden Morgen gehe ich zuerst …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Mit welchem Ausdruck gewinnst du Zeit zum Nachdenken?",
+    "options": [
+     "Gute Besserung!",
+     "Mahlzeit!",
+     "Wie soll ich sagen …",
+     "Herzlichen Glückwunsch!"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Er spricht so gut, _____ er sein ganzes Leben in Deutschland verbracht hätte.“",
+    "options": [
+     "ob",
+     "als ob",
+     "damit",
+     "obwohl"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre einem Freund, wie du am liebsten Sprachen lernst. Sprich möglichst frei.",
+    "start": "Also, für mich funktioniert am besten …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „sich verhaspeln“?",
+    "options": [
+     "sich verlaufen",
+     "sich beeilen",
+     "sich verabschieden",
+     "beim Sprechen durcheinanderkommen"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Relativpronomen: „Ein Wort, _____ Bedeutung ich nicht kenne, umschreibe ich einfach.“",
+    "options": [
+     "das",
+     "deren",
+     "dem",
+     "dessen"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Was würdest du tun, wenn du ein Jahr in Deutschland leben könntest? Sprich frei.",
+    "start": "Wenn ich ein Jahr in Deutschland leben könnte, würde ich …"
+   }
+  ]
+ },
+ "advanced-u1-l2": {
+  "title": "Fillers",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wozu dienen Füllwörter wie „äh“ oder „ähm“ beim Sprechen?",
+    "options": [
+     "um höflich zu grüßen",
+     "um eine Denkpause zu füllen",
+     "um etwas zu verneinen",
+     "um einen Brief zu beenden"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "„Das ist halt so.“ – Was drückt „halt“ hier aus?",
+    "options": [
+     "Überraschung",
+     "Freude",
+     "eine höfliche Bitte",
+     "dass man es nicht ändern kann"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Ähm, wie heißt das noch mal … das Ding, _____ man Dosen öffnet?“",
+    "options": [
+     "mit dem",
+     "mit dessen",
+     "mit der",
+     "mit das"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie korrigierst du dich selbst? „Wir treffen uns um sechs, _____ um halb sechs.“",
+    "options": [
+     "besser gesagt",
+     "trotzdem",
+     "außerdem",
+     "deshalb"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Welcher Satz ist richtig?",
+    "options": [
+     "Ich halt habe keine Zeit gehabt.",
+     "Halt ich habe keine Zeit gehabt.",
+     "Ich habe halt keine Zeit gehabt.",
+     "Ich habe keine Zeit halt gehabt."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Ein Freund fragt, wie dein Urlaub war. Antworte locker mit „also“ oder „na ja“.",
+    "start": "Na ja, also eigentlich …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was signalisiert „Na ja …“ am Anfang einer Antwort meistens?",
+    "options": [
+     "leichte Skepsis oder Zögern",
+     "Begeisterung",
+     "einen Befehl",
+     "eine Begrüßung"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Na ja, wenn ich ehrlich bin, _____ ich lieber zu Hause geblieben.“",
+    "options": [
+     "hätte",
+     "würde",
+     "wäre",
+     "habe"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Jemand fragt dich nach dem Weg, und du musst kurz überlegen. Nutze „Moment mal“ oder „wie soll ich sagen“.",
+    "start": "Moment mal, lass mich kurz überlegen …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wann solltest du „ähm“ und „sozusagen“ möglichst vermeiden?",
+    "options": [
+     "beim Plaudern mit Freunden",
+     "in einem lockeren Telefonat",
+     "bei einem offiziellen Vortrag",
+     "beim Kaffeetrinken mit Kollegen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form (indirekte Rede): „Er meinte, er _____ halt keine Zeit.“",
+    "options": [
+     "haben",
+     "habe",
+     "habest",
+     "gehabt"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähle, warum du heute müde bist. Benutze „halt“ und „eben“.",
+    "start": "Ich habe halt …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort zeigt, dass ein Ausdruck nicht wörtlich gemeint ist? „Er ist _____ die rechte Hand des Chefs.“",
+    "options": [
+     "jedoch",
+     "sozusagen",
+     "deshalb",
+     "trotzdem"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich weiß nicht, _____ ich das so sagen kann, aber …“",
+    "options": [
+     "weil",
+     "als",
+     "obwohl",
+     "ob"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Sag einem Kollegen deine Meinung zum Homeoffice. Beginne mit „Ehrlich gesagt“.",
+    "start": "Ehrlich gesagt finde ich …"
+   }
+  ]
+ },
+ "advanced-u1-l3": {
+  "title": "Natural responses",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Jemand erzählt dir eine unglaubliche Geschichte. Wie reagierst du natürlich?",
+    "options": [
+     "Gern geschehen.",
+     "Auf Wiederhören.",
+     "Echt jetzt?",
+     "Mahlzeit."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie zeigst du, dass du jemandem voll zustimmst?",
+    "options": [
+     "Da hast du völlig recht.",
+     "Das ist mir wurst.",
+     "Keine Ahnung.",
+     "Schön wär's."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "„Hast du das Spiel etwa nicht gesehen?“ – „_____, natürlich habe ich es gesehen!“",
+    "options": [
+     "Ja",
+     "Doch",
+     "Nein",
+     "Genau"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Das ist mir wurst“?",
+    "options": [
+     "Das schmeckt mir.",
+     "Das ärgert mich.",
+     "Das freut mich.",
+     "Das ist mir egal."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "„Ich habe den Zug verpasst.“ – „Oh nein! Du _____ früher losgehen sollen.“",
+    "options": [
+     "solltest",
+     "wärst",
+     "hättest",
+     "würdest"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Ein Freund erzählt dir, dass er seinen Job verloren hat. Reagiere mitfühlend.",
+    "start": "Oh nein, das tut mir echt leid …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welche Reaktion zeigt Mitgefühl?",
+    "options": [
+     "Selber schuld!",
+     "Na und?",
+     "Oh je, das klingt ja furchtbar!",
+     "Mir doch egal."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "„Ich habe gekündigt.“ – „Was? Das _____ ich nie von dir gedacht!“",
+    "options": [
+     "hätte",
+     "wäre",
+     "würde",
+     "hättest"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Deine Kollegin erzählt, dass sie befördert wurde. Reagiere begeistert.",
+    "start": "Wahnsinn, herzlichen Glückwunsch …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was sagst du, wenn du etwas kaum glauben kannst?",
+    "options": [
+     "Das gibt's doch nicht!",
+     "Das macht nichts.",
+     "Schon gut.",
+     "Kein Problem."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "„Soll ich dir beim Umzug helfen?“ – „Oh, das _____ total nett von dir!“",
+    "options": [
+     "hätte",
+     "wäre",
+     "würde",
+     "werde"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Jemand lädt dich spontan zum Essen ein, aber du hast keine Zeit. Lehne freundlich ab.",
+    "start": "Ach, schade, das hätte ich echt gern gemacht, aber …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Jemand bedankt sich für deine Hilfe. Welche Antwort passt?",
+    "options": [
+     "Keine Ursache!",
+     "Keine Ahnung!",
+     "Kein Wunder!",
+     "Kein Kommentar!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "„Hast du an den Termin gedacht?“ – „Klar, _____ habe ich gedacht.“",
+    "options": [
+     "darauf",
+     "dafür",
+     "davon",
+     "daran"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Ein Freund fragt: „Wollen wir am Wochenende wandern gehen?“ Antworte und mach einen Gegenvorschlag.",
+    "start": "Gute Idee, aber wie wäre es, wenn …"
+   }
+  ]
+ },
+ "advanced-u2-l1": {
+  "title": "Common expressions used by native speakers",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich verstehe nur Bahnhof“?",
+    "options": [
+     "Ich warte auf den Zug.",
+     "Ich verstehe gar nichts.",
+     "Ich verstehe alles.",
+     "Ich fahre gern Bahn."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wer „Schwein gehabt“ hat, …",
+    "options": [
+     "hat zu viel gegessen",
+     "hat sich schlecht benommen",
+     "war unordentlich",
+     "hatte Glück"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Du hättest sehen _____, wie er sich gefreut hat!“",
+    "options": [
+     "gesollt",
+     "sollen",
+     "soll",
+     "sollst"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "„Den Nagel auf den Kopf treffen“ heißt …",
+    "options": [
+     "sich verletzen",
+     "handwerklich begabt sein",
+     "genau das Richtige sagen",
+     "sehr wütend werden"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Sie redet um den heißen Brei herum, statt direkt zur Sache _____.“",
+    "options": [
+     "zu kommen",
+     "kommen",
+     "kommt",
+     "gekommen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähle von einer Situation, in der du „Schwein gehabt“ hast.",
+    "start": "Ich hatte einmal richtig Schwein, als …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wer „ins Fettnäpfchen tritt“, …",
+    "options": [
+     "sagt oder tut etwas Peinliches",
+     "kocht mit zu viel Öl",
+     "rutscht auf der Straße aus",
+     "spart viel Geld"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Als ich die gute Nachricht hörte, _____ mir ein Stein vom Herzen.“",
+    "options": [
+     "fällt",
+     "gefallen",
+     "fiel",
+     "fallen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre, was „jemandem die Daumen drücken“ bedeutet, und benutze es in einem Satz.",
+    "start": "Wenn man jemandem die Daumen drückt, …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "„Etwas auf die lange Bank schieben“ bedeutet …",
+    "options": [
+     "etwas aufschieben",
+     "Möbel umstellen",
+     "etwas verkaufen",
+     "sich ausruhen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Er ist _____ seiner Erfahrung ins Fettnäpfchen getreten.“",
+    "options": [
+     "wegen",
+     "dank",
+     "statt",
+     "trotz"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe einen Moment, in dem du ins Fettnäpfchen getreten bist.",
+    "start": "Einmal bin ich so richtig ins Fettnäpfchen getreten, als …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Tomaten auf den Augen haben“?",
+    "options": [
+     "sehr müde sein",
+     "etwas Offensichtliches nicht sehen",
+     "rot werden",
+     "gern Gemüse essen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Hätte ich das gewusst, _____ ich nicht die Katze im Sack gekauft.“",
+    "options": [
+     "würde",
+     "wäre",
+     "hätte",
+     "habe"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Welche deutsche Redewendung gefällt dir am besten? Erkläre, warum.",
+    "start": "Meine Lieblingsredewendung ist …"
+   }
+  ]
+ },
+ "advanced-u3-l1": {
+  "title": "Detailed and engaging stories",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort leitet in einer Geschichte eine überraschende Wendung ein?",
+    "options": [
+     "Normalerweise",
+     "Meistens",
+     "Plötzlich",
+     "Ständig"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist die „Pointe“ einer Geschichte?",
+    "options": [
+     "die Einleitung",
+     "der Titel",
+     "eine lange Beschreibung",
+     "der überraschende Höhepunkt am Ende"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Nachdem wir stundenlang gewandert _____, fanden wir endlich eine Hütte.“",
+    "options": [
+     "waren",
+     "hatten",
+     "sind",
+     "haben"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort passt? „Ich wartete am Bahnhof. _____ packte mein Bruder zu Hause noch seine Koffer.“",
+    "options": [
+     "Nachdem",
+     "Währenddessen",
+     "Sobald",
+     "Bevor"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Als ich die Tür öffnete, _____ mir ein seltsamer Geruch entgegen.“",
+    "options": [
+     "schlagte",
+     "schlägt",
+     "schlug",
+     "geschlagen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähle von einem Erlebnis, das dich überrascht hat. Baue dabei Spannung auf.",
+    "start": "Ich werde nie vergessen, wie …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Mir stockte der Atem“?",
+    "options": [
+     "Ich war vor Schreck oder Spannung wie gelähmt.",
+     "Ich hatte starken Husten.",
+     "Ich bin sehr schnell gelaufen.",
+     "Ich habe tief geschlafen."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Der _____ Wanderer erreichte erst um Mitternacht das Dorf.“",
+    "options": [
+     "erschöpfende",
+     "erschöpft",
+     "erschöpfte",
+     "erschöpften"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe den spannendsten Moment einer Reise, die du gemacht hast.",
+    "start": "Der spannendste Moment war, als …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Verb passt? „Leise _____ sie aus dem Zimmer, damit niemand aufwachte.“",
+    "options": [
+     "trampelte",
+     "schlich",
+     "stürmte",
+     "polterte"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Wenn ich damals nicht nach Berlin gezogen _____, hätte ich meine Frau nie getroffen.“",
+    "options": [
+     "wäre",
+     "hätte",
+     "war",
+     "würde"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähle eine Geschichte aus deiner Kindheit, die ein überraschendes Ende hat.",
+    "start": "Als ich klein war, …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welcher Ausdruck leitet am Ende einer Geschichte ein kurzes Fazit ein?",
+    "options": [
+     "Es war einmal …",
+     "Stell dir vor, …",
+     "Plötzlich …",
+     "Lange Rede, kurzer Sinn: …"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form (indirekte Rede): „Der Fremde behauptete, er _____ mich schon einmal gesehen.“",
+    "options": [
+     "sei",
+     "habe",
+     "werde",
+     "würde"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Gib eine lustige Geschichte wieder, die dir jemand erzählt hat. Benutze die indirekte Rede.",
+    "start": "Ein Freund hat mir erzählt, er habe einmal …"
+   }
+  ]
+ },
+ "advanced-u4-l1": {
+  "title": "Developing and supporting an argument",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Welcher Ausdruck leitet ein Gegenargument ein?",
+    "options": [
+     "Andererseits …",
+     "Zudem …",
+     "Darüber hinaus …",
+     "Außerdem …"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie nennt man eine Tatsache, die eine Behauptung stützt?",
+    "options": [
+     "der Beleg",
+     "der Einwand",
+     "der Zweifel",
+     "der Widerspruch"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ der aktuellen Zahlen müssen wir unsere Strategie überdenken.“",
+    "options": [
+     "Obwohl",
+     "Angesichts",
+     "Trotzdem",
+     "Weil"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "„Das Argument ist nicht stichhaltig“ bedeutet, es ist …",
+    "options": [
+     "sehr überzeugend",
+     "sehr lang",
+     "ganz neu",
+     "nicht gut begründet"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Es lässt sich nicht leugnen, _____ das Problem immer größer wird.“",
+    "options": [
+     "dass",
+     "ob",
+     "das",
+     "was"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Sollte man Autos aus den Innenstädten verbannen? Begründe deine Meinung mit zwei Argumenten.",
+    "start": "Meiner Ansicht nach sollte man …, denn erstens …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welcher Ausdruck bedeutet „zusammenfassend“?",
+    "options": [
+     "Im Gegenteil",
+     "Zum Beispiel",
+     "Alles in allem",
+     "Im Gegensatz dazu"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich bin fest _____ überzeugt, dass wir handeln müssen.“",
+    "options": [
+     "darauf",
+     "davon",
+     "dafür",
+     "daran"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Nenne ein Argument für und eines gegen Homeoffice.",
+    "start": "Einerseits spricht für Homeoffice, dass …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was tust du, wenn du „einen Einwand vorwegnimmst“?",
+    "options": [
+     "Ich ignoriere die Gegenseite.",
+     "Ich beende die Diskussion.",
+     "Ich wiederhole mein Argument.",
+     "Ich gehe auf einen Gegenpunkt ein, bevor er kommt."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Studien zufolge _____ die Zahl der Nutzer im letzten Jahr deutlich gestiegen.“",
+    "options": [
+     "ist",
+     "hat",
+     "wird",
+     "wäre"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Überzeuge einen Freund, mehr Sport zu treiben. Benutze „nicht nur …, sondern auch …“.",
+    "start": "Sport ist nicht nur gesund, sondern auch …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Verb passt? „Diese Zahlen _____ meine These – sie zeigen, dass ich recht habe.“",
+    "options": [
+     "widerlegen",
+     "bezweifeln",
+     "belegen",
+     "verschweigen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wir sollten das Angebot annehmen, _____ es ausgesprochen günstig ist.“",
+    "options": [
+     "obwohl",
+     "trotzdem",
+     "sodass",
+     "zumal"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Was ist deiner Meinung nach das größte Problem unserer Zeit? Begründe deine Antwort.",
+    "start": "Das größte Problem ist meiner Meinung nach …, und zwar weil …"
+   }
+  ]
+ },
+ "advanced-u5-l1": {
+  "title": "Leading",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wie eröffnest du eine Besprechung formell?",
+    "options": [
+     "Na, alles klar bei euch?",
+     "Ich begrüße Sie herzlich zu unserer heutigen Sitzung.",
+     "Tschüss, bis später!",
+     "Lass mal quatschen."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist die „Tagesordnung“ einer Sitzung?",
+    "options": [
+     "die Liste der Besprechungspunkte",
+     "der Kalender des Chefs",
+     "das Protokoll der letzten Sitzung",
+     "die Pausenregelung"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Der erste Punkt der Tagesordnung _____ bereits letzte Woche besprochen.“",
+    "options": [
+     "hat",
+     "wurde",
+     "worden",
+     "wird"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Mit welchem Satz leitest du zum nächsten Punkt über?",
+    "options": [
+     "Wer hat Hunger?",
+     "Ich muss jetzt los.",
+     "Das war's, tschüss!",
+     "Kommen wir nun zum nächsten Punkt."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Bis Freitag _____ der Bericht fertiggestellt werden.“",
+    "options": [
+     "müssen",
+     "musst",
+     "muss",
+     "hat"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Eröffne eine Teambesprechung und stelle die Tagesordnung vor.",
+    "start": "Guten Morgen zusammen, ich begrüße Sie zu …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich schlage vor, diesen Punkt zu vertagen“?",
+    "options": [
+     "Wir besprechen ihn heute ausführlicher.",
+     "Wir verschieben ihn auf eine spätere Sitzung.",
+     "Wir streichen ihn komplett.",
+     "Wir stimmen sofort ab."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ der knappen Zeit beschränken wir uns heute auf drei Punkte.“",
+    "options": [
+     "Weil",
+     "Deshalb",
+     "Aufgrund",
+     "Damit"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Bitte einen Kollegen höflich, heute das Protokoll zu übernehmen.",
+    "start": "Herr Schmidt, wären Sie so freundlich, …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie lenkst du als Leiterin die Diskussion zurück zum Thema?",
+    "options": [
+     "Das ist mir egal.",
+     "Machen wir Feierabend.",
+     "Erzählen Sie ruhig weiter.",
+     "Lassen Sie uns bitte beim Thema bleiben."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Die Frist ist unbedingt _____.“",
+    "options": [
+     "einzuhalten",
+     "einhalten",
+     "eingehalten zu",
+     "einhaltend"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Fasse die Ergebnisse einer Besprechung zusammen und verteile die Aufgaben.",
+    "start": "Zusammenfassend lässt sich sagen, dass …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was sind „Wortmeldungen“ in einer Sitzung?",
+    "options": [
+     "schriftliche Einladungen",
+     "kurze Pausen",
+     "Signale, dass jemand sprechen möchte",
+     "Abstimmungsergebnisse"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Das ist eine Frage, _____ ich gleich noch zurückkommen werde.“",
+    "options": [
+     "an die",
+     "für die",
+     "über die",
+     "auf die"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Beende eine Sitzung freundlich und nenne den nächsten Termin.",
+    "start": "Vielen Dank für Ihre Beiträge. Wir treffen uns wieder …"
+   }
+  ]
+ },
+ "advanced-u5-l2": {
+  "title": "Interrupting politely",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wie unterbrichst du in einer Sitzung höflich?",
+    "options": [
+     "Jetzt bin ich mal dran!",
+     "Hören Sie auf zu reden!",
+     "Entschuldigen Sie, dass ich Sie unterbreche, aber …",
+     "Das ist doch Quatsch!"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Darf ich da kurz einhaken?“",
+    "options": [
+     "Darf ich kurz etwas dazu sagen?",
+     "Darf ich jetzt gehen?",
+     "Darf ich das Fenster öffnen?",
+     "Darf ich das notieren?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die höfliche Form: „_____ ich Sie kurz unterbrechen?“",
+    "options": [
+     "Durfte",
+     "Dürfte",
+     "Darfst",
+     "Dürftest"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie bittest du darum, ausreden zu dürfen?",
+    "options": [
+     "Reden Sie bitte weiter.",
+     "Sprechen Sie lauter.",
+     "Fassen Sie sich kurz.",
+     "Lassen Sie mich bitte kurz ausreden."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Ich _____ gern kurz etwas ergänzen, wenn ich darf.“",
+    "options": [
+     "möchte",
+     "möge",
+     "mochte",
+     "gemocht"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Unterbrich einen Kollegen höflich, weil du eine Frage zu seinen Zahlen hast.",
+    "start": "Entschuldigung, wenn ich kurz unterbreche, aber …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „jemandem ins Wort fallen“?",
+    "options": [
+     "jemanden loben",
+     "jemanden unterbrechen",
+     "jemandem zustimmen",
+     "jemanden zitieren"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ Ihres Vortrags ist mir eine Frage eingefallen.“",
+    "options": [
+     "Als",
+     "Wenn",
+     "Seit",
+     "Während"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Jemand unterbricht dich ständig. Bitte höflich darum, ausreden zu dürfen.",
+    "start": "Einen Moment bitte, ich würde gern …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie gibst du nach einer Unterbrechung das Wort zurück?",
+    "options": [
+     "Jetzt rede ich.",
+     "Das reicht.",
+     "Aber bitte, fahren Sie fort.",
+     "Schluss jetzt."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Wenn ich da kurz einhaken _____: Haben wir das Budget schon geprüft?“",
+    "options": [
+     "dürfen",
+     "darfst",
+     "gedurft",
+     "darf"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Du musst eine Besprechung früher verlassen. Unterbrich höflich und entschuldige dich.",
+    "start": "Verzeihung, dass ich mich einmische, aber ich muss leider …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welcher Ausdruck bedeutet „kurz etwas hinzufügen“?",
+    "options": [
+     "einen Antrag ablehnen",
+     "eine kurze Anmerkung machen",
+     "das Wort entziehen",
+     "die Sitzung vertagen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form (indirekte Rede): „Sie sagten vorhin, das Projekt _____ bereits abgeschlossen. Stimmt das?“",
+    "options": [
+     "sei",
+     "seien",
+     "seist",
+     "gewesen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Die Diskussion weicht vom Thema ab. Unterbrich höflich und lenke sie zurück.",
+    "start": "Darf ich kurz einhaken? Ich glaube, wir …"
+   }
+  ]
+ },
+ "advanced-u5-l3": {
+  "title": "Contributing ideas",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wie bringst du in einer Sitzung eine Idee ein?",
+    "options": [
+     "Ich hätte da einen Vorschlag: …",
+     "Das geht mich nichts an.",
+     "Keine Ahnung.",
+     "Machen Sie, was Sie wollen."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was macht man bei einem „Brainstorming“?",
+    "options": [
+     "einen Bericht schreiben",
+     "eine Pause machen",
+     "spontan möglichst viele Ideen sammeln",
+     "eine Entscheidung treffen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Wie _____ es, wenn wir die Kampagne zuerst online starten?“",
+    "options": [
+     "war",
+     "wäre",
+     "würde",
+     "hätte"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "„Über den Tellerrand schauen“ bedeutet …",
+    "options": [
+     "das Geschirr spülen",
+     "neugierig auf den Nachbarn sein",
+     "unhöflich sein",
+     "neue Perspektiven einnehmen"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Man _____ überlegen, ob wir einen externen Berater hinzuziehen.“",
+    "options": [
+     "könnten",
+     "könnte",
+     "gekonnt",
+     "könntest"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Schlage in einer Teambesprechung eine neue Idee für die Werbung vor.",
+    "start": "Ich hätte da eine Idee: Wie wäre es, wenn …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Verb passt? „Ich möchte gern an den Vorschlag von Frau Lange _____.“",
+    "options": [
+     "abbrechen",
+     "anknüpfen",
+     "ablehnen",
+     "anhalten"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Ich gebe zu bedenken, dass der Plan nur umgesetzt werden _____, wenn das Budget steigt.“",
+    "options": [
+     "können",
+     "kannst",
+     "kann",
+     "hat"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Ergänze den Vorschlag eines Kollegen mit einer eigenen Idee.",
+    "start": "Ich möchte gern an das anknüpfen, was Sie gesagt haben …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „einen Vorschlag unterbreiten“?",
+    "options": [
+     "einen Vorschlag ablehnen",
+     "einen Vorschlag vergessen",
+     "einen Vorschlag kritisieren",
+     "einen Vorschlag machen"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Wäre es nicht sinnvoller, die Kosten zuerst genau _____?“",
+    "options": [
+     "zu prüfen",
+     "prüfen",
+     "geprüft",
+     "prüfend"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Mach einen Vorschlag, wie dein Team Zeit sparen könnte.",
+    "start": "Ich würde vorschlagen, dass wir …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welche Formulierung klingt bei einem Vorschlag vorsichtig und höflich?",
+    "options": [
+     "Wir müssen sofort …",
+     "Das machen wir so!",
+     "Vielleicht könnten wir …",
+     "Keine Diskussion: …"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Relativpronomen: „Das ist ein Ansatz, _____ wir unbedingt weiterverfolgen sollten.“",
+    "options": [
+     "dem",
+     "der",
+     "dessen",
+     "den"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Fasse zusammen, welche Ideen gesammelt wurden, und sag, welche dir am besten gefällt.",
+    "start": "Heute wurden mehrere Ideen genannt, zum Beispiel …"
+   }
+  ]
+ },
+ "advanced-u6-l1": {
+  "title": "Explaining ideas clearly and confidently",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wie leitest du eine Präsentation ein?",
+    "options": [
+     "Das war's von meiner Seite.",
+     "In meinem Vortrag geht es heute um …",
+     "Vielen Dank für Ihre Aufmerksamkeit.",
+     "Gibt es noch Fragen?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist „Lampenfieber“?",
+    "options": [
+     "Nervosität vor einem Auftritt",
+     "eine leichte Erkältung",
+     "eine helle Beleuchtung",
+     "große Begeisterung"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Wie aus der Grafik _____, ist der Umsatz deutlich gestiegen.“",
+    "options": [
+     "hervorgehen",
+     "hervorgeht",
+     "hervorgehe",
+     "hervorgegangen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Mit welchem Satz leitest du zum nächsten Teil über?",
+    "options": [
+     "Ich bin ein bisschen müde.",
+     "Das wollte ich eigentlich nicht sagen.",
+     "Wo war ich stehen geblieben?",
+     "Damit komme ich zum zweiten Punkt."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Abschließend lässt _____ sagen, dass das Projekt ein Erfolg war.“",
+    "options": [
+     "man",
+     "es",
+     "sich",
+     "uns"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Stelle das Thema deiner Präsentation in zwei, drei Sätzen vor.",
+    "start": "Guten Tag, meine Damen und Herren. In meinem Vortrag geht es um …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „etwas auf den Punkt bringen“?",
+    "options": [
+     "etwas zeichnen",
+     "etwas knapp und präzise sagen",
+     "etwas verschieben",
+     "etwas übertreiben"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Die Daten wurden im letzten Quartal von unserem Team _____.“",
+    "options": [
+     "erheben",
+     "erhob",
+     "erhebt",
+     "erhoben"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre anhand einer Grafik, wie sich die Verkaufszahlen entwickelt haben.",
+    "start": "Wie Sie auf dieser Folie sehen, …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist eine „Folie“ bei einer Präsentation?",
+    "options": [
+     "eine Frage aus dem Publikum",
+     "eine kurze Pause",
+     "eine Seite der Bildschirmpräsentation",
+     "das Rednerpult"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Lassen Sie mich das an einem Beispiel _____.“",
+    "options": [
+     "veranschaulichen",
+     "veranschaulicht",
+     "zu veranschaulichen",
+     "veranschaulichend"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Jemand im Publikum stellt eine schwierige Frage. Gewinne Zeit und antworte.",
+    "start": "Das ist eine sehr gute Frage. Lassen Sie mich kurz …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welcher Satz beendet eine Präsentation höflich?",
+    "options": [
+     "Ich fange jetzt an.",
+     "Wer sind Sie eigentlich?",
+     "Moment, wo war ich?",
+     "Vielen Dank für Ihre Aufmerksamkeit."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort (Nominalstil): „Nach _____ des Projekts werden die Ergebnisse veröffentlicht.“",
+    "options": [
+     "abgeschlossen",
+     "abschließen",
+     "abschließend",
+     "Abschluss"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Fasse zum Schluss die drei wichtigsten Punkte deiner Präsentation zusammen.",
+    "start": "Zum Schluss möchte ich die wichtigsten Punkte noch einmal zusammenfassen: Erstens …"
+   }
+  ]
+ },
+ "advanced-u7-l1": {
+  "title": "Detailed professional answers and follow-ups",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „belastbar“ in einer Bewerbung?",
+    "options": [
+     "auch unter Druck gut arbeiten können",
+     "schwere Kisten tragen können",
+     "schnell müde werden",
+     "viel Urlaub brauchen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Arbeitszeugnis“?",
+    "options": [
+     "eine Beurteilung durch den früheren Arbeitgeber",
+     "eine Gehaltsabrechnung",
+     "ein Arbeitsvertrag",
+     "ein Bewerbungsfoto"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „In meiner letzten Position _____ ich für ein Team von zehn Personen verantwortlich.“",
+    "options": [
+     "hatte",
+     "war",
+     "habe",
+     "bin gewesen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort beschreibt jemanden, der von sich aus Initiative ergreift?",
+    "options": [
+     "zurückhaltend",
+     "unzuverlässig",
+     "unentschlossen",
+     "proaktiv"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich habe mich beworben, _____ ich meine Kenntnisse im Marketing vertiefen möchte.“",
+    "options": [
+     "deshalb",
+     "weil",
+     "denn",
+     "trotzdem"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Stell dich in einem Vorstellungsgespräch vor und nenne deine wichtigsten Erfahrungen.",
+    "start": "Gern. Ich habe … studiert und danach …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was will die Personalerin mit „Wo sehen Sie sich in fünf Jahren?“ wissen?",
+    "options": [
+     "Ihren Wohnort",
+     "Ihre Urlaubspläne",
+     "Ihre beruflichen Ziele",
+     "Ihr Alter"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich zeichne mich vor allem _____ Zuverlässigkeit und Kreativität aus.“",
+    "options": [
+     "mit",
+     "von",
+     "durch",
+     "für"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe eine schwierige Situation im Job und wie du sie gelöst hast.",
+    "start": "In meinem letzten Job stand ich vor der Herausforderung, …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was sind „Gehaltsvorstellungen“?",
+    "options": [
+     "die Steuern",
+     "das Gehalt, das man sich wünscht",
+     "die Arbeitszeiten",
+     "die Urlaubstage"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Wenn ich mehr Zeit gehabt _____, hätte ich noch einen Master gemacht.“",
+    "options": [
+     "wäre",
+     "habe",
+     "hatte",
+     "hätte"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Man fragt dich nach deiner größten Schwäche. Antworte ehrlich, aber positiv.",
+    "start": "Eine meiner Schwächen ist, dass ich …, aber ich arbeite daran, indem …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welche Rückfrage passt am Ende eines Vorstellungsgesprächs?",
+    "options": [
+     "Wie sieht ein typischer Arbeitstag in diesem Team aus?",
+     "Wie alt sind Sie eigentlich?",
+     "Darf ich jetzt endlich gehen?",
+     "Warum ist Ihr Büro so hässlich?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Das Projekt ist letztes Jahr erfolgreich abgeschlossen _____.“",
+    "options": [
+     "geworden",
+     "werden",
+     "worden",
+     "wurde"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre, warum du gerade bei diesem Unternehmen arbeiten möchtest.",
+    "start": "Ihr Unternehmen reizt mich besonders, weil …"
+   }
+  ]
+ },
+ "advanced-u8-l1": {
+  "title": "Proposals",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Rabatt“?",
+    "options": [
+     "eine Strafgebühr",
+     "eine Lieferfrist",
+     "ein Preisnachlass",
+     "eine Rechnung"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welcher Satz formuliert einen Vorschlag diplomatisch?",
+    "options": [
+     "Wir könnten Ihnen entgegenkommen, wenn …",
+     "Das ist unser letztes Wort!",
+     "Friss oder stirb!",
+     "Darüber reden wir nicht."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Wir _____ Ihnen zehn Prozent Rabatt anbieten, sofern Sie mindestens 500 Stück bestellen.“",
+    "options": [
+     "könnten",
+     "konnten",
+     "gekonnt",
+     "könntest"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was regeln die „Zahlungsbedingungen“?",
+    "options": [
+     "den Gesamtpreis",
+     "die Qualität der Ware",
+     "die Lieferadresse",
+     "wann und wie bezahlt wird"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Der Preis versteht sich _____ Mehrwertsteuer.“",
+    "options": [
+     "trotz",
+     "während",
+     "zuzüglich",
+     "anstatt"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Mach einem Lieferanten einen Vorschlag zu Preis und Lieferzeit.",
+    "start": "Wir würden Ihnen folgendes Angebot machen: …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „verbindlich“ bei einem Angebot?",
+    "options": [
+     "Es ist nur eine grobe Idee.",
+     "Es gilt fest und verpflichtet.",
+     "Es ist kostenlos.",
+     "Es ist schon abgelaufen."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wir sind bereit, den Preis zu senken, _____ Sie den Vertrag um zwei Jahre verlängern.“",
+    "options": [
+     "obwohl",
+     "trotzdem",
+     "vorausgesetzt",
+     "anstatt"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Schlage einem Kunden ein Paketangebot vor, das für beide Seiten attraktiv ist.",
+    "start": "Wie wäre es, wenn wir Ihnen ein Paket anbieten, das …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Spielraum haben“ in einer Verhandlung?",
+    "options": [
+     "Zeit zum Spielen haben",
+     "einen großen Raum mieten",
+     "keine Wahl haben",
+     "flexibel sein können"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Relativpronomen: „Wir suchen einen Partner, _____ Produkte unseren Qualitätsansprüchen genügen.“",
+    "options": [
+     "dessen",
+     "dem",
+     "deren",
+     "der"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Ein Kunde findet dein Angebot zu teuer. Schlage eine Alternative vor.",
+    "start": "Ich verstehe Ihre Bedenken. Alternativ könnten wir …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Gegenangebot“?",
+    "options": [
+     "ein Angebot ohne Preis",
+     "ein neues Angebot als Antwort auf ein Angebot",
+     "ein abgelehntes Produkt",
+     "eine Werbung der Konkurrenz"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wir würden es begrüßen, _____ Sie uns bis Freitag Bescheid geben könnten.“",
+    "options": [
+     "ob",
+     "damit",
+     "als",
+     "wenn"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Fasse am Ende einer Verhandlung das Angebot zusammen und bitte um eine Entscheidung.",
+    "start": "Zusammengefasst würden wir Ihnen Folgendes anbieten: …"
+   }
+  ]
+ },
+ "advanced-u8-l2": {
+  "title": "Compromises",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „sich auf halbem Weg entgegenkommen“?",
+    "options": [
+     "sich zufällig treffen",
+     "das Gespräch abbrechen",
+     "einen Kompromiss finden",
+     "zu spät kommen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "„In den sauren Apfel beißen“ heißt …",
+    "options": [
+     "etwas Unangenehmes akzeptieren",
+     "Obst essen",
+     "sich beschweren",
+     "etwas sehr genießen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Wir sind Ihnen schon _____ entgegengekommen, als wir ursprünglich geplant hatten.“",
+    "options": [
+     "weit",
+     "weiter",
+     "am weitesten",
+     "weiteste"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "„Zugeständnisse machen“ bedeutet …",
+    "options": [
+     "Fehler zugeben",
+     "Geschenke machen",
+     "einen Vertrag kündigen",
+     "der anderen Seite in einigen Punkten nachgeben"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ weiter zu streiten, sollten wir einen Kompromiss suchen.“",
+    "options": [
+     "Um",
+     "Damit",
+     "Anstatt",
+     "Obwohl"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Du und deine Kollegin wollt in derselben Woche Urlaub. Schlage einen Kompromiss vor.",
+    "start": "Wie wäre es, wenn wir uns entgegenkommen und …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "In einer Verhandlung: „Treffen wir uns in der Mitte?“ bedeutet …",
+    "options": [
+     "Wir einigen uns auf einen mittleren Wert.",
+     "Wir verabreden uns im Stadtzentrum.",
+     "Wir teilen uns den Raum.",
+     "Wir beenden die Gespräche."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Wir _____ früher nachgeben sollen, dann wäre der Vertrag schon unterschrieben.“",
+    "options": [
+     "wären",
+     "würden",
+     "sollten",
+     "hätten"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe eine Situation, in der du einen Kompromiss eingehen musstest.",
+    "start": "Einmal musste ich einen Kompromiss eingehen, als …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „nicht verhandelbar“?",
+    "options": [
+     "sehr billig",
+     "noch unklar",
+     "darüber wird nicht diskutiert",
+     "freiwillig"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Die Lösung, _____ sich beide Seiten schließlich einigten, war fair.“",
+    "options": [
+     "auf der",
+     "auf die",
+     "an die",
+     "für die"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Dein Mitbewohner will einen Hund, du nicht. Findet gemeinsam einen Kompromiss.",
+    "start": "Ich verstehe, dass du gern einen Hund hättest. Was hältst du davon, wenn …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie beschreibt man jemanden, der zu keinem Kompromiss bereit ist?",
+    "options": [
+     "kompromissbereit",
+     "unnachgiebig",
+     "entgegenkommend",
+     "flexibel"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ beide Seiten Zugeständnisse machten, kam es schließlich zu einer Einigung.“",
+    "options": [
+     "Denn",
+     "Deshalb",
+     "Daher",
+     "Da"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Ist ein Kompromiss immer die beste Lösung? Begründe deine Meinung.",
+    "start": "Meiner Meinung nach ist ein Kompromiss nicht immer …"
+   }
+  ]
+ },
+ "advanced-u8-l3": {
+  "title": "Persuasion",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Welches Verb bedeutet „jemanden dazu bringen, etwas zu glauben“?",
+    "options": [
+     "überlegen",
+     "übersehen",
+     "überzeugen",
+     "überholen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „schlagendes Argument“?",
+    "options": [
+     "ein sehr überzeugendes Argument",
+     "ein aggressives Argument",
+     "ein schwaches Argument",
+     "ein Argument im Streit"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „An Ihrer Stelle _____ ich dieses Angebot nicht ablehnen.“",
+    "options": [
+     "werde",
+     "würde",
+     "wurde",
+     "wäre"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „jemanden um den Finger wickeln“?",
+    "options": [
+     "jemandem einen Ring schenken",
+     "jemanden verletzen",
+     "jemanden ignorieren",
+     "jemanden geschickt für sich gewinnen"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Das Gerät _____ sich besonders leicht bedienen.“",
+    "options": [
+     "ist",
+     "wird",
+     "lässt",
+     "hat"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Überzeuge deine Chefin, dass das Team einen Homeoffice-Tag pro Woche bekommen sollte.",
+    "start": "Ich bin fest davon überzeugt, dass ein Homeoffice-Tag pro Woche …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Überzeugungsarbeit leisten“?",
+    "options": [
+     "andere mit Mühe von etwas überzeugen",
+     "Überstunden machen",
+     "einen Vertrag unterschreiben",
+     "ehrenamtlich arbeiten"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Nicht nur der Preis ist günstig, _____ auch die Qualität überzeugt.“",
+    "options": [
+     "aber",
+     "denn",
+     "oder",
+     "sondern"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Überrede einen Freund, mit dir einen Sprachkurs in Berlin zu machen.",
+    "start": "Komm schon, stell dir mal vor, …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welche Formulierung klingt am überzeugendsten?",
+    "options": [
+     "Vielleicht könnte es sein, dass …",
+     "Ich weiß nicht genau, ob …",
+     "Es steht außer Frage, dass …",
+     "Eventuell wäre es möglich, dass …"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Die von uns _____ Lösung spart Ihnen Zeit und Geld.“",
+    "options": [
+     "entwickelnde",
+     "entwickelten",
+     "entwickelt",
+     "entwickelte"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Ein Kunde zögert noch. Überzeuge ihn mit einem konkreten Vorteil.",
+    "start": "Bedenken Sie bitte, dass Sie mit unserem Produkt …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „jemandem den Wind aus den Segeln nehmen“?",
+    "options": [
+     "mit jemandem segeln gehen",
+     "einem Gegner seine Argumente vorwegnehmen",
+     "jemanden bei Sturm beruhigen",
+     "jemanden loben"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Wenn Sie jetzt nicht zugreifen, _____ Sie es später bereuen.“",
+    "options": [
+     "wurden",
+     "worden",
+     "würde",
+     "werden"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Überzeuge andere, mehr Deutsch zu sprechen, statt nur Grammatik zu lernen.",
+    "start": "Mal ehrlich: Wer eine Sprache wirklich lernen will, …"
+   }
+  ]
+ },
+ "advanced-u9-l1": {
+  "title": "Formal vs casual workplace language",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Welche Anrede passt in einer formellen E-Mail an eine Frau, die du nicht kennst?",
+    "options": [
+     "Sehr geehrte Frau Becker,",
+     "Hi Becker,",
+     "Hallo Leute,",
+     "Moin!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist die formelle Version von „Kriegst du das bis morgen hin?“",
+    "options": [
+     "Mach das bis morgen!",
+     "Schaffst du's, Alter?",
+     "Morgen fertig, oder?",
+     "Wäre es Ihnen möglich, das bis morgen zu erledigen?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort (Nominalstil): „Wir bitten um _____ der Rechnung bis zum Monatsende.“",
+    "options": [
+     "begleichen",
+     "Begleichung",
+     "beglichen",
+     "begleichend"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Verb ist die formelle Variante von „kriegen“?",
+    "options": [
+     "erhalten",
+     "schnappen",
+     "abgreifen",
+     "packen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ Ihrer Anfrage teilen wir Ihnen mit, dass der Termin verschoben wurde.“",
+    "options": [
+     "Bezüglich",
+     "Obwohl",
+     "Weil",
+     "Damit"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Bitte deinen Vorgesetzten formell um einen freien Tag.",
+    "start": "Sehr geehrter Herr Wagner, ich möchte Sie höflich bitten, …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welche Grußformel passt in eine E-Mail an einen Kollegen, den du duzt?",
+    "options": [
+     "Hochachtungsvoll",
+     "Mit vorzüglicher Hochachtung",
+     "Ergebenst",
+     "Viele Grüße"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Die Besprechung _____ aus organisatorischen Gründen auf Donnerstag verschoben worden.“",
+    "options": [
+     "hat",
+     "wird",
+     "ist",
+     "wurde"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre einem neuen Kollegen ganz locker, wie das bei euch mit der Mittagspause läuft.",
+    "start": "Also, bei uns ist das ganz entspannt: …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welcher Ausdruck passt NICHT in eine formelle E-Mail?",
+    "options": [
+     "Mit freundlichen Grüßen",
+     "Hau rein!",
+     "Anbei sende ich Ihnen …",
+     "Bezüglich Ihrer Anfrage …"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Wir bedauern, Ihnen mitteilen zu _____, dass wir Ihre Bewerbung nicht berücksichtigen können.“",
+    "options": [
+     "müssen",
+     "muss",
+     "gemusst",
+     "müsste"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Sag dasselbe zweimal: locker zu einem Kollegen und formell zur Chefin. Du kommst morgen später.",
+    "start": "Locker: „Du, ich komm morgen etwas später.“ Formell: …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist das „Du-Angebot“ im Büro?",
+    "options": [
+     "ein Sonderangebot in der Kantine",
+     "der Vorschlag, sich zu duzen",
+     "eine Gehaltserhöhung",
+     "eine Einladung zum Essen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Anbei _____ Sie die gewünschten Unterlagen.“",
+    "options": [
+     "erhält",
+     "erhaltet",
+     "erhielten",
+     "erhalten"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Ein Kollege, den du siezt, bietet dir das Du an. Reagiere freundlich.",
+    "start": "Sehr gern! Ich bin übrigens …"
+   }
+  ]
+ },
+ "advanced-u10-l1": {
+  "title": "Complaints",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „sich beschweren“?",
+    "options": [
+     "etwas Schweres tragen",
+     "sich bedanken",
+     "seine Unzufriedenheit äußern",
+     "sich entschuldigen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist eine „Reklamation“?",
+    "options": [
+     "eine Beschwerde über eine mangelhafte Ware",
+     "eine Werbung",
+     "eine Rechnung",
+     "eine Lieferung"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich möchte mich _____ den unfreundlichen Service beschweren.“",
+    "options": [
+     "für",
+     "über",
+     "auf",
+     "an"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Das lasse ich mir nicht gefallen!“?",
+    "options": [
+     "Das gefällt mir sehr.",
+     "Das habe ich verloren.",
+     "Das finde ich lustig.",
+     "Das akzeptiere ich nicht."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Das Gerät _____ bereits nach zwei Tagen kaputtgegangen.“",
+    "options": [
+     "hat",
+     "wurde",
+     "ist",
+     "wird"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Dein Essen im Restaurant ist kalt. Beschwere dich höflich, aber bestimmt.",
+    "start": "Entschuldigung, ich möchte ungern meckern, aber …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wenn du eine „Erstattung“ verlangst, möchtest du …",
+    "options": [
+     "ein Geschenk bekommen",
+     "dein Geld zurückbekommen",
+     "einen Brief bekommen",
+     "mehr bezahlen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Ich _____ erwartet, dass man mich wenigstens informiert.“",
+    "options": [
+     "wäre",
+     "würde",
+     "werde",
+     "hätte"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Ruf beim Kundenservice an: Dein Paket ist seit zwei Wochen nicht angekommen.",
+    "start": "Guten Tag, ich rufe an, weil meine Bestellung …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welcher Satz klingt bei einer Beschwerde sachlich?",
+    "options": [
+     "Ihr seid total unfähig!",
+     "So ein Mist!",
+     "Leider entspricht die Ware nicht der Beschreibung.",
+     "Das ist ja das Letzte!"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ mehrfacher Nachfrage habe ich bis heute keine Antwort erhalten.“",
+    "options": [
+     "Obwohl",
+     "Wegen",
+     "Statt",
+     "Trotz"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Ein Nachbar ist jede Nacht laut. Sprich ihn freundlich, aber klar darauf an.",
+    "start": "Entschuldigen Sie, ich will Ihnen nicht zu nahe treten, aber …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „aus Kulanz“?",
+    "options": [
+     "als freiwilliges Entgegenkommen",
+     "wegen einer gesetzlichen Pflicht",
+     "als Strafe",
+     "mit einem Rabattcode"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Ich erwarte, dass der Fehler umgehend _____ wird.“",
+    "options": [
+     "beheben",
+     "behebt",
+     "behoben",
+     "behob"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Du hast eine falsche Rechnung bekommen. Erkläre das Problem und sag, was du erwartest.",
+    "start": "Ich habe Ihre Rechnung erhalten und musste leider feststellen, dass …"
+   }
+  ]
+ },
+ "advanced-u10-l2": {
+  "title": "Disagreements",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wie widersprichst du höflich?",
+    "options": [
+     "Das ist totaler Blödsinn!",
+     "Da bin ich ehrlich gesagt anderer Meinung.",
+     "Sie haben keine Ahnung.",
+     "Halt die Klappe."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich sehe das etwas anders“?",
+    "options": [
+     "Ich bin nicht ganz einverstanden.",
+     "Ich brauche eine Brille.",
+     "Ich stimme voll zu.",
+     "Ich habe es nicht gesehen."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich verstehe Ihren Standpunkt, _____ teile ich ihn nicht ganz.“",
+    "options": [
+     "obwohl",
+     "weil",
+     "dennoch",
+     "sondern"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Da muss ich Ihnen widersprechen“?",
+    "options": [
+     "Ich bin anderer Meinung als Sie.",
+     "Ich wiederhole Ihre Worte.",
+     "Ich muss Sie loben.",
+     "Ich muss jetzt gehen."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Zwar hat er recht, was die Kosten angeht, _____ er hat die Risiken unterschätzt.“",
+    "options": [
+     "sondern",
+     "obwohl",
+     "trotzdem",
+     "aber"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Ein Kollege meint, Meetings seien reine Zeitverschwendung. Widersprich höflich.",
+    "start": "Ich verstehe, was du meinst, aber ich sehe das ein bisschen anders: …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welcher Ausdruck schwächt eine Kritik ab?",
+    "options": [
+     "Ich frage mich, ob …",
+     "Unsinn!",
+     "Das ist falsch.",
+     "Auf keinen Fall!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich stimme dem nicht zu, _____, Sie legen mir überzeugende Zahlen vor.“",
+    "options": [
+     "trotzdem",
+     "es sei denn",
+     "damit",
+     "obwohl"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Deine Freundin findet, dass man in der Stadt kein Auto braucht. Du siehst das anders. Sag es diplomatisch.",
+    "start": "Da hast du teilweise recht, aber …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Wir sind uns einig, dass wir uns nicht einig sind“?",
+    "options": [
+     "Wir haben uns endlich geeinigt.",
+     "Wir akzeptieren, dass wir verschiedener Meinung sind.",
+     "Wir streiten noch stundenlang weiter.",
+     "Wir haben das Thema vergessen."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Was Ihren zweiten Punkt _____, bin ich allerdings skeptisch.“",
+    "options": [
+     "angehen",
+     "angegangen",
+     "angeht",
+     "anginge"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "In einer Diskussion behauptet jemand etwas Falsches. Korrigiere es sachlich.",
+    "start": "Mit Verlaub, aber soweit ich weiß, …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Öl ins Feuer gießen“?",
+    "options": [
+     "kochen",
+     "einen Streit beenden",
+     "ein Feuer löschen",
+     "einen Streit noch schlimmer machen"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Wenn man uns doch nur vorher gefragt _____!“",
+    "options": [
+     "wäre",
+     "hat",
+     "hätte",
+     "würde"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähle, worüber du zuletzt mit jemandem uneinig warst und wie ihr das gelöst habt.",
+    "start": "Neulich war ich mit … nicht einer Meinung, und zwar über …"
+   }
+  ]
+ },
+ "advanced-u10-l3": {
+  "title": "Misunderstandings",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was sagst du, wenn du jemanden falsch verstanden hast?",
+    "options": [
+     "Das ist Ihr Problem.",
+     "Ich habe sowieso recht.",
+     "Da habe ich Sie wohl falsch verstanden.",
+     "Egal."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Wir reden aneinander vorbei“?",
+    "options": [
+     "Wir sprechen über Verschiedenes und verstehen uns nicht.",
+     "Wir gehen auf der Straße aneinander vorbei.",
+     "Wir reden gleichzeitig.",
+     "Wir sind uns völlig einig."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Könnten Sie mir erklären, was Sie damit _____?“",
+    "options": [
+     "meinen",
+     "meint",
+     "gemeint",
+     "meinst"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „auf dem Schlauch stehen“?",
+    "options": [
+     "im Garten arbeiten",
+     "Wasser verschwenden",
+     "sehr schnell sein",
+     "etwas gerade nicht kapieren"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Missverständnisse lassen sich vermeiden, _____ man rechtzeitig nachfragt.“",
+    "options": [
+     "damit",
+     "indem",
+     "sodass",
+     "ohne dass"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Du hast einen falschen Termin notiert. Kläre das Missverständnis mit deiner Kollegin.",
+    "start": "Ich glaube, da ist ein Missverständnis entstanden: Ich dachte, …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „etwas in den falschen Hals bekommen“?",
+    "options": [
+     "laut husten",
+     "etwas falsch verstehen und gekränkt sein",
+     "Halsschmerzen haben",
+     "zu viel essen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Ich dachte, Sie _____ erst morgen kommen.“",
+    "options": [
+     "wurden",
+     "worden",
+     "würde",
+     "würden"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Jemand hat deinen Witz falsch verstanden und ist beleidigt. Kläre die Situation.",
+    "start": "Oh, das war wirklich nicht so gemeint! Ich wollte nur …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welche Frage hilft, ein Missverständnis zu vermeiden?",
+    "options": [
+     "Warum sagen Sie so etwas?",
+     "Was soll das?",
+     "Habe ich Sie richtig verstanden, dass …?",
+     "Sind Sie verrückt?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Das Missverständnis hätte vermieden werden _____, wenn wir früher gesprochen hätten.“",
+    "options": [
+     "kann",
+     "konnte",
+     "gekonnt",
+     "können"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Bitte jemanden höflich, etwas noch einmal anders zu erklären.",
+    "start": "Entschuldigung, das habe ich nicht ganz verstanden. Könnten Sie …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Das war nicht böse gemeint“?",
+    "options": [
+     "Das war ein Tippfehler.",
+     "Ich wollte niemanden kränken.",
+     "Das war sehr lustig.",
+     "Ich bin wütend."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wir müssen klären, _____ genau die Verantwortung für das Projekt liegt.“",
+    "options": [
+     "wem",
+     "wen",
+     "bei wem",
+     "wer"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähle von einem lustigen Missverständnis, das du erlebt hast.",
+    "start": "Einmal gab es ein witziges Missverständnis: Ich hatte gedacht, dass …"
+   }
+  ]
+ },
+ "advanced-u11-l1": {
+  "title": "Casual expressions",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich habe keinen Bock“?",
+    "options": [
+     "Ich habe keine Zeit.",
+     "Ich habe keinen Hunger.",
+     "Ich habe keine Lust.",
+     "Ich habe kein Geld."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Das ist mega!“ in der Umgangssprache?",
+    "options": [
+     "Das ist super!",
+     "Das ist schlecht.",
+     "Das ist langweilig.",
+     "Das ist teuer."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich hab echt keine Ahnung, _____ der eigentlich von mir will.“",
+    "options": [
+     "was",
+     "dass",
+     "das",
+     "wem"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet das Verb „pennen“?",
+    "options": [
+     "schreiben",
+     "rennen",
+     "essen",
+     "schlafen"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Lass uns heute Abend noch was trinken _____!“",
+    "options": [
+     "zu gehen",
+     "gehen",
+     "gegangen",
+     "geht"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähle einem Freund ganz locker, was du am Wochenende vorhast.",
+    "start": "Also, am Samstag hab ich voll Bock auf …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Mach dir keinen Kopf!“?",
+    "options": [
+     "Denk mehr nach!",
+     "Mach dir keine Sorgen!",
+     "Setz einen Hut auf!",
+     "Sei nicht so schlau!"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Hätt ich das gewusst, _____ ich gar nicht erst hingegangen.“",
+    "options": [
+     "wär",
+     "würd",
+     "hätt",
+     "bin"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Dein Kumpel hat Stress bei der Arbeit. Mach ihm locker Mut.",
+    "start": "Ach komm, mach dir keinen Kopf, …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist „Kohle“ in „Ich hab grad keine Kohle“?",
+    "options": [
+     "Essen",
+     "Arbeit",
+     "Zeit",
+     "Geld"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Echt jetzt? Das _____ doch nicht dein Ernst sein!“",
+    "options": [
+     "kann",
+     "muss",
+     "will",
+     "hat"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreibe ganz locker deinen letzten Abend mit Freunden.",
+    "start": "Gestern war echt krass, wir sind erst …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Das ist nicht mein Bier“?",
+    "options": [
+     "Ich trinke keinen Alkohol.",
+     "Das ist nicht meine Angelegenheit.",
+     "Das schmeckt mir nicht.",
+     "Ich habe das nicht bestellt."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Wenn du Lust hast, _____ wir nachher noch was essen gehen.“",
+    "options": [
+     "kann",
+     "könnt",
+     "gekonnt",
+     "können"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähle locker, was dich in letzter Zeit total genervt hat.",
+    "start": "Boah, was mir echt auf den Keks geht, ist …"
+   }
+  ]
+ },
+ "advanced-u11-l2": {
+  "title": "Jokes",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Wortspiel“?",
+    "options": [
+     "ein Witz, der mit der Doppeldeutigkeit von Wörtern spielt",
+     "ein Kartenspiel",
+     "ein Kreuzworträtsel",
+     "eine lange Rede"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „jemanden auf den Arm nehmen“?",
+    "options": [
+     "jemanden veräppeln",
+     "jemanden tragen",
+     "jemanden umarmen",
+     "jemandem helfen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Typischer Witzanfang – wähle die richtige Form: „_____ ein Mann in eine Bäckerei …“",
+    "options": [
+     "Kommen",
+     "Kommt",
+     "Gekommen",
+     "Er kommt"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist „schwarzer Humor“?",
+    "options": [
+     "Witze über Farben",
+     "Humor, den niemand versteht",
+     "Witze nur für Kinder",
+     "Humor über ernste Themen wie Tod oder Unglück"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Der Witz war so flach, _____ niemand gelacht hat.“",
+    "options": [
+     "damit",
+     "als",
+     "dass",
+     "wie"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähle einen kurzen Witz, den du kennst.",
+    "start": "Kennst du den schon? Kommt ein …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Spaß beiseite“?",
+    "options": [
+     "Lass uns lachen.",
+     "Das war nur ein Witz.",
+     "Jetzt mal im Ernst.",
+     "Ich bin müde."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Wenn ich du _____, würde ich den Witz nicht vor dem Chef erzählen.“",
+    "options": [
+     "war",
+     "bin",
+     "hätte",
+     "wäre"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähle von einem Streich, den dir jemand gespielt hat.",
+    "start": "Einmal hat mich ein Freund richtig reingelegt: …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Kalauer“?",
+    "options": [
+     "ein Clown im Zirkus",
+     "ein einfacher, oft platter Wortwitz",
+     "ein Komiker im Fernsehen",
+     "ein lustiges Lied"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Über diesen Witz _____ ich mich kaputtgelacht.“",
+    "options": [
+     "bin",
+     "habe",
+     "hat",
+     "wurde"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre, worüber die Leute in deinem Land besonders gern lachen.",
+    "start": "Bei uns lachen die Leute besonders gern über …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Der Witz hat einen Bart“?",
+    "options": [
+     "Der Witz handelt von einem Mann.",
+     "Der Witz ist sehr lustig.",
+     "Der Witz ist uralt und bekannt.",
+     "Der Witz ist unanständig."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Den Witz habe ich nicht verstanden, _____ alle anderen gelacht haben.“",
+    "options": [
+     "trotzdem",
+     "weil",
+     "deshalb",
+     "obwohl"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähle, wann du zuletzt so richtig herzhaft gelacht hast.",
+    "start": "Zuletzt habe ich mich richtig kaputtgelacht, als …"
+   }
+  ]
+ },
+ "advanced-u11-l3": {
+  "title": "Conversational tone",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Welcher Satz klingt locker und freundlich?",
+    "options": [
+     "Wie ist Ihr werter Gesundheitszustand?",
+     "Teilen Sie mir Ihr Befinden mit.",
+     "Ich ersuche um Auskunft.",
+     "Na, wie läuft's bei dir so?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ach, halb so wild!“?",
+    "options": [
+     "Es ist nicht so schlimm.",
+     "Es ist gefährlich.",
+     "Es ist erst halb fertig.",
+     "Ich bin wütend."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Du kommst doch heute Abend auch, _____?“",
+    "options": [
+     "und",
+     "oder",
+     "aber",
+     "denn"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Auf „Danke für deine Hilfe!“ antwortet man locker …",
+    "options": [
+     "Hochachtungsvoll.",
+     "Bitte unterschreiben Sie hier.",
+     "Kein Ding!",
+     "Zur Kenntnis genommen."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Statt „nach Erhalt der Unterlagen“ sagt man im Gespräch: „Wenn ich die Unterlagen _____ habe, …“",
+    "options": [
+     "bekomme",
+     "bekam",
+     "bekommen",
+     "bekommt"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähle einem Freund am Telefon ganz locker, was heute bei dir los war.",
+    "start": "Du, stell dir vor, heute ist mir was Komisches passiert: …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was klingt im Alltag natürlicher als „Ich bin der Auffassung, dass …“?",
+    "options": [
+     "Es wird hiermit festgestellt, dass …",
+     "Ich finde, dass …",
+     "Gemäß meiner Einschätzung …",
+     "Meines Erachtens ist festzuhalten, dass …"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich weiß nicht, _____ du's schon gehört hast, aber Tom zieht nach Berlin.“",
+    "options": [
+     "dass",
+     "wenn",
+     "ob",
+     "als"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Eine Freundin erzählt von ihrem neuen Job. Reagiere interessiert und stell Rückfragen.",
+    "start": "Ach, echt? Erzähl mal, wie …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was signalisiert „Na ja, wie dem auch sei …“ im Gespräch?",
+    "options": [
+     "Man stimmt begeistert zu.",
+     "Man verabschiedet sich.",
+     "Man stellt eine Frage.",
+     "Man lässt ein Thema fallen und macht weiter."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Im lockeren Gespräch: „Tom hat gesagt, er _____ später noch vorbei.“",
+    "options": [
+     "kommen",
+     "kommt",
+     "komm",
+     "gekommen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Du triffst zufällig einen alten Schulfreund. Fang locker ein Gespräch an.",
+    "start": "Hey, das gibt's ja nicht! Lange nicht gesehen, …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welcher Ausdruck zeigt im Gespräch, dass du zuhörst?",
+    "options": [
+     "Ach so, verstehe.",
+     "Bitte wenden.",
+     "Hiermit bestätige ich den Erhalt.",
+     "Ende der Durchsage."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Statt „Aufgrund des Regens fiel das Fest aus“ sagt man locker: „Das Fest ist ausgefallen, _____ es geregnet hat.“",
+    "options": [
+     "wegen",
+     "deshalb",
+     "trotz",
+     "weil"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähle einem Kollegen in der Kaffeepause locker von deinem Urlaub.",
+    "start": "Ach, der Urlaub war echt schön, wir waren …"
+   }
+  ]
+ },
+ "advanced-u12-l1": {
+  "title": "Unscripted, longer conversations across situations",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „mit jemandem ins Gespräch kommen“?",
+    "options": [
+     "zu spät kommen",
+     "ein Gespräch beginnen",
+     "ein Telefonat beenden",
+     "sich verabschieden"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Womit wechselst du elegant das Thema?",
+    "options": [
+     "Apropos …",
+     "Hochachtungsvoll …",
+     "Zum Wohl!",
+     "Gesundheit!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Bis Ende des Jahres _____ ich hoffentlich meine Prüfung bestanden haben.“",
+    "options": [
+     "wird",
+     "wurde",
+     "habe",
+     "werde"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „sich einleben“?",
+    "options": [
+     "in einem Haus wohnen",
+     "sein Leben ändern",
+     "sich an eine neue Umgebung gewöhnen",
+     "sehr lange leben"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Kaum _____ ich in Berlin angekommen, hatte ich schon die ersten Freunde gefunden.“",
+    "options": [
+     "hatte",
+     "war",
+     "bin",
+     "habe"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Du bist auf einer Party und kennst niemanden. Beginne ein Gespräch und halte es am Laufen.",
+    "start": "Hallo, ich glaube, wir kennen uns noch nicht. Woher kennst du denn …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „den Faden wieder aufnehmen“?",
+    "options": [
+     "etwas nähen",
+     "ein Telefonat beenden",
+     "den Raum verlassen",
+     "an ein früheres Thema anknüpfen"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Das Beste, _____ mir in Deutschland passiert ist, war mein Sprachkurs.“",
+    "options": [
+     "dass",
+     "wo",
+     "was",
+     "wer"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähle einer neuen Bekannten ausführlich, warum du Deutsch lernst und was du damit vorhast.",
+    "start": "Das ist eine längere Geschichte: Angefangen hat alles, als …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie beendest du ein langes Gespräch höflich?",
+    "options": [
+     "Erzähl mal mehr!",
+     "Ich will dich nicht länger aufhalten.",
+     "Und was noch?",
+     "Wie meinst du das?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Beim Arzt: „Die Tabletten _____ dreimal täglich nach dem Essen einzunehmen.“",
+    "options": [
+     "werden",
+     "haben",
+     "sind",
+     "müssen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Ruf bei der Hausverwaltung an: Deine Heizung funktioniert nicht. Erkläre alles genau.",
+    "start": "Guten Tag, ich wohne in der Wohnung im dritten Stock, und leider …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet im Gespräch „Das Eis ist gebrochen“?",
+    "options": [
+     "Der See ist nicht mehr zugefroren.",
+     "Jemand hat etwas kaputt gemacht.",
+     "Die Stimmung ist jetzt locker.",
+     "Es ist sehr kalt geworden."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Form: „Hättest du mir früher Bescheid gesagt, _____ ich dich vom Bahnhof abholen können.“",
+    "options": [
+     "wäre",
+     "würde",
+     "habe",
+     "hätte"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Wie wäre dein Leben verlaufen, wenn du in einem anderen Land aufgewachsen wärst?",
+    "start": "Wenn ich in … aufgewachsen wäre, hätte ich wahrscheinlich …"
+   }
+  ]
+ }
+}

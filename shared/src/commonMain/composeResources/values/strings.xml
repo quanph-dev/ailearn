@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="splash_loading">Booting Web Browser…</string>
+    <string name="cd_back">Back</string>
+    <string name="language_title">Language</string>
+    <string name="language_confirm">Confirm</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_start">Start</string>
+    <string name="onboarding_title_1">Browse with less clutter</string>
+    <string name="onboarding_subtitle_1">Open websites quickly with a lightweight browser built for everyday use.</string>
+    <string name="onboarding_title_2">Choose your privacy level</string>
+    <string name="onboarding_subtitle_2">Turn protections on only when you need them, including safe browsing, cookie controls, and private tabs.</string>
+    <string name="onboarding_title_3">Keep important actions nearby</string>
+    <string name="onboarding_subtitle_3">Search, manage tabs, and return home with a simple browser layout that stays out of your way.</string>
+    <string name="settings_general_language">Language</string>
+    <string name="language_save_error">Could not save your selection. Please try again.</string>
+    <string name="home_welcome">Welcome</string>
+    <string name="home_description">Choose a language or explore your settings.</string>
+    <string name="network_offline_title">No internet connection</string>
+    <string name="network_offline_message">Connect to the internet to continue using the app.</string>
+    <string name="network_try_again">Try again</string>
+    <string name="ui_exit_the_app">Exit the app</string>
+    <string name="ui_are_you_sure_you_want_to_exit_the_app_now">Are you sure you want to exit the app now?</string>
+    <string name="ui_no">No</string>
+    <string name="ui_yes_exit">Yes, exit</string>
+</resources>

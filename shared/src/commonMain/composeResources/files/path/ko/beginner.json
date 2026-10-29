@@ -1,0 +1,5842 @@
+{
+ "beginner-u1-l1": {
+  "title": "Hello",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "처음 만난 사람에게 하는 인사는?",
+    "options": [
+     "안녕히 가세요",
+     "처음 뵙겠습니다",
+     "잘 자요",
+     "미안해요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "다음 중 인사가 아닌 것은?",
+    "options": [
+     "반갑습니다",
+     "배고파요",
+     "안녕",
+     "안녕하세요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저_____ 민수예요.'",
+    "options": [
+     "를",
+     "은",
+     "에",
+     "는"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "친구에게 하는 반말 인사는?",
+    "options": [
+     "안녕",
+     "안녕히 계세요",
+     "안녕하세요",
+     "안녕하십니까"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "만나다 반가워요.",
+     "만나서 반가워요.",
+     "만나서 반갑아요.",
+     "만나서 반갑어요."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "새 반 친구에게 인사하고 이름을 물어보세요.",
+    "start": "안녕하세요! 이름이…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'반가워요'와 비슷한 말은?",
+    "options": [
+     "배고픕니다",
+     "괜찮습니다",
+     "반갑습니다",
+     "미안합니다"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이 사람은 제 동생_____.'",
+    "options": [
+     "이에요",
+     "에요",
+     "이다",
+     "예요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "아침에 학교에서 선생님을 만났어요. 어떻게 인사해요?",
+    "start": "선생님, 안녕…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "손님이 집에 왔어요. 뭐라고 말해요?",
+    "options": [
+     "어서 오세요",
+     "안녕히 계세요",
+     "실례했습니다",
+     "잘 먹겠습니다"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "'안녕하세요'보다 더 공손한 인사는?",
+    "options": [
+     "안녕하니",
+     "안녕해요",
+     "안녕하십니까",
+     "안녕"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "선생님과 친구에게 각각 어떻게 인사하는지 말해 보세요.",
+    "start": "선생님에게는 '안녕하세요'라고 하고…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'잘 지냈어요?'는 언제 말해요?",
+    "options": [
+     "오랜만에 만났을 때",
+     "물건을 살 때",
+     "밥을 먹을 때",
+     "잠을 잘 때"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "순서가 알맞은 문장을 고르세요.",
+    "options": [
+     "입니다 저는 김민준.",
+     "저는 입니다 김민준.",
+     "저는 김민준입니다.",
+     "김민준 저는 입니다."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "친구에게 인사하고 오늘 기분을 말해 보세요.",
+    "start": "안녕! 오늘 나는 기분이…"
+   }
+  ]
+ },
+ "beginner-u1-l2": {
+  "title": "Goodbye",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "떠나는 사람에게 하는 인사는?",
+    "options": [
+     "어서 오세요",
+     "안녕히 계세요",
+     "잘 먹겠습니다",
+     "안녕히 가세요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "내가 떠날 때 남아 있는 사람에게 하는 인사는?",
+    "options": [
+     "처음 뵙겠습니다",
+     "안녕히 가세요",
+     "어서 오세요",
+     "안녕히 계세요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '내일 학교_____ 만나요.'",
+    "options": [
+     "이",
+     "의",
+     "에서",
+     "을"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "밤에 자기 전에 가족에게 하는 말은?",
+    "options": [
+     "어서 오세요",
+     "잘 먹었습니다",
+     "좋은 아침이에요",
+     "잘 자요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "다음에 바요.",
+     "다음에 보어요.",
+     "다음에 봐요.",
+     "다음에 봤어요요."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "친구와 헤어질 때 인사해 보세요.",
+    "start": "잘 가! 내일…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'또 만나요'와 뜻이 비슷한 말은?",
+    "options": [
+     "잘 먹겠습니다",
+     "다음에 봐요",
+     "실례합니다",
+     "처음 뵙겠습니다"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '선생님, 안녕히 _____.'",
+    "options": [
+     "가세요",
+     "가",
+     "가고",
+     "갔어요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "회사에서 퇴근할 때 동료에게 뭐라고 해요?",
+    "start": "먼저 가 보겠습니다. 내일…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'안녕히 주무세요'는 언제 말해요?",
+    "options": [
+     "밥 먹기 전에",
+     "아침에 일어나서",
+     "자기 전에",
+     "회사에 갈 때"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '다음 주_____ 만나요.'",
+    "options": [
+     "의",
+     "가",
+     "을",
+     "에"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "금요일에 친구에게 주말 인사를 해 보세요.",
+    "start": "좋은 주말 보내! 월요일에…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'잘 가'는 보통 누구에게 말해요?",
+    "options": [
+     "할머니",
+     "사장님",
+     "친구",
+     "선생님"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "더 공손한 작별 인사를 고르세요.",
+    "options": [
+     "잘 가",
+     "안녕",
+     "잘 가라",
+     "안녕히 가세요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "파티가 끝났어요. 친구들에게 작별 인사를 해 보세요.",
+    "start": "오늘 정말 즐거웠어요. 다음에…"
+   }
+  ]
+ },
+ "beginner-u1-l3": {
+  "title": "Name",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "이름을 물어볼 때 하는 말은?",
+    "options": [
+     "이름이 뭐예요?",
+     "뭐 좋아해요?",
+     "어디에 살아요?",
+     "몇 살이에요?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "'성함'은 무슨 뜻이에요?",
+    "options": [
+     "밥의 높임말",
+     "나이의 높임말",
+     "이름의 높임말",
+     "집의 높임말"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '제 이름_____ 지민이에요.'",
+    "options": [
+     "는",
+     "은",
+     "를",
+     "을"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "'김민수'에서 성은 뭐예요?",
+    "options": [
+     "민",
+     "민수",
+     "수",
+     "김"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 이수진_____.'",
+    "options": [
+     "에요",
+     "이야요",
+     "이에요",
+     "예요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "처음 만난 사람에게 이름을 말해 보세요.",
+    "start": "안녕하세요. 제 이름은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "어른에게 이름을 공손하게 물어보는 말은?",
+    "options": [
+     "너 누구야?",
+     "이름이 뭐야?",
+     "이름 뭐?",
+     "성함이 어떻게 되세요?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 질문을 고르세요.",
+    "options": [
+     "이름는 뭐예요?",
+     "이름을 뭐예요?",
+     "이름에 뭐예요?",
+     "이름이 뭐예요?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "친구를 다른 사람에게 소개해 보세요.",
+    "start": "이 사람은 제 친구예요. 이름은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'별명'은 무엇이에요?",
+    "options": [
+     "가족의 이름",
+     "회사의 이름",
+     "친구들이 부르는 다른 이름",
+     "나라의 이름"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이 사람이 누구_____?'",
+    "options": [
+     "예요",
+     "가",
+     "을",
+     "이에요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "내 이름이 좋은지, 왜 좋은지 말해 보세요.",
+    "start": "저는 제 이름이 좋아요. 왜냐하면…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "한국 사람은 이름을 쓸 때 무엇을 먼저 써요?",
+    "options": [
+     "나이",
+     "별명",
+     "성",
+     "이름"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "'저의'를 줄여서 말하면?",
+    "options": [
+     "내",
+     "나",
+     "저",
+     "제"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "이름을 천천히 말하고 첫 글자를 알려 주세요.",
+    "start": "제 이름의 첫 글자는…"
+   }
+  ]
+ },
+ "beginner-u1-l4": {
+  "title": "Age",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "나이를 물어볼 때 하는 말은?",
+    "options": [
+     "며칠이에요?",
+     "몇 살이에요?",
+     "몇 시예요?",
+     "얼마예요?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "어른에게 나이를 공손하게 물어보는 말은?",
+    "options": [
+     "몇 살이야?",
+     "몇 개예요?",
+     "나이가 어떻게 되세요?",
+     "언제예요?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 _____ 살이에요.' (20)",
+    "options": [
+     "이십 개",
+     "스무",
+     "스물",
+     "이십"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "'생일'은 무슨 날이에요?",
+    "options": [
+     "태어난 날",
+     "쉬는 날",
+     "결혼한 날",
+     "학교에 가는 날"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 _____ 살이에요.' (21)",
+    "options": [
+     "스무하나",
+     "스물한",
+     "스물하나",
+     "이십일"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "자기 나이를 말해 보세요.",
+    "start": "저는 올해…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "나보다 나이가 어린 형제를 뭐라고 해요?",
+    "options": [
+     "형",
+     "동생",
+     "언니",
+     "누나"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '제 동생은 열_____ 살이에요.' (13)",
+    "options": [
+     "세",
+     "셋",
+     "석",
+     "삼"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "가족 중 한 사람의 나이를 말해 보세요.",
+    "start": "우리 엄마는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'동갑'은 무슨 뜻이에요?",
+    "options": [
+     "집이 같아요",
+     "키가 같아요",
+     "나이가 같아요",
+     "이름이 같아요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요. (30살)",
+    "options": [
+     "저는 서른 살예요.",
+     "저는 삼십 살이에요.",
+     "저는 설흔 살이에요.",
+     "저는 서른 살이에요."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "친구에게 나이를 물어보고 내 나이도 말해 보세요.",
+    "start": "몇 살이에요? 저는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'나이가 많다'와 반대 뜻의 말은?",
+    "options": [
+     "어리다",
+     "길다",
+     "높다",
+     "크다"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "할머니께 공손하게 물어보세요: '할머니, 연세가 어떻게 _____?'",
+    "options": [
+     "돼",
+     "되세요",
+     "됐어",
+     "되니"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "다음 생일에 몇 살이 되는지 말해 보세요.",
+    "start": "다음 생일에 저는…"
+   }
+  ]
+ },
+ "beginner-u1-l5": {
+  "title": "Country",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "다음 중 나라 이름이 아닌 것은?",
+    "options": [
+     "중국",
+     "서울",
+     "미국",
+     "일본"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "어느 나라에서 왔는지 물어볼 때 하는 말은?",
+    "options": [
+     "어느 나라 사람이에요?",
+     "뭐 해요?",
+     "이름이 뭐예요?",
+     "몇 살이에요?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 프랑스_____ 왔어요.' (고향이 프랑스예요)",
+    "options": [
+     "이",
+     "에서",
+     "와",
+     "을"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "일본 사람은 보통 무슨 말을 해요?",
+    "options": [
+     "영어",
+     "중국어",
+     "한국어",
+     "일본어"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '마이클 씨는 영국 사람_____.'",
+    "options": [
+     "있어요",
+     "이요",
+     "이에요",
+     "예요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "어느 나라에서 왔는지 말해 보세요.",
+    "start": "제 고향은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'외국인'은 무슨 뜻이에요?",
+    "options": [
+     "다른 나라 사람",
+     "이웃 사람",
+     "우리 가족",
+     "같은 반 친구"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "저는 중국 사람이 아니에요.",
+     "저는 중국 사람이 안이에요.",
+     "저는 중국 사람이 아니예요요.",
+     "저는 중국 사람을 아니에요."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "가 보고 싶은 나라를 말해 보세요.",
+    "start": "제가 가 보고 싶은 나라는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "한국의 수도는 서울이에요. '수도'는 무슨 뜻이에요?",
+    "options": [
+     "작은 마을",
+     "큰 산",
+     "나라의 중심 도시",
+     "바다 이름"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 한국어_____ 영어를 해요.'",
+    "options": [
+     "과",
+     "와",
+     "를",
+     "에"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "내 나라를 짧게 소개해 보세요.",
+    "start": "우리나라는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "스페인 사람이 쓰는 말은?",
+    "options": [
+     "아랍어",
+     "독일어",
+     "러시아어",
+     "스페인어"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 지금 서울_____ 살아요.'",
+    "options": [
+     "을",
+     "에",
+     "가",
+     "와"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "친구에게 어느 나라 사람인지 묻고, 내 나라도 말해 보세요.",
+    "start": "어느 나라 사람이에요? 저는…"
+   }
+  ]
+ },
+ "beginner-u2-l1": {
+  "title": "Personal information",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "직업을 물어볼 때 하는 말은?",
+    "options": [
+     "어디 가요?",
+     "뭐 먹어요?",
+     "몇 살이에요?",
+     "무슨 일을 하세요?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "'주소'는 무엇이에요?",
+    "options": [
+     "전화번호",
+     "생일",
+     "사는 곳의 위치",
+     "이름"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 회사원_____.'",
+    "options": [
+     "이요",
+     "예요",
+     "를요",
+     "이에요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "전화번호를 물어보는 말은?",
+    "options": [
+     "전화번호가 언제예요?",
+     "전화번호가 누구예요?",
+     "전화번호가 어디예요?",
+     "전화번호가 몇 번이에요?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 학생이 _____.' (학생 X)",
+    "options": [
+     "못이에요",
+     "않아요",
+     "아니에요",
+     "안이에요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "자기 직업이나 하는 일을 말해 보세요.",
+    "start": "저는 지금…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'취미'는 무슨 뜻이에요?",
+    "options": [
+     "좋아해서 자주 하는 일",
+     "회사 일",
+     "숙제",
+     "매일 해야 하는 일"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '제 취미_____ 독서예요.'",
+    "options": [
+     "는",
+     "은",
+     "을",
+     "에"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "어디에 사는지 말해 보세요.",
+    "start": "제가 사는 곳은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'결혼 안 했어요'와 같은 뜻은?",
+    "options": [
+     "바빠요",
+     "기혼이에요",
+     "미혼이에요",
+     "유명해요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "저는 의사를 아니에요.",
+     "저는 의사이 아니에요.",
+     "저는 의사가 아니에요.",
+     "저는 의사가 안이에요."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "가족과 함께 사는지, 혼자 사는지 말해 보세요.",
+    "start": "저는 지금…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "이메일 주소를 물어보는 말은?",
+    "options": [
+     "이메일 주소가 몇 시예요?",
+     "이메일 주소가 뭐예요?",
+     "이메일 주소가 언제예요?",
+     "이메일 주소가 누구예요?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 은행_____ 일해요.'",
+    "options": [
+     "에서",
+     "을",
+     "에",
+     "이"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "이름, 나이, 직업을 넣어서 자기소개를 해 보세요.",
+    "start": "안녕하세요. 저는…"
+   }
+  ]
+ },
+ "beginner-u2-l2": {
+  "title": "Likes and dislikes",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "'좋아하다'의 반대말은?",
+    "options": [
+     "싫어하다",
+     "사랑하다",
+     "원하다",
+     "알다"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "아주 많이 좋아할 때 하는 말은?",
+    "options": [
+     "조금 싫어요",
+     "별로예요",
+     "괜찮아요",
+     "정말 좋아해요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 커피_____ 좋아해요.'",
+    "options": [
+     "에",
+     "를",
+     "을",
+     "가"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "'별로 안 좋아해요'는 무슨 뜻이에요?",
+    "options": [
+     "많이 좋아하지 않아요",
+     "매일 먹어요",
+     "아주 많이 좋아해요",
+     "처음 들어요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 음악_____ 좋아요.'",
+    "options": [
+     "이",
+     "가",
+     "를",
+     "을"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "좋아하는 음식을 말해 보세요.",
+    "start": "제가 좋아하는 음식은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'재미있어요'의 반대말은?",
+    "options": [
+     "재미없어요",
+     "멋있어요",
+     "맛있어요",
+     "맛없어요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "저는 수영는 것을 좋아해요.",
+     "저는 수영하는 것이 좋아해요.",
+     "저는 수영하다 좋아해요.",
+     "저는 수영하는 것을 좋아해요."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "싫어하는 것을 하나 말하고 이유도 말해 보세요.",
+    "start": "제가 싫어하는 것은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'제일 좋아하다'는 무슨 뜻이에요?",
+    "options": [
+     "조금 좋아하다",
+     "좋아하지 않다",
+     "가장 많이 좋아하다",
+     "가끔 좋아하다"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '고양이를 좋아해요. 강아지_____ 좋아해요.'",
+    "options": [
+     "도",
+     "에게",
+     "에서",
+     "의"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "좋아하는 운동이나 취미를 말해 보세요.",
+    "start": "제 취미는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "음식 맛이 아주 좋을 때 하는 말은?",
+    "options": [
+     "맛있어요",
+     "맛없어요",
+     "무서워요",
+     "재미없어요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 질문을 고르세요.",
+    "options": [
+     "뭐 좋아해요요?",
+     "뭐 좋아해요?",
+     "뭐가 좋아해요?",
+     "뭐를 좋아요?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "친구에게 무슨 영화를 좋아하는지 물어보세요.",
+    "start": "무슨 영화를…"
+   }
+  ]
+ },
+ "beginner-u3-l1": {
+  "title": "Family members",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "아버지의 어머니는 누구예요?",
+    "options": [
+     "이모",
+     "딸",
+     "할머니",
+     "누나"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "'아버지'와 비슷한 말은?",
+    "options": [
+     "아빠",
+     "아기",
+     "엄마",
+     "오빠"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '우리 가족은 다섯 명_____.'",
+    "options": [
+     "예요",
+     "이야요",
+     "이에요",
+     "이요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "남자가 나이 많은 여자 형제를 부르는 말은?",
+    "options": [
+     "오빠",
+     "형",
+     "누나",
+     "언니"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '할머니께서 집에 _____.'",
+    "options": [
+     "계세요",
+     "계시다요",
+     "있으세요",
+     "있어요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "우리 가족을 소개해 보세요.",
+    "start": "우리 가족은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "엄마의 언니나 여동생은 누구예요?",
+    "options": [
+     "삼촌",
+     "이모",
+     "고모",
+     "사촌"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 형이 두 _____ 있어요.'",
+    "options": [
+     "권",
+     "개",
+     "명",
+     "살"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "우리 가족이 모두 몇 명인지 말해 보세요.",
+    "start": "우리 가족은 모두…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'부모님'은 누구예요?",
+    "options": [
+     "아들과 딸",
+     "아버지와 어머니",
+     "할아버지와 할머니",
+     "형과 누나"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '아버지_____ 회사원이세요.'",
+    "options": [
+     "께서는",
+     "께",
+     "를",
+     "에게"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "가족 중 한 사람의 직업을 말해 보세요.",
+    "start": "우리 아버지는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'외동'은 무슨 뜻이에요?",
+    "options": [
+     "쌍둥이",
+     "첫째",
+     "막내",
+     "형제가 없는 아이"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "저는 남동생이 한 명 있어요.",
+     "저는 남동생을 한 명 있어요.",
+     "저는 남동생이 하나 명 있어요.",
+     "저는 남동생이 일 명 있어요."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "형제나 자매가 있는지 말해 보세요.",
+    "start": "저는 형제가…"
+   }
+  ]
+ },
+ "beginner-u3-l2": {
+  "title": "Relationships",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "같은 반에서 공부하는 친구는?",
+    "options": [
+     "직장 동료",
+     "반 친구",
+     "손님",
+     "이웃"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "같은 회사에서 일하는 사람은?",
+    "options": [
+     "손님",
+     "동료",
+     "가족",
+     "이웃"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 친구_____ 영화를 봤어요.'",
+    "options": [
+     "를",
+     "하고",
+     "에서",
+     "은"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "'이웃'은 누구예요?",
+    "options": [
+     "옆집에 사는 사람",
+     "가게 손님",
+     "회사 사장님",
+     "같은 반 친구"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 지수_____ 같이 살아요.'",
+    "options": [
+     "과",
+     "를",
+     "와",
+     "이"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "가장 친한 친구를 소개해 보세요.",
+    "start": "제일 친한 친구는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'남편'과 짝이 되는 말은?",
+    "options": [
+     "아들",
+     "아내",
+     "형",
+     "사위"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '친구_____ 생일 선물을 줬어요.'",
+    "options": [
+     "에서",
+     "이",
+     "에게",
+     "를"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "친구와 처음 어떻게 만났는지 말해 보세요.",
+    "start": "우리는 처음에…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'선배'는 누구예요?",
+    "options": [
+     "우리 집 이웃",
+     "처음 보는 사람",
+     "나보다 늦게 들어온 사람",
+     "나보다 먼저 들어온 사람"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 동료들_____ 점심을 먹어요.'",
+    "options": [
+     "을",
+     "에서",
+     "와",
+     "과"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "반 친구나 동료 한 명에 대해 말해 보세요.",
+    "start": "제 동료는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'사이가 좋다'는 무슨 뜻이에요?",
+    "options": [
+     "집이 가깝다",
+     "관계가 좋다",
+     "키가 크다",
+     "돈이 많다"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 언니_____ 사이가 좋아요.'",
+    "options": [
+     "를",
+     "에",
+     "하고",
+     "가"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "친구와 주말에 자주 하는 일을 말해 보세요.",
+    "start": "주말에 친구하고…"
+   }
+  ]
+ },
+ "beginner-u3-l3": {
+  "title": "Describing people",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "'키가 크다'의 반대말은?",
+    "options": [
+     "키가 작다",
+     "키가 높다",
+     "키가 짧다",
+     "키가 적다"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "'날씬하다'와 반대 뜻의 말은?",
+    "options": [
+     "예쁘다",
+     "뚱뚱하다",
+     "조용하다",
+     "친절하다"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '제 동생은 키가 _____.' (크다)",
+    "options": [
+     "크어요",
+     "커아요",
+     "커요",
+     "크요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "다른 사람을 잘 도와주는 사람은?",
+    "options": [
+     "시끄러워요",
+     "무서워요",
+     "게을러요",
+     "친절해요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '그 사람은 머리가 _____.' (길다)",
+    "options": [
+     "기러요",
+     "길아요",
+     "길어요",
+     "길여요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "친한 친구의 얼굴과 모습을 말해 보세요.",
+    "start": "제 친구는 키가…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "말을 많이 하지 않는 사람은?",
+    "options": [
+     "재미있어요",
+     "시끄러워요",
+     "바빠요",
+     "조용해요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "우리 언니는 예뻐고 착해요.",
+     "우리 언니는 예쁘고 착해요.",
+     "우리 언니는 예쁘고 착하요.",
+     "우리 언니는 예쁘다 착해요."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "가족 중 한 사람의 성격을 말해 보세요.",
+    "start": "우리 엄마는 성격이…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'머리가 짧다'의 반대말은?",
+    "options": [
+     "머리가 작다",
+     "머리가 길다",
+     "머리가 크다",
+     "머리가 낮다"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '제 친구는 _____ 사람이에요.' (친절하다)",
+    "options": [
+     "친절하는",
+     "친절해",
+     "친절한",
+     "친절하고"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "좋아하는 배우나 가수의 모습을 말해 보세요.",
+    "start": "그 사람은 얼굴이…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'젊다'의 반대말은?",
+    "options": [
+     "짧다",
+     "늙다",
+     "어리다",
+     "작다"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '형은 _____ 머리를 좋아해요.' (짧다)",
+    "options": [
+     "짧아",
+     "짧는",
+     "짧은",
+     "짧게"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "거울을 보고 내 모습을 말해 보세요.",
+    "start": "저는 눈이…"
+   }
+  ]
+ },
+ "beginner-u4-l1": {
+  "title": "Numbers",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "'셋' 다음 숫자는?",
+    "options": [
+     "다섯",
+     "여섯",
+     "넷",
+     "둘"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "숫자 10을 '일, 이, 삼'처럼 읽으면?",
+    "options": [
+     "열",
+     "십",
+     "백",
+     "천"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '사과 _____ 개 주세요.' (2)",
+    "options": [
+     "두",
+     "둘",
+     "두울",
+     "이"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "숫자 100은 한국어로 뭐예요?",
+    "options": [
+     "천",
+     "백",
+     "십",
+     "만"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "전화번호를 읽을 때 쓰는 숫자는?",
+    "options": [
+     "첫째, 둘째, 셋째",
+     "하나, 둘, 셋",
+     "일, 이, 삼",
+     "한, 두, 세"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "전화번호를 한국어로 말해 보세요.",
+    "start": "제 전화번호는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'만'은 숫자로 얼마예요?",
+    "options": [
+     "10,000",
+     "100,000",
+     "100",
+     "1,000"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '학생이 _____ 명 있어요.' (4)",
+    "options": [
+     "네",
+     "사",
+     "넷",
+     "녜"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "가방에 무엇이 몇 개 있는지 말해 보세요.",
+    "start": "제 가방에는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'열하나'는 숫자로 몇이에요?",
+    "options": [
+     "12",
+     "11",
+     "10",
+     "21"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 표현을 고르세요. (책 5권)",
+    "options": [
+     "책 오 권",
+     "책 다섯 권",
+     "다섯 책 권",
+     "책 다섯 개 권"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "좋아하는 숫자와 그 이유를 말해 보세요.",
+    "start": "제가 좋아하는 숫자는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'천'은 숫자로 얼마예요?",
+    "options": [
+     "10",
+     "10,000",
+     "100",
+     "1,000"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '커피 _____ 잔 주세요.' (1)",
+    "options": [
+     "한",
+     "하나",
+     "일",
+     "한나"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "우리 반이나 회사에 사람이 몇 명 있는지 말해 보세요.",
+    "start": "우리 반에는…"
+   }
+  ]
+ },
+ "beginner-u4-l2": {
+  "title": "Dates",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "'6월'은 어떻게 읽어요?",
+    "options": [
+     "여섯월",
+     "유월",
+     "육월",
+     "륙월"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "'오늘' 바로 다음 날은?",
+    "options": [
+     "그저께",
+     "내일",
+     "어제",
+     "모레"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '제 생일은 5월 3일_____.'",
+    "options": [
+     "이요",
+     "이에요",
+     "예요",
+     "에요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "'모레'는 언제예요?",
+    "options": [
+     "다음 달",
+     "어제 전날",
+     "오늘",
+     "내일 다음 날"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 7월_____ 한국에 가요.'",
+    "options": [
+     "에서",
+     "이",
+     "을",
+     "에"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "생일이 언제인지 말해 보세요.",
+    "start": "제 생일은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'10월'은 어떻게 읽어요?",
+    "options": [
+     "시월",
+     "씨월",
+     "십월",
+     "열월"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "날짜를 물어볼 때 알맞은 질문은?",
+    "options": [
+     "오늘이 며칠예요?",
+     "오늘이 몇 일이에요?",
+     "오늘은 몇 날이에요?",
+     "오늘이 며칠이에요?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "내 나라의 명절이나 공휴일 날짜를 말해 보세요.",
+    "start": "우리나라에서는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'작년'은 언제예요?",
+    "options": [
+     "내년",
+     "지난해",
+     "다음 달",
+     "올해"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '방학은 6월_____ 8월까지예요.'",
+    "options": [
+     "까지",
+     "부터",
+     "을",
+     "에"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "올해 가장 기다리는 날을 말해 보세요.",
+    "start": "제가 기다리는 날은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "한 해의 마지막 달은?",
+    "options": [
+     "구월",
+     "일월",
+     "십일월",
+     "십이월"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '어제는 3월 1일_____.'",
+    "options": [
+     "예요요",
+     "였어요",
+     "이에요",
+     "이었어요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "다음 주 계획 하나를 날짜와 함께 말해 보세요.",
+    "start": "다음 주 금요일에…"
+   }
+  ]
+ },
+ "beginner-u4-l3": {
+  "title": "Days",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "월요일 다음 날은?",
+    "options": [
+     "목요일",
+     "화요일",
+     "일요일",
+     "수요일"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "'주말'은 무슨 요일이에요?",
+    "options": [
+     "금요일과 월요일",
+     "수요일과 목요일",
+     "월요일과 화요일",
+     "토요일과 일요일"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 금요일_____ 영화를 봐요.'",
+    "options": [
+     "에",
+     "를",
+     "가",
+     "에서"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "'평일'은 언제예요?",
+    "options": [
+     "공휴일만",
+     "방학 동안",
+     "월요일부터 금요일까지",
+     "토요일과 일요일"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '오늘은 수요일_____.'",
+    "options": [
+     "예요",
+     "이다요",
+     "에요",
+     "이에요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "가장 좋아하는 요일과 그 이유를 말해 보세요.",
+    "start": "제가 제일 좋아하는 요일은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "목요일 바로 전날은?",
+    "options": [
+     "수요일",
+     "화요일",
+     "토요일",
+     "금요일"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "요일을 물어볼 때 알맞은 질문은?",
+    "options": [
+     "오늘 무슨 요일이에요?",
+     "오늘 몇 요일이에요?",
+     "오늘 무슨 요일예요?",
+     "오늘 무엇 요일이에요?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "월요일에 보통 무엇을 하는지 말해 보세요.",
+    "start": "월요일에는 보통…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'매일'은 무슨 뜻이에요?",
+    "options": [
+     "날마다",
+     "주말에만",
+     "가끔",
+     "한 번만"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 토요일_____ 일요일에 쉬어요.'",
+    "options": [
+     "이",
+     "에서",
+     "하고",
+     "를"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "이번 주말 계획을 말해 보세요.",
+    "start": "이번 주말에 저는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "일주일은 며칠이에요?",
+    "options": [
+     "십 일",
+     "칠 일",
+     "오 일",
+     "삼십 일"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '지난 일요일에 친구를 _____.'",
+    "options": [
+     "만날 거예요",
+     "만났어요",
+     "만나요",
+     "만나세요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "지난 주말에 무엇을 했는지 말해 보세요.",
+    "start": "지난 주말에…"
+   }
+  ]
+ },
+ "beginner-u4-l4": {
+  "title": "Telling time",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "3:30을 한국어로 말하면?",
+    "options": [
+     "세 시 반 분",
+     "삼 시 반",
+     "셋 시 반",
+     "세 시 반"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "7:00를 한국어로 말하면?",
+    "options": [
+     "일곱 시",
+     "칠 시",
+     "칠 분",
+     "일곱 분"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "시간을 물어볼 때 알맞은 질문은?",
+    "options": [
+     "지금 몇 시 있어요?",
+     "지금 몇 시예요?",
+     "지금 무슨 시예요?",
+     "지금 몇 시이에요?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "밤 12시를 다른 말로 하면?",
+    "options": [
+     "새벽",
+     "저녁",
+     "자정",
+     "정오"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '수업은 아홉 시_____ 시작해요.'",
+    "options": [
+     "가",
+     "에서",
+     "을",
+     "에"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "아침에 몇 시에 일어나는지 말해 보세요.",
+    "start": "저는 보통 아침…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "오전 9시는 하루 중 언제예요?",
+    "options": [
+     "아침",
+     "오후",
+     "저녁",
+     "밤"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "'10분'은 어떻게 읽어요?",
+    "options": [
+     "열 시",
+     "열 분",
+     "십 분",
+     "십 시"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "점심을 몇 시에 먹는지 말해 보세요.",
+    "start": "저는 점심을…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'늦다'의 반대말은?",
+    "options": [
+     "짧다",
+     "작다",
+     "느리다",
+     "이르다"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 표현을 고르세요. (2:45)",
+    "options": [
+     "두 시 사십오 분",
+     "두 시 마흔다섯 분",
+     "둘 시 사십오 분",
+     "이 시 사십오 분"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "저녁 여섯 시에 보통 무엇을 하는지 말해 보세요.",
+    "start": "저녁 여섯 시에 저는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'정각'은 무슨 뜻이에요?",
+    "options": [
+     "아주 일찍",
+     "조금 늦게",
+     "딱 그 시간",
+     "삼십 분 후"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '어젯밤 열한 시에 _____.' (자다)",
+    "options": [
+     "잘어요",
+     "잤어요",
+     "자았어요",
+     "자었어요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "길에서 모르는 사람에게 시간을 공손하게 물어보세요.",
+    "start": "실례합니다. 지금…"
+   }
+  ]
+ },
+ "beginner-u5-l1": {
+  "title": "Wake up",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "아침에 잠에서 깨서 침대에서 나오는 것은?",
+    "options": [
+     "눕다",
+     "자다",
+     "앉다",
+     "일어나다"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "'세수하다'는 어디를 씻는 거예요?",
+    "options": [
+     "옷",
+     "그릇",
+     "얼굴",
+     "발"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 아침 일곱 시에 _____.' (일어나다)",
+    "options": [
+     "일어너요",
+     "일어났요",
+     "일어나요",
+     "일어나어요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "아침에 먹는 식사는?",
+    "options": [
+     "아침밥",
+     "저녁",
+     "점심",
+     "간식"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 아침에 이를 _____.' (닦다)",
+    "options": [
+     "닦아요",
+     "닦요",
+     "닦어요",
+     "닥아요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "아침에 일어나서 제일 먼저 하는 일을 말해 보세요.",
+    "start": "저는 일어나서 먼저…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "아침에 일찍 일어나려고 맞추는 것은?",
+    "options": [
+     "칫솔",
+     "이불",
+     "알람",
+     "베개"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "저는 일어나서 샤워을 해요.",
+     "저는 일어나서 샤워를 했요.",
+     "저는 일어나서 샤워를 해요.",
+     "저는 일어나서 샤워를 하요."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "평소에 아침에 무엇을 먹는지 말해 보세요.",
+    "start": "아침에는 보통…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'일찍'의 반대말은?",
+    "options": [
+     "빨리",
+     "천천히",
+     "자주",
+     "늦게"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '오늘 아침에 늦게 _____.' (일어나다)",
+    "options": [
+     "일어났어요",
+     "일어나었어요",
+     "일어났었요",
+     "일어나요어요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "주말 아침에는 몇 시에 일어나는지 말해 보세요.",
+    "start": "주말에는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "잠이 아직 덜 깼을 때 하는 말은?",
+    "options": [
+     "졸려요",
+     "더워요",
+     "목말라요",
+     "배불러요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 아침을 먹지 _____.'",
+    "options": [
+     "안 해요",
+     "없어요",
+     "않아요",
+     "못요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "오늘 아침에 한 일을 순서대로 말해 보세요.",
+    "start": "오늘 아침에 일어나서…"
+   }
+  ]
+ },
+ "beginner-u5-l2": {
+  "title": "Work",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "아침에 회사에 가는 것은?",
+    "options": [
+     "졸업하다",
+     "퇴근하다",
+     "휴가 가다",
+     "출근하다"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "일이 끝나고 회사에서 나오는 것은?",
+    "options": [
+     "결혼하다",
+     "입학하다",
+     "출근하다",
+     "퇴근하다"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 지하철_____ 회사에 가요.'",
+    "options": [
+     "로",
+     "을",
+     "에서",
+     "으로"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "'회의'는 무엇이에요?",
+    "options": [
+     "혼자 밥을 먹는 것",
+     "여러 사람이 모여서 이야기하는 것",
+     "운동하는 것",
+     "집에서 자는 것"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '오늘은 일이 많아서 _____.' (바쁘다)",
+    "options": [
+     "바뻐요",
+     "바빠요",
+     "바쁘요",
+     "바쁘어요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "무슨 일을 하는지, 어디에서 일하는지 말해 보세요.",
+    "start": "저는 지금…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'월급'은 무엇이에요?",
+    "options": [
+     "회사 이름",
+     "일하는 시간",
+     "일하고 매달 받는 돈",
+     "매일 먹는 밥"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "저는 아홉 시부터 여섯 시까지 일해어요.",
+     "저는 아홉 시부터 여섯 시까지 일해요.",
+     "저는 아홉 시부터 여섯 시까지 일하요.",
+     "저는 아홉 시를 여섯 시까지 일해요."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "회사나 학교에 어떻게 가는지 말해 보세요.",
+    "start": "저는 매일…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "일을 하지 않고 쉬는 날은?",
+    "options": [
+     "야근",
+     "휴일",
+     "평일",
+     "출장"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "되고 싶은 직업을 바르게 말한 문장을 고르세요.",
+    "options": [
+     "저는 은행원을 되고 싶어요.",
+     "저는 은행원이 되고 싶다요.",
+     "저는 은행원이 되고 싶어요.",
+     "저는 은행원이 되서 싶어요."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "내 일의 좋은 점을 하나 말해 보세요.",
+    "start": "제 일의 좋은 점은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'야근'은 무슨 뜻이에요?",
+    "options": [
+     "점심을 먹는 것",
+     "휴가를 가는 것",
+     "아침 일찍 쉬는 것",
+     "밤늦게까지 일하는 것"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '어제 회사에서 일을 많이 _____.'",
+    "options": [
+     "하세요",
+     "했어요",
+     "할 거예요",
+     "해요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "오늘 회사나 학교에서 무엇을 했는지 말해 보세요.",
+    "start": "오늘은…"
+   }
+  ]
+ },
+ "beginner-u5-l3": {
+  "title": "Study",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "학생들이 공부하러 가는 곳은?",
+    "options": [
+     "병원",
+     "학교",
+     "은행",
+     "식당"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "'숙제'는 무엇이에요?",
+    "options": [
+     "선생님이 집에서 하라고 주는 공부",
+     "학교 점심",
+     "방학",
+     "쉬는 시간"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 도서관_____ 공부해요.'",
+    "options": [
+     "를",
+     "에",
+     "에서",
+     "이"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "책을 빌릴 수 있는 곳은?",
+    "options": [
+     "도서관",
+     "우체국",
+     "빵집",
+     "약국"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 한국어를 _____.' (배우다)",
+    "options": [
+     "배우요",
+     "배우어요요",
+     "배아요",
+     "배워요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "요즘 무엇을 공부하는지 말해 보세요.",
+    "start": "저는 요즘…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'시험'과 관계있는 말은?",
+    "options": [
+     "낮잠",
+     "여행",
+     "요리",
+     "점수"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "저는 한국어를 공부하고 싶어요.",
+     "저는 한국어를 공부해고 싶어요.",
+     "저는 한국어를 공부하고 싶요.",
+     "저는 한국어를 공부하다 싶어요."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "한국어를 왜 공부하는지 말해 보세요.",
+    "start": "제가 한국어를 공부하는 이유는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'어렵다'의 반대말은?",
+    "options": [
+     "쉽다",
+     "짧다",
+     "가볍다",
+     "싸다"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '한국어 문법은 조금 _____.' (어렵다)",
+    "options": [
+     "어려워요",
+     "어렵어요",
+     "어렵아요",
+     "어려요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "공부할 때 무엇을 사용하는지 말해 보세요.",
+    "start": "저는 공부할 때…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "수업에서 학생들을 가르치는 사람은?",
+    "options": [
+     "학생",
+     "선생님",
+     "손님",
+     "친구"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '내일 도서관에서 공부_____.'",
+    "options": [
+     "할 거예요",
+     "했었어요",
+     "하었어요",
+     "했어요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "가장 좋아하는 과목을 말해 보세요.",
+    "start": "제가 제일 좋아하는 과목은…"
+   }
+  ]
+ },
+ "beginner-u5-l4": {
+  "title": "Sleep",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "잠을 자는 방은?",
+    "options": [
+     "화장실",
+     "현관",
+     "침실",
+     "부엌"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "'졸리다'는 무슨 뜻이에요?",
+    "options": [
+     "자고 싶다",
+     "놀고 싶다",
+     "가고 싶다",
+     "먹고 싶다"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 밤 열한 시에 _____.' (자다)",
+    "options": [
+     "잘아요",
+     "자요",
+     "자아요",
+     "자어요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "잠을 잘 때 눕는 가구는?",
+    "options": [
+     "책장",
+     "냉장고",
+     "침대",
+     "식탁"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "'자다'의 높임말은?",
+    "options": [
+     "드시다",
+     "계시다",
+     "말씀하시다",
+     "주무시다"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "보통 몇 시에 자는지 말해 보세요.",
+    "start": "저는 보통 밤…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "잠을 잘 때 머리 밑에 두는 것은?",
+    "options": [
+     "이불",
+     "베개",
+     "담요",
+     "침대"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '어젯밤에 잠을 잘 못 _____.'",
+    "options": [
+     "자세요",
+     "잤어요",
+     "잘 거예요",
+     "자요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "어젯밤에 잘 잤는지 말해 보세요.",
+    "start": "어젯밤에는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'꿈'은 언제 꿔요?",
+    "options": [
+     "일할 때",
+     "잘 때",
+     "먹을 때",
+     "운동할 때"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "피곤해서 일찍 잤어요.",
+     "피곤해서 일찍 자었어요.",
+     "피곤하서 일찍 잤어요.",
+     "피곤해서 일찍 잤었요."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "잠이 안 올 때 무엇을 하는지 말해 보세요.",
+    "start": "잠이 안 오면 저는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'늦잠을 자다'는 무슨 뜻이에요?",
+    "options": [
+     "잠을 안 자다",
+     "밤에 일찍 자다",
+     "낮에 잠깐 자다",
+     "아침에 늦게까지 자다"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '아기가 지금 _____ 있어요.' (자다)",
+    "options": [
+     "잤고",
+     "자는",
+     "자고",
+     "자서"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "주말에는 보통 몇 시간 자는지 말해 보세요.",
+    "start": "주말에는 보통…"
+   }
+  ]
+ },
+ "beginner-u5-l5": {
+  "title": "Daily activities",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "옷을 깨끗하게 씻는 일은?",
+    "options": [
+     "설거지",
+     "빨래",
+     "요리",
+     "청소"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "밥을 먹고 그릇을 씻는 일은?",
+    "options": [
+     "장보기",
+     "산책",
+     "빨래",
+     "설거지"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 매일 저녁에 요리_____ 해요.'",
+    "options": [
+     "을",
+     "에",
+     "가",
+     "를"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "'장을 보다'는 무슨 뜻이에요?",
+    "options": [
+     "책을 읽다",
+     "집을 청소하다",
+     "친구를 만나다",
+     "시장이나 마트에서 물건을 사다"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저녁을 먹고 나서 산책을 _____.' (하다)",
+    "options": [
+     "햐요",
+     "해어요",
+     "하요",
+     "해요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "매일 하는 집안일을 하나 말해 보세요.",
+    "start": "저는 매일…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'청소하다'는 무엇을 하는 거예요?",
+    "options": [
+     "잠을 자다",
+     "옷을 사다",
+     "방을 깨끗하게 하다",
+     "밥을 만들다"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 텔레비전을 보_____ 저녁을 먹어요.'",
+    "options": [
+     "러",
+     "세요",
+     "십시오",
+     "면서"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "수업이나 일이 끝나고 무엇을 하는지 말해 보세요.",
+    "start": "수업이 끝나면 저는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "운동하러 가는 곳은?",
+    "options": [
+     "헬스장",
+     "은행",
+     "우체국",
+     "도서관"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "저는 아침에 운동하고 회사에 가요.",
+     "저는 아침에 운동하고 회사를 가요요.",
+     "저는 아침에 운동하고 회사에서 가요.",
+     "저는 아침에 운동해고 회사에 가요."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "오늘 저녁에 할 일을 말해 보세요.",
+    "start": "오늘 저녁에는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'가끔'과 반대되는 말은?",
+    "options": [
+     "자주",
+     "천천히",
+     "빨리",
+     "조금"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 일주일에 두 _____ 운동해요.'",
+    "options": [
+     "살",
+     "명",
+     "번",
+     "개"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "나의 하루 일과를 짧게 말해 보세요.",
+    "start": "저는 아침에 일어나서…"
+   }
+  ]
+ },
+ "beginner-u6-l1": {
+  "title": "Common foods",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "쌀로 지은 음식은?",
+    "options": [
+     "밥",
+     "치즈",
+     "빵",
+     "우유"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "다음 중 과일이 아닌 것은?",
+    "options": [
+     "사과",
+     "바나나",
+     "당근",
+     "포도"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 아침에 빵_____ 우유를 먹어요.'",
+    "options": [
+     "을",
+     "과",
+     "이",
+     "와"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "우유는 어느 동물에게서 나와요?",
+    "options": [
+     "닭",
+     "물고기",
+     "돼지",
+     "소"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '김치는 조금 _____.' (맵다)",
+    "options": [
+     "맵어요",
+     "매워요",
+     "맵아요",
+     "매와요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "아침에 보통 무엇을 먹는지 말해 보세요.",
+    "start": "아침에는 보통…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "다음 중 채소가 아닌 것은?",
+    "options": [
+     "사과",
+     "양파",
+     "배추",
+     "오이"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "저는 안 고기를 먹어요.",
+     "저는 고기을 안 먹어요.",
+     "저는 고기를 먹어 안요.",
+     "저는 고기를 안 먹어요."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "가장 좋아하는 한국 음식을 말해 보세요.",
+    "start": "제가 좋아하는 한국 음식은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "목이 마를 때 마시는 것은?",
+    "options": [
+     "밥",
+     "물",
+     "과자",
+     "빵"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '우리는 점심에 비빔밥을 _____.' (먹다)",
+    "options": [
+     "먹어었어요",
+     "먹었어요",
+     "먹었요",
+     "먹아요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "어제 저녁에 무엇을 먹었는지 말해 보세요.",
+    "start": "어제 저녁에는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'간식'은 무엇이에요?",
+    "options": [
+     "식사 사이에 먹는 음식",
+     "아침밥",
+     "생일 음식",
+     "저녁밥"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '사과 세 _____ 주세요.'",
+    "options": [
+     "대",
+     "명",
+     "개",
+     "권"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "내 나라의 유명한 음식을 소개해 보세요.",
+    "start": "우리나라의 유명한 음식은…"
+   }
+  ]
+ },
+ "beginner-u6-l2": {
+  "title": "Preferences",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "'더 좋아하다'는 무슨 뜻이에요?",
+    "options": [
+     "아주 싫어하다",
+     "처음 먹어 보다",
+     "조금도 안 좋아하다",
+     "다른 것보다 많이 좋아하다"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "단 음식을 좋아하는 사람이 좋아할 음식은?",
+    "options": [
+     "레몬",
+     "케이크",
+     "고추",
+     "소금"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 커피보다 차_____ 더 좋아해요.'",
+    "options": [
+     "가",
+     "을",
+     "에",
+     "를"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "매운 맛이 나는 것은?",
+    "options": [
+     "바나나",
+     "설탕",
+     "우유",
+     "고추"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 밥_____ 빵이 더 좋아요.'",
+    "options": [
+     "를",
+     "보다",
+     "의",
+     "에서"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "커피와 차 중에서 무엇을 더 좋아하는지 말해 보세요.",
+    "start": "저는 커피보다…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'짜다'는 무슨 맛이에요?",
+    "options": [
+     "설탕 맛",
+     "물 맛",
+     "소금 맛",
+     "레몬 맛"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "손님에게 공손하게 물어보는 질문을 고르세요.",
+    "options": [
+     "뭐 먹으시고 싶어요요?",
+     "뭐 드시고 싶으세요?",
+     "뭐 드시고 싶으요?",
+     "뭐 드시고 싶어세요?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "싫어하는 음식과 그 이유를 말해 보세요.",
+    "start": "제가 싫어하는 음식은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "다음 중 단 것은?",
+    "options": [
+     "사탕",
+     "김치",
+     "고추",
+     "소금"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "저는 매운 음식을 잘 먹지 못요.",
+     "저는 매운 음식을 잘 못 먹어요.",
+     "저는 매운 음식을 잘 못 먹어요요.",
+     "저는 매운 음식을 잘 먹어 못요."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "좋아하는 음료를 말해 보세요.",
+    "start": "제가 좋아하는 음료는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'배고파요'의 반대 뜻은?",
+    "options": [
+     "목말라요",
+     "피곤해요",
+     "졸려요",
+     "배불러요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '오늘 저녁에 피자를 먹고 _____.'",
+    "options": [
+     "싶다요",
+     "싶어해요요",
+     "싶어요",
+     "싶하요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "친구에게 무슨 음식을 좋아하는지 물어보세요.",
+    "start": "무슨 음식을…"
+   }
+  ]
+ },
+ "beginner-u6-l3": {
+  "title": "Ordering basics",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "식당에서 음식 이름과 가격이 있는 것은?",
+    "options": [
+     "숟가락",
+     "메뉴판",
+     "영수증",
+     "물컵"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "식당에서 직원을 부를 때 하는 말은?",
+    "options": [
+     "축하해요!",
+     "저기요!",
+     "안녕히 계세요!",
+     "잘 자요!"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '비빔밥 하나 _____.'",
+    "options": [
+     "줘요세요",
+     "주어세요요",
+     "주세요",
+     "줍니다요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "'포장'은 식당에서 무슨 뜻이에요?",
+    "options": [
+     "음식을 가지고 가는 것",
+     "음식을 만드는 것",
+     "돈을 내는 것",
+     "식당에서 먹는 것"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '메뉴판 좀 _____ 주세요.' (보이다)",
+    "options": [
+     "보여",
+     "보여서",
+     "보이고",
+     "보이게"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "식당에서 음식을 주문해 보세요.",
+    "start": "저기요, 저는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "돈을 내고 받는 종이는?",
+    "options": [
+     "주문서",
+     "영수증",
+     "휴지",
+     "메뉴판"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 냉면으로 _____.'",
+    "options": [
+     "할게요",
+     "하십시오",
+     "하셨어요",
+     "하세요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "음료도 주문해 보세요.",
+    "start": "그리고 마실 것은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'계산하다'는 식당에서 무슨 뜻이에요?",
+    "options": [
+     "음식을 먹다",
+     "돈을 내다",
+     "자리에 앉다",
+     "주문을 바꾸다"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '불고기 2_____ 주세요.'",
+    "options": [
+     "대",
+     "살",
+     "명",
+     "인분"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "직원에게 계산하고 싶다고 말해 보세요.",
+    "start": "여기 계산…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "밥을 먹기 전에 하는 말은?",
+    "options": [
+     "잘 먹겠습니다",
+     "처음 뵙겠습니다",
+     "안녕히 계세요",
+     "잘 먹었습니다"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "김치찌개 하나하고 물 주세요.",
+     "김치찌개 하나를과 물 주세요.",
+     "김치찌개 하나하고 물를 주세요.",
+     "김치찌개 하나하고 물 주어세요요."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "음식이 어땠는지 직원에게 말해 보세요.",
+    "start": "음식이 정말…"
+   }
+  ]
+ },
+ "beginner-u7-l1": {
+  "title": "Prices",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "가게에서 값을 물어볼 때 하는 말은?",
+    "options": [
+     "몇 살이에요?",
+     "누구예요?",
+     "어디예요?",
+     "얼마예요?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "'싸다'의 반대말은?",
+    "options": [
+     "크다",
+     "비싸다",
+     "작다",
+     "많다"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이 가방은 너무 _____.' (비싸다)",
+    "options": [
+     "비싸아요",
+     "비싸어요",
+     "비싸요",
+     "비쌌요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "한국 돈의 단위는?",
+    "options": [
+     "유로",
+     "엔",
+     "달러",
+     "원"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "5,000원은 어떻게 읽어요?",
+    "options": [
+     "다섯 천 원",
+     "오천 원",
+     "다섯천 원",
+     "오천 개"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "가게에서 물건 값을 물어보세요.",
+    "start": "저기요, 이거…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'할인'은 무슨 뜻이에요?",
+    "options": [
+     "값을 올리는 것",
+     "값을 싸게 해 주는 것",
+     "돈을 빌리는 것",
+     "물건을 바꾸는 것"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이 사과는 한 개_____ 천 원이에요.'",
+    "options": [
+     "에서",
+     "에",
+     "와",
+     "을"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "요즘 산 물건과 가격을 말해 보세요.",
+    "start": "저는 어제…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'공짜'는 무슨 뜻이에요?",
+    "options": [
+     "아주 비싸요",
+     "돈이 많아요",
+     "돈을 안 내도 돼요",
+     "조금 싸요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "값을 깎고 싶을 때 알맞은 말은?",
+    "options": [
+     "좀 깎으 주세요.",
+     "좀 깎아 주세요.",
+     "좀 깎아 줘세요.",
+     "좀 깍아 주세요."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "친구에게 비싸게 산 물건을 말해 보세요.",
+    "start": "이 신발은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'모두 얼마예요?'는 무슨 뜻이에요?",
+    "options": [
+     "어디에서 사요?",
+     "언제 사요?",
+     "하나만 얼마예요?",
+     "전부 합쳐서 얼마예요?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이 펜은 천오백 원_____.'",
+    "options": [
+     "에요",
+     "이에요",
+     "이다요",
+     "예요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "가게에서 더 싼 것이 있는지 물어보세요.",
+    "start": "혹시 더…"
+   }
+  ]
+ },
+ "beginner-u7-l2": {
+  "title": "Sizes",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "'크다'의 반대말은?",
+    "options": [
+     "작다",
+     "짧다",
+     "좁다",
+     "낮다"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "옷이 몸에 딱 맞을 때 하는 말은?",
+    "options": [
+     "너무 커요",
+     "잘 맞아요",
+     "너무 작아요",
+     "안 맞아요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이 신발은 저한테 조금 _____.' (작다)",
+    "options": [
+     "작요",
+     "자가요",
+     "작어요",
+     "작아요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "옷 사이즈 S, M, L 중에서 가장 큰 것은?",
+    "options": [
+     "S",
+     "M",
+     "L",
+     "XS"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '더 큰 사이즈_____ 있어요?'",
+    "options": [
+     "을",
+     "이",
+     "를",
+     "가"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "가게에서 다른 사이즈를 달라고 말해 보세요.",
+    "start": "이거 너무 작아요. 더…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'넓다'의 반대말은?",
+    "options": [
+     "작다",
+     "좁다",
+     "짧다",
+     "낮다"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "가게에서 옷을 입어 보고 싶을 때 알맞은 말은?",
+    "options": [
+     "이 옷 입어 바도 돼요?",
+     "이 옷 입어 봐도 되요?",
+     "이 옷 입어 봐도 돼요?",
+     "이 옷 입어 봤도 돼요?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "내 신발 사이즈를 말해 보세요.",
+    "start": "제 신발 사이즈는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'헐렁하다'와 반대 뜻의 말은?",
+    "options": [
+     "길다",
+     "크다",
+     "넓다",
+     "꽉 끼다"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이 셔츠가 저 셔츠_____ 더 커요.'",
+    "options": [
+     "에서",
+     "를",
+     "보다",
+     "하고"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "직원에게 옷이 너무 크다고 말해 보세요.",
+    "start": "죄송한데요, 이 옷이…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'S, M, L'에서 'M'은 무슨 사이즈예요?",
+    "options": [
+     "아주 큰 사이즈",
+     "작은 사이즈",
+     "큰 사이즈",
+     "중간 사이즈"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이 치마는 _____ 예뻐요.' (짧다 + 그리고)",
+    "options": [
+     "짧아서고",
+     "짧게고",
+     "짧고",
+     "짧은고"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "친구에게 옷이 잘 맞는지 물어보세요.",
+    "start": "이 옷 나한테…"
+   }
+  ]
+ },
+ "beginner-u7-l3": {
+  "title": "Colors",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "맑은 날 하늘은 무슨 색이에요?",
+    "options": [
+     "노란색",
+     "빨간색",
+     "검은색",
+     "파란색"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "바나나는 무슨 색이에요?",
+    "options": [
+     "노란색",
+     "보라색",
+     "초록색",
+     "하얀색"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 _____ 가방을 좋아해요.' (빨갛다)",
+    "options": [
+     "빨갛은",
+     "빨개",
+     "빨간",
+     "빨갛는"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "겨울에 내리는 눈은 무슨 색이에요?",
+    "options": [
+     "하얀색",
+     "분홍색",
+     "검은색",
+     "갈색"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '제 차는 검은색_____.'",
+    "options": [
+     "에요",
+     "예요",
+     "이요",
+     "이에요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "가장 좋아하는 색과 그 이유를 말해 보세요.",
+    "start": "제가 제일 좋아하는 색은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "빨간색과 하얀색을 섞으면 무슨 색이 돼요?",
+    "options": [
+     "갈색",
+     "보라색",
+     "분홍색",
+     "초록색"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이 셔츠 _____ 색도 있어요?' (다르다)",
+    "options": [
+     "달른",
+     "다르는",
+     "다를",
+     "다른"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "오늘 입은 옷의 색을 말해 보세요.",
+    "start": "오늘 저는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "여름에 나뭇잎은 보통 무슨 색이에요?",
+    "options": [
+     "초록색",
+     "보라색",
+     "주황색",
+     "회색"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "이 파란 셔츠 얼마예요?",
+     "이 파래 셔츠 얼마예요?",
+     "이 파란색 셔츠를 얼마예요?",
+     "이 파랗은 셔츠 얼마예요?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "가게에서 다른 색이 있는지 물어보세요.",
+    "start": "혹시 이거…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'까만색'과 같은 색은?",
+    "options": [
+     "검은색",
+     "하얀색",
+     "갈색",
+     "회색"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '오늘 하늘이 정말 _____.' (파랗다)",
+    "options": [
+     "파라요",
+     "파랗아요",
+     "파래요",
+     "파랗어요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "내 방에 있는 물건의 색을 말해 보세요.",
+    "start": "제 방에는…"
+   }
+  ]
+ },
+ "beginner-u7-l4": {
+  "title": "Buying something",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "가게에 물건을 사러 온 사람은?",
+    "options": [
+     "사장님",
+     "손님",
+     "운전기사",
+     "직원"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "가게에서 돈을 내는 곳은?",
+    "options": [
+     "계산대",
+     "주차장",
+     "탈의실",
+     "화장실"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '카드_____ 계산할게요.'",
+    "options": [
+     "으로",
+     "가",
+     "로",
+     "에"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "'환불'은 무슨 뜻이에요?",
+    "options": [
+     "돈을 다시 돌려받는 것",
+     "물건을 더 사는 것",
+     "값을 깎는 것",
+     "물건을 포장하는 것"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이 모자 마음에 들어요. 이거 _____.' (사다)",
+    "options": [
+     "살게요",
+     "사을게요",
+     "살아요",
+     "샀게요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "마음에 드는 물건을 사겠다고 직원에게 말해 보세요.",
+    "start": "이거 마음에 들어요. 이걸로…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "가게에서 '봉투'는 무엇에 써요?",
+    "options": [
+     "산 물건을 넣어서 가져가요",
+     "음식을 먹어요",
+     "돈을 세요",
+     "옷을 입어 봐요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이거 다른 걸로 _____ 수 있어요?' (바꾸다)",
+    "options": [
+     "바꾼",
+     "바꿀",
+     "바꾸는",
+     "바꿔"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "직원에게 영수증을 달라고 말해 보세요.",
+    "start": "영수증…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'마음에 들다'는 무슨 뜻이에요?",
+    "options": [
+     "잃어버리다",
+     "좋다고 생각하다",
+     "잊어버리다",
+     "싫다고 생각하다"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '어제 시장에서 과일을 _____.' (사다)",
+    "options": [
+     "삿어요",
+     "사었어요",
+     "샀어요",
+     "사았어요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "어제 무엇을 샀는지 친구에게 말해 보세요.",
+    "start": "어제 저는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "옷을 사기 전에 입어 보는 곳은?",
+    "options": [
+     "탈의실",
+     "창고",
+     "계산대",
+     "화장실"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "이 다섯 사과 개 주세요.",
+     "이 사과 다섯 개를 주세요요.",
+     "이 사과 다섯 개 주세요.",
+     "이 사과 오 개 주세요."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "직원에게 물건을 바꾸고 싶다고 말해 보세요.",
+    "start": "죄송한데, 이거 다른…"
+   }
+  ]
+ },
+ "beginner-u8-l1": {
+  "title": "Rooms",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "집에서 요리하는 곳은?",
+    "options": [
+     "거실",
+     "침실",
+     "화장실",
+     "부엌"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "가족이 같이 앉아서 텔레비전을 보는 곳은?",
+    "options": [
+     "화장실",
+     "현관",
+     "창고",
+     "거실"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '엄마는 지금 부엌_____ 계세요.'",
+    "options": [
+     "와",
+     "가",
+     "에",
+     "을"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "샤워하는 곳은?",
+    "options": [
+     "침실",
+     "부엌",
+     "베란다",
+     "욕실"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '우리 집에는 방이 세 _____ 있어요.'",
+    "options": [
+     "번",
+     "권",
+     "명",
+     "개"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "우리 집에 방이 몇 개 있는지 말해 보세요.",
+    "start": "우리 집에는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "집에 들어가서 신발을 벗는 곳은?",
+    "options": [
+     "침실",
+     "현관",
+     "부엌",
+     "거실"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '동생은 지금 자기 방_____ 숙제를 해요.'",
+    "options": [
+     "에",
+     "을",
+     "이",
+     "에서"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "내 방을 소개해 보세요.",
+    "start": "제 방은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'2층'은 무슨 뜻이에요?",
+    "options": [
+     "두 개의 방",
+     "두 번째 층",
+     "두 개의 창문",
+     "두 번째 집"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 질문을 고르세요.",
+    "options": [
+     "화장실을 어디에 있어요?",
+     "화장실이 어디를 있어요?",
+     "화장실이 어디에서 있어요?",
+     "화장실이 어디에 있어요?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "우리 집에서 가장 좋아하는 곳을 말해 보세요.",
+    "start": "제가 제일 좋아하는 곳은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "빨래를 말릴 때 자주 쓰는 곳은?",
+    "options": [
+     "베란다",
+     "화장실",
+     "현관",
+     "부엌"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '우리 집은 작_____ 깨끗해요.'",
+    "options": [
+     "고서",
+     "러",
+     "면서",
+     "지만"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "친구에게 우리 집 거실을 설명해 보세요.",
+    "start": "우리 집 거실에는…"
+   }
+  ]
+ },
+ "beginner-u8-l2": {
+  "title": "Objects",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "앉을 때 쓰는 가구는?",
+    "options": [
+     "옷장",
+     "의자",
+     "거울",
+     "냉장고"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "음식을 차갑게 두는 것은?",
+    "options": [
+     "세탁기",
+     "에어컨",
+     "전자레인지",
+     "냉장고"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '책상 위_____ 컴퓨터가 있어요.'",
+    "options": [
+     "를",
+     "에서",
+     "에",
+     "이"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "얼굴을 비춰 보는 것은?",
+    "options": [
+     "달력",
+     "시계",
+     "창문",
+     "거울"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이것_____ 제 휴대폰이에요.'",
+    "options": [
+     "는",
+     "를",
+     "을",
+     "은"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "내 책상 위에 무엇이 있는지 말해 보세요.",
+    "start": "제 책상 위에는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "지금 몇 시인지 볼 때 보는 것은?",
+    "options": [
+     "사진",
+     "거울",
+     "달력",
+     "시계"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '_____ 뭐예요?' (내 손에 있는 물건)",
+    "options": [
+     "그거",
+     "어디",
+     "저거",
+     "이거"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "가방 안에 무엇이 있는지 말해 보세요.",
+    "start": "제 가방 안에는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "옷을 넣어 두는 가구는?",
+    "options": [
+     "옷장",
+     "냉장고",
+     "신발장",
+     "책장"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "침대 옆을 램프가 있어요.",
+     "침대 옆에 램프를 있어요.",
+     "침대 옆에 램프가 있어요.",
+     "침대 옆에서 램프가 있어요."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "내 방에 있는 가구를 세 개 말해 보세요.",
+    "start": "제 방에는 침대하고…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'열쇠'로 무엇을 해요?",
+    "options": [
+     "머리를 감아요",
+     "밥을 먹어요",
+     "옷을 입어요",
+     "문을 열어요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이 컵은 누구_____ 거예요?'",
+    "options": [
+     "에",
+     "의",
+     "가",
+     "를"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "친구에게 물건을 빌려 달라고 말해 보세요.",
+    "start": "혹시 펜 좀…"
+   }
+  ]
+ },
+ "beginner-u8-l3": {
+  "title": "Places near home",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "약을 사는 곳은?",
+    "options": [
+     "서점",
+     "약국",
+     "은행",
+     "빵집"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "편지나 소포를 보내는 곳은?",
+    "options": [
+     "우체국",
+     "병원",
+     "공원",
+     "도서관"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '우리 집 근처_____ 공원이 있어요.'",
+    "options": [
+     "가",
+     "에서",
+     "을",
+     "에"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "돈을 찾거나 넣는 곳은?",
+    "options": [
+     "약국",
+     "은행",
+     "세탁소",
+     "미용실"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '빵을 사러 빵집_____ 가요.'",
+    "options": [
+     "이",
+     "와",
+     "에",
+     "에서"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "우리 집 근처에 무엇이 있는지 말해 보세요.",
+    "start": "우리 집 근처에는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "머리를 자르는 곳은?",
+    "options": [
+     "세탁소",
+     "우체국",
+     "미용실",
+     "편의점"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "편의점에 우유를 사러 가요.",
+     "편의점에 우유를 사러 먹어요.",
+     "편의점을 우유에 사러 가요.",
+     "편의점에 우유를 사러서 가요."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "자주 가는 가게를 말해 보세요.",
+    "start": "저는 자주…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'가깝다'의 반대말은?",
+    "options": [
+     "좁다",
+     "작다",
+     "멀다",
+     "짧다"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '학교는 우리 집에서 _____.' (가깝다)",
+    "options": [
+     "가까와요",
+     "가깝어요",
+     "가깝아요",
+     "가까워요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "집에서 가장 가까운 지하철역이 어디인지 말해 보세요.",
+    "start": "가장 가까운 역은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "몸이 아플 때 가는 곳은?",
+    "options": [
+     "병원",
+     "카페",
+     "은행",
+     "극장"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '집에서 학교_____ 걸어서 10분 걸려요.'",
+    "options": [
+     "까지",
+     "를",
+     "이",
+     "부터"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "우리 동네에서 좋아하는 장소와 그 이유를 말해 보세요.",
+    "start": "우리 동네에서 제일 좋은 곳은…"
+   }
+  ]
+ },
+ "beginner-u9-l1": {
+  "title": "Basic directions",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "'오른쪽'의 반대말은?",
+    "options": [
+     "왼쪽",
+     "위쪽",
+     "앞쪽",
+     "뒤쪽"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "'곧장 가세요'와 같은 뜻은?",
+    "options": [
+     "돌아가세요",
+     "멈추세요",
+     "건너세요",
+     "쭉 가세요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '은행이 어디_____ 있어요?'",
+    "options": [
+     "에",
+     "에서",
+     "를",
+     "가"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "사람들이 길을 건너는 곳은?",
+    "options": [
+     "정류장",
+     "주유소",
+     "횡단보도",
+     "주차장"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '사거리에서 왼쪽_____ 가세요.'",
+    "options": [
+     "에서",
+     "으로",
+     "로",
+     "을"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "집에서 가까운 가게까지 가는 길을 설명해 보세요.",
+    "start": "집에서 나와서…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'건너편'은 무슨 뜻이에요?",
+    "options": [
+     "바로 옆",
+     "길의 반대쪽",
+     "건물 안",
+     "아주 먼 곳"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "두 번째 길에서 오른쪽을 도아세요.",
+     "둘째 번 길에서 오른쪽으로 도세요.",
+     "두 번째 길에서 오른쪽으로 돌으세요.",
+     "두 번째 길에서 오른쪽으로 도세요."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "길을 잃었어요. 지나가는 사람에게 길을 물어보세요.",
+    "start": "실례합니다. 혹시…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'사거리'는 무엇이에요?",
+    "options": [
+     "길이 끝나는 곳",
+     "버스가 서는 곳",
+     "차를 세우는 곳",
+     "길 네 개가 만나는 곳"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '쭉 가_____ 왼쪽에 우체국이 있어요.'",
+    "options": [
+     "십시오",
+     "면",
+     "세요",
+     "러"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "친구에게 우리 집에 오는 길을 알려 주세요.",
+    "start": "지하철역에서 나와서…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'앞'의 반대말은?",
+    "options": [
+     "위",
+     "뒤",
+     "옆",
+     "안"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '여기서 역까지 어떻게 _____?' (가다)",
+    "options": [
+     "가요",
+     "갔요",
+     "가세요요",
+     "가어요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "가장 가까운 화장실이 어디인지 물어보세요.",
+    "start": "저기요, 화장실이…"
+   }
+  ]
+ },
+ "beginner-u9-l2": {
+  "title": "Transportation",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "땅 밑으로 다니는 기차는?",
+    "options": [
+     "버스",
+     "비행기",
+     "지하철",
+     "택시"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "하늘을 나는 교통수단은?",
+    "options": [
+     "배",
+     "자전거",
+     "기차",
+     "비행기"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 버스_____ 학교에 가요.'",
+    "options": [
+     "를",
+     "으로",
+     "로",
+     "에서"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "버스를 기다리는 곳은?",
+    "options": [
+     "공항",
+     "버스 정류장",
+     "기차역",
+     "주차장"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 매일 지하철을 _____.' (타다)",
+    "options": [
+     "타요",
+     "타아요",
+     "탔요",
+     "타어요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "학교나 회사에 무엇을 타고 가는지 말해 보세요.",
+    "start": "저는 보통…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'갈아타다'는 무슨 뜻이에요?",
+    "options": [
+     "차를 사다",
+     "차에서 내리다",
+     "차를 고치다",
+     "다른 차로 바꿔 타다"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 다음 역에서 _____.' (내리다)",
+    "options": [
+     "내리요",
+     "내려어요",
+     "내려요",
+     "내리어요요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "택시 기사님에게 가고 싶은 곳을 말해 보세요.",
+    "start": "기사님, 서울역…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "비행기를 타는 곳은?",
+    "options": [
+     "기차역",
+     "정류장",
+     "공항",
+     "항구"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '집에서 회사까지 버스로 30분 _____.'",
+    "options": [
+     "가져요",
+     "해요",
+     "걸려요",
+     "있어요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "지하철이나 버스를 탈 때 좋은 점을 말해 보세요.",
+    "start": "지하철은 빠르고…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'걸어서 가다'는 무엇으로 가는 거예요?",
+    "options": [
+     "배",
+     "자동차",
+     "발",
+     "자전거"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '서울역에 가려면 몇 번 버스를 _____ 돼요?'",
+    "options": [
+     "타서",
+     "타러",
+     "타고",
+     "타면"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "버스 기사님에게 이 버스가 어디에 가는지 물어보세요.",
+    "start": "기사님, 이 버스…"
+   }
+  ]
+ },
+ "beginner-u10-l1": {
+  "title": "Who",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "'누구'는 무엇을 물어볼 때 써요?",
+    "options": [
+     "사람",
+     "이유",
+     "시간",
+     "장소"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "사진 속 사람을 물어볼 때 알맞은 말은?",
+    "options": [
+     "이 사람은 어디예요?",
+     "이 사람은 누구예요?",
+     "이 사람은 왜예요?",
+     "이 사람은 언제예요?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '_____ 왔어요?' (누구 + 이/가)",
+    "options": [
+     "누가",
+     "누구가",
+     "누구는",
+     "누구를"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "문밖에 누가 왔을 때 하는 말은?",
+    "options": [
+     "언제예요?",
+     "누구세요?",
+     "어디세요?",
+     "뭐예요?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이 책은 _____ 거예요?'",
+    "options": [
+     "누구를",
+     "누구",
+     "누가",
+     "누구에"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "가족사진을 보면서 한 사람을 소개해 보세요.",
+    "start": "이 사람은 제…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'그분'은 무슨 말이에요?",
+    "options": [
+     "'그것'의 높임말",
+     "'그 사람'의 높임말",
+     "'거기'의 높임말",
+     "'그때'의 높임말"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '어제 _____ 만났어요?'",
+    "options": [
+     "누구한테서",
+     "누구가",
+     "누구를",
+     "누굴을"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "가장 존경하는 사람이 누구인지 말해 보세요.",
+    "start": "제가 가장 존경하는 사람은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'누구랑'은 무슨 뜻이에요?",
+    "options": [
+     "누구와 함께",
+     "누구의 것",
+     "누구에게서",
+     "누구 때문에"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이분이 누구_____?' (높임말)",
+    "options": [
+     "이세요",
+     "예요요",
+     "세요",
+     "이에요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "친구에게 주말에 누구를 만났는지 물어보세요.",
+    "start": "주말에 누구…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'누구나'는 무슨 뜻이에요?",
+    "options": [
+     "선생님만",
+     "아무도 없음",
+     "모든 사람",
+     "한 사람만"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '누구_____ 같이 가요?'",
+    "options": [
+     "가",
+     "에서",
+     "를",
+     "하고"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "우리 반이나 회사에서 가장 재미있는 사람이 누구인지 말해 보세요.",
+    "start": "제일 재미있는 사람은…"
+   }
+  ]
+ },
+ "beginner-u10-l2": {
+  "title": "What",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "'뭐'와 같은 뜻의 말은?",
+    "options": [
+     "무엇",
+     "누구",
+     "어디",
+     "언제"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "이름을 모르는 물건을 물어볼 때 하는 말은?",
+    "options": [
+     "이게 뭐예요?",
+     "이게 누구예요?",
+     "이게 왜예요?",
+     "이게 언제예요?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "'무엇을'을 짧게 줄인 말은?",
+    "options": [
+     "뭐가",
+     "무얼가",
+     "뭘",
+     "뭣이"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "'무슨'은 어떻게 써요?",
+    "options": [
+     "무슨 가요",
+     "무슨 예뻐요",
+     "무슨 음식",
+     "무슨 먹어요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이게 _____예요?'",
+    "options": [
+     "뭐",
+     "무엇",
+     "무슨",
+     "뭘"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "지금 무엇을 하고 있는지 말해 보세요.",
+    "start": "저는 지금…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'무슨 일이에요?'는 무슨 뜻이에요?",
+    "options": [
+     "어디 가요?",
+     "누구예요?",
+     "몇 시예요?",
+     "무슨 문제가 있어요?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '_____ 색을 좋아해요?'",
+    "options": [
+     "뭘",
+     "무엇",
+     "무슨",
+     "뭐"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "오늘 점심에 무엇을 먹었는지 말해 보세요.",
+    "start": "오늘 점심에…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'아무것도 안 해요'는 무슨 뜻이에요?",
+    "options": [
+     "많이 해요",
+     "하나도 안 해요",
+     "모든 것을 해요",
+     "조금 해요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "직업을 물어보는 알맞은 질문을 고르세요.",
+    "options": [
+     "뭐 일을 하세요?",
+     "무엇 일을 하세요?",
+     "무슨 일을 하세요요?",
+     "무슨 일을 하세요?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "생일 선물로 무엇을 받고 싶은지 말해 보세요.",
+    "start": "생일 선물로…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'지금 뭐 하세요?'에 알맞은 대답은?",
+    "options": [
+     "세 시예요.",
+     "스무 살이에요.",
+     "책 읽어요.",
+     "서울에 살아요."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '어제 뭐 _____?' (하다)",
+    "options": [
+     "해요었어요",
+     "했어요",
+     "했요",
+     "하었어요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "친구에게 이번 주말에 무엇을 할 건지 물어보세요.",
+    "start": "이번 주말에 뭐…"
+   }
+  ]
+ },
+ "beginner-u10-l3": {
+  "title": "Where",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "장소를 물어볼 때 쓰는 말은?",
+    "options": [
+     "언제",
+     "어디",
+     "누구",
+     "왜"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "'여기'는 어디예요?",
+    "options": [
+     "아무 곳도 아님",
+     "둘 다에게서 먼 곳",
+     "말하는 사람 가까운 곳",
+     "듣는 사람 가까운 곳"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '지금 어디_____ 가요?'",
+    "options": [
+     "에",
+     "을",
+     "가",
+     "에서"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "화장실을 찾을 때 하는 말은?",
+    "options": [
+     "화장실이 어디예요?",
+     "화장실이 언제예요?",
+     "화장실이 누구예요?",
+     "화장실이 뭐예요?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '어디_____ 일해요?'",
+    "options": [
+     "에",
+     "가",
+     "에서",
+     "을"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "어디에 사는지 말해 보세요.",
+    "start": "저는 지금…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'어디서'는 무엇을 줄인 말이에요?",
+    "options": [
+     "어디에서",
+     "어디로",
+     "어디에",
+     "어디까지"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '고향이 _____예요?'",
+    "options": [
+     "어디",
+     "어딜",
+     "어디에",
+     "어디서"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "여름 방학이나 휴가에 어디에 가고 싶은지 말해 보세요.",
+    "start": "이번 여름에…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'거기'는 어디예요?",
+    "options": [
+     "말하는 사람 가까운 곳",
+     "아무 곳도 아님",
+     "둘 다에게서 먼 곳",
+     "듣는 사람 가까운 곳"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이 버스는 어디_____ 가요?' (방향)",
+    "options": [
+     "로",
+     "와",
+     "이",
+     "으로"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "지금 어디에 있는지 친구에게 말해 보세요.",
+    "start": "나는 지금…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "잃어버린 가방을 찾을 때 하는 말은?",
+    "options": [
+     "제 가방 어디 있어요?",
+     "제 가방 왜 있어요?",
+     "제 가방 언제예요?",
+     "제 가방 누구예요?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '어디_____ 왔어요?' (고향)",
+    "options": [
+     "이",
+     "를",
+     "에서",
+     "와"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "가장 좋아하는 장소를 말해 보세요.",
+    "start": "제가 제일 좋아하는 곳은…"
+   }
+  ]
+ },
+ "beginner-u10-l4": {
+  "title": "When",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "시간을 물어볼 때 쓰는 말은?",
+    "options": [
+     "무엇",
+     "누구",
+     "언제",
+     "어디"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "'아까'는 언제예요?",
+    "options": [
+     "조금 후",
+     "조금 전",
+     "다음 주",
+     "작년"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '생일이 _____예요?'",
+    "options": [
+     "언제",
+     "언제가",
+     "언제를",
+     "언제에"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "'나중에'는 언제예요?",
+    "options": [
+     "지금보다 뒤에",
+     "바로 지금",
+     "어제",
+     "지금보다 전에"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '언제 한국에 _____?' (오다)",
+    "options": [
+     "오았어요",
+     "왔어요",
+     "와요었어요",
+     "와었어요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "언제 한국어 공부를 시작했는지 말해 보세요.",
+    "start": "저는 한국어 공부를…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'방금'은 무슨 뜻이에요?",
+    "options": [
+     "바로 조금 전",
+     "오래전",
+     "다음 달",
+     "내일"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '수업이 언제 _____?'",
+    "options": [
+     "끝나요",
+     "끝내요",
+     "끝나아요",
+     "끝나어요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "친구에게 언제 만날 수 있는지 물어보세요.",
+    "start": "우리 언제…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'요즘'은 무슨 뜻이에요?",
+    "options": [
+     "내년에",
+     "옛날에",
+     "최근에",
+     "어제만"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '밥을 먹은 _____ 커피를 마셔요.'",
+    "options": [
+     "때",
+     "전에",
+     "동안",
+     "후에"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "다음 휴가가 언제인지 말해 보세요.",
+    "start": "제 다음 휴가는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'언젠가'는 무슨 뜻이에요?",
+    "options": [
+     "매일",
+     "한 번도 아님",
+     "정해지지 않은 어느 때",
+     "바로 지금"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 어릴 _____ 부산에 살았어요.'",
+    "options": [
+     "때",
+     "후",
+     "전",
+     "동안"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "언제 가장 행복한지 말해 보세요.",
+    "start": "제가 가장 행복할 때는…"
+   }
+  ]
+ },
+ "beginner-u10-l5": {
+  "title": "Why",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "이유를 물어볼 때 쓰는 말은?",
+    "options": [
+     "누구",
+     "왜",
+     "어디",
+     "언제"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "'왜냐하면'은 언제 써요?",
+    "options": [
+     "시간을 말할 때",
+     "이유를 말할 때",
+     "장소를 말할 때",
+     "사람을 말할 때"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '배가 _____ 밥을 먹었어요.' (고프다)",
+    "options": [
+     "고파고",
+     "고파서",
+     "고퍼서",
+     "고프서"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "'왜요?'에 알맞은 대답은?",
+    "options": [
+     "학교에서요.",
+     "친구하고요.",
+     "시간이 없어서요.",
+     "세 시예요."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '비 _____ 집에 있었어요.'",
+    "options": [
+     "이라서",
+     "때문에",
+     "해서",
+     "니까요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "어제 늦게 잔 이유를 말해 보세요.",
+    "start": "어제 늦게 잔 이유는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'그래서'는 언제 써요?",
+    "options": [
+     "인사할 때",
+     "결과를 말할 때",
+     "질문할 때",
+     "반대 내용을 말할 때"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '비가 _____ 우산을 가져가세요.'",
+    "options": [
+     "올",
+     "오니까",
+     "와서",
+     "오러"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "지금 사는 도시가 좋은 이유를 말해 보세요.",
+    "start": "제가 사는 도시가 좋은 이유는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'이유'와 같은 뜻의 말은?",
+    "options": [
+     "장소",
+     "까닭",
+     "결과",
+     "시간"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '왜 어제 학교에 안 _____?'",
+    "options": [
+     "오세요",
+     "와요",
+     "왔어요",
+     "올 거예요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "친구에게 왜 기분이 좋은지 물어보세요.",
+    "start": "오늘 왜…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'왜 그래요?'는 무슨 뜻이에요?",
+    "options": [
+     "뭐 먹어요?",
+     "무슨 일이 있어요?",
+     "몇 살이에요?",
+     "어디 가요?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '시간이 없어서 아침을 _____.'",
+    "options": [
+     "못 먹었어요",
+     "못 먹어 있어요",
+     "안 먹어었어요",
+     "먹었 못어요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "어제 하지 못한 일과 그 이유를 말해 보세요.",
+    "start": "어제는 바빠서…"
+   }
+  ]
+ },
+ "beginner-u10-l6": {
+  "title": "How",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "방법을 물어볼 때 쓰는 말은?",
+    "options": [
+     "누구",
+     "어떻게",
+     "어디",
+     "언제"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "'어때요?'는 무엇을 물어봐요?",
+    "options": [
+     "장소",
+     "생각이나 느낌",
+     "이름",
+     "나이"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '이 음식은 _____ 만들어요?'",
+    "options": [
+     "어느",
+     "어때",
+     "어떤",
+     "어떻게"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "'얼마나'는 무엇을 물어볼 때 써요?",
+    "options": [
+     "장소",
+     "정도나 양",
+     "사람",
+     "이유"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '_____ 영화를 좋아해요?'",
+    "options": [
+     "어떻게",
+     "어디",
+     "어때",
+     "어떤"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "친구에게 주말이 어땠는지 물어보세요.",
+    "start": "주말은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'어떻게 지내요?'와 비슷한 말은?",
+    "options": [
+     "어디 살아요?",
+     "몇 시예요?",
+     "뭐 먹어요?",
+     "잘 지내요?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '학교까지 얼마나 _____?' (걸리다)",
+    "options": [
+     "걸리어요요",
+     "걸리요",
+     "걸려요",
+     "걸여요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "좋아하는 음식을 어떻게 만드는지 간단히 말해 보세요.",
+    "start": "먼저…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'어떻게 됐어요?'는 무엇을 물어봐요?",
+    "options": [
+     "이름",
+     "색깔",
+     "결과",
+     "날씨"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '한국어를 _____ 공부해요?' (얼마나 + 자주)",
+    "options": [
+     "어떻게 자주",
+     "얼마 자주",
+     "몇 자주",
+     "얼마나 자주"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "오늘 기분이 어떤지 말해 보세요.",
+    "start": "오늘 저는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'어떡해요!'는 언제 말해요?",
+    "options": [
+     "기분이 아주 좋을 때",
+     "인사할 때",
+     "문제가 생겨서 걱정될 때",
+     "밥을 먹을 때"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "날씨를 물어보는 알맞은 질문을 고르세요.",
+    "options": [
+     "날씨가 어떤요?",
+     "날씨가 어때요?",
+     "날씨가 어떻게요?",
+     "날씨를 어때요?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "길을 모를 때 역까지 어떻게 가는지 물어보세요.",
+    "start": "실례지만, 역까지…"
+   }
+  ]
+ },
+ "beginner-u11-l1": {
+  "title": "Weather",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "비가 올 때 쓰는 것은?",
+    "options": [
+     "우산",
+     "장갑",
+     "선글라스",
+     "모자"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "'덥다'의 반대말은?",
+    "options": [
+     "흐리다",
+     "맑다",
+     "춥다",
+     "따뜻하다"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '오늘은 날씨가 _____.' (덥다)",
+    "options": [
+     "더와요",
+     "덥아요",
+     "덥어요",
+     "더워요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "하늘에 구름이 없고 해가 날 때는?",
+    "options": [
+     "맑아요",
+     "눈이 와요",
+     "흐려요",
+     "비가 와요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '밖에 비_____ 와요.'",
+    "options": [
+     "이",
+     "를",
+     "에",
+     "가"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "오늘 날씨가 어떤지 말해 보세요.",
+    "start": "오늘은 날씨가…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'흐리다'는 어떤 날씨예요?",
+    "options": [
+     "구름이 많아요",
+     "눈이 많이 와요",
+     "해가 강해요",
+     "아주 더워요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '내일은 눈이 _____.' (오다)",
+    "options": [
+     "왔어요",
+     "올 거예요요",
+     "와었어요",
+     "올 거예요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "어제 날씨가 어땠는지 말해 보세요.",
+    "start": "어제는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'눈사람'은 언제 만들어요?",
+    "options": [
+     "눈이 올 때",
+     "바람이 불 때",
+     "더울 때",
+     "비가 올 때"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '날씨가 _____ 산책해요.' (좋다)",
+    "options": [
+     "좋서",
+     "조아서",
+     "좋아서",
+     "좋어서"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "비 오는 날에 무엇을 하는지 말해 보세요.",
+    "start": "비가 오는 날에는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'일기 예보'는 무엇이에요?",
+    "options": [
+     "여행 계획",
+     "뉴스 사진",
+     "하루 일기",
+     "날씨를 알려 주는 방송"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '오늘은 어제_____ 더 추워요.'",
+    "options": [
+     "보다",
+     "까지",
+     "부터",
+     "에서"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "내일 날씨가 좋으면 무엇을 할지 말해 보세요.",
+    "start": "내일 날씨가 좋으면…"
+   }
+  ]
+ },
+ "beginner-u11-l2": {
+  "title": "Seasons",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "한국의 사계절이 아닌 것은?",
+    "options": [
+     "우기",
+     "여름",
+     "가을",
+     "봄"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "눈이 오고 추운 계절은?",
+    "options": [
+     "겨울",
+     "봄",
+     "여름",
+     "가을"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 봄_____ 제일 좋아요.'",
+    "options": [
+     "를",
+     "을",
+     "가",
+     "이"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "꽃이 피기 시작하는 계절은?",
+    "options": [
+     "가을",
+     "여름",
+     "겨울",
+     "봄"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '가을에는 날씨가 _____.' (시원하다)",
+    "options": [
+     "시원했요",
+     "시원해요",
+     "시원하요",
+     "시원해어요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "가장 좋아하는 계절을 말해 보세요.",
+    "start": "제가 제일 좋아하는 계절은…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "나뭇잎이 빨갛고 노랗게 바뀌는 계절은?",
+    "options": [
+     "봄",
+     "가을",
+     "겨울",
+     "여름"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '여름_____ 바다에 가요.'",
+    "options": [
+     "이",
+     "에",
+     "을",
+     "에서"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "여름에 보통 무엇을 하는지 말해 보세요.",
+    "start": "여름에는 보통…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'장마'는 무엇이에요?",
+    "options": [
+     "비가 오래 오는 때",
+     "눈이 많이 오는 때",
+     "아주 추운 때",
+     "바람이 없는 때"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 문장을 고르세요.",
+    "options": [
+     "겨울이 되면 스키를 타아요.",
+     "겨울이 되며는 스키를 타요요.",
+     "겨울을 되면 스키를 타요.",
+     "겨울이 되면 스키를 타요."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "내 나라의 계절을 소개해 보세요.",
+    "start": "우리나라에는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "봄 날씨는 보통 어때요?",
+    "options": [
+     "눈이 많이 와요",
+     "아주 더워요",
+     "아주 추워요",
+     "따뜻해요"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: '저는 여름을 _____ 겨울을 좋아해요.' (싫어하다)",
+    "options": [
+     "싫어할게요",
+     "싫어하러",
+     "싫어하지만",
+     "싫어하세요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "이번 겨울 방학이나 휴가 계획을 말해 보세요.",
+    "start": "이번 겨울에는…"
+   }
+  ]
+ },
+ "beginner-u12-l1": {
+  "title": "Combining everything in short real-life dialogues",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "처음 만난 사람에게 이름을 말하기 전에 하는 인사는?",
+    "options": [
+     "오랜만이에요",
+     "잘 먹었습니다",
+     "처음 뵙겠습니다",
+     "안녕히 주무세요"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "손님이 '얼마예요?'라고 물어보면 직원은 뭐라고 대답해요?",
+    "options": [
+     "세 시예요.",
+     "서울이에요.",
+     "만 원이에요.",
+     "스무 살이에요."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: 'A: 어디 가요? B: 시장_____ 가요.'",
+    "options": [
+     "와",
+     "에서",
+     "에",
+     "이"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "친구에게 고마울 때 하는 말은?",
+    "options": [
+     "잘 가",
+     "미안해",
+     "괜찮아",
+     "고마워"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: 'A: 뭐 드실래요? B: 저는 커피_____ 할게요.'",
+    "options": [
+     "으로",
+     "가",
+     "로",
+     "에서"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "카페에서 음료를 주문해 보세요.",
+    "start": "안녕하세요. 따뜻한…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "친구와 약속 시간을 정할 때 하는 말은?",
+    "options": [
+     "몇 살이에요?",
+     "어디 살아요?",
+     "몇 시에 만날까요?",
+     "누구세요?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "알맞은 대답을 고르세요. 'A: 내일 같이 영화 볼까요?'",
+    "options": [
+     "좋아요, 같이 보세요요.",
+     "좋아요, 같이 보아어요.",
+     "좋아요, 같이 봤어요.",
+     "좋아요, 같이 봐요."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "친구에게 주말에 같이 놀자고 말해 보세요.",
+    "start": "이번 주말에 같이…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "'A: 미안해요. B: 괜찮아요.'에서 '괜찮아요'는 무슨 뜻이에요?",
+    "options": [
+     "문제없어요",
+     "정말 싫어요",
+     "너무 비싸요",
+     "아주 배고파요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: 'A: 한국 음식 좋아해요? B: 네, _____.'",
+    "options": [
+     "좋아해요",
+     "좋아했어요요",
+     "좋아하요",
+     "좋아요해요"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "새 친구에게 자기소개를 하고 취미를 말해 보세요.",
+    "start": "안녕하세요. 저는…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "전화를 받을 때 제일 먼저 하는 말은?",
+    "options": [
+     "어서 오세요",
+     "여보세요",
+     "안녕히 계세요",
+     "잘 자요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "빈칸에 알맞은 말을 고르세요: 'A: 어제 뭐 했어요? B: 친구하고 공원에서 _____.' (산책하다)",
+    "options": [
+     "산책하세요",
+     "산책했어요",
+     "산책할 거예요",
+     "산책해요"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "친구에게 전화해서 내일 만날 시간과 장소를 정해 보세요.",
+    "start": "여보세요? 내일…"
+   }
+  ]
+ }
+}

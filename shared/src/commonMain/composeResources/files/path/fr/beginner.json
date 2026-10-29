@@ -1,0 +1,5842 @@
+{
+ "beginner-u1-l1": {
+  "title": "Hello",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Le matin, tu arrives à l'école. Que dis-tu ?",
+    "options": [
+     "Bonne nuit",
+     "Bonjour",
+     "Au revoir",
+     "Merci"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel mot n'est PAS une salutation ?",
+    "options": [
+     "Salut",
+     "Bonsoir",
+     "Merci",
+     "Bonjour"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Comment _____-tu ? »",
+    "options": [
+     "vas",
+     "va",
+     "allez",
+     "vont"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Il est 20 heures. Tu arrives chez une amie. Tu dis :",
+    "options": [
+     "Bonne nuit !",
+     "Bon appétit !",
+     "Bonne journée !",
+     "Bonsoir !"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Léa dit : « Je suis _____ de vous rencontrer. »",
+    "options": [
+     "ravie",
+     "ravi",
+     "ravis",
+     "ravies"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Dis bonjour à un nouveau camarade et demande comment il va.",
+    "start": "Salut ! Comment…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "On dit « Enchanté » quand on…",
+    "options": [
+     "part en vacances",
+     "va dormir",
+     "rencontre quelqu'un",
+     "a faim"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je te présente Omar. Il _____ mon ami. »",
+    "options": [
+     "es",
+     "suis",
+     "sont",
+     "est"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Un ami arrive chez toi. Comment l'accueilles-tu ?",
+    "start": "Salut ! Entre, ça me fait plaisir de…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Que dis-tu à un invité à ta porte ?",
+    "options": [
+     "Bienvenue !",
+     "Pardon !",
+     "Bonne nuit !",
+     "Au revoir !"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ça va ? » — « Oui, et _____ ? »",
+    "options": [
+     "toi",
+     "tu",
+     "te",
+     "ton"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Comment dis-tu bonjour à un professeur ? Et à un ami ?",
+    "start": "Je dis « Bonjour, madame » à mon professeur…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète : « Ravi de faire votre _____. »",
+    "options": [
+     "travail",
+     "maison",
+     "connaissance",
+     "cuisine"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la phrase correcte :",
+    "options": [
+     "Comment allez-tu ?",
+     "Comment vas-vous ?",
+     "Comment va-vous ?",
+     "Comment allez-vous ?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Dis bonjour à un ami et dis-lui comment tu vas aujourd'hui.",
+    "start": "Salut ! Aujourd'hui, je vais…"
+   }
+  ]
+ },
+ "beginner-u1-l2": {
+  "title": "Goodbye",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Tu quittes tes amis. Que dis-tu ?",
+    "options": [
+     "Bonjour",
+     "Enchanté",
+     "Bienvenue",
+     "Au revoir"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu vas revoir ton ami demain. Tu dis :",
+    "options": [
+     "À demain !",
+     "Bonne année !",
+     "Bon appétit !",
+     "Enchanté !"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « À la semaine _____ ! »",
+    "options": [
+     "prochain",
+     "prochaine",
+     "prochains",
+     "prochaines"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Il est 23 heures. Tu vas dormir. Tu dis à ta famille :",
+    "options": [
+     "Bonjour !",
+     "Bon courage !",
+     "Bon appétit !",
+     "Bonne nuit !"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Complète : « _____ soirée ! »",
+    "options": [
+     "Bon",
+     "Bonne",
+     "Bons",
+     "Bonnes"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Tu quittes une fête. Dis au revoir à tes amis.",
+    "start": "Au revoir, tout le monde ! Je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Que veut dire « À bientôt » ?",
+    "options": [
+     "Je suis fatigué.",
+     "Merci beaucoup.",
+     "On se revoit dans peu de temps.",
+     "Je ne sais pas."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je _____ partir, au revoir ! »",
+    "options": [
+     "doit",
+     "dois",
+     "devez",
+     "devons"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Tu finis un appel avec ta mère. Comment dis-tu au revoir ?",
+    "start": "Au revoir, maman ! On se parle…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu pars en vacances. Ton ami dit :",
+    "options": [
+     "Bonne nuit !",
+     "Bon anniversaire !",
+     "Bonnes vacances !",
+     "Enchanté !"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Salut, on se _____ demain ! »",
+    "options": [
+     "voit",
+     "vois",
+     "voient",
+     "voyez"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Le cours est fini. Comment dis-tu au revoir à ton professeur ?",
+    "start": "Au revoir, madame, et…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel mot n'est PAS un au revoir ?",
+    "options": [
+     "À plus",
+     "Bonjour",
+     "Au revoir",
+     "À demain"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Mets à la forme négative : « Je pars maintenant. »",
+    "options": [
+     "Je pars ne pas maintenant.",
+     "Je ne pars maintenant.",
+     "Je ne pars pas maintenant.",
+     "Je pas pars maintenant."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Tu quittes le travail le soir. Que dis-tu à tes collègues ?",
+    "start": "Bonne soirée ! À…"
+   }
+  ]
+ },
+ "beginner-u1-l3": {
+  "title": "Name",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Dans « Marie Dubois », quel est le prénom ?",
+    "options": [
+     "Dubois",
+     "Marie",
+     "Marie Dubois",
+     "Madame"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Dans « Marie Dubois », « Dubois » est…",
+    "options": [
+     "le prénom",
+     "le surnom",
+     "le nom de famille",
+     "l'adresse"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je m'_____ Thomas. »",
+    "options": [
+     "appelle",
+     "appelles",
+     "appelez",
+     "appellent"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un nom court entre amis, comme « Max » pour « Maxime », c'est un…",
+    "options": [
+     "prénom",
+     "pays",
+     "surnom",
+     "numéro"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la question polie et correcte :",
+    "options": [
+     "Comment vous appelles-tu ?",
+     "Comment tu appelez ?",
+     "Comment vous appelle ?",
+     "Comment vous appelez-vous ?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Présente-toi : dis ton prénom et ton nom de famille.",
+    "start": "Je m'appelle…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Épeler » un nom, c'est…",
+    "options": [
+     "dire les lettres une par une",
+     "dire le nom très vite",
+     "écrire un numéro",
+     "oublier le nom"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Voici ma sœur. _____ s'appelle Julie. »",
+    "options": [
+     "Il",
+     "Ils",
+     "Elle",
+     "Je"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Demande poliment son nom à une nouvelle personne au travail.",
+    "start": "Bonjour ! Comment vous…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète : « Mon _____ est Martin. C'est mon nom de famille. »",
+    "options": [
+     "prénom",
+     "âge",
+     "pays",
+     "nom"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ils s'_____ Léo et Hugo. »",
+    "options": [
+     "appelle",
+     "appellent",
+     "appelons",
+     "appelez"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Dis le prénom de ton meilleur ami et épelle-le.",
+    "start": "Mon meilleur ami s'appelle…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Au bureau, on te demande : « Votre nom, s'il vous _____ ? »",
+    "options": [
+     "merci",
+     "plaît",
+     "plaisir",
+     "aime"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige l'erreur : « Je m'appelles Sophie. »",
+    "options": [
+     "Je appelle Sophie.",
+     "Je m'appelez Sophie.",
+     "Je m'appelle Sophie.",
+     "Je s'appelle Sophie."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Est-ce que tu aimes ton prénom ? Pourquoi ?",
+    "start": "J'aime mon prénom parce que…"
+   }
+  ]
+ },
+ "beginner-u1-l4": {
+  "title": "Age",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quel nombre est « vingt » ?",
+    "options": [
+     "12",
+     "20",
+     "2",
+     "200"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le jour où on a un an de plus, c'est…",
+    "options": [
+     "l'anniversaire",
+     "le week-end",
+     "le matin",
+     "le lundi"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne phrase pour dire ton âge :",
+    "options": [
+     "Je suis vingt ans.",
+     "J'ai vingt ans.",
+     "Je es vingt ans.",
+     "J'as vingt ans."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Mon grand-père a 80 ans. Il est…",
+    "options": [
+     "jeune",
+     "petit",
+     "âgé",
+     "nouveau"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne question :",
+    "options": [
+     "Quel âge es-tu ?",
+     "Combien âge tu as ?",
+     "Quelle âge as-tu ?",
+     "Quel âge as-tu ?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Dis ton âge et l'âge d'une personne de ta famille.",
+    "start": "J'ai… ans, et ma mère a…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel nombre est « quinze » ?",
+    "options": [
+     "5",
+     "50",
+     "15",
+     "14"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ma sœur _____ dix ans. »",
+    "options": [
+     "a",
+     "est",
+     "as",
+     "ai"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Ton ami demande : « Quel âge as-tu ? » Réponds.",
+    "start": "J'ai…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel nombre vient après « trente » ?",
+    "options": [
+     "vingt-neuf",
+     "trente et un",
+     "quarante",
+     "treize"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige l'erreur : « Mes parents a cinquante ans. »",
+    "options": [
+     "Mes parents sont cinquante ans.",
+     "Mes parents avez cinquante ans.",
+     "Mes parents as cinquante ans.",
+     "Mes parents ont cinquante ans."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Quel âge a ton meilleur ami ? Et ton frère ou ta sœur ?",
+    "start": "Mon meilleur ami a…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une personne de 15 ans est…",
+    "options": [
+     "un bébé",
+     "un adulte",
+     "un adolescent",
+     "un grand-père"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Nous _____ le même âge. »",
+    "options": [
+     "sommes",
+     "avons",
+     "avez",
+     "ont"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "À quel âge est-ce qu'on est adulte dans ton pays ?",
+    "start": "Dans mon pays, on est adulte à…"
+   }
+  ]
+ },
+ "beginner-u1-l5": {
+  "title": "Country",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Paris est la capitale de quel pays ?",
+    "options": [
+     "la France",
+     "l'Espagne",
+     "l'Italie",
+     "le Canada"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un homme qui vient d'Italie est…",
+    "options": [
+     "anglais",
+     "italien",
+     "espagnol",
+     "chinois"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'habite _____ France. »",
+    "options": [
+     "au",
+     "à",
+     "en",
+     "aux"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Au Japon, on parle…",
+    "options": [
+     "chinois",
+     "japonais",
+     "anglais",
+     "arabe"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je viens _____ Canada. »",
+    "options": [
+     "de la",
+     "des",
+     "en",
+     "du"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Dis de quel pays tu viens et dans quelle ville tu habites.",
+    "start": "Mon pays, c'est… et j'habite à…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quelle langue parle-t-on au Brésil ?",
+    "options": [
+     "le portugais",
+     "l'espagnol",
+     "le français",
+     "l'italien"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Maria vient du Mexique. Elle est _____. »",
+    "options": [
+     "mexicain",
+     "mexicaine",
+     "mexicains",
+     "mexicaines"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quel pays veux-tu visiter ? Pourquoi ?",
+    "start": "Je veux visiter… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel mot est un continent ?",
+    "options": [
+     "la France",
+     "Paris",
+     "le français",
+     "l'Europe"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il habite _____ États-Unis. »",
+    "options": [
+     "aux",
+     "au",
+     "en",
+     "à"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Quelles langues parles-tu ? Où est-ce qu'on parle ces langues ?",
+    "start": "Je parle…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une personne qui visite un autre pays est un…",
+    "options": [
+     "voisin",
+     "professeur",
+     "touriste",
+     "médecin"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ils habitent _____ Londres. »",
+    "options": [
+     "en",
+     "au",
+     "aux",
+     "à"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Décris ton pays en deux phrases.",
+    "start": "Mon pays est…"
+   }
+  ]
+ },
+ "beginner-u2-l1": {
+  "title": "Personal information",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "« 12 rue de la Paix, Paris », c'est une…",
+    "options": [
+     "date",
+     "adresse",
+     "heure",
+     "langue"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« 06 12 34 56 78 », c'est un numéro de…",
+    "options": [
+     "maison",
+     "page",
+     "téléphone",
+     "chaussure"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ est ton adresse e-mail ? »",
+    "options": [
+     "Quel",
+     "Quelle",
+     "Quels",
+     "Quelles"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ton métier, c'est ton…",
+    "options": [
+     "travail",
+     "pays",
+     "nom",
+     "âge"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Anne travaille à l'hôpital. Elle est _____. »",
+    "options": [
+     "infirmier",
+     "infirmiers",
+     "infirmières",
+     "infirmière"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Présente-toi : ton nom, ton âge et ta ville.",
+    "start": "Bonjour, je m'appelle… J'ai… ans et j'habite à…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel mot est un métier ?",
+    "options": [
+     "cuisine",
+     "lundi",
+     "professeur",
+     "rouge"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Mon père _____ médecin. »",
+    "options": [
+     "a",
+     "est",
+     "es",
+     "et"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Dis quel est ton métier ou ce que tu étudies.",
+    "start": "Dans la vie, je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une personne qui n'est pas mariée est…",
+    "options": [
+     "âgée",
+     "célibataire",
+     "sportive",
+     "étrangère"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ adresse est 5 rue Victor Hugo. »",
+    "options": [
+     "Ma",
+     "Mes",
+     "Mon",
+     "Ta"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Parle de ta ville : où est-elle et comment est-elle ?",
+    "start": "J'habite à… C'est une ville…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Sur un formulaire, « date de naissance » veut dire…",
+    "options": [
+     "ton adresse",
+     "ton métier",
+     "ton pays",
+     "le jour où tu es né"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne question :",
+    "options": [
+     "Où habites-tu ?",
+     "Où tu habites-tu ?",
+     "Où habite-tu ?",
+     "Où habites-vous ?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Parle de toi en deux phrases : ton caractère et tes loisirs.",
+    "start": "Je suis… et j'aime…"
+   }
+  ]
+ },
+ "beginner-u2-l2": {
+  "title": "Likes and dislikes",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quel est le contraire de « aimer » ?",
+    "options": [
+     "adorer",
+     "détester",
+     "préférer",
+     "manger"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "J'aime beaucoup, beaucoup le chocolat. J'_____ le chocolat.",
+    "options": [
+     "adore",
+     "déteste",
+     "oublie",
+     "écoute"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'aime _____ musique. »",
+    "options": [
+     "le",
+     "un",
+     "la",
+     "des"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel mot est un sport ?",
+    "options": [
+     "la pizza",
+     "le cinéma",
+     "la radio",
+     "le football"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la forme négative de « J'aime le café. »",
+    "options": [
+     "Je ne aime pas le café.",
+     "Je n'aime pas le café.",
+     "Je n'aime le café pas.",
+     "Je aime pas le café."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Dis deux choses que tu aimes et une chose que tu n'aimes pas.",
+    "start": "J'aime… et… mais je n'aime pas…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu aimes lire. Ton loisir, c'est la…",
+    "options": [
+     "cuisine",
+     "natation",
+     "lecture",
+     "danse"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Elle aime _____ au tennis. »",
+    "options": [
+     "joue",
+     "jouez",
+     "joué",
+     "jouer"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Quel est ton plat préféré ? Pourquoi ?",
+    "start": "Mon plat préféré, c'est… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète : « Le football ? Ah non, je _____ ça ! »",
+    "options": [
+     "adore",
+     "déteste",
+     "aime bien",
+     "préfère"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu aimes les chats ? » — « Non, je n'aime pas _____ chats. »",
+    "options": [
+     "des",
+     "de",
+     "les",
+     "un"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Quelle musique aimes-tu ? Quelle musique n'aimes-tu pas ?",
+    "start": "J'aime la musique… mais je n'aime pas…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quelle activité se fait dans l'eau ?",
+    "options": [
+     "la natation",
+     "la lecture",
+     "la marche",
+     "le dessin"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je préfère le thé _____ café. »",
+    "options": [
+     "à le",
+     "du",
+     "que le",
+     "au"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu aimes faire le week-end ?",
+    "start": "Le week-end, j'aime…"
+   }
+  ]
+ },
+ "beginner-u3-l1": {
+  "title": "Family members",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "La mère de ma mère est ma…",
+    "options": [
+     "grand-mère",
+     "tante",
+     "sœur",
+     "cousine"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le frère de mon père est mon…",
+    "options": [
+     "cousin",
+     "oncle",
+     "neveu",
+     "grand-père"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ mère s'appelle Anne. »",
+    "options": [
+     "Mon",
+     "Mes",
+     "Ma",
+     "Me"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le fils de ma tante est mon…",
+    "options": [
+     "frère",
+     "oncle",
+     "fils",
+     "cousin"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ parents habitent à Lyon. »",
+    "options": [
+     "Mes",
+     "Mon",
+     "Ma",
+     "Moi"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Présente ta famille : combien de personnes, et qui ?",
+    "start": "Dans ma famille, il y a…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Mon père et ma mère sont mes…",
+    "options": [
+     "enfants",
+     "cousins",
+     "parents",
+     "voisins"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu _____ des frères ? »",
+    "options": [
+     "es",
+     "as",
+     "a",
+     "ont"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Parle de ton frère, de ta sœur ou de ton cousin.",
+    "start": "Mon frère s'appelle… Il a…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "La fille de mon frère est ma…",
+    "options": [
+     "tante",
+     "cousine",
+     "grand-mère",
+     "nièce"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Paul et Marie sont mes cousins. _____ habitent à Nice. »",
+    "options": [
+     "Ils",
+     "Elles",
+     "Il",
+     "Nous"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qui est la personne la plus âgée de ta famille ?",
+    "start": "La personne la plus âgée de ma famille, c'est…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un garçon sans frère ni sœur est…",
+    "options": [
+     "jumeau",
+     "cousin",
+     "fils unique",
+     "oncle"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « C'est la voiture _____ mon père. »",
+    "options": [
+     "du",
+     "de",
+     "des",
+     "le"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu aimes faire avec ta famille ?",
+    "start": "Avec ma famille, j'aime…"
+   }
+  ]
+ },
+ "beginner-u3-l2": {
+  "title": "Relationships",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Une personne que tu aimes bien et qui n'est pas de ta famille est un…",
+    "options": [
+     "oncle",
+     "frère",
+     "père",
+     "ami"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "La personne qui habite à côté de chez toi est ton…",
+    "options": [
+     "voisin",
+     "collègue",
+     "cousin",
+     "patron"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Marc est _____ meilleur ami. »",
+    "options": [
+     "ma",
+     "mon",
+     "mes",
+     "me"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "La personne qui travaille avec toi est ton…",
+    "options": [
+     "voisin",
+     "mari",
+     "collègue",
+     "neveu"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Léa est _____ amie. »",
+    "options": [
+     "ma",
+     "mes",
+     "me",
+     "mon"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Parle de ton meilleur ami ou de ta meilleure amie.",
+    "start": "Mon meilleur ami s'appelle… Il est…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le mari de ma sœur est mon…",
+    "options": [
+     "beau-frère",
+     "oncle",
+     "cousin",
+     "neveu"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tom et moi, _____ sommes amis depuis dix ans. »",
+    "options": [
+     "vous",
+     "nous",
+     "ils",
+     "on"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Comment as-tu rencontré ton meilleur ami ?",
+    "start": "J'ai rencontré mon meilleur ami…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Marie et Paul sont mariés. Paul est le _____ de Marie.",
+    "options": [
+     "frère",
+     "fils",
+     "mari",
+     "voisin"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu _____ mon frère ? » — « Oui, c'est mon ami. »",
+    "options": [
+     "connais",
+     "connaît",
+     "connaissez",
+     "connaissons"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qui est ton voisin ? Est-ce qu'il est sympa ?",
+    "start": "Mon voisin s'appelle…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une personne que tu ne connais pas est un…",
+    "options": [
+     "ami",
+     "inconnu",
+     "voisin",
+     "copain"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la phrase correcte :",
+    "options": [
+     "Elle est mon meilleur amie.",
+     "Elle est ma meilleur amie.",
+     "Elle est mon meilleure ami.",
+     "Elle est ma meilleure amie."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu fais avec tes amis le week-end ?",
+    "start": "Avec mes amis, nous…"
+   }
+  ]
+ },
+ "beginner-u3-l3": {
+  "title": "Describing people",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Le contraire de « grand » est…",
+    "options": [
+     "gros",
+     "petit",
+     "jeune",
+     "beau"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Elle a les cheveux clairs, couleur or. Elle est…",
+    "options": [
+     "blonde",
+     "brune",
+     "rousse",
+     "chauve"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne forme : « Ma sœur est très _____. »",
+    "options": [
+     "grand",
+     "grande",
+     "grands",
+     "grandes"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une personne agréable et gentille avec tout le monde est…",
+    "options": [
+     "triste",
+     "timide",
+     "sympa",
+     "méchante"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne forme : « Mes frères sont _____. »",
+    "options": [
+     "petit",
+     "petite",
+     "petites",
+     "petits"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Décris ton meilleur ami : comment est-il ?",
+    "start": "Mon meilleur ami est… Il a…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète : « Il a les yeux _____. »",
+    "options": [
+     "longs",
+     "bleus",
+     "courts",
+     "blonds"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon verbe : « Elle _____ les cheveux longs. »",
+    "options": [
+     "a",
+     "est",
+     "as",
+     "ont"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Décris une personne de ta famille : son physique et son caractère.",
+    "start": "Ma mère est… Elle a…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le contraire de « gentil » est…",
+    "options": [
+     "petit",
+     "jeune",
+     "content",
+     "méchant"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne forme : « Mon père est gentil et ma mère est _____. »",
+    "options": [
+     "gentil",
+     "gentille",
+     "gentils",
+     "gentile"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Décris-toi en trois mots.",
+    "start": "Je suis…, … et…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une personne qui ne parle pas beaucoup aux nouvelles personnes est…",
+    "options": [
+     "drôle",
+     "bavarde",
+     "timide",
+     "grande"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne forme : « C'est une _____ fille. »",
+    "options": [
+     "belle",
+     "beau",
+     "bel",
+     "beaux"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Décris ton acteur ou ton chanteur préféré.",
+    "start": "Mon chanteur préféré est… Il est…"
+   }
+  ]
+ },
+ "beginner-u4-l1": {
+  "title": "Numbers",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Comment écrit-on 7 en lettres ?",
+    "options": [
+     "six",
+     "sept",
+     "seize",
+     "cette"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel nombre est « soixante-dix » ?",
+    "options": [
+     "60",
+     "17",
+     "70",
+     "80"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne forme pour 80 : « quatre-_____ »",
+    "options": [
+     "vingts",
+     "vingt",
+     "dix",
+     "cents"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel nombre vient après « dix-neuf » ?",
+    "options": [
+     "dix-huit",
+     "onze",
+     "neuf",
+     "vingt"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Comment écrit-on 21 en lettres ?",
+    "options": [
+     "vingt-un",
+     "vingt et un",
+     "deux-un",
+     "vingt-deux"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Compte de un à dix.",
+    "start": "Un, deux, trois…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Combien font dix plus cinq ?",
+    "options": [
+     "quatorze",
+     "seize",
+     "quinze",
+     "cinquante"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'ai deux _____. »",
+    "options": [
+     "livre",
+     "livres",
+     "livrent",
+     "livré"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quel est ton nombre préféré ? Pourquoi ?",
+    "start": "Mon nombre préféré est… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel nombre est « cent » ?",
+    "options": [
+     "100",
+     "1 000",
+     "10",
+     "50"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il y a vingt et _____ filles dans la classe. »",
+    "options": [
+     "un",
+     "une",
+     "uns",
+     "unes"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Combien de personnes y a-t-il dans ta famille ? Et dans ta classe ?",
+    "start": "Dans ma famille, il y a…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel nombre est « quatre-vingt-dix » ?",
+    "options": [
+     "80",
+     "94",
+     "70",
+     "90"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ frères as-tu ? »",
+    "options": [
+     "Combien",
+     "Quel",
+     "Combien de",
+     "Comment"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce qu'il y a dans ton sac ? Compte les objets.",
+    "start": "Dans mon sac, il y a…"
+   }
+  ]
+ },
+ "beginner-u4-l2": {
+  "title": "Dates",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quel est le premier mois de l'année ?",
+    "options": [
+     "juin",
+     "janvier",
+     "mars",
+     "décembre"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel mois vient après avril ?",
+    "options": [
+     "mai",
+     "mars",
+     "juin",
+     "août"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Mon anniversaire est _____ mai. »",
+    "options": [
+     "à",
+     "au",
+     "en",
+     "dans"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Combien de mois y a-t-il dans une année ?",
+    "options": [
+     "dix",
+     "sept",
+     "trente",
+     "douze"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Comment dit-on la date 01/03 ?",
+    "options": [
+     "le un mars",
+     "le premier mars",
+     "la première mars",
+     "le une mars"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quelle est la date de ton anniversaire ?",
+    "start": "Mon anniversaire est le…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel mois a souvent 28 jours ?",
+    "options": [
+     "janvier",
+     "juillet",
+     "février",
+     "octobre"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Nous sommes _____ 14 juillet. »",
+    "options": [
+     "la",
+     "le",
+     "en",
+     "au"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quelle est ta fête préférée ? C'est quand ?",
+    "start": "Ma fête préférée est… C'est le…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel jour fête-t-on la nouvelle année ?",
+    "options": [
+     "le 25 décembre",
+     "le 1er janvier",
+     "le 14 juillet",
+     "le 1er mai"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne question :",
+    "options": [
+     "Quel est la date d'aujourd'hui ?",
+     "Quelles est la date d'aujourd'hui ?",
+     "Quels est la date d'aujourd'hui ?",
+     "Quelle est la date d'aujourd'hui ?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Quel est ton mois préféré ? Pourquoi ?",
+    "start": "Mon mois préféré est… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une année, c'est 365…",
+    "options": [
+     "mois",
+     "semaines",
+     "jours",
+     "heures"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je suis né _____ 2001. »",
+    "options": [
+     "en",
+     "le",
+     "à",
+     "au"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu fais pour ton anniversaire ?",
+    "start": "Pour mon anniversaire, je…"
+   }
+  ]
+ },
+ "beginner-u4-l3": {
+  "title": "Days",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quel jour vient après lundi ?",
+    "options": [
+     "mercredi",
+     "mardi",
+     "dimanche",
+     "jeudi"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quels jours forment le week-end ?",
+    "options": [
+     "samedi et dimanche",
+     "lundi et mardi",
+     "jeudi et vendredi",
+     "mardi et mercredi"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ lundi, je vais au travail. » (chaque lundi)",
+    "options": [
+     "La",
+     "En",
+     "Le",
+     "À"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel jour vient avant samedi ?",
+    "options": [
+     "dimanche",
+     "jeudi",
+     "lundi",
+     "vendredi"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Hier, c'_____ dimanche. »",
+    "options": [
+     "est",
+     "était",
+     "sera",
+     "être"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quel est ton jour préféré ? Pourquoi ?",
+    "start": "Mon jour préféré est… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le jour avant aujourd'hui, c'est…",
+    "options": [
+     "demain",
+     "ce soir",
+     "hier",
+     "après-demain"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ jour sommes-nous ? »",
+    "options": [
+     "Quel",
+     "Quelle",
+     "Quels",
+     "Qui"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu fais le samedi ?",
+    "start": "Le samedi, je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Combien de jours y a-t-il dans une semaine ?",
+    "options": [
+     "cinq",
+     "sept",
+     "dix",
+     "douze"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Demain, je _____ au cinéma. »",
+    "options": [
+     "va",
+     "allé",
+     "vas",
+     "vais"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Dis ce que tu fais lundi, mardi et mercredi.",
+    "start": "Lundi, je… Mardi, je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel mot n'est PAS un jour de la semaine ?",
+    "options": [
+     "jeudi",
+     "mardi",
+     "janvier",
+     "dimanche"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je travaille du lundi _____ vendredi. »",
+    "options": [
+     "à",
+     "au",
+     "à le",
+     "en"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Comment est ta semaine ? Quel jour est difficile ?",
+    "start": "Ma semaine est… Le jour difficile, c'est…"
+   }
+  ]
+ },
+ "beginner-u4-l4": {
+  "title": "Telling time",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Il est 12 h 00 et il fait jour. Il est…",
+    "options": [
+     "minuit",
+     "midi",
+     "une heure",
+     "onze heures"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Il est 3 h 15. Il est trois heures et…",
+    "options": [
+     "quart",
+     "demie",
+     "moins le quart",
+     "vingt"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il _____ huit heures. »",
+    "options": [
+     "a",
+     "fait",
+     "est",
+     "sont"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Il est 6 h 30. Il est six heures et…",
+    "options": [
+     "quart",
+     "moins le quart",
+     "midi",
+     "demie"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne question :",
+    "options": [
+     "Quel heure est-il ?",
+     "Quelle heure est-il ?",
+     "Quelles heure est-il ?",
+     "Quelle heure il est-il ?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "À quelle heure est-ce que tu dînes ?",
+    "start": "Je dîne à…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Il est 9 h 45. Il est dix heures…",
+    "options": [
+     "et quart",
+     "et demie",
+     "moins le quart",
+     "pile"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le film commence _____ 20 heures. »",
+    "options": [
+     "à",
+     "en",
+     "au",
+     "le"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "À quelle heure commence ton travail ou ton école ?",
+    "start": "Mon travail commence à…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Il est minuit. C'est…",
+    "options": [
+     "le matin",
+     "l'après-midi",
+     "midi",
+     "la nuit"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Il est 1 h 00. Choisis le bon mot : « Il est une _____. »",
+    "options": [
+     "heures",
+     "heure",
+     "heur",
+     "heurs"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quelle heure est-il maintenant ? Qu'est-ce que tu fais ?",
+    "start": "Il est… et je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "60 minutes, c'est une…",
+    "options": [
+     "seconde",
+     "journée",
+     "heure",
+     "semaine"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Il est 5 h 30. « Le cours finit à cinq heures _____. »",
+    "options": [
+     "et demie",
+     "et demi",
+     "et demis",
+     "et demies"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Décris ta journée avec trois heures importantes.",
+    "start": "À sept heures, je… À midi, je…"
+   }
+  ]
+ },
+ "beginner-u5-l1": {
+  "title": "Wake up",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Le matin, tu ouvres les yeux. Tu te…",
+    "options": [
+     "couches",
+     "réveilles",
+     "promènes",
+     "reposes"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel objet sonne le matin pour te réveiller ?",
+    "options": [
+     "le réveil",
+     "le lit",
+     "l'oreiller",
+     "le savon"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je _____ réveille à sept heures. »",
+    "options": [
+     "te",
+     "se",
+     "me",
+     "nous"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le petit-déjeuner, c'est le repas du…",
+    "options": [
+     "midi",
+     "soir",
+     "dimanche",
+     "matin"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Elle _____ lève tôt. »",
+    "options": [
+     "me",
+     "se",
+     "te",
+     "nous"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "À quelle heure est-ce que tu te réveilles ? Qu'est-ce que tu fais ensuite ?",
+    "start": "Je me réveille à… Ensuite, je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le matin, tu te laves sous la…",
+    "options": [
+     "table",
+     "fenêtre",
+     "douche",
+     "porte"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Nous nous _____ à six heures. »",
+    "options": [
+     "levons",
+     "lève",
+     "levez",
+     "lèvent"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Est-ce que tu es une personne du matin ? Explique.",
+    "start": "Le matin, je suis…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu te laves les dents avec une…",
+    "options": [
+     "fourchette",
+     "brosse à dents",
+     "serviette",
+     "cuillère"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu te _____ à quelle heure ? »",
+    "options": [
+     "lève",
+     "levez",
+     "lever",
+     "lèves"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Décris ton petit-déjeuner.",
+    "start": "Au petit-déjeuner, je mange…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Après la douche, tu mets tes vêtements. Tu t'…",
+    "options": [
+     "endors",
+     "assois",
+     "habilles",
+     "amuses"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Mets à la forme négative : « Je me lève tôt. »",
+    "options": [
+     "Je ne me lève pas tôt.",
+     "Je me ne lève pas tôt.",
+     "Je ne lève me pas tôt.",
+     "Je me lève ne pas tôt."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu fais pendant la première heure de ta journée ?",
+    "start": "D'abord, je… Puis je…"
+   }
+  ]
+ },
+ "beginner-u5-l2": {
+  "title": "Work",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Le lieu où on travaille, c'est souvent le…",
+    "options": [
+     "lit",
+     "bureau",
+     "jardin",
+     "parc"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "La personne qui dirige une entreprise est le…",
+    "options": [
+     "patron",
+     "client",
+     "voisin",
+     "élève"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je _____ dans une banque. »",
+    "options": [
+     "travailles",
+     "travaillons",
+     "travaille",
+     "travaillent"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une personne qui soigne les malades est…",
+    "options": [
+     "boulanger",
+     "chauffeur",
+     "serveur",
+     "médecin"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Vous _____ à quelle heure ? »",
+    "options": [
+     "commence",
+     "commencez",
+     "commences",
+     "commençons"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quel est ton travail, ou le travail de tes rêves ?",
+    "start": "Mon travail, c'est…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une « réunion » au travail, c'est…",
+    "options": [
+     "un repas du soir",
+     "un jour de vacances",
+     "un moment où on parle ensemble",
+     "un sport"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Mon frère fait du pain. Il est _____. »",
+    "options": [
+     "boulanger",
+     "boulangère",
+     "boulangers",
+     "boulangerie"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Décris une journée de travail ou d'école typique.",
+    "start": "Je commence à… et je finis à…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quand on ne travaille pas pendant deux semaines en été, on est en…",
+    "options": [
+     "réunion",
+     "vacances",
+     "retard",
+     "avance"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ils _____ au bureau le matin. »",
+    "options": [
+     "va",
+     "allons",
+     "vais",
+     "vont"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu aimes dans ton travail ou dans tes études ?",
+    "start": "J'aime… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "On utilise un ordinateur pour…",
+    "options": [
+     "dormir",
+     "cuisiner",
+     "écrire des e-mails",
+     "nager"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Elle _____ ses e-mails le matin. »",
+    "options": [
+     "lit",
+     "lis",
+     "lisent",
+     "lire"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Est-ce que tu préfères travailler le matin ou le soir ?",
+    "start": "Je préfère travailler… parce que…"
+   }
+  ]
+ },
+ "beginner-u5-l3": {
+  "title": "Study",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "La personne qui enseigne à l'école est le…",
+    "options": [
+     "médecin",
+     "chauffeur",
+     "professeur",
+     "cuisinier"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu écris tes leçons dans un…",
+    "options": [
+     "cahier",
+     "verre",
+     "lit",
+     "frigo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'_____ le français. »",
+    "options": [
+     "étudies",
+     "étudie",
+     "étudient",
+     "étudiez"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un examen, c'est…",
+    "options": [
+     "un livre",
+     "une pause",
+     "un stylo",
+     "un test"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Nous _____ nos devoirs le soir. »",
+    "options": [
+     "faites",
+     "font",
+     "faisons",
+     "fais"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu étudies et pourquoi ?",
+    "start": "J'étudie… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu cherches le sens d'un mot dans un…",
+    "options": [
+     "réfrigérateur",
+     "dictionnaire",
+     "parapluie",
+     "sac de sport"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il y a _____ livres sur la table. »",
+    "options": [
+     "des",
+     "un",
+     "une",
+     "le"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Comment est-ce que tu apprends le français ?",
+    "start": "J'apprends le français avec…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "À l'école, les élèves étudient dans la…",
+    "options": [
+     "cuisine",
+     "salle de bains",
+     "chambre",
+     "salle de classe"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu _____ ton stylo ? » — « Oui, le voici. »",
+    "options": [
+     "a",
+     "as",
+     "es",
+     "ont"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quelle est ta matière préférée à l'école ?",
+    "start": "Ma matière préférée est…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quelle matière étudie les nombres ?",
+    "options": [
+     "l'histoire",
+     "la musique",
+     "les mathématiques",
+     "le sport"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je dois _____ pour l'examen. »",
+    "options": [
+     "révise",
+     "révisé",
+     "révises",
+     "réviser"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Où et quand est-ce que tu étudies ?",
+    "start": "J'étudie dans… le…"
+   }
+  ]
+ },
+ "beginner-u5-l4": {
+  "title": "Sleep",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Le soir, tu vas au lit. Tu te…",
+    "options": [
+     "lèves",
+     "couches",
+     "réveilles",
+     "habilles"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu dors dans un…",
+    "options": [
+     "lit",
+     "four",
+     "placard",
+     "évier"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je _____ huit heures par nuit. »",
+    "options": [
+     "dort",
+     "dormons",
+     "dors",
+     "dormez"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quand tu as besoin de dormir, tu es…",
+    "options": [
+     "content",
+     "pressé",
+     "affamé",
+     "fatigué"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Vous vous _____ à quelle heure ? »",
+    "options": [
+     "couche",
+     "couchez",
+     "couchons",
+     "couchent"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "À quelle heure est-ce que tu te couches ?",
+    "start": "Je me couche à…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quand tu dors, tu fais des…",
+    "options": [
+     "devoirs",
+     "courses",
+     "rêves",
+     "repas"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Tu parles à un enfant. Choisis le bon mot : « Bonne nuit, _____ bien ! »",
+    "options": [
+     "dors",
+     "dort",
+     "dormi",
+     "dormant"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu fais avant de dormir ?",
+    "start": "Avant de dormir, je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Au lit, tu poses ta tête sur un…",
+    "options": [
+     "tapis",
+     "oreiller",
+     "bureau",
+     "miroir"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Mets à la forme négative : « Il dort bien. »",
+    "options": [
+     "Il dort ne pas bien.",
+     "Il ne pas dort bien.",
+     "Il n'dort pas bien.",
+     "Il ne dort pas bien."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Combien d'heures est-ce que tu dors ? Est-ce que c'est assez ?",
+    "start": "Je dors… heures par nuit."
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un petit sommeil l'après-midi, c'est une…",
+    "options": [
+     "douche",
+     "promenade",
+     "sieste",
+     "réunion"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je suis fatigué, je vais _____. »",
+    "options": [
+     "dormir",
+     "dors",
+     "dormi",
+     "dort"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Décris ta chambre. Est-ce qu'on y dort bien ?",
+    "start": "Dans ma chambre, il y a…"
+   }
+  ]
+ },
+ "beginner-u5-l5": {
+  "title": "Daily activities",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Tu achètes à manger au supermarché. Tu fais les…",
+    "options": [
+     "devoirs",
+     "courses",
+     "lits",
+     "rêves"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu laves les assiettes. Tu fais la…",
+    "options": [
+     "vaisselle",
+     "cuisine",
+     "lessive",
+     "sieste"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je _____ la cuisine le soir. »",
+    "options": [
+     "fait",
+     "faisons",
+     "fais",
+     "font"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu laves tes vêtements. Tu fais la…",
+    "options": [
+     "vaisselle",
+     "sieste",
+     "promenade",
+     "lessive"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « D'abord je mange, _____ je travaille. »",
+    "options": [
+     "avant",
+     "ensuite",
+     "hier",
+     "pendant"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Décris ta journée typique en trois étapes.",
+    "start": "D'abord, je… Ensuite, je… Enfin, je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu marches dans le parc pour le plaisir. Tu fais une…",
+    "options": [
+     "lessive",
+     "vaisselle",
+     "promenade",
+     "réunion"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le soir, nous _____ la télé. »",
+    "options": [
+     "regardons",
+     "regardez",
+     "regardent",
+     "regarde"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu fais le soir après le travail ou l'école ?",
+    "start": "Le soir, je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qu'est-ce qu'on fait dans la cuisine ?",
+    "options": [
+     "dormir",
+     "préparer le repas",
+     "prendre une douche",
+     "garer la voiture"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il _____ souvent du sport. »",
+    "options": [
+     "fais",
+     "faites",
+     "font",
+     "fait"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Quelle tâche à la maison est-ce que tu n'aimes pas ? Pourquoi ?",
+    "start": "Je n'aime pas faire… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel mot veut dire « zéro fois » ?",
+    "options": [
+     "toujours",
+     "souvent",
+     "jamais",
+     "parfois"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la phrase correcte :",
+    "options": [
+     "Je ne regarde jamais la télé.",
+     "Je regarde ne jamais la télé.",
+     "Je ne jamais regarde la télé.",
+     "Je jamais ne regarde la télé."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu fais tous les jours ? Dis trois choses.",
+    "start": "Tous les jours, je…"
+   }
+  ]
+ },
+ "beginner-u6-l1": {
+  "title": "Common foods",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quel aliment est un fruit ?",
+    "options": [
+     "la carotte",
+     "la pomme",
+     "le pain",
+     "le fromage"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le boulanger vend du…",
+    "options": [
+     "pain",
+     "poisson",
+     "lait",
+     "riz"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le matin, je mange _____ pain. »",
+    "options": [
+     "de la",
+     "des",
+     "du",
+     "de le"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "La carotte est un…",
+    "options": [
+     "fruit",
+     "dessert",
+     "poisson",
+     "légume"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je bois _____ eau. »",
+    "options": [
+     "de l'",
+     "du",
+     "de la",
+     "des"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu manges au déjeuner ?",
+    "start": "Au déjeuner, je mange…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel aliment est fait avec du lait ?",
+    "options": [
+     "le pain",
+     "la salade",
+     "le fromage",
+     "le riz"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu veux _____ salade ? »",
+    "options": [
+     "du",
+     "de la",
+     "des",
+     "de l'"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quel est ton fruit préféré ? Pourquoi ?",
+    "start": "Mon fruit préféré est… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel aliment est petit, blanc et très populaire en Asie ?",
+    "options": [
+     "la banane",
+     "le riz",
+     "la tomate",
+     "le poulet"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Mets à la forme négative : « Je mange de la viande. »",
+    "options": [
+     "Je ne mange pas de la viande.",
+     "Je ne mange de viande pas.",
+     "Je mange pas de la viande.",
+     "Je ne mange pas de viande."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu manges le soir chez toi ?",
+    "start": "Le soir, je mange…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel aliment est un poisson ?",
+    "options": [
+     "le poulet",
+     "le bœuf",
+     "le saumon",
+     "le porc"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'aime _____ fruits. »",
+    "options": [
+     "les",
+     "des",
+     "du",
+     "de"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Quels aliments est-ce que tu achètes souvent ?",
+    "start": "J'achète souvent…"
+   }
+  ]
+ },
+ "beginner-u6-l2": {
+  "title": "Preferences",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Le contraire de « sucré » est…",
+    "options": [
+     "chaud",
+     "salé",
+     "froid",
+     "grand"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le citron a un goût…",
+    "options": [
+     "acide",
+     "sucré",
+     "salé",
+     "doux"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu _____ le café ou le thé ? »",
+    "options": [
+     "préfère",
+     "préférez",
+     "préfères",
+     "préfèrent"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quelque chose de très bon à manger est…",
+    "options": [
+     "fatigué",
+     "cher",
+     "lent",
+     "délicieux"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Pour moi, le thé est _____ que le café. »",
+    "options": [
+     "plus bon",
+     "meilleur",
+     "mieux",
+     "bonne"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Tu préfères le sucré ou le salé ? Pourquoi ?",
+    "start": "Je préfère… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une personne qui ne mange pas de viande est…",
+    "options": [
+     "affamée",
+     "gourmande",
+     "végétarienne",
+     "pressée"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne forme : « Mon plat _____, c'est la pizza. »",
+    "options": [
+     "préféré",
+     "préférée",
+     "préférés",
+     "préférer"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu n'aimes pas manger ?",
+    "start": "Je n'aime pas…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quand on a envie de manger, on a…",
+    "options": [
+     "soif",
+     "faim",
+     "froid",
+     "sommeil"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le café est _____ chaud que le jus. »",
+    "options": [
+     "très",
+     "trop",
+     "beaucoup",
+     "plus"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu bois le matin : du café, du thé ou autre chose ?",
+    "start": "Le matin, je bois…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une personne qui adore manger de bonnes choses est…",
+    "options": [
+     "timide",
+     "fatiguée",
+     "gourmande",
+     "sportive"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne forme : « Ces pommes sont _____. »",
+    "options": [
+     "délicieuses",
+     "délicieux",
+     "délicieuse",
+     "délicieuxs"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Quelle cuisine préfères-tu : française, italienne, chinoise… ?",
+    "start": "Je préfère la cuisine… parce que…"
+   }
+  ]
+ },
+ "beginner-u6-l3": {
+  "title": "Ordering basics",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Au restaurant, tu choisis ton plat sur la…",
+    "options": [
+     "lettre",
+     "carte",
+     "page",
+     "chambre"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Au restaurant, la personne qui apporte les plats est le…",
+    "options": [
+     "serveur",
+     "chauffeur",
+     "médecin",
+     "vendeur"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je _____ un café, s'il vous plaît. »",
+    "options": [
+     "voudrait",
+     "voulons",
+     "voudrais",
+     "veux-tu"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "À la fin du repas, tu demandes…",
+    "options": [
+     "la carte d'identité",
+     "le réveil",
+     "la météo",
+     "l'addition"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Quelle question le serveur pose-t-il ?",
+    "options": [
+     "Qu'est-ce que vous désire ?",
+     "Qu'est-ce que vous désirez ?",
+     "Quoi vous désirez est-ce ?",
+     "Qu'est-ce que vous désirent ?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Tu es au restaurant. Commande un plat et une boisson.",
+    "start": "Je voudrais…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "On mange la soupe avec une…",
+    "options": [
+     "fourchette",
+     "assiette",
+     "cuillère",
+     "serviette"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Une bouteille _____ eau, s'il vous plaît. »",
+    "options": [
+     "d'",
+     "de l'",
+     "du",
+     "des"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Tu arrives au restaurant avec un ami. Que dis-tu au serveur ?",
+    "start": "Bonsoir, une table pour…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète : « Un _____ d'eau, s'il vous plaît. »",
+    "options": [
+     "plat",
+     "verre",
+     "couteau",
+     "menu"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il _____ un thé. »",
+    "options": [
+     "veux",
+     "voulez",
+     "veulent",
+     "veut"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Le serveur demande : « Et avec ceci ? » Que réponds-tu ?",
+    "start": "Je voudrais aussi…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Après le plat principal, on mange le…",
+    "options": [
+     "petit-déjeuner",
+     "pourboire",
+     "dessert",
+     "menu"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Nous voudrions _____ frites, s'il vous plaît. »",
+    "options": [
+     "du",
+     "des",
+     "de la",
+     "un"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Est-ce que c'est facile pour toi de commander en français ? Pourquoi ?",
+    "start": "Commander en français, c'est…"
+   }
+  ]
+ },
+ "beginner-u7-l1": {
+  "title": "Prices",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "En France, on paie en…",
+    "options": [
+     "dollars",
+     "euros",
+     "yens",
+     "roupies"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le contraire de « cher » est…",
+    "options": [
+     "bon marché",
+     "grand",
+     "lourd",
+     "nouveau"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne question :",
+    "options": [
+     "Combien ça coûtent ?",
+     "Combien coûte ça est ?",
+     "Combien ça coûte ?",
+     "Quel ça coûte ?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quand les prix sont plus bas pendant quelques semaines, ce sont les…",
+    "options": [
+     "vacances",
+     "devoirs",
+     "courses",
+     "soldes"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ces chaussures _____ 50 euros. »",
+    "options": [
+     "coûte",
+     "coûtent",
+     "coûtes",
+     "coûtons"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Demande le prix d'un sac dans un magasin.",
+    "start": "Excusez-moi, combien…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Comment dit-on « 9,50 € » ?",
+    "options": [
+     "neuf euros cinq",
+     "dix-neuf euros cinquante",
+     "neuf euros cinquante",
+     "neuf euros quinze"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ce livre _____ cher. »",
+    "options": [
+     "est",
+     "a",
+     "et",
+     "es"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Quelle chose chère est-ce que tu veux acheter un jour ?",
+    "start": "Un jour, je veux acheter…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "À la caisse, tu paies par carte ou en…",
+    "options": [
+     "voiture",
+     "espèces",
+     "avion",
+     "train"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ce pantalon coûte _____ cher. »",
+    "options": [
+     "beaucoup",
+     "beaucoup de",
+     "trop de",
+     "trop"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Où est-ce que tu fais tes courses ? C'est cher ?",
+    "start": "Je fais mes courses à… C'est…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le petit papier qu'on te donne après avoir payé est le…",
+    "options": [
+     "billet de train",
+     "menu",
+     "ticket de caisse",
+     "passeport"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ça fait combien _____ tout ? »",
+    "options": [
+     "en",
+     "à",
+     "de",
+     "au"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Est-ce que tu aimes faire du shopping ? Pourquoi ?",
+    "start": "Faire du shopping, pour moi, c'est…"
+   }
+  ]
+ },
+ "beginner-u7-l2": {
+  "title": "Sizes",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Un vêtement trop petit est…",
+    "options": [
+     "large",
+     "serré",
+     "long",
+     "lourd"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Dans un magasin, où est-ce que tu essaies un vêtement ?",
+    "options": [
+     "dans la cabine d'essayage",
+     "à la caisse",
+     "dans la vitrine",
+     "au parking"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne forme : « Cette robe est trop _____. »",
+    "options": [
+     "petit",
+     "petits",
+     "petite",
+     "petites"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le contraire de « court » est…",
+    "options": [
+     "petit",
+     "serré",
+     "large",
+     "long"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne question :",
+    "options": [
+     "Vous faites quel taille ?",
+     "Vous faites quelle taille ?",
+     "Vous fait quelle taille ?",
+     "Vous faites quelles taille ?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Tu es dans un magasin. Demande une autre taille.",
+    "start": "Excusez-moi, vous avez ce pull en…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour les chaussures, on demande la…",
+    "options": [
+     "hauteur",
+     "longueur",
+     "pointure",
+     "couleur"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ chaussures sont trop grandes. »",
+    "options": [
+     "Ces",
+     "Ce",
+     "Cet",
+     "Cette"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Quelle taille fais-tu ? Et quelle pointure ?",
+    "start": "Je fais du… et je chausse du…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un pantalon trop grand à la taille est…",
+    "options": [
+     "court",
+     "large",
+     "serré",
+     "étroit"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ manteau est parfait. »",
+    "options": [
+     "Cet",
+     "Cette",
+     "Ces",
+     "Ce"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Le vendeur demande : « Ça vous va ? » Réponds.",
+    "start": "Non, c'est un peu trop…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète : « Ce pantalon est trop long. Je voudrais une taille plus _____. »",
+    "options": [
+     "grande",
+     "large",
+     "petite",
+     "chère"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ anorak est trop petit. »",
+    "options": [
+     "Cet",
+     "Ce",
+     "Cette",
+     "Ces"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Décris les vêtements que tu portes aujourd'hui.",
+    "start": "Aujourd'hui, je porte…"
+   }
+  ]
+ },
+ "beginner-u7-l3": {
+  "title": "Colors",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quand il fait beau, le ciel est…",
+    "options": [
+     "vert",
+     "bleu",
+     "noir",
+     "rouge"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Rouge + blanc = …",
+    "options": [
+     "rose",
+     "vert",
+     "gris",
+     "orange"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne forme : « une voiture _____ »",
+    "options": [
+     "vert",
+     "verts",
+     "verte",
+     "vertes"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "L'herbe est…",
+    "options": [
+     "jaune",
+     "violette",
+     "noire",
+     "verte"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne forme : « des chaussures _____ »",
+    "options": [
+     "noir",
+     "noires",
+     "noire",
+     "noirs"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quelle est ta couleur préférée ? Pourquoi ?",
+    "start": "Ma couleur préférée est… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Noir + blanc = …",
+    "options": [
+     "rose",
+     "marron",
+     "gris",
+     "bleu"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la phrase correcte :",
+    "options": [
+     "J'ai une robe rouge.",
+     "J'ai une rouge robe.",
+     "J'ai rouge une robe.",
+     "J'ai une robe rouges."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Décris les couleurs de ta chambre.",
+    "start": "Ma chambre est… Les murs sont…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "De quelle couleur est une banane ?",
+    "options": [
+     "bleue",
+     "jaune",
+     "rose",
+     "grise"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne forme : « Il a les yeux _____. »",
+    "options": [
+     "marrons",
+     "marronne",
+     "marronnes",
+     "marron"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "De quelle couleur est ton sac ? Et ton téléphone ?",
+    "start": "Mon sac est…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "La nuit, sans lumière, le ciel est…",
+    "options": [
+     "blanc",
+     "jaune",
+     "noir",
+     "rose"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne forme : « une chemise _____ » (blanc)",
+    "options": [
+     "blanc",
+     "blanche",
+     "blancs",
+     "blanches"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quelles couleurs est-ce que tu n'aimes pas porter ?",
+    "start": "Je n'aime pas porter…"
+   }
+  ]
+ },
+ "beginner-u7-l4": {
+  "title": "Buying something",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Dans un magasin, la personne qui t'aide est le…",
+    "options": [
+     "client",
+     "vendeur",
+     "cuisinier",
+     "facteur"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Dans un magasin, tu paies à la…",
+    "options": [
+     "caisse",
+     "cuisine",
+     "chambre",
+     "plage"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je _____ cette veste. »",
+    "options": [
+     "prend",
+     "prenons",
+     "prends",
+     "prennent"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Au supermarché, tu mets tes produits dans un…",
+    "options": [
+     "lit",
+     "four",
+     "bureau",
+     "chariot"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Vous _____ par carte ? »",
+    "options": [
+     "paye",
+     "payez",
+     "payons",
+     "payent"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Tu veux acheter un cadeau pour un ami. Demande de l'aide au vendeur.",
+    "start": "Bonjour, je cherche un cadeau pour…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un magasin qui vend des livres est une…",
+    "options": [
+     "bibliothèque",
+     "boulangerie",
+     "librairie",
+     "pharmacie"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ce pull ? Je _____ prends. »",
+    "options": [
+     "le",
+     "la",
+     "les",
+     "lui"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Le vendeur demande : « Je peux vous aider ? » Réponds.",
+    "start": "Oui, je cherche…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour son anniversaire, tu donnes à ton ami un…",
+    "options": [
+     "ticket",
+     "cadeau",
+     "prix",
+     "client"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ces chaussures ? Je _____ prends. »",
+    "options": [
+     "le",
+     "la",
+     "leur",
+     "les"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu as acheté récemment ?",
+    "start": "Récemment, j'ai acheté…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète : « Vous payez en espèces ou par _____ ? »",
+    "options": [
+     "chaise",
+     "table",
+     "carte",
+     "porte"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne question :",
+    "options": [
+     "Est-ce que vous avez ce pull en rouge ?",
+     "Est-ce vous avez ce pull en rouge ?",
+     "Est-ce que vous a ce pull en rouge ?",
+     "Vous est-ce que avez ce pull en rouge ?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Décris ton magasin préféré.",
+    "start": "Mon magasin préféré est… On y trouve…"
+   }
+  ]
+ },
+ "beginner-u8-l1": {
+  "title": "Rooms",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "On prépare le repas dans la…",
+    "options": [
+     "chambre",
+     "cuisine",
+     "salle de bains",
+     "garage"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "On dort dans la…",
+    "options": [
+     "chambre",
+     "cuisine",
+     "salle à manger",
+     "cave"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Dans mon appartement, _____ un salon et deux chambres. »",
+    "options": [
+     "il est",
+     "c'est",
+     "il y a",
+     "ils ont"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "On prend une douche dans la…",
+    "options": [
+     "cuisine",
+     "chambre",
+     "entrée",
+     "salle de bains"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne forme : « La cuisine est _____. »",
+    "options": [
+     "petit",
+     "petite",
+     "petits",
+     "petites"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Décris ta maison ou ton appartement : combien de pièces ?",
+    "start": "Chez moi, il y a…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "On regarde la télé et on reçoit les amis dans le…",
+    "options": [
+     "garage",
+     "grenier",
+     "salon",
+     "couloir"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ma chambre est _____ premier étage. »",
+    "options": [
+     "au",
+     "à le",
+     "en",
+     "dans"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Quelle est ta pièce préférée ? Pourquoi ?",
+    "start": "Ma pièce préférée est… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "On gare la voiture dans le…",
+    "options": [
+     "salon",
+     "garage",
+     "lit",
+     "toit"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Mets à la forme négative : « Il y a un jardin. »",
+    "options": [
+     "Il n'y a pas un jardin.",
+     "Il y a pas un jardin.",
+     "Il n'y pas a de jardin.",
+     "Il n'y a pas de jardin."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu fais dans ta chambre ?",
+    "start": "Dans ma chambre, je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "La pièce où on mange en famille est la…",
+    "options": [
+     "salle de bains",
+     "chambre",
+     "salle à manger",
+     "cave"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Nous _____ dans un appartement. »",
+    "options": [
+     "habitons",
+     "habitez",
+     "habitent",
+     "habite"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Décris la maison de tes rêves.",
+    "start": "La maison de mes rêves a…"
+   }
+  ]
+ },
+ "beginner-u8-l2": {
+  "title": "Objects",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "On s'assoit sur une…",
+    "options": [
+     "table",
+     "chaise",
+     "lampe",
+     "fenêtre"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "On garde la nourriture au froid dans le…",
+    "options": [
+     "frigo",
+     "four",
+     "lit",
+     "placard"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ lampe est sur la table. »",
+    "options": [
+     "Le",
+     "Les",
+     "La",
+     "L'"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour voir le soir dans une pièce, on allume la…",
+    "options": [
+     "porte",
+     "chaise",
+     "douche",
+     "lampe"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ ordinateur est neuf. »",
+    "options": [
+     "Le",
+     "L'",
+     "La",
+     "Les"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quels objets est-ce qu'il y a dans ta chambre ?",
+    "start": "Dans ma chambre, il y a…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "On cuit un gâteau dans le…",
+    "options": [
+     "frigo",
+     "évier",
+     "four",
+     "lit"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le livre est _____ la table. »",
+    "options": [
+     "sur",
+     "dans",
+     "en",
+     "à"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Quel est l'objet le plus important pour toi à la maison ?",
+    "start": "L'objet le plus important pour moi est…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "On range les vêtements dans une…",
+    "options": [
+     "baignoire",
+     "armoire",
+     "lampe",
+     "fenêtre"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le chat dort _____ le lit. »",
+    "options": [
+     "à",
+     "en",
+     "de",
+     "sous"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce qu'il y a dans ta cuisine ?",
+    "start": "Dans ma cuisine, il y a…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour te voir, tu te regardes dans un…",
+    "options": [
+     "tapis",
+     "canapé",
+     "miroir",
+     "rideau"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon pluriel : « un tableau, deux _____ »",
+    "options": [
+     "tableaux",
+     "tableaus",
+     "tableau",
+     "tableauxs"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Décris ton salon.",
+    "start": "Dans mon salon, il y a…"
+   }
+  ]
+ },
+ "beginner-u8-l3": {
+  "title": "Places near home",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "On achète du pain à la…",
+    "options": [
+     "pharmacie",
+     "boulangerie",
+     "poste",
+     "banque"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "On achète des médicaments à la…",
+    "options": [
+     "pharmacie",
+     "boulangerie",
+     "piscine",
+     "gare"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je vais _____ supermarché. »",
+    "options": [
+     "à la",
+     "à le",
+     "au",
+     "aux"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "On emprunte des livres à la…",
+    "options": [
+     "librairie",
+     "boucherie",
+     "banque",
+     "bibliothèque"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il va _____ banque. »",
+    "options": [
+     "au",
+     "à la",
+     "à le",
+     "aux"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce qu'il y a près de chez toi ?",
+    "start": "Près de chez moi, il y a…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "On nage à la…",
+    "options": [
+     "poste",
+     "mairie",
+     "piscine",
+     "pharmacie"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Nous allons _____ école. »",
+    "options": [
+     "à l'",
+     "au",
+     "à la",
+     "aux"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Où est-ce que tu fais tes courses près de chez toi ?",
+    "start": "Je fais mes courses à…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un grand espace vert en ville, avec des arbres, est un…",
+    "options": [
+     "parking",
+     "parc",
+     "marché",
+     "pont"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « La poste est _____ la banque. »",
+    "options": [
+     "à côté",
+     "près",
+     "loin",
+     "à côté de"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Décris ton quartier : est-ce qu'il est calme ou animé ?",
+    "start": "Mon quartier est…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "On envoie une lettre à la…",
+    "options": [
+     "piscine",
+     "gare",
+     "poste",
+     "boulangerie"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il y a un café _____ coin de la rue. »",
+    "options": [
+     "au",
+     "à la",
+     "en",
+     "dans"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Quel est ton endroit préféré dans ton quartier ?",
+    "start": "Mon endroit préféré est… parce que…"
+   }
+  ]
+ },
+ "beginner-u9-l1": {
+  "title": "Basic directions",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Le contraire de « à gauche » est…",
+    "options": [
+     "tout droit",
+     "à droite",
+     "en face",
+     "derrière"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Aller sans tourner, c'est aller…",
+    "options": [
+     "tout droit",
+     "à gauche",
+     "à droite",
+     "en arrière"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Tu parles à un inconnu (vous). Choisis le bon mot : « _____ à droite. »",
+    "options": [
+     "Tourne",
+     "Tourner",
+     "Tournez",
+     "Tournons"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un endroit où deux rues se croisent est un…",
+    "options": [
+     "pont",
+     "parking",
+     "trottoir",
+     "carrefour"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne question :",
+    "options": [
+     "Où la gare est, s'il vous plaît ?",
+     "Où est la gare, s'il vous plaît ?",
+     "Où est-ce la gare, s'il vous plaît ?",
+     "Où sont la gare, s'il vous plaît ?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Un touriste te demande où est la gare. Explique-lui le chemin.",
+    "start": "Allez tout droit, puis…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "La pharmacie est en face de la banque. « En face de » veut dire…",
+    "options": [
+     "à côté de",
+     "derrière",
+     "de l'autre côté, devant",
+     "loin de"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Prenez la _____ rue à gauche. »",
+    "options": [
+     "deux",
+     "deuxième",
+     "deuxièmes",
+     "du deux"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Explique le chemin de chez toi à un magasin près de chez toi.",
+    "start": "Je sors de chez moi et je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le contraire de « près » est…",
+    "options": [
+     "loin",
+     "devant",
+     "à côté",
+     "ici"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « La gare est loin _____ ici ? »",
+    "options": [
+     "à",
+     "en",
+     "par",
+     "d'"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Tu es perdu dans la rue. Demande de l'aide à quelqu'un.",
+    "start": "Excusez-moi, je cherche…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Dans la rue, les piétons marchent sur le…",
+    "options": [
+     "toit",
+     "plafond",
+     "trottoir",
+     "lit"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Tu parles à un ami (tu). Choisis le bon mot : « _____ la rue et tourne à gauche. »",
+    "options": [
+     "Traverse",
+     "Traverses",
+     "Traversez",
+     "Traverser"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Comment est-ce qu'on va de ton école ou de ton travail à ta maison ?",
+    "start": "D'abord, on… et puis…"
+   }
+  ]
+ },
+ "beginner-u9-l2": {
+  "title": "Transportation",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "On prend le train à la…",
+    "options": [
+     "poste",
+     "gare",
+     "piscine",
+     "boulangerie"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un vélo a deux…",
+    "options": [
+     "roues",
+     "portes",
+     "ailes",
+     "fenêtres"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je vais au travail _____ bus. »",
+    "options": [
+     "à",
+     "au",
+     "en",
+     "par"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "On prend l'avion à l'…",
+    "options": [
+     "école",
+     "hôpital",
+     "église",
+     "aéroport"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Elle va à l'école _____ pied. »",
+    "options": [
+     "en",
+     "à",
+     "au",
+     "par"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Comment est-ce que tu vas au travail ou à l'école ?",
+    "start": "Je vais au travail en…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "En ville, le métro roule souvent…",
+    "options": [
+     "dans le ciel",
+     "sur l'eau",
+     "sous la terre",
+     "sur la neige"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Nous _____ le train à huit heures. »",
+    "options": [
+     "prenons",
+     "prenez",
+     "prennent",
+     "prends"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Quel est ton moyen de transport préféré ? Pourquoi ?",
+    "start": "Je préfère… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pour prendre le bus, tu achètes un…",
+    "options": [
+     "lit",
+     "ticket",
+     "verre",
+     "pull"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ils _____ en voiture. »",
+    "options": [
+     "vient",
+     "venez",
+     "venons",
+     "viennent"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Raconte un long voyage que tu as fait.",
+    "start": "Un jour, j'ai voyagé en…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "La personne qui conduit le bus est le…",
+    "options": [
+     "pilote",
+     "serveur",
+     "chauffeur",
+     "vendeur"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Le train _____ à 10 heures. »",
+    "options": [
+     "part",
+     "pars",
+     "partent",
+     "partons"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Est-ce que les transports sont bons dans ta ville ?",
+    "start": "Dans ma ville, les transports sont…"
+   }
+  ]
+ },
+ "beginner-u10-l1": {
+  "title": "Who",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quel mot sert à poser une question sur une personne ?",
+    "options": [
+     "Quand",
+     "Qui",
+     "Où",
+     "Pourquoi"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Qui est-ce ? » — « C'est _____. »",
+    "options": [
+     "mon frère",
+     "à six heures",
+     "dans la cuisine",
+     "parce que j'ai faim"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ parle français ici ? »",
+    "options": [
+     "Que",
+     "Quoi",
+     "Qui",
+     "Quel"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Une personne très connue est…",
+    "options": [
+     "timide",
+     "seule",
+     "malade",
+     "célèbre"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "« Qui est-ce ? » Choisis la bonne réponse :",
+    "options": [
+     "Il est Marie.",
+     "C'est Marie.",
+     "Elle est Marie.",
+     "C'est est Marie."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Qui est la personne la plus importante dans ta vie ?",
+    "start": "La personne la plus importante dans ma vie est…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qui t'aide quand tu es malade ?",
+    "options": [
+     "le boulanger",
+     "le facteur",
+     "le médecin",
+     "le chauffeur"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Avec _____ tu vas au cinéma ? »",
+    "options": [
+     "qui",
+     "que",
+     "quoi",
+     "où"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qui est ton meilleur ami ? Décris-le.",
+    "start": "Mon meilleur ami, c'est… Il est…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qui apporte les lettres ?",
+    "options": [
+     "le professeur",
+     "le facteur",
+     "le cuisinier",
+     "le pilote"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la question pour cette réponse : « C'est mon professeur. »",
+    "options": [
+     "Qu'est-ce que c'est ?",
+     "Où est-ce ?",
+     "Quand est-ce ?",
+     "Qui est-ce ?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Qui habite avec toi ?",
+    "start": "J'habite avec…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qui prépare les plats dans un restaurant ?",
+    "options": [
+     "le client",
+     "le serveur",
+     "le cuisinier",
+     "le caissier"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Ce livre est à _____ ? » — « À moi. »",
+    "options": [
+     "qui",
+     "que",
+     "quoi",
+     "quel"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qui est ton professeur préféré ? Pourquoi ?",
+    "start": "Mon professeur préféré est… parce que…"
+   }
+  ]
+ },
+ "beginner-u10-l2": {
+  "title": "What",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quel mot sert à poser une question sur une chose ?",
+    "options": [
+     "Qui",
+     "Quoi",
+     "Où",
+     "Quand"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Qu'est-ce que c'est ? » — « C'est _____. »",
+    "options": [
+     "un stylo",
+     "Marie",
+     "demain",
+     "à Paris"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ est-ce que tu fais ? »",
+    "options": [
+     "Qui",
+     "Quoi",
+     "Qu'",
+     "Quel"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Qu'est-ce que tu fais dans la vie ? » On demande ton…",
+    "options": [
+     "âge",
+     "adresse",
+     "nom",
+     "métier"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu fais _____ ce soir ? »",
+    "options": [
+     "que",
+     "quoi",
+     "qu'",
+     "qui"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu fais ce week-end ?",
+    "start": "Ce week-end, je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qu'est-ce qu'on utilise pour écrire ?",
+    "options": [
+     "une fourchette",
+     "un oreiller",
+     "un stylo",
+     "un verre"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ est ton numéro de téléphone ? »",
+    "options": [
+     "Quel",
+     "Quelle",
+     "Que",
+     "Qu'est-ce"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu as dans ton sac ?",
+    "start": "Dans mon sac, j'ai…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qu'est-ce qu'on utilise pour ouvrir une porte ?",
+    "options": [
+     "une cuillère",
+     "une clé",
+     "un livre",
+     "une chaise"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ couleur aimes-tu ? »",
+    "options": [
+     "Quel",
+     "Que",
+     "Qu'est-ce que",
+     "Quelle"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu veux faire demain ?",
+    "start": "Demain, je veux…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Qu'est-ce qu'on porte aux pieds ?",
+    "options": [
+     "un chapeau",
+     "des gants",
+     "des chaussures",
+     "une écharpe"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la question pour cette réponse : « C'est une pomme. »",
+    "options": [
+     "Qu'est-ce que c'est ?",
+     "Qui est-ce ?",
+     "Où est-ce ?",
+     "Combien est-ce ?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu aimes faire quand il pleut ?",
+    "start": "Quand il pleut, j'aime…"
+   }
+  ]
+ },
+ "beginner-u10-l3": {
+  "title": "Where",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quel mot sert à demander un lieu ?",
+    "options": [
+     "Qui",
+     "Où",
+     "Quand",
+     "Comment"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le contraire de « dedans » est…",
+    "options": [
+     "dehors",
+     "dessous",
+     "devant",
+     "derrière"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ habites-tu ? »",
+    "options": [
+     "Ou",
+     "Quand",
+     "Où",
+     "Qui"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le chat est à l'intérieur de la boîte. Il est _____ la boîte.",
+    "options": [
+     "sur",
+     "sous",
+     "derrière",
+     "dans"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Où _____ mes clés ? »",
+    "options": [
+     "est",
+     "sont",
+     "es",
+     "ont"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Où est-ce que tu habites ? Décris l'endroit.",
+    "start": "J'habite à… C'est…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le contraire de « devant » est…",
+    "options": [
+     "dans",
+     "sur",
+     "derrière",
+     "près"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Tu vas où ? » — « Je vais _____ Espagne. »",
+    "options": [
+     "en",
+     "au",
+     "à",
+     "aux"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Où est-ce que tu aimes aller en vacances ?",
+    "start": "En vacances, j'aime aller…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le livre est au milieu, _____ le sac et la boîte.",
+    "options": [
+     "sous",
+     "entre",
+     "loin",
+     "dans"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne question :",
+    "options": [
+     "Où est-ce tu travailles ?",
+     "Où que tu travailles ?",
+     "Où tu est-ce que travailles ?",
+     "Où est-ce que tu travailles ?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Où est ton téléphone maintenant ?",
+    "start": "Mon téléphone est…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Ici », c'est près de moi. Un lieu loin de moi, c'est…",
+    "options": [
+     "ici",
+     "dedans",
+     "là-bas",
+     "dessous"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « D'_____ viens-tu ? »",
+    "options": [
+     "où",
+     "ou",
+     "quand",
+     "qui"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Où est-ce que tu étudies le français ?",
+    "start": "J'étudie le français…"
+   }
+  ]
+ },
+ "beginner-u10-l4": {
+  "title": "When",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quel mot sert à demander un moment ?",
+    "options": [
+     "Où",
+     "Quand",
+     "Qui",
+     "Combien"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le jour après aujourd'hui, c'est…",
+    "options": [
+     "demain",
+     "hier",
+     "ce matin",
+     "avant-hier"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ est-ce que tu pars en vacances ? »",
+    "options": [
+     "Quant",
+     "Qui",
+     "Quand",
+     "Quel"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel mot veut dire « en ce moment » ?",
+    "options": [
+     "hier",
+     "demain",
+     "jamais",
+     "maintenant"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je pars en vacances _____ deux jours. »",
+    "options": [
+     "il y a",
+     "dans",
+     "en",
+     "depuis"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quand est-ce que tu étudies le français ?",
+    "start": "J'étudie le français le…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Entre midi et le soir, c'est…",
+    "options": [
+     "le matin",
+     "la nuit",
+     "l'après-midi",
+     "l'aube"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la question pour cette réponse : « Samedi. »",
+    "options": [
+     "Quand est-ce que tu viens ?",
+     "Où est-ce que tu viens ?",
+     "Qui est-ce que tu viens ?",
+     "Comment est-ce que tu viens ?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Quand est-ce que tu fais du sport ?",
+    "start": "Je fais du sport le…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quelle expression veut dire « tous les jours » ?",
+    "options": [
+     "jamais",
+     "chaque jour",
+     "hier",
+     "bientôt"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « J'apprends le français _____ deux ans. »",
+    "options": [
+     "dans",
+     "il y a",
+     "pendant",
+     "depuis"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Quand est-ce que tu vois tes amis ?",
+    "start": "Je vois mes amis…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Bientôt » veut dire…",
+    "options": [
+     "il y a longtemps",
+     "jamais",
+     "dans peu de temps",
+     "hier"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je suis allé à Paris _____ deux ans. »",
+    "options": [
+     "il y a",
+     "dans",
+     "depuis",
+     "en"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "À quel moment de la journée est-ce que tu es le plus content ?",
+    "start": "Je suis le plus content quand…"
+   }
+  ]
+ },
+ "beginner-u10-l5": {
+  "title": "Why",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quels mots servent à donner une raison ?",
+    "options": [
+     "avant",
+     "parce que",
+     "entre",
+     "pendant"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Je n'ai pas mangé aujourd'hui. J'ai très…",
+    "options": [
+     "faim",
+     "froid",
+     "sommeil",
+     "chaud"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Elle est contente _____ c'est son anniversaire. »",
+    "options": [
+     "mais",
+     "ou",
+     "parce que",
+     "donc"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quand tu as besoin de boire, tu as…",
+    "options": [
+     "faim",
+     "peur",
+     "sommeil",
+     "soif"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la question pour cette réponse : « Parce que j'aime les animaux. »",
+    "options": [
+     "Quand aimes-tu les chats ?",
+     "Pourquoi aimes-tu les chats ?",
+     "Où aimes-tu les chats ?",
+     "Qui aimes-tu les chats ?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Pourquoi est-ce que tu apprends le français ?",
+    "start": "J'apprends le français parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel groupe contient seulement des sentiments ?",
+    "options": [
+     "content, table, triste",
+     "fatigué, porte, fâché",
+     "content, triste, fâché",
+     "heureux, lit, triste"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne question :",
+    "options": [
+     "Pourquoi es-tu en retard ?",
+     "Pourquoi es tu-en retard ?",
+     "Pourquoi tu es-tu en retard ?",
+     "Pourquoi est-tu en retard ?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Pourquoi est-ce que tu aimes ta ville ? Donne une raison.",
+    "start": "J'aime ma ville parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Ton ami a l'air triste. Que demandes-tu ?",
+    "options": [
+     "Quelle heure est-il ?",
+     "Qu'est-ce qui ne va pas ?",
+     "Où est ton sac ?",
+     "Quel âge as-tu ?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il pleut, _____ nous restons à la maison. »",
+    "options": [
+     "parce que",
+     "ou",
+     "si",
+     "donc"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Pourquoi est-ce que tu aimes ton meilleur ami ?",
+    "start": "J'aime mon ami parce qu'il…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le contraire de « content » est…",
+    "options": [
+     "fatigué",
+     "affamé",
+     "triste",
+     "froid"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Je ne sors pas parce _____ il fait froid. »",
+    "options": [
+     "qu'",
+     "que",
+     "de",
+     "car"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Pourquoi est-ce que c'est important de bien dormir ?",
+    "start": "C'est important parce que…"
+   }
+  ]
+ },
+ "beginner-u10-l6": {
+  "title": "How",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Quel mot sert à demander la manière ?",
+    "options": [
+     "Quand",
+     "Comment",
+     "Où",
+     "Qui"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Comment ça va ? » Quelle réponse est négative ?",
+    "options": [
+     "Pas très bien.",
+     "Très bien !",
+     "Super !",
+     "Ça va bien."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il chante très _____. »",
+    "options": [
+     "bon",
+     "bonne",
+     "bien",
+     "bons"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quel mot veut dire « rapidement » ?",
+    "options": [
+     "lentement",
+     "doucement",
+     "tard",
+     "vite"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne forme : « Il conduit _____. » (lent)",
+    "options": [
+     "lent",
+     "lentement",
+     "lente",
+     "lents"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Comment est-ce que tu vas aujourd'hui ? Pourquoi ?",
+    "start": "Aujourd'hui, je vais… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Comment s'appelle ton chien ? » On demande son…",
+    "options": [
+     "âge",
+     "couleur",
+     "nom",
+     "prix"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ coûte ce livre ? »",
+    "options": [
+     "Combien",
+     "Comment",
+     "Quand",
+     "Où"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Comment est-ce que tu vas au supermarché ?",
+    "start": "Je vais au supermarché…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Le contraire de « vite » est…",
+    "options": [
+     "bien",
+     "lentement",
+     "souvent",
+     "fort"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne question :",
+    "options": [
+     "Comment tu appelles ?",
+     "Comment toi t'appelles ?",
+     "Comment te appelles-tu ?",
+     "Comment tu t'appelles ?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Comment est-ce que tu apprends de nouveaux mots ?",
+    "start": "Pour apprendre de nouveaux mots, je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "« Comment est ta maison ? » On demande une…",
+    "options": [
+     "date",
+     "heure",
+     "description",
+     "raison"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il fait _____ beau aujourd'hui ! »",
+    "options": [
+     "très",
+     "beaucoup",
+     "trop de",
+     "beaucoup de"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Comment est ta journée parfaite ?",
+    "start": "Ma journée parfaite commence…"
+   }
+  ]
+ },
+ "beginner-u11-l1": {
+  "title": "Weather",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "De l'eau tombe du ciel. Il…",
+    "options": [
+     "neige",
+     "pleut",
+     "fait chaud",
+     "fait du vent"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Il fait 35 degrés. Il fait…",
+    "options": [
+     "chaud",
+     "froid",
+     "frais",
+     "nuageux"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Aujourd'hui, il _____ beau. »",
+    "options": [
+     "est",
+     "a",
+     "fait",
+     "va"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Il y a beaucoup de nuages. Le ciel est…",
+    "options": [
+     "ensoleillé",
+     "chaud",
+     "sec",
+     "nuageux"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Il y a _____ vent. »",
+    "options": [
+     "de la",
+     "du",
+     "des",
+     "un"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quel temps fait-il aujourd'hui chez toi ?",
+    "start": "Aujourd'hui, il fait…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "En hiver, de petits flocons blancs tombent. Il…",
+    "options": [
+     "pleut",
+     "fait chaud",
+     "neige",
+     "fait beau"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne question :",
+    "options": [
+     "Quel temps fait-il ?",
+     "Quel temps il fait-il ?",
+     "Quelle temps fait-il ?",
+     "Quel temps fait-elle ?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Quel temps est-ce que tu préfères ? Pourquoi ?",
+    "start": "Je préfère quand il fait… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quand il pleut, tu prends un…",
+    "options": [
+     "maillot de bain",
+     "parapluie",
+     "lit",
+     "four"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Demain, il _____ pleuvoir. »",
+    "options": [
+     "vas",
+     "vont",
+     "allé",
+     "va"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu portes quand il fait froid ?",
+    "start": "Quand il fait froid, je porte…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Il fait 2 degrés. Il fait…",
+    "options": [
+     "chaud",
+     "lourd",
+     "froid",
+     "doux"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « Hier, il _____ froid. »",
+    "options": [
+     "faisait",
+     "fait",
+     "fera",
+     "faire"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Quel temps fait-il dans ton pays en été ?",
+    "start": "En été, dans mon pays, il fait…"
+   }
+  ]
+ },
+ "beginner-u11-l2": {
+  "title": "Seasons",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Combien de saisons y a-t-il dans une année ?",
+    "options": [
+     "deux",
+     "quatre",
+     "six",
+     "douze"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "La saison la plus chaude est…",
+    "options": [
+     "l'été",
+     "l'hiver",
+     "l'automne",
+     "le printemps"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ été, je vais à la plage. »",
+    "options": [
+     "Au",
+     "À",
+     "En",
+     "Dans"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "En automne, les _____ tombent des arbres.",
+    "options": [
+     "fleurs",
+     "oiseaux",
+     "nuages",
+     "feuilles"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ printemps, il y a des fleurs. »",
+    "options": [
+     "En",
+     "Au",
+     "À",
+     "Dans"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Quelle est ta saison préférée ? Pourquoi ?",
+    "start": "Ma saison préférée est… parce que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "La saison où il neige souvent est…",
+    "options": [
+     "l'été",
+     "le printemps",
+     "l'hiver",
+     "l'automne"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis le bon mot : « _____ hiver est froid ici. »",
+    "options": [
+     "L'",
+     "Le",
+     "La",
+     "Les"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu fais en hiver ?",
+    "start": "En hiver, je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "En été, à la plage, on porte un…",
+    "options": [
+     "manteau",
+     "maillot de bain",
+     "bonnet",
+     "gant"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne forme : « Les fleurs sont _____ au printemps. »",
+    "options": [
+     "beaux",
+     "belle",
+     "beau",
+     "belles"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Décris l'automne dans ton pays.",
+    "start": "En automne, dans mon pays…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "La saison après l'hiver est…",
+    "options": [
+     "l'automne",
+     "l'été",
+     "le printemps",
+     "Noël"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Choisis la bonne forme : « En été, les jours sont _____. »",
+    "options": [
+     "longs",
+     "long",
+     "longue",
+     "longues"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Qu'est-ce que tu aimes faire en été ?",
+    "start": "En été, j'aime…"
+   }
+  ]
+ },
+ "beginner-u12-l1": {
+  "title": "Combining everything in short real-life dialogues",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Léa dit : « Salut, je m'appelle Léa. » Que réponds-tu ?",
+    "options": [
+     "Enchanté, Léa !",
+     "Merci beaucoup.",
+     "J'ai douze ans.",
+     "Il fait très froid."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète le dialogue : « Qui est-ce ? » — « C'est la mère de ma mère, ma _____. »",
+    "options": [
+     "tante",
+     "sœur",
+     "cousine",
+     "grand-mère"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Complète le dialogue : « Le magasin ouvre à quelle heure ? » — « À huit heures et _____. »",
+    "options": [
+     "demi",
+     "moitié",
+     "demie",
+     "demis"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète le dialogue : « J'ai très soif. » — « Tu veux un verre de _____ ? »",
+    "options": [
+     "pain",
+     "jus",
+     "riz",
+     "fromage"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Complète le dialogue : « Vous désirez ? » — « Je voudrais _____ orange et du riz, s'il vous plaît. »",
+    "options": [
+     "un",
+     "des",
+     "du",
+     "une"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Tu rencontres un nouveau camarade. Dis bonjour, donne ton nom et pose une question.",
+    "start": "Salut, je m'appelle…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quels mots veulent dire « pas cher » ?",
+    "options": [
+     "bon marché",
+     "très lourd",
+     "trop court",
+     "assez lent"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige l'erreur : « Combien coûte ces chaussures ? »",
+    "options": [
+     "Combien coûtes ces chaussures ?",
+     "Combien coûtent ces chaussures ?",
+     "Combien coûte cette chaussures ?",
+     "Combien coûtent cette chaussures ?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Tu veux acheter un sac dans un magasin. Demande le prix.",
+    "start": "Excusez-moi, combien coûte…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Complète le dialogue : « Où est la banque ? » — « Elle est _____ de l'école. Elles sont côte à côte. »",
+    "options": [
+     "loin",
+     "en face",
+     "à côté",
+     "au-dessus"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Complète le dialogue : « Il fait très chaud ! » — « Oui ! _____ à la plage ! »",
+    "options": [
+     "Allons",
+     "Aller",
+     "Allé",
+     "Allions"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Un ami demande : « Qu'est-ce que tu fais tous les jours ? » Dis deux choses.",
+    "start": "Tous les jours, je…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Comment écrit-on 40 en lettres ?",
+    "options": [
+     "quatorze",
+     "quatre",
+     "quatre-vingts",
+     "quarante"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Mets au passé composé : « Je visite Paris. »",
+    "options": [
+     "Je suis visité Paris.",
+     "J'ai visité Paris.",
+     "J'ai visiter Paris.",
+     "J'avais visite Paris."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Un ami demande : « Qu'est-ce que tu as fait hier ? » Dis deux choses.",
+    "start": "Hier, j'ai…"
+   }
+  ]
+ }
+}

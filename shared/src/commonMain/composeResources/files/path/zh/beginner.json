@@ -1,0 +1,5842 @@
+{
+ "beginner-u1-l1": {
+  "title": "Hello",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "早上见到老师，你说：“老师，_____！”",
+    "options": [
+     "晚安",
+     "再见",
+     "对不起",
+     "早上好"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "哪个不是打招呼的话？",
+    "options": [
+     "你好",
+     "谢谢",
+     "早上好",
+     "晚上好"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你好_____？”（问别人好不好）",
+    "options": [
+     "是",
+     "的",
+     "吗",
+     "呢"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "第一次见面，你说：“很高兴_____你。”",
+    "options": [
+     "认识",
+     "叫",
+     "吃",
+     "去"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "“你好吗？”—“我很好，你_____？”",
+    "options": [
+     "是",
+     "呢",
+     "吗",
+     "的"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "跟新同学打招呼，问他好不好。",
+    "start": "你好！你…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "跟很多人打招呼，你说：“大家_____！”",
+    "options": [
+     "是",
+     "的",
+     "好",
+     "们"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "哪句话的语序是对的？",
+    "options": [
+     "好很我。",
+     "我很好。",
+     "很我好。",
+     "我好很。"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "朋友来你家，你怎么跟他打招呼？",
+    "start": "你好！欢迎…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "客人来你家，你说：“_____！”",
+    "options": [
+     "再见",
+     "没关系",
+     "晚安",
+     "欢迎"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "跟两个朋友打招呼：“你_____好！”",
+    "options": [
+     "了",
+     "吗",
+     "的",
+     "们"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "你怎么跟老师打招呼？怎么跟朋友打招呼？",
+    "start": "我跟老师说“老师好”…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "晚上见到邻居，你说：“_____！”",
+    "options": [
+     "下午好",
+     "中午好",
+     "早上好",
+     "晚上好"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（“也”放在哪儿）：",
+    "options": [
+     "我也很好。",
+     "我很好也。",
+     "很我也好。",
+     "也我很好。"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "跟朋友打招呼，说说你今天怎么样。",
+    "start": "你好！我今天…"
+   }
+  ]
+ },
+ "beginner-u1-l2": {
+  "title": "Goodbye",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "离开的时候，你说：“_____！”",
+    "options": [
+     "请",
+     "再见",
+     "欢迎",
+     "你好"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "晚上睡觉以前，跟家人说：“_____！”",
+    "options": [
+     "欢迎",
+     "早上好",
+     "晚安",
+     "你好"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（明天再见面）：",
+    "options": [
+     "明天见！",
+     "见见明天！",
+     "见明天！",
+     "明天了见！"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "“一会儿见 (yíhuìr jiàn)” 是什么时候再见面？",
+    "options": [
+     "去年",
+     "很快",
+     "明年",
+     "下个月"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“太晚了，我要走_____。”",
+    "options": [
+     "了",
+     "吗",
+     "着",
+     "过"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "下课了，跟同学说再见。",
+    "start": "再见！我们明天…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "朋友回家，你说：“路上_____！”",
+    "options": [
+     "小心",
+     "生日",
+     "好吃",
+     "很大"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我们下次_____见。”",
+    "options": [
+     "都",
+     "又",
+     "也",
+     "再"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "晚上离开朋友家，你说什么？",
+    "start": "谢谢你！我该走了…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "早上出门的时候，跟家人说：“我_____了！”",
+    "options": [
+     "看",
+     "吃",
+     "睡",
+     "走"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句：“你明天来_____？”",
+    "options": [
+     "过",
+     "的",
+     "吗",
+     "了"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你常常怎么跟朋友说再见？",
+    "start": "我常常说…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“拜拜” 和哪个词的意思一样？",
+    "options": [
+     "你好",
+     "再见",
+     "对不起",
+     "谢谢"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（约好周末见面）：",
+    "options": [
+     "我们周末见！",
+     "周末见我们了！",
+     "我们见周末！",
+     "见我们周末！"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "跟老师说再见，说你什么时候再来。",
+    "start": "老师再见！我…"
+   }
+  ]
+ },
+ "beginner-u1-l3": {
+  "title": "Name",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "问名字：“你叫_____名字？”",
+    "options": [
+     "哪儿",
+     "几",
+     "什么",
+     "谁"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "问老人的姓，礼貌的说法是：“您贵_____？”",
+    "options": [
+     "名",
+     "是",
+     "姓",
+     "叫"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我_____王小明。”",
+    "options": [
+     "叫",
+     "有",
+     "姓",
+     "在"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "中国人的名字，什么在前面？",
+    "options": [
+     "姓",
+     "号码",
+     "名",
+     "国家"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "“你姓 (xìng) 什么？”—选择正确的回答：",
+    "options": [
+     "姓我李。",
+     "我姓李。",
+     "我李姓。",
+     "我叫李。"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "介绍你的名字。",
+    "start": "大家好，我叫…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "问别人的名字，哪个问题对？",
+    "options": [
+     "你多大？",
+     "你住在哪儿？",
+     "你是哪国人？",
+     "你叫什么名字？"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“他_____什么名字？”",
+    "options": [
+     "姓",
+     "是",
+     "有",
+     "叫"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "问新朋友的名字，再说你的名字。",
+    "start": "你好，你叫…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "名字太难了，你问：“你的名字怎么_____？”",
+    "options": [
+     "坐",
+     "喝",
+     "写",
+     "吃"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我_____名字是安娜。”",
+    "options": [
+     "是",
+     "吗",
+     "的",
+     "了"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你朋友叫什么名字。",
+    "start": "我的朋友叫…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "哪个是中国人常见的姓？",
+    "options": [
+     "好",
+     "吃",
+     "王",
+     "大"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "哪个问句是对的？",
+    "options": [
+     "你什么叫名字？",
+     "你叫什么名字吗？",
+     "你叫什么名字？",
+     "什么你叫名字？"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你的名字是什么意思？你喜欢你的名字吗？",
+    "start": "我的名字…"
+   }
+  ]
+ },
+ "beginner-u1-l4": {
+  "title": "Age",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "“岁 (suì)” 用来说什么？",
+    "options": [
+     "价钱",
+     "年龄",
+     "时间",
+     "天气"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "问小朋友：“你_____岁了？”",
+    "options": [
+     "谁",
+     "哪",
+     "什么",
+     "几"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我今年二十_____。”",
+    "options": [
+     "岁",
+     "年",
+     "个",
+     "号"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "问大人的年龄：“你多_____了？”",
+    "options": [
+     "高",
+     "长",
+     "大",
+     "小"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子：",
+    "options": [
+     "我十八岁有。",
+     "我是今年十八岁。",
+     "我今年十八岁。",
+     "我有十八岁。"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你今年多大。",
+    "start": "我今年…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“二十五 (èrshíwǔ)” 是多少？",
+    "options": [
+     "205",
+     "15",
+     "25",
+     "52"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我弟弟_____岁。”（2岁）",
+    "options": [
+     "二",
+     "双",
+     "对",
+     "两"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你家人多大。",
+    "start": "我爸爸今年…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "一个人八十岁了，他是_____。",
+    "options": [
+     "老人",
+     "小朋友",
+     "小学生",
+     "婴儿"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "问老人的年龄，哪句话对，也最礼貌？",
+    "options": [
+     "您几岁吗？",
+     "你多小了？",
+     "你几岁了？",
+     "您多大年纪了？"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "问朋友多大，再说你多大。",
+    "start": "你今年多大？我…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“生日 (shēngrì)” 是哪一天？",
+    "options": [
+     "上班的那天",
+     "出生的那天",
+     "考试的那天",
+     "放假的那天"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句：",
+    "options": [
+     "你今年多大吗？",
+     "你今年几大了？",
+     "你今年多大了？",
+     "你多大今年了？"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你几岁开始学中文？",
+    "start": "我开始学中文的时候…"
+   }
+  ]
+ },
+ "beginner-u1-l5": {
+  "title": "Country",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "“中国 (Zhōngguó)” 是一个_____。",
+    "options": [
+     "语言",
+     "名字",
+     "城市",
+     "国家"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "日本人说_____。",
+    "options": [
+     "英语",
+     "西班牙语",
+     "法语",
+     "日语"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "问国籍：“你是_____国人？”",
+    "options": [
+     "谁",
+     "什么",
+     "哪",
+     "几"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "从英国来的人是_____。",
+    "options": [
+     "英国人",
+     "美国人",
+     "德国人",
+     "法国人"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子：",
+    "options": [
+     "从我法国来的。",
+     "我是从法国来的。",
+     "我是法国从来的。",
+     "我从来法国的。"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你是哪国人。",
+    "start": "我是…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "中国的首都是_____。",
+    "options": [
+     "北京",
+     "广州",
+     "香港",
+     "上海"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“他不_____中国人，他是韩国人。”",
+    "options": [
+     "叫",
+     "在",
+     "是",
+     "有"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你住在哪个国家？那里怎么样？",
+    "start": "我住在…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "哪个不是国家？",
+    "options": [
+     "北京",
+     "中国",
+     "日本",
+     "法国"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你是美国人_____？”",
+    "options": [
+     "呢",
+     "什么",
+     "吗",
+     "哪"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "问朋友是哪国人。",
+    "start": "你是哪…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "中国人说_____。",
+    "options": [
+     "日文",
+     "法文",
+     "中文",
+     "德文"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "“我是加拿大人，你_____？”",
+    "options": [
+     "呢",
+     "的",
+     "了",
+     "吗"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "你想去哪个国家？为什么？",
+    "start": "我想去…"
+   }
+  ]
+ },
+ "beginner-u2-l1": {
+  "title": "Personal information",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "“电话号码 (diànhuà hàomǎ)” 是什么？",
+    "options": [
+     "打电话用的数字",
+     "人的年龄",
+     "家里的地址",
+     "人的名字"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "“我住 (zhù) 在上海。”“住”的意思是_____。",
+    "options": [
+     "在那里买东西",
+     "在那里工作",
+     "在那里生活",
+     "在那里吃饭"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我家在北京，我_____在北京。”",
+    "options": [
+     "叫",
+     "姓",
+     "有",
+     "住"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "学生每天去_____上课。",
+    "options": [
+     "医院",
+     "学校",
+     "饭店",
+     "银行"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "问电话号码：“你的电话号码是_____？”",
+    "options": [
+     "怎么",
+     "哪儿",
+     "多少",
+     "谁"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "介绍你自己：名字、年龄、住在哪儿。",
+    "start": "我叫…，我今年…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "医生在哪儿工作？",
+    "options": [
+     "医院",
+     "学校",
+     "超市",
+     "银行"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我_____老师，我是学生。”",
+    "options": [
+     "是不",
+     "不有",
+     "不是",
+     "没是"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你做什么工作，或者在哪儿学习。",
+    "start": "我是…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“你住在哪儿？”是问你的_____。",
+    "options": [
+     "年龄",
+     "地址",
+     "名字",
+     "工作"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我住在北京，我_____在北京工作。”",
+    "options": [
+     "和",
+     "很",
+     "吗",
+     "也"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "告诉新朋友你的电话号码。",
+    "start": "我的电话号码是…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“邮箱 (yóuxiāng)” 是用来_____的。",
+    "options": [
+     "吃饭",
+     "发电子邮件",
+     "打电话",
+     "睡觉"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（地点放在哪儿）：",
+    "options": [
+     "在我一家公司工作。",
+     "我工作在一家公司。",
+     "我在一家公司工作。",
+     "我一家公司在工作。"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你的爱好。",
+    "start": "我的爱好是…"
+   }
+  ]
+ },
+ "beginner-u2-l2": {
+  "title": "Likes and dislikes",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "“喜欢 (xǐhuan)” 的反义词是_____。",
+    "options": [
+     "讨厌",
+     "要",
+     "爱",
+     "想"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "非常非常喜欢，可以说_____。",
+    "options": [
+     "想",
+     "怕",
+     "爱",
+     "会"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我_____喜欢吃鱼。”",
+    "options": [
+     "无",
+     "别",
+     "不",
+     "没"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "周末我喜欢_____电影。",
+    "options": [
+     "听",
+     "看",
+     "喝",
+     "吃"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你喜欢喝茶_____？”",
+    "options": [
+     "谁",
+     "吗",
+     "呢",
+     "什么"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你喜欢做什么。",
+    "start": "我喜欢…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "我喜欢_____音乐。",
+    "options": [
+     "看",
+     "听",
+     "说",
+     "写"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（“很”放在哪儿）：",
+    "options": [
+     "我喜欢运动很。",
+     "我很喜欢运动。",
+     "我喜欢很运动。",
+     "很我喜欢运动。"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你不喜欢什么。",
+    "start": "我不喜欢…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“爱好 (àihào)” 是什么？",
+    "options": [
+     "家里的人",
+     "吃的东西",
+     "工作的地方",
+     "喜欢做的事"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你喜欢_____喜欢咖啡？”",
+    "options": [
+     "很",
+     "没",
+     "不",
+     "吗"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "问朋友喜欢什么运动。",
+    "start": "你喜欢…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "哪个是运动？",
+    "options": [
+     "吃饭",
+     "睡觉",
+     "看书",
+     "游泳"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我喜欢猫，我_____喜欢狗。”",
+    "options": [
+     "也",
+     "和",
+     "都",
+     "跟"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "你最喜欢什么？为什么？",
+    "start": "我最喜欢…，因为…"
+   }
+  ]
+ },
+ "beginner-u3-l1": {
+  "title": "Family members",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "爸爸的妈妈是_____。",
+    "options": [
+     "阿姨",
+     "奶奶",
+     "外婆",
+     "姐姐"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "比你大的兄弟叫_____。",
+    "options": [
+     "姐姐",
+     "妹妹",
+     "弟弟",
+     "哥哥"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“我有两_____妹妹。”",
+    "options": [
+     "个",
+     "杯",
+     "只",
+     "本"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "比你小的姐妹叫_____。",
+    "options": [
+     "弟弟",
+     "妹妹",
+     "姐姐",
+     "哥哥"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“你家有几_____人？”",
+    "options": [
+     "只",
+     "口",
+     "张",
+     "本"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "介绍你的家人。",
+    "start": "我家有…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "妈妈的妈妈是_____。",
+    "options": [
+     "奶奶",
+     "妹妹",
+     "姑姑",
+     "外婆"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这是我_____妈妈。”",
+    "options": [
+     "是",
+     "了",
+     "的",
+     "吗"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你爸爸或妈妈做什么工作。",
+    "start": "我爸爸是…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "爸爸和妈妈，一起叫_____。",
+    "options": [
+     "姐妹",
+     "兄弟",
+     "朋友",
+     "父母"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我没_____哥哥。”",
+    "options": [
+     "要",
+     "在",
+     "有",
+     "是"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你有兄弟姐妹吗？说说他们。",
+    "start": "我有一个…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "爸爸妈妈的男孩子叫_____。",
+    "options": [
+     "妻子",
+     "女儿",
+     "丈夫",
+     "儿子"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我爸爸和我妈妈_____是老师。”",
+    "options": [
+     "很",
+     "都",
+     "在",
+     "和"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "你最喜欢家里的谁？为什么？",
+    "start": "我最喜欢我的…"
+   }
+  ]
+ },
+ "beginner-u3-l2": {
+  "title": "Relationships",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "跟你一起上课的人是你的_____。",
+    "options": [
+     "医生",
+     "老板",
+     "同学",
+     "邻居"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "住在你家旁边的人是你的_____。",
+    "options": [
+     "老师",
+     "同事",
+     "邻居",
+     "同学"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“他是我_____好朋友。”",
+    "options": [
+     "吗",
+     "很",
+     "了",
+     "的"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "跟你一起工作的人是你的_____。",
+    "options": [
+     "邻居",
+     "家人",
+     "同学",
+     "同事"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我_____小王是好朋友。”",
+    "options": [
+     "很",
+     "都",
+     "也",
+     "和"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "介绍你最好的朋友。",
+    "start": "我最好的朋友叫…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "女人结婚以后，她的先生是她的_____。",
+    "options": [
+     "哥哥",
+     "儿子",
+     "丈夫",
+     "同学"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我们是朋友，我们_____喜欢足球。”",
+    "options": [
+     "都",
+     "是",
+     "和",
+     "的"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你和朋友常常一起做什么。",
+    "start": "我和朋友常常…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "在学校教你的人是你的_____。",
+    "options": [
+     "老师",
+     "同学",
+     "同事",
+     "邻居"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "“他是_____？”—“他是我哥哥。”",
+    "options": [
+     "什么",
+     "几",
+     "谁",
+     "哪儿"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你的一个邻居或同事。",
+    "start": "我的邻居…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "选择正确的词：“我和她是在大学_____的。”",
+    "options": [
+     "认识",
+     "睡",
+     "喝",
+     "吃"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我常常_____朋友一起去公园。”",
+    "options": [
+     "都",
+     "跟",
+     "很",
+     "也"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "你是怎么认识你最好的朋友的？",
+    "start": "我们是在…"
+   }
+  ]
+ },
+ "beginner-u3-l3": {
+  "title": "Describing people",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "“高 (gāo)” 的反义词是_____。",
+    "options": [
+     "大",
+     "长",
+     "胖",
+     "矮"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "一个男人很好看，可以说他很_____。",
+    "options": [
+     "帅",
+     "忙",
+     "饿",
+     "累"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“她_____漂亮。”",
+    "options": [
+     "有",
+     "很",
+     "是",
+     "的"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "她的头发不短，很_____。",
+    "options": [
+     "长",
+     "高",
+     "老",
+     "新"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子：",
+    "options": [
+     "他很个子高。",
+     "他个子是高。",
+     "他个子很高。",
+     "他是个子很高。"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "描述你的一个家人。",
+    "start": "我妈妈很…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "一个人常常笑，对别人很好，他很_____。",
+    "options": [
+     "生气",
+     "友好",
+     "累",
+     "难过"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“他有一_____大眼睛。”",
+    "options": [
+     "个",
+     "杯",
+     "双",
+     "本"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "描述你最好的朋友。",
+    "start": "我的朋友个子…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“年轻 (niánqīng)” 的反义词是_____。",
+    "options": [
+     "高",
+     "老",
+     "快",
+     "瘦"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“她的头发长_____长？”",
+    "options": [
+     "没",
+     "吗",
+     "很",
+     "不"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你喜欢什么样的人。",
+    "start": "我喜欢…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "哪个词不是说人的样子的？",
+    "options": [
+     "瘦",
+     "高",
+     "便宜",
+     "漂亮"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“他_____我哥哥高。”",
+    "options": [
+     "和",
+     "是",
+     "很",
+     "比"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "描述你的老师。",
+    "start": "我的老师…"
+   }
+  ]
+ },
+ "beginner-u4-l1": {
+  "title": "Numbers",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "“三 (sān)” 是几？",
+    "options": [
+     "2",
+     "3",
+     "4",
+     "5"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "“十五 (shíwǔ)” 是多少？",
+    "options": [
+     "51",
+     "15",
+     "50",
+     "105"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“我有三_____书。”",
+    "options": [
+     "本",
+     "杯",
+     "个",
+     "只"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "“一百 (yìbǎi)” 是多少？",
+    "options": [
+     "100",
+     "1000",
+     "10000",
+     "10"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "“20” 用中文怎么说？",
+    "options": [
+     "二十",
+     "十二",
+     "二百",
+     "两十"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "用中文从一数到十。",
+    "start": "一、二、三…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“零 (líng)” 是几？",
+    "options": [
+     "6",
+     "0",
+     "8",
+     "9"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "问数量（少于十）：“你有_____个孩子？”",
+    "options": [
+     "哪",
+     "什么",
+     "谁",
+     "几"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "用中文从十数到二十。",
+    "start": "十、十一、十二…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“九十九 (jiǔshíjiǔ)” 是多少？",
+    "options": [
+     "99",
+     "909",
+     "19",
+     "90"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“我家有两_____猫。”",
+    "options": [
+     "杯",
+     "张",
+     "只",
+     "本"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你家有几个人、几个房间。",
+    "start": "我家有…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“1000” 用中文怎么说？",
+    "options": [
+     "一万",
+     "十千",
+     "一千",
+     "一百"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这个班有_____学生？”",
+    "options": [
+     "谁",
+     "几本",
+     "多少",
+     "哪儿"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说一个你喜欢的数字，说说为什么。",
+    "start": "我喜欢的数字是…"
+   }
+  ]
+ },
+ "beginner-u4-l2": {
+  "title": "Dates",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "一年有十二个_____。",
+    "options": [
+     "天",
+     "星期",
+     "月",
+     "小时"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "一年的第一个月是_____。",
+    "options": [
+     "二月",
+     "一月",
+     "十二月",
+     "十一月"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "中文日期的顺序，哪个对？",
+    "options": [
+     "8日10月2026年",
+     "10月8日2026年",
+     "2026年10月8日",
+     "8日2026年10月"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "说日期的时候，“号 (hào)” 和_____意思一样。",
+    "options": [
+     "日",
+     "天天",
+     "月",
+     "年"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句：“今天几月_____号？”",
+    "options": [
+     "几",
+     "什么",
+     "哪",
+     "多"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说今天是几月几号。",
+    "start": "今天是…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "今天的前一天是_____。",
+    "options": [
+     "明天",
+     "后天",
+     "昨天",
+     "今年"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我的生日_____五月三号。”",
+    "options": [
+     "了",
+     "是",
+     "有",
+     "叫"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你的生日是几月几号。",
+    "start": "我的生日是…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "今天的后一天是_____。",
+    "options": [
+     "昨天",
+     "今天",
+     "明天",
+     "前天"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（时间放在哪儿）：",
+    "options": [
+     "我去北京明天。",
+     "我明天去北京。",
+     "去北京我明天。",
+     "我去明天北京。"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你家人的生日。",
+    "start": "我妈妈的生日是…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "今年是2026年，明年 (míngnián) 是_____。",
+    "options": [
+     "2024年",
+     "2028年",
+     "2027年",
+     "2025年"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "“10月1日” 怎么读？",
+    "options": [
+     "十月一日",
+     "一日十月",
+     "十日一月",
+     "一月十日"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你最喜欢的节日是几月几号。",
+    "start": "我最喜欢的节日是…"
+   }
+  ]
+ },
+ "beginner-u4-l3": {
+  "title": "Days",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "星期一的后一天是_____。",
+    "options": [
+     "星期天",
+     "星期二",
+     "星期五",
+     "星期三"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "一个星期有_____天。",
+    "options": [
+     "六",
+     "五",
+     "八",
+     "七"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“今天星期_____？”",
+    "options": [
+     "多少",
+     "几",
+     "什么",
+     "哪"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "星期六和星期天叫_____。",
+    "options": [
+     "周末",
+     "工作日",
+     "上午",
+     "生日"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（时间放在哪儿）：",
+    "options": [
+     "星期六去我游泳。",
+     "我去游泳星期六。",
+     "我星期六去游泳。",
+     "去游泳星期六我。"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你星期一做什么。",
+    "start": "星期一我…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“星期日 (xīngqīrì)” 也可以说_____。",
+    "options": [
+     "星期天",
+     "星期零",
+     "星期八",
+     "星期七"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我每个星期三_____去健身房。”",
+    "options": [
+     "和",
+     "的",
+     "很",
+     "都"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你周末常常做什么。",
+    "start": "周末我常常…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "星期五的前一天是_____。",
+    "options": [
+     "星期四",
+     "星期二",
+     "星期天",
+     "星期六"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“昨天是星期二，今天_____星期三。”",
+    "options": [
+     "有",
+     "在",
+     "是",
+     "了"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你最喜欢星期几？为什么？",
+    "start": "我最喜欢星期…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "这个星期的前一个星期是_____。",
+    "options": [
+     "这个星期",
+     "每个星期",
+     "上个星期",
+     "下个星期"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（“不”放在哪儿）：",
+    "options": [
+     "不我星期天上班。",
+     "我星期天上不班。",
+     "我星期天上班不。",
+     "我星期天不上班。"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你这个星期的计划。",
+    "start": "这个星期我要…"
+   }
+  ]
+ },
+ "beginner-u4-l4": {
+  "title": "Telling time",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "“8:00” 用中文怎么说？",
+    "options": [
+     "八岁",
+     "八点",
+     "八块",
+     "八号"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "“三点半 (sān diǎn bàn)” 是几点？",
+    "options": [
+     "3:15",
+     "2:30",
+     "3:30",
+     "3:45"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句：“现在_____点？”",
+    "options": [
+     "几",
+     "哪",
+     "多少",
+     "什么"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "“7:15” 用中文怎么说？",
+    "options": [
+     "七点半",
+     "七点一刻",
+     "七点三刻",
+     "十五点七"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（时间放在哪儿）：",
+    "options": [
+     "八点上课我。",
+     "我上课八点。",
+     "我上课在八点。",
+     "我八点上课。"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说现在几点。",
+    "start": "现在…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "白天十二点是_____。",
+    "options": [
+     "半夜",
+     "早上",
+     "晚上",
+     "中午"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "“2:00” 怎么说？",
+    "options": [
+     "二点",
+     "两点",
+     "两个点",
+     "二个点"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你每天几点起床。",
+    "start": "我每天早上…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“差五分八点 (chà wǔ fēn bā diǎn)” 是几点？",
+    "options": [
+     "8:55",
+     "7:55",
+     "8:05",
+     "7:05"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "哪个说法对？",
+    "options": [
+     "晚上十点",
+     "十点晚上",
+     "十晚上点",
+     "点十晚上"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你几点吃午饭。",
+    "start": "我中午…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "一个小时有_____分钟。",
+    "options": [
+     "二十四",
+     "三十",
+     "六十",
+     "一百"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我从九点_____五点工作。”",
+    "options": [
+     "在",
+     "去",
+     "到",
+     "和"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你晚上几点睡觉。",
+    "start": "我晚上…"
+   }
+  ]
+ },
+ "beginner-u5-l1": {
+  "title": "Wake up",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "早上醒了，从床上起来，叫_____。",
+    "options": [
+     "上班",
+     "下课",
+     "起床",
+     "睡觉"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "起床以后，用牙刷_____。",
+    "options": [
+     "睡觉",
+     "上床",
+     "做梦",
+     "刷牙"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子：",
+    "options": [
+     "每天起床我六点早上。",
+     "我起床每天早上六点。",
+     "我六点起床每天早上。",
+     "我每天早上六点起床。"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "早上吃的饭叫_____。",
+    "options": [
+     "夜宵",
+     "午饭",
+     "早饭",
+     "晚饭"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我今天七点起床_____。”",
+    "options": [
+     "着",
+     "们",
+     "过",
+     "了"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你早上起床以后做什么。",
+    "start": "我起床以后…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "早上起床以后，用水_____脸。",
+    "options": [
+     "看",
+     "洗",
+     "吃",
+     "喝"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我先刷牙，_____洗脸。”",
+    "options": [
+     "和",
+     "先",
+     "的",
+     "再"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你周末几点起床。",
+    "start": "周末我…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "早上叫你起床的东西是_____。",
+    "options": [
+     "电视",
+     "冰箱",
+     "闹钟",
+     "椅子"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "“你每天几点起床？”—选择正确的回答：",
+    "options": [
+     "我六点半起床。",
+     "六点半我起床吗。",
+     "我起床六点半。",
+     "我半六点起床。"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你早上常常吃什么。",
+    "start": "我早上常常吃…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "早上还想睡觉，很_____。",
+    "options": [
+     "热",
+     "饿",
+     "高兴",
+     "困"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我今天早上_____吃早饭，太忙了。”",
+    "options": [
+     "别",
+     "很",
+     "没",
+     "不是"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你喜欢早起吗？为什么？",
+    "start": "我…早起，因为…"
+   }
+  ]
+ },
+ "beginner-u5-l2": {
+  "title": "Work",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "去公司工作叫_____。",
+    "options": [
+     "放假",
+     "上课",
+     "下班",
+     "上班"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "工作完了回家叫_____。",
+    "options": [
+     "起床",
+     "上学",
+     "上班",
+     "下班"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我_____银行工作。”",
+    "options": [
+     "很",
+     "是",
+     "有",
+     "在"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "在医院给病人看病的人是_____。",
+    "options": [
+     "厨师",
+     "医生",
+     "老师",
+     "司机"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "“你做什么工作？”—“我_____老师。”",
+    "options": [
+     "很",
+     "有",
+     "在",
+     "是"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你做什么工作。",
+    "start": "我是…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "开车的工作是_____。",
+    "options": [
+     "老师",
+     "司机",
+     "学生",
+     "医生"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子：",
+    "options": [
+     "我坐地铁去上班。",
+     "我上班坐去地铁。",
+     "坐我地铁去上班。",
+     "我地铁坐去上班。"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你几点上班、几点下班。",
+    "start": "我每天…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "公司里管你的人是_____。",
+    "options": [
+     "客人",
+     "同学",
+     "老板",
+     "邻居"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“今天我很忙，_____有时间吃饭。”",
+    "options": [
+     "不",
+     "别",
+     "没",
+     "无"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你喜欢你的工作吗？为什么？",
+    "start": "我…喜欢我的工作，因为…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "不上班、休息的日子叫_____。",
+    "options": [
+     "会议",
+     "工作日",
+     "休息日",
+     "生日"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“他_____在开会，请等一下。”",
+    "options": [
+     "了",
+     "的",
+     "正",
+     "过"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你上班的时候常常做什么。",
+    "start": "上班的时候，我…"
+   }
+  ]
+ },
+ "beginner-u5-l3": {
+  "title": "Study",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "在学校学习的人是_____。",
+    "options": [
+     "司机",
+     "学生",
+     "老板",
+     "医生"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "老师让学生回家做的练习叫_____。",
+    "options": [
+     "作业",
+     "早饭",
+     "电影",
+     "考试"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我现在_____学中文。”",
+    "options": [
+     "过",
+     "的",
+     "了",
+     "在"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "上课的房间叫_____。",
+    "options": [
+     "厕所",
+     "卧室",
+     "厨房",
+     "教室"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我会_____一点儿中文。”",
+    "options": [
+     "说",
+     "说话",
+     "讲话",
+     "告诉"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你为什么学中文。",
+    "start": "我学中文，因为…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "老师看学生学得怎么样，这叫_____。",
+    "options": [
+     "休息",
+     "考试",
+     "放假",
+     "唱歌"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（时间长短放在哪儿）：",
+    "options": [
+     "我每天学习两个小时。",
+     "我每天两个小时学习。",
+     "学习我每天两个小时。",
+     "我学习每天两个小时。"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你每天怎么学中文。",
+    "start": "我每天…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "上课用的书叫_____。",
+    "options": [
+     "护照",
+     "课本",
+     "地图",
+     "菜单"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你_____读这个字吗？”",
+    "options": [
+     "是",
+     "很",
+     "会",
+     "和"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你最喜欢的课。",
+    "start": "我最喜欢上…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "不懂的时候，你可以_____老师。",
+    "options": [
+     "问",
+     "睡",
+     "跑",
+     "吃"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“老师，这个字_____念？”",
+    "options": [
+     "怎么",
+     "几",
+     "谁",
+     "什么"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说学中文的时候什么最难。",
+    "start": "我觉得…"
+   }
+  ]
+ },
+ "beginner-u5-l4": {
+  "title": "Sleep",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "晚上上床休息叫_____。",
+    "options": [
+     "起床",
+     "吃饭",
+     "上班",
+     "睡觉"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "睡觉的时候“看见”的故事叫_____。",
+    "options": [
+     "灯",
+     "床",
+     "书",
+     "梦"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我昨天睡_____八个小时。”",
+    "options": [
+     "吗",
+     "呢",
+     "了",
+     "在"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "睡觉用的家具是_____。",
+    "options": [
+     "床",
+     "桌子",
+     "门",
+     "椅子"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我很累，我想_____睡觉。”",
+    "options": [
+     "了",
+     "的",
+     "在",
+     "去"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你每天睡几个小时。",
+    "start": "我每天睡…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "睡得不好，第二天很_____。",
+    "options": [
+     "饱",
+     "累",
+     "便宜",
+     "新"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我昨天晚上_____睡好。”",
+    "options": [
+     "没",
+     "不",
+     "无",
+     "别"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你睡觉以前做什么。",
+    "start": "睡觉以前，我…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "睡觉以前，要把灯_____了。",
+    "options": [
+     "穿",
+     "吃",
+     "关",
+     "写"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我晚上_____十点睡觉。”",
+    "options": [
+     "的",
+     "很",
+     "了",
+     "一般"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你睡不着的时候做什么。",
+    "start": "我睡不着的时候…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "中午睡一会儿，叫睡_____。",
+    "options": [
+     "午觉",
+     "上课",
+     "早饭",
+     "晚安"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“他_____睡觉，别说话。”",
+    "options": [
+     "了",
+     "过",
+     "正在",
+     "很"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你喜欢早睡还是晚睡？为什么？",
+    "start": "我喜欢…"
+   }
+  ]
+ },
+ "beginner-u5-l5": {
+  "title": "Daily activities",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "用水洗身体叫_____。",
+    "options": [
+     "跑步",
+     "睡觉",
+     "洗澡",
+     "做饭"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "在厨房做吃的叫_____。",
+    "options": [
+     "做饭",
+     "上班",
+     "购物",
+     "洗澡"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我常常_____公园跑步。”",
+    "options": [
+     "在",
+     "和",
+     "是",
+     "有"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "我去超市_____东西。",
+    "options": [
+     "买",
+     "喝",
+     "坐",
+     "睡"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我吃_____饭就去上班。”",
+    "options": [
+     "了",
+     "在",
+     "是",
+     "的"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你每天做的三件事。",
+    "start": "我每天…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "晚上我在家看_____。",
+    "options": [
+     "电视",
+     "电话",
+     "汤",
+     "音乐"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我一边吃饭，_____看电视。”",
+    "options": [
+     "都",
+     "一边",
+     "和",
+     "也"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你晚上常常做什么。",
+    "start": "晚上我常常…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "在外面跑，锻炼身体，叫_____。",
+    "options": [
+     "做饭",
+     "洗衣服",
+     "跑步",
+     "睡觉"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（“都”放在哪儿）：",
+    "options": [
+     "我每天洗衣服都。",
+     "我都每天洗衣服。",
+     "我每天都洗衣服。",
+     "都我每天洗衣服。"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你周末做什么家务。",
+    "start": "周末我…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "衣服脏了，要_____。",
+    "options": [
+     "买衣服",
+     "穿衣服",
+     "洗衣服",
+     "做衣服"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句：“你今天下午做_____了？”",
+    "options": [
+     "哪儿",
+     "什么",
+     "几",
+     "谁"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你昨天做了什么。",
+    "start": "我昨天…"
+   }
+  ]
+ },
+ "beginner-u6-l1": {
+  "title": "Common foods",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "中国人常吃的白色的饭是_____。",
+    "options": [
+     "牛奶",
+     "面包",
+     "苹果",
+     "米饭"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "哪个是水果？",
+    "options": [
+     "面条",
+     "牛肉",
+     "鸡蛋",
+     "苹果"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“我想吃一_____苹果。”",
+    "options": [
+     "本",
+     "杯",
+     "个",
+     "张"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "鸡下的蛋叫_____。",
+    "options": [
+     "牛奶",
+     "鸡肉",
+     "米饭",
+     "鸡蛋"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“我喝一_____水。”",
+    "options": [
+     "本",
+     "只",
+     "张",
+     "杯"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你早饭常常吃什么。",
+    "start": "我早饭常常吃…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "用面做的、长长的东西叫_____。",
+    "options": [
+     "包子",
+     "饺子",
+     "面条",
+     "米饭"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你吃米饭_____吃面条？”",
+    "options": [
+     "或者",
+     "还是",
+     "也",
+     "和"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你最喜欢吃的东西。",
+    "start": "我最喜欢吃…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "哪个是蔬菜？",
+    "options": [
+     "牛肉",
+     "鱼",
+     "白菜",
+     "面包"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我不吃肉，我_____吃菜。”",
+    "options": [
+     "只",
+     "都",
+     "很",
+     "了"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你不喜欢吃什么。",
+    "start": "我不喜欢吃…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "牛身上的肉叫_____。",
+    "options": [
+     "鸡肉",
+     "牛肉",
+     "鱼肉",
+     "猪肉"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我以前吃_____饺子，很好吃。”",
+    "options": [
+     "着",
+     "是",
+     "在",
+     "过"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你们国家的人常吃什么。",
+    "start": "在我们国家，人们常吃…"
+   }
+  ]
+ },
+ "beginner-u6-l2": {
+  "title": "Preferences",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "你最_____的水果是什么？",
+    "options": [
+     "知道",
+     "喜欢",
+     "认识",
+     "住"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "糖的味道是_____的。",
+    "options": [
+     "苦",
+     "咸",
+     "辣",
+     "甜"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“茶和咖啡，你喜欢_____？”",
+    "options": [
+     "哪个",
+     "谁",
+     "什么个",
+     "几"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "辣椒 (làjiāo) 的味道很_____。",
+    "options": [
+     "酸",
+     "淡",
+     "甜",
+     "辣"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（“最”放在哪儿）：",
+    "options": [
+     "最我喜欢吃饺子。",
+     "我最喜欢吃饺子。",
+     "我喜欢吃饺子最。",
+     "我喜欢最吃饺子。"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你喜欢喝什么。",
+    "start": "我喜欢喝…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "柠檬 (níngméng) 的味道是_____的。",
+    "options": [
+     "咸",
+     "辣",
+     "甜",
+     "酸"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我喜欢喝茶，_____不喜欢喝咖啡。”",
+    "options": [
+     "吗",
+     "但是",
+     "因为",
+     "和"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你不喜欢吃的东西，为什么。",
+    "start": "我不喜欢吃…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "盐 (yán) 放得太多，菜很_____。",
+    "options": [
+     "冷",
+     "甜",
+     "酸",
+     "咸"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "“你喜欢喝咖啡吗？”—选择正确的回答：",
+    "options": [
+     "是喜欢吗。",
+     "喜欢。",
+     "喜欢吗。",
+     "有。"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "你喜欢甜的还是辣的？",
+    "start": "我比较喜欢…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "咖啡不加糖，味道有点儿_____。",
+    "options": [
+     "苦",
+     "辣",
+     "甜",
+     "咸"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我_____吃辣的，一点点就可以。”",
+    "options": [
+     "不太",
+     "没太",
+     "很不太",
+     "太不"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你最喜欢的饭馆。",
+    "start": "我最喜欢的饭馆…"
+   }
+  ]
+ },
+ "beginner-u6-l3": {
+  "title": "Ordering basics",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "饭馆里写着菜名和价钱的是_____。",
+    "options": [
+     "菜单",
+     "地图",
+     "课本",
+     "护照"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "在饭馆给你点菜、上菜的人是_____。",
+    "options": [
+     "服务员",
+     "学生",
+     "医生",
+     "司机"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“服务员，我_____一碗面条。”",
+    "options": [
+     "在",
+     "要",
+     "很",
+     "是"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "吃完饭付钱的时候说：“服务员，_____！”",
+    "options": [
+     "你好吗",
+     "欢迎",
+     "买单",
+     "再见"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“来两_____米饭。”",
+    "options": [
+     "本",
+     "张",
+     "碗",
+     "只"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "在饭馆点一个菜和一杯饮料。",
+    "start": "服务员，我要…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "吃不完，想带回家，你说：“请帮我_____。”",
+    "options": [
+     "点菜",
+     "排队",
+     "买单",
+     "打包"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“请给_____一杯水。”",
+    "options": [
+     "我们的",
+     "我",
+     "是我",
+     "我的"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "问服务员这个菜辣不辣。",
+    "start": "服务员，这个菜…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "还没想好吃什么，你说：“我先_____菜单。”",
+    "options": [
+     "吃吃",
+     "看看",
+     "喝喝",
+     "睡睡"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句：“你们_____饺子？”",
+    "options": [
+     "有没有",
+     "有不有",
+     "没有有",
+     "是不有"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "问服务员一共多少钱。",
+    "start": "服务员，一共…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "不想太辣，你跟服务员说：“少_____辣椒。”",
+    "options": [
+     "看",
+     "写",
+     "放",
+     "买"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我要一杯咖啡，_____要一个蛋糕。”",
+    "options": [
+     "都",
+     "吗",
+     "很",
+     "还"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "你在饭馆常常点什么？",
+    "start": "我常常点…"
+   }
+  ]
+ },
+ "beginner-u7-l1": {
+  "title": "Prices",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "问价钱：“这个_____钱？”",
+    "options": [
+     "谁",
+     "几个",
+     "什么",
+     "多少"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "中国的钱叫_____。",
+    "options": [
+     "日元",
+     "欧元",
+     "人民币",
+     "美元"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“这本书十_____钱。”",
+    "options": [
+     "只",
+     "块",
+     "本",
+     "个"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "价钱不高，很_____。",
+    "options": [
+     "大",
+     "新",
+     "贵",
+     "便宜"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这件衣服_____贵了！”",
+    "options": [
+     "有",
+     "是",
+     "的",
+     "太"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "问售货员一样东西多少钱。",
+    "start": "你好，这个…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "价钱很高，就是很_____。",
+    "options": [
+     "贵",
+     "便宜",
+     "少",
+     "小"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "“¥5.50” 口语怎么说？",
+    "options": [
+     "五块五十",
+     "五十五块",
+     "五点五块",
+     "五块五"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你常买的一样东西多少钱。",
+    "start": "我常买…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "想让价钱低一点儿，你说：“能_____一点儿吗？”",
+    "options": [
+     "便宜",
+     "贵",
+     "高",
+     "大"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句：“苹果多少钱一_____？”",
+    "options": [
+     "斤",
+     "本",
+     "张",
+     "件"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "跟老板讲价，让他便宜一点儿。",
+    "start": "老板，太贵了，…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“一共 (yígòng)” 的意思是_____。",
+    "options": [
+     "全部加起来",
+     "一下",
+     "一样",
+     "一个"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句：",
+    "options": [
+     "这个多少钱吗？",
+     "多少钱这个吗？",
+     "这个钱多少吗？",
+     "这个多少钱？"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你上次买东西花了多少钱。",
+    "start": "我上次买了…"
+   }
+  ]
+ },
+ "beginner-u7-l2": {
+  "title": "Sizes",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "“大 (dà)” 的反义词是_____。",
+    "options": [
+     "小",
+     "高",
+     "长",
+     "多"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "衣服的号：L号比M号_____。",
+    "options": [
+     "短",
+     "便宜",
+     "大",
+     "小"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这件衣服_____大了，有小一点儿的吗？”",
+    "options": [
+     "是",
+     "的",
+     "很是",
+     "太"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "买衣服以前，可以先_____一下。",
+    "options": [
+     "吃",
+     "喝",
+     "睡",
+     "试"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“有没有大_____的？”",
+    "options": [
+     "有点儿",
+     "太",
+     "一点儿",
+     "很"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "告诉售货员你要什么号的衣服。",
+    "start": "我要…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "裤子太长了，我要_____一点儿的。",
+    "options": [
+     "大",
+     "长",
+     "短",
+     "高"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这双鞋_____小，我穿不了。”",
+    "options": [
+     "一点儿",
+     "很一点儿",
+     "有点儿",
+     "了"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你穿多大的鞋。",
+    "start": "我穿…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "衣服不大不小，很_____。",
+    "options": [
+     "合适",
+     "新",
+     "便宜",
+     "贵"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“我想买一_____衣服。”",
+    "options": [
+     "只",
+     "件",
+     "杯",
+     "本"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "衣服太大了，请售货员给你换一件。",
+    "start": "这件太大了，…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "买衣服的时候，可以在_____里试衣服。",
+    "options": [
+     "试衣间",
+     "银行",
+     "厨房",
+     "教室"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这件衣服比那件_____。”",
+    "options": [
+     "很大",
+     "太大了",
+     "大",
+     "非常大"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "你喜欢穿大一点儿的还是小一点儿的衣服？",
+    "start": "我喜欢穿…"
+   }
+  ]
+ },
+ "beginner-u7-l3": {
+  "title": "Colors",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "天空的颜色是_____。",
+    "options": [
+     "蓝色",
+     "红色",
+     "黑色",
+     "黄色"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "香蕉是_____的。",
+    "options": [
+     "蓝色",
+     "黄色",
+     "紫色",
+     "黑色"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我有一件红色_____衣服。”",
+    "options": [
+     "吗",
+     "了",
+     "的",
+     "个"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "草是_____的。",
+    "options": [
+     "紫色",
+     "红色",
+     "绿色",
+     "白色"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句：“你喜欢_____颜色？”",
+    "options": [
+     "谁",
+     "哪儿",
+     "几",
+     "什么"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你最喜欢的颜色。",
+    "start": "我最喜欢…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "雪是_____的。",
+    "options": [
+     "白色",
+     "红色",
+     "黑色",
+     "蓝色"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这个包是黑色的，那个包_____是黑色的。”",
+    "options": [
+     "很",
+     "和",
+     "都",
+     "也"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你今天穿的衣服是什么颜色的。",
+    "start": "我今天穿…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "红色和白色放在一起，是_____。",
+    "options": [
+     "黑色",
+     "蓝色",
+     "粉红色",
+     "绿色"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我不要红的，我要白_____。”",
+    "options": [
+     "了",
+     "呢",
+     "的",
+     "吗"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你家的墙和门是什么颜色的。",
+    "start": "我家的墙是…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "哪个不是颜色？",
+    "options": [
+     "红色",
+     "大小",
+     "黄色",
+     "蓝色"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句（“什么颜色”放在哪儿）：",
+    "options": [
+     "你的车什么是颜色？",
+     "你的车是什么颜色的？",
+     "你的车是颜色什么的？",
+     "什么颜色你的车是？"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "你喜欢穿什么颜色的衣服？为什么？",
+    "start": "我喜欢穿…"
+   }
+  ]
+ },
+ "beginner-u7-l4": {
+  "title": "Buying something",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "买东西的地方叫_____。",
+    "options": [
+     "商店",
+     "家",
+     "医院",
+     "学校"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "在商店里卖东西的人是_____。",
+    "options": [
+     "售货员",
+     "老师",
+     "学生",
+     "医生"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我想_____一件衬衫。”",
+    "options": [
+     "买",
+     "买了",
+     "买过",
+     "在买"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "用手机付钱，叫手机_____。",
+    "options": [
+     "支付",
+     "排队",
+     "现金",
+     "打包"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“这件衣服我可以试_____吗？”",
+    "options": [
+     "一点",
+     "一个",
+     "一下",
+     "一本"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "在商店说你想买什么。",
+    "start": "你好，我想买…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "用纸币和硬币付钱，叫付_____。",
+    "options": [
+     "现金",
+     "手机",
+     "卡",
+     "支付"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“好，这个我_____了。”（我买这个）",
+    "options": [
+     "是",
+     "很",
+     "要",
+     "在"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "问售货员有没有别的颜色。",
+    "start": "请问，有没有…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "买完东西，拿到的写着价钱的小纸是_____。",
+    "options": [
+     "菜单",
+     "门票",
+     "小票",
+     "地图"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我昨天买_____两本书。”",
+    "options": [
+     "了",
+     "的",
+     "在",
+     "着"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你最近买了什么。",
+    "start": "我最近买了…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "买东西的人很多，要_____。",
+    "options": [
+     "睡觉",
+     "唱歌",
+     "游泳",
+     "排队"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句：“_____用信用卡？”",
+    "options": [
+     "不能能",
+     "能没能",
+     "能吗",
+     "能不能"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你喜欢在哪儿买东西。",
+    "start": "我喜欢在…"
+   }
+  ]
+ },
+ "beginner-u8-l1": {
+  "title": "Rooms",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "做饭的房间是_____。",
+    "options": [
+     "厨房",
+     "客厅",
+     "厕所",
+     "卧室"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "睡觉的房间是_____。",
+    "options": [
+     "阳台",
+     "客厅",
+     "厨房",
+     "卧室"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我家_____三个房间。”",
+    "options": [
+     "是",
+     "在",
+     "很",
+     "有"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "洗澡的房间是_____。",
+    "options": [
+     "卫生间",
+     "客厅",
+     "卧室",
+     "厨房"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“妈妈_____厨房做饭。”",
+    "options": [
+     "有",
+     "很",
+     "在",
+     "是"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你家有几个房间。",
+    "start": "我家有…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "一家人一起看电视、聊天的房间是_____。",
+    "options": [
+     "厨房",
+     "厕所",
+     "客厅",
+     "阳台"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "“卫生间在哪儿？”—“在卧室_____。”",
+    "options": [
+     "边旁",
+     "旁边",
+     "里边旁",
+     "在旁边"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你最喜欢家里哪个房间。",
+    "start": "我最喜欢…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "房子外面、可以晒衣服的地方是_____。",
+    "options": [
+     "阳台",
+     "厨房",
+     "卧室",
+     "厕所"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“客厅里_____一个沙发。”",
+    "options": [
+     "很",
+     "的",
+     "在",
+     "有"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你的卧室里有什么。",
+    "start": "我的卧室里有…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "从一楼到二楼要走_____。",
+    "options": [
+     "门",
+     "床",
+     "窗户",
+     "楼梯"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子：",
+    "options": [
+     "我的房间二楼在。",
+     "在二楼我的房间。",
+     "我的房间在二楼。",
+     "我的房间是在楼二。"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你家的客厅是什么样子。",
+    "start": "我家的客厅…"
+   }
+  ]
+ },
+ "beginner-u8-l2": {
+  "title": "Objects",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "用来坐的东西是_____。",
+    "options": [
+     "门",
+     "灯",
+     "椅子",
+     "桌子"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "放食物、让食物变冷的是_____。",
+    "options": [
+     "冰箱",
+     "椅子",
+     "镜子",
+     "电视"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“桌子_____有一本书。”",
+    "options": [
+     "是",
+     "上",
+     "的",
+     "在"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "天黑了，要开_____。",
+    "options": [
+     "冰箱",
+     "灯",
+     "椅子",
+     "书"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句：“我的手机在_____？”",
+    "options": [
+     "谁",
+     "什么",
+     "几",
+     "哪儿"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你的桌子上有什么。",
+    "start": "我的桌子上有…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "看自己的脸要用_____。",
+    "options": [
+     "沙发",
+     "门",
+     "镜子",
+     "窗户"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“这是一_____桌子。”",
+    "options": [
+     "只",
+     "张",
+     "本",
+     "杯"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你的书包或手提包里有什么。",
+    "start": "我的包里有…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "客厅里，可以坐着看电视的长椅子是_____。",
+    "options": [
+     "冰箱",
+     "桌子",
+     "沙发",
+     "床"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“小猫在桌子_____。”",
+    "options": [
+     "下上",
+     "的",
+     "下面",
+     "里上"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你最喜欢的一样东西。",
+    "start": "我最喜欢的东西是…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "开门要用_____。",
+    "options": [
+     "灯",
+     "钥匙",
+     "镜子",
+     "杯子"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句：“这个杯子是_____的？”",
+    "options": [
+     "什么",
+     "谁",
+     "几",
+     "哪儿"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你家里有什么电器。",
+    "start": "我家里有…"
+   }
+  ]
+ },
+ "beginner-u8-l3": {
+  "title": "Places near home",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "买菜和日用品的地方是_____。",
+    "options": [
+     "银行",
+     "医院",
+     "超市",
+     "学校"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "存钱、取钱的地方是_____。",
+    "options": [
+     "饭馆",
+     "书店",
+     "公园",
+     "银行"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我家附近_____一个公园。”",
+    "options": [
+     "有",
+     "很",
+     "是在",
+     "在"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "生病了要去_____。",
+    "options": [
+     "超市",
+     "公园",
+     "银行",
+     "医院"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“超市在银行_____。”",
+    "options": [
+     "在对面",
+     "对",
+     "对面",
+     "面对"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你家附近有什么。",
+    "start": "我家附近有…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "散步、运动的地方是_____。",
+    "options": [
+     "医院",
+     "公园",
+     "银行",
+     "邮局"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“学校_____我家很近。”",
+    "options": [
+     "从",
+     "离",
+     "是",
+     "在"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你怎么去超市。",
+    "start": "我去超市…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "寄信的地方是_____。",
+    "options": [
+     "邮局",
+     "学校",
+     "超市",
+     "饭馆"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（“有”的用法）：",
+    "options": [
+     "一个超市有我家旁边。",
+     "我家旁边有一个超市。",
+     "我家旁边是有一个超市在。",
+     "有一个超市我家旁边。"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你常去的地方。",
+    "start": "我常去…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "买书的地方是_____。",
+    "options": [
+     "银行",
+     "书店",
+     "医院",
+     "饭馆"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "“附近有没有银行？”—“有，_____前面。”",
+    "options": [
+     "在就",
+     "就在",
+     "是有",
+     "就有在"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "你喜欢你住的地方吗？为什么？",
+    "start": "我…喜欢，因为…"
+   }
+  ]
+ },
+ "beginner-u9-l1": {
+  "title": "Basic directions",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "“左 (zuǒ)” 的反义词是_____。",
+    "options": [
+     "前",
+     "里",
+     "右",
+     "上"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "不拐弯，往前走，叫_____。",
+    "options": [
+     "往右拐",
+     "一直走",
+     "往回走",
+     "往左拐"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“请问，地铁站_____哪儿？”",
+    "options": [
+     "很",
+     "有",
+     "在",
+     "去"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "两条路交叉的地方是_____。",
+    "options": [
+     "窗口",
+     "门口",
+     "出口",
+     "路口"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“到了路口，往右_____。”",
+    "options": [
+     "的",
+     "吗",
+     "拐",
+     "在"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "问路人怎么去火车站。",
+    "start": "请问，去火车站怎么…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "不知道路的时候，可以_____。",
+    "options": [
+     "睡觉",
+     "唱歌",
+     "做饭",
+     "问路"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（方位）：",
+    "options": [
+     "在银行超市左边。",
+     "银行在超市的左边。",
+     "银行超市左边在。",
+     "银行在超市左边的。"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "告诉朋友怎么从你家到超市。",
+    "start": "从我家出来，…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "找路的时候，可以看_____。",
+    "options": [
+     "地图",
+     "电视",
+     "日历",
+     "菜单"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“从这儿_____火车站远不远？”",
+    "options": [
+     "到",
+     "在",
+     "有",
+     "是"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "问别人附近有没有洗手间。",
+    "start": "请问，附近有…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "过马路的时候要看_____。",
+    "options": [
+     "红绿灯",
+     "沙发",
+     "镜子",
+     "冰箱"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“邮局在银行和超市_____。”",
+    "options": [
+     "下",
+     "对",
+     "中间",
+     "上"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说从你家到学校或公司怎么走。",
+    "start": "从我家出发，…"
+   }
+  ]
+ },
+ "beginner-u9-l2": {
+  "title": "Transportation",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "在天上飞的交通工具是_____。",
+    "options": [
+     "火车",
+     "飞机",
+     "自行车",
+     "汽车"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "有两个轮子、用脚骑的是_____。",
+    "options": [
+     "飞机",
+     "自行车",
+     "地铁",
+     "船"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我_____自行车去学校。”",
+    "options": [
+     "吃",
+     "骑",
+     "开",
+     "走"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "在城市地下开的车是_____。",
+    "options": [
+     "地铁",
+     "船",
+     "出租车",
+     "飞机"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "“你_____去上班？”—“我坐公共汽车去。”",
+    "options": [
+     "谁",
+     "怎么",
+     "什么",
+     "哪儿"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你每天怎么去上班或上学。",
+    "start": "我每天…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "在水上走的交通工具是_____。",
+    "options": [
+     "汽车",
+     "火车",
+     "船",
+     "飞机"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（“坐”放在哪儿）：",
+    "options": [
+     "我坐飞机去上海。",
+     "坐飞机我上海去。",
+     "我坐去上海飞机。",
+     "我飞机坐去上海。"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你最喜欢坐什么车，为什么。",
+    "start": "我最喜欢坐…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "打电话叫来、付钱让司机送你的车是_____。",
+    "options": [
+     "公共汽车",
+     "自行车",
+     "地铁",
+     "出租车"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“从我家到公司，坐地铁要_____？”",
+    "options": [
+     "谁",
+     "什么时候",
+     "多长时间",
+     "几点"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "问别人去机场坐几路车。",
+    "start": "请问，去机场…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "坐公共汽车要在_____等车。",
+    "options": [
+     "卧室",
+     "厨房",
+     "教室",
+     "车站"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“今天我_____开车，我坐地铁。”",
+    "options": [
+     "别",
+     "没是",
+     "很",
+     "不"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你上次去旅行坐了什么。",
+    "start": "我上次去…"
+   }
+  ]
+ },
+ "beginner-u10-l1": {
+  "title": "Who",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "“谁 (shéi)” 问的是_____。",
+    "options": [
+     "地方",
+     "人",
+     "东西",
+     "时间"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "“他是谁？”—“他是我的_____。”",
+    "options": [
+     "朋友",
+     "苹果",
+     "北京",
+     "桌子"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“_____是你的中文老师？”",
+    "options": [
+     "几",
+     "谁",
+     "哪儿",
+     "什么"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "有人敲门，你问：“_____啊？”",
+    "options": [
+     "几",
+     "谁",
+     "多",
+     "哪"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句（问人）：",
+    "options": [
+     "谁他是？",
+     "他是谁？",
+     "他谁是？",
+     "他是谁吗？"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "介绍照片里的一个人。",
+    "start": "这是我的…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“谁的 (shéi de)” 问的是_____。",
+    "options": [
+     "东西是哪个人的",
+     "在哪儿",
+     "什么时候",
+     "为什么"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你_____谁一起去看电影？”",
+    "options": [
+     "都",
+     "跟",
+     "也",
+     "很"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说在你家谁做饭。",
+    "start": "在我家，…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "所有的人，可以说_____。",
+    "options": [
+     "别人",
+     "大家",
+     "谁",
+     "自己"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "“谁是你的老师？”—选择正确的回答：",
+    "options": [
+     "是谁王老师。",
+     "王老师是我的老师。",
+     "我的老师是谁。",
+     "王老师谁是。"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "问朋友：你最好的朋友是谁？",
+    "start": "你最好的朋友…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "你不认识的人是_____。",
+    "options": [
+     "家人",
+     "朋友",
+     "同学",
+     "陌生人"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你在给_____打电话？”",
+    "options": [
+     "哪儿",
+     "几",
+     "什么",
+     "谁"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说谁对你最好。",
+    "start": "对我最好的人是…"
+   }
+  ]
+ },
+ "beginner-u10-l2": {
+  "title": "What",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "“什么 (shénme)” 问的是_____。",
+    "options": [
+     "东西或事情",
+     "人",
+     "地方",
+     "时间"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "“这是什么？”—“这是一支_____。”",
+    "options": [
+     "书",
+     "笔",
+     "猫",
+     "桌子"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句（“什么”放在哪儿）：",
+    "options": [
+     "什么你吃？",
+     "你什么吃？",
+     "吃你什么？",
+     "你吃什么？"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "不懂一个词，你问：“这个词是什么_____？”",
+    "options": [
+     "地方",
+     "名字",
+     "时候",
+     "意思"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "“我喜欢吃鱼。”—这是哪个问题的回答？",
+    "options": [
+     "你为什么吃？",
+     "你喜欢吃什么？",
+     "你在哪儿吃？",
+     "你什么时候吃？"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你手里或桌子上的一样东西。",
+    "start": "这是…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“什么时候 (shénme shíhou)” 问的是_____。",
+    "options": [
+     "原因",
+     "人",
+     "时间",
+     "东西"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你周末做_____？”",
+    "options": [
+     "谁",
+     "什么",
+     "几",
+     "哪儿"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你周末做什么。",
+    "start": "周末我…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“这是什么菜？”是问菜的_____。",
+    "options": [
+     "时间",
+     "价钱",
+     "名字",
+     "地方"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你喜欢_____音乐？”",
+    "options": [
+     "几个",
+     "什么个",
+     "什么样的",
+     "多少个"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你做什么工作或学什么。",
+    "start": "我在…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“这是什么？”—“这是苹果汁，一种_____。”",
+    "options": [
+     "书",
+     "车",
+     "衣服",
+     "饮料"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的量词：“这是一_____书。”",
+    "options": [
+     "本",
+     "杯",
+     "只",
+     "张"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你最想要什么礼物。",
+    "start": "我最想要…"
+   }
+  ]
+ },
+ "beginner-u10-l3": {
+  "title": "Where",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "“哪儿 (nǎr)” 问的是_____。",
+    "options": [
+     "时间",
+     "人",
+     "地方",
+     "原因"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "“哪里 (nǎlǐ)” 和_____意思一样。",
+    "options": [
+     "什么",
+     "哪儿",
+     "谁",
+     "几"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你住_____哪儿？”",
+    "options": [
+     "是",
+     "在",
+     "去",
+     "有"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "“这儿 (zhèr)” 是近的地方，远的地方是_____。",
+    "options": [
+     "上面",
+     "哪儿",
+     "那儿",
+     "这里"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句（“哪儿”放在哪儿）：",
+    "options": [
+     "哪儿你去？",
+     "你去哪儿？",
+     "你去哪儿吗？",
+     "你哪儿去吗？"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你住在哪儿。",
+    "start": "我住在…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "楼的下面一层，叫_____。",
+    "options": [
+     "楼下",
+     "楼上",
+     "里面",
+     "外面"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "“你在哪儿_____？”—“我在银行工作。”",
+    "options": [
+     "工作",
+     "的工作",
+     "在工作在",
+     "工作在"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你在哪儿学中文。",
+    "start": "我在…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“你从_____来？”—“我从美国来。”",
+    "options": [
+     "谁",
+     "什么",
+     "几",
+     "哪儿"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "“我的书在哪儿？”—“_____桌子上。”",
+    "options": [
+     "有",
+     "是",
+     "去",
+     "在"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你最想去哪儿玩。",
+    "start": "我最想去…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“外面 (wàimiàn)” 的反义词是_____。",
+    "options": [
+     "里面",
+     "左边",
+     "上面",
+     "前面"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "“你家在哪儿？”—“我家在学校_____。”",
+    "options": [
+     "后面",
+     "后面在",
+     "在后面",
+     "后面的里"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你今天去了哪儿。",
+    "start": "我今天去了…"
+   }
+  ]
+ },
+ "beginner-u10-l4": {
+  "title": "When",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "问时间，用哪个词？",
+    "options": [
+     "谁",
+     "什么时候",
+     "哪儿",
+     "为什么"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "下午以后、天黑的时候是_____。",
+    "options": [
+     "上午",
+     "晚上",
+     "中午",
+     "早上"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你什么时候_____北京？”",
+    "options": [
+     "去了吗",
+     "去的了",
+     "去",
+     "在去"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "“以后 (yǐhòu)” 的反义词是_____。",
+    "options": [
+     "将来",
+     "马上",
+     "现在",
+     "以前"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（时间放在哪儿）：",
+    "options": [
+     "我去下个月中国。",
+     "下个月去我中国。",
+     "我去中国下个月。",
+     "我下个月去中国。"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你每天什么时候学中文。",
+    "start": "我每天…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“马上 (mǎshàng)” 的意思是_____。",
+    "options": [
+     "很久以前",
+     "很慢",
+     "明年",
+     "很快"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我吃_____饭以后去散步。”",
+    "options": [
+     "的",
+     "着",
+     "完",
+     "在"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你什么时候有空。",
+    "start": "我周末…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "中午以前的时间是_____。",
+    "options": [
+     "下午",
+     "晚上",
+     "上午",
+     "半夜"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "“你_____回家？”—“我六点回家。”",
+    "options": [
+     "多少点",
+     "哪点",
+     "几点",
+     "什么点"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你什么时候最高兴。",
+    "start": "我最高兴的时候是…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "很多次、常常，可以说_____。",
+    "options": [
+     "从来不",
+     "经常",
+     "很少",
+     "一次"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我吃饭_____，不看手机。”",
+    "options": [
+     "在时候",
+     "时候的",
+     "的时候",
+     "时的候"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你什么时候去旅行。",
+    "start": "我打算…"
+   }
+  ]
+ },
+ "beginner-u10-l5": {
+  "title": "Why",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "“为什么 (wèishénme)” 问的是_____。",
+    "options": [
+     "时间",
+     "地方",
+     "原因",
+     "人"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "回答“为什么”的时候，常常用_____。",
+    "options": [
+     "或者",
+     "还是",
+     "因为",
+     "但是"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“因为下雨，_____我不去公园。”",
+    "options": [
+     "但是",
+     "还是",
+     "或者",
+     "所以"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "一个人很累，想_____。",
+    "options": [
+     "休息",
+     "唱歌",
+     "上班",
+     "跑步"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的句子（因为……所以……）：",
+    "options": [
+     "因为太冷了，所以我不出去。",
+     "所以太冷了，因为我不出去。",
+     "因为太冷了，但是我不出去。",
+     "太冷了因为，我不出去所以。"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你为什么喜欢你住的城市。",
+    "start": "我喜欢我住的城市，因为…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "他很_____，所以去吃饭。",
+    "options": [
+     "饱",
+     "冷",
+     "累",
+     "饿"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“我_____很喜欢中国菜，所以常常去中国饭馆。”",
+    "options": [
+     "但是",
+     "所以",
+     "或者",
+     "因为"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "你今天为什么高兴或不高兴？",
+    "start": "我今天…，因为…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "他今天没来上课，因为他_____了。",
+    "options": [
+     "起床",
+     "高兴",
+     "生病",
+     "吃饭"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你_____没来上课？”",
+    "options": [
+     "什么",
+     "谁",
+     "哪儿",
+     "怎么"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你为什么喜欢一个朋友。",
+    "start": "我喜欢他，因为…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "他很_____，所以哭了。",
+    "options": [
+     "热",
+     "饱",
+     "高兴",
+     "难过"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句（“为什么”放在哪儿）：",
+    "options": [
+     "他不为什么吃饭？",
+     "他不吃饭为什么吗？",
+     "他为什么不吃饭？",
+     "为什么他不吃饭吗？"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你为什么喜欢你的工作或学校。",
+    "start": "我喜欢我的…，因为…"
+   }
+  ]
+ },
+ "beginner-u10-l6": {
+  "title": "How",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "“怎么 (zěnme)” 常常问做事情的_____。",
+    "options": [
+     "人",
+     "方法",
+     "地方",
+     "颜色"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "“这个电影怎么样？”是问你的_____。",
+    "options": [
+     "年龄",
+     "看法",
+     "地址",
+     "名字"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“请问，去机场_____走？”",
+    "options": [
+     "谁",
+     "什么",
+     "怎么",
+     "怎么样"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "“你身体怎么样？”是问你的_____。",
+    "options": [
+     "健康",
+     "名字",
+     "国家",
+     "工作"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“今天天气_____？”",
+    "options": [
+     "几",
+     "怎么",
+     "怎么样",
+     "什么"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你怎么学中文。",
+    "start": "我常常…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“你多高？”问的是_____。",
+    "options": [
+     "年龄",
+     "身高",
+     "体重",
+     "名字"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你家离这儿_____远？”",
+    "options": [
+     "多",
+     "谁",
+     "什么",
+     "几"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你今天怎么样。",
+    "start": "我今天…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "“你怎么了？”常常是问别人_____。",
+    "options": [
+     "出了什么事",
+     "几岁",
+     "住在哪儿",
+     "叫什么名字"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“他中文说_____很好。”",
+    "options": [
+     "了",
+     "得",
+     "地",
+     "的"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你周末过得怎么样。",
+    "start": "我周末过得…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "这本书很好看，你说：“这本书很_____！”",
+    "options": [
+     "差",
+     "不错",
+     "不好",
+     "难看"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句（“怎么”放在哪儿）：",
+    "options": [
+     "这个汉字怎么读？",
+     "这个汉字怎么样读？",
+     "这个汉字读怎么？",
+     "怎么样这个汉字读？"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "说说你的城市怎么样。",
+    "start": "我的城市…"
+   }
+  ]
+ },
+ "beginner-u11-l1": {
+  "title": "Weather",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "天上掉水下来，是_____。",
+    "options": [
+     "晴天",
+     "刮风",
+     "下雨",
+     "下雪"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "天气很好，有太阳，是_____。",
+    "options": [
+     "阴天",
+     "下雨",
+     "晴天",
+     "下雪"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“今天_____冷。”",
+    "options": [
+     "在",
+     "有",
+     "很",
+     "是"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "天上掉白白的东西，是_____。",
+    "options": [
+     "下雪",
+     "刮风",
+     "下雨",
+     "打雷"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“你看，外面下雨_____！”",
+    "options": [
+     "过",
+     "了",
+     "着了",
+     "的"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说今天的天气。",
+    "start": "今天天气…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "下雨的时候，出门要带_____。",
+    "options": [
+     "伞",
+     "书",
+     "钥匙",
+     "眼镜"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“今天不冷_____不热。”",
+    "options": [
+     "很",
+     "也",
+     "都",
+     "和"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你喜欢什么样的天气。",
+    "start": "我喜欢…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "树在动，因为外面在_____。",
+    "options": [
+     "晴天",
+     "下雪",
+     "打雷",
+     "刮风"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句：“今天_____度？”",
+    "options": [
+     "谁",
+     "什么",
+     "多少",
+     "哪"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说明天的天气怎么样。",
+    "start": "明天…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "三十五度，天气很_____。",
+    "options": [
+     "凉快",
+     "热",
+     "冷",
+     "暖和"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“天气太热_____！”",
+    "options": [
+     "吗",
+     "的",
+     "呢",
+     "了"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你们那儿的天气。",
+    "start": "我们那儿…"
+   }
+  ]
+ },
+ "beginner-u11-l2": {
+  "title": "Seasons",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "一年有四个_____。",
+    "options": [
+     "小时",
+     "星期",
+     "季节",
+     "生日"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "最热的季节是_____。",
+    "options": [
+     "秋天",
+     "夏天",
+     "冬天",
+     "春天"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“冬天_____夏天冷。”",
+    "options": [
+     "很",
+     "是",
+     "比",
+     "在"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "树叶变黄的季节是_____。",
+    "options": [
+     "夏天",
+     "秋天",
+     "春天",
+     "冬天"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的问句：“你最喜欢_____季节？”",
+    "options": [
+     "几",
+     "哪个",
+     "什么个",
+     "谁"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你最喜欢的季节。",
+    "start": "我最喜欢…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "花开的季节是_____。",
+    "options": [
+     "秋天",
+     "夏天",
+     "春天",
+     "冬天"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“冬天，我_____去滑雪。”",
+    "options": [
+     "的常常",
+     "常常了",
+     "常常的",
+     "常常"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "说说你们国家的夏天。",
+    "start": "我们国家的夏天…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "冬天很_____。",
+    "options": [
+     "冷",
+     "热",
+     "甜",
+     "绿"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“春天来_____，天气暖和了。”",
+    "options": [
+     "的",
+     "过",
+     "了",
+     "着"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "说说你冬天常常做什么。",
+    "start": "冬天我常常…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "秋天不冷也不热，很_____。",
+    "options": [
+     "冷",
+     "热",
+     "凉快",
+     "闷"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "选择正确的词：“夏天_____冬天，你喜欢哪个？”",
+    "options": [
+     "比",
+     "和",
+     "也",
+     "都"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "说说你为什么喜欢或不喜欢冬天。",
+    "start": "我…冬天，因为…"
+   }
+  ]
+ },
+ "beginner-u12-l1": {
+  "title": "Combining everything in short real-life dialogues",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "A：“谢谢你！” B：“_____。”",
+    "options": [
+     "再见",
+     "你好",
+     "对不起",
+     "不客气"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "A：“对不起！” B：“_____。”",
+    "options": [
+     "没关系",
+     "谢谢",
+     "欢迎",
+     "不客气"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "A：“你是学生吗？” B：“是，我_____学生。”",
+    "options": [
+     "很",
+     "在",
+     "有",
+     "是"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "在饭馆，服务员问：“你们几位 (wèi)？”“位”是说_____。",
+    "options": [
+     "桌子",
+     "人",
+     "钱",
+     "菜"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "A：“你会说中文吗？” B：“我会说_____。”",
+    "options": [
+     "一些点",
+     "有点儿",
+     "很一点",
+     "一点儿"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "在咖啡馆点一杯咖啡。",
+    "start": "你好，我要…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "没听清楚，你说：“请再说一_____。”",
+    "options": [
+     "遍",
+     "只",
+     "本",
+     "个"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "A：“你吃饭了吗？” B：“我_____吃，一会儿吃。”",
+    "options": [
+     "别",
+     "没有了",
+     "不是",
+     "还没"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "第一次见面，介绍你自己：名字、国家、工作。",
+    "start": "你好，我叫…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "听不懂的时候，可以说：“请说_____一点儿。”",
+    "options": [
+     "快",
+     "多",
+     "大",
+     "慢"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "A：“你想喝茶还是咖啡？” B：“_____”",
+    "options": [
+     "我想喝吗。",
+     "我想喝茶。",
+     "我想喝茶还是咖啡。",
+     "是的。"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "打电话约朋友周末去看电影。",
+    "start": "喂，你周末…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "打电话的时候，第一句常说：“_____！”",
+    "options": [
+     "再见",
+     "没关系",
+     "晚安",
+     "喂"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "A：“我们几点见？” B：“我们_____三点在门口见吧。”",
+    "options": [
+     "下午吗",
+     "下午的",
+     "在下午了",
+     "下午"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "在路上问别人去地铁站怎么走，然后说谢谢。",
+    "start": "请问，去地铁站…"
+   }
+  ]
+ }
+}

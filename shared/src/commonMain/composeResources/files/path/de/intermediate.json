@@ -1,0 +1,4528 @@
+{
+ "intermediate-u1-l1": {
+  "title": "Invitations",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Auf einer Einladung steht „u. A. w. g.“. Was sollst du tun?",
+    "options": [
+     "dem Gastgeber antworten",
+     "schicke Kleidung tragen",
+     "ein Geschenk mitbringen",
+     "sehr früh kommen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie heißt die Person, die Gäste zu einer Feier einlädt?",
+    "options": [
+     "der Gast",
+     "der Kellner",
+     "der Gastgeber",
+     "der Besucher"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich wollte fragen, _____ du am Samstag Zeit hast.“",
+    "options": [
+     "wenn",
+     "weil",
+     "ob",
+     "dass"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Womit lädst du einen Freund zum Mittagessen ein?",
+    "options": [
+     "Das Essen war echt lecker.",
+     "Ich kann nicht zum Essen kommen.",
+     "Wie wär's mit Mittagessen am Freitag?",
+     "Bezahlst du mein Essen?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz im Perfekt:",
+    "options": [
+     "Anna hat uns zum Essen einladet.",
+     "Anna hat uns zum Essen geeinladen.",
+     "Anna hat uns zum Essen eingelädt.",
+     "Anna hat uns zum Essen eingeladen."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Lade einen Freund ein, am Wochenende etwas mit dir zu unternehmen.",
+    "start": "Hast du Lust, am Wochenende…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort ist KEINE Feier, zu der man eingeladen wird?",
+    "options": [
+     "die Einweihungsparty",
+     "die Quittung",
+     "die Geburtstagsfeier",
+     "die Hochzeit"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Wenn hast du am Samstag Zeit, gehen wir wandern.",
+     "Wenn du am Samstag Zeit hast, gehen wir wandern.",
+     "Wenn du am Samstag Zeit hast, wir gehen wandern.",
+     "Wenn du hast am Samstag Zeit, gehen wir wandern."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähl von einer Feier, zu der du vor Kurzem eingeladen warst.",
+    "start": "Vor Kurzem war ich bei…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „zusagen“ bei einer Einladung?",
+    "options": [
+     "die Einladung annehmen",
+     "die Einladung vergessen",
+     "die Einladung ablehnen",
+     "die Einladung weiterschicken"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Vielen Dank, dass du mich zu deiner Party _____.“",
+    "options": [
+     "eingeladen hast",
+     "eingeladen hat",
+     "einladen hast",
+     "hast eingeladen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Lade zu deiner Geburtstagsfeier ein. Nenne Tag und Ort.",
+    "start": "Ich lade euch herzlich zu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort passt? „Für meinen 30. Geburtstag _____ ich eine große Party.“",
+    "options": [
+     "spreche",
+     "gebe",
+     "nehme",
+     "trage"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Vorschlag:",
+    "options": [
+     "Wollen wir uns im Park treffe?",
+     "Wollen uns wir im Park treffen?",
+     "Wollen wir treffen uns im Park?",
+     "Wollen wir uns im Park treffen?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Lade höflich eine beschäftigte Kollegin zu einem Kaffee ein.",
+    "start": "Hätten Sie vielleicht Lust, mit mir…"
+   }
+  ]
+ },
+ "intermediate-u1-l2": {
+  "title": "Accepting/declining",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Welche Antwort ist eine Zusage?",
+    "options": [
+     "Da habe ich schon etwas vor.",
+     "Sehr gern, ich komme!",
+     "Leider kann ich nicht.",
+     "Vielleicht ein anderes Mal."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich muss leider absagen“?",
+    "options": [
+     "Ich komme später.",
+     "Ich komme gern.",
+     "Ich bringe jemanden mit.",
+     "Ich komme nicht."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich kann leider nicht kommen, _____ ich am Samstag arbeiten muss.“",
+    "options": [
+     "aber",
+     "denn",
+     "weil",
+     "deshalb"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was sagst du, wenn du schon andere Pläne hast?",
+    "options": [
+     "Ich habe dich eingeladen.",
+     "Ich habe schon etwas vor.",
+     "Ich habe nichts zu tun.",
+     "Ich habe große Lust."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich _____ gestern leider nicht kommen, ich war krank.“",
+    "options": [
+     "gekonnt",
+     "konnte",
+     "könnte",
+     "kann"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Ein Freund lädt dich zum Grillen ein. Sag zu und frag, was du mitbringen sollst.",
+    "start": "Sehr gern! Soll ich…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welche Antwort ist eine höfliche Absage?",
+    "options": [
+     "Keine Lust.",
+     "Vergiss es.",
+     "Danke, aber da kann ich leider nicht.",
+     "Klar, ich komme gern!"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich _____ gern mitkommen, aber ich habe schon einen Termin.“",
+    "options": [
+     "wäre",
+     "werde",
+     "wurde",
+     "würde"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Sag eine Einladung höflich ab und nenne einen Grund.",
+    "start": "Vielen Dank für die Einladung, aber…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Vielleicht ein anderes Mal“?",
+    "options": [
+     "Heute nicht, aber gern später einmal.",
+     "Ich komme auf jeden Fall.",
+     "Ich komme nie wieder.",
+     "Ich habe die Einladung nicht bekommen."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Leider muss ich das Treffen _____.“",
+    "options": [
+     "sagen ab",
+     "absage",
+     "abgesagt",
+     "absagen"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Du weißt noch nicht, ob du Zeit hast. Antworte auf die Einladung.",
+    "start": "Ich weiß noch nicht genau, ob…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort passt? „Danke für die Einladung, ich bin auf jeden Fall _____!“",
+    "options": [
+     "dagegen",
+     "daneben",
+     "dabei",
+     "darüber"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Ich komme nicht, weil ich krank bin.",
+     "Ich komme nicht, weil bin ich krank.",
+     "Ich komme nicht, weil krank ich bin.",
+     "Ich komme nicht, weil ich bin krank."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Sag zu einer Einladung zu und frag nach der Uhrzeit.",
+    "start": "Ich komme gern! Um wie viel Uhr…"
+   }
+  ]
+ },
+ "intermediate-u1-l3": {
+  "title": "Arranging times",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was fragst du, um eine passende Zeit zu finden?",
+    "options": [
+     "Wie geht es dir?",
+     "Was kostet das?",
+     "Wo wohnst du?",
+     "Wann passt es dir?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Das passt mir gut“?",
+    "options": [
+     "Die Zeit ist gut für mich.",
+     "Ich habe keine Zeit.",
+     "Ich bin müde.",
+     "Die Kleidung ist zu klein."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Können wir das Treffen _____ Donnerstag verschieben?“",
+    "options": [
+     "für",
+     "an",
+     "zu",
+     "auf"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Bei der Terminsuche sagt jemand: „Ich bin flexibel.“ Was meint er?",
+    "options": [
+     "Ich habe nie Zeit.",
+     "Ich komme immer zu spät.",
+     "Mir passt fast jede Zeit.",
+     "Ich mache viel Sport."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wir treffen uns um sieben vor _____ Kino.“",
+    "options": [
+     "den",
+     "das",
+     "der",
+     "dem"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Schlag einem Freund einen Tag und eine Uhrzeit für ein Treffen vor.",
+    "start": "Wie wäre es am…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie spät ist es um „halb acht“?",
+    "options": [
+     "7:30 Uhr",
+     "8:30 Uhr",
+     "7:15 Uhr",
+     "8:15 Uhr"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Am Dienstag leider ich habe keine Zeit.",
+     "Am Dienstag ich habe leider keine Zeit.",
+     "Am Dienstag habe ich leider keine Zeit.",
+     "Am Dienstag keine Zeit habe ich leider."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Der Termin passt dir nicht mehr. Schlag eine andere Zeit vor.",
+    "start": "Könnten wir das Treffen vielleicht auf…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich muss im Kalender nachsehen“?",
+    "options": [
+     "Ich muss jemanden anrufen.",
+     "Ich muss prüfen, ob ich Zeit habe.",
+     "Ich muss ein Buch kaufen.",
+     "Ich muss das Wetter checken."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Sag mir Bescheid, wenn du _____.“",
+    "options": [
+     "Zeit hat",
+     "hast Zeit",
+     "Zeit hast",
+     "hast du Zeit"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Frag eine Kollegin höflich, wann sie diese Woche Zeit hat.",
+    "start": "Könnten Sie mir sagen, wann…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wer „pünktlich“ ist, kommt…",
+    "options": [
+     "genau zur verabredeten Zeit",
+     "gar nicht",
+     "eine Stunde zu früh",
+     "viel zu spät"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Passt _____ Freitag um 18 Uhr?“",
+    "options": [
+     "dich",
+     "dir",
+     "dein",
+     "du"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Bestätige einen Termin mit Tag, Uhrzeit und Ort.",
+    "start": "Also, wir treffen uns am…"
+   }
+  ]
+ },
+ "intermediate-u2-l1": {
+  "title": "Ordering",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was verlangst du im Restaurant, um die Gerichte zu sehen?",
+    "options": [
+     "das Trinkgeld",
+     "die Speisekarte",
+     "das Rezept",
+     "die Rechnung"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie heißt ein kleines Gericht vor dem Hauptgericht?",
+    "options": [
+     "die Nachspeise",
+     "das Getränk",
+     "die Vorspeise",
+     "die Beilage"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Ich _____ gern ein Mineralwasser, bitte.“",
+    "options": [
+     "hatte",
+     "hätten",
+     "habe gehabt",
+     "hätte"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Der Kellner fragt: „Was darf ich Ihnen zu trinken bringen?“ Er möchte wissen, …",
+    "options": [
+     "welches Getränk du möchtest",
+     "wo du sitzen willst",
+     "wie viel du zahlst",
+     "welchen Nachtisch du möchtest"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich nehme _____ Salat mit Hähnchen.“",
+    "options": [
+     "dem",
+     "des",
+     "der",
+     "den"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Du bist im Restaurant. Bestelle eine Vorspeise, ein Hauptgericht und ein Getränk.",
+    "start": "Als Vorspeise hätte ich gern…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist eine „Beilage“?",
+    "options": [
+     "die Rechnung für alle",
+     "etwas, das zum Hauptgericht dazukommt, z. B. Reis",
+     "ein Getränk ohne Alkohol",
+     "ein Tisch am Fenster"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ Sie mir bitte die Karte bringen?“",
+    "options": [
+     "Konnten",
+     "Könnten",
+     "Könntest",
+     "Kannst"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Frag den Kellner, was er dir empfehlen kann.",
+    "start": "Entschuldigung, was können Sie…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet beim Steak „durchgebraten“?",
+    "options": [
+     "ganz gar, innen nicht mehr rot",
+     "innen noch roh",
+     "mit viel Salz",
+     "kalt serviert"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Können wir uns an _____ Tisch am Fenster setzen?“",
+    "options": [
+     "den",
+     "das",
+     "der",
+     "dem"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Bestelle etwas zum Teilen für dich und deine Freunde.",
+    "start": "Zum Teilen hätten wir gern…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist KEIN Getränk?",
+    "options": [
+     "die Apfelschorle",
+     "der Orangensaft",
+     "der Tee",
+     "das Brötchen"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Wir hätten gern zwei Kaffees und ein Stück Kuchens.",
+     "Wir hätten gern zwei Kaffees und ein Stücke Kuchen.",
+     "Wir hätten gern zwei Kaffees und ein Stück Kuchen.",
+     "Wir hätten gern zwei Kaffees und eine Stück Kuchen."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Bestelle im Café einen Kaffee und etwas Süßes.",
+    "start": "Guten Tag, ich hätte gern…"
+   }
+  ]
+ },
+ "intermediate-u2-l2": {
+  "title": "Special requests",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Jemand isst kein Fleisch und keinen Fisch. Er ist…",
+    "options": [
+     "Koch",
+     "Vegetarier",
+     "Bäcker",
+     "Metzger"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich habe eine Nussallergie“?",
+    "options": [
+     "Ich darf keine Nüsse essen.",
+     "Ich möchte mehr Nüsse.",
+     "Ich mag Nüsse sehr.",
+     "Ich verkaufe Nüsse."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Könnten Sie das Gericht _____ Erdnüsse zubereiten? Ich bin allergisch.“",
+    "options": [
+     "ohne",
+     "für",
+     "aus",
+     "mit"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „scharf“ beim Essen?",
+    "options": [
+     "sehr süß",
+     "mit viel Chili, es brennt im Mund",
+     "sehr kalt",
+     "nicht gekocht"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Können Sie _____ bitte noch etwas Brot bringen?“",
+    "options": [
+     "mich",
+     "mir",
+     "ich",
+     "mein"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre dem Kellner, dass du gegen etwas allergisch bist.",
+    "start": "Entschuldigung, ich bin allergisch gegen…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Du möchtest nicht so viel essen. Was fragst du?",
+    "options": [
+     "Ist das Gericht scharf?",
+     "Kann ich noch einen Nachschlag haben?",
+     "Gibt es das auch als kleine Portion?",
+     "Haben Sie eine größere Portion?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Könnten Sie das Fleisch bitte etwas _____ braten? Es ist noch roh.“",
+    "options": [
+     "am längsten",
+     "langer",
+     "länger",
+     "lang"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Bitte den Kellner, etwas an deinem Gericht zu ändern.",
+    "start": "Könnte ich das bitte ohne…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „veganes“ Gericht?",
+    "options": [
+     "ein Gericht aus Italien",
+     "ein Gericht nur mit Fleisch",
+     "ein Gericht ganz ohne tierische Produkte",
+     "ein sehr teures Gericht"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wäre es möglich, dass ich die Pommes gegen einen Salat _____?“",
+    "options": [
+     "tausche",
+     "tauscht",
+     "getauscht",
+     "tauschen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Frag, ob ein Gericht vegetarisch ist.",
+    "start": "Können Sie mir sagen, ob…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist „Leitungswasser“?",
+    "options": [
+     "Wasser in einer Glasflasche",
+     "heißes Wasser für Tee",
+     "Mineralwasser mit Kohlensäure",
+     "Wasser aus dem Wasserhahn"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Könnten Sie mir bitte ein Glas Wasser bringt?",
+     "Könnten Sie mich bitte ein Glas Wasser bringen?",
+     "Könnten Sie bringen mir bitte ein Glas Wasser?",
+     "Könnten Sie mir bitte ein Glas Wasser bringen?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Bitte um einen anderen Tisch, weil es zu laut ist.",
+    "start": "Wäre es möglich, dass wir…"
+   }
+  ]
+ },
+ "intermediate-u2-l3": {
+  "title": "Paying",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was verlangst du am Ende des Essens?",
+    "options": [
+     "die Speisekarte",
+     "die Vorspeise",
+     "die Rechnung",
+     "die Reservierung"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist „Trinkgeld“?",
+    "options": [
+     "der Preis für das Wasser",
+     "extra Geld für den Service",
+     "Geld für Getränke im Supermarkt",
+     "Geld, das man zurückbekommt"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Kann ich hier _____ Karte zahlen?“",
+    "options": [
+     "bei",
+     "durch",
+     "in",
+     "mit"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Der Kellner fragt: „Zusammen oder getrennt?“ Was möchte er wissen?",
+    "options": [
+     "ob ihr schon bestellt habt",
+     "ob jeder für sich zahlt",
+     "ob ihr Nachtisch möchtet",
+     "ob ihr zusammen sitzen wollt"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Hast du schon _____?“",
+    "options": [
+     "bezahlte",
+     "bezahlen",
+     "gebezahlt",
+     "bezahlt"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Ruf den Kellner und bitte um die Rechnung.",
+    "start": "Entschuldigung, könnten wir…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was sagst du, wenn der Kellner den Rest des Geldes behalten soll?",
+    "options": [
+     "Das ist falsch.",
+     "Ich zahle nicht.",
+     "Noch einmal, bitte.",
+     "Stimmt so."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Heute zahle ich. Darf ich dich _____?“",
+    "options": [
+     "einladen",
+     "einlädt",
+     "eingeladen",
+     "lade ein"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Sag deinem Freund, dass du heute bezahlst.",
+    "start": "Lass mal, heute…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist eine „Quittung“?",
+    "options": [
+     "ein Platz am Fenster",
+     "ein Beleg, dass du bezahlt hast",
+     "ein Gericht mit Ei",
+     "ein Gutschein für Getränke"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Hier ist ein Fehler, weil wir nur zwei Bier _____.“",
+    "options": [
+     "bestellen haben",
+     "bestellt hat",
+     "bestellt haben",
+     "haben bestellt"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Auf deiner Rechnung ist ein Fehler. Erkläre ihn höflich.",
+    "start": "Entschuldigung, ich glaube, hier…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „bar bezahlen“?",
+    "options": [
+     "mit dem Handy zahlen",
+     "mit der Karte zahlen",
+     "mit Geldscheinen und Münzen zahlen",
+     "später per Überweisung zahlen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Könnten wir bitte getrennt zahlen?",
+     "Könnten bitte wir getrennt zahlen?",
+     "Könnten wir bitte getrennt zu zahlen?",
+     "Könnten wir bitte getrennt zahlt?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Du zahlst mit Karte. Frag, ob das geht, und gib Trinkgeld.",
+    "start": "Kann ich mit Karte zahlen? Machen Sie bitte…"
+   }
+  ]
+ },
+ "intermediate-u3-l1": {
+  "title": "Comparing products",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „günstig“ beim Einkaufen?",
+    "options": [
+     "ganz neu",
+     "nicht teuer",
+     "sehr teuer",
+     "kaputt"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie nennt man einen reduzierten Preis für kurze Zeit?",
+    "options": [
+     "die Kasse",
+     "die Quittung",
+     "die Garantie",
+     "das Sonderangebot"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Dieses Handy ist _____ als das andere.“",
+    "options": [
+     "mehr teuer",
+     "teuer",
+     "teurer",
+     "am teuersten"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist das Gegenteil von „schwer“, wenn es um das Gewicht geht?",
+    "options": [
+     "leicht",
+     "dünn",
+     "einfach",
+     "klein"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Der blaue Rucksack ist genauso groß _____ der rote.“",
+    "options": [
+     "wie",
+     "denn",
+     "als",
+     "dass"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Vergleiche zwei Handys, die du kaufen könntest.",
+    "start": "Das erste Handy ist billiger, aber…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Das Preis-Leistungs-Verhältnis ist gut“?",
+    "options": [
+     "Der Verkäufer ist nett.",
+     "Man bekommt viel für sein Geld.",
+     "Das Geschäft ist groß.",
+     "Das Produkt ist sehr teuer."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Von allen Laptops ist dieser _____.“",
+    "options": [
+     "am leichter",
+     "leichter",
+     "am leichtesten",
+     "der leichtester"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre, welches Produkt du nimmst und warum.",
+    "start": "Ich nehme lieber das…, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist eine „Marke“, zum Beispiel Adidas oder Bosch?",
+    "options": [
+     "die Farbe eines Produkts",
+     "der Preis eines Produkts",
+     "die Größe eines Kleidungsstücks",
+     "der Name eines Herstellers"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich suche einen _____ Mantel für den Winter.“",
+    "options": [
+     "warme",
+     "warmes",
+     "warmen",
+     "warmer"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Frag den Verkäufer nach dem Unterschied zwischen zwei Modellen.",
+    "start": "Können Sie mir sagen, was der Unterschied…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Das lohnt sich“?",
+    "options": [
+     "Es ist den Preis wert.",
+     "Es ist kaputt.",
+     "Es ist zu klein.",
+     "Es ist ausverkauft."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Dieses Modell gefällt mich besser als das alte.",
+     "Dieses Modell gefällt mir gut als das alte.",
+     "Dieses Modell gefällt mir am besser als das alte.",
+     "Dieses Modell gefällt mir besser als das alte."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Du suchst Kopfhörer. Beschreib, was dir dabei wichtig ist.",
+    "start": "Mir ist wichtig, dass die Kopfhörer…"
+   }
+  ]
+ },
+ "intermediate-u3-l2": {
+  "title": "Refunds",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was ist eine „Rückerstattung“?",
+    "options": [
+     "Man bezahlt noch einmal.",
+     "Man bekommt ein Geschenk.",
+     "Man bekommt einen Rabatt.",
+     "Man bekommt sein Geld zurück."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was brauchst du meistens, um etwas zurückzugeben?",
+    "options": [
+     "den Kassenbon",
+     "eine Einladung",
+     "ein Rezept vom Arzt",
+     "den Ausweis des Verkäufers"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Ich möchte diese Jacke bitte _____.“",
+    "options": [
+     "gebe zurück",
+     "zurückgeben",
+     "zurückgibt",
+     "zurückgegeben"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „defekt“?",
+    "options": [
+     "ganz neu",
+     "kaputt, es funktioniert nicht",
+     "sehr billig",
+     "zu groß"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Der Toaster _____ schon nach zwei Tagen kaputtgegangen.“",
+    "options": [
+     "ist",
+     "bin",
+     "hat",
+     "habe"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre, warum du ein Produkt zurückgeben möchtest.",
+    "start": "Ich möchte das zurückgeben, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist eine „Garantie“?",
+    "options": [
+     "ein Zettel mit dem Preis",
+     "eine Tüte für den Einkauf",
+     "ein Rabatt für Studenten",
+     "Die Firma repariert oder ersetzt das Produkt eine Zeit lang kostenlos."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Können Sie mir sagen, _____ ich mein Geld zurückbekomme?“",
+    "options": [
+     "dass",
+     "weil",
+     "ob",
+     "denn"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Frag nach den Regeln für die Rückgabe.",
+    "start": "Wie lange kann man…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Umtausch ausgeschlossen“?",
+    "options": [
+     "Der Laden ist geschlossen.",
+     "Man kann sie gratis umtauschen.",
+     "Die Ware ist im Angebot.",
+     "Man kann die Ware nicht zurückgeben."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Ich habe sie nie getragen, deshalb ich möchte mein Geld zurück.",
+     "Ich habe sie nie getragen, deshalb möchte ich mein Geld zurück.",
+     "Ich habe sie nie getragen, deshalb möchte mein Geld ich zurück.",
+     "Ich habe sie nie getragen, deshalb mein Geld ich möchte zurück."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Der Verkäufer bietet dir einen Gutschein an, aber du willst dein Geld. Antworte höflich.",
+    "start": "Danke, aber ich hätte lieber…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Gutschein“?",
+    "options": [
+     "ein Papier, mit dem man später im Laden einkaufen kann",
+     "ein Preisschild",
+     "eine Rechnung",
+     "ein Kassenbon"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich _____ das Kleid gestern umtauschen, aber der Laden war schon zu.“",
+    "options": [
+     "wolle",
+     "gewollt",
+     "wollte",
+     "will"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Beschwere dich höflich, dass ein neues Gerät nicht funktioniert.",
+    "start": "Guten Tag, ich habe letzte Woche diesen… gekauft, und…"
+   }
+  ]
+ },
+ "intermediate-u3-l3": {
+  "title": "Exchanges",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „umtauschen“?",
+    "options": [
+     "ein Produkt gegen ein anderes tauschen",
+     "ein Produkt reparieren",
+     "den Laden wechseln",
+     "Geld zur Bank bringen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wo probierst du im Geschäft Kleidung an?",
+    "options": [
+     "im Lager",
+     "an der Kasse",
+     "im Schaufenster",
+     "in der Umkleidekabine"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Haben Sie diese Hose auch eine Nummer _____?“",
+    "options": [
+     "am größten",
+     "groß",
+     "größer",
+     "größte"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Die Schuhe sind dir zu eng. Was brauchst du?",
+    "options": [
+     "einen Gutschein",
+     "eine andere Farbe",
+     "eine kleinere Größe",
+     "eine größere Größe"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Könnte ich das T-Shirt gegen _____ in Blau tauschen?“",
+    "options": [
+     "einem",
+     "eins",
+     "einen",
+     "einer"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Du möchtest einen Pullover in einer anderen Größe. Was sagst du?",
+    "start": "Ich möchte diesen Pullover umtauschen, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Der Artikel ist ausverkauft“?",
+    "options": [
+     "Es gibt ihn im Laden nicht mehr.",
+     "Er ist ganz neu.",
+     "Er ist kaputt.",
+     "Er ist sehr billig."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Die Jacke passt _____ leider nicht.“",
+    "options": [
+     "mich",
+     "mir",
+     "meine",
+     "ich"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Frag, ob du die Hose in einer anderen Farbe bekommen kannst.",
+    "start": "Hätten Sie die Hose auch in…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was heißt „anprobieren“?",
+    "options": [
+     "etwas verpacken",
+     "etwas Neues essen",
+     "Kleidung testen, ob sie passt",
+     "etwas bezahlen"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich habe das Kleid _____, aber es war zu kurz.“",
+    "options": [
+     "anprobiert",
+     "anprobieren",
+     "probiertan",
+     "angeprobiert"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Der Verkäufer fragt, was mit dem Produkt nicht stimmt. Antworte.",
+    "start": "Die Größe stimmt nicht, es ist mir zu…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort passt? „Die Hose ist mir zu _____, ich brauche eine Nummer kleiner.“",
+    "options": [
+     "kurz",
+     "teuer",
+     "weit",
+     "eng"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Die Schuhe passen mir nicht, deshalb umtausche ich sie.",
+     "Die Schuhe passen mir nicht, deshalb tausche ich sie um.",
+     "Die Schuhe passen mich nicht, deshalb tausche ich sie um.",
+     "Die Schuhe passen mir nicht, deshalb tausche ich um sie."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre, dass dir ein Geschenk nicht gefällt, und frag nach einem Umtausch.",
+    "start": "Ich habe das geschenkt bekommen, aber…"
+   }
+  ]
+ },
+ "intermediate-u4-l1": {
+  "title": "Check-in",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was bekommst du beim Check-in, um ins Flugzeug zu steigen?",
+    "options": [
+     "die Postkarte",
+     "die Landkarte",
+     "die Bordkarte",
+     "die Speisekarte"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Fensterplatz“ im Flugzeug?",
+    "options": [
+     "ein Sitz am Gang",
+     "ein Sitz direkt am Fenster",
+     "ein Parkplatz",
+     "ein Platz im Café"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich möchte bitte _____ Gang sitzen.“",
+    "options": [
+     "zum",
+     "im",
+     "auf",
+     "am"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist das „Handgepäck“?",
+    "options": [
+     "der große Koffer",
+     "die Tasche der Flugbegleiterin",
+     "der verlorene Koffer",
+     "die kleine Tasche, die man mit ins Flugzeug nimmt"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Entschuldigung, wo kann ich hier _____?“",
+    "options": [
+     "eincheckt",
+     "checken ein",
+     "einchecken",
+     "eingecheckt"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Du checkst am Schalter ein. Frag nach einem Fensterplatz.",
+    "start": "Guten Tag, hätten Sie noch…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist der „Schalter“ am Flughafen?",
+    "options": [
+     "die Toilette",
+     "der Platz, an dem Mitarbeiter die Passagiere bedienen",
+     "das Gepäckband",
+     "der Sicherheitsgurt"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Ich habe gestern schon online _____.“",
+    "options": [
+     "einchecken",
+     "eingecheckt",
+     "checkte ein",
+     "geeincheckt"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Frag, wie viel Gepäck du mitnehmen darfst.",
+    "start": "Wie viele Kilo darf…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Der Flug ist überbucht“?",
+    "options": [
+     "Der Flug ist sehr billig.",
+     "Der Flug ist pünktlich.",
+     "Es gibt mehr Passagiere als Plätze.",
+     "Der Flug fällt aus."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Ihr Koffer ist leider _____ als erlaubt.“",
+    "options": [
+     "am schwersten",
+     "schwer",
+     "schwerere",
+     "schwerer"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Dein Koffer ist zu schwer. Frag, was du tun kannst.",
+    "start": "Was kann ich machen, wenn…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist der „Flugsteig“?",
+    "options": [
+     "der Ort, an dem man ins Flugzeug einsteigt",
+     "der Ort, an dem man das Gepäck abholt",
+     "die Passkontrolle",
+     "ein Geschäft am Flughafen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Können Sie mir sagen, wo der Schalter ist?",
+     "Können Sie mich sagen, wo der Schalter ist?",
+     "Können Sie mir sagen, wo der Schalter sind?",
+     "Können Sie mir sagen, wo ist der Schalter?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Du bist spät dran. Frag, ob du deinen Flug noch erreichst.",
+    "start": "Mein Flug geht in 40 Minuten. Schaffe ich…"
+   }
+  ]
+ },
+ "intermediate-u4-l2": {
+  "title": "Immigration",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was zeigst du bei der Passkontrolle?",
+    "options": [
+     "den Kassenbon",
+     "die Kreditkarte",
+     "die Speisekarte",
+     "den Reisepass"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Visum“?",
+    "options": [
+     "eine Hotelbuchung",
+     "ein Flugticket",
+     "eine Erlaubnis, in ein Land einzureisen",
+     "ein Reiseführer"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie lange _____ Sie in Deutschland bleiben?“",
+    "options": [
+     "würdet",
+     "worden",
+     "wurden",
+     "werden"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Der Beamte fragt nach dem „Zweck“ deiner Reise. Was will er wissen?",
+    "options": [
+     "in welche Stadt du fliegst",
+     "wann du zurückfliegst",
+     "warum du reist",
+     "was dein Ticket gekostet hat"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich _____ heute Morgen aus London angekommen.“",
+    "options": [
+     "habe",
+     "ist",
+     "bin",
+     "hat"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Der Beamte fragt nach dem Zweck deiner Reise. Antworte.",
+    "start": "Ich bin hier, um…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „einreisen“?",
+    "options": [
+     "in ein Land hineinkommen",
+     "ein Land verlassen",
+     "einen Koffer packen",
+     "eine Reise buchen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich bleibe zwei Wochen, _____ ich Freunde besuche.“",
+    "options": [
+     "trotzdem",
+     "weil",
+     "denn",
+     "deshalb"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Sag, wo du in Deutschland wohnen wirst.",
+    "start": "Während meines Aufenthalts wohne ich…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Der Zollbeamte fragt: „Haben Sie etwas zu verzollen?“ Was meint er?",
+    "options": [
+     "Bringen Sie Waren mit, für die Sie Zoll zahlen müssen?",
+     "Haben Sie Hunger?",
+     "Möchten Sie Geld wechseln?",
+     "Haben Sie Ihr Ticket dabei?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich bin zum ersten Mal _____ Deutschland.“",
+    "options": [
+     "nach",
+     "in",
+     "zu",
+     "bei"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre, wie lange du bleibst und was du vorhast.",
+    "start": "Ich bleibe zehn Tage und möchte…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wer kontrolliert bei der Einreise die Pässe?",
+    "options": [
+     "der Pilot",
+     "der Gepäckträger",
+     "der Kellner",
+     "die Grenzpolizei"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Antwort auf „Waren Sie schon einmal in Deutschland?“",
+    "options": [
+     "Ja, ich war letztes Jahr in München.",
+     "Ja, ich habe letztes Jahr in München.",
+     "Ja, ich wäre letztes Jahr in München.",
+     "Ja, ich bin letztes Jahr in München."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Der Beamte möchte wissen, wann du zurückfliegst. Antworte.",
+    "start": "Mein Rückflug ist am…"
+   }
+  ]
+ },
+ "intermediate-u4-l3": {
+  "title": "Baggage",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wo holst du nach dem Flug deinen Koffer ab?",
+    "options": [
+     "an der Passkontrolle",
+     "im Duty-free-Shop",
+     "am Flugsteig",
+     "am Gepäckband"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Mein Koffer ist verloren gegangen“?",
+    "options": [
+     "Er ist ganz neu.",
+     "Er ist kaputt.",
+     "Er ist zu schwer.",
+     "Er ist nicht angekommen."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Mein Koffer ist leider nicht _____.“",
+    "options": [
+     "angekommen",
+     "angekommt",
+     "geankommen",
+     "ankommen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist das „Fundbüro“?",
+    "options": [
+     "ein Büro für Flugtickets",
+     "ein Geschäft für Koffer",
+     "ein Ort, an dem man verlorene Sachen abholen kann",
+     "ein Raum zum Warten"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Können Sie mir helfen? Ich finde _____ Koffer nicht.“",
+    "options": [
+     "mein",
+     "meinen",
+     "meinem",
+     "meiner"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Dein Koffer ist nicht angekommen. Erkläre das Problem am Schalter.",
+    "start": "Entschuldigung, mein Koffer…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Gepäckschein“?",
+    "options": [
+     "eine Rechnung",
+     "ein Zettel mit der Nummer deines Koffers",
+     "eine Bordkarte",
+     "ein Reisepass"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Es ist ein _____ Koffer mit vier Rollen.“",
+    "options": [
+     "schwarzes",
+     "schwarzer",
+     "schwarzen",
+     "schwarz"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreib deinen Koffer: Farbe, Größe und Marke.",
+    "start": "Mein Koffer ist ein…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „beschädigt“?",
+    "options": [
+     "kaputt gemacht",
+     "ganz sauber",
+     "zu schwer",
+     "verloren"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Bitte legen Sie Ihre Tasche auf _____ Band.“",
+    "options": [
+     "das",
+     "der",
+     "den",
+     "dem"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Dein Koffer ist beschädigt angekommen. Beschwere dich.",
+    "start": "Mein Koffer ist beschädigt. Der Griff…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was darf man normalerweise NICHT ins Handgepäck nehmen?",
+    "options": [
+     "eine Jacke",
+     "ein Ladekabel",
+     "ein Buch",
+     "eine große Flasche Wasser"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Rufen Sie mich bitte an, wenn Sie finden den Koffer.",
+     "Anrufen Sie mich bitte, wenn Sie den Koffer finden.",
+     "Rufen Sie mich bitte an, wenn Sie den Koffer finden.",
+     "Rufen Sie mich bitte an, wenn finden Sie den Koffer."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Frag, wann und wie du deinen Koffer zurückbekommst.",
+    "start": "Können Sie mir sagen, wann…"
+   }
+  ]
+ },
+ "intermediate-u4-l4": {
+  "title": "Boarding",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was macht man beim „Einsteigen“ am Flughafen?",
+    "options": [
+     "Man geht ins Flugzeug.",
+     "Man holt den Koffer ab.",
+     "Man zeigt den Pass bei der Einreise.",
+     "Man kauft ein Ticket."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Der Flug hat Verspätung“?",
+    "options": [
+     "Er startet früher.",
+     "Er startet später als geplant.",
+     "Er fällt aus.",
+     "Er ist voll."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Bitte _____ Sie Ihre Bordkarte bereit.“",
+    "options": [
+     "haltet",
+     "hält",
+     "halte",
+     "halten"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was heißt „Der Flug ist gestrichen“?",
+    "options": [
+     "Er hat einen Zwischenstopp.",
+     "Er ist pünktlich.",
+     "Er findet nicht statt.",
+     "Er ist ausgebucht."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Das Flugzeug fliegt um 14 Uhr ab.",
+     "Das Flugzeug abfliegt um 14 Uhr.",
+     "Das Flugzeug fliegen um 14 Uhr ab.",
+     "Das Flugzeug um 14 Uhr abfliegt."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Dein Flug hat Verspätung. Frag einen Mitarbeiter nach Informationen.",
+    "start": "Entschuldigung, wissen Sie, wie lange…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Anschlussflug“?",
+    "options": [
+     "ein Flug nach Hause",
+     "der nächste Flug, den man nach dem Umsteigen nimmt",
+     "ein sehr kurzer Flug",
+     "ein Flug mit Essen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Ich habe Angst, dass ich meinen Anschlussflug _____.“",
+    "options": [
+     "verpasse",
+     "verpasst",
+     "verpassen",
+     "verpassen habe"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Du hast deinen Anschlussflug verpasst. Frag am Schalter nach einer Lösung.",
+    "start": "Ich habe meinen Anschlussflug verpasst. Könnten Sie…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „letzter Aufruf“ am Flughafen?",
+    "options": [
+     "der letzte Anruf mit dem Handy",
+     "das letzte Essen im Flugzeug",
+     "die letzte Tür im Flugzeug",
+     "die letzte Durchsage für Passagiere vor dem Abflug"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Bitte schnallen Sie _____ an.“",
+    "options": [
+     "Sie",
+     "sich",
+     "euch",
+     "Ihnen"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Jemand zeigt dir seine Bordkarte: Du sitzt auf seinem Platz. Entschuldige dich.",
+    "start": "Oh, Entschuldigung, ich glaube…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wo verstaut man im Flugzeug das Handgepäck?",
+    "options": [
+     "im Cockpit",
+     "auf der Toilette",
+     "im Gepäckfach über dem Sitz",
+     "auf dem Gang"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich setze mich lieber _____ Fenster.“",
+    "options": [
+     "ins",
+     "im",
+     "ans",
+     "am"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Bitte jemanden höflich, mit dir den Platz zu tauschen.",
+    "start": "Entschuldigung, würde es Ihnen etwas ausmachen, …"
+   }
+  ]
+ },
+ "intermediate-u5-l1": {
+  "title": "Reservations",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Einzelzimmer“?",
+    "options": [
+     "ein Zimmer mit Küche",
+     "ein Zimmer für zwei Personen",
+     "ein Zimmer für eine Person",
+     "ein Zimmer ohne Fenster"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Halbpension“?",
+    "options": [
+     "Es gibt keine Mahlzeiten.",
+     "Frühstück und Abendessen sind inklusive.",
+     "Alle Mahlzeiten sind inklusive.",
+     "Nur das Frühstück ist inklusive."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich möchte ein Zimmer _____ 12. bis 15. Mai buchen.“",
+    "options": [
+     "am",
+     "vom",
+     "im",
+     "beim"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Das Hotel ist ausgebucht“?",
+    "options": [
+     "Das Hotel ist sehr billig.",
+     "Das Hotel hat ein Restaurant.",
+     "Das Hotel wird renoviert.",
+     "Es gibt keine freien Zimmer mehr."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ Sie noch ein Zimmer für heute Nacht frei?“",
+    "options": [
+     "Hätten",
+     "Hättest",
+     "Habe",
+     "Habt"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Ruf ein Hotel an und reserviere ein Zimmer für zwei Nächte.",
+    "start": "Guten Tag, ich möchte gern…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist eine „Anzahlung“?",
+    "options": [
+     "eine Strafe für Lärm",
+     "eine Rechnung nach der Reise",
+     "ein Teil des Preises, den man vorher bezahlt",
+     "ein Rabatt für Stammgäste"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Könnten Sie mir die Bestätigung bitte _____ E-Mail schicken?“",
+    "options": [
+     "von",
+     "durch",
+     "mit",
+     "per"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Frag, was das Zimmer pro Nacht kostet und ob das Frühstück dabei ist.",
+    "start": "Wie viel kostet…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „eine Buchung stornieren“?",
+    "options": [
+     "sie bezahlen",
+     "sie absagen",
+     "sie bestätigen",
+     "sie verlängern"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Kann ich kostenlos stornieren, wenn ich nicht _____ kann?“",
+    "options": [
+     "gekommen",
+     "kommt",
+     "komme",
+     "kommen"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Frag, ob man die Reservierung kostenlos stornieren kann.",
+    "start": "Könnte ich die Reservierung…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist „die Anreise“ im Hotel?",
+    "options": [
+     "der Tag, an dem man ankommt",
+     "die Rezeption",
+     "die Zimmernummer",
+     "der Tag, an dem man abreist"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Ich bin ein Zimmer für zwei Nächte reserviert.",
+     "Ich habe ein Zimmer für zwei Nächte gereserviert.",
+     "Ich habe ein Zimmer für zwei Nächte reserviert.",
+     "Ich habe ein Zimmer für zwei Nacht reserviert."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Du kommst im Hotel an. Sag an der Rezeption, dass du reserviert hast.",
+    "start": "Guten Abend, ich habe ein Zimmer auf den Namen…"
+   }
+  ]
+ },
+ "intermediate-u5-l2": {
+  "title": "Requests",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wo bekommst du im Hotel deinen Zimmerschlüssel?",
+    "options": [
+     "an der Rezeption",
+     "im Speisesaal",
+     "in der Sauna",
+     "im Aufzug"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Weckruf“ im Hotel?",
+    "options": [
+     "ein Anruf von Freunden",
+     "ein Anruf, der dich morgens weckt",
+     "die Musik im Aufzug",
+     "ein Notruf"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Könnten Sie mich bitte morgen um sieben Uhr _____?“",
+    "options": [
+     "wecken",
+     "geweckt",
+     "wecke",
+     "weckt"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bringt dir der „Zimmerservice“?",
+    "options": [
+     "dein Auto vom Parkplatz",
+     "eine neue Zimmernummer",
+     "Essen und Getränke aufs Zimmer",
+     "die Post von zu Hause"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Hätten Sie noch ein _____ Kissen für mich?“",
+    "options": [
+     "zusätzlicher",
+     "zusätzlichen",
+     "zusätzliche",
+     "zusätzliches"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Bitte die Rezeption um ein zusätzliches Handtuch.",
+    "start": "Könnten Sie mir bitte…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet das Schild „Bitte nicht stören“?",
+    "options": [
+     "Das Zimmer soll geputzt werden.",
+     "Der Gast möchte auschecken.",
+     "Niemand soll ins Zimmer kommen.",
+     "Der Gast braucht Hilfe."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Könnten Sie mir sagen, _____ das Frühstück serviert wird?“",
+    "options": [
+     "als",
+     "wenn",
+     "dass",
+     "wann"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Frag, ob du dein Gepäck nach dem Auschecken noch im Hotel lassen kannst.",
+    "start": "Wäre es möglich, dass ich…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „spät auschecken“?",
+    "options": [
+     "das Zimmer später als normal verlassen",
+     "spät im Hotel ankommen",
+     "spät frühstücken",
+     "spät bezahlen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Könnten Sie mein Gepäck bitte auf _____ Zimmer bringen?“",
+    "options": [
+     "meinen",
+     "meiner",
+     "mein",
+     "meinem"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Bitte darum, später auszuchecken.",
+    "start": "Wäre es möglich, erst um…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Aufzug“?",
+    "options": [
+     "eine Treppe",
+     "ein Zimmerschlüssel",
+     "ein Hotelflur",
+     "ein Lift zwischen den Etagen"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Können Sie mir ein Taxi für morgen früh bestellt?",
+     "Können Sie mir ein Taxi für morgen früh bestellen?",
+     "Können Sie bestellen mir ein Taxi für morgen früh?",
+     "Können Sie mich ein Taxi für morgen früh bestellen?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Frag an der Rezeption nach einem guten Restaurant in der Nähe.",
+    "start": "Könnten Sie mir ein…"
+   }
+  ]
+ },
+ "intermediate-u5-l3": {
+  "title": "Common problems",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Die Heizung funktioniert nicht“?",
+    "options": [
+     "Die Tür geht nicht zu.",
+     "Es wird im Zimmer nicht warm.",
+     "Das Licht geht nicht an.",
+     "Es gibt kein Wasser."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Das Wasser hört nicht auf zu tropfen. Was ist kaputt?",
+    "options": [
+     "die Klimaanlage",
+     "der Kleiderschrank",
+     "der Wasserhahn",
+     "der Fernseher"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich habe meinen Schlüssel im Zimmer _____.“",
+    "options": [
+     "vergessen",
+     "vergaß",
+     "vergesst",
+     "gevergessen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Das Wasser fließt im Waschbecken nicht ab. Es ist…",
+    "options": [
+     "verstopft",
+     "verloren",
+     "verkauft",
+     "verspätet"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Das Bad ist nicht sauber. Könnten Sie es noch einmal _____ lassen?“",
+    "options": [
+     "putzt",
+     "putzen",
+     "zu putzen",
+     "geputzt"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Ruf die Rezeption an: Die Dusche hat kein warmes Wasser.",
+    "start": "Hallo, ich rufe aus Zimmer 214 an. In meinem Bad…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich habe mich ausgesperrt“?",
+    "options": [
+     "Ich habe das Zimmer abgeschlossen.",
+     "Ich habe ein neues Zimmer bekommen.",
+     "Ich komme nicht ins Zimmer, weil der Schlüssel drinnen ist.",
+     "Ich möchte auschecken."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Könnten Sie jemanden schicken, _____ sich die Heizung ansieht?“",
+    "options": [
+     "das",
+     "dem",
+     "den",
+     "der"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Bitte um ein anderes Zimmer und erkläre den Grund.",
+    "start": "Könnte ich bitte ein anderes Zimmer bekommen? Mein Zimmer…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Das ist nicht in Ordnung“?",
+    "options": [
+     "Etwas ist falsch oder schlecht.",
+     "Etwas ist perfekt.",
+     "Etwas ist billig.",
+     "Etwas ist geschlossen."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich habe mich schon zweimal _____, aber nichts ist passiert.“",
+    "options": [
+     "gebeschwert",
+     "beschwerte",
+     "beschweren",
+     "beschwert"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Beschwere dich höflich über den Lärm im Nachbarzimmer.",
+    "start": "Entschuldigung, im Zimmer neben mir…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Ersatzschlüssel“?",
+    "options": [
+     "ein Schlüssel für das Auto",
+     "ein kaputter Schlüssel",
+     "ein Schlüssel für die Minibar",
+     "ein zweiter Schlüssel, falls man den ersten verliert"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Das Licht im Bad geht an nicht.",
+     "Das Licht im Bad geht nicht an.",
+     "Das Licht im Bad angeht nicht.",
+     "Das Licht im Bad nicht geht an."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Das Problem ist gelöst. Bedanke dich bei der Rezeption.",
+    "start": "Vielen Dank, dass Sie…"
+   }
+  ]
+ },
+ "intermediate-u6-l1": {
+  "title": "Tasks",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was ist eine „Frist“ bei der Arbeit?",
+    "options": [
+     "der Termin, bis wann etwas fertig sein muss",
+     "ein Treffen mit Kunden",
+     "das Gehalt",
+     "eine kurze Pause"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „eine Aufgabe erledigen“?",
+    "options": [
+     "sie fertig machen",
+     "sie erklären",
+     "sie verschieben",
+     "sie vergessen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich _____ den Bericht schon fertig geschrieben.“",
+    "options": [
+     "werde",
+     "hat",
+     "bin",
+     "habe"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich kümmere mich darum“?",
+    "options": [
+     "Ich verstehe das nicht.",
+     "Ich übernehme die Aufgabe.",
+     "Ich habe keine Zeit dafür.",
+     "Ich habe Angst davor."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Bis Freitag _____ ich die Präsentation fertig machen.“",
+    "options": [
+     "müsse",
+     "muss",
+     "gemusst",
+     "musst"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähl, welche Aufgaben du heute erledigen musst.",
+    "start": "Heute muss ich zuerst…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist eine „Besprechung“?",
+    "options": [
+     "ein Treffen, um über die Arbeit zu sprechen",
+     "eine Pause in der Kantine",
+     "ein Brief an Kunden",
+     "ein freier Tag"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich habe die E-Mail vom Chef noch nicht _____.“",
+    "options": [
+     "antwortet",
+     "beantworten",
+     "beantwortet",
+     "geantwortet"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Bitte einen Kollegen, dir bei einer Aufgabe zu helfen.",
+    "start": "Könntest du mir vielleicht bei…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Überstunden machen“?",
+    "options": [
+     "eine Pause machen",
+     "Urlaub nehmen",
+     "früher nach Hause gehen",
+     "länger arbeiten als normal"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Bevor ich nach Hause gehe, _____ ich noch die E-Mails.“",
+    "options": [
+     "beantworten",
+     "beantwortet",
+     "beantworte",
+     "ich beantworte"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Deine Chefin fragt, wie weit du mit dem Projekt bist. Antworte.",
+    "start": "Ich habe schon… und jetzt…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wer leitet ein Team?",
+    "options": [
+     "die Kundin",
+     "die Teamleiterin",
+     "die Besucherin",
+     "die Praktikantin"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Ich weiß nicht, ob ich das heute schaffen.",
+     "Ich weiß nicht, ob ich schaffe das heute.",
+     "Ich weiß nicht, ob ich das heute schaffe.",
+     "Ich weiß nicht, ob schaffe ich das heute."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre, warum du eine Aufgabe nicht pünktlich fertig machen kannst.",
+    "start": "Leider schaffe ich das nicht bis Freitag, weil…"
+   }
+  ]
+ },
+ "intermediate-u6-l2": {
+  "title": "Colleagues",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wie nennt man eine Person, die in derselben Firma arbeitet wie du?",
+    "options": [
+     "ein Kollege",
+     "ein Kunde",
+     "ein Lieferant",
+     "ein Gast"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Wir duzen uns“?",
+    "options": [
+     "Wir arbeiten zusammen.",
+     "Wir streiten oft.",
+     "Wir sagen „Sie“ zueinander.",
+     "Wir sagen „du“ zueinander."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich verstehe _____ gut mit meinen Kollegen.“",
+    "options": [
+     "ich",
+     "mich",
+     "sich",
+     "mir"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist eine „Kantine“?",
+    "options": [
+     "ein Restaurant für die Mitarbeiter einer Firma",
+     "ein Büro für die Chefs",
+     "ein Raum für den Drucker",
+     "ein Parkplatz"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Kannst du _____ kurz helfen? Der Drucker geht nicht.“",
+    "options": [
+     "mich",
+     "meiner",
+     "ich",
+     "mir"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Stell dich einer neuen Kollegin vor.",
+    "start": "Hallo, ich bin… und arbeite in…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Feierabend“?",
+    "options": [
+     "ein Feiertag",
+     "das Ende des Arbeitstages",
+     "eine Party im Büro",
+     "die Mittagspause"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Mein Kollege, _____ neben mir sitzt, kommt aus Wien.“",
+    "options": [
+     "dem",
+     "den",
+     "der",
+     "die"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähl, mit wem du bei der Arbeit am besten zusammenarbeitest und warum.",
+    "start": "Am besten arbeite ich mit… zusammen, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was macht ein „Praktikant“?",
+    "options": [
+     "Er leitet die Firma.",
+     "Er arbeitet eine Zeit lang, um Erfahrung zu sammeln.",
+     "Er prüft die Rechnungen der Chefs.",
+     "Er kauft bei der Firma ein."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich treffe mich nach der Arbeit _____ meinen Kollegen.“",
+    "options": [
+     "an",
+     "für",
+     "zu",
+     "mit"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Lade deine Kollegen nach der Arbeit auf ein Getränk ein.",
+    "start": "Habt ihr Lust, nach Feierabend…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Wir kommen gut miteinander aus“?",
+    "options": [
+     "Wir arbeiten nicht zusammen.",
+     "Wir haben oft Streit.",
+     "Wir verstehen uns gut.",
+     "Wir gehen oft zusammen nach draußen."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Gestern habe ich mit meiner Kollegin zu Mittag geessen.",
+     "Gestern habe ich mit meine Kollegin zu Mittag gegessen.",
+     "Gestern habe ich mit meiner Kollegin zu Mittag gegessen.",
+     "Gestern ich habe mit meiner Kollegin zu Mittag gegessen."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Bedanke dich bei einem Kollegen für seine Hilfe.",
+    "start": "Danke, dass du mir…"
+   }
+  ]
+ },
+ "intermediate-u6-l3": {
+  "title": "Schedules",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Gleitzeit“?",
+    "options": [
+     "Man arbeitet nur nachts.",
+     "Man arbeitet nur am Wochenende.",
+     "Man kann Beginn und Ende der Arbeit flexibel wählen.",
+     "Man hat jeden Tag frei."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist eine „Frühschicht“?",
+    "options": [
+     "eine Arbeitszeit, die sehr früh am Morgen beginnt",
+     "ein Frühstück im Büro",
+     "ein Termin beim Chef",
+     "eine Pause am Morgen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Die Besprechung fängt um zehn Uhr _____.“",
+    "options": [
+     "ab",
+     "um",
+     "auf",
+     "an"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich habe nächste Woche Urlaub“?",
+    "options": [
+     "Ich habe frei und arbeite nicht.",
+     "Ich bin krank.",
+     "Ich habe eine neue Stelle.",
+     "Ich arbeite länger."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Ich arbeite _____ Montag _____ Freitag.“",
+    "options": [
+     "seit … nach",
+     "ab … zu",
+     "von … bis",
+     "aus … bis"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreib deine normalen Arbeitszeiten.",
+    "start": "Normalerweise fange ich um… an und…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Der Termin wurde vorverlegt“?",
+    "options": [
+     "Er dauert länger.",
+     "Er fällt aus.",
+     "Er findet später statt.",
+     "Er findet früher statt."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich kann morgen nicht früher kommen, _____ ich meine Tochter zur Schule bringe.“",
+    "options": [
+     "weil",
+     "denn",
+     "deshalb",
+     "trotzdem"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Frag deine Chefin, ob du nächste Woche einen Tag freinehmen kannst.",
+    "start": "Wäre es möglich, dass ich…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Feiertag“?",
+    "options": [
+     "der letzte Tag der Woche",
+     "ein Tag mit einer Party im Büro",
+     "ein gesetzlicher freier Tag, z. B. Weihnachten",
+     "ein Tag, an dem man länger arbeitet"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Letzte Woche _____ ich jeden Tag bis 19 Uhr arbeiten.“",
+    "options": [
+     "muss",
+     "gemusst",
+     "müsste",
+     "musste"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Schlag einer Kollegin eine Zeit für ein kurzes Meeting vor.",
+    "start": "Hättest du morgen Vormittag…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich bin morgen ganztags im Büro“?",
+    "options": [
+     "Ich arbeite von zu Hause.",
+     "Ich bin den ganzen Arbeitstag da.",
+     "Ich bin nur am Vormittag da.",
+     "Ich habe frei."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Morgen habe ich um neun Uhr ein Termin.",
+     "Morgen habe ich um neun Uhr einen Termin.",
+     "Morgen habe ich am neun Uhr einen Termin.",
+     "Morgen ich habe um neun Uhr einen Termin."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähl, wie deine Arbeitswoche normalerweise aussieht.",
+    "start": "Am Montag habe ich meistens…"
+   }
+  ]
+ },
+ "intermediate-u6-l4": {
+  "title": "Workplace vocabulary",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Womit druckt man ein Dokument aus?",
+    "options": [
+     "mit dem Drucker",
+     "mit dem Tacker",
+     "mit dem Ordner",
+     "mit dem Locher"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist eine „Abteilung“?",
+    "options": [
+     "ein Teil einer Firma, z. B. Marketing",
+     "eine Kaffeemaschine",
+     "ein Bürostuhl",
+     "ein Vertrag"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Die Akten liegen auf _____ Schreibtisch.“",
+    "options": [
+     "dem",
+     "das",
+     "der",
+     "den"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Vertrag“?",
+    "options": [
+     "ein Kalender",
+     "ein Dokument mit Regeln, das beide Seiten unterschreiben",
+     "eine Rechnung",
+     "eine kurze E-Mail"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Stell den Ordner bitte in _____ Regal.“",
+    "options": [
+     "den",
+     "der",
+     "das",
+     "dem"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreib deinen Arbeitsplatz.",
+    "start": "An meinem Arbeitsplatz habe ich…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist das „Gehalt“?",
+    "options": [
+     "der Chef",
+     "die Arbeitszeit",
+     "die Mittagspause",
+     "das Geld, das man jeden Monat für die Arbeit bekommt"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wo ist der Kopierer? – Er steht neben _____ Tür.“",
+    "options": [
+     "dem",
+     "den",
+     "die",
+     "der"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre, was du in deinem Job machst.",
+    "start": "Ich arbeite als… und bin zuständig für…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „kündigen“?",
+    "options": [
+     "eine neue Stelle bekommen",
+     "mehr Gehalt bekommen",
+     "Urlaub nehmen",
+     "eine Arbeitsstelle selbst beenden"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Mein neues Büro ist viel _____ als das alte.“",
+    "options": [
+     "hellerer",
+     "hell",
+     "heller",
+     "am hellsten"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähl, was dir an deiner Arbeit gefällt und was nicht.",
+    "start": "Mir gefällt, dass…, aber…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wer ist dein „Vorgesetzter“?",
+    "options": [
+     "ein Kollege im gleichen Team",
+     "die Person, die in der Firma über dir steht",
+     "ein neuer Mitarbeiter",
+     "ein Kunde"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Ich ausdrucke den Bericht für die Besprechung.",
+     "Ich drucke den Bericht für die Besprechung aus.",
+     "Ich drucke den Bericht für der Besprechung aus.",
+     "Ich drucke aus den Bericht für die Besprechung."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre einem neuen Kollegen, wo er die Büromaterialien findet.",
+    "start": "Die Büromaterialien findest du…"
+   }
+  ]
+ },
+ "intermediate-u7-l1": {
+  "title": "Calling",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wie meldet man sich in Deutschland oft am Telefon?",
+    "options": [
+     "mit „Guten Appetit“",
+     "mit „Tschüss“",
+     "mit dem eigenen Namen",
+     "mit „Prost“"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich verbinde Sie“?",
+    "options": [
+     "Ich spreche lauter.",
+     "Ich lege jetzt auf.",
+     "Ich stelle Ihren Anruf zu einer anderen Person durch.",
+     "Ich rufe Sie später an."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich rufe Sie morgen noch einmal _____.“",
+    "options": [
+     "auf",
+     "an",
+     "ab",
+     "zu"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „auflegen“ am Telefon?",
+    "options": [
+     "das Gespräch beenden",
+     "das Handy laden",
+     "eine Nummer wählen",
+     "eine Nachricht schreiben"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Könnte ich bitte _____ Frau Weber sprechen?“",
+    "options": [
+     "an",
+     "mit",
+     "zu",
+     "bei"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Ruf in einer Firma an und frag nach Herrn Schmidt.",
+    "start": "Guten Tag, hier spricht… Könnte ich bitte…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was macht der „Anrufbeantworter“?",
+    "options": [
+     "Er nimmt Nachrichten auf, wenn niemand abnimmt.",
+     "Er wählt Nummern automatisch.",
+     "Er lädt das Handy.",
+     "Er zeigt die Uhrzeit."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich habe gestern dreimal _____, aber niemand hat abgenommen.“",
+    "options": [
+     "anrufen",
+     "angerufen",
+     "geanrufen",
+     "angeruft"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre, warum du anrufst.",
+    "start": "Ich rufe an, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Die Leitung ist besetzt“?",
+    "options": [
+     "Die Nummer ist falsch.",
+     "Das Gespräch ist zu Ende.",
+     "Das Handy ist aus.",
+     "Die Person telefoniert gerade mit jemand anderem."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich rufe an, _____ ich einen Termin vereinbaren möchte.“",
+    "options": [
+     "deshalb",
+     "denn",
+     "aber",
+     "weil"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Du hast die falsche Nummer gewählt. Entschuldige dich.",
+    "start": "Oh, Entschuldigung, ich habe…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „sich verwählen“?",
+    "options": [
+     "die falsche Nummer anrufen",
+     "zweimal anrufen",
+     "eine Wahl verlieren",
+     "zu laut sprechen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Können Sie mir bitte zurückrufen?",
+     "Können Sie mich bitte rufen zurück?",
+     "Können Sie mich bitte zurückrufen?",
+     "Können Sie mich bitte zurückgerufen?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Beende ein Telefongespräch höflich.",
+    "start": "Vielen Dank für Ihre Hilfe…"
+   }
+  ]
+ },
+ "intermediate-u7-l2": {
+  "title": "Taking messages",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Kann ich etwas ausrichten?“",
+    "options": [
+     "Soll ich eine Nachricht weitergeben?",
+     "Soll ich lauter sprechen?",
+     "Soll ich auflegen?",
+     "Soll ich das Licht ausmachen?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Er ist gerade nicht am Platz“?",
+    "options": [
+     "Er hat gekündigt.",
+     "Er ist einen Monat im Urlaub.",
+     "Er sitzt auf dem falschen Stuhl.",
+     "Er ist im Moment nicht an seinem Schreibtisch."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Könnten Sie ihm sagen, _____ ich angerufen habe?“",
+    "options": [
+     "wenn",
+     "dass",
+     "was",
+     "ob"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist eine „Rückrufnummer“?",
+    "options": [
+     "die Zimmernummer",
+     "die Nummer des Notrufs",
+     "eine falsche Nummer",
+     "die Nummer, unter der man dich zurückrufen kann"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Sagen Sie _____ bitte, dass ich später komme.“",
+    "options": [
+     "ihr",
+     "ihre",
+     "sie",
+     "sich"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Hinterlasse eine Nachricht für deine Kollegin Frau Meier.",
+    "start": "Könnten Sie Frau Meier bitte ausrichten, dass…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich notiere mir das“?",
+    "options": [
+     "Ich vergesse es.",
+     "Ich lösche es.",
+     "Ich schreibe es auf.",
+     "Ich lese es vor."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Er hat gesagt, dass er morgen zurückrufen _____.“",
+    "options": [
+     "wurde",
+     "werden",
+     "wird",
+     "geworden"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Nimm eine Nachricht an. Frag nach dem Namen und der Telefonnummer.",
+    "start": "Wie ist Ihr Name, bitte? Und unter welcher…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was macht man beim „Buchstabieren“?",
+    "options": [
+     "Man schreibt eine E-Mail.",
+     "Man sagt ein Wort Buchstabe für Buchstabe.",
+     "Man wiederholt den ganzen Satz.",
+     "Man liest einen Text laut vor."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Frau Becker ist in einer Besprechung. Soll sie Sie _____?“",
+    "options": [
+     "zurückruft",
+     "zurückgerufen",
+     "zurückrufen",
+     "ruft zurück"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Buchstabiere deinen Nachnamen am Telefon.",
+    "start": "Mein Nachname ist… Ich buchstabiere…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was sagst du, wenn du nicht alles mitschreiben konntest?",
+    "options": [
+     "Auf Wiederhören!",
+     "Könnten Sie das bitte wiederholen?",
+     "Ich verbinde Sie.",
+     "Bleiben Sie dran."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Ich habe ihm der Nachricht gegeben.",
+     "Ich habe ihn die Nachricht gegeben.",
+     "Ich habe ihm die Nachricht gegebt.",
+     "Ich habe ihm die Nachricht gegeben."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Gib deinem Chef eine Telefonnachricht weiter.",
+    "start": "Herr Braun hat angerufen. Er möchte, dass…"
+   }
+  ]
+ },
+ "intermediate-u7-l3": {
+  "title": "Clarifying information",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was sagst du, wenn du jemanden am Telefon schlecht hörst?",
+    "options": [
+     "Mir ist schlecht.",
+     "Das Essen ist schlecht.",
+     "Das Wetter ist schlecht.",
+     "Die Verbindung ist schlecht."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Wie bitte?“",
+    "options": [
+     "Ich habe das nicht verstanden.",
+     "Wie geht es Ihnen?",
+     "Wie heißen Sie?",
+     "Bitte schön."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Ich höre Sie kaum. Könnten Sie bitte etwas _____ sprechen?“",
+    "options": [
+     "am lautesten",
+     "laute",
+     "lauter",
+     "lauterer"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Habe ich Sie richtig verstanden?“",
+    "options": [
+     "Ich möchte prüfen, ob ich alles richtig verstanden habe.",
+     "Ich habe keine Zeit.",
+     "Ich bin nicht einverstanden.",
+     "Ich möchte auflegen."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Entschuldigung, ich habe nicht verstanden, was Sie _____ haben.“",
+    "options": [
+     "sagte",
+     "gesagen",
+     "sagen",
+     "gesagt"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Du hast eine Zahl nicht verstanden. Frag nach.",
+    "start": "Entschuldigung, haben Sie fünfzehn oder…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Am Telefon sagt man oft „zwo“ statt…",
+    "options": [
+     "zwei",
+     "zwanzig",
+     "zwölf",
+     "zehn"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Habe ich richtig verstanden, _____ wir uns um drei treffen?“",
+    "options": [
+     "was",
+     "wenn",
+     "dass",
+     "ob"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Wiederhole die Informationen, um sicherzugehen.",
+    "start": "Also, wenn ich Sie richtig verstanden habe, …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Bleiben Sie bitte dran“?",
+    "options": [
+     "Kommen Sie vorbei.",
+     "Legen Sie nicht auf und warten Sie.",
+     "Rufen Sie später wieder an.",
+     "Sprechen Sie lauter."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich habe Ihre E-Mail leider _____ bekommen.“",
+    "options": [
+     "keine",
+     "nichts",
+     "kein",
+     "nicht"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Bitte jemanden, dir die Informationen per E-Mail zu schicken.",
+    "start": "Könnten Sie mir das bitte…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Die Verbindung ist abgebrochen“?",
+    "options": [
+     "Die Person ist wütend.",
+     "Die Rechnung ist zu hoch.",
+     "Das Gespräch wurde plötzlich unterbrochen.",
+     "Das Handy ist kaputt."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Könnten Sie das bitte holen wieder?",
+     "Könnten Sie das bitte wiederholen?",
+     "Könntet Sie das bitte wiederholen?",
+     "Könnten Sie bitte das wiederholt?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Du hast den Namen einer Straße nicht verstanden. Frag höflich nach.",
+    "start": "Entschuldigung, wie heißt…"
+   }
+  ]
+ },
+ "intermediate-u8-l1": {
+  "title": "Describing basic symptoms",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was hast du, wenn deine Temperatur bei 39 Grad liegt?",
+    "options": [
+     "Schnupfen",
+     "Durchfall",
+     "Husten",
+     "Fieber"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Mir ist schwindelig“?",
+    "options": [
+     "Ich habe Hunger.",
+     "Alles dreht sich und ich fühle mich unsicher.",
+     "Mir ist kalt.",
+     "Ich bin müde."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Seit heute Morgen tut _____ der Kopf weh.“",
+    "options": [
+     "mein",
+     "mir",
+     "mich",
+     "ich"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was hat man bei einer Erkältung oft?",
+    "options": [
+     "Schnupfen und Husten",
+     "ein gebrochenes Bein",
+     "Zahnschmerzen",
+     "einen Sonnenbrand"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Seit gestern _____ ich Bauchschmerzen.“",
+    "options": [
+     "hast",
+     "habt",
+     "bin",
+     "habe"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreib dem Arzt deine Symptome.",
+    "start": "Ich fühle mich seit zwei Tagen nicht gut. Ich habe…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich habe mich erkältet“?",
+    "options": [
+     "Ich habe mich verletzt.",
+     "Mir ist zu warm.",
+     "Ich habe eine Erkältung bekommen.",
+     "Ich habe etwas Kaltes getrunken."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich habe _____ beim Sport am Knie verletzt.“",
+    "options": [
+     "mir",
+     "ich",
+     "mein",
+     "mich"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähl, was passiert ist und wo es wehtut.",
+    "start": "Gestern bin ich hingefallen, und jetzt tut…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Rezept“ beim Arzt?",
+    "options": [
+     "ein Papier für Medikamente aus der Apotheke",
+     "ein Termin",
+     "eine Rechnung",
+     "eine Krankmeldung"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Mir geht es heute schon _____ als gestern.“",
+    "options": [
+     "gut",
+     "guter",
+     "besser",
+     "am besten"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Sag deinem Chef, dass du krank bist und heute nicht kommst.",
+    "start": "Ich kann heute leider nicht kommen, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich bin erschöpft“?",
+    "options": [
+     "Ich bin sehr, sehr müde.",
+     "Ich habe Hunger.",
+     "Ich bin ganz gesund.",
+     "Ich bin sehr glücklich."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Mein Augen tun weh.",
+     "Meine Augen tun weh.",
+     "Meine Augen tut weh.",
+     "Meine Augen wehtun."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Frag in der Apotheke nach etwas gegen Husten.",
+    "start": "Guten Tag, haben Sie etwas gegen…"
+   }
+  ]
+ },
+ "intermediate-u8-l2": {
+  "title": "Making appointments",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Wo arbeitet ein Hausarzt meistens?",
+    "options": [
+     "an einem Schalter",
+     "in einer Kantine",
+     "in einer Praxis",
+     "in einer Werkstatt"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist ein „Notfall“?",
+    "options": [
+     "eine Rechnung vom Arzt",
+     "eine dringende, gefährliche Situation",
+     "ein normaler Kontrolltermin",
+     "eine leichte Erkältung"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich muss morgen _____ Arzt.“",
+    "options": [
+     "zum",
+     "zur",
+     "beim",
+     "nach"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist die „Krankenversicherungskarte“?",
+    "options": [
+     "ein Rezept",
+     "eine Bankkarte",
+     "die Karte, die zeigt, dass du versichert bist",
+     "ein Ausweis für die Bibliothek"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Ergänze: „Hätten Sie _____ Donnerstag noch einen Termin frei?“",
+    "options": [
+     "im",
+     "um",
+     "am",
+     "an der"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Ruf in der Arztpraxis an und bitte um einen Termin.",
+    "start": "Guten Tag, ich hätte gern einen Termin, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was sind die „Sprechzeiten“ einer Praxis?",
+    "options": [
+     "die Minuten, die der Arzt mit dir spricht",
+     "die Mittagspause des Arztes",
+     "die Telefonnummer der Praxis",
+     "die Zeiten, in denen die Praxis geöffnet ist"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Können Sie mir sagen, _____ die Praxis morgen geöffnet ist?“",
+    "options": [
+     "weil",
+     "ob",
+     "dass",
+     "wenn"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Der vorgeschlagene Termin passt dir nicht. Bitte um einen anderen.",
+    "start": "Das passt mir leider nicht. Hätten Sie…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich muss den Termin absagen“?",
+    "options": [
+     "Ich bringe jemanden mit.",
+     "Ich komme nicht zum Termin.",
+     "Ich komme früher.",
+     "Ich möchte zwei Termine."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich _____ gestern beim Zahnarzt.“",
+    "options": [
+     "war",
+     "hatte",
+     "bin",
+     "habe"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Sag einen Termin ab und erkläre, warum du nicht kommen kannst.",
+    "start": "Ich muss meinen Termin leider absagen, denn…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wer macht in einer Arztpraxis die Termine?",
+    "options": [
+     "die Köchin",
+     "die Kellnerin",
+     "die Pilotin",
+     "die Arzthelferin"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Ich muss meinen Termin auf nächste Woche verschieben.",
+     "Ich muss verschieben meinen Termin auf nächste Woche.",
+     "Ich muss meinen Termin auf nächste Woche verschoben.",
+     "Ich muss meinen Termin auf nächster Woche verschieben."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Bestätige einen Termin. Wiederhole Tag und Uhrzeit.",
+    "start": "Also dann am… um…"
+   }
+  ]
+ },
+ "intermediate-u9-l1": {
+  "title": "Explaining a problem and asking for help",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich komme nicht weiter“?",
+    "options": [
+     "Ich bin schon fertig.",
+     "Ich gehe jetzt nach Hause.",
+     "Ich laufe zu schnell.",
+     "Ich habe ein Problem und brauche Hilfe."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist eine „Lösung“?",
+    "options": [
+     "eine Entschuldigung",
+     "ein neues Problem",
+     "ein Weg, ein Problem zu beheben",
+     "eine schwierige Frage"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Mein Laptop _____ plötzlich nicht mehr an.“",
+    "options": [
+     "gehst",
+     "geht",
+     "gehen",
+     "angeht"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Der Computer ist abgestürzt“?",
+    "options": [
+     "Er funktioniert plötzlich nicht mehr.",
+     "Er ist ganz neu.",
+     "Er ist sehr schnell.",
+     "Er ist ausverkauft."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich weiß nicht, was ich jetzt machen _____.“",
+    "options": [
+     "gesollt",
+     "sollen",
+     "sollst",
+     "soll"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre einem Freund ein Problem mit deinem Handy.",
+    "start": "Seit gestern funktioniert mein Handy nicht richtig. Wenn ich…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Es ist dringend“?",
+    "options": [
+     "Es ist nicht wichtig.",
+     "Es muss sofort erledigt werden.",
+     "Es ist schon gelöst.",
+     "Es ist sehr teuer."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Seit ich das Update installiert _____, geht nichts mehr.“",
+    "options": [
+     "wurde",
+     "hat",
+     "habe",
+     "bin"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Frag deinen Nachbarn, ob er dir helfen kann.",
+    "start": "Entschuldigung, könnten Sie mir vielleicht…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was macht ein „Handwerker“?",
+    "options": [
+     "Er schreibt Bücher.",
+     "Er verkauft Kleidung.",
+     "Er repariert Dinge im Haus.",
+     "Er unterrichtet Kinder."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich habe schon alles _____, aber es klappt nicht.“",
+    "options": [
+     "geversucht",
+     "versuchte",
+     "versuchen",
+     "versucht"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre, was du schon versucht hast, um das Problem zu lösen.",
+    "start": "Ich habe schon versucht, das Gerät neu zu starten, aber…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Das hat geklappt“?",
+    "options": [
+     "Das ist kaputtgegangen.",
+     "Das hat funktioniert.",
+     "Das war zu teuer.",
+     "Das war sehr laut."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Wäre es möglich, dass Sie sich das heute noch ansehen?",
+     "Wäre es möglich, dass Sie sich das heute noch ansieht?",
+     "Wäre es möglich, dass Sie sich das heute noch anzusehen?",
+     "Wäre es möglich, dass Sie sehen sich das heute noch an?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Ruf beim Kundenservice an und bitte um eine schnelle Lösung.",
+    "start": "Guten Tag, ich habe ein Problem mit… Könnten Sie…"
+   }
+  ]
+ },
+ "intermediate-u10-l1": {
+  "title": "Talking about past events and experiences",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort beschreibt ein Erlebnis, das du nie vergisst?",
+    "options": [
+     "unfreundlich",
+     "unwichtig",
+     "unvergesslich",
+     "unpünktlich"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „jemandem zufällig begegnen“?",
+    "options": [
+     "jemanden ohne Plan treffen",
+     "jemanden zum Essen einladen",
+     "jemandem eine E-Mail schreiben",
+     "jemanden anrufen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Bist du schon einmal in Japan _____?“",
+    "options": [
+     "geworden",
+     "gehabt",
+     "gegangen",
+     "gewesen"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Das war ein echtes Abenteuer“?",
+    "options": [
+     "Es war ein ganz normaler Tag.",
+     "Es war ein aufregendes, besonderes Erlebnis.",
+     "Es war eine schwere Prüfung.",
+     "Es war sehr langweilig."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Korrigiere den Fehler: „Ich habe letztes Wochenende nach Hamburg gefahren.“",
+    "options": [
+     "Ich bin letztes Wochenende nach Hamburg gefahrt.",
+     "Ich habe letztes Wochenende nach Hamburg fahren.",
+     "Ich bin letztes Wochenende nach Hamburg gefahren.",
+     "Ich habe letztes Wochenende nach Hamburg gefährt."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähl von der schönsten Reise, die du je gemacht hast.",
+    "start": "Die schönste Reise meines Lebens war…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welcher Zeitausdruck passt NICHT zur Vergangenheit?",
+    "options": [
+     "vor zwei Jahren",
+     "letzten Sommer",
+     "gestern",
+     "nächste Woche"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Als ich ein Kind _____, wohnten wir auf dem Land.“",
+    "options": [
+     "war",
+     "gewesen",
+     "wäre",
+     "bin"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Hast du schon einmal etwas zum ersten Mal ausprobiert? Erzähl davon.",
+    "start": "Als ich das zum ersten Mal gemacht habe, …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort passt? „Wir gingen nach Hause, als es _____ stark zu regnen begann.“",
+    "options": [
+     "meistens",
+     "neulich",
+     "normalerweise",
+     "plötzlich"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ ich in Berlin ankam, regnete es.“",
+    "options": [
+     "Wenn",
+     "Wann",
+     "Als",
+     "Ob"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Beschreib einen besonderen Tag aus deiner Kindheit.",
+    "start": "Als ich klein war, haben wir einmal…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „schließlich“ in einer Geschichte?",
+    "options": [
+     "am Ende, nach langer Zeit",
+     "ab und zu",
+     "zur gleichen Zeit",
+     "ganz am Anfang"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle die richtige Frage:",
+    "options": [
+     "Was hast du im Urlaub gemachen?",
+     "Was hast du im Urlaub gemacht?",
+     "Was du hast im Urlaub gemacht?",
+     "Was hast du im Urlaub machen?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Was hast du noch nie gemacht, möchtest es aber gern einmal ausprobieren?",
+    "start": "Ich habe noch nie…, aber…"
+   }
+  ]
+ },
+ "intermediate-u11-l1": {
+  "title": "Agreeing",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Welcher Satz zeigt Zustimmung?",
+    "options": [
+     "Auf keinen Fall.",
+     "Da bin ich mir nicht sicher.",
+     "Da hast du recht.",
+     "Das sehe ich anders."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ganz meiner Meinung!“?",
+    "options": [
+     "Ich habe keine Meinung.",
+     "Ich denke genau das Gleiche.",
+     "Ich bin dagegen.",
+     "Ich verstehe dich nicht."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Bist du mit dem Plan einverstanden? – Ja, ich bin _____ einverstanden.“",
+    "options": [
+     "dafür",
+     "damit",
+     "davon",
+     "darauf"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was sagst du, wenn du zu hundert Prozent zustimmst?",
+    "options": [
+     "Na ja …",
+     "Kaum.",
+     "Vielleicht.",
+     "Absolut!"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich finde auch, _____ wir mehr Pausen brauchen.“",
+    "options": [
+     "dass",
+     "weil",
+     "wenn",
+     "ob"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Ein Freund sagt: „Am Wochenende sollte man nicht arbeiten.“ Stimm ihm zu.",
+    "start": "Da hast du völlig recht, …"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Da ist was dran“?",
+    "options": [
+     "Da liegt etwas auf dem Tisch.",
+     "Das ist kaputt.",
+     "Das ist verboten.",
+     "Das ist zum Teil richtig."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich stimme _____ zu.“",
+    "options": [
+     "dein",
+     "dich",
+     "dir",
+     "du"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Stimm der Meinung zu, dass Sport gesund ist, und gib ein Beispiel.",
+    "start": "Das sehe ich genauso. Zum Beispiel…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „teilweise zustimmen“?",
+    "options": [
+     "nur in einigen Punkten gleicher Meinung sein",
+     "sehr laut zustimmen",
+     "erst später zustimmen",
+     "gar nicht zustimmen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Das sehe ich genauso _____ du.“",
+    "options": [
+     "wie",
+     "als",
+     "wenn",
+     "dass"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Stimm teilweise zu und ergänze einen eigenen Punkt.",
+    "start": "Da stimme ich dir zum Teil zu, aber…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort passt? „Das ist eine _____ Idee, machen wir das!“",
+    "options": [
+     "falsche",
+     "tolle",
+     "langweilige",
+     "schlimme"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Ich habe derselben Meinung wie du.",
+     "Ich bin derselbe Meinung wie du.",
+     "Ich bin dieselbe Meinung wie du.",
+     "Ich bin derselben Meinung wie du."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Deine Kollegin schlägt vor, die Meetings kürzer zu machen. Stimm zu.",
+    "start": "Gute Idee! Ich finde auch, dass…"
+   }
+  ]
+ },
+ "intermediate-u11-l2": {
+  "title": "Disagreeing",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Welcher Satz zeigt, dass du anderer Meinung bist?",
+    "options": [
+     "Das sehe ich anders.",
+     "Genau!",
+     "Da hast du recht.",
+     "Einverstanden."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ich bin dagegen“?",
+    "options": [
+     "Ich habe keine Meinung.",
+     "Ich bin dafür.",
+     "Ich bin müde.",
+     "Ich finde die Idee nicht gut."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Tut mir leid, aber ich bin _____ deiner Meinung.“",
+    "options": [
+     "nichts",
+     "nicht",
+     "kein",
+     "keiner"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welcher Satz ist eine höfliche Art zu widersprechen?",
+    "options": [
+     "Das ist doch Quatsch.",
+     "Sei still.",
+     "Ich verstehe deinen Punkt, aber …",
+     "Du hast keine Ahnung."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Das stimmt nicht ganz, _____ die Preise sind gestiegen.“",
+    "options": [
+     "dass",
+     "weil",
+     "denn",
+     "obwohl"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Dein Freund sagt: „Fliegen ist besser als Zugfahren.“ Widersprich höflich.",
+    "start": "Das sehe ich ein bisschen anders, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Auf keinen Fall!“?",
+    "options": [
+     "In jedem Fall.",
+     "Niemals! Absolut nicht.",
+     "Vielleicht.",
+     "Gerne."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich finde nicht, _____ das eine gute Lösung ist.“",
+    "options": [
+     "als",
+     "dass",
+     "wenn",
+     "ob"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Widersprich und schlag eine andere Idee vor.",
+    "start": "Ich weiß nicht … Wie wäre es, wenn…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Da muss ich dir widersprechen“?",
+    "options": [
+     "Ich habe eine andere Meinung als du.",
+     "Ich wiederhole, was du sagst.",
+     "Ich stimme dir zu.",
+     "Ich spreche später mit dir."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „_____ ich deine Idee verstehe, bin ich anderer Meinung.“",
+    "options": [
+     "Trotzdem",
+     "Denn",
+     "Aber",
+     "Obwohl"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Deine Kollegin will das Projekt verschieben. Sag, warum du dagegen bist.",
+    "start": "Ich bin eher dagegen, denn…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was ist das Gegenteil von „dafür sein“?",
+    "options": [
+     "dagegen sein",
+     "darauf sein",
+     "daran sein",
+     "dabei sein"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Ich glaube nicht, dass hast du recht.",
+     "Ich glaube nicht, dass du recht habt.",
+     "Ich glaube nicht, dass du recht hast.",
+     "Ich glaube nicht, dass du hast recht."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Sag höflich, dass du nicht einverstanden bist, und erkläre warum.",
+    "start": "Tut mir leid, aber damit bin ich nicht einverstanden, weil…"
+   }
+  ]
+ },
+ "intermediate-u11-l3": {
+  "title": "Explaining reasons",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort leitet einen Grund ein?",
+    "options": [
+     "trotzdem",
+     "aber",
+     "obwohl",
+     "weil"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Der Hauptgrund ist …“?",
+    "options": [
+     "kein Grund",
+     "der letzte Grund",
+     "der wichtigste Grund",
+     "ein falscher Grund"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich lerne Deutsch, _____ ich in Österreich arbeiten möchte.“",
+    "options": [
+     "denn",
+     "weil",
+     "deshalb",
+     "darum"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort zeigt eine Folge?",
+    "options": [
+     "weil",
+     "deshalb",
+     "obwohl",
+     "denn"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Es hat stark geregnet, _____ sind wir zu Hause geblieben.“",
+    "options": [
+     "deshalb",
+     "denn",
+     "obwohl",
+     "weil"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre, warum du Deutsch lernst.",
+    "start": "Ich lerne Deutsch, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort bedeutet ungefähr „aus diesem Grund“?",
+    "options": [
+     "trotzdem",
+     "obwohl",
+     "darum",
+     "vielleicht"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich bleibe heute zu Hause, _____ ich mich nicht gut fühle.“",
+    "options": [
+     "deshalb",
+     "also",
+     "denn",
+     "da"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre, warum du lieber in der Stadt oder auf dem Land wohnst.",
+    "start": "Ich wohne lieber…, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Das liegt daran, dass …“?",
+    "options": [
+     "Das ist mir egal.",
+     "Das liegt auf dem Tisch.",
+     "Der Grund dafür ist, dass …",
+     "Das ist ganz neu."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich bin zu spät gekommen, weil der Bus Verspätung _____.“",
+    "options": [
+     "gehabt",
+     "haben",
+     "hattet",
+     "hatte"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre, warum dir dein Lieblingsfilm so gut gefällt.",
+    "start": "Der Film gefällt mir so gut, weil…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welches Wort passt? „Ich nehme den Zug. Er ist billiger, und _____ ist er umweltfreundlicher.“",
+    "options": [
+     "dass",
+     "außerdem",
+     "obwohl",
+     "weil"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Ich spare Geld, um ein Auto zu kaufen.",
+     "Ich spare Geld, um ein Auto kaufen.",
+     "Ich spare Geld, für ein Auto zu kaufen.",
+     "Ich spare Geld, um zu ein Auto kaufen."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Erkläre, warum du ein bestimmtes Hobby hast.",
+    "start": "Mein Hobby ist…, weil…"
+   }
+  ]
+ },
+ "intermediate-u12-l1": {
+  "title": "Longer, more natural everyday conversations",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Was ist „Smalltalk“?",
+    "options": [
+     "ein lockeres Gespräch über einfache Themen",
+     "ein Vorstellungsgespräch",
+     "ein heftiger Streit",
+     "eine lange Rede"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was sagst du, wenn du jemanden lange nicht gesehen hast?",
+    "options": [
+     "Bis morgen!",
+     "Lange nicht gesehen! Wie geht's?",
+     "Gute Besserung!",
+     "Guten Appetit!"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wie war dein Urlaub? – Toll! Wir _____ jeden Tag am Strand.“",
+    "options": [
+     "haben",
+     "hatten",
+     "sind",
+     "waren"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Wie läuft's?“",
+    "options": [
+     "Wohin rennst du?",
+     "Wie spät ist es?",
+     "Was kostet das?",
+     "Wie geht es so?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Ich freue mich schon _____ den Urlaub nächsten Monat.“",
+    "options": [
+     "auf",
+     "über",
+     "für",
+     "an"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Beginne ein Gespräch mit einem Nachbarn im Treppenhaus.",
+    "start": "Hallo! Schönes Wetter heute, oder? Haben Sie…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Was bedeutet „Ach, echt?“",
+    "options": [
+     "Ich bin müde.",
+     "Auf Wiedersehen.",
+     "Wirklich? Das überrascht mich.",
+     "Das ist falsch."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Interessierst du _____ für Fußball?“",
+    "options": [
+     "dich",
+     "sich",
+     "du",
+     "dir"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Erzähl einem Freund, was du letztes Wochenende gemacht hast.",
+    "start": "Am Wochenende bin ich…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Wie beendest du ein Gespräch höflich?",
+    "options": [
+     "Wie heißt du?",
+     "Was machst du so?",
+     "Ich muss leider los. Bis bald!",
+     "Erzähl mal!"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle das richtige Wort: „Wenn ich mehr Zeit _____, würde ich öfter reisen.“",
+    "options": [
+     "hatte",
+     "habe",
+     "gehabt",
+     "hätte"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Frag jemanden nach seinen Hobbys und erzähl auch von deinen.",
+    "start": "Was machst du gern in deiner Freizeit? Ich…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Welche Frage passt gut zum Smalltalk mit einer neuen Bekanntschaft?",
+    "options": [
+     "Wie viel verdienen Sie?",
+     "Warum sind Sie nicht verheiratet?",
+     "Woher kommen Sie?",
+     "Wie alt ist Ihre Mutter genau?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Wähle den richtigen Satz:",
+    "options": [
+     "Ich habe gehört, dass du umgezogen hast.",
+     "Ich habe gehört, dass du umgezogen bist.",
+     "Ich habe gehört, dass du bist umgezogen.",
+     "Ich habe gehört, dass du umgezieht bist."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Du triffst eine alte Freundin. Erzähl, was es bei dir Neues gibt.",
+    "start": "Bei mir gibt es einiges Neues. Ich habe…"
+   }
+  ]
+ }
+}

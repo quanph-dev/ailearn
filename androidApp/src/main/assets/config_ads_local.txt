@@ -1,0 +1,10 @@
+{
+  "status": false,
+  "ads_type": "admob",
+  "app_open": { "status": false, "values": [] },
+  "splash": { "status": false, "values": [] },
+  "interstitials": { "status": false, "values": [] },
+  "rewards": { "status": false, "values": [] },
+  "banners": { "status": false, "values": [] },
+  "natives": { "status": false, "values": [] }
+}

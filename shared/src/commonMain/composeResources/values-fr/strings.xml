@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="splash_loading">Démarrage de Web Browser...</string>
+    <string name="cd_back">Retour</string>
+    <string name="language_title">Langue</string>
+    <string name="language_confirm">Confirmer</string>
+    <string name="onboarding_next">Suivant</string>
+    <string name="onboarding_start">Commencer</string>
+    <string name="onboarding_title_1">Découvrez Web Browser</string>
+    <string name="onboarding_subtitle_1">Déverrouillez un monde d\'objets, de personnages, d\'armes, de compagnons et de récompenses exclusifs dans une expérience de jeu pleine d\'action.</string>
+    <string name="onboarding_title_2">Équipez-vous à votre façon</string>
+    <string name="onboarding_subtitle_2">Choisissez des personnages, obtenez des armes puissantes, voyagez avec des compagnons et créez votre propre style pour chaque bataille.</string>
+    <string name="onboarding_title_3">Tour de chance, récompenses rares</string>
+    <string name="onboarding_subtitle_3">Tentez votre chance avec le Lucky Spin pour obtenir quotidiennement des diamants, des skins d\'armes, des compagnons, des personnages et de nombreuses récompenses précieuses.</string>
+    <string name="settings_general_language">Langue</string>
+    <string name="language_save_error">Impossible d’enregistrer votre choix. Veuillez réessayer.</string>
+    <string name="home_welcome">Bienvenue</string>
+    <string name="home_description">Choisissez une langue ou consultez vos paramètres.</string>
+    <string name="network_offline_title">Aucune connexion Internet</string>
+    <string name="network_offline_message">Connectez-vous à Internet pour continuer à utiliser l’application.</string>
+    <string name="network_try_again">Réessayer</string>
+    <string name="ui_exit_the_app">Quitter l’application</string>
+    <string name="ui_are_you_sure_you_want_to_exit_the_app_now">Voulez-vous vraiment quitter l’application maintenant ?</string>
+    <string name="ui_no">Non</string>
+    <string name="ui_yes_exit">Oui, quitter</string>
+</resources>

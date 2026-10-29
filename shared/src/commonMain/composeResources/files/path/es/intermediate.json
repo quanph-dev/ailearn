@@ -1,0 +1,4528 @@
+{
+ "intermediate-u1-l1": {
+  "title": "Invitations",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "En «¿Quedamos el sábado?», ¿qué significa «quedar»?",
+    "options": [
+     "Cancelar un plan",
+     "Quedarse en casa",
+     "Verse con alguien",
+     "Llamar por teléfono"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Cómo se llama la persona que organiza una fiesta y recibe a los invitados?",
+    "options": [
+     "el anfitrión",
+     "el camarero",
+     "el vecino",
+     "el invitado"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Quiero que _____ a mi cumpleaños.»",
+    "options": [
+     "vienes",
+     "venir",
+     "vendrás",
+     "vengas"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué frase sirve para invitar a alguien a cenar?",
+    "options": [
+     "Ayer cené con mis amigos.",
+     "¿Te apetece cenar conmigo el viernes?",
+     "La cena estuvo muy rica.",
+     "No puedo cenar el viernes."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Gracias para la invitación.»",
+    "options": [
+     "Gracias para la invitación.",
+     "Gracias por la invitación.",
+     "Gracias de la invitación.",
+     "Gracias en la invitación."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Invita a un amigo a hacer algo contigo este fin de semana.",
+    "start": "¿Te apetece…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Cuál NO es un evento al que te pueden invitar?",
+    "options": [
+     "una boda",
+     "una barbacoa",
+     "una factura",
+     "una inauguración"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Si _____ libre el sábado, vamos a la playa.»",
+    "options": [
+     "estás",
+     "estés",
+     "estarías",
+     "estuviste"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Cuenta una fiesta o un evento al que te invitaron hace poco.",
+    "start": "Hace poco me invitaron a…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «confirmar asistencia» en una invitación?",
+    "options": [
+     "Llevar un regalo",
+     "Llegar muy temprano",
+     "Pagar la entrada",
+     "Decir si vas a ir"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Gracias por _____ a tu fiesta.»",
+    "options": [
+     "invitándome",
+     "me invitar",
+     "invitarme",
+     "invitado"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Invita a un amigo a tu fiesta de cumpleaños. Di el día y el lugar.",
+    "start": "Quiero invitarte a mi cumpleaños. Es el…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un amigo te dice: «Vamos al concierto, ¿te apuntas?». ¿Qué te pregunta?",
+    "options": [
+     "Si escribes tu nombre",
+     "Si estás enfermo",
+     "Si tienes prisa",
+     "Si quieres ir con ellos"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la invitación correcta:",
+    "options": [
+     "¿Por qué no quedamos en el parque?",
+     "¿Por qué no quedando en el parque?",
+     "¿Por qué no quedamos a el parque?",
+     "¿Porque no quedamos en el parque?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Invita con cortesía a un compañero de trabajo muy ocupado a tomar un café.",
+    "start": "Si tienes un momento, ¿te gustaría…"
+   }
+  ]
+ },
+ "intermediate-u1-l2": {
+  "title": "Accepting/declining",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Un amigo te invita y respondes «¡Me encantaría!». ¿Qué significa?",
+    "options": [
+     "Que no puedes ir",
+     "Que aceptas con gusto",
+     "Que todavía no lo sabes",
+     "Que estás ocupado"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué frase usas para rechazar una invitación con amabilidad?",
+    "options": [
+     "Lo siento, pero ese día no puedo.",
+     "¡Qué buena idea, cuenta conmigo!",
+     "¡Claro que sí, allí estaré!",
+     "¡Vale, nos vemos allí!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Me encantaría ir, pero _____ que trabajar.»",
+    "options": [
+     "debo",
+     "estoy",
+     "necesito",
+     "tengo"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si alguien responde «Cuenta conmigo», quiere decir...",
+    "options": [
+     "No me esperes.",
+     "Llámame más tarde.",
+     "Sí, iré seguro.",
+     "Tengo que contar algo."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Me gustaré ir, pero no puedo.»",
+    "options": [
+     "Me gustaré ir, pero no puedo.",
+     "Me gustaría ir, pero no puedo.",
+     "Me gustara ir, pero no puedo.",
+     "Me gusto ir, pero no puedo."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Un amigo te invita al cine el viernes. Acepta la invitación con entusiasmo.",
+    "start": "¡Qué buena idea! Me encantaría…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué excusa sirve para no ir a una cena?",
+    "options": [
+     "Me encanta la comida.",
+     "Llevaré el postre.",
+     "Allí estaré a las ocho.",
+     "Ya tengo otro compromiso."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Lo siento, ayer no _____ ir a tu fiesta.»",
+    "options": [
+     "podré",
+     "pude",
+     "puedo",
+     "podría"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Rechaza una invitación a una boda y explica por qué no puedes ir.",
+    "start": "Muchas gracias por la invitación, pero…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si dices «A lo mejor voy», ¿qué quieres decir?",
+    "options": [
+     "Que quizás vas",
+     "Que no vas",
+     "Que vas seguro",
+     "Que vas el mejor día"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Gracias, pero esta vez no puedo. ¿Lo dejamos _____ otro día?»",
+    "options": [
+     "por",
+     "en",
+     "para",
+     "a"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Un compañero te invita a comer, pero no estás seguro. Responde sin decir sí ni no.",
+    "start": "Todavía no lo sé, porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Te preguntan «¿Vienes a la barbacoa?» y quieres ir. ¿Qué respondes?",
+    "options": [
+     "No, gracias, no me apetece.",
+     "Lo siento, me es imposible.",
+     "¡Por supuesto! ¿Llevo algo?",
+     "Quizás otro día."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Siento de no poder ir a tu fiesta.",
+     "Siento no poder ir a tu fiesta.",
+     "Siento no puedo ir a tu fiesta.",
+     "Siento a no poder ir a tu fiesta."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Acepta una invitación, pero di que vas a llegar un poco tarde.",
+    "start": "Sí, iré con mucho gusto, aunque…"
+   }
+  ]
+ },
+ "intermediate-u1-l3": {
+  "title": "Arranging times",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «quedar a las ocho»?",
+    "options": [
+     "Verse a las ocho",
+     "Dormir hasta las ocho",
+     "Terminar a las ocho",
+     "Llamar a las ocho"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué verbo significa cambiar una cita a un día posterior?",
+    "options": [
+     "cancelar",
+     "reservar",
+     "confirmar",
+     "aplazar"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Quedamos _____ las seis en la puerta del cine.»",
+    "options": [
+     "a",
+     "por",
+     "en",
+     "de"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué preguntas para saber si a alguien le va bien una hora?",
+    "options": [
+     "¿Qué hora es?",
+     "¿Cuántas horas tienes?",
+     "¿A qué hora naciste?",
+     "¿Te viene bien a las cinco?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Nos vemos en el martes a las diez.»",
+    "options": [
+     "Nos vemos en el martes a las diez.",
+     "Nos vemos el martes en las diez.",
+     "Nos vemos el martes a las diez.",
+     "Nos vemos al martes a las diez."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Propón a un amigo un día y una hora para quedar.",
+    "start": "¿Qué te parece si quedamos el…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Siempre llegas a la hora exacta. Eres...",
+    "options": [
+     "impuntual",
+     "puntual",
+     "tardío",
+     "temprano"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Cuando _____ del trabajo mañana, te llamaré.»",
+    "options": [
+     "salgo",
+     "saldré",
+     "salí",
+     "salga"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Explica a qué hora terminas hoy y cuándo puedes quedar.",
+    "start": "Hoy termino a las… así que podemos…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si un amigo dice «Ese día me viene fatal», quiere decir que...",
+    "options": [
+     "le va muy bien ese día",
+     "no puede quedar ese día",
+     "está enfermo",
+     "llega muy pronto"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Tengo que terminar el informe _____ el viernes.»",
+    "options": [
+     "por",
+     "en",
+     "para",
+     "a"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Tu amigo no puede el sábado. Propón otro día y otra hora.",
+    "start": "Si el sábado no puedes, ¿qué tal…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Cuál es lo contrario de «adelantar» una cita?",
+    "options": [
+     "retrasar",
+     "apuntar",
+     "reservar",
+     "anular"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la pregunta correcta:",
+    "options": [
+     "¿A qué hora te va bien quedar?",
+     "¿A qué hora te va bien a quedar?",
+     "¿Qué hora te va bien quedar?",
+     "¿A qué hora te van bien quedar?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Quedas con un amigo. Confirma el día, la hora y el lugar.",
+    "start": "Entonces quedamos el… a las… en…"
+   }
+  ]
+ },
+ "intermediate-u2-l1": {
+  "title": "Ordering",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "En un restaurante, ¿qué pides para ver los platos?",
+    "options": [
+     "la cuenta",
+     "la propina",
+     "la carta",
+     "la receta"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué es el «menú del día»?",
+    "options": [
+     "La lista de bebidas",
+     "Un menú a precio fijo con primero, segundo y postre",
+     "El postre de la casa",
+     "La comida para llevar"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «_____ un café con leche, por favor.»",
+    "options": [
+     "Quisiste",
+     "Quiso",
+     "Quisieron",
+     "Quisiera"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Cómo se llama un plato pequeño que se toma antes del principal?",
+    "options": [
+     "el entrante",
+     "la sobremesa",
+     "la cuenta",
+     "el postre"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Por mí, una ensalada mixta, por favor.»",
+    "options": [
+     "Para mi, una ensalada mixta, por favor.",
+     "Por mí, una ensalada mixta, por favor.",
+     "Para mí, una ensalada mixta, por favor.",
+     "Por mi, una ensalada mixta, por favor."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Estás en un restaurante. Pide un primer plato, un segundo y una bebida.",
+    "start": "De primero quisiera… y de segundo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "El camarero pregunta «¿Y para beber?». Quiere saber...",
+    "options": [
+     "qué postre quieres",
+     "qué bebida quieres",
+     "cuánto vas a pagar",
+     "dónde quieres sentarte"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «¿Me _____ traer la carta, por favor?»",
+    "options": [
+     "podré",
+     "pude",
+     "poder",
+     "podría"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Pregunta al camarero qué plato te recomienda.",
+    "start": "Perdone, ¿qué me recomienda…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pides la carne «poco hecha». ¿Cómo la quieres?",
+    "options": [
+     "Muy cocinada y seca",
+     "Cocinada poco tiempo, roja por dentro",
+     "Servida fría",
+     "Con mucha sal"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «—¿Y el pescado? —_____ recomiendo, está muy fresco.»",
+    "options": [
+     "Le lo",
+     "Lo le",
+     "Se lo",
+     "Se la"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Pide algo para picar y compartir con tus amigos.",
+    "start": "Para compartir, nos gustaría…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué NO es una bebida?",
+    "options": [
+     "una tostada",
+     "un refresco",
+     "una infusión",
+     "un zumo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "¿Nos trae dos café y una tostada?",
+     "¿Nos trae dos cafés y un tostada?",
+     "¿Nos trae dos cafés y una tostadas?",
+     "¿Nos trae dos cafés y una tostada?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Pide un café y algo dulce en una cafetería.",
+    "start": "Buenas tardes, me gustaría…"
+   }
+  ]
+ },
+ "intermediate-u2-l2": {
+  "title": "Special requests",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Una persona que no come carne ni pescado es...",
+    "options": [
+     "vegetariana",
+     "celíaca",
+     "alérgica",
+     "golosa"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «sin gluten» en la carta?",
+    "options": [
+     "Sin azúcar",
+     "Sin leche",
+     "Con poca sal",
+     "Que no contiene gluten"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Quiero que la carne _____ bien hecha.»",
+    "options": [
+     "está",
+     "estará",
+     "esté",
+     "estar"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Eres alérgico a los frutos secos. ¿Qué dices al camarero?",
+    "options": [
+     "Me encantan los frutos secos.",
+     "No puedo tomar frutos secos, soy alérgico.",
+     "Los frutos secos son baratos.",
+     "Póngame más nueces, por favor."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «¿La hamburguesa? Prefiero la sin cebolla.»",
+    "options": [
+     "Las prefiero sin cebolla.",
+     "Le prefiero sin cebolla.",
+     "La prefiero sin cebolla.",
+     "Prefiero la sin cebolla."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Pide un plato sin un ingrediente que no te gusta.",
+    "start": "Perdone, ¿podría prepararme… sin…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa pedir comida «para llevar»?",
+    "options": [
+     "Para comer en el restaurante",
+     "Para compartir en la mesa",
+     "Para pagar con tarjeta",
+     "Para comer fuera del restaurante"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «¿Le importaría _____ la música un poco?»",
+    "options": [
+     "bajar",
+     "baje",
+     "bajara",
+     "bajando"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Eres vegetariano. Pregunta al camarero qué platos puedes comer.",
+    "start": "Soy vegetariano. ¿Qué platos…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Pides «la salsa aparte». ¿Qué quieres?",
+    "options": [
+     "Sin salsa",
+     "La salsa en un recipiente separado",
+     "Mucha salsa encima",
+     "La salsa muy picante"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Este plato no es _____ niños, es muy picante.»",
+    "options": [
+     "por",
+     "a",
+     "para",
+     "con"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Pide una mesa en la terraza o cerca de la ventana.",
+    "start": "¿Sería posible sentarnos…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un plato con mucho chile es...",
+    "options": [
+     "picante",
+     "salado",
+     "amargo",
+     "dulce"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "¿Podría me traer otro tenedor?",
+     "¿Podría traerme otro tenedor?",
+     "¿Podría traer me otro tenedor?",
+     "¿Podría traerme otra tenedor?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Tu sopa está fría. Pide con amabilidad que la calienten.",
+    "start": "Disculpe, la sopa está fría. ¿Podría…"
+   }
+  ]
+ },
+ "intermediate-u2-l3": {
+  "title": "Paying",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «invitar» en «Hoy invito yo»?",
+    "options": [
+     "Reservar una mesa",
+     "Llamar a más amigos",
+     "Pedir más comida",
+     "Pagar por todos"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "El dinero extra que dejas al camarero por el buen servicio es...",
+    "options": [
+     "la propina",
+     "el cambio",
+     "el recibo",
+     "el descuento"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «¿Puedo pagar _____ tarjeta?»",
+    "options": [
+     "en",
+     "por",
+     "a",
+     "con"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «pagar a medias»?",
+    "options": [
+     "Pagar solo la bebida",
+     "No pagar nada",
+     "Pagar la mitad cada uno",
+     "Pagar con monedas"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Pagué veinte euros para la comida.»",
+    "options": [
+     "Pagué veinte euros para la comida.",
+     "Pagué veinte euros por la comida.",
+     "Pagué veinte euros a la comida.",
+     "Pagué veinte euros de la comida."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Pide la cuenta y pregunta si puedes pagar con tarjeta.",
+    "start": "Perdone, ¿nos trae la cuenta? ¿Se puede…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "El papel que demuestra lo que has pagado es...",
+    "options": [
+     "el recibo",
+     "la propina",
+     "la carta",
+     "la reserva"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Ayer _____ yo la cena, así que hoy pagas tú.»",
+    "options": [
+     "pagaba",
+     "pagaré",
+     "pago",
+     "pagué"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Propón a tus amigos pagar la cuenta a medias.",
+    "start": "¿Qué tal si pagamos…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si dices al camarero «Quédese con el cambio», significa que...",
+    "options": [
+     "quieres todo el dinero de vuelta",
+     "puede guardar el dinero que sobra",
+     "quieres cambiar de mesa",
+     "vas a pagar mañana"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «—¿Me trae la cuenta? —Ahora mismo _____ traigo.»",
+    "options": [
+     "le la",
+     "se lo",
+     "se la",
+     "la le"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Hay un error en la cuenta. Explícaselo al camarero con amabilidad.",
+    "start": "Perdone, creo que hay un error en la cuenta…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «IVA incluido» en una cuenta?",
+    "options": [
+     "El impuesto ya está en el precio",
+     "La bebida es gratis",
+     "El pan se paga aparte",
+     "La propina es obligatoria"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Esta vez invito yo, que tú pagabas la última vez.",
+     "Esta vez invito yo, que tú pagaste la última vez.",
+     "Esta vez invito yo, que tú pagas la última vez.",
+     "Esta vez invito yo, que tú pagarás la última vez."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Invita a un amigo a la comida y dile por qué.",
+    "start": "Hoy invito yo, porque…"
+   }
+  ]
+ },
+ "intermediate-u3-l1": {
+  "title": "Comparing products",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Algo que cuesta poco dinero es...",
+    "options": [
+     "caro",
+     "lujoso",
+     "gratis",
+     "barato"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «buena relación calidad-precio»?",
+    "options": [
+     "Es de una marca famosa",
+     "Tiene un color bonito",
+     "Es bueno para lo que cuesta",
+     "Es el más caro de la tienda"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Este móvil es _____ caro que el otro.»",
+    "options": [
+     "tan",
+     "más",
+     "muy",
+     "mucho"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué palabra describe algo que dura mucho sin romperse?",
+    "options": [
+     "frágil",
+     "ligero",
+     "barato",
+     "resistente"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Esta camiseta es más mejor que la azul.»",
+    "options": [
+     "Esta camiseta es tan mejor que la azul.",
+     "Esta camiseta es más mejor de la azul.",
+     "Esta camiseta es mejor que la azul.",
+     "Esta camiseta es mejor de la azul."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Compara dos teléfonos móviles y di cuál prefieres.",
+    "start": "Este móvil es más… que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa que un producto «está de oferta»?",
+    "options": [
+     "Tiene un precio más bajo durante un tiempo",
+     "Es nuevo",
+     "Está agotado",
+     "Está roto"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Este portátil es _____ ligero como el mío.»",
+    "options": [
+     "tan",
+     "más",
+     "tanto",
+     "igual"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Pide al dependiente que te explique la diferencia entre dos productos.",
+    "start": "Perdone, ¿cuál es la diferencia entre…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué preguntas para saber la opinión del dependiente?",
+    "options": [
+     "¿Cuánto pesa usted?",
+     "¿Dónde vive?",
+     "¿Cuál me recomienda?",
+     "¿Qué hora es?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Esta es la tele _____ cara de toda la tienda.»",
+    "options": [
+     "tan",
+     "muy",
+     "mucho",
+     "más"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Explica qué es más importante para ti al comprar: el precio o la calidad.",
+    "start": "Para mí, lo más importante es…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si un producto «está agotado», significa que...",
+    "options": [
+     "es muy barato",
+     "ya no quedan unidades",
+     "está roto",
+     "es nuevo"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Este modelo tiene tantas funciones como aquel.",
+     "Este modelo tiene tan funciones como aquel.",
+     "Este modelo tiene tantos funciones como aquel.",
+     "Este modelo tiene tantas funciones que aquel."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Un amigo quiere comprar unos auriculares. Dale un consejo.",
+    "start": "Te recomiendo que compres…"
+   }
+  ]
+ },
+ "intermediate-u3-l2": {
+  "title": "Refunds",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Cuando una tienda te devuelve el dinero, recibes un...",
+    "options": [
+     "descuento",
+     "recibo",
+     "regalo",
+     "reembolso"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué necesitas normalmente para devolver un producto?",
+    "options": [
+     "el pasaporte",
+     "una receta médica",
+     "el ticket de compra",
+     "el menú"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Quiero que me _____ el dinero.»",
+    "options": [
+     "devuelven",
+     "devuelvan",
+     "devolver",
+     "devolverán"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un producto que viene con un fallo de fábrica es...",
+    "options": [
+     "rebajado",
+     "defectuoso",
+     "envuelto",
+     "agotado"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Compré esta chaqueta hace una semana y se rompía ayer.»",
+    "options": [
+     "Compraba esta chaqueta hace una semana y se rompió ayer.",
+     "Compré esta chaqueta hace una semana y se rompía ayer.",
+     "Compré esta chaqueta hace una semana y se ha rompido ayer.",
+     "Compré esta chaqueta hace una semana y se rompió ayer."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Explica al dependiente por qué quieres devolver un producto.",
+    "start": "Hola, quería devolver esto porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué es el «plazo de devolución»?",
+    "options": [
+     "El tiempo que tienes para devolver algo",
+     "La dirección de la tienda",
+     "El precio de un producto",
+     "El horario de la tienda"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Lo compré _____ internet, pero quiero devolverlo en la tienda.»",
+    "options": [
+     "a",
+     "para",
+     "por",
+     "hacia"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Pregunta si puedes devolver un regalo sin el ticket.",
+    "start": "Me regalaron esto, pero no tengo el ticket. ¿Es posible…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si la tienda te da un «vale», recibes...",
+    "options": [
+     "dinero en efectivo",
+     "una bolsa",
+     "un papel para comprar otra cosa en la tienda",
+     "una factura"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Esta mañana _____ la tostadora a la tienda.»",
+    "options": [
+     "he devolvido",
+     "he devuelto",
+     "he devolver",
+     "he devuelvo"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Llama a la tienda online porque tu pedido llegó dañado.",
+    "start": "Hola, le llamo porque mi pedido…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué es la «garantía» de un producto?",
+    "options": [
+     "Una promesa de repararlo o cambiarlo durante un tiempo",
+     "Un regalo con la compra",
+     "Un descuento especial",
+     "Una bolsa de plástico"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "El dependiente va a devolverle el dinero al cliente. Elige la frase correcta:",
+    "options": [
+     "Le lo devuelvo ahora.",
+     "Se le devuelvo ahora.",
+     "Lo le devuelvo ahora.",
+     "Se lo devuelvo ahora."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "No quieren devolverte el dinero. Pide hablar con el encargado.",
+    "start": "Disculpe, me gustaría hablar con…"
+   }
+  ]
+ },
+ "intermediate-u3-l3": {
+  "title": "Exchanges",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "En una tienda, ¿qué significa «cambiar» un producto?",
+    "options": [
+     "Romperlo",
+     "Devolverlo y llevarte otro",
+     "Pagarlo dos veces",
+     "Regalarlo"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "La medida de la ropa (S, M, L) es la...",
+    "options": [
+     "marca",
+     "etiqueta",
+     "manga",
+     "talla"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Estos zapatos me quedan pequeños. ¿Tiene un número _____ grande?»",
+    "options": [
+     "más",
+     "muy",
+     "menos",
+     "tan"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si una camisa «te queda grande», significa que...",
+    "options": [
+     "es de tu talla",
+     "es muy barata",
+     "es demasiado grande para ti",
+     "te gusta mucho"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Quería cambiar este jersey para uno de otro color.»",
+    "options": [
+     "Quería cambiar este jersey por uno de otro color.",
+     "Quería cambiar este jersey para uno de otro color.",
+     "Quería cambiar este jersey de uno de otro color.",
+     "Quería cambiar este jersey en uno de otro color."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Pide cambiar una camiseta por otra talla.",
+    "start": "Hola, compré esta camiseta ayer, pero…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Dónde te pruebas la ropa en una tienda?",
+    "options": [
+     "en la caja",
+     "en el escaparate",
+     "en el probador",
+     "en el almacén"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Si no le queda bien, _____ cambiarlo sin problema.»",
+    "options": [
+     "poder",
+     "pueda",
+     "pudo",
+     "puede"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Explica qué problema tiene el producto y qué prefieres: un cambio o el reembolso.",
+    "start": "El problema es que… así que prefiero…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si el dependiente dice «No nos queda en azul», significa que...",
+    "options": [
+     "el azul no te favorece",
+     "no tienen más en azul",
+     "el azul es más caro",
+     "el azul es nuevo"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «—¿Le gustan estos pantalones? —Sí, _____ llevo.»",
+    "options": [
+     "los me",
+     "me las",
+     "me los",
+     "me les"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Pregunta si tienen el mismo modelo en otro color.",
+    "start": "¿Tienen este mismo modelo en…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «probarse» un vestido?",
+    "options": [
+     "Ponérselo para ver cómo queda",
+     "Comprarlo",
+     "Lavarlo",
+     "Devolverlo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Me gustaría cambiarlo por una talla más pequeño.",
+     "Me gustaría cambiarlo por una talla tan pequeña.",
+     "Me gustaría cambiarlo por una talla más pequeñas.",
+     "Me gustaría cambiarlo por una talla más pequeña."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Cuenta una vez que cambiaste algo en una tienda.",
+    "start": "Una vez compré… y tuve que cambiarlo porque…"
+   }
+  ]
+ },
+ "intermediate-u4-l1": {
+  "title": "Check-in",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "El documento que necesitas para subir al avión es la...",
+    "options": [
+     "tarjeta de crédito",
+     "tarjeta de embarque",
+     "tarjeta postal",
+     "tarjeta de visita"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «facturar la maleta»?",
+    "options": [
+     "Entregarla para que viaje en la bodega del avión",
+     "Pagar la maleta en una tienda",
+     "Abrir la maleta",
+     "Comprar una maleta nueva"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Es importante que _____ dos horas antes del vuelo.»",
+    "options": [
+     "llegas",
+     "llegarás",
+     "llegar",
+     "llegues"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Quieres ver el paisaje durante el vuelo. ¿Qué asiento pides?",
+    "options": [
+     "un asiento del medio",
+     "un asiento de pasillo",
+     "un asiento de ventanilla",
+     "un billete de tren"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «—¿Cuántas maletas va a facturar? —Voy a facturar los dos.»",
+    "options": [
+     "Voy a facturar los dos.",
+     "Voy a facturar las dos.",
+     "Voy a facturar les dos.",
+     "Voy a facturar la dos."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Estás en el mostrador de facturación. Pide un asiento de pasillo.",
+    "start": "Buenos días, ¿sería posible…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si tu maleta pesa más de lo permitido, tienes...",
+    "options": [
+     "exceso de equipaje",
+     "una escala",
+     "equipaje de mano",
+     "un retraso"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Ya _____ la tarjeta de embarque, así que voy directo al control.»",
+    "options": [
+     "conseguía",
+     "he conseguido",
+     "conseguiré",
+     "conseguir"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Pregunta en el mostrador si tu vuelo sale a la hora prevista.",
+    "start": "Perdone, ¿sabe si el vuelo a… sale…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué es el «equipaje de mano»?",
+    "options": [
+     "La maleta que va en la bodega",
+     "Una bolsa de la tienda libre de impuestos",
+     "Un regalo para el piloto",
+     "La maleta pequeña que llevas contigo en la cabina"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Mi maleta pesa _____ que la tuya.»",
+    "options": [
+     "tan",
+     "tanto",
+     "más",
+     "mucho"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Tu maleta pesa demasiado. Pregunta cuánto tienes que pagar.",
+    "start": "Mi maleta pesa un poco más de… ¿Cuánto…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «hacer escala»?",
+    "options": [
+     "Parar en otro aeropuerto antes del destino final",
+     "Subir una escalera",
+     "Cambiar de asiento",
+     "Perder el vuelo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "¿Podría decirme dónde es el mostrador de facturación?",
+     "¿Podría me decir dónde está el mostrador de facturación?",
+     "¿Podría decirme dónde está el mostrador de facturación?",
+     "¿Podría decirme dónde estar el mostrador de facturación?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explica qué haces normalmente antes de un vuelo.",
+    "start": "Antes de un vuelo, normalmente…"
+   }
+  ]
+ },
+ "intermediate-u4-l2": {
+  "title": "Immigration",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "¿Qué es un «visado»?",
+    "options": [
+     "Un tipo de maleta",
+     "Un permiso para entrar en un país",
+     "Un billete de avión",
+     "Una moneda extranjera"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "El agente pregunta «¿Cuál es el motivo de su viaje?». Quiere saber...",
+    "options": [
+     "cuánto pesa tu maleta",
+     "dónde naciste",
+     "a qué hora sale tu vuelo",
+     "por qué viajas"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Voy a quedarme en el país _____ dos semanas.»",
+    "options": [
+     "desde",
+     "hace",
+     "entre",
+     "durante"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "En la aduana te preguntan si tienes «algo que declarar». Hablan de...",
+    "options": [
+     "objetos que debes comunicar a los agentes",
+     "la dirección del hotel",
+     "el número de tu asiento",
+     "tu nombre y apellidos"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Es la primera vez que soy en este país.»",
+    "options": [
+     "Es la primera vez que estuve en este país.",
+     "Es la primera vez que soy en este país.",
+     "Es la primera vez que estoy en este país.",
+     "Es la primera vez que estaba en este país."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "El agente de inmigración te pregunta por qué visitas el país. Responde.",
+    "start": "Vengo de vacaciones y voy a…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "El agente te pide la dirección de tu «alojamiento». ¿Qué le das?",
+    "options": [
+     "Tu número de teléfono",
+     "La dirección del lugar donde vas a dormir",
+     "Tu fecha de nacimiento",
+     "El nombre de tu empresa"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Mientras _____ en la cola, perdí mi bolígrafo.»",
+    "options": [
+     "esperé",
+     "espero",
+     "esperaba",
+     "esperaré"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explica cuánto tiempo vas a quedarte y dónde te alojas.",
+    "start": "Voy a quedarme… y me alojo en…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "En un formulario, ¿qué significa «nacionalidad»?",
+    "options": [
+     "El país del que eres ciudadano",
+     "Tu edad",
+     "Tu idioma favorito",
+     "Tu profesión"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «—¿Lleva usted el billete de vuelta? —Sí, aquí _____ tiene.»",
+    "options": [
+     "la",
+     "lo",
+     "le",
+     "los"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Responde al agente: ¿a qué te dedicas y viajas por trabajo o por placer?",
+    "start": "Soy… y viajo por…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "El lugar donde revisan lo que traes de otro país es la...",
+    "options": [
+     "taquilla",
+     "sala de espera",
+     "consigna",
+     "aduana"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Viajo para placer, no para trabajo.",
+     "Viajo a placer, no por trabajo.",
+     "Viajo por placer, no para trabajo.",
+     "Viajo por placer, no por trabajo."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Cuenta tu experiencia en un control de pasaportes.",
+    "start": "La última vez que pasé el control de pasaportes…"
+   }
+  ]
+ },
+ "intermediate-u4-l3": {
+  "title": "Baggage",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Al llegar, ¿dónde recoges tus maletas?",
+    "options": [
+     "en la cinta de equipajes",
+     "en la puerta de embarque",
+     "en la tienda libre de impuestos",
+     "en la sala VIP"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si tu maleta no aparece después del vuelo, está...",
+    "options": [
+     "facturada",
+     "extraviada",
+     "reservada",
+     "rebajada"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Mi maleta todavía no _____.»",
+    "options": [
+     "llegaba",
+     "llegar",
+     "ha llegado",
+     "llegada"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Para qué sirve la «etiqueta» de la maleta?",
+    "options": [
+     "Para mostrar tus datos o tu destino",
+     "Para cerrarla",
+     "Para que tenga ruedas",
+     "Para pesarla"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Mi maleta es más grande de la tuya.»",
+    "options": [
+     "Mi maleta es más grande de la tuya.",
+     "Mi maleta es tan grande que la tuya.",
+     "Mi maleta es más grande como la tuya.",
+     "Mi maleta es más grande que la tuya."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Tu maleta no ha llegado. Explica el problema en el mostrador.",
+    "start": "Perdone, mi maleta no ha…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Para cerrar la maleta con seguridad usas un...",
+    "options": [
+     "grifo",
+     "candado",
+     "enchufe",
+     "cajón"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Necesito que me _____ la maleta al hotel.»",
+    "options": [
+     "llevan",
+     "llevar",
+     "lleven",
+     "llevarán"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Describe tu maleta: el color, el tamaño y algo especial.",
+    "start": "Mi maleta es… y tiene…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu maleta llega con una rueda rota. Está...",
+    "options": [
+     "perdida",
+     "dañada",
+     "vacía",
+     "nueva"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «—¿Dónde está su maleta? —No _____ sé, no la veo en la cinta.»",
+    "options": [
+     "la",
+     "le",
+     "se",
+     "lo"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Pregunta cuándo y cómo te van a devolver la maleta.",
+    "start": "¿Cuándo… y me la van a…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Dónde puedes dejar tus maletas unas horas en una estación?",
+    "options": [
+     "en la aduana",
+     "en la taquilla",
+     "en la consigna",
+     "en el andén"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Ayer perdí mi maleta mientras cambiaba de avión.",
+     "Ayer he perdido mi maleta mientras cambiaba de avión.",
+     "Ayer perdía mi maleta mientras cambié de avión.",
+     "Ayer perdí mi maleta mientras cambié de avión."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Cuenta un problema que tuviste con tu equipaje en un viaje.",
+    "start": "Una vez, en un viaje a…, mi maleta…"
+   }
+  ]
+ },
+ "intermediate-u4-l4": {
+  "title": "Boarding",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "¿Dónde esperas para subir al avión?",
+    "options": [
+     "en la cinta de equipajes",
+     "en la puerta de embarque",
+     "en la consigna",
+     "en la aduana"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si un vuelo sale más tarde de lo previsto, tiene...",
+    "options": [
+     "escala",
+     "adelanto",
+     "retraso",
+     "embarque"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Les rogamos que _____ el cinturón de seguridad.»",
+    "options": [
+     "se abrochen",
+     "se abrochan",
+     "abrocharse",
+     "se abrocharán"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "El último aviso antes de cerrar la puerta del avión es la...",
+    "options": [
+     "primera clase",
+     "tarjeta de embarque",
+     "sala de espera",
+     "última llamada"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Cuando empezará el embarque, te aviso.»",
+    "options": [
+     "Cuando empezará el embarque, te aviso.",
+     "Cuando empezaría el embarque, te aviso.",
+     "Cuando empiece el embarque, te aviso.",
+     "Cuando empezar el embarque, te aviso."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Pregunta a un empleado por qué tu vuelo tiene retraso.",
+    "start": "Perdone, ¿podría decirme por qué…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "La persona que atiende a los pasajeros dentro del avión es el...",
+    "options": [
+     "recepcionista",
+     "controlador aéreo",
+     "taxista",
+     "auxiliar de vuelo"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Pasajeros del vuelo 302, embarquen _____ la puerta 8.»",
+    "options": [
+     "para",
+     "por",
+     "hacia",
+     "a"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Pide a otro pasajero que te cambie el asiento.",
+    "start": "Perdone, ¿le importaría…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «abrocharse el cinturón»?",
+    "options": [
+     "Cerrar el cinturón de seguridad",
+     "Comprar un cinturón",
+     "Quitarse el cinturón",
+     "Ponerse los zapatos"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Si el vuelo _____ retraso, te llamaré.»",
+    "options": [
+     "tiene",
+     "tenga",
+     "tendrá",
+     "tendría"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Llama a tu familia y diles que ya estás embarcando.",
+    "start": "Hola, ya estoy en… y vamos a…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Dónde se guarda el equipaje de mano en el avión?",
+    "options": [
+     "en la bodega",
+     "en los compartimentos de encima de los asientos",
+     "en la cabina del piloto",
+     "en la cinta de equipajes"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "¿Le importa que me siento junto a la ventana?",
+     "¿Le importa que sentarme junto a la ventana?",
+     "¿Le importa me sentar junto a la ventana?",
+     "¿Le importa que me siente junto a la ventana?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Cuenta cómo fue tu último embarque: ¿hubo retraso o todo fue bien?",
+    "start": "La última vez que volé…"
+   }
+  ]
+ },
+ "intermediate-u5-l1": {
+  "title": "Reservations",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Una habitación para una sola persona es una habitación...",
+    "options": [
+     "doble",
+     "triple",
+     "individual",
+     "familiar"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «media pensión» en un hotel?",
+    "options": [
+     "Solo la habitación",
+     "Desayuno y una comida principal incluidos",
+     "Todas las comidas incluidas",
+     "La mitad del precio"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Quisiera una habitación que _____ vistas al mar.»",
+    "options": [
+     "tiene",
+     "tener",
+     "tendrá",
+     "tenga"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si el hotel está «completo», significa que...",
+    "options": [
+     "no quedan habitaciones libres",
+     "incluye el desayuno",
+     "es muy barato",
+     "tiene piscina"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Llegamos el día 5 y nos iremos en el día 8.»",
+    "options": [
+     "Llegamos en el día 5 y nos iremos el día 8.",
+     "Llegamos el día 5 y nos iremos en el día 8.",
+     "Llegamos el día 5 y nos iremos el día 8.",
+     "Llegamos al día 5 y nos iremos al día 8."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Llama a un hotel para reservar una habitación. Di las fechas y el tipo de habitación.",
+    "start": "Buenos días, quería reservar…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "La hora a la que tienes que dejar la habitación el último día es la hora de...",
+    "options": [
+     "llegada",
+     "desayuno",
+     "cierre",
+     "salida"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «¿_____ incluido el desayuno en el precio?»",
+    "options": [
+     "Es",
+     "Está",
+     "Tiene",
+     "Hay"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Pregunta qué incluye el precio de la habitación.",
+    "start": "¿Qué incluye…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué es una «fianza» en un hotel?",
+    "options": [
+     "Dinero que pagas antes como garantía",
+     "Una llave extra",
+     "Una propina",
+     "Un desayuno especial"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «He reservado la habitación _____ teléfono.»",
+    "options": [
+     "para",
+     "con",
+     "por",
+     "de"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Pide una habitación tranquila con buenas vistas.",
+    "start": "Me gustaría una habitación que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «cancelación gratuita»?",
+    "options": [
+     "El hotel es gratis",
+     "Puedes anular la reserva sin pagar",
+     "No puedes cambiar la reserva",
+     "El desayuno es gratis"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "¿Podría confirmarme la reserva por correo?",
+     "¿Podría me confirmar la reserva por correo?",
+     "¿Podría confirmar me la reserva por correo?",
+     "¿Me podría confirmarme la reserva por correo?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Describe tu alojamiento ideal para unas vacaciones.",
+    "start": "Mi alojamiento ideal sería…"
+   }
+  ]
+ },
+ "intermediate-u5-l2": {
+  "title": "Requests",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Necesitas más toallas en el hotel. ¿A quién llamas?",
+    "options": [
+     "a la aduana",
+     "a la farmacia",
+     "a recepción",
+     "al aeropuerto"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué es el «servicio de habitaciones»?",
+    "options": [
+     "La limpieza de la piscina",
+     "El aparcamiento del hotel",
+     "El horario de recepción",
+     "Comida o bebida que te llevan a la habitación"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Por favor, dígale al servicio de limpieza que _____ más tarde.»",
+    "options": [
+     "vuelve",
+     "volver",
+     "vuelva",
+     "volverá"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Para secarte el pelo necesitas un...",
+    "options": [
+     "enchufe",
+     "grifo",
+     "mando",
+     "secador"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «—¿Me trae otra almohada? —Sí, ahora se le traigo.»",
+    "options": [
+     "Sí, ahora le la traigo.",
+     "Sí, ahora se la traigo.",
+     "Sí, ahora se le traigo.",
+     "Sí, ahora la se traigo."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Llama a recepción y pide que te despierten mañana temprano.",
+    "start": "Hola, ¿podrían despertarme mañana a las…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Para qué sirve la «contraseña del wifi»?",
+    "options": [
+     "Para conectarte a internet",
+     "Para abrir la habitación",
+     "Para pagar la cuenta",
+     "Para usar el ascensor"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «¿Hay algún restaurante _____ aquí?»",
+    "options": [
+     "cerca de",
+     "al lado",
+     "cerca",
+     "cercano"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Pide en recepción que te recomienden un sitio para cenar.",
+    "start": "¿Podría recomendarme…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Una cama pequeña para un bebé es una...",
+    "options": [
+     "hamaca",
+     "litera",
+     "cuna",
+     "almohada"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Necesito que alguien me _____ con las maletas.»",
+    "options": [
+     "ayuda",
+     "ayudará",
+     "ayudar",
+     "ayude"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Ya has dejado la habitación. Pide que te guarden las maletas unas horas.",
+    "start": "Ya he dejado la habitación. ¿Podrían…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa pedir una «salida tardía»?",
+    "options": [
+     "Llegar tarde al hotel",
+     "Dejar la habitación más tarde de la hora normal",
+     "Desayunar tarde",
+     "Perder el autobús"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "¿Es posible que me cambian las sábanas hoy?",
+     "¿Es posible me cambien las sábanas hoy?",
+     "¿Es posible que me cambiar las sábanas hoy?",
+     "¿Es posible que me cambien las sábanas hoy?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Pregunta a qué hora se sirve el desayuno y dónde.",
+    "start": "¿A qué hora se sirve…"
+   }
+  ]
+ },
+ "intermediate-u5-l3": {
+  "title": "Common problems",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "No sale agua caliente en el baño. ¿Qué dices en recepción?",
+    "options": [
+     "La ducha está muy caliente.",
+     "Quiero más toallas.",
+     "La ducha no tiene agua caliente.",
+     "La cama es muy cómoda."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si el aire acondicionado no funciona, está...",
+    "options": [
+     "limpio",
+     "estropeado",
+     "encendido",
+     "reservado"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «La calefacción no _____ desde anoche.»",
+    "options": [
+     "funciona",
+     "funcionaría",
+     "funcionar",
+     "funcionará"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Los vecinos hacen mucho ruido. La habitación es muy...",
+    "options": [
+     "tranquila",
+     "espaciosa",
+     "luminosa",
+     "ruidosa"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Cuando llegué, la habitación estuvo sucia.»",
+    "options": [
+     "Cuando llegaba, la habitación estuvo sucia.",
+     "Cuando llegué, la habitación estaba sucia.",
+     "Cuando llegué, la habitación era sucia.",
+     "Cuando llegué, la habitación estuvo sucia."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Llama a recepción porque la televisión no funciona.",
+    "start": "Hola, llamo de la habitación… La televisión…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "La tarjeta de la habitación no abre la puerta. Está...",
+    "options": [
+     "desactivada",
+     "ocupada",
+     "limpia",
+     "encendida"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Es importante que _____ el problema hoy.»",
+    "options": [
+     "solucionan",
+     "solucionarán",
+     "solucionen",
+     "solucionaron"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Pide cambiar de habitación y explica por qué.",
+    "start": "Quería pedirle otra habitación porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué es una «queja»?",
+    "options": [
+     "Una propina",
+     "Un regalo",
+     "Decir que algo está mal o no te gusta",
+     "Un descuento"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Le pido disculpas _____ las molestias.»",
+    "options": [
+     "para",
+     "con",
+     "de",
+     "por"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Explica al director del hotel que el servicio no ha sido bueno y pide una solución.",
+    "start": "Lo siento, pero no estoy contento con… ¿Podrían…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si el lavabo está «atascado», el agua...",
+    "options": [
+     "no baja",
+     "sale muy fuerte",
+     "está sucia",
+     "está fría"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Si no me cambiarán la habitación, me iré a otro hotel.",
+     "Si no me cambian la habitación, me iré a otro hotel.",
+     "Si no me cambien la habitación, me iré a otro hotel.",
+     "Si no me cambiarían la habitación, me iré a otro hotel."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Cuenta un problema que tuviste en un hotel y cómo se solucionó.",
+    "start": "Una vez, en un hotel de…"
+   }
+  ]
+ },
+ "intermediate-u6-l1": {
+  "title": "Tasks",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "La fecha límite para terminar un trabajo es el...",
+    "options": [
+     "horario",
+     "plazo",
+     "sueldo",
+     "puesto"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «encargarse de» una tarea?",
+    "options": [
+     "Olvidarla",
+     "Cancelarla",
+     "Repetirla",
+     "Ser responsable de hacerla"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «El jefe quiere que _____ el informe hoy.»",
+    "options": [
+     "terminemos",
+     "terminamos",
+     "terminar",
+     "terminaremos"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "La lista de temas que se van a tratar en una reunión es el...",
+    "options": [
+     "menú",
+     "recibo",
+     "orden del día",
+     "calendario"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Ya he enviado el correo ayer.»",
+    "options": [
+     "Ya enviaba el correo ayer.",
+     "Ya he envío el correo ayer.",
+     "Ya envié el correo ayer.",
+     "Ya he enviado el correo ayer."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explica a un compañero qué tareas tienes hoy.",
+    "start": "Hoy tengo que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si una tarea es «urgente», hay que hacerla...",
+    "options": [
+     "la semana que viene",
+     "cuanto antes",
+     "cuando quieras",
+     "nunca"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Cuando _____ el proyecto, nos tomaremos un descanso.»",
+    "options": [
+     "terminemos",
+     "terminaremos",
+     "terminamos",
+     "terminábamos"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Pide ayuda a un compañero con una tarea difícil.",
+    "start": "¿Tienes un momento? Necesito que me ayudes con…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «delegar» una tarea?",
+    "options": [
+     "Hacerla dos veces",
+     "Olvidarla",
+     "Terminarla muy rápido",
+     "Dársela a otra persona para que la haga"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «—¿Has mandado los documentos al cliente? —Sí, ya _____ he mandado.»",
+    "options": [
+     "le los",
+     "se las",
+     "se los",
+     "los le"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explica cómo organizas tu trabajo cuando tienes muchas tareas.",
+    "start": "Cuando tengo mucho trabajo, primero…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Una tarea «pendiente» es una tarea que...",
+    "options": [
+     "ya está terminada",
+     "todavía no está hecha",
+     "no es importante",
+     "es de otra persona"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Te enviaré el archivo en cuanto lo termine.",
+     "Te enviaré el archivo en cuanto lo terminaré.",
+     "Te enviaré el archivo en cuanto lo terminara.",
+     "Te enviaré el archivo en cuanto terminarlo."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Tu jefe te pide una tarea más, pero no tienes tiempo. Responde con educación.",
+    "start": "Me gustaría ayudar, pero ahora mismo…"
+   }
+  ]
+ },
+ "intermediate-u6-l2": {
+  "title": "Colleagues",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Una persona que trabaja contigo en la misma empresa es un...",
+    "options": [
+     "proveedor",
+     "vecino",
+     "cliente",
+     "compañero de trabajo"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «llevarse bien» con alguien?",
+    "options": [
+     "Llevar sus cosas",
+     "Trabajar menos",
+     "Tener una buena relación",
+     "Discutir mucho"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Te presento a Laura, _____ trabaja en marketing.»",
+    "options": [
+     "que",
+     "cuyo",
+     "donde",
+     "cual"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Una persona que siempre está dispuesta a ayudar es...",
+    "options": [
+     "egoísta",
+     "servicial",
+     "perezosa",
+     "impuntual"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «A mi jefe le gustan que lleguemos puntuales.»",
+    "options": [
+     "A mi jefe le gustan que lleguemos puntuales.",
+     "A mi jefe le gusta que llegamos puntuales.",
+     "A mi jefe lo gusta que lleguemos puntuales.",
+     "A mi jefe le gusta que lleguemos puntuales."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Presenta a un compañero nuevo al resto del equipo.",
+    "start": "Este es…, nuestro nuevo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «echar una mano» a un compañero?",
+    "options": [
+     "Saludarlo",
+     "Despedirlo",
+     "Aplaudirlo",
+     "Ayudarlo"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Antes trabajaba en Sevilla, pero hace un año _____ a Madrid.»",
+    "options": [
+     "me mudaba",
+     "me mudé",
+     "me mudo",
+     "me mudaré"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Describe a un compañero de trabajo o de clase que te cae bien.",
+    "start": "Mi compañero… me cae bien porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si un compañero «te cae bien», significa que...",
+    "options": [
+     "se ha caído",
+     "está enfermo",
+     "te parece simpático",
+     "trabaja mucho"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Me alegro de que _____ en nuestro equipo.»",
+    "options": [
+     "estés",
+     "estás",
+     "estar",
+     "estarás"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Pregunta a un compañero nuevo cómo le va en su primera semana.",
+    "start": "¿Qué tal tu primera semana? ¿Ya…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué es un «becario»?",
+    "options": [
+     "El director de la empresa",
+     "Un estudiante que hace prácticas en una empresa",
+     "Un cliente importante",
+     "Un compañero jubilado"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Mi compañero es más trabajador de yo.",
+     "Mi compañero es más trabajador que mí.",
+     "Mi compañero es más trabajador que yo.",
+     "Mi compañero es tan trabajador que yo."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Cuenta cómo es el ambiente en tu trabajo o en tu clase.",
+    "start": "En mi trabajo, el ambiente es…"
+   }
+  ]
+ },
+ "intermediate-u6-l3": {
+  "title": "Schedules",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Trabajas de 8:00 a 15:00 sin parar para comer. Tienes jornada...",
+    "options": [
+     "continua",
+     "partida",
+     "nocturna",
+     "libre"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Los días de lunes a viernes, cuando normalmente se trabaja, son días...",
+    "options": [
+     "festivos",
+     "libres",
+     "feriados",
+     "laborables"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «La semana que viene _____ turno de noche.»",
+    "options": [
+     "tuve",
+     "tenía",
+     "he tenido",
+     "tendré"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «hacer horas extra»?",
+    "options": [
+     "Trabajar más tiempo del normal",
+     "Llegar tarde",
+     "Tomar vacaciones",
+     "Trabajar desde casa"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Antes, empecé a trabajar a las siete todos los días.»",
+    "options": [
+     "Antes, empecé a trabajar a las siete todos los días.",
+     "Antes, empezaba a trabajar a las siete todos los días.",
+     "Antes, empiezo a trabajar a las siete todos los días.",
+     "Antes, empezaré a trabajar a las siete todos los días."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Describe tu horario en un día normal de trabajo o de estudio.",
+    "start": "Normalmente empiezo a las… y termino…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Trabajar desde casa con el ordenador es hacer...",
+    "options": [
+     "horas extra",
+     "turno de noche",
+     "teletrabajo",
+     "jornada partida"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Mañana no _____ trabajar porque es festivo.»",
+    "options": [
+     "tuve que",
+     "tendría",
+     "he tenido que",
+     "tengo que"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Pide a tu jefe cambiar tu horario un día de la semana.",
+    "start": "¿Sería posible cambiar mi horario el…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "El rato para descansar durante la jornada es la...",
+    "options": [
+     "nómina",
+     "pausa",
+     "plantilla",
+     "jornada"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «La reunión se ha aplazado _____ la semana que viene.»",
+    "options": [
+     "por",
+     "en",
+     "para",
+     "de"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explica qué días y a qué horas estás disponible para una reunión.",
+    "start": "Estoy disponible el… de… a…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si llegas a una reunión «con antelación», llegas...",
+    "options": [
+     "antes de la hora",
+     "tarde",
+     "sin avisar",
+     "a mitad de la reunión"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Llevo tres años trabajar en esta empresa.",
+     "Llevo tres años trabajado en esta empresa.",
+     "Llevo tres años trabajando en esta empresa.",
+     "Llevo tres años a trabajar en esta empresa."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Compara tu horario actual con el que tenías antes.",
+    "start": "Antes trabajaba… pero ahora…"
+   }
+  ]
+ },
+ "intermediate-u6-l4": {
+  "title": "Workplace vocabulary",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "El dinero que recibes cada mes por tu trabajo es el...",
+    "options": [
+     "sueldo",
+     "recibo",
+     "presupuesto",
+     "precio"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué es una «entrevista de trabajo»?",
+    "options": [
+     "Una fiesta de la empresa",
+     "Un tipo de contrato",
+     "Un día libre",
+     "Una reunión para elegir a un candidato"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Buscamos un empleado que _____ inglés y francés.»",
+    "options": [
+     "habla",
+     "hable",
+     "hablar",
+     "hablará"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "El documento que firmas al empezar un trabajo es el...",
+    "options": [
+     "currículum",
+     "informe",
+     "folleto",
+     "contrato"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Te mando el informe para correo electrónico.»",
+    "options": [
+     "Te mando el informe para correo electrónico.",
+     "Te mando el informe a correo electrónico.",
+     "Te mando el informe por correo electrónico.",
+     "Te mando el informe de correo electrónico."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explica en qué consiste tu trabajo o el trabajo que te gustaría tener.",
+    "start": "Mi trabajo consiste en…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "El conjunto de personas que trabajan en una empresa es la...",
+    "options": [
+     "nómina",
+     "plantilla",
+     "oficina",
+     "jornada"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «El año pasado mi empresa _____ a diez personas nuevas.»",
+    "options": [
+     "contrató",
+     "contrata",
+     "contrataba",
+     "contratará"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Cuéntale a un amigo cómo fue tu primera semana en un trabajo nuevo.",
+    "start": "Mi primera semana fue…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si la empresa te «despide», tú...",
+    "options": [
+     "consigues un ascenso",
+     "te vas de vacaciones",
+     "pierdes el trabajo",
+     "cobras más"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Trabajo _____ una empresa de tecnología.»",
+    "options": [
+     "por",
+     "para",
+     "de",
+     "a"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Explica qué es lo que más te gusta y lo que menos te gusta de tu trabajo.",
+    "start": "Lo que más me gusta es… y lo que menos…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si te dan un «ascenso» en el trabajo...",
+    "options": [
+     "pierdes el trabajo",
+     "cambias de ciudad",
+     "trabajas menos horas",
+     "consigues un puesto mejor"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Es importante que todos asistan a la reunión.",
+     "Es importante que todos asisten a la reunión.",
+     "Es importante que todos asistir a la reunión.",
+     "Es importante todos asistan a la reunión."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Da un consejo a alguien que tiene su primera entrevista de trabajo.",
+    "start": "Te aconsejo que…"
+   }
+  ]
+ },
+ "intermediate-u7-l1": {
+  "title": "Calling",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "¿Qué dices normalmente al contestar el teléfono?",
+    "options": [
+     "Hasta luego.",
+     "Buen provecho.",
+     "De nada.",
+     "¿Dígame?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «marcar» un número?",
+    "options": [
+     "Pulsar el número para llamar",
+     "Guardar una foto",
+     "Borrar el número",
+     "Colgar el teléfono"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «¿_____ hablar con el señor Ruiz, por favor?»",
+    "options": [
+     "Podré",
+     "Pude",
+     "Podría",
+     "Poder"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "Terminar una llamada es...",
+    "options": [
+     "marcar",
+     "colgar",
+     "descolgar",
+     "sonar"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Le llamo por preguntar por mi pedido.»",
+    "options": [
+     "Le llamo por preguntar por mi pedido.",
+     "Le llamo para preguntar para mi pedido.",
+     "Le llamo de preguntar por mi pedido.",
+     "Le llamo para preguntar por mi pedido."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Llama a una empresa y pide hablar con una persona.",
+    "start": "Buenos días, ¿podría hablar con…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si el teléfono «comunica», significa que...",
+    "options": [
+     "la llamada es gratis",
+     "la línea está ocupada",
+     "no tienes batería",
+     "el teléfono está apagado"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Cuando _____, estaba en la ducha.»",
+    "options": [
+     "llamarás",
+     "llamas",
+     "llamaste",
+     "llamarías"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Llamas a un amigo y no contesta. Deja un mensaje en el buzón de voz.",
+    "start": "Hola, soy… Te llamaba para…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "No oyes bien a la otra persona. ¿Qué dices?",
+    "options": [
+     "Perdona, se corta. ¿Puedes repetir?",
+     "Te paso con él.",
+     "Gracias por llamar.",
+     "Te cuelgo ahora."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Le llamo _____ parte de la empresa Luz.»",
+    "options": [
+     "de",
+     "por",
+     "para",
+     "a"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Llamas a un restaurante para preguntar el horario.",
+    "start": "Hola, buenas tardes. Quería saber…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si no tienes «cobertura», ...",
+    "options": [
+     "no tienes dinero",
+     "no hay señal para llamar",
+     "no tienes amigos",
+     "no tienes tiempo"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Siento llamarte tanto tarde.",
+     "Siento llamar te tan tarde.",
+     "Siento de llamarte tan tarde.",
+     "Siento llamarte tan tarde."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Cuenta con quién hablas más por teléfono y de qué.",
+    "start": "Hablo mucho por teléfono con…"
+   }
+  ]
+ },
+ "intermediate-u7-l2": {
+  "title": "Taking messages",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "¿Qué preguntas para saber quién llama?",
+    "options": [
+     "¿Cuánto cuesta?",
+     "¿Dónde vive?",
+     "¿De parte de quién?",
+     "¿Qué hora es?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «dejar un recado»?",
+    "options": [
+     "Colgar el teléfono",
+     "Hacer la compra",
+     "Dejar un mensaje para otra persona",
+     "Apagar el móvil"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Dígale que me _____ cuando pueda.»",
+    "options": [
+     "llama",
+     "llame",
+     "llamar",
+     "llamará"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "La persona por la que preguntan no está. ¿Qué dices?",
+    "options": [
+     "Ahora mismo no está. ¿Quiere dejarle un mensaje?",
+     "Ya ha colgado.",
+     "Se ha equivocado de mensaje.",
+     "Sí, soy yo."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «El señor López no está. ¿Quiere que le doy un mensaje?»",
+    "options": [
+     "¿Quiere que le doy un mensaje?",
+     "¿Quiere que le daré un mensaje?",
+     "¿Quiere que le de un mensaje?",
+     "¿Quiere que le dé un mensaje?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Contestas el teléfono de un compañero que no está. Toma un mensaje.",
+    "start": "Ahora mismo no está. ¿Quiere que le…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si alguien dice «Le paso con ella», significa que...",
+    "options": [
+     "va a colgar",
+     "va a pasarte la llamada a otra persona",
+     "va a visitarte",
+     "va a escribir un correo"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «—¿Le has dado el mensaje a Marta? —Sí, ya _____ he dado.»",
+    "options": [
+     "se lo",
+     "se la",
+     "la le",
+     "le lo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Deja un mensaje para tu jefe: vas a llegar tarde mañana.",
+    "start": "Por favor, dígale que mañana…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Para apuntar un número de teléfono necesitas...",
+    "options": [
+     "un paraguas",
+     "una cuchara",
+     "un sello",
+     "un bolígrafo y papel"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Llamó tu hermano mientras _____ fuera.»",
+    "options": [
+     "estés",
+     "estás",
+     "estabas",
+     "estarás"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Pide a la persona que llama su nombre y su número de teléfono.",
+    "start": "¿Me podría dar su nombre y…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «devolver la llamada»?",
+    "options": [
+     "Llamar a alguien que te llamó antes",
+     "Pagar la factura del teléfono",
+     "Cambiar de número",
+     "Colgar sin hablar"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Le diré que le devolver la llamada.",
+     "Le diré que devolverle la llamada.",
+     "Le diré que le devuelva la llamada.",
+     "Le diré que le devolviendo la llamada."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explica a un compañero un mensaje que recibiste para él.",
+    "start": "Te ha llamado… y me ha dicho que…"
+   }
+  ]
+ },
+ "intermediate-u7-l3": {
+  "title": "Clarifying information",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "No has entendido lo que te dicen. ¿Qué dices?",
+    "options": [
+     "Ya lo sé.",
+     "¿Podría repetirlo, por favor?",
+     "Me da igual.",
+     "Por supuesto."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «deletrear» una palabra?",
+    "options": [
+     "Traducirla",
+     "Escribirla en mayúsculas",
+     "Borrarla",
+     "Decir sus letras una por una"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «¿Podría hablar un poco _____ despacio?»",
+    "options": [
+     "tan",
+     "más",
+     "muy",
+     "mucho"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué pregunta usas para comprobar que lo has entendido bien?",
+    "options": [
+     "¿Quiere decir que la reunión es el martes?",
+     "¿Qué tiempo hace?",
+     "¿Cuántos años tiene?",
+     "¿Dónde está el baño?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Perdone, no le he entendido. ¿Puede repetir lo?»",
+    "options": [
+     "¿Puede repetir lo?",
+     "¿Puede lo repetir?",
+     "¿Lo puede repetirlo?",
+     "¿Puede repetirlo?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "No has entendido una dirección por teléfono. Pide que te la repitan.",
+    "start": "Perdone, no he entendido bien la dirección. ¿Podría…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si una explicación «no está clara», es...",
+    "options": [
+     "evidente",
+     "sencilla",
+     "confusa",
+     "obvia"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «No estoy seguro de que la reunión _____ a las diez.»",
+    "options": [
+     "es",
+     "será",
+     "sea",
+     "ser"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Pide a alguien que deletree su apellido.",
+    "start": "¿Me podría deletrear…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Alguien te pregunta «¿Me explico?». ¿Qué quiere saber?",
+    "options": [
+     "Si lo entiendes bien",
+     "Si puede irse",
+     "Si le puedes ayudar",
+     "Si tiene razón"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «¿Qué quiere decir _____ “por la tarde”? ¿A las tres o a las seis?»",
+    "options": [
+     "de",
+     "con",
+     "para",
+     "por"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Confirma los datos de una cita que te han dado por teléfono.",
+    "start": "Entonces, si lo he entendido bien…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Completa: «No lo entiendo. ¿Podría decirlo con otras _____?»",
+    "options": [
+     "letras",
+     "voces",
+     "manos",
+     "palabras"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Perdone, ¿ha dicho que el vuelo saliendo a las nueve?",
+     "Perdone, ¿ha dicho el vuelo que sale a las nueve?",
+     "Perdone, ¿ha dicho que el vuelo salir a las nueve?",
+     "Perdone, ¿ha dicho que el vuelo sale a las nueve?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Explica qué haces cuando no entiendes a alguien en otro idioma.",
+    "start": "Cuando no entiendo a alguien, normalmente…"
+   }
+  ]
+ },
+ "intermediate-u8-l1": {
+  "title": "Describing basic symptoms",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Tener la temperatura del cuerpo muy alta es tener...",
+    "options": [
+     "tos",
+     "fiebre",
+     "hambre",
+     "sueño"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué palabra NO es un síntoma?",
+    "options": [
+     "tos",
+     "mareo",
+     "venda",
+     "dolor de cabeza"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Desde esta mañana me _____ mucho los pies.»",
+    "options": [
+     "duelen",
+     "duele",
+     "dolen",
+     "duelo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si te sientes «mareado», ...",
+    "options": [
+     "parece que todo da vueltas",
+     "tienes frío",
+     "estás muy contento",
+     "tienes mucha hambre"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Me duele la estómago desde hace dos días.»",
+    "options": [
+     "Me duele la estómago desde hace dos días.",
+     "Me duelen el estómago desde hace dos días.",
+     "Me duele el estómago desde hace dos días.",
+     "Me duele el estómago desde dos días."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "No te encuentras bien. Explica a un amigo qué te pasa y desde cuándo.",
+    "start": "No me encuentro bien. Desde hace… tengo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Cuando tienes un resfriado, a menudo tienes la nariz...",
+    "options": [
+     "rota",
+     "tapada",
+     "larga",
+     "dormida"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Si el dolor _____, vaya a urgencias.»",
+    "options": [
+     "empeore",
+     "empeoraría",
+     "empeorará",
+     "empeora"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Describe la última vez que estuviste enfermo. ¿Qué síntomas tenías?",
+    "start": "La última vez que estuve enfermo, tenía…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «estar resfriado»?",
+    "options": [
+     "Tener mucho calor",
+     "Tener un catarro",
+     "Estar muy cansado",
+     "Tener una herida"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Me siento fatal; creo que _____ la gripe.»",
+    "options": [
+     "tengo",
+     "tener",
+     "tuviera",
+     "tenga"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Estás en la farmacia. Explica tus síntomas al farmacéutico.",
+    "start": "Buenos días, tengo… desde…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si tienes la rodilla «hinchada», está...",
+    "options": [
+     "más pequeña de lo normal",
+     "más corta de lo normal",
+     "más fría de lo normal",
+     "más grande de lo normal"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la pregunta correcta del médico:",
+    "options": [
+     "¿Desde cuánto tiene estos síntomas?",
+     "¿Hace cuándo tiene estos síntomas?",
+     "¿Desde cuándo tiene estos síntomas?",
+     "¿Desde cuándo tenga estos síntomas?"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "¿Qué haces normalmente cuando te duele la cabeza?",
+    "start": "Cuando me duele la cabeza, normalmente…"
+   }
+  ]
+ },
+ "intermediate-u8-l2": {
+  "title": "Making appointments",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Para ver al médico, primero tienes que pedir...",
+    "options": [
+     "receta",
+     "cuenta",
+     "carta",
+     "cita"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "El papel del médico para comprar ciertos medicamentos es la...",
+    "options": [
+     "receta",
+     "factura",
+     "entrada",
+     "reserva"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Prefiero que la cita _____ por la tarde.»",
+    "options": [
+     "es",
+     "será",
+     "sea",
+     "ser"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "vocabulary",
+    "question": "No puedes ir a tu cita. ¿Qué tienes que hacer?",
+    "options": [
+     "pedirla",
+     "anularla",
+     "recetarla",
+     "firmarla"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «¿Hay alguna cita libre por mañana por la mañana?»",
+    "options": [
+     "¿Hay alguna cita libre para mañana por la mañana?",
+     "¿Hay alguna cita libre por mañana por la mañana?",
+     "¿Hay alguna cita libre a mañana por la mañana?",
+     "¿Hay alguna cita libre de mañana por la mañana?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Llama al centro de salud para pedir cita con el médico.",
+    "start": "Buenos días, quería pedir cita con…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "El médico especialista en dientes es el...",
+    "options": [
+     "oculista",
+     "cardiólogo",
+     "pediatra",
+     "dentista"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «La última vez que _____ al médico fue en marzo.»",
+    "options": [
+     "iba",
+     "voy",
+     "fui",
+     "iré"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Pregunta si es posible cambiar tu cita a otro día.",
+    "start": "Tengo cita el… ¿Sería posible cambiarla…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué son las «urgencias» de un hospital?",
+    "options": [
+     "La cafetería",
+     "El servicio para casos graves que no pueden esperar",
+     "La farmacia",
+     "La sala de visitas"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «—¿Le viene bien el martes? —Sí, _____ viene perfecto.»",
+    "options": [
+     "mí",
+     "me",
+     "yo",
+     "mi"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "La recepcionista te ofrece una hora que no te va bien. Pide otra.",
+    "start": "A esa hora no puedo. ¿Tendría algo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "El médico que atiende a los niños es el...",
+    "options": [
+     "dentista",
+     "cirujano",
+     "pediatra",
+     "oculista"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Necesito una cita lo más antes posible.",
+     "Necesito una cita la antes posible.",
+     "Necesito una cita lo antes posibles.",
+     "Necesito una cita lo antes posible."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Explica cada cuánto tiempo vas al médico o al dentista.",
+    "start": "Normalmente voy al dentista…"
+   }
+  ]
+ },
+ "intermediate-u9-l1": {
+  "title": "Explaining a problem and asking for help",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Una máquina que no funciona porque tiene un fallo está...",
+    "options": [
+     "averiada",
+     "limpia",
+     "nueva",
+     "encendida"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «arreglar» algo?",
+    "options": [
+     "Romperlo",
+     "Venderlo",
+     "Repararlo",
+     "Perderlo"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «La pantalla está rota desde que se me _____ el móvil.»",
+    "options": [
+     "cayó",
+     "caía",
+     "cae",
+     "caerá"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué frase usas para pedir ayuda?",
+    "options": [
+     "¿Me podría dejar en paz?",
+     "¿Me podría echar una mano?",
+     "¿Me podría cobrar más?",
+     "¿Me podría ignorar?"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Quiero que me arreglas el ordenador.»",
+    "options": [
+     "Quiero que me arreglas el ordenador.",
+     "Quiero me arregles el ordenador.",
+     "Quiero que me arreglar el ordenador.",
+     "Quiero que me arregles el ordenador."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Tu móvil no se enciende. Explica el problema en la tienda y pide ayuda.",
+    "start": "Perdone, tengo un problema con…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si la pantalla tiene una «grieta», ...",
+    "options": [
+     "está muy limpia",
+     "es muy cara",
+     "funciona perfectamente",
+     "tiene una pequeña rotura"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Yo que tú, _____ al servicio técnico.»",
+    "options": [
+     "llamo",
+     "llamaré",
+     "llamaría",
+     "llamara"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Te has quedado fuera de casa sin llaves. Pide ayuda a un vecino.",
+    "start": "Perdona, me he dejado las llaves…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si algo «se ha estropeado», ...",
+    "options": [
+     "es nuevo",
+     "ha dejado de funcionar bien",
+     "está en oferta",
+     "está muy limpio"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la pregunta correcta:",
+    "options": [
+     "¿Qué le pasa al ordenador?",
+     "¿Qué pasa le al ordenador?",
+     "¿Qué le pasa el ordenador?",
+     "¿Qué se pasa al ordenador?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Describe un problema que tuviste con un móvil o un ordenador. ¿Qué hiciste?",
+    "start": "Una vez mi… dejó de funcionar y…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué palabra NO describe un problema con un objeto?",
+    "options": [
+     "roto",
+     "dañado",
+     "estropeado",
+     "impecable"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Ayer me _____ el portátil en el taller.»",
+    "options": [
+     "arreglaban",
+     "arreglan",
+     "arreglaron",
+     "arreglarán"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "A un amigo no le funciona internet. Dale dos consejos.",
+    "start": "Yo que tú, primero…"
+   }
+  ]
+ },
+ "intermediate-u10-l1": {
+  "title": "Talking about past events and experiences",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "¿Qué es «una experiencia inolvidable»?",
+    "options": [
+     "Algo aburrido",
+     "Algo que nunca vas a olvidar",
+     "Algo que olvidaste",
+     "Algo que no hiciste"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un viaje en el que todo salió mal fue un viaje...",
+    "options": [
+     "desastroso",
+     "maravilloso",
+     "perfecto",
+     "tranquilo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «¿Alguna vez _____ en Japón?»",
+    "options": [
+     "estabas",
+     "has estado",
+     "estarás",
+     "estás"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Completa: «Cuando era pequeño, _____ pasaba el verano en el pueblo.»",
+    "options": [
+     "ayer",
+     "de repente",
+     "anoche",
+     "siempre"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Ayer, mientras cené, sonó el teléfono.»",
+    "options": [
+     "Ayer, mientras cené, sonó el teléfono.",
+     "Ayer, mientras ceno, sonó el teléfono.",
+     "Ayer, mientras cenaba, sonó el teléfono.",
+     "Ayer, mientras cenaré, sonó el teléfono."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Cuenta un viaje o una experiencia que nunca vas a olvidar.",
+    "start": "Nunca voy a olvidar…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué expresión usas para empezar a contar una historia?",
+    "options": [
+     "Una vez…",
+     "En resumen…",
+     "Mientras tanto…",
+     "Por último…"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Hacía sol y de repente _____ a llover.»",
+    "options": [
+     "empezaba",
+     "empezará",
+     "empieza",
+     "empezó"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Habla de algo que has hecho por primera vez este año.",
+    "start": "Este año, por primera vez, he…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si algo pasó «hace mucho tiempo», pasó...",
+    "options": [
+     "ayer",
+     "esta mañana",
+     "en un pasado lejano",
+     "dentro de poco"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Cuando llegué a la estación, el tren ya _____.»",
+    "options": [
+     "había salido",
+     "ha salido",
+     "saldrá",
+     "sale"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Cuenta qué hacías los fines de semana cuando eras niño.",
+    "start": "Cuando era niño, los fines de semana…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «pasarlo bien»?",
+    "options": [
+     "Aprobar un examen",
+     "Divertirse",
+     "Pasar por la calle",
+     "Dar algo a alguien"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Nunca he probada la comida peruana.",
+     "Nunca he probado la comida peruana.",
+     "Nunca he probar la comida peruana.",
+     "Nunca probé he la comida peruana."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Pregunta a un amigo por su último viaje y cuéntale el tuyo.",
+    "start": "¿Qué tal tu último viaje? El mío…"
+   }
+  ]
+ },
+ "intermediate-u11-l1": {
+  "title": "Agreeing",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "¿Qué expresión usas para decir que estás de acuerdo?",
+    "options": [
+     "Tienes toda la razón.",
+     "Para nada.",
+     "No lo veo así.",
+     "Ni hablar."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «Estoy de acuerdo contigo»?",
+    "options": [
+     "No te entiendo",
+     "No me importa",
+     "Pienso lo mismo que tú",
+     "Pienso lo contrario"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «A mí también me _____ las películas de miedo.»",
+    "options": [
+     "gusta",
+     "gustas",
+     "gusto",
+     "gustan"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu amigo dice «No me gusta el café». Piensas igual. ¿Qué dices?",
+    "options": [
+     "A mí también.",
+     "A mí tampoco.",
+     "Yo sí.",
+     "A mí sí."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Estoy de acuerdo con ti.»",
+    "options": [
+     "Estoy de acuerdo con ti.",
+     "Estoy de acuerdo con tú.",
+     "Estoy de acuerdo contigo.",
+     "Estoy de acuerdo a ti."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Tu amigo dice que aprender idiomas es muy útil. Di que estás de acuerdo y da una razón.",
+    "start": "Tienes razón, porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si alguien responde «¡Exacto!», quiere decir...",
+    "options": [
+     "No es verdad.",
+     "Repite, por favor.",
+     "No lo sé.",
+     "Eso es justo lo que pienso."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Es verdad que el transporte público _____ muy práctico.»",
+    "options": [
+     "es",
+     "ser",
+     "siendo",
+     "sea"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Da tu opinión sobre trabajar desde casa y pregunta si tu amigo opina igual.",
+    "start": "Creo que trabajar desde casa… ¿Tú qué…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si estás «totalmente de acuerdo», estás de acuerdo...",
+    "options": [
+     "solo un poco",
+     "al cien por cien",
+     "nada",
+     "a veces"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Pienso _____ tú: es mejor salir temprano.»",
+    "options": [
+     "que",
+     "igual",
+     "como",
+     "tan"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Alguien dice que el deporte es importante para la salud. Responde que estás de acuerdo.",
+    "start": "Sí, estoy completamente de acuerdo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué expresión NO sirve para mostrar acuerdo?",
+    "options": [
+     "Claro que sí.",
+     "Desde luego.",
+     "Por supuesto.",
+     "En absoluto."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Yo también pienso que tienes razón.",
+     "Yo también pienso que tener razón.",
+     "Yo también pienso que tengas razón.",
+     "Yo también pienso tienes razón."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "¿Qué opinión compartes con tus amigos o tu familia? Explica.",
+    "start": "Mis amigos y yo pensamos que…"
+   }
+  ]
+ },
+ "intermediate-u11-l2": {
+  "title": "Disagreeing",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "¿Qué expresión usas para no estar de acuerdo con educación?",
+    "options": [
+     "¡Qué tontería!",
+     "Me da igual.",
+     "¡Cállate!",
+     "No lo veo así."
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si alguien dice «Yo no diría eso», quiere decir que...",
+    "options": [
+     "está totalmente de acuerdo",
+     "no puede hablar",
+     "no está muy de acuerdo",
+     "quiere decir lo mismo"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «No creo que _____ una buena idea.»",
+    "options": [
+     "sea",
+     "es",
+     "será",
+     "ser"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "vocabulary",
+    "question": "Alguien empieza diciendo «Respeto tu opinión, pero...». ¿Qué va a hacer?",
+    "options": [
+     "Darte la razón",
+     "Dar una opinión diferente",
+     "Irse sin hablar",
+     "Cambiar de tema"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «No pienso que tienes razón.»",
+    "options": [
+     "No pienso que tienes razón.",
+     "No pienso que tengas razón.",
+     "No pienso que tener razón.",
+     "No pienso que tendrás razón."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Tu amigo dice que las redes sociales solo tienen cosas positivas. Di que no estás de acuerdo y explica por qué.",
+    "start": "Entiendo lo que dices, pero…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué verbo significa «tener una opinión diferente»?",
+    "options": [
+     "coincidir",
+     "aprobar",
+     "aceptar",
+     "discrepar"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Tienes razón en parte, _____ no del todo.»",
+    "options": [
+     "pero",
+     "porque",
+     "si",
+     "sino"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Di con educación que no estás de acuerdo con la opinión de un compañero sobre el horario.",
+    "start": "Con todo respeto, yo creo que…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «¡Ni hablar!»?",
+    "options": [
+     "Habla más alto",
+     "No sé qué decir",
+     "De ninguna manera",
+     "Quizás"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «Este restaurante no es caro, _____ barato.»",
+    "options": [
+     "pero",
+     "sino",
+     "si no",
+     "también"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Alguien dice que el invierno es la mejor estación. Da una opinión diferente.",
+    "start": "Pues yo no estoy de acuerdo. Para mí…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Si respondes «Depende», quieres decir que...",
+    "options": [
+     "la respuesta cambia según la situación",
+     "no te importa nada",
+     "no quieres hablar",
+     "estás totalmente de acuerdo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "No estoy de acuerdo que con cierren el parque.",
+     "No estoy de acuerdo con que cierran el parque.",
+     "No estoy de acuerdo con que cierren el parque.",
+     "No estoy de acuerdo con que cerrar el parque."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "¿En qué tema no estás de acuerdo con tu familia? Explica.",
+    "start": "Mi familia piensa que… pero yo…"
+   }
+  ]
+ },
+ "intermediate-u11-l3": {
+  "title": "Explaining reasons",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "¿Qué palabra introduce una razón?",
+    "options": [
+     "pero",
+     "aunque",
+     "sin embargo",
+     "porque"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «por eso»?",
+    "options": [
+     "Sin embargo",
+     "Aunque",
+     "Por esa razón",
+     "Además"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la palabra correcta: «No fui a la fiesta _____ estaba muy cansado.»",
+    "options": [
+     "por",
+     "porque",
+     "sino",
+     "para"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "«Como llovía, nos quedamos en casa.» ¿Qué significa aquí «como»?",
+    "options": [
+     "Igual que",
+     "Aunque",
+     "Mientras",
+     "Ya que"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «No salí por qué llovía.»",
+    "options": [
+     "No salí porque llovía.",
+     "No salí porqué llovía.",
+     "No salí por qué llovía.",
+     "No salí por que llovía."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Explica por qué estudias español.",
+    "start": "Estudio español porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué conector usas para añadir otra razón?",
+    "options": [
+     "sin embargo",
+     "en cambio",
+     "además",
+     "aunque"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Me gusta vivir aquí porque la gente _____ muy amable.»",
+    "options": [
+     "sea",
+     "son",
+     "ser",
+     "es"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Di qué prefieres, la ciudad o el campo, y explica dos razones.",
+    "start": "Prefiero… porque… y además…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué es «la razón principal»?",
+    "options": [
+     "La razón más importante",
+     "Una razón falsa",
+     "La última razón",
+     "Una razón divertida"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Te lo explico para que lo _____.»",
+    "options": [
+     "entiendes",
+     "entiendas",
+     "entenderás",
+     "entender"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Explica por qué te gusta tu comida favorita.",
+    "start": "Mi comida favorita es… porque…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué conector usas para dar una consecuencia?",
+    "options": [
+     "porque",
+     "como",
+     "ya que",
+     "así que"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la frase correcta:",
+    "options": [
+     "Como hacía frío, me puse lo abrigo.",
+     "Como hacía frío, me pusé el abrigo.",
+     "Como hacía frío, me puse el abrigo.",
+     "Como hacía frío, me poní el abrigo."
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Explica por qué elegiste tu trabajo o tus estudios.",
+    "start": "Elegí… porque…"
+   }
+  ]
+ },
+ "intermediate-u12-l1": {
+  "title": "Longer, more natural everyday conversations",
+  "questions": [
+   {
+    "type": "vocabulary",
+    "question": "Llegas tarde y dices «¡Perdón por el retraso!». ¿Qué responde tu amigo?",
+    "options": [
+     "De nada, vuelve pronto.",
+     "No pasa nada, acabamos de empezar.",
+     "Buen provecho.",
+     "Encantado de conocerte."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "vocabulary",
+    "question": "Un amigo te invita y dices «No me va a dar tiempo». ¿Qué quieres decir?",
+    "options": [
+     "Que no vas a poder hacerlo a tiempo",
+     "Que no tienes reloj",
+     "Que vas a llegar pronto",
+     "Que no te gusta el plan"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «¡Cuánto tiempo! Hace años que no te _____.»",
+    "options": [
+     "vea",
+     "veré",
+     "viera",
+     "veo"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué te pregunta alguien con «¿Qué es de tu vida?»?",
+    "options": [
+     "¿Qué tal te va últimamente?",
+     "¿Dónde vives?",
+     "¿Cuántos años tienes?",
+     "¿Qué quieres comer?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Corrige el error: «Si vendrás a la fiesta, te presento a mis amigos.»",
+    "options": [
+     "Si vendrás a la fiesta, te presento a mis amigos.",
+     "Si vienes a la fiesta, te presento a mis amigos.",
+     "Si vengas a la fiesta, te presento a mis amigos.",
+     "Si vendrías a la fiesta, te presento a mis amigos."
+    ],
+    "answer": 1
+   },
+   {
+    "type": "speaking",
+    "question": "Te encuentras con un viejo amigo después de años. Salúdalo y cuéntale tus novedades.",
+    "start": "¡Qué alegría verte! Pues yo…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "Tu amiga dice «Llevo toda la semana resfriada». ¿Qué le dices?",
+    "options": [
+     "¡Enhorabuena!",
+     "¡Buen viaje!",
+     "¡Que te mejores!",
+     "¡Que aproveche!"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «¡Que _____ un buen fin de semana!»",
+    "options": [
+     "pasas",
+     "pasar",
+     "pases",
+     "pasarás"
+    ],
+    "answer": 2
+   },
+   {
+    "type": "speaking",
+    "question": "Un vecino te pregunta qué planes tienes para las vacaciones. Responde y pregúntale por los suyos.",
+    "start": "Pues este verano voy a… ¿Y tú…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué significa «ponerse al día» con un amigo?",
+    "options": [
+     "Levantarse temprano",
+     "Contarse las novedades",
+     "Llegar puntual",
+     "Hacer los deberes"
+    ],
+    "answer": 1
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la pregunta correcta para alguien que acabas de conocer:",
+    "options": [
+     "¿Qué te dedicas?",
+     "¿A qué dedicas te?",
+     "¿A qué te dedica?",
+     "¿A qué te dedicas?"
+    ],
+    "answer": 3
+   },
+   {
+    "type": "speaking",
+    "question": "Cuéntale a un amigo qué hiciste el fin de semana y pregúntale por el suyo.",
+    "start": "El fin de semana pasado… ¿Y tú qué…"
+   },
+   {
+    "type": "vocabulary",
+    "question": "¿Qué dices para terminar una conversación con educación?",
+    "options": [
+     "Bueno, te dejo, que tengo prisa.",
+     "Bueno, no me importa.",
+     "Bueno, ¿y qué?",
+     "Bueno, sigue hablando tú."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "grammar",
+    "question": "Elige la forma correcta: «Ojalá _____ buen tiempo mañana para la excursión.»",
+    "options": [
+     "haga",
+     "hace",
+     "hará",
+     "hizo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "speaking",
+    "question": "Un amigo te pregunta: ¿playa o montaña para un fin de semana? Da tu opinión y una razón.",
+    "start": "Si te soy sincero, yo prefiero…"
+   }
+  ]
+ }
+}

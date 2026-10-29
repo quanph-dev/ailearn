@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="splash_loading">Memulai Web Browser...</string>
+    <string name="cd_back">Kembali</string>
+    <string name="language_title">Bahasa</string>
+    <string name="language_confirm">Konfirmasi</string>
+    <string name="onboarding_next">Berikutnya</string>
+    <string name="onboarding_start">Mulai</string>
+    <string name="onboarding_title_1">Jelajahi Web Browser</string>
+    <string name="onboarding_subtitle_1">Buka dunia item eksklusif, karakter, senjata, pet, dan hadiah dalam pengalaman game yang penuh aksi.</string>
+    <string name="onboarding_title_2">Lengkapi Diri dengan Caramu</string>
+    <string name="onboarding_subtitle_2">Pilih karakter, dapatkan senjata kuat, bertualang bersama pet, dan ciptakan gaya unikmu di setiap pertempuran.</string>
+    <string name="onboarding_title_3">Spin Keberuntungan, Hadiah Langka</string>
+    <string name="onboarding_subtitle_3">Coba peruntunganmu dengan Lucky Spin untuk mendapatkan diamond, skin senjata, pet, karakter, dan banyak hadiah berharga setiap hari.</string>
+    <string name="settings_general_language">Bahasa</string>
+    <string name="language_save_error">Pilihan Anda tidak dapat disimpan. Silakan coba lagi.</string>
+    <string name="home_welcome">Selamat datang</string>
+    <string name="home_description">Pilih bahasa atau lihat pengaturan Anda.</string>
+    <string name="network_offline_title">Tidak ada koneksi internet</string>
+    <string name="network_offline_message">Hubungkan ke internet untuk terus menggunakan aplikasi.</string>
+    <string name="network_try_again">Coba lagi</string>
+    <string name="ui_exit_the_app">Keluar dari aplikasi</string>
+    <string name="ui_are_you_sure_you_want_to_exit_the_app_now">Yakin ingin keluar dari aplikasi sekarang?</string>
+    <string name="ui_no">Tidak</string>
+    <string name="ui_yes_exit">Ya, keluar</string>
+</resources>
