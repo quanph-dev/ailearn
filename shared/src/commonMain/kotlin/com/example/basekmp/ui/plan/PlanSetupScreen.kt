@@ -18,6 +18,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.Image
 import com.example.basekmp.BackActionHandler
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -31,13 +32,15 @@ import androidx.compose.material.icons.rounded.Person
 import androidx.compose.material.icons.rounded.SmartToy
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -50,12 +53,23 @@ import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.basekmp.components.AnimatedBuddy
-import com.example.basekmp.components.RobotMood
+import ailearn.shared.generated.resources.plan_start_robot
+import ailearn.shared.generated.resources.plan_survey_assistant
+import ailearn.shared.generated.resources.plan_survey_level
+import ailearn.shared.generated.resources.plan_survey_name
+import ailearn.shared.generated.resources.plan_survey_time
+import com.example.basekmp.components.AppLinearProgressBar
+import com.example.basekmp.data.GoalPlan
+import com.example.basekmp.data.Languages
+import com.example.basekmp.data.PlanCatalogData
+import com.example.basekmp.data.PlanCatalogRepository
+import com.example.basekmp.data.PlanGoal
 import com.example.basekmp.data.PlanProgress
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
+import com.example.basekmp.data.trf
 import com.example.basekmp.theme.AppTheme
+import org.jetbrains.compose.resources.painterResource
 
 /**
  * 6-Step Onboarding Questionnaire to generate a personalized 30-Day Plan.
@@ -71,14 +85,56 @@ fun PlanSetupScreen(
     var currentStepIndex by remember { mutableIntStateOf(0) }
 
     var studentName by remember { mutableStateOf(PlanProgress.get().name.ifEmpty { "Learner" }) }
-    var selectedGoalId by remember { mutableStateOf(PlanProgress.get().goalId ?: "travel") }
+    var selectedGoalId by remember {
+        mutableStateOf(GoalPlan.canonicalGoalId(PlanProgress.get().goalId) ?: "everyday")
+    }
+    var goalNote by remember { mutableStateOf(PlanProgress.get().goalNote) }
     var selectedLevel by remember { mutableStateOf(UserPrefs.englishLevel) }
     var selectedMinutes by remember { mutableIntStateOf(UserPrefs.dailyGoalMinutes) }
-    var selectedAssistantId by remember { mutableStateOf("emma") }
+    var planCatalog by remember { mutableStateOf<PlanCatalogData?>(null) }
+    var isCatalogLoading by remember { mutableStateOf(true) }
+    var catalogRetryKey by remember { mutableIntStateOf(0) }
+    val learnCode = GoalPlan.learnCode(UserPrefs.targetLanguage)
+    val goalChoices = remember(planCatalog, learnCode) {
+        planCatalog?.let { setupGoalChoices(it, learnCode) }.orEmpty()
+    }
+    val planAssistants = remember {
+        Assistant.ALL.filter { it.id == "emma" || it.id == "james" }
+    }
+    var selectedAssistantId by remember {
+        mutableStateOf(
+            if (UserPrefs.tutorVoice.equals("Male", ignoreCase = true) ||
+                UserPrefs.tutorVoice.equals("James", ignoreCase = true)
+            ) "james" else "emma"
+        )
+    }
 
     val currentStep = steps[currentStepIndex]
+    val selectedGoalAvailable = goalChoices.any { it.id == selectedGoalId && it.hasContent }
+    val canAdvance = when (currentStep) {
+        SetupStep.NAME -> studentName.isNotBlank()
+        SetupStep.GOAL -> selectedGoalAvailable && (selectedGoalId != "custom" || goalNote.isNotBlank())
+        else -> true
+    }
+
+    LaunchedEffect(catalogRetryKey) {
+        isCatalogLoading = true
+        planCatalog = runCatching {
+            PlanCatalogRepository.getCatalog(forceRefresh = catalogRetryKey > 0)
+        }.getOrNull()
+        isCatalogLoading = false
+    }
+
+    LaunchedEffect(planCatalog, learnCode) {
+        val availableGoalIds = goalChoices.filter { it.hasContent }.map { it.id }.toSet()
+        if (availableGoalIds.isNotEmpty() && selectedGoalId !in availableGoalIds) {
+            selectedGoalId = availableGoalIds.firstOrNull { it == "everyday" }
+                ?: availableGoalIds.first()
+        }
+    }
 
     fun advance() {
+        if (!canAdvance) return
         if (currentStepIndex < steps.size - 1) {
             currentStepIndex++
         } else {
@@ -87,12 +143,12 @@ fun PlanSetupScreen(
             progress.start(
                 goal = selectedGoalId,
                 name = studentName,
-                goalNote = ""
+                goalNote = if (selectedGoalId == "custom") goalNote else ""
             )
             UserPrefs.englishLevel = selectedLevel
             UserPrefs.dailyGoalMinutes = selectedMinutes
-            val chosenAssistant = Assistant.ALL.firstOrNull { it.id == selectedAssistantId }
-            UserPrefs.tutorVoice = chosenAssistant?.name ?: "Emma"
+            val chosenAssistant = planAssistants.firstOrNull { it.id == selectedAssistantId }
+            UserPrefs.tutorVoice = chosenAssistant?.voice ?: "Female"
             onDone()
         }
     }
@@ -136,14 +192,13 @@ fun PlanSetupScreen(
                 }
 
                 if (currentStep != SetupStep.START) {
-                    LinearProgressIndicator(
-                        progress = { (currentStepIndex) / (steps.size - 1).toFloat() },
+                    AppLinearProgressBar(
+                        progress = currentStepIndex / (steps.size - 1).toFloat(),
                         modifier = Modifier
                             .weight(1f)
                             .height(6.dp)
                             .clip(RoundedCornerShape(3.dp)),
-                        color = AppTheme.colors.primary,
-                        trackColor = AppTheme.colors.surfaceCard
+                        color = AppTheme.colors.primary
                     )
                     Spacer(modifier = Modifier.width(AppTheme.dimens.spacingLg))
                 } else {
@@ -165,8 +220,17 @@ fun PlanSetupScreen(
                         onNameChange = { studentName = it }
                     )
                     SetupStep.GOAL -> GoalStepContent(
+                        choices = goalChoices,
+                        isLoading = isCatalogLoading,
+                        hasCatalog = planCatalog != null,
                         selectedGoalId = selectedGoalId,
-                        onSelectGoal = { selectedGoalId = it }
+                        goalNote = goalNote,
+                        onSelectGoal = {
+                            selectedGoalId = it
+                            if (it != "custom") goalNote = ""
+                        },
+                        onGoalNoteChange = { goalNote = it.take(150) },
+                        onRetry = { catalogRetryKey++ }
                     )
                     SetupStep.LEVEL -> LevelStepContent(
                         selectedLevel = selectedLevel,
@@ -177,6 +241,7 @@ fun PlanSetupScreen(
                         onSelectMinutes = { selectedMinutes = it }
                     )
                     SetupStep.ASSISTANT -> AssistantStepContent(
+                        assistants = planAssistants,
                         selectedId = selectedAssistantId,
                         onSelectAssistant = { selectedAssistantId = it }
                     )
@@ -199,6 +264,7 @@ fun PlanSetupScreen(
 
                 Button(
                     onClick = { advance() },
+                    enabled = canAdvance,
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(AppTheme.dimens.primaryButtonHeight),
@@ -224,11 +290,15 @@ private fun StartStepContent() {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        AnimatedBuddy(mood = RobotMood.SUPER, size = 120.dp)
-        Spacer(modifier = Modifier.height(AppTheme.dimens.spacing2Xl))
+        Image(
+            painter = painterResource(ailearn.shared.generated.resources.Res.drawable.plan_start_robot),
+            contentDescription = null,
+            modifier = Modifier.size(220.dp)
+        )
+        Spacer(modifier = Modifier.height(AppTheme.dimens.spacingXl))
 
         Text(
-            text = tr("Personalize your path"),
+            text = tr("Great to meet you"),
             color = AppTheme.colors.textPrimary,
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold
@@ -251,7 +321,14 @@ private fun NameStepContent(
     onNameChange: (String) -> Unit
 ) {
     Column(modifier = Modifier.fillMaxSize()) {
-        Spacer(modifier = Modifier.height(AppTheme.dimens.spacingXl))
+        Image(
+            painter = painterResource(ailearn.shared.generated.resources.Res.drawable.plan_survey_name),
+            contentDescription = null,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(154.dp)
+        )
+        Spacer(modifier = Modifier.height(AppTheme.dimens.spacingMd))
         Text(
             text = tr("What should we call you?"),
             color = AppTheme.colors.textPrimary,
@@ -297,29 +374,58 @@ private fun NameStepContent(
 
 @Composable
 private fun GoalStepContent(
+    choices: List<SetupGoalChoice>,
+    isLoading: Boolean,
+    hasCatalog: Boolean,
     selectedGoalId: String,
-    onSelectGoal: (String) -> Unit
+    goalNote: String,
+    onSelectGoal: (String) -> Unit,
+    onGoalNoteChange: (String) -> Unit,
+    onRetry: () -> Unit
 ) {
     Column(modifier = Modifier.fillMaxSize()) {
         Spacer(modifier = Modifier.height(AppTheme.dimens.spacingXl))
         Text(
-            text = tr("What's your learning goal?"),
+            text = trf("Why do you want to learn %s?", Languages.learn(UserPrefs.targetLanguage).displayName),
             color = AppTheme.colors.textPrimary,
             fontSize = 22.sp,
             fontWeight = FontWeight.Bold
         )
         Spacer(modifier = Modifier.height(4.dp))
         Text(
-            text = tr("We'll build a 30-day plan around it."),
+            text = tr("Choose your main goal. You can change it later."),
             color = AppTheme.colors.textSecondary,
             fontSize = 14.sp
         )
         Spacer(modifier = Modifier.height(AppTheme.dimens.spacingLg))
 
-        LazyColumn(
-            verticalArrangement = Arrangement.spacedBy(AppTheme.dimens.spacingSm)
-        ) {
-            items(GoalOption.ALL) { goal ->
+        if (isLoading) {
+            Box(Modifier.fillMaxWidth().weight(1f), contentAlignment = Alignment.Center) {
+                CircularProgressIndicator(color = AppTheme.colors.primary, strokeWidth = 2.dp)
+            }
+        } else if (!hasCatalog || choices.isEmpty()) {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .weight(1f),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+                Text(
+                    text = tr("Plan goals couldn't be loaded. Check your connection and try again."),
+                    color = AppTheme.colors.textSecondary,
+                    fontSize = 14.sp
+                )
+                TextButton(onClick = onRetry) {
+                    Text(tr("Try Again"), color = AppTheme.colors.primary)
+                }
+            }
+        } else {
+            LazyColumn(
+                modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.spacedBy(AppTheme.dimens.spacingSm)
+            ) {
+                items(choices, key = { it.id }) { goal ->
                 val isSelected = goal.id == selectedGoalId
                 Row(
                     modifier = Modifier
@@ -331,24 +437,26 @@ private fun GoalStepContent(
                             color = if (isSelected) AppTheme.colors.primary else AppTheme.colors.border,
                             shape = RoundedCornerShape(AppTheme.dimens.cornerMd)
                         )
-                        .clickable { onSelectGoal(goal.id) }
+                        .clickable(enabled = goal.hasContent) { onSelectGoal(goal.id) }
                         .padding(AppTheme.dimens.spacingLg),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Column(modifier = Modifier.weight(1f)) {
                         Text(
                             text = tr(goal.title),
-                            color = AppTheme.colors.textPrimary,
+                            color = if (goal.hasContent) AppTheme.colors.textPrimary else AppTheme.colors.textTertiary,
                             fontSize = 15.sp,
                             fontWeight = FontWeight.SemiBold
                         )
                         Text(
-                            text = tr(goal.desc),
+                            text = tr(goal.description),
                             color = AppTheme.colors.textSecondary,
                             fontSize = 13.sp
                         )
                     }
-                    if (isSelected) {
+                    if (!goal.hasContent) {
+                        Text(tr("Coming soon"), color = AppTheme.colors.textTertiary, fontSize = 11.sp)
+                    } else if (isSelected) {
                         Icon(
                             imageVector = Icons.Rounded.Check,
                             contentDescription = null,
@@ -357,6 +465,32 @@ private fun GoalStepContent(
                         )
                     }
                 }
+            }
+            }
+
+            if (selectedGoalId == "custom" && choices.any { it.id == "custom" && it.hasContent }) {
+                Spacer(modifier = Modifier.height(AppTheme.dimens.spacingSm))
+                BasicTextField(
+                    value = goalNote,
+                    onValueChange = onGoalNoteChange,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clip(RoundedCornerShape(AppTheme.dimens.cornerMd))
+                        .background(AppTheme.colors.surfaceCard)
+                        .border(1.dp, AppTheme.colors.border, RoundedCornerShape(AppTheme.dimens.cornerMd))
+                        .padding(horizontal = AppTheme.dimens.spacingLg, vertical = AppTheme.dimens.spacingMd),
+                    textStyle = androidx.compose.ui.text.TextStyle(
+                        color = AppTheme.colors.textPrimary,
+                        fontSize = 15.sp
+                    ),
+                    cursorBrush = SolidColor(AppTheme.colors.primary),
+                    decorationBox = { innerTextField ->
+                        if (goalNote.isEmpty()) {
+                            Text(tr("Tell us your personal goal"), color = AppTheme.colors.textTertiary, fontSize = 15.sp)
+                        }
+                        innerTextField()
+                    }
+                )
             }
         }
     }
@@ -368,16 +502,21 @@ private fun LevelStepContent(
     onSelectLevel: (String) -> Unit
 ) {
     Column(modifier = Modifier.fillMaxSize()) {
-        Spacer(modifier = Modifier.height(AppTheme.dimens.spacingXl))
+        Image(
+            painter = painterResource(ailearn.shared.generated.resources.Res.drawable.plan_survey_level),
+            contentDescription = null,
+            modifier = Modifier.fillMaxWidth().height(154.dp)
+        )
+        Spacer(modifier = Modifier.height(AppTheme.dimens.spacingMd))
         Text(
-            text = tr("What's your level?"),
+            text = tr("Current level"),
             color = AppTheme.colors.textPrimary,
             fontSize = 22.sp,
             fontWeight = FontWeight.Bold
         )
         Spacer(modifier = Modifier.height(4.dp))
         Text(
-            text = tr("Questions get harder as your level goes up."),
+            text = trf("How much %s do you know?", tr(UserPrefs.targetLanguage)),
             color = AppTheme.colors.textSecondary,
             fontSize = 14.sp
         )
@@ -444,16 +583,21 @@ private fun TimeStepContent(
     val times = listOf(5, 10, 15, 20, 30)
 
     Column(modifier = Modifier.fillMaxSize()) {
-        Spacer(modifier = Modifier.height(AppTheme.dimens.spacingXl))
+        Image(
+            painter = painterResource(ailearn.shared.generated.resources.Res.drawable.plan_survey_time),
+            contentDescription = null,
+            modifier = Modifier.fillMaxWidth().height(154.dp)
+        )
+        Spacer(modifier = Modifier.height(AppTheme.dimens.spacingMd))
         Text(
-            text = tr("How much time can you study each day?"),
+            text = tr("Daily study time"),
             color = AppTheme.colors.textPrimary,
             fontSize = 22.sp,
             fontWeight = FontWeight.Bold
         )
         Spacer(modifier = Modifier.height(4.dp))
         Text(
-            text = tr("This sets how many questions you get each day."),
+            text = tr("How much time can you study each day?"),
             color = AppTheme.colors.textSecondary,
             fontSize = 14.sp
         )
@@ -501,20 +645,26 @@ private fun TimeStepContent(
 
 @Composable
 private fun AssistantStepContent(
+    assistants: List<Assistant>,
     selectedId: String,
     onSelectAssistant: (String) -> Unit
 ) {
     Column(modifier = Modifier.fillMaxSize()) {
-        Spacer(modifier = Modifier.height(AppTheme.dimens.spacingXl))
+        Image(
+            painter = painterResource(ailearn.shared.generated.resources.Res.drawable.plan_survey_assistant),
+            contentDescription = null,
+            modifier = Modifier.fillMaxWidth().height(154.dp)
+        )
+        Spacer(modifier = Modifier.height(AppTheme.dimens.spacingMd))
         Text(
-            text = tr("Choose your AI assistant"),
+            text = tr("AI assistant"),
             color = AppTheme.colors.textPrimary,
             fontSize = 22.sp,
             fontWeight = FontWeight.Bold
         )
         Spacer(modifier = Modifier.height(4.dp))
         Text(
-            text = tr("Your assistant guides your AI conversations."),
+            text = tr("Who would you like to learn with?"),
             color = AppTheme.colors.textSecondary,
             fontSize = 14.sp
         )
@@ -523,7 +673,7 @@ private fun AssistantStepContent(
         LazyColumn(
             verticalArrangement = Arrangement.spacedBy(AppTheme.dimens.spacingSm)
         ) {
-            items(Assistant.ALL) { assistant ->
+            items(assistants) { assistant ->
                 val isSelected = assistant.id == selectedId
                 Row(
                     modifier = Modifier
@@ -590,5 +740,25 @@ private fun AssistantStepContent(
                 }
             }
         }
+    }
+}
+
+private data class SetupGoalChoice(
+    val id: String,
+    val title: String,
+    val description: String,
+    val hasContent: Boolean
+)
+
+private fun setupGoalChoices(catalog: PlanCatalogData, learnCode: String): List<SetupGoalChoice> {
+    val catalogGoals = catalog.goals.associateBy { it.id }
+    return GoalOption.ALL.mapNotNull { option ->
+        val goal: PlanGoal = catalogGoals[GoalPlan.canonicalGoalId(option.id)] ?: return@mapNotNull null
+        SetupGoalChoice(
+            id = goal.id,
+            title = option.title,
+            description = option.desc,
+            hasContent = goal.hasContent(learnCode)
+        )
     }
 }

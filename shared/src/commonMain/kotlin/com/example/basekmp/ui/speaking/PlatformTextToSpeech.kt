@@ -5,7 +5,7 @@ import androidx.compose.runtime.Composable
 interface PlatformSpeaker {
     val isSpeaking: Boolean
     val isAvailable: Boolean
-    fun speak(text: String, languageTag: String = "en-US")
+    fun speak(text: String, languageTag: String = "en-US", voicePreference: String? = null)
     fun stop()
     fun setSpeed(speed: Float) {}
 }

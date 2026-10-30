@@ -1,9 +1,5 @@
 package com.example.basekmp
 
-import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.animation.core.tween
-import androidx.compose.animation.fadeIn
-import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -29,6 +25,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -40,6 +37,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.selected
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -65,6 +63,7 @@ import com.example.basekmp.theme.DividerColor
 import com.example.basekmp.theme.EnglishLearningAppTheme
 import com.example.basekmp.theme.GradientBottom
 import com.example.basekmp.theme.OptionSurface
+import com.example.basekmp.theme.OptionSurfaceSelected
 import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.theme.TextSecondary
 import com.example.basekmp.ui.grammar.GrammarQuizScreen
@@ -73,9 +72,16 @@ import com.example.basekmp.ui.learningpath.PathLessonScreen
 import com.example.basekmp.ui.main.MainScreen
 import com.example.basekmp.ui.onboarding.OnboardingScreen
 import com.example.basekmp.ui.plan.PlanGeneratingScreen
+import com.example.basekmp.ui.plan.PlanDayActivitiesScreen
 import com.example.basekmp.ui.plan.PlanScreen
 import com.example.basekmp.ui.plan.PlanSessionScreen
+import com.example.basekmp.ui.plan.PlanSpeakingSessionScreen
 import com.example.basekmp.ui.plan.PlanSetupScreen
+import com.example.basekmp.data.GoalPlan
+import com.example.basekmp.data.PlanProgress
+import com.example.basekmp.data.Strings
+import com.example.basekmp.data.UserPrefs
+import com.example.basekmp.ui.plan.PlanFlow
 import com.example.basekmp.ui.progress.LearningHistoryScreen
 import com.example.basekmp.ui.progress.ProgressDetailScreen
 import com.example.basekmp.ui.settings.LegalScreen
@@ -90,6 +96,7 @@ import com.example.basekmp.ui.tutor.TodayLessonScreen
 import com.example.basekmp.ui.vocab.VocabCardsScreen
 import com.example.basekmp.ui.vocab.VocabSetupScreen
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import org.jetbrains.compose.resources.stringResource
 
 @Composable
@@ -142,6 +149,20 @@ fun App(
                     SplashScreen()
                 } else {
                     when (uiState.route) {
+                        BaseRoutes.StartupLanguage -> LanguageScreen(uiState, viewModel)
+                        BaseRoutes.FirstOpenIntro -> FirstOpenIntroScreen(
+                            page = uiState.firstOpenPage,
+                            onPageSelected = viewModel::selectFirstOpenPage,
+                            onNext = viewModel::advanceFirstOpenIntro
+                        )
+                        BaseRoutes.FirstOpenSurvey -> FirstOpenSurveyScreen(
+                            selectedLanguage = uiState.firstOpenSurveyLanguage,
+                            isSaving = uiState.isSaving,
+                            hasError = uiState.hasError,
+                            onSelectLanguage = viewModel::selectFirstOpenSurveyLanguage,
+                            onContinue = { viewModel.finishFirstOpenSurvey() },
+                            onSkip = { viewModel.finishFirstOpenSurvey(skip = true) }
+                        )
                         BaseRoutes.LanguageSettings -> com.example.basekmp.ui.settings.LanguageScreen(
                             onBack = { viewModel.closeLanguageSettings() },
                             onLanguageSelected = { langCode ->
@@ -306,11 +327,11 @@ private fun LanguageScreen(state: BaseAppUiState, viewModel: BaseAppViewModel) {
                 )
             )
             .safeDrawingPadding()
-            .padding(horizontal = 20.dp)
+            .padding(horizontal = if (settingsMode) 20.dp else 16.dp)
     ) {
-        Spacer(Modifier.height(14.dp))
+        if (settingsMode) Spacer(Modifier.height(14.dp))
         Row(
-            modifier = Modifier.fillMaxWidth().height(64.dp),
+            modifier = Modifier.fillMaxWidth().height(if (settingsMode) 64.dp else 52.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
             if (settingsMode) {
@@ -324,28 +345,30 @@ private fun LanguageScreen(state: BaseAppUiState, viewModel: BaseAppViewModel) {
                 Spacer(Modifier.width(16.dp))
             }
             Text(
-                text = stringResource(Res.string.language_title),
+                text = if (settingsMode) stringResource(Res.string.language_title) else Strings.tr("Select Native Language"),
                 style = MaterialTheme.typography.titleLarge,
                 color = TextPrimary,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.weight(1f)
             )
-            AnimatedVisibility(
-                visible = state.hasUserSelectedLanguage && canConfirm,
-                enter = fadeIn(tween(350)),
-                exit = fadeOut(tween(150))
+            Box(
+                modifier = Modifier
+                    .size(44.dp)
+                    .clip(CircleShape)
+                    .background(Blue.copy(alpha = if (canConfirm) 1f else 0.5f))
+                    .semantics { contentDescription = confirmAccessibilityLabel }
+                    .clickable(
+                        enabled = canConfirm,
+                        role = Role.Button,
+                        onClick = { viewModel.confirmLanguage() }
+                    ),
+                contentAlignment = Alignment.Center
             ) {
-                Box(
-                    modifier = Modifier
-                        .size(44.dp)
-                        .clip(CircleShape)
-                        .background(Blue)
-                        .semantics { contentDescription = confirmAccessibilityLabel }
-                        .clickable { viewModel.confirmLanguage() },
-                    contentAlignment = Alignment.Center
-                ) {
-                    Text("✓", color = Color.White, style = MaterialTheme.typography.headlineSmall)
-                }
+                Text(
+                    "✓",
+                    color = Color.White.copy(alpha = if (canConfirm) 1f else 0.7f),
+                    style = MaterialTheme.typography.headlineSmall
+                )
             }
         }
         Spacer(Modifier.height(16.dp))
@@ -355,43 +378,51 @@ private fun LanguageScreen(state: BaseAppUiState, viewModel: BaseAppViewModel) {
         ) {
             items(languages, key = { it.code }) { option ->
                 val selected = option.code == state.selectedLanguageCode
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .clip(RoundedCornerShape(18.dp))
-                        .background(OptionSurface)
-                        .border(
-                            width = 1.5.dp,
-                            color = if (selected) BlueSelected else DividerColor,
-                            shape = RoundedCornerShape(18.dp)
+                if (settingsMode) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clip(RoundedCornerShape(18.dp))
+                            .background(OptionSurface)
+                            .border(
+                                width = 1.5.dp,
+                                color = if (selected) BlueSelected else DividerColor,
+                                shape = RoundedCornerShape(18.dp)
+                            )
+                            .clickable { viewModel.selectLanguage(option.code) }
+                            .padding(16.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text(
+                            text = option.flag,
+                            fontSize = 26.sp,
+                            modifier = Modifier.width(44.dp),
+                            textAlign = TextAlign.Center
                         )
-                        .clickable { viewModel.selectLanguage(option.code) }
-                        .padding(16.dp),
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    Text(
-                        text = option.flag,
-                        fontSize = 26.sp,
-                        modifier = Modifier.width(44.dp),
-                        textAlign = TextAlign.Center
+                        Spacer(Modifier.width(14.dp))
+                        Column(Modifier.weight(1f)) {
+                            Text(
+                                option.nativeName,
+                                style = MaterialTheme.typography.titleMedium,
+                                color = if (selected) BlueSelected else TextPrimary,
+                                fontWeight = if (selected) FontWeight.Bold else FontWeight.SemiBold
+                            )
+                            Text(
+                                option.name,
+                                style = MaterialTheme.typography.bodySmall,
+                                color = TextSecondary
+                            )
+                        }
+                        if (selected) {
+                            Text("✓", color = BlueSelected, fontWeight = FontWeight.Bold, fontSize = 18.sp)
+                        }
+                    }
+                } else {
+                    StartupLanguageOptionRow(
+                        option = option,
+                        selected = selected,
+                        onClick = { viewModel.selectLanguage(option.code) }
                     )
-                    Spacer(Modifier.width(14.dp))
-                    Column(Modifier.weight(1f)) {
-                        Text(
-                            option.nativeName,
-                            style = MaterialTheme.typography.titleMedium,
-                            color = if (selected) BlueSelected else TextPrimary,
-                            fontWeight = if (selected) FontWeight.Bold else FontWeight.SemiBold
-                        )
-                        Text(
-                            option.name,
-                            style = MaterialTheme.typography.bodySmall,
-                            color = TextSecondary
-                        )
-                    }
-                    if (selected) {
-                        Text("✓", color = BlueSelected, fontWeight = FontWeight.Bold, fontSize = 18.sp)
-                    }
                 }
             }
         }
@@ -400,6 +431,68 @@ private fun LanguageScreen(state: BaseAppUiState, viewModel: BaseAppViewModel) {
             Text(stringResource(Res.string.language_save_error), color = MaterialTheme.colorScheme.error)
         }
         Spacer(Modifier.height(16.dp))
+    }
+}
+
+@Composable
+private fun StartupLanguageOptionRow(
+    option: BaseLanguage,
+    selected: Boolean,
+    onClick: () -> Unit
+) {
+    val shape = RoundedCornerShape(16.dp)
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clip(shape)
+            .background(if (selected) OptionSurfaceSelected else Color.White)
+            .border(
+                width = if (selected) 1.5.dp else 1.dp,
+                color = if (selected) BlueSelected else DividerColor,
+                shape = shape
+            )
+            .clickable(role = Role.RadioButton, onClick = onClick)
+            .semantics { this.selected = selected }
+            .padding(horizontal = 16.dp, vertical = 16.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Box(
+            modifier = Modifier
+                .size(32.dp)
+                .clip(CircleShape)
+                .background(Color.White)
+                .border(1.dp, DividerColor, CircleShape),
+            contentAlignment = Alignment.Center
+        ) {
+            Text(option.flag, fontSize = 18.sp)
+        }
+        Spacer(Modifier.width(14.dp))
+        Text(
+            text = option.nativeName,
+            modifier = Modifier.weight(1f),
+            style = MaterialTheme.typography.titleMedium,
+            color = if (selected) BlueSelected else TextPrimary,
+            fontWeight = if (selected) FontWeight.Bold else FontWeight.Medium,
+            maxLines = 1
+        )
+        Spacer(Modifier.width(12.dp))
+        Box(
+            modifier = Modifier
+                .size(22.dp)
+                .clip(CircleShape)
+                .background(if (selected) BlueSelected else Color.Transparent)
+                .border(1.5.dp, if (selected) BlueSelected else DividerColor, CircleShape),
+            contentAlignment = Alignment.Center
+        ) {
+            if (selected) {
+                Box(
+                    modifier = Modifier
+                        .size(8.dp)
+                        .clip(CircleShape)
+                        .background(Color.White)
+                )
+            }
+        }
     }
 }
 
@@ -419,7 +512,11 @@ private sealed interface ActiveSubScreen {
     data object PlanSetup : ActiveSubScreen
     data object PlanGenerating : ActiveSubScreen
     data object PlanRoadmap : ActiveSubScreen
+    data class PlanDay(val day: Int) : ActiveSubScreen
     data class PlanSession(val day: Int) : ActiveSubScreen
+    data class PlanSpeaking(val day: Int) : ActiveSubScreen
+    data class PlanVideo(val day: Int, val videoId: String) : ActiveSubScreen
+    data class PlanTalk(val day: Int, val title: String, val level: String) : ActiveSubScreen
     data class ProgressDetail(val kind: String) : ActiveSubScreen
     data object LearningHistory : ActiveSubScreen
     data class Legal(val docType: String) : ActiveSubScreen
@@ -434,17 +531,28 @@ private fun MainAppHost(
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     var activeSubScreen by remember { mutableStateOf<ActiveSubScreen?>(null) }
+    var lessonBackRequest by remember { mutableIntStateOf(0) }
+    val planScope = androidx.compose.runtime.rememberCoroutineScope()
 
     BackActionHandler(enabled = activeSubScreen != null) {
-        activeSubScreen = when (val current = activeSubScreen) {
+        val current = activeSubScreen
+        if (current is ActiveSubScreen.TodayLesson || current is ActiveSubScreen.PlanTalk) {
+            lessonBackRequest++
+        } else {
+            activeSubScreen = when (current) {
             is ActiveSubScreen.ShadowingPlayer -> ActiveSubScreen.ShadowingList
             is ActiveSubScreen.SavedWords -> ActiveSubScreen.ShadowingList
-            is ActiveSubScreen.PlanSession -> ActiveSubScreen.PlanRoadmap
+            is ActiveSubScreen.PlanDay -> ActiveSubScreen.PlanRoadmap
+            is ActiveSubScreen.PlanSession -> ActiveSubScreen.PlanDay(current.day)
+            is ActiveSubScreen.PlanSpeaking -> ActiveSubScreen.PlanDay(current.day)
+            is ActiveSubScreen.PlanVideo -> ActiveSubScreen.PlanDay(current.day)
+            is ActiveSubScreen.PlanTalk -> ActiveSubScreen.PlanDay(current.day)
             is ActiveSubScreen.PlanGenerating -> ActiveSubScreen.PlanSetup
             is ActiveSubScreen.VocabCards -> ActiveSubScreen.VocabSetup
             is ActiveSubScreen.GrammarQuiz -> ActiveSubScreen.GrammarSetup
             is ActiveSubScreen.SpeakingCards -> ActiveSubScreen.SpeakingSetup
             else -> null
+            }
         }
     }
     BackActionHandler(enabled = activeSubScreen == null) {
@@ -471,10 +579,11 @@ private fun MainAppHost(
                     activeSubScreen = if (hasPlan) ActiveSubScreen.PlanRoadmap else ActiveSubScreen.PlanSetup
                 },
                 onOpenPlanDay = { day ->
-                    activeSubScreen = ActiveSubScreen.PlanSession(day)
+                    activeSubScreen = ActiveSubScreen.PlanDay(day)
                 },
                 onFeatureClick = { feature ->
                     activeSubScreen = when {
+                        feature.equals("premium", ignoreCase = true) -> null
                         feature.startsWith("video_shadowing:") -> {
                             val videoId = feature.removePrefix("video_shadowing:")
                             ActiveSubScreen.ShadowingPlayer(videoId)
@@ -503,14 +612,31 @@ private fun MainAppHost(
         } else {
             when (val screen = activeSubScreen) {
                 ActiveSubScreen.AiTutor -> {
-                    AiTutorScreen(onBack = { activeSubScreen = null })
+                    AiTutorScreen(onBack = { completed ->
+                        if (completed) {
+                            UserPrefs.addLearnedMinutes(6)
+                            UserPrefs.addLearning(title = "AI Tutor", score = 0, total = 0)
+                        }
+                        activeSubScreen = null
+                    })
                 }
                 is ActiveSubScreen.TodayLesson -> {
                     TodayLessonScreen(
                         title = screen.title,
                         level = screen.level,
+                        systemBackRequest = lessonBackRequest,
                         onBack = { activeSubScreen = null },
                         onFinish = { activeSubScreen = null }
+                    )
+                }
+                is ActiveSubScreen.PlanTalk -> {
+                    TodayLessonScreen(
+                        title = screen.title,
+                        level = screen.level,
+                        day = screen.day,
+                        systemBackRequest = lessonBackRequest,
+                        onBack = { activeSubScreen = ActiveSubScreen.PlanDay(screen.day) },
+                        onFinish = { activeSubScreen = ActiveSubScreen.PlanDay(screen.day) }
                     )
                 }
                 ActiveSubScreen.VocabSetup -> {
@@ -563,6 +689,18 @@ private fun MainAppHost(
                         onOpenSavedWords = { activeSubScreen = ActiveSubScreen.SavedWords }
                     )
                 }
+                is ActiveSubScreen.PlanVideo -> {
+                    VideoShadowingPlayerScreen(
+                        videoId = screen.videoId,
+                        onClose = { activeSubScreen = ActiveSubScreen.PlanDay(screen.day) },
+                        onOpenSavedWords = { activeSubScreen = ActiveSubScreen.SavedWords },
+                        onSessionCompleted = {
+                            planScope.launch {
+                                PlanFlow.finish(screen.day, PlanProgress.Activity.VIDEO)
+                            }
+                        }
+                    )
+                }
                 ActiveSubScreen.SavedWords -> {
                     SavedWordsScreen(onBack = { activeSubScreen = ActiveSubScreen.ShadowingList })
                 }
@@ -587,14 +725,40 @@ private fun MainAppHost(
                     PlanScreen(
                         onBack = { activeSubScreen = null },
                         onChangeGoal = { activeSubScreen = ActiveSubScreen.PlanSetup },
-                        onOpenDay = { day -> activeSubScreen = ActiveSubScreen.PlanSession(day) }
+                        onOpenDay = { day -> activeSubScreen = ActiveSubScreen.PlanDay(day) }
+                    )
+                }
+                is ActiveSubScreen.PlanDay -> {
+                    PlanDayActivitiesScreen(
+                        day = screen.day,
+                        onBack = { activeSubScreen = ActiveSubScreen.PlanRoadmap },
+                        onOpenActivity = { activity, plan ->
+                            activeSubScreen = when (activity) {
+                                PlanProgress.Activity.VIDEO -> plan.videoId?.let { ActiveSubScreen.PlanVideo(screen.day, it) }
+                                    ?: ActiveSubScreen.PlanDay(screen.day)
+                                PlanProgress.Activity.QUIZ -> ActiveSubScreen.PlanSession(screen.day)
+                                PlanProgress.Activity.SPEAKING -> ActiveSubScreen.PlanSpeaking(screen.day)
+                                PlanProgress.Activity.TALK -> ActiveSubScreen.PlanTalk(
+                                    day = screen.day,
+                                    title = plan.stage.displayTitle(GoalPlan.learnCode(UserPrefs.targetLanguage)),
+                                    level = UserPrefs.englishLevel
+                                )
+                            }
+                        }
                     )
                 }
                 is ActiveSubScreen.PlanSession -> {
                     PlanSessionScreen(
                         day = screen.day,
-                        onBack = { activeSubScreen = ActiveSubScreen.PlanRoadmap },
-                        onFinish = { activeSubScreen = ActiveSubScreen.PlanRoadmap }
+                        onBack = { activeSubScreen = ActiveSubScreen.PlanDay(screen.day) },
+                        onFinish = { activeSubScreen = ActiveSubScreen.PlanDay(screen.day) }
+                    )
+                }
+                is ActiveSubScreen.PlanSpeaking -> {
+                    PlanSpeakingSessionScreen(
+                        day = screen.day,
+                        onBack = { activeSubScreen = ActiveSubScreen.PlanDay(screen.day) },
+                        onFinish = { activeSubScreen = ActiveSubScreen.PlanDay(screen.day) }
                     )
                 }
                 is ActiveSubScreen.ProgressDetail -> {

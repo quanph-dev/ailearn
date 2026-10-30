@@ -29,8 +29,12 @@ import ailearn.shared.generated.resources.thumb_visiting_a_car_repair_shop
 import ailearn.shared.generated.resources.thumb_what_time_is_it
 import ailearn.shared.generated.resources.thumb_why_are_you_learning_english
 import org.jetbrains.compose.resources.DrawableResource
+import com.example.basekmp.config.AppConfig
+import com.example.basekmp.currentTimeMillis
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.IO
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.booleanOrNull
@@ -100,14 +104,28 @@ object ShadowingVideos {
 
     private var catalogCache: List<Video>? = null
     private val videoCache = mutableMapOf<String, Video>()
+    private val catalogMutex = Mutex()
+    private val scriptMutex = Mutex()
+    private var catalogUrlCache: String? = null
+    private var catalogRefreshedAt = 0L
+
+    private const val CATALOG_FILE = "catalog.json"
+    private const val CATALOG_URL_FILE = "catalog.url"
+    private const val CATALOG_REFRESH_MS = 10 * 60 * 1000L
 
     fun clearCache() {
         catalogCache = null
         videoCache.clear()
+        catalogUrlCache = null
+        catalogRefreshedAt = 0L
     }
 
     suspend fun all(): List<Video> = withContext(Dispatchers.IO) {
-        catalogCache?.let { return@withContext it }
+        val url = AppConfig.shadowingCatalogUrl.trim()
+        val now = currentTimeMillis()
+        if (catalogUrlCache == url && now - catalogRefreshedAt < CATALOG_REFRESH_MS) {
+            catalogCache?.let { return@withContext it }
+        }
         val catalogEntries = loadCatalogEntries()
         val list = catalogEntries.map { entry ->
             val cached = videoCache[entry.id]
@@ -119,7 +137,7 @@ object ShadowingVideos {
                     category = entry.category,
                     scene = "☕",
                     colors = Pair(0xFFFFE7CC, 0xFFFAD4AC),
-                    asset = entry.clipUrl,
+                    asset = playbackUrl(entry),
                     thumbMs = 500L,
                     speakers = emptyList(),
                     lines = emptyList(),
@@ -128,8 +146,9 @@ object ShadowingVideos {
                 )
             }
         }
-        catalogCache = list
-        list
+        val orderedList = ordered(list, AppConfig.shadowingFirstVideo)
+        catalogCache = orderedList
+        orderedList
     }
 
     suspend fun load(id: String): Video? = open(id)
@@ -139,34 +158,11 @@ object ShadowingVideos {
         val catalogEntries = loadCatalogEntries()
         val entry = catalogEntries.firstOrNull { it.id == id }
 
-        val scriptPath = "files/shadowing/scripts/$id.json"
-        val bytes = try {
-            Res.readBytes(scriptPath)
-        } catch (_: Exception) {
-            null
-        }
-
-        if (bytes == null) {
-            return@withContext entry?.let {
-                Video(
-                    id = it.id,
-                    title = it.title,
-                    level = it.level,
-                    category = it.category,
-                    scene = "☕",
-                    colors = Pair(0xFFFFE7CC, 0xFFFAD4AC),
-                    asset = it.clipUrl,
-                    thumbMs = 500L,
-                    speakers = emptyList(),
-                    lines = emptyList(),
-                    words = emptyList(),
-                    remote = it
-                )
-            }
-        }
+        val scriptText = entry?.let { loadScript(it) } ?: bundledScript(id)
+        if (scriptText == null) return@withContext entry?.toVideoWithoutScript()
 
         try {
-            val root = Json.parseToJsonElement(bytes.decodeToString()).jsonObject
+            val root = Json.parseToJsonElement(scriptText).jsonObject
             val scene = root["scene"]?.jsonPrimitive?.content ?: "☕"
             val colorsArray = root["colors"]?.jsonArray
             val c1 = color(colorsArray?.getOrNull(0)?.jsonPrimitive?.content, 0xFFFFE7CC)
@@ -204,7 +200,7 @@ object ShadowingVideos {
                 val wObj = wElement.jsonObject
                 val w = wObj["word"]?.jsonPrimitive?.content.orEmpty()
                 val m = wObj["meaning"]?.jsonPrimitive?.content.orEmpty()
-                val trObj = wObj["translations"]?.jsonObject
+                val trObj = (wObj["translations"] ?: wObj["tr"])?.jsonObject
                 val trMap = trObj?.mapValues { (_, v) -> v.jsonPrimitive.content } ?: emptyMap()
                 Word(word = w, meaning = m, translations = trMap)
             } ?: emptyList()
@@ -216,13 +212,14 @@ object ShadowingVideos {
                 category = entry?.category ?: "daily",
                 scene = scene,
                 colors = Pair(c1, c2),
-                asset = entry?.clipUrl ?: "",
+                asset = entry?.let(::playbackUrl).orEmpty(),
                 thumbMs = 500L,
                 speakers = speakers,
                 lines = lines,
                 words = words,
                 remote = entry
             )
+            if (video.lines.isEmpty()) return@withContext null
             videoCache[id] = video
             video
         } catch (_: Exception) {
@@ -233,6 +230,13 @@ object ShadowingVideos {
     fun title(video: Video, langCode: String = UserPrefs.nativeLanguage): String {
         val titles = video.remote?.titles
         return titles?.get(langCode) ?: video.title
+    }
+
+    fun thumbnailUrl(video: Video): String {
+        val path = video.remote?.thumbUrl?.takeIf { it.isNotBlank() } ?: return ""
+        if (path.startsWith("https://")) return path
+        val objectPath = if (path.startsWith("shadowing/")) path else "shadowing/$path"
+        return storageUrl(objectPath)
     }
 
     fun levelName(video: Video): String = when (video.level.uppercase()) {
@@ -277,19 +281,29 @@ object ShadowingVideos {
         val savedWords = UserPrefs.savedWordsState.value.keys
         val allVideos = all()
         val index = mutableMapOf<String, SavedWord>()
+        val normalizedNativeCode = nativeCode.lowercase()
 
         for (v in allVideos) {
             val fullVideo = open(v.id) ?: continue
             for (w in fullVideo.words) {
-                val key = w.word.lowercase()
-                if (savedWords.contains(key) && !index.containsKey(key)) {
-                    val meaning = w.translations[nativeCode] ?: w.meaning
-                    index[key] = SavedWord(
-                        display = w.word,
-                        meaning = meaning,
-                        videoTitle = fullVideo.title,
-                        videoTitles = fullVideo.remote?.titles ?: emptyMap()
-                    )
+                val scriptCodes = (listOf("en") + w.translations.keys).distinct()
+                for (scriptCode in scriptCodes) {
+                    val displayWord = w.wordIn(scriptCode)
+                    val key = displayWord.lowercase()
+                    if (savedWords.contains(key) && !index.containsKey(key)) {
+                        val meaning = when {
+                            scriptCode == "en" && normalizedNativeCode == "en" -> w.meaning
+                            scriptCode == "en" -> w.translations[normalizedNativeCode] ?: w.meaning
+                            normalizedNativeCode == "en" || normalizedNativeCode == scriptCode -> w.word
+                            else -> w.translations[normalizedNativeCode] ?: w.word
+                        }
+                        index[key] = SavedWord(
+                            display = displayWord,
+                            meaning = meaning,
+                            videoTitle = fullVideo.title,
+                            videoTitles = fullVideo.remote?.titles ?: emptyMap()
+                        )
+                    }
                 }
             }
         }
@@ -308,17 +322,78 @@ object ShadowingVideos {
     }
 
     private suspend fun loadCatalogEntries(): List<CatalogEntry> {
-        val bytes = try {
-            Res.readBytes("files/shadowing/catalog.json")
-        } catch (e: Exception) {
-            println("ShadowingVideos: loadCatalogEntries failed to read bytes: $e")
-            return emptyList()
+        val url = AppConfig.shadowingCatalogUrl.trim()
+        val now = currentTimeMillis()
+        if (catalogUrlCache == url && now - catalogRefreshedAt < CATALOG_REFRESH_MS) {
+            catalogEntriesFromVideos()?.let { return it }
         }
 
-        return try {
-            val root = Json.parseToJsonElement(bytes.decodeToString()).jsonObject
-            val videos = root["videos"]?.jsonArray ?: return emptyList()
-            videos.map { element ->
+        return catalogMutex.withLock {
+            val lockedNow = currentTimeMillis()
+            if (catalogUrlCache == url && lockedNow - catalogRefreshedAt < CATALOG_REFRESH_MS) {
+                catalogEntriesFromVideos()?.let { return@withLock it }
+            }
+
+            val cachedText = if (platformReadShadowingCache(CATALOG_URL_FILE)?.trim() == url) {
+                platformReadShadowingCache(CATALOG_FILE)
+            } else null
+            val cachedEntries = cachedText?.let(::parseCatalogEntries)
+            val response = if (url.isNotBlank()) {
+                platformHttpGet(url, readTimeoutMs = 10_000, connectTimeoutMs = 10_000)
+            } else null
+            val remoteText = response?.body?.takeIf { response.statusCode in 200..299 && it.isNotBlank() }
+            val remoteEntries = remoteText?.let(::parseCatalogEntries)
+
+            if (!remoteText.isNullOrBlank() && !remoteEntries.isNullOrEmpty()) {
+                if (catalogUrlCache != url || catalogRefreshedAt > 0L) {
+                    catalogCache = null
+                    videoCache.clear()
+                }
+                platformWriteShadowingCache(CATALOG_FILE, remoteText)
+                platformWriteShadowingCache(CATALOG_URL_FILE, url)
+                catalogUrlCache = url
+                catalogRefreshedAt = lockedNow
+                return@withLock remoteEntries
+            }
+
+            val bundledEntries = if (cachedEntries.isNullOrEmpty()) bundledCatalogEntries() else null
+            val fallback = cachedEntries?.takeIf { it.isNotEmpty() } ?: bundledEntries.orEmpty()
+            catalogUrlCache = url
+            catalogRefreshedAt = lockedNow - CATALOG_REFRESH_MS + 30_000L
+            fallback
+        }
+    }
+
+    /** Keeps the same Remote Config pin behavior as the original app. */
+    private fun ordered(videos: List<Video>, pinnedIds: String): List<Video> {
+        val preferredIds = pinnedIds.split(',').map(String::trim).filter(String::isNotEmpty).distinct()
+        if (preferredIds.isEmpty()) return videos
+
+        val pinnedVideos = preferredIds.mapNotNull { id -> videos.firstOrNull { it.id == id } }
+        return pinnedVideos + videos.filterNot { it in pinnedVideos }
+    }
+
+    private fun catalogEntriesFromVideos(): List<CatalogEntry>? = catalogCache?.map { video ->
+        video.remote ?: CatalogEntry(
+            id = video.id,
+            title = video.title,
+            level = video.level,
+            category = video.category,
+            clipUrl = video.asset
+        )
+    }
+
+    private suspend fun bundledCatalogEntries(): List<CatalogEntry> = try {
+        parseCatalogEntries(Res.readBytes("files/shadowing/catalog.json").decodeToString())
+    } catch (_: Exception) {
+        emptyList()
+    }
+
+    private fun parseCatalogEntries(text: String): List<CatalogEntry> = try {
+        val root = Json.parseToJsonElement(text).jsonObject
+        val videos = root["videos"]?.jsonArray ?: return emptyList()
+        videos.mapNotNull { element ->
+            runCatching {
                 val obj = element.jsonObject
                 val id = obj["id"]?.jsonPrimitive?.content.orEmpty()
                 val title = obj["title"]?.jsonPrimitive?.content.orEmpty()
@@ -346,11 +421,116 @@ object ShadowingVideos {
                     version = version,
                     minVersionCode = minVer
                 )
+            }.getOrNull()?.takeIf {
+                it.id.matches(Regex("[A-Za-z0-9_-]+")) &&
+                    it.version > 0 &&
+                    isSafeAssetReference(it.clipUrl) &&
+                    (it.thumbUrl.isBlank() || isSafeAssetReference(it.thumbUrl)) &&
+                    (it.scriptUrl.isBlank() || isSafeAssetReference(it.scriptUrl))
             }
-        } catch (_: Exception) {
-            emptyList()
         }
+    } catch (_: Exception) {
+        emptyList()
     }
+
+    private suspend fun loadScript(entry: CatalogEntry): String? = scriptMutex.withLock {
+        val scriptPath = entry.scriptUrl.takeIf { it.isNotBlank() } ?: "scripts/${entry.id}.json"
+        val cacheName = "scripts/${entry.id}.v${entry.version}.json"
+        val sourceName = "$cacheName.url"
+        val sourceUrl = when {
+            scriptPath.startsWith("https://") -> scriptPath
+            else -> {
+                val objectPath = if (scriptPath.startsWith("shadowing/")) scriptPath else "shadowing/$scriptPath"
+                storageUrl(objectPath)
+            }
+        }
+        val cachedText = if (platformReadShadowingCache(sourceName)?.trim() == sourceUrl) {
+            platformReadShadowingCache(cacheName)
+        } else null
+        val validCachedText = cachedText?.takeIf(::hasUsableScriptLines)
+        if (!validCachedText.isNullOrBlank()) return@withLock validCachedText
+
+        val remoteResponse = if (sourceUrl.isNotBlank()) {
+            platformHttpGet(sourceUrl, readTimeoutMs = 10_000, connectTimeoutMs = 10_000)
+        } else null
+        val remoteText = remoteResponse?.body?.takeIf {
+            remoteResponse.statusCode in 200..299 && hasUsableScriptLines(it)
+        }
+        if (!remoteText.isNullOrBlank()) {
+            platformWriteShadowingCache(cacheName, remoteText)
+            platformWriteShadowingCache(sourceName, sourceUrl)
+            return@withLock remoteText
+        }
+        bundledScript(entry.id)?.takeIf(::hasUsableScriptLines)
+    }
+
+    private fun hasUsableScriptLines(text: String): Boolean = runCatching {
+        Json.parseToJsonElement(text).jsonObject["lines"]?.jsonArray?.isNotEmpty() == true
+    }.getOrDefault(false)
+
+    private suspend fun bundledScript(id: String): String? = try {
+        Res.readBytes("files/shadowing/scripts/$id.json").decodeToString()
+    } catch (_: Exception) {
+        null
+    }
+
+    fun playbackUrl(video: Video): String {
+        val clipPath = video.remote?.clipUrl?.takeIf { it.isNotBlank() } ?: video.asset
+        if (clipPath.startsWith("http://") || clipPath.startsWith("https://") ||
+            clipPath.startsWith("asset://") || clipPath.startsWith("file://") ||
+            clipPath.startsWith("content://") || clipPath.startsWith("/")) return clipPath
+        val objectPath = if (clipPath.startsWith("shadowing/")) clipPath else "shadowing/$clipPath"
+        return storageUrl(objectPath)
+    }
+
+    private fun CatalogEntry.toVideoWithoutScript() = Video(
+        id = id,
+        title = title,
+        level = level,
+        category = category,
+        scene = "☕",
+        colors = Pair(0xFFFFE7CC, 0xFFFAD4AC),
+        asset = playbackUrl(this),
+        thumbMs = 500L,
+        speakers = emptyList(),
+        lines = emptyList(),
+        words = emptyList(),
+        remote = this
+    )
+
+    private fun playbackUrl(entry: CatalogEntry): String {
+        val clip = entry.clipUrl
+        if (clip.startsWith("http://") || clip.startsWith("https://")) return clip
+        val objectPath = if (clip.startsWith("shadowing/")) clip else "shadowing/$clip"
+        return storageUrl(objectPath)
+    }
+
+    private fun storageUrl(objectPath: String): String {
+        val base = AppConfig.cdnBucketUrl.trim()
+        if (base.isBlank()) return ""
+        val encodedPath = buildString {
+            val hex = "0123456789ABCDEF"
+            for (byte in objectPath.encodeToByteArray()) {
+                val value = byte.toInt() and 0xFF
+                val char = value.toChar()
+                if (char in 'a'..'z' || char in 'A'..'Z' || char in '0'..'9' || char in "-_.~/") {
+                    append(char)
+                } else {
+                    append('%')
+                    append(hex[value ushr 4])
+                    append(hex[value and 0x0F])
+                }
+            }
+        }
+        return "${base.trimEnd('/')}/${encodedPath.replace("/", "%2F")}?alt=media"
+    }
+
+    private fun isSafeObjectPath(path: String): Boolean =
+        path.isNotBlank() && !path.startsWith('/') && '\\' !in path &&
+            path.split('/').all { it.isNotBlank() && it != "." && it != ".." }
+
+    private fun isSafeAssetReference(path: String): Boolean =
+        path.startsWith("https://") || isSafeObjectPath(path)
 
     private fun color(hex: String?, fallback: Long): Long {
         val clean = hex?.removePrefix("#") ?: return fallback

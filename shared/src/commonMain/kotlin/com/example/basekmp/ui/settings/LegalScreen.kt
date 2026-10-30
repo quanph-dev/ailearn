@@ -35,7 +35,6 @@ private val PrivacySections = listOf(
     "Voice & Microphone" to "When you use the microphone to practise speaking, your voice is processed by the on-device speech recognizer to produce a text transcript. We do not record, store or upload your voice audio to external servers.",
     "AI Tutor & Generated Content" to "Messages you send to the AI Tutor and the text needed to generate lessons, vocabulary, grammar and speaking practice are processed by Google's Gemini LLM to generate replies. This content is used solely to produce learning responses and is never linked to your personal identity.",
     "Analytics" to "We collect anonymous product interaction events to understand how features are used (such as which lesson or practice is completed) so we can continuously refine the learning experience.",
-    "Subscriptions" to "All purchases are managed securely via platform billing. We never store or access your credit card details.",
     "Data Control" to "You can clear your local progress and preferences at any time in Settings. Uninstalling the app also removes all cached session logs.",
     "Children's Privacy" to "Engla: Learn Language with AI is not directed at children under 13, and we do not knowingly collect personal information from children under 13.",
     "Contact Us" to "Questions about this privacy policy? Contact us at support@example.com."
@@ -44,7 +43,6 @@ private val PrivacySections = listOf(
 private val TermsSections = listOf(
     "Acceptance of Terms" to "By downloading or using Engla: Learn Language with AI, you agree to these terms. If you do not agree, please discontinue using the app.",
     "Educational Disclaimer" to "Engla: Learn Language with AI provides automated language practice, vocabulary quizzes, grammar explanations and AI chat. Lesson content and scoring are generated algorithmically and are intended for self-study and educational enrichment only.",
-    "Subscriptions & Pro Access" to "Premium features are unlocked via active subscription. Subscriptions renew automatically unless cancelled before the renewal date through your app store account settings.",
     "Acceptable Use" to "The app is provided for personal, non-commercial language learning. You may not reverse-engineer, exploit, or attempt to circumvent application security or limits.",
     "Limitation of Liability" to "To the maximum extent permitted by law, the app and services are provided 'as is' without warranty of any kind.",
     "Changes" to "We may update these terms periodically. Continued use of the app signifies acceptance of any revisions."

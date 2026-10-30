@@ -10,7 +10,7 @@ val TextSecondary = Color(0xFF9C9EA6) // 4288323750L
 val OptionSurface = Color(0xFFF6F7F7) // 4294243831L
 val OptionSurfaceSelected = Color(0xFFECF0FE) // 4293587454L
 val DividerColor = Color(0xFFEBECEE) // 4293520109L
-val TrackColor = Color(0xFFF1F2F6) // 4293914609L
+val TrackColor = Color(0xFFEFEFF1) // Original Engla progress track, slightly gray against white surfaces
 val GradientBottom = Color(0xFFEFF1FB) // 4293784315L
 
 // CEFR Level Colors

@@ -35,7 +35,6 @@ import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material.icons.automirrored.rounded.Send
 import androidx.compose.material.icons.automirrored.rounded.VolumeUp
 import androidx.compose.material.icons.rounded.Check
@@ -43,15 +42,11 @@ import androidx.compose.material.icons.rounded.ContentCopy
 import androidx.compose.material.icons.rounded.Delete
 import androidx.compose.material.icons.rounded.Flag
 import androidx.compose.material.icons.rounded.Mic
-import androidx.compose.material.icons.rounded.Person
-import androidx.compose.material.icons.rounded.SmartToy
 import androidx.compose.material.icons.rounded.Stop
 import androidx.compose.ui.platform.LocalClipboardManager
 import androidx.compose.ui.text.AnnotatedString
 import com.example.basekmp.ui.components.AnimatedRobot
 import com.example.basekmp.ui.components.RobotFrameAspect
-import androidx.compose.material3.DropdownMenu
-import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Surface
@@ -74,22 +69,23 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.basekmp.components.AnimatedBuddy
 import com.example.basekmp.components.RobotMood
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
 import com.example.basekmp.theme.AppTheme
-import com.example.basekmp.ui.plan.Assistant
+import com.example.basekmp.ui.components.BackTitleBar
 import com.example.basekmp.ui.speaking.PlatformSpeechRecognition
 import com.example.basekmp.ui.speaking.rememberPlatformSpeaker
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+private const val AI_TUTOR_GREETING =
+    "Hi! I'm your AI English tutor. Ask me anything, or pick a quick action below to get started."
+
 /**
  * Conversational AI Tutor Screen.
  * 100% migrated from decompiled AiTutorScreenKt.java.
- * Supports Emma, James, Alex, Sparky personas, quick action chips, bubble timeline,
- * typewriter effects, and unlimited generation bypass.
+ * Supports quick action chips, bubble timeline, typewriter effects, and unlimited generation bypass.
  */
 @Composable
 fun AiTutorScreen(
@@ -99,24 +95,10 @@ fun AiTutorScreen(
     val coroutineScope = rememberCoroutineScope()
     val listState = rememberLazyListState()
 
-    var selectedAssistant by remember {
-        mutableStateOf(
-            if (UserPrefs.tutorVoice.equals("Random", ignoreCase = true)) {
-                Assistant.ALL.random()
-            } else {
-                Assistant.ALL.firstOrNull {
-                    it.name.equals(UserPrefs.tutorVoice, ignoreCase = true) ||
-                        it.voice.equals(UserPrefs.tutorVoice, ignoreCase = true)
-                } ?: Assistant.ALL[0]
-            }
-        )
-    }
-    var showMenu by remember { mutableStateOf(false) }
-
     val messages = remember {
         mutableStateListOf(
             ChatMessage(
-                text = "Hi! I'm your AI English tutor, ${selectedAssistant.name}. Ask me anything, or pick a quick action below to get started.",
+                text = AI_TUTOR_GREETING,
                 fromUser = false,
                 animate = false
             )
@@ -126,13 +108,22 @@ fun AiTutorScreen(
     var inputText by remember { mutableStateOf("") }
     var isThinking by remember { mutableStateOf(false) }
     var connectionError by remember { mutableStateOf(false) }
-    var sessionRecorded by remember { mutableStateOf(false) }
+    var closeReported by remember { mutableStateOf(false) }
+    var assistantMood by remember { mutableStateOf(RobotMood.NEUTRAL) }
     val speaker = rememberPlatformSpeaker()
     var speakingMessageText by remember { mutableStateOf<String?>(null) }
 
     DisposableEffect(Unit) {
         onDispose {
             speaker.stop()
+        }
+    }
+
+    fun closeTutor() {
+        speaker.stop()
+        if (!closeReported) {
+            closeReported = true
+            onBack(messages.any { it.fromUser })
         }
     }
 
@@ -161,30 +152,22 @@ fun AiTutorScreen(
 
             val reply = TutorAi.reply(
                 history = messages,
-                voice = selectedAssistant.name,
+                voice = UserPrefs.tutorVoice,
                 mode = mode,
                 language = "English",
                 nativeLanguage = UserPrefs.nativeLanguage,
                 studentName = null,
-                withMood = false
+                withMood = true
             )
 
             if (reply == null) {
                 connectionError = true
             } else {
-                messages.add(ChatMessage(text = reply, fromUser = false, animate = true))
-                speakingMessageText = reply
-                speaker.speak(reply, "en-US")
-                if (!sessionRecorded) {
-                    UserPrefs.addLearning(
-                        title = "AI Tutor Chat",
-                        detail = "AI Tutor",
-                        total = 0,
-                        level = UserPrefs.englishLevel
-                    )
-                    UserPrefs.recordStreakDay()
-                    sessionRecorded = true
-                }
+                val (mood, cleanReply) = TutorAi.splitMood(reply)
+                assistantMood = mood ?: RobotMood.NEUTRAL
+                messages.add(ChatMessage(text = cleanReply, fromUser = false, animate = true))
+                speakingMessageText = cleanReply
+                speaker.speak(cleanReply, "en-US", UserPrefs.tutorVoice)
             }
             isThinking = false
             delay(100)
@@ -204,118 +187,37 @@ fun AiTutorScreen(
         ) {
             Spacer(Modifier.height(8.dp))
 
-            // Top Bar
-            Row(
+            BackTitleBar(
+                title = tr("AI Tutor"),
+                onBack = ::closeTutor,
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(AppTheme.dimens.topBarHeight)
                     .background(AppTheme.colors.surface)
                     .padding(horizontal = AppTheme.dimens.spacingSm),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                IconButton(onClick = {
-                    speaker.stop()
-                    onBack(false)
-                }) {
-                    Icon(
-                        imageVector = Icons.AutoMirrored.Rounded.ArrowBack,
-                        contentDescription = tr("Back"),
-                        tint = AppTheme.colors.textPrimary
-                    )
-                }
-
-                Box(
-                    modifier = Modifier
-                        .size(36.dp)
-                        .clip(CircleShape)
-                        .background(AppTheme.colors.surfaceCard),
-                    contentAlignment = Alignment.Center
-                ) {
-                    if (selectedAssistant.id == "sparky") {
-                        Icon(
-                            imageVector = Icons.Rounded.SmartToy,
-                            contentDescription = null,
-                            tint = AppTheme.colors.primary,
-                            modifier = Modifier.size(20.dp)
-                        )
-                    } else {
-                        Icon(
-                            imageVector = Icons.Rounded.Person,
-                            contentDescription = null,
-                            tint = AppTheme.colors.primary,
-                            modifier = Modifier.size(20.dp)
-                        )
-                    }
-                }
-
-                Spacer(modifier = Modifier.width(AppTheme.dimens.spacingSm))
-
-                Column(modifier = Modifier.weight(1f)) {
-                    Text(
-                        text = selectedAssistant.name,
-                        color = AppTheme.colors.textPrimary,
-                        fontSize = 16.sp,
-                        fontWeight = FontWeight.Bold
-                    )
-                    Text(
-                        text = tr(selectedAssistant.text),
-                        color = AppTheme.colors.textSecondary,
-                        fontSize = 12.sp
-                    )
-                }
-
-                // Persona Selector Dropdown
-                Box {
-                    IconButton(onClick = { showMenu = true }) {
-                        Icon(
-                            imageVector = Icons.Rounded.Person,
-                            contentDescription = tr("Choose your AI assistant"),
-                            tint = AppTheme.colors.primary
-                        )
-                    }
-                    DropdownMenu(
-                        expanded = showMenu,
-                        onDismissRequest = { showMenu = false }
-                    ) {
-                        Assistant.ALL.forEach { assistant ->
-                            DropdownMenuItem(
-                                text = {
-                                    Column {
-                                        Text(text = assistant.name, fontWeight = FontWeight.Bold)
-                                        Text(text = tr(assistant.text), fontSize = 12.sp, color = Color.Gray)
-                                    }
-                                },
-                                onClick = {
-                                    selectedAssistant = assistant
-                                    UserPrefs.tutorVoice = assistant.name
-                                    showMenu = false
-                                }
+                rightContent = {
+                    IconButton(onClick = {
+                        speaker.stop()
+                        speakingMessageText = null
+                        messages.clear()
+                        connectionError = false
+                        assistantMood = RobotMood.NEUTRAL
+                        messages.add(
+                            ChatMessage(
+                                text = AI_TUTOR_GREETING,
+                                fromUser = false,
+                                animate = false
                             )
-                        }
+                        )
+                    }) {
+                        Icon(
+                            imageVector = Icons.Rounded.Delete,
+                            contentDescription = tr("Clear chat"),
+                            tint = AppTheme.colors.textTertiary
+                        )
                     }
                 }
-
-                IconButton(onClick = {
-                    speaker.stop()
-                    speakingMessageText = null
-                    messages.clear()
-                    connectionError = false
-                    sessionRecorded = false
-                    messages.add(
-                        ChatMessage(
-                            text = "Hi! I'm your AI English tutor, ${selectedAssistant.name}. Ask me anything, or pick a quick action below to get started.",
-                            fromUser = false,
-                            animate = false
-                        )
-                    )
-                }) {
-                    Icon(
-                        imageVector = Icons.Rounded.Delete,
-                        contentDescription = tr("Clear chat"),
-                        tint = AppTheme.colors.textTertiary
-                    )
-                }
-            }
+            )
 
             // Animated Robot Character Header
             Box(
@@ -326,8 +228,7 @@ fun AiTutorScreen(
             ) {
                 val robotMood = when {
                     isThinking -> RobotMood.THINKING
-                    speaker.isSpeaking -> RobotMood.HAPPY
-                    else -> RobotMood.NEUTRAL
+                    else -> assistantMood
                 }
                 val robotH = 150.dp
                 AnimatedRobot(
@@ -355,7 +256,7 @@ fun AiTutorScreen(
                         isSpeaking = isMsgSpeaking,
                         onSpeak = {
                             speakingMessageText = it
-                            speaker.speak(it, "en-US")
+                            speaker.speak(it, "en-US", UserPrefs.tutorVoice)
                         },
                         onStop = {
                             speaker.stop()

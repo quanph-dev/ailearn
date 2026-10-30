@@ -7,7 +7,6 @@ package com.example.basekmp.navigation
 object Routes {
     const val SPLASH = "splash"
     const val ONBOARDING = "onboarding"
-    const val PAYWALL = "paywall"
     const val MAIN = "main"
     const val LANGUAGE = "language"
     const val AI_TUTOR = "ai_tutor"

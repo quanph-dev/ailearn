@@ -1,6 +1,5 @@
 package com.example.basekmp.ui.components
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -26,27 +25,21 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import ailearn.shared.generated.resources.Res
-import ailearn.shared.generated.resources.ic_premium_diamond
 import com.example.basekmp.data.Strings
-import com.example.basekmp.theme.Blue
 import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.TextPrimary
-import org.jetbrains.compose.resources.painterResource
 
 /**
- * Standard top header bar for primary tabs matching decompiled TopBarsKt.java.
+ * Standard top header bar for primary tabs.
  */
 @Composable
 fun TabHeader(
     title: String,
-    onPremiumClick: (() -> Unit)? = {},
     modifier: Modifier = Modifier,
     onTitleTripleTap: (() -> Unit)? = null,
     trailing: (@Composable () -> Unit)? = null,
     leadingAction: (@Composable () -> Unit)? = null,
-    titleSize: TextUnit = 20.sp,
-    isPro: Boolean = false
+    titleSize: TextUnit = 20.sp
 ) {
     Row(
         modifier = modifier.fillMaxWidth(),
@@ -65,26 +58,6 @@ fun TabHeader(
 
         if (leadingAction != null) {
             leadingAction()
-            if (!isPro && onPremiumClick != null) {
-                Spacer(Modifier.width(10.dp))
-            }
-        }
-
-        if (!isPro && onPremiumClick != null) {
-            Box(
-                modifier = Modifier
-                    .size(40.dp)
-                    .clip(CircleShape)
-                    .background(Blue)
-                    .clickable { onPremiumClick() },
-                contentAlignment = Alignment.Center
-            ) {
-                Image(
-                    painter = painterResource(Res.drawable.ic_premium_diamond),
-                    contentDescription = Strings.tr("Premium"),
-                    modifier = Modifier.size(20.dp)
-                )
-            }
         }
 
         if (trailing != null) {

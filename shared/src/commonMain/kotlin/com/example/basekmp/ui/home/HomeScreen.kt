@@ -25,17 +25,21 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.ArrowForward
+import androidx.compose.material.icons.rounded.Check
 import androidx.compose.material.icons.rounded.Mic
 import androidx.compose.material.icons.rounded.NotificationsNone
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
+import kotlinx.coroutines.CancellationException
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
@@ -43,6 +47,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import kotlin.math.roundToInt
 import ailearn.shared.generated.resources.Res
 import ailearn.shared.generated.resources.home_ai_tutor
 import ailearn.shared.generated.resources.home_grammar
@@ -50,6 +55,7 @@ import ailearn.shared.generated.resources.home_lesson_bg
 import ailearn.shared.generated.resources.home_lesson_robot
 import ailearn.shared.generated.resources.home_speaking
 import ailearn.shared.generated.resources.home_vocab
+import com.example.basekmp.data.GoalPlan
 import com.example.basekmp.data.PlanProgress
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
@@ -62,6 +68,7 @@ import com.example.basekmp.ui.components.AppBottomNav
 import com.example.basekmp.ui.components.TabHeader
 import com.example.basekmp.ui.components.tabBottomClearance
 import com.example.basekmp.ui.plan.PlanEntryCard
+import com.example.basekmp.ui.plan.PlanFlow
 import com.example.basekmp.ui.plan.PlanPathButton
 import com.example.basekmp.ui.shadowing.ShadowingPracticeSection
 import org.jetbrains.compose.resources.DrawableResource
@@ -89,9 +96,9 @@ fun HomeScreen(
     onNavigateToGrammar: () -> Unit,
     onNavigateToTodayLesson: () -> Unit,
     onOpenPlan: (hasPlan: Boolean) -> Unit = {},
+    onOpenPlanDay: (day: Int) -> Unit = {},
     onOpenVideo: (String) -> Unit = {},
     onFeatureClick: (String) -> Unit = {},
-    onPremiumClick: () -> Unit = {},
     onNotificationsClick: () -> Unit = {},
     onStatClick: (String) -> Unit = {},
     modifier: Modifier = Modifier
@@ -99,7 +106,11 @@ fun HomeScreen(
     val scrollState = rememberScrollState()
     val minutesSpent by UserPrefs.learnedMinutesState
     val spentHours = remember(minutesSpent) { minutesSpent / 60.0f }
-    val hasPlan = remember { PlanProgress.get().goalId != null }
+    val planProgress = remember { PlanProgress.get() }
+    val planRevision by planProgress.revision
+    val hasPlan = remember(planRevision) { planProgress.goalId != null }
+    val currentPlanDay = planProgress.currentDay()
+    val completedPlanDays = planProgress.completedDays().size.coerceAtMost(GoalPlan.DAYS)
 
     val handleFeatureClick: (String) -> Unit = { feature ->
         when (feature) {
@@ -120,7 +131,6 @@ fun HomeScreen(
         TabHeader(
             title = Strings.tr("Engla"),
             titleSize = 28.sp,
-            onPremiumClick = {},
             leadingAction = {
                 PlanPathButton(
                     isNew = !hasPlan,
@@ -152,8 +162,17 @@ fun HomeScreen(
             // 1. Speak with AI Hero Card (Matching decompiled LessonCard)
             LessonCard(onStartLesson = onNavigateToTodayLesson)
 
-            // 2. Learning Path Entry Card (Matching decompiled PlanEntryCard)
-            if (!hasPlan) {
+            // 2. The original Home plan card changes from setup entry to active-day shortcut.
+            if (hasPlan) {
+                Spacer(Modifier.height(16.dp))
+                ActivePlanCard(
+                    planProgress = planProgress,
+                    day = currentPlanDay,
+                    daysDone = completedPlanDays,
+                    onViewPath = { onOpenPlan(hasPlan) },
+                    onOpenDay = onOpenPlanDay
+                )
+            } else {
                 Spacer(Modifier.height(16.dp))
                 PlanEntryCard(onCreate = { onOpenPlan(false) })
             }
@@ -193,6 +212,246 @@ fun HomeScreen(
 
             Spacer(Modifier.height(tabBottomClearance + 16.dp))
         }
+    }
+}
+
+/** Active-plan counterpart to the original Home PlanHeroCard. */
+@Composable
+private fun ActivePlanCard(
+    planProgress: PlanProgress,
+    day: Int,
+    daysDone: Int,
+    onViewPath: () -> Unit,
+    onOpenDay: (Int) -> Unit,
+    modifier: Modifier = Modifier
+) {
+    val planGoalId = planProgress.goalId
+    val learnLanguage = UserPrefs.getLearnLanguage()
+    val dayPlanState by produceState(
+        initialValue = HomePlanDayState(),
+        key1 = day,
+        key2 = planGoalId,
+        key3 = learnLanguage
+    ) {
+        val result = try {
+            if (day in 1..GoalPlan.DAYS) PlanFlow.dayPlan(day) else null
+        } catch (cancelled: CancellationException) {
+            throw cancelled
+        } catch (_: Exception) {
+            null
+        }
+        value = HomePlanDayState(dayPlan = result, isLoading = false)
+    }
+    val dayPlan = dayPlanState.dayPlan
+    val availableActivities = dayPlan?.available.orEmpty()
+    val doneActivities = if (day in 1..GoalPlan.DAYS) planProgress.done(day) else emptySet()
+    val doneCount = availableActivities.count { it in doneActivities }
+    val totalMinutes = dayPlan?.let { planDayMinutes(UserPrefs.dailyGoalMinutes, availableActivities) }
+    val stageTitle = dayPlan?.stage?.displayTitle(GoalPlan.learnCode(learnLanguage))
+    val shape = RoundedCornerShape(18.dp)
+
+    Column(
+        modifier = modifier
+            .fillMaxWidth()
+            .clip(shape)
+            .background(Brush.verticalGradient(listOf(Color(0xFFEAF2FE), Color.White)))
+            .border(1.dp, Color(0xFFD6E4FB), shape)
+            .clickable(onClick = onViewPath)
+            .padding(16.dp)
+    ) {
+        if (day > GoalPlan.DAYS) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Icon(
+                    imageVector = Icons.Rounded.Check,
+                    contentDescription = null,
+                    modifier = Modifier.size(20.dp),
+                    tint = Color(0xFF22A45D)
+                )
+                Spacer(Modifier.width(8.dp))
+                Text(
+                    text = Strings.tr("Plan complete!"),
+                    color = TextPrimary,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
+            }
+            Spacer(Modifier.height(10.dp))
+            Text(
+                text = Strings.tr("Goal") + " · " + Strings.trf("%1\$d/%2\$d days", daysDone, GoalPlan.DAYS),
+                color = TextSecondary,
+                fontSize = 12.sp
+            )
+            Spacer(Modifier.height(12.dp))
+            ActivePlanAction(text = Strings.tr("View path"), onClick = onViewPath, arrow = true)
+        } else {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        text = buildString {
+                            append(Strings.trf("Day %1\$d", day))
+                            stageTitle?.takeIf { it.isNotBlank() }?.let { append(" · ").append(it) }
+                        },
+                        color = TextPrimary,
+                        fontSize = 18.sp,
+                        fontWeight = FontWeight.Bold,
+                        lineHeight = 22.sp,
+                        maxLines = 2,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                    Spacer(Modifier.height(3.dp))
+                    Text(
+                        text = if (totalMinutes != null) {
+                            Strings.trf("%1\$d min", totalMinutes) + " · " +
+                                Strings.trf("%1\$d/%2\$d activities", doneCount, availableActivities.size)
+                        } else {
+                            Strings.tr(if (dayPlanState.isLoading) "Loading plan..." else "Plan content unavailable")
+                        },
+                        color = TextSecondary,
+                        fontSize = 12.sp,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                }
+                Spacer(Modifier.width(10.dp))
+                ActivePlanAction(text = Strings.tr("View path"), onClick = onViewPath, arrow = true)
+            }
+
+            Spacer(Modifier.height(12.dp))
+            Text(
+                text = Strings.trf(
+                    "Level %1\$d · %2\$d XP to go",
+                    planProgress.level,
+                    planProgress.xpToNextLevel
+                ),
+                color = TextPrimary,
+                fontSize = 11.5.sp
+            )
+            Spacer(Modifier.height(6.dp))
+            val levelProgress = (1f - planProgress.xpToNextLevel / 100f).coerceIn(0f, 1f)
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(6.dp)
+                    .clip(RoundedCornerShape(50))
+                    .background(Color(0xFFE6F0FF))
+            ) {
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth(levelProgress)
+                        .height(6.dp)
+                        .background(Blue)
+                )
+            }
+
+            Spacer(Modifier.height(12.dp))
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text(
+                    text = Strings.tr("Closer to your goal!"),
+                    modifier = Modifier.weight(1f),
+                    color = TextSecondary,
+                    fontSize = 12.5.sp,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
+                Spacer(Modifier.width(8.dp))
+                if (dayPlan != null && planProgress.isUnlocked(day)) {
+                    ActivePlanAction(
+                        text = Strings.tr(if (doneActivities.isEmpty()) "Start" else "Continue"),
+                        onClick = { onOpenDay(day) }
+                    )
+                }
+            }
+        }
+    }
+}
+
+private data class HomePlanDayState(
+    val dayPlan: PlanFlow.DayPlan? = null,
+    val isLoading: Boolean = true
+)
+
+@Composable
+private fun ActivePlanAction(
+    text: String,
+    onClick: () -> Unit,
+    arrow: Boolean = false
+) {
+    Row(
+        modifier = Modifier
+            .clip(RoundedCornerShape(50))
+            .background(Blue)
+            .clickable(onClick = onClick)
+            .heightIn(min = 40.dp)
+            .padding(start = 18.dp, top = 8.dp, end = if (arrow) 12.dp else 18.dp, bottom = 8.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(4.dp)
+    ) {
+        Text(
+            text = text,
+            color = Color.White,
+            fontSize = 12.sp,
+            fontWeight = FontWeight.SemiBold,
+            maxLines = 1
+        )
+        if (arrow) {
+            Icon(
+                imageVector = Icons.AutoMirrored.Rounded.ArrowForward,
+                contentDescription = null,
+                modifier = Modifier.size(18.dp),
+                tint = Color.White
+            )
+        }
+    }
+}
+
+/** Mirrors the source app's PlanFlow.dayMinutes distribution for the available activities. */
+private fun planDayMinutes(
+    dailyMinutes: Int,
+    available: List<PlanProgress.Activity>
+): Int {
+    val withoutTalk = PlanProgress.Activity.entries.filter {
+        it != PlanProgress.Activity.TALK && it in available
+    }
+    val remainingMinutes = (dailyMinutes - if (PlanProgress.Activity.TALK in available) 5 else 0)
+        .coerceAtLeast(withoutTalk.size)
+    if (withoutTalk.isEmpty()) {
+        return available.sumOf { if (it == PlanProgress.Activity.TALK) 5 else 1 }
+    }
+
+    fun weight(activity: PlanProgress.Activity): Int =
+        if (activity == PlanProgress.Activity.QUIZ) 3 else 5
+
+    fun minimum(activity: PlanProgress.Activity): Int =
+        if (activity == PlanProgress.Activity.QUIZ) 2 else 1
+
+    val totalWeight = withoutTalk.sumOf(::weight)
+    val allocated = withoutTalk.associateWith { activity ->
+        maxOf(minimum(activity), (weight(activity) * remainingMinutes / totalWeight.toFloat()).roundToInt())
+    }.toMutableMap()
+
+    while (allocated.values.sum() != remainingMinutes) {
+        if (allocated.values.sum() > remainingMinutes) {
+            val reduce = allocated.keys
+                .filter { (allocated[it] ?: 0) > minimum(it) }
+                .maxByOrNull { (allocated[it] ?: 0) * 10 + weight(it) }
+                ?: break
+            allocated[reduce] = (allocated[reduce] ?: 0) - 1
+        } else {
+            val increase = allocated.keys.maxByOrNull(::weight) ?: break
+            allocated[increase] = (allocated[increase] ?: 0) + 1
+        }
+    }
+    return available.sumOf { activity ->
+        if (activity == PlanProgress.Activity.TALK) 5 else allocated[activity] ?: 1
     }
 }
 

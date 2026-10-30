@@ -11,7 +11,7 @@ data class PlanCatalogData(
     val goals: List<PlanGoal> = emptyList()
 ) {
     fun goal(id: String?): PlanGoal? {
-        if (id == null) return null
-        return goals.firstOrNull { it.id == id }
+        val catalogId = GoalPlan.canonicalGoalId(id) ?: return null
+        return goals.firstOrNull { it.id == catalogId }
     }
 }

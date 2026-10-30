@@ -118,7 +118,8 @@ fun GrammarQuizScreen(
     var currentIndex by remember { mutableIntStateOf(0) }
     var selectedOptionIndex by remember { mutableStateOf<Int?>(null) }
     var isAnswerRevealed by remember { mutableStateOf(false) }
-    var correctCount by remember { mutableIntStateOf(0) }
+    var correctByQuestion by remember { mutableStateOf<Map<Int, Boolean>>(emptyMap()) }
+    val correctCount = correctByQuestion.values.count { it }
     var isFinished by remember { mutableStateOf(false) }
     var isLoading by remember { mutableStateOf(true) }
 
@@ -186,7 +187,13 @@ fun GrammarQuizScreen(
             currentStep = currentIndex + 1,
             totalSteps = questions.size,
             onBack = {
-                if (currentIndex > 0) currentIndex-- else onClose(correctCount, questions.size)
+                if (currentIndex > 0) {
+                    currentIndex--
+                    selectedOptionIndex = null
+                    isAnswerRevealed = false
+                } else {
+                    onClose(correctCount, questions.size)
+                }
             },
             onClose = { onClose(correctCount, questions.size) }
         )
@@ -273,9 +280,8 @@ fun GrammarQuizScreen(
                     enabled = selectedOptionIndex != null,
                     onClick = {
                         isAnswerRevealed = true
-                        if (selectedOptionIndex == currentQuestion.answerIndex) {
-                            correctCount++
-                        }
+                        correctByQuestion = correctByQuestion +
+                            (currentIndex to (selectedOptionIndex == currentQuestion.answerIndex))
                     }
                 )
             } else {
@@ -287,7 +293,12 @@ fun GrammarQuizScreen(
                             selectedOptionIndex = null
                             isAnswerRevealed = false
                         } else {
-                            UserPrefs.recordPracticeDone("grammar", correctCount, questions.size)
+                            UserPrefs.recordPracticeDone(
+                                feature = "grammar",
+                                score = correctCount,
+                                total = questions.size,
+                                learnedMinutes = 6
+                            )
                             isFinished = true
                         }
                     }

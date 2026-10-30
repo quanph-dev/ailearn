@@ -24,6 +24,7 @@ class IosVideoPlayerController : VideoPlayerController {
 @Composable
 actual fun rememberVideoPlayer(
     assetPath: String,
+    cacheKey: String?,
     muted: Boolean,
     onCompletion: () -> Unit,
     onStop: () -> Unit

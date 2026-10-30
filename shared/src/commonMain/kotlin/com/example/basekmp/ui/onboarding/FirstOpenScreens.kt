@@ -39,9 +39,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import ailearn.shared.generated.resources.Res
-import ailearn.shared.generated.resources.fo_img_onboarding_1
-import ailearn.shared.generated.resources.fo_img_onboarding_2
-import ailearn.shared.generated.resources.fo_img_onboarding_3
 import ailearn.shared.generated.resources.fo_onboarding_button_next
 import ailearn.shared.generated.resources.fo_onboarding_button_start
 import ailearn.shared.generated.resources.fo_onboarding_description_1
@@ -144,11 +141,6 @@ fun FirstOpenIntroScreen(
 
 @Composable
 private fun FirstOpenIntroPage(page: Int) {
-    val image = when (page) {
-        0 -> Res.drawable.fo_img_onboarding_1
-        1 -> Res.drawable.fo_img_onboarding_2
-        else -> Res.drawable.fo_img_onboarding_3
-    }
     val title = when (page) {
         0 -> Res.string.fo_onboarding_title_1
         1 -> Res.string.fo_onboarding_title_2
@@ -160,14 +152,9 @@ private fun FirstOpenIntroPage(page: Int) {
         else -> Res.string.fo_onboarding_description_3
     }
 
-    Column(modifier = Modifier.fillMaxSize().background(Color.White).safeDrawingPadding()) {
+    Column(modifier = Modifier.fillMaxSize().background(Color.White)) {
         Box(modifier = Modifier.fillMaxWidth().weight(1f)) {
-            Image(
-                painter = painterResource(image),
-                contentDescription = null,
-                modifier = Modifier.fillMaxSize(),
-                contentScale = ContentScale.Crop
-            )
+            FirstOpenIntroArtwork(page = page, modifier = Modifier.fillMaxSize())
             Box(
                 modifier = Modifier
                     .fillMaxWidth()

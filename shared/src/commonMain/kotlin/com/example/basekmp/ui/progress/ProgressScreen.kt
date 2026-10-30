@@ -34,6 +34,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import ailearn.shared.generated.resources.Res
 import ailearn.shared.generated.resources.streak_fire
+import com.example.basekmp.localEpochDayAt
 import com.example.basekmp.data.LearningItem
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
@@ -53,7 +54,7 @@ private const val CAT_AI_TUTOR = "AI Tutor"
 private const val CAT_LESSON = "Today's Lesson"
 private const val CAT_PRACTICE = "Practice"
 
-private fun epochDayOf(ts: Long): Long = ts / 86_400_000L
+private fun epochDayOf(ts: Long): Long = localEpochDayAt(ts)
 
 private fun formatWhen(ts: Long): String {
     if (ts <= 0) return ""
@@ -70,7 +71,15 @@ private fun categoryOf(title: String): String {
     return when (title) {
         CAT_AI_TUTOR -> CAT_AI_TUTOR
         CAT_LESSON -> CAT_LESSON
-        else -> CAT_PRACTICE
+        else -> if (title.startsWith("AI Tutor ", ignoreCase = true)) CAT_AI_TUTOR else CAT_PRACTICE
+    }
+}
+
+private fun countPracticeSessions(history: List<LearningItem>, feature: String): Int {
+    val practiceTitle = "$feature Practice"
+    return history.count { item ->
+        item.title.equals(practiceTitle, ignoreCase = true) ||
+            (item.title.equals(feature, ignoreCase = true) && item.detail.contains("Practice", ignoreCase = true))
     }
 }
 
@@ -86,9 +95,9 @@ fun ProgressScreen(
     val streak = if (lastActive >= today - 1) UserPrefs.streakCountState.intValue else 0
     val historyList = UserPrefs.learningHistoryState
 
-    val vocabCount = historyList.count { it.title == "Vocabulary Practice" }
-    val grammarCount = historyList.count { it.title == "Grammar Practice" }
-    val speakingCount = historyList.count { it.title == "Speaking Practice" }
+    val vocabCount = countPracticeSessions(historyList, "Vocabulary")
+    val grammarCount = countPracticeSessions(historyList, "Grammar")
+    val speakingCount = countPracticeSessions(historyList, "Speaking")
 
     val tutorSessions = historyList.filter {
         it.timestamp > 0 && epochDayOf(it.timestamp) == today && categoryOf(it.title) == CAT_AI_TUTOR
@@ -103,10 +112,8 @@ fun ProgressScreen(
     ) {
         Spacer(Modifier.height(16.dp))
 
-        // TopBar without IAP premium button
         TabHeader(
-            title = Strings.tr("Your Progress"),
-            onPremiumClick = null
+            title = Strings.tr("Your Progress")
         )
 
         Column(

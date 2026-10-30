@@ -31,6 +31,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
@@ -51,12 +52,9 @@ fun ProgressDetailScreen(
     val dimens = AppTheme.dimens
 
     val allHistory = UserPrefs.learningHistoryState
-    val filteredItems = remember(kind, allHistory.size) {
-        if (kind.equals("Streak", ignoreCase = true) || kind.equals("Minutes", ignoreCase = true) || kind.equals("Words", ignoreCase = true)) {
-            allHistory.toList()
-        } else {
-            allHistory.filter { it.title.contains(kind, ignoreCase = true) || it.detail.contains(kind, ignoreCase = true) }
-        }
+    val historySnapshot = allHistory.toList()
+    val filteredItems = historySnapshot.filter {
+        it.title.contains(kind, ignoreCase = true) || it.detail.contains(kind, ignoreCase = true)
     }
 
     var selectedItemForDetail by remember { mutableStateOf<LearningItem?>(null) }
@@ -91,7 +89,7 @@ fun ProgressDetailScreen(
             Spacer(Modifier.width(dimens.spacingMd))
 
             Text(
-                text = "${Strings.tr(kind)} ${Strings.tr("Details")}",
+                text = Strings.trf("%1\$s Progress", Strings.tr(kind)),
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
                 color = colors.textPrimary
@@ -100,114 +98,37 @@ fun ProgressDetailScreen(
 
         Spacer(Modifier.height(dimens.spacingMd))
 
-        // Analytics Overview Card
-        Box(
-            modifier = Modifier
-                .fillMaxWidth()
-                .clip(RoundedCornerShape(dimens.cornerLg))
-                .background(colors.surface)
-                .border(1.dp, colors.border, RoundedCornerShape(dimens.cornerLg))
-                .padding(dimens.spacingLg)
-        ) {
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceAround,
-                verticalAlignment = Alignment.CenterVertically
+        if (filteredItems.isEmpty()) {
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth(),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
             ) {
-                Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    Text(
-                        text = "${filteredItems.size}",
-                        fontSize = 22.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = colors.primary
-                    )
-                    Text(
-                        text = Strings.tr("Completed"),
-                        fontSize = 12.sp,
-                        color = colors.textSecondary
-                    )
-                }
-
-                Box(
+                Text(
+                    text = Strings.tr("No sessions yet — finish a practice to see it here."),
                     modifier = Modifier
-                        .width(1.dp)
-                        .height(36.dp)
-                        .background(colors.divider)
+                        .fillMaxWidth()
+                        .padding(horizontal = dimens.spacingMd),
+                    fontSize = 14.sp,
+                    color = colors.textSecondary,
+                    textAlign = TextAlign.Center
                 )
-
-                val scoredItems = filteredItems.mapNotNull { it.scorePercent }
-                val avgScore = scoredItems.takeIf { it.isNotEmpty() }?.average()?.toInt()
-                Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    Text(
-                        text = avgScore?.let { "$it%" } ?: "—",
-                        fontSize = 22.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = colors.success
-                    )
-                    Text(
-                        text = Strings.tr("Avg Score"),
-                        fontSize = 12.sp,
-                        color = colors.textSecondary
-                    )
-                }
-
-                Box(
-                    modifier = Modifier
-                        .width(1.dp)
-                        .height(36.dp)
-                        .background(colors.divider)
+                Spacer(Modifier.height(dimens.spacingMd))
+                PrimaryButton(
+                    text = Strings.tr("Start Now"),
+                    onClick = onStartPractice,
+                    modifier = Modifier.fillMaxWidth(0.72f)
                 )
-
-                Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    Text(
-                        text = UserPrefs.englishLevel,
-                        fontSize = 22.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = colors.accentGold
-                    )
-                    Text(
-                        text = Strings.tr("Current Level"),
-                        fontSize = 12.sp,
-                        color = colors.textSecondary
-                    )
-                }
             }
-        }
-
-        Spacer(Modifier.height(dimens.spacingLg))
-
-        Text(
-            text = Strings.tr("Session Logs"),
-            fontSize = 16.sp,
-            fontWeight = FontWeight.Bold,
-            color = colors.textPrimary
-        )
-
-        Spacer(Modifier.height(dimens.spacingSm))
-
-        // Session Log List
-        LazyColumn(
-            modifier = Modifier
-                .weight(1f)
-                .fillMaxWidth(),
-            verticalArrangement = Arrangement.spacedBy(dimens.spacingSm)
-        ) {
-            if (filteredItems.isEmpty()) {
-                item {
-                    Box(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(vertical = dimens.spacing3Xl),
-                        contentAlignment = Alignment.Center
-                    ) {
-                        Text(
-                            text = Strings.tr("No records found for this category yet."),
-                            fontSize = 14.sp,
-                            color = colors.textSecondary
-                        )
-                    }
-                }
-            } else {
+        } else {
+            LazyColumn(
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth(),
+                verticalArrangement = Arrangement.spacedBy(dimens.spacingSm)
+            ) {
                 items(filteredItems) { item ->
                     EntryCard(
                         item = item,
@@ -217,14 +138,6 @@ fun ProgressDetailScreen(
                 }
             }
         }
-
-        Spacer(Modifier.height(dimens.spacingMd))
-
-        // Bottom CTA Button
-        PrimaryButton(
-            text = Strings.tr("Start Practice"),
-            onClick = onStartPractice
-        )
     }
 
     // Session Detail Dialog
@@ -246,13 +159,15 @@ fun ProgressDetailScreen(
                         color = colors.textPrimary
                     )
                     Spacer(Modifier.height(dimens.spacingSm))
+                    if (item.detail.isNotBlank()) {
+                        Text(
+                            text = "${Strings.tr("Category")}: ${item.detail}",
+                            fontSize = 14.sp,
+                            color = colors.textSecondary
+                        )
+                    }
                     Text(
-                        text = "${Strings.tr("Category")}: ${item.detail}",
-                        fontSize = 14.sp,
-                        color = colors.textSecondary
-                    )
-                    Text(
-                        text = "${Strings.tr("Level")}: ${item.level}",
+                        text = "${Strings.tr("Level")}: ${item.level.ifBlank { UserPrefs.englishLevel }}",
                         fontSize = 14.sp,
                         color = colors.textSecondary
                     )
@@ -283,6 +198,7 @@ private fun EntryCard(
 ) {
     val colors = AppTheme.colors
     val dimens = AppTheme.dimens
+    val metadata = listOf(item.detail, item.level).filter(String::isNotBlank).joinToString(" • ")
 
     Row(
         modifier = Modifier
@@ -302,12 +218,14 @@ private fun EntryCard(
                 fontWeight = FontWeight.SemiBold,
                 color = colors.textPrimary
             )
-            Spacer(Modifier.height(2.dp))
-            Text(
-                text = "${item.detail} • ${item.level}",
-                fontSize = 12.sp,
-                color = colors.textSecondary
-            )
+            if (metadata.isNotEmpty()) {
+                Spacer(Modifier.height(2.dp))
+                Text(
+                    text = metadata,
+                    fontSize = 12.sp,
+                    color = colors.textSecondary
+                )
+            }
         }
 
         Row(

@@ -129,6 +129,7 @@ fun VocabCardsScreen(
     var showTranslation by remember { mutableStateOf(false) }
     var isFinished by remember { mutableStateOf(false) }
     var correctCount by remember { mutableIntStateOf(0) }
+    var completionRecorded by remember { mutableStateOf(false) }
 
     LaunchedEffect(wordCount) {
         isLoading = true
@@ -170,18 +171,25 @@ fun VocabCardsScreen(
         return
     }
 
+    fun closeCompletedSession() {
+        if (!completionRecorded) {
+            UserPrefs.recordPracticeDone(
+                feature = "vocabulary",
+                score = correctCount,
+                total = deck.size,
+                learnedMinutes = 6
+            )
+            completionRecorded = true
+        }
+        onClose(correctCount, deck.size)
+    }
+
     if (isFinished) {
         CongratsDialog(
             subtitle = Strings.tr("Session Completed successfully"),
             buttonText = Strings.tr("Done"),
-            onButtonClick = {
-                if (speechScores.isNotEmpty()) UserPrefs.recordPracticeDone("vocabulary", correctCount, deck.size)
-                onClose(correctCount, deck.size)
-            },
-            onClose = {
-                if (speechScores.isNotEmpty()) UserPrefs.recordPracticeDone("vocabulary", correctCount, deck.size)
-                onClose(correctCount, deck.size)
-            },
+            onButtonClick = ::closeCompletedSession,
+            onClose = ::closeCompletedSession,
             correct = correctCount,
             incorrect = deck.size - correctCount
         )
@@ -200,7 +208,14 @@ fun VocabCardsScreen(
             currentStep = currentIndex + 1,
             totalSteps = deck.size,
             onBack = {
-                if (currentIndex > 0) currentIndex-- else onClose(correctCount, deck.size)
+                if (currentIndex > 0) {
+                    val previousIndex = currentIndex - 1
+                    currentIndex = previousIndex
+                    speechScore = speechScores[previousIndex] ?: 0
+                    showTranslation = false
+                } else {
+                    onClose(correctCount, deck.size)
+                }
             },
             onClose = { onClose(correctCount, deck.size) }
         )

@@ -26,7 +26,6 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -44,12 +43,16 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.basekmp.components.AnimatedBuddy
+import com.example.basekmp.components.AppLinearProgressBar
 import com.example.basekmp.components.RobotMood
+import com.example.basekmp.data.GoalPlan
+import com.example.basekmp.data.GoalPlanFormat
 import com.example.basekmp.data.GoalPlanSession
-import com.example.basekmp.data.PathLessonContent
+import com.example.basekmp.data.Languages
 import com.example.basekmp.data.PlanCatalogRepository
 import com.example.basekmp.data.PlanProgress
 import com.example.basekmp.data.PlanQuestion
+import com.example.basekmp.data.PathLessonContent
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
 import com.example.basekmp.theme.AppTheme
@@ -77,30 +80,59 @@ fun PlanSessionScreen(
     var currentMood by remember { mutableStateOf(RobotMood.GOOD) }
     var showCelebration by remember { mutableStateOf(false) }
     var dayCompleted by remember { mutableStateOf(false) }
+    var isCompleting by remember { mutableStateOf(false) }
     var planStageId by remember { mutableStateOf<String?>(null) }
     var planLevelKey by remember { mutableStateOf("") }
+    var availableActivities by remember { mutableStateOf<List<PlanProgress.Activity>>(emptyList()) }
+    var correctByQuestion by remember { mutableStateOf<Map<Int, Boolean>>(emptyMap()) }
     var isLoading by remember { mutableStateOf(true) }
+    var loadAttempt by remember { mutableIntStateOf(0) }
 
     // Load questions for the day
-    LaunchedEffect(day) {
+    LaunchedEffect(day, loadAttempt) {
+        isLoading = true
+        questions = emptyList()
+        currentIndex = 0
+        selectedOptionIndex = -1
+        isSubmitted = false
+        isAnswerCorrect = false
+        currentMood = RobotMood.GOOD
+        showCelebration = false
+        dayCompleted = false
+        planLevelKey = ""
+        availableActivities = emptyList()
+        correctByQuestion = emptyMap()
+        isCompleting = false
         val plan = PlanFlow.dayPlan(day)
+        availableActivities = plan?.available.orEmpty()
         val stage = plan?.stage
         planStageId = stage?.id
         if (stage != null) {
-            val bank = PlanCatalogRepository.bank(stage, UserPrefs.targetLanguage)
+            val learnCode = GoalPlan.learnCode(UserPrefs.targetLanguage).lowercase()
+            val nativeCode = Languages.nativeFor(UserPrefs.nativeLanguage).code
+            val bank = PlanCatalogRepository.bank(stage, learnCode)
             if (bank != null) {
-                val levelKey = UserPrefs.englishLevel.lowercase()
-                planLevelKey = levelKey
-                val levelBank = bank.levels[levelKey] ?: bank.levels.values.firstOrNull()
-                if (levelBank != null) {
+                val levelKey = GoalPlan.bankLevels(UserPrefs.englishLevel)
+                    .distinct()
+                    .firstOrNull { it in bank.levels }
+                if (levelKey != null) {
+                    planLevelKey = levelKey
+                    val levelBank = bank.levels.getValue(levelKey)
+                    val requestedCount = PlanCatalogRepository.getCatalog()?.let { catalog ->
+                        GoalPlanFormat.count(
+                            rows = catalog.quizCounts,
+                            minutes = UserPrefs.dailyGoalMinutes,
+                            cap = levelBank.vocab.size + levelBank.translation.size
+                        )
+                    } ?: 0
                     val generated = GoalPlanSession.quiz(
                         level = levelBank,
-                        nativeLang = UserPrefs.nativeLanguage,
-                        learn = UserPrefs.targetLanguage,
-                        count = 6,
-                        seen = PlanProgress.get().seen(stage.id, UserPrefs.targetLanguage, levelKey),
+                        nativeLang = nativeCode,
+                        learn = learnCode,
+                        count = requestedCount,
+                        seen = PlanProgress.get().seen(stage.id, learnCode, levelKey),
                         day = day,
-                        seenContent = PlanProgress.get().seenContent(UserPrefs.targetLanguage, levelKey)
+                        seenContent = PlanProgress.get().seenContent(learnCode, levelKey)
                     )
                     if (generated.isNotEmpty()) {
                         questions = generated
@@ -109,58 +141,75 @@ fun PlanSessionScreen(
             }
         }
 
-        // Fallback questions directly from PathLessonContent if bank was empty
-        if (questions.isEmpty()) {
-            val loaded = PathLessonContent.load(
-                lessonId = stage?.id ?: "beginner-u1-l1",
-                level = UserPrefs.englishLevel.lowercase(),
-                lang = UserPrefs.targetLanguage
-            )
-            questions = loaded.map { q ->
-                PlanQuestion(
-                    question = q,
-                    itemId = q.text.hashCode().toString()
-                )
-            }
-        }
         isLoading = false
     }
 
     val currentQuestion = questions.getOrNull(currentIndex)
     val totalCount = questions.size
+    val correctCount = correctByQuestion.values.count { it }
+    val vocabularyCorrectCount = questions.indices.count { index ->
+        questions[index].question.kind == PathLessonContent.Kind.VOCABULARY && correctByQuestion[index] == true
+    }
 
     fun checkAnswer() {
-        if (currentQuestion == null || selectedOptionIndex == -1) return
+        if (currentQuestion == null || selectedOptionIndex == -1 || isSubmitted) return
         val correctIndex = currentQuestion.question.answer
         isAnswerCorrect = (selectedOptionIndex == correctIndex)
         isSubmitted = true
+        correctByQuestion = correctByQuestion + (currentIndex to isAnswerCorrect)
 
         currentMood = if (isAnswerCorrect) RobotMood.SUPER else RobotMood.POOR
     }
 
     fun nextQuestion() {
+        if (isCompleting || !isSubmitted) return
         if (currentIndex < totalCount - 1) {
             currentIndex++
             selectedOptionIndex = -1
             isSubmitted = false
             currentMood = RobotMood.GOOD
         } else {
-            // Completed day session
+            isCompleting = true
+            val completedQuestions = questions.toList()
+            val completedStageId = planStageId
+            val completedLevelKey = planLevelKey
+            val completedLearnCode = GoalPlan.learnCode(UserPrefs.targetLanguage).lowercase()
+            val completedCount = correctCount
+            val completedVocabularyCount = vocabularyCorrectCount
+            val available = availableActivities
             coroutineScope.launch {
-                planStageId?.let { stageId ->
+                completedStageId?.let { stageId ->
                     PlanProgress.get().addSeen(
                         stage = stageId,
-                        learn = UserPrefs.targetLanguage,
-                        level = planLevelKey,
-                        ids = questions.map { it.itemId }
+                        learn = completedLearnCode,
+                        level = completedLevelKey,
+                        ids = completedQuestions.map { it.itemId }
                     )
                     PlanProgress.get().addSeenContent(
-                        learn = UserPrefs.targetLanguage,
-                        level = planLevelKey,
-                        content = questions.map { it.content }
+                        learn = completedLearnCode,
+                        level = completedLevelKey,
+                        content = completedQuestions.map { it.content }
                     )
                 }
+                val progress = PlanProgress.get()
+                val wasQuizDone = PlanProgress.Activity.QUIZ in progress.done(day)
                 val result = PlanFlow.finish(day, PlanProgress.Activity.QUIZ)
+                val quizWasCompleted = !wasQuizDone && PlanProgress.Activity.QUIZ in progress.done(day)
+                if (quizWasCompleted) {
+                    progress.saveQuizScore(
+                        day = day,
+                        correct = completedCount,
+                        total = completedQuestions.size,
+                        vocabularyCorrect = completedVocabularyCount
+                    )
+                    UserPrefs.addLearnedMinutes(
+                        PlanProgress.activityMinutes(
+                            activity = PlanProgress.Activity.QUIZ,
+                            dailyMinutes = UserPrefs.dailyGoalMinutes,
+                            available = available
+                        )
+                    )
+                }
                 dayCompleted = result.dayCompleted
                 showCelebration = true
             }
@@ -182,16 +231,23 @@ fun PlanSessionScreen(
             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     Text(
-                        text = tr("Couldn't load your plan"),
+                        text = tr("Quiz content is unavailable"),
                         color = AppTheme.colors.textPrimary,
                         fontSize = 16.sp
                     )
                     Spacer(modifier = Modifier.height(AppTheme.dimens.spacingMd))
                     Button(
-                        onClick = onBack,
+                        onClick = { loadAttempt++ },
                         colors = ButtonDefaults.buttonColors(containerColor = AppTheme.colors.primary)
                     ) {
-                        Text(text = tr("Go Back"), color = AppTheme.colors.textOnPrimary)
+                        Text(text = tr("Try Again"), color = AppTheme.colors.textOnPrimary)
+                    }
+                    Spacer(modifier = Modifier.height(AppTheme.dimens.spacingSm))
+                    Button(
+                        onClick = onBack,
+                        colors = ButtonDefaults.buttonColors(containerColor = AppTheme.colors.surfaceCard)
+                    ) {
+                        Text(text = tr("Go Back"), color = AppTheme.colors.textPrimary)
                     }
                 }
             }
@@ -220,14 +276,13 @@ fun PlanSessionScreen(
                     )
                 }
 
-                LinearProgressIndicator(
-                    progress = { (currentIndex + 1) / totalCount.toFloat() },
+                AppLinearProgressBar(
+                    progress = (currentIndex + 1) / totalCount.toFloat(),
                     modifier = Modifier
                         .weight(1f)
                         .height(8.dp)
                         .clip(RoundedCornerShape(4.dp)),
-                    color = AppTheme.colors.primary,
-                    trackColor = AppTheme.colors.surfaceCard
+                    color = AppTheme.colors.primary
                 )
 
                 Spacer(modifier = Modifier.width(AppTheme.dimens.spacingMd))

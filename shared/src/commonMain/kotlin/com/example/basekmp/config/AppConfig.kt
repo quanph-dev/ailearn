@@ -33,6 +33,8 @@ object AppConfig {
      */
     var cdnBucketUrl: String = "https://firebasestorage.googleapis.com/v0/b/apl567-tutor-ai-language.firebasestorage.app/o/"
     var shadowingCatalogUrl: String = "${cdnBucketUrl}shadowing%2Fcatalog.json?alt=media"
+    /** Reference Remote Config's current first-video pin, used until dynamic Remote Config is ported. */
+    var shadowingFirstVideo: String = "returning_an_item"
     var planCatalogUrl: String = "${cdnBucketUrl}plan%2Fplan.json?alt=media"
     var lessonContentManifestUrl: String = "${cdnBucketUrl}plan%2Fcontent%2Fmanifest.json?alt=media"
 

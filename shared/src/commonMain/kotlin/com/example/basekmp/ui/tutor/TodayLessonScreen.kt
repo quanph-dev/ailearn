@@ -85,26 +85,13 @@ import com.example.basekmp.ui.speaking.rememberPlatformSpeaker
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-/**
- * 100% authentic parity TodayLessonScreen matching com.english.learninglanguage:
- * - Top hero section: Dark navy radial glow background with animated 3D humanoid robot avatar.
- * - Top row: ✕ Close button (left) and 1x/1.5x/2x speed cycle button (right), fully clear of status bar & notch.
- * - Bottom-left of hero: MM:SS lesson countdown pill (05:00 / 09:45).
- * - Chat timeline: Rounded white card sheet with dialogue history.
- * - Message bubble parity:
- *     - Playing/Speaking state: 28.dp Blue circular button with white Stop icon.
- *     - Idle state: 16.dp VolumeUp icon.
- *     - Copy button with real clipboard copy and "Copied" feedback.
- *     - Report flag icon on AI messages.
- * - Bottom bar:
- *     - Non-typing mode: 💡 Hint [AD] button, large Blue mic voice pill, Keyboard toggle button.
- *     - Typing mode: ✕ Close button, "Type a message..." text field, Send button with imePadding().
- */
+/** Interactive Today's Lesson conversation with voice/text input, hints, and a countdown. */
 @Composable
 fun TodayLessonScreen(
     title: String? = null,
     level: String? = null,
     day: Int? = null,
+    systemBackRequest: Int = 0,
     onBack: (Boolean) -> Unit,
     onFinish: (() -> Unit)? = null,
     modifier: Modifier = Modifier
@@ -131,6 +118,7 @@ fun TodayLessonScreen(
     var remainingSeconds by remember { mutableIntStateOf(5 * 60) } // 5 minutes
     var showCompletionDialog by remember { mutableStateOf(false) }
     var showExitDialog by remember { mutableStateOf(false) }
+    var isCompleting by remember { mutableStateOf(false) }
     var showReportDialog by remember { mutableStateOf(false) }
     var copiedMessageIndex by remember { mutableStateOf<Int?>(null) }
 
@@ -145,6 +133,18 @@ fun TodayLessonScreen(
                 animate = false
             )
         )
+    }
+
+    val initialSystemBackRequest = remember { systemBackRequest }
+    LaunchedEffect(systemBackRequest) {
+        if (systemBackRequest != initialSystemBackRequest && !isCompleting && !showCompletionDialog) {
+            if (messages.any { it.fromUser }) {
+                showExitDialog = true
+            } else {
+                speaker.stop()
+                onBack(false)
+            }
+        }
     }
 
     // Timer countdown
@@ -200,12 +200,15 @@ fun TodayLessonScreen(
                 }
                 messages.add(ChatMessage(text = cleanReply, fromUser = false, animate = true))
                 speakingMessageText = cleanReply
-                speaker.speak(cleanReply, "en-US")
+                speaker.speak(cleanReply, "en-US", UserPrefs.tutorVoice)
             } else {
-                val fallback = "Good effort! Try saying a full sentence in English and I'll help you make it sound natural."
-                messages.add(ChatMessage(text = fallback, fromUser = false, animate = true))
-                speakingMessageText = fallback
-                speaker.speak(fallback, "en-US")
+                messages.add(
+                    ChatMessage(
+                        text = tr("Couldn't get a reply. Please try again."),
+                        fromUser = false,
+                        animate = true
+                    )
+                )
             }
             isThinking = false
         }
@@ -226,19 +229,36 @@ fun TodayLessonScreen(
         }
     }
 
-    fun completeLesson() {
+    fun completeLesson(showDialog: Boolean = true) {
+        if (isCompleting || showCompletionDialog) return
+        isCompleting = true
         coroutineScope.launch {
-            day?.let { PlanFlow.finish(it, PlanProgress.Activity.TALK) }
-            val minutesSpent = ((currentTimeMillis() - sessionStartedAt) / 60_000L).toInt().coerceAtLeast(1)
-            UserPrefs.addLearnedMinutes(minutesSpent)
-            UserPrefs.addLearning(
-                title = "Today's Lesson",
-                detail = lessonTitle,
-                total = 0,
-                level = lessonLevel
-            )
-            UserPrefs.recordStreakDay()
-            showCompletionDialog = true
+            try {
+                day?.let { PlanFlow.finish(it, PlanProgress.Activity.TALK) }
+                val minutesSpent = ((currentTimeMillis() - sessionStartedAt) / 60_000L).toInt().coerceAtLeast(1)
+                UserPrefs.addLearnedMinutes(minutesSpent)
+                UserPrefs.addLearning(
+                    title = "Today's Lesson",
+                    detail = lessonTitle,
+                    total = 0,
+                    level = lessonLevel
+                )
+                UserPrefs.recordStreakDay()
+
+                if (showDialog) {
+                    showCompletionDialog = true
+                } else {
+                    onFinish?.invoke() ?: onBack(true)
+                }
+            } finally {
+                isCompleting = false
+            }
+        }
+    }
+
+    LaunchedEffect(remainingSeconds) {
+        if (remainingSeconds == 0) {
+            completeLesson(showDialog = false)
         }
     }
 
@@ -316,7 +336,7 @@ fun TodayLessonScreen(
                                 .size(40.dp)
                                 .clip(CircleShape)
                                 .background(Color.Black.copy(alpha = 0.35f))
-                                .clickable {
+                                .clickable(enabled = !isCompleting) {
                                     if (messages.any { it.fromUser }) {
                                         showExitDialog = true
                                     } else {
@@ -538,7 +558,7 @@ fun TodayLessonScreen(
                                                             .clip(CircleShape)
                                                             .clickable {
                                                                 speakingMessageText = msg.text
-                                                                speaker.speak(msg.text, "en-US")
+                                                                speaker.speak(msg.text, "en-US", UserPrefs.tutorVoice)
                                                             }
                                                             .padding(4.dp),
                                                         contentAlignment = Alignment.Center
@@ -761,7 +781,7 @@ fun TodayLessonScreen(
                                 verticalAlignment = Alignment.CenterVertically,
                                 horizontalArrangement = Arrangement.spacedBy(12.dp)
                             ) {
-                                // Hint Button with AD badge
+                                // Hint button
                                 Row(
                                     modifier = Modifier
                                         .height(52.dp)
@@ -786,20 +806,6 @@ fun TodayLessonScreen(
                                         fontSize = 14.sp,
                                         fontWeight = FontWeight.SemiBold
                                     )
-                                    Spacer(Modifier.width(6.dp))
-                                    Box(
-                                        modifier = Modifier
-                                            .clip(RoundedCornerShape(4.dp))
-                                            .background(Color(0xFF2B5CFF))
-                                            .padding(horizontal = 5.dp, vertical = 1.dp)
-                                    ) {
-                                        Text(
-                                            text = "AD",
-                                            color = Color.White,
-                                            fontSize = 9.sp,
-                                            fontWeight = FontWeight.Bold
-                                        )
-                                    }
                                 }
 
                                 // Large Voice Mic Pill Button
@@ -875,7 +881,6 @@ fun TodayLessonScreen(
                                 showExitDialog = false
                                 speaker.stop()
                                 completeLesson()
-                                onBack(true)
                             },
                             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2B5CFF))
                         ) {

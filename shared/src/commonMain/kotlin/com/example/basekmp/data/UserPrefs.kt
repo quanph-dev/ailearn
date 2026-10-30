@@ -9,6 +9,7 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.snapshots.SnapshotStateList
 import com.example.basekmp.currentTimeMillis
+import com.example.basekmp.currentLocalEpochDay
 import com.example.basekmp.config.AppConfig
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.decodeFromString
@@ -17,11 +18,13 @@ import kotlinx.serialization.json.Json
 
 @Serializable
 private data class LearningProgressSnapshot(
-    val version: Int = 1,
+    val version: Int = 2,
     val streakCount: Int = 0,
     val learnedMinutes: Int = 0,
+    val minutesToday: Int = 0,
+    val minutesTodayDay: Long = -1L,
     val wordsMastered: Int = 0,
-    val lastActiveDay: Long = 0L,
+    val lastActiveDay: Long = -1L,
     val homeTourDone: Boolean = false,
     val history: List<LearningItem> = emptyList(),
     val pathLessons: Map<String, Int> = emptyMap(),
@@ -57,8 +60,10 @@ object UserPrefs {
     // Reactive Metric States
     val streakCountState: MutableIntState = mutableIntStateOf(0)
     val learnedMinutesState: MutableIntState = mutableIntStateOf(0)
+    val learnedMinutesTodayState: MutableIntState = mutableIntStateOf(0)
+    val minutesTodayDayState: MutableLongState = mutableLongStateOf(-1L)
     val wordsMasteredState: MutableIntState = mutableIntStateOf(0)
-    val lastActiveDayState: MutableLongState = mutableLongStateOf(0L)
+    val lastActiveDayState: MutableLongState = mutableLongStateOf(-1L)
     val homeTourDoneState: MutableState<Boolean> = mutableStateOf(false)
 
     // Reactive Learning History
@@ -187,6 +192,8 @@ object UserPrefs {
         LearningProgressSnapshot(
             streakCount = streakCountState.intValue,
             learnedMinutes = learnedMinutesState.intValue,
+            minutesToday = learnedMinutesTodayState.intValue,
+            minutesTodayDay = minutesTodayDayState.longValue,
             wordsMastered = wordsMasteredState.intValue,
             lastActiveDay = lastActiveDayState.longValue,
             homeTourDone = homeTourDoneState.value,
@@ -217,8 +224,10 @@ object UserPrefs {
         try {
             streakCountState.intValue = snapshot.streakCount.coerceAtLeast(0)
             learnedMinutesState.intValue = snapshot.learnedMinutes.coerceAtLeast(0)
+            learnedMinutesTodayState.intValue = snapshot.minutesToday.coerceAtLeast(0)
+            minutesTodayDayState.longValue = snapshot.minutesTodayDay
             wordsMasteredState.intValue = snapshot.wordsMastered.coerceAtLeast(0)
-            lastActiveDayState.longValue = snapshot.lastActiveDay.coerceAtLeast(0L)
+            lastActiveDayState.longValue = snapshot.lastActiveDay
             homeTourDoneState.value = snapshot.homeTourDone
             learningHistoryState.clear()
             learningHistoryState.addAll(snapshot.history.takeLast(MAX_HISTORY_ITEMS))
@@ -260,10 +269,32 @@ object UserPrefs {
 
     fun recordPathLesson(lessonId: String, score: Int) = markPathLessonDone(lessonId, score)
 
-    fun recordPracticeDone(feature: String, score: Int, total: Int) {
+    fun recordPracticeDone(
+        feature: String,
+        score: Int,
+        total: Int,
+        learnedMinutes: Int = 0,
+        activityEpochDay: Long = todayEpochDay()
+    ) {
         val now = currentTimeMillis()
-        learningHistoryState.add(0, LearningItem(feature.replaceFirstChar { it.uppercase() }, now, score, "$feature Practice", total, englishLevel))
-        recordStreakDay()
+        val featureLabel = feature
+            .trim()
+            .replace('_', ' ')
+            .split(Regex("\\s+"))
+            .filter(String::isNotBlank)
+            .joinToString(" ") { part -> part.lowercase().replaceFirstChar { it.uppercase() } }
+        if (featureLabel.isEmpty()) return
+        val practiceTitle = if (featureLabel.endsWith(" Practice", ignoreCase = true)) {
+            featureLabel
+        } else {
+            "$featureLabel Practice"
+        }
+        learningHistoryState.add(0, LearningItem(practiceTitle, now, score, "", total, englishLevel))
+        if (learnedMinutes > 0) {
+            addLearnedMinutes(learnedMinutes, activityEpochDay)
+        } else {
+            recordStreakDay(activityEpochDay)
+        }
         changed()
     }
 
@@ -281,12 +312,24 @@ object UserPrefs {
     fun freeLessonChatsLeft(): Int = AppConfig.UNLIMITED_AI_SLOTS
 
     // Activity & Progress tracking
-    fun addLearnedMinutes(minutes: Int) {
+    fun addLearnedMinutes(minutes: Int, activityEpochDay: Long = todayEpochDay()) {
         if (minutes > 0) {
             learnedMinutesState.intValue += minutes
+            if (minutesTodayDayState.longValue != activityEpochDay) {
+                minutesTodayDayState.longValue = activityEpochDay
+                learnedMinutesTodayState.intValue = 0
+            }
+            learnedMinutesTodayState.intValue += minutes
+            updateStreakDay(activityEpochDay)
             changed()
         }
     }
+
+    fun minutesToday(activityEpochDay: Long = todayEpochDay()): Int =
+        if (minutesTodayDayState.longValue == activityEpochDay) learnedMinutesTodayState.intValue else 0
+
+    fun dailyGoalReachedToday(activityEpochDay: Long = todayEpochDay()): Boolean =
+        minutesToday(activityEpochDay) >= dailyGoalMinutes
 
     fun incWordsMastered(count: Int = 1) {
         if (count > 0) {
@@ -295,7 +338,7 @@ object UserPrefs {
         }
     }
 
-    fun todayEpochDay(): Long = currentTimeMillis() / MILLIS_PER_DAY
+    fun todayEpochDay(): Long = currentLocalEpochDay()
 
     fun getLearnLanguage(): String = targetLanguage
     fun setLearnLanguage(it: String) { targetLanguage = it }
@@ -307,20 +350,23 @@ object UserPrefs {
     fun clearAllSessions() { /* preserve core data */ }
     fun clearTimedSessions() { /* preserve core data */ }
 
-    fun recordStreakDay() {
-        val today = currentTimeMillis() / MILLIS_PER_DAY
-        val lastDay = lastActiveDayState.longValue
-        if (lastDay == today) return
-        streakCountState.intValue = if (lastDay == today - 1L) {
-            streakCountState.intValue + 1
-        } else {
-            1
-        }
-        lastActiveDayState.longValue = today
+    fun recordStreakDay(activityEpochDay: Long = todayEpochDay()) {
+        updateStreakDay(activityEpochDay)
         changed()
     }
 
-    fun addLearning(title: String, score: Int = 0, detail: String = "", total: Int = 100, level: String = "") {
+    private fun updateStreakDay(today: Long) {
+        val lastDay = lastActiveDayState.longValue
+        val activeDay = maxOf(today, lastDay)
+        streakCountState.intValue = when {
+            lastDay == activeDay -> maxOf(streakCountState.intValue, 1)
+            lastDay == activeDay - 1L -> streakCountState.intValue + 1
+            else -> 1
+        }
+        lastActiveDayState.longValue = activeDay
+    }
+
+    fun addLearning(title: String, score: Int = -1, detail: String = "", total: Int = -1, level: String = "") {
         val item = LearningItem(
             title = title,
             timestamp = currentTimeMillis(),
@@ -429,6 +475,5 @@ object UserPrefs {
         return openedLessonsState.value.contains(key) || completedLessonsState.value.containsKey(key)
     }
 
-    private const val MILLIS_PER_DAY = 86_400_000L
     private const val MAX_HISTORY_ITEMS = 500
 }

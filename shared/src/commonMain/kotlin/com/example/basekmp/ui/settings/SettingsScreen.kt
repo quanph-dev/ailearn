@@ -11,7 +11,6 @@ import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -31,14 +30,12 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import ailearn.shared.generated.resources.Res
-import ailearn.shared.generated.resources.crown
 import ailearn.shared.generated.resources.setting_goal
 import ailearn.shared.generated.resources.setting_learn
 import ailearn.shared.generated.resources.setting_level
@@ -101,11 +98,6 @@ fun SettingsScreen(
                 .weight(1f)
                 .verticalScroll(rememberScrollState())
         ) {
-            Spacer(Modifier.height(14.dp))
-
-            // Unlock Premium Access Banner
-            ProBanner(onClick = {})
-
             Spacer(Modifier.height(14.dp))
 
             // 1. Profile Section
@@ -369,42 +361,6 @@ private fun SettingRow(item: SettingItem) {
             contentDescription = null,
             tint = TextSecondary,
             modifier = Modifier.size(20.dp)
-        )
-    }
-}
-
-@Composable
-private fun ProBanner(onClick: () -> Unit) {
-    Box(
-        modifier = Modifier
-            .fillMaxWidth()
-            .clip(RoundedCornerShape(16.dp))
-            .background(Color(0xFF2B5CFF))
-            .clickable { onClick() }
-            .padding(16.dp)
-    ) {
-        Column(modifier = Modifier.fillMaxWidth(0.75f)) {
-            Text(
-                text = Strings.tr("Unlock Premium Access"),
-                color = Color.White,
-                fontSize = 16.sp,
-                fontWeight = FontWeight.Bold
-            )
-            Spacer(Modifier.height(3.dp))
-            Text(
-                text = Strings.tr("Unlock all lessons, AI tutor and ad-free learning."),
-                color = Color.White.copy(alpha = 0.75f),
-                fontSize = 11.sp
-            )
-        }
-        Image(
-            painter = painterResource(Res.drawable.crown),
-            contentDescription = null,
-            modifier = Modifier
-                .align(Alignment.TopEnd)
-                .padding(end = 6.dp)
-                .offset(y = (-4).dp)
-                .size(width = 68.dp, height = 52.dp)
         )
     }
 }

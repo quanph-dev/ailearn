@@ -140,7 +140,6 @@ private val FILTERS = listOf("All", "Beginner", "Intermediate", "Advanced")
 @Composable
 fun PracticeScreen(
     onStartLesson: (Lesson) -> Unit,
-    onPremiumClick: (() -> Unit)? = null,
     onOpenCategory: (String) -> Unit = {},
     modifier: Modifier = Modifier
 ) {
@@ -159,10 +158,9 @@ fun PracticeScreen(
     ) {
         Spacer(Modifier.height(16.dp))
 
-        // Top Header: "Learning Board", IAP diamond hidden per requirement
+        // Top Header: Learning Board
         TabHeader(
-            title = Strings.tr("Learning Board"),
-            onPremiumClick = onPremiumClick
+            title = Strings.tr("Learning Board")
         )
 
         Spacer(Modifier.height(16.dp))

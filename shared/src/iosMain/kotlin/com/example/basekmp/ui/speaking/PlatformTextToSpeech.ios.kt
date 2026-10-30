@@ -16,7 +16,7 @@ class IosPlatformSpeaker(
     override val isSpeaking: Boolean get() = _isSpeaking.value
     override val isAvailable: Boolean get() = true
 
-    override fun speak(text: String, languageTag: String) {
+    override fun speak(text: String, languageTag: String, voicePreference: String?) {
         if (synthesizer.isSpeaking()) {
             synthesizer.stopSpeakingAtBoundary(AVSpeechBoundary.AVSpeechBoundaryImmediate)
         }

@@ -1,17 +1,11 @@
 package com.example.basekmp.ui.components
 
 import android.content.Context
-import android.content.res.AssetFileDescriptor
-import android.graphics.SurfaceTexture
-import android.media.MediaPlayer
-import android.media.PlaybackParams
-import android.os.Build
-import android.view.Surface
+import android.net.Uri
 import android.view.TextureView
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableLongStateOf
 import androidx.compose.runtime.mutableStateOf
@@ -20,26 +14,66 @@ import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.viewinterop.AndroidView
+import androidx.media3.common.AudioAttributes
+import androidx.media3.common.C
+import androidx.media3.common.MediaItem
+import androidx.media3.common.PlaybackParameters
+import androidx.media3.common.Player
+import androidx.media3.common.VideoSize
+import androidx.media3.datasource.DefaultDataSource
+import androidx.media3.datasource.cache.CacheDataSource
+import androidx.media3.datasource.cache.LeastRecentlyUsedCacheEvictor
+import androidx.media3.datasource.cache.SimpleCache
+import androidx.media3.database.StandaloneDatabaseProvider
+import androidx.media3.exoplayer.ExoPlayer
+import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
 import kotlinx.coroutines.delay
+import java.io.File
 
-class AndroidVideoPlayerController(
-    val context: Context,
-    val assetPath: String,
-    val muted: Boolean,
-    val onCompletionCallback: () -> Unit,
+private object ShadowingMediaCache {
+    @Volatile
+    private var cache: SimpleCache? = null
+
+    fun get(context: Context): SimpleCache {
+        cache?.let { return it }
+        return synchronized(this) {
+            cache ?: SimpleCache(
+                File(context.filesDir, "shadowing_remote/clips"),
+                LeastRecentlyUsedCacheEvictor(250L * 1024L * 1024L),
+                StandaloneDatabaseProvider(context.applicationContext)
+            ).also { cache = it }
+        }
+    }
+}
+
+class AndroidExoVideoPlayerController(
+    context: Context,
+    assetPath: String,
+    cacheKey: String?,
+    muted: Boolean,
+    private val onCompletionCallback: () -> Unit,
     val onStopCallback: () -> Unit
 ) : VideoPlayerController {
-    var player: MediaPlayer? = null
-    var surface: Surface? = null
-    val _isPlaying = mutableStateOf(false)
-    val _isReady = mutableStateOf(false)
-    val _positionMs = mutableLongStateOf(0L)
-    val _durationMs = mutableLongStateOf(0L)
-    val _videoAspect = mutableFloatStateOf(16f / 9f)
+    val player: ExoPlayer = ExoPlayer.Builder(context.applicationContext)
+        .setMediaSourceFactory(
+            DefaultMediaSourceFactory(
+                CacheDataSource.Factory()
+                    .setCache(ShadowingMediaCache.get(context.applicationContext))
+                    .setUpstreamDataSourceFactory(DefaultDataSource.Factory(context.applicationContext))
+                    .setFlags(CacheDataSource.FLAG_IGNORE_CACHE_ON_ERROR)
+            )
+        )
+        .build()
+
+    private val _isPlaying = mutableStateOf(false)
+    private val _isReady = mutableStateOf(false)
+    private val _positionMs = mutableLongStateOf(0L)
+    private val _durationMs = mutableLongStateOf(0L)
+    private val _videoAspect = mutableFloatStateOf(16f / 9f)
+    private var textureView: TextureView? = null
+
     var stopAtMs: Long? = null
-    private var currentSpeed: Float = 1.0f
-    private var pendingSeekMs: Long? = null
-    private var pendingPlay: Boolean = false
+        private set
 
     override val isPlaying: Boolean get() = _isPlaying.value
     override val isReady: Boolean get() = _isReady.value
@@ -47,157 +81,119 @@ class AndroidVideoPlayerController(
     override val durationMs: Long get() = _durationMs.value
     override val videoAspect: Float get() = _videoAspect.value
 
-    fun attach(st: SurfaceTexture) {
-        val s = Surface(st)
-        surface = s
-        build(s)
-    }
-
-    private fun build(s: Surface) {
-        try {
-            val mp = MediaPlayer()
-            mp.setSurface(s)
-            if (muted) {
-                mp.setVolume(0f, 0f)
+    init {
+        player.volume = if (muted) 0f else 1f
+        player.setAudioAttributes(
+            AudioAttributes.Builder()
+                .setUsage(C.USAGE_MEDIA)
+                .setContentType(C.AUDIO_CONTENT_TYPE_SPEECH)
+                .build(),
+            true
+        )
+        player.addListener(object : Player.Listener {
+            override fun onIsPlayingChanged(isPlaying: Boolean) {
+                _isPlaying.value = isPlaying
             }
 
-            if (assetPath.startsWith("/")) {
-                mp.setDataSource(assetPath)
-            } else {
-                var afd: AssetFileDescriptor? = null
-                try {
-                    afd = context.assets.openFd(assetPath)
-                    mp.setDataSource(afd.fileDescriptor, afd.startOffset, afd.length)
-                } catch (e: Exception) {
-                    // Try alternative prefix or strip leading slash
-                    val cleanPath = assetPath.trimStart('/')
-                    afd = context.assets.openFd(cleanPath)
-                    mp.setDataSource(afd.fileDescriptor, afd.startOffset, afd.length)
-                } finally {
-                    afd?.close()
+            override fun onPlaybackStateChanged(playbackState: Int) {
+                _isReady.value = playbackState == Player.STATE_READY
+                if (playbackState == Player.STATE_READY) {
+                    updatePlaybackPosition()
+                    player.duration
+                        .takeIf { it != C.TIME_UNSET && it >= 0L }
+                        ?.let { _durationMs.value = it }
+                } else if (playbackState == Player.STATE_ENDED) {
+                    _positionMs.value = _durationMs.value
+                    stopAtMs = null
+                    onCompletionCallback()
                 }
             }
 
-            mp.setOnVideoSizeChangedListener { _, width, height ->
-                if (width > 0 && height > 0) {
-                    _videoAspect.value = width.toFloat() / height.toFloat()
+            override fun onVideoSizeChanged(videoSize: VideoSize) {
+                if (videoSize.width > 0 && videoSize.height > 0) {
+                    _videoAspect.value =
+                        videoSize.width * videoSize.pixelWidthHeightRatio / videoSize.height
                 }
             }
-            mp.setOnPreparedListener { preparedMp ->
-                _durationMs.value = preparedMp.duration.toLong()
-                _isReady.value = true
-                pendingSeekMs?.let { seekMs ->
-                    try {
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                            preparedMp.seekTo(seekMs, MediaPlayer.SEEK_CLOSEST)
-                        } else {
-                            preparedMp.seekTo(seekMs.toInt())
-                        }
-                    } catch (_: Throwable) {}
-                    pendingSeekMs = null
-                }
-                if (pendingPlay) {
-                    try {
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && currentSpeed != 1.0f) {
-                            preparedMp.playbackParams = PlaybackParams().setSpeed(currentSpeed)
-                        }
-                        preparedMp.start()
-                        _isPlaying.value = true
-                    } catch (_: Throwable) {}
-                    pendingPlay = false
-                }
-            }
-            mp.setOnCompletionListener {
+
+            override fun onPlayerError(error: androidx.media3.common.PlaybackException) {
                 _isPlaying.value = false
-                stopAtMs = null
-                onCompletionCallback()
+                _isReady.value = false
             }
-            mp.setOnErrorListener { _, _, _ ->
-                _isPlaying.value = false
-                true
-            }
-            mp.prepareAsync()
-            player = mp
-        } catch (e: Throwable) {
-            e.printStackTrace()
-            _isPlaying.value = false
-        }
+        })
+
+        val mediaItem = MediaItem.Builder()
+            .setUri(mediaUri(assetPath))
+            .apply { if (!cacheKey.isNullOrBlank()) setCustomCacheKey(cacheKey) }
+            .build()
+        player.setMediaItem(mediaItem)
+        player.prepare()
     }
 
     override fun play() {
-        val p = player
-        if (p != null && _isReady.value) {
-            try {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && currentSpeed != 1.0f) {
-                    p.playbackParams = PlaybackParams().setSpeed(currentSpeed)
-                }
-                p.start()
-                _isPlaying.value = true
-                pendingPlay = false
-            } catch (e: Throwable) {
-                e.printStackTrace()
-            }
-        } else {
-            pendingPlay = true
-        }
+        player.play()
     }
 
     override fun pause() {
-        pendingPlay = false
-        try {
-            player?.let {
-                if (it.isPlaying) it.pause()
-            }
-        } catch (_: Throwable) {}
-        _isPlaying.value = false
+        updatePlaybackPosition()
+        player.pause()
     }
 
     override fun seekTo(ms: Long) {
-        val safeMs = ms.coerceAtLeast(0L)
-        _positionMs.value = safeMs
-        val p = player
-        if (p != null && _isReady.value) {
-            try {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                    p.seekTo(safeMs, MediaPlayer.SEEK_CLOSEST)
-                } else {
-                    p.seekTo(safeMs.toInt())
-                }
-            } catch (e: Throwable) {}
-        } else {
-            pendingSeekMs = safeMs
-        }
+        val safePositionMs = ms.coerceAtLeast(0L)
+        _positionMs.value = safePositionMs
+        player.seekTo(safePositionMs)
     }
 
     override fun stopAt(ms: Long?) {
         stopAtMs = ms
     }
 
-    override fun setSpeed(newSpeed: Float) {
-        currentSpeed = newSpeed
-        try {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                player?.playbackParams = PlaybackParams().setSpeed(newSpeed)
-            }
-        } catch (_: Throwable) {}
+    override fun setSpeed(speed: Float) {
+        if (speed > 0f) {
+            player.playbackParameters = PlaybackParameters(speed)
+        }
+    }
+
+    fun attach(view: TextureView) {
+        if (textureView === view) return
+        textureView?.let(player::clearVideoTextureView)
+        textureView = view
+        player.setVideoTextureView(view)
+    }
+
+    fun detach(view: TextureView) {
+        if (textureView !== view) return
+        player.clearVideoTextureView(view)
+        textureView = null
+    }
+
+    fun updatePlaybackPosition() {
+        _positionMs.value = player.currentPosition.coerceAtLeast(0L)
     }
 
     fun release() {
-        pendingPlay = false
-        pendingSeekMs = null
-        try { player?.stop() } catch (_: Throwable) {}
-        try { player?.release() } catch (_: Throwable) {}
-        try { surface?.release() } catch (_: Throwable) {}
-        player = null
-        surface = null
+        textureView?.let(player::clearVideoTextureView)
+        textureView = null
+        stopAtMs = null
+        player.release()
         _isPlaying.value = false
         _isReady.value = false
+    }
+
+    private fun mediaUri(path: String): Uri = when {
+        path.startsWith("asset://") || path.startsWith("file://") ||
+            path.startsWith("content://") || path.startsWith("http://") ||
+            path.startsWith("https://") -> Uri.parse(path)
+        path.startsWith("/") -> Uri.fromFile(File(path))
+        else -> Uri.parse("asset:///${path.trimStart('/')}")
     }
 }
 
 @Composable
 actual fun rememberVideoPlayer(
     assetPath: String,
+    cacheKey: String?,
     muted: Boolean,
     onCompletion: () -> Unit,
     onStop: () -> Unit
@@ -206,10 +202,11 @@ actual fun rememberVideoPlayer(
     val currentOnCompletion = rememberUpdatedState(onCompletion)
     val currentOnStop = rememberUpdatedState(onStop)
 
-    val controller = remember(assetPath) {
-        AndroidVideoPlayerController(
+    val controller = remember(assetPath, cacheKey, muted) {
+        AndroidExoVideoPlayerController(
             context = context.applicationContext,
             assetPath = assetPath,
+            cacheKey = cacheKey,
             muted = muted,
             onCompletionCallback = { currentOnCompletion.value() },
             onStopCallback = { currentOnStop.value() }
@@ -219,24 +216,18 @@ actual fun rememberVideoPlayer(
     LaunchedEffect(controller.isPlaying) {
         while (controller.isPlaying) {
             delay(50)
-            val p = controller.player
-            if (p != null && p.isPlaying) {
-                val pos = p.currentPosition.toLong()
-                controller._positionMs.value = pos
-                val stopAt = controller.stopAtMs
-                if (stopAt != null && pos >= stopAt) {
-                    controller.pause()
-                    controller.stopAt(null)
-                    controller.onStopCallback()
-                }
+            controller.updatePlaybackPosition()
+            val stopAt = controller.stopAtMs
+            if (stopAt != null && controller.positionMs >= stopAt) {
+                controller.pause()
+                controller.stopAt(null)
+                controller.onStopCallback()
             }
         }
     }
 
-    DisposableEffect(assetPath) {
-        onDispose {
-            controller.release()
-        }
+    DisposableEffect(controller) {
+        onDispose(controller::release)
     }
 
     return controller
@@ -247,25 +238,16 @@ actual fun VideoSurface(
     controller: VideoPlayerController,
     modifier: Modifier
 ) {
+    val exoController = controller as? AndroidExoVideoPlayerController
     AndroidView(
-        factory = { ctx ->
-            TextureView(ctx).apply {
+        factory = { context ->
+            TextureView(context).apply {
                 isOpaque = false
-                surfaceTextureListener = object : TextureView.SurfaceTextureListener {
-                    override fun onSurfaceTextureAvailable(st: SurfaceTexture, width: Int, height: Int) {
-                        (controller as? AndroidVideoPlayerController)?.attach(st)
-                    }
-
-                    override fun onSurfaceTextureDestroyed(st: SurfaceTexture): Boolean {
-                        (controller as? AndroidVideoPlayerController)?.release()
-                        return true
-                    }
-
-                    override fun onSurfaceTextureSizeChanged(st: SurfaceTexture, width: Int, height: Int) {}
-                    override fun onSurfaceTextureUpdated(st: SurfaceTexture) {}
-                }
+                exoController?.attach(this)
             }
         },
+        update = { view -> exoController?.attach(view) },
+        onRelease = { view -> exoController?.detach(view) },
         modifier = modifier
     )
 }

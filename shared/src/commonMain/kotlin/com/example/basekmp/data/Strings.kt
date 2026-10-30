@@ -47,10 +47,10 @@ object Strings {
     fun trIn(lang: String, en: String): String {
         if (lang == "en") return en
         val langMap = Translations.byLanguage[lang]
-        if (langMap != null) {
-            val translated = langMap[en]
-            if (translated != null) return translated
-        }
+        val translated = langMap?.get(en)
+            ?: Translations.learningPathDialogOverrides[lang]?.get(en)
+            ?: Translations.videoShadowingOverrides[lang]?.get(en)
+        if (translated != null) return translated
         return en
     }
 }

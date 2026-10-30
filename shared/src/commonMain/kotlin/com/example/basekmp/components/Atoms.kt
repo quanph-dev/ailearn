@@ -4,6 +4,7 @@ import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.RepeatMode
 import androidx.compose.animation.core.StartOffset
+import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.infiniteRepeatable
 import androidx.compose.animation.core.rememberInfiniteTransition
@@ -11,12 +12,14 @@ import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -25,18 +28,22 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.VolumeUp
+import androidx.compose.material.icons.rounded.Mic
+import androidx.compose.material.icons.rounded.Stop
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -45,6 +52,7 @@ import com.example.basekmp.data.Strings
 import com.example.basekmp.theme.AppTheme
 import com.example.basekmp.theme.Blue
 import com.example.basekmp.theme.OptionSurface
+import com.example.basekmp.theme.TrackColor
 
 @Composable
 fun PrimaryButton(
@@ -94,6 +102,39 @@ data class SelectOption(
     val label: String,
     val leading: (@Composable () -> Unit)? = null
 )
+
+/** Progress track styled with Engla's original palette and no trailing stop marker. */
+@Composable
+fun AppLinearProgressBar(
+    progress: Float,
+    modifier: Modifier = Modifier,
+    height: Dp = 6.dp,
+    color: Color = Blue,
+    trackColor: Color = TrackColor
+) {
+    val animatedProgress by animateFloatAsState(
+        targetValue = progress.coerceIn(0f, 1f),
+        animationSpec = tween(durationMillis = 260),
+        label = "linearProgress"
+    )
+
+    Box(
+        modifier = modifier
+            .height(height)
+            .clip(RoundedCornerShape(height / 2))
+            .background(trackColor)
+    ) {
+        if (animatedProgress > 0f) {
+            Box(
+                modifier = Modifier
+                    .fillMaxHeight()
+                    .fillMaxWidth(animatedProgress)
+                    .clip(RoundedCornerShape(height / 2))
+                    .background(color)
+            )
+        }
+    }
+}
 
 @Composable
 fun OptionCard(
@@ -252,9 +293,13 @@ fun HoldToSpeakMic(
     isRecording: Boolean,
     onStartRecording: () -> Unit,
     onStopRecording: () -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    buttonSize: Dp = 80.dp
 ) {
     val colors = AppTheme.colors
+    val currentIsRecording by rememberUpdatedState(isRecording)
+    val currentOnStartRecording by rememberUpdatedState(onStartRecording)
+    val currentOnStopRecording by rememberUpdatedState(onStopRecording)
     val infiniteTransition = rememberInfiniteTransition()
     val pulseScale by infiniteTransition.animateFloat(
         initialValue = 1f,
@@ -266,13 +311,30 @@ fun HoldToSpeakMic(
     )
 
     Box(
-        modifier = modifier.size(80.dp),
+        modifier = modifier
+            .size(buttonSize)
+            .pointerInput(Unit) {
+                var startedByHold = false
+                detectTapGestures(
+                    onTap = {
+                        if (currentIsRecording) currentOnStopRecording() else currentOnStartRecording()
+                    },
+                    onLongPress = {
+                        startedByHold = true
+                        if (!currentIsRecording) currentOnStartRecording()
+                    },
+                    onPress = {
+                        tryAwaitRelease()
+                        if (startedByHold) currentOnStopRecording()
+                    }
+                )
+            },
         contentAlignment = Alignment.Center
     ) {
         if (isRecording) {
             Box(
                 Modifier
-                    .size(76.dp)
+                    .size(buttonSize * 0.96f)
                     .scale(pulseScale)
                     .clip(CircleShape)
                     .background(colors.primary.copy(alpha = 0.25f))
@@ -280,15 +342,17 @@ fun HoldToSpeakMic(
         }
         Box(
             modifier = Modifier
-                .size(64.dp)
+                .size(buttonSize * 0.8f)
                 .clip(CircleShape)
-                .background(Brush.radialGradient(listOf(colors.primary, colors.primaryGradientStart)))
-                .clickable {
-                    if (isRecording) onStopRecording() else onStartRecording()
-                },
+                .background(Brush.radialGradient(listOf(colors.primary, colors.primaryGradientStart))),
             contentAlignment = Alignment.Center
         ) {
-            Text(if (isRecording) "⏹" else "🎙️", fontSize = 24.sp, color = Color.White)
+            Icon(
+                imageVector = if (isRecording) Icons.Rounded.Stop else Icons.Rounded.Mic,
+                contentDescription = Strings.tr(if (isRecording) "Stop recording" else "Start recording"),
+                tint = Color.White,
+                modifier = Modifier.size(buttonSize * 0.36f)
+            )
         }
     }
 }
@@ -316,7 +380,7 @@ fun ProgressHeader(
         }
         Spacer(Modifier.width(dimens.spacingMd))
         Box(
-            modifier = Modifier.weight(1f).height(6.dp).clip(RoundedCornerShape(3.dp)).background(colors.surface)
+            modifier = Modifier.weight(1f).height(6.dp).clip(RoundedCornerShape(3.dp)).background(TrackColor)
         ) {
             val progress = (currentStep.toFloat() / totalSteps.coerceAtLeast(1).toFloat()).coerceIn(0f, 1f)
             Box(

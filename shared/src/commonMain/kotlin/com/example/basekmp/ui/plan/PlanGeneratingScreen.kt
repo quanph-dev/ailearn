@@ -21,7 +21,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Check
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
-import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -38,6 +37,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.basekmp.components.AnimatedBuddy
+import com.example.basekmp.components.AppLinearProgressBar
 import com.example.basekmp.components.RobotMood
 import com.example.basekmp.data.PlanCatalogRepository
 import com.example.basekmp.data.tr
@@ -115,14 +115,13 @@ fun PlanGeneratingScreen(
 
             Spacer(modifier = Modifier.height(AppTheme.dimens.spacing3Xl))
 
-            LinearProgressIndicator(
-                progress = { progress },
+            AppLinearProgressBar(
+                progress = progress,
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(8.dp)
                     .clip(RoundedCornerShape(4.dp)),
-                color = AppTheme.colors.primary,
-                trackColor = AppTheme.colors.surfaceCard
+                color = AppTheme.colors.primary
             )
 
             Spacer(modifier = Modifier.height(AppTheme.dimens.spacing2Xl))

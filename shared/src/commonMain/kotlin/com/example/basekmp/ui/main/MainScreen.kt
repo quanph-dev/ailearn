@@ -16,7 +16,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.example.basekmp.data.PlanProgress
 import com.example.basekmp.ui.components.AppBottomNav
 import com.example.basekmp.ui.components.MainTab
 import com.example.basekmp.ui.home.HomeScreen
@@ -72,10 +71,10 @@ fun MainScreen(
                         onNavigateToSpeaking = { onFeatureClick("speaking") },
                         onNavigateToGrammar = { onFeatureClick("grammar") },
                         onNavigateToTodayLesson = onStartLesson,
-                        onOpenPlan = { onOpenPlan(PlanProgress.get().goalId != null) },
+                        onOpenPlan = onOpenPlan,
+                        onOpenPlanDay = onOpenPlanDay,
                         onOpenVideo = { videoId -> onFeatureClick("video_shadowing:$videoId") },
                         onFeatureClick = onFeatureClick,
-                        onPremiumClick = { onFeatureClick("premium") },
                         onNotificationsClick = { onFeatureClick("notifications") },
                         onStatClick = onStatClick
                     )

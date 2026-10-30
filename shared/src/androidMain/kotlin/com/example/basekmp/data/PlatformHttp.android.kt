@@ -47,6 +47,33 @@ actual suspend fun platformHttpPost(
     }
 }
 
+actual suspend fun platformHttpGet(
+    url: String,
+    readTimeoutMs: Int,
+    connectTimeoutMs: Int
+): PlatformHttpResponse = withContext(Dispatchers.IO) {
+    var connection: HttpURLConnection? = null
+    try {
+        val conn = (URL(url).openConnection() as HttpURLConnection).apply {
+            requestMethod = "GET"
+            connectTimeout = connectTimeoutMs
+            readTimeout = readTimeoutMs
+            useCaches = false
+        }
+        connection = conn
+
+        val code = conn.responseCode
+        val stream = if (code in 200..299) conn.inputStream else conn.errorStream
+        PlatformHttpResponse(code, stream?.use { readStream(it) }, null)
+    } catch (ce: CancellationException) {
+        throw ce
+    } catch (t: Throwable) {
+        PlatformHttpResponse(0, null, t)
+    } finally {
+        connection?.disconnect()
+    }
+}
+
 private fun readStream(stream: InputStream): String {
     return BufferedReader(InputStreamReader(stream, Charsets.UTF_8)).use { it.readText() }
 }

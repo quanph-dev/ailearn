@@ -78,7 +78,7 @@ fun OnboardingScreen(
     fun titleFor(step: OnboardingStep): String = Strings.tr(when (step) {
         OnboardingStep.LearnLanguage -> "Which Language Do You Want to Learn?"
         OnboardingStep.NativeLanguage -> "What is Your Native Language?"
-        OnboardingStep.Level -> "Choose Your English Level"
+        OnboardingStep.Level -> if (uiLanguage == "en") "Choose Your Level" else "Choose Your English Level"
         OnboardingStep.DailyTime -> "How Much Time Can You Spend Learning Each Day?"
         OnboardingStep.TutorVoice -> "Choose Your AI Tutor Voice"
     })

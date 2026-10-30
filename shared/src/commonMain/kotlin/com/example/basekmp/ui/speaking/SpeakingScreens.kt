@@ -23,7 +23,6 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -41,6 +40,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.basekmp.components.CongratsDialog
+import com.example.basekmp.components.AppLinearProgressBar
 import com.example.basekmp.components.HoldToSpeakMic
 import com.example.basekmp.components.PrimaryButton
 import com.example.basekmp.components.ProgressHeader
@@ -127,6 +127,7 @@ fun SpeakingCardsScreen(
     var totalScores by remember { mutableStateOf<Map<Int, Int>>(emptyMap()) }
     var speechError by remember { mutableStateOf("") }
     var isFinished by remember { mutableStateOf(false) }
+    var completionRecorded by remember { mutableStateOf(false) }
 
     LaunchedEffect(cardCount) {
         isLoading = true
@@ -170,6 +171,19 @@ fun SpeakingCardsScreen(
 
     val avgScore = if (totalScores.isEmpty()) 0 else totalScores.values.average().toInt()
 
+    fun finishSpeakingSession() {
+        if (!completionRecorded) {
+            UserPrefs.recordPracticeDone(
+                feature = "speaking",
+                score = avgScore,
+                total = 100,
+                learnedMinutes = 6
+            )
+            completionRecorded = true
+        }
+        isFinished = true
+    }
+
     if (isFinished) {
         CongratsDialog(
             subtitle = Strings.tr("Great speaking session! Average score: $avgScore%"),
@@ -177,7 +191,7 @@ fun SpeakingCardsScreen(
             onButtonClick = { onClose(avgScore, true) },
             onClose = { onClose(avgScore, true) },
             correct = totalScores.values.count { it >= 60 },
-            incorrect = totalScores.values.count { it < 60 }
+            incorrect = deck.size - totalScores.values.count { it >= 60 }
         )
     }
 
@@ -334,14 +348,13 @@ fun SpeakingCardsScreen(
                         Spacer(Modifier.height(dimens.spacingSm))
 
                         val animProgress by animateFloatAsState(targetValue = currentScore / 100f)
-                        LinearProgressIndicator(
-                            progress = { animProgress },
+                        AppLinearProgressBar(
+                            progress = animProgress,
                             modifier = Modifier
                                 .width(200.dp)
                                 .height(8.dp)
                                 .clip(RoundedCornerShape(4.dp)),
-                            color = if (currentScore >= 60) colors.success else colors.accentGold,
-                            trackColor = colors.surfaceVariant
+                            color = if (currentScore >= 60) colors.success else colors.accentGold
                         )
 
                         Spacer(Modifier.height(dimens.spacingSm))
@@ -382,7 +395,7 @@ fun SpeakingCardsScreen(
                             currentIndex++
                             currentScore = totalScores[currentIndex] ?: 0
                         } else {
-                            onClose(avgScore, false)
+                            finishSpeakingSession()
                         }
                     },
                 contentAlignment = Alignment.Center
@@ -408,8 +421,7 @@ fun SpeakingCardsScreen(
                             currentIndex++
                             currentScore = totalScores[currentIndex] ?: 0
                         } else {
-                            UserPrefs.recordPracticeDone("speaking", avgScore, 100)
-                            isFinished = true
+                            finishSpeakingSession()
                         }
                     },
                 contentAlignment = Alignment.Center

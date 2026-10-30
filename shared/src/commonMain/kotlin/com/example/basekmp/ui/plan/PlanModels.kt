@@ -73,12 +73,13 @@ data class GoalOption(
 ) {
     companion object {
         val ALL: List<GoalOption> = listOf(
-            GoalOption("conversation", "Everyday Conversation", "Talk confidently in daily life"),
-            GoalOption("career", "Work & Career", "Use English at work or in interviews"),
-            GoalOption("study", "School & Study", "Learn English for classes or studying abroad"),
-            GoalOption("travel", "Communicate when traveling abroad", "Travel with ease and confidence"),
-            GoalOption("exams", "Prepare for IELTS, TOEIC, TOEFL", "Get ready for test day"),
-            GoalOption("other", "Something Else", "Tell us your personal goal")
+            GoalOption("everyday", "Everyday Conversation", "Talk confidently in daily life"),
+            GoalOption("travel", "Travel", "Communicate when traveling abroad"),
+            GoalOption("work_career", "Work & Career", "Use English at work or in interviews"),
+            GoalOption("school_study", "School & Study", "Learn English for classes or studying abroad"),
+            GoalOption("language_exams", "Prepare for IELTS, TOEIC, TOEFL", "Get ready for test day"),
+            GoalOption("improve_english", "Improve My English", "Build stronger overall English skills"),
+            GoalOption("custom", "Something Else", "Tell us your personal goal")
         )
     }
 }
@@ -99,20 +100,23 @@ object PlanFlow {
         val videoId: String? = null
     )
 
+    fun activitiesFor(videoId: String?): List<PlanProgress.Activity> = buildList {
+        if (!videoId.isNullOrBlank()) add(PlanProgress.Activity.VIDEO)
+        add(PlanProgress.Activity.QUIZ)
+        add(PlanProgress.Activity.SPEAKING)
+        add(PlanProgress.Activity.TALK)
+    }
+
     suspend fun dayPlan(day: Int): DayPlan? {
+        if (day !in 1..GoalPlan.DAYS) return null
         val progress = PlanProgress.get()
         val catalog = PlanCatalogRepository.getCatalog() ?: return null
         val goal = catalog.goal(progress.goalId) ?: return null
         val stage = goal.stageFor(day) ?: return null
         val dayInStage = GoalPlan.dayInStage(day)
-        val videoId = GoalPlan.videoFor(stage, dayInStage)
+        val videoId = GoalPlan.videoFor(stage, day)
 
-        val activities = listOf(
-            PlanProgress.Activity.VIDEO,
-            PlanProgress.Activity.QUIZ,
-            PlanProgress.Activity.SPEAKING,
-            PlanProgress.Activity.TALK
-        )
+        val activities = activitiesFor(videoId)
 
         return DayPlan(
             goal = goal,
@@ -149,7 +153,7 @@ object PlanFlow {
             activities = emptyList()
         )
         val activities = plan.available
-        if (!progress.isUnlocked(day) || day != progress.currentDay() || activity !in activities) {
+        if (!progress.isUnlocked(day) || activity !in activities) {
             return Finish(
                 dayCompleted = false,
                 nextActivity = activities.firstOrNull { it !in progress.done(day) },
@@ -162,7 +166,7 @@ object PlanFlow {
 
         val allDone = activities.all { it in progress.done(day) }
 
-        val newlyCompleted = allDone && !wasDayCompleted && progress.completeDay(day)
+        val newlyCompleted = allDone && !wasDayCompleted && progress.completeDay(day, activities.toSet())
         if (newlyCompleted) {
             return Finish(
                 dayCompleted = true,

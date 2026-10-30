@@ -3,11 +3,16 @@ package com.example.basekmp.data
 import androidx.compose.runtime.MutableIntState
 import androidx.compose.runtime.mutableIntStateOf
 import com.example.basekmp.config.AppConfig
-import com.example.basekmp.currentTimeMillis
+import com.example.basekmp.appInstallEpochDay
+import com.example.basekmp.currentLocalEpochDay
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
+import kotlin.math.roundToInt
+
+@Serializable
+data class PlanQuizScore(val correct: Int, val total: Int)
 
 @Serializable
 private data class PlanProgressSnapshot(
@@ -22,12 +27,13 @@ private data class PlanProgressSnapshot(
     val completedDays: List<Int> = emptyList(),
     val doneActivities: Map<String, List<PlanProgress.Activity>> = emptyMap(),
     val wordsPerDay: Map<String, Int> = emptyMap(),
+    val quizScores: Map<String, PlanQuizScore> = emptyMap(),
     val seenIds: Map<String, List<String>> = emptyMap(),
     val seenContent: Map<String, List<String>> = emptyMap()
 )
 
 /** Local 30-day plan state, persisted by the platform app repository. */
-class PlanProgress private constructor() {
+class PlanProgress internal constructor() {
 
     @Serializable
     enum class Activity(val key: String) {
@@ -41,11 +47,48 @@ class PlanProgress private constructor() {
         const val DAY_XP: Int = 50
         const val DAY_DIAMONDS: Int = 10
         const val LEVEL_XP: Int = 100
-        private const val MILLIS_PER_DAY: Long = 86_400_000L
-
         val INSTANCE: PlanProgress by lazy { PlanProgress() }
 
         fun get(context: Any? = null): PlanProgress = INSTANCE
+
+        /** Minutes allocated by the original 30-day plan for a completed activity. */
+        fun activityMinutes(
+            activity: Activity,
+            dailyMinutes: Int,
+            available: Collection<Activity> = Activity.entries
+        ): Int {
+            if (activity == Activity.TALK) return 5
+            val nonTalkActivities = Activity.entries.filter { it != Activity.TALK && it in available }
+            if (activity !in nonTalkActivities) return 1
+
+            val targetMinutes = maxOf(
+                dailyMinutes - if (Activity.TALK in available) 5 else 0,
+                nonTalkActivities.size
+            )
+            val weights = nonTalkActivities.associateWith { if (it == Activity.QUIZ) 3 else 5 }
+            val minimums = nonTalkActivities.associateWith { if (it == Activity.QUIZ) 2 else 1 }
+            val weightTotal = weights.values.sum()
+            val allocation = linkedMapOf<Activity, Int>()
+            nonTalkActivities.forEach { item ->
+                val proportional = ((weights.getValue(item) * targetMinutes).toFloat() / weightTotal)
+                    .roundToInt()
+                allocation[item] = maxOf(minimums.getValue(item), proportional)
+            }
+
+            while (allocation.values.sum() != targetMinutes) {
+                if (allocation.values.sum() > targetMinutes) {
+                    val candidate = nonTalkActivities
+                        .filter { allocation.getValue(it) > minimums.getValue(it) }
+                        .maxByOrNull { allocation.getValue(it) * 10 + weights.getValue(it) }
+                        ?: break
+                    allocation[candidate] = allocation.getValue(candidate) - 1
+                } else {
+                    val candidate = nonTalkActivities.maxByOrNull { weights.getValue(it) } ?: break
+                    allocation[candidate] = allocation.getValue(candidate) + 1
+                }
+            }
+            return allocation[activity] ?: 1
+        }
     }
 
     val revision: MutableIntState = mutableIntStateOf(0)
@@ -53,6 +96,7 @@ class PlanProgress private constructor() {
     private val _completedDays = mutableSetOf<Int>()
     private val _doneActivities = mutableMapOf<Int, MutableSet<Activity>>()
     private val _wordsPerDay = mutableMapOf<Int, Int>()
+    private val _quizScores = mutableMapOf<Int, PlanQuizScore>()
     private val _seenIds = mutableMapOf<String, MutableSet<String>>()
     private val _seenContent = mutableMapOf<String, MutableSet<String>>()
     private val json = Json { ignoreUnknownKeys = true; encodeDefaults = true }
@@ -99,6 +143,7 @@ class PlanProgress private constructor() {
             completedDays = _completedDays.sorted(),
             doneActivities = _doneActivities.mapKeys { it.key.toString() }.mapValues { (_, value) -> value.toList() },
             wordsPerDay = _wordsPerDay.mapKeys { it.key.toString() },
+            quizScores = _quizScores.mapKeys { it.key.toString() },
             seenIds = _seenIds.mapValues { (_, value) -> value.toList() },
             seenContent = _seenContent.mapValues { (_, value) -> value.toList() }
         )
@@ -106,13 +151,13 @@ class PlanProgress private constructor() {
 
     fun restore(serialized: String): Boolean {
         val snapshot = runCatching { json.decodeFromString<PlanProgressSnapshot>(serialized) }.getOrNull() ?: return false
-        goalId = snapshot.goalId?.takeIf { it.isNotBlank() }
+        goalId = GoalPlan.canonicalGoalId(snapshot.goalId)
         name = snapshot.name
         goalNote = snapshot.goalNote
         xp = snapshot.xp.coerceAtLeast(0)
         diamonds = snapshot.diamonds.coerceAtLeast(0)
         celebratedDay = snapshot.celebratedDay.coerceAtLeast(0)
-        startedEpochDay = snapshot.startedEpochDay
+        startedEpochDay = appInstallEpochDay() ?: snapshot.startedEpochDay
         _completedDays.clear()
         _completedDays.addAll(snapshot.completedDays.filter { it in 1..GoalPlan.DAYS })
         _doneActivities.clear()
@@ -123,6 +168,14 @@ class PlanProgress private constructor() {
         snapshot.wordsPerDay.forEach { (key, count) ->
             key.toIntOrNull()?.takeIf { it in 1..GoalPlan.DAYS }?.let { _wordsPerDay[it] = count.coerceAtLeast(0) }
         }
+        _quizScores.clear()
+        snapshot.quizScores.forEach { (key, score) ->
+            key.toIntOrNull()?.takeIf { it in 1..GoalPlan.DAYS }?.let { day ->
+                if (score.total > 0) {
+                    _quizScores[day] = PlanQuizScore(score.correct.coerceIn(0, score.total), score.total)
+                }
+            }
+        }
         _seenIds.clear()
         snapshot.seenIds.forEach { (key, values) -> _seenIds[key] = values.toMutableSet() }
         _seenContent.clear()
@@ -132,15 +185,14 @@ class PlanProgress private constructor() {
     }
 
     fun start(goal: String, name: String, goalNote: String = "") {
-        goalId = goal.takeIf { it.isNotBlank() }
+        goalId = GoalPlan.canonicalGoalId(goal)
         this.name = name.trim()
         this.goalNote = goalNote.trim()
-        xp = 0
-        diamonds = 0
-        startedEpochDay = currentTimeMillis() / MILLIS_PER_DAY
+        startedEpochDay = appInstallEpochDay() ?: currentLocalEpochDay()
         _completedDays.clear()
         _doneActivities.clear()
         _wordsPerDay.clear()
+        _quizScores.clear()
         _seenIds.clear()
         _seenContent.clear()
         celebratedDay = 0
@@ -171,9 +223,9 @@ class PlanProgress private constructor() {
     }
 
     fun todayDay(): Int {
-        val startDay = startedEpochDay ?: return 1
-        val currentEpochDay = currentTimeMillis() / MILLIS_PER_DAY
-        return (currentEpochDay - startDay + 1L).coerceIn(1L, GoalPlan.DAYS.toLong()).toInt()
+        val currentDay = currentLocalEpochDay()
+        val startDay = startedEpochDay ?: appInstallEpochDay() ?: currentDay
+        return (currentDay - startDay + 1L).coerceIn(1L, GoalPlan.DAYS.toLong()).toInt()
     }
 
     fun daysUntilUnlocked(day: Int): Int {
@@ -182,8 +234,12 @@ class PlanProgress private constructor() {
         return maxOf(day - todayDay(), 0)
     }
 
-    fun completeDay(day: Int): Boolean {
-        if (day != currentDay() || !_doneActivities[day].orEmpty().containsAll(Activity.entries)) return false
+    fun completeDay(
+        day: Int,
+        requiredActivities: Set<Activity> = Activity.entries.toSet()
+    ): Boolean {
+        if (day !in 1..GoalPlan.DAYS || !isUnlocked(day)) return false
+        if (!_doneActivities[day].orEmpty().containsAll(requiredActivities)) return false
         if (!_completedDays.add(day)) return false
         xp += DAY_XP
         diamonds += DAY_DIAMONDS
@@ -193,6 +249,21 @@ class PlanProgress private constructor() {
     }
 
     fun words(day: Int): Int = _wordsPerDay[day] ?: 0
+
+    fun quizScore(day: Int): PlanQuizScore? = _quizScores[day]
+
+    /** Persists a quiz result only after the quiz activity has actually been marked complete. */
+    fun saveQuizScore(day: Int, correct: Int, total: Int, vocabularyCorrect: Int): Boolean {
+        if (day !in 1..GoalPlan.DAYS || total <= 0 || Activity.QUIZ !in done(day)) return false
+        val result = PlanQuizScore(correct.coerceIn(0, total), total)
+        val safeVocabularyCorrect = vocabularyCorrect.coerceIn(0, total)
+        if (_quizScores[day] == result && words(day) == safeVocabularyCorrect) return false
+
+        _quizScores[day] = result
+        setWords(day, safeVocabularyCorrect)
+        changed()
+        return true
+    }
 
     fun setWords(day: Int, count: Int) {
         if (day !in 1..GoalPlan.DAYS) return

@@ -7,6 +7,7 @@ expect fun PlatformSpeechRecognition(
     languageTag: String,
     onResult: (String) -> Unit,
     onError: (String) -> Unit,
+    onPartialResult: (String) -> Unit = {},
     content: @Composable (
         isListening: Boolean,
         start: () -> Unit,

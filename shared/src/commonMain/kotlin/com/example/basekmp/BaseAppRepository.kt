@@ -51,6 +51,8 @@ object StartupRouteResolver {
         onboardingCompleted: Boolean,
         firstOpenCompleted: Boolean
     ): String = when {
+        !languageSetup -> BaseRoutes.StartupLanguage
+        !firstOpenCompleted -> BaseRoutes.FirstOpenIntro
         !onboardingCompleted -> BaseRoutes.Onboarding
         else -> BaseRoutes.Home
     }

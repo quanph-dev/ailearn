@@ -29,11 +29,10 @@ object TutorAi {
         val match = MOOD_TAG.find(text) ?: return Pair(null, text)
         val tag = match.groupValues.getOrNull(1)?.lowercase() ?: ""
         val mood = when (tag) {
-            "great" -> RobotMood.SUPER
-            "ok" -> RobotMood.GOOD
-            "oops" -> RobotMood.POOR
-            "hi" -> RobotMood.GOOD
-            else -> RobotMood.AVERAGE
+            "great", "hi" -> RobotMood.HAPPY
+            "ok" -> RobotMood.NEUTRAL
+            "oops" -> RobotMood.SAD
+            else -> RobotMood.NEUTRAL
         }
         val cleanText = text.substring(match.range.last + 1).replace(Regex("\\[(great|ok|oops|hi)]\\s*", RegexOption.IGNORE_CASE), "").trim()
         return Pair(mood, cleanText)

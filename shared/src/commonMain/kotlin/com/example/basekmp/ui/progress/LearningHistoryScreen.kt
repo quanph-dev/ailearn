@@ -40,6 +40,16 @@ import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.theme.AppTheme
 
+private fun LearningItem.isLessonEntry(): Boolean =
+    title.equals("AI Tutor", ignoreCase = true) ||
+        title.startsWith("AI Tutor ", ignoreCase = true) ||
+        title.equals("Today's Lesson", ignoreCase = true) ||
+        title.contains("Lesson", ignoreCase = true) ||
+        detail.contains("Lesson", ignoreCase = true)
+
+private fun LearningItem.isShadowingEntry(): Boolean =
+    title.contains("Shadowing", ignoreCase = true) || detail.contains("Shadowing", ignoreCase = true)
+
 @Composable
 fun LearningHistoryScreen(
     onBack: () -> Unit,
@@ -55,14 +65,13 @@ fun LearningHistoryScreen(
     var selectedFilter by remember { mutableStateOf("All") }
 
     val filterOptions = listOf("All", "Lesson", "Shadowing", "Practice")
+    val historySnapshot = historyList.toList()
 
-    val filteredList = remember(selectedFilter, historyList.size) {
-        when (selectedFilter) {
-            "Lesson" -> historyList.filter { it.title.contains("Lesson", ignoreCase = true) || it.detail.contains("Lesson", ignoreCase = true) }
-            "Shadowing" -> historyList.filter { it.detail.contains("Shadowing", ignoreCase = true) }
-            "Practice" -> historyList.filter { !it.title.contains("Lesson", ignoreCase = true) && !it.detail.contains("Shadowing", ignoreCase = true) }
-            else -> historyList.toList()
-        }
+    val filteredList = when (selectedFilter) {
+        "Lesson" -> historySnapshot.filter { it.isLessonEntry() }
+        "Shadowing" -> historySnapshot.filter { it.isShadowingEntry() }
+        "Practice" -> historySnapshot.filter { !it.isLessonEntry() && !it.isShadowingEntry() }
+        else -> historySnapshot
     }
 
     Column(
@@ -221,6 +230,7 @@ private fun HistoryCard(
 ) {
     val colors = AppTheme.colors
     val dimens = AppTheme.dimens
+    val metadata = listOf(entry.detail, entry.level).filter(String::isNotBlank).joinToString(" • ")
 
     Row(
         modifier = Modifier
@@ -240,12 +250,14 @@ private fun HistoryCard(
                 fontWeight = FontWeight.SemiBold,
                 color = colors.textPrimary
             )
-            Spacer(Modifier.height(2.dp))
-            Text(
-                text = "${entry.detail} • ${entry.level}",
-                fontSize = 12.sp,
-                color = colors.textSecondary
-            )
+            if (metadata.isNotEmpty()) {
+                Spacer(Modifier.height(2.dp))
+                Text(
+                    text = metadata,
+                    fontSize = 12.sp,
+                    color = colors.textSecondary
+                )
+            }
         }
 
         Row(

@@ -1,10 +1,12 @@
 package com.example.basekmp.ui.learningpath
 
 import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.RepeatMode
 import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.infiniteRepeatable
 import androidx.compose.animation.core.rememberInfiniteTransition
+import androidx.compose.animation.core.spring
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
@@ -45,6 +47,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
@@ -77,8 +80,9 @@ import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.ui.components.TabHeader
 import com.example.basekmp.ui.components.tabBottomClearance
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.delay
 
-// 100% Authentic Colors matching decompiled LearningPathScreenKt.java
+// Colors extracted from the original LearningPathScreen resources.
 private val UnitCardBg = Color(4292405244L) // 0xFFD7E5FB
 private val ChipSelectedBg = Color(4293587710L) // 0xFFEFF5FE
 private val ProgressGreen = Color(4279681567L) // 0xFF12B76A
@@ -91,6 +95,9 @@ private val LIP = 7.dp
 private val ROW = 110.dp
 private val SIDE_INSET = 62.dp
 private val LABEL_WIDTH = 120.dp
+
+@Composable
+expect fun PathLockedLessonToast(message: String?, eventId: Int)
 
 private data class NodeLook(
     val face: Color,
@@ -120,21 +127,19 @@ private val LockedLook = NodeLook(
     tint = Color(4288586150L) // 0xFF979CA6
 )
 
-/**
- * 100% Authentic Learning Path Screen migrated from decompiled LearningPathScreenKt.java.
- */
+/** Learning Path screen based on the original app's unit and lesson structure. */
 @Composable
 fun LearningPathScreen(
     onOpenLesson: (PathCourse.Lesson) -> Unit,
-    onPremiumClick: (() -> Unit)? = null,
     onNotificationsClick: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     var selectedLevel by remember {
-        mutableStateOf(UserPrefs.pathLevel?.ifBlank { "Beginner" } ?: "Beginner")
+        mutableStateOf(PathCourse.startLevel(UserPrefs))
     }
 
     val completedMap by UserPrefs.pathLessonsState
+    val seenPathTrails by UserPrefs.pathTrailSeenState
 
     val lessonStates = remember(selectedLevel, completedMap) {
         PathCourse.states(selectedLevel, UserPrefs)
@@ -146,81 +151,104 @@ fun LearningPathScreen(
 
     val listState = rememberLazyListState()
     val coroutineScope = rememberCoroutineScope()
+    var lockedLessonMessage by remember { mutableStateOf<String?>(null) }
+    var lockedLessonToastEvent by remember { mutableIntStateOf(0) }
 
     LaunchedEffect(selectedLevel) {
         listState.scrollToItem(0)
     }
 
-    Column(
-        modifier = modifier.fillMaxSize()
-    ) {
-        Spacer(Modifier.height(16.dp))
+    Box(modifier = modifier.fillMaxSize()) {
+        Column(modifier = Modifier.fillMaxSize()) {
+            Spacer(Modifier.height(10.dp))
 
-        // TopBar: "Learning Path", Notification bell (Diamond button hidden per IAP requirement)
-        TabHeader(
-            title = Strings.tr("Learning Path"),
-            onPremiumClick = onPremiumClick,
-            trailing = {
-                Box(
-                    modifier = Modifier
-                        .size(40.dp)
-                        .clip(CircleShape)
-                        .background(OptionSurface)
-                        .clickable { onNotificationsClick() },
-                    contentAlignment = Alignment.Center
-                ) {
-                    Icon(
-                        imageVector = Icons.Rounded.NotificationsNone,
-                        contentDescription = Strings.tr("Notifications"),
-                        tint = TextPrimary,
-                        modifier = Modifier.size(22.dp)
+            // Top bar and notifications.
+            TabHeader(
+                title = Strings.tr("Learning Path"),
+                trailing = {
+                    Box(
+                        modifier = Modifier
+                            .size(40.dp)
+                            .clip(CircleShape)
+                            .background(OptionSurface)
+                            .clickable { onNotificationsClick() },
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Icon(
+                            imageVector = Icons.Rounded.NotificationsNone,
+                            contentDescription = Strings.tr("Notifications"),
+                            tint = TextPrimary,
+                            modifier = Modifier.size(22.dp)
+                        )
+                    }
+                }
+            )
+
+            Spacer(Modifier.height(16.dp))
+
+            // Level chips horizontal row: 🌱 Beginner, 🌿 Intermediate, 🏆 Advanced
+            LevelChips(
+                selected = selectedLevel,
+                onSelect = { level ->
+                    selectedLevel = level
+                    UserPrefs.pathLevel = level
+                }
+            )
+
+            Spacer(Modifier.height(16.dp))
+
+            // Scrollable unit cards
+            LazyColumn(
+                modifier = Modifier.weight(1f),
+                state = listState,
+                contentPadding = PaddingValues(bottom = tabBottomClearance)
+            ) {
+                itemsIndexed(
+                    items = units,
+                    key = { _, unit -> unit.id }
+                ) { index, unit ->
+                    val unitLessons = lessonStates.filter { it.lesson.unitNumber == unit.number }
+                    UnitCard(
+                        unit = unit,
+                        isFirst = index == 0,
+                        isLast = index == units.size - 1,
+                        states = unitLessons,
+                        seenPathTrails = seenPathTrails,
+                        allUnits = units,
+                        onJump = { targetUnitNumber ->
+                            val targetIndex = units.indexOfFirst { it.number == targetUnitNumber }
+                            if (targetIndex >= 0) {
+                                coroutineScope.launch {
+                                    listState.animateScrollToItem(targetIndex)
+                                }
+                            }
+                        },
+                        onLessonClick = { lessonState ->
+                            if (lessonState.status == PathCourse.Status.LOCKED) {
+                                val previousLevel = PathCourse.LEVELS.getOrNull(
+                                    PathCourse.LEVELS.indexOf(selectedLevel) - 1
+                                )
+                                val message = if (!PathCourse.isLevelOpen(selectedLevel, UserPrefs) && previousLevel != null) {
+                                    Strings.trf("Finish the %1\$s level to unlock this one.", Strings.tr(previousLevel))
+                                } else {
+                                    Strings.tr("Complete the lesson before it to unlock this one.")
+                                }
+                                lockedLessonMessage = message
+                                lockedLessonToastEvent++
+                            } else {
+                                onOpenLesson(lessonState.lesson)
+                            }
+                        }
                     )
                 }
             }
-        )
 
-        Spacer(Modifier.height(16.dp))
-
-        // Level chips horizontal row: 🌱 Beginner, 🌿 Intermediate, 🏆 Advanced
-        LevelChips(
-            selected = selectedLevel,
-            onSelect = { level ->
-                selectedLevel = level
-                UserPrefs.pathLevel = level
-            }
-        )
-
-        Spacer(Modifier.height(16.dp))
-
-        // Scrollable unit cards
-        LazyColumn(
-            modifier = Modifier.weight(1f),
-            state = listState,
-            contentPadding = PaddingValues(bottom = tabBottomClearance)
-        ) {
-            itemsIndexed(
-                items = units,
-                key = { _, unit -> unit.id }
-            ) { index, unit ->
-                val unitLessons = lessonStates.filter { it.lesson.unitNumber == unit.number }
-                UnitCard(
-                    unit = unit,
-                    isFirst = index == 0,
-                    isLast = index == units.size - 1,
-                    states = unitLessons,
-                    allUnits = units,
-                    onJump = { targetUnitNumber ->
-                        val targetIndex = units.indexOfFirst { it.number == targetUnitNumber }
-                        if (targetIndex >= 0) {
-                            coroutineScope.launch {
-                                listState.animateScrollToItem(targetIndex)
-                            }
-                        }
-                    },
-                    onLessonClick = onOpenLesson
-                )
-            }
         }
+
+        PathLockedLessonToast(
+            message = lockedLessonMessage,
+            eventId = lockedLessonToastEvent
+        )
     }
 }
 
@@ -279,13 +307,42 @@ private fun UnitCard(
     isFirst: Boolean,
     isLast: Boolean,
     states: List<PathCourse.LessonState>,
+    seenPathTrails: Set<String>,
     allUnits: List<PathCourse.PathUnit>,
     onJump: (Int) -> Unit,
-    onLessonClick: (PathCourse.Lesson) -> Unit
+    onLessonClick: (PathCourse.LessonState) -> Unit
 ) {
     val unitProgress = remember(unit, states) {
         PathCourse.unitProgress(unit, states)
     }
+    val newlyCompletedIds = remember(states, seenPathTrails) {
+        states.asSequence()
+            .filter { it.status == PathCourse.Status.DONE && it.lesson.id !in seenPathTrails }
+            .map { it.lesson.id }
+            .toSet()
+    }
+    val trailFill = remember(unit.id) {
+        Animatable(if (newlyCompletedIds.isEmpty()) 1f else 0f)
+    }
+    LaunchedEffect(newlyCompletedIds) {
+        if (newlyCompletedIds.isNotEmpty()) {
+            trailFill.snapTo(0f)
+            delay(350)
+            trailFill.animateTo(
+                targetValue = 1f,
+                animationSpec = tween(durationMillis = 1100, easing = FastOutSlowInEasing)
+            )
+            UserPrefs.markPathTrailSeen(newlyCompletedIds)
+        }
+    }
+    val unitFillFraction = if (unitProgress.total == 0) {
+        0f
+    } else {
+        (
+            unitProgress.done - newlyCompletedIds.size +
+                newlyCompletedIds.size * trailFill.value
+            ) / unitProgress.total
+    }.coerceIn(0f, 1f)
 
     val topCorner = if (isFirst) 20.dp else 0.dp
     val bottomCorner = if (isLast) 20.dp else 0.dp
@@ -319,7 +376,7 @@ private fun UnitCard(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = Strings.tr("Unit ${unit.number}: ${Strings.tr(unit.title)}"),
+                    text = Strings.trf("Unit %1\$d: %2\$s", unit.number, Strings.tr(unit.title)),
                     modifier = Modifier.weight(1f),
                     color = TextPrimary,
                     fontSize = 16.sp,
@@ -342,13 +399,13 @@ private fun UnitCard(
                 verticalAlignment = Alignment.Top
             ) {
                 Text(
-                    text = Strings.tr("Task ${unitProgress.done} of ${unitProgress.total}"),
+                    text = Strings.trf("Task %1\$d of %2\$d", unitProgress.done, unitProgress.total),
                     color = MutedText,
                     fontSize = 13.sp
                 )
                 Spacer(Modifier.weight(1f))
                 Text(
-                    text = Strings.tr("${unitProgress.percent}% Complete"),
+                    text = Strings.trf("%1\$d%% Complete", unitProgress.percent).replace("%%", "%"),
                     color = MutedText,
                     fontSize = 13.sp
                 )
@@ -365,11 +422,10 @@ private fun UnitCard(
                     .background(Color.White)
             ) {
                 if (unitProgress.percent > 0) {
-                    val fillFrac = (unitProgress.percent / 100f).coerceIn(0f, 1f)
                     Box(
                         modifier = Modifier
                             .fillMaxHeight()
-                            .fillMaxWidth(fillFrac)
+                            .fillMaxWidth(unitFillFraction)
                             .clip(CircleShape)
                             .background(ProgressGreen)
                     )
@@ -388,7 +444,7 @@ private fun UnitCard(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = "Unit ${unit.number}\n${Strings.tr(unit.title)}",
+                text = "${Strings.trf("Unit %1\$d", unit.number)}\n${Strings.tr(unit.title)}",
                 color = TextPrimary,
                 fontSize = 15.sp,
                 fontWeight = FontWeight.Medium,
@@ -400,6 +456,8 @@ private fun UnitCard(
 
             LessonTrail(
                 lessons = states,
+                newlyCompletedIds = newlyCompletedIds,
+                trailFill = trailFill.value,
                 onLessonClick = onLessonClick
             )
         }
@@ -424,7 +482,7 @@ private fun UnitJumpPill(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Text(
-                text = Strings.tr("Unit $currentUnitNumber"),
+                text = Strings.trf("Unit %1\$d", currentUnitNumber),
                 color = Color.White,
                 fontSize = 14.sp,
                 fontWeight = FontWeight.SemiBold
@@ -446,7 +504,7 @@ private fun UnitJumpPill(
                 DropdownMenuItem(
                     text = {
                         Text(
-                            text = Strings.tr("Unit ${unit.number}: ${Strings.tr(unit.title)}"),
+                            text = Strings.trf("Unit %1\$d: %2\$s", unit.number, Strings.tr(unit.title)),
                             color = if (unit.number == currentUnitNumber) Blue else TextPrimary,
                             fontSize = 14.sp,
                             fontWeight = if (unit.number == currentUnitNumber) FontWeight.SemiBold else FontWeight.Normal
@@ -465,9 +523,22 @@ private fun UnitJumpPill(
 @Composable
 private fun LessonTrail(
     lessons: List<PathCourse.LessonState>,
-    onLessonClick: (PathCourse.Lesson) -> Unit
+    newlyCompletedIds: Set<String>,
+    trailFill: Float,
+    onLessonClick: (PathCourse.LessonState) -> Unit
 ) {
     if (lessons.isEmpty()) return
+
+    if (lessons.size == 1) {
+        val lessonState = lessons.single()
+        LessonNode(
+            state = lessonState,
+            isNewlyCompleted = lessonState.lesson.id in newlyCompletedIds,
+            onClick = { onLessonClick(lessonState) },
+            labelWidth = 280.dp
+        )
+        return
+    }
 
     val isRtl = LocalLayoutDirection.current == LayoutDirection.Rtl
 
@@ -514,9 +585,37 @@ private fun LessonTrail(
                     cubicTo(midX, startY, midX, endY, endX, endY)
                 }
 
-                val nextLessonDone = lessons[i + 1].status == PathCourse.Status.DONE
-                val pathColor = if (nextLessonDone) Blue else LineGrey
-                drawPath(path = path, color = pathColor, style = stroke)
+                val lesson = lessons[i]
+                val fillFraction = when {
+                    lesson.status != PathCourse.Status.DONE -> 0f
+                    lesson.lesson.id in newlyCompletedIds -> trailFill.coerceIn(0f, 1f)
+                    else -> 1f
+                }
+
+                if (fillFraction < 1f) {
+                    drawPath(path = path, color = LineGrey, style = stroke)
+                }
+                if (fillFraction > 0f) {
+                    val pathMeasure = PathMeasure().apply { setPath(path, false) }
+                    val filledPath = Path()
+                    val filledLength = pathMeasure.length * fillFraction
+                    pathMeasure.getSegment(0f, filledLength, filledPath, true)
+                    drawPath(path = filledPath, color = Blue, style = stroke)
+
+                    if (fillFraction < 1f) {
+                        val endpoint = pathMeasure.getPosition(filledLength)
+                        drawCircle(
+                            color = Blue.copy(alpha = 0.22f),
+                            radius = 9.dp.toPx(),
+                            center = endpoint
+                        )
+                        drawCircle(
+                            color = Blue,
+                            radius = 4.5.dp.toPx(),
+                            center = endpoint
+                        )
+                    }
+                }
             }
         }
 
@@ -534,11 +633,8 @@ private fun LessonTrail(
             ) {
                 LessonNode(
                     state = lessonState,
-                    onClick = {
-                        if (lessonState.status != PathCourse.Status.LOCKED) {
-                            onLessonClick(lessonState.lesson)
-                        }
-                    }
+                    isNewlyCompleted = lessonState.lesson.id in newlyCompletedIds,
+                    onClick = { onLessonClick(lessonState) }
                 )
             }
         }
@@ -548,7 +644,9 @@ private fun LessonTrail(
 @Composable
 private fun LessonNode(
     state: PathCourse.LessonState,
-    onClick: () -> Unit
+    isNewlyCompleted: Boolean,
+    onClick: () -> Unit,
+    labelWidth: Dp = LABEL_WIDTH
 ) {
     val look = when (state.status) {
         PathCourse.Status.DONE -> DoneLook
@@ -566,13 +664,28 @@ private fun LessonNode(
         ),
         label = "halo"
     )
+    val popScale = remember(state.lesson.id) { Animatable(1f) }
+    LaunchedEffect(isNewlyCompleted) {
+        if (isNewlyCompleted) {
+            popScale.animateTo(
+                targetValue = 1.22f,
+                animationSpec = tween(durationMillis = 170, easing = FastOutSlowInEasing)
+            )
+            popScale.animateTo(
+                targetValue = 1f,
+                animationSpec = spring(dampingRatio = 0.38f, stiffness = 400f)
+            )
+        }
+    }
 
     Column(
-        modifier = Modifier.width(LABEL_WIDTH),
+        modifier = Modifier.width(labelWidth),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Box(
-            modifier = Modifier.size(width = NODE + 12.dp, height = NODE + LIP),
+            modifier = Modifier
+                .size(width = NODE + 12.dp, height = NODE + LIP)
+                .scale(popScale.value),
             contentAlignment = Alignment.TopCenter
         ) {
             // Pulse glow for current active lesson
@@ -628,7 +741,7 @@ private fun LessonNode(
 
         if (state.status == PathCourse.Status.DONE) {
             val scoreText = if (state.score != null) {
-                Strings.tr("Completed · ${state.score}%")
+                Strings.trf("Completed · %1\$d%%", state.score).replace("%%", "%")
             } else {
                 Strings.tr("Completed")
             }

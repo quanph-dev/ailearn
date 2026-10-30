@@ -19,6 +19,7 @@ interface VideoPlayerController {
 @Composable
 expect fun rememberVideoPlayer(
     assetPath: String,
+    cacheKey: String? = null,
     muted: Boolean = false,
     onCompletion: () -> Unit = {},
     onStop: () -> Unit = {}

@@ -6,6 +6,7 @@ import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.SystemBarStyle
+import androidx.activity.compose.LocalActivityResultRegistryOwner
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
@@ -14,6 +15,10 @@ import androidx.core.os.LocaleListCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
+import androidx.compose.runtime.CompositionLocalProvider
+import com.example.basekmp.data.platformInitializePlanCache
+import com.example.basekmp.data.platformInitializeShadowingCache
+import com.example.basekmp.platformInitializeAppInstallEpochDay
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.Locale
 
@@ -38,21 +43,26 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        platformInitializeAppInstallEpochDay(applicationContext)
+        platformInitializePlanCache(applicationContext)
+        platformInitializeShadowingCache(applicationContext)
         enableEdgeToEdge(
             statusBarStyle = SystemBarStyle.light(Color.TRANSPARENT, Color.TRANSPARENT),
             navigationBarStyle = SystemBarStyle.light(Color.TRANSPARENT, Color.TRANSPARENT)
         )
         hideNavigationBar()
         setContent {
-            App(
-                viewModel = appViewModel,
-                onLanguageApplied = {
-                    AppCompatDelegate.setApplicationLocales(
-                        LocaleListCompat.forLanguageTags(appViewModel.uiState.value.languageCode)
-                    )
-                },
-                onExitApp = { finish() }
-            )
+            CompositionLocalProvider(LocalActivityResultRegistryOwner provides this@MainActivity) {
+                App(
+                    viewModel = appViewModel,
+                    onLanguageApplied = {
+                        AppCompatDelegate.setApplicationLocales(
+                            LocaleListCompat.forLanguageTags(appViewModel.uiState.value.languageCode)
+                        )
+                    },
+                    onExitApp = { finish() }
+                )
+            }
         }
     }
 
