@@ -1,0 +1,463 @@
+{
+ "scene": "🌳",
+ "colors": [
+  "#E4EEE8",
+  "#C9DCCF"
+ ],
+ "speakers": [
+  {
+   "name": "Lily",
+   "emoji": "👩",
+   "voice": "female"
+  },
+  {
+   "name": "James",
+   "emoji": "👨",
+   "voice": "male"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Hey, James. How are you doing today?",
+   "start": 0,
+   "end": 2380,
+   "tr": {
+    "ur": "ارے جیمز، آج کیسے ہو؟",
+    "hi": "अरे जेम्स, आज कैसे हो?",
+    "ar": "مرحبًا جيمس، كيف حالك اليوم؟",
+    "zh": "嘿，詹姆斯，你今天过得怎么样？",
+    "es": "Hola, James. ¿Cómo te va hoy?",
+    "fr": "Salut, James. Comment ça va aujourd'hui ?",
+    "tr": "Selam James. Bugün nasılsın?",
+    "ja": "ねえ、ジェームズ。今日の調子はどう？",
+    "ko": "안녕, 제임스. 오늘 하루 어때?",
+    "it": "Ciao, James. Come va oggi?",
+    "de": "Hey, James. Wie geht's dir heute?",
+    "pt": "Oi, James. Como você está hoje?",
+    "ru": "Привет, Джеймс. Как ты сегодня?",
+    "vi": "Này James, hôm nay cậu thế nào?",
+    "th": "เฮ้ เจมส์ วันนี้เป็นไงบ้าง"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "I'm good, thanks. How about you?",
+   "start": 2720,
+   "end": 4880,
+   "tr": {
+    "ur": "میں ٹھیک ہوں، شکریہ۔ تم کیسی ہو؟",
+    "hi": "मैं ठीक हूँ, शुक्रिया। तुम कैसी हो?",
+    "ar": "أنا بخير، شكرًا. وأنتِ؟",
+    "zh": "我很好，谢谢。你呢？",
+    "es": "Bien, gracias. ¿Y tú?",
+    "fr": "Ça va, merci. Et toi ?",
+    "tr": "İyiyim, teşekkürler. Ya sen?",
+    "ja": "元気だよ、ありがとう。そっちは？",
+    "ko": "난 잘 지내, 고마워. 너는?",
+    "it": "Bene, grazie. E tu?",
+    "de": "Gut, danke. Und dir?",
+    "pt": "Estou bem, obrigado. E você?",
+    "ru": "Всё хорошо, спасибо. А ты?",
+    "vi": "Mình khỏe, cảm ơn. Còn cậu thì sao?",
+    "th": "ก็ดีนะ ขอบคุณ แล้วเธอล่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "I'm great. What do you usually do in the morning?",
+   "start": 5300,
+   "end": 7930,
+   "tr": {
+    "ur": "میں بہت اچھی ہوں۔ تم عام طور پر صبح کیا کرتے ہو؟",
+    "hi": "मैं बढ़िया हूँ। तुम आमतौर पर सुबह क्या करते हो?",
+    "ar": "أنا في أحسن حال. ماذا تفعل عادةً في الصباح؟",
+    "zh": "我挺好的。你早上一般都做些什么？",
+    "es": "Genial. ¿Qué sueles hacer por la mañana?",
+    "fr": "Super. Tu fais quoi d'habitude le matin ?",
+    "tr": "Ben harikayım. Sen sabahları genelde ne yaparsın?",
+    "ja": "すごく元気だよ！朝はふだん何してるの？",
+    "ko": "난 정말 좋아. 넌 아침에 보통 뭐 해?",
+    "it": "Benissimo. Di solito cosa fai la mattina?",
+    "de": "Super. Was machst du morgens normalerweise?",
+    "pt": "Estou ótima. O que você costuma fazer de manhã?",
+    "ru": "Отлично. А что ты обычно делаешь по утрам?",
+    "vi": "Mình khỏe lắm. Buổi sáng cậu thường làm gì?",
+    "th": "ฉันดีมากเลย ปกติตอนเช้าเธอทำอะไรบ้าง"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "I wake up early, have breakfast and go for a walk.",
+   "start": 8500,
+   "end": 11400,
+   "tr": {
+    "ur": "میں صبح جلدی اٹھ جاتا ہوں، ناشتہ کرتا ہوں اور واک پر جاتا ہوں۔",
+    "hi": "मैं सुबह जल्दी उठता हूँ, नाश्ता करता हूँ और टहलने जाता हूँ।",
+    "ar": "أستيقظ مبكرًا، وأتناول الإفطار، وأخرج للمشي.",
+    "zh": "我早上很早起床，吃早餐，然后去散步。",
+    "es": "Me levanto temprano, desayuno y salgo a caminar.",
+    "fr": "Je me lève tôt, je prends mon petit-déjeuner et je vais me promener.",
+    "tr": "Erken kalkarım, kahvaltı yaparım ve yürüyüşe çıkarım.",
+    "ja": "早起きして、朝ごはんを食べて、散歩に行くんだ。",
+    "ko": "일찍 일어나서 아침 먹고 산책해.",
+    "it": "Mi sveglio presto, faccio colazione e vado a fare una passeggiata.",
+    "de": "Ich stehe früh auf, frühstücke und gehe spazieren.",
+    "pt": "Eu acordo cedo, tomo café da manhã e vou dar uma caminhada.",
+    "ru": "Я встаю рано, завтракаю и хожу гулять.",
+    "vi": "Mình dậy sớm, ăn sáng rồi đi dạo.",
+    "th": "ผมตื่นเช้า กินมื้อเช้า แล้วไปเดินเล่น"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "That sounds nice. Are you busy this afternoon?",
+   "start": 11690,
+   "end": 14380,
+   "tr": {
+    "ur": "واہ، یہ تو بہت اچھا ہے۔ کیا تم آج سہ پہر مصروف ہو؟",
+    "hi": "वाह, बढ़िया। क्या तुम आज दोपहर में व्यस्त हो?",
+    "ar": "يبدو لطيفًا. هل أنت مشغول بعد ظهر اليوم؟",
+    "zh": "听起来不错。你今天下午忙吗？",
+    "es": "Suena bien. ¿Estás ocupado esta tarde?",
+    "fr": "Ça a l'air sympa. Tu es occupé cet après-midi ?",
+    "tr": "Ne güzel. Bu öğleden sonra meşgul müsün?",
+    "ja": "いいね。今日の午後、忙しい？",
+    "ko": "좋겠다. 오늘 오후에 바빠?",
+    "it": "Che bello. Sei impegnato questo pomeriggio?",
+    "de": "Klingt schön. Hast du heute Nachmittag viel zu tun?",
+    "pt": "Que legal. Você está ocupado hoje à tarde?",
+    "ru": "Здорово. Ты сегодня днём занят?",
+    "vi": "Nghe hay đấy. Chiều nay cậu có bận không?",
+    "th": "ฟังดูดีเลย บ่ายนี้ยุ่งไหม"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Not really. Why do you ask?",
+   "start": 14410,
+   "end": 17770,
+   "tr": {
+    "ur": "زیادہ نہیں۔ تم کیوں پوچھ رہی ہو؟",
+    "hi": "ख़ास नहीं। तुम क्यों पूछ रही हो?",
+    "ar": "لا، ليس كثيرًا. لماذا تسألين؟",
+    "zh": "不太忙。怎么了？",
+    "es": "No mucho. ¿Por qué lo preguntas?",
+    "fr": "Pas vraiment. Pourquoi tu demandes ?",
+    "tr": "Pek değil. Neden soruyorsun?",
+    "ja": "ううん、特に予定はないよ。なんで？",
+    "ko": "별로 안 바빠. 왜 물어봐?",
+    "it": "Non proprio. Perché me lo chiedi?",
+    "de": "Eigentlich nicht. Warum fragst du?",
+    "pt": "Não muito. Por que você pergunta?",
+    "ru": "Не особо. А почему ты спрашиваешь?",
+    "vi": "Không bận lắm. Sao cậu hỏi vậy?",
+    "th": "ก็ไม่ค่อยยุ่งเท่าไหร่ ถามทำไมเหรอ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "I was thinking we could go to the park.",
+   "start": 18250,
+   "end": 21120,
+   "tr": {
+    "ur": "میں سوچ رہی تھی کہ ہم پارک جا سکتے ہیں۔",
+    "hi": "मैं सोच रही थी कि हम पार्क जा सकते हैं।",
+    "ar": "كنتُ أفكر في أن نذهب إلى الحديقة.",
+    "zh": "我在想，我们可以一起去公园。",
+    "es": "Estaba pensando que podríamos ir al parque.",
+    "fr": "Je pensais qu'on pourrait aller au parc.",
+    "tr": "Parka gidebiliriz diye düşünüyordum.",
+    "ja": "公園に行けたらいいなって思ってたの。",
+    "ko": "공원 가면 어떨까 생각하고 있었어.",
+    "it": "Stavo pensando che potremmo andare al parco.",
+    "de": "Ich hatte mir überlegt, dass wir in den Park gehen könnten.",
+    "pt": "Eu estava pensando que a gente podia ir ao parque.",
+    "ru": "Я тут подумала, что можно сходить в парк.",
+    "vi": "Mình đang nghĩ hay là chúng mình đi công viên nhé.",
+    "th": "ฉันคิดว่าเราน่าจะไปสวนสาธารณะกันนะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Sounds great. What time should we meet?",
+   "start": 21260,
+   "end": 23790,
+   "tr": {
+    "ur": "زبردست! ہم کتنے بجے ملیں؟",
+    "hi": "बढ़िया! हम कितने बजे मिलें?",
+    "ar": "فكرة رائعة! متى نلتقي؟",
+    "zh": "听起来很棒。我们几点见面比较好？",
+    "es": "Suena genial. ¿A qué hora quedamos?",
+    "fr": "Super idée ! On se retrouve à quelle heure ?",
+    "tr": "Harika olur. Saat kaçta buluşalım?",
+    "ja": "いいね！何時に会う？",
+    "ko": "좋아! 몇 시에 만날까?",
+    "it": "Ottimo! A che ora ci vediamo?",
+    "de": "Klingt super. Wann treffen wir uns?",
+    "pt": "Parece ótimo. A que horas a gente se encontra?",
+    "ru": "Отличная идея. Во сколько встретимся?",
+    "vi": "Nghe tuyệt đấy. Mấy giờ mình gặp nhau nhỉ?",
+    "th": "ฟังดูดีมาก แล้วนัดเจอกันกี่โมงดี"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Let's meet at 4. Does that work?",
+   "start": 24270,
+   "end": 26760,
+   "tr": {
+    "ur": "شام چار بجے ملتے ہیں۔ کیا تمہارے لیے ٹھیک ہے؟",
+    "hi": "शाम चार बजे मिलते हैं। तुम्हारे लिए ठीक है?",
+    "ar": "لنلتقِ الساعة الرابعة عصرًا. هل يناسبك ذلك؟",
+    "zh": "我们下午四点见吧。这样可以吗？",
+    "es": "Quedemos a las cuatro de la tarde. ¿Te va bien?",
+    "fr": "On se retrouve à 16 heures. Ça te va ?",
+    "tr": "Öğleden sonra dörtte buluşalım. Sana uyar mı?",
+    "ja": "じゃあ午後4時に会おう。大丈夫？",
+    "ko": "오후 4시에 만나자. 괜찮아?",
+    "it": "Ci vediamo alle quattro del pomeriggio. Ti va bene?",
+    "de": "Treffen wir uns um vier. Passt dir das?",
+    "pt": "Vamos nos encontrar às quatro da tarde. Pode ser?",
+    "ru": "Давай встретимся в четыре. Тебе удобно?",
+    "vi": "Mình gặp lúc 4 giờ chiều nhé. Cậu thấy ổn không?",
+    "th": "นัดกันบ่ายสี่โมงนะ โอเคไหม"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Perfect. See you at 4.",
+   "start": 27270,
+   "end": 30080,
+   "tr": {
+    "ur": "بالکل ٹھیک۔ شام چار بجے ملتے ہیں۔",
+    "hi": "बढ़िया। शाम चार बजे मिलते हैं।",
+    "ar": "ممتاز! أراكِ الساعة الرابعة عصرًا.",
+    "zh": "太好了。下午四点见。",
+    "es": "Perfecto. Nos vemos a las cuatro.",
+    "fr": "Parfait. À 16 heures, alors !",
+    "tr": "Harika. Dörtte görüşürüz.",
+    "ja": "了解！じゃあ午後4時にね。",
+    "ko": "좋아. 4시에 봐!",
+    "it": "Perfetto. Ci vediamo alle quattro.",
+    "de": "Perfekt. Dann bis um vier!",
+    "pt": "Perfeito. Te vejo às quatro, então.",
+    "ru": "Отлично. Увидимся в четыре.",
+    "vi": "Tuyệt. Hẹn gặp cậu lúc 4 giờ chiều nhé.",
+    "th": "เยี่ยมเลย เจอกันบ่ายสี่โมงนะ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "wake up",
+   "meaning": "to stop sleeping and get out of bed",
+   "tr": {
+    "ur": "اٹھنا",
+    "hi": "उठना",
+    "ar": "يستيقظ",
+    "zh": "起床",
+    "es": "despertarse",
+    "fr": "se réveiller",
+    "tr": "uyanmak",
+    "ja": "起きる",
+    "ko": "일어나다",
+    "it": "svegliarsi",
+    "de": "aufwachen",
+    "pt": "acordar",
+    "ru": "просыпаться",
+    "vi": "thức dậy",
+    "th": "ตื่นนอน"
+   }
+  },
+  {
+   "word": "breakfast",
+   "meaning": "the first meal of the day",
+   "tr": {
+    "ur": "ناشتہ",
+    "hi": "नाश्ता",
+    "ar": "الإفطار",
+    "zh": "早餐",
+    "es": "desayuno",
+    "fr": "petit-déjeuner",
+    "tr": "kahvaltı",
+    "ja": "朝ごはん",
+    "ko": "아침 식사",
+    "it": "colazione",
+    "de": "das Frühstück",
+    "pt": "café da manhã",
+    "ru": "завтрак",
+    "vi": "bữa sáng",
+    "th": "มื้อเช้า"
+   }
+  },
+  {
+   "word": "usually",
+   "meaning": "normally; most of the time",
+   "tr": {
+    "ur": "عام طور پر",
+    "hi": "आमतौर पर",
+    "ar": "عادةً",
+    "zh": "通常",
+    "es": "normalmente",
+    "fr": "d'habitude",
+    "tr": "genellikle",
+    "ja": "普段",
+    "ko": "보통",
+    "it": "di solito",
+    "de": "normalerweise",
+    "pt": "geralmente",
+    "ru": "обычно",
+    "vi": "thường",
+    "th": "ปกติ"
+   }
+  },
+  {
+   "word": "go for a walk",
+   "meaning": "walk outside for exercise or fun",
+   "tr": {
+    "ur": "واک پر جانا",
+    "hi": "टहलने जाना",
+    "ar": "الخروج للمشي",
+    "zh": "去散步",
+    "es": "salir a caminar",
+    "fr": "aller se promener",
+    "tr": "yürüyüşe çıkmak",
+    "ja": "散歩に行く",
+    "ko": "산책하다",
+    "it": "fare una passeggiata",
+    "de": "spazieren gehen",
+    "pt": "dar uma caminhada",
+    "ru": "пойти прогуляться",
+    "vi": "đi dạo",
+    "th": "ไปเดินเล่น"
+   }
+  },
+  {
+   "word": "busy",
+   "meaning": "having a lot to do; not free",
+   "tr": {
+    "ur": "مصروف",
+    "hi": "व्यस्त",
+    "ar": "مشغول",
+    "zh": "忙",
+    "es": "ocupado",
+    "fr": "occupé",
+    "tr": "meşgul",
+    "ja": "忙しい",
+    "ko": "바쁘다",
+    "it": "impegnato",
+    "de": "beschäftigt",
+    "pt": "ocupado",
+    "ru": "занят",
+    "vi": "bận",
+    "th": "ยุ่ง"
+   }
+  },
+  {
+   "word": "afternoon",
+   "meaning": "the part of the day after noon",
+   "tr": {
+    "ur": "سہ پہر",
+    "hi": "दोपहर",
+    "ar": "بعد الظهر",
+    "zh": "下午",
+    "es": "tarde",
+    "fr": "après-midi",
+    "tr": "öğleden sonra",
+    "ja": "午後",
+    "ko": "오후",
+    "it": "pomeriggio",
+    "de": "der Nachmittag",
+    "pt": "tarde",
+    "ru": "вторая половина дня",
+    "vi": "buổi chiều",
+    "th": "บ่าย"
+   }
+  },
+  {
+   "word": "sounds great",
+   "meaning": "a positive reply to a plan",
+   "tr": {
+    "ur": "زبردست!",
+    "hi": "बढ़िया!",
+    "ar": "فكرة رائعة",
+    "zh": "听起来很棒",
+    "es": "suena genial",
+    "fr": "super idée",
+    "tr": "harika olur",
+    "ja": "いいね",
+    "ko": "좋아",
+    "it": "ottimo",
+    "de": "klingt super",
+    "pt": "parece ótimo",
+    "ru": "отличная идея",
+    "vi": "nghe tuyệt đấy",
+    "th": "ฟังดูดีมาก"
+   }
+  },
+  {
+   "word": "meet",
+   "meaning": "see someone at an agreed time and place",
+   "tr": {
+    "ur": "ملنا",
+    "hi": "मिलना",
+    "ar": "يلتقي",
+    "zh": "见面",
+    "es": "quedar",
+    "fr": "se retrouver",
+    "tr": "buluşmak",
+    "ja": "会う",
+    "ko": "만나다",
+    "it": "incontrarsi",
+    "de": "sich treffen",
+    "pt": "se encontrar",
+    "ru": "встретиться",
+    "vi": "gặp",
+    "th": "นัดเจอ"
+   }
+  },
+  {
+   "word": "Does that work?",
+   "meaning": "Is that okay for you?",
+   "tr": {
+    "ur": "کیا یہ ٹھیک رہے گا؟",
+    "hi": "क्या यह ठीक रहेगा?",
+    "ar": "هل يناسبك ذلك؟",
+    "zh": "这样可以吗？",
+    "es": "¿Te va bien?",
+    "fr": "Ça te va ?",
+    "tr": "Sana uyar mı?",
+    "ja": "大丈夫？",
+    "ko": "괜찮아?",
+    "it": "Ti va bene?",
+    "de": "Passt dir das?",
+    "pt": "Pode ser?",
+    "ru": "Тебе удобно?",
+    "vi": "Cậu thấy ổn không?",
+    "th": "โอเคไหม"
+   }
+  },
+  {
+   "word": "park",
+   "meaning": "a public green area for walking or playing",
+   "tr": {
+    "ur": "پارک",
+    "hi": "पार्क",
+    "ar": "الحديقة",
+    "zh": "公园",
+    "es": "parque",
+    "fr": "parc",
+    "tr": "park",
+    "ja": "公園",
+    "ko": "공원",
+    "it": "parco",
+    "de": "der Park",
+    "pt": "parque",
+    "ru": "парк",
+    "vi": "công viên",
+    "th": "สวนสาธารณะ"
+   }
+  }
+ ]
+}

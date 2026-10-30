@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fo_onboarding_button_next">İleri</string>
+    <string name="fo_onboarding_button_start">Başlayın</string>
+    <string name="fo_onboarding_description_1">Kişisel yapay zekâ öğretmeninizle sohbet edin ve istediğiniz dili istediğiniz zaman doğal bir şekilde öğrenin.</string>
+    <string name="fo_onboarding_description_2">Telaffuzunuzu geliştirin ve her kelime için anında geri bildirim alın.</string>
+    <string name="fo_onboarding_description_3">Günlük serilerinizi sürdürün ve ilerlemenizi adım adım takip edin.</string>
+    <string name="fo_onboarding_title_1">Yapay Zekâ ile Öğrenin</string>
+    <string name="fo_onboarding_title_2">Kendinize Güvenerek Konuşun</string>
+    <string name="fo_onboarding_title_3">Hedeflerinize Ulaşın</string>
+    <string name="fo_survey_continue">Öğrenmeye başlayın</string>
+    <string name="fo_survey_skip">Atla</string>
+    <string name="fo_survey_subtitle">Başlamak için birini seçin</string>
+    <string name="fo_survey_title">Hangi dili öğrenmek istiyorsunuz?</string>
+    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_describe_load_ad">(Bu işlem reklam içerebilir)</string>
+</resources>

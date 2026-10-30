@@ -1,0 +1,417 @@
+{
+ "scene": "🗓️",
+ "colors": [
+  "#E6ECF3",
+  "#CBD6E4"
+ ],
+ "speakers": [
+  {
+   "name": "James",
+   "emoji": "👨",
+   "voice": "male"
+  },
+  {
+   "name": "Sarah",
+   "emoji": "👩",
+   "voice": "female"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Hi, Sarah. Do you have a minute? I wanted to ask you something.",
+   "start": 0,
+   "end": 3800,
+   "tr": {
+    "ur": "ہیلو سارہ، کیا آپ کے پاس ایک منٹ ہے؟ مجھے آپ سے کچھ پوچھنا تھا۔",
+    "hi": "नमस्ते सारा जी, क्या आपके पास एक मिनट है? मैं आपसे कुछ पूछना चाहता था।",
+    "ar": "مرحبًا سارة، هل لديكِ دقيقة؟ أردتُ أن أسألكِ شيئًا.",
+    "zh": "你好，莎拉。您现在有空吗？我想问您一件事。",
+    "es": "Hola, Sarah. ¿Tiene un minuto? Quería preguntarle algo.",
+    "fr": "Bonjour Sarah, vous avez une minute ? Je voulais vous demander quelque chose.",
+    "tr": "Merhaba Sarah. Bir dakikanız var mı? Size bir şey sormak istiyordum.",
+    "ja": "サラさん、お疲れさまです。ちょっとお時間よろしいですか？お聞きしたいことがあるんですが。",
+    "ko": "안녕하세요, 사라 씨. 잠깐 시간 괜찮으세요? 여쭤볼 게 있어서요.",
+    "it": "Buongiorno, Sarah. Ha un minuto? Volevo chiederle una cosa.",
+    "de": "Hallo, Sarah. Haben Sie kurz Zeit? Ich wollte Sie etwas fragen.",
+    "pt": "Olá, Sarah. Você tem um minuto? Queria perguntar uma coisa.",
+    "ru": "Здравствуйте, Сара. У вас найдётся минутка? Я хотел бы вас кое о чём спросить.",
+    "vi": "Chào chị Sarah. Chị có rảnh một lát không ạ? Em muốn hỏi chị một chuyện.",
+    "th": "สวัสดีครับ คุณซาราห์ มีเวลาสักครู่ไหมครับ ผมอยากถามเรื่องหนึ่งครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Of course, James. What's on your mind?",
+   "start": 4060,
+   "end": 6650,
+   "tr": {
+    "ur": "جی ضرور، جیمز۔ بتائیے، کیا بات ہے؟",
+    "hi": "हाँ, ज़रूर, जेम्स। बताइए, क्या बात है?",
+    "ar": "بالطبع يا جيمس، تفضّل. ما الأمر؟",
+    "zh": "当然可以，詹姆斯。什么事？",
+    "es": "Claro, James. Dígame, ¿de qué se trata?",
+    "fr": "Bien sûr, James. De quoi s'agit-il ?",
+    "tr": "Tabii, James. Buyurun, sizi dinliyorum.",
+    "ja": "もちろんです、ジェームズさん。何でしょう？",
+    "ko": "그럼요, 제임스 씨. 무슨 일이에요?",
+    "it": "Certo, James. Mi dica, di cosa si tratta?",
+    "de": "Natürlich, James. Was liegt Ihnen auf dem Herzen?",
+    "pt": "Claro, James. Pode falar, o que foi?",
+    "ru": "Конечно, Джеймс. Что вы хотели?",
+    "vi": "Được chứ, James. Có chuyện gì vậy em?",
+    "th": "แน่นอนค่ะ คุณเจมส์ มีเรื่องอะไรคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Could I take next Friday off? I have a family event.",
+   "start": 7190,
+   "end": 10500,
+   "tr": {
+    "ur": "کیا میں اگلے جمعے کی چھٹی لے سکتا ہوں؟ میرے ہاں ایک خاندانی تقریب ہے۔",
+    "hi": "क्या मैं अगले शुक्रवार की छुट्टी ले सकता हूँ? मेरे परिवार में एक कार्यक्रम है।",
+    "ar": "هل يمكنني أخذ إجازة يوم الجمعة القادم؟ لدي مناسبة عائلية.",
+    "zh": "我下周五能请假吗？我有个家庭活动。",
+    "es": "¿Podría tomarme el próximo viernes libre? Tengo un compromiso familiar.",
+    "fr": "Est-ce que je pourrais prendre un jour de congé vendredi prochain ? J'ai un événement familial.",
+    "tr": "Gelecek cuma izin alabilir miyim? Bir aile etkinliğim var.",
+    "ja": "来週の金曜日、お休みをいただいてもよろしいでしょうか。家族の行事がありまして。",
+    "ko": "다음 주 금요일에 휴가를 내도 될까요? 가족 행사가 있어서요.",
+    "it": "Potrei prendermi un giorno libero venerdì prossimo? Ho un evento di famiglia.",
+    "de": "Könnte ich nächsten Freitag freinehmen? Ich habe eine Familienfeier.",
+    "pt": "Posso tirar folga na próxima sexta-feira? Tenho um evento familiar.",
+    "ru": "Могу ли я взять выходной в следующую пятницу? У меня семейное мероприятие.",
+    "vi": "Chị cho em nghỉ thứ Sáu tuần sau được không ạ? Em có một buổi họp mặt gia đình.",
+    "th": "ผมขอลาหยุดวันศุกร์หน้าได้ไหมครับ ผมมีงานครอบครัวครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "That should be fine. Have you finished your important tasks?",
+   "start": 11110,
+   "end": 14820,
+   "tr": {
+    "ur": "یہ ٹھیک رہے گا۔ کیا آپ نے اپنے اہم کام ختم کر لیے ہیں؟",
+    "hi": "ठीक रहेगा। क्या आपके ज़रूरी काम पूरे हो गए हैं?",
+    "ar": "لا أرى مانعًا في ذلك. هل أنهيتَ أعمالك المهمة؟",
+    "zh": "应该没问题。你的重要工作都做完了吗？",
+    "es": "Debería estar bien. ¿Ya terminó sus tareas importantes?",
+    "fr": "Ça devrait aller. Vous avez fini vos tâches importantes ?",
+    "tr": "Sorun olmamalı. Önemli işlerinizi bitirdiniz mi?",
+    "ja": "それは大丈夫だと思います。重要な業務は終わりましたか？",
+    "ko": "괜찮을 것 같아요. 중요한 업무는 다 끝내셨어요?",
+    "it": "Non dovrebbero esserci problemi. Ha finito le attività importanti?",
+    "de": "Das sollte kein Problem sein. Haben Sie Ihre wichtigen Aufgaben schon erledigt?",
+    "pt": "Acho que não tem problema. Você já terminou as tarefas importantes?",
+    "ru": "Думаю, проблем не будет. Вы уже закончили важные дела?",
+    "vi": "Chắc là được. Em đã xong các việc quan trọng chưa?",
+    "th": "น่าจะได้ค่ะ งานสำคัญเสร็จหมดแล้วหรือยังคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Almost. I'll make sure everything is completed by Thursday.",
+   "start": 15320,
+   "end": 18750,
+   "tr": {
+    "ur": "تقریباً۔ میں یقینی بناؤں گا کہ جمعرات تک سب کچھ مکمل ہو جائے۔",
+    "hi": "लगभग। मैं पक्का करूँगा कि गुरुवार तक सब कुछ पूरा हो जाए।",
+    "ar": "تقريبًا. سأتأكد من إنجاز كل شيء بحلول يوم الخميس.",
+    "zh": "差不多了。我会确保周四前全部完成。",
+    "es": "Casi. Me aseguraré de tenerlo todo terminado para el jueves.",
+    "fr": "Presque. Je m'assurerai que tout soit terminé d'ici jeudi.",
+    "tr": "Neredeyse. Perşembeye kadar her şeyin bittiğinden emin olacağım.",
+    "ja": "もう少しです。木曜日までにはすべて終わらせておきます。",
+    "ko": "거의 다 했어요. 목요일까지 모두 마무리하도록 할게요.",
+    "it": "Quasi. Mi assicurerò che tutto sia completato entro giovedì.",
+    "de": "Fast. Ich sorge dafür, dass bis Donnerstag alles fertig ist.",
+    "pt": "Quase. Vou garantir que tudo esteja concluído até quinta.",
+    "ru": "Почти. Я обязательно всё закончу к четвергу.",
+    "vi": "Dạ gần xong rồi ạ. Em sẽ đảm bảo mọi việc hoàn thành trước thứ Năm.",
+    "th": "เกือบเสร็จแล้วครับ ผมจะทำให้ทุกอย่างเสร็จภายในวันพฤหัสบดีครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Perfect. Just send me a leave request by email.",
+   "start": 19060,
+   "end": 22350,
+   "tr": {
+    "ur": "بہت خوب۔ بس مجھے ای میل کے ذریعے چھٹی کی درخواست بھیج دیں۔",
+    "hi": "बढ़िया। बस मुझे ईमेल से छुट्टी का आवेदन भेज दीजिए।",
+    "ar": "رائع. فقط أرسل لي طلب الإجازة بالبريد الإلكتروني.",
+    "zh": "好的。发一封请假邮件给我就行。",
+    "es": "Perfecto. Solo envíeme una solicitud de permiso por correo electrónico.",
+    "fr": "Parfait. Envoyez-moi simplement une demande de congé par e-mail.",
+    "tr": "Mükemmel. Bana e-postayla bir izin talebi göndermeniz yeterli.",
+    "ja": "わかりました。休暇申請はメールで送ってくださいね。",
+    "ko": "좋아요. 휴가 신청서는 이메일로 보내 주세요.",
+    "it": "Perfetto. Mi mandi solo una richiesta di permesso via email.",
+    "de": "Perfekt. Schicken Sie mir einfach einen Urlaubsantrag per E-Mail.",
+    "pt": "Perfeito. Só me envie um pedido de folga por e-mail.",
+    "ru": "Отлично. Просто отправьте мне заявление на отгул по электронной почте.",
+    "vi": "Tốt. Em chỉ cần gửi đơn xin nghỉ qua email cho chị.",
+    "th": "ดีค่ะ แค่ส่งใบลามาทางอีเมลก็พอค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Absolutely. Thank you so much for understanding.",
+   "start": 22740,
+   "end": 26140,
+   "tr": {
+    "ur": "جی بالکل۔ میری بات سمجھنے کا بہت بہت شکریہ۔",
+    "hi": "जी ज़रूर। मेरी बात समझने के लिए आपका बहुत-बहुत शुक्रिया।",
+    "ar": "بالتأكيد. شكرًا جزيلًا على تفهّمكِ.",
+    "zh": "当然。非常感谢您的理解。",
+    "es": "Por supuesto. Muchas gracias por su comprensión.",
+    "fr": "Absolument. Merci beaucoup pour votre compréhension.",
+    "tr": "Kesinlikle. Anlayışınız için çok teşekkür ederim.",
+    "ja": "はい、承知しました。ご理解いただいて、本当にありがとうございます。",
+    "ko": "네, 알겠습니다. 이해해 주셔서 정말 감사합니다.",
+    "it": "Assolutamente. Grazie mille per la sua comprensione.",
+    "de": "Auf jeden Fall. Vielen Dank für Ihr Verständnis.",
+    "pt": "Com certeza. Muito obrigado pela compreensão.",
+    "ru": "Конечно. Большое спасибо за понимание.",
+    "vi": "Dạ vâng ạ. Cảm ơn chị rất nhiều vì đã thông cảm.",
+    "th": "แน่นอนครับ ขอบคุณมากนะครับที่เข้าใจ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "You're welcome, James. Enjoy your family event.",
+   "start": 26640,
+   "end": 30080,
+   "tr": {
+    "ur": "کوئی بات نہیں، جیمز۔ اپنی خاندانی تقریب کا خوب لطف اٹھائیے گا۔",
+    "hi": "कोई बात नहीं, जेम्स। अपने पारिवारिक कार्यक्रम का आनंद लीजिए।",
+    "ar": "عفوًا يا جيمس. استمتع بمناسبتك العائلية.",
+    "zh": "不客气，詹姆斯。祝你家庭活动愉快。",
+    "es": "De nada, James. Disfrute de su evento familiar.",
+    "fr": "De rien, James. Profitez bien de votre événement familial.",
+    "tr": "Rica ederim, James. Aile etkinliğinizde iyi eğlenceler.",
+    "ja": "いえいえ、ジェームズさん。ご家族の行事、楽しんできてくださいね。",
+    "ko": "천만에요, 제임스 씨. 가족 행사 즐겁게 보내세요.",
+    "it": "Prego, James. Si goda il suo evento di famiglia.",
+    "de": "Gern geschehen, James. Genießen Sie Ihre Familienfeier.",
+    "pt": "De nada, James. Aproveite o seu evento familiar.",
+    "ru": "Пожалуйста, Джеймс. Желаю вам хорошо провести семейное мероприятие.",
+    "vi": "Không có gì, James. Chúc em có buổi họp mặt gia đình vui vẻ nhé.",
+    "th": "ยินดีค่ะ คุณเจมส์ ขอให้สนุกกับงานครอบครัวนะคะ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "leave request",
+   "meaning": "a formal request to be away from work",
+   "tr": {
+    "ur": "چھٹی کی درخواست",
+    "hi": "छुट्टी का आवेदन",
+    "ar": "طلب إجازة",
+    "zh": "请假申请",
+    "es": "solicitud de permiso",
+    "fr": "demande de congé",
+    "tr": "izin talebi",
+    "ja": "休暇申請",
+    "ko": "휴가 신청서",
+    "it": "richiesta di permesso",
+    "de": "der Urlaubsantrag",
+    "pt": "pedido de folga",
+    "ru": "заявление на отгул",
+    "vi": "đơn xin nghỉ",
+    "th": "ใบลา"
+   }
+  },
+  {
+   "word": "family event",
+   "meaning": "a gathering or celebration with relatives",
+   "tr": {
+    "ur": "خاندانی تقریب",
+    "hi": "पारिवारिक कार्यक्रम",
+    "ar": "مناسبة عائلية",
+    "zh": "家庭活动",
+    "es": "evento familiar",
+    "fr": "événement familial",
+    "tr": "aile etkinliği",
+    "ja": "家族の行事",
+    "ko": "가족 행사",
+    "it": "evento di famiglia",
+    "de": "die Familienfeier",
+    "pt": "evento familiar",
+    "ru": "семейное мероприятие",
+    "vi": "buổi họp mặt gia đình",
+    "th": "งานครอบครัว"
+   }
+  },
+  {
+   "word": "important tasks",
+   "meaning": "the work that matters most",
+   "tr": {
+    "ur": "اہم کام",
+    "hi": "ज़रूरी काम",
+    "ar": "الأعمال المهمة",
+    "zh": "重要工作",
+    "es": "tareas importantes",
+    "fr": "tâches importantes",
+    "tr": "önemli işler",
+    "ja": "重要な業務",
+    "ko": "중요한 업무",
+    "it": "attività importanti",
+    "de": "wichtige Aufgaben",
+    "pt": "tarefas importantes",
+    "ru": "важные дела",
+    "vi": "các việc quan trọng",
+    "th": "งานสำคัญ"
+   }
+  },
+  {
+   "word": "make sure",
+   "meaning": "check that something will really happen",
+   "tr": {
+    "ur": "یقینی بنانا",
+    "hi": "पक्का करना",
+    "ar": "أتأكد من",
+    "zh": "确保",
+    "es": "asegurarse",
+    "fr": "s'assurer",
+    "tr": "emin olmak",
+    "ja": "必ず～する",
+    "ko": "확실히 하다",
+    "it": "assicurarsi",
+    "de": "sicherstellen",
+    "pt": "garantir",
+    "ru": "убедиться",
+    "vi": "đảm bảo",
+    "th": "ทำให้แน่ใจ"
+   }
+  },
+  {
+   "word": "What's on your mind?",
+   "meaning": "What are you thinking about or want to say?",
+   "tr": {
+    "ur": "بتائیے، کیا بات ہے؟",
+    "hi": "बताइए, क्या बात है?",
+    "ar": "ما الأمر؟",
+    "zh": "什么事？",
+    "es": "¿De qué se trata?",
+    "fr": "De quoi s'agit-il ?",
+    "tr": "Buyurun, sizi dinliyorum.",
+    "ja": "何でしょう？",
+    "ko": "무슨 일이에요?",
+    "it": "Di cosa si tratta?",
+    "de": "Was liegt Ihnen auf dem Herzen?",
+    "pt": "Pode falar, o que foi?",
+    "ru": "Что вы хотели?",
+    "vi": "Có chuyện gì vậy?",
+    "th": "มีเรื่องอะไรคะ"
+   }
+  },
+  {
+   "word": "Do you have a minute?",
+   "meaning": "Are you free for a short talk?",
+   "tr": {
+    "ur": "کیا آپ کے پاس ایک منٹ ہے؟",
+    "hi": "क्या आपके पास एक मिनट है?",
+    "ar": "هل لديكِ دقيقة؟",
+    "zh": "您现在有空吗？",
+    "es": "¿Tiene un minuto?",
+    "fr": "Vous avez une minute ?",
+    "tr": "Bir dakikanız var mı?",
+    "ja": "お時間よろしいですか？",
+    "ko": "잠깐 시간 괜찮으세요?",
+    "it": "Ha un minuto?",
+    "de": "Haben Sie kurz Zeit?",
+    "pt": "Você tem um minuto?",
+    "ru": "У вас найдётся минутка?",
+    "vi": "Chị có rảnh một lát không?",
+    "th": "มีเวลาสักครู่ไหมครับ"
+   }
+  },
+  {
+   "word": "That should be fine",
+   "meaning": "I think that will be okay",
+   "tr": {
+    "ur": "یہ ٹھیک رہے گا",
+    "hi": "यह ठीक रहेगा",
+    "ar": "لا أرى مانعًا",
+    "zh": "应该没问题",
+    "es": "Debería estar bien",
+    "fr": "Ça devrait aller",
+    "tr": "Sorun olmamalı",
+    "ja": "大丈夫だと思います",
+    "ko": "괜찮을 것 같아요",
+    "it": "Non dovrebbero esserci problemi",
+    "de": "Das sollte kein Problem sein",
+    "pt": "Acho que não tem problema",
+    "ru": "Думаю, проблем не будет",
+    "vi": "Chắc là được",
+    "th": "น่าจะได้ค่ะ"
+   }
+  },
+  {
+   "word": "by Thursday",
+   "meaning": "no later than Thursday",
+   "tr": {
+    "ur": "جمعرات تک",
+    "hi": "गुरुवार तक",
+    "ar": "بحلول يوم الخميس",
+    "zh": "周四前",
+    "es": "para el jueves",
+    "fr": "d'ici jeudi",
+    "tr": "perşembeye kadar",
+    "ja": "木曜日までに",
+    "ko": "목요일까지",
+    "it": "entro giovedì",
+    "de": "bis Donnerstag",
+    "pt": "até quinta",
+    "ru": "к четвергу",
+    "vi": "trước thứ Năm",
+    "th": "ภายในวันพฤหัสบดี"
+   }
+  },
+  {
+   "word": "wanted to ask",
+   "meaning": "a polite way to start a question or request",
+   "tr": {
+    "ur": "پوچھنا چاہتا تھا",
+    "hi": "पूछना चाहता था",
+    "ar": "أردتُ أن أسأل",
+    "zh": "想问",
+    "es": "quería preguntar",
+    "fr": "voulais demander",
+    "tr": "sormak istemek",
+    "ja": "聞きたかった",
+    "ko": "물어보고 싶었어요",
+    "it": "volevo chiedere",
+    "de": "fragen wollte",
+    "pt": "queria perguntar",
+    "ru": "хотел спросить",
+    "vi": "muốn hỏi",
+    "th": "อยากถาม"
+   }
+  },
+  {
+   "word": "Absolutely",
+   "meaning": "definitely; yes, of course",
+   "tr": {
+    "ur": "بالکل",
+    "hi": "बिल्कुल",
+    "ar": "بالتأكيد",
+    "zh": "当然",
+    "es": "por supuesto",
+    "fr": "absolument",
+    "tr": "kesinlikle",
+    "ja": "もちろん",
+    "ko": "물론이죠",
+    "it": "assolutamente",
+    "de": "auf jeden Fall",
+    "pt": "com certeza",
+    "ru": "обязательно",
+    "vi": "chắc chắn",
+    "th": "แน่นอน"
+   }
+  }
+ ]
+}

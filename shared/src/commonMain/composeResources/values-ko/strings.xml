@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fo_onboarding_button_next">다음</string>
+    <string name="fo_onboarding_button_start">시작하기</string>
+    <string name="fo_onboarding_description_1">나만의 AI 튜터와 대화하며 언제든 자연스럽게 언어를 배워 보세요.</string>
+    <string name="fo_onboarding_description_2">발음을 연습하고 단어마다 실시간 피드백을 바로 받아 보세요.</string>
+    <string name="fo_onboarding_description_3">매일 연속 학습 기록을 쌓고 한 걸음씩 진도를 확인하세요.</string>
+    <string name="fo_onboarding_title_1">AI와 함께 배우기</string>
+    <string name="fo_onboarding_title_2">자신 있게 말하기</string>
+    <string name="fo_onboarding_title_3">목표 달성하기</string>
+    <string name="fo_survey_continue">학습 시작</string>
+    <string name="fo_survey_skip">건너뛰기</string>
+    <string name="fo_survey_subtitle">하나를 선택해 학습을 시작하세요</string>
+    <string name="fo_survey_title">어떤 언어를 배우고 싶나요?</string>
+    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_describe_load_ad">(이 작업에는 광고가 포함될 수 있습니다)</string>
+</resources>

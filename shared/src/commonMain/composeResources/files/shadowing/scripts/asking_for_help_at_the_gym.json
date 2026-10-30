@@ -1,0 +1,417 @@
+{
+ "scene": "🏋️",
+ "colors": [
+  "#DCE8F0",
+  "#BFD3E2"
+ ],
+ "speakers": [
+  {
+   "name": "Leo",
+   "emoji": "👨",
+   "voice": "male"
+  },
+  {
+   "name": "Nina",
+   "emoji": "👩",
+   "voice": "female"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Excuse me. Could you show me how to use this machine?",
+   "start": 0,
+   "end": 3660,
+   "tr": {
+    "ur": "معاف کیجیے گا۔ کیا آپ مجھے دکھا سکتی ہیں کہ یہ مشین کیسے استعمال کرتے ہیں؟",
+    "hi": "माफ़ कीजिए। क्या आप मुझे दिखा सकती हैं कि यह मशीन कैसे इस्तेमाल करते हैं?",
+    "ar": "عفوًا. هل يمكنكِ أن توضحي لي طريقة استخدام هذا الجهاز؟",
+    "zh": "打扰一下，你能教我怎么用这台器械吗？",
+    "es": "Disculpa. ¿Me podrías enseñar a usar esta máquina?",
+    "fr": "Excusez-moi. Vous pourriez me montrer comment utiliser cette machine ?",
+    "tr": "Affedersiniz. Bu aleti nasıl kullanacağımı gösterebilir misiniz?",
+    "ja": "すみません。このマシンの使い方を教えてもらえますか？",
+    "ko": "실례합니다. 이 기구 사용법 좀 알려 주시겠어요?",
+    "it": "Scusa. Mi faresti vedere come si usa questa macchina?",
+    "de": "Entschuldigung. Kannst du mir zeigen, wie man dieses Gerät benutzt?",
+    "pt": "Com licença. Você pode me mostrar como usar este aparelho?",
+    "ru": "Извините. Не могли бы вы показать, как пользоваться этим тренажёром?",
+    "vi": "Xin lỗi chị. Chị chỉ tôi cách dùng máy tập này được không ạ?",
+    "th": "ขอโทษนะครับ ช่วยสอนวิธีใช้เครื่องนี้หน่อยได้ไหมครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Of course. Is this your first time at the gym?",
+   "start": 3850,
+   "end": 7010,
+   "tr": {
+    "ur": "ضرور۔ کیا آپ پہلی بار جم آئے ہیں؟",
+    "hi": "ज़रूर। क्या आप पहली बार जिम आए हैं?",
+    "ar": "بالطبع. هل هذه أول مرة تأتي فيها إلى النادي الرياضي؟",
+    "zh": "当然可以。你是第一次来健身房吗？",
+    "es": "Claro. ¿Es tu primera vez en el gimnasio?",
+    "fr": "Bien sûr. C'est votre première fois à la salle de sport ?",
+    "tr": "Tabii. Spor salonuna ilk gelişiniz mi?",
+    "ja": "もちろんです。ジムは初めてですか？",
+    "ko": "물론이죠. 헬스장은 처음이세요?",
+    "it": "Certo. È la prima volta che vieni in palestra?",
+    "de": "Klar. Bist du zum ersten Mal im Fitnessstudio?",
+    "pt": "Claro. É a sua primeira vez na academia?",
+    "ru": "Конечно. Вы первый раз в спортзале?",
+    "vi": "Dạ được ạ. Đây là lần đầu anh đến phòng tập à?",
+    "th": "ได้เลยค่ะ มาฟิตเนสครั้งแรกเหรอคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Yes, I joined yesterday and I'm still learning.",
+   "start": 7380,
+   "end": 10430,
+   "tr": {
+    "ur": "جی ہاں، میں نے کل ہی جوائن کیا ہے اور ابھی سیکھ رہا ہوں۔",
+    "hi": "हाँ, मैंने कल ही जॉइन किया है और अभी सीख रहा हूँ।",
+    "ar": "نعم، اشتركتُ أمس وما زلت أتعلم.",
+    "zh": "是的，我昨天刚加入，现在还在学。",
+    "es": "Sí, me inscribí ayer y todavía estoy aprendiendo.",
+    "fr": "Oui, je me suis inscrit hier et j'apprends encore.",
+    "tr": "Evet, dün üye oldum ve hâlâ öğreniyorum.",
+    "ja": "はい、昨日入会したばかりで、まだ勉強中なんです。",
+    "ko": "네, 어제 등록해서 아직 배우는 중이에요.",
+    "it": "Sì, mi sono iscritto ieri e sto ancora imparando.",
+    "de": "Ja, ich habe mich gestern angemeldet und lerne noch.",
+    "pt": "Sim, me matriculei ontem e ainda estou aprendendo.",
+    "ru": "Да, я записался вчера и пока ещё только учусь.",
+    "vi": "Vâng, tôi mới đăng ký hôm qua nên vẫn đang học dần.",
+    "th": "ใช่ครับ ผมเพิ่งสมัครเมื่อวาน ยังต้องเรียนรู้อีกเยอะครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "No problem. First, adjust the seat to your height.",
+   "start": 10720,
+   "end": 14750,
+   "tr": {
+    "ur": "کوئی مسئلہ نہیں۔ پہلے سیٹ کو اپنے قد کے مطابق ایڈجسٹ کریں۔",
+    "hi": "कोई दिक्कत नहीं। सबसे पहले सीट को अपनी लंबाई के हिसाब से एडजस्ट कीजिए।",
+    "ar": "لا مشكلة. أولًا، اضبط المقعد حسب طولك.",
+    "zh": "没关系。首先，根据你的身高调整座椅。",
+    "es": "No pasa nada. Primero, ajusta el asiento a tu altura.",
+    "fr": "Pas de problème. D'abord, réglez le siège à votre taille.",
+    "tr": "Sorun değil. Önce koltuğu boyunuza göre ayarlayın.",
+    "ja": "大丈夫ですよ。まず、シートを身長に合わせて調整してください。",
+    "ko": "괜찮아요. 먼저 의자를 키에 맞게 조절하세요.",
+    "it": "Nessun problema. Prima di tutto, regola il sedile in base alla tua altezza.",
+    "de": "Kein Problem. Stell zuerst den Sitz auf deine Größe ein.",
+    "pt": "Sem problema. Primeiro, ajuste o banco de acordo com a sua altura.",
+    "ru": "Ничего страшного. Сначала отрегулируйте сиденье под свой рост.",
+    "vi": "Không sao đâu ạ. Trước tiên, anh chỉnh ghế cho vừa với chiều cao của mình.",
+    "th": "ไม่เป็นไรค่ะ ก่อนอื่นปรับเบาะให้เข้ากับความสูงของคุณนะคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Okay. Like this? Does that look right?",
+   "start": 15430,
+   "end": 18720,
+   "tr": {
+    "ur": "ٹھیک ہے۔ ایسے؟ کیا یہ ٹھیک لگ رہا ہے؟",
+    "hi": "ठीक है। ऐसे? क्या यह सही लग रहा है?",
+    "ar": "حسنًا. هكذا؟ هل يبدو هذا صحيحًا؟",
+    "zh": "好的。像这样吗？这样对吗？",
+    "es": "Bueno. ¿Así? ¿Está bien?",
+    "fr": "D'accord. Comme ça ? C'est bien comme ça ?",
+    "tr": "Tamam. Böyle mi? Doğru görünüyor mu?",
+    "ja": "わかりました。こうですか？これで合ってますか？",
+    "ko": "네. 이렇게요? 이게 맞아요?",
+    "it": "Ok. Così? Va bene così?",
+    "de": "Okay. So? Sieht das richtig aus?",
+    "pt": "Tá bom. Assim? Está certo assim?",
+    "ru": "Хорошо. Вот так? Правильно?",
+    "vi": "Được rồi. Thế này à? Như vậy đúng chưa chị?",
+    "th": "โอเคครับ แบบนี้เหรอครับ ถูกไหมครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Yes. Perfect. Now start with a lighter weight.",
+   "start": 19030,
+   "end": 22650,
+   "tr": {
+    "ur": "جی ہاں۔ بالکل ٹھیک۔ اب ہلکے وزن سے شروع کریں۔",
+    "hi": "हाँ। बिल्कुल सही। अब हल्के वज़न से शुरू कीजिए।",
+    "ar": "نعم. ممتاز. الآن ابدأ بوزن أخف.",
+    "zh": "对，非常好。现在先从轻一点的重量开始。",
+    "es": "Sí. Perfecto. Ahora empieza con un peso más ligero.",
+    "fr": "Oui. Parfait. Maintenant, commencez avec un poids plus léger.",
+    "tr": "Evet. Mükemmel. Şimdi daha hafif bir ağırlıkla başlayın.",
+    "ja": "はい、完璧です。では、軽めの重さから始めましょう。",
+    "ko": "네. 완벽해요. 이제 가벼운 무게로 시작하세요.",
+    "it": "Sì. Perfetto. Ora inizia con un peso più leggero.",
+    "de": "Ja. Perfekt. Jetzt fang mit einem leichteren Gewicht an.",
+    "pt": "Isso. Perfeito. Agora comece com um peso mais leve.",
+    "ru": "Да. Отлично. Теперь начните с веса полегче.",
+    "vi": "Đúng rồi. Hoàn hảo. Giờ anh bắt đầu với mức tạ nhẹ hơn nhé.",
+    "th": "ใช่ค่ะ เยี่ยมเลย ทีนี้เริ่มจากน้ำหนักที่เบากว่านี้ก่อนนะคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Got it. Thanks for explaining everything so clearly.",
+   "start": 22950,
+   "end": 26190,
+   "tr": {
+    "ur": "سمجھ گیا۔ سب کچھ اتنی وضاحت سے سمجھانے کا شکریہ۔",
+    "hi": "समझ गया। सब कुछ इतने साफ़-साफ़ समझाने के लिए धन्यवाद।",
+    "ar": "فهمت. شكرًا لأنكِ شرحتِ كل شيء بهذا الوضوح.",
+    "zh": "明白了。谢谢你把一切都解释得这么清楚。",
+    "es": "Entendido. Gracias por explicarlo todo tan claramente.",
+    "fr": "Compris. Merci de m'avoir tout expliqué si clairement.",
+    "tr": "Anladım. Her şeyi bu kadar açıkça anlattığınız için teşekkürler.",
+    "ja": "わかりました。全部わかりやすく説明してくださって、ありがとうございます。",
+    "ko": "알겠어요. 모든 걸 이렇게 알기 쉽게 설명해 주셔서 감사해요.",
+    "it": "Capito. Grazie per avermi spiegato tutto così chiaramente.",
+    "de": "Alles klar. Danke, dass du alles so verständlich erklärt hast.",
+    "pt": "Entendi. Obrigado por explicar tudo de um jeito tão claro.",
+    "ru": "Понял. Спасибо, что так понятно всё объяснили.",
+    "vi": "Tôi hiểu rồi. Cảm ơn chị đã giải thích mọi thứ rõ ràng như vậy.",
+    "th": "เข้าใจแล้วครับ ขอบคุณที่อธิบายทุกอย่างได้ชัดเจนมากครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "You're welcome. Just ask whenever you need help.",
+   "start": 26590,
+   "end": 30080,
+   "tr": {
+    "ur": "کوئی بات نہیں۔ جب بھی مدد چاہیے ہو، بس پوچھ لیجیے گا۔",
+    "hi": "कोई बात नहीं। जब भी मदद चाहिए, बस पूछ लीजिए।",
+    "ar": "على الرحب والسعة. لا تتردد في السؤال متى احتجت إلى المساعدة.",
+    "zh": "不客气。需要帮忙的话，随时问我。",
+    "es": "De nada. Pregúntame siempre que necesites ayuda.",
+    "fr": "Je vous en prie. N'hésitez pas à demander chaque fois que vous avez besoin d'aide.",
+    "tr": "Rica ederim. Ne zaman yardıma ihtiyacınız olursa sormanız yeterli.",
+    "ja": "どういたしまして。困ったときはいつでも聞いてくださいね。",
+    "ko": "천만에요. 도움이 필요하면 언제든지 물어보세요.",
+    "it": "Prego. Chiedi pure ogni volta che hai bisogno di aiuto.",
+    "de": "Gern geschehen. Frag einfach, wann immer du Hilfe brauchst.",
+    "pt": "De nada. É só perguntar sempre que precisar de ajuda.",
+    "ru": "Пожалуйста. Обращайтесь в любое время, если понадобится помощь.",
+    "vi": "Không có gì ạ. Bất cứ khi nào cần giúp, anh cứ hỏi nhé.",
+    "th": "ยินดีค่ะ ต้องการความช่วยเหลือเมื่อไหร่ก็ถามได้เลยนะคะ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "machine",
+   "meaning": "equipment you use to exercise",
+   "tr": {
+    "ur": "مشین",
+    "hi": "मशीन",
+    "ar": "جهاز",
+    "zh": "器械",
+    "es": "máquina",
+    "fr": "machine",
+    "tr": "alet",
+    "ja": "マシン",
+    "ko": "기구",
+    "it": "macchina",
+    "de": "das Gerät",
+    "pt": "aparelho",
+    "ru": "тренажёр",
+    "vi": "máy tập",
+    "th": "เครื่องออกกำลังกาย"
+   }
+  },
+  {
+   "word": "gym",
+   "meaning": "a place where people exercise",
+   "tr": {
+    "ur": "جم",
+    "hi": "जिम",
+    "ar": "نادٍ رياضي",
+    "zh": "健身房",
+    "es": "gimnasio",
+    "fr": "salle de sport",
+    "tr": "spor salonu",
+    "ja": "ジム",
+    "ko": "헬스장",
+    "it": "palestra",
+    "de": "das Fitnessstudio",
+    "pt": "academia",
+    "ru": "спортзал",
+    "vi": "phòng tập",
+    "th": "ฟิตเนส"
+   }
+  },
+  {
+   "word": "join",
+   "meaning": "to become a member",
+   "tr": {
+    "ur": "جوائن کرنا",
+    "hi": "जॉइन करना",
+    "ar": "اشترك",
+    "zh": "加入",
+    "es": "inscribirse",
+    "fr": "s'inscrire",
+    "tr": "üye olmak",
+    "ja": "入会する",
+    "ko": "등록하다",
+    "it": "iscriversi",
+    "de": "sich anmelden",
+    "pt": "matricular-se",
+    "ru": "записаться",
+    "vi": "đăng ký",
+    "th": "สมัคร"
+   }
+  },
+  {
+   "word": "adjust",
+   "meaning": "to change something so it fits",
+   "tr": {
+    "ur": "ایڈجسٹ کرنا",
+    "hi": "एडजस्ट करना",
+    "ar": "ضبط",
+    "zh": "调整",
+    "es": "ajustar",
+    "fr": "régler",
+    "tr": "ayarlamak",
+    "ja": "調整する",
+    "ko": "조절하다",
+    "it": "regolare",
+    "de": "einstellen",
+    "pt": "ajustar",
+    "ru": "отрегулировать",
+    "vi": "chỉnh",
+    "th": "ปรับ"
+   }
+  },
+  {
+   "word": "seat",
+   "meaning": "the part you sit on",
+   "tr": {
+    "ur": "سیٹ",
+    "hi": "सीट",
+    "ar": "مقعد",
+    "zh": "座椅",
+    "es": "asiento",
+    "fr": "siège",
+    "tr": "koltuk",
+    "ja": "シート",
+    "ko": "의자",
+    "it": "sedile",
+    "de": "der Sitz",
+    "pt": "banco",
+    "ru": "сиденье",
+    "vi": "ghế",
+    "th": "เบาะ"
+   }
+  },
+  {
+   "word": "height",
+   "meaning": "how tall someone is",
+   "tr": {
+    "ur": "قد",
+    "hi": "लंबाई",
+    "ar": "طول",
+    "zh": "身高",
+    "es": "altura",
+    "fr": "taille",
+    "tr": "boy",
+    "ja": "身長",
+    "ko": "키",
+    "it": "altezza",
+    "de": "die Größe",
+    "pt": "altura",
+    "ru": "рост",
+    "vi": "chiều cao",
+    "th": "ความสูง"
+   }
+  },
+  {
+   "word": "weight",
+   "meaning": "a heavy object you lift",
+   "tr": {
+    "ur": "وزن",
+    "hi": "वज़न",
+    "ar": "وزن",
+    "zh": "重量",
+    "es": "peso",
+    "fr": "poids",
+    "tr": "ağırlık",
+    "ja": "重さ",
+    "ko": "무게",
+    "it": "peso",
+    "de": "das Gewicht",
+    "pt": "peso",
+    "ru": "вес",
+    "vi": "tạ",
+    "th": "น้ำหนัก"
+   }
+  },
+  {
+   "word": "explain",
+   "meaning": "to make something easy to understand",
+   "tr": {
+    "ur": "سمجھانا",
+    "hi": "समझाना",
+    "ar": "شرح",
+    "zh": "解释",
+    "es": "explicar",
+    "fr": "expliquer",
+    "tr": "anlatmak",
+    "ja": "説明する",
+    "ko": "설명하다",
+    "it": "spiegare",
+    "de": "erklären",
+    "pt": "explicar",
+    "ru": "объяснить",
+    "vi": "giải thích",
+    "th": "อธิบาย"
+   }
+  },
+  {
+   "word": "clearly",
+   "meaning": "in a way that is easy to understand",
+   "tr": {
+    "ur": "وضاحت سے",
+    "hi": "साफ़-साफ़",
+    "ar": "بوضوح",
+    "zh": "清楚地",
+    "es": "claramente",
+    "fr": "clairement",
+    "tr": "açıkça",
+    "ja": "わかりやすく",
+    "ko": "알기 쉽게",
+    "it": "chiaramente",
+    "de": "verständlich",
+    "pt": "claramente",
+    "ru": "понятно",
+    "vi": "rõ ràng",
+    "th": "ชัดเจน"
+   }
+  },
+  {
+   "word": "whenever",
+   "meaning": "at any time that",
+   "tr": {
+    "ur": "جب بھی",
+    "hi": "जब भी",
+    "ar": "متى",
+    "zh": "随时",
+    "es": "siempre que",
+    "fr": "chaque fois que",
+    "tr": "ne zaman",
+    "ja": "いつでも",
+    "ko": "언제든지",
+    "it": "ogni volta che",
+    "de": "wann immer",
+    "pt": "sempre que",
+    "ru": "в любое время",
+    "vi": "bất cứ khi nào",
+    "th": "เมื่อไหร่ก็ได้"
+   }
+  }
+ ]
+}

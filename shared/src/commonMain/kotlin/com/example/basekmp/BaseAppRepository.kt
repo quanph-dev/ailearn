@@ -1,11 +1,20 @@
 package com.example.basekmp
 
+import com.example.basekmp.data.Strings
+
 interface BaseAppRepository {
     suspend fun resolveStartupRoute(): String
     suspend fun currentLanguageCode(): String
     suspend fun saveLanguage(code: String, completeSetup: Boolean)
-    suspend fun completeOnboarding()
-    suspend fun markHomeShown()
+    suspend fun completeFirstOpen(surveyLanguageCode: String?, initialOnboardingProgress: String)
+    suspend fun firstOpenSurveyLanguage(): String
+    suspend fun onboardingProgress(): String
+    suspend fun saveOnboardingProgress(serialized: String)
+    suspend fun completeOnboarding(serialized: String)
+    suspend fun planProgress(): String
+    suspend fun savePlanProgress(serialized: String)
+    suspend fun learningProgress(): String
+    suspend fun saveLearningProgress(serialized: String)
 }
 
 expect fun getSystemLanguageCode(): String
@@ -29,6 +38,8 @@ object BaseRoutes {
     const val Splash = "splash"
     const val StartupLanguage = "startup_language"
     const val ApplyLanguage = "apply_language"
+    const val FirstOpenIntro = "first_open_intro"
+    const val FirstOpenSurvey = "first_open_survey"
     const val Onboarding = "onboarding"
     const val Home = "browser_home"
     const val LanguageSettings = "language_settings"
@@ -39,10 +50,9 @@ object StartupRouteResolver {
         languageSetup: Boolean,
         onboardingCompleted: Boolean,
         firstOpenCompleted: Boolean
-    ): String = if (firstOpenCompleted) {
-        BaseRoutes.Home
-    } else {
-        BaseRoutes.StartupLanguage
+    ): String = when {
+        !onboardingCompleted -> BaseRoutes.Onboarding
+        else -> BaseRoutes.Home
     }
 }
 
@@ -50,21 +60,36 @@ data class BaseLanguage(
     val code: String,
     val name: String,
     val nativeName: String,
-    val flagName: String
+    val flag: String
 )
 
-val BaseLanguages = listOf(
-    BaseLanguage("en", "English", "English", "flag_english"),
-    BaseLanguage("fr", "French", "Français", "flag_france"),
-    BaseLanguage("ar", "Arabic (Saudi Arabia)", "العربية", "flag_saudi"),
-    BaseLanguage("id", "Indonesian", "Bahasa Indonesia", "flag_indonesia"),
-    BaseLanguage("es", "Spanish", "Español", "flag_spain"),
-    BaseLanguage("de", "German", "Deutsch", "flag_germany"),
-    BaseLanguage("vi", "Vietnamese", "Tiếng Việt", "flag_vietnam"),
-    BaseLanguage("hi", "Hindi", "हिन्दी", "flag_india"),
-    BaseLanguage("pt", "Portuguese", "Português", "flag_portuguese"),
-    BaseLanguage("pt-br", "Portuguese (Brazil)", "Português (Brasil)", "flag_brazil")
+private val appLanguageNames = mapOf(
+    "ar" to "Arabic",
+    "de" to "German",
+    "en" to "English",
+    "es" to "Spanish",
+    "fr" to "French",
+    "hi" to "Hindi",
+    "it" to "Italian",
+    "ja" to "Japanese",
+    "ko" to "Korean",
+    "pt" to "Portuguese",
+    "ru" to "Russian",
+    "th" to "Thai",
+    "tr" to "Turkish",
+    "ur" to "Urdu",
+    "vi" to "Vietnamese",
+    "zh" to "Chinese"
 )
+
+val BaseLanguages = Strings.languages.map { language ->
+    BaseLanguage(
+        code = language.code,
+        name = appLanguageNames[language.code] ?: language.name,
+        nativeName = language.name,
+        flag = language.flag
+    )
+}
 
 fun sortedBaseLanguages(systemLanguage: String): List<BaseLanguage> {
     val english = BaseLanguages.first { it.code == "en" }

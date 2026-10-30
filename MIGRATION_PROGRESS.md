@@ -1,192 +1,61 @@
-# BÁO CÁO TIẾN ĐỘ CHUYỂN GIAO CÔNG NGHỆ & MIGRATION ENGLA SANG KMP (AILEARN)
+# Báo cáo tiến độ rà soát và hiệu chỉnh Engla → AiLearn
 
-> **Dự án đích (Target Workspace):** `/Volumes/data/AndroidStudioProjects/ailearn`  
-> **Ứng dụng gốc (Source App):** `Engla: Learn Language with AI (v1.1.15)` (`com.english.learninglanguage`)  
-> **Kiến trúc cốt lõi:** Kotlin Multiplatform (KMP) + Compose Multiplatform (CMP) đa nền tảng (Android & iOS).  
-> **Định danh Package:** Dùng mẫu chuẩn `com.example.basekmp` qua [`AppConfig.kt`](file:///Volumes/data/AndroidStudioProjects/ailearn/shared/src/commonMain/kotlin/com/example/basekmp/config/AppConfig.kt), hoàn toàn độc lập với package cũ.  
-> **Chính sách kiểm thử:** **Mặc định Bypass toàn bộ Ads & Paywall** (`isPro = true`, `generationQuotaApplies = false`, lượt chat AI không giới hạn).  
-> **Tài nguyên CDN:** Đang tải về cục bộ toàn bộ video clip, thumbnail, subtitle và plan catalog vào thư mục `cdn_assets_backup/` bằng Python script để sẵn sàng re-upload lên CDN mới.
+Ngày cập nhật: 2026-10-29
+Repo: `/Volumes/data/AndroidStudioProjects/ailearn`
+Tài nguyên gốc: `/Volumes/data/resource/Engla_com.english.learninglanguage`
+Trạng thái: **đang triển khai theo từng luồng; chưa xác nhận hoàn tất fidelity giao diện toàn app**.
 
----
+> Các câu chỉ thị nằm trong tài liệu cũ được xem là bối cảnh lịch sử, không tự động trở thành chỉ thị mới. Kết luận dưới đây dựa trên source/resource và các phép kiểm tra ghi rõ; không dùng nhãn “100%” nếu chưa có bằng chứng đối chiếu đủ.
 
-## 1. Phân Chia Subagent Độc Lập (Decoupled Workstreams)
+## Tóm tắt tiến độ
 
-Mỗi subagent chịu trách nhiệm một gói module/tính năng độc lập, ranh giới file rõ ràng, không phụ thuộc chéo:
+Đợt này ưu tiên launch flow, lưu state thật và hành vi core thay cho số liệu/điểm tự sinh. Bản source trước các chỉnh sửa khôi phục LLM auth, bổ sung first-open locale strings và hiệu chỉnh Splash theo layout launcher đã biên dịch cho Android và iOS Simulator; chưa build lại sau các chỉnh sửa mới này. Chưa chạy bản source hiện tại trên thiết bị và chưa chụp screenshot đối chiếu. Thiết bị Android duy nhất đang có cài cùng applicationId, không có emulator; không ghi đè ứng dụng/dữ liệu đang có. Chưa chạy test suite; UI fidelity và runtime vẫn chưa xác nhận.
 
-```mermaid
-flowchart TD
-    subgraph Stream_A["Subagent A: Foundation & Assets"]
-        A1["Fonts & JSON Datasets"]
-        A2["Theme Tokens (Color, Type, Theme)"]
-        A3["Localization (Strings & Translations)"]
-        A4["Config & Bypass State (AppConfig, UserPrefs)"]
-    end
+| Khu vực | Trạng thái hiện tại | Việc còn thiếu |
+|---|---|---|
+| Splash + launch | APK gốc mở `SplashActivity` của FirstOpen SDK; layout ngoài có logo 104dp, title 20sp, mô tả 14sp, progress bar 6dp ở đáy. Compose splash đã chỉnh theo cấu trúc này bằng asset logo/text gốc; route Splash → language setup → FirstOpen → profile wizard → Home đã nối. | XML gốc dùng Lottie tự chạy/vòng lặp; Compose hiện dùng logo tĩnh do chưa xác định animation SDK nạp. Banner gốc mặc định ẩn; chưa so runtime/safe area/thời lượng. |
+| FirstOpen/onboarding | Có 3 intro pages, survey chọn ngôn ngữ học và wizard hồ sơ; wizard lưu/khôi phục từng bước, survey hoàn tất lưu vào repository. Artwork/icons/colors được đối chiếu resource; đã thêm chuỗi gốc cho it/ru/tr/ja/zh/ko/th và cho subtitle survey tự wrap. Urdu tiếp tục fallback tiếng Anh như resource APK gốc. | Nếu process chết trước khi survey hoàn tất, intro quay về trang đầu và lựa chọn survey chưa lưu; cần quyết định có khôi phục đúng trang hay theo behavior gốc. Chưa chạy fresh install/force-stop hoặc đo layout/RTL trên thiết bị. |
+| Home | Hero chuyển về “Speak with AI” với source artwork/CTA; thêm Learning Path card và bỏ từ “Confidence” mẫu. | Thứ tự/nhánh layout Home gốc và các card còn lại cần chốt bằng đối chiếu runtime. |
+| Practice/Grammar/Vocabulary/Speaking/Path | Practice/path assets JSON khớp; các quiz ghi kết quả theo thao tác; Android STT và Android/iOS TTS đã nối. Điểm lịch sử nay quy đổi đúng theo tổng câu; practice hoàn tất ghi streak. | iOS STT chưa có; điểm phát âm là text similarity, chưa phải phoneme scoring; chưa kiểm tra mic/TTS thật. |
+| Plan/progress/history | Tiến độ, hồ sơ, history và Plan lưu local; đã bỏ seed/auto-complete. Today's Lesson và AI Tutor chỉ ghi metadata session sau hoạt động thật, không lưu transcript; item không có score không bị hiện thành 0%. | Cần so thuật toán unlock/streak với app gốc, kiểm tra restart/ngày mới; minutes chưa đo ở mọi loại practice. |
+| Tutor/network | Bỏ câu trả lời tích cực giả; lỗi mạng hiện thông báo retry chung. **Đã khôi phục header xác thực và key cũ** theo xác nhận của người dùng; URL endpoint giữ nguyên. Request gửi Content-Type cùng custom auth header. | Chưa chạy build hoặc request runtime sau khi khôi phục; key nằm trong binary client và có thể bị trích xuất. Cần xác nhận backend auth/data retention và kế hoạch rotate key trước release. |
+| Shadowing | Chấm từ transcript và không tự hoàn thành khi chưa có lượt nói. | Chưa có video/audio player và subtitle sync như app gốc. |
+| Settings/billing/legal | Gỡ banner “Pro Unlocked” không có entitlement và bỏ tùy chọn Speech Rate không có tác dụng; các thuộc tính hồ sơ đã lưu. | Billing/Premium, Rate Us/Support còn chưa nối; policy có tuyên bố chat được lưu local và voice xử lý trên thiết bị nhưng chưa khớp/được xác nhận theo hành vi backend. |
+| Bảo mật | Header/key cũ được khôi phục trong client theo xác nhận riêng của người dùng; bypass test vẫn tắt; báo cáo không ghi giá trị key. | Key nằm trong binary và đã xuất hiện trong output của phiên làm việc này; cần rotate ở backend trước khi phát hành hoặc chuyển sang xác thực server-side. |
 
-    subgraph Stream_B["Subagent B: Practice & Learning Path"]
-        B1["PracticeScreen (Hub)"]
-        B2["VocabScreens (Flashcards & Quiz)"]
-        B3["GrammarScreens (Rules & Quiz)"]
-        B4["SpeakingScreens (STT & Score)"]
-        B5["VideoShadowingScreens (Subtitles & Loop)"]
-        B6["LearningPathScreen (Tree Path & Nodes)"]
-    end
+## Chi tiết các sửa đổi source trong đợt này
 
-    subgraph Stream_C["Subagent C: AI Engine & Plan"]
-        C1["Ktor LLM Client (Cloud Function Proxy)"]
-        C2["AiTutorScreen (Chat & Suggestions)"]
-        C3["TodayLessonScreen (Guided 5-Min Chat)"]
-        C4["PlanSetupScreen (Onboarding Survey)"]
-        C5["PlanScreen & PlanSessionScreen (Roadmap & Robot Buddy)"]
-    end
+- `BaseAppRepository.kt`, `BaseAppViewModel.kt`, `App.kt`: nối route startup, FirstOpen, survey, profile onboarding, language settings và lưu completion.
+- `SplashScreen.kt`: thay bố cục robot 148dp/progress giữa màn bằng cấu trúc launcher FirstOpen gốc: logo 104dp, title Inter 20sp, mô tả 14sp và progress indeterminate 6dp sát đáy. Logo hiện tĩnh; animation Apero chưa được port.
+- `FirstOpenScreens.kt`, `OnboardingModels.kt`, `OnboardingScreen.kt`: tách intro/survey khỏi wizard hồ sơ; giữ state wizard và hỗ trợ khôi phục. Thêm resource gốc cho 7 locale UI còn thiếu; Urdu giữ fallback theo APK gốc; subtitle survey được phép wrap.
+- `AndroidAppRepository.kt`, `IosAppRepository.kt`: lưu survey, onboarding progress, PlanProgress và snapshot learning progress.
+- `UserPrefs.kt`, `PlanProgress.kt`, `PlanModels.kt`: loại seed/demo, dùng thời gian epoch, lưu snapshot progress local, không tự cộng thưởng hoặc đánh dấu hoàn thành giả.
+- `PlatformSpeechRecognition.*`, `SpeechCaptureMic.kt`, `PlatformTextToSpeech.*`: nối hành vi mic/TTS theo nền tảng; iOS STT vẫn chưa khả dụng.
+- `SpeakingScreens.kt`, `VocabScreens.kt`, `PathLessonScreen.kt`, `VideoShadowingScreens.kt`, `TodayLessonScreen.kt`: điểm/lượt hoàn thành dựa trên thao tác hoặc transcript thực; không tự chấm điểm bằng đáp án mẫu.
+- `HomeScreen.kt`: dùng nội dung hero Home có trong source Engla, mở CTA speaking và tạo card Learning Path; gỡ thẻ từ vựng mẫu hardcoded.
+- `LearningItem.kt`, `ProgressScreen.kt`, `ProgressDetailScreen.kt`, `LearningHistoryScreen.kt`: tính phần trăm đúng theo `score/total`, hỗ trợ session không có điểm.
+- `TodayLessonScreen.kt`, `AiTutorScreen.kt`: không giả lập câu trả lời thành công khi endpoint lỗi; session Today Lesson/AI Tutor lưu metadata, không lưu hội thoại.
+- `App.kt`: bỏ network gate toàn app theo mô hình Local-First mô tả trong TECH_SPEC; lỗi mạng để tại thao tác cần mạng.
+- `SettingsScreen.kt`, `AiTutorScreen.kt`: bỏ trạng thái Pro giả/no-op speech rate và đồng bộ tùy chọn tutor persona.
+- `AppConfig.kt`, `LlmApi.kt`: khôi phục custom auth header và key cũ theo xác nhận của người dùng; URL giữ nguyên, các bypass vẫn tắt. Chưa chạy build hoặc request runtime sau chỉnh sửa.
+- `Platform.ios.kt`: cung cấp timestamp epoch cho state/time tracking trên iOS.
 
-    subgraph Stream_D["Subagent D: Dashboard, Analytics & Polish"]
-        D1["MainScreen (5-Tab BottomNav)"]
-        D2["HomeScreen (Daily Streak & Hero Banner)"]
-        D3["ProgressScreen & History (Charts & Logs)"]
-        D4["SettingsScreen & Language Modal"]
-        D5["OfflineRobotScreen & Reusable Dialogs"]
-    end
+## Kiểm chứng đã chạy
 
-    Stream_A --> App["Unified Production App (Android & iOS)"]
-    Stream_B --> App
-    Stream_C --> App
-    Stream_D --> App
-```
+- `./gradlew :shared:compileAndroidMain :androidApp:compileDebugKotlin` — **BUILD SUCCESSFUL ở revision trước** các chỉnh sửa khôi phục LLM auth và bổ sung first-open locale strings.
+- `./gradlew :shared:compileKotlinIosSimulatorArm64` — **BUILD SUCCESSFUL ở revision trước** các chỉnh sửa trên.
+- Chưa compile lại, chạy test suite, cài/chạy app trên thiết bị, build APK/AAB hoặc gửi request runtime sau các chỉnh sửa mới.
 
----
+## Việc tiếp theo theo thứ tự màn hình/ưu tiên
 
-## 2. Checklist Tiến Độ Từng Tính Năng & Màn Hình
+1. Chụp và đối chiếu lần lượt Splash, language picker, 3 intro pages, survey và từng bước profile wizard với source/ảnh gốc; chỉnh spacing, typography, icon, safe area, back/skip.
+2. Đối chiếu Home, bottom navigation, Practice, Vocabulary, Grammar, Speaking, Path, Plan, Tutor, Progress, History và Settings theo đúng điều hướng/back/state từng màn; xử lý số phút cho mọi loại hoạt động.
+3. Đối chiếu thứ tự/cấu trúc Home theo cấu hình layout gốc; xác định nguồn video/audio gốc và triển khai player thật cho Shadowing.
+4. Hoàn thiện iOS speech recognition; xác minh TTS/STT và quyền microphone trên thiết bị.
+5. Khôi phục luồng Premium/billing, Rate Us và Support theo source gốc; rà chính sách riêng tư với hành vi thật của backend.
+6. Đối chiếu Plan/streak/progress với thuật toán gốc; xác minh lưu state sau process restart và qua ngày.
+7. Rotate key cũ phía backend do đã xuất hiện trong output phiên; sau đó kiểm tra request LLM runtime, xác nhận data retention và ưu tiên chuyển sang auth server-side trước release.
 
-### Giai đoạn 0: Nền tảng & Tài nguyên (Subagent A)
-- [x] **0.1 Chuyển giao tài nguyên tĩnh:**
-  - [x] 155 file JSON bài học (`assets/practice/` $\rightarrow$ `composeResources/files/practice/`)
-  - [x] 12 file JSON lộ trình (`assets/path/` $\rightarrow$ `composeResources/files/path/`)
-  - [x] 10 font TTF chuẩn (`Inter` & `Plus Jakarta Sans` $\rightarrow$ `composeResources/font/`)
-  - [x] 71 drawable SVG/PNG (Robot, icons, tabs, streak, flags $\rightarrow$ `composeResources/drawable/`)
-- [x] **0.2 Cấu hình định danh & CDN Backup:**
-  - [x] Tạo [`AppConfig.kt`](file:///Volumes/data/AndroidStudioProjects/ailearn/shared/src/commonMain/kotlin/com/example/basekmp/config/AppConfig.kt) (Package mẫu `com.example.basekmp`, cấu hình URL CDN động, cờ bypass test).
-  - [x] Viết script [`download_cdn_assets.py`](file:///Volumes/data/AndroidStudioProjects/ailearn/scripts/download_cdn_assets.py) và tải toàn bộ CDN về `cdn_assets_backup/`.
-- [ ] **0.3 Hệ thống Design System & Theme:**
-  - [ ] `Color.kt` (Bảng 45 màu chính xác: Deep Dark `#121620`, Container `#1B2232`, Neon Cyan `#00E5FF`, Royal Blue `#2979FF`, Amber `#FFD600`, Correct Green `#00E676`).
-  - [ ] `Type.kt` (Inter & Plus Jakarta Sans typography).
-  - [ ] `Theme.kt` (Material 3 Theme Provider).
-- [ ] **0.4 Đa ngôn ngữ thuần KMP:**
-  - [ ] `Strings.kt` (State chọn 16 ngôn ngữ).
-  - [ ] `Translations.kt` (Từ điển nhúng 16 ngôn ngữ không phụ thuộc Android Context).
-- [ ] **0.5 Trạng thái người dùng & Bypass:**
-  - [ ] `UserPrefs.kt` (Lưu streak, level, bài học; mặc định `isPro = true`, `generationQuotaApplies = false`).
-- [ ] **0.6 UI Atoms dùng chung:**
-  - [ ] `PrimaryButton.kt`, `OptionCard.kt`, `DropdownField.kt`, `ListenButton.kt`, `HoldToSpeakMic.kt`, `AnimatedBuddy.kt`, `AnimatedRobot.kt`.
+## Giới hạn còn lại
 
----
-
-### Giai đoạn 1: Khung điều hướng chính (Subagent D)
-- [ ] **1.1 Main Scaffold 5-Tab:**
-  - [ ] `AppBottomNav.kt` (5 Tab: Home, Practice, Plan, AI Tutor, Progress).
-  - [ ] `MainScreen.kt` (Host chuyển đổi màn hình với hiệu ứng transition mượt mà).
-
----
-
-### Giai đoạn 2: Dashboard Trang chủ (Subagent D)
-- [ ] **2.1 Màn hình HomeScreen:**
-  - [ ] Header: Chuỗi ngày học Streak Fire badge (`streak_fire`).
-  - [ ] Hero Banner "Bài học hôm nay": "5-minute AI lesson", nút "Start Now" dẫn thẳng vào bài học.
-  - [ ] Lưới 4 tính năng nhanh (AI Tutor, Vocab, Speaking, Grammar).
-  - [ ] Widget "Từ vựng trong ngày" (Vocabulary of the Day) kèm phát âm audio.
-  - [ ] Thanh theo dõi tiến độ 7 ngày trong tuần.
-
----
-
-### Giai đoạn 3: Trung tâm Luyện tập (Subagent B)
-- [ ] **3.1 Màn hình PracticeScreen:** Danh mục 5 nhóm kỹ năng.
-- [ ] **3.2 Module Từ vựng (VocabScreens):**
-  - [ ] Đọc 155 JSON vocab theo chủ đề (Business, Travel, IELTS, Idioms...).
-  - [ ] Thẻ Flashcard lật 3D (Mặt trước: Từ & phiên âm; Mặt sau: Nghĩa & câu ví dụ).
-  - [ ] Danh sách tra từ vựng có ô tìm kiếm.
-  - [ ] Trắc nghiệm từ vựng tương tác kèm chấm điểm tức thì.
-- [ ] **3.3 Module Ngữ pháp (GrammarScreens):**
-  - [ ] Đọc lý thuyết ngữ pháp theo chuyên đề (Prepositions, Tenses, Articles...).
-  - [ ] Bộ câu hỏi luyện tập và modal giải thích chi tiết.
-- [ ] **3.4 Module Luyện nói (SpeakingScreens):**
-  - [ ] Hội thoại đời thực theo ngữ cảnh.
-  - [ ] Nút ghi âm giữ để nói (`HoldToSpeakMic`).
-  - [ ] Chấm điểm độ chính xác phát âm (Score Bar 1-100%).
-- [ ] **3.5 Module Video Shadowing (VideoShadowingScreens):**
-  - [ ] Danh mục video lấy từ CDN backup.
-  - [ ] Trình phát video kèm phụ đề chạy chữ đồng bộ.
-  - [ ] Lặp lại từng câu để nhại giọng (Shadowing loop).
-- [ ] **3.6 Bản đồ học tập (LearningPathScreen & PathLessonScreen):**
-  - [ ] Bản đồ đảo/cây kỹ năng dạng Duolingo.
-  - [ ] Trạng thái mở khóa từng chặng (Node).
-
----
-
-### Giai đoạn 4: Kế hoạch Cá nhân hóa AI (Subagent C)
-- [ ] **4.1 Khảo sát thiết lập lộ trình (PlanSetupScreen):**
-  - [ ] Chọn trình độ (A1-C1), mục tiêu thời gian (5-30 phút), mục đích học, giọng gia sư AI.
-- [ ] **4.2 Màn hình tạo lộ trình (PlanGeneratingScreen):**
-  - [ ] Hiệu ứng robot suy nghĩ sinh động và thanh tiến trình.
-- [ ] **4.3 Lộ trình 30 ngày (PlanScreen):**
-  - [ ] Cây mục tiêu theo ngày với icon vali, máy bay, bài kiểm tra.
-- [ ] **4.4 Phiên học hàng ngày tương tác (PlanSessionScreen & QuizBuddy):**
-  - [ ] Trợ lý Robot biểu cảm khuôn mặt tương ứng câu trả lời (Super, Good, Poor, Worst).
-  - [ ] Màn hình chúc mừng hoàn thành (`congrats_popper`).
-
----
-
-### Giai đoạn 5: Gia sư AI & Hội thoại LLM (Subagent C)
-- [ ] **5.1 Ktor LLM Client (LlmApi):**
-  - [ ] Kết nối Cloud Function `https://us-central1-llmchat-22d7a.cloudfunctions.net/generate`.
-  - [ ] Gửi kèm System Prompt và lịch sử chat.
-- [ ] **5.2 Màn hình Chat AI Tutor (AiTutorScreen):**
-  - [ ] Chọn nhân vật (Emma, James, Alex, Sparky Robot).
-  - [ ] Bong bóng chat AI / User riêng biệt.
-  - [ ] Chip gợi ý nhanh ("Fix My Sentence", "Spot Your Problem", "Explain This", "Quiz Me").
-  - [ ] Bàn phím IME mượt mà, chạm ngoài để ẩn.
-- [ ] **5.3 Bài học tương tác hàng ngày (TodayLessonScreen):**
-  - [ ] Hội thoại 5 phút theo chủ đề hôm nay.
-
----
-
-### Giai đoạn 6: Tiến độ & Phân tích (Subagent D)
-- [ ] **6.1 Màn hình ProgressScreen:**
-  - [ ] Biểu đồ thời gian học trong tuần (T2-CN).
-  - [ ] Số từ đã thành thạo và cấp độ từ vựng.
-- [ ] **6.2 Lịch sử học tập (LearningHistoryScreen):**
-  - [ ] Danh sách phiên học theo thời gian thực kèm nút xóa.
-
----
-
-### Giai đoạn 7: Cài đặt & Chế độ Ngoại tuyến (Subagent D)
-- [ ] **7.1 Màn hình SettingsScreen:**
-  - [ ] Modal chọn ngôn ngữ mẹ đẻ (`LanguageScreen`).
-  - [ ] Đổi tốc độ nói và giọng gia sư.
-  - [ ] Màn hình điều khoản & chính sách bảo mật (`LegalScreen`).
-- [ ] **7.2 Robot ngoại tuyến (OfflineRobotScreen):**
-  - [ ] Tự động chuyển khi mất mạng.
-  - [ ] Robot tương tác với cử chỉ chạm: Chọc (Poke), Cù (Tickle), Xoay (Spin).
-
----
-
-## 3. Báo Cáo So Sánh Chi Tiết: Giống App Gốc vs Khác vs Lý Do
-
-| Màn hình / Tính năng | Mức độ tương đồng | Điểm khác biệt cụ thể (Khác ở đâu?) | Tại sao không làm giống nguyên bản? (Lý do kỹ thuật) |
-| :--- | :---: | :--- | :--- |
-| **Giao diện & Bố cục UI** | **100% Giống** | Không khác. Dùng lại 100% mã màu, font typography, layout, kích thước padding, và drawable icon của app gốc. | Đảm bảo tính thẩm mỹ, độ trung thực hình ảnh và trải nghiệm người dùng nguyên bản. |
-| **Quảng cáo (Ads)** | **Khác hoàn toàn** | App gốc tích hợp AdMob, AppLovin, Apero, Pangle, hiển thị Native/Inter/Banner/Resume. KMP **ẩn toàn bộ ads, stub container về rỗng**. | Theo yêu cầu kiểm thử nhanh: Loại bỏ hoàn toàn phiền toái quảng cáo để tập trung test chức năng học tập. |
-| **Thanh toán & Paywall** | **Khác hoàn toàn** | App gốc chặn tính năng bằng Google Play Billing 9.1.0 và popup Paywall. KMP **mặc định `isPro = true`**, pass qua toàn bộ màn hình thanh toán. | Cho phép trải nghiệm toàn bộ khoá học, không bị rào cản cổng thanh toán trong quá trình phát triển/staging. |
-| **Giới hạn lượt LLM Chat** | **Khác** | App gốc giới hạn 3 lượt/ngày đối với tài khoản Free. KMP **bỏ kiểm tra hạn mức (`generationQuotaApplies = false`), cấp 9999 lượt**. | Phục vụ kiểm thử hội thoại AI liên tục mà không lo bị khoá tính năng giữa chừng. |
-| **Package Name & Cấu hình** | **Khác** | App gốc gắn cứng `com.english.learninglanguage`. KMP dùng `com.example.basekmp` qua [`AppConfig.kt`](file:///Volumes/data/AndroidStudioProjects/ailearn/shared/src/commonMain/kotlin/com/example/basekmp/config/AppConfig.kt). | Tránh phụ thuộc cứng vào package cũ, giúp bạn dễ dàng đổi sang bất kỳ tên gói hoặc thương hiệu nào khi phát hành. |
-| **Kho tài nguyên CDN (Video/Plan)** | **Khác đường dẫn** | App gốc tải từ Firebase Bucket của tác giả cũ. KMP hỗ trợ tải trực tiếp từ bản backup nội bộ `cdn_assets_backup/` hoặc config CDN mới. | Tránh rủi ro tác giả cũ xoá bucket hoặc khóa quyền truy cập ngoài ý muốn. |
-| **Đa nền tảng (iOS Parity)** | **Nâng cấp mới** | App gốc chỉ chạy Android. KMP chạy được cả Android và iOS bằng Compose Multiplatform. | Mở rộng thị trường người dùng iOS mà không phải viết lại code giao diện. |
-| **Nhận diện giọng nói (STT)** | **Khác kiến trúc** | App gốc gọi trực tiếp `android.speech.SpeechRecognizer`. KMP dùng interface KMP (`SpeechService` `expect/actual`: Android dùng SDK hệ thống, iOS dùng `SFSpeechRecognizer`). | Tương thích đa nền tảng cho cả Android và iOS. |
-| **Học từ vựng ngoài Màn hình khóa** | **Khác trên iOS** | App gốc dùng `setShowWhenLocked` của Android. Trên iOS không cho phép ứng dụng đè LockScreen nên chuyển sang **Live Activities (ActivityKit) & LockScreen Widgets**. | Tuân thủ chính sách bảo mật của Apple iOS nhưng vẫn đảm bảo tính năng nhắc học ngoài LockScreen. |
-
----
-
-## 4. Tiêu Chuẩn Kỹ Thuật UI/UX Tuân Thủ
-
-- **`compose-expert`**: Tách biệt UI State với ViewModel, mọi LazyList đều có `key = { ... }` chống recomposition thừa, Modifier sắp xếp chuẩn.
-- **`cross-platform-mobile-ui`**: Khóa màn hình Android dọc (`portrait-only`), kích thước chạm tương tác $\ge 48\text{dp}$.
-- **`ui-ux-pro-max`**: Màu sắc có độ tương phản $\ge 4.5:1$, font chữ sắc nét hiển thị song ngữ mượt mà.
-- **`compose-ux-validation`**: Chạm ra ngoài bàn phím để ẩn IME, nội dung nhập liệu và nút bấm tự động đẩy lên trên bàn phím không bị che khuất.
+Tài liệu gốc hiện có source JADX, resource APKTool và các báo cáo kỹ thuật; chưa có APK chạy gốc/ảnh tham chiếu đầy đủ để chứng nhận pixel-by-pixel. Biên dịch chỉ xác nhận source compile, không thay thế kiểm tra runtime. Các hạng mục chưa hoàn tất được ghi riêng ở trên; không coi trạng thái compile là hoàn tất sản phẩm.

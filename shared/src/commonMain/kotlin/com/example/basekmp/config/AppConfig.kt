@@ -21,8 +21,7 @@ object AppConfig {
     const val APP_VERSION_CODE: Int = 1
 
     /**
-     * LLM Cloud Function Proxy
-     * Direct endpoint to the high-speed serverless conversational AI proxy.
+     * LLM backend endpoint. The legacy client key/header are retained for proxy compatibility.
      */
     const val LLM_API_URL: String = "https://us-central1-llmchat-22d7a.cloudfunctions.net/generate"
     const val LLM_API_KEY_HEADER: String = "QtcY6-KEY"
@@ -38,12 +37,11 @@ object AppConfig {
     var lessonContentManifestUrl: String = "${cdnBucketUrl}plan%2Fcontent%2Fmanifest.json?alt=media"
 
     /**
-     * Testing & Bypass Flags
-     * Default set to pass all paywalls, grant unlimited AI turns, and disable ads.
+     * Release behavior. Premium and quotas are granted only by the billing/backend layers.
      */
-    const val BYPASS_ADS: Boolean = true
-    const val BYPASS_PAYWALL: Boolean = true
-    const val IS_PRO_DEFAULT: Boolean = true
-    const val BYPASS_GENERATION_QUOTA: Boolean = true
-    const val UNLIMITED_AI_SLOTS: Int = 9999
+    const val BYPASS_ADS: Boolean = false
+    const val BYPASS_PAYWALL: Boolean = false
+    const val IS_PRO_DEFAULT: Boolean = false
+    const val BYPASS_GENERATION_QUOTA: Boolean = false
+    const val UNLIMITED_AI_SLOTS: Int = 0
 }

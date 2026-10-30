@@ -1,0 +1,417 @@
+{
+ "scene": "👕",
+ "colors": [
+  "#E6EEF0",
+  "#CADBDF"
+ ],
+ "speakers": [
+  {
+   "name": "Chris",
+   "emoji": "👨",
+   "voice": "male"
+  },
+  {
+   "name": "Lily",
+   "emoji": "👩",
+   "voice": "female"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Hi. I dropped off some clothes two days ago. Are they ready?",
+   "start": 0,
+   "end": 3480,
+   "tr": {
+    "ur": "ہیلو۔ میں نے دو دن پہلے کچھ کپڑے دھلائی کے لیے دیے تھے۔ کیا وہ تیار ہو گئے؟",
+    "hi": "नमस्ते। मैंने दो दिन पहले कुछ कपड़े धुलाई के लिए दिए थे। क्या वो तैयार हो गए?",
+    "ar": "مرحبًا. تركتُ بعض الملابس هنا قبل يومين. هل أصبحت جاهزة؟",
+    "zh": "你好。我两天前送来了几件衣服，好了吗？",
+    "es": "Hola. Hace dos días dejé algo de ropa. ¿Ya está lista?",
+    "fr": "Bonjour. J'ai déposé des vêtements il y a deux jours. Ils sont prêts ?",
+    "tr": "Merhaba. İki gün önce birkaç kıyafet bırakmıştım. Hazır mı acaba?",
+    "ja": "こんにちは。2日前に服を預けたんですが、もうできていますか？",
+    "ko": "안녕하세요. 이틀 전에 옷을 맡겼는데요, 다 됐나요?",
+    "it": "Salve. Ho lasciato dei vestiti due giorni fa. Sono pronti?",
+    "de": "Hallo. Ich habe vor zwei Tagen ein paar Kleidungsstücke abgegeben. Sind sie schon fertig?",
+    "pt": "Oi. Deixei umas roupas aqui há dois dias. Já estão prontas?",
+    "ru": "Здравствуйте. Я сдал одежду два дня назад. Она уже готова?",
+    "vi": "Chào chị. Hai hôm trước tôi có gửi ít quần áo ở đây. Xong chưa ạ?",
+    "th": "สวัสดีครับ ผมเอาเสื้อผ้ามาส่งไว้เมื่อสองวันก่อน เสร็จหรือยังครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Hello. Yes, they should be ready. Do you have your receipt?",
+   "start": 3820,
+   "end": 7230,
+   "tr": {
+    "ur": "ہیلو۔ جی ہاں، وہ تیار ہو گئے ہوں گے۔ کیا آپ کے پاس رسید ہے؟",
+    "hi": "नमस्ते। हाँ, वो तैयार हो गए होंगे। क्या आपके पास रसीद है?",
+    "ar": "مرحبًا. نعم، من المفترض أن تكون جاهزة. هل معك الإيصال؟",
+    "zh": "你好。应该已经好了。你带收据了吗？",
+    "es": "Hola. Sí, ya debería estar lista. ¿Tiene el recibo?",
+    "fr": "Bonjour. Oui, ils devraient être prêts. Vous avez votre reçu ?",
+    "tr": "Merhaba. Evet, hazır olması lazım. Fişiniz yanınızda mı?",
+    "ja": "こんにちは。はい、できているはずです。レシートはお持ちですか？",
+    "ko": "안녕하세요. 네, 다 됐을 거예요. 영수증 있으세요?",
+    "it": "Salve. Sì, dovrebbero essere pronti. Ha la ricevuta?",
+    "de": "Hallo. Ja, die müssten fertig sein. Haben Sie Ihre Quittung dabei?",
+    "pt": "Oi. Sim, já devem estar prontas. Você está com o recibo?",
+    "ru": "Здравствуйте. Да, должна быть готова. У вас есть квитанция?",
+    "vi": "Chào anh. Dạ, chắc là xong rồi ạ. Anh có mang biên lai theo không ạ?",
+    "th": "สวัสดีค่ะ น่าจะเสร็จแล้วค่ะ มีใบเสร็จมาด้วยไหมคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Sure. Here it is. I also had a blue jacket.",
+   "start": 7660,
+   "end": 10620,
+   "tr": {
+    "ur": "جی ضرور۔ یہ لیجیے۔ میری ایک نیلی جیکٹ بھی تھی۔",
+    "hi": "हाँ, ज़रूर। ये लीजिए। मेरी एक नीली जैकेट भी थी।",
+    "ar": "بالتأكيد. تفضّلي. وكانت معي أيضًا سترة زرقاء.",
+    "zh": "带了，给你。我还送来了一件蓝色夹克。",
+    "es": "Claro. Aquí tiene. También dejé una chaqueta azul.",
+    "fr": "Bien sûr. Le voici. J'avais aussi une veste bleue.",
+    "tr": "Tabii. Buyurun. Bir de mavi bir ceketim vardı.",
+    "ja": "はい、これです。それと、青いジャケットも出していたんですが。",
+    "ko": "네, 여기 있어요. 파란색 재킷도 하나 있었어요.",
+    "it": "Certo. Eccola. Avevo lasciato anche una giacca blu.",
+    "de": "Klar. Hier, bitte. Ich hatte auch noch eine blaue Jacke.",
+    "pt": "Claro. Aqui está. Também deixei uma jaqueta azul.",
+    "ru": "Конечно. Вот, пожалуйста. Ещё у меня была синяя куртка.",
+    "vi": "Vâng, đây ạ. Tôi còn gửi một chiếc áo khoác màu xanh dương nữa.",
+    "th": "ได้ครับ นี่ครับ ผมมีแจ็กเก็ตสีน้ำเงินอีกตัวด้วยครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Yes, I found it. Everything is cleaned and neatly folded.",
+   "start": 11080,
+   "end": 14780,
+   "tr": {
+    "ur": "جی ہاں، مجھے مل گئی۔ سارے کپڑے صاف ہو گئے ہیں اور سلیقے سے تہہ کیے ہوئے ہیں۔",
+    "hi": "हाँ, मुझे मिल गई। सारे कपड़े साफ़ हो गए हैं और अच्छे से तह किए हुए हैं।",
+    "ar": "نعم، وجدتُها. كل شيء نظيف ومطويّ بعناية.",
+    "zh": "对，找到了。衣服都洗干净了，也叠得整整齐齐。",
+    "es": "Sí, ya la encontré. Todo está limpio y bien doblado.",
+    "fr": "Oui, je l'ai trouvée. Tout est nettoyé et bien plié.",
+    "tr": "Evet, buldum. Hepsi temizlendi ve düzgünce katlandı.",
+    "ja": "はい、ありました。全部きれいになって、きちんとたたんでありますよ。",
+    "ko": "네, 찾았어요. 전부 세탁해서 깔끔하게 개어 놨어요.",
+    "it": "Sì, l'ho trovata. È tutto pulito e piegato con cura.",
+    "de": "Ja, ich hab sie gefunden. Alles ist gereinigt und ordentlich gefaltet.",
+    "pt": "Sim, achei. Está tudo limpo e bem dobrado.",
+    "ru": "Да, нашла. Всё почищено и аккуратно сложено.",
+    "vi": "Dạ, tìm thấy rồi ạ. Tất cả đều đã giặt sạch và gấp gọn gàng rồi.",
+    "th": "ค่ะ เจอแล้วค่ะ ทุกตัวซักสะอาดแล้ว และพับไว้เรียบร้อยค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "That's great. How much do I need to pay?",
+   "start": 15090,
+   "end": 18290,
+   "tr": {
+    "ur": "بہت اچھا۔ مجھے کتنے پیسے دینے ہیں؟",
+    "hi": "बहुत बढ़िया। मुझे कितने पैसे देने हैं?",
+    "ar": "رائع. كم عليّ أن أدفع؟",
+    "zh": "太好了。我要付多少钱？",
+    "es": "Genial. ¿Cuánto tengo que pagar?",
+    "fr": "Super. Je dois payer combien ?",
+    "tr": "Harika. Ne kadar ödemem gerekiyor?",
+    "ja": "よかった。いくら払えばいいですか？",
+    "ko": "잘됐네요. 얼마 내면 돼요?",
+    "it": "Ottimo. Quanto devo pagare?",
+    "de": "Super. Wie viel muss ich bezahlen?",
+    "pt": "Que ótimo. Quanto eu tenho que pagar?",
+    "ru": "Отлично. Сколько мне нужно заплатить?",
+    "vi": "Tuyệt quá. Tôi phải trả bao nhiêu tiền ạ?",
+    "th": "ดีเลยครับ ต้องจ่ายเท่าไหร่ครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "It's $12 altogether, please.",
+   "start": 18990,
+   "end": 21810,
+   "tr": {
+    "ur": "کل ملا کر 12 ڈالر ہوئے۔",
+    "hi": "कुल मिलाकर 12 डॉलर हुए।",
+    "ar": "المجموع 12 دولارًا من فضلك.",
+    "zh": "一共12美元。",
+    "es": "Son 12 dólares en total, por favor.",
+    "fr": "Ça fait 12 dollars en tout, s'il vous plaît.",
+    "tr": "Hepsi toplam 12 dolar, lütfen.",
+    "ja": "全部で12ドルになります。",
+    "ko": "전부 합쳐서 12달러입니다.",
+    "it": "Sono 12 dollari in tutto, grazie.",
+    "de": "Das macht insgesamt 12 Dollar, bitte.",
+    "pt": "São 12 dólares no total, por favor.",
+    "ru": "Всего 12 долларов, пожалуйста.",
+    "vi": "Tổng cộng là 12 đô la ạ.",
+    "th": "ทั้งหมด 12 ดอลลาร์ค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Here you go. Thanks for taking care of everything.",
+   "start": 22450,
+   "end": 26240,
+   "tr": {
+    "ur": "یہ لیجیے۔ ہر چیز کا اتنا خیال رکھنے کا شکریہ۔",
+    "hi": "ये लीजिए। सब कुछ इतनी अच्छी तरह संभालने के लिए धन्यवाद।",
+    "ar": "تفضّلي. شكرًا لاهتمامكِ بكل شيء.",
+    "zh": "给你。谢谢你把一切都打理得这么好。",
+    "es": "Aquí tiene. Gracias por encargarse de todo.",
+    "fr": "Tenez. Merci de vous être occupée de tout.",
+    "tr": "Buyurun. Her şeyle ilgilendiğiniz için teşekkürler.",
+    "ja": "はい、どうぞ。いろいろ対応していただいて、ありがとうございました。",
+    "ko": "여기요. 다 신경 써 주셔서 감사해요.",
+    "it": "Ecco a lei. Grazie per essersi occupata di tutto.",
+    "de": "Bitte schön. Danke, dass Sie sich um alles gekümmert haben.",
+    "pt": "Aqui está. Obrigado por cuidar de tudo.",
+    "ru": "Вот, держите. Спасибо, что обо всём позаботились.",
+    "vi": "Đây ạ. Cảm ơn chị đã lo liệu mọi thứ chu đáo.",
+    "th": "นี่ครับ ขอบคุณที่ช่วยดูแลทุกอย่างนะครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "You're welcome. Have a wonderful day.",
+   "start": 26780,
+   "end": 30080,
+   "tr": {
+    "ur": "کوئی بات نہیں۔ آپ کا دن شاندار گزرے۔",
+    "hi": "कोई बात नहीं। आपका दिन शानदार रहे।",
+    "ar": "على الرحب والسعة. أتمنى لك يومًا رائعًا.",
+    "zh": "不客气，祝你有美好的一天！",
+    "es": "De nada. Que tenga un día estupendo.",
+    "fr": "Je vous en prie. Passez une merveilleuse journée.",
+    "tr": "Rica ederim. Harika bir gün geçirin.",
+    "ja": "どういたしまして。素敵な一日をお過ごしください。",
+    "ko": "천만에요. 멋진 하루 보내세요.",
+    "it": "Prego. Le auguro una splendida giornata.",
+    "de": "Gern geschehen. Einen wunderschönen Tag noch!",
+    "pt": "De nada. Tenha um ótimo dia.",
+    "ru": "Пожалуйста. Замечательного вам дня!",
+    "vi": "Không có gì ạ. Chúc anh một ngày tốt lành.",
+    "th": "ยินดีค่ะ ขอให้เป็นวันที่แสนดีนะคะ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "dropped off",
+   "meaning": "left something somewhere for a service",
+   "tr": {
+    "ur": "دے جانا",
+    "hi": "दे जाना",
+    "ar": "ترك",
+    "zh": "送来",
+    "es": "dejar",
+    "fr": "déposer",
+    "tr": "bırakmak",
+    "ja": "預ける",
+    "ko": "맡기다",
+    "it": "lasciare",
+    "de": "abgeben",
+    "pt": "deixar",
+    "ru": "сдать",
+    "vi": "gửi",
+    "th": "เอามาส่ง"
+   }
+  },
+  {
+   "word": "clothes",
+   "meaning": "things you wear on your body",
+   "tr": {
+    "ur": "کپڑے",
+    "hi": "कपड़े",
+    "ar": "ملابس",
+    "zh": "衣服",
+    "es": "ropa",
+    "fr": "vêtements",
+    "tr": "kıyafet",
+    "ja": "服",
+    "ko": "옷",
+    "it": "vestiti",
+    "de": "die Kleidung",
+    "pt": "roupas",
+    "ru": "одежда",
+    "vi": "quần áo",
+    "th": "เสื้อผ้า"
+   }
+  },
+  {
+   "word": "ready",
+   "meaning": "finished and available to use",
+   "tr": {
+    "ur": "تیار",
+    "hi": "तैयार",
+    "ar": "جاهز",
+    "zh": "好了",
+    "es": "listo",
+    "fr": "prêt",
+    "tr": "hazır",
+    "ja": "できている",
+    "ko": "다 되다",
+    "it": "pronto",
+    "de": "fertig",
+    "pt": "pronto",
+    "ru": "готовый",
+    "vi": "xong",
+    "th": "เสร็จ"
+   }
+  },
+  {
+   "word": "receipt",
+   "meaning": "paper that proves you paid or left something",
+   "tr": {
+    "ur": "رسید",
+    "hi": "रसीद",
+    "ar": "إيصال",
+    "zh": "收据",
+    "es": "recibo",
+    "fr": "reçu",
+    "tr": "fiş",
+    "ja": "レシート",
+    "ko": "영수증",
+    "it": "ricevuta",
+    "de": "die Quittung",
+    "pt": "recibo",
+    "ru": "квитанция",
+    "vi": "biên lai",
+    "th": "ใบเสร็จ"
+   }
+  },
+  {
+   "word": "jacket",
+   "meaning": "a short coat",
+   "tr": {
+    "ur": "جیکٹ",
+    "hi": "जैकेट",
+    "ar": "سترة",
+    "zh": "夹克",
+    "es": "chaqueta",
+    "fr": "veste",
+    "tr": "ceket",
+    "ja": "ジャケット",
+    "ko": "재킷",
+    "it": "giacca",
+    "de": "die Jacke",
+    "pt": "jaqueta",
+    "ru": "куртка",
+    "vi": "áo khoác",
+    "th": "แจ็กเก็ต"
+   }
+  },
+  {
+   "word": "neatly folded",
+   "meaning": "folded carefully and tidily",
+   "tr": {
+    "ur": "سلیقے سے تہہ کیا ہوا",
+    "hi": "अच्छे से तह किया हुआ",
+    "ar": "مطويّ بعناية",
+    "zh": "叠得整整齐齐",
+    "es": "bien doblado",
+    "fr": "bien plié",
+    "tr": "düzgünce katlanmış",
+    "ja": "きちんとたたんだ",
+    "ko": "깔끔하게 갠",
+    "it": "piegato con cura",
+    "de": "ordentlich gefaltet",
+    "pt": "bem dobrado",
+    "ru": "аккуратно сложенный",
+    "vi": "gấp gọn gàng",
+    "th": "พับเรียบร้อย"
+   }
+  },
+  {
+   "word": "pay",
+   "meaning": "give money for something",
+   "tr": {
+    "ur": "پیسے دینا",
+    "hi": "पैसे देना",
+    "ar": "دفع",
+    "zh": "付钱",
+    "es": "pagar",
+    "fr": "payer",
+    "tr": "ödemek",
+    "ja": "払う",
+    "ko": "내다",
+    "it": "pagare",
+    "de": "bezahlen",
+    "pt": "pagar",
+    "ru": "заплатить",
+    "vi": "trả tiền",
+    "th": "จ่าย"
+   }
+  },
+  {
+   "word": "altogether",
+   "meaning": "in total, counting everything",
+   "tr": {
+    "ur": "کل ملا کر",
+    "hi": "कुल मिलाकर",
+    "ar": "المجموع",
+    "zh": "一共",
+    "es": "en total",
+    "fr": "en tout",
+    "tr": "toplam",
+    "ja": "全部で",
+    "ko": "전부 합쳐서",
+    "it": "in tutto",
+    "de": "insgesamt",
+    "pt": "no total",
+    "ru": "всего",
+    "vi": "tổng cộng",
+    "th": "ทั้งหมด"
+   }
+  },
+  {
+   "word": "taking care of",
+   "meaning": "dealing with something for someone",
+   "tr": {
+    "ur": "خیال رکھنا",
+    "hi": "संभालना",
+    "ar": "الاهتمام بـ",
+    "zh": "打理",
+    "es": "encargarse de",
+    "fr": "s'occuper de",
+    "tr": "ilgilenmek",
+    "ja": "対応する",
+    "ko": "신경 쓰다",
+    "it": "occuparsi di",
+    "de": "sich kümmern um",
+    "pt": "cuidar de",
+    "ru": "позаботиться о",
+    "vi": "lo liệu",
+    "th": "ดูแล"
+   }
+  },
+  {
+   "word": "wonderful",
+   "meaning": "very good; great",
+   "tr": {
+    "ur": "شاندار",
+    "hi": "शानदार",
+    "ar": "رائع",
+    "zh": "美好",
+    "es": "estupendo",
+    "fr": "merveilleux",
+    "tr": "harika",
+    "ja": "素敵な",
+    "ko": "멋진",
+    "it": "splendido",
+    "de": "wunderschön",
+    "pt": "ótimo",
+    "ru": "замечательный",
+    "vi": "tốt lành",
+    "th": "แสนดี"
+   }
+  }
+ ]
+}

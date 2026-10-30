@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fo_onboarding_button_next">ถัดไป</string>
+    <string name="fo_onboarding_button_start">เริ่มต้นใช้งาน</string>
+    <string name="fo_onboarding_description_1">แชตกับติวเตอร์ AI ส่วนตัวของคุณ และเรียนภาษาใดก็ได้อย่างเป็นธรรมชาติ ทุกเวลา</string>
+    <string name="fo_onboarding_description_2">ฝึกการออกเสียงและรับคำแนะนำทันทีในทุกคำ</string>
+    <string name="fo_onboarding_description_3">สร้างสถิติการเรียนต่อเนื่องรายวัน และติดตามความก้าวหน้าของคุณในทุกขั้นตอน</string>
+    <string name="fo_onboarding_title_1">เรียนรู้กับ AI</string>
+    <string name="fo_onboarding_title_2">พูดได้อย่างมั่นใจ</string>
+    <string name="fo_onboarding_title_3">บรรลุเป้าหมายของคุณ</string>
+    <string name="fo_survey_continue">เริ่มเรียน</string>
+    <string name="fo_survey_skip">ข้าม</string>
+    <string name="fo_survey_subtitle">เลือกหนึ่งภาษาเพื่อเริ่มเรียน</string>
+    <string name="fo_survey_title">คุณอยากเรียนภาษาอะไร?</string>
+    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_describe_load_ad">(การดำเนินการนี้อาจมีโฆษณา)</string>
+</resources>

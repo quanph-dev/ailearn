@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fo_onboarding_button_next">下一步</string>
+    <string name="fo_onboarding_button_start">开始使用</string>
+    <string name="fo_onboarding_description_1">与你的专属AI导师聊天，随时随地自然地学习任何语言。</string>
+    <string name="fo_onboarding_description_2">练习发音，每个单词都能获得即时反馈。</string>
+    <string name="fo_onboarding_description_3">保持每日连续学习，随时追踪你每一步的进步。</string>
+    <string name="fo_onboarding_title_1">与AI一起学习</string>
+    <string name="fo_onboarding_title_2">自信开口说</string>
+    <string name="fo_onboarding_title_3">实现你的目标</string>
+    <string name="fo_survey_continue">开始学习</string>
+    <string name="fo_survey_skip">跳过</string>
+    <string name="fo_survey_subtitle">选择一种开始学习</string>
+    <string name="fo_survey_title">你想学习哪种语言？</string>
+    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_describe_load_ad">(此操作可能包含广告)</string>
+</resources>

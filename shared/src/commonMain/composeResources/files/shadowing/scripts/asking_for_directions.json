@@ -1,0 +1,463 @@
+{
+ "scene": "🚉",
+ "colors": [
+  "#DDE3EC",
+  "#C2CCDA"
+ ],
+ "speakers": [
+  {
+   "name": "Lucy",
+   "emoji": "👩",
+   "voice": "female"
+  },
+  {
+   "name": "Mark",
+   "emoji": "👨",
+   "voice": "male"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Excuse me. Could you tell me which platform I need for the train to Brighton?",
+   "start": 0,
+   "end": 4190,
+   "tr": {
+    "ur": "معاف کیجیے گا۔ کیا آپ مجھے بتا سکتے ہیں کہ برائٹن جانے والی ٹرین کے لیے مجھے کون سا پلیٹ فارم چاہیے؟",
+    "hi": "माफ़ कीजिए। क्या आप बता सकते हैं कि ब्राइटन जाने वाली ट्रेन के लिए मुझे कौन-सा प्लेटफ़ॉर्म चाहिए?",
+    "ar": "المعذرة. هل يمكنك أن تخبرني أي رصيف أحتاج للقطار المتجه إلى برايتون؟",
+    "zh": "打扰一下，请问去布莱顿的火车应该在哪个站台上车？",
+    "es": "Disculpe. ¿Podría decirme qué andén necesito para el tren a Brighton?",
+    "fr": "Excusez-moi. Pourriez-vous me dire quel quai je dois prendre pour le train de Brighton ?",
+    "tr": "Affedersiniz. Brighton treni için hangi perona gitmem gerektiğini söyleyebilir misiniz?",
+    "ja": "すみません。ブライトン行きの電車は何番ホームか教えていただけますか？",
+    "ko": "실례합니다. 브라이턴행 기차는 몇 번 승강장인지 알려 주시겠어요?",
+    "it": "Mi scusi. Mi sa dire da quale binario parte il treno per Brighton?",
+    "de": "Entschuldigung. Könnten Sie mir sagen, von welchem Gleis der Zug nach Brighton fährt?",
+    "pt": "Com licença. Você pode me dizer qual é a plataforma do trem para Brighton?",
+    "ru": "Извините. Не подскажете, с какой платформы идёт поезд до Брайтона?",
+    "vi": "Xin lỗi anh. Cho tôi hỏi tàu đi Brighton khởi hành ở sân ga nào ạ?",
+    "th": "ขอโทษนะคะ รถไฟไปไบรตันต้องขึ้นที่ชานชาลาไหนคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Of course. The Brighton train leaves from Platform 7.",
+   "start": 4760,
+   "end": 7490,
+   "tr": {
+    "ur": "ضرور۔ برائٹن کی ٹرین پلیٹ فارم 7 سے روانہ ہوتی ہے۔",
+    "hi": "ज़रूर। ब्राइटन की ट्रेन प्लेटफ़ॉर्म 7 से चलती है।",
+    "ar": "بالتأكيد. يغادر قطار برايتون من الرصيف 7.",
+    "zh": "当然。去布莱顿的火车从7号站台发车。",
+    "es": "Por supuesto. El tren a Brighton sale del andén 7.",
+    "fr": "Bien sûr. Le train de Brighton part du quai 7.",
+    "tr": "Tabii. Brighton treni 7. perondan kalkıyor.",
+    "ja": "もちろんです。ブライトン行きは7番ホームから出ますよ。",
+    "ko": "물론이죠. 브라이턴행 기차는 7번 승강장에서 출발해요.",
+    "it": "Certo. Il treno per Brighton parte dal binario 7.",
+    "de": "Natürlich. Der Zug nach Brighton fährt von Gleis 7.",
+    "pt": "Claro. O trem para Brighton sai da plataforma 7.",
+    "ru": "Конечно. Поезд до Брайтона отправляется с платформы 7.",
+    "vi": "Dạ được. Tàu đi Brighton khởi hành ở sân ga số 7.",
+    "th": "ได้ครับ รถไฟไปไบรตันออกจากชานชาลาที่ 7 ครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Thank you. Do I have enough time? My ticket says the train leaves at 2:30.",
+   "start": 7730,
+   "end": 11080,
+   "tr": {
+    "ur": "شکریہ۔ کیا میرے پاس کافی وقت ہے؟ میرے ٹکٹ پر لکھا ہے کہ ٹرین 2:30 بجے روانہ ہوتی ہے۔",
+    "hi": "धन्यवाद। क्या मेरे पास काफ़ी समय है? मेरे टिकट पर लिखा है कि ट्रेन 2:30 बजे चलती है।",
+    "ar": "شكرًا لك. هل لدي وقت كافٍ؟ تذكرتي تقول إن القطار يغادر في الساعة 2:30.",
+    "zh": "谢谢。我的时间够吗？我的车票上写着火车2点30分开。",
+    "es": "Gracias. ¿Tengo tiempo suficiente? Mi billete dice que el tren sale a las 2:30.",
+    "fr": "Merci. Ai-je assez de temps ? Mon billet indique que le train part à 2 h 30.",
+    "tr": "Teşekkürler. Yeterli zamanım var mı? Biletimde trenin 2:30'da kalktığı yazıyor.",
+    "ja": "ありがとうございます。時間は間に合いますか？切符には2時半発と書いてあるんですが。",
+    "ko": "감사합니다. 시간이 충분할까요? 표에는 기차가 2시 반에 출발한다고 되어 있어요.",
+    "it": "Grazie. Ho abbastanza tempo? Sul biglietto c'è scritto che il treno parte alle due e mezza.",
+    "de": "Danke. Habe ich noch genug Zeit? Laut meiner Fahrkarte fährt der Zug um halb drei.",
+    "pt": "Obrigada. Será que dá tempo? Minha passagem diz que o trem sai às duas e meia.",
+    "ru": "Спасибо. Я успеваю? В билете написано, что поезд отправляется в 2:30.",
+    "vi": "Cảm ơn anh. Tôi có kịp giờ không? Vé của tôi ghi tàu chạy lúc 2:30.",
+    "th": "ขอบคุณค่ะ ยังทันไหมคะ ตั๋วเขียนว่ารถไฟออกตอน 2:30 ค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Yes. You have about 15 minutes. It should be plenty of time.",
+   "start": 11250,
+   "end": 13430,
+   "tr": {
+    "ur": "جی ہاں۔ آپ کے پاس تقریباً 15 منٹ ہیں۔ وقت کافی سے بھی زیادہ ہونا چاہیے۔",
+    "hi": "हाँ। आपके पास लगभग 15 मिनट हैं। समय काफ़ी से भी ज़्यादा होना चाहिए।",
+    "ar": "نعم. لديك حوالي 15 دقيقة. من المفترض أن يكون ذلك وقتًا أكثر من كافٍ.",
+    "zh": "有的。你还有大约15分钟，时间应该绰绰有余。",
+    "es": "Sí. Tiene unos 15 minutos. Debería ser tiempo de sobra.",
+    "fr": "Oui. Vous avez environ 15 minutes. Ce devrait être largement suffisant.",
+    "tr": "Evet. Yaklaşık 15 dakikanız var. Bu fazlasıyla yeterli olmalı.",
+    "ja": "はい。15分ほどあるので、時間はたっぷりありますよ。",
+    "ko": "네. 15분 정도 있으니까 시간은 넉넉할 거예요.",
+    "it": "Sì. Ha circa 15 minuti. Dovrebbe avere tempo in abbondanza.",
+    "de": "Ja. Sie haben noch etwa 15 Minuten. Das ist reichlich Zeit.",
+    "pt": "Sim. Você tem uns 15 minutos. Dá tempo de sobra.",
+    "ru": "Да. У вас около 15 минут. Времени должно хватить с запасом.",
+    "vi": "Dạ kịp. Chị còn khoảng 15 phút nữa, thế là dư thời gian rồi.",
+    "th": "ทันครับ ยังมีเวลาอีกประมาณ 15 นาที น่าจะเหลือเฟือครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Great. How do I get to platform 7 from here?",
+   "start": 13430,
+   "end": 15035,
+   "tr": {
+    "ur": "بہت اچھا۔ یہاں سے پلیٹ فارم 7 تک کیسے پہنچوں؟",
+    "hi": "बढ़िया। यहाँ से प्लेटफ़ॉर्म 7 तक कैसे पहुँचूँ?",
+    "ar": "رائع. كيف أصل إلى الرصيف 7 من هنا؟",
+    "zh": "太好了。从这里怎么去7号站台？",
+    "es": "Genial. ¿Cómo llego al andén 7 desde aquí?",
+    "fr": "Super. Comment puis-je me rendre au quai 7 d'ici ?",
+    "tr": "Harika. Buradan 7. perona nasıl gidebilirim?",
+    "ja": "助かります。ここから7番ホームへはどう行けばいいですか？",
+    "ko": "다행이네요. 여기서 7번 승강장까지 어떻게 가요?",
+    "it": "Ottimo. Come arrivo al binario 7 da qui?",
+    "de": "Super. Wie komme ich von hier zu Gleis 7?",
+    "pt": "Ótimo. Como eu chego na plataforma 7 daqui?",
+    "ru": "Отлично. А как отсюда пройти к платформе 7?",
+    "vi": "Tốt quá. Từ đây đến sân ga số 7 thì đi thế nào ạ?",
+    "th": "ดีเลยค่ะ จากตรงนี้ไปชานชาลาที่ 7 ยังไงคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Go straight ahead. Take the escalator upstairs and then turn left.",
+   "start": 15035,
+   "end": 19130,
+   "tr": {
+    "ur": "سیدھے آگے جائیں۔ ایسکلیٹر سے اوپر جائیں اور پھر بائیں مڑ جائیں۔",
+    "hi": "सीधे आगे जाइए। एस्केलेटर से ऊपर जाइए और फिर बाएँ मुड़ जाइए।",
+    "ar": "اذهبي مباشرة إلى الأمام. اصعدي بالسلم الكهربائي إلى الأعلى ثم انعطفي يسارًا.",
+    "zh": "一直往前走，坐扶梯上楼，然后向左转。",
+    "es": "Siga recto. Suba por la escalera mecánica y luego gire a la izquierda.",
+    "fr": "Allez tout droit. Prenez l'escalator pour monter, puis tournez à gauche.",
+    "tr": "Düz ilerleyin. Yürüyen merdivenle yukarı çıkın, sonra sola dönün.",
+    "ja": "まっすぐ進んで、エスカレーターで上の階に上がったら、左に曲がってください。",
+    "ko": "쭉 직진하세요. 에스컬레이터를 타고 위층으로 올라가신 다음 왼쪽으로 도세요.",
+    "it": "Vada sempre dritto. Prenda la scala mobile, salga di sopra e poi giri a sinistra.",
+    "de": "Gehen Sie geradeaus. Nehmen Sie die Rolltreppe nach oben und biegen Sie dann links ab.",
+    "pt": "Siga em frente. Suba pela escada rolante e depois vire à esquerda.",
+    "ru": "Идите прямо. Поднимитесь на эскалаторе наверх, а потом поверните налево.",
+    "vi": "Chị cứ đi thẳng. Đi thang cuốn lên tầng trên rồi rẽ trái.",
+    "th": "เดินตรงไปครับ ขึ้นบันไดเลื่อนไปชั้นบนแล้วเลี้ยวซ้ายครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Is it far from here? I have a fairly heavy bag with me.",
+   "start": 19390,
+   "end": 22450,
+   "tr": {
+    "ur": "کیا یہ یہاں سے دور ہے؟ میرے پاس کافی بھاری بیگ ہے۔",
+    "hi": "क्या यह यहाँ से दूर है? मेरे पास काफ़ी भारी बैग है।",
+    "ar": "هل هو بعيد من هنا؟ معي حقيبة ثقيلة نوعًا ما.",
+    "zh": "离这里远吗？我带着一个相当重的包。",
+    "es": "¿Queda lejos de aquí? Llevo una bolsa bastante pesada.",
+    "fr": "Est-ce loin d'ici ? J'ai un sac plutôt lourd avec moi.",
+    "tr": "Buradan uzak mı? Yanımda oldukça ağır bir çanta var.",
+    "ja": "ここから遠いですか？けっこう重いかばんを持っているので。",
+    "ko": "여기서 멀어요? 가방이 꽤 무거워서요.",
+    "it": "È lontano da qui? Ho con me una borsa piuttosto pesante.",
+    "de": "Ist es weit von hier? Ich habe eine ziemlich schwere Tasche dabei.",
+    "pt": "É longe daqui? Estou com uma mala bastante pesada.",
+    "ru": "Это далеко отсюда? У меня с собой довольно тяжёлая сумка.",
+    "vi": "Có xa đây không ạ? Tôi đang mang một cái túi khá nặng.",
+    "th": "ไกลจากตรงนี้ไหมคะ ฉันถือกระเป๋าค่อนข้างหนักมาด้วยค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Not at all. It should only take about three minutes.",
+   "start": 22990,
+   "end": 25330,
+   "tr": {
+    "ur": "بالکل نہیں۔ اس میں صرف تقریباً تین منٹ لگنے چاہئیں۔",
+    "hi": "बिल्कुल नहीं। इसमें सिर्फ़ लगभग तीन मिनट लगने चाहिए।",
+    "ar": "أبدًا. من المفترض ألا يستغرق الأمر أكثر من ثلاث دقائق تقريبًا.",
+    "zh": "一点也不远，大约只需要三分钟。",
+    "es": "Para nada. Solo debería llevarle unos tres minutos.",
+    "fr": "Pas du tout. Cela ne devrait prendre qu'environ trois minutes.",
+    "tr": "Hiç de değil. Yalnızca yaklaşık üç dakika sürmesi gerekir.",
+    "ja": "いえ、全然。3分くらいで着きますよ。",
+    "ko": "아니요, 전혀 안 멀어요. 3분 정도면 도착할 거예요.",
+    "it": "Per niente. Ci vorranno solo tre minuti circa.",
+    "de": "Überhaupt nicht. Das dauert nur etwa drei Minuten.",
+    "pt": "Que nada. Deve levar só uns três minutos.",
+    "ru": "Совсем нет. Идти всего минуты три.",
+    "vi": "Không xa đâu ạ. Chỉ mất khoảng ba phút thôi.",
+    "th": "ไม่ไกลเลยครับ ใช้เวลาแค่ประมาณสามนาทีครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Perfect. Thank you so much for your help.",
+   "start": 25680,
+   "end": 27590,
+   "tr": {
+    "ur": "بہترین۔ آپ کی مدد کا بہت بہت شکریہ۔",
+    "hi": "बहुत बढ़िया। आपकी मदद के लिए बहुत-बहुत धन्यवाद।",
+    "ar": "ممتاز. شكرًا جزيلًا على مساعدتك.",
+    "zh": "太好了，非常感谢你的帮助。",
+    "es": "Perfecto. Muchas gracias por su ayuda.",
+    "fr": "Parfait. Merci beaucoup pour votre aide.",
+    "tr": "Mükemmel. Yardımınız için çok teşekkür ederim.",
+    "ja": "よかったです。助けていただいて、本当にありがとうございました。",
+    "ko": "잘됐네요. 도와주셔서 정말 감사합니다.",
+    "it": "Perfetto. Grazie mille per l'aiuto.",
+    "de": "Perfekt. Vielen Dank für Ihre Hilfe.",
+    "pt": "Perfeito. Muito obrigada pela ajuda.",
+    "ru": "Прекрасно. Большое спасибо за помощь.",
+    "vi": "Tuyệt quá. Cảm ơn anh rất nhiều vì đã giúp đỡ.",
+    "th": "เยี่ยมเลยค่ะ ขอบคุณมากที่ช่วยนะคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "You're welcome. Have a safe journey.",
+   "start": 27760,
+   "end": 30080,
+   "tr": {
+    "ur": "کوئی بات نہیں۔ آپ کا سفر محفوظ رہے۔",
+    "hi": "कोई बात नहीं। आपकी यात्रा सुरक्षित रहे।",
+    "ar": "على الرحب والسعة. أتمنى لك رحلة آمنة.",
+    "zh": "不客气，祝你一路平安。",
+    "es": "De nada. Que tenga un buen viaje.",
+    "fr": "Je vous en prie. Bon voyage.",
+    "tr": "Rica ederim. İyi yolculuklar.",
+    "ja": "どういたしまして。どうぞお気をつけて。",
+    "ko": "천만에요. 조심히 가세요.",
+    "it": "Prego. Buon viaggio!",
+    "de": "Gern geschehen. Gute Reise!",
+    "pt": "De nada. Boa viagem.",
+    "ru": "Не за что. Счастливого пути!",
+    "vi": "Không có gì ạ. Chúc chị đi đường bình an.",
+    "th": "ยินดีครับ เดินทางปลอดภัยนะครับ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "platform",
+   "meaning": "where passengers wait for trains",
+   "tr": {
+    "ur": "پلیٹ فارم",
+    "hi": "प्लेटफ़ॉर्म",
+    "ar": "رصيف",
+    "zh": "站台",
+    "es": "andén",
+    "fr": "quai",
+    "tr": "peron",
+    "ja": "ホーム",
+    "ko": "승강장",
+    "it": "binario",
+    "de": "das Gleis",
+    "pt": "plataforma",
+    "ru": "платформа",
+    "vi": "sân ga",
+    "th": "ชานชาลา"
+   }
+  },
+  {
+   "word": "ticket",
+   "meaning": "paper that lets you travel",
+   "tr": {
+    "ur": "ٹکٹ",
+    "hi": "टिकट",
+    "ar": "تذكرة",
+    "zh": "车票",
+    "es": "billete",
+    "fr": "billet",
+    "tr": "bilet",
+    "ja": "切符",
+    "ko": "표",
+    "it": "biglietto",
+    "de": "die Fahrkarte",
+    "pt": "passagem",
+    "ru": "билет",
+    "vi": "vé",
+    "th": "ตั๋ว"
+   }
+  },
+  {
+   "word": "escalator",
+   "meaning": "moving stairs that carry people",
+   "tr": {
+    "ur": "ایسکلیٹر",
+    "hi": "एस्केलेटर",
+    "ar": "سلم كهربائي",
+    "zh": "自动扶梯",
+    "es": "escalera mecánica",
+    "fr": "escalator",
+    "tr": "yürüyen merdiven",
+    "ja": "エスカレーター",
+    "ko": "에스컬레이터",
+    "it": "scala mobile",
+    "de": "die Rolltreppe",
+    "pt": "escada rolante",
+    "ru": "эскалатор",
+    "vi": "thang cuốn",
+    "th": "บันไดเลื่อน"
+   }
+  },
+  {
+   "word": "upstairs",
+   "meaning": "on or to a higher floor",
+   "tr": {
+    "ur": "اوپر کی منزل",
+    "hi": "ऊपर की मंज़िल",
+    "ar": "في الطابق العلوي",
+    "zh": "楼上",
+    "es": "arriba",
+    "fr": "à l'étage",
+    "tr": "yukarı kat",
+    "ja": "上の階",
+    "ko": "위층",
+    "it": "di sopra",
+    "de": "nach oben",
+    "pt": "lá em cima",
+    "ru": "наверх",
+    "vi": "tầng trên",
+    "th": "ชั้นบน"
+   }
+  },
+  {
+   "word": "straight",
+   "meaning": "in a line, without turning",
+   "tr": {
+    "ur": "سیدھا",
+    "hi": "सीधा",
+    "ar": "مباشرة",
+    "zh": "一直",
+    "es": "recto",
+    "fr": "tout droit",
+    "tr": "düz",
+    "ja": "まっすぐ",
+    "ko": "똑바로",
+    "it": "dritto",
+    "de": "geradeaus",
+    "pt": "em frente",
+    "ru": "прямо",
+    "vi": "thẳng",
+    "th": "ตรง"
+   }
+  },
+  {
+   "word": "heavy",
+   "meaning": "weighing a lot",
+   "tr": {
+    "ur": "بھاری",
+    "hi": "भारी",
+    "ar": "ثقيل",
+    "zh": "重的",
+    "es": "pesado",
+    "fr": "lourd",
+    "tr": "ağır",
+    "ja": "重い",
+    "ko": "무겁다",
+    "it": "pesante",
+    "de": "schwer",
+    "pt": "pesado",
+    "ru": "тяжёлый",
+    "vi": "nặng",
+    "th": "หนัก"
+   }
+  },
+  {
+   "word": "plenty",
+   "meaning": "more than enough",
+   "tr": {
+    "ur": "کافی سے زیادہ",
+    "hi": "काफ़ी से ज़्यादा",
+    "ar": "أكثر من كافٍ",
+    "zh": "充足",
+    "es": "de sobra",
+    "fr": "largement",
+    "tr": "bolca",
+    "ja": "たっぷり",
+    "ko": "넉넉하다",
+    "it": "in abbondanza",
+    "de": "reichlich",
+    "pt": "de sobra",
+    "ru": "с запасом",
+    "vi": "dư dả",
+    "th": "เหลือเฟือ"
+   }
+  },
+  {
+   "word": "fairly",
+   "meaning": "quite, but not very",
+   "tr": {
+    "ur": "کافی حد تک",
+    "hi": "काफ़ी हद तक",
+    "ar": "نوعًا ما",
+    "zh": "相当",
+    "es": "bastante",
+    "fr": "plutôt",
+    "tr": "oldukça",
+    "ja": "けっこう",
+    "ko": "꽤",
+    "it": "piuttosto",
+    "de": "ziemlich",
+    "pt": "bastante",
+    "ru": "довольно",
+    "vi": "khá",
+    "th": "ค่อนข้าง"
+   }
+  },
+  {
+   "word": "journey",
+   "meaning": "a trip from one place to another",
+   "tr": {
+    "ur": "سفر",
+    "hi": "यात्रा",
+    "ar": "رحلة",
+    "zh": "旅程",
+    "es": "viaje",
+    "fr": "voyage",
+    "tr": "yolculuk",
+    "ja": "旅",
+    "ko": "여행",
+    "it": "viaggio",
+    "de": "die Reise",
+    "pt": "viagem",
+    "ru": "поездка",
+    "vi": "chuyến đi",
+    "th": "การเดินทาง"
+   }
+  },
+  {
+   "word": "enough",
+   "meaning": "as much as you need",
+   "tr": {
+    "ur": "کافی",
+    "hi": "पर्याप्त",
+    "ar": "كافٍ",
+    "zh": "足够",
+    "es": "suficiente",
+    "fr": "assez",
+    "tr": "yeterli",
+    "ja": "十分",
+    "ko": "충분하다",
+    "it": "abbastanza",
+    "de": "genug",
+    "pt": "suficiente",
+    "ru": "достаточно",
+    "vi": "đủ",
+    "th": "พอ"
+   }
+  }
+ ]
+}

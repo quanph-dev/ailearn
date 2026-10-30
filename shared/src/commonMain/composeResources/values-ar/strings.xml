@@ -23,4 +23,19 @@
     <string name="ui_are_you_sure_you_want_to_exit_the_app_now">هل أنت متأكد أنك تريد الخروج من التطبيق الآن؟</string>
     <string name="ui_no">لا</string>
     <string name="ui_yes_exit">نعم، اخرج</string>
+    <string name="fo_onboarding_button_next">التالي</string>
+    <string name="fo_onboarding_button_start">ابدأ الآن</string>
+    <string name="fo_onboarding_description_1">تحدّث مع معلّمك الشخصي بالذكاء الاصطناعي وتعلّم أي لغة بشكل طبيعي في أي وقت.</string>
+    <string name="fo_onboarding_description_2">تدرّب على النطق واحصل على ملاحظات فورية على كل كلمة.</string>
+    <string name="fo_onboarding_description_3">حافظ على سلسلة أيامك المتتالية وتابع تقدّمك في كل خطوة.</string>
+    <string name="fo_onboarding_swipe_hint">اسحب للتالي</string>
+    <string name="fo_onboarding_title_1">تعلّم مع الذكاء الاصطناعي</string>
+    <string name="fo_onboarding_title_2">تحدّث بثقة</string>
+    <string name="fo_onboarding_title_3">حقّق أهدافك</string>
+    <string name="fo_survey_continue">ابدأ التعلم</string>
+    <string name="fo_survey_skip">تخطي</string>
+    <string name="fo_survey_subtitle">اختر لغة لتبدأ التعلم</string>
+    <string name="fo_survey_title">ما اللغة التي تريد تعلمها؟</string>
+    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_describe_load_ad">(قد يحتوي هذا الإجراء على إعلانات)</string>
 </resources>

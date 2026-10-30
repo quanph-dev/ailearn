@@ -1,0 +1,463 @@
+{
+ "scene": "🛒",
+ "colors": [
+  "#D7ECFF",
+  "#B4D8FF"
+ ],
+ "speakers": [
+  {
+   "name": "Emma",
+   "emoji": "👩",
+   "voice": "female"
+  },
+  {
+   "name": "Ryan",
+   "emoji": "👨",
+   "voice": "male"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Excuse me. Could you help me find the pasta? I've looked around, but I can't seem to find it.",
+   "start": 0,
+   "end": 4760,
+   "tr": {
+    "ur": "معاف کیجیے گا۔ کیا آپ پاستا ڈھونڈنے میں میری مدد کر سکتے ہیں؟ میں نے ہر طرف دیکھ لیا، لیکن مجھے وہ نظر نہیں آ رہا۔",
+    "hi": "माफ़ कीजिए। क्या आप पास्ता ढूँढ़ने में मेरी मदद कर सकते हैं? मैंने आसपास देख लिया, लेकिन मुझे वह मिल नहीं रहा।",
+    "ar": "المعذرة. هل يمكنك مساعدتي في العثور على المعكرونة؟ بحثت في كل مكان لكنني لا أستطيع العثور عليها.",
+    "zh": "打扰一下，你能帮我找一下意大利面吗？我到处都看了，但好像找不到。",
+    "es": "Disculpe. ¿Podría ayudarme a encontrar la pasta? He mirado por todas partes, pero no consigo encontrarla.",
+    "fr": "Excusez-moi. Pourriez-vous m'aider à trouver les pâtes ? J'ai regardé partout, mais je n'arrive pas à les trouver.",
+    "tr": "Affedersiniz. Makarnayı bulmama yardımcı olabilir misiniz? Etrafa baktım ama bulamıyorum.",
+    "ja": "すみません。パスタを探すのを手伝っていただけますか？あちこち見たんですが、見つからなくて。",
+    "ko": "실례합니다. 파스타 찾는 것 좀 도와주시겠어요? 둘러봤는데 못 찾겠어요.",
+    "it": "Mi scusi. Mi può aiutare a trovare la pasta? Ho guardato in giro, ma non riesco a trovarla.",
+    "de": "Entschuldigung. Könnten Sie mir helfen, die Nudeln zu finden? Ich habe mich schon umgesehen, aber ich finde sie einfach nicht.",
+    "pt": "Com licença. Você pode me ajudar a encontrar o macarrão? Já procurei, mas não estou achando.",
+    "ru": "Извините. Не могли бы вы помочь мне найти макароны? Я уже везде посмотрела, но никак не могу их найти.",
+    "vi": "Xin lỗi anh. Anh có thể giúp tôi tìm mì Ý không? Tôi đã tìm khắp nơi mà vẫn không thấy.",
+    "th": "ขอโทษนะคะ ช่วยหาพาสต้าให้หน่อยได้ไหมคะ ดิฉันเดินดูรอบ ๆ แล้วแต่หาไม่เจอเลยค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Of course. It's in aisle six, next to the rice and sauces.",
+   "start": 5060,
+   "end": 7880,
+   "tr": {
+    "ur": "ضرور۔ وہ راہداری نمبر چھ میں ہے، چاول اور ساسز کے پاس۔",
+    "hi": "ज़रूर। वह गलियारा नंबर छह में है, चावल और सॉस के पास।",
+    "ar": "بالتأكيد. إنها في الممر رقم ستة، بجانب الأرز والصلصات.",
+    "zh": "当然可以。在六号过道，就在大米和酱料旁边。",
+    "es": "Por supuesto. Está en el pasillo seis, junto al arroz y las salsas.",
+    "fr": "Bien sûr. C'est dans l'allée six, à côté du riz et des sauces.",
+    "tr": "Tabii. Altıncı koridorda, pirinç ve sosların yanında.",
+    "ja": "もちろんです。6番通路の、お米とソースの隣にあります。",
+    "ko": "물론이죠. 6번 통로, 쌀이랑 소스 옆에 있어요.",
+    "it": "Certo. È nella corsia sei, accanto al riso e alle salse.",
+    "de": "Natürlich. Die sind in Gang sechs, neben dem Reis und den Soßen.",
+    "pt": "Claro. Fica no corredor seis, ao lado do arroz e dos molhos.",
+    "ru": "Конечно. Они в шестом ряду, рядом с рисом и соусами.",
+    "vi": "Dạ được ạ. Mì Ý ở dãy số sáu, cạnh khu gạo và nước sốt.",
+    "th": "ได้ครับ อยู่ช่องทางเดินที่หก ข้าง ๆ ข้าวสารกับซอสครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Thanks. Do you have whole wheat pasta as well?",
+   "start": 8160,
+   "end": 10190,
+   "tr": {
+    "ur": "شکریہ۔ کیا آپ کے پاس سالم گندم (ہول وہیٹ) کا پاستا بھی ہے؟",
+    "hi": "धन्यवाद। क्या आपके पास साबुत गेहूँ का पास्ता भी है?",
+    "ar": "شكرًا. هل لديكم أيضًا معكرونة القمح الكامل؟",
+    "zh": "谢谢。你们也有全麦意大利面吗？",
+    "es": "Gracias. ¿También tienen pasta integral?",
+    "fr": "Merci. Avez-vous aussi des pâtes complètes ?",
+    "tr": "Teşekkürler. Tam buğday makarnanız da var mı?",
+    "ja": "ありがとうございます。全粒粉のパスタもありますか？",
+    "ko": "감사합니다. 통밀 파스타도 있나요?",
+    "it": "Grazie. Avete anche la pasta integrale?",
+    "de": "Danke. Haben Sie auch Vollkornnudeln?",
+    "pt": "Obrigada. Vocês também têm macarrão integral?",
+    "ru": "Спасибо. А цельнозерновые макароны у вас тоже есть?",
+    "vi": "Cảm ơn anh. Ở đây có bán cả mì Ý nguyên cám không?",
+    "th": "ขอบคุณค่ะ มีพาสต้าโฮลวีตด้วยไหมคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Yes, we do. You'll find several kinds on the top shelf.",
+   "start": 10580,
+   "end": 12950,
+   "tr": {
+    "ur": "جی ہاں، ہمارے پاس ہے۔ آپ کو سب سے اوپر والے شیلف پر کئی اقسام مل جائیں گی۔",
+    "hi": "जी हाँ, हमारे पास है। आपको सबसे ऊपर वाली शेल्फ़ पर कई किस्में मिल जाएँगी।",
+    "ar": "نعم، لدينا. ستجدين عدة أنواع على الرف العلوي.",
+    "zh": "有的。你可以在最上面一层货架上找到好几种。",
+    "es": "Sí, tenemos. Encontrará varios tipos en el estante de arriba.",
+    "fr": "Oui, nous en avons. Vous en trouverez plusieurs sortes sur l'étagère du haut.",
+    "tr": "Evet, var. En üst rafta birkaç çeşit bulacaksınız.",
+    "ja": "はい、ございます。いちばん上の棚に何種類かありますよ。",
+    "ko": "네, 있어요. 맨 위 선반에 여러 종류가 있어요.",
+    "it": "Sì, certo. Ne trova diversi tipi sullo scaffale più in alto.",
+    "de": "Ja, haben wir. Sie finden mehrere Sorten im obersten Regal.",
+    "pt": "Temos, sim. Você vai encontrar vários tipos na prateleira de cima.",
+    "ru": "Да, есть. На верхней полке несколько видов.",
+    "vi": "Dạ có ạ. Trên kệ trên cùng có mấy loại đấy ạ.",
+    "th": "มีครับ มีหลายแบบอยู่บนชั้นบนสุดครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Great. I also need some olive oil.",
+   "start": 13440,
+   "end": 15090,
+   "tr": {
+    "ur": "بہت خوب۔ مجھے کچھ زیتون کا تیل بھی چاہیے۔",
+    "hi": "बढ़िया। मुझे थोड़ा जैतून का तेल भी चाहिए।",
+    "ar": "رائع. أحتاج أيضًا إلى بعض زيت الزيتون.",
+    "zh": "太好了。我还需要一些橄榄油。",
+    "es": "Genial. También necesito un poco de aceite de oliva.",
+    "fr": "Super. J'ai aussi besoin d'huile d'olive.",
+    "tr": "Harika. Biraz da zeytinyağına ihtiyacım var.",
+    "ja": "よかったです。オリーブオイルも欲しいんですが。",
+    "ko": "좋네요. 올리브 오일도 필요해요.",
+    "it": "Ottimo. Mi serve anche dell'olio d'oliva.",
+    "de": "Super. Ich brauche auch noch Olivenöl.",
+    "pt": "Ótimo. Também preciso de azeite.",
+    "ru": "Отлично. Мне ещё нужно оливковое масло.",
+    "vi": "Tuyệt quá. Tôi cũng cần mua dầu ô liu nữa.",
+    "th": "ดีเลยค่ะ แล้วก็อยากได้น้ำมันมะกอกด้วยค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Yes. Keep walking down the same aisle and you'll see it on your right.",
+   "start": 15090,
+   "end": 18430,
+   "tr": {
+    "ur": "جی۔ اسی راہداری میں سیدھا چلتے رہیں اور وہ آپ کو اپنے دائیں ہاتھ پر نظر آ جائے گا۔",
+    "hi": "जी। इसी गलियारे में सीधे चलते रहिए और वह आपको अपनी दाईं ओर दिख जाएगा।",
+    "ar": "نعم. واصلي المشي في الممر نفسه وستجدينه على يمينك.",
+    "zh": "有的。沿着这条过道一直走，你会在右手边看到它。",
+    "es": "Sí. Siga caminando por el mismo pasillo y lo verá a su derecha.",
+    "fr": "Oui. Continuez dans la même allée et vous le verrez sur votre droite.",
+    "tr": "Evet. Aynı koridorda yürümeye devam edin, sağınızda göreceksiniz.",
+    "ja": "はい。同じ通路をそのまま進むと、右側にありますよ。",
+    "ko": "네. 같은 통로를 따라 쭉 가시면 오른쪽에 보일 거예요.",
+    "it": "Sì. Continui lungo la stessa corsia e lo vedrà sulla destra.",
+    "de": "Ja. Gehen Sie einfach im selben Gang weiter, dann sehen Sie es auf der rechten Seite.",
+    "pt": "Sim. É só seguir pelo mesmo corredor que você vai ver à sua direita.",
+    "ru": "Да. Идите дальше по этому же ряду, и вы увидите его справа.",
+    "vi": "Dạ. Chị cứ đi tiếp theo dãy này là sẽ thấy ở bên tay phải ạ.",
+    "th": "ครับ เดินตรงไปตามช่องเดิมแล้วจะเห็นอยู่ทางขวามือครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Perfect. And where can I find the fresh vegetables?",
+   "start": 18730,
+   "end": 21390,
+   "tr": {
+    "ur": "بہترین۔ اور تازہ سبزیاں مجھے کہاں ملیں گی؟",
+    "hi": "बहुत बढ़िया। और ताज़ी सब्ज़ियाँ मुझे कहाँ मिलेंगी?",
+    "ar": "ممتاز. وأين يمكنني أن أجد الخضروات الطازجة؟",
+    "zh": "太好了。那新鲜蔬菜在哪里呢？",
+    "es": "Perfecto. ¿Y dónde puedo encontrar las verduras frescas?",
+    "fr": "Parfait. Et où puis-je trouver les légumes frais ?",
+    "tr": "Mükemmel. Peki taze sebzeleri nerede bulabilirim?",
+    "ja": "わかりました。あと、新鮮な野菜はどこにありますか？",
+    "ko": "잘됐네요. 그리고 신선한 채소는 어디 있어요?",
+    "it": "Perfetto. E dove trovo le verdure fresche?",
+    "de": "Perfekt. Und wo finde ich frisches Gemüse?",
+    "pt": "Perfeito. E onde eu encontro as verduras frescas?",
+    "ru": "Прекрасно. А где можно найти свежие овощи?",
+    "vi": "Tuyệt. Còn rau củ tươi thì tôi tìm ở đâu ạ?",
+    "th": "เยี่ยมเลยค่ะ แล้วผักสดอยู่ตรงไหนคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "They're at the back of the store, just past the bakery section.",
+   "start": 21860,
+   "end": 24980,
+   "tr": {
+    "ur": "وہ اسٹور کے پچھلے حصے میں ہیں، بیکری والے حصے کے فوراً بعد۔",
+    "hi": "वे स्टोर के पीछे की ओर हैं, बेकरी सेक्शन के ठीक बाद।",
+    "ar": "إنها في مؤخرة المتجر، بعد قسم المخبز مباشرة.",
+    "zh": "在店铺的后面，刚过面包区就是。",
+    "es": "Están al fondo de la tienda, justo después de la sección de panadería.",
+    "fr": "Ils sont au fond du magasin, juste après le rayon boulangerie.",
+    "tr": "Mağazanın arka tarafında, fırın bölümünün hemen ardında.",
+    "ja": "お店の奥の、パン売り場を過ぎてすぐのところにあります。",
+    "ko": "매장 안쪽, 베이커리 코너 바로 지나서 있어요.",
+    "it": "Sono in fondo al negozio, subito dopo il reparto panetteria.",
+    "de": "Das ist ganz hinten im Laden, gleich hinter der Bäckerei.",
+    "pt": "Ficam no fundo do mercado, logo depois da padaria.",
+    "ru": "Они в глубине магазина, сразу за отделом выпечки.",
+    "vi": "Ở cuối cửa hàng ạ, ngay sau khu bánh mì.",
+    "th": "อยู่ด้านหลังร้านครับ เลยแผนกเบเกอรี่ไปนิดเดียวครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "That's really helpful. Thank you.",
+   "start": 25330,
+   "end": 27530,
+   "tr": {
+    "ur": "یہ واقعی بہت مددگار ہے۔ شکریہ۔",
+    "hi": "यह सच में बहुत मददगार है। धन्यवाद।",
+    "ar": "هذا مفيد جدًا. شكرًا لك.",
+    "zh": "这真的很有帮助，谢谢你。",
+    "es": "Eso es realmente útil. Gracias.",
+    "fr": "C'est vraiment très utile. Merci.",
+    "tr": "Bu gerçekten çok yardımcı oldu. Teşekkür ederim.",
+    "ja": "本当に助かりました。ありがとうございます。",
+    "ko": "정말 도움이 많이 됐어요. 감사합니다.",
+    "it": "Mi è stato davvero utile. Grazie.",
+    "de": "Das ist wirklich hilfreich. Vielen Dank.",
+    "pt": "Ajudou muito. Obrigada.",
+    "ru": "Вы мне очень помогли. Спасибо.",
+    "vi": "Anh giúp tôi nhiều lắm. Cảm ơn anh.",
+    "th": "ช่วยได้มากเลยค่ะ ขอบคุณค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "You're welcome. Have a great day.",
+   "start": 27980,
+   "end": 30080,
+   "tr": {
+    "ur": "کوئی بات نہیں۔ آپ کا دن بہت اچھا گزرے۔",
+    "hi": "कोई बात नहीं। आपका दिन बहुत अच्छा रहे।",
+    "ar": "على الرحب والسعة. أتمنى لك يومًا رائعًا.",
+    "zh": "不客气，祝你今天愉快。",
+    "es": "De nada. Que tenga un buen día.",
+    "fr": "Je vous en prie. Passez une excellente journée.",
+    "tr": "Rica ederim. İyi günler dilerim.",
+    "ja": "どういたしまして。よい一日をお過ごしください。",
+    "ko": "천만에요. 좋은 하루 보내세요.",
+    "it": "Prego. Buona giornata!",
+    "de": "Gern geschehen. Einen schönen Tag noch.",
+    "pt": "De nada. Tenha um ótimo dia.",
+    "ru": "Пожалуйста. Хорошего дня!",
+    "vi": "Không có gì ạ. Chúc chị một ngày tốt lành.",
+    "th": "ยินดีครับ ขอให้เป็นวันที่ดีนะครับ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "aisle",
+   "meaning": "a walkway between shelves in a shop",
+   "tr": {
+    "ur": "راہداری",
+    "hi": "गलियारा",
+    "ar": "ممر",
+    "zh": "过道",
+    "es": "pasillo",
+    "fr": "allée",
+    "tr": "koridor",
+    "ja": "通路",
+    "ko": "통로",
+    "it": "corsia",
+    "de": "der Gang",
+    "pt": "corredor",
+    "ru": "ряд",
+    "vi": "dãy kệ",
+    "th": "ช่องทางเดิน"
+   }
+  },
+  {
+   "word": "shelf",
+   "meaning": "a flat board for keeping things on",
+   "tr": {
+    "ur": "شیلف",
+    "hi": "शेल्फ़",
+    "ar": "رف",
+    "zh": "货架",
+    "es": "estante",
+    "fr": "étagère",
+    "tr": "raf",
+    "ja": "棚",
+    "ko": "선반",
+    "it": "scaffale",
+    "de": "das Regal",
+    "pt": "prateleira",
+    "ru": "полка",
+    "vi": "kệ",
+    "th": "ชั้นวาง"
+   }
+  },
+  {
+   "word": "wheat",
+   "meaning": "a grain used to make flour",
+   "tr": {
+    "ur": "گندم",
+    "hi": "गेहूँ",
+    "ar": "قمح",
+    "zh": "小麦",
+    "es": "trigo",
+    "fr": "blé",
+    "tr": "buğday",
+    "ja": "小麦",
+    "ko": "밀",
+    "it": "grano",
+    "de": "der Weizen",
+    "pt": "trigo",
+    "ru": "пшеница",
+    "vi": "lúa mì",
+    "th": "ข้าวสาลี"
+   }
+  },
+  {
+   "word": "olive",
+   "meaning": "a small fruit used to make oil",
+   "tr": {
+    "ur": "زیتون",
+    "hi": "जैतून",
+    "ar": "زيتون",
+    "zh": "橄榄",
+    "es": "aceituna",
+    "fr": "olive",
+    "tr": "zeytin",
+    "ja": "オリーブ",
+    "ko": "올리브",
+    "it": "oliva",
+    "de": "die Olive",
+    "pt": "azeitona",
+    "ru": "оливка",
+    "vi": "ô liu",
+    "th": "มะกอก"
+   }
+  },
+  {
+   "word": "sauces",
+   "meaning": "liquids added to food for flavor",
+   "tr": {
+    "ur": "ساس",
+    "hi": "सॉस",
+    "ar": "صلصات",
+    "zh": "酱料",
+    "es": "salsas",
+    "fr": "sauces",
+    "tr": "soslar",
+    "ja": "ソース",
+    "ko": "소스",
+    "it": "salse",
+    "de": "die Soßen",
+    "pt": "molhos",
+    "ru": "соусы",
+    "vi": "nước sốt",
+    "th": "ซอส"
+   }
+  },
+  {
+   "word": "vegetables",
+   "meaning": "plants you eat, like carrots",
+   "tr": {
+    "ur": "سبزیاں",
+    "hi": "सब्ज़ियाँ",
+    "ar": "خضروات",
+    "zh": "蔬菜",
+    "es": "verduras",
+    "fr": "légumes",
+    "tr": "sebzeler",
+    "ja": "野菜",
+    "ko": "채소",
+    "it": "verdure",
+    "de": "das Gemüse",
+    "pt": "verduras",
+    "ru": "овощи",
+    "vi": "rau củ",
+    "th": "ผัก"
+   }
+  },
+  {
+   "word": "fresh",
+   "meaning": "recently made or picked, not old",
+   "tr": {
+    "ur": "تازہ",
+    "hi": "ताज़ा",
+    "ar": "طازج",
+    "zh": "新鲜的",
+    "es": "fresco",
+    "fr": "frais",
+    "tr": "taze",
+    "ja": "新鮮",
+    "ko": "신선하다",
+    "it": "fresco",
+    "de": "frisch",
+    "pt": "fresco",
+    "ru": "свежий",
+    "vi": "tươi",
+    "th": "สด"
+   }
+  },
+  {
+   "word": "bakery",
+   "meaning": "a shop that makes bread and cakes",
+   "tr": {
+    "ur": "بیکری",
+    "hi": "बेकरी",
+    "ar": "مخبز",
+    "zh": "面包店",
+    "es": "panadería",
+    "fr": "boulangerie",
+    "tr": "fırın",
+    "ja": "パン屋",
+    "ko": "빵집",
+    "it": "panetteria",
+    "de": "die Bäckerei",
+    "pt": "padaria",
+    "ru": "пекарня",
+    "vi": "tiệm bánh",
+    "th": "เบเกอรี่"
+   }
+  },
+  {
+   "word": "several",
+   "meaning": "more than two but not many",
+   "tr": {
+    "ur": "کئی",
+    "hi": "कई",
+    "ar": "عدة",
+    "zh": "好几个",
+    "es": "varios",
+    "fr": "plusieurs",
+    "tr": "birkaç",
+    "ja": "いくつか",
+    "ko": "여러",
+    "it": "diversi",
+    "de": "mehrere",
+    "pt": "vários",
+    "ru": "несколько",
+    "vi": "một vài",
+    "th": "หลาย"
+   }
+  },
+  {
+   "word": "helpful",
+   "meaning": "giving useful help",
+   "tr": {
+    "ur": "مددگار",
+    "hi": "मददगार",
+    "ar": "مفيد",
+    "zh": "有帮助的",
+    "es": "útil",
+    "fr": "utile",
+    "tr": "yardımcı",
+    "ja": "役に立つ",
+    "ko": "도움이 되다",
+    "it": "utile",
+    "de": "hilfreich",
+    "pt": "útil",
+    "ru": "полезный",
+    "vi": "hữu ích",
+    "th": "มีประโยชน์"
+   }
+  }
+ ]
+}

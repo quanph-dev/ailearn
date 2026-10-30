@@ -1,0 +1,440 @@
+{
+ "scene": "🏨",
+ "colors": [
+  "#EFE3D3",
+  "#DCC7AC"
+ ],
+ "speakers": [
+  {
+   "name": "Anna",
+   "emoji": "👩",
+   "voice": "female"
+  },
+  {
+   "name": "James",
+   "emoji": "👨",
+   "voice": "male"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Excuse me. I think I've lost my handbag somewhere in the hotel.",
+   "start": 0,
+   "end": 4070,
+   "tr": {
+    "ur": "معاف کیجیے گا۔ مجھے لگتا ہے میرا ہینڈ بیگ ہوٹل میں کہیں کھو گیا ہے۔",
+    "hi": "माफ़ कीजिए। मुझे लगता है मेरा हैंडबैग होटल में कहीं खो गया है।",
+    "ar": "المعذرة. أظن أنني فقدت حقيبة يدي في مكان ما في الفندق.",
+    "zh": "打扰一下，我好像在酒店的某个地方把手提包弄丢了。",
+    "es": "Disculpe. Creo que he perdido mi bolso en algún lugar del hotel.",
+    "fr": "Excusez-moi. Je crois que j'ai perdu mon sac à main quelque part dans l'hôtel.",
+    "tr": "Affedersiniz. Sanırım el çantamı otelin bir yerinde kaybettim.",
+    "ja": "すみません。ホテルのどこかでハンドバッグをなくしてしまったみたいなんです。",
+    "ko": "실례합니다. 호텔 어딘가에서 핸드백을 잃어버린 것 같아요.",
+    "it": "Mi scusi. Credo di aver perso la borsa da qualche parte in albergo.",
+    "de": "Entschuldigung. Ich glaube, ich habe meine Handtasche irgendwo im Hotel verloren.",
+    "pt": "Com licença. Acho que perdi minha bolsa em algum lugar do hotel.",
+    "ru": "Извините. Кажется, я потеряла сумочку где-то в отеле.",
+    "vi": "Xin lỗi anh. Hình như tôi làm mất túi xách ở đâu đó trong khách sạn rồi.",
+    "th": "ขอโทษนะคะ คิดว่าทำกระเป๋าถือหายที่ไหนสักแห่งในโรงแรมค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "I'm sorry to hear that. Where did you last see it?",
+   "start": 4470,
+   "end": 6910,
+   "tr": {
+    "ur": "یہ سن کر افسوس ہوا۔ آپ نے اسے آخری بار کہاں دیکھا تھا؟",
+    "hi": "यह सुनकर अफ़सोस हुआ। आपने उसे आख़िरी बार कहाँ देखा था?",
+    "ar": "يؤسفني سماع ذلك. أين رأيتِها آخر مرة؟",
+    "zh": "哎呀，真遗憾。您最后一次看到它是在哪里？",
+    "es": "Lamento oír eso. ¿Dónde lo vio por última vez?",
+    "fr": "Je suis désolé de l'apprendre. Où l'avez-vous vu pour la dernière fois ?",
+    "tr": "Bunu duyduğuma üzüldüm. En son nerede gördünüz?",
+    "ja": "それは大変ですね。最後にご覧になったのはどちらでしたか？",
+    "ko": "저런, 안타깝네요. 마지막으로 어디서 보셨어요?",
+    "it": "Mi dispiace molto. Dove l'ha vista l'ultima volta?",
+    "de": "Das tut mir leid. Wo haben Sie sie zuletzt gesehen?",
+    "pt": "Sinto muito. Onde você viu a bolsa pela última vez?",
+    "ru": "Очень жаль. Где вы её видели в последний раз?",
+    "vi": "Tôi rất tiếc khi nghe vậy. Lần cuối chị thấy nó là ở đâu ạ?",
+    "th": "เสียใจด้วยครับ คุณเห็นกระเป๋าครั้งสุดท้ายที่ไหนครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "I remember having it in the lobby this morning.",
+   "start": 7430,
+   "end": 9880,
+   "tr": {
+    "ur": "مجھے یاد ہے کہ آج صبح لابی میں وہ میرے پاس تھا۔",
+    "hi": "मुझे याद है कि आज सुबह लॉबी में वह मेरे पास था।",
+    "ar": "أتذكر أنها كانت معي في الردهة هذا الصباح.",
+    "zh": "我记得今天早上在大堂的时候还拿着它。",
+    "es": "Recuerdo que lo tenía en el vestíbulo esta mañana.",
+    "fr": "Je me souviens de l'avoir eu avec moi dans le hall ce matin.",
+    "tr": "Bu sabah lobide yanımda olduğunu hatırlıyorum.",
+    "ja": "今朝、ロビーでは持っていたのを覚えています。",
+    "ko": "오늘 아침에 로비에서는 가지고 있었던 게 기억나요.",
+    "it": "Ricordo di averla avuta con me nella hall stamattina.",
+    "de": "Ich erinnere mich, dass ich sie heute Morgen in der Lobby noch hatte.",
+    "pt": "Lembro que estava com ela no saguão hoje de manhã.",
+    "ru": "Помню, что сегодня утром в холле она ещё была у меня.",
+    "vi": "Tôi nhớ là sáng nay ở sảnh tôi vẫn còn cầm nó.",
+    "th": "จำได้ว่าเมื่อเช้าตอนอยู่ที่ล็อบบี้ยังถืออยู่เลยค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Alright. Can you describe what it looks like?",
+   "start": 10480,
+   "end": 12840,
+   "tr": {
+    "ur": "ٹھیک ہے۔ کیا آپ بیان کر سکتی ہیں کہ وہ دیکھنے میں کیسا ہے؟",
+    "hi": "ठीक है। क्या आप वर्णन कर सकती हैं कि वह दिखने में कैसा है?",
+    "ar": "حسنًا. هل يمكنكِ أن تصفي لي شكلها؟",
+    "zh": "好的。您能描述一下它是什么样子的吗？",
+    "es": "De acuerdo. ¿Puede describirme cómo es?",
+    "fr": "D'accord. Pouvez-vous me décrire à quoi il ressemble ?",
+    "tr": "Peki. Nasıl göründüğünü tarif edebilir misiniz?",
+    "ja": "かしこまりました。どのような見た目か、説明していただけますか？",
+    "ko": "알겠습니다. 어떻게 생겼는지 설명해 주시겠어요?",
+    "it": "D'accordo. Può descrivermi com'è?",
+    "de": "Alles klar. Können Sie mir beschreiben, wie sie aussieht?",
+    "pt": "Certo. Você pode descrever como ela é?",
+    "ru": "Хорошо. Можете описать, как она выглядит?",
+    "vi": "Vâng ạ. Chị có thể mô tả nó trông như thế nào không ạ?",
+    "th": "ได้ครับ ช่วยอธิบายหน่อยได้ไหมครับว่ากระเป๋าหน้าตาเป็นยังไง"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "It's a small brown handbag with gold.",
+   "start": 13110,
+   "end": 15150,
+   "tr": {
+    "ur": "وہ ایک چھوٹا سا بھورا ہینڈ بیگ ہے، سنہری ڈیزائن والا۔",
+    "hi": "वह एक छोटा-सा भूरा हैंडबैग है, सुनहरे डिज़ाइन वाला।",
+    "ar": "إنها حقيبة يد صغيرة بنية اللون بلمسات ذهبية.",
+    "zh": "是一个棕色的小手提包，带金色装饰。",
+    "es": "Es un bolso marrón pequeño con detalles dorados.",
+    "fr": "C'est un petit sac à main marron avec des détails dorés.",
+    "tr": "Altın rengi detaylı, küçük kahverengi bir el çantası.",
+    "ja": "金色の飾りがついた、小さな茶色のハンドバッグです。",
+    "ko": "금색 장식이 달린 작은 갈색 핸드백이에요.",
+    "it": "È una piccola borsa marrone con dettagli dorati.",
+    "de": "Es ist eine kleine braune Handtasche mit goldenen Details.",
+    "pt": "É uma bolsa marrom pequena, com detalhes dourados.",
+    "ru": "Это маленькая коричневая сумочка с золотистой отделкой.",
+    "vi": "Đó là một chiếc túi xách nhỏ màu nâu, có viền vàng.",
+    "th": "เป็นกระเป๋าถือใบเล็ก ๆ สีน้ำตาล แต่งสีทองค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "I think someone handed one in earlier. Let me check.",
+   "start": 15420,
+   "end": 18670,
+   "tr": {
+    "ur": "میرا خیال ہے کچھ دیر پہلے کسی نے ایک ہینڈ بیگ جمع کروایا تھا۔ میں ذرا چیک کر لیتا ہوں۔",
+    "hi": "मुझे लगता है कुछ देर पहले किसी ने एक हैंडबैग जमा करवाया था। मैं ज़रा चेक कर लेता हूँ।",
+    "ar": "أظن أن أحدهم سلّم واحدة في وقت سابق. دعيني أتحقق.",
+    "zh": "我记得早些时候有人交来过一个。我查看一下。",
+    "es": "Creo que alguien entregó uno hace un rato. Déjeme comprobarlo.",
+    "fr": "Je crois que quelqu'un en a déposé un tout à l'heure. Laissez-moi vérifier.",
+    "tr": "Sanırım biraz önce biri bir tane teslim etti. Bir kontrol edeyim.",
+    "ja": "先ほど、どなたかが一つ届けてくださったと思います。確認しますね。",
+    "ko": "아까 누가 하나 가져다준 것 같아요. 확인해 볼게요.",
+    "it": "Mi sembra che qualcuno ne abbia consegnata una poco fa. Controllo subito.",
+    "de": "Ich glaube, vorhin hat jemand eine abgegeben. Ich schaue mal nach.",
+    "pt": "Acho que alguém entregou uma mais cedo. Deixa eu verificar.",
+    "ru": "Кажется, кто-то принёс такую чуть раньше. Сейчас проверю.",
+    "vi": "Hình như lúc nãy có người mang đến nộp một chiếc. Để tôi kiểm tra xem.",
+    "th": "คิดว่าเมื่อกี้มีคนเอามาส่งไว้ใบหนึ่งครับ ขอตรวจสอบก่อนนะครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Oh, really? That would be such a relief.",
+   "start": 20080,
+   "end": 22810,
+   "tr": {
+    "ur": "اوہ، واقعی؟ تب تو بڑی تسلی ہو جائے گی۔",
+    "hi": "अरे, सच में? तब तो बड़ी राहत मिलेगी।",
+    "ar": "أوه، حقًا؟ سأشعر بارتياح كبير لو كانت هي.",
+    "zh": "哦，真的吗？那我可就放心了。",
+    "es": "Ay, ¿de verdad? Sería un gran alivio.",
+    "fr": "Oh, vraiment ? Ce serait un vrai soulagement.",
+    "tr": "Aa, gerçekten mi? Bu beni çok rahatlatır.",
+    "ja": "えっ、本当ですか？それならすごく安心です。",
+    "ko": "어머, 정말요? 그럼 정말 안심이 되겠어요.",
+    "it": "Oh, davvero? Sarebbe un vero sollievo.",
+    "de": "Oh, wirklich? Das wäre eine große Erleichterung.",
+    "pt": "Ah, é mesmo? Seria um alívio enorme.",
+    "ru": "Ой, правда? Это было бы таким облегчением!",
+    "vi": "Ôi, thật sao? Nếu đúng thì tôi nhẹ nhõm lắm.",
+    "th": "โอ้ จริงเหรอคะ ถ้าใช่ก็โล่งใจไปเลยค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Yes, we have it here. Is this yours?",
+   "start": 23590,
+   "end": 26300,
+   "tr": {
+    "ur": "جی ہاں، یہ ہمارے پاس ہے۔ کیا یہ آپ کا ہے؟",
+    "hi": "जी हाँ, यह हमारे पास है। क्या यह आपका है?",
+    "ar": "نعم، إنها هنا لدينا. هل هذه حقيبتكِ؟",
+    "zh": "是的，在我们这儿。这是您的吗？",
+    "es": "Sí, aquí lo tenemos. ¿Es suyo?",
+    "fr": "Oui, nous l'avons ici. C'est bien le vôtre ?",
+    "tr": "Evet, bizde duruyor. Bu sizin mi?",
+    "ja": "はい、こちらにございます。お客様のものでしょうか？",
+    "ko": "네, 여기 있네요. 이거 손님 거 맞으세요?",
+    "it": "Sì, ce l'abbiamo qui. È sua?",
+    "de": "Ja, wir haben sie hier. Ist das Ihre?",
+    "pt": "Sim, está aqui com a gente. Esta é a sua?",
+    "ru": "Да, она у нас. Это ваша?",
+    "vi": "Dạ có, nó đây rồi. Đây có phải túi của chị không ạ?",
+    "th": "มีครับ อยู่ที่นี่ครับ ใบนี้ของคุณใช่ไหมครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Yes, that's mine. Thank you so much.",
+   "start": 26900,
+   "end": 30080,
+   "tr": {
+    "ur": "جی ہاں، یہ میرا ہی ہے۔ آپ کا بہت بہت شکریہ۔",
+    "hi": "हाँ, यह मेरा ही है। आपका बहुत-बहुत धन्यवाद।",
+    "ar": "نعم، إنها لي. شكرًا جزيلًا لك.",
+    "zh": "对，就是我的。真是太感谢您了。",
+    "es": "Sí, es mío. Muchísimas gracias.",
+    "fr": "Oui, c'est le mien. Merci beaucoup.",
+    "tr": "Evet, bu benim. Çok teşekkür ederim.",
+    "ja": "はい、私のです。本当にありがとうございます。",
+    "ko": "네, 제 거예요. 정말 감사합니다.",
+    "it": "Sì, è la mia. Grazie mille.",
+    "de": "Ja, das ist meine. Vielen, vielen Dank.",
+    "pt": "Sim, é minha. Muito obrigada.",
+    "ru": "Да, это моя. Огромное спасибо.",
+    "vi": "Vâng, đúng là của tôi. Cảm ơn anh rất nhiều.",
+    "th": "ใช่ค่ะ ของฉันเองค่ะ ขอบคุณมากเลยนะคะ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "handbag",
+   "meaning": "a small bag for carrying personal things",
+   "tr": {
+    "ur": "ہینڈ بیگ",
+    "hi": "हैंडबैग",
+    "ar": "حقيبة يد",
+    "zh": "手提包",
+    "es": "bolso",
+    "fr": "sac à main",
+    "tr": "el çantası",
+    "ja": "ハンドバッグ",
+    "ko": "핸드백",
+    "it": "borsa",
+    "de": "die Handtasche",
+    "pt": "bolsa",
+    "ru": "сумочка",
+    "vi": "túi xách",
+    "th": "กระเป๋าถือ"
+   }
+  },
+  {
+   "word": "lost",
+   "meaning": "no longer able to find something",
+   "tr": {
+    "ur": "کھونا",
+    "hi": "खोना",
+    "ar": "يفقد",
+    "zh": "弄丢",
+    "es": "perder",
+    "fr": "perdre",
+    "tr": "kaybetmek",
+    "ja": "なくす",
+    "ko": "잃어버리다",
+    "it": "perdere",
+    "de": "verlieren",
+    "pt": "perder",
+    "ru": "потерять",
+    "vi": "làm mất",
+    "th": "ทำหาย"
+   }
+  },
+  {
+   "word": "somewhere",
+   "meaning": "in some place you don't know",
+   "tr": {
+    "ur": "کہیں",
+    "hi": "कहीं",
+    "ar": "في مكان ما",
+    "zh": "某个地方",
+    "es": "en algún lugar",
+    "fr": "quelque part",
+    "tr": "bir yerde",
+    "ja": "どこか",
+    "ko": "어딘가",
+    "it": "da qualche parte",
+    "de": "irgendwo",
+    "pt": "em algum lugar",
+    "ru": "где-то",
+    "vi": "ở đâu đó",
+    "th": "ที่ไหนสักแห่ง"
+   }
+  },
+  {
+   "word": "sorry to hear that",
+   "meaning": "said when someone tells you bad news",
+   "tr": {
+    "ur": "یہ سن کر افسوس ہوا",
+    "hi": "यह सुनकर अफ़सोस हुआ",
+    "ar": "يؤسفني سماع ذلك",
+    "zh": "真遗憾",
+    "es": "lamento oír eso",
+    "fr": "désolé de l'apprendre",
+    "tr": "bunu duyduğuma üzüldüm",
+    "ja": "それは大変ですね",
+    "ko": "안타깝네요",
+    "it": "mi dispiace",
+    "de": "das tut mir leid",
+    "pt": "sinto muito",
+    "ru": "очень жаль",
+    "vi": "rất tiếc",
+    "th": "เสียใจด้วย"
+   }
+  },
+  {
+   "word": "remember",
+   "meaning": "have something in your memory",
+   "tr": {
+    "ur": "یاد ہونا",
+    "hi": "याद होना",
+    "ar": "يتذكر",
+    "zh": "记得",
+    "es": "recordar",
+    "fr": "se souvenir",
+    "tr": "hatırlamak",
+    "ja": "覚えている",
+    "ko": "기억나다",
+    "it": "ricordare",
+    "de": "sich erinnern",
+    "pt": "lembrar",
+    "ru": "помнить",
+    "vi": "nhớ",
+    "th": "จำได้"
+   }
+  },
+  {
+   "word": "lobby",
+   "meaning": "the entrance hall of a hotel",
+   "tr": {
+    "ur": "لابی",
+    "hi": "लॉबी",
+    "ar": "ردهة",
+    "zh": "大堂",
+    "es": "vestíbulo",
+    "fr": "hall",
+    "tr": "lobi",
+    "ja": "ロビー",
+    "ko": "로비",
+    "it": "hall",
+    "de": "die Lobby",
+    "pt": "saguão",
+    "ru": "холл",
+    "vi": "sảnh",
+    "th": "ล็อบบี้"
+   }
+  },
+  {
+   "word": "describe",
+   "meaning": "say what something is like",
+   "tr": {
+    "ur": "بیان کرنا",
+    "hi": "वर्णन करना",
+    "ar": "يصف",
+    "zh": "描述",
+    "es": "describir",
+    "fr": "décrire",
+    "tr": "tarif etmek",
+    "ja": "説明する",
+    "ko": "설명하다",
+    "it": "descrivere",
+    "de": "beschreiben",
+    "pt": "descrever",
+    "ru": "описать",
+    "vi": "mô tả",
+    "th": "อธิบาย"
+   }
+  },
+  {
+   "word": "earlier",
+   "meaning": "at a time before now",
+   "tr": {
+    "ur": "کچھ دیر پہلے",
+    "hi": "कुछ देर पहले",
+    "ar": "في وقت سابق",
+    "zh": "早些时候",
+    "es": "hace un rato",
+    "fr": "tout à l'heure",
+    "tr": "biraz önce",
+    "ja": "先ほど",
+    "ko": "아까",
+    "it": "poco fa",
+    "de": "vorhin",
+    "pt": "mais cedo",
+    "ru": "раньше",
+    "vi": "lúc nãy",
+    "th": "เมื่อกี้"
+   }
+  },
+  {
+   "word": "check",
+   "meaning": "look at something to find out",
+   "tr": {
+    "ur": "چیک کرنا",
+    "hi": "चेक करना",
+    "ar": "يتحقق",
+    "zh": "查看",
+    "es": "comprobar",
+    "fr": "vérifier",
+    "tr": "kontrol etmek",
+    "ja": "確認する",
+    "ko": "확인하다",
+    "it": "controllare",
+    "de": "nachschauen",
+    "pt": "verificar",
+    "ru": "проверить",
+    "vi": "kiểm tra",
+    "th": "ตรวจสอบ"
+   }
+  },
+  {
+   "word": "relief",
+   "meaning": "a good feeling when worry ends",
+   "tr": {
+    "ur": "تسلی",
+    "hi": "राहत",
+    "ar": "ارتياح",
+    "zh": "放心",
+    "es": "alivio",
+    "fr": "soulagement",
+    "tr": "rahatlama",
+    "ja": "安心",
+    "ko": "안심",
+    "it": "sollievo",
+    "de": "die Erleichterung",
+    "pt": "alívio",
+    "ru": "облегчение",
+    "vi": "nhẹ nhõm",
+    "th": "โล่งใจ"
+   }
+  }
+ ]
+}

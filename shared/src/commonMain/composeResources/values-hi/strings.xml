@@ -23,4 +23,19 @@
     <string name="ui_are_you_sure_you_want_to_exit_the_app_now">क्या आप वाकई अभी ऐप से बाहर निकलना चाहते हैं?</string>
     <string name="ui_no">नहीं</string>
     <string name="ui_yes_exit">हाँ, बाहर निकलें</string>
+    <string name="fo_onboarding_button_next">आगे</string>
+    <string name="fo_onboarding_button_start">शुरू करें</string>
+    <string name="fo_onboarding_description_1">अपने निजी AI ट्यूटर से बात करें और कोई भी भाषा कभी भी, स्वाभाविक रूप से सीखें।</string>
+    <string name="fo_onboarding_description_2">उच्चारण का अभ्यास करें और हर शब्द पर तुरंत फ़ीडबैक पाएँ।</string>
+    <string name="fo_onboarding_description_3">रोज़ाना की स्ट्रीक बनाएँ और हर कदम पर अपनी प्रगति देखें।</string>
+    <string name="fo_onboarding_swipe_hint">जारी रखने के लिए स्वाइप करें</string>
+    <string name="fo_onboarding_title_1">AI के साथ सीखें</string>
+    <string name="fo_onboarding_title_2">आत्मविश्वास से बोलें</string>
+    <string name="fo_onboarding_title_3">अपने लक्ष्य हासिल करें</string>
+    <string name="fo_survey_continue">सीखना शुरू करें</string>
+    <string name="fo_survey_skip">छोड़ें</string>
+    <string name="fo_survey_subtitle">सीखना शुरू करने के लिए एक चुनें</string>
+    <string name="fo_survey_title">आप कौन सी भाषा सीखना चाहते हैं?</string>
+    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_describe_load_ad">(इस क्रिया में विज्ञापन हो सकते हैं)</string>
 </resources>

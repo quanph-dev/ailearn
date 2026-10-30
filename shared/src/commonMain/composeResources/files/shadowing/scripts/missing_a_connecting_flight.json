@@ -1,0 +1,440 @@
+{
+ "scene": "🛫",
+ "colors": [
+  "#E3E8F1",
+  "#C7D0E0"
+ ],
+ "speakers": [
+  {
+   "name": "Tom",
+   "emoji": "👨",
+   "voice": "male"
+  },
+  {
+   "name": "Nina",
+   "emoji": "👩",
+   "voice": "female"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Excuse me. My first flight was delayed and I missed my connection.",
+   "start": 0,
+   "end": 3165,
+   "tr": {
+    "ur": "معاف کیجیے۔ میری پہلی فلائٹ میں دیر ہو گئی تھی اور میری کنیکٹنگ فلائٹ چھوٹ گئی۔",
+    "hi": "माफ़ कीजिए। मेरी पहली फ़्लाइट लेट हो गई थी और मेरी कनेक्टिंग फ़्लाइट छूट गई।",
+    "ar": "عذرًا. تأخرت رحلتي الأولى، وفاتتني رحلة الربط.",
+    "zh": "不好意思。我的第一班飞机晚点了，我错过了中转航班。",
+    "es": "Perdone. Mi primer vuelo se retrasó y perdí la conexión.",
+    "fr": "Excusez-moi. Mon premier vol a eu du retard et j'ai raté ma correspondance.",
+    "tr": "Affedersiniz. İlk uçuşum gecikti ve aktarma uçuşumu kaçırdım.",
+    "ja": "すみません。最初の便が遅れて、乗り継ぎに間に合わなかったんです。",
+    "ko": "실례합니다. 첫 번째 비행기가 연착돼서 환승 비행기를 놓쳤어요.",
+    "it": "Mi scusi. Il mio primo volo ha fatto ritardo e ho perso la coincidenza.",
+    "de": "Entschuldigung. Mein erster Flug hatte Verspätung, und ich habe meinen Anschlussflug verpasst.",
+    "pt": "Com licença. Meu primeiro voo atrasou e eu perdi a conexão.",
+    "ru": "Простите. Мой первый рейс задержали, и я опоздал на стыковочный рейс.",
+    "vi": "Xin lỗi. Chuyến bay đầu tiên của tôi bị trễ nên tôi đã lỡ chuyến bay nối chuyến.",
+    "th": "ขอโทษครับ เที่ยวบินแรกของผมล่าช้า ผมเลยพลาดเที่ยวบินต่อ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "I'm sorry about that. Where were you flying to?",
+   "start": 3180,
+   "end": 5950,
+   "tr": {
+    "ur": "یہ سن کر افسوس ہوا۔ آپ کہاں جا رہے تھے؟",
+    "hi": "यह सुनकर अफ़सोस हुआ। आप कहाँ जा रहे थे?",
+    "ar": "أنا آسفة لذلك. إلى أين كنت متجهًا؟",
+    "zh": "很抱歉。您原本要飞往哪里？",
+    "es": "Lo siento mucho. ¿Cuál era su destino?",
+    "fr": "Je suis désolée. Quelle était votre destination ?",
+    "tr": "Bunu duyduğuma üzüldüm. Nereye uçacaktınız?",
+    "ja": "それは申し訳ありません。どちらまでのご予定でしたか？",
+    "ko": "불편을 드려 죄송합니다. 어디로 가실 예정이셨어요?",
+    "it": "Mi dispiace. Qual era la sua destinazione?",
+    "de": "Das tut mir leid. Wohin wollten Sie fliegen?",
+    "pt": "Sinto muito. Para onde o senhor estava indo?",
+    "ru": "Мне очень жаль. Куда вы летели?",
+    "vi": "Tôi rất tiếc. Anh định bay đến đâu ạ?",
+    "th": "ต้องขอโทษด้วยค่ะ คุณกำลังจะบินไปที่ไหนคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Paris. Is there another flight available today?",
+   "start": 6030,
+   "end": 8775,
+   "tr": {
+    "ur": "پیرس۔ کیا آج کوئی اور فلائٹ دستیاب ہے؟",
+    "hi": "पेरिस। क्या आज कोई और फ़्लाइट उपलब्ध है?",
+    "ar": "باريس. هل تتوفر رحلة أخرى اليوم؟",
+    "zh": "巴黎。今天还有别的航班吗？",
+    "es": "París. ¿Hay otro vuelo disponible hoy?",
+    "fr": "Paris. Est-ce qu'il y a un autre vol disponible aujourd'hui ?",
+    "tr": "Paris. Bugün başka bir uçuş var mı?",
+    "ja": "パリです。今日、ほかに空いている便はありますか？",
+    "ko": "파리요. 오늘 다른 항공편이 있나요?",
+    "it": "Parigi. C'è un altro volo disponibile oggi?",
+    "de": "Paris. Gibt es heute noch einen anderen Flug?",
+    "pt": "Paris. Tem outro voo disponível hoje?",
+    "ru": "Париж. Есть ли сегодня другой рейс?",
+    "vi": "Paris ạ. Hôm nay còn chuyến bay nào khác không ạ?",
+    "th": "ปารีสครับ วันนี้มีเที่ยวบินอื่นว่างอยู่ไหมครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Let me check. Yes, there's one leaving in two hours.",
+   "start": 8810,
+   "end": 12435,
+   "tr": {
+    "ur": "ذرا دیکھتی ہوں۔ جی ہاں، دو گھنٹے بعد ایک فلائٹ روانہ ہو رہی ہے۔",
+    "hi": "मैं देखती हूँ। हाँ, दो घंटे में एक फ़्लाइट निकल रही है।",
+    "ar": "دعني أتحقق. نعم، هناك رحلة تغادر بعد ساعتين.",
+    "zh": "我查一下。有的，有一班两小时后起飞。",
+    "es": "Déjeme ver. Sí, hay uno que sale en dos horas.",
+    "fr": "Laissez-moi vérifier. Oui, il y en a un qui part dans deux heures.",
+    "tr": "Bir bakayım. Evet, iki saat sonra kalkan bir uçuş var.",
+    "ja": "確認いたしますね。はい、2時間後に出発する便が1便ございます。",
+    "ko": "확인해 볼게요. 네, 두 시간 후에 출발하는 항공편이 하나 있어요.",
+    "it": "Controllo subito. Sì, c'è un volo che parte tra due ore.",
+    "de": "Moment, ich schaue nach. Ja, es gibt einen, der in zwei Stunden abfliegt.",
+    "pt": "Vou verificar. Sim, tem um que sai em duas horas.",
+    "ru": "Одну минутку, проверю. Да, есть один рейс, он вылетает через два часа.",
+    "vi": "Để tôi kiểm tra. Có, có một chuyến khởi hành sau hai tiếng nữa.",
+    "th": "ขอเช็คให้สักครู่นะคะ มีค่ะ มีเที่ยวบินหนึ่งจะออกในอีกสองชั่วโมงค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "That's a relief. Can you book me on that flight?",
+   "start": 12480,
+   "end": 14730,
+   "tr": {
+    "ur": "شکر ہے، جان میں جان آئی۔ کیا آپ اس فلائٹ میں میری بکنگ کر سکتی ہیں؟",
+    "hi": "यह तो राहत की बात है। क्या आप उस फ़्लाइट में मेरी बुकिंग कर सकती हैं?",
+    "ar": "الحمد لله، هذا يريحني. هل يمكنكِ حجز مقعد لي على تلك الرحلة؟",
+    "zh": "那我就放心了。您能帮我订那班航班吗？",
+    "es": "Qué alivio. ¿Me puede reservar un asiento en ese vuelo?",
+    "fr": "Quel soulagement. Vous pouvez me réserver une place sur ce vol ?",
+    "tr": "İçim rahatladı. O uçuşta bana yer ayırabilir misiniz?",
+    "ja": "ほっとしました。その便の予約をお願いできますか？",
+    "ko": "다행이네요. 그 항공편으로 예약해 주실 수 있나요?",
+    "it": "Che sollievo. Può prenotarmi un posto su quel volo?",
+    "de": "Das ist eine Erleichterung. Können Sie mich auf diesen Flug buchen?",
+    "pt": "Que alívio. Você pode me colocar nesse voo?",
+    "ru": "Какое облегчение. Можете перебронировать меня на этот рейс?",
+    "vi": "May quá. Cô có thể đặt giúp tôi chuyến bay đó không ạ?",
+    "th": "โล่งใจจังเลยครับ รบกวนจองเที่ยวบินนั้นให้ผมได้ไหมครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Certainly. I'll transfer your ticket right now.",
+   "start": 14910,
+   "end": 17935,
+   "tr": {
+    "ur": "یقیناً۔ میں ابھی آپ کا ٹکٹ اس فلائٹ پر منتقل کر دیتی ہوں۔",
+    "hi": "बिल्कुल। मैं अभी आपका टिकट उस फ़्लाइट पर ट्रांसफ़र कर देती हूँ।",
+    "ar": "بالتأكيد. سأنقل تذكرتك إلى تلك الرحلة فورًا.",
+    "zh": "当然可以。我马上为您改签机票。",
+    "es": "Por supuesto. Le cambio el billete a ese vuelo ahora mismo.",
+    "fr": "Bien sûr. Je vous transfère sur ce vol tout de suite.",
+    "tr": "Tabii. Biletinizi hemen o uçuşa aktarıyorum.",
+    "ja": "かしこまりました。すぐにチケットを変更いたしますね。",
+    "ko": "물론이죠. 지금 바로 항공권을 변경해 드릴게요.",
+    "it": "Certo. Le sposto subito il biglietto su quel volo.",
+    "de": "Natürlich. Ich buche Ihr Ticket gleich um.",
+    "pt": "Claro. Vou transferir sua passagem para esse voo agora mesmo.",
+    "ru": "Конечно. Сейчас переоформлю ваш билет.",
+    "vi": "Được ạ. Tôi chuyển vé của anh sang chuyến đó ngay bây giờ.",
+    "th": "ได้เลยค่ะ ดิฉันจะเปลี่ยนตั๋วของคุณไปเที่ยวบินนั้นให้เดี๋ยวนี้เลยค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Thank you. Do I need to collect my luggage?",
+   "start": 17940,
+   "end": 20720,
+   "tr": {
+    "ur": "شکریہ۔ کیا مجھے اپنا سامان لینے کی ضرورت ہے؟",
+    "hi": "धन्यवाद। क्या मुझे अपना सामान लेना होगा?",
+    "ar": "شكرًا لكِ. هل عليّ أن أستلم حقائبي؟",
+    "zh": "谢谢。我需要去取行李吗？",
+    "es": "Gracias. ¿Tengo que recoger mi equipaje?",
+    "fr": "Merci. Est-ce que je dois récupérer mes bagages ?",
+    "tr": "Teşekkürler. Bagajımı almam gerekiyor mu?",
+    "ja": "ありがとうございます。荷物は受け取らないといけませんか？",
+    "ko": "감사합니다. 제가 짐을 찾아야 하나요?",
+    "it": "Grazie. Devo ritirare i miei bagagli?",
+    "de": "Danke. Muss ich mein Gepäck abholen?",
+    "pt": "Obrigado. Eu preciso pegar minha bagagem?",
+    "ru": "Спасибо. Мне нужно забрать багаж?",
+    "vi": "Cảm ơn cô. Tôi có cần lấy hành lý không?",
+    "th": "ขอบคุณครับ ผมต้องไปรับกระเป๋าเดินทางเองไหมครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "No, your bags will be transferred automatically.",
+   "start": 20840,
+   "end": 23950,
+   "tr": {
+    "ur": "نہیں، آپ کا سامان خود بخود منتقل ہو جائے گا۔",
+    "hi": "नहीं, आपका सामान अपने-आप ट्रांसफ़र हो जाएगा।",
+    "ar": "لا، ستُنقل حقائبك تلقائيًا.",
+    "zh": "不用，您的行李会自动转运。",
+    "es": "No, sus maletas se trasladarán automáticamente.",
+    "fr": "Non, vos bagages seront transférés automatiquement.",
+    "tr": "Hayır, bagajlarınız otomatik olarak aktarılacak.",
+    "ja": "いいえ、お荷物は自動的に次の便へ移されます。",
+    "ko": "아니요, 짐은 자동으로 옮겨집니다.",
+    "it": "No, i suoi bagagli saranno trasferiti automaticamente.",
+    "de": "Nein, Ihr Gepäck wird automatisch weitergeleitet.",
+    "pt": "Não, suas malas serão transferidas automaticamente.",
+    "ru": "Нет, ваш багаж перегрузят на новый рейс автоматически.",
+    "vi": "Không ạ, hành lý của anh sẽ được chuyển tự động.",
+    "th": "ไม่ต้องค่ะ กระเป๋าของคุณจะส่งต่อไปยังเที่ยวบินใหม่โดยอัตโนมัติค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Perfect. I really appreciate your help.",
+   "start": 24010,
+   "end": 30080,
+   "tr": {
+    "ur": "بہت خوب۔ آپ کی مدد کے لیے میں واقعی شکر گزار ہوں۔",
+    "hi": "बढ़िया। आपकी मदद के लिए मैं सचमुच आभारी हूँ।",
+    "ar": "ممتاز. أنا حقًا ممتنّ لمساعدتكِ.",
+    "zh": "太好了。非常感谢您的帮助。",
+    "es": "Perfecto. Le agradezco mucho su ayuda.",
+    "fr": "Parfait. Je vous suis vraiment reconnaissant pour votre aide.",
+    "tr": "Harika. Yardımınız için gerçekten minnettarım.",
+    "ja": "よかったです。本当に助かりました。ありがとうございます。",
+    "ko": "잘됐네요. 도와주셔서 정말 감사합니다.",
+    "it": "Perfetto. Apprezzo davvero il suo aiuto.",
+    "de": "Perfekt. Ich weiß Ihre Hilfe wirklich zu schätzen.",
+    "pt": "Perfeito. Eu realmente agradeço sua ajuda.",
+    "ru": "Отлично. Я очень ценю вашу помощь.",
+    "vi": "Tuyệt quá. Cảm ơn cô đã giúp tôi rất nhiều.",
+    "th": "ดีมากเลยครับ ขอบคุณมากสำหรับความช่วยเหลือครับ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "missed",
+   "meaning": "did not catch it in time",
+   "tr": {
+    "ur": "چھوٹ جانا",
+    "hi": "छूट जाना",
+    "ar": "فوّت",
+    "zh": "错过",
+    "es": "perder",
+    "fr": "rater",
+    "tr": "kaçırmak",
+    "ja": "乗り遅れる",
+    "ko": "놓치다",
+    "it": "perdere",
+    "de": "verpassen",
+    "pt": "perder",
+    "ru": "опоздать на",
+    "vi": "lỡ",
+    "th": "พลาด"
+   }
+  },
+  {
+   "word": "delayed",
+   "meaning": "happening later than planned",
+   "tr": {
+    "ur": "تاخیر کا شکار",
+    "hi": "देरी हुई",
+    "ar": "متأخرة",
+    "zh": "晚点",
+    "es": "retrasado",
+    "fr": "retardé",
+    "tr": "gecikmiş",
+    "ja": "遅延した",
+    "ko": "지연된",
+    "it": "in ritardo",
+    "de": "verspätet",
+    "pt": "atrasado",
+    "ru": "задержанный",
+    "vi": "bị trễ",
+    "th": "ล่าช้า"
+   }
+  },
+  {
+   "word": "connection",
+   "meaning": "a flight that links to another flight",
+   "tr": {
+    "ur": "کنیکشن",
+    "hi": "कनेक्शन",
+    "ar": "رحلة الربط",
+    "zh": "中转",
+    "es": "conexión",
+    "fr": "correspondance",
+    "tr": "aktarma",
+    "ja": "乗り継ぎ",
+    "ko": "환승",
+    "it": "coincidenza",
+    "de": "der Anschluss",
+    "pt": "conexão",
+    "ru": "стыковка",
+    "vi": "chuyến nối",
+    "th": "เที่ยวบินต่อ"
+   }
+  },
+  {
+   "word": "available",
+   "meaning": "free to use or book",
+   "tr": {
+    "ur": "دستیاب",
+    "hi": "उपलब्ध",
+    "ar": "متاحة",
+    "zh": "有空位的",
+    "es": "disponible",
+    "fr": "disponible",
+    "tr": "müsait",
+    "ja": "空いている",
+    "ko": "이용 가능한",
+    "it": "disponibile",
+    "de": "verfügbar",
+    "pt": "disponível",
+    "ru": "свободный",
+    "vi": "còn trống",
+    "th": "ว่าง"
+   }
+  },
+  {
+   "word": "book",
+   "meaning": "reserve a seat or ticket",
+   "tr": {
+    "ur": "بک کرنا",
+    "hi": "बुक करना",
+    "ar": "حجز",
+    "zh": "预订",
+    "es": "reservar",
+    "fr": "réserver",
+    "tr": "yer ayırmak",
+    "ja": "予約する",
+    "ko": "예약하다",
+    "it": "prenotare",
+    "de": "buchen",
+    "pt": "reservar",
+    "ru": "забронировать",
+    "vi": "đặt",
+    "th": "จอง"
+   }
+  },
+  {
+   "word": "relief",
+   "meaning": "happy feeling when a worry ends",
+   "tr": {
+    "ur": "راحت",
+    "hi": "राहत",
+    "ar": "ارتياح",
+    "zh": "放心",
+    "es": "alivio",
+    "fr": "soulagement",
+    "tr": "rahatlama",
+    "ja": "安心",
+    "ko": "안도감",
+    "it": "sollievo",
+    "de": "die Erleichterung",
+    "pt": "alívio",
+    "ru": "облегчение",
+    "vi": "nhẹ nhõm",
+    "th": "ความโล่งใจ"
+   }
+  },
+  {
+   "word": "transfer",
+   "meaning": "move to another flight or place",
+   "tr": {
+    "ur": "منتقل کرنا",
+    "hi": "ट्रांसफ़र करना",
+    "ar": "ينقل",
+    "zh": "改签",
+    "es": "cambiar",
+    "fr": "transférer",
+    "tr": "aktarmak",
+    "ja": "振り替える",
+    "ko": "변경하다",
+    "it": "trasferire",
+    "de": "umbuchen",
+    "pt": "transferir",
+    "ru": "переоформить",
+    "vi": "chuyển",
+    "th": "เปลี่ยน"
+   }
+  },
+  {
+   "word": "luggage",
+   "meaning": "the bags you take when travelling",
+   "tr": {
+    "ur": "سامان",
+    "hi": "सामान",
+    "ar": "أمتعة",
+    "zh": "行李",
+    "es": "equipaje",
+    "fr": "bagages",
+    "tr": "bagaj",
+    "ja": "荷物",
+    "ko": "짐",
+    "it": "bagagli",
+    "de": "das Gepäck",
+    "pt": "bagagem",
+    "ru": "багаж",
+    "vi": "hành lý",
+    "th": "กระเป๋าเดินทาง"
+   }
+  },
+  {
+   "word": "automatically",
+   "meaning": "by itself, without someone doing it",
+   "tr": {
+    "ur": "خود بخود",
+    "hi": "अपने-आप",
+    "ar": "تلقائيًا",
+    "zh": "自动",
+    "es": "automáticamente",
+    "fr": "automatiquement",
+    "tr": "otomatik olarak",
+    "ja": "自動的に",
+    "ko": "자동으로",
+    "it": "automaticamente",
+    "de": "automatisch",
+    "pt": "automaticamente",
+    "ru": "автоматически",
+    "vi": "tự động",
+    "th": "โดยอัตโนมัติ"
+   }
+  },
+  {
+   "word": "appreciate",
+   "meaning": "be grateful for something",
+   "tr": {
+    "ur": "شکر گزار ہونا",
+    "hi": "आभारी होना",
+    "ar": "يقدّر",
+    "zh": "感激",
+    "es": "agradecer",
+    "fr": "être reconnaissant",
+    "tr": "minnettar olmak",
+    "ja": "感謝する",
+    "ko": "감사하다",
+    "it": "apprezzare",
+    "de": "schätzen",
+    "pt": "agradecer",
+    "ru": "ценить",
+    "vi": "cảm kích",
+    "th": "ซาบซึ้ง"
+   }
+  }
+ ]
+}

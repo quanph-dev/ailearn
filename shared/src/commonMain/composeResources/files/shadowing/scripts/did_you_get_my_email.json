@@ -1,0 +1,463 @@
+{
+ "scene": "📧",
+ "colors": [
+  "#E3EAF4",
+  "#C7D4E6"
+ ],
+ "speakers": [
+  {
+   "name": "Ethan",
+   "emoji": "👨",
+   "voice": "male"
+  },
+  {
+   "name": "Sophie",
+   "emoji": "👩",
+   "voice": "female"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Hi, Sophie. Did you get my email?",
+   "start": 0,
+   "end": 3090,
+   "tr": {
+    "ur": "ہیلو، سوفی۔ کیا آپ کو میری ای میل ملی؟",
+    "hi": "हाय सोफ़ी। क्या आपको मेरा ईमेल मिला?",
+    "ar": "مرحبًا يا صوفي. هل وصلكِ بريدي الإلكتروني؟",
+    "zh": "嗨，索菲。你收到我的邮件了吗？",
+    "es": "Hola, Sophie. ¿Te llegó mi correo?",
+    "fr": "Salut, Sophie. Tu as reçu mon mail ?",
+    "tr": "Merhaba Sophie. E-postamı aldınız mı?",
+    "ja": "こんにちは、ソフィー。僕のメール、届いた？",
+    "ko": "안녕하세요, 소피 씨. 제 이메일 받으셨어요?",
+    "it": "Ciao, Sophie. Hai ricevuto la mia email?",
+    "de": "Hallo Sophie. Hast du meine E-Mail bekommen?",
+    "pt": "Oi, Sophie. Você recebeu meu e-mail?",
+    "ru": "Здравствуйте, Софи. Вы получили моё письмо?",
+    "vi": "Chào Sophie. Bạn nhận được email của mình chưa?",
+    "th": "สวัสดีครับ โซฟี คุณได้รับอีเมลของผมหรือเปล่าครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Hi, Ethan. When did you send it?",
+   "start": 3400,
+   "end": 5700,
+   "tr": {
+    "ur": "ہیلو، ایتھن۔ آپ نے ای میل کب بھیجی تھی؟",
+    "hi": "हाय ईथन। आपने इसे कब भेजा था?",
+    "ar": "مرحبًا يا إيثان. متى أرسلته؟",
+    "zh": "嗨，伊森。你是什么时候发的？",
+    "es": "Hola, Ethan. ¿Cuándo lo enviaste?",
+    "fr": "Salut, Ethan. Tu l'as envoyé quand ?",
+    "tr": "Merhaba Ethan. Ne zaman gönderdiniz?",
+    "ja": "こんにちは、イーサン。いつ送ったの？",
+    "ko": "안녕하세요, 이선 씨. 언제 보내셨어요?",
+    "it": "Ciao, Ethan. Quando l'hai inviata?",
+    "de": "Hallo Ethan. Wann hast du sie geschickt?",
+    "pt": "Oi, Ethan. Quando você enviou?",
+    "ru": "Здравствуйте, Итан. Когда вы его отправили?",
+    "vi": "Chào Ethan. Bạn gửi lúc nào vậy?",
+    "th": "สวัสดีค่ะ อีธาน คุณส่งมาเมื่อไหร่คะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "This morning. It's about tomorrow's meeting.",
+   "start": 6120,
+   "end": 8530,
+   "tr": {
+    "ur": "آج صبح۔ یہ کل کی میٹنگ کے بارے میں ہے۔",
+    "hi": "आज सुबह। यह कल की मीटिंग के बारे में है।",
+    "ar": "هذا الصباح. إنه بخصوص اجتماع الغد.",
+    "zh": "今天早上。是关于明天的会议。",
+    "es": "Esta mañana. Es sobre la reunión de mañana.",
+    "fr": "Ce matin. Ça concerne la réunion de demain.",
+    "tr": "Bu sabah. Yarınki toplantıyla ilgili.",
+    "ja": "今朝だよ。明日の会議の件なんだ。",
+    "ko": "오늘 아침이요. 내일 회의에 관한 거예요.",
+    "it": "Stamattina. Riguarda la riunione di domani.",
+    "de": "Heute Morgen. Es geht um die Besprechung morgen.",
+    "pt": "Esta manhã. É sobre a reunião de amanhã.",
+    "ru": "Сегодня утром. Это касается завтрашнего совещания.",
+    "vi": "Sáng nay. Là về cuộc họp ngày mai đó.",
+    "th": "เช้านี้ครับ เกี่ยวกับการประชุมพรุ่งนี้ครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Let me check my inbox. Just a second.",
+   "start": 8990,
+   "end": 11580,
+   "tr": {
+    "ur": "ذرا اپنا ان باکس چیک کر لوں۔ بس ایک سیکنڈ۔",
+    "hi": "ज़रा अपना इनबॉक्स चेक कर लूँ। बस एक सेकंड।",
+    "ar": "دعني أتحقق من بريدي الوارد. لحظة واحدة.",
+    "zh": "让我看看收件箱。稍等一下。",
+    "es": "Déjame revisar mi bandeja de entrada. Un segundo.",
+    "fr": "Laisse-moi regarder ma boîte de réception. Une seconde.",
+    "tr": "Gelen kutuma bakayım. Bir saniye.",
+    "ja": "受信トレイを確認するね。ちょっと待って。",
+    "ko": "잠시만요, 받은편지함 좀 확인해 볼게요.",
+    "it": "Fammi controllare la posta in arrivo. Un attimo.",
+    "de": "Lass mich kurz in meinen Posteingang schauen. Einen Moment.",
+    "pt": "Deixa eu ver minha caixa de entrada. Um segundo.",
+    "ru": "Сейчас проверю входящие. Секунду.",
+    "vi": "Để mình kiểm tra hộp thư đến. Chờ một chút nhé.",
+    "th": "ขอเช็กกล่องจดหมายเข้าก่อนนะคะ แป๊บนึงค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Sure. I attached the project report too.",
+   "start": 11960,
+   "end": 14550,
+   "tr": {
+    "ur": "ٹھیک ہے۔ میں نے پروجیکٹ رپورٹ بھی اٹیچ کی تھی۔",
+    "hi": "ठीक है। मैंने प्रोजेक्ट रिपोर्ट भी अटैच की थी।",
+    "ar": "حسنًا. وأرفقتُ تقرير المشروع أيضًا.",
+    "zh": "好的。我还附上了项目报告。",
+    "es": "Claro. También adjunté el informe del proyecto.",
+    "fr": "D'accord. J'ai aussi joint le rapport du projet.",
+    "tr": "Tabii. Proje raporunu da ekledim.",
+    "ja": "うん。プロジェクトのレポートも添付したよ。",
+    "ko": "네. 프로젝트 보고서도 첨부했어요.",
+    "it": "Certo. Ho allegato anche il rapporto del progetto.",
+    "de": "Klar. Ich habe auch den Projektbericht angehängt.",
+    "pt": "Claro. Também anexei o relatório do projeto.",
+    "ru": "Хорошо. Я ещё прикрепил отчёт по проекту.",
+    "vi": "Ừ. Mình cũng đính kèm báo cáo dự án rồi.",
+    "th": "ได้ครับ ผมแนบรายงานโปรเจกต์มาด้วยนะครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Yes, I found it. Thanks for sending it.",
+   "start": 15570,
+   "end": 18430,
+   "tr": {
+    "ur": "ہاں، مل گئی۔ بھیجنے کا شکریہ۔",
+    "hi": "हाँ, मिल गई। भेजने के लिए शुक्रिया।",
+    "ar": "نعم، وجدته. شكرًا على إرساله.",
+    "zh": "嗯，我找到了。谢谢你发给我。",
+    "es": "Sí, ya lo encontré. Gracias por enviarlo.",
+    "fr": "Oui, je l'ai trouvé. Merci de me l'avoir envoyé.",
+    "tr": "Evet, buldum. Gönderdiğiniz için teşekkür ederim.",
+    "ja": "うん、あった。送ってくれてありがとう。",
+    "ko": "네, 찾았어요. 보내 주셔서 감사해요.",
+    "it": "Sì, l'ho trovata. Grazie per averla mandata.",
+    "de": "Ja, ich habe sie gefunden. Danke, dass du sie geschickt hast.",
+    "pt": "Sim, encontrei. Obrigada por enviar.",
+    "ru": "Да, нашла. Спасибо, что отправили.",
+    "vi": "Ừ, mình thấy rồi. Cảm ơn bạn đã gửi nhé.",
+    "th": "เจอแล้วค่ะ ขอบคุณที่ส่งให้นะคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Great. Could you reply before lunch?",
+   "start": 18700,
+   "end": 21270,
+   "tr": {
+    "ur": "زبردست۔ کیا آپ دوپہر کے کھانے سے پہلے جواب دے سکتی ہیں؟",
+    "hi": "बढ़िया। क्या आप लंच से पहले जवाब दे सकती हैं?",
+    "ar": "رائع. هل يمكنكِ الرد قبل الغداء؟",
+    "zh": "太好了。你能在午饭前回复我吗？",
+    "es": "Genial. ¿Podrías contestarme antes del almuerzo?",
+    "fr": "Super. Tu pourrais répondre avant le déjeuner ?",
+    "tr": "Harika. Öğle yemeğinden önce yanıt verebilir misiniz?",
+    "ja": "よかった。お昼前に返信してもらえる？",
+    "ko": "좋아요. 점심 전에 답장해 주실 수 있어요?",
+    "it": "Ottimo. Potresti rispondere prima di pranzo?",
+    "de": "Super. Könntest du vor dem Mittagessen antworten?",
+    "pt": "Ótimo. Você poderia responder antes do almoço?",
+    "ru": "Отлично. Вы могли бы ответить до обеда?",
+    "vi": "Tốt quá. Bạn trả lời giúp mình trước giờ ăn trưa được không?",
+    "th": "ดีเลยครับ ช่วยตอบกลับก่อนพักเที่ยงได้ไหมครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Of course. I'll get back to you soon.",
+   "start": 21490,
+   "end": 24120,
+   "tr": {
+    "ur": "بالکل۔ میں جلد ہی آپ کو جواب دوں گی۔",
+    "hi": "बिल्कुल। मैं आपको जल्द ही जवाब दूँगी।",
+    "ar": "بالتأكيد. سأرد عليك قريبًا.",
+    "zh": "当然。我很快回复你。",
+    "es": "Por supuesto. Te responderé pronto.",
+    "fr": "Bien sûr. Je te répondrai bientôt.",
+    "tr": "Tabii. Size birazdan dönüş yaparım.",
+    "ja": "もちろん。すぐ返信するね。",
+    "ko": "물론이죠. 곧 답장 드릴게요.",
+    "it": "Certo. Ti rispondo presto.",
+    "de": "Klar. Ich melde mich bald bei dir.",
+    "pt": "Claro. Te respondo logo.",
+    "ru": "Конечно. Я скоро вам отвечу.",
+    "vi": "Tất nhiên rồi. Mình sẽ trả lời bạn sớm.",
+    "th": "ได้ค่ะ เดี๋ยวจะรีบตอบกลับนะคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Perfect. Thanks for your help.",
+   "start": 24600,
+   "end": 27170,
+   "tr": {
+    "ur": "بہت خوب۔ آپ کی مدد کا شکریہ۔",
+    "hi": "बहुत अच्छे। आपकी मदद के लिए शुक्रिया।",
+    "ar": "ممتاز. شكرًا لمساعدتكِ.",
+    "zh": "很好。谢谢你的帮助。",
+    "es": "Perfecto. Gracias por tu ayuda.",
+    "fr": "Parfait. Merci pour ton aide.",
+    "tr": "Harika. Yardımınız için teşekkür ederim.",
+    "ja": "助かったよ、ありがとう。",
+    "ko": "좋아요. 도와주셔서 감사해요.",
+    "it": "Perfetto. Grazie per l'aiuto.",
+    "de": "Perfekt. Danke für deine Hilfe.",
+    "pt": "Perfeito. Obrigado pela ajuda.",
+    "ru": "Прекрасно. Спасибо за помощь.",
+    "vi": "Tuyệt. Cảm ơn bạn đã giúp nhé.",
+    "th": "เยี่ยมเลยครับ ขอบคุณที่ช่วยนะครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "You're welcome, Ethan.",
+   "start": 27550,
+   "end": 30080,
+   "tr": {
+    "ur": "کوئی بات نہیں، ایتھن۔",
+    "hi": "कोई बात नहीं, ईथन।",
+    "ar": "على الرحب والسعة يا إيثان.",
+    "zh": "不客气，伊森。",
+    "es": "De nada, Ethan.",
+    "fr": "De rien, Ethan.",
+    "tr": "Rica ederim, Ethan.",
+    "ja": "どういたしまして、イーサン。",
+    "ko": "천만에요, 이선 씨.",
+    "it": "Di niente, Ethan.",
+    "de": "Gern geschehen, Ethan.",
+    "pt": "De nada, Ethan.",
+    "ru": "Не за что, Итан.",
+    "vi": "Không có gì, Ethan.",
+    "th": "ด้วยความยินดีค่ะ อีธาน"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "email",
+   "meaning": "a message sent over the internet",
+   "tr": {
+    "ur": "ای میل",
+    "hi": "ईमेल",
+    "ar": "بريد إلكتروني",
+    "zh": "邮件",
+    "es": "correo",
+    "fr": "mail",
+    "tr": "e-posta",
+    "ja": "メール",
+    "ko": "이메일",
+    "it": "email",
+    "de": "die E-Mail",
+    "pt": "e-mail",
+    "ru": "письмо",
+    "vi": "email",
+    "th": "อีเมล"
+   }
+  },
+  {
+   "word": "inbox",
+   "meaning": "the place where new emails arrive",
+   "tr": {
+    "ur": "ان باکس",
+    "hi": "इनबॉक्स",
+    "ar": "صندوق الوارد",
+    "zh": "收件箱",
+    "es": "bandeja de entrada",
+    "fr": "boîte de réception",
+    "tr": "gelen kutusu",
+    "ja": "受信トレイ",
+    "ko": "받은편지함",
+    "it": "posta in arrivo",
+    "de": "der Posteingang",
+    "pt": "caixa de entrada",
+    "ru": "входящие",
+    "vi": "hộp thư đến",
+    "th": "กล่องจดหมายเข้า"
+   }
+  },
+  {
+   "word": "attached",
+   "meaning": "added a file to an email",
+   "tr": {
+    "ur": "اٹیچ کرنا",
+    "hi": "अटैच करना",
+    "ar": "أرفق",
+    "zh": "附上",
+    "es": "adjuntar",
+    "fr": "joindre",
+    "tr": "eklemek",
+    "ja": "添付する",
+    "ko": "첨부하다",
+    "it": "allegare",
+    "de": "anhängen",
+    "pt": "anexar",
+    "ru": "прикрепить",
+    "vi": "đính kèm",
+    "th": "แนบ"
+   }
+  },
+  {
+   "word": "project report",
+   "meaning": "a document that explains how a project is going",
+   "tr": {
+    "ur": "پروجیکٹ رپورٹ",
+    "hi": "प्रोजेक्ट रिपोर्ट",
+    "ar": "تقرير المشروع",
+    "zh": "项目报告",
+    "es": "informe del proyecto",
+    "fr": "rapport de projet",
+    "tr": "proje raporu",
+    "ja": "プロジェクトのレポート",
+    "ko": "프로젝트 보고서",
+    "it": "rapporto del progetto",
+    "de": "der Projektbericht",
+    "pt": "relatório do projeto",
+    "ru": "отчёт по проекту",
+    "vi": "báo cáo dự án",
+    "th": "รายงานโปรเจกต์"
+   }
+  },
+  {
+   "word": "meeting",
+   "meaning": "a time when people meet to talk about work",
+   "tr": {
+    "ur": "میٹنگ",
+    "hi": "मीटिंग",
+    "ar": "اجتماع",
+    "zh": "会议",
+    "es": "reunión",
+    "fr": "réunion",
+    "tr": "toplantı",
+    "ja": "会議",
+    "ko": "회의",
+    "it": "riunione",
+    "de": "die Besprechung",
+    "pt": "reunião",
+    "ru": "совещание",
+    "vi": "cuộc họp",
+    "th": "การประชุม"
+   }
+  },
+  {
+   "word": "reply",
+   "meaning": "answer an email or a message",
+   "tr": {
+    "ur": "جواب دینا",
+    "hi": "जवाब देना",
+    "ar": "ردّ",
+    "zh": "回复",
+    "es": "responder",
+    "fr": "répondre",
+    "tr": "yanıt vermek",
+    "ja": "返信する",
+    "ko": "답장하다",
+    "it": "rispondere",
+    "de": "antworten",
+    "pt": "responder",
+    "ru": "ответить",
+    "vi": "trả lời",
+    "th": "ตอบกลับ"
+   }
+  },
+  {
+   "word": "get back to you",
+   "meaning": "answer you or contact you again later",
+   "tr": {
+    "ur": "آپ کو جواب دینا",
+    "hi": "आपको जवाब देना",
+    "ar": "الرد عليك",
+    "zh": "回复你",
+    "es": "responderte",
+    "fr": "te répondre",
+    "tr": "size dönüş yapmak",
+    "ja": "折り返し連絡する",
+    "ko": "다시 연락드리다",
+    "it": "risponderti",
+    "de": "sich bei dir melden",
+    "pt": "te dar um retorno",
+    "ru": "ответить вам",
+    "vi": "trả lời bạn",
+    "th": "ติดต่อกลับ"
+   }
+  },
+  {
+   "word": "just a second",
+   "meaning": "please wait a very short time",
+   "tr": {
+    "ur": "بس ایک سیکنڈ",
+    "hi": "बस एक सेकंड",
+    "ar": "لحظة واحدة",
+    "zh": "稍等一下",
+    "es": "un segundo",
+    "fr": "une seconde",
+    "tr": "bir saniye",
+    "ja": "ちょっと待って",
+    "ko": "잠시만요",
+    "it": "un attimo",
+    "de": "einen Moment",
+    "pt": "um segundo",
+    "ru": "секунду",
+    "vi": "chờ một chút",
+    "th": "แป๊บนึง"
+   }
+  },
+  {
+   "word": "let me check",
+   "meaning": "I will look at it now",
+   "tr": {
+    "ur": "ذرا چیک کر لوں",
+    "hi": "ज़रा चेक कर लूँ",
+    "ar": "دعني أتحقق",
+    "zh": "让我看看",
+    "es": "déjame revisar",
+    "fr": "laisse-moi regarder",
+    "tr": "bir bakayım",
+    "ja": "確認させて",
+    "ko": "확인해 볼게요",
+    "it": "fammi controllare",
+    "de": "lass mich nachsehen",
+    "pt": "deixa eu ver",
+    "ru": "сейчас проверю",
+    "vi": "để mình kiểm tra",
+    "th": "ขอเช็กก่อน"
+   }
+  },
+  {
+   "word": "before lunch",
+   "meaning": "earlier than the midday meal",
+   "tr": {
+    "ur": "دوپہر کے کھانے سے پہلے",
+    "hi": "लंच से पहले",
+    "ar": "قبل الغداء",
+    "zh": "午饭前",
+    "es": "antes del almuerzo",
+    "fr": "avant le déjeuner",
+    "tr": "öğle yemeğinden önce",
+    "ja": "お昼前に",
+    "ko": "점심 전에",
+    "it": "prima di pranzo",
+    "de": "vor dem Mittagessen",
+    "pt": "antes do almoço",
+    "ru": "до обеда",
+    "vi": "trước giờ ăn trưa",
+    "th": "ก่อนพักเที่ยง"
+   }
+  }
+ ]
+}

@@ -1,0 +1,440 @@
+{
+ "scene": "🏫",
+ "colors": [
+  "#ECE7F3",
+  "#D6CCE6"
+ ],
+ "speakers": [
+  {
+   "name": "Emma",
+   "emoji": "👩",
+   "voice": "female"
+  },
+  {
+   "name": "Mr. Brown",
+   "emoji": "👨",
+   "voice": "male"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Excuse me, sir. May I ask a question?",
+   "start": 0,
+   "end": 3100,
+   "tr": {
+    "ur": "معاف کیجیے سر۔ کیا میں ایک سوال پوچھ سکتی ہوں؟",
+    "hi": "माफ़ कीजिए सर। क्या मैं एक सवाल पूछ सकती हूँ?",
+    "ar": "معذرةً يا أستاذ. هل يمكنني أن أطرح سؤالًا؟",
+    "zh": "老师，打扰一下。我可以问一个问题吗？",
+    "es": "Disculpe, profesor. ¿Puedo hacerle una pregunta?",
+    "fr": "Excusez-moi, monsieur. Puis-je vous poser une question ?",
+    "tr": "Affedersiniz hocam. Bir soru sorabilir miyim?",
+    "ja": "すみません、先生。質問してもいいですか？",
+    "ko": "실례합니다, 선생님. 질문 하나 해도 될까요?",
+    "it": "Scusi, professore. Posso farle una domanda?",
+    "de": "Entschuldigung, Herr Brown. Darf ich eine Frage stellen?",
+    "pt": "Com licença, professor. Posso fazer uma pergunta?",
+    "ru": "Простите, мистер Браун. Можно задать вопрос?",
+    "vi": "Dạ thưa thầy, em có thể hỏi thầy một câu được không ạ?",
+    "th": "ขอโทษค่ะ ครูบราวน์ ฉันขอถามคำถามได้ไหมคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Of course, Emma. What would you like to know?",
+   "start": 3280,
+   "end": 5600,
+   "tr": {
+    "ur": "ضرور، ایما۔ آپ کیا جاننا چاہتی ہیں؟",
+    "hi": "ज़रूर, एम्मा। आप क्या जानना चाहेंगी?",
+    "ar": "طبعًا يا إيما. ماذا تودّين أن تعرفي؟",
+    "zh": "当然可以，艾玛。你想知道什么？",
+    "es": "Por supuesto, Emma. ¿Qué le gustaría saber?",
+    "fr": "Bien sûr, Emma. Que voulez-vous savoir ?",
+    "tr": "Tabii Emma. Neyi merak ediyorsunuz?",
+    "ja": "もちろんです、エマさん。何が知りたいですか？",
+    "ko": "물론이죠, 엠마 씨. 무엇을 알고 싶으세요?",
+    "it": "Certo, Emma. Cosa vorrebbe sapere?",
+    "de": "Natürlich, Emma. Was möchten Sie wissen?",
+    "pt": "Claro, Emma. O que você gostaria de saber?",
+    "ru": "Конечно, Эмма. Что бы вы хотели узнать?",
+    "vi": "Được chứ, Emma. Em muốn biết điều gì?",
+    "th": "ได้สิครับ เอ็มมา คุณอยากรู้อะไรครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "I don't understand this sentence. Could you explain it again?",
+   "start": 5860,
+   "end": 8680,
+   "tr": {
+    "ur": "میں یہ جملہ نہیں سمجھی۔ کیا آپ اسے دوبارہ سمجھا سکتے ہیں؟",
+    "hi": "मुझे यह वाक्य समझ नहीं आया। क्या आप इसे दोबारा समझा सकते हैं?",
+    "ar": "لم أفهم هذه الجملة. هل يمكنك أن تشرحها مرة أخرى؟",
+    "zh": "这个句子我看不懂。您能再解释一遍吗？",
+    "es": "No entiendo esta oración. ¿Podría explicarla otra vez?",
+    "fr": "Je ne comprends pas cette phrase. Pourriez-vous me l'expliquer encore une fois ?",
+    "tr": "Bu cümleyi anlamadım. Bir daha açıklayabilir misiniz?",
+    "ja": "この文が分からないんです。もう一度説明していただけますか？",
+    "ko": "이 문장을 이해하지 못했어요. 다시 한번 설명해 주실 수 있어요?",
+    "it": "Non capisco questa frase. Potrebbe spiegarmela di nuovo?",
+    "de": "Ich verstehe diesen Satz nicht. Könnten Sie ihn noch einmal erklären?",
+    "pt": "Não entendi esta frase. Pode explicá-la de novo?",
+    "ru": "Я не понимаю это предложение. Не могли бы вы объяснить его ещё раз?",
+    "vi": "Em không hiểu câu này ạ. Thầy có thể giải thích lại không ạ?",
+    "th": "ฉันไม่เข้าใจประโยคนี้ค่ะ ช่วยอธิบายอีกครั้งได้ไหมคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Certainly. We use the past tense for finished actions.",
+   "start": 8700,
+   "end": 12195,
+   "tr": {
+    "ur": "بالکل۔ ہم مکمل ہو چکے کاموں کے لیے ماضی کا زمانہ استعمال کرتے ہیں۔",
+    "hi": "बिल्कुल। हम पूरे हो चुके कामों के लिए भूतकाल का प्रयोग करते हैं।",
+    "ar": "بالتأكيد. نستخدم الزمن الماضي للأحداث المنتهية.",
+    "zh": "好的。我们用过去时来表示已经完成的动作。",
+    "es": "Claro. Usamos el tiempo pasado para las acciones terminadas.",
+    "fr": "Certainement. Nous utilisons le passé pour les actions terminées.",
+    "tr": "Elbette. Biten eylemler için geçmiş zamanı kullanırız.",
+    "ja": "はい。終わった動作には過去形を使います。",
+    "ko": "그럼요. 끝난 행동에는 과거 시제를 써요.",
+    "it": "Certamente. Usiamo il passato per le azioni concluse.",
+    "de": "Gern. Wir verwenden die Vergangenheitsform für abgeschlossene Handlungen.",
+    "pt": "Certamente. Usamos o passado para ações terminadas.",
+    "ru": "Разумеется. Мы используем прошедшее время для завершённых действий.",
+    "vi": "Dĩ nhiên. Chúng ta dùng thì quá khứ cho các hành động đã kết thúc.",
+    "th": "ได้ครับ เราใช้อดีตกาลกับการกระทำที่เสร็จสิ้นแล้วครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Oh, I see. Could you give me another example?",
+   "start": 12230,
+   "end": 15030,
+   "tr": {
+    "ur": "اوہ، اچھا۔ کیا آپ مجھے ایک اور مثال دے سکتے ہیں؟",
+    "hi": "अच्छा, समझ गई। क्या आप मुझे एक और उदाहरण दे सकते हैं?",
+    "ar": "آه، فهمت. هل يمكنك أن تعطيني مثالًا آخر؟",
+    "zh": "哦，我明白了。您能再举一个例子吗？",
+    "es": "Ah, ya veo. ¿Podría darme otro ejemplo?",
+    "fr": "Ah, je vois. Pourriez-vous me donner un autre exemple ?",
+    "tr": "Ah, anladım. Bana bir örnek daha verebilir misiniz?",
+    "ja": "ああ、わかりました。もう一つ例を挙げていただけますか？",
+    "ko": "아, 알겠어요. 예시를 하나 더 들어 주실 수 있어요?",
+    "it": "Ah, capisco. Potrebbe farmi un altro esempio?",
+    "de": "Ach so, ich verstehe. Könnten Sie mir noch ein Beispiel geben?",
+    "pt": "Ah, entendi. Pode me dar outro exemplo?",
+    "ru": "А, понятно. Не могли бы вы привести ещё один пример?",
+    "vi": "À, em hiểu rồi. Thầy có thể cho em thêm một ví dụ nữa không ạ?",
+    "th": "อ๋อ เข้าใจแล้วค่ะ ช่วยยกตัวอย่างเพิ่มอีกหนึ่งข้อได้ไหมคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Sure. Yesterday I visited my grandparents.",
+   "start": 15150,
+   "end": 18460,
+   "tr": {
+    "ur": "ٹھیک ہے۔ کل میں اپنے دادا دادی سے ملنے گیا۔",
+    "hi": "ठीक है। कल मैं अपने दादा-दादी से मिलने गया था।",
+    "ar": "حسنًا. بالأمس زرتُ جدّي وجدّتي.",
+    "zh": "可以。昨天我去看望了爷爷奶奶。",
+    "es": "Con gusto. Ayer visité a mis abuelos.",
+    "fr": "Avec plaisir. Hier, j'ai rendu visite à mes grands-parents.",
+    "tr": "Tabii. Dün büyükannemi ve büyükbabamı ziyaret ettim.",
+    "ja": "いいですよ。昨日、祖父母を訪ねました。",
+    "ko": "그래요. 어제 저는 조부모님을 찾아뵀어요.",
+    "it": "Volentieri. Ieri ho fatto visita ai miei nonni.",
+    "de": "Klar. Gestern habe ich meine Großeltern besucht.",
+    "pt": "Claro. Ontem eu visitei meus avós.",
+    "ru": "Хорошо. Вчера я навестил бабушку с дедушкой.",
+    "vi": "Được. Hôm qua thầy đã về thăm ông bà.",
+    "th": "ได้ครับ เมื่อวานผมไปเยี่ยมปู่ย่าตายายมาครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Got it. May I write that example down?",
+   "start": 18800,
+   "end": 21740,
+   "tr": {
+    "ur": "سمجھ گئی۔ کیا میں یہ مثال لکھ لوں؟",
+    "hi": "समझ गई। क्या मैं यह उदाहरण लिख लूँ?",
+    "ar": "فهمت. هل يمكنني أن أدوّن هذا المثال؟",
+    "zh": "明白了。我可以把这个例子记下来吗？",
+    "es": "Entendido. ¿Puedo anotar ese ejemplo?",
+    "fr": "J'ai compris. Puis-je noter cet exemple ?",
+    "tr": "Anladım. Bu örneği not alabilir miyim?",
+    "ja": "わかりました。その例を書き留めてもいいですか？",
+    "ko": "알겠어요. 이 예문을 적어 둬도 될까요?",
+    "it": "Ho capito. Posso annotare questo esempio?",
+    "de": "Alles klar. Darf ich mir dieses Beispiel aufschreiben?",
+    "pt": "Entendi. Posso anotar esse exemplo?",
+    "ru": "Понятно. Можно записать этот пример?",
+    "vi": "Dạ, em hiểu rồi. Em có thể ghi lại ví dụ này không ạ?",
+    "th": "เข้าใจแล้วค่ะ ขอจดตัวอย่างนี้ได้ไหมคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Absolutely. Take your time.",
+   "start": 22020,
+   "end": 25040,
+   "tr": {
+    "ur": "ضرور۔ آرام سے کیجیے۔",
+    "hi": "बिल्कुल। आराम से कीजिए।",
+    "ar": "بالطبع. خذي وقتك.",
+    "zh": "当然，慢慢来。",
+    "es": "Desde luego. Tómese su tiempo.",
+    "fr": "Absolument. Prenez votre temps.",
+    "tr": "Kesinlikle. Acele etmeyin.",
+    "ja": "もちろんです。ゆっくりどうぞ。",
+    "ko": "당연하죠. 천천히 하세요.",
+    "it": "Certo, faccia pure con calma.",
+    "de": "Auf jeden Fall. Lassen Sie sich Zeit.",
+    "pt": "Com certeza. Não tenha pressa.",
+    "ru": "Конечно. Не торопитесь.",
+    "vi": "Tất nhiên rồi. Em cứ từ từ nhé.",
+    "th": "แน่นอนครับ ค่อย ๆ ทำนะครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Thank you, sir. That really helps.",
+   "start": 27270,
+   "end": 30080,
+   "tr": {
+    "ur": "شکریہ سر۔ اس سے واقعی بڑی مدد ملی۔",
+    "hi": "धन्यवाद सर। इससे सच में बहुत मदद मिली।",
+    "ar": "شكرًا لك يا أستاذ. لقد ساعدني هذا كثيرًا.",
+    "zh": "谢谢老师，这真的很有帮助。",
+    "es": "Muchas gracias, profesor. Me ayuda mucho.",
+    "fr": "Merci beaucoup, monsieur. Ça m'aide vraiment.",
+    "tr": "Teşekkür ederim hocam. Bu gerçekten çok yardımcı oldu.",
+    "ja": "ありがとうございます、先生。とても助かりました。",
+    "ko": "감사합니다, 선생님. 정말 도움이 됐어요.",
+    "it": "Grazie mille, professore. Mi è stato davvero utile.",
+    "de": "Vielen Dank, Herr Brown. Das hilft mir wirklich weiter.",
+    "pt": "Muito obrigada, professor. Isso me ajuda muito.",
+    "ru": "Большое спасибо, мистер Браун. Вы мне очень помогли.",
+    "vi": "Dạ, em cảm ơn thầy. Thầy giúp em nhiều lắm ạ.",
+    "th": "ขอบคุณค่ะ ครูบราวน์ ช่วยได้มากเลยค่ะ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "Excuse me",
+   "meaning": "a polite way to get someone's attention",
+   "tr": {
+    "ur": "معاف کیجیے",
+    "hi": "माफ़ कीजिए",
+    "ar": "معذرةً",
+    "zh": "打扰一下",
+    "es": "disculpe",
+    "fr": "excusez-moi",
+    "tr": "affedersiniz",
+    "ja": "すみません",
+    "ko": "실례합니다",
+    "it": "scusi",
+    "de": "Entschuldigung",
+    "pt": "com licença",
+    "ru": "извините",
+    "vi": "xin lỗi",
+    "th": "ขอโทษ"
+   }
+  },
+  {
+   "word": "question",
+   "meaning": "something you ask to get information",
+   "tr": {
+    "ur": "سوال",
+    "hi": "सवाल",
+    "ar": "سؤال",
+    "zh": "问题",
+    "es": "pregunta",
+    "fr": "question",
+    "tr": "soru",
+    "ja": "質問",
+    "ko": "질문",
+    "it": "domanda",
+    "de": "die Frage",
+    "pt": "pergunta",
+    "ru": "вопрос",
+    "vi": "câu hỏi",
+    "th": "คำถาม"
+   }
+  },
+  {
+   "word": "understand",
+   "meaning": "know what something means",
+   "tr": {
+    "ur": "سمجھنا",
+    "hi": "समझना",
+    "ar": "يفهم",
+    "zh": "理解",
+    "es": "entender",
+    "fr": "comprendre",
+    "tr": "anlamak",
+    "ja": "理解する",
+    "ko": "이해하다",
+    "it": "capire",
+    "de": "verstehen",
+    "pt": "entender",
+    "ru": "понимать",
+    "vi": "hiểu",
+    "th": "เข้าใจ"
+   }
+  },
+  {
+   "word": "sentence",
+   "meaning": "words that form a complete thought",
+   "tr": {
+    "ur": "جملہ",
+    "hi": "वाक्य",
+    "ar": "جملة",
+    "zh": "句子",
+    "es": "oración",
+    "fr": "phrase",
+    "tr": "cümle",
+    "ja": "文",
+    "ko": "문장",
+    "it": "frase",
+    "de": "der Satz",
+    "pt": "frase",
+    "ru": "предложение",
+    "vi": "câu",
+    "th": "ประโยค"
+   }
+  },
+  {
+   "word": "explain",
+   "meaning": "make something clear by describing it",
+   "tr": {
+    "ur": "سمجھانا",
+    "hi": "समझाना",
+    "ar": "يشرح",
+    "zh": "解释",
+    "es": "explicar",
+    "fr": "expliquer",
+    "tr": "açıklamak",
+    "ja": "説明する",
+    "ko": "설명하다",
+    "it": "spiegare",
+    "de": "erklären",
+    "pt": "explicar",
+    "ru": "объяснять",
+    "vi": "giải thích",
+    "th": "อธิบาย"
+   }
+  },
+  {
+   "word": "example",
+   "meaning": "a thing that shows what something is like",
+   "tr": {
+    "ur": "مثال",
+    "hi": "उदाहरण",
+    "ar": "مثال",
+    "zh": "例子",
+    "es": "ejemplo",
+    "fr": "exemple",
+    "tr": "örnek",
+    "ja": "例",
+    "ko": "예시",
+    "it": "esempio",
+    "de": "das Beispiel",
+    "pt": "exemplo",
+    "ru": "пример",
+    "vi": "ví dụ",
+    "th": "ตัวอย่าง"
+   }
+  },
+  {
+   "word": "past tense",
+   "meaning": "verb form for actions already done",
+   "tr": {
+    "ur": "ماضی کا زمانہ",
+    "hi": "भूतकाल",
+    "ar": "الزمن الماضي",
+    "zh": "过去时",
+    "es": "tiempo pasado",
+    "fr": "le passé",
+    "tr": "geçmiş zaman",
+    "ja": "過去形",
+    "ko": "과거 시제",
+    "it": "passato",
+    "de": "die Vergangenheitsform",
+    "pt": "o passado",
+    "ru": "прошедшее время",
+    "vi": "thì quá khứ",
+    "th": "อดีตกาล"
+   }
+  },
+  {
+   "word": "finished",
+   "meaning": "completed, already done",
+   "tr": {
+    "ur": "ختم شدہ",
+    "hi": "पूरा हुआ",
+    "ar": "منتهٍ",
+    "zh": "已完成的",
+    "es": "terminado",
+    "fr": "terminé",
+    "tr": "bitmiş",
+    "ja": "終わった",
+    "ko": "끝난",
+    "it": "concluso",
+    "de": "abgeschlossen",
+    "pt": "concluído",
+    "ru": "завершённый",
+    "vi": "đã hoàn thành",
+    "th": "เสร็จสิ้นแล้ว"
+   }
+  },
+  {
+   "word": "certainly",
+   "meaning": "yes, definitely",
+   "tr": {
+    "ur": "بالکل",
+    "hi": "बिल्कुल",
+    "ar": "بالتأكيد",
+    "zh": "当然",
+    "es": "claro",
+    "fr": "certainement",
+    "tr": "elbette",
+    "ja": "もちろん",
+    "ko": "당연히",
+    "it": "certamente",
+    "de": "natürlich",
+    "pt": "certamente",
+    "ru": "разумеется",
+    "vi": "dĩ nhiên",
+    "th": "แน่นอน"
+   }
+  },
+  {
+   "word": "take your time",
+   "meaning": "do something slowly, without rushing",
+   "tr": {
+    "ur": "آرام سے کیجیے",
+    "hi": "आराम से कीजिए",
+    "ar": "خذي وقتك",
+    "zh": "慢慢来",
+    "es": "tómese su tiempo",
+    "fr": "prenez votre temps",
+    "tr": "acele etmeyin",
+    "ja": "ゆっくりどうぞ",
+    "ko": "천천히 하세요",
+    "it": "fare con calma",
+    "de": "lassen Sie sich Zeit",
+    "pt": "não tenha pressa",
+    "ru": "не торопитесь",
+    "vi": "cứ từ từ",
+    "th": "ค่อย ๆ ทำ"
+   }
+  }
+ ]
+}

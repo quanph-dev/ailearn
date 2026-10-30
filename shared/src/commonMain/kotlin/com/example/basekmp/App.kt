@@ -4,7 +4,6 @@ import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -17,21 +16,16 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.safeContentPadding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
-import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.Typography
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -43,71 +37,60 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.window.DialogProperties
-import androidx.compose.ui.window.Dialog
-import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.compose.ui.semantics.contentDescription
-import androidx.compose.ui.semantics.Role
-import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.window.Dialog
+import androidx.compose.ui.window.DialogProperties
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import ailearn.shared.generated.resources.Res
+import ailearn.shared.generated.resources.cd_back
+import ailearn.shared.generated.resources.language_confirm
+import ailearn.shared.generated.resources.language_save_error
+import ailearn.shared.generated.resources.language_title
+import ailearn.shared.generated.resources.ui_are_you_sure_you_want_to_exit_the_app_now
+import ailearn.shared.generated.resources.ui_exit_the_app
+import ailearn.shared.generated.resources.ui_no
+import ailearn.shared.generated.resources.ui_yes_exit
+import com.example.basekmp.ui.onboarding.FirstOpenIntroScreen
+import com.example.basekmp.ui.onboarding.FirstOpenSurveyScreen
+import com.example.basekmp.ui.onboarding.OnboardingState
+import com.example.basekmp.theme.Blue
+import com.example.basekmp.theme.BlueSelected
+import com.example.basekmp.theme.DividerColor
+import com.example.basekmp.theme.EnglishLearningAppTheme
+import com.example.basekmp.theme.GradientBottom
+import com.example.basekmp.theme.OptionSurface
+import com.example.basekmp.theme.TextPrimary
+import com.example.basekmp.theme.TextSecondary
+import com.example.basekmp.ui.grammar.GrammarQuizScreen
+import com.example.basekmp.ui.grammar.GrammarSetupScreen
+import com.example.basekmp.ui.learningpath.PathLessonScreen
+import com.example.basekmp.ui.main.MainScreen
+import com.example.basekmp.ui.onboarding.OnboardingScreen
+import com.example.basekmp.ui.plan.PlanGeneratingScreen
+import com.example.basekmp.ui.plan.PlanScreen
+import com.example.basekmp.ui.plan.PlanSessionScreen
+import com.example.basekmp.ui.plan.PlanSetupScreen
+import com.example.basekmp.ui.progress.LearningHistoryScreen
+import com.example.basekmp.ui.progress.ProgressDetailScreen
+import com.example.basekmp.ui.settings.LegalScreen
+import com.example.basekmp.ui.shadowing.SavedWordsScreen
+import com.example.basekmp.ui.shadowing.VideoShadowingListScreen
+import com.example.basekmp.ui.shadowing.VideoShadowingPlayerScreen
+import com.example.basekmp.ui.speaking.SpeakingCardsScreen
+import com.example.basekmp.ui.speaking.SpeakingSetupScreen
+import com.example.basekmp.ui.splash.SplashScreen
+import com.example.basekmp.ui.tutor.AiTutorScreen
+import com.example.basekmp.ui.tutor.TodayLessonScreen
+import com.example.basekmp.ui.vocab.VocabCardsScreen
+import com.example.basekmp.ui.vocab.VocabSetupScreen
 import kotlinx.coroutines.delay
-import org.jetbrains.compose.resources.DrawableResource
-import org.jetbrains.compose.resources.Font
-import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
-import basekmp.shared.generated.resources.Res
-import basekmp.shared.generated.resources.bg_onboard1
-import basekmp.shared.generated.resources.bg_onboard2
-import basekmp.shared.generated.resources.bg_onboard3
-import basekmp.shared.generated.resources.cd_back
-import basekmp.shared.generated.resources.flag_brazil
-import basekmp.shared.generated.resources.flag_english
-import basekmp.shared.generated.resources.flag_france
-import basekmp.shared.generated.resources.flag_germany
-import basekmp.shared.generated.resources.flag_india
-import basekmp.shared.generated.resources.flag_indonesia
-import basekmp.shared.generated.resources.flag_portuguese
-import basekmp.shared.generated.resources.flag_saudi
-import basekmp.shared.generated.resources.flag_spain
-import basekmp.shared.generated.resources.flag_vietnam
-import basekmp.shared.generated.resources.inter_bold
-import basekmp.shared.generated.resources.inter_regular
-import basekmp.shared.generated.resources.inter_semibold
-import basekmp.shared.generated.resources.language_title
-import basekmp.shared.generated.resources.language_confirm
-import basekmp.shared.generated.resources.language_save_error
-import basekmp.shared.generated.resources.network_offline_message
-import basekmp.shared.generated.resources.network_offline_title
-import basekmp.shared.generated.resources.network_try_again
-import basekmp.shared.generated.resources.ui_are_you_sure_you_want_to_exit_the_app_now
-import basekmp.shared.generated.resources.ui_exit_the_app
-import basekmp.shared.generated.resources.ui_no
-import basekmp.shared.generated.resources.ui_yes_exit
-import basekmp.shared.generated.resources.home_description
-import basekmp.shared.generated.resources.home_welcome
-import basekmp.shared.generated.resources.onboarding_next
-import basekmp.shared.generated.resources.onboarding_start
-import basekmp.shared.generated.resources.onboarding_subtitle_1
-import basekmp.shared.generated.resources.onboarding_subtitle_2
-import basekmp.shared.generated.resources.onboarding_subtitle_3
-import basekmp.shared.generated.resources.onboarding_title_1
-import basekmp.shared.generated.resources.onboarding_title_2
-import basekmp.shared.generated.resources.onboarding_title_3
-import basekmp.shared.generated.resources.settings_general_language
-import basekmp.shared.generated.resources.splash_loading
-
-private val InkBlack = Color(0xFF0A0C10)
-private val DeepSurface = Color(0xFF111318)
-private val SurfaceContainer = Color(0xFF1E2024)
-private val NeonCyan = Color(0xFF00F0FF)
-private val RoyalBlue = Color(0xFF0266FF)
-private val TextPrimary = Color(0xFFE2E2E8)
-private val TextSecondary = Color(0xFFB9CACB)
 
 @Composable
 fun App(
@@ -116,21 +99,7 @@ fun App(
     onExitApp: () -> Unit = {}
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
-    val networkConnection = rememberNetworkConnectionState()
-    val isOnline by networkConnection.isOnline
-    var hasConfirmedConnection by remember(networkConnection) {
-        mutableStateOf(networkConnection.isOnline.value)
-    }
-    LaunchedEffect(isOnline) {
-        if (!isOnline) hasConfirmedConnection = false
-    }
-    val canUseApp = isOnline && hasConfirmedConnection
-    var appliedLanguageCode by remember { mutableStateOf<String?>(null) }
     var showExitConfirmation by remember { mutableStateOf(false) }
-
-    LaunchedEffect(canUseApp) {
-        if (!canUseApp) showExitConfirmation = false
-    }
 
     LaunchedEffect(viewModel) {
         viewModel.events.collect { event ->
@@ -141,103 +110,71 @@ fun App(
     }
     LaunchedEffect(uiState.languageCode) {
         applyPlatformLanguage(uiState.languageCode)
-        appliedLanguageCode = uiState.languageCode
+        com.example.basekmp.data.Strings.select(uiState.languageCode)
     }
-    LaunchedEffect(uiState.route, canUseApp) {
-        if (!canUseApp) return@LaunchedEffect
-        when (uiState.route) {
-            BaseRoutes.ApplyLanguage -> {
-                delay(APPLY_LANGUAGE_SCREEN_DURATION_MS)
-                viewModel.finishApplyLanguage()
-            }
-
-            BaseRoutes.Home -> viewModel.onHomeShown()
+    LaunchedEffect(uiState.route) {
+        if (uiState.route == BaseRoutes.ApplyLanguage) {
+            delay(250)
+            viewModel.finishApplyLanguage()
         }
     }
-    BackActionHandler(enabled = canUseApp && uiState.route == BaseRoutes.LanguageSettings) {
+
+    BackActionHandler(enabled = uiState.route == BaseRoutes.LanguageSettings) {
         viewModel.closeLanguageSettings()
     }
-    BackActionHandler(enabled = canUseApp && uiState.route == BaseRoutes.Onboarding) {
-        viewModel.advanceOnboarding()
-    }
-    BackActionHandler(
-        enabled = canUseApp && uiState.route in setOf(
-            BaseRoutes.Splash,
-            BaseRoutes.StartupLanguage,
-            BaseRoutes.ApplyLanguage,
-            BaseRoutes.Home
-        )
-    ) {
-        showExitConfirmation = true
+    BackActionHandler(enabled = !uiState.isLoading && uiState.route !in setOf(BaseRoutes.Home, BaseRoutes.LanguageSettings)) {
+        when (uiState.route) {
+            BaseRoutes.FirstOpenSurvey -> viewModel.backToFirstOpenIntro()
+            BaseRoutes.FirstOpenIntro -> if (uiState.firstOpenPage > 0) viewModel.backFirstOpenIntro() else showExitConfirmation = true
+            BaseRoutes.Onboarding -> {
+                val state = OnboardingState.deserialize(uiState.onboardingProgress)
+                if (!state.isFirstStep) viewModel.updateOnboardingProgress(state.previous().serialize())
+                else showExitConfirmation = true
+            }
+            else -> showExitConfirmation = true
+        }
     }
 
-    if (appliedLanguageCode == uiState.languageCode) {
+    EnglishLearningAppTheme(darkTheme = false) {
         PlatformLocaleProvider(uiState.languageCode) {
-            BaseTheme {
-                AppRootContainer(
-                    canUseApp = canUseApp,
-                    onTryAgain = {
-                        networkConnection.refresh()
-                        if (networkConnection.isOnline.value) hasConfirmedConnection = true
-                    },
-                    showExitConfirmation = showExitConfirmation,
-                    onDismissExitConfirmation = { showExitConfirmation = false },
-                    onExitApp = onExitApp
-                ) {
+            Box(modifier = Modifier.fillMaxSize()) {
+                if (uiState.isLoading || uiState.route == BaseRoutes.Splash) {
+                    SplashScreen()
+                } else {
                     when (uiState.route) {
-                        BaseRoutes.Splash -> SplashScreen()
-                        BaseRoutes.StartupLanguage,
-                        BaseRoutes.LanguageSettings -> LanguageScreen(uiState, viewModel)
-
-                        BaseRoutes.ApplyLanguage -> LoadingScreen()
-                        BaseRoutes.Onboarding -> OnboardingScreen(uiState, viewModel)
-                        else -> HomeScreen(viewModel)
+                        BaseRoutes.LanguageSettings -> com.example.basekmp.ui.settings.LanguageScreen(
+                            onBack = { viewModel.closeLanguageSettings() },
+                            onLanguageSelected = { langCode ->
+                                viewModel.selectLanguage(langCode)
+                                viewModel.confirmLanguage()
+                            }
+                        )
+                        BaseRoutes.Onboarding -> {
+                            val onboardingState = OnboardingState.deserialize(uiState.onboardingProgress)
+                            OnboardingScreen(
+                                state = onboardingState,
+                                isSaving = uiState.isSaving,
+                                hasError = uiState.hasError,
+                                onStateChange = { viewModel.updateOnboardingProgress(it.serialize()) },
+                                onFinished = { viewModel.completeOnboarding(it.serialize()) }
+                            )
+                        }
+                        BaseRoutes.Home -> MainAppHost(
+                            viewModel = viewModel,
+                            onOpenLanguageSettings = { viewModel.openLanguageSettings() },
+                            onExitRequested = { showExitConfirmation = true }
+                        )
+                        else -> SplashScreen()
                     }
                 }
-            }
-        }
-    } else {
-        BaseTheme {
-            AppRootContainer(
-                canUseApp = canUseApp,
-                onTryAgain = {
-                    networkConnection.refresh()
-                    if (networkConnection.isOnline.value) hasConfirmedConnection = true
-                },
-                showExitConfirmation = showExitConfirmation,
-                onDismissExitConfirmation = { showExitConfirmation = false },
-                onExitApp = onExitApp
-            ) {
-                Box(
-                    Modifier.fillMaxSize().background(DeepSurface),
-                    contentAlignment = Alignment.Center
-                ) {
-                    CircularProgressIndicator(color = NeonCyan)
+
+                if (showExitConfirmation) {
+                    ExitConfirmationDialog(
+                        onDismissRequest = { showExitConfirmation = false },
+                        onExitApp = onExitApp
+                    )
                 }
             }
-        }
-    }
-}
-
-@Composable
-private fun AppRootContainer(
-    canUseApp: Boolean,
-    onTryAgain: () -> Unit,
-    showExitConfirmation: Boolean,
-    onDismissExitConfirmation: () -> Unit,
-    onExitApp: () -> Unit,
-    content: @Composable () -> Unit
-) {
-    Box(Modifier.fillMaxSize()) {
-        content()
-        if (showExitConfirmation && canUseApp) {
-            ExitConfirmationDialog(
-                onDismissRequest = onDismissExitConfirmation,
-                onExitApp = onExitApp
-            )
-        }
-        if (!canUseApp) {
-            NetworkUnavailableDialog(onTryAgain = onTryAgain)
         }
     }
 }
@@ -256,15 +193,16 @@ private fun ExitConfirmationDialog(
                 .fillMaxWidth(0.9f)
                 .widthIn(max = 420.dp)
                 .clip(RoundedCornerShape(24.dp))
-                .background(Brush.verticalGradient(listOf(SurfaceContainer, DeepSurface)))
-                .border(1.dp, Color.White.copy(alpha = 0.12f), RoundedCornerShape(24.dp))
-                .padding(20.dp),
+                .background(Color.White)
+                .border(1.dp, DividerColor, RoundedCornerShape(24.dp))
+                .padding(24.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
                 text = stringResource(Res.string.ui_exit_the_app),
-                style = MaterialTheme.typography.headlineMedium,
+                style = MaterialTheme.typography.headlineSmall,
                 color = TextPrimary,
+                fontWeight = FontWeight.Bold,
                 textAlign = TextAlign.Center,
                 modifier = Modifier.fillMaxWidth()
             )
@@ -275,7 +213,7 @@ private fun ExitConfirmationDialog(
                 color = TextSecondary,
                 textAlign = TextAlign.Center
             )
-            Spacer(Modifier.height(20.dp))
+            Spacer(Modifier.height(24.dp))
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(12.dp)
@@ -305,8 +243,8 @@ private fun ExitSecondaryButton(text: String, onClick: () -> Unit) {
             .fillMaxWidth()
             .height(52.dp)
             .clip(shape)
-            .background(DeepSurface)
-            .border(1.dp, Color.White.copy(alpha = 0.16f), shape)
+            .background(OptionSurface)
+            .border(1.dp, DividerColor, shape)
             .clickable(role = Role.Button, onClick = onClick),
         contentAlignment = Alignment.Center
     ) {
@@ -327,7 +265,7 @@ private fun ExitPrimaryButton(text: String, onClick: () -> Unit) {
             .fillMaxWidth()
             .height(52.dp)
             .clip(RoundedCornerShape(18.dp))
-            .background(Brush.horizontalGradient(listOf(RoyalBlue, NeonCyan)))
+            .background(Blue)
             .clickable(role = Role.Button, onClick = onClick),
         contentAlignment = Alignment.Center
     ) {
@@ -338,115 +276,6 @@ private fun ExitPrimaryButton(text: String, onClick: () -> Unit) {
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center
         )
-    }
-}
-
-@Composable
-private fun NetworkUnavailableDialog(onTryAgain: () -> Unit) {
-    AlertDialog(
-        onDismissRequest = {},
-        properties = DialogProperties(
-            dismissOnBackPress = false,
-            dismissOnClickOutside = false
-        ),
-        title = {
-            Text(
-                text = stringResource(Res.string.network_offline_title),
-                style = MaterialTheme.typography.headlineMedium
-            )
-        },
-        text = {
-            Text(
-                text = stringResource(Res.string.network_offline_message),
-                style = MaterialTheme.typography.bodyMedium
-            )
-        },
-        confirmButton = {
-            TextButton(onClick = onTryAgain) {
-                Text(
-                    text = stringResource(Res.string.network_try_again),
-                    fontWeight = FontWeight.SemiBold
-                )
-            }
-        },
-        containerColor = SurfaceContainer
-    )
-}
-
-@Composable
-private fun BaseTheme(content: @Composable () -> Unit) {
-    val fontFamily = FontFamily(
-        Font(Res.font.inter_regular, FontWeight.Normal),
-        Font(Res.font.inter_semibold, FontWeight.SemiBold),
-        Font(Res.font.inter_bold, FontWeight.Bold)
-    )
-    val baseTypography = Typography()
-    MaterialTheme(
-        colorScheme = darkColorScheme(
-            primary = Color(0xFF00DBE9),
-            onPrimary = Color(0xFF002022),
-            background = DeepSurface,
-            onBackground = TextPrimary,
-            surface = DeepSurface,
-            onSurface = TextPrimary,
-            surfaceVariant = Color(0xFF282A2E),
-            onSurfaceVariant = TextSecondary,
-            outlineVariant = Color(0xFF3B494B)
-        ),
-        typography = Typography(
-            displayMedium = baseTypography.displayMedium.copy(fontFamily = fontFamily, fontSize = 32.sp),
-            headlineMedium = baseTypography.headlineMedium.copy(fontFamily = fontFamily, fontSize = 24.sp),
-            headlineSmall = baseTypography.headlineSmall.copy(fontFamily = fontFamily, fontSize = 20.sp),
-            titleMedium = baseTypography.titleMedium.copy(fontFamily = fontFamily, fontSize = 16.sp),
-            bodyLarge = baseTypography.bodyLarge.copy(fontFamily = fontFamily, fontSize = 16.sp),
-            bodyMedium = baseTypography.bodyMedium.copy(fontFamily = fontFamily, fontSize = 14.sp)
-        ),
-        content = content
-    )
-}
-
-@Composable
-private fun SplashScreen() {
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(Brush.verticalGradient(listOf(InkBlack, DeepSurface, Color(0xFF0D1821))))
-            .safeContentPadding(),
-        contentAlignment = Alignment.Center
-    ) {
-        Column(horizontalAlignment = Alignment.CenterHorizontally) {
-            Box(
-                modifier = Modifier
-                    .size(92.dp)
-                    .clip(RoundedCornerShape(28.dp))
-                    .background(Brush.linearGradient(listOf(RoyalBlue, NeonCyan))),
-                contentAlignment = Alignment.Center
-            ) {
-                Text("W", style = MaterialTheme.typography.displayMedium, color = Color.White, fontWeight = FontWeight.Bold)
-            }
-            Spacer(Modifier.height(24.dp))
-            CircularProgressIndicator(color = NeonCyan, modifier = Modifier.size(26.dp), strokeWidth = 2.dp)
-            Spacer(Modifier.height(16.dp))
-            Text(
-                stringResource(Res.string.splash_loading),
-                style = MaterialTheme.typography.bodyMedium,
-                color = TextSecondary
-            )
-        }
-    }
-}
-
-@Composable
-private fun LoadingScreen() {
-    Box(
-        Modifier.fillMaxSize().background(DeepSurface).safeContentPadding(),
-        contentAlignment = Alignment.Center
-    ) {
-        Column(horizontalAlignment = Alignment.CenterHorizontally) {
-            CircularProgressIndicator(color = NeonCyan)
-            Spacer(Modifier.height(16.dp))
-            Text(stringResource(Res.string.splash_loading), color = TextSecondary)
-        }
     }
 }
 
@@ -469,10 +298,17 @@ private fun LanguageScreen(state: BaseAppUiState, viewModel: BaseAppViewModel) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(DeepSurface)
-            .safeContentPadding()
+            .background(
+                Brush.verticalGradient(
+                    0.0f to Color.White,
+                    0.42f to GradientBottom,
+                    1.0f to Color.White
+                )
+            )
+            .safeDrawingPadding()
             .padding(horizontal = 20.dp)
     ) {
+        Spacer(Modifier.height(14.dp))
         Row(
             modifier = Modifier.fillMaxWidth().height(64.dp),
             verticalAlignment = Alignment.CenterVertically
@@ -481,14 +317,17 @@ private fun LanguageScreen(state: BaseAppUiState, viewModel: BaseAppViewModel) {
                 Text(
                     text = "‹  ${stringResource(Res.string.cd_back)}",
                     color = TextPrimary,
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.SemiBold,
                     modifier = Modifier.clickable { viewModel.closeLanguageSettings() }
                 )
                 Spacer(Modifier.width(16.dp))
             }
             Text(
                 text = stringResource(Res.string.language_title),
-                style = MaterialTheme.typography.titleMedium,
+                style = MaterialTheme.typography.titleLarge,
                 color = TextPrimary,
+                fontWeight = FontWeight.Bold,
                 modifier = Modifier.weight(1f)
             )
             AnimatedVisibility(
@@ -500,49 +339,59 @@ private fun LanguageScreen(state: BaseAppUiState, viewModel: BaseAppViewModel) {
                     modifier = Modifier
                         .size(44.dp)
                         .clip(CircleShape)
+                        .background(Blue)
                         .semantics { contentDescription = confirmAccessibilityLabel }
                         .clickable { viewModel.confirmLanguage() },
                     contentAlignment = Alignment.Center
                 ) {
-                    Text("✓", color = NeonCyan, style = MaterialTheme.typography.headlineSmall)
+                    Text("✓", color = Color.White, style = MaterialTheme.typography.headlineSmall)
                 }
             }
         }
-        Spacer(Modifier.height(20.dp))
+        Spacer(Modifier.height(16.dp))
         LazyColumn(
             modifier = Modifier.weight(1f),
-            verticalArrangement = Arrangement.spacedBy(14.dp)
+            verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             items(languages, key = { it.code }) { option ->
                 val selected = option.code == state.selectedLanguageCode
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .clip(RoundedCornerShape(24.dp))
-                        .background(SurfaceContainer)
+                        .clip(RoundedCornerShape(18.dp))
+                        .background(OptionSurface)
                         .border(
-                            width = 1.dp,
-                            color = if (selected) NeonCyan else MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.3f),
-                            shape = RoundedCornerShape(24.dp)
+                            width = 1.5.dp,
+                            color = if (selected) BlueSelected else DividerColor,
+                            shape = RoundedCornerShape(18.dp)
                         )
                         .clickable { viewModel.selectLanguage(option.code) }
-                        .padding(18.dp),
+                        .padding(16.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    Image(
-                        painter = painterResource(flagFor(option)),
-                        contentDescription = null,
-                        modifier = Modifier.size(width = 48.dp, height = 32.dp)
-                            .clip(RoundedCornerShape(4.dp))
-                            .border(1.dp, Color.White.copy(alpha = 0.12f), RoundedCornerShape(4.dp)),
-                        contentScale = ContentScale.Crop
+                    Text(
+                        text = option.flag,
+                        fontSize = 26.sp,
+                        modifier = Modifier.width(44.dp),
+                        textAlign = TextAlign.Center
                     )
-                    Spacer(Modifier.width(16.dp))
+                    Spacer(Modifier.width(14.dp))
                     Column(Modifier.weight(1f)) {
-                        Text(option.nativeName, style = MaterialTheme.typography.titleMedium, color = TextPrimary, fontWeight = FontWeight.Bold)
-                        Text(option.name, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Text(
+                            option.nativeName,
+                            style = MaterialTheme.typography.titleMedium,
+                            color = if (selected) BlueSelected else TextPrimary,
+                            fontWeight = if (selected) FontWeight.Bold else FontWeight.SemiBold
+                        )
+                        Text(
+                            option.name,
+                            style = MaterialTheme.typography.bodySmall,
+                            color = TextSecondary
+                        )
                     }
-                    if (selected) Text("✓", color = NeonCyan, style = MaterialTheme.typography.titleMedium)
+                    if (selected) {
+                        Text("✓", color = BlueSelected, fontWeight = FontWeight.Bold, fontSize = 18.sp)
+                    }
                 }
             }
         }
@@ -554,154 +403,222 @@ private fun LanguageScreen(state: BaseAppUiState, viewModel: BaseAppViewModel) {
     }
 }
 
-private fun flagFor(language: BaseLanguage): DrawableResource = when (language.flagName) {
-    "flag_english" -> Res.drawable.flag_english
-    "flag_france" -> Res.drawable.flag_france
-    "flag_saudi" -> Res.drawable.flag_saudi
-    "flag_indonesia" -> Res.drawable.flag_indonesia
-    "flag_spain" -> Res.drawable.flag_spain
-    "flag_germany" -> Res.drawable.flag_germany
-    "flag_vietnam" -> Res.drawable.flag_vietnam
-    "flag_india" -> Res.drawable.flag_india
-    "flag_portuguese" -> Res.drawable.flag_portuguese
-    else -> Res.drawable.flag_brazil
+private sealed interface ActiveSubScreen {
+    data object AiTutor : ActiveSubScreen
+    data class TodayLesson(val title: String? = null, val level: String? = null) : ActiveSubScreen
+    data object VocabSetup : ActiveSubScreen
+    data class VocabCards(val count: Int) : ActiveSubScreen
+    data object GrammarSetup : ActiveSubScreen
+    data class GrammarQuiz(val count: Int) : ActiveSubScreen
+    data object SpeakingSetup : ActiveSubScreen
+    data class SpeakingCards(val count: Int) : ActiveSubScreen
+    data object ShadowingList : ActiveSubScreen
+    data class ShadowingPlayer(val videoId: String) : ActiveSubScreen
+    data object SavedWords : ActiveSubScreen
+    data class PathLesson(val lessonId: String) : ActiveSubScreen
+    data object PlanSetup : ActiveSubScreen
+    data object PlanGenerating : ActiveSubScreen
+    data object PlanRoadmap : ActiveSubScreen
+    data class PlanSession(val day: Int) : ActiveSubScreen
+    data class ProgressDetail(val kind: String) : ActiveSubScreen
+    data object LearningHistory : ActiveSubScreen
+    data class Legal(val docType: String) : ActiveSubScreen
 }
 
 @Composable
-private fun OnboardingScreen(state: BaseAppUiState, viewModel: BaseAppViewModel) {
-    val pageIndex = state.onboardingPage.coerceIn(0, BaseAppViewModel.ONBOARDING_PAGE_COUNT - 1)
-    val title = when (pageIndex) {
-        0 -> stringResource(Res.string.onboarding_title_1)
-        1 -> stringResource(Res.string.onboarding_title_2)
-        else -> stringResource(Res.string.onboarding_title_3)
-    }
-    val description = when (pageIndex) {
-        0 -> stringResource(Res.string.onboarding_subtitle_1)
-        1 -> stringResource(Res.string.onboarding_subtitle_2)
-        else -> stringResource(Res.string.onboarding_subtitle_3)
-    }
-    val art = when (pageIndex) {
-        0 -> Res.drawable.bg_onboard1
-        1 -> Res.drawable.bg_onboard2
-        else -> Res.drawable.bg_onboard3
-    }
-    val isMiddlePage = pageIndex == 1
+private fun MainAppHost(
+    viewModel: BaseAppViewModel,
+    onOpenLanguageSettings: () -> Unit,
+    onExitRequested: () -> Unit = {},
+    modifier: Modifier = Modifier
+) {
+    val uiState by viewModel.uiState.collectAsStateWithLifecycle()
+    var activeSubScreen by remember { mutableStateOf<ActiveSubScreen?>(null) }
 
-    Column(
-        modifier = Modifier.fillMaxSize().background(DeepSurface).safeContentPadding(),
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Box(Modifier.fillMaxWidth().weight(1f)) {
-            Image(painterResource(art), null, Modifier.fillMaxSize(), contentScale = ContentScale.Crop)
-            Box(
-                Modifier.fillMaxSize().background(
-                    Brush.verticalGradient(
-                        listOf(Color.Transparent, Color.Transparent, DeepSurface.copy(alpha = 0.92f))
-                    )
-                )
-            )
-            Column(
-                modifier = Modifier.align(Alignment.BottomCenter).padding(horizontal = 24.dp, vertical = 20.dp),
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Text(
-                    title.uppercase(),
-                    style = MaterialTheme.typography.headlineMedium,
-                    color = NeonCyan,
-                    textAlign = TextAlign.Center,
-                    fontWeight = FontWeight.Black
-                )
-                Spacer(Modifier.height(12.dp))
-                Text(description, style = MaterialTheme.typography.bodyLarge, color = TextSecondary, textAlign = TextAlign.Center)
-            }
+    BackActionHandler(enabled = activeSubScreen != null) {
+        activeSubScreen = when (val current = activeSubScreen) {
+            is ActiveSubScreen.ShadowingPlayer -> ActiveSubScreen.ShadowingList
+            is ActiveSubScreen.SavedWords -> ActiveSubScreen.ShadowingList
+            is ActiveSubScreen.PlanSession -> ActiveSubScreen.PlanRoadmap
+            is ActiveSubScreen.PlanGenerating -> ActiveSubScreen.PlanSetup
+            is ActiveSubScreen.VocabCards -> ActiveSubScreen.VocabSetup
+            is ActiveSubScreen.GrammarQuiz -> ActiveSubScreen.GrammarSetup
+            is ActiveSubScreen.SpeakingCards -> ActiveSubScreen.SpeakingSetup
+            else -> null
         }
-        if (isMiddlePage) {
-            Column(
-                Modifier.fillMaxWidth().padding(horizontal = 24.dp, vertical = 20.dp),
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                PageIndicator(pageIndex)
-                Spacer(Modifier.height(16.dp))
-                GradientButton(
-                    text = stringResource(Res.string.onboarding_next).uppercase(),
-                    onClick = viewModel::advanceOnboarding
-                )
-            }
+    }
+    BackActionHandler(enabled = activeSubScreen == null) {
+        if (uiState.selectedTab != com.example.basekmp.ui.components.MainTab.Home) {
+            viewModel.selectTab(com.example.basekmp.ui.components.MainTab.Home)
         } else {
-            Row(
-                Modifier.fillMaxWidth().padding(horizontal = 24.dp, vertical = 20.dp),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                PageIndicator(pageIndex)
-                Spacer(Modifier.weight(1f))
-                Text(
-                    text = if (pageIndex == BaseAppViewModel.ONBOARDING_PAGE_COUNT - 1) {
-                        stringResource(Res.string.onboarding_start).uppercase()
-                    } else stringResource(Res.string.onboarding_next).uppercase(),
-                    modifier = Modifier.clickable { viewModel.advanceOnboarding() },
-                    style = MaterialTheme.typography.titleMedium,
-                    color = NeonCyan,
-                    fontWeight = FontWeight.Black
-                )
+            onExitRequested()
+        }
+    }
+
+    Box(modifier = modifier.fillMaxSize()) {
+        if (activeSubScreen == null) {
+            MainScreen(
+                onStartLesson = {
+                    activeSubScreen = ActiveSubScreen.TodayLesson()
+                },
+                onStartPracticeLesson = { title, level ->
+                    activeSubScreen = ActiveSubScreen.TodayLesson(title = title, level = level)
+                },
+                onStartPathLesson = { lessonId ->
+                    activeSubScreen = ActiveSubScreen.PathLesson(lessonId)
+                },
+                onOpenPlan = { hasPlan ->
+                    activeSubScreen = if (hasPlan) ActiveSubScreen.PlanRoadmap else ActiveSubScreen.PlanSetup
+                },
+                onOpenPlanDay = { day ->
+                    activeSubScreen = ActiveSubScreen.PlanSession(day)
+                },
+                onFeatureClick = { feature ->
+                    activeSubScreen = when {
+                        feature.startsWith("video_shadowing:") -> {
+                            val videoId = feature.removePrefix("video_shadowing:")
+                            ActiveSubScreen.ShadowingPlayer(videoId)
+                        }
+                        feature.equals("ai_tutor", ignoreCase = true) -> ActiveSubScreen.AiTutor
+                        feature.equals("vocabulary", ignoreCase = true) || feature.equals("vocab", ignoreCase = true) -> ActiveSubScreen.VocabSetup
+                        feature.equals("grammar", ignoreCase = true) -> ActiveSubScreen.GrammarSetup
+                        feature.equals("speaking", ignoreCase = true) -> ActiveSubScreen.SpeakingSetup
+                        feature.equals("shadowing", ignoreCase = true) -> ActiveSubScreen.ShadowingList
+                        else -> ActiveSubScreen.AiTutor
+                    }
+                },
+                onStatClick = { kind ->
+                    activeSubScreen = ActiveSubScreen.ProgressDetail(kind)
+                },
+                onSeeAllHistory = {
+                    activeSubScreen = ActiveSubScreen.LearningHistory
+                },
+                onNavigateToLanguage = onOpenLanguageSettings,
+                onNavigateToLegal = { doc ->
+                    activeSubScreen = ActiveSubScreen.Legal(doc)
+                },
+                selectedTab = uiState.selectedTab,
+                onTabSelected = { tab -> viewModel.selectTab(tab) }
+            )
+        } else {
+            when (val screen = activeSubScreen) {
+                ActiveSubScreen.AiTutor -> {
+                    AiTutorScreen(onBack = { activeSubScreen = null })
+                }
+                is ActiveSubScreen.TodayLesson -> {
+                    TodayLessonScreen(
+                        title = screen.title,
+                        level = screen.level,
+                        onBack = { activeSubScreen = null },
+                        onFinish = { activeSubScreen = null }
+                    )
+                }
+                ActiveSubScreen.VocabSetup -> {
+                    VocabSetupScreen(
+                        onBack = { activeSubScreen = null },
+                        onStart = { count -> activeSubScreen = ActiveSubScreen.VocabCards(count) }
+                    )
+                }
+                is ActiveSubScreen.VocabCards -> {
+                    VocabCardsScreen(
+                        wordCount = screen.count,
+                        onClose = { _, _ -> activeSubScreen = ActiveSubScreen.VocabSetup }
+                    )
+                }
+                ActiveSubScreen.GrammarSetup -> {
+                    GrammarSetupScreen(
+                        onBack = { activeSubScreen = null },
+                        onStart = { count -> activeSubScreen = ActiveSubScreen.GrammarQuiz(count) }
+                    )
+                }
+                is ActiveSubScreen.GrammarQuiz -> {
+                    GrammarQuizScreen(
+                        questionCount = screen.count,
+                        onClose = { _, _ -> activeSubScreen = ActiveSubScreen.GrammarSetup }
+                    )
+                }
+                ActiveSubScreen.SpeakingSetup -> {
+                    SpeakingSetupScreen(
+                        onBack = { activeSubScreen = null },
+                        onStart = { count -> activeSubScreen = ActiveSubScreen.SpeakingCards(count) }
+                    )
+                }
+                is ActiveSubScreen.SpeakingCards -> {
+                    SpeakingCardsScreen(
+                        cardCount = screen.count,
+                        onClose = { _, _ -> activeSubScreen = ActiveSubScreen.SpeakingSetup }
+                    )
+                }
+                ActiveSubScreen.ShadowingList -> {
+                    VideoShadowingListScreen(
+                        onBack = { activeSubScreen = null },
+                        onOpenVideo = { videoId -> activeSubScreen = ActiveSubScreen.ShadowingPlayer(videoId) },
+                        onOpenSavedWords = { activeSubScreen = ActiveSubScreen.SavedWords }
+                    )
+                }
+                is ActiveSubScreen.ShadowingPlayer -> {
+                    VideoShadowingPlayerScreen(
+                        videoId = screen.videoId,
+                        onClose = { activeSubScreen = ActiveSubScreen.ShadowingList },
+                        onOpenSavedWords = { activeSubScreen = ActiveSubScreen.SavedWords }
+                    )
+                }
+                ActiveSubScreen.SavedWords -> {
+                    SavedWordsScreen(onBack = { activeSubScreen = ActiveSubScreen.ShadowingList })
+                }
+                is ActiveSubScreen.PathLesson -> {
+                    PathLessonScreen(
+                        lessonId = screen.lessonId,
+                        onClose = { activeSubScreen = null }
+                    )
+                }
+                ActiveSubScreen.PlanSetup -> {
+                    PlanSetupScreen(
+                        onBack = { activeSubScreen = null },
+                        onDone = { activeSubScreen = ActiveSubScreen.PlanGenerating }
+                    )
+                }
+                ActiveSubScreen.PlanGenerating -> {
+                    PlanGeneratingScreen(
+                        onDone = { activeSubScreen = ActiveSubScreen.PlanRoadmap }
+                    )
+                }
+                ActiveSubScreen.PlanRoadmap -> {
+                    PlanScreen(
+                        onBack = { activeSubScreen = null },
+                        onChangeGoal = { activeSubScreen = ActiveSubScreen.PlanSetup },
+                        onOpenDay = { day -> activeSubScreen = ActiveSubScreen.PlanSession(day) }
+                    )
+                }
+                is ActiveSubScreen.PlanSession -> {
+                    PlanSessionScreen(
+                        day = screen.day,
+                        onBack = { activeSubScreen = ActiveSubScreen.PlanRoadmap },
+                        onFinish = { activeSubScreen = ActiveSubScreen.PlanRoadmap }
+                    )
+                }
+                is ActiveSubScreen.ProgressDetail -> {
+                    ProgressDetailScreen(
+                        kind = screen.kind,
+                        onBack = { activeSubScreen = null },
+                        onStartPractice = {
+                            activeSubScreen = ActiveSubScreen.TodayLesson()
+                        }
+                    )
+                }
+                ActiveSubScreen.LearningHistory -> {
+                    LearningHistoryScreen(
+                        onBack = { activeSubScreen = null }
+                    )
+                }
+                is ActiveSubScreen.Legal -> {
+                    LegalScreen(
+                        kind = screen.docType,
+                        onBack = { activeSubScreen = null }
+                    )
+                }
+                null -> {}
             }
         }
-        if (state.hasError) {
-            Text(
-                stringResource(Res.string.language_save_error),
-                modifier = Modifier.padding(horizontal = 24.dp, vertical = 8.dp),
-                color = MaterialTheme.colorScheme.error
-            )
-        }
     }
 }
-
-@Composable
-private fun PageIndicator(index: Int) {
-    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-        repeat(BaseAppViewModel.ONBOARDING_PAGE_COUNT) { page ->
-            Box(
-                Modifier
-                    .size(width = if (page == index) 24.dp else 8.dp, height = 8.dp)
-                    .clip(CircleShape)
-                    .background(if (page == index) NeonCyan else Color.White.copy(alpha = 0.28f))
-            )
-        }
-    }
-}
-
-@Composable
-private fun GradientButton(text: String, onClick: () -> Unit) {
-    Box(
-        modifier = Modifier.fillMaxWidth().height(56.dp)
-            .clip(RoundedCornerShape(28.dp))
-            .background(Brush.horizontalGradient(listOf(RoyalBlue, NeonCyan)))
-            .clickable(onClick = onClick),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(text, color = Color.White, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
-    }
-}
-
-@Composable
-private fun HomeScreen(viewModel: BaseAppViewModel) {
-    Column(
-        modifier = Modifier.fillMaxSize().background(DeepSurface).safeContentPadding().padding(24.dp),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Text(stringResource(Res.string.home_welcome), style = MaterialTheme.typography.headlineMedium, color = NeonCyan, fontWeight = FontWeight.Bold)
-        Spacer(Modifier.height(12.dp))
-        Text(stringResource(Res.string.home_description), style = MaterialTheme.typography.bodyLarge, color = TextSecondary, textAlign = TextAlign.Center)
-        Spacer(Modifier.height(32.dp))
-        Row(
-            modifier = Modifier.fillMaxWidth().clip(RoundedCornerShape(24.dp))
-                .background(SurfaceContainer).clickable { viewModel.openLanguageSettings() }.padding(20.dp),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Text(stringResource(Res.string.settings_general_language), color = TextPrimary, modifier = Modifier.weight(1f))
-            Text("›", color = NeonCyan, style = MaterialTheme.typography.headlineMedium)
-        }
-    }
-}
-
-private const val APPLY_LANGUAGE_SCREEN_DURATION_MS = 350L

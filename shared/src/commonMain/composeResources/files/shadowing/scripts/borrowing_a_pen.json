@@ -1,0 +1,486 @@
+{
+ "scene": "✏️",
+ "colors": [
+  "#EEEAE2",
+  "#DCD3C3"
+ ],
+ "speakers": [
+  {
+   "name": "Tom",
+   "emoji": "👨",
+   "voice": "male"
+  },
+  {
+   "name": "Lily",
+   "emoji": "👩",
+   "voice": "female"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Hey, Lily. Can I borrow a pen?",
+   "start": 0,
+   "end": 4010,
+   "tr": {
+    "ur": "ارے للی، کیا میں ایک پین ادھار لے سکتا ہوں؟",
+    "hi": "अरे लिली, क्या मैं एक पेन उधार ले सकता हूँ?",
+    "ar": "مرحبًا ليلي. هل يمكنني أن أستعير قلمًا؟",
+    "zh": "嘿，莉莉。我可以借一支笔吗？",
+    "es": "Oye, Lily. ¿Me prestas un bolígrafo?",
+    "fr": "Salut Lily, je peux t'emprunter un stylo ?",
+    "tr": "Merhaba Lily. Bir kalem ödünç alabilir miyim?",
+    "ja": "ねえ、リリー。ペン借りてもいい？",
+    "ko": "릴리야, 펜 하나 빌려도 돼?",
+    "it": "Ehi, Lily. Mi presti una penna?",
+    "de": "Hey, Lily. Kann ich mir mal einen Stift leihen?",
+    "pt": "Oi, Lily. Posso pegar uma caneta emprestada?",
+    "ru": "Здравствуйте, Лили. Можно одолжить у вас ручку?",
+    "vi": "Lily ơi, cho mình mượn cây bút được không?",
+    "th": "เฮ้ ลิลลี่ ขอยืมปากกาหน่อยได้ไหมครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Sure. Here you are.",
+   "start": 4580,
+   "end": 5950,
+   "tr": {
+    "ur": "ضرور، یہ لو۔",
+    "hi": "बिल्कुल, यह लो।",
+    "ar": "طبعًا، تفضّل.",
+    "zh": "当然，给你。",
+    "es": "Claro. Toma.",
+    "fr": "Bien sûr. Tiens.",
+    "tr": "Tabii, buyurun.",
+    "ja": "いいよ。はい、どうぞ。",
+    "ko": "그래. 여기 있어.",
+    "it": "Certo. Ecco.",
+    "de": "Klar. Hier, bitte.",
+    "pt": "Claro. Toma aqui.",
+    "ru": "Конечно. Вот, пожалуйста.",
+    "vi": "Được. Của cậu đây.",
+    "th": "ได้สิคะ เอ้า นี่ค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Thanks. Which page are we on?",
+   "start": 8050,
+   "end": 10300,
+   "tr": {
+    "ur": "شکریہ۔ ہم کس صفحے پر ہیں؟",
+    "hi": "शुक्रिया। हम किस पेज पर हैं?",
+    "ar": "شكرًا. في أي صفحة نحن؟",
+    "zh": "谢谢。我们现在是第几页？",
+    "es": "Gracias. ¿En qué página estamos?",
+    "fr": "Merci. On est à quelle page ?",
+    "tr": "Teşekkür ederim. Hangi sayfadayız?",
+    "ja": "ありがとう。何ページだっけ？",
+    "ko": "고마워. 우리 몇 페이지야?",
+    "it": "Grazie. A che pagina siamo?",
+    "de": "Danke. Auf welcher Seite sind wir?",
+    "pt": "Obrigado. Em que página estamos?",
+    "ru": "Спасибо. На какой мы странице?",
+    "vi": "Cảm ơn cậu. Tụi mình đang ở trang mấy vậy?",
+    "th": "ขอบคุณครับ ตอนนี้เราอยู่หน้าไหนแล้วครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Page 24. We're starting a new lesson.",
+   "start": 10730,
+   "end": 13225,
+   "tr": {
+    "ur": "صفحہ 24۔ ہم ایک نیا سبق شروع کر رہے ہیں۔",
+    "hi": "पेज 24। हम एक नया पाठ शुरू कर रहे हैं।",
+    "ar": "الصفحة 24. نحن نبدأ درسًا جديدًا.",
+    "zh": "第24页。我们要开始新的一课了。",
+    "es": "Página 24. Vamos a empezar una lección nueva.",
+    "fr": "Page 24. On commence une nouvelle leçon.",
+    "tr": "24. sayfa. Yeni bir derse başlıyoruz.",
+    "ja": "24ページだよ。新しい課に入るところ。",
+    "ko": "24페이지야. 이제 새 단원 시작해.",
+    "it": "Pagina 24. Iniziamo una nuova lezione.",
+    "de": "Seite 24. Wir fangen eine neue Lektion an.",
+    "pt": "Página 24. Estamos começando uma lição nova.",
+    "ru": "Страница 24. Мы начинаем новый урок.",
+    "vi": "Trang 24. Tụi mình đang bắt đầu bài mới.",
+    "th": "หน้า 24 ค่ะ เรากำลังจะเริ่มบทเรียนใหม่ค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Oh, right. Did you do the homework?",
+   "start": 13225,
+   "end": 14980,
+   "tr": {
+    "ur": "اوہ، ہاں۔ کیا تم نے ہوم ورک کیا؟",
+    "hi": "अरे हाँ। क्या तुमने होमवर्क किया?",
+    "ar": "آه، صحيح. هل قمتِ بالواجب المنزلي؟",
+    "zh": "哦，对。你做作业了吗？",
+    "es": "Ah, cierto. ¿Hiciste la tarea?",
+    "fr": "Ah oui, c'est vrai. Tu as fait tes devoirs ?",
+    "tr": "Ah, doğru. Ödevi yaptınız mı?",
+    "ja": "あ、そうだった。宿題やった？",
+    "ko": "아, 맞다. 숙제했어?",
+    "it": "Ah, giusto. Hai fatto i compiti?",
+    "de": "Ach ja. Hast du die Hausaufgaben gemacht?",
+    "pt": "Ah, é mesmo. Você fez o dever de casa?",
+    "ru": "А, точно. Вы сделали домашнее задание?",
+    "vi": "À, đúng rồi. Cậu làm bài tập về nhà chưa?",
+    "th": "อ้อ จริงด้วย ทำการบ้านมาหรือยังครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Yes, I finished it last night. What about you?",
+   "start": 15000,
+   "end": 18340,
+   "tr": {
+    "ur": "ہاں، میں نے کل رات ختم کر لیا تھا۔ اور تم؟",
+    "hi": "हाँ, मैंने कल रात ख़त्म कर लिया था। और तुमने?",
+    "ar": "نعم، أنهيتُه الليلة الماضية. وأنتَ؟",
+    "zh": "是的，我昨晚做完了。你呢？",
+    "es": "Sí, lo terminé anoche. ¿Y tú?",
+    "fr": "Oui, je les ai finis hier soir. Et toi ?",
+    "tr": "Evet, dün gece bitirdim. Ya siz?",
+    "ja": "うん、昨日の夜に終わらせたよ。そっちは？",
+    "ko": "응, 어젯밤에 끝냈어. 너는?",
+    "it": "Sì, li ho finiti ieri sera. E tu?",
+    "de": "Ja, ich habe sie gestern Abend fertig gemacht. Und du?",
+    "pt": "Sim, terminei ontem à noite. E você?",
+    "ru": "Да, я закончила его вчера вечером. А вы?",
+    "vi": "Ừ, tối qua mình làm xong rồi. Còn cậu?",
+    "th": "ทำแล้วค่ะ เมื่อคืนทำเสร็จแล้ว แล้วเธอล่ะคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "I did most of it, but one question was difficult.",
+   "start": 18730,
+   "end": 21810,
+   "tr": {
+    "ur": "میں نے زیادہ تر کر لیا، لیکن ایک سوال مشکل تھا۔",
+    "hi": "मैंने ज़्यादातर कर लिया, लेकिन एक सवाल मुश्किल था।",
+    "ar": "أنجزتُ معظمه، لكن سؤالًا واحدًا كان صعبًا.",
+    "zh": "大部分我都做了，但有一道题很难。",
+    "es": "Hice casi todo, pero una pregunta era difícil.",
+    "fr": "J'ai presque tout fait, mais une question était difficile.",
+    "tr": "Çoğunu yaptım, ama bir soru zordu.",
+    "ja": "ほとんどやったんだけど、一問だけ難しかったんだ。",
+    "ko": "대부분 했는데, 한 문제가 어려웠어.",
+    "it": "Ne ho fatto la maggior parte, ma una domanda era difficile.",
+    "de": "Ich habe fast alles gemacht, aber eine Aufgabe war schwierig.",
+    "pt": "Fiz a maior parte, mas uma questão era difícil.",
+    "ru": "Я сделал большую часть, но один вопрос был трудным.",
+    "vi": "Mình làm được gần hết rồi, nhưng có một câu khó quá.",
+    "th": "ผมทำไปเกือบหมดแล้วครับ แต่มีอยู่ข้อหนึ่งที่ยากครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Which one?",
+   "start": 22310,
+   "end": 23180,
+   "tr": {
+    "ur": "کون سا؟",
+    "hi": "कौन सा?",
+    "ar": "أيّ واحد؟",
+    "zh": "哪一题？",
+    "es": "¿Cuál?",
+    "fr": "Laquelle ?",
+    "tr": "Hangisi?",
+    "ja": "どれ？",
+    "ko": "어느 문제?",
+    "it": "Quale?",
+    "de": "Welche?",
+    "pt": "Qual?",
+    "ru": "Какой?",
+    "vi": "Câu nào vậy?",
+    "th": "ข้อไหนเหรอคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Question 5. Can you help me later?",
+   "start": 23620,
+   "end": 26080,
+   "tr": {
+    "ur": "سوال نمبر 5۔ کیا تم بعد میں میری مدد کر سکتی ہو؟",
+    "hi": "सवाल 5। क्या तुम बाद में मेरी मदद कर सकती हो?",
+    "ar": "السؤال 5. هل يمكنكِ أن تساعديني لاحقًا؟",
+    "zh": "第5题。你待会儿能帮我吗？",
+    "es": "La pregunta 5. ¿Me ayudas luego?",
+    "fr": "La question 5. Tu peux m'aider plus tard ?",
+    "tr": "5. soru. Daha sonra bana yardım edebilir misiniz?",
+    "ja": "5番の問題。あとで手伝ってくれる？",
+    "ko": "5번 문제야. 나중에 좀 도와줄 수 있어?",
+    "it": "La domanda numero 5. Mi puoi aiutare più tardi?",
+    "de": "Aufgabe 5. Kannst du mir später helfen?",
+    "pt": "A questão 5. Você pode me ajudar depois?",
+    "ru": "Вопрос 5. Вы не могли бы помочь мне потом?",
+    "vi": "Câu số 5. Lát nữa cậu giúp mình được không?",
+    "th": "ข้อ 5 ครับ ทีหลังช่วยผมหน่อยได้ไหมครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Of course. Let's check it after class.",
+   "start": 26570,
+   "end": 28885,
+   "tr": {
+    "ur": "بالکل۔ کلاس کے بعد اسے چیک کر لیتے ہیں۔",
+    "hi": "बिल्कुल। क्लास के बाद उसे जाँच लेते हैं।",
+    "ar": "طبعًا. لنراجعه بعد الحصة.",
+    "zh": "当然。下课后我们一起检查一下。",
+    "es": "Claro. La revisamos después de clase.",
+    "fr": "Bien sûr. On la vérifie après le cours.",
+    "tr": "Tabii. Dersten sonra birlikte kontrol edelim.",
+    "ja": "もちろん。授業のあとで一緒に確認しよう。",
+    "ko": "당연하지. 수업 끝나고 같이 확인해 보자.",
+    "it": "Certo. La controlliamo dopo lezione.",
+    "de": "Klar. Schauen wir sie uns nach dem Unterricht an.",
+    "pt": "Claro. Vamos conferir depois da aula.",
+    "ru": "Конечно. Давайте проверим его после урока.",
+    "vi": "Dĩ nhiên rồi. Sau giờ học mình cùng kiểm tra nhé.",
+    "th": "ได้สิคะ หลังเลิกเรียนมาตรวจด้วยกันนะคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Great. Thank you.",
+   "start": 28885,
+   "end": 30080,
+   "tr": {
+    "ur": "زبردست۔ شکریہ۔",
+    "hi": "बढ़िया। शुक्रिया।",
+    "ar": "رائع. شكرًا لكِ.",
+    "zh": "太好了。谢谢你。",
+    "es": "Genial. Gracias.",
+    "fr": "Super. Merci.",
+    "tr": "Harika. Teşekkür ederim.",
+    "ja": "よかった。ありがとう。",
+    "ko": "좋아. 고마워.",
+    "it": "Ottimo. Grazie.",
+    "de": "Super. Danke dir.",
+    "pt": "Ótimo. Obrigado.",
+    "ru": "Отлично. Спасибо вам.",
+    "vi": "Tuyệt quá. Cảm ơn cậu.",
+    "th": "เยี่ยมเลย ขอบคุณนะครับ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "borrow",
+   "meaning": "take something and give it back later",
+   "tr": {
+    "ur": "ادھار لینا",
+    "hi": "उधार लेना",
+    "ar": "استعار",
+    "zh": "借",
+    "es": "pedir prestado",
+    "fr": "emprunter",
+    "tr": "ödünç almak",
+    "ja": "借りる",
+    "ko": "빌리다",
+    "it": "prendere in prestito",
+    "de": "(sich) leihen",
+    "pt": "pegar emprestado",
+    "ru": "одолжить",
+    "vi": "mượn",
+    "th": "ยืม"
+   }
+  },
+  {
+   "word": "pen",
+   "meaning": "a tool you use to write with ink",
+   "tr": {
+    "ur": "پین",
+    "hi": "पेन",
+    "ar": "قلم",
+    "zh": "笔",
+    "es": "bolígrafo",
+    "fr": "stylo",
+    "tr": "kalem",
+    "ja": "ペン",
+    "ko": "펜",
+    "it": "penna",
+    "de": "der Stift",
+    "pt": "caneta",
+    "ru": "ручка",
+    "vi": "bút",
+    "th": "ปากกา"
+   }
+  },
+  {
+   "word": "here you are",
+   "meaning": "what you say when you give something to someone",
+   "tr": {
+    "ur": "یہ لو",
+    "hi": "यह लो",
+    "ar": "تفضّل",
+    "zh": "给你",
+    "es": "toma",
+    "fr": "tiens",
+    "tr": "buyurun",
+    "ja": "はい、どうぞ",
+    "ko": "여기 있어",
+    "it": "ecco",
+    "de": "hier, bitte",
+    "pt": "aqui está",
+    "ru": "вот, пожалуйста",
+    "vi": "của cậu đây",
+    "th": "เอ้า นี่"
+   }
+  },
+  {
+   "word": "page",
+   "meaning": "one side of a sheet of paper in a book",
+   "tr": {
+    "ur": "صفحہ",
+    "hi": "पेज",
+    "ar": "صفحة",
+    "zh": "页",
+    "es": "página",
+    "fr": "page",
+    "tr": "sayfa",
+    "ja": "ページ",
+    "ko": "페이지",
+    "it": "pagina",
+    "de": "die Seite",
+    "pt": "página",
+    "ru": "страница",
+    "vi": "trang",
+    "th": "หน้า"
+   }
+  },
+  {
+   "word": "lesson",
+   "meaning": "one part of a course or textbook",
+   "tr": {
+    "ur": "سبق",
+    "hi": "पाठ",
+    "ar": "درس",
+    "zh": "课",
+    "es": "lección",
+    "fr": "leçon",
+    "tr": "ders",
+    "ja": "課",
+    "ko": "단원",
+    "it": "lezione",
+    "de": "die Lektion",
+    "pt": "lição",
+    "ru": "урок",
+    "vi": "bài học",
+    "th": "บทเรียน"
+   }
+  },
+  {
+   "word": "homework",
+   "meaning": "school work that you do at home",
+   "tr": {
+    "ur": "ہوم ورک",
+    "hi": "होमवर्क",
+    "ar": "الواجب المنزلي",
+    "zh": "作业",
+    "es": "tarea",
+    "fr": "devoirs",
+    "tr": "ödev",
+    "ja": "宿題",
+    "ko": "숙제",
+    "it": "compiti",
+    "de": "die Hausaufgaben",
+    "pt": "dever de casa",
+    "ru": "домашнее задание",
+    "vi": "bài tập về nhà",
+    "th": "การบ้าน"
+   }
+  },
+  {
+   "word": "finished",
+   "meaning": "completed; got to the end of",
+   "tr": {
+    "ur": "ختم کرنا",
+    "hi": "ख़त्म करना",
+    "ar": "أنهى",
+    "zh": "做完",
+    "es": "terminar",
+    "fr": "finir",
+    "tr": "bitirmek",
+    "ja": "終わらせる",
+    "ko": "끝내다",
+    "it": "finire",
+    "de": "fertig machen",
+    "pt": "terminar",
+    "ru": "закончить",
+    "vi": "làm xong",
+    "th": "ทำเสร็จ"
+   }
+  },
+  {
+   "word": "question",
+   "meaning": "one task in homework or a test that you must answer",
+   "tr": {
+    "ur": "سوال",
+    "hi": "सवाल",
+    "ar": "سؤال",
+    "zh": "题",
+    "es": "pregunta",
+    "fr": "question",
+    "tr": "soru",
+    "ja": "問題",
+    "ko": "문제",
+    "it": "domanda",
+    "de": "die Aufgabe",
+    "pt": "questão",
+    "ru": "вопрос",
+    "vi": "câu",
+    "th": "ข้อ"
+   }
+  },
+  {
+   "word": "difficult",
+   "meaning": "hard to do or understand",
+   "tr": {
+    "ur": "مشکل",
+    "hi": "मुश्किल",
+    "ar": "صعب",
+    "zh": "难",
+    "es": "difícil",
+    "fr": "difficile",
+    "tr": "zor",
+    "ja": "難しい",
+    "ko": "어렵다",
+    "it": "difficile",
+    "de": "schwierig",
+    "pt": "difícil",
+    "ru": "трудный",
+    "vi": "khó",
+    "th": "ยาก"
+   }
+  },
+  {
+   "word": "after class",
+   "meaning": "when the lesson at school is over",
+   "tr": {
+    "ur": "کلاس کے بعد",
+    "hi": "क्लास के बाद",
+    "ar": "بعد الحصة",
+    "zh": "下课后",
+    "es": "después de clase",
+    "fr": "après le cours",
+    "tr": "dersten sonra",
+    "ja": "授業のあとで",
+    "ko": "수업 끝나고",
+    "it": "dopo lezione",
+    "de": "nach dem Unterricht",
+    "pt": "depois da aula",
+    "ru": "после урока",
+    "vi": "sau giờ học",
+    "th": "หลังเลิกเรียน"
+   }
+  }
+ ]
+}

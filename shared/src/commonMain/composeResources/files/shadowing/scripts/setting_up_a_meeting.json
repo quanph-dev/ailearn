@@ -1,0 +1,463 @@
+{
+ "scene": "📅",
+ "colors": [
+  "#E6ECF2",
+  "#CBD6E2"
+ ],
+ "speakers": [
+  {
+   "name": "Mark",
+   "emoji": "👨",
+   "voice": "male"
+  },
+  {
+   "name": "Claire",
+   "emoji": "👩",
+   "voice": "female"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Hi, Claire. We need to organize a team meeting.",
+   "start": 0,
+   "end": 3400,
+   "tr": {
+    "ur": "ہیلو، کلیئر۔ ہمیں ٹیم میٹنگ کا انتظام کرنا ہے۔",
+    "hi": "हैलो, क्लेयर। हमें एक टीम मीटिंग आयोजित करनी है।",
+    "ar": "مرحبًا يا كلير. علينا أن ننظّم اجتماعًا للفريق.",
+    "zh": "嗨，克莱尔。我们得组织一次团队会议。",
+    "es": "Hola, Claire. Tenemos que organizar una reunión de equipo.",
+    "fr": "Salut, Claire. Il faut organiser une réunion d'équipe.",
+    "tr": "Merhaba Claire. Bir ekip toplantısı düzenlememiz gerekiyor.",
+    "ja": "こんにちは、クレアさん。チーム会議を開かないといけませんね。",
+    "ko": "안녕하세요, 클레어 씨. 팀 회의를 잡아야 해요.",
+    "it": "Ciao, Claire. Dobbiamo organizzare una riunione del team.",
+    "de": "Hallo Claire. Wir müssen ein Teammeeting organisieren.",
+    "pt": "Oi, Claire. Precisamos organizar uma reunião de equipe.",
+    "ru": "Здравствуйте, Клэр. Нам нужно организовать совещание с командой.",
+    "vi": "Chào Claire. Chúng ta cần tổ chức một cuộc họp nhóm.",
+    "th": "สวัสดีครับ แคลร์ เราต้องจัดประชุมทีมกันครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Sure. When should we schedule it?",
+   "start": 3610,
+   "end": 5990,
+   "tr": {
+    "ur": "ٹھیک ہے۔ ہم اسے کب رکھیں؟",
+    "hi": "ज़रूर। हम इसे कब तय करें?",
+    "ar": "بالتأكيد. متى ينبغي أن نحدّد موعدها؟",
+    "zh": "好的。我们什么时候安排？",
+    "es": "Claro. ¿Cuándo deberíamos programarla?",
+    "fr": "Bien sûr. On la prévoit quand ?",
+    "tr": "Tabii. Ne zaman planlamalıyız?",
+    "ja": "いいですよ。いつにしましょうか？",
+    "ko": "그래요. 언제로 잡을까요?",
+    "it": "Certo. Quando dovremmo fissarla?",
+    "de": "Klar. Wann sollen wir sie ansetzen?",
+    "pt": "Claro. Quando devemos marcá-la?",
+    "ru": "Конечно. Когда её лучше назначить?",
+    "vi": "Được. Chúng ta nên xếp lịch họp vào lúc nào?",
+    "th": "ได้เลยค่ะ เราควรนัดตอนไหนดีคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "How about tomorrow morning at 10?",
+   "start": 6420,
+   "end": 8740,
+   "tr": {
+    "ur": "کل صبح 10 بجے کیسا رہے گا؟",
+    "hi": "कल सुबह 10 बजे कैसा रहेगा?",
+    "ar": "ما رأيكِ في صباح الغد الساعة 10؟",
+    "zh": "明天上午10点怎么样？",
+    "es": "¿Qué tal mañana por la mañana, a las 10?",
+    "fr": "Que dirais-tu de demain matin, à 10 heures ?",
+    "tr": "Yarın sabah saat 10 ne dersiniz?",
+    "ja": "明日の午前10時はどうですか？",
+    "ko": "내일 오전 10시 어때요?",
+    "it": "Che ne dici di domani mattina alle 10?",
+    "de": "Wie wäre es mit morgen früh um 10?",
+    "pt": "Que tal amanhã de manhã, às 10?",
+    "ru": "Как вам завтра утром, в 10 часов?",
+    "vi": "Sáng mai 10 giờ được không?",
+    "th": "พรุ่งนี้เช้า 10 โมงดีไหมครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "I think 11 would be better.",
+   "start": 9220,
+   "end": 11160,
+   "tr": {
+    "ur": "میرے خیال میں 11 بجے بہتر رہے گا۔",
+    "hi": "मुझे लगता है 11 बजे बेहतर रहेगा।",
+    "ar": "أظن أن الساعة 11 أفضل.",
+    "zh": "我觉得11点更好。",
+    "es": "Creo que a las 11 sería mejor.",
+    "fr": "Je pense que 11 heures serait mieux.",
+    "tr": "Bence saat 11 daha iyi olur.",
+    "ja": "11時の方がいいと思います。",
+    "ko": "11시가 더 좋을 것 같아요.",
+    "it": "Penso che alle 11 sarebbe meglio.",
+    "de": "Ich denke, 11 Uhr wäre besser.",
+    "pt": "Acho que às 11 seria melhor.",
+    "ru": "Мне кажется, в 11 будет лучше.",
+    "vi": "Mình nghĩ 11 giờ sẽ tốt hơn.",
+    "th": "ดิฉันคิดว่า 11 โมงน่าจะดีกว่าค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "That works. What should we discuss?",
+   "start": 11900,
+   "end": 14820,
+   "tr": {
+    "ur": "ٹھیک ہے، یہ چلے گا۔ ہمیں کس بارے میں بات کرنی چاہیے؟",
+    "hi": "ठीक है। हमें किस बारे में चर्चा करनी चाहिए?",
+    "ar": "هذا مناسب. ماذا ينبغي أن نناقش؟",
+    "zh": "可以。我们应该讨论什么？",
+    "es": "Me parece bien. ¿De qué deberíamos hablar?",
+    "fr": "Ça marche. De quoi devrait-on parler ?",
+    "tr": "Olur. Neleri konuşmalıyız?",
+    "ja": "それでいいですね。何について話し合いましょうか？",
+    "ko": "좋아요. 무엇을 논의할까요?",
+    "it": "Va bene. Di cosa dovremmo parlare?",
+    "de": "Passt. Worüber sollen wir sprechen?",
+    "pt": "Combinado. Sobre o que devemos conversar?",
+    "ru": "Хорошо. Что нам стоит обсудить?",
+    "vi": "Được đấy. Chúng ta nên bàn về điều gì?",
+    "th": "ได้ครับ เราควรคุยเรื่องอะไรกันดีครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "In my opinion, we should review our project progress.",
+   "start": 15340,
+   "end": 18600,
+   "tr": {
+    "ur": "میری رائے میں ہمیں اپنے پروجیکٹ کی پیش رفت کا جائزہ لینا چاہیے۔",
+    "hi": "मेरी राय में हमें अपने प्रोजेक्ट की प्रगति की समीक्षा करनी चाहिए।",
+    "ar": "في رأيي، ينبغي أن نراجع تقدّم مشروعنا.",
+    "zh": "我认为，我们应该回顾一下项目进展。",
+    "es": "En mi opinión, deberíamos revisar el avance de nuestro proyecto.",
+    "fr": "À mon avis, nous devrions faire le point sur l'avancement du projet.",
+    "tr": "Bence projedeki ilerlememizi gözden geçirmeliyiz.",
+    "ja": "私としては、プロジェクトの進捗を確認したほうがいいと思います。",
+    "ko": "제 생각에는 프로젝트 진행 상황을 점검해야 할 것 같아요.",
+    "it": "Secondo me dovremmo fare il punto sui progressi del progetto.",
+    "de": "Meiner Meinung nach sollten wir den Projektfortschritt überprüfen.",
+    "pt": "Na minha opinião, deveríamos revisar o andamento do projeto.",
+    "ru": "На мой взгляд, нам стоит оценить ход нашего проекта.",
+    "vi": "Theo mình, chúng ta nên xem lại tiến độ dự án.",
+    "th": "ในความเห็นของดิฉัน เราควรทบทวนความคืบหน้าของโปรเจกต์ค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Good idea. Should we invite the whole team?",
+   "start": 18770,
+   "end": 21380,
+   "tr": {
+    "ur": "اچھا خیال ہے۔ کیا ہمیں پوری ٹیم کو مدعو کرنا چاہیے؟",
+    "hi": "अच्छा विचार है। क्या हमें पूरी टीम को बुलाना चाहिए?",
+    "ar": "فكرة جيدة. هل ندعو الفريق كله؟",
+    "zh": "好主意。我们要不要邀请全体团队成员？",
+    "es": "Buena idea. ¿Invitamos a todo el equipo?",
+    "fr": "Bonne idée. Doit-on inviter toute l'équipe ?",
+    "tr": "İyi fikir. Bütün ekibi davet etmeli miyiz?",
+    "ja": "いい考えですね。チーム全員を招待しましょうか？",
+    "ko": "좋은 생각이에요. 팀 전체를 초대할까요?",
+    "it": "Buona idea. Invitiamo tutta la squadra?",
+    "de": "Gute Idee. Sollen wir das ganze Team einladen?",
+    "pt": "Boa ideia. Devemos convidar a equipe inteira?",
+    "ru": "Хорошая идея. Пригласим всю команду?",
+    "vi": "Ý hay đấy. Chúng ta có nên mời cả nhóm không?",
+    "th": "ความคิดดีครับ เราควรเชิญทั้งทีมเลยไหมครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Yes, everyone should share their updates.",
+   "start": 21840,
+   "end": 24490,
+   "tr": {
+    "ur": "جی ہاں، سب کو اپنی اپ ڈیٹس شیئر کرنی چاہئیں۔",
+    "hi": "हाँ, सबको अपने अपडेट्स शेयर करने चाहिए।",
+    "ar": "نعم، ينبغي أن يشارك الجميع مستجداتهم.",
+    "zh": "对，每个人都应该分享各自的最新进展。",
+    "es": "Sí, todos deberían compartir sus novedades.",
+    "fr": "Oui, chacun devrait partager ses dernières nouvelles.",
+    "tr": "Evet, herkes son durumunu paylaşmalı.",
+    "ja": "はい、全員にそれぞれの最新情報を共有してもらいましょう。",
+    "ko": "네, 다들 각자 최신 현황을 공유하면 좋겠어요.",
+    "it": "Sì, ognuno dovrebbe condividere i propri aggiornamenti.",
+    "de": "Ja, alle sollten ihren aktuellen Stand teilen.",
+    "pt": "Sim, todos deveriam compartilhar suas atualizações.",
+    "ru": "Да, пусть каждый поделится своими новостями.",
+    "vi": "Vâng, mọi người nên chia sẻ những cập nhật của mình.",
+    "th": "ใช่ค่ะ ทุกคนควรแชร์อัปเดตงานของตัวเองค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Perfect. I'll send the meeting invitation.",
+   "start": 24720,
+   "end": 27250,
+   "tr": {
+    "ur": "بہت خوب۔ میں میٹنگ کی دعوت بھیج دوں گا۔",
+    "hi": "बढ़िया। मैं मीटिंग का निमंत्रण भेज दूँगा।",
+    "ar": "ممتاز. سأرسل دعوة الاجتماع.",
+    "zh": "太好了。我来发会议邀请。",
+    "es": "Perfecto. Yo envío la invitación a la reunión.",
+    "fr": "Parfait. J'envoie l'invitation à la réunion.",
+    "tr": "Süper. Toplantı davetini ben göndereyim.",
+    "ja": "よかった。会議の招待は私が送っておきます。",
+    "ko": "좋아요. 제가 회의 초대장을 보낼게요.",
+    "it": "Perfetto. Mando io l'invito alla riunione.",
+    "de": "Perfekt. Ich schicke die Einladung zum Meeting.",
+    "pt": "Perfeito. Eu envio o convite da reunião.",
+    "ru": "Отлично. Я разошлю приглашение на совещание.",
+    "vi": "Tuyệt. Mình sẽ gửi thư mời họp.",
+    "th": "ดีเลยครับ เดี๋ยวผมส่งคำเชิญประชุมให้นะครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Great. I'll prepare the agenda.",
+   "start": 27660,
+   "end": 30080,
+   "tr": {
+    "ur": "زبردست۔ میں ایجنڈا تیار کر لوں گی۔",
+    "hi": "बढ़िया। मैं एजेंडा तैयार कर लूँगी।",
+    "ar": "رائع. سأُعدّ جدول الأعمال.",
+    "zh": "好的。我来准备议程。",
+    "es": "Genial. Yo preparo el orden del día.",
+    "fr": "Super. Je prépare l'ordre du jour.",
+    "tr": "Harika. Gündemi ben hazırlayayım.",
+    "ja": "いいですね。議題は私が準備します。",
+    "ko": "좋아요. 제가 안건을 준비할게요.",
+    "it": "Ottimo. Preparo io l'ordine del giorno.",
+    "de": "Super. Ich bereite die Tagesordnung vor.",
+    "pt": "Ótimo. Eu preparo a pauta.",
+    "ru": "Отлично. Я подготовлю повестку дня.",
+    "vi": "Tuyệt. Mình sẽ chuẩn bị chương trình họp.",
+    "th": "ดีค่ะ เดี๋ยวดิฉันเตรียมวาระการประชุมให้ค่ะ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "organize",
+   "meaning": "plan and arrange something so it happens",
+   "tr": {
+    "ur": "انتظام کرنا",
+    "hi": "आयोजित करना",
+    "ar": "نظّم",
+    "zh": "组织",
+    "es": "organizar",
+    "fr": "organiser",
+    "tr": "düzenlemek",
+    "ja": "（会議を）開く",
+    "ko": "(회의를) 잡다",
+    "it": "organizzare",
+    "de": "organisieren",
+    "pt": "organizar",
+    "ru": "организовать",
+    "vi": "tổ chức",
+    "th": "จัด"
+   }
+  },
+  {
+   "word": "meeting",
+   "meaning": "a time when people meet to talk about work",
+   "tr": {
+    "ur": "میٹنگ",
+    "hi": "मीटिंग",
+    "ar": "اجتماع",
+    "zh": "会议",
+    "es": "reunión",
+    "fr": "réunion",
+    "tr": "toplantı",
+    "ja": "会議",
+    "ko": "회의",
+    "it": "riunione",
+    "de": "das Meeting",
+    "pt": "reunião",
+    "ru": "совещание",
+    "vi": "cuộc họp",
+    "th": "การประชุม"
+   }
+  },
+  {
+   "word": "schedule",
+   "meaning": "choose a day and time for something",
+   "tr": {
+    "ur": "وقت طے کرنا",
+    "hi": "समय तय करना",
+    "ar": "حدّد موعدًا",
+    "zh": "安排时间",
+    "es": "programar",
+    "fr": "prévoir",
+    "tr": "planlamak",
+    "ja": "日程を決める",
+    "ko": "일정을 잡다",
+    "it": "fissare",
+    "de": "ansetzen",
+    "pt": "marcar",
+    "ru": "назначить",
+    "vi": "xếp lịch",
+    "th": "นัด"
+   }
+  },
+  {
+   "word": "that works",
+   "meaning": "that is fine for me; I agree",
+   "tr": {
+    "ur": "یہ چلے گا",
+    "hi": "ठीक है",
+    "ar": "هذا مناسب",
+    "zh": "可以",
+    "es": "me parece bien",
+    "fr": "ça marche",
+    "tr": "olur",
+    "ja": "それでいいです",
+    "ko": "좋아요",
+    "it": "va bene",
+    "de": "passt",
+    "pt": "combinado",
+    "ru": "подходит",
+    "vi": "được đấy",
+    "th": "ได้เลย"
+   }
+  },
+  {
+   "word": "discuss",
+   "meaning": "talk about something with other people",
+   "tr": {
+    "ur": "بات چیت کرنا",
+    "hi": "चर्चा करना",
+    "ar": "ناقش",
+    "zh": "讨论",
+    "es": "hablar de",
+    "fr": "parler de",
+    "tr": "konuşmak",
+    "ja": "話し合う",
+    "ko": "논의하다",
+    "it": "parlare di",
+    "de": "sprechen über",
+    "pt": "conversar sobre",
+    "ru": "обсудить",
+    "vi": "bàn về",
+    "th": "คุยเรื่อง"
+   }
+  },
+  {
+   "word": "review",
+   "meaning": "look at something again carefully to check it",
+   "tr": {
+    "ur": "جائزہ لینا",
+    "hi": "समीक्षा करना",
+    "ar": "راجع",
+    "zh": "回顾",
+    "es": "revisar",
+    "fr": "faire le point sur",
+    "tr": "gözden geçirmek",
+    "ja": "確認する",
+    "ko": "점검하다",
+    "it": "fare il punto su",
+    "de": "überprüfen",
+    "pt": "revisar",
+    "ru": "оценить",
+    "vi": "xem lại",
+    "th": "ทบทวน"
+   }
+  },
+  {
+   "word": "progress",
+   "meaning": "how far work has moved forward",
+   "tr": {
+    "ur": "پیش رفت",
+    "hi": "प्रगति",
+    "ar": "تقدّم",
+    "zh": "进展",
+    "es": "avance",
+    "fr": "avancement",
+    "tr": "ilerleme",
+    "ja": "進捗",
+    "ko": "진행 상황",
+    "it": "progressi",
+    "de": "der Fortschritt",
+    "pt": "andamento",
+    "ru": "ход работы",
+    "vi": "tiến độ",
+    "th": "ความคืบหน้า"
+   }
+  },
+  {
+   "word": "invite",
+   "meaning": "ask someone to come to an event",
+   "tr": {
+    "ur": "مدعو کرنا",
+    "hi": "बुलाना",
+    "ar": "دعا",
+    "zh": "邀请",
+    "es": "invitar",
+    "fr": "inviter",
+    "tr": "davet etmek",
+    "ja": "招待する",
+    "ko": "초대하다",
+    "it": "invitare",
+    "de": "einladen",
+    "pt": "convidar",
+    "ru": "пригласить",
+    "vi": "mời",
+    "th": "เชิญ"
+   }
+  },
+  {
+   "word": "updates",
+   "meaning": "the newest news about someone's work",
+   "tr": {
+    "ur": "اپ ڈیٹس",
+    "hi": "अपडेट्स",
+    "ar": "المستجدات",
+    "zh": "最新进展",
+    "es": "novedades",
+    "fr": "dernières nouvelles",
+    "tr": "son durum",
+    "ja": "最新情報",
+    "ko": "최신 현황",
+    "it": "aggiornamenti",
+    "de": "der aktuelle Stand",
+    "pt": "atualizações",
+    "ru": "новости",
+    "vi": "cập nhật",
+    "th": "อัปเดต"
+   }
+  },
+  {
+   "word": "agenda",
+   "meaning": "the list of topics to talk about in a meeting",
+   "tr": {
+    "ur": "ایجنڈا",
+    "hi": "एजेंडा",
+    "ar": "جدول الأعمال",
+    "zh": "议程",
+    "es": "orden del día",
+    "fr": "ordre du jour",
+    "tr": "gündem",
+    "ja": "議題",
+    "ko": "안건",
+    "it": "ordine del giorno",
+    "de": "die Tagesordnung",
+    "pt": "pauta",
+    "ru": "повестка дня",
+    "vi": "chương trình họp",
+    "th": "วาระการประชุม"
+   }
+  }
+ ]
+}

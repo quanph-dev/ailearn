@@ -1,0 +1,417 @@
+{
+ "scene": "🏠",
+ "colors": [
+  "#E4ECF2",
+  "#C9D6E2"
+ ],
+ "speakers": [
+  {
+   "name": "Emma",
+   "emoji": "👩",
+   "voice": "female"
+  },
+  {
+   "name": "Alex",
+   "emoji": "👨",
+   "voice": "male"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Hi there. I haven't seen you before. Did you just move in?",
+   "start": 0,
+   "end": 3950,
+   "tr": {
+    "ur": "ہیلو! میں نے آپ کو پہلے کبھی نہیں دیکھا۔ کیا آپ یہاں نئے نئے رہنے آئے ہیں؟",
+    "hi": "नमस्ते! मैंने आपको पहले कभी नहीं देखा। क्या आप यहाँ नए-नए रहने आए हैं?",
+    "ar": "مرحبًا! لم أرك من قبل. هل انتقلت إلى هنا للتو؟",
+    "zh": "你好！我以前没见过你。你是刚搬来的吗？",
+    "es": "¡Hola! No te había visto antes. ¿Te acabas de mudar?",
+    "fr": "Salut ! Je ne t'ai jamais vu ici. Tu viens d'emménager ?",
+    "tr": "Merhaba! Seni daha önce hiç görmemiştim. Yeni mi taşındın?",
+    "ja": "こんにちは。初めてお見かけしますね。引っ越してきたばかりですか？",
+    "ko": "안녕하세요. 처음 뵙는 것 같네요. 새로 이사 오셨어요?",
+    "it": "Ciao! Non ti ho mai visto prima. Ti sei appena trasferito?",
+    "de": "Hallo! Dich habe ich hier noch nie gesehen. Bist du gerade eingezogen?",
+    "pt": "Oi! Nunca te vi por aqui. Você acabou de se mudar?",
+    "ru": "Привет! Я тебя здесь раньше не видела. Ты недавно переехал?",
+    "vi": "Chào bạn! Mình chưa gặp bạn bao giờ. Bạn mới chuyển đến à?",
+    "th": "สวัสดีค่ะ ไม่เคยเห็นคุณมาก่อนเลย เพิ่งย้ายเข้ามาเหรอคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Yes, I moved in yesterday. I'm Alex, by the way.",
+   "start": 4480,
+   "end": 7610,
+   "tr": {
+    "ur": "جی ہاں، میں کل ہی یہاں رہنے آیا ہوں۔ ویسے، میں ایلکس ہوں۔",
+    "hi": "हाँ, मैं कल ही यहाँ रहने आया हूँ। वैसे, मैं एलेक्स हूँ।",
+    "ar": "نعم، انتقلت أمس. بالمناسبة، اسمي أليكس.",
+    "zh": "是啊，我昨天刚搬进来。对了，我叫亚历克斯。",
+    "es": "Sí, me mudé ayer. Por cierto, soy Alex.",
+    "fr": "Oui, j'ai emménagé hier. Au fait, moi, c'est Alex.",
+    "tr": "Evet, dün taşındım. Bu arada, ben Alex.",
+    "ja": "はい、昨日引っ越してきました。ちなみに、僕はアレックスです。",
+    "ko": "네, 어제 이사 왔어요. 아 참, 저는 알렉스예요.",
+    "it": "Sì, mi sono trasferito ieri. A proposito, io sono Alex.",
+    "de": "Ja, ich bin gestern eingezogen. Ich bin übrigens Alex.",
+    "pt": "Sim, me mudei ontem. Aliás, eu sou o Alex.",
+    "ru": "Да, я переехал вчера. Кстати, меня зовут Алекс.",
+    "vi": "Đúng rồi, mình mới chuyển đến hôm qua. À, nhân tiện, mình là Alex.",
+    "th": "ครับ ผมเพิ่งย้ายเข้ามาเมื่อวานนี้เอง อ้อ ผมชื่ออเล็กซ์นะครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Nice to meet you, Alex. I'm Emma. I live right next door.",
+   "start": 8160,
+   "end": 11580,
+   "tr": {
+    "ur": "آپ سے مل کر خوشی ہوئی، ایلکس۔ میں ایما ہوں۔ میں آپ کے بالکل برابر میں رہتی ہوں۔",
+    "hi": "आपसे मिलकर अच्छा लगा, एलेक्स। मैं एम्मा हूँ। मैं आपके ठीक बगल में रहती हूँ।",
+    "ar": "تشرفت بمعرفتك يا أليكس. أنا إيما، وأسكن في الشقة المجاورة.",
+    "zh": "很高兴认识你，亚历克斯。我叫艾玛，就住在你隔壁。",
+    "es": "Encantada, Alex. Yo soy Emma. Vivo justo al lado.",
+    "fr": "Enchantée, Alex. Moi, c'est Emma. J'habite juste à côté.",
+    "tr": "Memnun oldum, Alex. Ben de Emma. Hemen yan dairede oturuyorum.",
+    "ja": "はじめまして、アレックスさん。エマです。すぐ隣に住んでいます。",
+    "ko": "만나서 반가워요, 알렉스 씨. 저는 엠마예요. 바로 옆집에 살아요.",
+    "it": "Piacere, Alex. Io sono Emma. Abito proprio qui accanto.",
+    "de": "Freut mich, Alex. Ich bin Emma. Ich wohne direkt nebenan.",
+    "pt": "Muito prazer, Alex. Eu sou a Emma. Moro bem aqui ao lado.",
+    "ru": "Приятно познакомиться, Алекс. Я Эмма. Я живу прямо по соседству.",
+    "vi": "Rất vui được gặp bạn, Alex. Mình là Emma. Mình ở ngay sát vách.",
+    "th": "ยินดีที่ได้รู้จักนะคะ คุณอเล็กซ์ ฉันชื่อเอ็มม่า อยู่ห้องข้าง ๆ นี่เองค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Nice to meet you, too. Is this a quiet building?",
+   "start": 12100,
+   "end": 14820,
+   "tr": {
+    "ur": "مجھے بھی آپ سے مل کر خوشی ہوئی۔ کیا اس عمارت میں خاموشی رہتی ہے؟",
+    "hi": "मुझे भी आपसे मिलकर अच्छा लगा। क्या यह इमारत शांत है?",
+    "ar": "وأنا أيضًا تشرفت بمعرفتك. هل هذا المبنى هادئ؟",
+    "zh": "我也很高兴认识你。这栋楼安静吗？",
+    "es": "Igualmente. ¿Es un edificio tranquilo?",
+    "fr": "Moi aussi, enchanté. C'est un immeuble calme ?",
+    "tr": "Ben de memnun oldum. Bu bina sakin mi?",
+    "ja": "こちらこそ、よろしくお願いします。この建物は静かですか？",
+    "ko": "저도 만나서 반가워요. 이 건물은 조용한 편이에요?",
+    "it": "Piacere mio. Questo palazzo è tranquillo?",
+    "de": "Freut mich auch. Ist das ein ruhiges Haus?",
+    "pt": "O prazer é meu. O prédio aqui é sossegado?",
+    "ru": "Мне тоже очень приятно. А в этом доме тихо?",
+    "vi": "Mình cũng rất vui được gặp bạn. Tòa nhà này có yên tĩnh không?",
+    "th": "ยินดีที่ได้รู้จักเช่นกันครับ ตึกนี้เงียบไหมครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Yes, it's pretty peaceful. And everyone here is really friendly.",
+   "start": 15390,
+   "end": 19220,
+   "tr": {
+    "ur": "جی ہاں، کافی پرسکون ہے۔ اور یہاں سب لوگ بہت ملنسار ہیں۔",
+    "hi": "हाँ, यहाँ का माहौल काफ़ी शांतिपूर्ण है। और सब लोग बहुत मिलनसार हैं।",
+    "ar": "نعم، إنه هادئ إلى حد كبير. والجميع هنا ودودون جدًا.",
+    "zh": "是的，挺清静的。而且这里的人都特别友好。",
+    "es": "Sí, es bastante tranquilo. Y todos aquí son muy simpáticos.",
+    "fr": "Oui, c'est plutôt paisible. Et tout le monde ici est vraiment sympa.",
+    "tr": "Evet, oldukça huzurlu. Üstelik buradaki herkes çok cana yakın.",
+    "ja": "ええ、けっこう平和ですよ。それに、ここの人はみんなとても気さくなんです。",
+    "ko": "네, 꽤 평화로워요. 그리고 여기 사람들은 다들 정말 다정해요.",
+    "it": "Sì, è piuttosto tranquillo. E qui sono tutti davvero cordiali.",
+    "de": "Ja, hier geht es ziemlich friedlich zu. Und alle sind wirklich freundlich.",
+    "pt": "Sim, é bem tranquilo. E todo mundo aqui é muito simpático.",
+    "ru": "Да, здесь довольно спокойно. И все тут очень дружелюбные.",
+    "vi": "Có chứ, khá yên bình. Mà mọi người ở đây ai cũng thân thiện lắm.",
+    "th": "ใช่ค่ะ ค่อนข้างสงบเลย แล้วทุกคนที่นี่ก็เป็นมิตรมากด้วยค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "That's great to hear. I'm still getting used to the neighborhood.",
+   "start": 19660,
+   "end": 22970,
+   "tr": {
+    "ur": "یہ سن کر بہت اچھا لگا۔ میں ابھی اس محلے کا عادی ہو رہا ہوں۔",
+    "hi": "यह सुनकर बहुत अच्छा लगा। मैं अभी इस मोहल्ले का आदी हो रहा हूँ।",
+    "ar": "يسعدني سماع ذلك. ما زلت أعتاد على الحي.",
+    "zh": "听你这么说太好了。我还在慢慢适应这个社区。",
+    "es": "Me alegra saberlo. Todavía me estoy acostumbrando al barrio.",
+    "fr": "Ça fait plaisir à entendre. Je suis encore en train de m'habituer au quartier.",
+    "tr": "Bunu duyduğuma sevindim. Mahalleye hâlâ alışmaya çalışıyorum.",
+    "ja": "それはよかったです。まだこの辺りに慣れていないんですよ。",
+    "ko": "다행이네요. 아직 이 동네에 적응하는 중이거든요.",
+    "it": "Mi fa piacere sentirlo. Mi sto ancora abituando al quartiere.",
+    "de": "Das freut mich zu hören. Ich gewöhne mich noch an die Nachbarschaft.",
+    "pt": "Que bom ouvir isso. Ainda estou me acostumando com o bairro.",
+    "ru": "Рад это слышать. Я ещё привыкаю к району.",
+    "vi": "Nghe vậy thì tốt quá. Mình vẫn đang làm quen với khu phố này.",
+    "th": "ได้ยินแบบนี้ก็ดีใจครับ ผมยังปรับตัวกับย่านนี้อยู่เลยครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Well, if you ever need anything, just knock on my door.",
+   "start": 23570,
+   "end": 26790,
+   "tr": {
+    "ur": "اچھا، اگر آپ کو کبھی کسی چیز کی ضرورت ہو تو بس میرا دروازہ کھٹکھٹا دیجیے گا۔",
+    "hi": "अच्छा, अगर आपको कभी किसी चीज़ की ज़रूरत हो, तो बस मेरा दरवाज़ा खटखटा दीजिएगा।",
+    "ar": "حسنًا، إذا احتجت إلى أي شيء في أي وقت، فقط اطرق بابي.",
+    "zh": "那以后你要是需要什么，尽管来敲我家的门。",
+    "es": "Bueno, si alguna vez necesitas algo, solo tienes que llamar a mi puerta.",
+    "fr": "Bon, si jamais tu as besoin de quoi que ce soit, tu n'as qu'à frapper à ma porte.",
+    "tr": "Ne zaman bir şeye ihtiyacın olursa, kapımı çalman yeterli.",
+    "ja": "じゃあ、何か必要なことがあったら、いつでもうちのドアをノックしてくださいね。",
+    "ko": "그럼 필요한 게 있으면 언제든지 저희 집 문 두드리세요.",
+    "it": "Beh, se mai ti serve qualcosa, bussa pure alla mia porta.",
+    "de": "Also, wenn du mal irgendwas brauchst, klopf einfach an meine Tür.",
+    "pt": "Bom, se precisar de alguma coisa, é só bater na minha porta.",
+    "ru": "Ну, если тебе что-нибудь понадобится, просто постучи ко мне в дверь.",
+    "vi": "Vậy nếu bạn cần gì thì cứ gõ cửa nhà mình nhé.",
+    "th": "งั้นถ้าต้องการอะไรเมื่อไหร่ ก็มาเคาะประตูหาฉันได้เลยนะคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Thank you, Emma. That's really kind of you.",
+   "start": 27340,
+   "end": 30080,
+   "tr": {
+    "ur": "شکریہ، ایما۔ یہ آپ کی بہت مہربانی ہے۔",
+    "hi": "धन्यवाद, एम्मा। आप सच में बहुत दयालु हैं।",
+    "ar": "شكرًا يا إيما. هذا لطف كبير منك.",
+    "zh": "谢谢你，艾玛。你真是太好心了。",
+    "es": "Gracias, Emma. Eres muy amable.",
+    "fr": "Merci, Emma. C'est vraiment gentil de ta part.",
+    "tr": "Teşekkürler, Emma. Çok naziksin.",
+    "ja": "ありがとうございます、エマさん。本当に親切ですね。",
+    "ko": "고마워요, 엠마 씨. 정말 친절하시네요.",
+    "it": "Grazie, Emma. Sei davvero gentile.",
+    "de": "Danke, Emma. Das ist wirklich nett von dir.",
+    "pt": "Obrigado, Emma. Você é muito gentil.",
+    "ru": "Спасибо, Эмма. Это очень мило с твоей стороны.",
+    "vi": "Cảm ơn Emma nhé. Bạn tốt bụng thật đấy.",
+    "th": "ขอบคุณครับคุณเอ็มม่า ใจดีมากเลยครับ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "move in",
+   "meaning": "start living in a new home",
+   "tr": {
+    "ur": "رہنے آنا",
+    "hi": "रहने आना",
+    "ar": "ينتقل للسكن",
+    "zh": "搬进来",
+    "es": "mudarse",
+    "fr": "emménager",
+    "tr": "taşınmak",
+    "ja": "引っ越してくる",
+    "ko": "이사 오다",
+    "it": "trasferirsi",
+    "de": "einziehen",
+    "pt": "mudar-se",
+    "ru": "переехать",
+    "vi": "chuyển đến",
+    "th": "ย้ายเข้ามา"
+   }
+  },
+  {
+   "word": "by the way",
+   "meaning": "used to mention something new",
+   "tr": {
+    "ur": "ویسے",
+    "hi": "वैसे",
+    "ar": "بالمناسبة",
+    "zh": "对了",
+    "es": "por cierto",
+    "fr": "au fait",
+    "tr": "bu arada",
+    "ja": "ちなみに",
+    "ko": "아 참",
+    "it": "a proposito",
+    "de": "übrigens",
+    "pt": "aliás",
+    "ru": "кстати",
+    "vi": "nhân tiện",
+    "th": "ว่าแต่"
+   }
+  },
+  {
+   "word": "next door",
+   "meaning": "in the home right beside yours",
+   "tr": {
+    "ur": "برابر میں",
+    "hi": "बगल में",
+    "ar": "مجاور",
+    "zh": "隔壁",
+    "es": "al lado",
+    "fr": "à côté",
+    "tr": "yan daire",
+    "ja": "隣",
+    "ko": "옆집",
+    "it": "accanto",
+    "de": "nebenan",
+    "pt": "ao lado",
+    "ru": "по соседству",
+    "vi": "sát vách",
+    "th": "ห้องข้าง ๆ"
+   }
+  },
+  {
+   "word": "building",
+   "meaning": "a structure with walls and a roof",
+   "tr": {
+    "ur": "عمارت",
+    "hi": "इमारत",
+    "ar": "مبنى",
+    "zh": "楼",
+    "es": "edificio",
+    "fr": "immeuble",
+    "tr": "bina",
+    "ja": "建物",
+    "ko": "건물",
+    "it": "palazzo",
+    "de": "das Gebäude",
+    "pt": "prédio",
+    "ru": "здание",
+    "vi": "tòa nhà",
+    "th": "ตึก"
+   }
+  },
+  {
+   "word": "peaceful",
+   "meaning": "calm and quiet, without trouble",
+   "tr": {
+    "ur": "پرسکون",
+    "hi": "शांतिपूर्ण",
+    "ar": "هادئ",
+    "zh": "清静",
+    "es": "tranquilo",
+    "fr": "paisible",
+    "tr": "huzurlu",
+    "ja": "平和",
+    "ko": "평화롭다",
+    "it": "tranquillo",
+    "de": "friedlich",
+    "pt": "tranquilo",
+    "ru": "спокойный",
+    "vi": "yên bình",
+    "th": "สงบ"
+   }
+  },
+  {
+   "word": "friendly",
+   "meaning": "pleasant and kind to other people",
+   "tr": {
+    "ur": "ملنسار",
+    "hi": "मिलनसार",
+    "ar": "ودود",
+    "zh": "友好",
+    "es": "simpático",
+    "fr": "sympathique",
+    "tr": "cana yakın",
+    "ja": "気さく",
+    "ko": "다정하다",
+    "it": "cordiale",
+    "de": "freundlich",
+    "pt": "simpático",
+    "ru": "дружелюбный",
+    "vi": "thân thiện",
+    "th": "เป็นมิตร"
+   }
+  },
+  {
+   "word": "getting used to",
+   "meaning": "becoming familiar with something new",
+   "tr": {
+    "ur": "عادی ہونا",
+    "hi": "आदी होना",
+    "ar": "يعتاد على",
+    "zh": "适应",
+    "es": "acostumbrarse",
+    "fr": "s'habituer",
+    "tr": "alışmak",
+    "ja": "慣れる",
+    "ko": "적응하다",
+    "it": "abituarsi",
+    "de": "sich gewöhnen",
+    "pt": "acostumar-se",
+    "ru": "привыкать",
+    "vi": "làm quen",
+    "th": "ปรับตัว"
+   }
+  },
+  {
+   "word": "neighborhood",
+   "meaning": "the area around where you live",
+   "tr": {
+    "ur": "محلہ",
+    "hi": "मोहल्ला",
+    "ar": "حي",
+    "zh": "社区",
+    "es": "barrio",
+    "fr": "quartier",
+    "tr": "mahalle",
+    "ja": "近所",
+    "ko": "동네",
+    "it": "quartiere",
+    "de": "die Nachbarschaft",
+    "pt": "bairro",
+    "ru": "район",
+    "vi": "khu phố",
+    "th": "ย่าน"
+   }
+  },
+  {
+   "word": "knock",
+   "meaning": "hit a door gently to get attention",
+   "tr": {
+    "ur": "کھٹکھٹانا",
+    "hi": "खटखटाना",
+    "ar": "يطرق",
+    "zh": "敲门",
+    "es": "llamar a la puerta",
+    "fr": "frapper",
+    "tr": "kapıyı çalmak",
+    "ja": "ノックする",
+    "ko": "두드리다",
+    "it": "bussare",
+    "de": "klopfen",
+    "pt": "bater na porta",
+    "ru": "стучать",
+    "vi": "gõ cửa",
+    "th": "เคาะประตู"
+   }
+  },
+  {
+   "word": "kind",
+   "meaning": "caring and helpful to others",
+   "tr": {
+    "ur": "مہربان",
+    "hi": "दयालु",
+    "ar": "لطيف",
+    "zh": "好心",
+    "es": "amable",
+    "fr": "gentil",
+    "tr": "nazik",
+    "ja": "親切",
+    "ko": "친절하다",
+    "it": "gentile",
+    "de": "nett",
+    "pt": "gentil",
+    "ru": "добрый",
+    "vi": "tốt bụng",
+    "th": "ใจดี"
+   }
+  }
+ ]
+}

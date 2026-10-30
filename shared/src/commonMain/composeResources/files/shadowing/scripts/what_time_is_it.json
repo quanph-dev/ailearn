@@ -1,0 +1,486 @@
+{
+ "scene": "🕒",
+ "colors": [
+  "#F2ECE3",
+  "#E3D6C4"
+ ],
+ "speakers": [
+  {
+   "name": "Jack",
+   "emoji": "👨",
+   "voice": "male"
+  },
+  {
+   "name": "Hannah",
+   "emoji": "👩",
+   "voice": "female"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Excuse me. Could you tell me the time?",
+   "start": 0,
+   "end": 2590,
+   "tr": {
+    "ur": "معاف کیجیے۔ کیا آپ مجھے وقت بتا سکتی ہیں؟",
+    "hi": "माफ़ कीजिए। क्या आप मुझे समय बता सकती हैं?",
+    "ar": "عفوًا، هل يمكنكِ أن تخبريني كم الساعة؟",
+    "zh": "打扰一下，您能告诉我现在几点了吗？",
+    "es": "Disculpe. ¿Podría decirme qué hora es?",
+    "fr": "Excusez-moi. Pourriez-vous me dire l'heure ?",
+    "tr": "Affedersiniz. Saat kaç olduğunu söyleyebilir misiniz?",
+    "ja": "すみません。今何時か教えていただけますか？",
+    "ko": "실례합니다. 지금 몇 시인지 알려 주시겠어요?",
+    "it": "Mi scusi. Mi saprebbe dire che ore sono?",
+    "de": "Entschuldigung. Könnten Sie mir sagen, wie spät es ist?",
+    "pt": "Com licença. Você pode me dizer que horas são?",
+    "ru": "Извините. Не подскажете, который сейчас час?",
+    "vi": "Xin lỗi chị. Chị có thể cho tôi biết mấy giờ rồi không?",
+    "th": "ขอโทษครับ รบกวนบอกเวลาให้ผมหน่อยได้ไหมครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Of course. It's quarter past three.",
+   "start": 3020,
+   "end": 5730,
+   "tr": {
+    "ur": "جی ضرور۔ سوا تین بجے ہیں۔",
+    "hi": "ज़रूर। सवा तीन बजे हैं।",
+    "ar": "بالتأكيد. الساعة الآن الثالثة والربع.",
+    "zh": "当然。现在是三点一刻。",
+    "es": "Claro. Son las tres y cuarto.",
+    "fr": "Bien sûr. Il est trois heures et quart.",
+    "tr": "Tabii. Saat üçü çeyrek geçiyor.",
+    "ja": "もちろんです。3時15分です。",
+    "ko": "물론이죠. 지금 3시 15분이에요.",
+    "it": "Certo. Sono le tre e un quarto.",
+    "de": "Natürlich. Es ist Viertel nach drei.",
+    "pt": "Claro. São três e quinze.",
+    "ru": "Конечно. Сейчас четверть четвёртого.",
+    "vi": "Dạ được ạ. Bây giờ là 3 giờ 15 phút.",
+    "th": "ได้เลยค่ะ ตอนนี้บ่าย 3 โมง 15 นาทีค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Thank you. What's the date today?",
+   "start": 6370,
+   "end": 8740,
+   "tr": {
+    "ur": "شکریہ۔ آج کی تاریخ کیا ہے؟",
+    "hi": "धन्यवाद। आज कौन-सी तारीख़ है?",
+    "ar": "شكرًا لكِ. ما هو تاريخ اليوم؟",
+    "zh": "谢谢。今天是几号？",
+    "es": "Gracias. ¿Y qué fecha es hoy?",
+    "fr": "Merci. Quelle est la date d'aujourd'hui ?",
+    "tr": "Teşekkür ederim. Bugün ayın kaçı?",
+    "ja": "ありがとうございます。今日は何日ですか？",
+    "ko": "감사합니다. 오늘 며칠이에요?",
+    "it": "Grazie. Che data è oggi?",
+    "de": "Danke. Welches Datum haben wir heute?",
+    "pt": "Obrigado. Qual é a data de hoje?",
+    "ru": "Спасибо. А какое сегодня число?",
+    "vi": "Cảm ơn chị. Hôm nay là ngày mấy ạ?",
+    "th": "ขอบคุณครับ วันนี้วันที่เท่าไหร่ครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "It's Tuesday the 5th.",
+   "start": 9230,
+   "end": 10800,
+   "tr": {
+    "ur": "آج منگل ہے، 5 تاریخ۔",
+    "hi": "आज मंगलवार है, 5 तारीख़।",
+    "ar": "اليوم الثلاثاء، الخامس من الشهر.",
+    "zh": "今天是星期二，5号。",
+    "es": "Es martes 5.",
+    "fr": "On est mardi 5.",
+    "tr": "Bugün salı, ayın 5'i.",
+    "ja": "5日、火曜日です。",
+    "ko": "오늘은 5일 화요일이에요.",
+    "it": "Oggi è martedì 5.",
+    "de": "Heute ist Dienstag, der Fünfte.",
+    "pt": "É terça-feira, dia 5.",
+    "ru": "Сегодня вторник, 5-е число.",
+    "vi": "Hôm nay là thứ Ba, ngày 5 ạ.",
+    "th": "วันนี้วันอังคารที่ 5 ค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Ah, right. I almost forgot the date.",
+   "start": 11540,
+   "end": 14390,
+   "tr": {
+    "ur": "اچھا، ہاں۔ میں تو تاریخ بھولتے بھولتے رہ گیا۔",
+    "hi": "अरे हाँ। मैं तो तारीख़ भूलते-भूलते रह गया।",
+    "ar": "آه، صحيح. كدت أنسى التاريخ.",
+    "zh": "哦，对。我差点忘了日期。",
+    "es": "Ah, sí. Casi se me olvida la fecha.",
+    "fr": "Ah, c'est vrai. J'ai failli oublier la date.",
+    "tr": "Ah, doğru. Tarihi neredeyse unutuyordum.",
+    "ja": "ああ、そうだ。日付を忘れるところでした。",
+    "ko": "아, 맞아요. 날짜를 잊을 뻔했네요.",
+    "it": "Ah, giusto. Quasi mi dimenticavo la data.",
+    "de": "Ach ja, stimmt. Das Datum hätte ich fast vergessen.",
+    "pt": "Ah, é verdade. Quase esqueci a data.",
+    "ru": "Ах да. Я чуть не забыл дату.",
+    "vi": "À, đúng rồi. Tôi suýt quên mất hôm nay ngày mấy.",
+    "th": "อ๋อ จริงด้วยครับ ผมเกือบลืมวันที่ไปเลยครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "No problem. Do you have an appointment?",
+   "start": 15390,
+   "end": 18220,
+   "tr": {
+    "ur": "کوئی بات نہیں۔ کیا آپ کی کوئی اپائنٹمنٹ ہے؟",
+    "hi": "कोई बात नहीं। क्या आपकी कोई अपॉइंटमेंट है?",
+    "ar": "لا مشكلة. هل لديك موعد؟",
+    "zh": "没问题。您有预约吗？",
+    "es": "No hay problema. ¿Tiene alguna cita?",
+    "fr": "Pas de problème. Vous avez un rendez-vous ?",
+    "tr": "Sorun değil. Bir randevunuz var mı?",
+    "ja": "大丈夫ですよ。何かお約束があるんですか？",
+    "ko": "괜찮아요. 약속 있으세요?",
+    "it": "Nessun problema. Ha un appuntamento?",
+    "de": "Kein Problem. Haben Sie einen Termin?",
+    "pt": "Sem problema. Você tem hora marcada?",
+    "ru": "Ничего страшного. У вас назначена встреча?",
+    "vi": "Không sao đâu. Anh có hẹn không ạ?",
+    "th": "ไม่เป็นไรค่ะ คุณมีนัดหรือเปล่าคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Yes, at half past three. Am I late?",
+   "start": 18930,
+   "end": 21660,
+   "tr": {
+    "ur": "جی ہاں، ساڑھے تین بجے کی ہے۔ کیا مجھے دیر ہو گئی؟",
+    "hi": "हाँ, साढ़े तीन बजे की है। क्या मुझे देर हो गई है?",
+    "ar": "نعم، في الثالثة والنصف. هل أنا متأخر؟",
+    "zh": "对，三点半。我迟到了吗？",
+    "es": "Sí, a las tres y media. ¿Llego tarde?",
+    "fr": "Oui, à trois heures et demie. Je suis en retard ?",
+    "tr": "Evet, saat üç buçukta. Geç mi kaldım?",
+    "ja": "はい、3時半です。遅刻でしょうか？",
+    "ko": "네, 3시 반이에요. 제가 늦은 건가요?",
+    "it": "Sì, alle tre e mezza. Sono in ritardo?",
+    "de": "Ja, um halb vier. Komme ich zu spät?",
+    "pt": "Sim, às três e meia. Estou atrasado?",
+    "ru": "Да, в половине четвёртого. Я опаздываю?",
+    "vi": "Vâng, 3 giờ rưỡi. Tôi có bị muộn không?",
+    "th": "ใช่ครับ นัดไว้บ่าย 3 โมงครึ่ง ผมสายหรือยังครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Not yet. You still have 15 minutes.",
+   "start": 22370,
+   "end": 25180,
+   "tr": {
+    "ur": "ابھی نہیں۔ آپ کے پاس ابھی بھی 15 منٹ ہیں۔",
+    "hi": "अभी नहीं। आपके पास अभी भी 15 मिनट हैं।",
+    "ar": "ليس بعد. ما زال أمامك 15 دقيقة.",
+    "zh": "还没有。您还有15分钟。",
+    "es": "Todavía no. Aún le quedan 15 minutos.",
+    "fr": "Pas encore. Il vous reste 15 minutes.",
+    "tr": "Henüz değil. Hâlâ 15 dakikanız var.",
+    "ja": "まだ大丈夫ですよ。あと15分あります。",
+    "ko": "아직은 괜찮아요. 15분 남았어요.",
+    "it": "Non ancora. Ha ancora 15 minuti.",
+    "de": "Noch nicht. Sie haben noch 15 Minuten.",
+    "pt": "Ainda não. Você ainda tem 15 minutos.",
+    "ru": "Пока нет. У вас ещё есть 15 минут.",
+    "vi": "Chưa đâu ạ. Anh vẫn còn 15 phút nữa.",
+    "th": "ยังไม่สายค่ะ ยังเหลืออีก 15 นาทีค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "That's a relief. Thank you so much.",
+   "start": 25710,
+   "end": 27700,
+   "tr": {
+    "ur": "شکر ہے۔ آپ کا بہت بہت شکریہ۔",
+    "hi": "चलो अच्छा हुआ। आपका बहुत-बहुत धन्यवाद।",
+    "ar": "الحمد لله. شكرًا جزيلًا لكِ.",
+    "zh": "那就好。非常感谢您。",
+    "es": "Qué alivio. Muchas gracias.",
+    "fr": "Quel soulagement. Merci beaucoup.",
+    "tr": "Oh, içim rahatladı. Çok teşekkür ederim.",
+    "ja": "よかったです。本当にありがとうございます。",
+    "ko": "다행이에요. 정말 감사합니다.",
+    "it": "Che sollievo. Grazie mille.",
+    "de": "Da bin ich erleichtert. Vielen Dank.",
+    "pt": "Que alívio. Muito obrigado.",
+    "ru": "Какое облегчение. Большое вам спасибо.",
+    "vi": "May quá. Cảm ơn chị nhiều lắm.",
+    "th": "โล่งใจจังเลยครับ ขอบคุณมากครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "You're welcome.",
+   "start": 27700,
+   "end": 28550,
+   "tr": {
+    "ur": "کوئی بات نہیں۔",
+    "hi": "कोई बात नहीं।",
+    "ar": "على الرحب والسعة.",
+    "zh": "不客气。",
+    "es": "De nada.",
+    "fr": "Je vous en prie.",
+    "tr": "Rica ederim.",
+    "ja": "どういたしまして。",
+    "ko": "천만에요.",
+    "it": "Prego.",
+    "de": "Gern geschehen.",
+    "pt": "De nada.",
+    "ru": "Не за что.",
+    "vi": "Không có gì ạ.",
+    "th": "ยินดีค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Have a nice day.",
+   "start": 28550,
+   "end": 30080,
+   "tr": {
+    "ur": "آپ کا دن اچھا گزرے۔",
+    "hi": "आपका दिन अच्छा रहे।",
+    "ar": "أتمنى لك يومًا سعيدًا.",
+    "zh": "祝您今天愉快。",
+    "es": "Que tenga un buen día.",
+    "fr": "Bonne journée !",
+    "tr": "İyi günler dilerim.",
+    "ja": "よい一日をお過ごしください。",
+    "ko": "좋은 하루 보내세요.",
+    "it": "Buona giornata.",
+    "de": "Schönen Tag noch.",
+    "pt": "Tenha um bom dia.",
+    "ru": "Хорошего дня.",
+    "vi": "Chúc anh một ngày tốt lành.",
+    "th": "ขอให้มีวันที่ดีนะคะ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "time",
+   "meaning": "the hour and minutes shown on a clock",
+   "tr": {
+    "ur": "وقت",
+    "hi": "समय",
+    "ar": "الوقت",
+    "zh": "时间",
+    "es": "hora",
+    "fr": "heure",
+    "tr": "saat",
+    "ja": "時間",
+    "ko": "시간",
+    "it": "ora",
+    "de": "die Uhrzeit",
+    "pt": "hora",
+    "ru": "время",
+    "vi": "giờ",
+    "th": "เวลา"
+   }
+  },
+  {
+   "word": "quarter past three",
+   "meaning": "3:15, fifteen minutes after three o'clock",
+   "tr": {
+    "ur": "سوا تین",
+    "hi": "सवा तीन",
+    "ar": "الثالثة والربع",
+    "zh": "三点一刻",
+    "es": "las tres y cuarto",
+    "fr": "trois heures et quart",
+    "tr": "üçü çeyrek geçe",
+    "ja": "3時15分",
+    "ko": "3시 15분",
+    "it": "le tre e un quarto",
+    "de": "Viertel nach drei",
+    "pt": "três e quinze",
+    "ru": "четверть четвёртого",
+    "vi": "3 giờ 15 phút",
+    "th": "บ่าย 3 โมง 15 นาที"
+   }
+  },
+  {
+   "word": "half past three",
+   "meaning": "3:30, thirty minutes after three o'clock",
+   "tr": {
+    "ur": "ساڑھے تین",
+    "hi": "साढ़े तीन",
+    "ar": "الثالثة والنصف",
+    "zh": "三点半",
+    "es": "las tres y media",
+    "fr": "trois heures et demie",
+    "tr": "üç buçuk",
+    "ja": "3時半",
+    "ko": "3시 반",
+    "it": "le tre e mezza",
+    "de": "halb vier",
+    "pt": "três e meia",
+    "ru": "половина четвёртого",
+    "vi": "3 giờ rưỡi",
+    "th": "บ่าย 3 โมงครึ่ง"
+   }
+  },
+  {
+   "word": "date",
+   "meaning": "the day and month it is today",
+   "tr": {
+    "ur": "تاریخ",
+    "hi": "तारीख़",
+    "ar": "التاريخ",
+    "zh": "日期",
+    "es": "fecha",
+    "fr": "date",
+    "tr": "tarih",
+    "ja": "日付",
+    "ko": "날짜",
+    "it": "data",
+    "de": "das Datum",
+    "pt": "data",
+    "ru": "дата",
+    "vi": "ngày tháng",
+    "th": "วันที่"
+   }
+  },
+  {
+   "word": "Tuesday",
+   "meaning": "the day after Monday",
+   "tr": {
+    "ur": "منگل",
+    "hi": "मंगलवार",
+    "ar": "الثلاثاء",
+    "zh": "星期二",
+    "es": "martes",
+    "fr": "mardi",
+    "tr": "salı",
+    "ja": "火曜日",
+    "ko": "화요일",
+    "it": "martedì",
+    "de": "der Dienstag",
+    "pt": "terça-feira",
+    "ru": "вторник",
+    "vi": "thứ Ba",
+    "th": "วันอังคาร"
+   }
+  },
+  {
+   "word": "the 5th",
+   "meaning": "the fifth day of the month",
+   "tr": {
+    "ur": "5 تاریخ",
+    "hi": "5 तारीख़",
+    "ar": "الخامس من الشهر",
+    "zh": "5号",
+    "es": "el 5",
+    "fr": "le 5",
+    "tr": "ayın 5'i",
+    "ja": "5日",
+    "ko": "5일",
+    "it": "il 5",
+    "de": "der Fünfte",
+    "pt": "dia 5",
+    "ru": "5-е число",
+    "vi": "ngày 5",
+    "th": "วันที่ 5"
+   }
+  },
+  {
+   "word": "almost forgot",
+   "meaning": "nearly did not remember",
+   "tr": {
+    "ur": "بھولتے بھولتے رہ جانا",
+    "hi": "भूलते-भूलते रह जाना",
+    "ar": "كاد ينسى",
+    "zh": "差点忘了",
+    "es": "casi olvidar",
+    "fr": "faillir oublier",
+    "tr": "neredeyse unutmak",
+    "ja": "忘れそうになる",
+    "ko": "잊을 뻔하다",
+    "it": "quasi dimenticare",
+    "de": "fast vergessen",
+    "pt": "quase esquecer",
+    "ru": "чуть не забыть",
+    "vi": "suýt quên",
+    "th": "เกือบลืม"
+   }
+  },
+  {
+   "word": "appointment",
+   "meaning": "a meeting planned for a set time",
+   "tr": {
+    "ur": "اپائنٹمنٹ",
+    "hi": "अपॉइंटमेंट",
+    "ar": "موعد",
+    "zh": "预约",
+    "es": "cita",
+    "fr": "rendez-vous",
+    "tr": "randevu",
+    "ja": "約束",
+    "ko": "약속",
+    "it": "appuntamento",
+    "de": "der Termin",
+    "pt": "hora marcada",
+    "ru": "встреча",
+    "vi": "cuộc hẹn",
+    "th": "นัด"
+   }
+  },
+  {
+   "word": "late",
+   "meaning": "after the time you should arrive",
+   "tr": {
+    "ur": "دیر سے",
+    "hi": "देर से",
+    "ar": "متأخر",
+    "zh": "迟到",
+    "es": "tarde",
+    "fr": "en retard",
+    "tr": "geç",
+    "ja": "遅刻",
+    "ko": "늦다",
+    "it": "in ritardo",
+    "de": "zu spät",
+    "pt": "atrasado",
+    "ru": "опаздывать",
+    "vi": "muộn",
+    "th": "สาย"
+   }
+  },
+  {
+   "word": "relief",
+   "meaning": "the good feeling when a worry goes away",
+   "tr": {
+    "ur": "راحت",
+    "hi": "राहत",
+    "ar": "ارتياح",
+    "zh": "松一口气",
+    "es": "alivio",
+    "fr": "soulagement",
+    "tr": "rahatlama",
+    "ja": "安心",
+    "ko": "안도",
+    "it": "sollievo",
+    "de": "die Erleichterung",
+    "pt": "alívio",
+    "ru": "облегчение",
+    "vi": "nhẹ nhõm",
+    "th": "โล่งใจ"
+   }
+  }
+ ]
+}

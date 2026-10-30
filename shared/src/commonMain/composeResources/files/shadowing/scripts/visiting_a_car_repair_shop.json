@@ -1,0 +1,440 @@
+{
+ "scene": "🔧",
+ "colors": [
+  "#E6E9EE",
+  "#CBD1DA"
+ ],
+ "speakers": [
+  {
+   "name": "Ryan",
+   "emoji": "👨",
+   "voice": "male"
+  },
+  {
+   "name": "Maria",
+   "emoji": "👩",
+   "voice": "female"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Hi. My car has been making a strange noise lately.",
+   "start": 0,
+   "end": 3040,
+   "tr": {
+    "ur": "ہیلو۔ میری گاڑی سے آج کل ایک عجیب سی آواز آ رہی ہے۔",
+    "hi": "नमस्ते। मेरी कार से आजकल एक अजीब-सी आवाज़ आ रही है।",
+    "ar": "مرحبًا. تُصدر سيارتي صوتًا غريبًا في الآونة الأخيرة.",
+    "zh": "您好。我的车最近老是发出一种奇怪的声音。",
+    "es": "Hola. Mi coche hace un ruido extraño últimamente.",
+    "fr": "Bonjour. Ma voiture fait un bruit bizarre depuis quelque temps.",
+    "tr": "Merhaba. Arabam son zamanlarda garip bir ses çıkarıyor.",
+    "ja": "こんにちは。最近、車から変な音がするんです。",
+    "ko": "안녕하세요. 제 차에서 요즘 이상한 소리가 나요.",
+    "it": "Buongiorno. Ultimamente la mia macchina fa uno strano rumore.",
+    "de": "Guten Tag. Mein Auto macht in letzter Zeit ein seltsames Geräusch.",
+    "pt": "Bom dia. Meu carro está fazendo um barulho estranho ultimamente.",
+    "ru": "Здравствуйте. В последнее время в машине появился странный шум.",
+    "vi": "Chào cô. Dạo này xe của tôi phát ra tiếng kêu lạ.",
+    "th": "สวัสดีครับ ช่วงนี้รถของผมมีเสียงแปลก ๆ ครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Hello. When do you usually hear the noise?",
+   "start": 3210,
+   "end": 5780,
+   "tr": {
+    "ur": "ہیلو۔ آپ کو یہ آواز عام طور پر کب سنائی دیتی ہے؟",
+    "hi": "नमस्ते। आपको यह आवाज़ आमतौर पर कब सुनाई देती है?",
+    "ar": "أهلًا. متى تسمع الصوت عادةً؟",
+    "zh": "您好。您通常什么时候听到这个声音？",
+    "es": "Hola. ¿Cuándo suele oír usted el ruido?",
+    "fr": "Bonjour. Quand entendez-vous ce bruit en général ?",
+    "tr": "Merhaba. Sesi genellikle ne zaman duyuyorsunuz?",
+    "ja": "こんにちは。その音は、普段いつ頃聞こえますか？",
+    "ko": "안녕하세요. 보통 언제 그 소리가 들리세요?",
+    "it": "Buongiorno. Quando sente il rumore di solito?",
+    "de": "Guten Tag. Wann hören Sie das Geräusch normalerweise?",
+    "pt": "Bom dia. Quando o senhor costuma ouvir o barulho?",
+    "ru": "Здравствуйте. Когда вы обычно слышите этот шум?",
+    "vi": "Chào anh. Anh thường nghe thấy tiếng kêu đó vào lúc nào?",
+    "th": "สวัสดีค่ะ ปกติคุณได้ยินเสียงนั้นตอนไหนคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Mostly when I start driving or turn the steering wheel.",
+   "start": 6170,
+   "end": 8940,
+   "tr": {
+    "ur": "زیادہ تر جب میں گاڑی چلانا شروع کرتا ہوں یا اسٹیئرنگ وہیل گھماتا ہوں۔",
+    "hi": "ज़्यादातर तब, जब मैं गाड़ी चलाना शुरू करता हूँ या स्टीयरिंग घुमाता हूँ।",
+    "ar": "غالبًا عندما أبدأ القيادة أو أدير عجلة القيادة.",
+    "zh": "一般是我刚开始开车的时候，或者转动方向盘的时候。",
+    "es": "Sobre todo cuando empiezo a conducir o giro el volante.",
+    "fr": "Surtout quand je commence à rouler ou que je tourne le volant.",
+    "tr": "Genellikle araba kullanmaya başladığımda veya direksiyonu çevirdiğimde.",
+    "ja": "主に、運転を始めたときや、ハンドルを切ったときです。",
+    "ko": "주로 운전을 시작할 때나 핸들을 돌릴 때요.",
+    "it": "Soprattutto quando parto o giro il volante.",
+    "de": "Meistens, wenn ich losfahre oder das Lenkrad drehe.",
+    "pt": "Principalmente quando eu começo a dirigir ou viro o volante.",
+    "ru": "Обычно это бывает, когда я трогаюсь или поворачиваю руль.",
+    "vi": "Thường là khi tôi bắt đầu lái xe hoặc khi tôi xoay vô lăng.",
+    "th": "ส่วนใหญ่ตอนผมเริ่มขับรถหรือหมุนพวงมาลัยครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "I see. Has this been happening for a long time?",
+   "start": 9230,
+   "end": 11770,
+   "tr": {
+    "ur": "اچھا۔ کیا یہ مسئلہ کافی عرصے سے ہو رہا ہے؟",
+    "hi": "अच्छा। क्या यह समस्या काफ़ी समय से हो रही है?",
+    "ar": "فهمتُ. هل يحدث هذا منذ وقت طويل؟",
+    "zh": "这样啊。这个情况持续很久了吗？",
+    "es": "Entiendo. ¿Lleva así mucho tiempo?",
+    "fr": "Je vois. Cela dure depuis longtemps ?",
+    "tr": "Anladım. Bu durum uzun zamandır devam ediyor mu?",
+    "ja": "なるほど。それはだいぶ前からですか？",
+    "ko": "그렇군요. 이런 증상이 오래됐나요?",
+    "it": "Capisco. Va avanti da molto tempo?",
+    "de": "Ich verstehe. Ist das schon länger so?",
+    "pt": "Entendi. Isso acontece há muito tempo?",
+    "ru": "Понятно. Это давно продолжается?",
+    "vi": "Vậy à. Xe bị như vậy lâu chưa anh?",
+    "th": "เข้าใจแล้วค่ะ เป็นแบบนี้มานานหรือยังคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Just a few days. But it's getting louder.",
+   "start": 12280,
+   "end": 14870,
+   "tr": {
+    "ur": "بس چند دنوں سے۔ لیکن آواز بڑھتی جا رہی ہے۔",
+    "hi": "बस कुछ दिनों से। लेकिन आवाज़ तेज़ होती जा रही है।",
+    "ar": "منذ بضعة أيام فقط، لكن الصوت يزداد ارتفاعًا.",
+    "zh": "就是这几天才有的。但是声音越来越大了。",
+    "es": "Solo desde hace unos días. Pero cada vez suena más fuerte.",
+    "fr": "Depuis quelques jours seulement. Mais ça devient de plus en plus fort.",
+    "tr": "Sadece birkaç gündür. Ama ses giderek artıyor.",
+    "ja": "ここ数日です。でも、だんだん大きくなってきているんです。",
+    "ko": "며칠 됐어요. 그런데 점점 더 커지고 있어요.",
+    "it": "Solo da qualche giorno. Ma sta diventando sempre più forte.",
+    "de": "Erst seit ein paar Tagen. Aber es wird immer lauter.",
+    "pt": "Só há alguns dias. Mas está ficando cada vez mais alto.",
+    "ru": "Всего несколько дней. Но он становится всё громче.",
+    "vi": "Chỉ mới vài ngày nay thôi. Nhưng tiếng kêu ngày càng to hơn.",
+    "th": "เพิ่งเป็นได้ไม่กี่วันครับ แต่เสียงดังขึ้นเรื่อย ๆ ครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Alright, I'll check the car and find the problem.",
+   "start": 15290,
+   "end": 18710,
+   "tr": {
+    "ur": "ٹھیک ہے، میں گاڑی چیک کر کے مسئلہ ڈھونڈ لوں گی۔",
+    "hi": "ठीक है, मैं गाड़ी की जाँच करके समस्या ढूँढती हूँ।",
+    "ar": "حسنًا، سأفحص السيارة وأعرف سبب المشكلة.",
+    "zh": "好的，我先检查一下车，看看问题出在哪儿。",
+    "es": "Muy bien, reviso el coche y veo cuál es el problema.",
+    "fr": "Très bien, je vais vérifier la voiture et trouver le problème.",
+    "tr": "Tamam, arabaya bakıp sorunu bulacağım.",
+    "ja": "かしこまりました。車を確認して、原因を調べます。",
+    "ko": "알겠어요. 차를 확인해서 문제를 찾아볼게요.",
+    "it": "Va bene, controllo la macchina e vedo qual è il problema.",
+    "de": "In Ordnung, ich sehe mir das Auto an und finde heraus, wo das Problem liegt.",
+    "pt": "Certo, vou verificar o carro e descobrir qual é o problema.",
+    "ru": "Хорошо, я проверю машину и найду проблему.",
+    "vi": "Được rồi, tôi sẽ kiểm tra xe xem bị hỏng chỗ nào.",
+    "th": "ได้ค่ะ ดิฉันจะตรวจสอบรถแล้วหาสาเหตุให้นะคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Great. How long do you think it will take?",
+   "start": 19090,
+   "end": 21810,
+   "tr": {
+    "ur": "بہت اچھا۔ آپ کے خیال میں اس میں کتنا وقت لگے گا؟",
+    "hi": "बढ़िया। आपके हिसाब से इसमें कितना समय लगेगा?",
+    "ar": "رائع. كم من الوقت تتوقعين أن يستغرق الأمر؟",
+    "zh": "好的。您觉得需要多长时间？",
+    "es": "Genial. ¿Cuánto tiempo cree que tardará?",
+    "fr": "Super. Vous pensez que ça va prendre combien de temps ?",
+    "tr": "Harika. Sizce bu ne kadar sürer?",
+    "ja": "よろしくお願いします。どのくらいかかりそうでしょうか？",
+    "ko": "좋아요. 얼마나 걸릴 것 같으세요?",
+    "it": "Benissimo. Secondo Lei quanto tempo ci vorrà?",
+    "de": "Sehr gut. Was meinen Sie, wie lange wird das dauern?",
+    "pt": "Ótimo. Quanto tempo você acha que vai levar?",
+    "ru": "Отлично. Как вы думаете, сколько времени это займёт?",
+    "vi": "Vậy thì tốt quá. Cô nghĩ sẽ mất khoảng bao lâu?",
+    "th": "ดีครับ คุณคิดว่าต้องใช้เวลาประมาณเท่าไรครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "About 30 minutes for the initial inspection.",
+   "start": 22370,
+   "end": 25630,
+   "tr": {
+    "ur": "ابتدائی معائنے میں تقریباً تیس منٹ لگیں گے۔",
+    "hi": "शुरुआती जाँच में लगभग तीस मिनट लगेंगे।",
+    "ar": "حوالي ثلاثين دقيقة للفحص الأولي.",
+    "zh": "初步检测大概需要三十分钟。",
+    "es": "Unos treinta minutos para la revisión inicial.",
+    "fr": "Environ trente minutes pour le contrôle initial.",
+    "tr": "İlk inceleme yaklaşık otuz dakika sürer.",
+    "ja": "最初の点検に、三十分ほどかかります。",
+    "ko": "초기 점검은 30분 정도 걸릴 거예요.",
+    "it": "Circa trenta minuti per il controllo iniziale.",
+    "de": "Etwa 30 Minuten für die erste Überprüfung.",
+    "pt": "Cerca de trinta minutos para a inspeção inicial.",
+    "ru": "Примерно полчаса на первичный осмотр.",
+    "vi": "Kiểm tra sơ bộ thì mất khoảng ba mươi phút anh ạ.",
+    "th": "ตรวจเบื้องต้นใช้เวลาประมาณสามสิบนาทีค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Perfect. Thank you. I'll wait here.",
+   "start": 26360,
+   "end": 30080,
+   "tr": {
+    "ur": "بہت خوب۔ شکریہ۔ میں یہیں انتظار کروں گا۔",
+    "hi": "बहुत अच्छा। धन्यवाद। मैं यहीं इंतज़ार करूँगा।",
+    "ar": "ممتاز. شكرًا لكِ. سأنتظر هنا.",
+    "zh": "太好了，谢谢您。我在这里等。",
+    "es": "Perfecto. Gracias. Esperaré aquí.",
+    "fr": "Parfait. Merci. J'attendrai ici.",
+    "tr": "Çok iyi. Teşekkür ederim. Burada bekleyeceğim.",
+    "ja": "ありがとうございます。では、ここで待たせてもらいます。",
+    "ko": "알겠습니다. 감사합니다. 여기서 기다릴게요.",
+    "it": "Perfetto. Grazie. Aspetto qui.",
+    "de": "Perfekt. Danke. Ich warte hier.",
+    "pt": "Perfeito. Obrigado. Vou esperar aqui.",
+    "ru": "Замечательно. Спасибо. Я подожду здесь.",
+    "vi": "Vậy được rồi. Cảm ơn cô. Tôi sẽ đợi ở đây.",
+    "th": "ดีมากครับ ขอบคุณครับ ผมจะรอที่นี่ครับ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "strange",
+   "meaning": "unusual, not normal",
+   "tr": {
+    "ur": "عجیب",
+    "hi": "अजीब",
+    "ar": "غريب",
+    "zh": "奇怪的",
+    "es": "extraño",
+    "fr": "bizarre",
+    "tr": "garip",
+    "ja": "変な",
+    "ko": "이상한",
+    "it": "strano",
+    "de": "seltsam",
+    "pt": "estranho",
+    "ru": "странный",
+    "vi": "lạ",
+    "th": "แปลก"
+   }
+  },
+  {
+   "word": "noise",
+   "meaning": "a sound, especially an unwanted one",
+   "tr": {
+    "ur": "آواز",
+    "hi": "आवाज़",
+    "ar": "صوت",
+    "zh": "噪音",
+    "es": "ruido",
+    "fr": "bruit",
+    "tr": "ses",
+    "ja": "音",
+    "ko": "소음",
+    "it": "rumore",
+    "de": "das Geräusch",
+    "pt": "barulho",
+    "ru": "шум",
+    "vi": "tiếng kêu",
+    "th": "เสียง"
+   }
+  },
+  {
+   "word": "lately",
+   "meaning": "recently, in the last few days or weeks",
+   "tr": {
+    "ur": "آج کل",
+    "hi": "आजकल",
+    "ar": "في الآونة الأخيرة",
+    "zh": "最近",
+    "es": "últimamente",
+    "fr": "ces derniers temps",
+    "tr": "son zamanlarda",
+    "ja": "最近",
+    "ko": "요즘",
+    "it": "ultimamente",
+    "de": "in letzter Zeit",
+    "pt": "ultimamente",
+    "ru": "в последнее время",
+    "vi": "dạo này",
+    "th": "ช่วงนี้"
+   }
+  },
+  {
+   "word": "steering wheel",
+   "meaning": "the wheel you turn to steer the car",
+   "tr": {
+    "ur": "اسٹیئرنگ وہیل",
+    "hi": "स्टीयरिंग व्हील",
+    "ar": "عجلة القيادة",
+    "zh": "方向盘",
+    "es": "volante",
+    "fr": "volant",
+    "tr": "direksiyon",
+    "ja": "ハンドル",
+    "ko": "핸들",
+    "it": "volante",
+    "de": "das Lenkrad",
+    "pt": "volante",
+    "ru": "руль",
+    "vi": "vô lăng",
+    "th": "พวงมาลัย"
+   }
+  },
+  {
+   "word": "usually",
+   "meaning": "most of the time, normally",
+   "tr": {
+    "ur": "عام طور پر",
+    "hi": "आमतौर पर",
+    "ar": "عادةً",
+    "zh": "通常",
+    "es": "normalmente",
+    "fr": "en général",
+    "tr": "genellikle",
+    "ja": "普段",
+    "ko": "보통",
+    "it": "di solito",
+    "de": "normalerweise",
+    "pt": "normalmente",
+    "ru": "обычно",
+    "vi": "thường",
+    "th": "ปกติ"
+   }
+  },
+  {
+   "word": "louder",
+   "meaning": "with a higher volume",
+   "tr": {
+    "ur": "زیادہ بلند",
+    "hi": "तेज़",
+    "ar": "أعلى",
+    "zh": "更大声",
+    "es": "más fuerte",
+    "fr": "plus fort",
+    "tr": "daha yüksek sesli",
+    "ja": "もっと大きい",
+    "ko": "더 큰",
+    "it": "più forte",
+    "de": "lauter",
+    "pt": "mais alto",
+    "ru": "громче",
+    "vi": "to hơn",
+    "th": "ดังขึ้น"
+   }
+  },
+  {
+   "word": "check",
+   "meaning": "look at something to see if it is okay",
+   "tr": {
+    "ur": "چیک کرنا",
+    "hi": "जाँचना",
+    "ar": "يفحص",
+    "zh": "检查",
+    "es": "revisar",
+    "fr": "vérifier",
+    "tr": "kontrol etmek",
+    "ja": "確認する",
+    "ko": "확인하다",
+    "it": "controllare",
+    "de": "prüfen",
+    "pt": "verificar",
+    "ru": "проверить",
+    "vi": "kiểm tra",
+    "th": "ตรวจสอบ"
+   }
+  },
+  {
+   "word": "problem",
+   "meaning": "something that is wrong or broken",
+   "tr": {
+    "ur": "مسئلہ",
+    "hi": "समस्या",
+    "ar": "مشكلة",
+    "zh": "问题",
+    "es": "problema",
+    "fr": "problème",
+    "tr": "sorun",
+    "ja": "問題",
+    "ko": "문제",
+    "it": "problema",
+    "de": "das Problem",
+    "pt": "problema",
+    "ru": "проблема",
+    "vi": "vấn đề",
+    "th": "ปัญหา"
+   }
+  },
+  {
+   "word": "inspection",
+   "meaning": "a careful examination to check condition",
+   "tr": {
+    "ur": "معائنہ",
+    "hi": "जाँच",
+    "ar": "فحص",
+    "zh": "检测",
+    "es": "revisión",
+    "fr": "contrôle",
+    "tr": "inceleme",
+    "ja": "点検",
+    "ko": "점검",
+    "it": "controllo",
+    "de": "die Überprüfung",
+    "pt": "inspeção",
+    "ru": "осмотр",
+    "vi": "sự kiểm tra",
+    "th": "การตรวจ"
+   }
+  },
+  {
+   "word": "wait",
+   "meaning": "stay somewhere until something happens",
+   "tr": {
+    "ur": "انتظار کرنا",
+    "hi": "इंतज़ार करना",
+    "ar": "ينتظر",
+    "zh": "等待",
+    "es": "esperar",
+    "fr": "attendre",
+    "tr": "beklemek",
+    "ja": "待つ",
+    "ko": "기다리다",
+    "it": "aspettare",
+    "de": "warten",
+    "pt": "esperar",
+    "ru": "подождать",
+    "vi": "đợi",
+    "th": "รอ"
+   }
+  }
+ ]
+}

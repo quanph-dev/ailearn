@@ -1,0 +1,463 @@
+{
+ "scene": "👕",
+ "colors": [
+  "#E7E0F6",
+  "#D0C4F0"
+ ],
+ "speakers": [
+  {
+   "name": "Sophia",
+   "emoji": "👩",
+   "voice": "female"
+  },
+  {
+   "name": "Ethan",
+   "emoji": "👨",
+   "voice": "male"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Hi. I bought this shirt yesterday, but unfortunately it's a little too small for me.",
+   "start": 0,
+   "end": 4670,
+   "tr": {
+    "ur": "ہیلو۔ میں نے کل یہ شرٹ خریدی تھی، لیکن بدقسمتی سے یہ میرے لیے تھوڑی چھوٹی ہے۔",
+    "hi": "नमस्ते। मैंने कल यह शर्ट खरीदी थी, लेकिन दुर्भाग्य से यह मेरे लिए थोड़ी छोटी है।",
+    "ar": "مرحبًا. اشتريت هذا القميص أمس، لكن للأسف هو صغير عليّ قليلًا.",
+    "zh": "你好。我昨天买了这件衬衫，但很遗憾，对我来说有点小。",
+    "es": "Hola. Compré esta camisa ayer, pero, por desgracia, me queda un poco pequeña.",
+    "fr": "Bonjour. J'ai acheté cette chemise hier, mais malheureusement elle est un peu trop petite pour moi.",
+    "tr": "Merhaba. Bu gömleği dün aldım ama maalesef bana biraz küçük geldi.",
+    "ja": "こんにちは。昨日このシャツを買ったんですが、残念ながら少し小さかったんです。",
+    "ko": "안녕하세요. 어제 이 셔츠를 샀는데, 아쉽게도 저한테 좀 작네요.",
+    "it": "Salve. Ho comprato questa camicia ieri, ma purtroppo mi sta un po' piccola.",
+    "de": "Hallo. Ich habe dieses Hemd gestern gekauft, aber leider ist es mir etwas zu klein.",
+    "pt": "Oi. Comprei esta camisa ontem, mas infelizmente ficou um pouco pequena em mim.",
+    "ru": "Здравствуйте. Я вчера купила эту рубашку, но, к сожалению, она мне немного мала.",
+    "vi": "Chào anh. Hôm qua tôi mua chiếc áo sơ mi này, nhưng tiếc là tôi mặc hơi chật.",
+    "th": "สวัสดีค่ะ เมื่อวานซื้อเสื้อเชิ้ตตัวนี้ไป แต่น่าเสียดายที่มันเล็กไปนิดหน่อยค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "No problem. Would you like to exchange it for a different size or return it?",
+   "start": 4840,
+   "end": 8650,
+   "tr": {
+    "ur": "کوئی مسئلہ نہیں۔ کیا آپ کو اسے دوسرے سائز میں بدلوانا ہے یا واپس کرنا ہے؟",
+    "hi": "कोई समस्या नहीं। क्या आपको इसे दूसरे साइज़ में बदलवाना है या वापस करना है?",
+    "ar": "لا مشكلة. هل تودين استبداله بمقاس آخر أم إرجاعه؟",
+    "zh": "没问题。您想换成别的尺码，还是退货？",
+    "es": "No hay problema. ¿Quiere cambiarla por otra talla o devolverla?",
+    "fr": "Pas de problème. Souhaitez-vous l'échanger contre une autre taille ou la rendre ?",
+    "tr": "Sorun değil. Başka bir bedenle değiştirmek mi yoksa iade etmek mi istersiniz?",
+    "ja": "大丈夫ですよ。別のサイズに交換されますか、それとも返品されますか？",
+    "ko": "괜찮습니다. 다른 사이즈로 교환하시겠어요, 아니면 반품하시겠어요?",
+    "it": "Nessun problema. Vuole cambiarla con un'altra taglia o restituirla?",
+    "de": "Kein Problem. Möchten Sie es gegen eine andere Größe umtauschen oder zurückgeben?",
+    "pt": "Sem problema. Você quer trocar por outro tamanho ou devolver?",
+    "ru": "Без проблем. Хотите обменять её на другой размер или вернуть?",
+    "vi": "Không sao ạ. Chị muốn đổi sang cỡ khác hay trả lại ạ?",
+    "th": "ไม่มีปัญหาครับ ต้องการเปลี่ยนเป็นไซซ์อื่นหรือคืนสินค้าครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "I'd like to exchange it. Do you have this shirt in a medium?",
+   "start": 9030,
+   "end": 12140,
+   "tr": {
+    "ur": "میں اسے بدلوانا چاہتی ہوں۔ کیا آپ کے پاس یہ شرٹ میڈیم سائز میں ہے؟",
+    "hi": "मैं इसे बदलवाना चाहती हूँ। क्या आपके पास यह शर्ट मीडियम साइज़ में है?",
+    "ar": "أودّ استبداله. هل لديكم هذا القميص بمقاس متوسط؟",
+    "zh": "我想换货。你们有这件衬衫的中码吗？",
+    "es": "Quiero cambiarla. ¿Tienen esta camisa en talla mediana?",
+    "fr": "Je voudrais l'échanger. Avez-vous cette chemise en taille M ?",
+    "tr": "Değiştirmek istiyorum. Bu gömleğin orta bedeni var mı?",
+    "ja": "交換をお願いします。このシャツのMサイズはありますか？",
+    "ko": "교환하고 싶어요. 이 셔츠 M 사이즈 있나요?",
+    "it": "Vorrei cambiarla. Avete questa camicia in taglia M?",
+    "de": "Ich würde es gern umtauschen. Haben Sie dieses Hemd in Größe M?",
+    "pt": "Eu queria trocar. Vocês têm essa camisa no tamanho M?",
+    "ru": "Я бы хотела обменять. У вас есть такая рубашка размера M?",
+    "vi": "Tôi muốn đổi. Áo này còn cỡ M không anh?",
+    "th": "อยากเปลี่ยนค่ะ เสื้อตัวนี้มีไซซ์ M ไหมคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Let me check. Yes, we still have a few medium sizes.",
+   "start": 12460,
+   "end": 15125,
+   "tr": {
+    "ur": "ذرا دیکھتا ہوں۔ جی ہاں، ہمارے پاس ابھی بھی میڈیم سائز میں چند شرٹس باقی ہیں۔",
+    "hi": "ज़रा देखता हूँ। हाँ, हमारे पास अभी भी मीडियम साइज़ की कुछ शर्ट बची हैं।",
+    "ar": "دعيني أتحقق. نعم، ما زال لدينا بضع قطع بمقاس متوسط.",
+    "zh": "我查一下。有的，我们还有几件中码的。",
+    "es": "Déjeme ver. Sí, todavía nos quedan algunas tallas medianas.",
+    "fr": "Laissez-moi vérifier. Oui, il nous reste encore quelques tailles M.",
+    "tr": "Bir bakayım. Evet, hâlâ birkaç orta beden var.",
+    "ja": "確認しますね。はい、Mサイズがまだいくつかございます。",
+    "ko": "확인해 볼게요. 네, M 사이즈가 아직 몇 개 남아 있어요.",
+    "it": "Controllo subito. Sì, abbiamo ancora qualche taglia M.",
+    "de": "Ich schaue mal nach. Ja, wir haben noch ein paar in M.",
+    "pt": "Deixa eu ver. Sim, ainda temos algumas no tamanho M.",
+    "ru": "Сейчас проверю. Да, у нас ещё осталось несколько размеров M.",
+    "vi": "Để tôi kiểm tra xem. Dạ, vẫn còn vài chiếc cỡ M ạ.",
+    "th": "ขอเช็กก่อนนะครับ มีครับ ไซซ์ M ยังเหลืออยู่อีกไม่กี่ตัวครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Great. Can I exchange it directly or do you need my receipt?",
+   "start": 15150,
+   "end": 18110,
+   "tr": {
+    "ur": "بہت اچھا۔ کیا میں اسے براہِ راست بدلوا سکتی ہوں یا آپ کو میری رسید چاہیے؟",
+    "hi": "बढ़िया। क्या मैं इसे सीधे बदलवा सकती हूँ या आपको मेरी रसीद चाहिए?",
+    "ar": "رائع. هل يمكنني استبداله مباشرة أم تحتاج إلى إيصالي؟",
+    "zh": "太好了。我可以直接换，还是需要收据？",
+    "es": "Genial. ¿Puedo cambiarla directamente o necesita mi recibo?",
+    "fr": "Super. Puis-je l'échanger directement ou avez-vous besoin de mon reçu ?",
+    "tr": "Harika. Doğrudan değiştirebilir miyim, yoksa fişime mi ihtiyacınız var?",
+    "ja": "よかった。このまま交換できますか？それともレシートが必要ですか？",
+    "ko": "잘됐네요. 바로 교환할 수 있나요, 아니면 영수증이 필요하세요?",
+    "it": "Ottimo. Posso cambiarla direttamente o le serve lo scontrino?",
+    "de": "Super. Kann ich es direkt umtauschen oder brauchen Sie meinen Kassenbon?",
+    "pt": "Ótimo. Posso trocar direto ou você precisa da nota fiscal?",
+    "ru": "Отлично. Можно обменять сразу или вам нужен мой чек?",
+    "vi": "Tốt quá. Tôi đổi luôn được không, hay anh cần hóa đơn của tôi?",
+    "th": "ดีเลยค่ะ เปลี่ยนได้เลยไหมคะ หรือต้องใช้ใบเสร็จด้วยคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "I'll need the receipt, please. The tags should also still be attached.",
+   "start": 18260,
+   "end": 21490,
+   "tr": {
+    "ur": "مجھے رسید چاہیے ہو گی، پلیز۔ ٹیگز بھی ابھی لگے ہوئے ہونے چاہئیں۔",
+    "hi": "मुझे रसीद चाहिए होगी, प्लीज़। टैग भी अभी लगे होने चाहिए।",
+    "ar": "سأحتاج إلى الإيصال من فضلك. كما يجب أن تبقى البطاقات مثبتة عليه.",
+    "zh": "我需要收据，麻烦您。吊牌也应该还在。",
+    "es": "Necesitaré el recibo, por favor. Las etiquetas también deben seguir puestas.",
+    "fr": "J'aurai besoin du reçu, s'il vous plaît. Les étiquettes doivent aussi toujours être attachées.",
+    "tr": "Fişi görmem gerekecek, lütfen. Etiketler de hâlâ takılı olmalı.",
+    "ja": "レシートをお願いします。タグも付いたままになっている必要があります。",
+    "ko": "영수증 부탁드립니다. 그리고 태그도 그대로 붙어 있어야 해요.",
+    "it": "Mi serve lo scontrino, per favore. Anche le etichette devono essere ancora attaccate.",
+    "de": "Ich bräuchte bitte den Kassenbon. Die Etiketten sollten auch noch dran sein.",
+    "pt": "Vou precisar da nota fiscal, por favor. As etiquetas também precisam estar presas.",
+    "ru": "Мне понадобится чек, пожалуйста. И бирки тоже должны быть на месте.",
+    "vi": "Chị cho tôi xin hóa đơn ạ. Tem mác cũng phải còn nguyên trên áo nhé.",
+    "th": "ขอใบเสร็จด้วยนะครับ และป้ายต้องยังติดอยู่ด้วยครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Sure. I have the receipt right here. And I haven't removed the tags.",
+   "start": 21530,
+   "end": 24720,
+   "tr": {
+    "ur": "جی ہاں۔ رسید میرے پاس یہیں ہے۔ اور میں نے ٹیگز نہیں ہٹائے۔",
+    "hi": "ज़रूर। रसीद मेरे पास यहीं है। और मैंने टैग नहीं हटाए हैं।",
+    "ar": "بالطبع. الإيصال معي هنا. ولم أنزع البطاقات.",
+    "zh": "好的。收据就在这里，我也没有拆掉吊牌。",
+    "es": "Claro. Tengo el recibo aquí mismo. Y no he quitado las etiquetas.",
+    "fr": "Bien sûr. J'ai le reçu ici même. Et je n'ai pas retiré les étiquettes.",
+    "tr": "Tabii. Fiş tam burada. Etiketleri de çıkarmadım.",
+    "ja": "はい。レシートはここにあります。タグも外していません。",
+    "ko": "네. 영수증 여기 있어요. 태그도 안 뗐어요.",
+    "it": "Certo. Ho lo scontrino proprio qui. E non ho tolto le etichette.",
+    "de": "Klar. Den Kassenbon habe ich hier. Und die Etiketten habe ich nicht entfernt.",
+    "pt": "Claro. A nota fiscal está aqui. E eu não tirei as etiquetas.",
+    "ru": "Конечно. Чек у меня с собой. И бирки я не снимала.",
+    "vi": "Vâng. Hóa đơn của tôi đây. Và tôi chưa tháo tem mác ra.",
+    "th": "ได้ค่ะ ใบเสร็จอยู่นี่เลยค่ะ แล้วก็ยังไม่ได้แกะป้ายออกค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Perfect. I can process the exchange for you now.",
+   "start": 24850,
+   "end": 27025,
+   "tr": {
+    "ur": "بہترین۔ میں اب آپ کے لیے تبدیلی کا عمل مکمل کر سکتا ہوں۔",
+    "hi": "बहुत बढ़िया। मैं अब आपके लिए एक्सचेंज की प्रक्रिया पूरी कर सकता हूँ।",
+    "ar": "ممتاز. يمكنني إتمام عملية الاستبدال لك الآن.",
+    "zh": "太好了。我现在就可以为您办理换货。",
+    "es": "Perfecto. Ya puedo tramitar el cambio por usted.",
+    "fr": "Parfait. Je peux procéder à l'échange pour vous maintenant.",
+    "tr": "Mükemmel. Şimdi sizin için değişim işlemini yapabilirim.",
+    "ja": "承知しました。では、今から交換の手続きをいたしますね。",
+    "ko": "좋습니다. 지금 바로 교환 처리해 드릴게요.",
+    "it": "Perfetto. Posso procedere subito con il cambio.",
+    "de": "Perfekt. Dann kann ich den Umtausch jetzt für Sie abwickeln.",
+    "pt": "Perfeito. Já posso fazer a troca para você.",
+    "ru": "Отлично. Сейчас оформлю вам обмен.",
+    "vi": "Tốt quá. Tôi làm thủ tục đổi hàng cho chị ngay bây giờ nhé.",
+    "th": "เรียบร้อยครับ ผมดำเนินการเปลี่ยนให้ได้เลยครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Thank you. I really appreciate your help.",
+   "start": 27050,
+   "end": 28870,
+   "tr": {
+    "ur": "شکریہ۔ میں آپ کی مدد کی واقعی قدر کرتی ہوں۔",
+    "hi": "धन्यवाद। मैं आपकी मदद की सचमुच सराहना करती हूँ।",
+    "ar": "شكرًا لك. أقدّر مساعدتك حقًا.",
+    "zh": "谢谢。我真的很感激你的帮助。",
+    "es": "Gracias. Agradezco mucho su ayuda.",
+    "fr": "Merci. J'apprécie vraiment votre aide.",
+    "tr": "Teşekkür ederim. Yardımınızı gerçekten takdir ediyorum.",
+    "ja": "ありがとうございます。本当に感謝しています。",
+    "ko": "감사합니다. 도와주셔서 정말 고마워요.",
+    "it": "Grazie. Apprezzo davvero il suo aiuto.",
+    "de": "Danke. Ich weiß Ihre Hilfe wirklich zu schätzen.",
+    "pt": "Obrigada. Agradeço muito a sua ajuda.",
+    "ru": "Спасибо. Я очень благодарна вам за помощь.",
+    "vi": "Cảm ơn anh. Tôi thật sự rất cảm kích sự giúp đỡ của anh.",
+    "th": "ขอบคุณค่ะ ซาบซึ้งมากจริง ๆ ที่ช่วยนะคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "You're welcome.",
+   "start": 29190,
+   "end": 30080,
+   "tr": {
+    "ur": "کوئی بات نہیں۔",
+    "hi": "कोई बात नहीं।",
+    "ar": "على الرحب والسعة.",
+    "zh": "不客气。",
+    "es": "De nada.",
+    "fr": "Je vous en prie.",
+    "tr": "Rica ederim.",
+    "ja": "どういたしまして。",
+    "ko": "천만에요.",
+    "it": "Prego.",
+    "de": "Gern geschehen.",
+    "pt": "De nada.",
+    "ru": "Пожалуйста.",
+    "vi": "Không có gì ạ.",
+    "th": "ยินดีครับ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "unfortunately",
+   "meaning": "used to say something sad or bad",
+   "tr": {
+    "ur": "بدقسمتی سے",
+    "hi": "दुर्भाग्य से",
+    "ar": "للأسف",
+    "zh": "很遗憾",
+    "es": "por desgracia",
+    "fr": "malheureusement",
+    "tr": "maalesef",
+    "ja": "残念ながら",
+    "ko": "아쉽게도",
+    "it": "purtroppo",
+    "de": "leider",
+    "pt": "infelizmente",
+    "ru": "к сожалению",
+    "vi": "không may",
+    "th": "น่าเสียดาย"
+   }
+  },
+  {
+   "word": "exchange",
+   "meaning": "give back for something different",
+   "tr": {
+    "ur": "بدلنا",
+    "hi": "बदलना",
+    "ar": "يستبدل",
+    "zh": "更换",
+    "es": "cambiar",
+    "fr": "échanger",
+    "tr": "değiştirmek",
+    "ja": "交換する",
+    "ko": "교환하다",
+    "it": "cambiare",
+    "de": "umtauschen",
+    "pt": "trocar",
+    "ru": "обменять",
+    "vi": "đổi",
+    "th": "เปลี่ยน"
+   }
+  },
+  {
+   "word": "return",
+   "meaning": "take something back to a shop",
+   "tr": {
+    "ur": "واپس کرنا",
+    "hi": "वापस करना",
+    "ar": "يُرجع",
+    "zh": "退货",
+    "es": "devolver",
+    "fr": "rendre",
+    "tr": "iade etmek",
+    "ja": "返品する",
+    "ko": "반품하다",
+    "it": "restituire",
+    "de": "zurückgeben",
+    "pt": "devolver",
+    "ru": "вернуть",
+    "vi": "trả lại",
+    "th": "คืน"
+   }
+  },
+  {
+   "word": "receipt",
+   "meaning": "paper that shows what you paid",
+   "tr": {
+    "ur": "رسید",
+    "hi": "रसीद",
+    "ar": "إيصال",
+    "zh": "收据",
+    "es": "recibo",
+    "fr": "reçu",
+    "tr": "fiş",
+    "ja": "レシート",
+    "ko": "영수증",
+    "it": "scontrino",
+    "de": "der Kassenbon",
+    "pt": "nota fiscal",
+    "ru": "чек",
+    "vi": "hóa đơn",
+    "th": "ใบเสร็จ"
+   }
+  },
+  {
+   "word": "tags",
+   "meaning": "small labels attached to clothes",
+   "tr": {
+    "ur": "ٹیگز",
+    "hi": "टैग",
+    "ar": "بطاقات",
+    "zh": "吊牌",
+    "es": "etiquetas",
+    "fr": "étiquettes",
+    "tr": "etiketler",
+    "ja": "タグ",
+    "ko": "태그",
+    "it": "etichette",
+    "de": "die Etiketten",
+    "pt": "etiquetas",
+    "ru": "бирки",
+    "vi": "tem mác",
+    "th": "ป้าย"
+   }
+  },
+  {
+   "word": "attached",
+   "meaning": "joined or fixed to something",
+   "tr": {
+    "ur": "لگا ہوا",
+    "hi": "लगा हुआ",
+    "ar": "مثبّت",
+    "zh": "附着的",
+    "es": "unido",
+    "fr": "attaché",
+    "tr": "takılı",
+    "ja": "付いている",
+    "ko": "붙어 있다",
+    "it": "attaccato",
+    "de": "befestigt",
+    "pt": "preso",
+    "ru": "прикреплённый",
+    "vi": "được gắn",
+    "th": "ติดอยู่"
+   }
+  },
+  {
+   "word": "removed",
+   "meaning": "taken off or taken away",
+   "tr": {
+    "ur": "ہٹایا ہوا",
+    "hi": "हटाया हुआ",
+    "ar": "منزوع",
+    "zh": "拆掉",
+    "es": "quitado",
+    "fr": "retiré",
+    "tr": "çıkarılmış",
+    "ja": "外す",
+    "ko": "떼다",
+    "it": "tolto",
+    "de": "entfernt",
+    "pt": "tirado",
+    "ru": "снять",
+    "vi": "tháo ra",
+    "th": "เอาออก"
+   }
+  },
+  {
+   "word": "process",
+   "meaning": "complete the steps for a request",
+   "tr": {
+    "ur": "عمل مکمل کرنا",
+    "hi": "प्रक्रिया पूरी करना",
+    "ar": "يُتمّ",
+    "zh": "办理",
+    "es": "tramitar",
+    "fr": "procéder à",
+    "tr": "işlem yapmak",
+    "ja": "手続きする",
+    "ko": "처리하다",
+    "it": "procedere",
+    "de": "abwickeln",
+    "pt": "processar",
+    "ru": "оформить",
+    "vi": "xử lý",
+    "th": "ดำเนินการ"
+   }
+  },
+  {
+   "word": "directly",
+   "meaning": "straight away, without extra steps",
+   "tr": {
+    "ur": "براہِ راست",
+    "hi": "सीधे",
+    "ar": "مباشرة",
+    "zh": "直接",
+    "es": "directamente",
+    "fr": "directement",
+    "tr": "doğrudan",
+    "ja": "直接",
+    "ko": "바로",
+    "it": "direttamente",
+    "de": "direkt",
+    "pt": "diretamente",
+    "ru": "сразу",
+    "vi": "trực tiếp",
+    "th": "โดยตรง"
+   }
+  },
+  {
+   "word": "appreciate",
+   "meaning": "be thankful for something",
+   "tr": {
+    "ur": "قدر کرنا",
+    "hi": "सराहना करना",
+    "ar": "يُقدّر",
+    "zh": "感激",
+    "es": "agradecer",
+    "fr": "apprécier",
+    "tr": "takdir etmek",
+    "ja": "感謝する",
+    "ko": "감사하다",
+    "it": "apprezzare",
+    "de": "zu schätzen wissen",
+    "pt": "agradecer",
+    "ru": "быть благодарным",
+    "vi": "cảm kích",
+    "th": "ซาบซึ้ง"
+   }
+  }
+ ]
+}

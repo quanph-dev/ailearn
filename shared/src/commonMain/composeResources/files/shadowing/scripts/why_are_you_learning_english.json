@@ -1,0 +1,463 @@
+{
+ "scene": "💬",
+ "colors": [
+  "#F1E9E1",
+  "#E2D3C3"
+ ],
+ "speakers": [
+  {
+   "name": "Sophia",
+   "emoji": "👩",
+   "voice": "female"
+  },
+  {
+   "name": "Lucas",
+   "emoji": "👨",
+   "voice": "male"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Hi, I'm Sophia. Nice to meet you.",
+   "start": 0,
+   "end": 2705,
+   "tr": {
+    "ur": "ہیلو، میں صوفیہ ہوں۔ آپ سے مل کر خوشی ہوئی۔",
+    "hi": "नमस्ते, मैं सोफ़िया हूँ। आपसे मिलकर अच्छा लगा।",
+    "ar": "أهلًا، أنا صوفيا. تشرّفت بمعرفتك.",
+    "zh": "你好，我是索菲亚。很高兴认识你。",
+    "es": "Hola, soy Sophia. Encantada de conocerte.",
+    "fr": "Salut, je suis Sophia. Enchantée de te rencontrer.",
+    "tr": "Merhaba, ben Sophia. Sizinle tanıştığıma memnun oldum.",
+    "ja": "こんにちは、ソフィアです。はじめまして。",
+    "ko": "안녕하세요, 저는 소피아예요. 만나서 반가워요.",
+    "it": "Ciao, sono Sophia. Piacere di conoscerti.",
+    "de": "Hallo, ich bin Sophia. Schön, dich kennenzulernen.",
+    "pt": "Oi, eu sou a Sophia. Prazer em te conhecer.",
+    "ru": "Здравствуйте, меня зовут София. Очень приятно познакомиться.",
+    "vi": "Chào bạn, tôi là Sophia. Rất vui được gặp bạn.",
+    "th": "สวัสดีค่ะ ฉันชื่อโซเฟีย ยินดีที่ได้รู้จักค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "I'm Lucas. Nice to meet you too.",
+   "start": 2710,
+   "end": 4890,
+   "tr": {
+    "ur": "میں لوکاس ہوں۔ آپ سے مل کر مجھے بھی خوشی ہوئی۔",
+    "hi": "मैं लुकास हूँ। आपसे मिलकर मुझे भी अच्छा लगा।",
+    "ar": "أنا لوكاس. تشرّفت بمعرفتكِ أيضًا.",
+    "zh": "我是卢卡斯。我也很高兴认识你。",
+    "es": "Soy Lucas. Encantado de conocerte también.",
+    "fr": "Moi, c'est Lucas. Enchanté aussi.",
+    "tr": "Ben Lucas. Ben de memnun oldum.",
+    "ja": "ルーカスです。こちらこそ、よろしくお願いします。",
+    "ko": "저는 루카스예요. 저도 만나서 반가워요.",
+    "it": "Io sono Lucas. Piacere mio.",
+    "de": "Ich bin Lucas. Freut mich auch.",
+    "pt": "Eu sou o Lucas. O prazer é meu.",
+    "ru": "Меня зовут Лукас. Мне тоже очень приятно познакомиться.",
+    "vi": "Tôi là Lucas. Tôi cũng rất vui được gặp bạn.",
+    "th": "ผมชื่อลูคัสครับ ยินดีที่ได้รู้จักเช่นกันครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "So why are you learning English?",
+   "start": 5120,
+   "end": 7545,
+   "tr": {
+    "ur": "تو آپ انگریزی کیوں سیکھ رہے ہیں؟",
+    "hi": "तो आप अंग्रेज़ी क्यों सीख रहे हैं?",
+    "ar": "إذن، لماذا تتعلّم الإنجليزية؟",
+    "zh": "那你为什么学英语呢？",
+    "es": "Entonces, ¿por qué estás aprendiendo inglés?",
+    "fr": "Alors, pourquoi tu apprends l'anglais ?",
+    "tr": "Peki, neden İngilizce öğreniyorsunuz?",
+    "ja": "それで、どうして英語を勉強しているんですか？",
+    "ko": "그런데 영어는 왜 배우고 계세요?",
+    "it": "Allora, perché stai imparando l'inglese?",
+    "de": "Und warum lernst du Englisch?",
+    "pt": "Então, por que você está aprendendo inglês?",
+    "ru": "А почему вы учите английский?",
+    "vi": "Vậy tại sao bạn học tiếng Anh?",
+    "th": "แล้วทำไมคุณถึงเรียนภาษาอังกฤษล่ะคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "I want to travel and talk to my family abroad.",
+   "start": 7580,
+   "end": 10315,
+   "tr": {
+    "ur": "میں سفر کرنا اور بیرون ملک اپنے گھر والوں سے بات کرنا چاہتا ہوں۔",
+    "hi": "मैं यात्रा करना चाहता हूँ और विदेश में रहने वाले अपने परिवार से बात करना चाहता हूँ।",
+    "ar": "أريد أن أسافر وأتحدّث مع عائلتي في الخارج.",
+    "zh": "我想去旅行，也想和在国外的家人聊天。",
+    "es": "Quiero viajar y hablar con mi familia en el extranjero.",
+    "fr": "Je veux voyager et parler avec ma famille à l'étranger.",
+    "tr": "Seyahat etmek ve yurt dışındaki ailemle konuşmak istiyorum.",
+    "ja": "旅行をして、海外にいる家族と話したいんです。",
+    "ko": "여행도 하고, 해외에 있는 가족과 이야기도 하고 싶어요.",
+    "it": "Voglio viaggiare e parlare con la mia famiglia all'estero.",
+    "de": "Ich möchte reisen und mit meiner Familie im Ausland sprechen.",
+    "pt": "Eu quero viajar e conversar com a minha família no exterior.",
+    "ru": "Я хочу путешествовать и общаться с семьёй за границей.",
+    "vi": "Tôi muốn đi du lịch và nói chuyện với gia đình ở nước ngoài.",
+    "th": "ผมอยากเดินทางและคุยกับครอบครัวที่อยู่ต่างประเทศครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "That's great. I'm learning English for my job.",
+   "start": 10330,
+   "end": 12870,
+   "tr": {
+    "ur": "یہ تو بہت اچھا ہے۔ میں اپنی نوکری کے لیے انگریزی سیکھ رہی ہوں۔",
+    "hi": "यह तो बढ़िया है। मैं अपनी नौकरी के लिए अंग्रेज़ी सीख रही हूँ।",
+    "ar": "هذا رائع. أنا أتعلّم الإنجليزية من أجل عملي.",
+    "zh": "太好了。我学英语是为了工作。",
+    "es": "¡Qué bien! Yo estoy aprendiendo inglés por mi trabajo.",
+    "fr": "C'est super ! Moi, j'apprends l'anglais pour mon travail.",
+    "tr": "Harika. Ben İngilizceyi işim için öğreniyorum.",
+    "ja": "それはいいですね。私は仕事のために英語を勉強しているんです。",
+    "ko": "좋네요. 저는 일 때문에 영어를 배우고 있어요.",
+    "it": "Bello! Io sto imparando l'inglese per il mio lavoro.",
+    "de": "Das ist toll. Ich lerne Englisch für meinen Job.",
+    "pt": "Que legal! Eu estou aprendendo inglês para o meu trabalho.",
+    "ru": "Это здорово. Я учу английский для работы.",
+    "vi": "Hay quá. Tôi học tiếng Anh vì công việc.",
+    "th": "ดีจังเลยค่ะ ฉันเรียนภาษาอังกฤษเพื่องานค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Nice. How long have you been learning?",
+   "start": 12980,
+   "end": 14895,
+   "tr": {
+    "ur": "اچھا۔ آپ کو سیکھتے ہوئے کتنا عرصہ ہو گیا ہے؟",
+    "hi": "अच्छा। आप कितने समय से सीख रही हैं?",
+    "ar": "جميل. منذ متى وأنتِ تتعلّمين؟",
+    "zh": "不错。你学了多久了？",
+    "es": "Genial. ¿Cuánto tiempo llevas aprendiendo?",
+    "fr": "Super. Ça fait combien de temps que tu apprends ?",
+    "tr": "Güzel. Ne kadar zamandır öğreniyorsunuz?",
+    "ja": "いいですね。どのくらい勉強しているんですか？",
+    "ko": "좋네요. 배운 지 얼마나 됐어요?",
+    "it": "Bello. Da quanto tempo stai imparando?",
+    "de": "Schön. Wie lange lernst du schon?",
+    "pt": "Legal. Há quanto tempo você está aprendendo?",
+    "ru": "Здорово. Как давно вы учите язык?",
+    "vi": "Hay đấy. Bạn học được bao lâu rồi?",
+    "th": "ดีเลยครับ เรียนมานานแค่ไหนแล้วครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "About six months. What about you?",
+   "start": 14910,
+   "end": 18045,
+   "tr": {
+    "ur": "تقریباً چھ مہینے۔ اور آپ؟",
+    "hi": "लगभग छह महीने। और आप?",
+    "ar": "حوالي ستة أشهر. وأنتَ؟",
+    "zh": "大概六个月了。你呢？",
+    "es": "Unos seis meses. ¿Y tú?",
+    "fr": "Environ six mois. Et toi ?",
+    "tr": "Yaklaşık altı ay. Peki siz?",
+    "ja": "半年くらいです。ルーカスさんは？",
+    "ko": "6개월쯤 됐어요. 루카스 씨는요?",
+    "it": "Circa sei mesi. E tu?",
+    "de": "Etwa sechs Monate. Und du?",
+    "pt": "Uns seis meses. E você?",
+    "ru": "Примерно полгода. А вы?",
+    "vi": "Khoảng sáu tháng rồi. Còn bạn?",
+    "th": "ประมาณหกเดือนค่ะ แล้วคุณล่ะคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Just three months. I still need more practice.",
+   "start": 18080,
+   "end": 21510,
+   "tr": {
+    "ur": "صرف تین مہینے۔ مجھے ابھی اور مشق کی ضرورت ہے۔",
+    "hi": "बस तीन महीने। मुझे अभी और अभ्यास की ज़रूरत है।",
+    "ar": "ثلاثة أشهر فقط. ما زلت بحاجة إلى مزيد من التدريب.",
+    "zh": "才三个月。我还需要多练习。",
+    "es": "Solo tres meses. Todavía necesito practicar más.",
+    "fr": "Seulement trois mois. J'ai encore besoin de pratiquer.",
+    "tr": "Sadece üç ay. Hâlâ daha fazla pratiğe ihtiyacım var.",
+    "ja": "まだ3か月です。もっと練習が必要なんです。",
+    "ko": "3개월밖에 안 됐어요. 아직 연습이 더 필요해요.",
+    "it": "Solo tre mesi. Ho ancora bisogno di esercitarmi di più.",
+    "de": "Erst drei Monate. Ich brauche noch mehr Übung.",
+    "pt": "Só três meses. Ainda preciso praticar mais.",
+    "ru": "Всего три месяца. Мне всё ещё нужно больше практики.",
+    "vi": "Mới ba tháng thôi. Tôi vẫn cần luyện tập thêm.",
+    "th": "แค่สามเดือนเองครับ ผมยังต้องฝึกอีกเยอะครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Me too. Maybe we can practice together.",
+   "start": 21650,
+   "end": 25000,
+   "tr": {
+    "ur": "میں بھی۔ شاید ہم مل کر مشق کر سکیں۔",
+    "hi": "मैं भी। शायद हम साथ में अभ्यास कर सकते हैं।",
+    "ar": "وأنا كذلك. ربما يمكننا أن نتدرّب معًا.",
+    "zh": "我也是。也许我们可以一起练习。",
+    "es": "Yo también. Quizás podamos practicar juntos.",
+    "fr": "Moi aussi. On pourrait peut-être pratiquer ensemble.",
+    "tr": "Ben de. Belki birlikte pratik yapabiliriz.",
+    "ja": "私もです。一緒に練習できたらいいですね。",
+    "ko": "저도요. 같이 연습할 수 있으면 좋겠어요.",
+    "it": "Anch'io. Forse possiamo esercitarci insieme.",
+    "de": "Ich auch. Vielleicht können wir zusammen üben.",
+    "pt": "Eu também. Talvez a gente possa praticar juntos.",
+    "ru": "Я тоже. Может быть, мы могли бы заниматься вместе.",
+    "vi": "Tôi cũng vậy. Có lẽ chúng ta có thể luyện tập cùng nhau.",
+    "th": "ฉันก็เหมือนกันค่ะ บางทีเราอาจจะฝึกด้วยกันได้นะคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Good idea. Let's help each other improve.",
+   "start": 25190,
+   "end": 30080,
+   "tr": {
+    "ur": "اچھا خیال ہے۔ چلیں، بہتر ہونے میں ایک دوسرے کی مدد کرتے ہیں۔",
+    "hi": "अच्छा विचार है। चलिए, बेहतर होने में एक-दूसरे की मदद करते हैं।",
+    "ar": "فكرة جيدة. لنساعد بعضنا بعضًا على التحسّن.",
+    "zh": "好主意。我们互相帮助，一起进步吧。",
+    "es": "Buena idea. Ayudémonos mutuamente a mejorar.",
+    "fr": "Bonne idée. Aidons-nous mutuellement à progresser.",
+    "tr": "Güzel fikir. Birbirimize yardım edip gelişelim.",
+    "ja": "いい考えですね。お互いに助け合って上達しましょう。",
+    "ko": "좋은 생각이에요. 서로 도와서 실력을 키워 봐요.",
+    "it": "Buona idea. Aiutiamoci a vicenda a migliorare.",
+    "de": "Gute Idee. Lass uns einander helfen, besser zu werden.",
+    "pt": "Boa ideia. Vamos nos ajudar a melhorar.",
+    "ru": "Хорошая идея. Давайте помогать друг другу совершенствоваться.",
+    "vi": "Ý hay đấy. Chúng ta cùng giúp nhau tiến bộ nhé.",
+    "th": "เป็นความคิดที่ดีครับ มาช่วยกันให้พัฒนาขึ้นนะครับ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "learning",
+   "meaning": "studying to get new knowledge or a new skill",
+   "tr": {
+    "ur": "سیکھنا",
+    "hi": "सीखना",
+    "ar": "تعلّم",
+    "zh": "学习",
+    "es": "aprender",
+    "fr": "apprendre",
+    "tr": "öğrenmek",
+    "ja": "勉強する",
+    "ko": "배우다",
+    "it": "imparare",
+    "de": "lernen",
+    "pt": "aprender",
+    "ru": "учить",
+    "vi": "học",
+    "th": "เรียน"
+   }
+  },
+  {
+   "word": "travel",
+   "meaning": "go to other places or countries",
+   "tr": {
+    "ur": "سفر کرنا",
+    "hi": "यात्रा करना",
+    "ar": "سافر",
+    "zh": "旅行",
+    "es": "viajar",
+    "fr": "voyager",
+    "tr": "seyahat etmek",
+    "ja": "旅行する",
+    "ko": "여행하다",
+    "it": "viaggiare",
+    "de": "reisen",
+    "pt": "viajar",
+    "ru": "путешествовать",
+    "vi": "đi du lịch",
+    "th": "เดินทาง"
+   }
+  },
+  {
+   "word": "abroad",
+   "meaning": "in another country, not your own",
+   "tr": {
+    "ur": "بیرون ملک",
+    "hi": "विदेश में",
+    "ar": "في الخارج",
+    "zh": "在国外",
+    "es": "en el extranjero",
+    "fr": "à l'étranger",
+    "tr": "yurt dışında",
+    "ja": "海外",
+    "ko": "해외",
+    "it": "all'estero",
+    "de": "im Ausland",
+    "pt": "no exterior",
+    "ru": "за границей",
+    "vi": "ở nước ngoài",
+    "th": "ต่างประเทศ"
+   }
+  },
+  {
+   "word": "job",
+   "meaning": "the work you do to earn money",
+   "tr": {
+    "ur": "نوکری",
+    "hi": "नौकरी",
+    "ar": "عمل",
+    "zh": "工作",
+    "es": "trabajo",
+    "fr": "travail",
+    "tr": "iş",
+    "ja": "仕事",
+    "ko": "일",
+    "it": "lavoro",
+    "de": "der Job",
+    "pt": "trabalho",
+    "ru": "работа",
+    "vi": "công việc",
+    "th": "งาน"
+   }
+  },
+  {
+   "word": "how long",
+   "meaning": "asks how much time something has taken",
+   "tr": {
+    "ur": "کتنا عرصہ",
+    "hi": "कितने समय से",
+    "ar": "منذ متى",
+    "zh": "多久",
+    "es": "cuánto tiempo",
+    "fr": "combien de temps",
+    "tr": "ne kadar zamandır",
+    "ja": "どのくらい",
+    "ko": "얼마나",
+    "it": "da quanto tempo",
+    "de": "wie lange",
+    "pt": "há quanto tempo",
+    "ru": "как давно",
+    "vi": "bao lâu",
+    "th": "นานแค่ไหน"
+   }
+  },
+  {
+   "word": "practice",
+   "meaning": "doing something again and again to get better",
+   "tr": {
+    "ur": "مشق",
+    "hi": "अभ्यास",
+    "ar": "تدرّب",
+    "zh": "练习",
+    "es": "practicar",
+    "fr": "pratiquer",
+    "tr": "pratik",
+    "ja": "練習",
+    "ko": "연습",
+    "it": "esercitarsi",
+    "de": "üben",
+    "pt": "praticar",
+    "ru": "практика",
+    "vi": "luyện tập",
+    "th": "ฝึก"
+   }
+  },
+  {
+   "word": "good idea",
+   "meaning": "a suggestion that sounds helpful",
+   "tr": {
+    "ur": "اچھا خیال",
+    "hi": "अच्छा विचार",
+    "ar": "فكرة جيدة",
+    "zh": "好主意",
+    "es": "buena idea",
+    "fr": "bonne idée",
+    "tr": "güzel fikir",
+    "ja": "いい考え",
+    "ko": "좋은 생각",
+    "it": "buona idea",
+    "de": "gute Idee",
+    "pt": "boa ideia",
+    "ru": "хорошая идея",
+    "vi": "ý hay",
+    "th": "ความคิดที่ดี"
+   }
+  },
+  {
+   "word": "each other",
+   "meaning": "one person and the other person, both ways",
+   "tr": {
+    "ur": "ایک دوسرے",
+    "hi": "एक-दूसरे",
+    "ar": "بعضنا بعضًا",
+    "zh": "互相",
+    "es": "mutuamente",
+    "fr": "mutuellement",
+    "tr": "birbirimiz",
+    "ja": "お互い",
+    "ko": "서로",
+    "it": "a vicenda",
+    "de": "einander",
+    "pt": "um ao outro",
+    "ru": "друг друга",
+    "vi": "nhau",
+    "th": "กันและกัน"
+   }
+  },
+  {
+   "word": "improve",
+   "meaning": "become better at something",
+   "tr": {
+    "ur": "بہتر ہونا",
+    "hi": "बेहतर होना",
+    "ar": "تحسّن",
+    "zh": "进步",
+    "es": "mejorar",
+    "fr": "progresser",
+    "tr": "gelişmek",
+    "ja": "上達する",
+    "ko": "실력을 키우다",
+    "it": "migliorare",
+    "de": "besser werden",
+    "pt": "melhorar",
+    "ru": "совершенствоваться",
+    "vi": "tiến bộ",
+    "th": "พัฒนา"
+   }
+  },
+  {
+   "word": "nice to meet you",
+   "meaning": "a polite thing to say when you meet someone new",
+   "tr": {
+    "ur": "آپ سے مل کر خوشی ہوئی",
+    "hi": "आपसे मिलकर अच्छा लगा",
+    "ar": "تشرّفت بمعرفتك",
+    "zh": "很高兴认识你",
+    "es": "encantado de conocerte",
+    "fr": "enchanté",
+    "tr": "tanıştığıma memnun oldum",
+    "ja": "はじめまして",
+    "ko": "만나서 반가워요",
+    "it": "piacere di conoscerti",
+    "de": "schön, dich kennenzulernen",
+    "pt": "prazer em te conhecer",
+    "ru": "приятно познакомиться",
+    "vi": "rất vui được gặp bạn",
+    "th": "ยินดีที่ได้รู้จัก"
+   }
+  }
+ ]
+}

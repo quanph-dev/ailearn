@@ -1,0 +1,440 @@
+{
+ "scene": "📝",
+ "colors": [
+  "#EEE9E1",
+  "#DDD3C4"
+ ],
+ "speakers": [
+  {
+   "name": "Anna",
+   "emoji": "👩",
+   "voice": "female"
+  },
+  {
+   "name": "Daniel",
+   "emoji": "👨",
+   "voice": "male"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Hi, Daniel. I'm nervous about my English exam next week.",
+   "start": 0,
+   "end": 3310,
+   "tr": {
+    "ur": "ہیلو ڈینیئل۔ اگلے ہفتے میرا انگلش کا امتحان ہے اور مجھے اس کی بہت گھبراہٹ ہو رہی ہے۔",
+    "hi": "नमस्ते डैनियल जी। अगले हफ़्ते मेरी अंग्रेज़ी की परीक्षा है, और मैं उसे लेकर बहुत घबरा रही हूँ।",
+    "ar": "مرحبًا يا دانيال. أنا متوترة بشأن امتحاني في الإنجليزية الأسبوع القادم.",
+    "zh": "丹尼尔老师，您好。下周的英语考试让我很紧张。",
+    "es": "Hola, Daniel. Estoy nerviosa por mi examen de inglés de la semana que viene.",
+    "fr": "Bonjour, Daniel. Je suis stressée pour mon examen d'anglais de la semaine prochaine.",
+    "tr": "Merhaba Daniel Hocam, gelecek hafta İngilizce sınavım için çok gerginim.",
+    "ja": "こんにちは、ダニエル先生。来週の英語の試験のことで、すごく緊張しています。",
+    "ko": "안녕하세요, 다니엘 선생님. 다음 주 영어 시험 때문에 너무 긴장돼요.",
+    "it": "Buongiorno, Daniel. Sono nervosa per il mio esame di inglese della settimana prossima.",
+    "de": "Hallo, Daniel. Ich bin wegen meiner Englischprüfung nächste Woche total nervös.",
+    "pt": "Olá, Daniel. Estou nervosa com a minha prova de inglês da semana que vem.",
+    "ru": "Здравствуйте, Дэниел. Я очень волнуюсь из-за экзамена по английскому на следующей неделе.",
+    "vi": "Chào thầy Daniel. Em hồi hộp quá vì tuần sau có kỳ thi tiếng Anh.",
+    "th": "สวัสดีค่ะ ครูแดเนียล ฉันประหม่ามากเรื่องการสอบภาษาอังกฤษสัปดาห์หน้าค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Don't worry. Have you practiced the main exam sections?",
+   "start": 3390,
+   "end": 6370,
+   "tr": {
+    "ur": "فکر نہ کریں۔ کیا آپ نے امتحان کے اہم حصوں کی پریکٹس کر لی ہے؟",
+    "hi": "चिंता मत कीजिए। क्या आपने परीक्षा के मुख्य भागों का अभ्यास कर लिया है?",
+    "ar": "لا تقلقي. هل تدرّبتِ على أقسام الامتحان الرئيسية؟",
+    "zh": "别担心。你练过考试的主要部分了吗？",
+    "es": "No se preocupe. ¿Ha practicado las partes principales del examen?",
+    "fr": "Ne vous inquiétez pas. Vous avez déjà travaillé les grandes parties de l'examen ?",
+    "tr": "Endişelenmeyin. Sınavın ana bölümlerini çalıştınız mı?",
+    "ja": "心配いりませんよ。試験の主なセクションは、もう練習しましたか？",
+    "ko": "걱정하지 마세요. 시험의 주요 영역은 연습해 보셨어요?",
+    "it": "Non si preoccupi. Ha già fatto pratica con le parti principali dell'esame?",
+    "de": "Keine Sorge. Haben Sie die wichtigsten Teile der Prüfung schon geübt?",
+    "pt": "Não se preocupe. Você já praticou as principais partes da prova?",
+    "ru": "Не волнуйтесь. Вы уже занимались основными разделами экзамена?",
+    "vi": "Đừng lo. Em đã luyện các phần chính của bài thi chưa?",
+    "th": "ไม่ต้องห่วงครับ คุณฝึกส่วนสำคัญของข้อสอบมาหรือยังครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "A little. What should I focus on first?",
+   "start": 6590,
+   "end": 8830,
+   "tr": {
+    "ur": "تھوڑی سی۔ مجھے پہلے کس چیز پر توجہ دینی چاہیے؟",
+    "hi": "थोड़ी-बहुत। मुझे सबसे पहले किस चीज़ पर ध्यान देना चाहिए?",
+    "ar": "قليلًا. على ماذا يجب أن أركّز أولًا؟",
+    "zh": "练过一点。我应该先把重点放在哪里？",
+    "es": "Un poco. ¿En qué debería concentrarme primero?",
+    "fr": "Un peu. Sur quoi devrais-je me concentrer en premier ?",
+    "tr": "Biraz. Önce neye odaklanmalıyım?",
+    "ja": "少しだけです。まず何に集中したらいいですか？",
+    "ko": "조금요. 무엇에 먼저 집중하면 좋을까요?",
+    "it": "Un po'. Su cosa dovrei concentrarmi per prima cosa?",
+    "de": "Ein bisschen. Worauf soll ich mich zuerst konzentrieren?",
+    "pt": "Um pouco. Em que devo me concentrar primeiro?",
+    "ru": "Немного. На чём мне сосредоточиться в первую очередь?",
+    "vi": "Dạ, em mới luyện một chút thôi. Em nên tập trung vào gì trước ạ?",
+    "th": "ฝึกมาบ้างค่ะ ฉันควรเน้นอะไรก่อนดีคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Start with reading, listening and basic vocabulary.",
+   "start": 8960,
+   "end": 12130,
+   "tr": {
+    "ur": "پڑھنے، سننے اور بنیادی الفاظ سے شروعات کریں۔",
+    "hi": "पढ़ने, सुनने और बुनियादी शब्दावली से शुरुआत कीजिए।",
+    "ar": "ابدئي بالقراءة والاستماع والمفردات الأساسية.",
+    "zh": "先从阅读、听力和基础词汇开始。",
+    "es": "Empiece por la lectura, la comprensión auditiva y el vocabulario básico.",
+    "fr": "Commencez par la lecture, la compréhension orale et le vocabulaire de base.",
+    "tr": "Okuma, dinleme ve temel kelime bilgisiyle başlayın.",
+    "ja": "まずはリーディング、リスニング、基本的な語彙から始めましょう。",
+    "ko": "읽기, 듣기, 그리고 기본 어휘부터 시작하세요.",
+    "it": "Cominci con la lettura, l'ascolto e il vocabolario di base.",
+    "de": "Fangen Sie mit Lesen, Hören und dem Grundwortschatz an.",
+    "pt": "Comece com a leitura, a compreensão auditiva e o vocabulário básico.",
+    "ru": "Начните с чтения, аудирования и базовой лексики.",
+    "vi": "Bắt đầu với đọc, nghe và từ vựng cơ bản đi em.",
+    "th": "เริ่มจากการอ่าน การฟัง และคำศัพท์พื้นฐานก่อนครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Sometimes I forget new words. Any advice?",
+   "start": 12320,
+   "end": 14980,
+   "tr": {
+    "ur": "کبھی کبھی میں نئے الفاظ بھول جاتی ہوں۔ کوئی مشورہ ہے؟",
+    "hi": "कभी-कभी मैं नए शब्द भूल जाती हूँ। क्या आपके पास कोई सलाह है?",
+    "ar": "أحيانًا أنسى الكلمات الجديدة. هل لديك أي نصيحة؟",
+    "zh": "我有时会忘记新单词。您有什么建议吗？",
+    "es": "A veces olvido palabras nuevas. ¿Tiene algún consejo?",
+    "fr": "Il m'arrive d'oublier de nouveaux mots. Vous avez un conseil ?",
+    "tr": "Bazen yeni kelimeleri unutuyorum. Bir tavsiyeniz var mı?",
+    "ja": "新しい単語をときどき忘れてしまうんです。何かアドバイスはありますか？",
+    "ko": "가끔 새 단어를 잊어버려요. 조언 좀 해 주실 수 있어요?",
+    "it": "A volte dimentico parole nuove. Ha qualche consiglio?",
+    "de": "Manchmal vergesse ich neue Wörter. Haben Sie einen Rat?",
+    "pt": "Às vezes eu esqueço palavras novas. Você tem algum conselho?",
+    "ru": "Иногда я забываю новые слова. Не подскажете что-нибудь?",
+    "vi": "Đôi khi em hay quên từ mới. Thầy có lời khuyên nào không ạ?",
+    "th": "บางครั้งฉันลืมคำศัพท์ใหม่ค่ะ มีคำแนะนำอะไรไหมคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Try learning five words daily and using them in sentences.",
+   "start": 15260,
+   "end": 19050,
+   "tr": {
+    "ur": "روزانہ پانچ نئے الفاظ سیکھنے کی کوشش کریں اور انہیں جملوں میں استعمال کریں۔",
+    "hi": "हर दिन पाँच नए शब्द सीखिए और उन्हें वाक्यों में इस्तेमाल कीजिए।",
+    "ar": "حاولي أن تتعلّمي خمس كلمات يوميًا وتستخدميها في جمل.",
+    "zh": "试着每天学五个单词，再用它们造句。",
+    "es": "Intente aprender cinco palabras al día y usarlas en oraciones.",
+    "fr": "Essayez d'apprendre cinq mots par jour et de les utiliser dans des phrases.",
+    "tr": "Her gün beş kelime öğrenmeyi ve bunları cümlelerde kullanmayı deneyin.",
+    "ja": "毎日単語を5つ覚えて、文の中で使ってみてください。",
+    "ko": "매일 단어 다섯 개를 외우고 문장에서 써 보세요.",
+    "it": "Provi a imparare cinque parole al giorno e a usarle nelle frasi.",
+    "de": "Versuchen Sie, jeden Tag fünf Wörter zu lernen und in Sätzen zu verwenden.",
+    "pt": "Tente aprender cinco palavras por dia e usá-las em frases.",
+    "ru": "Попробуйте учить по пять слов в день и использовать их в предложениях.",
+    "vi": "Em thử học mỗi ngày năm từ và đặt câu với chúng nhé.",
+    "th": "ลองท่องคำศัพท์วันละห้าคำ แล้วนำไปแต่งประโยคดูนะครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "That's helpful. Should I practice speaking too?",
+   "start": 19120,
+   "end": 21770,
+   "tr": {
+    "ur": "یہ تو بہت مفید ہے۔ کیا مجھے بولنے کی پریکٹس بھی کرنی چاہیے؟",
+    "hi": "यह तो बहुत मददगार है। क्या मुझे बोलने का अभ्यास भी करना चाहिए?",
+    "ar": "هذا مفيد جدًا. وهل يجب أن أتدرّب على التحدّث أيضًا؟",
+    "zh": "这个建议很有用。我也需要练口语吗？",
+    "es": "Eso es muy útil. ¿Debería practicar también la expresión oral?",
+    "fr": "C'est utile. Je devrais aussi m'entraîner à l'oral ?",
+    "tr": "Çok faydalı. Konuşma pratiği de yapmalı mıyım?",
+    "ja": "それは助かります。スピーキングの練習もしたほうがいいですか？",
+    "ko": "정말 도움이 돼요. 말하기 연습도 해야 할까요?",
+    "it": "È utile. Dovrei esercitarmi anche a parlare?",
+    "de": "Das hilft mir sehr. Sollte ich auch das Sprechen üben?",
+    "pt": "Isso ajuda bastante. Eu também devo praticar a fala?",
+    "ru": "Это очень полезно. А разговорную речь мне тоже стоит тренировать?",
+    "vi": "Dạ, lời khuyên này hữu ích lắm ạ. Em có nên luyện nói nữa không thầy?",
+    "th": "เป็นประโยชน์มากเลยค่ะ ฉันควรฝึกพูดด้วยไหมคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Absolutely. Speak English for 10 minutes every day.",
+   "start": 22030,
+   "end": 25230,
+   "tr": {
+    "ur": "بالکل۔ روزانہ دس منٹ انگلش میں بات کریں۔",
+    "hi": "बिल्कुल। हर दिन दस मिनट अंग्रेज़ी में बोलिए।",
+    "ar": "بالتأكيد. تحدّثي بالإنجليزية عشر دقائق كل يوم.",
+    "zh": "当然。每天说十分钟英语。",
+    "es": "Por supuesto. Hable en inglés durante diez minutos todos los días.",
+    "fr": "Absolument. Parlez anglais pendant dix minutes chaque jour.",
+    "tr": "Kesinlikle. Her gün on dakika İngilizce konuşun.",
+    "ja": "もちろんです。毎日10分、英語で話してみてください。",
+    "ko": "그럼요. 매일 10분씩 영어로 말해 보세요.",
+    "it": "Assolutamente. Parli in inglese per dieci minuti ogni giorno.",
+    "de": "Unbedingt. Sprechen Sie jeden Tag zehn Minuten lang Englisch.",
+    "pt": "Com certeza. Fale inglês por dez minutos todos os dias.",
+    "ru": "Конечно. Говорите по-английски по десять минут каждый день.",
+    "vi": "Tất nhiên rồi. Mỗi ngày em hãy nói tiếng Anh mười phút nhé.",
+    "th": "ควรฝึกแน่นอนครับ พูดภาษาอังกฤษวันละสิบนาทีนะครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Great. I'll start practicing today. Thank you.",
+   "start": 25580,
+   "end": 30080,
+   "tr": {
+    "ur": "بہت اچھا۔ میں آج ہی سے پریکٹس شروع کر دوں گی۔ شکریہ۔",
+    "hi": "बढ़िया। मैं आज से ही अभ्यास शुरू कर दूँगी। धन्यवाद।",
+    "ar": "رائع. سأبدأ التدرّب اليوم. شكرًا لك.",
+    "zh": "太好了。我今天就开始练习。谢谢您。",
+    "es": "Perfecto. Empiezo a practicar hoy mismo. Muchas gracias.",
+    "fr": "Parfait. Je commence à m'entraîner dès aujourd'hui. Merci beaucoup.",
+    "tr": "Harika. Bugün hemen pratik yapmaya başlayacağım. Teşekkür ederim.",
+    "ja": "わかりました。今日から練習を始めます。ありがとうございます。",
+    "ko": "좋아요. 오늘부터 바로 연습을 시작할게요. 감사합니다.",
+    "it": "Perfetto. Comincio a esercitarmi già da oggi. Grazie mille.",
+    "de": "Super. Ich fange heute gleich mit dem Üben an. Vielen Dank.",
+    "pt": "Ótimo. Vou começar a praticar hoje mesmo. Muito obrigada.",
+    "ru": "Отлично. Начну заниматься уже сегодня. Большое спасибо.",
+    "vi": "Hay quá ạ. Em sẽ bắt đầu luyện tập ngay từ hôm nay. Em cảm ơn thầy ạ.",
+    "th": "ดีค่ะ ฉันจะเริ่มฝึกตั้งแต่วันนี้เลยค่ะ ขอบคุณค่ะ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "nervous",
+   "meaning": "worried and tense about something",
+   "tr": {
+    "ur": "گھبرایا ہوا",
+    "hi": "घबराया हुआ",
+    "ar": "متوتر",
+    "zh": "紧张的",
+    "es": "nervioso",
+    "fr": "stressé",
+    "tr": "gergin",
+    "ja": "緊張している",
+    "ko": "긴장한",
+    "it": "nervoso",
+    "de": "nervös",
+    "pt": "nervoso",
+    "ru": "взволнованный",
+    "vi": "hồi hộp",
+    "th": "ประหม่า"
+   }
+  },
+  {
+   "word": "exam",
+   "meaning": "a test of knowledge or skills",
+   "tr": {
+    "ur": "امتحان",
+    "hi": "परीक्षा",
+    "ar": "امتحان",
+    "zh": "考试",
+    "es": "examen",
+    "fr": "examen",
+    "tr": "sınav",
+    "ja": "試験",
+    "ko": "시험",
+    "it": "esame",
+    "de": "die Prüfung",
+    "pt": "prova",
+    "ru": "экзамен",
+    "vi": "kỳ thi",
+    "th": "การสอบ"
+   }
+  },
+  {
+   "word": "practice",
+   "meaning": "do something again to get better",
+   "tr": {
+    "ur": "پریکٹس کرنا",
+    "hi": "अभ्यास करना",
+    "ar": "يتدرّب",
+    "zh": "练习",
+    "es": "practicar",
+    "fr": "s'entraîner",
+    "tr": "pratik yapmak",
+    "ja": "練習する",
+    "ko": "연습하다",
+    "it": "esercitarsi",
+    "de": "üben",
+    "pt": "praticar",
+    "ru": "тренироваться",
+    "vi": "luyện tập",
+    "th": "ฝึกฝน"
+   }
+  },
+  {
+   "word": "focus on",
+   "meaning": "give most attention to",
+   "tr": {
+    "ur": "پر توجہ دینا",
+    "hi": "पर ध्यान देना",
+    "ar": "يركّز على",
+    "zh": "把重点放在",
+    "es": "concentrarse en",
+    "fr": "se concentrer sur",
+    "tr": "odaklanmak",
+    "ja": "集中する",
+    "ko": "집중하다",
+    "it": "concentrarsi su",
+    "de": "sich konzentrieren auf",
+    "pt": "focar em",
+    "ru": "сосредоточиться на",
+    "vi": "tập trung vào",
+    "th": "เน้น"
+   }
+  },
+  {
+   "word": "vocabulary",
+   "meaning": "the words you know in a language",
+   "tr": {
+    "ur": "ذخیرۂ الفاظ",
+    "hi": "शब्दावली",
+    "ar": "المفردات",
+    "zh": "词汇",
+    "es": "vocabulario",
+    "fr": "vocabulaire",
+    "tr": "kelime bilgisi",
+    "ja": "語彙",
+    "ko": "어휘",
+    "it": "vocabolario",
+    "de": "der Wortschatz",
+    "pt": "vocabulário",
+    "ru": "словарный запас",
+    "vi": "từ vựng",
+    "th": "คำศัพท์"
+   }
+  },
+  {
+   "word": "forget",
+   "meaning": "fail to remember",
+   "tr": {
+    "ur": "بھول جانا",
+    "hi": "भूल जाना",
+    "ar": "ينسى",
+    "zh": "忘记",
+    "es": "olvidar",
+    "fr": "oublier",
+    "tr": "unutmak",
+    "ja": "忘れる",
+    "ko": "잊어버리다",
+    "it": "dimenticare",
+    "de": "vergessen",
+    "pt": "esquecer",
+    "ru": "забывать",
+    "vi": "quên",
+    "th": "ลืม"
+   }
+  },
+  {
+   "word": "advice",
+   "meaning": "suggestions about what to do",
+   "tr": {
+    "ur": "مشورہ",
+    "hi": "सलाह",
+    "ar": "نصيحة",
+    "zh": "建议",
+    "es": "consejo",
+    "fr": "conseil",
+    "tr": "tavsiye",
+    "ja": "アドバイス",
+    "ko": "조언",
+    "it": "consiglio",
+    "de": "der Rat",
+    "pt": "conselho",
+    "ru": "совет",
+    "vi": "lời khuyên",
+    "th": "คำแนะนำ"
+   }
+  },
+  {
+   "word": "sections",
+   "meaning": "separate parts of a test",
+   "tr": {
+    "ur": "حصے",
+    "hi": "भाग",
+    "ar": "أقسام",
+    "zh": "部分",
+    "es": "partes",
+    "fr": "parties",
+    "tr": "bölümler",
+    "ja": "セクション",
+    "ko": "영역",
+    "it": "parti",
+    "de": "die Teile",
+    "pt": "partes",
+    "ru": "разделы",
+    "vi": "phần",
+    "th": "ส่วน"
+   }
+  },
+  {
+   "word": "daily",
+   "meaning": "every day",
+   "tr": {
+    "ur": "روزانہ",
+    "hi": "रोज़ाना",
+    "ar": "يوميًا",
+    "zh": "每天",
+    "es": "al día",
+    "fr": "par jour",
+    "tr": "her gün",
+    "ja": "毎日",
+    "ko": "매일",
+    "it": "al giorno",
+    "de": "täglich",
+    "pt": "por dia",
+    "ru": "ежедневно",
+    "vi": "mỗi ngày",
+    "th": "ทุกวัน"
+   }
+  },
+  {
+   "word": "helpful",
+   "meaning": "useful",
+   "tr": {
+    "ur": "مفید",
+    "hi": "मददगार",
+    "ar": "مفيد",
+    "zh": "有用的",
+    "es": "útil",
+    "fr": "utile",
+    "tr": "faydalı",
+    "ja": "役に立つ",
+    "ko": "도움이 되는",
+    "it": "utile",
+    "de": "hilfreich",
+    "pt": "útil",
+    "ru": "полезный",
+    "vi": "hữu ích",
+    "th": "เป็นประโยชน์"
+   }
+  }
+ ]
+}

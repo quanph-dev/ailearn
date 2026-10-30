@@ -1,0 +1,463 @@
+{
+ "scene": "📋",
+ "colors": [
+  "#E8EDF1",
+  "#CFD9E2"
+ ],
+ "speakers": [
+  {
+   "name": "Olivia",
+   "emoji": "👩",
+   "voice": "female"
+  },
+  {
+   "name": "Michael",
+   "emoji": "👨",
+   "voice": "male"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Hi, Michael. Can you explain how the English exam works?",
+   "start": 0,
+   "end": 2940,
+   "tr": {
+    "ur": "ہیلو مائیکل۔ کیا آپ سمجھا سکتے ہیں کہ انگلش کا امتحان کیسے ہوتا ہے؟",
+    "hi": "नमस्ते माइकल जी। क्या आप समझा सकते हैं कि अंग्रेज़ी की परीक्षा कैसे होती है?",
+    "ar": "مرحبًا يا مايكل. هل يمكنك أن توضّح لي كيف يُجرى امتحان اللغة الإنجليزية؟",
+    "zh": "迈克尔老师，您好。您能给我讲讲英语考试是怎么进行的吗？",
+    "es": "Hola, Michael. ¿Podría explicarme cómo funciona el examen de inglés?",
+    "fr": "Bonjour, Michael. Pouvez-vous m'expliquer comment se déroule l'examen d'anglais ?",
+    "tr": "Merhaba Michael Hocam. İngilizce sınavının nasıl yapıldığını açıklayabilir misiniz?",
+    "ja": "こんにちは、マイケル先生。英語の試験がどんな仕組みなのか、説明していただけますか？",
+    "ko": "안녕하세요, 마이클 선생님. 영어 시험이 어떻게 진행되는지 설명해 주실 수 있어요?",
+    "it": "Buongiorno, Michael. Può spiegarmi come funziona l'esame di inglese?",
+    "de": "Hallo, Michael. Können Sie mir erklären, wie die Englischprüfung funktioniert?",
+    "pt": "Olá, Michael. Você pode me explicar como funciona a prova de inglês?",
+    "ru": "Здравствуйте, Майкл. Не могли бы вы объяснить, как устроен экзамен по английскому?",
+    "vi": "Chào thầy Michael. Thầy có thể giải thích cho em kỳ thi tiếng Anh diễn ra như thế nào không ạ?",
+    "th": "สวัสดีค่ะ ครูไมเคิล ช่วยอธิบายให้ฉันฟังหน่อยได้ไหมคะว่าข้อสอบภาษาอังกฤษเป็นยังไง"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Sure. Most language exams test four main skills.",
+   "start": 2940,
+   "end": 5910,
+   "tr": {
+    "ur": "جی ضرور۔ زیادہ تر زبان کے امتحانات میں چار بنیادی مہارتوں کی جانچ کی جاتی ہے۔",
+    "hi": "बिल्कुल। ज़्यादातर भाषा परीक्षाओं में चार मुख्य कौशलों की जाँच होती है।",
+    "ar": "بالتأكيد. معظم امتحانات اللغات تختبر أربع مهارات أساسية.",
+    "zh": "当然。大多数语言考试会考查四项主要技能。",
+    "es": "Claro. La mayoría de los exámenes de idiomas evalúa cuatro habilidades principales.",
+    "fr": "Bien sûr. La plupart des examens de langue évaluent quatre compétences principales.",
+    "tr": "Tabii. Çoğu dil sınavı dört temel beceriyi ölçer.",
+    "ja": "もちろんです。語学の試験の多くは、主要な4つの技能を測ります。",
+    "ko": "물론이죠. 대부분의 언어 시험은 네 가지 주요 능력을 평가해요.",
+    "it": "Certo. La maggior parte degli esami di lingua verifica quattro competenze principali.",
+    "de": "Natürlich. Die meisten Sprachprüfungen testen vier zentrale Fertigkeiten.",
+    "pt": "Claro. A maioria das provas de idiomas avalia quatro habilidades principais.",
+    "ru": "Конечно. В большинстве языковых экзаменов проверяются четыре основных навыка.",
+    "vi": "Được chứ. Hầu hết các kỳ thi ngoại ngữ đều kiểm tra bốn kỹ năng chính.",
+    "th": "แน่นอนครับ ข้อสอบภาษาส่วนใหญ่จะวัดทักษะหลักสี่ด้าน"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "What are those four skills?",
+   "start": 5980,
+   "end": 7335,
+   "tr": {
+    "ur": "وہ چار مہارتیں کون سی ہیں؟",
+    "hi": "वे चार कौशल कौन से हैं?",
+    "ar": "ما هذه المهارات الأربع؟",
+    "zh": "是哪四项技能呢？",
+    "es": "¿Cuáles son esas cuatro habilidades?",
+    "fr": "Quelles sont ces quatre compétences ?",
+    "tr": "Bu dört beceri hangileri?",
+    "ja": "その4つの技能とは何ですか？",
+    "ko": "그 네 가지 능력은 무엇인가요?",
+    "it": "Quali sono queste quattro competenze?",
+    "de": "Welche vier Fertigkeiten sind das?",
+    "pt": "Quais são essas quatro habilidades?",
+    "ru": "Какие это четыре навыка?",
+    "vi": "Bốn kỹ năng đó là gì ạ?",
+    "th": "ทักษะทั้งสี่นั้นคืออะไรคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Listening, reading, writing and speaking.",
+   "start": 7370,
+   "end": 9630,
+   "tr": {
+    "ur": "سننا، پڑھنا، لکھنا اور بولنا۔",
+    "hi": "सुनना, पढ़ना, लिखना और बोलना।",
+    "ar": "الاستماع، والقراءة، والكتابة، والتحدّث.",
+    "zh": "听力、阅读、写作和口语。",
+    "es": "La comprensión auditiva, la lectura, la escritura y la expresión oral.",
+    "fr": "La compréhension orale, la lecture, l'écriture et l'expression orale.",
+    "tr": "Dinleme, okuma, yazma ve konuşma.",
+    "ja": "リスニング、リーディング、ライティング、スピーキングです。",
+    "ko": "듣기, 읽기, 쓰기, 말하기예요.",
+    "it": "Ascolto, lettura, scrittura e parlato.",
+    "de": "Hören, Lesen, Schreiben und Sprechen.",
+    "pt": "Compreensão auditiva, leitura, escrita e fala.",
+    "ru": "Аудирование, чтение, письмо и говорение.",
+    "vi": "Nghe, đọc, viết và nói.",
+    "th": "การฟัง การอ่าน การเขียน และการพูดครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Okay, what kinds of questions should I expect?",
+   "start": 9820,
+   "end": 12305,
+   "tr": {
+    "ur": "اچھا، مجھے کس قسم کے سوالات کی توقع کرنی چاہیے؟",
+    "hi": "ठीक है, मुझे किस तरह के सवालों की उम्मीद करनी चाहिए?",
+    "ar": "حسنًا، ما أنواع الأسئلة التي يجب أن أتوقعها؟",
+    "zh": "好的，那考试一般会有哪些题型呢？",
+    "es": "De acuerdo, ¿qué tipo de preguntas debo esperar?",
+    "fr": "D'accord, à quels types de questions dois-je m'attendre ?",
+    "tr": "Tamam, ne tür sorularla karşılaşmayı bekleyebilirim?",
+    "ja": "わかりました。どんな種類の問題が出るのでしょうか？",
+    "ko": "알겠어요. 어떤 종류의 문제가 나올까요?",
+    "it": "Va bene, che tipo di domande devo aspettarmi?",
+    "de": "Okay, welche Arten von Fragen kann ich erwarten?",
+    "pt": "Certo, que tipo de perguntas eu devo esperar?",
+    "ru": "Хорошо, а какие вопросы мне стоит ожидать?",
+    "vi": "Dạ vâng, vậy em sẽ gặp những dạng câu hỏi nào ạ?",
+    "th": "โอเคค่ะ แล้วข้อสอบจะมีคำถามแบบไหนบ้างคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Multiple choice questions, short answers and writing tasks.",
+   "start": 12340,
+   "end": 15130,
+   "tr": {
+    "ur": "ملٹی پل چوائس سوالات، مختصر جوابات اور تحریری کام۔",
+    "hi": "बहुविकल्पीय प्रश्न, छोटे उत्तर और लेखन कार्य।",
+    "ar": "أسئلة الاختيار من متعدد، وإجابات قصيرة، ومهام الكتابة.",
+    "zh": "选择题、简答题和写作任务。",
+    "es": "Preguntas de opción múltiple, respuestas cortas y tareas de redacción.",
+    "fr": "Des questions à choix multiple, des réponses courtes et des exercices de rédaction.",
+    "tr": "Çoktan seçmeli sorular, kısa cevaplar ve yazma görevleri.",
+    "ja": "選択式の問題、短答式の問題、そしてライティングの課題です。",
+    "ko": "객관식 문제, 단답형 문제, 그리고 쓰기 과제예요.",
+    "it": "Domande a scelta multipla, risposte brevi e prove di scrittura.",
+    "de": "Multiple-Choice-Fragen, Kurzantworten und Schreibaufgaben.",
+    "pt": "Questões de múltipla escolha, respostas curtas e tarefas de escrita.",
+    "ru": "Вопросы с выбором ответа, короткие ответы и письменные задания.",
+    "vi": "Câu hỏi trắc nghiệm, câu trả lời ngắn và phần viết.",
+    "th": "คำถามแบบเลือกตอบ คำตอบสั้น ๆ และงานเขียนครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "And what happens during the speaking test?",
+   "start": 15290,
+   "end": 17970,
+   "tr": {
+    "ur": "اور بولنے کے امتحان میں کیا ہوتا ہے؟",
+    "hi": "और बोलने की परीक्षा में क्या होता है?",
+    "ar": "وماذا يحدث أثناء اختبار التحدّث؟",
+    "zh": "那口语考试是怎么进行的呢？",
+    "es": "¿Y qué pasa durante el examen de expresión oral?",
+    "fr": "Et que se passe-t-il pendant l'épreuve d'expression orale ?",
+    "tr": "Peki konuşma sınavında neler oluyor?",
+    "ja": "では、スピーキングの試験では何をするのですか？",
+    "ko": "그럼 말하기 시험에서는 어떤 일이 있나요?",
+    "it": "E cosa succede durante la prova orale?",
+    "de": "Und was passiert bei der Sprechprüfung?",
+    "pt": "E o que acontece durante a prova oral?",
+    "ru": "А что происходит на устном экзамене?",
+    "vi": "Vậy trong bài thi nói thì sẽ diễn ra những gì ạ?",
+    "th": "แล้วในการสอบพูดจะมีอะไรบ้างคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "You'll answer questions and discuss familiar topics.",
+   "start": 18050,
+   "end": 20870,
+   "tr": {
+    "ur": "آپ سوالوں کے جواب دیں گی اور جانے پہچانے موضوعات پر بات کریں گی۔",
+    "hi": "आप सवालों के जवाब देंगी और परिचित विषयों पर चर्चा करेंगी।",
+    "ar": "ستجيبين عن أسئلة، وتناقشين موضوعات مألوفة.",
+    "zh": "你要回答一些问题，还要讨论一些熟悉的话题。",
+    "es": "Responderá preguntas y conversará sobre temas que le resulten familiares.",
+    "fr": "Vous répondrez à des questions et vous discuterez de sujets familiers.",
+    "tr": "Sorulara cevap vereceksiniz ve tanıdık konular hakkında konuşacaksınız.",
+    "ja": "質問に答えたり、なじみのあるテーマについて話し合ったりします。",
+    "ko": "질문에 답하고 익숙한 주제에 대해 이야기하게 돼요.",
+    "it": "Risponderà a delle domande e parlerà di argomenti familiari.",
+    "de": "Sie beantworten Fragen und diskutieren über vertraute Themen.",
+    "pt": "Você vai responder perguntas e discutir temas conhecidos.",
+    "ru": "Вы будете отвечать на вопросы и обсуждать знакомые темы.",
+    "vi": "Em sẽ phải trả lời câu hỏi và thảo luận về những chủ đề quen thuộc.",
+    "th": "คุณจะได้ตอบคำถามและพูดคุยเกี่ยวกับหัวข้อที่คุ้นเคยครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Great. Now I understand the basic format.",
+   "start": 21040,
+   "end": 23510,
+   "tr": {
+    "ur": "بہت اچھا۔ اب میں امتحان کا بنیادی ڈھانچہ سمجھ گئی ہوں۔",
+    "hi": "बढ़िया। अब मुझे परीक्षा का बुनियादी ढाँचा समझ आ गया है।",
+    "ar": "رائع. الآن فهمتُ الهيكل الأساسي للامتحان.",
+    "zh": "太好了。现在我明白基本的考试形式了。",
+    "es": "Muy bien. Ahora entiendo el formato básico.",
+    "fr": "Très bien. Maintenant, j'ai compris le format de base.",
+    "tr": "Harika. Artık temel formatı anladım.",
+    "ja": "なるほど。これで基本的な形式がわかりました。",
+    "ko": "좋아요. 이제 기본 형식을 알겠어요.",
+    "it": "Ottimo. Ora ho capito il formato di base.",
+    "de": "Super. Jetzt habe ich das grundlegende Format verstanden.",
+    "pt": "Ótimo. Agora entendi o formato básico.",
+    "ru": "Отлично. Теперь я поняла основной формат.",
+    "vi": "Dạ, hay quá. Bây giờ em đã hiểu cấu trúc cơ bản rồi ạ.",
+    "th": "ดีค่ะ ตอนนี้ฉันเข้าใจรูปแบบพื้นฐานแล้วค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Perfect. Practice each section before your exam.",
+   "start": 23760,
+   "end": 30080,
+   "tr": {
+    "ur": "بہت خوب۔ امتحان سے پہلے ہر حصے کی پریکٹس کریں۔",
+    "hi": "बिल्कुल सही। परीक्षा से पहले हर भाग का अभ्यास कीजिए।",
+    "ar": "ممتاز. تدرّبي على كل قسم قبل امتحانك.",
+    "zh": "很好。考试前请把每个部分都练习一遍。",
+    "es": "Perfecto. Practique cada sección antes de su examen.",
+    "fr": "Parfait. Entraînez-vous à chaque partie avant votre examen.",
+    "tr": "Mükemmel. Sınavdan önce her bölümü çalışın.",
+    "ja": "いいですね。試験の前に、それぞれのセクションを練習してください。",
+    "ko": "잘됐네요. 시험 전에 각 영역을 연습해 보세요.",
+    "it": "Perfetto. Si eserciti su ogni sezione prima dell'esame.",
+    "de": "Perfekt. Üben Sie jeden Teil vor der Prüfung.",
+    "pt": "Perfeito. Pratique cada seção antes da sua prova.",
+    "ru": "Вот и хорошо. Перед экзаменом потренируйтесь в каждом разделе.",
+    "vi": "Tốt lắm. Em hãy luyện tập từng phần trước kỳ thi nhé.",
+    "th": "ดีมากครับ ก่อนสอบให้ฝึกแต่ละส่วนนะครับ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "exam",
+   "meaning": "a formal test of knowledge or ability",
+   "tr": {
+    "ur": "امتحان",
+    "hi": "परीक्षा",
+    "ar": "امتحان",
+    "zh": "考试",
+    "es": "examen",
+    "fr": "examen",
+    "tr": "sınav",
+    "ja": "試験",
+    "ko": "시험",
+    "it": "esame",
+    "de": "die Prüfung",
+    "pt": "prova",
+    "ru": "экзамен",
+    "vi": "kỳ thi",
+    "th": "การสอบ"
+   }
+  },
+  {
+   "word": "skills",
+   "meaning": "abilities you develop with practice",
+   "tr": {
+    "ur": "مہارتیں",
+    "hi": "कौशल",
+    "ar": "مهارات",
+    "zh": "技能",
+    "es": "habilidades",
+    "fr": "compétences",
+    "tr": "beceriler",
+    "ja": "技能",
+    "ko": "능력",
+    "it": "competenze",
+    "de": "die Fertigkeiten",
+    "pt": "habilidades",
+    "ru": "навыки",
+    "vi": "kỹ năng",
+    "th": "ทักษะ"
+   }
+  },
+  {
+   "word": "practice",
+   "meaning": "do something repeatedly to improve",
+   "tr": {
+    "ur": "پریکٹس کرنا",
+    "hi": "अभ्यास करना",
+    "ar": "يتدرّب",
+    "zh": "练习",
+    "es": "practicar",
+    "fr": "s'entraîner",
+    "tr": "pratik yapmak",
+    "ja": "練習する",
+    "ko": "연습하다",
+    "it": "esercitarsi",
+    "de": "üben",
+    "pt": "praticar",
+    "ru": "тренироваться",
+    "vi": "luyện tập",
+    "th": "ฝึกฝน"
+   }
+  },
+  {
+   "word": "multiple choice",
+   "meaning": "questions with several answers to pick from",
+   "tr": {
+    "ur": "ملٹی پل چوائس",
+    "hi": "बहुविकल्पीय",
+    "ar": "اختيار من متعدد",
+    "zh": "选择题",
+    "es": "opción múltiple",
+    "fr": "à choix multiple",
+    "tr": "çoktan seçmeli",
+    "ja": "選択式",
+    "ko": "객관식",
+    "it": "a scelta multipla",
+    "de": "Multiple-Choice",
+    "pt": "múltipla escolha",
+    "ru": "с выбором ответа",
+    "vi": "trắc nghiệm",
+    "th": "แบบเลือกตอบ"
+   }
+  },
+  {
+   "word": "speaking test",
+   "meaning": "a test of your spoken English",
+   "tr": {
+    "ur": "بولنے کا امتحان",
+    "hi": "बोलने की परीक्षा",
+    "ar": "اختبار التحدّث",
+    "zh": "口语考试",
+    "es": "examen oral",
+    "fr": "épreuve orale",
+    "tr": "konuşma sınavı",
+    "ja": "スピーキングテスト",
+    "ko": "말하기 시험",
+    "it": "prova orale",
+    "de": "die Sprechprüfung",
+    "pt": "prova oral",
+    "ru": "устный экзамен",
+    "vi": "bài thi nói",
+    "th": "การสอบพูด"
+   }
+  },
+  {
+   "word": "section",
+   "meaning": "a separate part of a test",
+   "tr": {
+    "ur": "حصہ",
+    "hi": "भाग",
+    "ar": "قسم",
+    "zh": "部分",
+    "es": "sección",
+    "fr": "partie",
+    "tr": "bölüm",
+    "ja": "セクション",
+    "ko": "영역",
+    "it": "sezione",
+    "de": "der Teil",
+    "pt": "seção",
+    "ru": "раздел",
+    "vi": "phần",
+    "th": "ส่วน"
+   }
+  },
+  {
+   "word": "format",
+   "meaning": "the way something is organized",
+   "tr": {
+    "ur": "ڈھانچہ",
+    "hi": "ढाँचा",
+    "ar": "هيكل",
+    "zh": "形式",
+    "es": "formato",
+    "fr": "format",
+    "tr": "format",
+    "ja": "形式",
+    "ko": "형식",
+    "it": "formato",
+    "de": "das Format",
+    "pt": "formato",
+    "ru": "формат",
+    "vi": "cấu trúc",
+    "th": "รูปแบบ"
+   }
+  },
+  {
+   "word": "familiar",
+   "meaning": "well known to you",
+   "tr": {
+    "ur": "جانا پہچانا",
+    "hi": "परिचित",
+    "ar": "مألوف",
+    "zh": "熟悉的",
+    "es": "familiar",
+    "fr": "familier",
+    "tr": "tanıdık",
+    "ja": "なじみのある",
+    "ko": "익숙한",
+    "it": "familiare",
+    "de": "vertraut",
+    "pt": "conhecido",
+    "ru": "знакомый",
+    "vi": "quen thuộc",
+    "th": "คุ้นเคย"
+   }
+  },
+  {
+   "word": "expect",
+   "meaning": "think something will probably happen",
+   "tr": {
+    "ur": "توقع کرنا",
+    "hi": "उम्मीद करना",
+    "ar": "يتوقّع",
+    "zh": "预料",
+    "es": "esperar",
+    "fr": "s'attendre à",
+    "tr": "beklemek",
+    "ja": "予想する",
+    "ko": "예상하다",
+    "it": "aspettarsi",
+    "de": "erwarten",
+    "pt": "esperar",
+    "ru": "ожидать",
+    "vi": "dự kiến",
+    "th": "คาดการณ์"
+   }
+  },
+  {
+   "word": "discuss",
+   "meaning": "talk about something with others",
+   "tr": {
+    "ur": "بات چیت کرنا",
+    "hi": "चर्चा करना",
+    "ar": "يناقش",
+    "zh": "讨论",
+    "es": "conversar sobre",
+    "fr": "discuter",
+    "tr": "konuşmak",
+    "ja": "話し合う",
+    "ko": "이야기를 나누다",
+    "it": "discutere",
+    "de": "diskutieren",
+    "pt": "discutir",
+    "ru": "обсуждать",
+    "vi": "thảo luận",
+    "th": "พูดคุย"
+   }
+  }
+ ]
+}

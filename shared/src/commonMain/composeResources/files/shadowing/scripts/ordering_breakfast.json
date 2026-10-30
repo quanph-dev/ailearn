@@ -1,0 +1,440 @@
+{
+ "scene": "☕",
+ "colors": [
+  "#FFE7CC",
+  "#FAD4AC"
+ ],
+ "speakers": [
+  {
+   "name": "Emma",
+   "emoji": "👩",
+   "voice": "female"
+  },
+  {
+   "name": "Sam",
+   "emoji": "👨",
+   "voice": "male"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Good morning. Could I get a coffee and something to eat, please?",
+   "start": 0,
+   "end": 2760,
+   "tr": {
+    "ur": "صبح بخیر۔ کیا مجھے ایک کافی اور کھانے کے لیے کچھ مل سکتا ہے، پلیز؟",
+    "hi": "सुप्रभात। क्या मुझे एक कॉफ़ी और खाने के लिए कुछ मिल सकता है, प्लीज़?",
+    "ar": "صباح الخير. هل يمكنني الحصول على قهوة وشيء آكله، من فضلك؟",
+    "zh": "早上好。请给我一杯咖啡和一些吃的，好吗？",
+    "es": "Buenos días. ¿Podría darme un café y algo de comer, por favor?",
+    "fr": "Bonjour. Pourrais-je avoir un café et quelque chose à manger, s'il vous plaît ?",
+    "tr": "Günaydın. Bir kahve ve yiyecek bir şey alabilir miyim, lütfen?",
+    "ja": "おはようございます。コーヒーと、何か食べるものをお願いできますか？",
+    "ko": "안녕하세요. 커피 한 잔이랑 먹을 것 좀 주시겠어요?",
+    "it": "Buongiorno. Potrei avere un caffè e qualcosa da mangiare, per favore?",
+    "de": "Guten Morgen. Könnte ich bitte einen Kaffee und etwas zu essen bekommen?",
+    "pt": "Bom dia. Pode me ver um café e alguma coisa para comer, por favor?",
+    "ru": "Доброе утро. Можно мне кофе и что-нибудь поесть, пожалуйста?",
+    "vi": "Chào buổi sáng. Cho tôi một ly cà phê và món gì đó để ăn được không?",
+    "th": "สวัสดีตอนเช้าค่ะ ขอกาแฟหนึ่งแก้วกับอะไรทานสักอย่างได้ไหมคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Of course. Would you like your coffee hot or iced?",
+   "start": 2810,
+   "end": 4705,
+   "tr": {
+    "ur": "ضرور۔ آپ کو اپنی کافی گرم چاہیے یا برف والی؟",
+    "hi": "बिल्कुल। आपको अपनी कॉफ़ी गरम चाहिए या बर्फ़ वाली?",
+    "ar": "بالتأكيد. هل تريدين قهوتك ساخنة أم مثلجة؟",
+    "zh": "当然可以。您的咖啡要热的还是冰的？",
+    "es": "Por supuesto. ¿Quiere el café caliente o helado?",
+    "fr": "Bien sûr. Voulez-vous votre café chaud ou glacé ?",
+    "tr": "Tabii ki. Kahvenizi sıcak mı yoksa buzlu mu istersiniz?",
+    "ja": "かしこまりました。コーヒーはホットとアイス、どちらになさいますか？",
+    "ko": "물론이죠. 커피는 따뜻한 걸로 드릴까요, 아이스로 드릴까요?",
+    "it": "Certo. Vuole il caffè caldo o con ghiaccio?",
+    "de": "Natürlich. Möchten Sie den Kaffee heiß oder mit Eis?",
+    "pt": "Claro. Você quer o café quente ou gelado?",
+    "ru": "Конечно. Вам кофе горячий или со льдом?",
+    "vi": "Dạ vâng. Chị muốn cà phê nóng hay đá ạ?",
+    "th": "ได้ครับ รับกาแฟร้อนหรือเย็นดีครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Hot, please. And what do you recommend for breakfast?",
+   "start": 4705,
+   "end": 6630,
+   "tr": {
+    "ur": "گرم، پلیز۔ اور ناشتے کے لیے آپ کیا تجویز کریں گے؟",
+    "hi": "गरम, प्लीज़। और नाश्ते के लिए आप क्या सुझाएँगे?",
+    "ar": "ساخنة من فضلك. وبماذا تنصحني للفطور؟",
+    "zh": "要热的，麻烦了。早餐你有什么推荐的吗？",
+    "es": "Caliente, por favor. ¿Y qué me recomienda para el desayuno?",
+    "fr": "Chaud, s'il vous plaît. Et que me recommandez-vous pour le petit-déjeuner ?",
+    "tr": "Sıcak, lütfen. Peki kahvaltı için ne tavsiye edersiniz?",
+    "ja": "ホットでお願いします。それと、朝食は何がおすすめですか？",
+    "ko": "따뜻한 걸로 주세요. 그리고 아침 식사로 뭘 추천하세요?",
+    "it": "Caldo, per favore. E cosa mi consiglia per colazione?",
+    "de": "Heiß, bitte. Und was empfehlen Sie zum Frühstück?",
+    "pt": "Quente, por favor. E o que você recomenda para o café da manhã?",
+    "ru": "Горячий, пожалуйста. А что вы посоветуете на завтрак?",
+    "vi": "Cho tôi nóng nhé. Còn bữa sáng thì anh gợi ý món gì?",
+    "th": "ร้อนค่ะ แล้วมื้อเช้ามีอะไรแนะนำบ้างคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Our egg and cheese sandwich is really popular.",
+   "start": 6630,
+   "end": 8380,
+   "tr": {
+    "ur": "ہمارا انڈے اور پنیر والا سینڈوچ بہت مقبول ہے۔",
+    "hi": "हमारा अंडा और चीज़ वाला सैंडविच बहुत लोकप्रिय है।",
+    "ar": "ساندويتش البيض والجبن لدينا مشهور جدًا.",
+    "zh": "我们的鸡蛋奶酪三明治特别受欢迎。",
+    "es": "Nuestro sándwich de huevo y queso es muy popular.",
+    "fr": "Notre sandwich à l'œuf et au fromage est très populaire.",
+    "tr": "Yumurtalı ve peynirli sandviçimiz çok popüler.",
+    "ja": "卵とチーズのサンドイッチがとても人気ですよ。",
+    "ko": "저희 에그 치즈 샌드위치가 정말 인기가 많아요.",
+    "it": "Il nostro panino con uovo e formaggio è molto popolare.",
+    "de": "Unser Sandwich mit Ei und Käse ist sehr beliebt.",
+    "pt": "Nosso sanduíche de ovo com queijo é bem popular.",
+    "ru": "Наш сэндвич с яйцом и сыром очень популярен.",
+    "vi": "Bánh sandwich trứng phô mai của quán rất được ưa chuộng ạ.",
+    "th": "แซนด์วิชไข่กับชีสของร้านเราเป็นที่นิยมมากครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "The sandwich sounds good. I'll have one of those.",
+   "start": 8430,
+   "end": 10300,
+   "tr": {
+    "ur": "سینڈوچ اچھا لگ رہا ہے۔ مجھے ان میں سے ایک دے دیں۔",
+    "hi": "सैंडविच अच्छा लग रहा है। मुझे उनमें से एक दे दीजिए।",
+    "ar": "الساندويتش يبدو جيدًا. سآخذ واحدًا منها.",
+    "zh": "这个三明治听起来不错。我要一个。",
+    "es": "El sándwich suena bien. Tomaré uno de esos.",
+    "fr": "Le sandwich a l'air bon. Je vais en prendre un.",
+    "tr": "Sandviç güzel görünüyor. Onlardan bir tane alayım.",
+    "ja": "そのサンドイッチ、おいしそうですね。それを一つください。",
+    "ko": "그 샌드위치 맛있겠네요. 그걸로 하나 주세요.",
+    "it": "Il panino sembra buono. Ne prendo uno.",
+    "de": "Das Sandwich klingt gut. Davon nehme ich eins.",
+    "pt": "O sanduíche parece ótimo. Vou querer um desses.",
+    "ru": "Сэндвич звучит неплохо. Возьму один.",
+    "vi": "Bánh sandwich nghe ngon đấy. Cho tôi một cái nhé.",
+    "th": "แซนด์วิชฟังดูน่าอร่อยดีค่ะ ขอหนึ่งชิ้นค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Sure. Would you like anything else with that?",
+   "start": 10670,
+   "end": 12050,
+   "tr": {
+    "ur": "ٹھیک ہے۔ کیا اس کے ساتھ آپ کو کچھ اور چاہیے؟",
+    "hi": "ज़रूर। क्या इसके साथ आपको कुछ और चाहिए?",
+    "ar": "حسنًا. هل تريدين شيئًا آخر معه؟",
+    "zh": "好的。还需要别的吗？",
+    "es": "Claro. ¿Quiere algo más con eso?",
+    "fr": "Bien sûr. Voulez-vous autre chose avec ça ?",
+    "tr": "Tabii. Yanında başka bir şey ister misiniz?",
+    "ja": "はい。ご一緒に何かいかがですか？",
+    "ko": "네. 더 필요하신 건 없으세요?",
+    "it": "Va bene. Desidera qualcos'altro?",
+    "de": "Gern. Darf es sonst noch etwas sein?",
+    "pt": "Claro. Vai querer mais alguma coisa?",
+    "ru": "Хорошо. Что-нибудь ещё к этому?",
+    "vi": "Dạ vâng. Chị có muốn dùng thêm gì nữa không ạ?",
+    "th": "ได้ครับ รับอะไรเพิ่มอีกไหมครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "No, that's everything. How much is it?",
+   "start": 12740,
+   "end": 14890,
+   "tr": {
+    "ur": "نہیں، بس یہی سب کچھ ہے۔ کتنے پیسے ہوئے؟",
+    "hi": "नहीं, बस यही सब है। कितने पैसे हुए?",
+    "ar": "لا، هذا كل شيء. كم الحساب؟",
+    "zh": "不用了，就这些。一共多少钱？",
+    "es": "No, eso es todo. ¿Cuánto es?",
+    "fr": "Non, c'est tout. Ça fait combien ?",
+    "tr": "Hayır, hepsi bu kadar. Ne kadar tutuyor?",
+    "ja": "いいえ、以上です。おいくらですか？",
+    "ko": "아니요, 그게 다예요. 얼마예요?",
+    "it": "No, è tutto. Quant'è?",
+    "de": "Nein, das ist alles. Was macht das?",
+    "pt": "Não, é só isso. Quanto fica?",
+    "ru": "Нет, это всё. Сколько с меня?",
+    "vi": "Không, thế thôi. Hết bao nhiêu tiền vậy?",
+    "th": "ไม่ค่ะ แค่นี้แหละค่ะ ทั้งหมดเท่าไหร่คะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "It's eight dollars altogether. You can pay by card or cash.",
+   "start": 15160,
+   "end": 17720,
+   "tr": {
+    "ur": "کل ملا کر آٹھ ڈالر ہوئے۔ آپ کارڈ یا نقد سے ادائیگی کر سکتے ہیں۔",
+    "hi": "कुल मिलाकर आठ डॉलर हुए। आप कार्ड या नकद से भुगतान कर सकते हैं।",
+    "ar": "المجموع ثمانية دولارات. يمكنك الدفع بالبطاقة أو نقدًا.",
+    "zh": "一共八美元。您可以刷卡或付现金。",
+    "es": "Son ocho dólares en total. Puede pagar con tarjeta o en efectivo.",
+    "fr": "Cela fait huit dollars au total. Vous pouvez payer par carte ou en espèces.",
+    "tr": "Toplam sekiz dolar. Kartla ya da nakit ödeyebilirsiniz.",
+    "ja": "全部で8ドルです。お支払いはカードでも現金でも大丈夫です。",
+    "ko": "모두 8달러입니다. 카드나 현금으로 결제하실 수 있어요.",
+    "it": "In tutto sono otto dollari. Può pagare con carta o in contanti.",
+    "de": "Das macht insgesamt acht Dollar. Sie können mit Karte oder bar zahlen.",
+    "pt": "Fica oito dólares no total. Você pode pagar no cartão ou em dinheiro.",
+    "ru": "Всего восемь долларов. Можно оплатить картой или наличными.",
+    "vi": "Tổng cộng là tám đô la ạ. Chị có thể trả bằng thẻ hoặc tiền mặt.",
+    "th": "ทั้งหมดแปดดอลลาร์ครับ จ่ายด้วยบัตรหรือเงินสดก็ได้ครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "I'll pay by card, please. Thank you.",
+   "start": 18020,
+   "end": 20040,
+   "tr": {
+    "ur": "میں کارڈ سے ادائیگی کروں گی، پلیز۔ شکریہ۔",
+    "hi": "मैं कार्ड से भुगतान करूँगी, प्लीज़। धन्यवाद।",
+    "ar": "سأدفع بالبطاقة، من فضلك. شكرًا لك.",
+    "zh": "我刷卡，麻烦了。谢谢。",
+    "es": "Pagaré con tarjeta, por favor. Gracias.",
+    "fr": "Je vais payer par carte, s'il vous plaît. Merci.",
+    "tr": "Kartla ödeyeceğim, lütfen. Teşekkür ederim.",
+    "ja": "カードでお願いします。ありがとうございます。",
+    "ko": "카드로 계산할게요. 감사합니다.",
+    "it": "Pago con la carta, per favore. Grazie.",
+    "de": "Ich zahle mit Karte, bitte. Danke.",
+    "pt": "Vou pagar no cartão, por favor. Obrigada.",
+    "ru": "Я заплачу картой, пожалуйста. Спасибо.",
+    "vi": "Tôi trả bằng thẻ nhé. Cảm ơn anh.",
+    "th": "จ่ายด้วยบัตรค่ะ ขอบคุณค่ะ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "breakfast",
+   "meaning": "the first meal of the day",
+   "tr": {
+    "ur": "ناشتہ",
+    "hi": "नाश्ता",
+    "ar": "فطور",
+    "zh": "早餐",
+    "es": "desayuno",
+    "fr": "petit-déjeuner",
+    "tr": "kahvaltı",
+    "ja": "朝食",
+    "ko": "아침 식사",
+    "it": "colazione",
+    "de": "das Frühstück",
+    "pt": "café da manhã",
+    "ru": "завтрак",
+    "vi": "bữa sáng",
+    "th": "อาหารเช้า"
+   }
+  },
+  {
+   "word": "recommend",
+   "meaning": "suggest as good",
+   "tr": {
+    "ur": "تجویز کرنا",
+    "hi": "सुझाना",
+    "ar": "ينصح",
+    "zh": "推荐",
+    "es": "recomendar",
+    "fr": "recommander",
+    "tr": "tavsiye etmek",
+    "ja": "勧める",
+    "ko": "추천하다",
+    "it": "consigliare",
+    "de": "empfehlen",
+    "pt": "recomendar",
+    "ru": "рекомендовать",
+    "vi": "gợi ý",
+    "th": "แนะนำ"
+   }
+  },
+  {
+   "word": "iced",
+   "meaning": "served cold with ice",
+   "tr": {
+    "ur": "برف والا",
+    "hi": "बर्फ़ वाला",
+    "ar": "مثلج",
+    "zh": "冰的",
+    "es": "helado",
+    "fr": "glacé",
+    "tr": "buzlu",
+    "ja": "アイス",
+    "ko": "아이스",
+    "it": "con ghiaccio",
+    "de": "mit Eis",
+    "pt": "gelado",
+    "ru": "со льдом",
+    "vi": "có đá",
+    "th": "ใส่น้ำแข็ง"
+   }
+  },
+  {
+   "word": "cheese",
+   "meaning": "a food made from milk",
+   "tr": {
+    "ur": "پنیر",
+    "hi": "चीज़",
+    "ar": "جبن",
+    "zh": "奶酪",
+    "es": "queso",
+    "fr": "fromage",
+    "tr": "peynir",
+    "ja": "チーズ",
+    "ko": "치즈",
+    "it": "formaggio",
+    "de": "der Käse",
+    "pt": "queijo",
+    "ru": "сыр",
+    "vi": "phô mai",
+    "th": "ชีส"
+   }
+  },
+  {
+   "word": "sandwich",
+   "meaning": "food between two slices of bread",
+   "tr": {
+    "ur": "سینڈوچ",
+    "hi": "सैंडविच",
+    "ar": "ساندويتش",
+    "zh": "三明治",
+    "es": "sándwich",
+    "fr": "sandwich",
+    "tr": "sandviç",
+    "ja": "サンドイッチ",
+    "ko": "샌드위치",
+    "it": "panino",
+    "de": "das Sandwich",
+    "pt": "sanduíche",
+    "ru": "сэндвич",
+    "vi": "bánh sandwich",
+    "th": "แซนด์วิช"
+   }
+  },
+  {
+   "word": "popular",
+   "meaning": "liked by many people",
+   "tr": {
+    "ur": "مقبول",
+    "hi": "लोकप्रिय",
+    "ar": "مشهور",
+    "zh": "受欢迎的",
+    "es": "popular",
+    "fr": "populaire",
+    "tr": "popüler",
+    "ja": "人気がある",
+    "ko": "인기 있다",
+    "it": "popolare",
+    "de": "beliebt",
+    "pt": "popular",
+    "ru": "популярный",
+    "vi": "được ưa chuộng",
+    "th": "เป็นที่นิยม"
+   }
+  },
+  {
+   "word": "altogether",
+   "meaning": "in total, with everything counted",
+   "tr": {
+    "ur": "کل ملا کر",
+    "hi": "कुल मिलाकर",
+    "ar": "في المجموع",
+    "zh": "一共",
+    "es": "en total",
+    "fr": "au total",
+    "tr": "toplamda",
+    "ja": "全部で",
+    "ko": "모두",
+    "it": "in tutto",
+    "de": "insgesamt",
+    "pt": "no total",
+    "ru": "всего",
+    "vi": "tổng cộng",
+    "th": "ทั้งหมด"
+   }
+  },
+  {
+   "word": "cash",
+   "meaning": "money in coins and notes",
+   "tr": {
+    "ur": "نقد",
+    "hi": "नकद",
+    "ar": "نقدًا",
+    "zh": "现金",
+    "es": "efectivo",
+    "fr": "espèces",
+    "tr": "nakit",
+    "ja": "現金",
+    "ko": "현금",
+    "it": "contanti",
+    "de": "das Bargeld",
+    "pt": "dinheiro",
+    "ru": "наличные",
+    "vi": "tiền mặt",
+    "th": "เงินสด"
+   }
+  },
+  {
+   "word": "card",
+   "meaning": "a plastic card used to pay",
+   "tr": {
+    "ur": "کارڈ",
+    "hi": "कार्ड",
+    "ar": "بطاقة",
+    "zh": "银行卡",
+    "es": "tarjeta",
+    "fr": "carte",
+    "tr": "kart",
+    "ja": "カード",
+    "ko": "카드",
+    "it": "carta",
+    "de": "die Karte",
+    "pt": "cartão",
+    "ru": "карта",
+    "vi": "thẻ",
+    "th": "บัตร"
+   }
+  },
+  {
+   "word": "pay",
+   "meaning": "give money for something",
+   "tr": {
+    "ur": "ادائیگی کرنا",
+    "hi": "भुगतान करना",
+    "ar": "يدفع",
+    "zh": "付款",
+    "es": "pagar",
+    "fr": "payer",
+    "tr": "ödemek",
+    "ja": "払う",
+    "ko": "지불하다",
+    "it": "pagare",
+    "de": "bezahlen",
+    "pt": "pagar",
+    "ru": "платить",
+    "vi": "trả tiền",
+    "th": "จ่ายเงิน"
+   }
+  }
+ ]
+}

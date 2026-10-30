@@ -23,4 +23,19 @@
     <string name="ui_are_you_sure_you_want_to_exit_the_app_now">Möchtest du die App jetzt wirklich verlassen?</string>
     <string name="ui_no">Nein</string>
     <string name="ui_yes_exit">Ja, verlassen</string>
+    <string name="fo_onboarding_button_next">Weiter</string>
+    <string name="fo_onboarding_button_start">Jetzt starten</string>
+    <string name="fo_onboarding_description_1">Chatte mit deinem persönlichen KI-Tutor und lerne jede Sprache ganz natürlich, jederzeit.</string>
+    <string name="fo_onboarding_description_2">Übe die Aussprache und erhalte zu jedem Wort sofort Feedback.</string>
+    <string name="fo_onboarding_description_3">Baue tägliche Serien auf und verfolge deinen Fortschritt bei jedem Schritt.</string>
+    <string name="fo_onboarding_swipe_hint">Wischen zum Fortfahren</string>
+    <string name="fo_onboarding_title_1">Lerne mit KI</string>
+    <string name="fo_onboarding_title_2">Sprich mit Selbstvertrauen</string>
+    <string name="fo_onboarding_title_3">Erreiche deine Ziele</string>
+    <string name="fo_survey_continue">Loslegen</string>
+    <string name="fo_survey_skip">Überspringen</string>
+    <string name="fo_survey_subtitle">Wähle eine aus, um zu starten</string>
+    <string name="fo_survey_title">Welche Sprache möchtest du lernen?</string>
+    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_describe_load_ad">(Diese Aktion kann Werbung enthalten)</string>
 </resources>

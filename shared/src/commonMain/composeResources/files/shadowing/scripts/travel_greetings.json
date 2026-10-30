@@ -1,0 +1,463 @@
+{
+ "scene": "🧳",
+ "colors": [
+  "#E2ECF4",
+  "#C6D7E6"
+ ],
+ "speakers": [
+  {
+   "name": "Adam",
+   "emoji": "👨",
+   "voice": "male"
+  },
+  {
+   "name": "Sophie",
+   "emoji": "👩",
+   "voice": "female"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Hi there. Is anyone sitting here?",
+   "start": 0,
+   "end": 2900,
+   "tr": {
+    "ur": "ہیلو! کیا یہاں کوئی بیٹھا ہوا ہے؟",
+    "hi": "हाय! क्या यहाँ कोई बैठा है?",
+    "ar": "مرحبًا. هل يجلس هنا أحد؟",
+    "zh": "你好。这儿有人坐吗？",
+    "es": "Hola. ¿Hay alguien sentado aquí?",
+    "fr": "Bonjour ! Quelqu'un est assis ici ?",
+    "tr": "Merhaba. Burada oturan biri var mı?",
+    "ja": "こんにちは。ここ、誰か座っていますか？",
+    "ko": "안녕하세요. 여기 자리 있나요?",
+    "it": "Salve. C'è qualcuno seduto qui?",
+    "de": "Hallo. Sitzt hier jemand?",
+    "pt": "Oi! Tem alguém sentado aqui?",
+    "ru": "Здравствуйте. Здесь кто-нибудь сидит?",
+    "vi": "Chào bạn. Có ai ngồi ở đây không?",
+    "th": "สวัสดีครับ ตรงนี้มีคนนั่งอยู่ไหมครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "No, it's free. Please have a seat.",
+   "start": 3530,
+   "end": 5510,
+   "tr": {
+    "ur": "نہیں، یہ خالی ہے۔ آپ تشریف رکھیں۔",
+    "hi": "नहीं, यह ख़ाली है। आप बैठिए।",
+    "ar": "لا، المكان فارغ. تفضّل بالجلوس.",
+    "zh": "没人，空着呢。请坐。",
+    "es": "No, está libre. Siéntate, por favor.",
+    "fr": "Non, c'est libre. Asseyez-vous, je vous en prie.",
+    "tr": "Hayır, boş. Buyurun, oturun.",
+    "ja": "いいえ、空いていますよ。どうぞ座ってください。",
+    "ko": "아니요, 비어 있어요. 앉으세요.",
+    "it": "No, è libero. Si accomodi pure.",
+    "de": "Nein, hier ist frei. Bitte, nehmen Sie Platz.",
+    "pt": "Não, está livre. Pode se sentar, por favor.",
+    "ru": "Нет, свободно. Садитесь, пожалуйста.",
+    "vi": "Không, chỗ này trống. Mời bạn ngồi.",
+    "th": "ไม่มีค่ะ ว่างอยู่ค่ะ เชิญนั่งได้เลยค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Thanks. I'm Adam, by the way. What's your name?",
+   "start": 6320,
+   "end": 8830,
+   "tr": {
+    "ur": "شکریہ۔ ویسے میرا نام ایڈم ہے۔ آپ کا نام کیا ہے؟",
+    "hi": "शुक्रिया। वैसे, मेरा नाम एडम है। आपका नाम क्या है?",
+    "ar": "شكرًا. أنا آدم، بالمناسبة. ما اسمُكِ؟",
+    "zh": "谢谢。对了，我叫亚当。你叫什么名字？",
+    "es": "Gracias. Por cierto, soy Adam. ¿Cómo te llamas?",
+    "fr": "Merci. Au fait, moi c'est Adam. Vous vous appelez comment ?",
+    "tr": "Teşekkürler. Bu arada ben Adam. Adınız ne?",
+    "ja": "ありがとうございます。ところで、僕はアダムです。お名前は？",
+    "ko": "감사합니다. 참, 저는 아담이에요. 성함이 어떻게 되세요?",
+    "it": "Grazie. A proposito, io sono Adam. Come si chiama?",
+    "de": "Danke. Übrigens, ich bin Adam. Wie heißen Sie?",
+    "pt": "Obrigado. Aliás, eu me chamo Adam. Qual é o seu nome?",
+    "ru": "Спасибо. Кстати, меня зовут Адам. Как вас зовут?",
+    "vi": "Cảm ơn bạn. Nhân tiện, mình tên là Adam. Bạn tên gì?",
+    "th": "ขอบคุณครับ ผมชื่ออดัมนะครับ ว่าแต่คุณชื่ออะไรครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Nice to meet you, Adam. I'm Sophie.",
+   "start": 9400,
+   "end": 11620,
+   "tr": {
+    "ur": "آپ سے مل کر خوشی ہوئی، ایڈم۔ میں سوفی ہوں۔",
+    "hi": "आपसे मिलकर अच्छा लगा, एडम। मैं सोफ़ी हूँ।",
+    "ar": "تشرّفت بمعرفتك يا آدم. أنا صوفي.",
+    "zh": "很高兴认识你，亚当。我叫索菲。",
+    "es": "Encantada de conocerte, Adam. Soy Sophie.",
+    "fr": "Enchantée, Adam. Je m'appelle Sophie.",
+    "tr": "Tanıştığımıza memnun oldum, Adam. Ben Sophie.",
+    "ja": "はじめまして、アダムさん。私はソフィーです。",
+    "ko": "만나서 반가워요, 아담 씨. 저는 소피예요.",
+    "it": "Piacere di conoscerla, Adam. Sono Sophie.",
+    "de": "Freut mich, Adam. Ich bin Sophie.",
+    "pt": "Prazer em conhecer você, Adam. Eu sou a Sophie.",
+    "ru": "Очень приятно, Адам. Меня зовут Софи.",
+    "vi": "Rất vui được gặp bạn, Adam. Mình là Sophie.",
+    "th": "ยินดีที่ได้รู้จักค่ะ คุณอดัม ฉันชื่อโซฟีค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Nice to meet you too. Where are you from?",
+   "start": 12470,
+   "end": 14850,
+   "tr": {
+    "ur": "مجھے بھی آپ سے مل کر خوشی ہوئی۔ آپ کہاں سے ہیں؟",
+    "hi": "मुझे भी आपसे मिलकर अच्छा लगा। आप कहाँ से हैं?",
+    "ar": "وأنا تشرّفتُ بمعرفتك أيضًا. من أين أنتِ؟",
+    "zh": "我也很高兴认识你。你是哪里人？",
+    "es": "Igualmente, encantado. ¿De dónde eres?",
+    "fr": "Enchanté. D'où venez-vous ?",
+    "tr": "Ben de memnun oldum. Nerelisiniz?",
+    "ja": "こちらこそ、はじめまして。どちらのご出身ですか？",
+    "ko": "저도 반가워요. 어디에서 오셨어요?",
+    "it": "Piacere mio. Di dov'è?",
+    "de": "Freut mich auch. Woher kommen Sie?",
+    "pt": "O prazer é meu. De onde você é?",
+    "ru": "Мне тоже приятно. Откуда вы?",
+    "vi": "Mình cũng rất vui được gặp bạn. Bạn đến từ đâu?",
+    "th": "ผมก็ยินดีเหมือนกันครับ คุณมาจากไหนครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "I'm from Canada. What about you?",
+   "start": 15590,
+   "end": 18020,
+   "tr": {
+    "ur": "میں کینیڈا سے ہوں۔ اور آپ؟",
+    "hi": "मैं कनाडा से हूँ। और आप?",
+    "ar": "أنا من كندا. وأنتَ؟",
+    "zh": "我来自加拿大。你呢？",
+    "es": "Soy de Canadá. ¿Y tú?",
+    "fr": "Je viens du Canada. Et vous ?",
+    "tr": "Kanadalıyım. Ya siz?",
+    "ja": "カナダです。そちらは？",
+    "ko": "저는 캐나다에서 왔어요. 아담 씨는요?",
+    "it": "Vengo dal Canada. E lei?",
+    "de": "Ich komme aus Kanada. Und Sie?",
+    "pt": "Eu sou do Canadá. E você?",
+    "ru": "Я из Канады. А вы?",
+    "vi": "Mình đến từ Canada. Còn bạn?",
+    "th": "ฉันมาจากแคนาดาค่ะ แล้วคุณล่ะคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "I'm from London. Are you traveling for work or vacation?",
+   "start": 18300,
+   "end": 21740,
+   "tr": {
+    "ur": "میں لندن سے ہوں۔ آپ کام کے سلسلے میں سفر کر رہی ہیں یا چھٹیوں پر؟",
+    "hi": "मैं लंदन से हूँ। आप काम के लिए सफ़र कर रही हैं या छुट्टियों के लिए?",
+    "ar": "أنا من لندن. هل تسافرين للعمل أم للسياحة؟",
+    "zh": "我来自伦敦。你这次是出差还是度假？",
+    "es": "Soy de Londres. ¿Viajas por trabajo o de vacaciones?",
+    "fr": "Moi, je viens de Londres. Vous voyagez pour le travail ou pour les vacances ?",
+    "tr": "Ben Londralıyım. İş için mi yoksa tatil için mi seyahat ediyorsunuz?",
+    "ja": "僕はロンドン出身です。今回はお仕事ですか、それとも休暇ですか？",
+    "ko": "저는 런던에서 왔어요. 출장 가시는 거예요, 아니면 휴가예요?",
+    "it": "Io vengo da Londra. Viaggia per lavoro o per vacanza?",
+    "de": "Ich komme aus London. Reisen Sie beruflich oder im Urlaub?",
+    "pt": "Eu sou de Londres. Você está viajando a trabalho ou de férias?",
+    "ru": "Я из Лондона. Вы путешествуете по работе или в отпуск?",
+    "vi": "Mình đến từ London. Bạn đi công tác hay đi du lịch vậy?",
+    "th": "ผมมาจากลอนดอนครับ คุณเดินทางไปทำงานหรือไปเที่ยวครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Vacation. I'm visiting Italy for the first time.",
+   "start": 22190,
+   "end": 25060,
+   "tr": {
+    "ur": "چھٹیاں۔ میں پہلی بار اٹلی جا رہی ہوں۔",
+    "hi": "छुट्टियों के लिए। मैं पहली बार इटली जा रही हूँ।",
+    "ar": "للسياحة. هذه أول مرة أزور فيها إيطاليا.",
+    "zh": "度假。我是第一次去意大利。",
+    "es": "De vacaciones. Es la primera vez que visito Italia.",
+    "fr": "Pour les vacances. C'est la première fois que je visite l'Italie.",
+    "tr": "Tatil için. İtalya'ya ilk kez gidiyorum.",
+    "ja": "休暇です。イタリアに行くのは初めてなんです。",
+    "ko": "휴가예요. 이탈리아는 처음 가 보는 거예요.",
+    "it": "Per vacanza. È la prima volta che visito l'Italia.",
+    "de": "Im Urlaub. Ich besuche Italien zum ersten Mal.",
+    "pt": "De férias. Estou visitando a Itália pela primeira vez.",
+    "ru": "В отпуск. Я впервые еду в Италию.",
+    "vi": "Đi du lịch. Đây là lần đầu tiên mình đến Ý.",
+    "th": "ไปเที่ยวค่ะ นี่เป็นครั้งแรกที่ฉันจะไปอิตาลีค่ะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "That's exciting. I hope you have an amazing trip.",
+   "start": 25510,
+   "end": 28080,
+   "tr": {
+    "ur": "واہ، یہ تو کمال ہے! امید ہے آپ کا سفر بہت شاندار ہوگا۔",
+    "hi": "यह तो बढ़िया है! मुझे उम्मीद है आपकी यात्रा बहुत शानदार होगी।",
+    "ar": "هذا مثير! أتمنى لكِ رحلة رائعة.",
+    "zh": "真让人期待！希望你的旅途非常精彩！",
+    "es": "¡Qué emocionante! Espero que tengas un viaje increíble.",
+    "fr": "C'est génial ! Je vous souhaite un voyage magnifique.",
+    "tr": "Ne heyecan verici! Umarım harika bir seyahatiniz olur.",
+    "ja": "それは楽しみですね！素敵な旅になるといいですね。",
+    "ko": "설레겠네요! 멋진 여행 되세요.",
+    "it": "Che bello! Le auguro un viaggio fantastico.",
+    "de": "Das klingt aufregend. Ich wünsche Ihnen eine wunderschöne Reise.",
+    "pt": "Que legal! Espero que você tenha uma viagem incrível.",
+    "ru": "Как здорово! Желаю вам замечательной поездки.",
+    "vi": "Thú vị quá! Chúc bạn có một chuyến đi thật tuyệt.",
+    "th": "น่าตื่นเต้นจังเลยครับ ขอให้เป็นทริปที่ยอดเยี่ยมนะครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Thank you. You too.",
+   "start": 28410,
+   "end": 30080,
+   "tr": {
+    "ur": "شکریہ۔ آپ کا بھی۔",
+    "hi": "धन्यवाद। आपकी भी।",
+    "ar": "شكرًا لك. وأنتَ أيضًا.",
+    "zh": "谢谢，也祝你旅途愉快。",
+    "es": "Gracias. Tú también.",
+    "fr": "Merci. Vous aussi.",
+    "tr": "Teşekkür ederim. Size de iyi yolculuklar.",
+    "ja": "ありがとうございます。アダムさんも、良い旅を。",
+    "ko": "감사합니다. 아담 씨도요.",
+    "it": "Grazie, altrettanto.",
+    "de": "Danke. Ihnen auch.",
+    "pt": "Obrigada. Você também.",
+    "ru": "Спасибо. Вам тоже.",
+    "vi": "Cảm ơn bạn. Bạn cũng vậy nhé.",
+    "th": "ขอบคุณค่ะ คุณก็เหมือนกันค่ะ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "have a seat",
+   "meaning": "sit down, a polite invitation",
+   "tr": {
+    "ur": "تشریف رکھنا",
+    "hi": "बैठ जाइए",
+    "ar": "تفضّل بالجلوس",
+    "zh": "请坐",
+    "es": "tomar asiento",
+    "fr": "s'asseoir",
+    "tr": "oturmak",
+    "ja": "席に座る",
+    "ko": "앉다",
+    "it": "accomodarsi",
+    "de": "Platz nehmen",
+    "pt": "sentar-se",
+    "ru": "присесть",
+    "vi": "ngồi xuống",
+    "th": "นั่ง"
+   }
+  },
+  {
+   "word": "free",
+   "meaning": "not taken; available",
+   "tr": {
+    "ur": "خالی",
+    "hi": "ख़ाली",
+    "ar": "فارغ",
+    "zh": "空着的",
+    "es": "libre",
+    "fr": "libre",
+    "tr": "boş",
+    "ja": "空いている",
+    "ko": "비어 있는",
+    "it": "libero",
+    "de": "frei",
+    "pt": "livre",
+    "ru": "свободный",
+    "vi": "trống",
+    "th": "ว่าง"
+   }
+  },
+  {
+   "word": "by the way",
+   "meaning": "as an extra piece of information",
+   "tr": {
+    "ur": "ویسے",
+    "hi": "वैसे",
+    "ar": "بالمناسبة",
+    "zh": "对了",
+    "es": "por cierto",
+    "fr": "au fait",
+    "tr": "bu arada",
+    "ja": "ところで",
+    "ko": "참",
+    "it": "a proposito",
+    "de": "übrigens",
+    "pt": "aliás",
+    "ru": "кстати",
+    "vi": "nhân tiện",
+    "th": "ว่าแต่"
+   }
+  },
+  {
+   "word": "nice to meet you",
+   "meaning": "a greeting when you first meet someone",
+   "tr": {
+    "ur": "آپ سے مل کر خوشی ہوئی",
+    "hi": "आपसे मिलकर अच्छा लगा",
+    "ar": "تشرّفت بمعرفتك",
+    "zh": "很高兴认识你",
+    "es": "mucho gusto",
+    "fr": "enchanté(e)",
+    "tr": "tanıştığımıza memnun oldum",
+    "ja": "はじめまして",
+    "ko": "만나서 반가워요",
+    "it": "piacere di conoscerla",
+    "de": "Freut mich",
+    "pt": "prazer em conhecer você",
+    "ru": "очень приятно",
+    "vi": "rất vui được gặp bạn",
+    "th": "ยินดีที่ได้รู้จัก"
+   }
+  },
+  {
+   "word": "where are you from",
+   "meaning": "asks which country or city someone is from",
+   "tr": {
+    "ur": "آپ کہاں سے ہیں",
+    "hi": "आप कहाँ से हैं",
+    "ar": "من أين أنت",
+    "zh": "你是哪里人",
+    "es": "¿de dónde eres?",
+    "fr": "d'où venez-vous ?",
+    "tr": "nerelisiniz",
+    "ja": "どちらのご出身ですか",
+    "ko": "어디에서 오셨어요",
+    "it": "di dov'è",
+    "de": "woher kommen Sie",
+    "pt": "de onde você é",
+    "ru": "откуда вы",
+    "vi": "bạn đến từ đâu",
+    "th": "มาจากไหน"
+   }
+  },
+  {
+   "word": "what about you",
+   "meaning": "asks the same question back",
+   "tr": {
+    "ur": "اور آپ؟",
+    "hi": "और आप?",
+    "ar": "وأنت؟",
+    "zh": "你呢",
+    "es": "¿y tú?",
+    "fr": "et vous ?",
+    "tr": "ya siz",
+    "ja": "あなたは？",
+    "ko": "그쪽은요",
+    "it": "e lei?",
+    "de": "und Sie?",
+    "pt": "e você?",
+    "ru": "а вы?",
+    "vi": "còn bạn?",
+    "th": "แล้วคุณล่ะ"
+   }
+  },
+  {
+   "word": "traveling",
+   "meaning": "moving from place to place on a trip",
+   "tr": {
+    "ur": "سفر کرنا",
+    "hi": "सफ़र करना",
+    "ar": "يسافر",
+    "zh": "旅行",
+    "es": "viajar",
+    "fr": "voyager",
+    "tr": "seyahat etmek",
+    "ja": "旅行する",
+    "ko": "여행하다",
+    "it": "viaggiare",
+    "de": "reisen",
+    "pt": "viajar",
+    "ru": "путешествовать",
+    "vi": "đi du lịch",
+    "th": "เดินทาง"
+   }
+  },
+  {
+   "word": "vacation",
+   "meaning": "time off for fun, away from work",
+   "tr": {
+    "ur": "چھٹیاں",
+    "hi": "छुट्टियाँ",
+    "ar": "عطلة",
+    "zh": "度假",
+    "es": "vacaciones",
+    "fr": "vacances",
+    "tr": "tatil",
+    "ja": "休暇",
+    "ko": "휴가",
+    "it": "vacanza",
+    "de": "der Urlaub",
+    "pt": "férias",
+    "ru": "отпуск",
+    "vi": "kỳ nghỉ",
+    "th": "วันหยุดพักผ่อน"
+   }
+  },
+  {
+   "word": "for the first time",
+   "meaning": "the first time you do something",
+   "tr": {
+    "ur": "پہلی بار",
+    "hi": "पहली बार",
+    "ar": "لأول مرة",
+    "zh": "第一次",
+    "es": "por primera vez",
+    "fr": "pour la première fois",
+    "tr": "ilk kez",
+    "ja": "初めて",
+    "ko": "처음으로",
+    "it": "per la prima volta",
+    "de": "zum ersten Mal",
+    "pt": "pela primeira vez",
+    "ru": "впервые",
+    "vi": "lần đầu tiên",
+    "th": "เป็นครั้งแรก"
+   }
+  },
+  {
+   "word": "amazing",
+   "meaning": "extremely good; wonderful",
+   "tr": {
+    "ur": "شاندار",
+    "hi": "शानदार",
+    "ar": "رائعة",
+    "zh": "精彩的",
+    "es": "increíble",
+    "fr": "incroyable",
+    "tr": "harika",
+    "ja": "素晴らしい",
+    "ko": "멋진",
+    "it": "fantastico",
+    "de": "großartig",
+    "pt": "incrível",
+    "ru": "потрясающий",
+    "vi": "tuyệt vời",
+    "th": "ยอดเยี่ยม"
+   }
+  }
+ ]
+}

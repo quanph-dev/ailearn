@@ -1,0 +1,463 @@
+{
+ "scene": "🎫",
+ "colors": [
+  "#EAEFF3",
+  "#D2DCE5"
+ ],
+ "speakers": [
+  {
+   "name": "Emily",
+   "emoji": "👩",
+   "voice": "female"
+  },
+  {
+   "name": "David",
+   "emoji": "👨",
+   "voice": "male"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Good morning. I'd like to register for the English exam.",
+   "start": 0,
+   "end": 3890,
+   "tr": {
+    "ur": "صبح بخیر۔ میں انگلش کے امتحان کے لیے رجسٹریشن کروانا چاہتی ہوں۔",
+    "hi": "सुप्रभात। मैं अंग्रेज़ी की परीक्षा के लिए पंजीकरण कराना चाहती हूँ।",
+    "ar": "صباح الخير. أودّ أن أسجّل في امتحان اللغة الإنجليزية.",
+    "zh": "早上好。我想报名参加英语考试。",
+    "es": "Buenos días. Quisiera inscribirme en el examen de inglés.",
+    "fr": "Bonjour. Je voudrais m'inscrire à l'examen d'anglais.",
+    "tr": "Günaydın. İngilizce sınavına kayıt yaptırmak istiyorum.",
+    "ja": "おはようございます。英語の試験に申し込みたいのですが。",
+    "ko": "안녕하세요. 영어 시험에 등록하고 싶은데요.",
+    "it": "Buongiorno. Vorrei iscrivermi all'esame di inglese.",
+    "de": "Guten Morgen. Ich möchte mich zur Englischprüfung anmelden.",
+    "pt": "Bom dia. Gostaria de me inscrever na prova de inglês.",
+    "ru": "Доброе утро. Я хотела бы записаться на экзамен по английскому языку.",
+    "vi": "Chào buổi sáng. Tôi muốn đăng ký kỳ thi tiếng Anh.",
+    "th": "สวัสดีตอนเช้าค่ะ ฉันอยากสมัครสอบภาษาอังกฤษค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Certainly. Which date would you prefer?",
+   "start": 3930,
+   "end": 6600,
+   "tr": {
+    "ur": "بالکل۔ آپ کون سی تاریخ پسند کریں گی؟",
+    "hi": "बिल्कुल। आप कौन-सी तारीख़ पसंद करेंगी?",
+    "ar": "بالتأكيد. أيّ تاريخ تفضّلين؟",
+    "zh": "好的，您想选哪一天？",
+    "es": "Por supuesto. ¿Qué fecha prefiere?",
+    "fr": "Bien sûr. Quelle date préférez-vous ?",
+    "tr": "Tabii. Hangi tarihi tercih edersiniz?",
+    "ja": "かしこまりました。どの日をご希望ですか？",
+    "ko": "물론이죠. 어느 날짜로 하시겠어요?",
+    "it": "Certo. Quale data preferisce?",
+    "de": "Natürlich. Welches Datum wäre Ihnen am liebsten?",
+    "pt": "Claro. Qual data você prefere?",
+    "ru": "Конечно. Какую дату вы бы предпочли?",
+    "vi": "Dạ, tất nhiên rồi. Chị muốn chọn ngày nào ạ?",
+    "th": "แน่นอนครับ คุณอยากเลือกวันไหนครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Is next Friday available?",
+   "start": 7020,
+   "end": 8780,
+   "tr": {
+    "ur": "کیا اگلے جمعے کو جگہ دستیاب ہے؟",
+    "hi": "क्या अगले शुक्रवार को जगह उपलब्ध है?",
+    "ar": "هل الجمعة القادمة متاحة؟",
+    "zh": "下周五还有空位吗？",
+    "es": "¿Está disponible el próximo viernes?",
+    "fr": "Est-ce que vendredi prochain est disponible ?",
+    "tr": "Önümüzdeki cuma müsait mi?",
+    "ja": "来週の金曜日は空いていますか？",
+    "ko": "다음 주 금요일에 자리가 있나요?",
+    "it": "Venerdì prossimo è disponibile?",
+    "de": "Ist nächster Freitag noch frei?",
+    "pt": "Tem vaga na próxima sexta-feira?",
+    "ru": "На следующую пятницу есть свободные места?",
+    "vi": "Thứ Sáu tuần sau còn chỗ không ạ?",
+    "th": "มีที่ว่างวันศุกร์หน้าไหมคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Yes, we have a morning session at 9.",
+   "start": 9200,
+   "end": 11740,
+   "tr": {
+    "ur": "جی ہاں، ہمارے پاس صبح 9 بجے کا سیشن ہے۔",
+    "hi": "जी हाँ, हमारे पास सुबह 9 बजे का एक सत्र है।",
+    "ar": "نعم، لدينا جلسة صباحية الساعة 9.",
+    "zh": "有的，我们有上午9点的场次。",
+    "es": "Sí, tenemos una sesión por la mañana a las 9.",
+    "fr": "Oui, nous avons une séance le matin à 9 heures.",
+    "tr": "Evet, sabah saat 9'da bir oturumumuz var.",
+    "ja": "はい、午前9時からの回がございます。",
+    "ko": "네, 오전 9시 회차가 있습니다.",
+    "it": "Sì, abbiamo una sessione al mattino alle 9.",
+    "de": "Ja, wir haben einen Termin am Vormittag um 9 Uhr.",
+    "pt": "Sim, temos uma sessão de manhã às 9.",
+    "ru": "Да, есть экзамен утром, в 9 часов.",
+    "vi": "Dạ có, có ca sáng lúc 9 giờ ạ.",
+    "th": "มีครับ เรามีรอบเช้าตอน 9 โมงครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Great. How much is the exam fee?",
+   "start": 12050,
+   "end": 14970,
+   "tr": {
+    "ur": "بہت اچھا۔ امتحان کی فیس کتنی ہے؟",
+    "hi": "बढ़िया। परीक्षा शुल्क कितना है?",
+    "ar": "رائع. كم رسوم الامتحان؟",
+    "zh": "太好了。考试费是多少？",
+    "es": "Genial. ¿Cuánto es la tarifa del examen?",
+    "fr": "Très bien. Combien coûtent les frais d'examen ?",
+    "tr": "Harika. Sınav ücreti ne kadar?",
+    "ja": "わかりました。受験料はいくらですか？",
+    "ko": "좋아요. 시험 응시료는 얼마예요?",
+    "it": "Benissimo. Quanto costa la tassa d'esame?",
+    "de": "Gut. Wie hoch ist die Prüfungsgebühr?",
+    "pt": "Ótimo. Quanto é a taxa da prova?",
+    "ru": "Отлично. Сколько стоит экзамен?",
+    "vi": "Vậy tốt quá. Lệ phí thi là bao nhiêu ạ?",
+    "th": "ดีค่ะ ค่าสอบเท่าไหร่คะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "It's $100. Please bring your ID.",
+   "start": 15430,
+   "end": 18350,
+   "tr": {
+    "ur": "فیس 100 ڈالر ہے۔ براہِ کرم اپنا شناختی کارڈ ساتھ لے آئیے گا۔",
+    "hi": "शुल्क 100 डॉलर है। कृपया अपना पहचान पत्र साथ लाइए।",
+    "ar": "الرسوم 100 دولار. يُرجى إحضار بطاقة هويتك معك.",
+    "zh": "费用是100美元。请带上您的身份证件。",
+    "es": "Cuesta 100 dólares. Por favor, traiga su documento de identidad.",
+    "fr": "C'est 100 dollars. Veuillez apporter votre pièce d'identité.",
+    "tr": "100 dolar. Lütfen kimliğinizi getirin.",
+    "ja": "100ドルです。身分証明書をお持ちください。",
+    "ko": "100달러예요. 신분증을 꼭 챙겨 오세요.",
+    "it": "Costa 100 dollari. Porti il suo documento d'identità.",
+    "de": "Es kostet 100 Dollar. Bringen Sie bitte Ihren Ausweis mit.",
+    "pt": "São 100 dólares. Por favor, traga seu documento de identidade.",
+    "ru": "Стоимость — 100 долларов. Пожалуйста, возьмите с собой удостоверение личности.",
+    "vi": "Lệ phí là 100 đô la. Chị vui lòng mang theo giấy tờ tùy thân ạ.",
+    "th": "ค่าสอบ 100 ดอลลาร์ครับ กรุณานำบัตรประจำตัวมาด้วยครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Okay. What happens after I register?",
+   "start": 18730,
+   "end": 21450,
+   "tr": {
+    "ur": "ٹھیک ہے۔ رجسٹر کرنے کے بعد کیا ہوتا ہے؟",
+    "hi": "ठीक है। पंजीकरण के बाद क्या होता है?",
+    "ar": "حسنًا. ماذا يحدث بعد التسجيل؟",
+    "zh": "好的。报名之后接下来是什么流程？",
+    "es": "De acuerdo. ¿Qué pasa después de inscribirme?",
+    "fr": "D'accord. Que se passe-t-il après mon inscription ?",
+    "tr": "Tamam. Kayıt yaptırdıktan sonra ne olacak?",
+    "ja": "わかりました。申し込んだ後はどうなりますか？",
+    "ko": "알겠어요. 등록하고 나면 어떻게 되나요?",
+    "it": "Va bene. Che cosa succede dopo che mi sono iscritta?",
+    "de": "Okay. Was passiert, nachdem ich mich angemeldet habe?",
+    "pt": "Certo. O que acontece depois que eu me inscrevo?",
+    "ru": "Хорошо. Что будет после того, как я запишусь?",
+    "vi": "Dạ vâng. Đăng ký xong thì sẽ thế nào ạ?",
+    "th": "โอเคค่ะ หลังจากสมัครแล้วจะเป็นยังไงคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "You'll get a confirmation email with the exam details.",
+   "start": 21730,
+   "end": 24640,
+   "tr": {
+    "ur": "آپ کو امتحان کی تفصیلات کے ساتھ ایک تصدیقی ای میل ملے گی۔",
+    "hi": "आपको परीक्षा के विवरण के साथ एक पुष्टि ईमेल मिलेगा।",
+    "ar": "ستتلقّين رسالة بريد إلكتروني تأكيدية تتضمّن تفاصيل الامتحان.",
+    "zh": "您会收到一封确认邮件，上面有考试的详细信息。",
+    "es": "Recibirá un correo de confirmación con los detalles del examen.",
+    "fr": "Vous recevrez un e-mail de confirmation avec les détails de l'examen.",
+    "tr": "Sınavın ayrıntılarını içeren bir onay e-postası alacaksınız.",
+    "ja": "試験の詳細が書かれた確認メールが届きます。",
+    "ko": "시험 세부 사항이 담긴 확인 이메일을 받으실 거예요.",
+    "it": "Riceverà un'email di conferma con i dettagli dell'esame.",
+    "de": "Sie bekommen eine Bestätigungs-E-Mail mit den Prüfungsdetails.",
+    "pt": "Você vai receber um e-mail de confirmação com os detalhes da prova.",
+    "ru": "Вам придёт письмо с подтверждением и подробностями об экзамене.",
+    "vi": "Chị sẽ nhận được email xác nhận có kèm thông tin chi tiết kỳ thi ạ.",
+    "th": "คุณจะได้รับอีเมลยืนยันพร้อมรายละเอียดการสอบครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Perfect. Thank you for your help.",
+   "start": 24960,
+   "end": 27340,
+   "tr": {
+    "ur": "بہت خوب۔ آپ کی مدد کا شکریہ۔",
+    "hi": "बहुत बढ़िया। आपकी मदद के लिए धन्यवाद।",
+    "ar": "ممتاز. شكرًا لمساعدتك.",
+    "zh": "太好了，谢谢您的帮助。",
+    "es": "Perfecto. Gracias por su ayuda.",
+    "fr": "Parfait. Merci pour votre aide.",
+    "tr": "Mükemmel. Yardımınız için teşekkür ederim.",
+    "ja": "よかったです。助かりました、ありがとうございます。",
+    "ko": "좋아요. 도와주셔서 감사합니다.",
+    "it": "Perfetto. Grazie per il suo aiuto.",
+    "de": "Perfekt. Vielen Dank für Ihre Hilfe.",
+    "pt": "Perfeito. Obrigada pela ajuda.",
+    "ru": "Отлично. Спасибо вам за помощь.",
+    "vi": "Tuyệt quá ạ. Cảm ơn anh đã giúp đỡ.",
+    "th": "ดีมากเลยค่ะ ขอบคุณที่ช่วยนะคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "You're welcome. Good luck with your exam.",
+   "start": 27620,
+   "end": 30080,
+   "tr": {
+    "ur": "کوئی بات نہیں۔ آپ کے امتحان کے لیے نیک خواہشات۔",
+    "hi": "कोई बात नहीं। आपकी परीक्षा के लिए शुभकामनाएँ।",
+    "ar": "العفو. بالتوفيق في امتحانك.",
+    "zh": "不客气。祝您考试顺利。",
+    "es": "De nada. Mucha suerte en su examen.",
+    "fr": "Je vous en prie. Bonne chance pour votre examen.",
+    "tr": "Rica ederim. Sınavınızda başarılar dilerim.",
+    "ja": "どういたしまして。試験、頑張ってください。",
+    "ko": "천만에요. 시험 잘 보세요.",
+    "it": "Prego. Buona fortuna per il suo esame.",
+    "de": "Gern geschehen. Viel Erfolg bei Ihrer Prüfung.",
+    "pt": "De nada. Boa sorte na sua prova.",
+    "ru": "Пожалуйста. Удачи вам на экзамене.",
+    "vi": "Không có gì ạ. Chúc chị thi tốt nhé.",
+    "th": "ยินดีครับ ขอให้โชคดีในการสอบนะครับ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "register",
+   "meaning": "officially sign up for something, like an exam",
+   "tr": {
+    "ur": "رجسٹریشن کروانا",
+    "hi": "पंजीकरण कराना",
+    "ar": "يسجّل",
+    "zh": "报名",
+    "es": "inscribirse",
+    "fr": "s'inscrire",
+    "tr": "kayıt yaptırmak",
+    "ja": "申し込む",
+    "ko": "등록하다",
+    "it": "iscriversi",
+    "de": "sich anmelden",
+    "pt": "se inscrever",
+    "ru": "записаться",
+    "vi": "đăng ký",
+    "th": "สมัคร"
+   }
+  },
+  {
+   "word": "certainly",
+   "meaning": "a polite way to say yes",
+   "tr": {
+    "ur": "بالکل",
+    "hi": "बिल्कुल",
+    "ar": "بالتأكيد",
+    "zh": "当然",
+    "es": "por supuesto",
+    "fr": "bien sûr",
+    "tr": "tabii",
+    "ja": "かしこまりました",
+    "ko": "물론이죠",
+    "it": "certo",
+    "de": "natürlich",
+    "pt": "claro",
+    "ru": "конечно",
+    "vi": "tất nhiên",
+    "th": "แน่นอน"
+   }
+  },
+  {
+   "word": "date",
+   "meaning": "the day of the month when something happens",
+   "tr": {
+    "ur": "تاریخ",
+    "hi": "तारीख़",
+    "ar": "تاريخ",
+    "zh": "日期",
+    "es": "fecha",
+    "fr": "date",
+    "tr": "tarih",
+    "ja": "日にち",
+    "ko": "날짜",
+    "it": "data",
+    "de": "das Datum",
+    "pt": "data",
+    "ru": "дата",
+    "vi": "ngày",
+    "th": "วันที่"
+   }
+  },
+  {
+   "word": "prefer",
+   "meaning": "like or want one choice more than another",
+   "tr": {
+    "ur": "ترجیح دینا",
+    "hi": "पसंद करना",
+    "ar": "يفضّل",
+    "zh": "更喜欢",
+    "es": "preferir",
+    "fr": "préférer",
+    "tr": "tercih etmek",
+    "ja": "希望する",
+    "ko": "선호하다",
+    "it": "preferire",
+    "de": "bevorzugen",
+    "pt": "preferir",
+    "ru": "предпочитать",
+    "vi": "thích hơn",
+    "th": "ชอบมากกว่า"
+   }
+  },
+  {
+   "word": "available",
+   "meaning": "free to be booked or used",
+   "tr": {
+    "ur": "دستیاب",
+    "hi": "उपलब्ध",
+    "ar": "متاح",
+    "zh": "有空位",
+    "es": "disponible",
+    "fr": "disponible",
+    "tr": "müsait",
+    "ja": "空いている",
+    "ko": "이용 가능한",
+    "it": "disponibile",
+    "de": "frei",
+    "pt": "disponível",
+    "ru": "свободный",
+    "vi": "còn trống",
+    "th": "ว่าง"
+   }
+  },
+  {
+   "word": "exam fee",
+   "meaning": "the money you pay to take a test",
+   "tr": {
+    "ur": "امتحان کی فیس",
+    "hi": "परीक्षा शुल्क",
+    "ar": "رسوم الامتحان",
+    "zh": "考试费",
+    "es": "tarifa del examen",
+    "fr": "frais d'examen",
+    "tr": "sınav ücreti",
+    "ja": "受験料",
+    "ko": "응시료",
+    "it": "tassa d'esame",
+    "de": "die Prüfungsgebühr",
+    "pt": "taxa da prova",
+    "ru": "стоимость экзамена",
+    "vi": "lệ phí thi",
+    "th": "ค่าสอบ"
+   }
+  },
+  {
+   "word": "ID",
+   "meaning": "a card or document that shows who you are",
+   "tr": {
+    "ur": "شناختی کارڈ",
+    "hi": "पहचान पत्र",
+    "ar": "بطاقة الهوية",
+    "zh": "身份证件",
+    "es": "documento de identidad",
+    "fr": "pièce d'identité",
+    "tr": "kimlik",
+    "ja": "身分証明書",
+    "ko": "신분증",
+    "it": "documento d'identità",
+    "de": "der Ausweis",
+    "pt": "documento de identidade",
+    "ru": "удостоверение личности",
+    "vi": "giấy tờ tùy thân",
+    "th": "บัตรประจำตัว"
+   }
+  },
+  {
+   "word": "confirmation email",
+   "meaning": "an email that says your booking is done",
+   "tr": {
+    "ur": "تصدیقی ای میل",
+    "hi": "पुष्टि ईमेल",
+    "ar": "بريد إلكتروني تأكيدي",
+    "zh": "确认邮件",
+    "es": "correo de confirmación",
+    "fr": "e-mail de confirmation",
+    "tr": "onay e-postası",
+    "ja": "確認メール",
+    "ko": "확인 이메일",
+    "it": "email di conferma",
+    "de": "die Bestätigungs-E-Mail",
+    "pt": "e-mail de confirmação",
+    "ru": "письмо с подтверждением",
+    "vi": "email xác nhận",
+    "th": "อีเมลยืนยัน"
+   }
+  },
+  {
+   "word": "details",
+   "meaning": "exact information, like the time and place",
+   "tr": {
+    "ur": "تفصیلات",
+    "hi": "विवरण",
+    "ar": "تفاصيل",
+    "zh": "详细信息",
+    "es": "detalles",
+    "fr": "détails",
+    "tr": "ayrıntılar",
+    "ja": "詳細",
+    "ko": "세부 사항",
+    "it": "dettagli",
+    "de": "die Details",
+    "pt": "detalhes",
+    "ru": "подробности",
+    "vi": "thông tin chi tiết",
+    "th": "รายละเอียด"
+   }
+  },
+  {
+   "word": "good luck",
+   "meaning": "what you say to wish someone success",
+   "tr": {
+    "ur": "نیک خواہشات",
+    "hi": "शुभकामनाएँ",
+    "ar": "بالتوفيق",
+    "zh": "祝你好运",
+    "es": "buena suerte",
+    "fr": "bonne chance",
+    "tr": "başarılar",
+    "ja": "頑張って",
+    "ko": "행운을 빌어요",
+    "it": "buona fortuna",
+    "de": "viel Erfolg",
+    "pt": "boa sorte",
+    "ru": "удачи",
+    "vi": "chúc may mắn",
+    "th": "ขอให้โชคดี"
+   }
+  }
+ ]
+}

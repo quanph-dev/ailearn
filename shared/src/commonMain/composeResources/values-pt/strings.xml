@@ -23,4 +23,19 @@
     <string name="ui_are_you_sure_you_want_to_exit_the_app_now">Tem certeza de que deseja sair do aplicativo agora?</string>
     <string name="ui_no">Não</string>
     <string name="ui_yes_exit">Sim, sair</string>
+    <string name="fo_onboarding_button_next">Próximo</string>
+    <string name="fo_onboarding_button_start">Começar</string>
+    <string name="fo_onboarding_description_1">Converse com seu tutor pessoal de IA e aprenda qualquer idioma de forma natural, a qualquer hora.</string>
+    <string name="fo_onboarding_description_2">Pratique a pronúncia e receba feedback instantâneo sobre cada palavra.</string>
+    <string name="fo_onboarding_description_3">Mantenha sequências diárias e acompanhe seu progresso a cada passo.</string>
+    <string name="fo_onboarding_swipe_hint">Deslize para continuar</string>
+    <string name="fo_onboarding_title_1">Aprenda com IA</string>
+    <string name="fo_onboarding_title_2">Fale com confiança</string>
+    <string name="fo_onboarding_title_3">Alcance seus objetivos</string>
+    <string name="fo_survey_continue">Começar a aprender</string>
+    <string name="fo_survey_skip">Pular</string>
+    <string name="fo_survey_subtitle">Escolha um para começar a aprender</string>
+    <string name="fo_survey_title">Que idioma você quer aprender?</string>
+    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_describe_load_ad">(Esta ação pode conter anúncios)</string>
 </resources>

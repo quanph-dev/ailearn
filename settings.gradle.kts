@@ -1,4 +1,4 @@
-rootProject.name = "BaseKMP"
+rootProject.name = "ailearn"
 
 pluginManagement {
     repositories {

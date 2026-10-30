@@ -1,0 +1,463 @@
+{
+ "scene": "🌤️",
+ "colors": [
+  "#E3EEF6",
+  "#C8DDEC"
+ ],
+ "speakers": [
+  {
+   "name": "Grace",
+   "emoji": "👩",
+   "voice": "female"
+  },
+  {
+   "name": "Henry",
+   "emoji": "👨",
+   "voice": "male"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Good morning, Henry. Lovely day, isn't it?",
+   "start": 0,
+   "end": 2550,
+   "tr": {
+    "ur": "صبح بخیر، ہنری۔ کتنا خوبصورت دن ہے، ہے نا؟",
+    "hi": "सुप्रभात, हेनरी। कितना सुहावना दिन है, है ना?",
+    "ar": "صباح الخير يا هنري. يوم جميل، أليس كذلك؟",
+    "zh": "早上好，亨利。今天天气真好，是吧？",
+    "es": "Buenos días, Henry. Qué día tan bonito, ¿verdad?",
+    "fr": "Bonjour, Henry. Quelle belle journée, n'est-ce pas ?",
+    "tr": "Günaydın Henry. Ne güzel bir gün, değil mi?",
+    "ja": "おはようございます、ヘンリーさん。いい天気ですね。",
+    "ko": "안녕하세요, 헨리 씨. 날씨 정말 좋죠?",
+    "it": "Buongiorno, Henry. Che bella giornata, vero?",
+    "de": "Guten Morgen, Henry. Was für ein schöner Tag, nicht wahr?",
+    "pt": "Bom dia, Henry. Que dia lindo, não é?",
+    "ru": "Доброе утро, Генри. Какой чудесный день, вы не находите?",
+    "vi": "Chào buổi sáng, Henry. Hôm nay đẹp trời quá, phải không?",
+    "th": "สวัสดีตอนเช้าค่ะ คุณเฮนรี่ วันนี้อากาศดีจังเลยนะคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Morning, Grace. Yes, it's really nice today.",
+   "start": 2730,
+   "end": 4710,
+   "tr": {
+    "ur": "صبح بخیر، گریس۔ جی ہاں، آج واقعی بہت اچھا دن ہے۔",
+    "hi": "सुप्रभात, ग्रेस। हाँ, आज सच में बहुत अच्छा दिन है।",
+    "ar": "صباح النور يا غريس. نعم، الجو جميل جدًا اليوم.",
+    "zh": "早上好，格蕾丝。是啊，今天天气真的很不错。",
+    "es": "Buenos días, Grace. Sí, hoy hace muy buen tiempo.",
+    "fr": "Bonjour, Grace. Oui, il fait vraiment beau aujourd'hui.",
+    "tr": "Günaydın Grace. Evet, bugün hava gerçekten çok güzel.",
+    "ja": "おはようございます、グレースさん。ええ、今日は本当に気持ちいいですね。",
+    "ko": "안녕하세요, 그레이스 씨. 네, 오늘 정말 날씨가 좋네요.",
+    "it": "Buongiorno, Grace. Sì, oggi c'è davvero un bel tempo.",
+    "de": "Guten Morgen, Grace. Ja, heute ist es wirklich schön.",
+    "pt": "Bom dia, Grace. Sim, o dia está muito bonito hoje.",
+    "ru": "Доброе утро, Грейс. Да, сегодня и правда прекрасная погода.",
+    "vi": "Chào buổi sáng, Grace. Vâng, hôm nay trời đẹp thật đấy.",
+    "th": "สวัสดีตอนเช้าครับ คุณเกรซ ใช่ครับ วันนี้อากาศดีมากเลยครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "I love this sunshine. It's so pleasant.",
+   "start": 5110,
+   "end": 7440,
+   "tr": {
+    "ur": "مجھے یہ دھوپ بہت پسند ہے۔ کتنی خوشگوار ہے۔",
+    "hi": "मुझे यह धूप बहुत पसंद है। कितनी सुहावनी है!",
+    "ar": "أحب أشعة الشمس هذه. إنها لطيفة جدًا.",
+    "zh": "我很喜欢这阳光，真舒服。",
+    "es": "Me encanta este sol. Es tan agradable.",
+    "fr": "J'adore ce soleil. C'est tellement agréable.",
+    "tr": "Bu güneşi çok seviyorum. Çok hoş.",
+    "ja": "この日差しが大好きです。とても心地いいですね。",
+    "ko": "이 햇살 정말 좋아요. 너무 기분 좋네요.",
+    "it": "Adoro questo sole. È così piacevole.",
+    "de": "Ich liebe diesen Sonnenschein. Das ist so angenehm.",
+    "pt": "Eu adoro este sol. Está tão agradável.",
+    "ru": "Обожаю такое солнце. Так приятно.",
+    "vi": "Mình rất thích ánh nắng này. Dễ chịu quá.",
+    "th": "ฉันชอบแดดแบบนี้มากเลยค่ะ รู้สึกสบายจังเลยค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Me too, but it's going to rain later.",
+   "start": 7790,
+   "end": 9680,
+   "tr": {
+    "ur": "مجھے بھی۔ لیکن بعد میں بارش ہونے والی ہے۔",
+    "hi": "मुझे भी। लेकिन बाद में बारिश होने वाली है।",
+    "ar": "وأنا أيضًا، لكنها ستمطر لاحقًا.",
+    "zh": "我也是。不过待会儿要下雨。",
+    "es": "A mí también, pero más tarde va a llover.",
+    "fr": "Moi aussi, mais il va pleuvoir plus tard.",
+    "tr": "Ben de öyle, ama sonra yağmur yağacak.",
+    "ja": "僕もです。でも、あとで雨が降るみたいですよ。",
+    "ko": "저도요. 그런데 이따가 비가 온다고 하던데요.",
+    "it": "Anch'io, ma più tardi pioverà.",
+    "de": "Ich auch, aber später soll es regnen.",
+    "pt": "Eu também, mas mais tarde vai chover.",
+    "ru": "Я тоже, но позже, говорят, пойдёт дождь.",
+    "vi": "Mình cũng vậy, nhưng lát nữa trời sẽ mưa đấy.",
+    "th": "ผมก็เหมือนกันครับ แต่เดี๋ยวฝนจะตกนะครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Oh, really? I hope it's sunny this weekend.",
+   "start": 9970,
+   "end": 12440,
+   "tr": {
+    "ur": "اوہ، واقعی؟ میں امید کرتی ہوں کہ اس ہفتے کے آخر میں دھوپ نکلے۔",
+    "hi": "अरे, सच में? मुझे उम्मीद है कि इस सप्ताहांत धूप निकलेगी।",
+    "ar": "أوه، حقًا؟ آمل أن يكون الجو مشمسًا في عطلة نهاية الأسبوع.",
+    "zh": "哦，真的吗？我希望这个周末是晴天。",
+    "es": "¿Ah, sí? Espero que este fin de semana haga sol.",
+    "fr": "Ah bon ? J'espère qu'il fera beau ce week-end.",
+    "tr": "Ah, gerçekten mi? Umarım bu hafta sonu hava güneşli geçer.",
+    "ja": "えっ、そうなんですか？今週末は晴れるといいですね。",
+    "ko": "어머, 정말요? 이번 주말에는 날씨가 맑았으면 좋겠어요.",
+    "it": "Oh, davvero? Spero che questo fine settimana ci sia il sole.",
+    "de": "Oh, wirklich? Ich hoffe, am Wochenende scheint die Sonne.",
+    "pt": "Ah, é? Espero que neste fim de semana faça sol.",
+    "ru": "Ой, правда? Надеюсь, в эти выходные будет солнечно.",
+    "vi": "Ồ, thật à? Mình hy vọng cuối tuần này trời nắng.",
+    "th": "อ๋อ จริงเหรอคะ หวังว่าสุดสัปดาห์นี้แดดจะออกนะคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Same here. I'm planning to go hiking.",
+   "start": 12520,
+   "end": 14790,
+   "tr": {
+    "ur": "میری بھی یہی امید ہے۔ میرا ہائیکنگ پر جانے کا ارادہ ہے۔",
+    "hi": "मैं भी यही उम्मीद कर रहा हूँ। मेरा हाइकिंग पर जाने का प्लान है।",
+    "ar": "وأنا أيضًا. أخطط للذهاب في رحلة مشي.",
+    "zh": "我也是。我打算去徒步。",
+    "es": "Yo también. Tengo pensado ir de senderismo.",
+    "fr": "Moi aussi. Je prévois de faire de la randonnée.",
+    "tr": "Ben de öyle umuyorum. Doğa yürüyüşüne çıkmayı planlıyorum.",
+    "ja": "僕もそう願ってます。ハイキングに行く予定なんです。",
+    "ko": "저도요. 하이킹 갈 계획이에요.",
+    "it": "Anch'io. Ho intenzione di fare un'escursione.",
+    "de": "Ich auch. Ich habe vor, wandern zu gehen.",
+    "pt": "Eu também. Estou planejando fazer uma trilha.",
+    "ru": "Я тоже на это надеюсь. Я собираюсь пойти в поход.",
+    "vi": "Mình cũng vậy. Mình định đi bộ đường dài.",
+    "th": "ผมก็เหมือนกันครับ ผมวางแผนจะไปเดินป่าครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "That sounds lovely. I might visit the park.",
+   "start": 15470,
+   "end": 18360,
+   "tr": {
+    "ur": "واہ، یہ تو بہت اچھا ہے۔ شاید میں پارک کا چکر لگا لوں۔",
+    "hi": "वाह, यह तो बहुत बढ़िया है। शायद मैं पार्क घूम आऊँ।",
+    "ar": "يبدو ذلك رائعًا. ربما أزور الحديقة.",
+    "zh": "听起来很不错。我可能会去公园逛逛。",
+    "es": "Suena genial. Quizás visite el parque.",
+    "fr": "Ça a l'air génial. J'irai peut-être au parc.",
+    "tr": "Kulağa çok hoş geliyor. Belki parka uğrarım.",
+    "ja": "それは素敵ですね。公園に寄ってみようかな。",
+    "ko": "정말 좋겠네요. 저는 공원에 가 볼까 해요.",
+    "it": "Sembra bellissimo. Potrei passare al parco.",
+    "de": "Das klingt schön. Vielleicht gehe ich in den Park.",
+    "pt": "Parece ótimo. Talvez eu vá ao parque.",
+    "ru": "Как здорово. А я, может быть, схожу в парк.",
+    "vi": "Nghe tuyệt quá. Có lẽ mình sẽ ghé công viên.",
+    "th": "ฟังดูดีจังเลยค่ะ ฉันอาจจะไปสวนสาธารณะค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Hopefully the weather stays nice.",
+   "start": 18560,
+   "end": 20620,
+   "tr": {
+    "ur": "امید ہے کہ موسم ایسا ہی خوشگوار رہے۔",
+    "hi": "उम्मीद है कि मौसम ऐसा ही अच्छा बना रहे।",
+    "ar": "نتمنى أن يبقى الطقس جميلًا.",
+    "zh": "希望天气能一直这么好。",
+    "es": "Ojalá el tiempo siga bueno.",
+    "fr": "Espérons que le temps reste beau.",
+    "tr": "Umarım hava böyle güzel kalır.",
+    "ja": "このいい天気が続くといいですね。",
+    "ko": "날씨가 계속 이렇게 좋으면 좋겠네요.",
+    "it": "Speriamo che il tempo resti bello.",
+    "de": "Hoffentlich bleibt das Wetter schön.",
+    "pt": "Tomara que o tempo continue bom.",
+    "ru": "Надеюсь, погода не испортится.",
+    "vi": "Hy vọng thời tiết cứ đẹp thế này.",
+    "th": "หวังว่าอากาศจะดีแบบนี้ต่อไปนะครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Yes. Oh, look. Here's our bus.",
+   "start": 21150,
+   "end": 23940,
+   "tr": {
+    "ur": "جی ہاں۔ ارے، دیکھیے! ہماری بس آ گئی۔",
+    "hi": "हाँ। अरे, देखिए! हमारी बस आ गई।",
+    "ar": "نعم. آه، انظر! ها هي حافلتنا.",
+    "zh": "是啊。哎，你看，我们的公交车来了。",
+    "es": "Sí. ¡Mira! Ahí viene nuestro autobús.",
+    "fr": "Oui. Oh, regarde ! Voilà notre bus.",
+    "tr": "Evet. Ah, bakın, otobüsümüz geldi.",
+    "ja": "そうですね。あ、見てください。バスが来ましたよ。",
+    "ko": "네. 아, 보세요. 저기 버스 왔네요.",
+    "it": "Sì. Oh, guarda! Ecco il nostro autobus.",
+    "de": "Ja. Oh, schau mal. Da kommt unser Bus.",
+    "pt": "Sim. Olha, lá vem o nosso ônibus.",
+    "ru": "Да. Ой, смотрите. Вот наш автобус.",
+    "vi": "Ừ. Ồ, nhìn kìa. Xe buýt của chúng ta tới rồi.",
+    "th": "ใช่ค่ะ อุ๊ย ดูนั่นสิ รถเมล์มาแล้วค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Perfect timing. Let's get ready.",
+   "start": 24680,
+   "end": 30080,
+   "tr": {
+    "ur": "عین وقت پر۔ آئیے، تیار ہو جاتے ہیں۔",
+    "hi": "एकदम सही समय पर। चलिए, तैयार हो जाते हैं।",
+    "ar": "توقيت مثالي. هيا نستعد.",
+    "zh": "来得正是时候，我们准备一下吧。",
+    "es": "Justo a tiempo. Preparémonos.",
+    "fr": "Pile au bon moment ! Préparons-nous.",
+    "tr": "Tam zamanında. Hazırlanalım.",
+    "ja": "ちょうどいいタイミングですね。準備しましょう。",
+    "ko": "타이밍 딱 맞네요. 준비해요.",
+    "it": "Tempismo perfetto. Prepariamoci.",
+    "de": "Perfektes Timing. Dann machen wir uns fertig.",
+    "pt": "Chegou na hora certa. Vamos nos preparar.",
+    "ru": "Как раз вовремя. Давайте собираться.",
+    "vi": "Đúng lúc quá. Chuẩn bị thôi.",
+    "th": "มาพอดีเลยครับ เตรียมตัวกันเลยครับ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "weather",
+   "meaning": "the conditions outside, like sun, rain or wind",
+   "tr": {
+    "ur": "موسم",
+    "hi": "मौसम",
+    "ar": "الطقس",
+    "zh": "天气",
+    "es": "tiempo",
+    "fr": "temps",
+    "tr": "hava",
+    "ja": "天気",
+    "ko": "날씨",
+    "it": "tempo",
+    "de": "das Wetter",
+    "pt": "tempo",
+    "ru": "погода",
+    "vi": "thời tiết",
+    "th": "อากาศ"
+   }
+  },
+  {
+   "word": "lovely",
+   "meaning": "very nice or beautiful",
+   "tr": {
+    "ur": "خوبصورت",
+    "hi": "सुंदर",
+    "ar": "جميل",
+    "zh": "美好的",
+    "es": "bonito",
+    "fr": "beau",
+    "tr": "güzel",
+    "ja": "素敵な",
+    "ko": "멋진",
+    "it": "bello",
+    "de": "schön",
+    "pt": "lindo",
+    "ru": "чудесный",
+    "vi": "đẹp",
+    "th": "สวยงาม"
+   }
+  },
+  {
+   "word": "sunshine",
+   "meaning": "bright light and warmth from the sun",
+   "tr": {
+    "ur": "دھوپ",
+    "hi": "धूप",
+    "ar": "أشعة الشمس",
+    "zh": "阳光",
+    "es": "sol",
+    "fr": "soleil",
+    "tr": "güneş ışığı",
+    "ja": "日差し",
+    "ko": "햇살",
+    "it": "sole",
+    "de": "der Sonnenschein",
+    "pt": "sol",
+    "ru": "солнечный свет",
+    "vi": "ánh nắng",
+    "th": "แสงแดด"
+   }
+  },
+  {
+   "word": "pleasant",
+   "meaning": "nice and enjoyable",
+   "tr": {
+    "ur": "خوشگوار",
+    "hi": "सुहावना",
+    "ar": "لطيف",
+    "zh": "舒服",
+    "es": "agradable",
+    "fr": "agréable",
+    "tr": "hoş",
+    "ja": "心地よい",
+    "ko": "기분 좋은",
+    "it": "piacevole",
+    "de": "angenehm",
+    "pt": "agradável",
+    "ru": "приятный",
+    "vi": "dễ chịu",
+    "th": "สบาย"
+   }
+  },
+  {
+   "word": "rain",
+   "meaning": "when water falls from the clouds",
+   "tr": {
+    "ur": "بارش ہونا",
+    "hi": "बारिश होना",
+    "ar": "تُمطر",
+    "zh": "下雨",
+    "es": "llover",
+    "fr": "pleuvoir",
+    "tr": "yağmur yağmak",
+    "ja": "雨が降る",
+    "ko": "비가 오다",
+    "it": "piovere",
+    "de": "regnen",
+    "pt": "chover",
+    "ru": "идёт дождь",
+    "vi": "trời mưa",
+    "th": "ฝนตก"
+   }
+  },
+  {
+   "word": "sunny",
+   "meaning": "with a lot of sunshine and no rain",
+   "tr": {
+    "ur": "دھوپ والا",
+    "hi": "धूप वाला",
+    "ar": "مشمس",
+    "zh": "晴朗",
+    "es": "soleado",
+    "fr": "ensoleillé",
+    "tr": "güneşli",
+    "ja": "晴れた",
+    "ko": "맑은",
+    "it": "soleggiato",
+    "de": "sonnig",
+    "pt": "ensolarado",
+    "ru": "солнечный",
+    "vi": "có nắng",
+    "th": "แดดออก"
+   }
+  },
+  {
+   "word": "weekend",
+   "meaning": "Saturday and Sunday",
+   "tr": {
+    "ur": "ویک اینڈ",
+    "hi": "सप्ताहांत",
+    "ar": "عطلة نهاية الأسبوع",
+    "zh": "周末",
+    "es": "fin de semana",
+    "fr": "week-end",
+    "tr": "hafta sonu",
+    "ja": "週末",
+    "ko": "주말",
+    "it": "fine settimana",
+    "de": "das Wochenende",
+    "pt": "fim de semana",
+    "ru": "выходные",
+    "vi": "cuối tuần",
+    "th": "สุดสัปดาห์"
+   }
+  },
+  {
+   "word": "hiking",
+   "meaning": "going for long walks in nature or the mountains",
+   "tr": {
+    "ur": "ہائیکنگ",
+    "hi": "हाइकिंग",
+    "ar": "المشي لمسافات طويلة",
+    "zh": "徒步",
+    "es": "senderismo",
+    "fr": "randonnée",
+    "tr": "doğa yürüyüşü",
+    "ja": "ハイキング",
+    "ko": "하이킹",
+    "it": "escursionismo",
+    "de": "das Wandern",
+    "pt": "trilha",
+    "ru": "поход",
+    "vi": "đi bộ đường dài",
+    "th": "เดินป่า"
+   }
+  },
+  {
+   "word": "perfect timing",
+   "meaning": "happening at exactly the right moment",
+   "tr": {
+    "ur": "عین وقت پر",
+    "hi": "एकदम सही समय पर",
+    "ar": "توقيت مثالي",
+    "zh": "来得正好",
+    "es": "justo a tiempo",
+    "fr": "pile au bon moment",
+    "tr": "tam zamanında",
+    "ja": "ちょうどいいタイミング",
+    "ko": "딱 맞는 타이밍",
+    "it": "tempismo perfetto",
+    "de": "perfektes Timing",
+    "pt": "na hora certa",
+    "ru": "как раз вовремя",
+    "vi": "đúng lúc",
+    "th": "มาพอดี"
+   }
+  },
+  {
+   "word": "get ready",
+   "meaning": "prepare yourself to do something",
+   "tr": {
+    "ur": "تیار ہونا",
+    "hi": "तैयार होना",
+    "ar": "يستعد",
+    "zh": "准备",
+    "es": "prepararse",
+    "fr": "se préparer",
+    "tr": "hazırlanmak",
+    "ja": "準備する",
+    "ko": "준비하다",
+    "it": "prepararsi",
+    "de": "sich fertig machen",
+    "pt": "se preparar",
+    "ru": "собираться",
+    "vi": "chuẩn bị",
+    "th": "เตรียมตัว"
+   }
+  }
+ ]
+}

@@ -1,0 +1,440 @@
+{
+ "scene": "💊",
+ "colors": [
+  "#DDEFEA",
+  "#BFDCD3"
+ ],
+ "speakers": [
+  {
+   "name": "Sarah",
+   "emoji": "👩",
+   "voice": "female"
+  },
+  {
+   "name": "David",
+   "emoji": "👨",
+   "voice": "male"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Good afternoon. How can I help you today?",
+   "start": 0,
+   "end": 2760,
+   "tr": {
+    "ur": "السلام علیکم۔ آج میں آپ کی کیا مدد کر سکتی ہوں؟",
+    "hi": "नमस्ते। आज मैं आपकी क्या मदद कर सकती हूँ?",
+    "ar": "مساء الخير. كيف يمكنني مساعدتك اليوم؟",
+    "zh": "下午好。今天有什么可以帮您的吗？",
+    "es": "Buenas tardes. ¿En qué puedo ayudarle hoy?",
+    "fr": "Bonjour. Que puis-je faire pour vous aujourd'hui ?",
+    "tr": "İyi günler. Bugün size nasıl yardımcı olabilirim?",
+    "ja": "こんにちは。今日はどうされましたか？",
+    "ko": "안녕하세요. 오늘 무엇을 도와드릴까요?",
+    "it": "Buon pomeriggio. Come posso aiutarla oggi?",
+    "de": "Guten Tag. Wie kann ich Ihnen heute helfen?",
+    "pt": "Boa tarde. Em que posso ajudar hoje?",
+    "ru": "Добрый день. Чем могу вам помочь?",
+    "vi": "Chào anh. Hôm nay tôi có thể giúp gì cho anh ạ?",
+    "th": "สวัสดีค่ะ วันนี้มีอะไรให้ช่วยไหมคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Hi. I've had a headache since this morning.",
+   "start": 2980,
+   "end": 5360,
+   "tr": {
+    "ur": "وعلیکم السلام۔ صبح سے میرے سر میں درد ہو رہا ہے۔",
+    "hi": "नमस्ते। सुबह से मेरे सिर में दर्द हो रहा है।",
+    "ar": "مرحبًا. عندي صداع منذ الصباح.",
+    "zh": "你好。我从今天早上开始就一直头疼。",
+    "es": "Hola. Tengo dolor de cabeza desde esta mañana.",
+    "fr": "Bonjour. J'ai mal à la tête depuis ce matin.",
+    "tr": "Merhaba. Sabahtan beri başım ağrıyor.",
+    "ja": "こんにちは。今朝から頭が痛いんです。",
+    "ko": "안녕하세요. 아침부터 머리가 아파요.",
+    "it": "Salve. Ho mal di testa da stamattina.",
+    "de": "Hallo. Ich habe seit heute Morgen Kopfschmerzen.",
+    "pt": "Oi. Estou com dor de cabeça desde hoje de manhã.",
+    "ru": "Здравствуйте. У меня с утра болит голова.",
+    "vi": "Chào chị. Tôi bị đau đầu từ sáng tới giờ.",
+    "th": "สวัสดีครับ ผมปวดหัวตั้งแต่เช้าแล้วครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "I'm sorry to hear that. Have you taken anything for it?",
+   "start": 5840,
+   "end": 8720,
+   "tr": {
+    "ur": "یہ سن کر افسوس ہوا۔ کیا آپ نے اس کے لیے کوئی دوا لی ہے؟",
+    "hi": "यह सुनकर दुख हुआ। क्या आपने इसके लिए कोई दवा ली है?",
+    "ar": "يؤسفني سماع ذلك. هل تناولت شيئًا للصداع؟",
+    "zh": "那一定很难受。您吃过什么药了吗？",
+    "es": "Lo siento mucho. ¿Ha tomado algo para el dolor?",
+    "fr": "Oh, je suis désolée. Vous avez pris quelque chose pour ça ?",
+    "tr": "Geçmiş olsun. Bunun için bir ilaç kullandınız mı?",
+    "ja": "それはおつらいですね。何かお薬は飲まれましたか？",
+    "ko": "저런, 힘드시겠어요. 혹시 드신 약이 있으세요?",
+    "it": "Mi dispiace. Ha preso qualcosa per il dolore?",
+    "de": "Das tut mir leid. Haben Sie schon etwas dagegen genommen?",
+    "pt": "Sinto muito. Você já tomou alguma coisa para isso?",
+    "ru": "Сочувствую. Вы уже что-нибудь принимали от головной боли?",
+    "vi": "Vậy chắc anh khó chịu lắm. Anh đã uống thuốc gì chưa?",
+    "th": "แย่จังเลยค่ะ ทานยาอะไรไปหรือยังคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Not yet. I wanted to ask for some advice first.",
+   "start": 9040,
+   "end": 11840,
+   "tr": {
+    "ur": "ابھی نہیں۔ میں پہلے آپ سے مشورہ لینا چاہتا تھا۔",
+    "hi": "अभी नहीं। मैं पहले आपसे सलाह लेना चाहता था।",
+    "ar": "ليس بعد. أردت أن أطلب نصيحتك أولًا.",
+    "zh": "还没有。我想先问问您的建议。",
+    "es": "Todavía no. Primero quería pedirle un consejo.",
+    "fr": "Pas encore. Je voulais d'abord vous demander conseil.",
+    "tr": "Henüz değil. Önce sizden tavsiye almak istedim.",
+    "ja": "まだです。先にアドバイスをいただきたくて。",
+    "ko": "아직 안 먹었어요. 먼저 조언을 좀 구하고 싶어서요.",
+    "it": "Non ancora. Prima volevo chiederle un consiglio.",
+    "de": "Noch nicht. Ich wollte Sie zuerst um Rat fragen.",
+    "pt": "Ainda não. Eu queria pedir um conselho primeiro.",
+    "ru": "Пока нет. Я хотел сначала спросить у вас совета.",
+    "vi": "Chưa ạ. Tôi muốn xin chị vài lời khuyên trước đã.",
+    "th": "ยังเลยครับ ผมอยากขอคำแนะนำก่อนครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Of course. Have you had enough water and rest today?",
+   "start": 12020,
+   "end": 14950,
+   "tr": {
+    "ur": "ضرور۔ کیا آج آپ نے کافی پانی پیا ہے اور ٹھیک سے آرام کیا ہے؟",
+    "hi": "ज़रूर। क्या आज आपने काफ़ी पानी पिया है और ठीक से आराम किया है?",
+    "ar": "بالتأكيد. هل شربت ما يكفي من الماء وأخذت قسطًا كافيًا من الراحة اليوم؟",
+    "zh": "当然可以。您今天水喝够了吗？休息得够不够？",
+    "es": "Claro. ¿Hoy ha bebido suficiente agua y ha descansado bien?",
+    "fr": "Bien sûr. Vous avez bu assez d'eau et pris assez de repos aujourd'hui ?",
+    "tr": "Tabii. Bugün yeterince su içip dinlendiniz mi?",
+    "ja": "もちろんです。今日はお水を十分に飲んで、休息もとれていますか？",
+    "ko": "물론이죠. 오늘 물은 충분히 드시고 푹 쉬셨어요?",
+    "it": "Certo. Oggi ha bevuto abbastanza acqua e si è riposato a sufficienza?",
+    "de": "Natürlich. Haben Sie heute genug Wasser getrunken und sich ausreichend ausgeruht?",
+    "pt": "Claro. Você tomou água suficiente e descansou o bastante hoje?",
+    "ru": "Конечно. Вы сегодня пили достаточно воды и успели отдохнуть?",
+    "vi": "Tất nhiên rồi. Hôm nay anh đã uống đủ nước và nghỉ ngơi đủ chưa?",
+    "th": "ได้เลยค่ะ วันนี้ดื่มน้ำและพักผ่อนเพียงพอหรือเปล่าคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Probably not. I've been working all morning.",
+   "start": 15230,
+   "end": 17640,
+   "tr": {
+    "ur": "غالباً نہیں۔ میں صبح سے لگاتار کام کر رہا ہوں۔",
+    "hi": "शायद नहीं। मैं सुबह से लगातार काम कर रहा हूँ।",
+    "ar": "على الأرجح لا. كنت أعمل طوال الصباح.",
+    "zh": "大概不够。我一上午都在工作。",
+    "es": "Probablemente no. He estado trabajando toda la mañana.",
+    "fr": "Probablement pas. J'ai travaillé toute la matinée.",
+    "tr": "Muhtemelen hayır. Sabahtan beri çalışıyorum.",
+    "ja": "たぶん足りていないと思います。午前中ずっと仕事をしていたので。",
+    "ko": "아마 부족했을 거예요. 오전 내내 일만 했거든요.",
+    "it": "Probabilmente no. Ho lavorato tutta la mattina.",
+    "de": "Wahrscheinlich nicht. Ich habe den ganzen Vormittag gearbeitet.",
+    "pt": "Provavelmente não. Passei a manhã toda trabalhando.",
+    "ru": "Наверное, нет. Я всё утро работал.",
+    "vi": "Có lẽ là chưa. Tôi làm việc suốt cả buổi sáng.",
+    "th": "น่าจะไม่พอครับ ผมทำงานมาทั้งเช้าเลยครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Try drinking some water and taking a short break.",
+   "start": 18150,
+   "end": 20780,
+   "tr": {
+    "ur": "تھوڑا پانی پی کر دیکھیں اور کچھ دیر کا وقفہ لے لیں۔",
+    "hi": "थोड़ा पानी पीकर देखिए और थोड़ी देर का ब्रेक ले लीजिए।",
+    "ar": "حاول أن تشرب بعض الماء وتأخذ استراحة قصيرة.",
+    "zh": "您试着喝点水，再稍微休息一下吧。",
+    "es": "Intente beber un poco de agua y hacer una pequeña pausa.",
+    "fr": "Essayez de boire un peu d'eau et de faire une petite pause.",
+    "tr": "Biraz su içip kısa bir mola vermeyi deneyin.",
+    "ja": "お水を少し飲んで、ちょっと休憩してみてください。",
+    "ko": "물을 좀 드시고 잠깐 쉬어 보세요.",
+    "it": "Provi a bere un po' d'acqua e a fare una breve pausa.",
+    "de": "Versuchen Sie, etwas Wasser zu trinken und eine kurze Pause zu machen.",
+    "pt": "Tente tomar um pouco de água e fazer uma pequena pausa.",
+    "ru": "Попробуйте выпить немного воды и сделать небольшой перерыв.",
+    "vi": "Anh thử uống chút nước và nghỉ giải lao một lát xem.",
+    "th": "ลองดื่มน้ำสักหน่อยแล้วพักสักครู่ดูนะคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "I'll do that. Thank you for your advice.",
+   "start": 21300,
+   "end": 24030,
+   "tr": {
+    "ur": "میں ایسا ہی کروں گا۔ مشورے کا شکریہ۔",
+    "hi": "मैं ऐसा ही करूँगा। सलाह के लिए धन्यवाद।",
+    "ar": "سأفعل ذلك. شكرًا على نصيحتك.",
+    "zh": "好的，我就这么做。谢谢您的建议。",
+    "es": "Lo haré. Gracias por el consejo.",
+    "fr": "C'est ce que je vais faire. Merci pour vos conseils.",
+    "tr": "Öyle yapacağım. Tavsiyeniz için teşekkürler.",
+    "ja": "そうしてみます。アドバイスありがとうございます。",
+    "ko": "그렇게 할게요. 조언해 주셔서 감사합니다.",
+    "it": "Lo farò. Grazie per il consiglio.",
+    "de": "Das mache ich. Danke für Ihren Rat.",
+    "pt": "Vou fazer isso. Obrigado pelo conselho.",
+    "ru": "Так и сделаю. Спасибо за совет.",
+    "vi": "Tôi sẽ làm vậy. Cảm ơn lời khuyên của chị.",
+    "th": "ผมจะทำตามนั้นครับ ขอบคุณสำหรับคำแนะนำนะครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "You're welcome. I hope you feel better soon.",
+   "start": 24640,
+   "end": 30080,
+   "tr": {
+    "ur": "کوئی بات نہیں۔ امید ہے آپ جلد بہتر محسوس کریں گے۔",
+    "hi": "कोई बात नहीं। उम्मीद है आप जल्दी बेहतर महसूस करेंगे।",
+    "ar": "على الرحب والسعة. آمل أن تشعر بتحسن قريبًا.",
+    "zh": "不客气。希望您很快就能好起来。",
+    "es": "De nada. Espero que se sienta mejor pronto.",
+    "fr": "Je vous en prie. J'espère que vous irez bientôt mieux.",
+    "tr": "Rica ederim. Umarım yakında kendinizi daha iyi hissedersiniz.",
+    "ja": "どういたしまして。早く良くなるといいですね。",
+    "ko": "천만에요. 곧 나아지시길 바랄게요.",
+    "it": "Prego. Spero che si senta meglio presto.",
+    "de": "Gern geschehen. Ich hoffe, Sie fühlen sich bald besser.",
+    "pt": "De nada. Espero que você melhore logo.",
+    "ru": "Не за что. Надеюсь, вам скоро станет лучше.",
+    "vi": "Không có gì ạ. Hy vọng anh sẽ sớm khỏe lại.",
+    "th": "ยินดีค่ะ หวังว่าจะรู้สึกดีขึ้นเร็ว ๆ นี้นะคะ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "afternoon",
+   "meaning": "the time between midday and evening",
+   "tr": {
+    "ur": "دوپہر",
+    "hi": "दोपहर",
+    "ar": "بعد الظهر",
+    "zh": "下午",
+    "es": "tarde",
+    "fr": "après-midi",
+    "tr": "öğleden sonra",
+    "ja": "午後",
+    "ko": "오후",
+    "it": "pomeriggio",
+    "de": "der Nachmittag",
+    "pt": "tarde",
+    "ru": "вторая половина дня",
+    "vi": "buổi chiều",
+    "th": "ตอนบ่าย"
+   }
+  },
+  {
+   "word": "headache",
+   "meaning": "a pain in your head",
+   "tr": {
+    "ur": "سر درد",
+    "hi": "सिरदर्द",
+    "ar": "صداع",
+    "zh": "头疼",
+    "es": "dolor de cabeza",
+    "fr": "mal de tête",
+    "tr": "baş ağrısı",
+    "ja": "頭痛",
+    "ko": "두통",
+    "it": "mal di testa",
+    "de": "die Kopfschmerzen",
+    "pt": "dor de cabeça",
+    "ru": "головная боль",
+    "vi": "đau đầu",
+    "th": "ปวดหัว"
+   }
+  },
+  {
+   "word": "advice",
+   "meaning": "an opinion about what someone should do",
+   "tr": {
+    "ur": "مشورہ",
+    "hi": "सलाह",
+    "ar": "نصيحة",
+    "zh": "建议",
+    "es": "consejo",
+    "fr": "conseil",
+    "tr": "tavsiye",
+    "ja": "アドバイス",
+    "ko": "조언",
+    "it": "consiglio",
+    "de": "der Rat",
+    "pt": "conselho",
+    "ru": "совет",
+    "vi": "lời khuyên",
+    "th": "คำแนะนำ"
+   }
+  },
+  {
+   "word": "rest",
+   "meaning": "time spent relaxing or sleeping",
+   "tr": {
+    "ur": "آرام",
+    "hi": "आराम",
+    "ar": "راحة",
+    "zh": "休息",
+    "es": "descanso",
+    "fr": "repos",
+    "tr": "dinlenme",
+    "ja": "休息",
+    "ko": "휴식",
+    "it": "riposo",
+    "de": "die Ruhe",
+    "pt": "descanso",
+    "ru": "отдых",
+    "vi": "nghỉ ngơi",
+    "th": "การพักผ่อน"
+   }
+  },
+  {
+   "word": "probably",
+   "meaning": "very likely to be true",
+   "tr": {
+    "ur": "غالباً",
+    "hi": "शायद",
+    "ar": "على الأرجح",
+    "zh": "大概",
+    "es": "probablemente",
+    "fr": "probablement",
+    "tr": "muhtemelen",
+    "ja": "たぶん",
+    "ko": "아마",
+    "it": "probabilmente",
+    "de": "wahrscheinlich",
+    "pt": "provavelmente",
+    "ru": "наверное",
+    "vi": "có lẽ",
+    "th": "น่าจะ"
+   }
+  },
+  {
+   "word": "try",
+   "meaning": "do something to see if it works",
+   "tr": {
+    "ur": "کوشش کرنا",
+    "hi": "कोशिश करना",
+    "ar": "يحاول",
+    "zh": "尝试",
+    "es": "intentar",
+    "fr": "essayer",
+    "tr": "denemek",
+    "ja": "試す",
+    "ko": "해 보다",
+    "it": "provare",
+    "de": "versuchen",
+    "pt": "tentar",
+    "ru": "попробовать",
+    "vi": "thử",
+    "th": "ลอง"
+   }
+  },
+  {
+   "word": "break",
+   "meaning": "a short time when you stop working",
+   "tr": {
+    "ur": "وقفہ",
+    "hi": "ब्रेक",
+    "ar": "استراحة",
+    "zh": "休息一下",
+    "es": "pausa",
+    "fr": "pause",
+    "tr": "mola",
+    "ja": "休憩",
+    "ko": "쉬는 시간",
+    "it": "pausa",
+    "de": "die Pause",
+    "pt": "pausa",
+    "ru": "перерыв",
+    "vi": "nghỉ giải lao",
+    "th": "ช่วงพัก"
+   }
+  },
+  {
+   "word": "hope",
+   "meaning": "want something good to happen",
+   "tr": {
+    "ur": "امید کرنا",
+    "hi": "उम्मीद करना",
+    "ar": "يأمل",
+    "zh": "希望",
+    "es": "esperar",
+    "fr": "espérer",
+    "tr": "ummak",
+    "ja": "願う",
+    "ko": "바라다",
+    "it": "sperare",
+    "de": "hoffen",
+    "pt": "esperar",
+    "ru": "надеяться",
+    "vi": "hy vọng",
+    "th": "หวัง"
+   }
+  },
+  {
+   "word": "feel better",
+   "meaning": "become healthier or less ill",
+   "tr": {
+    "ur": "بہتر محسوس کرنا",
+    "hi": "बेहतर महसूस करना",
+    "ar": "يشعر بتحسن",
+    "zh": "好起来",
+    "es": "sentirse mejor",
+    "fr": "aller mieux",
+    "tr": "kendini daha iyi hissetmek",
+    "ja": "良くなる",
+    "ko": "나아지다",
+    "it": "sentirsi meglio",
+    "de": "sich besser fühlen",
+    "pt": "melhorar",
+    "ru": "почувствовать себя лучше",
+    "vi": "khỏe lại",
+    "th": "รู้สึกดีขึ้น"
+   }
+  },
+  {
+   "word": "soon",
+   "meaning": "in a short time from now",
+   "tr": {
+    "ur": "جلد",
+    "hi": "जल्दी",
+    "ar": "قريبًا",
+    "zh": "很快",
+    "es": "pronto",
+    "fr": "bientôt",
+    "tr": "yakında",
+    "ja": "早く",
+    "ko": "곧",
+    "it": "presto",
+    "de": "bald",
+    "pt": "logo",
+    "ru": "скоро",
+    "vi": "sớm",
+    "th": "เร็ว ๆ นี้"
+   }
+  }
+ ]
+}

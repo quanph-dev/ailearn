@@ -1,0 +1,417 @@
+{
+ "scene": "🔌",
+ "colors": [
+  "#E3E9F2",
+  "#C8D3E3"
+ ],
+ "speakers": [
+  {
+   "name": "Ben",
+   "emoji": "👨",
+   "voice": "male"
+  },
+  {
+   "name": "Sophie",
+   "emoji": "👩",
+   "voice": "female"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Hey, Sophie, do you have a phone charger I could borrow?",
+   "start": 0,
+   "end": 4630,
+   "tr": {
+    "ur": "ارے سوفی، کیا آپ کے پاس فون کا چارجر ہوگا جو میں ادھار لے سکوں؟",
+    "hi": "अरे सोफ़ी, क्या तुम्हारे पास फ़ोन का चार्जर है जो मैं उधार ले सकूँ?",
+    "ar": "مرحبًا يا صوفي، هل لديكِ شاحن هاتف يمكنني أن أستعيره؟",
+    "zh": "嘿，索菲，你有手机充电器能借我用一下吗？",
+    "es": "Oye, Sophie, ¿tienes un cargador de móvil que me puedas prestar?",
+    "fr": "Salut Sophie, tu aurais un chargeur de téléphone à me prêter ?",
+    "tr": "Baksana Sophie, ödünç verebileceğin bir telefon şarj aletin var mı?",
+    "ja": "ねえソフィー、スマホの充電器持ってない？ちょっと借りたいんだけど。",
+    "ko": "저기, 소피 씨, 혹시 휴대폰 충전기 있어요? 좀 빌릴 수 있을까요?",
+    "it": "Ehi, Sophie, hai un caricabatterie per il telefono da prestarmi?",
+    "de": "Hey Sophie, hast du vielleicht ein Handyladegerät, das ich mir ausleihen könnte?",
+    "pt": "Oi, Sophie, você tem um carregador de celular pra me emprestar?",
+    "ru": "Привет, Софи, у тебя не найдётся зарядки для телефона? Не одолжишь?",
+    "vi": "Này Sophie, bạn có sạc điện thoại cho mình mượn không?",
+    "th": "เฮ้ โซฟี มีที่ชาร์จโทรศัพท์ให้ผมยืมหน่อยไหมครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Sure. Is your phone running out of battery?",
+   "start": 5060,
+   "end": 7960,
+   "tr": {
+    "ur": "ہاں، ضرور۔ کیا آپ کے فون کی بیٹری ختم ہو رہی ہے؟",
+    "hi": "हाँ, ज़रूर। क्या तुम्हारे फ़ोन की बैटरी ख़त्म हो रही है?",
+    "ar": "بالتأكيد. هل بطارية هاتفك على وشك النفاد؟",
+    "zh": "当然。你手机快没电了吗？",
+    "es": "Claro. ¿Se te está quedando el móvil sin batería?",
+    "fr": "Bien sûr. Tu es bientôt à court de batterie ?",
+    "tr": "Tabii. Telefonunun şarjı mı bitmek üzere?",
+    "ja": "いいよ。スマホの充電、切れそうなの？",
+    "ko": "그럼요. 휴대폰 배터리가 다 떨어져 가요?",
+    "it": "Certo. Stai rimanendo senza batteria?",
+    "de": "Klar. Geht dir der Akku aus?",
+    "pt": "Claro. Seu celular está ficando sem bateria?",
+    "ru": "Конечно. У тебя батарея садится?",
+    "vi": "Được chứ. Điện thoại bạn sắp hết pin à?",
+    "th": "ได้สิคะ แบตโทรศัพท์ใกล้หมดเหรอคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Yeah, it's almost dead. And I forgot my charger at home.",
+   "start": 8520,
+   "end": 12100,
+   "tr": {
+    "ur": "ہاں، تقریباً بند ہونے والا ہے۔ اور میں اپنا چارجر گھر پر بھول آیا۔",
+    "hi": "हाँ, लगभग डेड हो चुका है। और मैं अपना चार्जर घर पर भूल आया।",
+    "ar": "نعم، البطارية شبه فارغة. ونسيتُ شاحني في البيت.",
+    "zh": "是啊，基本没电了。我还把充电器忘在家里了。",
+    "es": "Sí, está casi descargado. Y me dejé el cargador en casa.",
+    "fr": "Oui, il est presque à plat. Et j'ai oublié mon chargeur à la maison.",
+    "tr": "Evet, şarjı neredeyse bitti. Bir de şarj aletimi evde unuttum.",
+    "ja": "うん、もうほぼ電池切れ。それに充電器を家に忘れてきちゃって。",
+    "ko": "네, 거의 방전됐어요. 그리고 충전기를 집에 두고 왔어요.",
+    "it": "Sì, è quasi scarico. E ho dimenticato il caricabatterie a casa.",
+    "de": "Ja, der ist fast leer. Und mein Ladegerät hab ich zu Hause vergessen.",
+    "pt": "É, está quase descarregado. E eu esqueci meu carregador em casa.",
+    "ru": "Да, почти сел. А зарядку я забыл дома.",
+    "vi": "Ừ, gần hết sạch pin rồi. Mà mình lại để quên sạc ở nhà.",
+    "th": "ใช่ครับ แบตเกือบหมดแล้ว แล้วผมก็ลืมที่ชาร์จไว้ที่บ้านด้วย"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "No worries. I have an extra one right here.",
+   "start": 12210,
+   "end": 14860,
+   "tr": {
+    "ur": "کوئی بات نہیں۔ میرے پاس یہیں ایک فالتو چارجر ہے۔",
+    "hi": "कोई बात नहीं। मेरे पास यहीं एक एक्स्ट्रा चार्जर है।",
+    "ar": "لا تقلق. لديّ شاحن إضافي هنا.",
+    "zh": "没关系，我这儿正好有个备用的。",
+    "es": "No te preocupes. Tengo uno de sobra aquí mismo.",
+    "fr": "Pas de souci. J'en ai un en plus juste ici.",
+    "tr": "Dert etme. Tam burada bir yedeğim var.",
+    "ja": "大丈夫。ちょうどここに予備があるよ。",
+    "ko": "걱정 마세요. 여기 여분 하나 있어요.",
+    "it": "Nessun problema. Ne ho uno in più proprio qui.",
+    "de": "Kein Problem. Ich hab hier noch ein zweites.",
+    "pt": "Sem problema. Tenho um extra bem aqui.",
+    "ru": "Не переживай. У меня тут как раз есть запасная.",
+    "vi": "Không sao đâu. Mình có một cái dư ngay đây này.",
+    "th": "ไม่เป็นไรค่ะ ฉันมีสำรองอีกอันอยู่ตรงนี้พอดี"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "That's great. Can I use it for a little while?",
+   "start": 16010,
+   "end": 19340,
+   "tr": {
+    "ur": "یہ تو بہت اچھا ہے۔ کیا میں اسے تھوڑی دیر کے لیے استعمال کر سکتا ہوں؟",
+    "hi": "अरे वाह, बढ़िया। क्या मैं इसे थोड़ी देर के लिए इस्तेमाल कर सकता हूँ?",
+    "ar": "رائع! هل يمكنني استخدامه لبعض الوقت؟",
+    "zh": "太好了。我能用一会儿吗？",
+    "es": "Genial. ¿Puedo usarlo un rato?",
+    "fr": "Super. Je peux l'utiliser un petit moment ?",
+    "tr": "Harika. Kısa bir süre kullanabilir miyim?",
+    "ja": "よかった。ちょっとの間使ってもいい？",
+    "ko": "잘됐네요. 잠깐 써도 될까요?",
+    "it": "Fantastico. Posso usarlo per un po'?",
+    "de": "Super. Kann ich es ein Weilchen benutzen?",
+    "pt": "Que ótimo. Posso usar um pouquinho?",
+    "ru": "Отлично. Можно я ей ненадолго воспользуюсь?",
+    "vi": "Tuyệt quá. Mình dùng một lát được không?",
+    "th": "ดีเลยครับ ขอใช้สักพักได้ไหมครับ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Of course. Just give it back before you leave.",
+   "start": 19600,
+   "end": 23090,
+   "tr": {
+    "ur": "بالکل۔ بس جانے سے پہلے واپس کر دینا۔",
+    "hi": "बिल्कुल। बस जाने से पहले वापस कर देना।",
+    "ar": "طبعًا. فقط أعِده إليّ قبل أن تغادر.",
+    "zh": "当然。走之前还给我就行。",
+    "es": "Claro. Solo devuélvemelo antes de irte.",
+    "fr": "Bien sûr. Rends-le-moi juste avant de partir.",
+    "tr": "Tabii ki. Sadece çıkmadan önce geri ver.",
+    "ja": "どうぞどうぞ。帰る前に返してくれればいいから。",
+    "ko": "그럼요. 가기 전에 돌려주기만 하면 돼요.",
+    "it": "Certo. Basta che me lo ridai prima di andare via.",
+    "de": "Klar. Gib es mir einfach zurück, bevor du gehst.",
+    "pt": "Claro. Só me devolve antes de ir embora.",
+    "ru": "Конечно. Только верни перед уходом.",
+    "vi": "Tất nhiên rồi. Chỉ cần trả lại mình trước khi về là được.",
+    "th": "ได้เลยค่ะ แค่คืนก่อนกลับบ้านก็พอนะคะ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Absolutely. Thanks a lot. You really saved me today.",
+   "start": 23360,
+   "end": 27500,
+   "tr": {
+    "ur": "بالکل۔ بہت شکریہ۔ آج تو آپ نے واقعی مجھے بچا لیا۔",
+    "hi": "बिल्कुल। बहुत-बहुत शुक्रिया। आज तो तुमने सच में मुझे बचा लिया।",
+    "ar": "بالتأكيد. شكرًا جزيلًا. لقد أنقذتِني حقًا اليوم.",
+    "zh": "一定。太感谢了。你今天真是救了我。",
+    "es": "Por supuesto. Muchas gracias. Hoy me has salvado de verdad.",
+    "fr": "Absolument. Merci beaucoup. Tu m'as vraiment sauvé la mise aujourd'hui.",
+    "tr": "Kesinlikle. Çok teşekkürler. Bugün beni gerçekten kurtardın.",
+    "ja": "もちろん。本当にありがとう。今日はほんとに助かったよ。",
+    "ko": "물론이죠. 정말 고마워요. 오늘 덕분에 진짜 살았어요.",
+    "it": "Assolutamente sì. Grazie mille. Oggi mi hai davvero salvato.",
+    "de": "Auf jeden Fall. Vielen Dank. Du hast mich heute echt gerettet.",
+    "pt": "Com certeza. Muito obrigado. Você realmente me salvou hoje.",
+    "ru": "Обязательно. Большое спасибо. Ты меня сегодня просто спасла.",
+    "vi": "Chắc chắn rồi. Cảm ơn nhiều nhé. Hôm nay bạn đúng là cứu mình một phen.",
+    "th": "แน่นอนครับ ขอบคุณมากนะครับ วันนี้คุณช่วยชีวิตผมไว้จริงๆ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "You're welcome. Happy to help.",
+   "start": 27730,
+   "end": 30080,
+   "tr": {
+    "ur": "کوئی بات نہیں۔ مدد کر کے خوشی ہوئی۔",
+    "hi": "कोई बात नहीं। मदद करके ख़ुशी हुई।",
+    "ar": "عفوًا. يسعدني أن أساعدك.",
+    "zh": "不客气，很高兴能帮上忙。",
+    "es": "De nada. Encantada de ayudar.",
+    "fr": "De rien. Ravie de t'aider.",
+    "tr": "Rica ederim. Yardım edebildiğime sevindim.",
+    "ja": "どういたしまして。役に立ててうれしいよ。",
+    "ko": "천만에요. 도움이 돼서 기뻐요.",
+    "it": "Figurati. Felice di darti una mano.",
+    "de": "Gern geschehen. Hab ich gern gemacht.",
+    "pt": "De nada. Fico feliz em ajudar.",
+    "ru": "Не за что. Рада помочь.",
+    "vi": "Không có gì. Mình rất vui được giúp bạn.",
+    "th": "ไม่เป็นไรค่ะ ยินดีที่ได้ช่วยนะคะ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "charger",
+   "meaning": "a device that puts power into a battery",
+   "tr": {
+    "ur": "چارجر",
+    "hi": "चार्जर",
+    "ar": "شاحن",
+    "zh": "充电器",
+    "es": "cargador",
+    "fr": "chargeur",
+    "tr": "şarj aleti",
+    "ja": "充電器",
+    "ko": "충전기",
+    "it": "caricabatterie",
+    "de": "das Ladegerät",
+    "pt": "carregador",
+    "ru": "зарядка",
+    "vi": "sạc",
+    "th": "ที่ชาร์จ"
+   }
+  },
+  {
+   "word": "borrow",
+   "meaning": "take something and give it back later",
+   "tr": {
+    "ur": "ادھار لینا",
+    "hi": "उधार लेना",
+    "ar": "استعار",
+    "zh": "借",
+    "es": "pedir prestado",
+    "fr": "emprunter",
+    "tr": "ödünç almak",
+    "ja": "借りる",
+    "ko": "빌리다",
+    "it": "prendere in prestito",
+    "de": "ausleihen",
+    "pt": "pegar emprestado",
+    "ru": "одолжить",
+    "vi": "mượn",
+    "th": "ยืม"
+   }
+  },
+  {
+   "word": "running out of",
+   "meaning": "having almost none left",
+   "tr": {
+    "ur": "ختم ہونا",
+    "hi": "ख़त्म होना",
+    "ar": "على وشك النفاد",
+    "zh": "快用完",
+    "es": "quedarse sin",
+    "fr": "être à court de",
+    "tr": "bitmek üzere olmak",
+    "ja": "切れる",
+    "ko": "다 떨어져 가다",
+    "it": "rimanere senza",
+    "de": "ausgehen",
+    "pt": "ficar sem",
+    "ru": "садиться",
+    "vi": "sắp hết",
+    "th": "ใกล้หมด"
+   }
+  },
+  {
+   "word": "battery",
+   "meaning": "the part that gives a phone power",
+   "tr": {
+    "ur": "بیٹری",
+    "hi": "बैटरी",
+    "ar": "بطارية",
+    "zh": "电池",
+    "es": "batería",
+    "fr": "batterie",
+    "tr": "batarya",
+    "ja": "バッテリー",
+    "ko": "배터리",
+    "it": "batteria",
+    "de": "der Akku",
+    "pt": "bateria",
+    "ru": "батарея",
+    "vi": "pin",
+    "th": "แบตเตอรี่"
+   }
+  },
+  {
+   "word": "dead",
+   "meaning": "(of a phone) with no power left",
+   "tr": {
+    "ur": "بند",
+    "hi": "डेड",
+    "ar": "فارغ",
+    "zh": "没电",
+    "es": "descargado",
+    "fr": "à plat",
+    "tr": "şarjı bitmiş",
+    "ja": "電池切れ",
+    "ko": "방전된",
+    "it": "scarico",
+    "de": "leer",
+    "pt": "descarregado",
+    "ru": "разряженный",
+    "vi": "hết pin",
+    "th": "แบตหมด"
+   }
+  },
+  {
+   "word": "no worries",
+   "meaning": "it's okay, don't worry",
+   "tr": {
+    "ur": "کوئی بات نہیں",
+    "hi": "कोई बात नहीं",
+    "ar": "لا تقلق",
+    "zh": "没关系",
+    "es": "no te preocupes",
+    "fr": "pas de souci",
+    "tr": "dert etme",
+    "ja": "大丈夫",
+    "ko": "걱정 마세요",
+    "it": "nessun problema",
+    "de": "kein Problem",
+    "pt": "sem problema",
+    "ru": "не переживай",
+    "vi": "không sao",
+    "th": "ไม่เป็นไร"
+   }
+  },
+  {
+   "word": "extra",
+   "meaning": "one more than you need; spare",
+   "tr": {
+    "ur": "فالتو",
+    "hi": "एक्स्ट्रा",
+    "ar": "إضافي",
+    "zh": "备用的",
+    "es": "de sobra",
+    "fr": "en plus",
+    "tr": "yedek",
+    "ja": "予備",
+    "ko": "여분",
+    "it": "in più",
+    "de": "zusätzlich",
+    "pt": "extra",
+    "ru": "запасной",
+    "vi": "dư",
+    "th": "สำรอง"
+   }
+  },
+  {
+   "word": "a little while",
+   "meaning": "a short time",
+   "tr": {
+    "ur": "تھوڑی دیر",
+    "hi": "थोड़ी देर",
+    "ar": "لبعض الوقت",
+    "zh": "一会儿",
+    "es": "un rato",
+    "fr": "un petit moment",
+    "tr": "kısa bir süre",
+    "ja": "ちょっとの間",
+    "ko": "잠깐",
+    "it": "un po'",
+    "de": "ein Weilchen",
+    "pt": "um pouquinho",
+    "ru": "ненадолго",
+    "vi": "một lát",
+    "th": "สักพัก"
+   }
+  },
+  {
+   "word": "give it back",
+   "meaning": "return something to its owner",
+   "tr": {
+    "ur": "واپس کرنا",
+    "hi": "वापस करना",
+    "ar": "أعاد",
+    "zh": "还给",
+    "es": "devolver",
+    "fr": "rendre",
+    "tr": "geri vermek",
+    "ja": "返す",
+    "ko": "돌려주다",
+    "it": "ridare",
+    "de": "zurückgeben",
+    "pt": "devolver",
+    "ru": "вернуть",
+    "vi": "trả lại",
+    "th": "คืน"
+   }
+  },
+  {
+   "word": "absolutely",
+   "meaning": "yes, certainly; for sure",
+   "tr": {
+    "ur": "بالکل",
+    "hi": "बिल्कुल",
+    "ar": "بالتأكيد",
+    "zh": "一定",
+    "es": "por supuesto",
+    "fr": "absolument",
+    "tr": "kesinlikle",
+    "ja": "もちろん",
+    "ko": "물론",
+    "it": "assolutamente",
+    "de": "auf jeden Fall",
+    "pt": "com certeza",
+    "ru": "обязательно",
+    "vi": "chắc chắn",
+    "th": "แน่นอน"
+   }
+  }
+ ]
+}

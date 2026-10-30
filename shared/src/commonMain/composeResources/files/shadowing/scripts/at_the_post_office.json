@@ -1,0 +1,440 @@
+{
+ "scene": "📦",
+ "colors": [
+  "#ECE4D6",
+  "#D9CBB4"
+ ],
+ "speakers": [
+  {
+   "name": "Maria",
+   "emoji": "👩",
+   "voice": "female"
+  },
+  {
+   "name": "Tom",
+   "emoji": "👨",
+   "voice": "male"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Good morning. How can I help you today?",
+   "start": 0,
+   "end": 2830,
+   "tr": {
+    "ur": "صبح بخیر۔ آج میں آپ کی کیا مدد کر سکتی ہوں؟",
+    "hi": "सुप्रभात। आज मैं आपकी क्या मदद कर सकती हूँ?",
+    "ar": "صباح الخير. كيف يمكنني مساعدتك اليوم؟",
+    "zh": "早上好。今天有什么可以帮您的吗？",
+    "es": "Buenos días. ¿En qué puedo ayudarle hoy?",
+    "fr": "Bonjour. Que puis-je faire pour vous aujourd'hui ?",
+    "tr": "Günaydın. Bugün size nasıl yardımcı olabilirim?",
+    "ja": "おはようございます。本日はどのようなご用件でしょうか？",
+    "ko": "안녕하세요. 무엇을 도와드릴까요?",
+    "it": "Buongiorno. Come posso aiutarla oggi?",
+    "de": "Guten Morgen. Wie kann ich Ihnen heute helfen?",
+    "pt": "Bom dia. Em que posso ajudar hoje?",
+    "ru": "Доброе утро. Чем могу вам помочь?",
+    "vi": "Chào buổi sáng. Hôm nay tôi có thể giúp gì cho anh ạ?",
+    "th": "สวัสดีตอนเช้าค่ะ วันนี้มีอะไรให้ช่วยคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Hi. I'd like to send this package to my brother.",
+   "start": 2980,
+   "end": 5880,
+   "tr": {
+    "ur": "ہیلو۔ میں یہ پارسل اپنے بھائی کو بھیجنا چاہتا ہوں۔",
+    "hi": "नमस्ते। मैं यह पार्सल अपने भाई को भेजना चाहता हूँ।",
+    "ar": "مرحبًا. أودّ إرسال هذا الطرد إلى أخي.",
+    "zh": "你好。我想把这个包裹寄给我哥哥。",
+    "es": "Hola. Quisiera enviar este paquete a mi hermano.",
+    "fr": "Bonjour. Je voudrais envoyer ce colis à mon frère.",
+    "tr": "Merhaba. Bu paketi kardeşime göndermek istiyorum.",
+    "ja": "おはようございます。この荷物を兄に送りたいんですが。",
+    "ko": "안녕하세요. 이 소포를 형한테 보내고 싶어요.",
+    "it": "Salve. Vorrei spedire questo pacco a mio fratello.",
+    "de": "Hallo. Ich möchte dieses Paket an meinen Bruder schicken.",
+    "pt": "Oi. Eu queria mandar este pacote para o meu irmão.",
+    "ru": "Здравствуйте. Я хотел бы отправить эту посылку брату.",
+    "vi": "Chào chị. Tôi muốn gửi gói hàng này cho anh trai tôi.",
+    "th": "สวัสดีครับ ผมอยากส่งพัสดุชิ้นนี้ให้พี่ชายครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Sure. Is it going somewhere in the country?",
+   "start": 6090,
+   "end": 8820,
+   "tr": {
+    "ur": "ضرور۔ کیا یہ ملک کے اندر ہی کہیں جا رہا ہے؟",
+    "hi": "ज़रूर। क्या यह देश के अंदर ही कहीं जा रहा है?",
+    "ar": "بالتأكيد. هل سيُرسل إلى مكان ما داخل البلد؟",
+    "zh": "没问题。请问是寄国内吗？",
+    "es": "Claro. ¿Va a algún lugar dentro del país?",
+    "fr": "Bien sûr. Il part quelque part dans le pays ?",
+    "tr": "Tabii. Yurt içinde bir yere mi gidiyor?",
+    "ja": "はい。国内宛てでしょうか？",
+    "ko": "네. 국내로 보내시는 건가요?",
+    "it": "Certo. È una spedizione nazionale?",
+    "de": "Natürlich. Geht das Paket ins Inland?",
+    "pt": "Claro. Vai para algum lugar aqui no país?",
+    "ru": "Конечно. Посылка пойдёт куда-то внутри страны?",
+    "vi": "Dạ được. Anh gửi đi đâu đó trong nước phải không ạ?",
+    "th": "ได้ค่ะ ส่งภายในประเทศใช่ไหมคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Yes, he's living in another city right now.",
+   "start": 9170,
+   "end": 11550,
+   "tr": {
+    "ur": "جی ہاں، وہ ابھی دوسرے شہر میں رہ رہا ہے۔",
+    "hi": "हाँ, वह अभी दूसरे शहर में रह रहा है।",
+    "ar": "نعم، يعيش حاليًا في مدينة أخرى.",
+    "zh": "是的，他现在住在另一个城市。",
+    "es": "Sí, ahora mismo vive en otra ciudad.",
+    "fr": "Oui, il habite dans une autre ville en ce moment.",
+    "tr": "Evet, şu anda başka bir şehirde yaşıyor.",
+    "ja": "はい、兄は今、別の街に住んでいるんです。",
+    "ko": "네, 형이 지금 다른 도시에 살고 있거든요.",
+    "it": "Sì, al momento vive in un'altra città.",
+    "de": "Ja, er wohnt gerade in einer anderen Stadt.",
+    "pt": "Sim, ele está morando em outra cidade agora.",
+    "ru": "Да, он сейчас живёт в другом городе.",
+    "vi": "Vâng, hiện giờ anh ấy đang sống ở một thành phố khác.",
+    "th": "ใช่ครับ ตอนนี้เขาอยู่ที่เมืองอื่นครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Alright. Would you like standard or express delivery?",
+   "start": 11790,
+   "end": 15070,
+   "tr": {
+    "ur": "ٹھیک ہے۔ آپ عام ڈیلیوری چاہیں گے یا ایکسپریس ڈیلیوری؟",
+    "hi": "ठीक है। आप सामान्य डिलीवरी चाहेंगे या एक्सप्रेस डिलीवरी?",
+    "ar": "حسنًا. هل تريد التوصيل العادي أم التوصيل السريع؟",
+    "zh": "好的。您要寄普通快递还是加急快递？",
+    "es": "Muy bien. ¿Prefiere envío estándar o exprés?",
+    "fr": "Très bien. Vous voulez la livraison standard ou express ?",
+    "tr": "Peki. Standart gönderi mi istersiniz, ekspres gönderi mi?",
+    "ja": "かしこまりました。通常配送と速達、どちらになさいますか？",
+    "ko": "알겠습니다. 일반 배송으로 하시겠어요, 빠른 배송으로 하시겠어요?",
+    "it": "D'accordo. Preferisce la spedizione standard o quella espressa?",
+    "de": "Alles klar. Möchten Sie Standardversand oder Expressversand?",
+    "pt": "Certo. Você prefere entrega padrão ou expressa?",
+    "ru": "Хорошо. Вам обычную доставку или экспресс-доставку?",
+    "vi": "Dạ vâng. Anh muốn chuyển phát thường hay chuyển phát nhanh ạ?",
+    "th": "โอเคค่ะ จะส่งแบบธรรมดาหรือส่งด่วนดีคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Standard delivery is fine. How long will it take?",
+   "start": 15350,
+   "end": 18720,
+   "tr": {
+    "ur": "عام ڈیلیوری ٹھیک ہے۔ اس میں کتنا وقت لگے گا؟",
+    "hi": "सामान्य डिलीवरी ठीक है। इसमें कितना समय लगेगा?",
+    "ar": "التوصيل العادي مناسب. كم من الوقت سيستغرق؟",
+    "zh": "普通快递就行。要多久才能到？",
+    "es": "El envío estándar está bien. ¿Cuánto tiempo tardará?",
+    "fr": "La livraison standard, ça ira. Ça va prendre combien de temps ?",
+    "tr": "Standart gönderi yeterli. Ne kadar sürer?",
+    "ja": "通常配送でいいです。どのくらいかかりますか？",
+    "ko": "일반 배송이면 돼요. 얼마나 걸릴까요?",
+    "it": "Basta la spedizione standard. Quanto tempo ci vorrà?",
+    "de": "Standardversand reicht mir. Wie lange dauert das?",
+    "pt": "Pode ser a entrega padrão. Quanto tempo vai levar?",
+    "ru": "Обычная доставка подойдёт. Сколько времени это займёт?",
+    "vi": "Chuyển phát thường là được rồi. Mất bao lâu vậy chị?",
+    "th": "ส่งแบบธรรมดาก็ได้ครับ ใช้เวลานานแค่ไหนครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "It usually takes about three working days.",
+   "start": 19070,
+   "end": 21940,
+   "tr": {
+    "ur": "عام طور پر اس میں تقریباً کام کے تین دن لگتے ہیں۔",
+    "hi": "आमतौर पर इसमें लगभग तीन कामकाजी दिन लगते हैं।",
+    "ar": "يستغرق عادةً حوالي ثلاثة أيام عمل.",
+    "zh": "通常需要三个工作日左右。",
+    "es": "Normalmente tarda unos tres días hábiles.",
+    "fr": "En général, ça prend environ trois jours ouvrables.",
+    "tr": "Genellikle yaklaşık üç iş günü sürer.",
+    "ja": "通常ですと、3営業日ほどかかります。",
+    "ko": "보통 영업일 기준으로 3일 정도 걸려요.",
+    "it": "Di solito ci vogliono circa tre giorni lavorativi.",
+    "de": "Normalerweise dauert es etwa drei Werktage.",
+    "pt": "Normalmente leva uns três dias úteis.",
+    "ru": "Обычно это занимает около трёх рабочих дней.",
+    "vi": "Thường thì mất khoảng ba ngày làm việc ạ.",
+    "th": "ปกติจะใช้เวลาประมาณสามวันทำการค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Perfect. That works for me. Thank you.",
+   "start": 22360,
+   "end": 25620,
+   "tr": {
+    "ur": "بہترین۔ یہ میرے لیے ٹھیک ہے۔ شکریہ۔",
+    "hi": "बहुत बढ़िया। यह मेरे लिए ठीक है। धन्यवाद।",
+    "ar": "ممتاز. هذا يناسبني. شكرًا لكِ.",
+    "zh": "太好了，这对我来说没问题。谢谢。",
+    "es": "Perfecto. Me viene bien. Gracias.",
+    "fr": "Parfait. Ça me convient. Merci.",
+    "tr": "Harika. Bu benim için uygun. Teşekkürler.",
+    "ja": "よかったです。それなら大丈夫です。ありがとうございます。",
+    "ko": "잘됐네요. 그거면 괜찮아요. 감사합니다.",
+    "it": "Perfetto. Per me va bene. Grazie.",
+    "de": "Perfekt. Das passt mir gut. Danke.",
+    "pt": "Perfeito. Para mim está ótimo. Obrigado.",
+    "ru": "Отлично. Меня это устраивает. Спасибо.",
+    "vi": "Tuyệt quá. Như vậy là ổn với tôi. Cảm ơn chị.",
+    "th": "เยี่ยมเลยครับ แบบนั้นโอเคสำหรับผม ขอบคุณครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "You're welcome. I'll prepare the shipping label.",
+   "start": 26100,
+   "end": 30080,
+   "tr": {
+    "ur": "کوئی بات نہیں۔ میں شپنگ لیبل تیار کر دیتی ہوں۔",
+    "hi": "कोई बात नहीं। मैं शिपिंग लेबल तैयार कर देती हूँ।",
+    "ar": "على الرحب والسعة. سأُجهّز لك ملصق الشحن.",
+    "zh": "不客气。我来给您准备快递单。",
+    "es": "De nada. Ahora le preparo la etiqueta de envío.",
+    "fr": "Je vous en prie. Je vais préparer l'étiquette d'expédition.",
+    "tr": "Rica ederim. Hemen kargo etiketini hazırlayayım.",
+    "ja": "どういたしまして。それでは、送り状をご用意しますね。",
+    "ko": "천만에요. 운송장을 준비해 드릴게요.",
+    "it": "Prego. Le preparo subito l'etichetta di spedizione.",
+    "de": "Gern geschehen. Ich bereite gleich das Versandetikett vor.",
+    "pt": "De nada. Vou preparar a etiqueta de envio.",
+    "ru": "Пожалуйста. Сейчас подготовлю этикетку для отправки.",
+    "vi": "Không có gì ạ. Tôi sẽ chuẩn bị nhãn gửi hàng cho anh.",
+    "th": "ยินดีค่ะ เดี๋ยวจะเตรียมใบปะหน้าพัสดุให้นะคะ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "package",
+   "meaning": "a box or parcel you send by post",
+   "tr": {
+    "ur": "پارسل",
+    "hi": "पार्सल",
+    "ar": "طرد",
+    "zh": "包裹",
+    "es": "paquete",
+    "fr": "colis",
+    "tr": "paket",
+    "ja": "荷物",
+    "ko": "소포",
+    "it": "pacco",
+    "de": "das Paket",
+    "pt": "pacote",
+    "ru": "посылка",
+    "vi": "gói hàng",
+    "th": "พัสดุ"
+   }
+  },
+  {
+   "word": "send",
+   "meaning": "make something go to another place",
+   "tr": {
+    "ur": "بھیجنا",
+    "hi": "भेजना",
+    "ar": "يُرسل",
+    "zh": "寄",
+    "es": "enviar",
+    "fr": "envoyer",
+    "tr": "göndermek",
+    "ja": "送る",
+    "ko": "보내다",
+    "it": "spedire",
+    "de": "schicken",
+    "pt": "mandar",
+    "ru": "отправить",
+    "vi": "gửi",
+    "th": "ส่ง"
+   }
+  },
+  {
+   "word": "standard delivery",
+   "meaning": "the normal, slower way of sending",
+   "tr": {
+    "ur": "عام ڈیلیوری",
+    "hi": "सामान्य डिलीवरी",
+    "ar": "التوصيل العادي",
+    "zh": "普通快递",
+    "es": "envío estándar",
+    "fr": "livraison standard",
+    "tr": "standart gönderi",
+    "ja": "通常配送",
+    "ko": "일반 배송",
+    "it": "spedizione standard",
+    "de": "der Standardversand",
+    "pt": "entrega padrão",
+    "ru": "обычная доставка",
+    "vi": "chuyển phát thường",
+    "th": "ส่งแบบธรรมดา"
+   }
+  },
+  {
+   "word": "express delivery",
+   "meaning": "a faster way of sending things",
+   "tr": {
+    "ur": "ایکسپریس ڈیلیوری",
+    "hi": "एक्सप्रेस डिलीवरी",
+    "ar": "التوصيل السريع",
+    "zh": "加急快递",
+    "es": "envío exprés",
+    "fr": "livraison express",
+    "tr": "ekspres gönderi",
+    "ja": "速達",
+    "ko": "빠른 배송",
+    "it": "spedizione espressa",
+    "de": "der Expressversand",
+    "pt": "entrega expressa",
+    "ru": "экспресс-доставка",
+    "vi": "chuyển phát nhanh",
+    "th": "ส่งด่วน"
+   }
+  },
+  {
+   "word": "how long",
+   "meaning": "asking how much time something takes",
+   "tr": {
+    "ur": "کتنا وقت",
+    "hi": "कितना समय",
+    "ar": "كم من الوقت",
+    "zh": "多久",
+    "es": "cuánto tiempo",
+    "fr": "combien de temps",
+    "tr": "ne kadar süre",
+    "ja": "どのくらい",
+    "ko": "얼마나",
+    "it": "quanto tempo",
+    "de": "wie lange",
+    "pt": "quanto tempo",
+    "ru": "сколько времени",
+    "vi": "bao lâu",
+    "th": "นานแค่ไหน"
+   }
+  },
+  {
+   "word": "usually",
+   "meaning": "in most cases; normally",
+   "tr": {
+    "ur": "عام طور پر",
+    "hi": "आमतौर पर",
+    "ar": "عادةً",
+    "zh": "通常",
+    "es": "normalmente",
+    "fr": "en général",
+    "tr": "genellikle",
+    "ja": "通常",
+    "ko": "보통",
+    "it": "di solito",
+    "de": "normalerweise",
+    "pt": "normalmente",
+    "ru": "обычно",
+    "vi": "thường",
+    "th": "ปกติ"
+   }
+  },
+  {
+   "word": "working days",
+   "meaning": "days when offices are open, usually weekdays",
+   "tr": {
+    "ur": "کام کے دن",
+    "hi": "कामकाजी दिन",
+    "ar": "أيام العمل",
+    "zh": "工作日",
+    "es": "días hábiles",
+    "fr": "jours ouvrables",
+    "tr": "iş günleri",
+    "ja": "営業日",
+    "ko": "영업일",
+    "it": "giorni lavorativi",
+    "de": "die Werktage",
+    "pt": "dias úteis",
+    "ru": "рабочие дни",
+    "vi": "ngày làm việc",
+    "th": "วันทำการ"
+   }
+  },
+  {
+   "word": "that works for me",
+   "meaning": "that is fine or good for me",
+   "tr": {
+    "ur": "میرے لیے ٹھیک ہے",
+    "hi": "मेरे लिए ठीक है",
+    "ar": "هذا يناسبني",
+    "zh": "对我来说没问题",
+    "es": "me viene bien",
+    "fr": "ça me convient",
+    "tr": "benim için uygun",
+    "ja": "それなら大丈夫",
+    "ko": "그거면 괜찮아요",
+    "it": "per me va bene",
+    "de": "das passt mir",
+    "pt": "para mim está ótimo",
+    "ru": "меня это устраивает",
+    "vi": "ổn với tôi",
+    "th": "โอเคสำหรับผม"
+   }
+  },
+  {
+   "word": "prepare",
+   "meaning": "make something ready",
+   "tr": {
+    "ur": "تیار کرنا",
+    "hi": "तैयार करना",
+    "ar": "يُجهّز",
+    "zh": "准备",
+    "es": "preparar",
+    "fr": "préparer",
+    "tr": "hazırlamak",
+    "ja": "用意する",
+    "ko": "준비하다",
+    "it": "preparare",
+    "de": "vorbereiten",
+    "pt": "preparar",
+    "ru": "подготовить",
+    "vi": "chuẩn bị",
+    "th": "เตรียม"
+   }
+  },
+  {
+   "word": "shipping label",
+   "meaning": "a sticker with the address for sending",
+   "tr": {
+    "ur": "شپنگ لیبل",
+    "hi": "शिपिंग लेबल",
+    "ar": "ملصق الشحن",
+    "zh": "快递单",
+    "es": "etiqueta de envío",
+    "fr": "étiquette d'expédition",
+    "tr": "kargo etiketi",
+    "ja": "送り状",
+    "ko": "운송장",
+    "it": "etichetta di spedizione",
+    "de": "das Versandetikett",
+    "pt": "etiqueta de envio",
+    "ru": "этикетка для отправки",
+    "vi": "nhãn gửi hàng",
+    "th": "ใบปะหน้าพัสดุ"
+   }
+  }
+ ]
+}

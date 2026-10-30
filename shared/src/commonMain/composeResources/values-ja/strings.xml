@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fo_onboarding_button_next">次へ</string>
+    <string name="fo_onboarding_button_start">はじめる</string>
+    <string name="fo_onboarding_description_1">あなた専用のAIチューターと会話して、いつでも自然に言語を身につけましょう。</string>
+    <string name="fo_onboarding_description_2">発音を練習して、一語ごとにすぐフィードバックを受け取りましょう。</string>
+    <string name="fo_onboarding_description_3">毎日の連続記録を積み重ねて、一歩ずつ進歩を確認しましょう。</string>
+    <string name="fo_onboarding_title_1">AIで学ぼう</string>
+    <string name="fo_onboarding_title_2">自信を持って話そう</string>
+    <string name="fo_onboarding_title_3">目標を達成しよう</string>
+    <string name="fo_survey_continue">学習を始める</string>
+    <string name="fo_survey_skip">スキップ</string>
+    <string name="fo_survey_subtitle">1つ選んで学習を始めましょう</string>
+    <string name="fo_survey_title">どの言語を学びたいですか？</string>
+    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_describe_load_ad">(このアクションには広告が含まれる場合があります)</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fo_onboarding_button_next">Avanti</string>
+    <string name="fo_onboarding_button_start">Inizia</string>
+    <string name="fo_onboarding_description_1">Chatta con il tuo tutor IA personale e impara qualsiasi lingua in modo naturale, quando vuoi.</string>
+    <string name="fo_onboarding_description_2">Esercita la pronuncia e ricevi un feedback immediato su ogni parola.</string>
+    <string name="fo_onboarding_description_3">Costruisci serie giornaliere e segui i tuoi progressi passo dopo passo.</string>
+    <string name="fo_onboarding_title_1">"Impara con l'IA"</string>
+    <string name="fo_onboarding_title_2">Parla con sicurezza</string>
+    <string name="fo_onboarding_title_3">Raggiungi i tuoi obiettivi</string>
+    <string name="fo_survey_continue">Inizia a imparare</string>
+    <string name="fo_survey_skip">Salta</string>
+    <string name="fo_survey_subtitle">Scegline una per iniziare</string>
+    <string name="fo_survey_title">Quale lingua vuoi imparare?</string>
+    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_describe_load_ad">(Questa azione può contenere annunci)</string>
+</resources>

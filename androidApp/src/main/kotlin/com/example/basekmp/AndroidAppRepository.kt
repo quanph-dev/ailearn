@@ -5,7 +5,6 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
-import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -28,7 +27,8 @@ class AndroidAppRepository @Inject constructor(
             val languageSetup = values[IS_LANGUAGE_SETUP] ?: false
             val onboardingCompleted = values[ONBOARDING_COMPLETED] ?: false
             val firstOpenCompleted = values[FIRST_OPEN_COMPLETED] ?: false
-            if (!firstOpenCompleted && appOpenCount == 1 && languageSetup && onboardingCompleted) {
+            // Migrate users who completed the old onboarding before FirstOpen was introduced.
+            if (!firstOpenCompleted && languageSetup && onboardingCompleted) {
                 values[FIRST_OPEN_COMPLETED] = true
             }
         }
@@ -50,12 +50,43 @@ class AndroidAppRepository @Inject constructor(
         LanguagePrefs.set(context, code)
     }
 
-    override suspend fun completeOnboarding() {
-        dataStore.edit { it[ONBOARDING_COMPLETED] = true }
+    override suspend fun completeFirstOpen(surveyLanguageCode: String?, initialOnboardingProgress: String) {
+        dataStore.edit { values ->
+            values[FIRST_OPEN_COMPLETED] = true
+            values[FIRST_OPEN_SURVEY_LANGUAGE] = surveyLanguageCode.orEmpty()
+            values[ONBOARDING_PROGRESS] = initialOnboardingProgress
+        }
     }
 
-    override suspend fun markHomeShown() {
-        dataStore.edit { it[FIRST_OPEN_COMPLETED] = true }
+    override suspend fun firstOpenSurveyLanguage(): String =
+        dataStore.data.first()[FIRST_OPEN_SURVEY_LANGUAGE].orEmpty()
+
+    override suspend fun onboardingProgress(): String =
+        dataStore.data.first()[ONBOARDING_PROGRESS].orEmpty()
+
+    override suspend fun saveOnboardingProgress(serialized: String) {
+        dataStore.edit { it[ONBOARDING_PROGRESS] = serialized }
+    }
+
+    override suspend fun completeOnboarding(serialized: String) {
+        dataStore.edit { values ->
+            values[ONBOARDING_PROGRESS] = serialized
+            values[ONBOARDING_COMPLETED] = true
+        }
+    }
+
+    override suspend fun planProgress(): String =
+        dataStore.data.first()[PLAN_PROGRESS].orEmpty()
+
+    override suspend fun savePlanProgress(serialized: String) {
+        dataStore.edit { it[PLAN_PROGRESS] = serialized }
+    }
+
+    override suspend fun learningProgress(): String =
+        dataStore.data.first()[LEARNING_PROGRESS].orEmpty()
+
+    override suspend fun saveLearningProgress(serialized: String) {
+        dataStore.edit { it[LEARNING_PROGRESS] = serialized }
     }
 
     companion object {
@@ -63,6 +94,10 @@ class AndroidAppRepository @Inject constructor(
         private val IS_LANGUAGE_SETUP = booleanPreferencesKey("is_language_setup")
         private val ONBOARDING_COMPLETED = booleanPreferencesKey("onboarding_completed")
         private val FIRST_OPEN_COMPLETED = booleanPreferencesKey("first_open_completed")
-        private val APP_OPEN_COUNT = intPreferencesKey("app_open_count")
+        private val APP_OPEN_COUNT = androidx.datastore.preferences.core.intPreferencesKey("app_open_count")
+        private val FIRST_OPEN_SURVEY_LANGUAGE = stringPreferencesKey("first_open_survey_language")
+        private val ONBOARDING_PROGRESS = stringPreferencesKey("onboarding_progress")
+        private val PLAN_PROGRESS = stringPreferencesKey("plan_progress")
+        private val LEARNING_PROGRESS = stringPreferencesKey("learning_progress")
     }
 }

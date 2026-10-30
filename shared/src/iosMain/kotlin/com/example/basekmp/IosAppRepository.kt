@@ -18,7 +18,8 @@ internal class IosAppRepository : BaseAppRepository {
         val languageSetup = defaults.boolForKey(IS_LANGUAGE_SETUP)
         val onboardingCompleted = defaults.boolForKey(ONBOARDING_COMPLETED)
         var firstOpenCompleted = defaults.boolForKey(FIRST_OPEN_COMPLETED)
-        if (!firstOpenCompleted && count == 1L && languageSetup && onboardingCompleted) {
+        // Migrate users who completed the old onboarding before FirstOpen was introduced.
+        if (!firstOpenCompleted && languageSetup && onboardingCompleted) {
             defaults.setBool(true, FIRST_OPEN_COMPLETED)
             firstOpenCompleted = true
         }
@@ -32,12 +33,37 @@ internal class IosAppRepository : BaseAppRepository {
         if (completeSetup) defaults.setBool(true, IS_LANGUAGE_SETUP)
     }
 
-    override suspend fun completeOnboarding() {
+    override suspend fun completeFirstOpen(surveyLanguageCode: String?, initialOnboardingProgress: String) {
+        defaults.setBool(true, FIRST_OPEN_COMPLETED)
+        defaults.setObject(surveyLanguageCode.orEmpty(), FIRST_OPEN_SURVEY_LANGUAGE)
+        defaults.setObject(initialOnboardingProgress, ONBOARDING_PROGRESS)
+    }
+
+    override suspend fun firstOpenSurveyLanguage(): String =
+        defaults.stringForKey(FIRST_OPEN_SURVEY_LANGUAGE).orEmpty()
+
+    override suspend fun onboardingProgress(): String =
+        defaults.stringForKey(ONBOARDING_PROGRESS).orEmpty()
+
+    override suspend fun saveOnboardingProgress(serialized: String) {
+        defaults.setObject(serialized, ONBOARDING_PROGRESS)
+    }
+
+    override suspend fun completeOnboarding(serialized: String) {
+        defaults.setObject(serialized, ONBOARDING_PROGRESS)
         defaults.setBool(true, ONBOARDING_COMPLETED)
     }
 
-    override suspend fun markHomeShown() {
-        defaults.setBool(true, FIRST_OPEN_COMPLETED)
+    override suspend fun planProgress(): String = defaults.stringForKey(PLAN_PROGRESS).orEmpty()
+
+    override suspend fun savePlanProgress(serialized: String) {
+        defaults.setObject(serialized, PLAN_PROGRESS)
+    }
+
+    override suspend fun learningProgress(): String = defaults.stringForKey(LEARNING_PROGRESS).orEmpty()
+
+    override suspend fun saveLearningProgress(serialized: String) {
+        defaults.setObject(serialized, LEARNING_PROGRESS)
     }
 
     private companion object {
@@ -46,6 +72,10 @@ internal class IosAppRepository : BaseAppRepository {
         const val ONBOARDING_COMPLETED = "onboarding_completed"
         const val FIRST_OPEN_COMPLETED = "first_open_completed"
         const val APP_OPEN_COUNT = "app_open_count"
+        const val FIRST_OPEN_SURVEY_LANGUAGE = "first_open_survey_language"
+        const val ONBOARDING_PROGRESS = "onboarding_progress"
+        const val PLAN_PROGRESS = "plan_progress"
+        const val LEARNING_PROGRESS = "learning_progress"
     }
 }
 

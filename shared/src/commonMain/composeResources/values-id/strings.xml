@@ -23,4 +23,19 @@
     <string name="ui_are_you_sure_you_want_to_exit_the_app_now">Yakin ingin keluar dari aplikasi sekarang?</string>
     <string name="ui_no">Tidak</string>
     <string name="ui_yes_exit">Ya, keluar</string>
+    <string name="fo_onboarding_button_next">Berikutnya</string>
+    <string name="fo_onboarding_button_start">Mulai</string>
+    <string name="fo_onboarding_description_1">Mengobrol dengan tutor AI pribadi Anda dan pelajari bahasa apa pun secara alami, kapan saja.</string>
+    <string name="fo_onboarding_description_2">Latih pelafalan dan dapatkan umpan balik instan untuk setiap kata.</string>
+    <string name="fo_onboarding_description_3">Bangun rangkaian harian dan pantau kemajuan Anda di setiap langkah.</string>
+    <string name="fo_onboarding_swipe_hint">Geser untuk melanjutkan</string>
+    <string name="fo_onboarding_title_1">Belajar dengan AI</string>
+    <string name="fo_onboarding_title_2">Berbicara dengan percaya diri</string>
+    <string name="fo_onboarding_title_3">Capai tujuan Anda</string>
+    <string name="fo_survey_continue">Start Learning</string>
+    <string name="fo_survey_skip">Skip</string>
+    <string name="fo_survey_subtitle">Pick one to start learning</string>
+    <string name="fo_survey_title">What language do you want to learn?</string>
+    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_describe_load_ad">(Tindakan ini mungkin berisi iklan)</string>
 </resources>

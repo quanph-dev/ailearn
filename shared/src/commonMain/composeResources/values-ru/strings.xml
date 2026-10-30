@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fo_onboarding_button_next">Далее</string>
+    <string name="fo_onboarding_button_start">Начать</string>
+    <string name="fo_onboarding_description_1">Общайтесь с личным ИИ-репетитором и изучайте любой язык естественно, в любое время.</string>
+    <string name="fo_onboarding_description_2">Тренируйте произношение и получайте мгновенную обратную связь по каждому слову.</string>
+    <string name="fo_onboarding_description_3">Занимайтесь каждый день без пропусков и отслеживайте свой прогресс на каждом шагу.</string>
+    <string name="fo_onboarding_title_1">Учитесь с ИИ</string>
+    <string name="fo_onboarding_title_2">Говорите уверенно</string>
+    <string name="fo_onboarding_title_3">Достигайте своих целей</string>
+    <string name="fo_survey_continue">Начать обучение</string>
+    <string name="fo_survey_skip">Пропустить</string>
+    <string name="fo_survey_subtitle">Выберите один, чтобы начать</string>
+    <string name="fo_survey_title">Какой язык вы хотите изучать?</string>
+    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_describe_load_ad">(Это действие может содержать рекламу)</string>
+</resources>

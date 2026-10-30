@@ -1,0 +1,463 @@
+{
+ "scene": "☎️",
+ "colors": [
+  "#E8EAF0",
+  "#CDD2DE"
+ ],
+ "speakers": [
+  {
+   "name": "Grace",
+   "emoji": "👩",
+   "voice": "female"
+  },
+  {
+   "name": "Adam",
+   "emoji": "👨",
+   "voice": "male"
+  }
+ ],
+ "lines": [
+  {
+   "speaker": 0,
+   "text": "Good morning. Brightway office. How may I help you?",
+   "start": 0,
+   "end": 4170,
+   "tr": {
+    "ur": "صبح بخیر۔ Brightway آفس۔ میں آپ کی کیا مدد کر سکتی ہوں؟",
+    "hi": "गुड मॉर्निंग। Brightway ऑफ़िस। मैं आपकी क्या मदद कर सकती हूँ?",
+    "ar": "صباح الخير. مكتب Brightway. كيف يمكنني مساعدتك؟",
+    "zh": "早上好，Brightway办公室，请问有什么可以帮您？",
+    "es": "Buenos días. Oficina de Brightway. ¿En qué puedo ayudarle?",
+    "fr": "Bonjour. Bureau Brightway. Comment puis-je vous aider ?",
+    "tr": "Günaydın. Brightway ofisi. Size nasıl yardımcı olabilirim?",
+    "ja": "おはようございます。Brightway オフィスでございます。どのようなご用件でしょうか？",
+    "ko": "안녕하세요, Brightway 사무실입니다. 무엇을 도와드릴까요?",
+    "it": "Buongiorno. Ufficio Brightway. Come posso aiutarla?",
+    "de": "Guten Morgen, Büro Brightway. Wie kann ich Ihnen helfen?",
+    "pt": "Bom dia. Escritório Brightway. Em que posso ajudar?",
+    "ru": "Доброе утро. Офис Brightway. Чем могу вам помочь?",
+    "vi": "Chào buổi sáng. Văn phòng Brightway xin nghe. Tôi có thể giúp gì cho quý khách ạ?",
+    "th": "สวัสดีค่ะ สำนักงาน Brightway ค่ะ มีอะไรให้ดิฉันช่วยไหมคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Hello, this is Adam. May I speak with the project manager?",
+   "start": 4950,
+   "end": 8810,
+   "tr": {
+    "ur": "ہیلو، میں ایڈم بول رہا ہوں۔ کیا میں پروجیکٹ مینیجر سے بات کر سکتا ہوں؟",
+    "hi": "नमस्ते, मैं एडम बोल रहा हूँ। क्या मैं प्रोजेक्ट मैनेजर से बात कर सकता हूँ?",
+    "ar": "مرحبًا، أنا آدم. هل يمكنني التحدث مع مديرة المشروع؟",
+    "zh": "您好，我是亚当。请问可以请项目经理接电话吗？",
+    "es": "Hola, soy Adam. ¿Puedo hablar con la gerente de proyecto?",
+    "fr": "Bonjour, Adam à l'appareil. Puis-je parler à la cheffe de projet ?",
+    "tr": "Merhaba, ben Adam. Proje müdürüyle görüşebilir miyim?",
+    "ja": "もしもし、アダムと申します。プロジェクトマネージャーの方とお話しできますか？",
+    "ko": "여보세요, 아담입니다. 프로젝트 매니저님과 통화할 수 있을까요?",
+    "it": "Salve, sono Adam. Posso parlare con la responsabile di progetto?",
+    "de": "Guten Tag, hier spricht Adam. Kann ich bitte mit der Projektleiterin sprechen?",
+    "pt": "Olá, aqui é o Adam. Posso falar com a gerente de projeto?",
+    "ru": "Здравствуйте, это Адам. Могу я поговорить с руководителем проекта?",
+    "vi": "Alô, tôi là Adam. Tôi có thể nói chuyện với quản lý dự án được không ạ?",
+    "th": "สวัสดีครับ ผมอดัมนะครับ ขอสายผู้จัดการโครงการหน่อยได้ไหมครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "I'm sorry, she's in a meeting right now.",
+   "start": 9690,
+   "end": 12130,
+   "tr": {
+    "ur": "معذرت، وہ اس وقت ایک میٹنگ میں ہیں۔",
+    "hi": "माफ़ कीजिए, वह अभी एक मीटिंग में हैं।",
+    "ar": "آسفة، إنها في اجتماع الآن.",
+    "zh": "很抱歉，她现在正在开会。",
+    "es": "Lo siento, en este momento está en una reunión.",
+    "fr": "Je suis désolée, elle est en réunion en ce moment.",
+    "tr": "Üzgünüm, şu anda bir toplantıda.",
+    "ja": "申し訳ございません。あいにく、ただいま会議中でして。",
+    "ko": "죄송합니다만, 지금 회의 중이십니다.",
+    "it": "Mi dispiace, in questo momento è in riunione.",
+    "de": "Es tut mir leid, sie ist gerade in einer Besprechung.",
+    "pt": "Sinto muito, ela está numa reunião agora.",
+    "ru": "Извините, она сейчас на совещании.",
+    "vi": "Xin lỗi anh, lúc này cô ấy đang họp ạ.",
+    "th": "ขอโทษค่ะ ตอนนี้ท่านกำลังประชุมอยู่ค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Oh, I see. Could I leave a message?",
+   "start": 12770,
+   "end": 15030,
+   "tr": {
+    "ur": "اوہ، اچھا۔ کیا میں ایک پیغام چھوڑ سکتا ہوں؟",
+    "hi": "ओह, अच्छा। क्या मैं एक संदेश छोड़ सकता हूँ?",
+    "ar": "آه، فهمت. هل يمكنني أن أترك رسالة؟",
+    "zh": "哦，好的。我可以留个言吗？",
+    "es": "Ah, ya veo. ¿Podría dejar un mensaje?",
+    "fr": "Ah, je vois. Puis-je laisser un message ?",
+    "tr": "Anlıyorum. Bir mesaj bırakabilir miyim?",
+    "ja": "そうですか。伝言をお願いできますか？",
+    "ko": "아, 그렇군요. 메시지를 남겨도 될까요?",
+    "it": "Ah, capisco. Posso lasciare un messaggio?",
+    "de": "Ach so. Könnte ich eine Nachricht hinterlassen?",
+    "pt": "Ah, entendi. Posso deixar um recado?",
+    "ru": "А, понятно. Могу я оставить сообщение?",
+    "vi": "À, tôi hiểu rồi. Tôi có thể để lại lời nhắn không ạ?",
+    "th": "อ๋อ เข้าใจแล้วครับ ผมฝากข้อความไว้ได้ไหมครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Of course. What would you like me to tell her?",
+   "start": 15530,
+   "end": 18060,
+   "tr": {
+    "ur": "بالکل۔ آپ چاہیں گے کہ میں انہیں کیا بتاؤں؟",
+    "hi": "ज़रूर। आप चाहेंगे कि मैं उन्हें क्या बताऊँ?",
+    "ar": "بالطبع. ماذا تودّ أن أبلغها؟",
+    "zh": "当然。您想让我转告她什么？",
+    "es": "Por supuesto. ¿Qué le gustaría que le dijera?",
+    "fr": "Bien sûr. Que souhaitez-vous que je lui dise ?",
+    "tr": "Tabii. Ona ne iletmemi istersiniz?",
+    "ja": "もちろんです。何とお伝えしましょうか？",
+    "ko": "물론입니다. 그분께 뭐라고 전해 드릴까요?",
+    "it": "Certo. Cosa vuole che le riferisca?",
+    "de": "Natürlich. Was soll ich ihr ausrichten?",
+    "pt": "Claro. O que o senhor quer que eu diga a ela?",
+    "ru": "Конечно. Что ей передать?",
+    "vi": "Dạ vâng. Anh muốn tôi nhắn lại với cô ấy điều gì ạ?",
+    "th": "แน่นอนค่ะ คุณอยากให้ดิฉันแจ้งท่านว่าอย่างไรคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Please ask her to call me this afternoon.",
+   "start": 18870,
+   "end": 21060,
+   "tr": {
+    "ur": "براہ کرم ان سے کہیے کہ آج دوپہر مجھے فون کر لیں۔",
+    "hi": "कृपया उनसे कहिए कि आज दोपहर में मुझे फ़ोन करें।",
+    "ar": "من فضلكِ، اطلبي منها أن تتصل بي بعد ظهر اليوم.",
+    "zh": "请转告她今天下午给我打个电话。",
+    "es": "Por favor, dígale que me llame esta tarde.",
+    "fr": "Pourriez-vous lui demander de me rappeler cet après-midi ?",
+    "tr": "Lütfen ona bu öğleden sonra beni aramasını söyler misiniz?",
+    "ja": "今日の午後、お電話をいただけるようお伝えください。",
+    "ko": "그분께 오늘 오후에 저에게 전화해 달라고 전해 주세요.",
+    "it": "Per favore, le chieda di richiamarmi questo pomeriggio.",
+    "de": "Bitte sagen Sie ihr, dass sie mich heute Nachmittag anrufen soll.",
+    "pt": "Por favor, peça a ela que me ligue esta tarde.",
+    "ru": "Пожалуйста, попросите её позвонить мне сегодня днём.",
+    "vi": "Phiền chị nhắn cô ấy gọi cho tôi vào chiều nay.",
+    "th": "รบกวนบอกท่านให้โทรหาผมบ่ายวันนี้ด้วยครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Certainly. May I have your phone number?",
+   "start": 21700,
+   "end": 24250,
+   "tr": {
+    "ur": "جی بالکل۔ کیا میں آپ کا فون نمبر لے سکتی ہوں؟",
+    "hi": "ज़रूर। क्या मैं आपका फ़ोन नंबर ले सकती हूँ?",
+    "ar": "بالتأكيد. هل يمكنني الحصول على رقم هاتفك؟",
+    "zh": "好的。请问您的电话号码是多少？",
+    "es": "Claro. ¿Me podría dar su número de teléfono?",
+    "fr": "Certainement. Puis-je avoir votre numéro de téléphone ?",
+    "tr": "Elbette. Telefon numaranızı alabilir miyim?",
+    "ja": "かしこまりました。お電話番号をお伺いしてもよろしいですか？",
+    "ko": "알겠습니다. 전화번호를 알려 주시겠어요?",
+    "it": "Certo. Mi può dare il suo numero di telefono?",
+    "de": "Natürlich. Darf ich Ihre Telefonnummer haben?",
+    "pt": "Claro. Pode me informar o seu número de telefone?",
+    "ru": "Конечно. Могу я узнать ваш номер телефона?",
+    "vi": "Dạ vâng. Anh cho tôi xin số điện thoại được không ạ?",
+    "th": "ได้ค่ะ ขอเบอร์โทรศัพท์ของคุณด้วยได้ไหมคะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Yes, it's 555142.",
+   "start": 24880,
+   "end": 27225,
+   "tr": {
+    "ur": "جی، یہ 555142 ہے۔",
+    "hi": "हाँ, यह 555142 है।",
+    "ar": "نعم، إنه 555142.",
+    "zh": "是的，号码是555142。",
+    "es": "Sí, es el 555142.",
+    "fr": "Oui, c'est le 555142.",
+    "tr": "Evet, numaram 555142.",
+    "ja": "はい、555142です。",
+    "ko": "네, 555142입니다.",
+    "it": "Sì, è il 555142.",
+    "de": "Ja, sie lautet 555142.",
+    "pt": "Sim, é 555142.",
+    "ru": "Да, 555142.",
+    "vi": "Vâng, số của tôi là 555142.",
+    "th": "ครับ เบอร์ 555142 ครับ"
+   }
+  },
+  {
+   "speaker": 0,
+   "text": "Thank you. I'll pass along your message.",
+   "start": 27225,
+   "end": 29190,
+   "tr": {
+    "ur": "شکریہ۔ میں آپ کا پیغام ان تک پہنچا دوں گی۔",
+    "hi": "धन्यवाद। मैं आपका संदेश उन तक पहुँचा दूँगी।",
+    "ar": "شكرًا لك. سأوصل رسالتك إليها.",
+    "zh": "谢谢。我会把您的留言转告她。",
+    "es": "Gracias. Le haré llegar su mensaje.",
+    "fr": "Merci. Je transmettrai votre message.",
+    "tr": "Teşekkür ederim. Mesajınızı ileteceğim.",
+    "ja": "ありがとうございます。ご伝言は確かにお伝えいたします。",
+    "ko": "감사합니다. 메시지를 그분께 꼭 전해 드리겠습니다.",
+    "it": "Grazie. Riferirò il suo messaggio.",
+    "de": "Danke. Ich gebe ihr Ihre Nachricht weiter.",
+    "pt": "Obrigada. Vou repassar o seu recado para ela.",
+    "ru": "Спасибо. Я передам ей ваше сообщение.",
+    "vi": "Cảm ơn anh. Tôi sẽ chuyển lời nhắn của anh cho cô ấy ạ.",
+    "th": "ขอบคุณค่ะ เดี๋ยวดิฉันส่งต่อข้อความของคุณให้ท่านค่ะ"
+   }
+  },
+  {
+   "speaker": 1,
+   "text": "Thanks for your help.",
+   "start": 29310,
+   "end": 30080,
+   "tr": {
+    "ur": "آپ کی مدد کا شکریہ۔",
+    "hi": "आपकी मदद के लिए धन्यवाद।",
+    "ar": "شكرًا على مساعدتكِ.",
+    "zh": "谢谢您的帮助。",
+    "es": "Gracias por su ayuda.",
+    "fr": "Merci pour votre aide.",
+    "tr": "Yardımınız için teşekkür ederim.",
+    "ja": "助かりました。ありがとうございます。",
+    "ko": "도와주셔서 감사합니다.",
+    "it": "Grazie per l'aiuto.",
+    "de": "Danke für Ihre Hilfe.",
+    "pt": "Obrigado pela ajuda.",
+    "ru": "Спасибо за помощь.",
+    "vi": "Cảm ơn chị đã giúp.",
+    "th": "ขอบคุณสำหรับความช่วยเหลือครับ"
+   }
+  }
+ ],
+ "words": [
+  {
+   "word": "office",
+   "meaning": "a place where people do their work",
+   "tr": {
+    "ur": "آفس",
+    "hi": "ऑफ़िस",
+    "ar": "مكتب",
+    "zh": "办公室",
+    "es": "oficina",
+    "fr": "bureau",
+    "tr": "ofis",
+    "ja": "オフィス",
+    "ko": "사무실",
+    "it": "ufficio",
+    "de": "das Büro",
+    "pt": "escritório",
+    "ru": "офис",
+    "vi": "văn phòng",
+    "th": "สำนักงาน"
+   }
+  },
+  {
+   "word": "project manager",
+   "meaning": "the person who leads a project",
+   "tr": {
+    "ur": "پروجیکٹ مینیجر",
+    "hi": "प्रोजेक्ट मैनेजर",
+    "ar": "مديرة المشروع",
+    "zh": "项目经理",
+    "es": "gerente de proyecto",
+    "fr": "cheffe de projet",
+    "tr": "proje müdürü",
+    "ja": "プロジェクトマネージャー",
+    "ko": "프로젝트 매니저",
+    "it": "responsabile di progetto",
+    "de": "die Projektleiterin",
+    "pt": "gerente de projeto",
+    "ru": "руководитель проекта",
+    "vi": "quản lý dự án",
+    "th": "ผู้จัดการโครงการ"
+   }
+  },
+  {
+   "word": "speak with",
+   "meaning": "talk to a person, for example on the phone",
+   "tr": {
+    "ur": "سے بات کرنا",
+    "hi": "से बात करना",
+    "ar": "تحدّث مع",
+    "zh": "和……通话",
+    "es": "hablar con",
+    "fr": "parler à",
+    "tr": "görüşmek",
+    "ja": "お話しする",
+    "ko": "통화하다",
+    "it": "parlare con",
+    "de": "sprechen mit",
+    "pt": "falar com",
+    "ru": "поговорить с",
+    "vi": "nói chuyện với",
+    "th": "คุยกับ"
+   }
+  },
+  {
+   "word": "in a meeting",
+   "meaning": "busy at a meeting with other people",
+   "tr": {
+    "ur": "میٹنگ میں",
+    "hi": "मीटिंग में",
+    "ar": "في اجتماع",
+    "zh": "在开会",
+    "es": "en una reunión",
+    "fr": "en réunion",
+    "tr": "toplantıda",
+    "ja": "会議中",
+    "ko": "회의 중",
+    "it": "in riunione",
+    "de": "in einer Besprechung",
+    "pt": "em reunião",
+    "ru": "на совещании",
+    "vi": "đang họp",
+    "th": "กำลังประชุม"
+   }
+  },
+  {
+   "word": "leave a message",
+   "meaning": "give words for someone who is not there now",
+   "tr": {
+    "ur": "پیغام چھوڑنا",
+    "hi": "संदेश छोड़ना",
+    "ar": "ترك رسالة",
+    "zh": "留言",
+    "es": "dejar un mensaje",
+    "fr": "laisser un message",
+    "tr": "mesaj bırakmak",
+    "ja": "伝言を頼む",
+    "ko": "메시지를 남기다",
+    "it": "lasciare un messaggio",
+    "de": "eine Nachricht hinterlassen",
+    "pt": "deixar um recado",
+    "ru": "оставить сообщение",
+    "vi": "để lại lời nhắn",
+    "th": "ฝากข้อความ"
+   }
+  },
+  {
+   "word": "certainly",
+   "meaning": "a polite way to say yes",
+   "tr": {
+    "ur": "جی بالکل",
+    "hi": "ज़रूर",
+    "ar": "بالتأكيد",
+    "zh": "当然",
+    "es": "claro",
+    "fr": "certainement",
+    "tr": "elbette",
+    "ja": "かしこまりました",
+    "ko": "물론입니다",
+    "it": "certo",
+    "de": "natürlich",
+    "pt": "claro",
+    "ru": "конечно",
+    "vi": "dạ vâng",
+    "th": "แน่นอน"
+   }
+  },
+  {
+   "word": "phone number",
+   "meaning": "the numbers you dial to call someone",
+   "tr": {
+    "ur": "فون نمبر",
+    "hi": "फ़ोन नंबर",
+    "ar": "رقم الهاتف",
+    "zh": "电话号码",
+    "es": "número de teléfono",
+    "fr": "numéro de téléphone",
+    "tr": "telefon numarası",
+    "ja": "電話番号",
+    "ko": "전화번호",
+    "it": "numero di telefono",
+    "de": "die Telefonnummer",
+    "pt": "número de telefone",
+    "ru": "номер телефона",
+    "vi": "số điện thoại",
+    "th": "เบอร์โทรศัพท์"
+   }
+  },
+  {
+   "word": "call",
+   "meaning": "phone someone",
+   "tr": {
+    "ur": "فون کرنا",
+    "hi": "फ़ोन करना",
+    "ar": "اتّصل",
+    "zh": "打电话",
+    "es": "llamar",
+    "fr": "appeler",
+    "tr": "aramak",
+    "ja": "電話する",
+    "ko": "전화하다",
+    "it": "chiamare",
+    "de": "anrufen",
+    "pt": "ligar",
+    "ru": "позвонить",
+    "vi": "gọi điện",
+    "th": "โทร"
+   }
+  },
+  {
+   "word": "this afternoon",
+   "meaning": "today, after midday",
+   "tr": {
+    "ur": "آج دوپہر",
+    "hi": "आज दोपहर",
+    "ar": "بعد ظهر اليوم",
+    "zh": "今天下午",
+    "es": "esta tarde",
+    "fr": "cet après-midi",
+    "tr": "bu öğleden sonra",
+    "ja": "今日の午後",
+    "ko": "오늘 오후",
+    "it": "questo pomeriggio",
+    "de": "heute Nachmittag",
+    "pt": "esta tarde",
+    "ru": "сегодня днём",
+    "vi": "chiều nay",
+    "th": "บ่ายวันนี้"
+   }
+  },
+  {
+   "word": "pass along",
+   "meaning": "give a message or information to another person",
+   "tr": {
+    "ur": "پہنچا دینا",
+    "hi": "पहुँचा देना",
+    "ar": "أوصل",
+    "zh": "转告",
+    "es": "hacer llegar",
+    "fr": "transmettre",
+    "tr": "iletmek",
+    "ja": "伝える",
+    "ko": "전하다",
+    "it": "riferire",
+    "de": "weitergeben",
+    "pt": "repassar",
+    "ru": "передать",
+    "vi": "chuyển lời",
+    "th": "ส่งต่อ"
+   }
+  }
+ ]
+}
