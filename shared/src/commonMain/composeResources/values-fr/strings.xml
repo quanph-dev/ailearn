@@ -25,11 +25,11 @@
     <string name="ui_yes_exit">Oui, quitter</string>
     <string name="fo_onboarding_button_next">Suivant</string>
     <string name="fo_onboarding_button_start">Commencer</string>
-    <string name="fo_onboarding_description_1">Discutez avec votre tuteur IA personnel et apprenez n'importe quelle langue naturellement, à tout moment.</string>
+    <string name="fo_onboarding_description_1">"Discutez avec votre tuteur IA personnel et apprenez n'importe quelle langue naturellement, à tout moment."</string>
     <string name="fo_onboarding_description_2">Travaillez votre prononciation et recevez un retour instantané sur chaque mot.</string>
     <string name="fo_onboarding_description_3">Enchaînez les séries quotidiennes et suivez vos progrès à chaque étape.</string>
     <string name="fo_onboarding_swipe_hint">Glissez pour continuer</string>
-    <string name="fo_onboarding_title_1">Apprenez avec l'IA</string>
+    <string name="fo_onboarding_title_1">"Apprenez avec l'IA"</string>
     <string name="fo_onboarding_title_2">Parlez avec assurance</string>
     <string name="fo_onboarding_title_3">Atteignez vos objectifs</string>
     <string name="fo_survey_continue">Commencer à apprendre</string>

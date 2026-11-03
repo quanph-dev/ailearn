@@ -39,10 +39,11 @@ private data class LearningProgressSnapshot(
     val openedLessons: Set<String> = emptySet(),
     val nativeLanguage: String = "vi",
     val targetLanguage: String = "en",
-    val englishLevel: String = "A1",
+    val englishLevel: String = EnglishLevel.DEFAULT,
     val dailyGoalMinutes: Int = 10,
     val tutorVoice: String = "Female",
-    val learnLanguageFromSurvey: Boolean = false
+    val learnLanguageFromSurvey: Boolean = false,
+    val surveyBeforeHome: Boolean = true
 )
 
 /**
@@ -130,12 +131,13 @@ object UserPrefs {
     var learningLanguage: String
         get() = targetLanguage
         set(value) { targetLanguage = value }
-    private var _englishLevel: String = "A1"
+    private var _englishLevel: String = EnglishLevel.DEFAULT
     var englishLevel: String
         get() = _englishLevel
         set(value) {
-            if (_englishLevel != value) {
-                _englishLevel = value
+            val canonical = EnglishLevel.toFullName(value)
+            if (_englishLevel != canonical) {
+                _englishLevel = canonical
                 changed()
             }
         }
@@ -172,6 +174,15 @@ object UserPrefs {
         set(value) {
             if (_learnLanguageFromSurvey != value) {
                 _learnLanguageFromSurvey = value
+                changed()
+            }
+        }
+    private var _surveyBeforeHome: Boolean = true
+    var surveyBeforeHome: Boolean
+        get() = _surveyBeforeHome
+        set(value) {
+            if (_surveyBeforeHome != value) {
+                _surveyBeforeHome = value
                 changed()
             }
         }
@@ -213,7 +224,8 @@ object UserPrefs {
             englishLevel = englishLevel,
             dailyGoalMinutes = dailyGoalMinutes,
             tutorVoice = tutorVoice,
-            learnLanguageFromSurvey = learnLanguageFromSurvey
+            learnLanguageFromSurvey = learnLanguageFromSurvey,
+            surveyBeforeHome = surveyBeforeHome
         )
     )
 
@@ -247,6 +259,7 @@ object UserPrefs {
             dailyGoalMinutes = snapshot.dailyGoalMinutes
             tutorVoice = snapshot.tutorVoice
             learnLanguageFromSurvey = snapshot.learnLanguageFromSurvey
+            surveyBeforeHome = snapshot.surveyBeforeHome
         } finally {
             isRestoringProgress = false
         }

@@ -40,6 +40,7 @@ import ailearn.shared.generated.resources.setting_goal
 import ailearn.shared.generated.resources.setting_learn
 import ailearn.shared.generated.resources.setting_level
 import ailearn.shared.generated.resources.setting_native
+import com.example.basekmp.data.EnglishLevel
 import com.example.basekmp.data.Languages
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
@@ -75,7 +76,7 @@ fun SettingsScreen(
     modifier: Modifier = Modifier
 ) {
     var activePicker by remember { mutableStateOf<PickerSpec?>(null) }
-    var currentEnglishLevel by remember { mutableStateOf(UserPrefs.englishLevel) }
+    var currentEnglishLevel by remember { mutableStateOf(EnglishLevel.toFullName(UserPrefs.englishLevel)) }
     var currentDailyGoal by remember { mutableStateOf(UserPrefs.getDailyGoal()) }
     var currentLearnLang by remember { mutableStateOf(Languages.learn(UserPrefs.getLearnLanguage()).displayName) }
     var currentNativeLang by remember { mutableStateOf(Languages.nativeFor(UserPrefs.nativeLanguage).displayName) }
@@ -129,18 +130,11 @@ fun SettingsScreen(
                         onClick = {
                             activePicker = PickerSpec(
                                 title = "Select Level",
-                                options = listOf(
-                                    "A1 Beginner",
-                                    "A2 Elementary",
-                                    "B1 Intermediate",
-                                    "B2 Upper Intermediate",
-                                    "C1 Advanced",
-                                    "Not Sure"
-                                ),
+                                options = EnglishLevel.ALL_SETTINGS,
                                 selected = currentEnglishLevel,
                                 onSelect = { selectedLevel ->
                                     UserPrefs.englishLevel = selectedLevel
-                                    currentEnglishLevel = selectedLevel
+                                    currentEnglishLevel = EnglishLevel.toFullName(selectedLevel)
                                 }
                             )
                         }
@@ -347,7 +341,7 @@ private fun SettingRow(item: SettingItem) {
         if (item.value != null) {
             Spacer(Modifier.width(8.dp))
             Text(
-                text = item.value,
+                text = Strings.tr(item.value),
                 color = TextSecondary,
                 fontSize = 13.sp,
                 maxLines = 1,

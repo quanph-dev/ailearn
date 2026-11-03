@@ -41,6 +41,7 @@ import androidx.compose.ui.unit.sp
 import com.example.basekmp.components.CongratsDialog
 import com.example.basekmp.components.PrimaryButton
 import com.example.basekmp.components.ProgressHeader
+import com.example.basekmp.data.EnglishLevel
 import com.example.basekmp.data.PracticeConfig
 import com.example.basekmp.data.StaticContent
 import com.example.basekmp.data.Strings
@@ -60,12 +61,12 @@ fun GrammarSetupScreen(
     modifier: Modifier = Modifier
 ) {
     var selectedType by remember { mutableStateOf("Prepositions") }
-    var selectedDifficulty by remember { mutableStateOf(UserPrefs.englishLevel.ifBlank { "Intermediate" }) }
+    var selectedDifficulty by remember { mutableStateOf(EnglishLevel.to3TierDifficulty(UserPrefs.englishLevel)) }
     var selectedCountText by remember { mutableStateOf("15 questions") }
 
     val types = remember { listOf("Prepositions", "Tenses", "Articles", "Conjunctions") }
     val difficulties = remember { listOf("Beginner", "Intermediate", "Advanced") }
-    val counts = remember { listOf("10 questions", "15 questions", "20 questions", "25 questions") }
+    val counts = remember { listOf("5 questions", "10 questions", "15 questions", "20 questions") }
 
     PracticeSetupScaffold(
         title = Strings.tr("Grammar"),
@@ -73,7 +74,6 @@ fun GrammarSetupScreen(
         onStart = {
             PracticeConfig.grammarType = selectedType
             PracticeConfig.grammarDifficulty = selectedDifficulty
-            UserPrefs.englishLevel = selectedDifficulty
             val count = selectedCountText.substringBefore(" ").toIntOrNull() ?: 15
             onStart(count)
         }
@@ -93,7 +93,7 @@ fun GrammarSetupScreen(
         )
         Spacer(Modifier.height(18.dp))
         DropdownField(
-            label = "Number of questions",
+            label = "Number of Questions",
             options = counts,
             selected = selectedCountText,
             onSelect = { selectedCountText = it }
@@ -217,7 +217,7 @@ fun GrammarQuizScreen(
             ) {
                 Column {
                     Text(
-                        text = Strings.tr("Question ${currentIndex + 1} of ${questions.size}"),
+                        text = "${Strings.tr("Question")} ${currentIndex + 1}/${questions.size}",
                         fontSize = 13.sp,
                         color = colors.textSecondary,
                         fontWeight = FontWeight.Medium

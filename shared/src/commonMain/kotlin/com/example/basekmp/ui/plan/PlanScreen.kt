@@ -996,11 +996,11 @@ private fun PathStartBar(
     val minutes = activities.sumOf {
         PlanProgress.activityMinutes(it, UserPrefs.dailyGoalMinutes, activities)
     }
-    val level = when (UserPrefs.englishLevel.uppercase()) {
-        "A1" -> tr("Beginner")
-        "A2" -> tr("Elementary")
-        "B2" -> tr("Upper Intermediate")
-        "C1" -> tr("Advanced")
+    val level = when {
+        UserPrefs.englishLevel.startsWith("A1", ignoreCase = true) -> tr("Beginner")
+        UserPrefs.englishLevel.startsWith("A2", ignoreCase = true) -> tr("Elementary")
+        UserPrefs.englishLevel.startsWith("B2", ignoreCase = true) -> tr("Upper Intermediate")
+        UserPrefs.englishLevel.startsWith("C", ignoreCase = true) -> tr("Advanced")
         else -> tr("Intermediate")
     }
     val unlocked = progress.isUnlocked(currentDay)

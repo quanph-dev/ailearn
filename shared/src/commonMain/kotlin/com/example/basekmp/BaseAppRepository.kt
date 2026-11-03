@@ -49,11 +49,11 @@ object StartupRouteResolver {
     fun resolve(
         languageSetup: Boolean,
         onboardingCompleted: Boolean,
-        firstOpenCompleted: Boolean
+        firstOpenCompleted: Boolean,
+        surveyBeforeHome: Boolean = true
     ): String = when {
-        !languageSetup -> BaseRoutes.StartupLanguage
         !firstOpenCompleted -> BaseRoutes.FirstOpenIntro
-        !onboardingCompleted -> BaseRoutes.Onboarding
+        surveyBeforeHome && !onboardingCompleted -> BaseRoutes.Onboarding
         else -> BaseRoutes.Home
     }
 }

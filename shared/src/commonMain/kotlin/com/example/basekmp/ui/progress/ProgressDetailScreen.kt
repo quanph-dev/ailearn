@@ -167,7 +167,7 @@ fun ProgressDetailScreen(
                         )
                     }
                     Text(
-                        text = "${Strings.tr("Level")}: ${item.level.ifBlank { UserPrefs.englishLevel }}",
+                        text = "${Strings.tr("Level")}: ${Strings.tr(item.level.ifBlank { UserPrefs.englishLevel })}",
                         fontSize = 14.sp,
                         color = colors.textSecondary
                     )

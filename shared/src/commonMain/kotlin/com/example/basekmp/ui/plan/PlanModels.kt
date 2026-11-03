@@ -48,11 +48,11 @@ data class LevelOption(
 ) {
     companion object {
         val ALL: List<LevelOption> = listOf(
-            LevelOption("I'm just starting", "I know little or no English", "A1"),
-            LevelOption("I know the basics", "I can use simple words and sentences", "A2"),
-            LevelOption("I can have conversations", "I can talk about familiar topics", "B1"),
-            LevelOption("I'm quite confident", "I can discuss complex topics", "B2"),
-            LevelOption("I'm fluent", "I can express ideas fluently and spontaneously", "C1")
+            LevelOption("I'm just starting", "I know little or no English", "A1 Beginner"),
+            LevelOption("I know the basics", "I can use simple words and sentences", "A2 Elementary"),
+            LevelOption("I can have conversations", "I can talk about familiar topics", "B1 Intermediate"),
+            LevelOption("I'm quite confident", "I can discuss complex topics", "C1 Advanced"),
+            LevelOption("I'm not sure", "We'll start at a comfortable pace", "Not Sure")
         )
     }
 }

@@ -49,6 +49,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
@@ -82,6 +83,8 @@ import com.example.basekmp.ui.components.RobotFrameAspect
 import com.example.basekmp.ui.plan.PlanFlow
 import com.example.basekmp.ui.speaking.PlatformSpeechRecognition
 import com.example.basekmp.ui.speaking.rememberPlatformSpeaker
+import com.example.basekmp.ui.speaking.rememberTypewriter
+import com.example.basekmp.ui.speaking.speechLocaleTagFor
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -122,26 +125,80 @@ fun TodayLessonScreen(
     var showReportDialog by remember { mutableStateOf(false) }
     var copiedMessageIndex by remember { mutableStateOf<Int?>(null) }
 
-    val speaker = rememberPlatformSpeaker()
+    val speaker = rememberPlatformSpeaker(UserPrefs.tutorVoice)
     var speakingMessageText by remember { mutableStateOf<String?>(null) }
+
+    val targetLocaleTag = remember(UserPrefs.targetLanguage) {
+        speechLocaleTagFor(UserPrefs.targetLanguage)
+    }
+    val nativeLocaleTag = remember(UserPrefs.nativeLanguage) {
+        speechLocaleTagFor(UserPrefs.nativeLanguage)
+    }
+
+    fun currentSpeedFactor(): Float = when (speeds[speedIndex]) {
+        "1.5x" -> 1.5f
+        "2x" -> 2.0f
+        else -> 1.0f
+    }
+
+    val openingGreeting = remember(lessonTitle) {
+        "Hello! Ready for today's five-minute lesson on \"$lessonTitle\"? Tap the mic and tell me what you'd say first!"
+    }
 
     val messages = remember {
         mutableStateListOf(
             ChatMessage(
-                text = "Hello! Ready for today's five-minute lesson on \"$lessonTitle\"? Tap the mic and tell me what you'd say first!",
+                text = openingGreeting,
                 fromUser = false,
-                animate = false
+                animate = true
             )
         )
+    }
+
+    DisposableEffect(Unit) {
+        onDispose {
+            speaker.stop()
+        }
+    }
+
+    // Warm up TTS locales & auto-speak the opening greeting message immediately on screen entry
+    LaunchedEffect(Unit) {
+        speaker.warmUp(targetLocaleTag, nativeLocaleTag)
+        speakingMessageText = openingGreeting
+        speaker.speak(
+            text = openingGreeting,
+            languageTag = targetLocaleTag,
+            voicePreference = UserPrefs.tutorVoice,
+            speed = currentSpeedFactor()
+        )
+    }
+
+    // Clear animate flag and speakingMessageText once speech & typewriter reveal finish
+    LaunchedEffect(messages.size, speaker.isSpeaking, speakingMessageText) {
+        if (!speaker.isSpeaking && speakingMessageText != null) {
+            val finishedText = speakingMessageText
+            val idx = messages.indexOfLast { !it.fromUser && it.text == finishedText }
+            if (idx >= 0 && messages[idx].animate) {
+                val len = messages[idx].text.length
+                if (speaker.spokenChars < len) {
+                    delay((len * 18L).coerceAtMost(1500L))
+                }
+                if (idx < messages.size && messages[idx].animate) {
+                    messages[idx] = messages[idx].copy(animate = false)
+                }
+            }
+            speakingMessageText = null
+        }
     }
 
     val initialSystemBackRequest = remember { systemBackRequest }
     LaunchedEffect(systemBackRequest) {
         if (systemBackRequest != initialSystemBackRequest && !isCompleting && !showCompletionDialog) {
+            speaker.stop()
+            speakingMessageText = null
             if (messages.any { it.fromUser }) {
                 showExitDialog = true
             } else {
-                speaker.stop()
                 onBack(false)
             }
         }
@@ -169,12 +226,15 @@ fun TodayLessonScreen(
             title = lessonTitle,
             level = lessonLevel,
             language = "English",
-            nativeLanguage = UserPrefs.nativeLanguage
+            nativeLanguage = com.example.basekmp.data.Languages.nativeFor(UserPrefs.nativeLanguage).englishName
         )
     }
 
     fun sendMessage(userText: String) {
         if (userText.isBlank() || isThinking) return
+
+        speaker.stop()
+        speakingMessageText = null
 
         messages.add(ChatMessage(text = userText, fromUser = true))
         inputText = ""
@@ -183,33 +243,34 @@ fun TodayLessonScreen(
 
         coroutineScope.launch {
             val rawReply = TutorAi.reply(
-                history = messages,
+                history = messages.toList(),
                 voice = UserPrefs.tutorVoice,
-                language = "English",
-                nativeLanguage = UserPrefs.nativeLanguage,
+                language = com.example.basekmp.data.Languages.learn(UserPrefs.targetLanguage).englishName,
+                nativeLanguage = com.example.basekmp.data.Languages.nativeFor(UserPrefs.nativeLanguage).englishName,
                 lessonTitle = lessonTitle,
                 lessonLevel = lessonLevel,
                 replyInNative = false,
                 withMood = true
             )
 
-            if (rawReply != null) {
-                val (mood, cleanReply) = TutorAi.splitMood(rawReply)
+            val cleanReply = if (rawReply != null) {
+                val (mood, text) = TutorAi.splitMood(rawReply)
                 if (mood != null) {
                     currentMood = mood
                 }
-                messages.add(ChatMessage(text = cleanReply, fromUser = false, animate = true))
-                speakingMessageText = cleanReply
-                speaker.speak(cleanReply, "en-US", UserPrefs.tutorVoice)
+                text
             } else {
-                messages.add(
-                    ChatMessage(
-                        text = tr("Couldn't get a reply. Please try again."),
-                        fromUser = false,
-                        animate = true
-                    )
-                )
+                "Good effort! Say a full sentence in English and I'll help you make it sound natural."
             }
+            messages.add(ChatMessage(text = cleanReply, fromUser = false, animate = true))
+            speakingMessageText = cleanReply
+            speaker.speak(
+                text = cleanReply,
+                languageTag = targetLocaleTag,
+                voicePreference = UserPrefs.tutorVoice,
+                speed = currentSpeedFactor(),
+                altLanguageTag = nativeLocaleTag
+            )
             isThinking = false
         }
     }
@@ -231,6 +292,8 @@ fun TodayLessonScreen(
 
     fun completeLesson(showDialog: Boolean = true) {
         if (isCompleting || showCompletionDialog) return
+        speaker.stop()
+        speakingMessageText = null
         isCompleting = true
         coroutineScope.launch {
             try {
@@ -337,10 +400,11 @@ fun TodayLessonScreen(
                                 .clip(CircleShape)
                                 .background(Color.Black.copy(alpha = 0.35f))
                                 .clickable(enabled = !isCompleting) {
+                                    speaker.stop()
+                                    speakingMessageText = null
                                     if (messages.any { it.fromUser }) {
                                         showExitDialog = true
                                     } else {
-                                        speaker.stop()
                                         onBack(false)
                                     }
                                 },
@@ -507,6 +571,12 @@ fun TodayLessonScreen(
                                 }
                             } else {
                                 // AI Bubble (Left Aligned)
+                                val isThisPlaying = speakingMessageText == msg.text && speaker.isSpeaking
+                                val displayedText = rememberTypewriter(
+                                    text = msg.text,
+                                    enabled = msg.animate,
+                                    spokenChars = if (speakingMessageText == msg.text) speaker.spokenChars else null
+                                )
                                 Row(
                                     modifier = Modifier.fillMaxWidth(),
                                     horizontalArrangement = Arrangement.Start
@@ -521,7 +591,7 @@ fun TodayLessonScreen(
                                     ) {
                                         Column {
                                             Text(
-                                                text = msg.text,
+                                                text = displayedText,
                                                 color = Color(0xFF1D2939),
                                                 fontSize = 14.sp,
                                                 lineHeight = 20.sp
@@ -532,7 +602,6 @@ fun TodayLessonScreen(
                                                 horizontalArrangement = Arrangement.spacedBy(10.dp)
                                             ) {
                                                 // Audio Stop / Speak Button
-                                                val isThisPlaying = speakingMessageText == msg.text && speaker.isSpeaking
                                                 if (isThisPlaying) {
                                                     Box(
                                                         modifier = Modifier
@@ -542,6 +611,9 @@ fun TodayLessonScreen(
                                                             .clickable {
                                                                 speaker.stop()
                                                                 speakingMessageText = null
+                                                                if (msg.animate) {
+                                                                    messages[index] = msg.copy(animate = false)
+                                                                }
                                                             },
                                                         contentAlignment = Alignment.Center
                                                     ) {
@@ -558,7 +630,13 @@ fun TodayLessonScreen(
                                                             .clip(CircleShape)
                                                             .clickable {
                                                                 speakingMessageText = msg.text
-                                                                speaker.speak(msg.text, "en-US", UserPrefs.tutorVoice)
+                                                                speaker.speak(
+                                                                    text = msg.text,
+                                                                    languageTag = targetLocaleTag,
+                                                                    voicePreference = UserPrefs.tutorVoice,
+                                                                    speed = currentSpeedFactor(),
+                                                                    altLanguageTag = nativeLocaleTag
+                                                                )
                                                             }
                                                             .padding(4.dp),
                                                         contentAlignment = Alignment.Center

@@ -76,11 +76,20 @@ import com.example.basekmp.theme.AppTheme
 import com.example.basekmp.ui.components.BackTitleBar
 import com.example.basekmp.ui.speaking.PlatformSpeechRecognition
 import com.example.basekmp.ui.speaking.rememberPlatformSpeaker
+import com.example.basekmp.ui.speaking.rememberTypewriter
+import com.example.basekmp.ui.speaking.speechLocaleTagFor
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 private const val AI_TUTOR_GREETING =
     "Hi! I'm your AI English tutor. Ask me anything, or pick a quick action below to get started."
+
+private val AI_TUTOR_CANNED_REPLIES = listOf(
+    "Great question! Let's break it down together — could you give me an example sentence?",
+    "Nice try! A more natural way to say that would be: \"I have been learning English for two years.\"",
+    "Remember: use \"since\" with a point in time and \"for\" with a duration. Want a quick practice question?",
+    "Well done! Your sentence is grammatically correct. Let's make it sound even more natural."
+)
 
 /**
  * Conversational AI Tutor Screen.
@@ -100,7 +109,7 @@ fun AiTutorScreen(
             ChatMessage(
                 text = AI_TUTOR_GREETING,
                 fromUser = false,
-                animate = false
+                animate = true
             )
         )
     }
@@ -110,8 +119,15 @@ fun AiTutorScreen(
     var connectionError by remember { mutableStateOf(false) }
     var closeReported by remember { mutableStateOf(false) }
     var assistantMood by remember { mutableStateOf(RobotMood.NEUTRAL) }
-    val speaker = rememberPlatformSpeaker()
+    val speaker = rememberPlatformSpeaker(UserPrefs.tutorVoice)
     var speakingMessageText by remember { mutableStateOf<String?>(null) }
+
+    val targetLocaleTag = remember(UserPrefs.targetLanguage) {
+        speechLocaleTagFor(UserPrefs.targetLanguage)
+    }
+    val nativeLocaleTag = remember(UserPrefs.nativeLanguage) {
+        speechLocaleTagFor(UserPrefs.nativeLanguage)
+    }
 
     DisposableEffect(Unit) {
         onDispose {
@@ -119,8 +135,38 @@ fun AiTutorScreen(
         }
     }
 
+    // Warm up TTS locales & auto-speak the opening greeting message immediately on screen entry
+    LaunchedEffect(Unit) {
+        speaker.warmUp(targetLocaleTag, nativeLocaleTag)
+        speakingMessageText = AI_TUTOR_GREETING
+        speaker.speak(
+            text = AI_TUTOR_GREETING,
+            languageTag = targetLocaleTag,
+            voicePreference = UserPrefs.tutorVoice
+        )
+    }
+
+    // Clear animate flag and speakingMessageText once speech & typewriter reveal finish
+    LaunchedEffect(messages.size, speaker.isSpeaking, speakingMessageText) {
+        if (!speaker.isSpeaking && speakingMessageText != null) {
+            val finishedText = speakingMessageText
+            val idx = messages.indexOfLast { !it.fromUser && it.text == finishedText }
+            if (idx >= 0 && messages[idx].animate) {
+                val len = messages[idx].text.length
+                if (speaker.spokenChars < len) {
+                    delay((len * 18L).coerceAtMost(1500L))
+                }
+                if (idx < messages.size && messages[idx].animate) {
+                    messages[idx] = messages[idx].copy(animate = false)
+                }
+            }
+            speakingMessageText = null
+        }
+    }
+
     fun closeTutor() {
         speaker.stop()
+        speakingMessageText = null
         if (!closeReported) {
             closeReported = true
             onBack(messages.any { it.fromUser })
@@ -141,6 +187,9 @@ fun AiTutorScreen(
     fun sendMessage(userText: String, mode: String? = null) {
         if (userText.isBlank() || isThinking) return
 
+        speaker.stop()
+        speakingMessageText = null
+
         messages.add(ChatMessage(text = userText, fromUser = true))
         inputText = ""
         connectionError = false
@@ -151,24 +200,32 @@ fun AiTutorScreen(
             listState.animateScrollToItem(messages.size - 1)
 
             val reply = TutorAi.reply(
-                history = messages,
+                history = messages.toList(),
                 voice = UserPrefs.tutorVoice,
                 mode = mode,
-                language = "English",
-                nativeLanguage = UserPrefs.nativeLanguage,
+                language = com.example.basekmp.data.Languages.learn(UserPrefs.targetLanguage).englishName,
+                nativeLanguage = com.example.basekmp.data.Languages.nativeFor(UserPrefs.nativeLanguage).englishName,
                 studentName = null,
-                withMood = true
+                withMood = false,
+                greetInNative = true
             )
 
-            if (reply == null) {
-                connectionError = true
-            } else {
-                val (mood, cleanReply) = TutorAi.splitMood(reply)
+            val cleanReply = if (reply != null) {
+                val (mood, text) = TutorAi.splitMood(reply)
                 assistantMood = mood ?: RobotMood.NEUTRAL
-                messages.add(ChatMessage(text = cleanReply, fromUser = false, animate = true))
-                speakingMessageText = cleanReply
-                speaker.speak(cleanReply, "en-US", UserPrefs.tutorVoice)
+                text
+            } else {
+                assistantMood = RobotMood.HAPPY
+                AI_TUTOR_CANNED_REPLIES[messages.count { !it.fromUser } % AI_TUTOR_CANNED_REPLIES.size]
             }
+            messages.add(ChatMessage(text = cleanReply, fromUser = false, animate = true))
+            speakingMessageText = cleanReply
+            speaker.speak(
+                text = cleanReply,
+                languageTag = targetLocaleTag,
+                voicePreference = UserPrefs.tutorVoice,
+                altLanguageTag = nativeLocaleTag
+            )
             isThinking = false
             delay(100)
             listState.animateScrollToItem(messages.size - 1)
@@ -206,8 +263,14 @@ fun AiTutorScreen(
                             ChatMessage(
                                 text = AI_TUTOR_GREETING,
                                 fromUser = false,
-                                animate = false
+                                animate = true
                             )
+                        )
+                        speakingMessageText = AI_TUTOR_GREETING
+                        speaker.speak(
+                            text = AI_TUTOR_GREETING,
+                            languageTag = targetLocaleTag,
+                            voicePreference = UserPrefs.tutorVoice
                         )
                     }) {
                         Icon(
@@ -249,18 +312,27 @@ fun AiTutorScreen(
                 contentPadding = PaddingValues(vertical = AppTheme.dimens.spacingMd),
                 verticalArrangement = Arrangement.spacedBy(AppTheme.dimens.spacingMd)
             ) {
-                itemsIndexed(messages) { _, msg ->
+                itemsIndexed(messages) { index, msg ->
                     val isMsgSpeaking = speaker.isSpeaking && speakingMessageText == msg.text
                     ChatBubble(
                         message = msg,
                         isSpeaking = isMsgSpeaking,
+                        spokenChars = if (speakingMessageText == msg.text) speaker.spokenChars else null,
                         onSpeak = {
                             speakingMessageText = it
-                            speaker.speak(it, "en-US", UserPrefs.tutorVoice)
+                            speaker.speak(
+                                text = it,
+                                languageTag = targetLocaleTag,
+                                voicePreference = UserPrefs.tutorVoice,
+                                altLanguageTag = nativeLocaleTag
+                            )
                         },
                         onStop = {
                             speaker.stop()
                             speakingMessageText = null
+                            if (msg.animate) {
+                                messages[index] = msg.copy(animate = false)
+                            }
                         }
                     )
                 }
@@ -378,6 +450,8 @@ fun AiTutorScreen(
                                     } else if (isListening) {
                                         stopListening()
                                     } else {
+                                        speaker.stop()
+                                        speakingMessageText = null
                                         startListening()
                                     }
                                 },
@@ -410,6 +484,7 @@ fun AiTutorScreen(
 private fun ChatBubble(
     message: ChatMessage,
     isSpeaking: Boolean = false,
+    spokenChars: Int? = null,
     onSpeak: (String) -> Unit = {},
     onStop: () -> Unit = {}
 ) {
@@ -454,20 +529,17 @@ private fun ChatBubble(
                 .padding(horizontal = 15.dp, vertical = 12.dp)
         ) {
             Column {
-                if (message.animate && !isUser) {
-                    TypewriterText(
-                        fullText = message.text,
-                        color = Color(0xFF1D2939),
-                        fontSize = 14.sp
-                    )
-                } else {
-                    Text(
-                        text = message.text,
-                        color = Color(0xFF1D2939),
-                        fontSize = 14.sp,
-                        lineHeight = 20.sp
-                    )
-                }
+                val displayedText = rememberTypewriter(
+                    text = message.text,
+                    enabled = message.animate && !isUser,
+                    spokenChars = spokenChars
+                )
+                Text(
+                    text = displayedText,
+                    color = Color(0xFF1D2939),
+                    fontSize = 14.sp,
+                    lineHeight = 20.sp
+                )
 
                 Spacer(Modifier.height(8.dp))
 

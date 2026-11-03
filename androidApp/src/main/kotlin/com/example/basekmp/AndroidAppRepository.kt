@@ -35,7 +35,8 @@ class AndroidAppRepository @Inject constructor(
         return StartupRouteResolver.resolve(
             languageSetup = preferences[IS_LANGUAGE_SETUP] ?: false,
             onboardingCompleted = preferences[ONBOARDING_COMPLETED] ?: false,
-            firstOpenCompleted = preferences[FIRST_OPEN_COMPLETED] ?: false
+            firstOpenCompleted = preferences[FIRST_OPEN_COMPLETED] ?: false,
+            surveyBeforeHome = com.example.basekmp.data.RemoteConfig.surveyBeforeHome
         )
     }
 
@@ -51,8 +52,13 @@ class AndroidAppRepository @Inject constructor(
     }
 
     override suspend fun completeFirstOpen(surveyLanguageCode: String?, initialOnboardingProgress: String) {
+        val surveyBeforeHome = com.example.basekmp.data.RemoteConfig.surveyBeforeHome
         dataStore.edit { values ->
+            values[IS_LANGUAGE_SETUP] = true
             values[FIRST_OPEN_COMPLETED] = true
+            if (!surveyBeforeHome) {
+                values[ONBOARDING_COMPLETED] = true
+            }
             values[FIRST_OPEN_SURVEY_LANGUAGE] = surveyLanguageCode.orEmpty()
             values[ONBOARDING_PROGRESS] = initialOnboardingProgress
         }

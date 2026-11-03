@@ -59,6 +59,7 @@ import ailearn.shared.generated.resources.plan_survey_level
 import ailearn.shared.generated.resources.plan_survey_name
 import ailearn.shared.generated.resources.plan_survey_time
 import com.example.basekmp.components.AppLinearProgressBar
+import com.example.basekmp.data.EnglishLevel
 import com.example.basekmp.data.GoalPlan
 import com.example.basekmp.data.Languages
 import com.example.basekmp.data.PlanCatalogData
@@ -526,7 +527,8 @@ private fun LevelStepContent(
             verticalArrangement = Arrangement.spacedBy(AppTheme.dimens.spacingSm)
         ) {
             items(LevelOption.ALL) { opt ->
-                val isSelected = opt.setting.equals(selectedLevel, ignoreCase = true)
+                val isSelected = opt.setting.equals(selectedLevel, ignoreCase = true) ||
+                    EnglishLevel.toFullName(opt.setting).equals(EnglishLevel.toFullName(selectedLevel), ignoreCase = true)
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -549,7 +551,7 @@ private fun LevelStepContent(
                         contentAlignment = Alignment.Center
                     ) {
                         Text(
-                            text = opt.setting,
+                            text = EnglishLevel.toCefrCode(opt.setting),
                             color = if (isSelected) AppTheme.colors.textOnPrimary else AppTheme.colors.textPrimary,
                             fontWeight = FontWeight.Bold,
                             fontSize = 14.sp

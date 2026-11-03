@@ -23,7 +23,12 @@ internal class IosAppRepository : BaseAppRepository {
             defaults.setBool(true, FIRST_OPEN_COMPLETED)
             firstOpenCompleted = true
         }
-        return StartupRouteResolver.resolve(languageSetup, onboardingCompleted, firstOpenCompleted)
+        return StartupRouteResolver.resolve(
+            languageSetup,
+            onboardingCompleted,
+            firstOpenCompleted,
+            com.example.basekmp.data.RemoteConfig.surveyBeforeHome
+        )
     }
 
     override suspend fun currentLanguageCode(): String = defaults.stringForKey(LANGUAGE_CODE).orEmpty()
@@ -34,7 +39,12 @@ internal class IosAppRepository : BaseAppRepository {
     }
 
     override suspend fun completeFirstOpen(surveyLanguageCode: String?, initialOnboardingProgress: String) {
+        val surveyBeforeHome = com.example.basekmp.data.RemoteConfig.surveyBeforeHome
+        defaults.setBool(true, IS_LANGUAGE_SETUP)
         defaults.setBool(true, FIRST_OPEN_COMPLETED)
+        if (!surveyBeforeHome) {
+            defaults.setBool(true, ONBOARDING_COMPLETED)
+        }
         defaults.setObject(surveyLanguageCode.orEmpty(), FIRST_OPEN_SURVEY_LANGUAGE)
         defaults.setObject(initialOnboardingProgress, ONBOARDING_PROGRESS)
     }

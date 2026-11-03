@@ -44,6 +44,7 @@ import com.example.basekmp.components.AppLinearProgressBar
 import com.example.basekmp.components.HoldToSpeakMic
 import com.example.basekmp.components.PrimaryButton
 import com.example.basekmp.components.ProgressHeader
+import com.example.basekmp.data.EnglishLevel
 import com.example.basekmp.data.PracticeConfig
 import com.example.basekmp.data.Languages
 import com.example.basekmp.data.PronunciationScorer
@@ -68,10 +69,10 @@ fun SpeakingSetupScreen(
     modifier: Modifier = Modifier
 ) {
     var selectedType by remember { mutableStateOf(SPEAKING_TYPES.first()) }
-    var selectedDifficulty by remember { mutableStateOf(UserPrefs.englishLevel.ifBlank { "Intermediate" }) }
-    var selectedCountText by remember { mutableStateOf("10 sentences") }
+    var selectedDifficulty by remember { mutableStateOf(EnglishLevel.to3TierDifficulty(UserPrefs.englishLevel)) }
+    var selectedCountText by remember { mutableStateOf("10 cards") }
 
-    val counts = remember { listOf("5 sentences", "10 sentences", "15 sentences", "20 sentences") }
+    val counts = remember { listOf("5 cards", "10 cards", "15 cards") }
 
     PracticeSetupScaffold(
         title = Strings.tr("Speaking"),
@@ -79,7 +80,6 @@ fun SpeakingSetupScreen(
         onStart = {
             PracticeConfig.speakingType = selectedType
             PracticeConfig.speakingDifficulty = selectedDifficulty
-            UserPrefs.englishLevel = selectedDifficulty
             val count = selectedCountText.substringBefore(" ").toIntOrNull() ?: 10
             onStart(count)
         }
@@ -99,7 +99,7 @@ fun SpeakingSetupScreen(
         )
         Spacer(Modifier.height(18.dp))
         DropdownField(
-            label = "Number of sentences",
+            label = "Number of Speaking Cards",
             options = counts,
             selected = selectedCountText,
             onSelect = { selectedCountText = it }
@@ -245,7 +245,7 @@ fun SpeakingCardsScreen(
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Text(
-                            text = Strings.tr("Sentence ${currentIndex + 1}/${deck.size}"),
+                            text = "${Strings.tr("Sentence")} ${currentIndex + 1}/${deck.size}",
                             fontSize = 13.sp,
                             color = colors.textSecondary,
                             fontWeight = FontWeight.Medium

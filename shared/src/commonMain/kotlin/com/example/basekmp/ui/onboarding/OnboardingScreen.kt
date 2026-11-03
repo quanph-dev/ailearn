@@ -75,6 +75,13 @@ fun OnboardingScreen(
     onFinished: (OnboardingState) -> Unit
 ) {
     val uiLanguage = Strings.getLanguage()
+
+    androidx.compose.runtime.LaunchedEffect(state.nativeLanguage) {
+        if (!state.nativeLanguage.isNullOrBlank()) {
+            Strings.select(state.nativeLanguage)
+        }
+    }
+
     fun titleFor(step: OnboardingStep): String = Strings.tr(when (step) {
         OnboardingStep.LearnLanguage -> "Which Language Do You Want to Learn?"
         OnboardingStep.NativeLanguage -> "What is Your Native Language?"
@@ -201,7 +208,10 @@ fun OnboardingScreen(
                         OptionCard(
                             options = nativeLanguageOptions,
                             selectedId = state.nativeLanguage,
-                            onSelect = { onStateChange(state.withSelection(it)) }
+                            onSelect = {
+                                Strings.select(it)
+                                onStateChange(state.withSelection(it))
+                            }
                         )
                     }
                     OnboardingStep.Level -> {

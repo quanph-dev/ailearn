@@ -45,6 +45,7 @@ import androidx.compose.ui.unit.sp
 import com.example.basekmp.components.CongratsDialog
 import com.example.basekmp.components.PrimaryButton
 import com.example.basekmp.components.ProgressHeader
+import com.example.basekmp.data.EnglishLevel
 import com.example.basekmp.data.PracticeConfig
 import com.example.basekmp.data.Languages
 import com.example.basekmp.data.StaticContent
@@ -67,12 +68,12 @@ fun VocabSetupScreen(
     modifier: Modifier = Modifier
 ) {
     var selectedCategory by remember { mutableStateOf("Daily life") }
-    var selectedLevel by remember { mutableStateOf(UserPrefs.englishLevel.ifBlank { "Intermediate" }) }
+    var selectedLevel by remember { mutableStateOf(EnglishLevel.to3TierDifficulty(UserPrefs.englishLevel)) }
     var selectedCountText by remember { mutableStateOf("10 words") }
 
     val categories = remember { listOf("Daily life", "Business", "Travel", "IELTS", "Academic") }
     val levels = remember { listOf("Beginner", "Intermediate", "Advanced") }
-    val counts = remember { listOf("5 words", "10 words", "15 words", "20 words") }
+    val counts = remember { listOf("5 words", "10 words", "15 words") }
 
     PracticeSetupScaffold(
         title = Strings.tr("Vocabulary"),
@@ -80,7 +81,6 @@ fun VocabSetupScreen(
         onStart = {
             PracticeConfig.vocabCategory = selectedCategory
             PracticeConfig.vocabLevel = selectedLevel
-            UserPrefs.englishLevel = selectedLevel
             val count = selectedCountText.substringBefore(" ").toIntOrNull() ?: 10
             onStart(count)
         }
@@ -93,14 +93,14 @@ fun VocabSetupScreen(
         )
         Spacer(Modifier.height(18.dp))
         DropdownField(
-            label = "Difficulty",
+            label = "Level of Difficulty",
             options = levels,
             selected = selectedLevel,
             onSelect = { selectedLevel = it }
         )
         Spacer(Modifier.height(18.dp))
         DropdownField(
-            label = "Number of words",
+            label = "Number of Words",
             options = counts,
             selected = selectedCountText,
             onSelect = { selectedCountText = it }
@@ -249,7 +249,7 @@ fun VocabCardsScreen(
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Text(
-                            text = Strings.tr("Word ${currentIndex + 1}/${deck.size}"),
+                            text = "${Strings.tr("Word")} ${currentIndex + 1}/${deck.size}",
                             fontSize = 13.sp,
                             color = colors.textSecondary,
                             fontWeight = FontWeight.Medium

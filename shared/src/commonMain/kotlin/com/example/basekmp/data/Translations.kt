@@ -38,6 +38,30 @@ object Translations {
         )
     )
 
+    val practiceAndProgressOverrides: Map<String, Map<String, String>> = mapOf(
+        "vi" to mapOf(
+            "Sentence" to "Câu",
+            "Word" to "Từ",
+            "Question" to "Câu hỏi",
+            "Tap mic and speak the sentence aloud" to "Chạm vào micrô và đọc câu thành tiếng",
+            "Listening... release to evaluate" to "Đang nghe... thả ra để chấm điểm",
+            "Try speaking a little slower and clearer." to "Hãy thử nói chậm hơn và rõ ràng hơn.",
+            "No history found" to "Chưa có lịch sử học tập",
+            "Complete lessons and practice to see your progress here!" to "Hoàn thành bài học và luyện tập để xem tiến độ tại đây!",
+            "Start Learning" to "Bắt đầu học",
+            "Tap to see translation" to "Chạm để xem bản dịch",
+            "Speak the word to check pronunciation" to "Nói từ này để kiểm tra phát âm",
+            "START HERE" to "Bắt đầu tại đây",
+            "Ready to learn?" to "Sẵn sàng học chưa?",
+            "Let's take the first step!" to "Hãy bước đi bước đầu tiên!",
+            "Great Job!" to "Làm tốt lắm!",
+            "Zzz... Tap me to wake me up 💤" to "Khò khò... Chạm để đánh thức tôi 💤",
+            "No speaking cards available." to "Không có thẻ luyện nói nào khả dụng.",
+            "Excellent clarity and accent!" to "Độ rõ và ngữ điệu xuất sắc!",
+            "Good pronunciation!" to "Phát âm tốt!"
+        )
+    )
+
     /** Translations for the newer learning-path feature strings extracted from the original app. */
     val learningPathDialogOverrides: Map<String, Map<String, String>> = mapOf(
         "de" to mapOf(

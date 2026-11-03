@@ -48,6 +48,8 @@ object Strings {
         if (lang == "en") return en
         val langMap = Translations.byLanguage[lang]
         val translated = langMap?.get(en)
+            ?: ExtraTranslations.byLanguage[lang]?.get(en)
+            ?: Translations.practiceAndProgressOverrides[lang]?.get(en)
             ?: Translations.learningPathDialogOverrides[lang]?.get(en)
             ?: Translations.videoShadowingOverrides[lang]?.get(en)
         if (translated != null) return translated

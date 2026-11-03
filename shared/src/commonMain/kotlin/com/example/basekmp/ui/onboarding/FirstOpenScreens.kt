@@ -39,18 +39,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import ailearn.shared.generated.resources.Res
-import ailearn.shared.generated.resources.fo_onboarding_button_next
-import ailearn.shared.generated.resources.fo_onboarding_button_start
-import ailearn.shared.generated.resources.fo_onboarding_description_1
-import ailearn.shared.generated.resources.fo_onboarding_description_2
-import ailearn.shared.generated.resources.fo_onboarding_description_3
-import ailearn.shared.generated.resources.fo_onboarding_title_1
-import ailearn.shared.generated.resources.fo_onboarding_title_2
-import ailearn.shared.generated.resources.fo_onboarding_title_3
-import ailearn.shared.generated.resources.fo_survey_continue
-import ailearn.shared.generated.resources.fo_survey_skip
-import ailearn.shared.generated.resources.fo_survey_subtitle
-import ailearn.shared.generated.resources.fo_survey_title
 import ailearn.shared.generated.resources.ic_survey_option_1
 import ailearn.shared.generated.resources.ic_survey_option_10
 import ailearn.shared.generated.resources.ic_survey_option_2
@@ -63,14 +51,13 @@ import ailearn.shared.generated.resources.ic_survey_option_8
 import ailearn.shared.generated.resources.ic_survey_option_9
 import ailearn.shared.generated.resources.ic_survey_option_de
 import ailearn.shared.generated.resources.ic_survey_option_pt
-import ailearn.shared.generated.resources.language_save_error
 import com.example.basekmp.data.Languages
+import com.example.basekmp.data.Strings
 import com.example.basekmp.theme.TextPrimary
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.collect
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.painterResource
-import org.jetbrains.compose.resources.stringResource
 
 private val SurveyBlue = Color(0xFF4C8DF6)
 private val SurveyOptionBackground = Color(0xFFF8F8F8)
@@ -123,9 +110,9 @@ fun FirstOpenIntroScreen(
             }
             Spacer(Modifier.weight(1f))
             Text(
-                text = stringResource(
-                    if (pagerState.currentPage == 2) Res.string.fo_onboarding_button_start
-                    else Res.string.fo_onboarding_button_next
+                text = Strings.tr(
+                    if (pagerState.currentPage == 2) "Start"
+                    else "Next"
                 ),
                 color = SurveyBlue,
                 fontSize = 16.sp,
@@ -142,14 +129,14 @@ fun FirstOpenIntroScreen(
 @Composable
 private fun FirstOpenIntroPage(page: Int) {
     val title = when (page) {
-        0 -> Res.string.fo_onboarding_title_1
-        1 -> Res.string.fo_onboarding_title_2
-        else -> Res.string.fo_onboarding_title_3
+        0 -> Strings.tr("Learn with AI")
+        1 -> Strings.tr("Speak with Confidence")
+        else -> Strings.tr("Reach Your Goals")
     }
     val description = when (page) {
-        0 -> Res.string.fo_onboarding_description_1
-        1 -> Res.string.fo_onboarding_description_2
-        else -> Res.string.fo_onboarding_description_3
+        0 -> Strings.tr("Chat with your personal AI tutor and learn any language naturally, anytime.")
+        1 -> Strings.tr("Practice pronunciation and get instant feedback on every word.")
+        else -> Strings.tr("Stay consistent with daily streaks and track your progress step by step.")
     }
 
     Column(modifier = Modifier.fillMaxSize().background(Color.White)) {
@@ -168,14 +155,14 @@ private fun FirstOpenIntroPage(page: Int) {
             verticalArrangement = Arrangement.spacedBy(6.dp)
         ) {
             Text(
-                text = stringResource(title),
+                text = title,
                 color = TextPrimary,
                 fontSize = 20.sp,
                 lineHeight = 25.sp,
                 fontWeight = FontWeight.SemiBold
             )
             Text(
-                text = stringResource(description),
+                text = description,
                 color = IntroSubtitle,
                 fontSize = 14.sp,
                 lineHeight = 20.sp
@@ -201,7 +188,7 @@ fun FirstOpenSurveyScreen(
         ) {
             Column(modifier = Modifier.weight(1f)) {
                 Text(
-                    text = stringResource(Res.string.fo_survey_title),
+                    text = Strings.tr("What language do you want to learn?"),
                     color = SurveyText,
                     fontSize = 23.sp,
                     lineHeight = 28.sp,
@@ -209,13 +196,13 @@ fun FirstOpenSurveyScreen(
                 )
                 Spacer(Modifier.height(8.dp))
                 Text(
-                    text = stringResource(Res.string.fo_survey_subtitle),
+                    text = Strings.tr("Pick one to start learning"),
                     color = SurveyText,
                     fontSize = 14.sp,
                 )
             }
             Text(
-                text = stringResource(Res.string.fo_survey_skip).uppercase(),
+                text = Strings.tr("Skip").uppercase(),
                 color = SurveyText,
                 fontSize = 13.sp,
                 fontWeight = FontWeight.SemiBold,
@@ -254,7 +241,7 @@ fun FirstOpenSurveyScreen(
                     )
                     Spacer(Modifier.width(20.dp))
                     Text(
-                        text = language.name,
+                        text = Strings.tr(language.name),
                         modifier = Modifier.weight(1f),
                         color = SurveyText,
                         fontSize = 17.sp,
@@ -280,7 +267,7 @@ fun FirstOpenSurveyScreen(
 
         if (hasError) {
             Text(
-                text = stringResource(Res.string.language_save_error),
+                text = Strings.tr("Failed to save language. Please try again."),
                 color = Color(0xFFB3261E),
                 fontSize = 13.sp,
                 modifier = Modifier.padding(top = 8.dp)
@@ -305,7 +292,7 @@ fun FirstOpenSurveyScreen(
                     CircularProgressIndicator(modifier = Modifier.size(24.dp), color = Color.White, strokeWidth = 2.dp)
                 } else {
                     Text(
-                        text = stringResource(Res.string.fo_survey_continue).uppercase(),
+                        text = Strings.tr("Start Learning").uppercase(),
                         color = Color.White,
                         fontSize = 18.sp,
                         fontWeight = FontWeight.Bold,

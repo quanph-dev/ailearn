@@ -180,20 +180,14 @@ fun LearningHistoryScreen(
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         Text(
-                            text = Strings.tr("No history found"),
-                            fontSize = 16.sp,
-                            fontWeight = FontWeight.Bold,
-                            color = colors.textPrimary
-                        )
-                        Spacer(Modifier.height(4.dp))
-                        Text(
-                            text = Strings.tr("Complete lessons and practice to see your progress here!"),
-                            fontSize = 13.sp,
+                            text = Strings.tr("No activity yet — finish a lesson or practice to see it here."),
+                            fontSize = 14.sp,
+                            textAlign = androidx.compose.ui.text.style.TextAlign.Center,
                             color = colors.textSecondary
                         )
                         Spacer(Modifier.height(dimens.spacingXl))
                         PrimaryButton(
-                            text = Strings.tr("Start Learning"),
+                            text = Strings.tr("Start Now"),
                             onClick = onStartLearning,
                             modifier = Modifier.width(200.dp)
                         )

@@ -2,8 +2,10 @@ package com.example.basekmp
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.basekmp.data.EnglishLevel
 import com.example.basekmp.data.Languages
 import com.example.basekmp.data.PlanProgress
+import com.example.basekmp.data.RemoteConfig
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.ui.components.MainTab
@@ -59,9 +61,11 @@ open class BaseAppViewModel(
         }
         viewModelScope.launch {
             val route = runCatchingCancellable { repository.resolveStartupRoute() }
-                .getOrDefault(BaseRoutes.StartupLanguage)
+                .getOrDefault(BaseRoutes.FirstOpenIntro)
             val savedLanguageCode = runCatchingCancellable { repository.currentLanguageCode() }.getOrDefault("")
-            val languageCode = savedLanguageCode.ifBlank { deviceLanguageCode }
+            val languageCode = savedLanguageCode.ifBlank {
+                UserPrefs.nativeLanguage.ifBlank { deviceLanguageCode }
+            }
             val savedOnboardingProgress = runCatchingCancellable { repository.onboardingProgress() }.getOrDefault("")
             val surveyLanguage = runCatchingCancellable { repository.firstOpenSurveyLanguage() }.getOrDefault("")
             val savedPlanProgress = runCatchingCancellable { repository.planProgress() }.getOrDefault("")
@@ -74,9 +78,13 @@ open class BaseAppViewModel(
             UserPrefs.nativeLanguage = languageCode
             delay(SPLASH_MINIMUM_DURATION_MS)
             UserPrefs.onboardingDone = route == BaseRoutes.Home
-            UserPrefs.firstOpenDone = route == BaseRoutes.Onboarding || route == BaseRoutes.Home
+            UserPrefs.firstOpenDone = route == BaseRoutes.Home || route == BaseRoutes.Onboarding
             if (!restoredLearningProgress && savedOnboardingProgress.isNotBlank()) {
                 applyOnboardingProfile(OnboardingState.deserialize(savedOnboardingProgress))
+            }
+            if (!restoredLearningProgress && surveyLanguage.isNotBlank()) {
+                UserPrefs.learningLanguage = surveyLanguage
+                UserPrefs.learnLanguageFromSurvey = true
             }
             UserPrefs.setProgressPersistenceSink { serialized ->
                 viewModelScope.launch {
@@ -228,8 +236,13 @@ open class BaseAppViewModel(
                     UserPrefs.learnLanguageFromSurvey = true
                 }
                 UserPrefs.firstOpenDone = true
+                val surveyBeforeHome = RemoteConfig.surveyBeforeHome
+                val nextRoute = if (surveyBeforeHome) BaseRoutes.Onboarding else BaseRoutes.Home
+                if (!surveyBeforeHome) {
+                    UserPrefs.onboardingDone = true
+                }
                 _uiState.value = current.copy(
-                    route = BaseRoutes.Onboarding,
+                    route = nextRoute,
                     firstOpenSurveyLanguage = selectedLanguage.orEmpty(),
                     onboardingProgress = initialProfile.serialize(),
                     isSaving = false,
@@ -245,7 +258,23 @@ open class BaseAppViewModel(
     fun updateOnboardingProgress(serialized: String) {
         val current = _uiState.value
         if (current.route != BaseRoutes.Onboarding || current.isSaving) return
-        _uiState.value = current.copy(onboardingProgress = serialized, hasError = false)
+        val profile = OnboardingState.deserialize(serialized)
+        val chosenNative = profile.nativeLanguage
+        val newLangCode = if (!chosenNative.isNullOrBlank() && Languages.native.any { it.code == chosenNative }) {
+            chosenNative
+        } else {
+            current.languageCode
+        }
+        if (newLangCode != current.languageCode) {
+            applyPlatformLanguage(newLangCode)
+            Strings.select(newLangCode)
+            UserPrefs.nativeLanguage = newLangCode
+        }
+        _uiState.value = current.copy(
+            languageCode = newLangCode,
+            onboardingProgress = serialized,
+            hasError = false
+        )
         onboardingProgressSaveJob?.cancel()
         onboardingProgressSaveJob = viewModelScope.launch {
             delay(150)
@@ -265,14 +294,24 @@ open class BaseAppViewModel(
         ) return
         onboardingProgressSaveJob?.cancel()
         isHandlingAction = true
+        val targetLang = profile.nativeLanguage?.takeIf { code -> Languages.native.any { it.code == code } }
+            ?: current.languageCode
         _uiState.value = current.copy(onboardingProgress = serialized, isSaving = true, hasError = false)
         viewModelScope.launch {
-            val result = runCatchingCancellable { repository.completeOnboarding(serialized) }
+            val result = runCatchingCancellable {
+                repository.completeOnboarding(serialized)
+                repository.saveLanguage(targetLang, completeSetup = true)
+            }
             if (result.isSuccess) {
                 applyOnboardingProfile(profile)
+                applyPlatformLanguage(targetLang)
+                Strings.select(targetLang)
+                UserPrefs.nativeLanguage = targetLang
                 UserPrefs.onboardingDone = true
                 _uiState.value = current.copy(
                     route = BaseRoutes.Home,
+                    languageCode = targetLang,
+                    selectedLanguageCode = targetLang,
                     onboardingProgress = serialized,
                     isSaving = false,
                     hasError = false
@@ -292,9 +331,8 @@ open class BaseAppViewModel(
         profile.learnLanguage?.let { UserPrefs.learningLanguage = it }
         profile.nativeLanguage?.let { UserPrefs.nativeLanguage = it }
         profile.level?.let { selected ->
-            val level = selected.uppercase().takeIf { it in setOf("A1", "A2", "B1", "B2", "C1") }
-            UserPrefs.englishLevel = level ?: "A1"
-            UserPrefs.englishLevelChosen = level != null
+            UserPrefs.englishLevel = EnglishLevel.toFullName(selected)
+            UserPrefs.englishLevelChosen = true
         }
         profile.dailyMinutes?.toIntOrNull()?.let { UserPrefs.dailyGoalMinutes = it }
         profile.tutorVoice?.let { UserPrefs.tutorVoice = it.replaceFirstChar { first -> first.uppercase() } }

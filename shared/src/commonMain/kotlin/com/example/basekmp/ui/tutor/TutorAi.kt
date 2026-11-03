@@ -13,12 +13,66 @@ import kotlinx.coroutines.withContext
  */
 object TutorAi {
     const val HISTORY_WINDOW: Int = 12
+    private const val REWRITE_WITHIN_MS: Long = 9000L
     private const val SYSTEM_PROMPT =
         "You are a warm, encouraging language tutor. Keep replies short (1-3 sentences). Gently correct mistakes, give one natural example, and end by inviting the learner to keep going. Use simple, clear language. Reply in plain conversational text — no markdown, asterisks, or bullet points."
     private const val MOOD_LINE =
         "\nBefore your reply, write exactly one tag that judges the student's LAST message: [great] if it was correct and natural, [ok] if it was understandable but had small mistakes, [oops] if it had clear mistakes, was off-topic or was not in the language being practised, or [hi] if the student has not said anything yet. Write the tag first, then a space, then your reply. The tag is hidden from the student."
 
     private val MOOD_TAG = Regex("^\\s*\\[(great|ok|oops|hi)]\\s*", RegexOption.IGNORE_CASE)
+    private val QUOTED = Regex("[\"“”„«][^\"“”„«»]*[\"“”»]|「[^」]*」|『[^』]*』")
+
+    private val nativeReminder: Map<String, String> = mapOf(
+        "English" to "(Please answer in English.)",
+        "Spanish" to "(Por favor, responde en español.)",
+        "French" to "(Réponds en français, s'il te plaît.)",
+        "Turkish" to "(Lütfen Türkçe cevap verin.)",
+        "Italian" to "(Per favore, rispondi in italiano.)",
+        "German" to "(Bitte antworte auf Deutsch.)",
+        "Portuguese (Brazilian)" to "(Por favor, responda em português.)",
+        "Vietnamese" to "(Vui lòng trả lời bằng tiếng Việt.)",
+        "Urdu" to "(براہ کرم اردو میں جواب دیں)",
+        "Hindi" to "(कृपया हिंदी में जवाब दें)",
+        "Arabic" to "(من فضلك أجب باللغة العربية)",
+        "Chinese (Mandarin)" to "（请用中文回答）",
+        "Japanese" to "（日本語で答えてください）",
+        "Korean" to "(한국어로 답해 주세요)",
+        "Russian" to "(Пожалуйста, отвечайте по-русски)",
+        "Thai" to "(กรุณาตอบเป็นภาษาไทย)"
+    )
+
+    private val scriptLanguages: Set<String> = setOf(
+        "Urdu", "Arabic", "Hindi", "Chinese (Mandarin)", "Japanese", "Korean", "Russian", "Thai"
+    )
+
+    private val functionWords: Map<String, Set<String>> = mapOf(
+        "English" to setOf(
+            "the", "you", "we", "will", "is", "are", "can", "it", "how", "now", "of", "this",
+            "that", "your", "what", "when", "with", "for", "and", "be", "let's", "i", "my",
+            "our", "say", "try", "today", "learn", "it's", "which", "use", "out", "they",
+            "there", "have", "has", "was", "would", "could", "should", "phrase", "word"
+        ),
+        "Spanish" to setOf(
+            "el", "los", "las", "que", "y", "es", "para", "con", "por", "como", "puedes",
+            "tu", "del", "esta", "este", "muy", "vamos", "hoy"
+        ),
+        "French" to setOf(
+            "le", "les", "des", "est", "et", "pour", "avec", "vous", "tu", "nous", "une",
+            "dans", "ce", "cette", "aujourd'hui", "peux"
+        ),
+        "German" to setOf(
+            "der", "die", "das", "und", "ist", "du", "wir", "mit", "für", "ein", "eine",
+            "nicht", "heute", "kannst", "wie"
+        ),
+        "Italian" to setOf(
+            "il", "gli", "che", "è", "per", "con", "puoi", "oggi", "una", "questo",
+            "questa", "come", "sono"
+        ),
+        "Portuguese (Brazilian)" to setOf(
+            "o", "os", "as", "que", "é", "para", "com", "você", "uma", "hoje", "pode",
+            "como", "isso", "este", "esta"
+        )
+    )
 
     data class ScenarioBrief(
         val description: String,
@@ -43,11 +97,11 @@ object TutorAi {
         voice: String? = null,
         mode: String? = null,
         language: String = "English",
-        nativeLanguage: String = "English",
+        nativeLanguage: String = "Urdu",
         lessonTitle: String? = null,
         lessonLevel: String? = null,
         replyInNative: Boolean = false,
-        withMood: Boolean = true,
+        withMood: Boolean = false,
         studentName: String? = null,
         greetInNative: Boolean = false
     ): String? = withContext(Dispatchers.IO) {
@@ -65,13 +119,36 @@ object TutorAi {
                 studentName = studentName,
                 greetInNative = greetInNative
             )
+            val started = com.example.basekmp.currentTimeMillis()
             val response = LlmApi.chat(
                 messages = msgs,
                 system = systemPrompt,
                 maxTokens = 600
             ) ?: return@withContext null
 
-            clean(response)
+            var firstClean = clean(response) ?: return@withContext null
+            if (!replyInNative && nativeLanguage != language && strayLearnLanguage(firstClean, language) &&
+                com.example.basekmp.currentTimeMillis() - started <= REWRITE_WITHIN_MS
+            ) {
+                val retryMsgs = msgs +
+                    LlmApi.Msg("assistant", firstClean) +
+                    LlmApi.Msg("user", rewriteAsk(nativeLanguage, language))
+                val retryResp = LlmApi.chat(
+                    messages = retryMsgs,
+                    system = systemPrompt,
+                    maxTokens = 600
+                )
+                val retryClean = retryResp?.let(::clean)?.takeUnless { strayLearnLanguage(it, language) }
+                if (retryClean != null) {
+                    val moodPrefix = MOOD_TAG.find(firstClean)?.value?.trim()
+                    firstClean = if (moodPrefix != null && MOOD_TAG.find(retryClean) == null) {
+                        "$moodPrefix $retryClean"
+                    } else {
+                        retryClean
+                    }
+                }
+            }
+            firstClean
         } catch (_: Exception) {
             null
         }
@@ -82,7 +159,7 @@ object TutorAi {
         voice: String? = null,
         mode: String? = null,
         language: String = "English",
-        nativeLanguage: String = "English",
+        nativeLanguage: String = "Urdu",
         lessonTitle: String? = null,
         lessonLevel: String? = null,
         replyInNative: Boolean = false,
@@ -133,7 +210,48 @@ object TutorAi {
             msgs.add(LlmApi.Msg("user", cue))
         }
 
-        return Pair(systemPrompt, msgs)
+        val finalMsgs = if (!replyInNative) {
+            withNativeReminder(msgs, language, nativeLanguage)
+        } else {
+            msgs
+        }
+
+        return Pair(systemPrompt, finalMsgs)
+    }
+
+    private fun withNativeReminder(
+        messages: List<LlmApi.Msg>,
+        language: String,
+        nativeLanguage: String
+    ): List<LlmApi.Msg> {
+        val reminder = nativeReminder[nativeLanguage] ?: return messages
+        val lastMsg = messages.lastOrNull()?.takeIf { it.role == "user" } ?: return messages
+        return if (nativeLanguage == language && language == "English") {
+            messages
+        } else {
+            messages.dropLast(1) + lastMsg.copy(content = "${lastMsg.content}\n\n$reminder")
+        }
+    }
+
+    fun strayLearnLanguage(text: String, language: String): Boolean {
+        val set = functionWords[language] ?: return false
+        val unquoted = QUOTED.replace(MOOD_TAG.replace(text, ""), " ")
+        val sentences = unquoted.split(Regex("[.!?\\n]+"))
+        for (sentence in sentences) {
+            val words = sentence.lowercase().split(Regex("[^\\p{L}']+")).filter { it.isNotEmpty() }
+            if (words.size >= 5) {
+                val hits = words.count { it in set }
+                if (hits * 10 >= words.size * 3) {
+                    return true
+                }
+            }
+        }
+        return false
+    }
+
+    private fun rewriteAsk(nativeLanguage: String, language: String): String {
+        val reminder = nativeReminder[nativeLanguage] ?: ""
+        return "Rewrite your last message for me: every word of yours in $nativeLanguage, written in $nativeLanguage's own script; only the $language words or phrases you teach stay in $language, inside quotation marks. No pronunciation spellings. Write only the rewritten message. $reminder"
     }
 
     suspend fun hint(
@@ -187,54 +305,53 @@ object TutorAi {
     }
 
     private fun clean(str: String): String? {
-        val cleaned = str.replace("*", "").trim()
+        val cleaned = Regex("\\*+").replace(str, "").trim()
         return if (cleaned.isNotEmpty()) cleaned else null
     }
 
-    private fun beginCue(language: String): String = when (language.lowercase()) {
-        "korean" -> "시작해요."
-        "vietnamese" -> "Bắt đầu nào."
-        "russian" -> "Давайте начнём."
-        "portuguese" -> "Vamos começar."
-        "chinese" -> "开始吧。"
-        "japanese" -> "始めましょう。"
-        "italian" -> "Cominciamo."
-        "spanish" -> "Empecemos."
-        "thai" -> "เริ่มกันเลย"
-        "urdu" -> "شروع کریں۔"
-        "hindi" -> "शुरू कीजिए।"
-        "turkish" -> "Başlayalım."
-        "arabic" -> "لنبدأ."
-        "french" -> "Commençons."
-        "german" -> "Fangen wir an."
+    private fun beginCue(language: String): String = when (language) {
+        "Korean" -> "시작해요."
+        "Vietnamese" -> "Bắt đầu nào."
+        "Russian" -> "Давайте начнём."
+        "Portuguese (Brazilian)" -> "Vamos começar."
+        "Chinese (Mandarin)" -> "开始吧。"
+        "Japanese" -> "始めましょう。"
+        "Italian" -> "Cominciamo."
+        "Spanish" -> "Empecemos."
+        "Thai" -> "เริ่มกันเลย"
+        "Urdu" -> "شروع کریں۔"
+        "Hindi" -> "शुरू कीजिए।"
+        "Turkish" -> "Başlayalım."
+        "Arabic" -> "لنبدأ."
+        "French" -> "Commençons."
+        "German" -> "Fangen wir an."
         else -> "Begin."
     }
 
-    private fun greetingCue(nativeLanguage: String): String = when (nativeLanguage.lowercase()) {
-        "korean" -> "안녕하세요!"
-        "vietnamese" -> "Xin chào!"
-        "russian" -> "Здравствуйте!"
-        "portuguese" -> "Olá!"
-        "chinese" -> "你好！"
-        "japanese" -> "こんにちは！"
-        "italian" -> "Ciao!"
-        "spanish" -> "¡Hola!"
-        "thai" -> "สวัสดี"
-        "urdu" -> "السلام علیکم!"
-        "hindi" -> "नमस्ते!"
-        "turkish" -> "Merhaba!"
-        "arabic" -> "مرحبًا!"
-        "french" -> "Bonjour !"
-        "german" -> "Hallo!"
+    private fun greetingCue(nativeLanguage: String): String = when (nativeLanguage) {
+        "Korean" -> "안녕하세요!"
+        "Vietnamese" -> "Xin chào!"
+        "Russian" -> "Здравствуйте!"
+        "Portuguese (Brazilian)" -> "Olá!"
+        "Chinese (Mandarin)" -> "你好！"
+        "Japanese" -> "こんにちは！"
+        "Italian" -> "Ciao!"
+        "Spanish" -> "¡Hola!"
+        "Thai" -> "สวัสดี"
+        "Urdu" -> "السلام علیکم!"
+        "Hindi" -> "नमस्ते!"
+        "Turkish" -> "Merhaba!"
+        "Arabic" -> "مرحبًا!"
+        "French" -> "Bonjour !"
+        "German" -> "Hallo!"
         else -> "Hello!"
     }
 
     private fun personaLine(voice: String?, language: String, nativeLanguage: String, greet: Boolean): String {
         val persona = when (voice?.lowercase()) {
-            "female", "emma" -> "a friendly, encouraging female $language tutor named Emma"
-            "male", "james" -> "a friendly, patient male $language tutor named James"
-            "neutral", "alex" -> "a casual, modern $language tutor named Alex"
-            "robot", "sparky" -> "a cheerful robot $language tutor named Sparky"
+            "female" -> "a friendly, encouraging female $language tutor"
+            "male" -> "a friendly, encouraging male $language tutor"
+            "robot" -> "a cheerful robot $language tutor"
             else -> "a friendly, encouraging $language tutor"
         }
         val greetText = if (greet) {
@@ -242,28 +359,29 @@ object TutorAi {
         } else ""
 
         val scriptNote = if (nativeLanguage != language) {
-            ", and whenever $language uses a non-Latin script also include an easy romanized pronunciation in parentheses"
+            ", and whenever $language uses a non-Latin script also include an easy romanized pronunciation in parentheses (like \"Ohayō gozaimasu (おはようございます)\")"
         } else ""
 
-        return "Reply as $persona. $greetText For everything the student says: FIRST answer warmly and briefly in $nativeLanguage so they always understand you; THEN teach them how to say the key phrase in $language — give the $language phrase$scriptNote — plus one short note on how or when to use it. Keep the whole reply to 2-4 short sentences and finish by inviting the student to try. The language you teach is ALWAYS $language — teach in $language even if earlier messages in this conversation used a different language. "
+        val effectiveNative = if (nativeLanguage == language) language else nativeLanguage
+        return "Reply as $persona. ${greetText}For everything the student says: FIRST answer warmly and briefly in $effectiveNative so they always understand you; THEN teach them how to say the key phrase in $language — give the $language phrase$scriptNote — plus one short note on how or when to use it. Keep the whole reply to 2-4 short sentences and finish by inviting the student to try. The language you teach is ALWAYS $language — teach in $language even if earlier messages in this conversation used a different language. "
     }
 
     private fun nativePersonaLine(voice: String?, nativeLanguage: String, lessonTitle: String?, lessonLevel: String?, isFirstTurn: Boolean, mode: String?): String {
         val persona = when (voice?.lowercase()) {
-            "female", "emma" -> "a friendly, encouraging female tutor named Emma"
-            "male", "james" -> "a patient male tutor named James"
-            "robot", "sparky" -> "a cheerful robot tutor named Sparky"
+            "female" -> "a friendly, encouraging female tutor"
+            "male" -> "a friendly, encouraging male tutor"
+            "robot" -> "a cheerful robot tutor"
             else -> "a friendly, encouraging tutor"
         }
-        val scriptRule = "Write $nativeLanguage in its OWN native script, the way it is actually written by native speakers. NEVER romanize or transliterate it into Latin/English letters. "
+        val scriptRule = "Write $nativeLanguage in its OWN native script, the way it is actually written by native speakers. NEVER romanize or transliterate it into Latin/English letters — for example, write Urdu in Urdu script and Hindi in Devanagari, never as \"aap kaise hain\". Latin letters may appear only inside a word that is genuinely written that way (a brand or a loanword). "
         val langRule = if (mode == null) {
             "Write your ENTIRE reply in $nativeLanguage — every single sentence must be in $nativeLanguage, and never use any other language. $scriptRule"
         } else {
-            "Write all of your own words in $nativeLanguage. Only a short example or correction in the language being learned may appear in that language. $scriptRule"
+            "Write all of your own words — your conversation, explanations and questions — in $nativeLanguage. Only a short example, correction or translation in the language being learned may appear in that language, and only when the task below asks for it. $scriptRule"
         }
 
         val sceneRule = if (!lessonTitle.isNullOrBlank()) {
-            val level = lessonLevel ?: "Intermediate"
+            val level = lessonLevel?.takeIf { it.isNotBlank() } ?: "Intermediate"
             if (isFirstTurn) {
                 "This is a short role-play lesson titled \"$lessonTitle\" for a $level learner. Warmly set the scene for \"$lessonTitle\" in $nativeLanguage and invite the student to begin. "
             } else {
@@ -273,7 +391,7 @@ object TutorAi {
             "If the conversation is just starting, greet them warmly in $nativeLanguage and invite them to tell you about their day. "
         } else ""
 
-        return "Reply as $persona having a short lesson chat with a student. $langRule Respond naturally and warmly to what the student said, gently encourage them, and finish with one simple question in $nativeLanguage to keep the conversation going. $sceneRule Keep it to 2-4 short sentences. Plain conversational text — no markdown, asterisks, or bullet points. "
+        return "Reply as $persona having a short lesson chat with a student. ${langRule}Respond naturally and warmly to what the student said, gently encourage them, and finish with one simple question in $nativeLanguage to keep the conversation going. ${sceneRule}Keep it to 2-4 short sentences. Plain conversational text — no markdown, asterisks, or bullet points. "
     }
 
     private fun modeLine(mode: String?, language: String, nativeLanguage: String): String {
@@ -301,7 +419,7 @@ object TutorAi {
 
     private fun lessonLine(title: String?, level: String?, language: String, nativeLanguage: String, isFirstTurn: Boolean): String {
         if (title.isNullOrBlank()) return ""
-        val lvl = level ?: "Intermediate"
+        val lvl = level?.takeIf { it.isNotBlank() } ?: "Intermediate"
         return if (isFirstTurn && nativeLanguage != language) {
             " You are running a short $language lesson titled \"$title\" for a $lvl learner. In $nativeLanguage: start with a warm 1-2 sentence intro, teach one key $language phrase for this scenario (the phrase itself in $language, in quotes) with a short $nativeLanguage note on when to use it, then invite the student to try it by asking a simple practice question."
         } else if (isFirstTurn) {
@@ -315,9 +433,19 @@ object TutorAi {
 
     private fun languageRule(language: String, nativeLanguage: String): String {
         if (nativeLanguage == language) {
-            if (language == "English") return ""
-            return "\nLANGUAGE RULE: the student speaks $language as their own language. Write EVERY word of EVERY message in $language and never in English, with no English translations or glosses in brackets."
+            return sameLanguageRule(language)
         }
-        return "\nLANGUAGE RULE: the student's native language is $nativeLanguage. Write all of your own words — greetings, introductions, explanations, corrections, encouragement and questions — in $nativeLanguage, in EVERY sentence of EVERY message. Only the $language words and phrases you teach, model or say in a role-play are in $language, each inside quotation marks."
+        val extra = if (functionWords.containsKey(language)) {
+            " Do not add made-up pronunciation spellings to $language phrases (like \"Gud mawnin\")."
+        } else ""
+        return "\nLANGUAGE RULE: the student's native language is $nativeLanguage. Write all of your own words — greetings, introductions, explanations, corrections, encouragement and questions — in $nativeLanguage, in EVERY sentence of EVERY message. Only the $language words and phrases you teach, model or say in a role-play are in $language, each inside quotation marks. Write $nativeLanguage in its OWN native script, the way native speakers write it. NEVER romanize or transliterate it into Latin/English letters — for example, write Urdu in Urdu script and Hindi in Devanagari, never as \"aap kaise hain\".$extra"
+    }
+
+    private fun sameLanguageRule(language: String): String {
+        if (language == "English") return ""
+        val extra = if (scriptLanguages.contains(language)) {
+            " Write $language in its OWN native script, the way native speakers write it. NEVER romanize or transliterate it into Latin/English letters and add no pronunciation spellings — for example write Urdu in Urdu script and Hindi in Devanagari, never as \"aap kaise hain\"."
+        } else ""
+        return "\nLANGUAGE RULE: the student speaks $language as their own language. Write EVERY word of EVERY message in $language and never in English, with no English translations or glosses in brackets.$extra"
     }
 }

@@ -13,9 +13,9 @@ import com.example.basekmp.ui.plan.PlanFlow
 class SharedCommonTest {
 
     @Test
-    fun freshInstallStartsAtLanguageSelection() {
+    fun freshInstallStartsAtFirstOpenIntro() {
         assertEquals(
-            BaseRoutes.StartupLanguage,
+            BaseRoutes.FirstOpenIntro,
             StartupRouteResolver.resolve(
                 languageSetup = false,
                 onboardingCompleted = false,
@@ -25,7 +25,7 @@ class SharedCommonTest {
     }
 
     @Test
-    fun languageSetupContinuesToFirstOpenIntro() {
+    fun languageSetupBeforeFirstOpenContinuesToFirstOpenIntro() {
         assertEquals(
             BaseRoutes.FirstOpenIntro,
             StartupRouteResolver.resolve(
@@ -37,25 +37,40 @@ class SharedCommonTest {
     }
 
     @Test
-    fun completedFirstOpenContinuesToProfileOnboarding() {
+    fun completedFirstOpenWithSurveyBeforeHomeContinuesToOnboarding() {
         assertEquals(
             BaseRoutes.Onboarding,
             StartupRouteResolver.resolve(
-                languageSetup = true,
+                languageSetup = false,
                 onboardingCompleted = false,
-                firstOpenCompleted = true
+                firstOpenCompleted = true,
+                surveyBeforeHome = true
             )
         )
     }
 
     @Test
-    fun completedFirstOpenReturnsHome() {
+    fun completedFirstOpenWithoutSurveyBeforeHomeContinuesDirectlyToHome() {
+        assertEquals(
+            BaseRoutes.Home,
+            StartupRouteResolver.resolve(
+                languageSetup = false,
+                onboardingCompleted = false,
+                firstOpenCompleted = true,
+                surveyBeforeHome = false
+            )
+        )
+    }
+
+    @Test
+    fun completedFirstOpenAndOnboardingReturnsHome() {
         assertEquals(
             BaseRoutes.Home,
             StartupRouteResolver.resolve(
                 languageSetup = true,
                 onboardingCompleted = true,
-                firstOpenCompleted = true
+                firstOpenCompleted = true,
+                surveyBeforeHome = true
             )
         )
     }
