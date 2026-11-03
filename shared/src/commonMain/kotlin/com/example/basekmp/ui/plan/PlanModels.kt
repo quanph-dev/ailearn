@@ -144,7 +144,11 @@ object PlanFlow {
         return null
     }
 
-    suspend fun finish(day: Int, activity: PlanProgress.Activity): Finish {
+    suspend fun finish(
+        day: Int,
+        activity: PlanProgress.Activity,
+        activityEpochDay: Long = UserPrefs.todayEpochDay()
+    ): Finish {
         val progress = PlanProgress.get()
         val plan = dayPlan(day) ?: return Finish(
             dayCompleted = false,
@@ -166,7 +170,8 @@ object PlanFlow {
 
         val allDone = activities.all { it in progress.done(day) }
 
-        val newlyCompleted = allDone && !wasDayCompleted && progress.completeDay(day, activities.toSet())
+        val newlyCompleted = allDone && !wasDayCompleted &&
+            progress.completeDay(day, activities.toSet(), activityEpochDay)
         if (newlyCompleted) {
             return Finish(
                 dayCompleted = true,

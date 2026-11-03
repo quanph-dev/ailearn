@@ -25,7 +25,6 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -56,6 +55,7 @@ import com.example.basekmp.data.PathLessonContent
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
 import com.example.basekmp.theme.AppTheme
+import com.example.basekmp.ui.components.CloseButton
 import kotlinx.coroutines.launch
 
 /**
@@ -177,6 +177,7 @@ fun PlanSessionScreen(
             val completedCount = correctCount
             val completedVocabularyCount = vocabularyCorrectCount
             val available = availableActivities
+            val activityEpochDay = UserPrefs.todayEpochDay()
             coroutineScope.launch {
                 completedStageId?.let { stageId ->
                     PlanProgress.get().addSeen(
@@ -193,7 +194,7 @@ fun PlanSessionScreen(
                 }
                 val progress = PlanProgress.get()
                 val wasQuizDone = PlanProgress.Activity.QUIZ in progress.done(day)
-                val result = PlanFlow.finish(day, PlanProgress.Activity.QUIZ)
+                val result = PlanFlow.finish(day, PlanProgress.Activity.QUIZ, activityEpochDay)
                 val quizWasCompleted = !wasQuizDone && PlanProgress.Activity.QUIZ in progress.done(day)
                 if (quizWasCompleted) {
                     progress.saveQuizScore(
@@ -207,7 +208,8 @@ fun PlanSessionScreen(
                             activity = PlanProgress.Activity.QUIZ,
                             dailyMinutes = UserPrefs.dailyGoalMinutes,
                             available = available
-                        )
+                        ),
+                        activityEpochDay
                     )
                 }
                 dayCompleted = result.dayCompleted
@@ -268,13 +270,7 @@ fun PlanSessionScreen(
                     .padding(horizontal = AppTheme.dimens.spacingSm),
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                IconButton(onClick = onBack) {
-                    Icon(
-                        imageVector = Icons.Rounded.Close,
-                        contentDescription = tr("Close"),
-                        tint = AppTheme.colors.textPrimary
-                    )
-                }
+                CloseButton(onClick = onBack)
 
                 AppLinearProgressBar(
                     progress = (currentIndex + 1) / totalCount.toFloat(),

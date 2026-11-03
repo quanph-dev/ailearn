@@ -74,6 +74,7 @@ import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
 import com.example.basekmp.theme.AppTheme
 import com.example.basekmp.ui.components.BackTitleBar
+import com.example.basekmp.ui.lifecycle.rememberIsAppResumed
 import com.example.basekmp.ui.speaking.PlatformSpeechRecognition
 import com.example.basekmp.ui.speaking.rememberPlatformSpeaker
 import com.example.basekmp.ui.speaking.rememberTypewriter
@@ -120,13 +121,34 @@ fun AiTutorScreen(
     var closeReported by remember { mutableStateOf(false) }
     var assistantMood by remember { mutableStateOf(RobotMood.NEUTRAL) }
     val speaker = rememberPlatformSpeaker(UserPrefs.tutorVoice)
-    var speakingMessageText by remember { mutableStateOf<String?>(null) }
+    val isAppResumed = rememberIsAppResumed()
+    var greetingStarted by remember { mutableStateOf(false) }
+    var speakingMessageIndex by remember { mutableStateOf<Int?>(null) }
 
     val targetLocaleTag = remember(UserPrefs.targetLanguage) {
         speechLocaleTagFor(UserPrefs.targetLanguage)
     }
     val nativeLocaleTag = remember(UserPrefs.nativeLanguage) {
         speechLocaleTagFor(UserPrefs.nativeLanguage)
+    }
+
+    fun stopMessageSpeech() {
+        val activeIndex = speakingMessageIndex
+        speaker.stop()
+        speakingMessageIndex = null
+        if (activeIndex != null && activeIndex in messages.indices && messages[activeIndex].animate) {
+            messages[activeIndex] = messages[activeIndex].copy(animate = false)
+        }
+    }
+
+    fun activateMessageSpeech(index: Int) {
+        val previousIndex = speakingMessageIndex
+        if (previousIndex != null && previousIndex != index &&
+            previousIndex in messages.indices && messages[previousIndex].animate
+        ) {
+            messages[previousIndex] = messages[previousIndex].copy(animate = false)
+        }
+        speakingMessageIndex = index
     }
 
     DisposableEffect(Unit) {
@@ -136,9 +158,11 @@ fun AiTutorScreen(
     }
 
     // Warm up TTS locales & auto-speak the opening greeting message immediately on screen entry
-    LaunchedEffect(Unit) {
+    LaunchedEffect(isAppResumed) {
+        if (!isAppResumed || greetingStarted) return@LaunchedEffect
+        greetingStarted = true
         speaker.warmUp(targetLocaleTag, nativeLocaleTag)
-        speakingMessageText = AI_TUTOR_GREETING
+        activateMessageSpeech(messages.lastIndex)
         speaker.speak(
             text = AI_TUTOR_GREETING,
             languageTag = targetLocaleTag,
@@ -146,27 +170,28 @@ fun AiTutorScreen(
         )
     }
 
-    // Clear animate flag and speakingMessageText once speech & typewriter reveal finish
-    LaunchedEffect(messages.size, speaker.isSpeaking, speakingMessageText) {
-        if (!speaker.isSpeaking && speakingMessageText != null) {
-            val finishedText = speakingMessageText
-            val idx = messages.indexOfLast { !it.fromUser && it.text == finishedText }
-            if (idx >= 0 && messages[idx].animate) {
-                val len = messages[idx].text.length
+    // Clear the active message once speech and its typewriter reveal finish.
+    LaunchedEffect(messages.size, speaker.isSpeaking, speakingMessageIndex, isAppResumed) {
+        if (!isAppResumed) return@LaunchedEffect
+        val finishedIndex = speakingMessageIndex
+        if (!speaker.isSpeaking && finishedIndex != null) {
+            if (finishedIndex in messages.indices && !messages[finishedIndex].fromUser && messages[finishedIndex].animate) {
+                val len = messages[finishedIndex].text.length
                 if (speaker.spokenChars < len) {
                     delay((len * 18L).coerceAtMost(1500L))
                 }
-                if (idx < messages.size && messages[idx].animate) {
-                    messages[idx] = messages[idx].copy(animate = false)
+                if (speakingMessageIndex == finishedIndex && !speaker.isSpeaking &&
+                    finishedIndex in messages.indices && messages[finishedIndex].animate
+                ) {
+                    messages[finishedIndex] = messages[finishedIndex].copy(animate = false)
                 }
             }
-            speakingMessageText = null
+            if (speakingMessageIndex == finishedIndex) speakingMessageIndex = null
         }
     }
 
     fun closeTutor() {
-        speaker.stop()
-        speakingMessageText = null
+        stopMessageSpeech()
         if (!closeReported) {
             closeReported = true
             onBack(messages.any { it.fromUser })
@@ -187,8 +212,7 @@ fun AiTutorScreen(
     fun sendMessage(userText: String, mode: String? = null) {
         if (userText.isBlank() || isThinking) return
 
-        speaker.stop()
-        speakingMessageText = null
+        stopMessageSpeech()
 
         messages.add(ChatMessage(text = userText, fromUser = true))
         inputText = ""
@@ -219,7 +243,7 @@ fun AiTutorScreen(
                 AI_TUTOR_CANNED_REPLIES[messages.count { !it.fromUser } % AI_TUTOR_CANNED_REPLIES.size]
             }
             messages.add(ChatMessage(text = cleanReply, fromUser = false, animate = true))
-            speakingMessageText = cleanReply
+            activateMessageSpeech(messages.lastIndex)
             speaker.speak(
                 text = cleanReply,
                 languageTag = targetLocaleTag,
@@ -254,8 +278,7 @@ fun AiTutorScreen(
                     .padding(horizontal = AppTheme.dimens.spacingSm),
                 rightContent = {
                     IconButton(onClick = {
-                        speaker.stop()
-                        speakingMessageText = null
+                        stopMessageSpeech()
                         messages.clear()
                         connectionError = false
                         assistantMood = RobotMood.NEUTRAL
@@ -266,7 +289,7 @@ fun AiTutorScreen(
                                 animate = true
                             )
                         )
-                        speakingMessageText = AI_TUTOR_GREETING
+                        activateMessageSpeech(messages.lastIndex)
                         speaker.speak(
                             text = AI_TUTOR_GREETING,
                             languageTag = targetLocaleTag,
@@ -313,13 +336,13 @@ fun AiTutorScreen(
                 verticalArrangement = Arrangement.spacedBy(AppTheme.dimens.spacingMd)
             ) {
                 itemsIndexed(messages) { index, msg ->
-                    val isMsgSpeaking = speaker.isSpeaking && speakingMessageText == msg.text
+                    val isMsgSpeaking = speaker.isSpeaking && speakingMessageIndex == index
                     ChatBubble(
                         message = msg,
                         isSpeaking = isMsgSpeaking,
-                        spokenChars = if (speakingMessageText == msg.text) speaker.spokenChars else null,
+                        spokenChars = if (speakingMessageIndex == index) speaker.spokenChars else null,
                         onSpeak = {
-                            speakingMessageText = it
+                            activateMessageSpeech(index)
                             speaker.speak(
                                 text = it,
                                 languageTag = targetLocaleTag,
@@ -328,11 +351,7 @@ fun AiTutorScreen(
                             )
                         },
                         onStop = {
-                            speaker.stop()
-                            speakingMessageText = null
-                            if (msg.animate) {
-                                messages[index] = msg.copy(animate = false)
-                            }
+                            stopMessageSpeech()
                         }
                     )
                 }
@@ -450,8 +469,7 @@ fun AiTutorScreen(
                                     } else if (isListening) {
                                         stopListening()
                                     } else {
-                                        speaker.stop()
-                                        speakingMessageText = null
+                                        stopMessageSpeech()
                                         startListening()
                                     }
                                 },
@@ -678,6 +696,7 @@ private fun TypewriterText(
 
 @Composable
 private fun ThinkingBubble() {
+    val isAppResumed = rememberIsAppResumed()
     Row(
         modifier = Modifier
             .clip(RoundedCornerShape(16.dp))
@@ -689,7 +708,8 @@ private fun ThinkingBubble() {
     ) {
         repeat(3) { index ->
             val anim = remember { Animatable(0f) }
-            LaunchedEffect(Unit) {
+            LaunchedEffect(isAppResumed) {
+                if (!isAppResumed) return@LaunchedEffect
                 delay(index * 150L)
                 anim.animateTo(
                     targetValue = 1f,

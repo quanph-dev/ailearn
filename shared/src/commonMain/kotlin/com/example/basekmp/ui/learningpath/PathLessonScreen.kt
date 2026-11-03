@@ -47,7 +47,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.compose.ui.window.Dialog
+import com.example.basekmp.components.AppActionDialog
 import com.example.basekmp.components.CongratsDialog
 import com.example.basekmp.components.PrimaryButton
 import com.example.basekmp.data.PathLessonContent
@@ -104,6 +104,7 @@ fun PathLessonScreen(
     var speechScores by remember { mutableStateOf<Map<Int, Int>>(emptyMap()) }
     var showExitDialog by remember { mutableStateOf(false) }
     var isFinished by remember { mutableStateOf(false) }
+    var completionRecorded by remember { mutableStateOf(false) }
     val sessionStartedAt = remember(lessonId) { currentTimeMillis() }
 
     LaunchedEffect(lessonId) {
@@ -167,24 +168,29 @@ fun PathLessonScreen(
 
     val finalScore = if (questions.isEmpty()) 0 else (correctCount * 100) / questions.size
 
+    fun recordCompletionOnce() {
+        if (completionRecorded) return
+        completionRecorded = true
+        val activityEpochDay = UserPrefs.todayEpochDay()
+        UserPrefs.recordPathLesson(lessonId, finalScore)
+        UserPrefs.addLearnedMinutes(
+            ((currentTimeMillis() - sessionStartedAt) / 60_000L).toInt(),
+            activityEpochDay
+        )
+        UserPrefs.recordPracticeDone(
+            feature = "learning path",
+            score = correctCount,
+            total = questions.size,
+            activityEpochDay = activityEpochDay
+        )
+    }
+
     if (isFinished) {
         CongratsDialog(
             subtitle = Strings.tr("You've Completed Today's Session!"),
             buttonText = Strings.tr("Continue"),
-            onButtonClick = {
-                UserPrefs.recordPathLesson(lessonId, finalScore)
-                UserPrefs.addLearnedMinutes(((currentTimeMillis() - sessionStartedAt) / 60_000L).toInt())
-                UserPrefs.recordStreakDay()
-                UserPrefs.recordPracticeDone("learning path", correctCount, questions.size)
-                onClose()
-            },
-            onClose = {
-                UserPrefs.recordPathLesson(lessonId, finalScore)
-                UserPrefs.addLearnedMinutes(((currentTimeMillis() - sessionStartedAt) / 60_000L).toInt())
-                UserPrefs.recordStreakDay()
-                UserPrefs.recordPracticeDone("learning path", correctCount, questions.size)
-                onClose()
-            },
+            onButtonClick = onClose,
+            onClose = onClose,
         )
     }
 
@@ -197,6 +203,7 @@ fun PathLessonScreen(
             isAnswerRevealed = false
             speechScore = 0
         } else {
+            recordCompletionOnce()
             isFinished = true
         }
     }
@@ -593,74 +600,14 @@ private fun PathLessonExitDialog(
     onConfirm: () -> Unit,
     onDismiss: () -> Unit
 ) {
-    Dialog(onDismissRequest = onDismiss) {
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .clip(RoundedCornerShape(24.dp))
-                .background(Color.White)
-                .padding(24.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            Text(
-                text = Strings.tr("Leave this lesson?"),
-                color = TextPrimary,
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold,
-                textAlign = TextAlign.Center
-            )
-            Spacer(Modifier.height(8.dp))
-            Text(
-                text = Strings.tr("Your answers in this lesson won't be saved."),
-                color = TextSecondary,
-                fontSize = 14.sp,
-                textAlign = TextAlign.Center
-            )
-            Spacer(Modifier.height(22.dp))
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(12.dp)
-            ) {
-                PathLessonExitButton(
-                    text = Strings.tr("Stay"),
-                    isConfirm = false,
-                    onClick = onDismiss,
-                    modifier = Modifier.weight(1f)
-                )
-                PathLessonExitButton(
-                    text = Strings.tr("Leave"),
-                    isConfirm = true,
-                    onClick = onConfirm,
-                    modifier = Modifier.weight(1f)
-                )
-            }
-        }
-    }
-}
-
-@Composable
-private fun PathLessonExitButton(
-    text: String,
-    isConfirm: Boolean,
-    onClick: () -> Unit,
-    modifier: Modifier = Modifier
-) {
-    Box(
-        modifier = modifier
-            .height(50.dp)
-            .clip(CircleShape)
-            .then(
-                if (isConfirm) Modifier.background(PathOptionWrong)
-                else Modifier.border(1.dp, PathOptionBorder, CircleShape)
-            )
-            .clickable(onClick = onClick),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(
-            text = text,
-            color = if (isConfirm) Color.White else TextPrimary,
-            fontSize = 15.sp,
-            fontWeight = FontWeight.SemiBold
-        )
-    }
+    AppActionDialog(
+        title = Strings.tr("Leave this lesson?"),
+        message = Strings.tr("Your answers in this lesson won't be saved."),
+        onDismissRequest = onDismiss,
+        confirmText = Strings.tr("Leave"),
+        onConfirm = onConfirm,
+        dismissText = Strings.tr("Stay"),
+        onDismissAction = onDismiss,
+        confirmIsDestructive = true
+    )
 }

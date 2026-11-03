@@ -19,7 +19,6 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.rounded.ArrowBackIos
 import androidx.compose.material.icons.rounded.Check
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
@@ -37,11 +36,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UiLanguage
-import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.theme.BlueSelected
 import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.TextPrimary
-import com.example.basekmp.ui.components.CircleIconButton
+import com.example.basekmp.ui.components.BackButton
 
 @Composable
 fun LanguageScreen(
@@ -66,16 +64,12 @@ fun LanguageScreen(
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            CircleIconButton(
-                icon = Icons.AutoMirrored.Rounded.ArrowBackIos,
-                contentDescription = Strings.tr("Back"),
-                onClick = onBack
-            )
+            BackButton(onClick = onBack)
 
             Spacer(Modifier.width(12.dp))
 
             Text(
-                text = Strings.tr("Languages"),
+                text = Strings.tr("Interface Language"),
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
                 color = TextPrimary
@@ -97,7 +91,6 @@ fun LanguageScreen(
                     isSelected = isSelected,
                     onClick = {
                         Strings.select(lang.code)
-                        UserPrefs.nativeLanguage = lang.code
                         currentLang = lang.code
                         onLanguageSelected(lang.code)
                     }

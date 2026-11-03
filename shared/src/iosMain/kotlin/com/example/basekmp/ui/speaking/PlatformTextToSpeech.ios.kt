@@ -5,16 +5,37 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.DisposableEffect
+import com.example.basekmp.ui.lifecycle.rememberIsAppResumed
+import platform.Foundation.NSNotificationCenter
+import platform.darwin.NSObject
 import platform.AVFAudio.AVSpeechBoundary
 import platform.AVFAudio.AVSpeechSynthesisVoice
 import platform.AVFAudio.AVSpeechSynthesizer
+import platform.AVFAudio.AVSpeechSynthesizerDelegateProtocol
 import platform.AVFAudio.AVSpeechUtterance
+import platform.UIKit.UIApplicationDidBecomeActiveNotification
+import platform.UIKit.UIApplicationWillResignActiveNotification
 
 class IosPlatformSpeaker(
     private val synthesizer: AVSpeechSynthesizer,
-    private val _isSpeaking: MutableState<Boolean>
+    private val _isSpeaking: MutableState<Boolean>,
+    private val isAppResumed: MutableState<Boolean>
 ) : PlatformSpeaker {
     private val _spokenChars = mutableIntStateOf(0)
+    private var activeUtterance: AVSpeechUtterance? = null
+    private val delegate = object : NSObject(), AVSpeechSynthesizerDelegateProtocol {
+        override fun speechSynthesizer(
+            synthesizer: AVSpeechSynthesizer,
+            didFinishSpeechUtterance: AVSpeechUtterance
+        ) {
+            finishIfCurrent(didFinishSpeechUtterance)
+        }
+    }
+
+    init {
+        synthesizer.delegate = delegate
+    }
 
     override val isSpeaking: Boolean get() = _isSpeaking.value
     override val isLoading: Boolean get() = false
@@ -32,23 +53,33 @@ class IosPlatformSpeaker(
         speed: Float,
         altLanguageTag: String?
     ) {
-        if (text.isBlank()) return
+        if (text.isBlank() || !isAppResumed.value) return
         if (synthesizer.isSpeaking()) {
+            activeUtterance = null
             synthesizer.stopSpeakingAtBoundary(AVSpeechBoundary.AVSpeechBoundaryImmediate)
         }
         val utterance = AVSpeechUtterance.speechUtteranceWithString(text)
         utterance.voice = AVSpeechSynthesisVoice.voiceWithLanguage(languageTag)
-        synthesizer.speakUtterance(utterance)
+        activeUtterance = utterance
         _spokenChars.intValue = 0
         _isSpeaking.value = true
+        synthesizer.speakUtterance(utterance)
     }
 
     override fun stop() {
+        activeUtterance = null
         if (synthesizer.isSpeaking()) {
             synthesizer.stopSpeakingAtBoundary(AVSpeechBoundary.AVSpeechBoundaryImmediate)
         }
         _isSpeaking.value = false
         _spokenChars.intValue = 0
+    }
+
+    private fun finishIfCurrent(utterance: AVSpeechUtterance) {
+        if (activeUtterance !== utterance) return
+        _spokenChars.intValue = utterance.speechString.length
+        activeUtterance = null
+        _isSpeaking.value = false
     }
 }
 
@@ -56,10 +87,42 @@ class IosPlatformSpeaker(
 actual fun rememberPlatformSpeaker(voicePreference: String?): PlatformSpeaker {
     val synthesizer = remember { AVSpeechSynthesizer() }
     val isSpeaking = remember { mutableStateOf(false) }
-
-    return remember(synthesizer) {
-        IosPlatformSpeaker(synthesizer, isSpeaking)
+    val lifecycleResumed = rememberIsAppResumed()
+    val isAppResumed = remember {
+        mutableStateOf(lifecycleResumed)
     }
+
+    val speaker = remember(synthesizer, isAppResumed) {
+        IosPlatformSpeaker(synthesizer, isSpeaking, isAppResumed)
+    }
+
+    DisposableEffect(synthesizer, speaker) {
+        val center = NSNotificationCenter.defaultCenter
+        val resignObserver = center.addObserverForName(
+            UIApplicationWillResignActiveNotification,
+            null,
+            null
+        ) {
+            isAppResumed.value = false
+            speaker.stop()
+        }
+        val activeObserver = center.addObserverForName(
+            UIApplicationDidBecomeActiveNotification,
+            null,
+            null
+        ) {
+            isAppResumed.value = true
+        }
+
+        onDispose {
+            center.removeObserver(resignObserver)
+            center.removeObserver(activeObserver)
+            speaker.stop()
+            synthesizer.delegate = null
+        }
+    }
+
+    return speaker
 }
 
 @Composable

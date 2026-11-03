@@ -53,6 +53,8 @@ import com.example.basekmp.theme.AppTheme
 import com.example.basekmp.theme.Blue
 import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.TrackColor
+import com.example.basekmp.ui.components.BackButton
+import com.example.basekmp.ui.components.CloseButton
 
 @Composable
 fun PrimaryButton(
@@ -372,12 +374,7 @@ fun ProgressHeader(
         modifier = modifier.fillMaxWidth().height(dimens.topBarHeight).padding(horizontal = dimens.spacingLg),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Box(
-            modifier = Modifier.size(dimens.minTouchTarget).clip(CircleShape).clickable(onClick = onBack),
-            contentAlignment = Alignment.Center
-        ) {
-            Text("‹", fontSize = 32.sp, color = colors.textPrimary, fontWeight = FontWeight.Bold)
-        }
+        BackButton(onClick = onBack)
         Spacer(Modifier.width(dimens.spacingMd))
         Box(
             modifier = Modifier.weight(1f).height(6.dp).clip(RoundedCornerShape(3.dp)).background(TrackColor)
@@ -390,12 +387,7 @@ fun ProgressHeader(
         }
         if (onClose != null) {
             Spacer(Modifier.width(dimens.spacingMd))
-            Box(
-                modifier = Modifier.size(dimens.minTouchTarget).clip(CircleShape).clickable(onClick = onClose),
-                contentAlignment = Alignment.Center
-            ) {
-                Text("✕", fontSize = 16.sp, color = colors.textSecondary)
-            }
+            CloseButton(onClick = onClose, tint = colors.textSecondary)
         }
     }
 }

@@ -121,6 +121,7 @@ fun GrammarQuizScreen(
     var correctByQuestion by remember { mutableStateOf<Map<Int, Boolean>>(emptyMap()) }
     val correctCount = correctByQuestion.values.count { it }
     var isFinished by remember { mutableStateOf(false) }
+    var completionRecorded by remember { mutableStateOf(false) }
     var isLoading by remember { mutableStateOf(true) }
 
     LaunchedEffect(questionCount) {
@@ -161,6 +162,20 @@ fun GrammarQuizScreen(
             )
         }
         return
+    }
+
+    fun finishGrammarSession() {
+        if (!completionRecorded) {
+            UserPrefs.recordPracticeDone(
+                feature = "grammar",
+                score = correctCount,
+                total = questions.size,
+                learnedMinutes = 6,
+                level = PracticeConfig.grammarDifficulty
+            )
+            completionRecorded = true
+        }
+        isFinished = true
     }
 
     if (isFinished) {
@@ -293,13 +308,7 @@ fun GrammarQuizScreen(
                             selectedOptionIndex = null
                             isAnswerRevealed = false
                         } else {
-                            UserPrefs.recordPracticeDone(
-                                feature = "grammar",
-                                score = correctCount,
-                                total = questions.size,
-                                learnedMinutes = 6
-                            )
-                            isFinished = true
+                            finishGrammarSession()
                         }
                     }
                 )

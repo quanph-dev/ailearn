@@ -14,8 +14,8 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.KeyboardArrowRight
@@ -30,8 +30,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -71,7 +71,6 @@ fun SettingsScreen(
     onNavigateToLanguage: () -> Unit = {},
     onNavigateToLegal: (String) -> Unit = {},
     onContactSupport: () -> Unit = {},
-    onRateUs: () -> Unit = {},
     onShareApp: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
@@ -80,6 +79,7 @@ fun SettingsScreen(
     var currentDailyGoal by remember { mutableStateOf(UserPrefs.getDailyGoal()) }
     var currentLearnLang by remember { mutableStateOf(Languages.learn(UserPrefs.getLearnLanguage()).displayName) }
     var currentNativeLang by remember { mutableStateOf(Languages.nativeFor(UserPrefs.nativeLanguage).displayName) }
+    val currentInterfaceLang = Strings.languages.firstOrNull { it.code == Strings.getLanguage() }?.name.orEmpty()
 
     Column(
         modifier = modifier
@@ -187,9 +187,9 @@ fun SettingsScreen(
             SettingsGroup(
                 items = listOf(
                     SettingItem(
-                        label = Strings.tr("Languages"),
+                        label = Strings.tr("Interface Language"),
                         icon = null,
-                        value = null,
+                        value = currentInterfaceLang,
                         onClick = onNavigateToLanguage
                     )
                 )
@@ -205,12 +205,6 @@ fun SettingsScreen(
                         icon = null,
                         value = null,
                         onClick = onContactSupport
-                    ),
-                    SettingItem(
-                        label = Strings.tr("Rate Us"),
-                        icon = null,
-                        value = null,
-                        onClick = onRateUs
                     )
                 )
             )
@@ -247,17 +241,6 @@ fun SettingsScreen(
                         onClick = onShareApp
                     )
                 )
-            )
-
-            Spacer(Modifier.height(18.dp))
-
-            // Footer attribution matching decompiled Engla exactly
-            Text(
-                text = "Animated emoji: Noto Animated Emoji by Google, CC BY 4.0",
-                modifier = Modifier.fillMaxWidth(),
-                color = TextSecondary,
-                fontSize = 11.sp,
-                textAlign = TextAlign.Center
             )
 
             Spacer(Modifier.height(100.dp)) // Bottom Nav clearance
@@ -312,10 +295,12 @@ private fun SettingsGroup(items: List<SettingItem>) {
 
 @Composable
 private fun SettingRow(item: SettingItem) {
+    val stackValueBelowLabel = LocalDensity.current.fontScale >= 1.3f && item.value != null
     Row(
         modifier = Modifier
             .fillMaxWidth()
             .defaultMinSize(minHeight = 52.dp)
+            .clip(RoundedCornerShape(12.dp))
             .clickable(onClick = item.onClick)
             .padding(horizontal = 16.dp, vertical = 15.dp),
         verticalAlignment = Alignment.CenterVertically
@@ -329,16 +314,28 @@ private fun SettingRow(item: SettingItem) {
             Spacer(Modifier.width(12.dp))
         }
 
-        Text(
-            text = item.label,
-            modifier = Modifier.weight(1f),
-            color = TextPrimary,
-            fontSize = 15.sp,
-            maxLines = 2,
-            overflow = TextOverflow.Ellipsis
-        )
+        Column(modifier = Modifier.weight(1f)) {
+            Text(
+                text = item.label,
+                color = TextPrimary,
+                fontSize = 15.sp,
+                maxLines = if (stackValueBelowLabel) 3 else 2,
+                overflow = TextOverflow.Ellipsis
+            )
 
-        if (item.value != null) {
+            if (stackValueBelowLabel) {
+                Spacer(Modifier.height(2.dp))
+                Text(
+                    text = Strings.tr(item.value.orEmpty()),
+                    color = TextSecondary,
+                    fontSize = 13.sp,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis
+                )
+            }
+        }
+
+        if (item.value != null && !stackValueBelowLabel) {
             Spacer(Modifier.width(8.dp))
             Text(
                 text = Strings.tr(item.value),

@@ -18,7 +18,6 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -49,6 +48,7 @@ import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
 import com.example.basekmp.data.trf
 import com.example.basekmp.theme.AppTheme
+import com.example.basekmp.ui.components.CloseButton
 import com.example.basekmp.ui.speaking.SpeechCaptureMic
 import kotlinx.coroutines.launch
 
@@ -137,6 +137,7 @@ fun PlanSpeakingSessionScreen(
         val completedLevelKey = levelKey
         val completedLearnCode = learnCode
         val available = availableActivities
+        val activityEpochDay = UserPrefs.todayEpochDay()
         scope.launch {
             if (completedStageId != null && completedLevelKey.isNotBlank()) {
                 PlanProgress.get().addSeen(
@@ -153,7 +154,7 @@ fun PlanSpeakingSessionScreen(
             }
             val progress = PlanProgress.get()
             val wasSpeakingDone = PlanProgress.Activity.SPEAKING in progress.done(day)
-            dayCompleted = PlanFlow.finish(day, PlanProgress.Activity.SPEAKING).dayCompleted
+            dayCompleted = PlanFlow.finish(day, PlanProgress.Activity.SPEAKING, activityEpochDay).dayCompleted
             val speakingWasCompleted = !wasSpeakingDone && PlanProgress.Activity.SPEAKING in progress.done(day)
             if (speakingWasCompleted) {
                 UserPrefs.addLearnedMinutes(
@@ -161,7 +162,8 @@ fun PlanSpeakingSessionScreen(
                         activity = PlanProgress.Activity.SPEAKING,
                         dailyMinutes = UserPrefs.dailyGoalMinutes,
                         available = available
-                    )
+                    ),
+                    activityEpochDay
                 )
             }
             showCompletion = true
@@ -231,13 +233,7 @@ fun PlanSpeakingSessionScreen(
                             .padding(horizontal = AppTheme.dimens.spacingSm),
                         verticalAlignment = Alignment.CenterVertically
                     ) {
-                        IconButton(onClick = onBack) {
-                            Icon(
-                                imageVector = Icons.Rounded.Close,
-                                contentDescription = tr("Close"),
-                                tint = AppTheme.colors.textPrimary
-                            )
-                        }
+                        CloseButton(onClick = onBack)
                         AppLinearProgressBar(
                             progress = (currentIndex + 1) / questions.size.toFloat(),
                             modifier = Modifier

@@ -1,6 +1,7 @@
 package com.example.basekmp.ui.speaking
 
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -15,6 +16,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -69,6 +71,7 @@ fun SpeechCaptureMic(
                 Text(
                     text = Strings.tr("Can't speak now? Skip"),
                     modifier = Modifier
+                        .clip(RoundedCornerShape(8.dp))
                         .clickable(
                             enabled = !isListening,
                             role = Role.Button,

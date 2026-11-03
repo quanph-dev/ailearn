@@ -1,11 +1,11 @@
 package com.example.basekmp.ui.progress
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,12 +14,12 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.statusBarsPadding
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.DeleteOutline
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -29,26 +29,31 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.basekmp.components.ExitSessionDialog
+import com.example.basekmp.components.AppActionDialog
 import com.example.basekmp.components.PrimaryButton
 import com.example.basekmp.data.LearningItem
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
-import com.example.basekmp.theme.AppTheme
+import com.example.basekmp.formatDate
+import com.example.basekmp.formatTime
+import com.example.basekmp.theme.BlueSelected
+import com.example.basekmp.theme.IncorrectRed
+import com.example.basekmp.theme.OptionSurface
+import com.example.basekmp.theme.OptionSurfaceSelected
+import com.example.basekmp.theme.TextPrimary
+import com.example.basekmp.theme.TextSecondary
+import com.example.basekmp.ui.components.BackTitleBar
 
-private fun LearningItem.isLessonEntry(): Boolean =
-    title.equals("AI Tutor", ignoreCase = true) ||
-        title.startsWith("AI Tutor ", ignoreCase = true) ||
-        title.equals("Today's Lesson", ignoreCase = true) ||
-        title.contains("Lesson", ignoreCase = true) ||
-        detail.contains("Lesson", ignoreCase = true)
+private val LESSON_TITLES = setOf("AI Tutor", "Today's Lesson")
 
-private fun LearningItem.isShadowingEntry(): Boolean =
-    title.contains("Shadowing", ignoreCase = true) || detail.contains("Shadowing", ignoreCase = true)
+private fun formatHistoryWhen(ts: Long): String {
+    if (ts <= 0) return ""
+    return "${formatDate(ts)} • ${formatTime(ts)}"
+}
 
 @Composable
 fun LearningHistoryScreen(
@@ -57,234 +62,168 @@ fun LearningHistoryScreen(
     onStartLearning: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
-    val colors = AppTheme.colors
-    val dimens = AppTheme.dimens
-
     val historyList = UserPrefs.learningHistoryState
-    var showClearConfirmation by remember { mutableStateOf(false) }
-    var selectedFilter by remember { mutableStateOf("All") }
+    var pendingDelete by remember { mutableStateOf<LearningItem?>(null) }
 
-    val filterOptions = listOf("All", "Lesson", "Shadowing", "Practice")
-    val historySnapshot = historyList.toList()
+    val lessonEntries = historyList.filter {
+        LESSON_TITLES.contains(it.title) || it.title.startsWith("AI Tutor") || it.title.contains("Lesson")
+    }
 
-    val filteredList = when (selectedFilter) {
-        "Lesson" -> historySnapshot.filter { it.isLessonEntry() }
-        "Shadowing" -> historySnapshot.filter { it.isShadowingEntry() }
-        "Practice" -> historySnapshot.filter { !it.isLessonEntry() && !it.isShadowingEntry() }
-        else -> historySnapshot
+    val groupedHistory = remember(lessonEntries) {
+        val map = LinkedHashMap<String, MutableList<LearningItem>>()
+        for (item in lessonEntries) {
+            val title = item.title
+            map.getOrPut(title) { mutableListOf() }.add(item)
+        }
+        map
     }
 
     Column(
         modifier = modifier
             .fillMaxSize()
-            .background(colors.background)
             .safeDrawingPadding()
-            .padding(horizontal = dimens.spacingLg, vertical = dimens.spacingSm)
+            .padding(horizontal = 20.dp)
     ) {
-        Spacer(Modifier.height(8.dp))
-        // Top Bar: Back, Title, Clear All
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(vertical = dimens.spacingSm),
-            horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Box(
-                    modifier = Modifier
-                        .size(40.dp)
-                        .clip(CircleShape)
-                        .background(colors.surface)
-                        .border(1.dp, colors.border, CircleShape)
-                        .clickable(onClick = onBack),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Text("‹", color = colors.textPrimary, fontSize = 24.sp, fontWeight = FontWeight.Bold)
-                }
+        Spacer(Modifier.height(10.dp))
 
-                Spacer(Modifier.width(dimens.spacingMd))
+        BackTitleBar(
+            title = Strings.tr("Learning History"),
+            onBack = onBack
+        )
 
+        Spacer(Modifier.height(16.dp))
+
+        if (lessonEntries.isEmpty()) {
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth(),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
                 Text(
-                    text = Strings.tr("Learning History"),
-                    fontSize = 20.sp,
-                    fontWeight = FontWeight.Bold,
-                    color = colors.textPrimary
+                    text = Strings.tr("No activity yet — finish a lesson or practice to see it here."),
+                    color = TextSecondary,
+                    fontSize = 14.sp,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.padding(horizontal = 12.dp)
+                )
+
+                Spacer(Modifier.height(20.dp))
+
+                PrimaryButton(
+                    text = Strings.tr("Start Now"),
+                    onClick = onStartLearning,
+                    modifier = Modifier.fillMaxWidth(0.72f)
                 )
             }
-
-            if (historyList.isNotEmpty()) {
-                Box(
-                    modifier = Modifier
-                        .clip(RoundedCornerShape(dimens.cornerPill))
-                        .background(colors.surfaceVariant)
-                        .clickable { showClearConfirmation = true }
-                        .padding(horizontal = dimens.spacingMd, vertical = dimens.spacingXs)
-                ) {
-                    Text(
-                        text = Strings.tr("Clear"),
-                        color = colors.error,
-                        fontSize = 12.sp,
-                        fontWeight = FontWeight.SemiBold
-                    )
-                }
-            }
-        }
-
-        Spacer(Modifier.height(dimens.spacingSm))
-
-        // Filter chips
-        Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.spacedBy(dimens.spacingSm)
-        ) {
-            filterOptions.forEach { opt ->
-                val isSelected = opt == selectedFilter
-                Box(
-                    modifier = Modifier
-                        .clip(RoundedCornerShape(dimens.cornerPill))
-                        .background(if (isSelected) colors.primary else colors.surface)
-                        .border(
-                            width = 1.dp,
-                            color = if (isSelected) colors.primary else colors.border,
-                            shape = RoundedCornerShape(dimens.cornerPill)
-                        )
-                        .clickable { selectedFilter = opt }
-                        .padding(horizontal = dimens.spacingMd, vertical = dimens.spacingXs)
-                ) {
-                    Text(
-                        text = Strings.tr(opt),
-                        color = if (isSelected) colors.textOnPrimary else colors.textSecondary,
-                        fontSize = 12.sp,
-                        fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal
-                    )
-                }
-            }
-        }
-
-        Spacer(Modifier.height(dimens.spacingMd))
-
-        // Session list
-        LazyColumn(
-            modifier = Modifier
-                .weight(1f)
-                .fillMaxWidth(),
-            verticalArrangement = Arrangement.spacedBy(dimens.spacingSm)
-        ) {
-            if (filteredList.isEmpty()) {
-                item {
-                    Column(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(vertical = dimens.spacing4Xl),
-                        horizontalAlignment = Alignment.CenterHorizontally
-                    ) {
+        } else {
+            LazyColumn(
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth(),
+                verticalArrangement = Arrangement.spacedBy(10.dp),
+                contentPadding = PaddingValues(bottom = 24.dp)
+            ) {
+                groupedHistory.forEach { (category, items) ->
+                    item(key = "h_$category") {
                         Text(
-                            text = Strings.tr("No activity yet — finish a lesson or practice to see it here."),
-                            fontSize = 14.sp,
-                            textAlign = androidx.compose.ui.text.style.TextAlign.Center,
-                            color = colors.textSecondary
-                        )
-                        Spacer(Modifier.height(dimens.spacingXl))
-                        PrimaryButton(
-                            text = Strings.tr("Start Now"),
-                            onClick = onStartLearning,
-                            modifier = Modifier.width(200.dp)
+                            text = Strings.tr(category),
+                            fontSize = 16.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = TextPrimary,
+                            modifier = Modifier.padding(top = 8.dp, bottom = 4.dp)
                         )
                     }
-                }
-            } else {
-                items(filteredList) { item ->
-                    HistoryCard(
-                        entry = item,
-                        onOpen = { onOpenLesson(item.title) },
-                        onDelete = { UserPrefs.removeLearning(item) }
-                    )
+
+                    items(
+                        items = items,
+                        key = { "${it.title}_${it.timestamp}" }
+                    ) { item ->
+                        HistoryCard(
+                            category = category,
+                            entry = item,
+                            onOpen = { onOpenLesson(item.title) },
+                            onDelete = { pendingDelete = item }
+                        )
+                    }
                 }
             }
         }
     }
 
-    if (showClearConfirmation) {
-        ExitSessionDialog(
+    pendingDelete?.let { item ->
+        AppActionDialog(
+            title = Strings.tr("Delete this activity?"),
+            message = Strings.tr("This will remove it from your Learning History."),
+            onDismissRequest = { pendingDelete = null },
+            confirmText = Strings.tr("Delete"),
             onConfirm = {
-                UserPrefs.clearAllHistory()
-                showClearConfirmation = false
+                UserPrefs.removeLearning(item)
+                pendingDelete = null
             },
-            onDismiss = { showClearConfirmation = false }
+            dismissText = Strings.tr("Cancel"),
+            onDismissAction = { pendingDelete = null },
+            confirmIsDestructive = true
         )
     }
 }
 
 @Composable
 private fun HistoryCard(
+    category: String,
     entry: LearningItem,
     onOpen: () -> Unit,
-    onDelete: () -> Unit
+    onDelete: () -> Unit,
+    modifier: Modifier = Modifier
 ) {
-    val colors = AppTheme.colors
-    val dimens = AppTheme.dimens
-    val metadata = listOf(entry.detail, entry.level).filter(String::isNotBlank).joinToString(" • ")
-
     Row(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
-            .clip(RoundedCornerShape(dimens.cornerMd))
-            .background(colors.surface)
-            .border(1.dp, colors.border, RoundedCornerShape(dimens.cornerMd))
+            .clip(RoundedCornerShape(16.dp))
+            .background(OptionSurface)
             .clickable(onClick = onOpen)
-            .padding(dimens.spacingMd),
-        horizontalArrangement = Arrangement.SpaceBetween,
+            .padding(horizontal = 16.dp, vertical = 12.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
         Column(modifier = Modifier.weight(1f)) {
-            Text(
-                text = entry.title,
-                fontSize = 15.sp,
-                fontWeight = FontWeight.SemiBold,
-                color = colors.textPrimary
-            )
-            if (metadata.isNotEmpty()) {
-                Spacer(Modifier.height(2.dp))
-                Text(
-                    text = metadata,
-                    fontSize = 12.sp,
-                    color = colors.textSecondary
-                )
-            }
-        }
-
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(dimens.spacingSm)
-        ) {
-            entry.scorePercent?.let { scorePercent ->
-                Box(
-                    modifier = Modifier
-                        .clip(RoundedCornerShape(dimens.cornerXs))
-                        .background(colors.successBg)
-                        .border(1.dp, colors.success.copy(alpha = 0.3f), RoundedCornerShape(dimens.cornerXs))
-                        .padding(horizontal = 8.dp, vertical = 4.dp)
-                ) {
-                    Text(
-                        text = "$scorePercent%",
-                        fontSize = 12.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = colors.success
-                    )
-                }
-            }
-
             Box(
                 modifier = Modifier
-                    .size(28.dp)
-                    .clip(CircleShape)
-                    .background(colors.surfaceVariant)
-                    .clickable(onClick = onDelete),
+                    .clip(RoundedCornerShape(50))
+                    .background(OptionSurfaceSelected)
+                    .padding(horizontal = 10.dp, vertical = 3.dp),
                 contentAlignment = Alignment.Center
             ) {
-                Text("✕", fontSize = 11.sp, color = colors.textSecondary)
+                Text(
+                    text = Strings.tr(category),
+                    color = BlueSelected,
+                    fontSize = 11.sp,
+                    fontWeight = FontWeight.SemiBold
+                )
             }
+
+            Spacer(Modifier.height(6.dp))
+
+            Text(
+                text = formatHistoryWhen(entry.timestamp),
+                color = TextSecondary,
+                fontSize = 13.sp
+            )
+        }
+
+        Box(
+            modifier = Modifier
+                .size(36.dp)
+                .clip(RoundedCornerShape(10.dp))
+                .clickable(onClick = onDelete),
+            contentAlignment = Alignment.Center
+        ) {
+            Icon(
+                imageVector = Icons.Rounded.DeleteOutline,
+                contentDescription = Strings.tr("Delete"),
+                tint = IncorrectRed,
+                modifier = Modifier.size(20.dp)
+            )
         }
     }
 }

@@ -9,6 +9,7 @@ import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import com.example.basekmp.data.UserPrefs
+import com.example.basekmp.ui.lifecycle.rememberIsAppResumed
 import kotlinx.coroutines.delay
 
 interface PlatformSpeaker {
@@ -72,12 +73,14 @@ fun rememberTypewriter(
     var count by rememberSaveable(text) { mutableIntStateOf(0) }
     var timedAllowed by rememberSaveable(text) { mutableStateOf(spokenChars == null) }
     val liveSpoken by rememberUpdatedState(spokenChars ?: 0)
+    val isAppResumed = rememberIsAppResumed()
 
     if (spokenChars != null && spokenChars > count) {
         count = spokenChars.coerceAtMost(text.length)
     }
 
-    LaunchedEffect(text, spokenChars == null) {
+    LaunchedEffect(text, spokenChars == null, isAppResumed) {
+        if (!isAppResumed) return@LaunchedEffect
         if (spokenChars == null) {
             timedAllowed = true
         } else {
@@ -88,8 +91,8 @@ fun rememberTypewriter(
         }
     }
 
-    LaunchedEffect(text, timedAllowed) {
-        if (!timedAllowed || count >= text.length) return@LaunchedEffect
+    LaunchedEffect(text, timedAllowed, isAppResumed) {
+        if (!isAppResumed || !timedAllowed || count >= text.length) return@LaunchedEffect
         val stepMs = (1000L / charsPerSecond.coerceAtLeast(1)).coerceAtLeast(8L)
         while (count < text.length) {
             delay(stepMs)

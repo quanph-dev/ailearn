@@ -11,6 +11,7 @@ import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -21,6 +22,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
@@ -31,7 +33,6 @@ import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material.icons.automirrored.rounded.ArrowForward
 import androidx.compose.material.icons.rounded.Check
 import androidx.compose.material.icons.rounded.Edit
@@ -56,11 +57,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.blur
 import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Outline
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.PathEffect
+import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.layout.ContentScale
@@ -68,7 +72,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.sp
 import com.example.basekmp.data.GoalPlan
 import com.example.basekmp.data.PlanCatalogData
@@ -79,6 +85,7 @@ import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
 import com.example.basekmp.data.trf
 import com.example.basekmp.theme.TrackColor
+import com.example.basekmp.ui.components.BackButton
 import ailearn.shared.generated.resources.Res
 import ailearn.shared.generated.resources.plan_cel_body
 import ailearn.shared.generated.resources.plan_james_arm
@@ -207,6 +214,7 @@ fun PlanScreen(
                                     lastDay = lastDay,
                                     title = stage.displayTitle(UserPrefs.targetLanguage)
                                 )
+                                Spacer(Modifier.height(20.dp))
                                 PlanStagePath(
                                     startDay = firstDay,
                                     endDay = lastDay,
@@ -246,23 +254,12 @@ private fun PathTopBar(onBack: () -> Unit) {
             .padding(horizontal = 20.dp),
         contentAlignment = Alignment.Center
     ) {
-        Surface(
-            modifier = Modifier
-                .align(Alignment.CenterStart)
-                .size(42.dp)
-                .clickable(onClick = onBack),
-            shape = CircleShape,
-            color = Color.White.copy(alpha = 0.72f)
-        ) {
-            Box(contentAlignment = Alignment.Center) {
-                Icon(
-                    imageVector = Icons.AutoMirrored.Rounded.ArrowBack,
-                    contentDescription = tr("Back"),
-                    tint = PathText,
-                    modifier = Modifier.size(22.dp)
-                )
-            }
-        }
+        BackButton(
+            onClick = onBack,
+            modifier = Modifier.align(Alignment.CenterStart),
+            background = Color.White.copy(alpha = 0.72f),
+            tint = PathText
+        )
         Text(
             text = tr("My Learning Path"),
             color = PathText,
@@ -294,6 +291,7 @@ private fun PersonalizeCards(
             modifier = Modifier
                 .weight(1f)
                 .fillMaxSize()
+                .clip(RoundedCornerShape(20.dp))
                 .clickable(onClick = onGoal),
             shape = RoundedCornerShape(20.dp),
             color = Color.White,
@@ -345,6 +343,7 @@ private fun PersonalizeCards(
             modifier = Modifier
                 .weight(1f)
                 .fillMaxSize()
+                .clip(RoundedCornerShape(20.dp))
                 .clickable(onClick = onAssistant),
             shape = RoundedCornerShape(20.dp),
             color = Color.White,
@@ -644,7 +643,7 @@ private fun PlanStagePath(
                 StartHereTip(
                     modifier = Modifier.offset(
                         x = (centerX - 48.dp).coerceAtLeast(0.dp),
-                        y = (nodeTop - 40.dp).coerceAtLeast(0.dp)
+                        y = (nodeTop - 60.dp).coerceAtLeast(0.dp)
                     )
                 )
             }
@@ -667,6 +666,7 @@ private fun PlanStagePath(
                 modifier = Modifier
                     .offset(x = labelX, y = PathNodeCenterTop + PathRowStep * index - 18.dp)
                     .width(labelWidth)
+                    .clip(RoundedCornerShape(8.dp))
                     .clickable(enabled = isUnlocked) { onOpenDay(day) },
                 verticalArrangement = Arrangement.spacedBy(2.dp)
             ) {
@@ -693,11 +693,14 @@ private fun PlanStagePath(
                     y = PathNodeCenterTop + PathRowStep * 1.52f
                 )
             )
+            val bubbleX = availableWidth * 0.47f + 8.dp
+            val robotCenterX = availableWidth - 65.dp
             RobotSpeechBubble(
                 modifier = Modifier
-                    .offset(x = availableWidth * 0.47f, y = 18.dp)
-                    .clickable { robotAwake = !robotAwake },
-                awake = robotAwake
+                    .offset(x = bubbleX, y = PathNodeCenterTop - 82.dp),
+                tailCenterFromEnd = (160.dp - (robotCenterX - bubbleX)).coerceIn(16.dp, 144.dp),
+                awake = robotAwake,
+                onTap = { robotAwake = !robotAwake }
             )
             PathRobot(
                 modifier = Modifier.offset(
@@ -731,6 +734,7 @@ private fun DayPathNode(
     Box(
         modifier = modifier
             .size(size + 8.dp)
+            .clip(CircleShape)
             .clickable(enabled = enabled, onClick = onClick),
         contentAlignment = Alignment.TopCenter
     ) {
@@ -841,22 +845,84 @@ private fun StartHereTip(modifier: Modifier = Modifier) {
 }
 
 @Composable
-private fun RobotSpeechBubble(modifier: Modifier = Modifier, awake: Boolean) {
+private fun RobotSpeechBubble(
+    modifier: Modifier = Modifier,
+    tailCenterFromEnd: Dp,
+    awake: Boolean,
+    onTap: () -> Unit
+) {
+    val shape = remember(tailCenterFromEnd) { RobotSpeechBubbleShape(tailCenterFromEnd) }
+    val interactionSource = remember { MutableInteractionSource() }
     Surface(
-        modifier = modifier.width(160.dp),
-        shape = RoundedCornerShape(16.dp),
+        modifier = modifier
+            .width(160.dp)
+            .heightIn(min = 54.dp)
+            .shadow(
+                elevation = 4.dp,
+                shape = shape,
+                clip = false,
+                ambientColor = Color(0x304B8DF5),
+                spotColor = Color(0x1F3678E7)
+            )
+            .clip(shape)
+            .clickable(
+                interactionSource = interactionSource,
+                indication = null,
+                onClick = onTap
+            ),
+        shape = shape,
         color = Color.White,
-        shadowElevation = 3.dp,
+        shadowElevation = 0.dp,
         border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFDCE8FA))
     ) {
-        Text(
-            text = if (awake) tr("Ready to learn?") else tr("Zzz... Tap me to wake me up 💤"),
-            color = Color(0xFF30343C),
-            fontSize = 13.sp,
-            lineHeight = 17.sp,
-            fontWeight = FontWeight.Medium,
-            modifier = Modifier.padding(horizontal = 11.dp, vertical = 8.dp)
-        )
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(bottom = 10.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            Text(
+                text = if (awake) tr("Ready to learn?") else tr("Zzz... Tap me to wake me up 💤"),
+                color = Color(0xFF30343C),
+                fontSize = 13.sp,
+                lineHeight = 17.sp,
+                fontWeight = FontWeight.Medium,
+                modifier = Modifier.padding(horizontal = 11.dp, vertical = 8.dp)
+            )
+        }
+    }
+}
+
+private class RobotSpeechBubbleShape(
+    private val tailCenterFromEnd: Dp
+) : Shape {
+    override fun createOutline(
+        size: Size,
+        layoutDirection: LayoutDirection,
+        density: Density
+    ): Outline {
+        val cornerRadius = with(density) { 16.dp.toPx() }.coerceAtMost(size.height / 2f)
+        val tailHeight = with(density) { 10.dp.toPx() }.coerceAtMost(size.height / 3f)
+        val tailHalfWidth = with(density) { 7.dp.toPx() }.coerceAtMost(size.width / 8f)
+        val bodyBottom = size.height - tailHeight
+        val tailCenter = (size.width - with(density) { tailCenterFromEnd.toPx() })
+            .coerceIn(tailHalfWidth, size.width - tailHalfWidth)
+        val path = Path().apply {
+            moveTo(cornerRadius, 0f)
+            lineTo(size.width - cornerRadius, 0f)
+            quadraticTo(size.width, 0f, size.width, cornerRadius)
+            lineTo(size.width, bodyBottom - cornerRadius)
+            quadraticTo(size.width, bodyBottom, size.width - cornerRadius, bodyBottom)
+            lineTo(tailCenter + tailHalfWidth, bodyBottom)
+            lineTo(tailCenter, size.height)
+            lineTo(tailCenter - tailHalfWidth, bodyBottom)
+            lineTo(cornerRadius, bodyBottom)
+            quadraticTo(0f, bodyBottom, 0f, bodyBottom - cornerRadius)
+            lineTo(0f, cornerRadius)
+            quadraticTo(0f, 0f, cornerRadius, 0f)
+            close()
+        }
+        return Outline.Generic(path)
     }
 }
 
@@ -872,56 +938,67 @@ private fun PathRobot(modifier: Modifier = Modifier, awake: Boolean, onTap: () -
         ),
         label = "robotFloat"
     )
+    val interactionSource = remember { MutableInteractionSource() }
     Box(
         modifier = modifier
             .size(width = 100.dp, height = 108.dp)
-            .offset(y = floatY.dp)
-            .clickable(onClick = onTap),
+            .clickable(
+                interactionSource = interactionSource,
+                indication = null,
+                onClick = onTap
+            ),
         contentAlignment = Alignment.Center
     ) {
         Box(
             modifier = Modifier
                 .align(Alignment.BottomCenter)
-                .offset(y = 12.dp)
-                .size(width = 50.dp, height = 9.dp)
+                .offset(y = 4.dp)
+                .size(width = 64.dp, height = 8.dp)
                 .background(
                     Brush.horizontalGradient(
                         colors = listOf(
                             Color.Transparent,
-                            Color(0x3352769A),
+                            Color(0x2252769A),
                             Color.Transparent
                         )
                     ),
                     shape = CircleShape
                 )
-                .blur(6.dp)
+                .blur(8.dp)
         )
-        androidx.compose.foundation.Image(
-            painter = painterResource(Res.drawable.plan_james_body),
-            contentDescription = tr("AI assistant robot"),
-            contentScale = ContentScale.Fit,
-            modifier = Modifier.fillMaxSize()
-        )
-        RobotFaceOverlay(sleeping = !awake, modifier = Modifier.fillMaxSize())
-        androidx.compose.foundation.Image(
-            painter = painterResource(Res.drawable.plan_james_arm),
-            contentDescription = null,
-            contentScale = ContentScale.Fit,
+        Box(
             modifier = Modifier
-                .align(Alignment.TopEnd)
-                .offset(x = 5.dp, y = 31.dp)
-                .size(38.dp)
-        )
-        if (!awake) {
-            Text(
-                text = "Zzz",
-                color = PathBlue,
-                fontSize = 13.sp,
-                fontWeight = FontWeight.Bold,
+                .fillMaxSize()
+                .offset(y = floatY.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            androidx.compose.foundation.Image(
+                painter = painterResource(Res.drawable.plan_james_body),
+                contentDescription = tr("AI assistant robot"),
+                contentScale = ContentScale.Fit,
+                modifier = Modifier.fillMaxSize()
+            )
+            RobotFaceOverlay(sleeping = !awake, modifier = Modifier.fillMaxSize())
+            androidx.compose.foundation.Image(
+                painter = painterResource(Res.drawable.plan_james_arm),
+                contentDescription = null,
+                contentScale = ContentScale.Fit,
                 modifier = Modifier
                     .align(Alignment.TopEnd)
-                    .offset(x = (-3).dp, y = 5.dp)
+                    .offset(x = 5.dp, y = 31.dp)
+                    .size(38.dp)
             )
+            if (!awake) {
+                Text(
+                    text = "Zzz",
+                    color = PathBlue,
+                    fontSize = 13.sp,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier
+                        .align(Alignment.TopEnd)
+                        .offset(x = (-3).dp, y = 5.dp)
+                )
+            }
         }
     }
 }

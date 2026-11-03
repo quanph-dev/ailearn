@@ -17,9 +17,10 @@ import com.airbnb.lottie.compose.LottieConstants
 import com.airbnb.lottie.compose.animateLottieCompositionAsState
 import com.airbnb.lottie.compose.rememberLottieComposition
 import com.example.basekmp.shared.R
+import org.jetbrains.compose.resources.painterResource
 
 @Composable
-actual fun FirstOpenIntroArtwork(page: Int, modifier: Modifier) {
+actual fun FirstOpenIntroArtwork(page: Int, isActive: Boolean, modifier: Modifier) {
     val pageIndex = page.coerceIn(0, 2)
     val animationRes = when (pageIndex) {
         0 -> R.raw.fo_anim_onboarding_1
@@ -31,27 +32,39 @@ actual fun FirstOpenIntroArtwork(page: Int, modifier: Modifier) {
         1 -> Res.drawable.fo_img_onboarding_2
         else -> Res.drawable.fo_img_onboarding_3
     }
-    val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(animationRes))
+    val reducedMotion = isReducedMotionEnabled()
 
     Box(modifier = modifier) {
-        if (composition == null) {
+        if (!isActive || reducedMotion) {
             Image(
-                painter = org.jetbrains.compose.resources.painterResource(fallbackImage),
+                painter = painterResource(fallbackImage),
                 contentDescription = null,
-                modifier = Modifier.fillMaxSize(),
-                contentScale = ContentScale.Crop
-            )
-        } else {
-            val progress by animateLottieCompositionAsState(
-                composition = composition,
-                iterations = LottieConstants.IterateForever
-            )
-            LottieAnimation(
-                composition = composition,
-                progress = { progress },
                 modifier = Modifier.fillMaxSize(),
                 contentScale = ContentScale.Fit
             )
+        } else {
+            val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(animationRes))
+            if (composition == null) {
+                Image(
+                    painter = painterResource(fallbackImage),
+                    contentDescription = null,
+                    modifier = Modifier.fillMaxSize(),
+                    contentScale = ContentScale.Fit
+                )
+            } else {
+                val progress by animateLottieCompositionAsState(
+                    composition = composition,
+                    isPlaying = true,
+                    restartOnPlay = true,
+                    iterations = LottieConstants.IterateForever
+                )
+                LottieAnimation(
+                    composition = composition,
+                    progress = { progress },
+                    modifier = Modifier.fillMaxSize(),
+                    contentScale = ContentScale.Fit
+                )
+            }
         }
     }
 }

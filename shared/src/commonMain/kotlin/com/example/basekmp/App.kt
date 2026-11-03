@@ -79,12 +79,12 @@ import com.example.basekmp.ui.plan.PlanSpeakingSessionScreen
 import com.example.basekmp.ui.plan.PlanSetupScreen
 import com.example.basekmp.data.GoalPlan
 import com.example.basekmp.data.PlanProgress
+import com.example.basekmp.data.PracticeConfig
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.ui.plan.PlanFlow
 import com.example.basekmp.ui.progress.LearningHistoryScreen
 import com.example.basekmp.ui.progress.ProgressDetailScreen
-import com.example.basekmp.ui.settings.LegalScreen
 import com.example.basekmp.ui.shadowing.SavedWordsScreen
 import com.example.basekmp.ui.shadowing.VideoShadowingListScreen
 import com.example.basekmp.ui.shadowing.VideoShadowingPlayerScreen
@@ -519,7 +519,6 @@ private sealed interface ActiveSubScreen {
     data class PlanTalk(val day: Int, val title: String, val level: String) : ActiveSubScreen
     data class ProgressDetail(val kind: String) : ActiveSubScreen
     data object LearningHistory : ActiveSubScreen
-    data class Legal(val docType: String) : ActiveSubScreen
 }
 
 @Composable
@@ -581,6 +580,16 @@ private fun MainAppHost(
                 onOpenPlanDay = { day ->
                     activeSubScreen = ActiveSubScreen.PlanDay(day)
                 },
+                onOpenLesson = { title ->
+                    activeSubScreen = when {
+                        title.equals("AI Tutor", ignoreCase = true) || title.startsWith("AI Tutor ", ignoreCase = true) -> ActiveSubScreen.AiTutor
+                        title.equals("Today's Lesson", ignoreCase = true) -> ActiveSubScreen.TodayLesson()
+                        title.contains("Vocabulary", ignoreCase = true) -> ActiveSubScreen.VocabSetup
+                        title.contains("Speaking", ignoreCase = true) -> ActiveSubScreen.SpeakingSetup
+                        title.contains("Grammar", ignoreCase = true) -> ActiveSubScreen.GrammarSetup
+                        else -> ActiveSubScreen.TodayLesson(title = title, level = "Intermediate")
+                    }
+                },
                 onFeatureClick = { feature ->
                     activeSubScreen = when {
                         feature.equals("premium", ignoreCase = true) -> null
@@ -604,8 +613,14 @@ private fun MainAppHost(
                 },
                 onNavigateToLanguage = onOpenLanguageSettings,
                 onNavigateToLegal = { doc ->
-                    activeSubScreen = ActiveSubScreen.Legal(doc)
+                    AppLinks.documentUrl(doc)
+                        .takeIf(String::isNotBlank)
+                        ?.let(::openExternalUrl)
                 },
+                onContactSupport = {
+                    AppLinks.supportEmailUrl()?.let(::openExternalUrl)
+                },
+                onShareApp = { sharePlainText(AppLinks.shareMessage(playStorePackageName())) },
                 selectedTab = uiState.selectedTab,
                 onTabSelected = { tab -> viewModel.selectTab(tab) }
             )
@@ -648,7 +663,9 @@ private fun MainAppHost(
                 is ActiveSubScreen.VocabCards -> {
                     VocabCardsScreen(
                         wordCount = screen.count,
-                        onClose = { _, _ -> activeSubScreen = ActiveSubScreen.VocabSetup }
+                        onClose = { _, _ ->
+                            activeSubScreen = null
+                        }
                     )
                 }
                 ActiveSubScreen.GrammarSetup -> {
@@ -660,7 +677,9 @@ private fun MainAppHost(
                 is ActiveSubScreen.GrammarQuiz -> {
                     GrammarQuizScreen(
                         questionCount = screen.count,
-                        onClose = { _, _ -> activeSubScreen = ActiveSubScreen.GrammarSetup }
+                        onClose = { _, _ ->
+                            activeSubScreen = null
+                        }
                     )
                 }
                 ActiveSubScreen.SpeakingSetup -> {
@@ -672,7 +691,13 @@ private fun MainAppHost(
                 is ActiveSubScreen.SpeakingCards -> {
                     SpeakingCardsScreen(
                         cardCount = screen.count,
-                        onClose = { _, _ -> activeSubScreen = ActiveSubScreen.SpeakingSetup }
+                        onClose = { _, finished ->
+                            UserPrefs.markFeatureUsed("speaking")
+                            if (finished) {
+                                UserPrefs.markSpeakingDone(PracticeConfig.speakingDifficulty, PracticeConfig.speakingType)
+                            }
+                            activeSubScreen = null
+                        }
                     )
                 }
                 ActiveSubScreen.ShadowingList -> {
@@ -766,19 +791,30 @@ private fun MainAppHost(
                         kind = screen.kind,
                         onBack = { activeSubScreen = null },
                         onStartPractice = {
-                            activeSubScreen = ActiveSubScreen.TodayLesson()
+                            activeSubScreen = when (screen.kind.lowercase()) {
+                                "grammar" -> ActiveSubScreen.GrammarSetup
+                                "speaking" -> ActiveSubScreen.SpeakingSetup
+                                else -> ActiveSubScreen.VocabSetup
+                            }
                         }
                     )
                 }
                 ActiveSubScreen.LearningHistory -> {
                     LearningHistoryScreen(
-                        onBack = { activeSubScreen = null }
-                    )
-                }
-                is ActiveSubScreen.Legal -> {
-                    LegalScreen(
-                        kind = screen.docType,
-                        onBack = { activeSubScreen = null }
+                        onBack = { activeSubScreen = null },
+                        onOpenLesson = { title ->
+                            activeSubScreen = when {
+                                title.equals("AI Tutor", ignoreCase = true) || title.startsWith("AI Tutor ", ignoreCase = true) -> ActiveSubScreen.AiTutor
+                                title.equals("Today's Lesson", ignoreCase = true) -> ActiveSubScreen.TodayLesson()
+                                title.contains("Vocabulary", ignoreCase = true) -> ActiveSubScreen.VocabSetup
+                                title.contains("Speaking", ignoreCase = true) -> ActiveSubScreen.SpeakingSetup
+                                title.contains("Grammar", ignoreCase = true) -> ActiveSubScreen.GrammarSetup
+                                else -> ActiveSubScreen.TodayLesson(title = title, level = "Intermediate")
+                            }
+                        },
+                        onStartLearning = {
+                            activeSubScreen = ActiveSubScreen.TodayLesson()
+                        }
                     )
                 }
                 null -> {}

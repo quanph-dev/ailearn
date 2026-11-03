@@ -42,6 +42,7 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -248,6 +249,17 @@ private fun ActivePlanCard(
     val doneCount = availableActivities.count { it in doneActivities }
     val totalMinutes = dayPlan?.let { planDayMinutes(UserPrefs.dailyGoalMinutes, availableActivities) }
     val stageTitle = dayPlan?.stage?.displayTitle(GoalPlan.learnCode(learnLanguage))
+    val stackPlanContent = LocalDensity.current.fontScale >= 1.3f
+    val dayTitle = buildString {
+        append(Strings.trf("Day %1\$d", day))
+        stageTitle?.takeIf { it.isNotBlank() }?.let { append(" · ").append(it) }
+    }
+    val daySummary = if (totalMinutes != null) {
+        Strings.trf("%1\$d min", totalMinutes) + " · " +
+            Strings.trf("%1\$d/%2\$d activities", doneCount, availableActivities.size)
+    } else {
+        Strings.tr(if (dayPlanState.isLoading) "Loading plan..." else "Plan content unavailable")
+    }
     val shape = RoundedCornerShape(18.dp)
 
     Column(
@@ -286,39 +298,53 @@ private fun ActivePlanCard(
             Spacer(Modifier.height(12.dp))
             ActivePlanAction(text = Strings.tr("View path"), onClick = onViewPath, arrow = true)
         } else {
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Column(modifier = Modifier.weight(1f)) {
-                    Text(
-                        text = buildString {
-                            append(Strings.trf("Day %1\$d", day))
-                            stageTitle?.takeIf { it.isNotBlank() }?.let { append(" · ").append(it) }
-                        },
-                        color = TextPrimary,
-                        fontSize = 18.sp,
-                        fontWeight = FontWeight.Bold,
-                        lineHeight = 22.sp,
-                        maxLines = 2,
-                        overflow = TextOverflow.Ellipsis
-                    )
-                    Spacer(Modifier.height(3.dp))
-                    Text(
-                        text = if (totalMinutes != null) {
-                            Strings.trf("%1\$d min", totalMinutes) + " · " +
-                                Strings.trf("%1\$d/%2\$d activities", doneCount, availableActivities.size)
-                        } else {
-                            Strings.tr(if (dayPlanState.isLoading) "Loading plan..." else "Plan content unavailable")
-                        },
-                        color = TextSecondary,
-                        fontSize = 12.sp,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis
-                    )
-                }
-                Spacer(Modifier.width(10.dp))
+            if (stackPlanContent) {
+                Text(
+                    text = dayTitle,
+                    color = TextPrimary,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold,
+                    lineHeight = 22.sp,
+                    maxLines = 3,
+                    overflow = TextOverflow.Ellipsis
+                )
+                Spacer(Modifier.height(4.dp))
+                Text(
+                    text = daySummary,
+                    color = TextSecondary,
+                    fontSize = 12.sp,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis
+                )
+                Spacer(Modifier.height(10.dp))
                 ActivePlanAction(text = Strings.tr("View path"), onClick = onViewPath, arrow = true)
+            } else {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Column(modifier = Modifier.weight(1f)) {
+                        Text(
+                            text = dayTitle,
+                            color = TextPrimary,
+                            fontSize = 18.sp,
+                            fontWeight = FontWeight.Bold,
+                            lineHeight = 22.sp,
+                            maxLines = 2,
+                            overflow = TextOverflow.Ellipsis
+                        )
+                        Spacer(Modifier.height(3.dp))
+                        Text(
+                            text = daySummary,
+                            color = TextSecondary,
+                            fontSize = 12.sp,
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis
+                        )
+                    }
+                    Spacer(Modifier.width(10.dp))
+                    ActivePlanAction(text = Strings.tr("View path"), onClick = onViewPath, arrow = true)
+                }
             }
 
             Spacer(Modifier.height(12.dp))
@@ -349,25 +375,44 @@ private fun ActivePlanCard(
             }
 
             Spacer(Modifier.height(12.dp))
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Text(
-                    text = Strings.tr("Closer to your goal!"),
-                    modifier = Modifier.weight(1f),
-                    color = TextSecondary,
-                    fontSize = 12.5.sp,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis
-                )
-                Spacer(Modifier.width(8.dp))
-                if (dayPlan != null && planProgress.isUnlocked(day)) {
-                    ActivePlanAction(
-                        text = Strings.tr(if (doneActivities.isEmpty()) "Start" else "Continue"),
-                        onClick = { onOpenDay(day) }
+            if (stackPlanContent) {
+                Column {
+                    Text(
+                        text = Strings.tr("Closer to your goal!"),
+                        color = TextSecondary,
+                        fontSize = 12.5.sp,
+                        maxLines = 2,
+                        overflow = TextOverflow.Ellipsis
                     )
+                    Spacer(Modifier.height(8.dp))
+                    if (dayPlan != null && planProgress.isUnlocked(day)) {
+                        ActivePlanAction(
+                            text = Strings.tr(if (doneActivities.isEmpty()) "Start" else "Continue"),
+                            onClick = { onOpenDay(day) }
+                        )
+                    }
+                }
+            } else {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        text = Strings.tr("Closer to your goal!"),
+                        modifier = Modifier.weight(1f),
+                        color = TextSecondary,
+                        fontSize = 12.5.sp,
+                        maxLines = 2,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                    Spacer(Modifier.width(8.dp))
+                    if (dayPlan != null && planProgress.isUnlocked(day)) {
+                        ActivePlanAction(
+                            text = Strings.tr(if (doneActivities.isEmpty()) "Start" else "Continue"),
+                            onClick = { onOpenDay(day) }
+                        )
+                    }
                 }
             }
         }
@@ -614,7 +659,7 @@ private fun MorePractice(
                         fontWeight = FontWeight.SemiBold,
                         color = TextPrimary,
                         textAlign = TextAlign.Center,
-                        maxLines = 1,
+                        maxLines = 2,
                         overflow = TextOverflow.Ellipsis
                     )
 

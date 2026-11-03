@@ -9,10 +9,11 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.foundation.layout.size
@@ -54,6 +55,7 @@ import ailearn.shared.generated.resources.ic_survey_option_pt
 import com.example.basekmp.data.Languages
 import com.example.basekmp.data.Strings
 import com.example.basekmp.theme.TextPrimary
+import com.example.basekmp.ui.components.LanguageChoiceMetrics
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.collect
 import org.jetbrains.compose.resources.DrawableResource
@@ -84,14 +86,28 @@ fun FirstOpenIntroScreen(
     }
 
     Column(
-        modifier = Modifier.fillMaxSize().background(Color.White).safeDrawingPadding()
+        modifier = Modifier
+            .fillMaxSize()
+            .background(
+                Brush.verticalGradient(
+                    colors = listOf(
+                        Color(0xFFEAF3FF),
+                        Color(0xFFF5F9FF),
+                        Color.White
+                    )
+                )
+            )
+            .safeDrawingPadding()
     ) {
         HorizontalPager(
             state = pagerState,
             modifier = Modifier.weight(1f),
             key = { it }
         ) { currentPage ->
-            FirstOpenIntroPage(page = currentPage)
+            FirstOpenIntroPage(
+                page = currentPage,
+                isActive = pagerState.currentPage == currentPage
+            )
         }
         Row(
             modifier = Modifier.fillMaxWidth().height(58.dp).padding(horizontal = 12.dp),
@@ -127,7 +143,7 @@ fun FirstOpenIntroScreen(
 }
 
 @Composable
-private fun FirstOpenIntroPage(page: Int) {
+private fun FirstOpenIntroPage(page: Int, isActive: Boolean) {
     val title = when (page) {
         0 -> Strings.tr("Learn with AI")
         1 -> Strings.tr("Speak with Confidence")
@@ -139,15 +155,15 @@ private fun FirstOpenIntroPage(page: Int) {
         else -> Strings.tr("Stay consistent with daily streaks and track your progress step by step.")
     }
 
-    Column(modifier = Modifier.fillMaxSize().background(Color.White)) {
+    Column(modifier = Modifier.fillMaxSize()) {
         Box(modifier = Modifier.fillMaxWidth().weight(1f)) {
-            FirstOpenIntroArtwork(page = page, modifier = Modifier.fillMaxSize())
-            Box(
+            FirstOpenIntroArtwork(
+                page = page,
+                isActive = isActive,
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .fillMaxHeight(0.2f)
-                    .align(Alignment.BottomCenter)
-                    .background(Brush.verticalGradient(listOf(Color.Transparent, Color.White)))
+                    .fillMaxWidth(0.76f)
+                    .fillMaxHeight(0.82f)
+                    .align(Alignment.Center)
             )
         }
         Column(
@@ -218,7 +234,7 @@ fun FirstOpenSurveyScreen(
         Spacer(Modifier.height(20.dp))
         LazyColumn(
             modifier = Modifier.weight(1f),
-            verticalArrangement = Arrangement.spacedBy(12.dp)
+            verticalArrangement = Arrangement.spacedBy(10.dp)
         ) {
             items(Languages.surveyOptions, key = { it.code }) { language ->
                 val selected = selectedLanguage == language.code
@@ -226,31 +242,36 @@ fun FirstOpenSurveyScreen(
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(86.dp)
+                        .heightIn(min = LanguageChoiceMetrics.rowHeight)
                         .clip(shape)
                         .background(SurveyOptionBackground)
                         .clickable(enabled = !isSaving) { onSelectLanguage(language.code) }
-                        .padding(horizontal = 8.dp, vertical = 8.dp),
+                        .padding(
+                            horizontal = LanguageChoiceMetrics.horizontalPadding,
+                            vertical = LanguageChoiceMetrics.contentVerticalPadding
+                        ),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Image(
                         painter = painterResource(surveyIcon(language.code)),
                         contentDescription = null,
-                        modifier = Modifier.size(70.dp).clip(RoundedCornerShape(8.dp)),
+                        modifier = Modifier
+                            .size(LanguageChoiceMetrics.leadingImageSize)
+                            .clip(RoundedCornerShape(8.dp)),
                         contentScale = ContentScale.Crop
                     )
-                    Spacer(Modifier.width(20.dp))
+                    Spacer(Modifier.width(LanguageChoiceMetrics.leadingSpacing))
                     Text(
                         text = Strings.tr(language.name),
                         modifier = Modifier.weight(1f),
-                        color = SurveyText,
-                        fontSize = 17.sp,
-                        lineHeight = 21.sp,
-                        fontWeight = FontWeight.SemiBold
+                        color = if (selected) SurveyBlue else SurveyText,
+                        fontSize = LanguageChoiceMetrics.labelFontSize,
+                        lineHeight = LanguageChoiceMetrics.labelLineHeight,
+                        fontWeight = if (selected) FontWeight.SemiBold else FontWeight.Normal
                     )
                     Box(
                         modifier = Modifier
-                            .size(24.dp)
+                            .size(LanguageChoiceMetrics.selectionSize)
                             .clip(RoundedCornerShape(6.dp))
                             .background(if (selected) SurveyBlue else SurveyOptionBackground)
                             .then(

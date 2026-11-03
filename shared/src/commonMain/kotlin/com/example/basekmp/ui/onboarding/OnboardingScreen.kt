@@ -59,6 +59,7 @@ import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.theme.getScreenTitleStyle
 import com.example.basekmp.ui.components.CefrBadge
 import com.example.basekmp.ui.components.OptionCard
+import com.example.basekmp.ui.components.LanguageChoiceMetrics
 import com.example.basekmp.ui.components.PrimaryButton
 import com.example.basekmp.ui.components.ProgressHeader
 import com.example.basekmp.ui.components.SelectOption
@@ -75,12 +76,6 @@ fun OnboardingScreen(
     onFinished: (OnboardingState) -> Unit
 ) {
     val uiLanguage = Strings.getLanguage()
-
-    androidx.compose.runtime.LaunchedEffect(state.nativeLanguage) {
-        if (!state.nativeLanguage.isNullOrBlank()) {
-            Strings.select(state.nativeLanguage)
-        }
-    }
 
     fun titleFor(step: OnboardingStep): String = Strings.tr(when (step) {
         OnboardingStep.LearnLanguage -> "Which Language Do You Want to Learn?"
@@ -201,17 +196,16 @@ fun OnboardingScreen(
                         OptionCard(
                             options = learnLanguageOptions,
                             selectedId = state.learnLanguage,
-                            onSelect = { onStateChange(state.withSelection(it)) }
+                            onSelect = { onStateChange(state.withSelection(it)) },
+                            rowMinHeight = LanguageChoiceMetrics.rowHeight
                         )
                     }
                     OnboardingStep.NativeLanguage -> {
                         OptionCard(
                             options = nativeLanguageOptions,
                             selectedId = state.nativeLanguage,
-                            onSelect = {
-                                Strings.select(it)
-                                onStateChange(state.withSelection(it))
-                            }
+                            onSelect = { onStateChange(state.withSelection(it)) },
+                            rowMinHeight = LanguageChoiceMetrics.rowHeight
                         )
                     }
                     OnboardingStep.Level -> {

@@ -16,12 +16,10 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material.icons.rounded.Check
 import androidx.compose.material.icons.rounded.Lock
 import androidx.compose.material.icons.rounded.PlayArrow
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -42,6 +40,7 @@ import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
 import com.example.basekmp.data.trf
 import com.example.basekmp.theme.AppTheme
+import com.example.basekmp.ui.components.BackButton
 
 /** Day-level activity launcher; activity state changes only from the completed activity screens. */
 @Composable
@@ -73,13 +72,11 @@ fun PlanDayActivitiesScreen(
                     .padding(horizontal = AppTheme.dimens.spacingSm),
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                IconButton(onClick = onBack) {
-                    Icon(
-                        imageVector = Icons.AutoMirrored.Rounded.ArrowBack,
-                        contentDescription = tr("Back"),
-                        tint = AppTheme.colors.textPrimary
-                    )
-                }
+                BackButton(
+                    onClick = onBack,
+                    background = AppTheme.colors.background,
+                    tint = AppTheme.colors.textPrimary
+                )
                 Text(
                     text = "${tr("Day")} $day",
                     color = AppTheme.colors.textPrimary,

@@ -400,14 +400,21 @@ private fun UnitCard(
             ) {
                 Text(
                     text = Strings.trf("Task %1\$d of %2\$d", unitProgress.done, unitProgress.total),
+                    modifier = Modifier.weight(1f),
                     color = MutedText,
-                    fontSize = 13.sp
+                    fontSize = 13.sp,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis
                 )
-                Spacer(Modifier.weight(1f))
+                Spacer(Modifier.width(8.dp))
                 Text(
                     text = Strings.trf("%1\$d%% Complete", unitProgress.percent).replace("%%", "%"),
+                    modifier = Modifier.weight(1f),
                     color = MutedText,
-                    fontSize = 13.sp
+                    fontSize = 13.sp,
+                    textAlign = TextAlign.End,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis
                 )
             }
 

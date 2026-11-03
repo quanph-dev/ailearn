@@ -13,6 +13,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
+import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.media3.common.AudioAttributes
 import androidx.media3.common.C
@@ -51,6 +54,7 @@ class AndroidExoVideoPlayerController(
     assetPath: String,
     cacheKey: String?,
     muted: Boolean,
+    initiallyResumed: Boolean,
     private val onCompletionCallback: () -> Unit,
     val onStopCallback: () -> Unit
 ) : VideoPlayerController {
@@ -74,6 +78,7 @@ class AndroidExoVideoPlayerController(
 
     var stopAtMs: Long? = null
         private set
+    private var appResumed = initiallyResumed
 
     override val isPlaying: Boolean get() = _isPlaying.value
     override val isReady: Boolean get() = _isReady.value
@@ -131,7 +136,7 @@ class AndroidExoVideoPlayerController(
     }
 
     override fun play() {
-        player.play()
+        if (appResumed) player.play()
     }
 
     override fun pause() {
@@ -172,6 +177,11 @@ class AndroidExoVideoPlayerController(
         _positionMs.value = player.currentPosition.coerceAtLeast(0L)
     }
 
+    fun setAppResumed(resumed: Boolean) {
+        appResumed = resumed
+        if (!resumed) pause()
+    }
+
     fun release() {
         textureView?.let(player::clearVideoTextureView)
         textureView = null
@@ -199,6 +209,8 @@ actual fun rememberVideoPlayer(
     onStop: () -> Unit
 ): VideoPlayerController {
     val context = LocalContext.current
+    val lifecycle = LocalLifecycleOwner.current.lifecycle
+    val initiallyResumed = lifecycle.currentState.isAtLeast(Lifecycle.State.RESUMED)
     val currentOnCompletion = rememberUpdatedState(onCompletion)
     val currentOnStop = rememberUpdatedState(onStop)
 
@@ -208,6 +220,7 @@ actual fun rememberVideoPlayer(
             assetPath = assetPath,
             cacheKey = cacheKey,
             muted = muted,
+            initiallyResumed = initiallyResumed,
             onCompletionCallback = { currentOnCompletion.value() },
             onStopCallback = { currentOnStop.value() }
         )
@@ -226,8 +239,21 @@ actual fun rememberVideoPlayer(
         }
     }
 
-    DisposableEffect(controller) {
-        onDispose(controller::release)
+    DisposableEffect(controller, lifecycle) {
+        val observer = LifecycleEventObserver { _, event ->
+            when (event) {
+                Lifecycle.Event.ON_RESUME -> controller.setAppResumed(true)
+                Lifecycle.Event.ON_PAUSE,
+                Lifecycle.Event.ON_STOP,
+                Lifecycle.Event.ON_DESTROY -> controller.setAppResumed(false)
+                else -> Unit
+            }
+        }
+        lifecycle.addObserver(observer)
+        onDispose {
+            lifecycle.removeObserver(observer)
+            controller.release()
+        }
     }
 
     return controller

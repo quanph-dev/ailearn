@@ -190,9 +190,15 @@ object UserPrefs {
     private val progressJson = Json { ignoreUnknownKeys = true; encodeDefaults = true }
     private var persistenceSink: ((String) -> Unit)? = null
     private var isRestoringProgress = false
+    private var needsHistoryMigrationSave = false
 
     fun setProgressPersistenceSink(sink: ((String) -> Unit)?) {
         persistenceSink = sink
+        if (sink != null && needsHistoryMigrationSave) {
+            needsHistoryMigrationSave = false
+            runCatching { sink(serializeLearningProgress()) }
+                .onFailure { needsHistoryMigrationSave = true }
+        }
     }
 
     private fun changed() {
@@ -232,6 +238,8 @@ object UserPrefs {
     fun restoreLearningProgress(serialized: String): Boolean {
         val snapshot = runCatching { progressJson.decodeFromString<LearningProgressSnapshot>(serialized) }.getOrNull()
             ?: return false
+        val normalizedHistory = removeLegacyDuplicatePracticeEntries(snapshot.history)
+        needsHistoryMigrationSave = normalizedHistory != snapshot.history
         isRestoringProgress = true
         try {
             streakCountState.intValue = snapshot.streakCount.coerceAtLeast(0)
@@ -242,7 +250,7 @@ object UserPrefs {
             lastActiveDayState.longValue = snapshot.lastActiveDay
             homeTourDoneState.value = snapshot.homeTourDone
             learningHistoryState.clear()
-            learningHistoryState.addAll(snapshot.history.takeLast(MAX_HISTORY_ITEMS))
+            learningHistoryState.addAll(normalizedHistory.take(MAX_HISTORY_ITEMS))
             pathLessonsState.value = snapshot.pathLessons.mapValues { (_, score) -> score.coerceIn(0, 100) }
             pathTrailSeenState.value = snapshot.pathTrailSeen
             pathLevel = snapshot.pathLevel
@@ -287,7 +295,9 @@ object UserPrefs {
         score: Int,
         total: Int,
         learnedMinutes: Int = 0,
-        activityEpochDay: Long = todayEpochDay()
+        activityEpochDay: Long = todayEpochDay(),
+        detail: String = "",
+        level: String = englishLevel
     ) {
         val now = currentTimeMillis()
         val featureLabel = feature
@@ -302,7 +312,7 @@ object UserPrefs {
         } else {
             "$featureLabel Practice"
         }
-        learningHistoryState.add(0, LearningItem(practiceTitle, now, score, "", total, englishLevel))
+        learningHistoryState.add(0, LearningItem(practiceTitle, now, score, detail, total, level))
         if (learnedMinutes > 0) {
             addLearnedMinutes(learnedMinutes, activityEpochDay)
         } else {
@@ -364,22 +374,84 @@ object UserPrefs {
     fun clearTimedSessions() { /* preserve core data */ }
 
     fun recordStreakDay(activityEpochDay: Long = todayEpochDay()) {
-        updateStreakDay(activityEpochDay)
-        changed()
+        if (updateStreakDay(activityEpochDay)) changed()
     }
 
-    private fun updateStreakDay(today: Long) {
+    private fun updateStreakDay(activityEpochDay: Long): Boolean {
         val lastDay = lastActiveDayState.longValue
-        val activeDay = maxOf(today, lastDay)
-        streakCountState.intValue = when {
-            lastDay == activeDay -> maxOf(streakCountState.intValue, 1)
-            lastDay == activeDay - 1L -> streakCountState.intValue + 1
-            else -> 1
+        val currentStreak = streakCountState.intValue
+
+        if (lastDay >= 0L && activityEpochDay < lastDay) return false
+        if (activityEpochDay == lastDay) {
+            if (currentStreak > 0) return false
+            streakCountState.intValue = 1
+            return true
         }
-        lastActiveDayState.longValue = activeDay
+
+        streakCountState.intValue = if (lastDay == activityEpochDay - 1L && currentStreak > 0) {
+            currentStreak + 1
+        } else {
+            1
+        }
+        lastActiveDayState.longValue = activityEpochDay
+        return true
+    }
+
+    private val PRACTICE_TITLES = setOf("Vocabulary Practice", "Grammar Practice", "Speaking Practice")
+    private const val LEGACY_DUPLICATE_PRACTICE_WINDOW_MS = 5_000L
+
+    private fun removeLegacyDuplicatePracticeEntries(history: List<LearningItem>): List<LearningItem> {
+        val normalized = mutableListOf<LearningItem>()
+        for (item in history.sortedByDescending(LearningItem::timestamp)) {
+            val duplicateIndex = normalized.indexOfFirst { existing ->
+                areLegacyDuplicatePracticeEntries(existing, item)
+            }
+            if (duplicateIndex < 0) {
+                normalized += item
+            } else {
+                normalized[duplicateIndex] = mergeLegacyPracticeEntries(normalized[duplicateIndex], item)
+            }
+        }
+        return normalized
+            .map { item ->
+                if (item.title == "Speaking Practice" && item.score >= 0 && item.total == 0) {
+                    item.copy(total = 100)
+                } else {
+                    item
+                }
+            }
+            .sortedByDescending(LearningItem::timestamp)
+    }
+
+    private fun areLegacyDuplicatePracticeEntries(first: LearningItem, second: LearningItem): Boolean {
+        if (first.title !in PRACTICE_TITLES || first.title != second.title || first.score != second.score) return false
+        if (kotlin.math.abs(first.timestamp - second.timestamp) > LEGACY_DUPLICATE_PRACTICE_WINDOW_MS) return false
+
+        return when (first.title) {
+            "Vocabulary Practice" -> first.total == second.total &&
+                first.detail.isBlank() != second.detail.isBlank() && first.level != second.level
+            "Grammar Practice" -> first.total == second.total &&
+                first.detail == second.detail && first.level != second.level
+            "Speaking Practice" -> {
+                val legacySpeakingTotals = setOf(first.total, second.total) == setOf(0, 100)
+                val oneDetailMissing = first.detail.isBlank() != second.detail.isBlank()
+                legacySpeakingTotals && oneDetailMissing
+            }
+            else -> false
+        }
+    }
+
+    private fun mergeLegacyPracticeEntries(first: LearningItem, second: LearningItem): LearningItem {
+        return first.copy(
+            timestamp = minOf(first.timestamp, second.timestamp),
+            detail = first.detail.ifBlank { second.detail },
+            total = maxOf(first.total, second.total),
+            level = first.level.ifBlank { second.level }
+        )
     }
 
     fun addLearning(title: String, score: Int = -1, detail: String = "", total: Int = -1, level: String = "") {
+        if (title.isBlank()) return
         val item = LearningItem(
             title = title,
             timestamp = currentTimeMillis(),
@@ -388,7 +460,13 @@ object UserPrefs {
             total = total,
             level = level
         )
+        if (!PRACTICE_TITLES.contains(title)) {
+            learningHistoryState.removeAll { it.title == title }
+        }
         learningHistoryState.add(0, item)
+        while (learningHistoryState.size > MAX_HISTORY_ITEMS) {
+            learningHistoryState.removeAt(learningHistoryState.lastIndex)
+        }
         changed()
     }
 
@@ -466,6 +544,16 @@ object UserPrefs {
 
     fun markSpeakingDone(sentence: String) {
         markSpeakingDone(englishLevel, sentence)
+    }
+
+    private val _usedFeatures = mutableSetOf<String>()
+
+    fun featureUsed(feature: String): Boolean = _usedFeatures.contains(feature)
+
+    fun markFeatureUsed(feature: String) {
+        if (_usedFeatures.add(feature)) {
+            changed()
+        }
     }
 
     fun completedLessons(): Map<String, Long> = completedLessonsState.value

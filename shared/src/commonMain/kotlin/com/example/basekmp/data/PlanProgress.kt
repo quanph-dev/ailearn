@@ -236,14 +236,15 @@ class PlanProgress internal constructor() {
 
     fun completeDay(
         day: Int,
-        requiredActivities: Set<Activity> = Activity.entries.toSet()
+        requiredActivities: Set<Activity> = Activity.entries.toSet(),
+        activityEpochDay: Long = UserPrefs.todayEpochDay()
     ): Boolean {
         if (day !in 1..GoalPlan.DAYS || !isUnlocked(day)) return false
         if (!_doneActivities[day].orEmpty().containsAll(requiredActivities)) return false
         if (!_completedDays.add(day)) return false
         xp += DAY_XP
         diamonds += DAY_DIAMONDS
-        UserPrefs.recordStreakDay()
+        UserPrefs.recordStreakDay(activityEpochDay)
         changed()
         return true
     }

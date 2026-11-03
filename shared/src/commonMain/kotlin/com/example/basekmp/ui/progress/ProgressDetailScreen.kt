@@ -1,11 +1,12 @@
 package com.example.basekmp.ui.progress
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,12 +15,16 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.MoreVert
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -32,14 +37,33 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
+import androidx.compose.ui.window.DialogProperties
+import com.example.basekmp.components.AppActionDialog
 import com.example.basekmp.components.PrimaryButton
 import com.example.basekmp.data.LearningItem
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
-import com.example.basekmp.theme.AppTheme
+import com.example.basekmp.formatDate
+import com.example.basekmp.formatDateTime
+import com.example.basekmp.formatTime
+import com.example.basekmp.theme.BlueSelected
+import com.example.basekmp.theme.OptionSurface
+import com.example.basekmp.theme.TextPrimary
+import com.example.basekmp.theme.TextSecondary
+import com.example.basekmp.ui.components.BackButton
+
+private val ScoreGreenBg = Color(0xFFDCFAE6)
+private val ScoreGreenText = Color(0xFF12864B)
+private val OrangeChipBg = Color(0xFFF5A623)
+private val OrangeChipText = Color.White
+private val CategoryPinkBg = Color(0xFFFCE3F1)
+private val CategoryPinkText = Color(0xFFC13B85)
+private val ScoreChipBg = Color(0xFFFFF4CC)
+private val ScoreChipText = Color(0xFFB98A00)
 
 @Composable
 fun ProgressDetailScreen(
@@ -48,57 +72,50 @@ fun ProgressDetailScreen(
     onStartPractice: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val colors = AppTheme.colors
-    val dimens = AppTheme.dimens
+    val displayKind = if (kind.isNotEmpty()) {
+        kind.substring(0, 1).uppercase() + kind.substring(1)
+    } else kind
+    val targetTitle = "$displayKind Practice"
+    val titleHeader = Strings.trf("%1\$s Session", Strings.tr(displayKind))
+    val screenTitle = Strings.trf("%1\$s Progress", Strings.tr(displayKind))
 
     val allHistory = UserPrefs.learningHistoryState
-    val historySnapshot = allHistory.toList()
-    val filteredItems = historySnapshot.filter {
-        it.title.contains(kind, ignoreCase = true) || it.detail.contains(kind, ignoreCase = true)
-    }
+    val items = allHistory.filter { it.title == targetTitle }
 
-    var selectedItemForDetail by remember { mutableStateOf<LearningItem?>(null) }
+    var pendingDelete by remember { mutableStateOf<LearningItem?>(null) }
+    var detailEntry by remember { mutableStateOf<LearningItem?>(null) }
 
     Column(
         modifier = modifier
             .fillMaxSize()
-            .background(colors.background)
+            .background(Color.White)
             .safeDrawingPadding()
-            .padding(horizontal = dimens.spacingLg, vertical = dimens.spacingSm)
+            .padding(horizontal = 20.dp)
     ) {
-        Spacer(Modifier.height(8.dp))
+        Spacer(Modifier.height(10.dp))
+
         // Top Navigation Bar
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(vertical = dimens.spacingSm),
+                .padding(vertical = 10.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Box(
-                modifier = Modifier
-                    .size(40.dp)
-                    .clip(CircleShape)
-                    .background(colors.surface)
-                    .border(1.dp, colors.border, CircleShape)
-                    .clickable(onClick = onBack),
-                contentAlignment = Alignment.Center
-            ) {
-                Text("‹", color = colors.textPrimary, fontSize = 24.sp, fontWeight = FontWeight.Bold)
-            }
+            BackButton(onClick = onBack)
 
-            Spacer(Modifier.width(dimens.spacingMd))
+            Spacer(Modifier.width(12.dp))
 
             Text(
-                text = Strings.trf("%1\$s Progress", Strings.tr(kind)),
+                text = screenTitle,
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
-                color = colors.textPrimary
+                color = TextPrimary
             )
         }
 
-        Spacer(Modifier.height(dimens.spacingMd))
+        Spacer(Modifier.height(18.dp))
 
-        if (filteredItems.isEmpty()) {
+        if (items.isEmpty()) {
             Column(
                 modifier = Modifier
                     .weight(1f)
@@ -108,14 +125,14 @@ fun ProgressDetailScreen(
             ) {
                 Text(
                     text = Strings.tr("No sessions yet — finish a practice to see it here."),
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = dimens.spacingMd),
                     fontSize = 14.sp,
-                    color = colors.textSecondary,
-                    textAlign = TextAlign.Center
+                    color = TextSecondary,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.padding(horizontal = 12.dp)
                 )
-                Spacer(Modifier.height(dimens.spacingMd))
+
+                Spacer(Modifier.height(20.dp))
+
                 PrimaryButton(
                     text = Strings.tr("Start Now"),
                     onClick = onStartPractice,
@@ -127,62 +144,268 @@ fun ProgressDetailScreen(
                 modifier = Modifier
                     .weight(1f)
                     .fillMaxWidth(),
-                verticalArrangement = Arrangement.spacedBy(dimens.spacingSm)
+                verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
-                items(filteredItems) { item ->
+                items(items) { item ->
                     EntryCard(
-                        item = item,
-                        onDetail = { selectedItemForDetail = item },
-                        onDelete = { UserPrefs.removeLearning(item) }
+                        sessionTitle = titleHeader,
+                        category = item.detail,
+                        level = item.level.ifBlank { UserPrefs.englishLevel },
+                        score = item.score,
+                        total = item.total,
+                        timestamp = item.timestamp,
+                        onDetail = { detailEntry = item },
+                        onDelete = { pendingDelete = item },
+                        kind = kind
                     )
+                }
+
+                item {
+                    Spacer(Modifier.height(24.dp))
                 }
             }
         }
     }
 
-    // Session Detail Dialog
-    selectedItemForDetail?.let { item ->
-        Dialog(onDismissRequest = { selectedItemForDetail = null }) {
+    // Confirmation dialog for deletion
+    pendingDelete?.let { item ->
+        AppActionDialog(
+            title = Strings.tr("Delete this record?"),
+            message = Strings.tr("This will remove it from your learning history."),
+            onDismissRequest = { pendingDelete = null },
+            confirmText = Strings.tr("Delete"),
+            confirmIsDestructive = true,
+            onConfirm = {
+                UserPrefs.removeLearning(item)
+                pendingDelete = null
+            },
+            dismissText = Strings.tr("Cancel"),
+            onDismissAction = { pendingDelete = null }
+        )
+    }
+
+    // Detail dialog
+    detailEntry?.let { item ->
+        Dialog(
+            onDismissRequest = { detailEntry = null },
+            properties = DialogProperties(usePlatformDefaultWidth = false)
+        ) {
             Box(
                 modifier = Modifier
                     .fillMaxWidth(0.9f)
-                    .clip(RoundedCornerShape(dimens.cornerXl))
-                    .background(colors.surface)
-                    .border(1.dp, colors.border, RoundedCornerShape(dimens.cornerXl))
-                    .padding(dimens.spacing2Xl)
+                    .clip(RoundedCornerShape(24.dp))
+                    .background(Color.White)
+                    .padding(24.dp)
             ) {
                 Column(horizontalAlignment = Alignment.Start) {
                     Text(
-                        text = item.title,
-                        fontSize = 18.sp,
+                        text = titleHeader,
+                        fontSize = 20.sp,
                         fontWeight = FontWeight.Bold,
-                        color = colors.textPrimary
+                        color = TextPrimary
                     )
-                    Spacer(Modifier.height(dimens.spacingSm))
-                    if (item.detail.isNotBlank()) {
-                        Text(
-                            text = "${Strings.tr("Category")}: ${item.detail}",
-                            fontSize = 14.sp,
-                            color = colors.textSecondary
+
+                    Spacer(Modifier.height(20.dp))
+
+                    DetailRow(
+                        label = Strings.tr("Level"),
+                        value = Strings.tr(item.level.ifBlank { UserPrefs.englishLevel })
+                    )
+
+                    if (item.score >= 0) {
+                        Spacer(Modifier.height(14.dp))
+                        val scoreDisplay = if (item.total >= 0) "${item.score}/${item.total}" else "${item.score}"
+                        DetailRow(
+                            label = Strings.tr("Score"),
+                            value = scoreDisplay
                         )
                     }
-                    Text(
-                        text = "${Strings.tr("Level")}: ${Strings.tr(item.level.ifBlank { UserPrefs.englishLevel })}",
-                        fontSize = 14.sp,
-                        color = colors.textSecondary
+
+                    Spacer(Modifier.height(14.dp))
+                    DetailRow(
+                        label = Strings.tr("Date"),
+                        value = formatDate(item.timestamp)
                     )
-                    if (item.scorePercent != null) {
-                        Text(
-                            text = "${Strings.tr("Score")}: ${item.score} / ${item.total}",
-                            fontSize = 14.sp,
-                            color = colors.success,
-                            fontWeight = FontWeight.SemiBold
-                        )
-                    }
-                    Spacer(Modifier.height(dimens.spacingXl))
+
+                    Spacer(Modifier.height(14.dp))
+                    DetailRow(
+                        label = Strings.tr("Time"),
+                        value = formatTime(item.timestamp)
+                    )
+
+                    Spacer(Modifier.height(24.dp))
+
                     PrimaryButton(
                         text = Strings.tr("Close"),
-                        onClick = { selectedItemForDetail = null }
+                        onClick = { detailEntry = null }
+                    )
+                }
+            }
+        }
+    }
+}
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun EntryCard(
+    sessionTitle: String,
+    category: String,
+    level: String,
+    score: Int,
+    total: Int,
+    timestamp: Long,
+    onDetail: () -> Unit,
+    onDelete: () -> Unit,
+    kind: String,
+    modifier: Modifier = Modifier
+) {
+    var menuOpen by remember { mutableStateOf(false) }
+    val isGrammar = kind.equals("grammar", ignoreCase = true)
+    val isVocab = kind.equals("vocabulary", ignoreCase = true)
+
+    val levelChipBg = if (isGrammar) OrangeChipBg else ScoreChipBg
+    val levelChipText = if (isGrammar) OrangeChipText else ScoreChipText
+    val scoreChipBg = if (isGrammar) OrangeChipBg else ScoreGreenBg
+    val scoreChipText = if (isGrammar) OrangeChipText else ScoreGreenText
+
+    val formattedTime = remember(timestamp) { formatDateTime(timestamp) }
+    val scoreText = remember(score, total) {
+        when {
+            total >= 0 -> Strings.trf("Score: %1\$d/%2\$d", score, total)
+            score >= 0 -> Strings.trf("Score: %1\$d", score)
+            else -> null
+        }
+    }
+
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(18.dp))
+            .background(OptionSurface)
+            .clickable(onClick = onDetail)
+            .padding(16.dp),
+        verticalAlignment = Alignment.Top
+    ) {
+        Column(modifier = Modifier.weight(1f)) {
+            if (category.isNotBlank()) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    val subLabel = "${Strings.tr(category)} • ${Strings.tr(level)}".uppercase()
+                    Text(
+                        text = subLabel,
+                        color = BlueSelected,
+                        fontSize = 10.sp,
+                        fontWeight = FontWeight.Bold,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                        modifier = Modifier.weight(1f)
+                    )
+                    Spacer(Modifier.width(8.dp))
+                    Text(
+                        text = formattedTime,
+                        color = TextSecondary,
+                        fontSize = 10.sp
+                    )
+                }
+
+                Spacer(Modifier.height(8.dp))
+
+                Text(
+                    text = sessionTitle,
+                    color = TextPrimary,
+                    fontSize = 17.sp,
+                    fontWeight = FontWeight.Bold
+                )
+            } else {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        text = sessionTitle,
+                        color = TextPrimary,
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.Bold,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                        modifier = Modifier.weight(1f)
+                    )
+                    Spacer(Modifier.width(8.dp))
+                    Text(
+                        text = formattedTime,
+                        color = TextSecondary,
+                        fontSize = 10.sp
+                    )
+                }
+            }
+
+            Spacer(Modifier.height(12.dp))
+
+            FlowRow(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(6.dp),
+                verticalArrangement = Arrangement.spacedBy(6.dp)
+            ) {
+                InfoChip(
+                    text = Strings.trf("Level: %1\$s", Strings.tr(level)),
+                    bg = levelChipBg,
+                    fg = levelChipText
+                )
+                if (scoreText != null) {
+                    InfoChip(
+                        text = scoreText,
+                        bg = scoreChipBg,
+                        fg = scoreChipText
+                    )
+                }
+                if (category.isNotBlank()) {
+                    InfoChip(
+                        text = Strings.tr(category),
+                        bg = CategoryPinkBg,
+                        fg = CategoryPinkText
+                    )
+                }
+            }
+        }
+
+        if (!isVocab) {
+            Box(contentAlignment = Alignment.TopStart) {
+                Box(
+                    modifier = Modifier
+                        .size(24.dp)
+                        .clip(CircleShape)
+                        .clickable { menuOpen = true },
+                    contentAlignment = Alignment.Center
+                ) {
+                    Icon(
+                        imageVector = Icons.Rounded.MoreVert,
+                        contentDescription = Strings.tr("More"),
+                        tint = TextPrimary,
+                        modifier = Modifier.size(20.dp)
+                    )
+                }
+
+                DropdownMenu(
+                    expanded = menuOpen,
+                    onDismissRequest = { menuOpen = false },
+                    shape = RoundedCornerShape(16.dp),
+                    modifier = Modifier.background(Color.White)
+                ) {
+                    DropdownMenuItem(
+                        text = { Text(Strings.tr("Detail"), color = TextPrimary) },
+                        onClick = {
+                            menuOpen = false
+                            onDetail()
+                        }
+                    )
+                    DropdownMenuItem(
+                        text = { Text(Strings.tr("Delete"), color = Color(0xFFE53935)) },
+                        onClick = {
+                            menuOpen = false
+                            onDelete()
+                        }
                     )
                 }
             }
@@ -191,74 +414,51 @@ fun ProgressDetailScreen(
 }
 
 @Composable
-private fun EntryCard(
-    item: LearningItem,
-    onDetail: () -> Unit,
-    onDelete: () -> Unit
+private fun InfoChip(
+    text: String,
+    bg: Color,
+    fg: Color,
+    modifier: Modifier = Modifier
 ) {
-    val colors = AppTheme.colors
-    val dimens = AppTheme.dimens
-    val metadata = listOf(item.detail, item.level).filter(String::isNotBlank).joinToString(" • ")
+    Box(
+        modifier = modifier
+            .clip(RoundedCornerShape(8.dp))
+            .background(bg)
+            .padding(horizontal = 8.dp, vertical = 4.dp),
+        contentAlignment = Alignment.Center
+    ) {
+        Text(
+            text = text,
+            color = fg,
+            fontSize = 11.sp,
+            fontWeight = FontWeight.SemiBold,
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis
+        )
+    }
+}
 
+@Composable
+private fun DetailRow(
+    label: String,
+    value: String,
+    modifier: Modifier = Modifier
+) {
     Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .clip(RoundedCornerShape(dimens.cornerMd))
-            .background(colors.surface)
-            .border(1.dp, colors.border, RoundedCornerShape(dimens.cornerMd))
-            .clickable(onClick = onDetail)
-            .padding(dimens.spacingMd),
-        horizontalArrangement = Arrangement.SpaceBetween,
+        modifier = modifier.fillMaxWidth(),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Column(modifier = Modifier.weight(1f)) {
-            Text(
-                text = item.title,
-                fontSize = 14.sp,
-                fontWeight = FontWeight.SemiBold,
-                color = colors.textPrimary
-            )
-            if (metadata.isNotEmpty()) {
-                Spacer(Modifier.height(2.dp))
-                Text(
-                    text = metadata,
-                    fontSize = 12.sp,
-                    color = colors.textSecondary
-                )
-            }
-        }
-
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(dimens.spacingSm)
-        ) {
-            item.scorePercent?.let { scorePercent ->
-                Box(
-                    modifier = Modifier
-                        .clip(RoundedCornerShape(dimens.cornerXs))
-                        .background(colors.successBg)
-                        .border(1.dp, colors.success.copy(alpha = 0.3f), RoundedCornerShape(dimens.cornerXs))
-                        .padding(horizontal = 8.dp, vertical = 4.dp)
-                ) {
-                    Text(
-                        text = "$scorePercent%",
-                        fontSize = 12.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = colors.success
-                    )
-                }
-            }
-
-            Box(
-                modifier = Modifier
-                    .size(28.dp)
-                    .clip(CircleShape)
-                    .background(colors.surfaceVariant)
-                    .clickable(onClick = onDelete),
-                contentAlignment = Alignment.Center
-            ) {
-                Text("✕", fontSize = 11.sp, color = colors.textSecondary)
-            }
-        }
+        Text(
+            text = label,
+            color = TextSecondary,
+            fontSize = 14.sp
+        )
+        Spacer(Modifier.weight(1f))
+        Text(
+            text = value,
+            color = TextPrimary,
+            fontSize = 14.sp,
+            fontWeight = FontWeight.SemiBold
+        )
     }
 }

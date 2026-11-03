@@ -171,16 +171,22 @@ fun VocabCardsScreen(
         return
     }
 
-    fun closeCompletedSession() {
+    fun finishVocabSession() {
         if (!completionRecorded) {
             UserPrefs.recordPracticeDone(
                 feature = "vocabulary",
                 score = correctCount,
                 total = deck.size,
-                learnedMinutes = 6
+                learnedMinutes = 6,
+                detail = PracticeConfig.vocabCategory,
+                level = PracticeConfig.vocabLevel
             )
             completionRecorded = true
         }
+        isFinished = true
+    }
+
+    fun closeCompletedSession() {
         onClose(correctCount, deck.size)
     }
 
@@ -400,7 +406,7 @@ fun VocabCardsScreen(
                             currentIndex++
                             speechScore = speechScores[currentIndex] ?: 0
                         } else {
-                            isFinished = true
+                            finishVocabSession()
                         }
                     },
                 contentAlignment = Alignment.Center
@@ -426,7 +432,7 @@ fun VocabCardsScreen(
                             currentIndex++
                             speechScore = speechScores[currentIndex] ?: 0
                         } else {
-                            isFinished = true
+                            finishVocabSession()
                         }
                     },
                 contentAlignment = Alignment.Center

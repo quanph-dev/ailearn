@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -39,6 +40,7 @@ import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
@@ -244,84 +246,141 @@ fun ExitSessionDialog(
     onDismiss: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+    AppActionDialog(
+        title = Strings.tr("Exit session?"),
+        message = Strings.tr("Your progress so far will be saved."),
+        onDismissRequest = onDismiss,
+        confirmText = Strings.tr("Exit"),
+        onConfirm = onConfirm,
+        dismissText = Strings.tr("Cancel"),
+        onDismissAction = onDismiss,
+        confirmIsDestructive = true,
+        modifier = modifier
+    )
+}
+
+/** Shared centered confirmation dialog used for exits and single-action notices. */
+@Composable
+fun AppActionDialog(
+    title: String,
+    message: String,
+    onDismissRequest: () -> Unit,
+    confirmText: String,
+    onConfirm: () -> Unit,
+    dismissText: String? = null,
+    onDismissAction: (() -> Unit)? = null,
+    confirmIsDestructive: Boolean = false,
+    modifier: Modifier = Modifier
+) {
     val colors = AppTheme.colors
     val dimens = AppTheme.dimens
 
     Dialog(
-        onDismissRequest = onDismiss,
+        onDismissRequest = onDismissRequest,
         properties = DialogProperties(usePlatformDefaultWidth = false)
     ) {
-        Column(
-            modifier = modifier
-                .fillMaxWidth(0.9f)
-                .widthIn(max = 400.dp)
-                .clip(RoundedCornerShape(dimens.cornerXl))
-                .background(Brush.verticalGradient(listOf(colors.surface, colors.background)))
-                .border(1.dp, colors.border, RoundedCornerShape(dimens.cornerXl))
-                .padding(dimens.spacing2Xl),
-            horizontalAlignment = Alignment.CenterHorizontally
+        Box(
+            modifier = Modifier.fillMaxWidth(),
+            contentAlignment = Alignment.Center
         ) {
-            Text(
-                text = Strings.tr("Exit session?"),
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold,
-                color = colors.textPrimary,
-                textAlign = TextAlign.Center
-            )
-
-            Spacer(Modifier.height(dimens.spacingSm))
-
-            Text(
-                text = Strings.tr("Your progress so far will be saved."),
-                fontSize = 14.sp,
-                color = colors.textSecondary,
-                textAlign = TextAlign.Center
-            )
-
-            Spacer(Modifier.height(dimens.spacing2Xl))
-
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(dimens.spacingMd)
+            Column(
+                modifier = modifier
+                    .fillMaxWidth(0.9f)
+                    .widthIn(max = 400.dp)
+                    .clip(RoundedCornerShape(dimens.cornerXl))
+                    .background(colors.surface)
+                    .border(1.dp, colors.border, RoundedCornerShape(dimens.cornerXl))
+                    .padding(dimens.spacing2Xl),
+                horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                // Secondary / Keep Learning button
-                Box(
-                    modifier = Modifier
-                        .weight(1f)
-                        .height(dimens.primaryButtonHeight)
-                        .clip(RoundedCornerShape(dimens.cornerPill))
-                        .background(colors.surfaceVariant)
-                        .border(1.dp, colors.border, RoundedCornerShape(dimens.cornerPill))
-                        .clickable(onClick = onDismiss),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Text(
-                        text = Strings.tr("Cancel"),
-                        color = colors.textPrimary,
-                        fontSize = 15.sp,
-                        fontWeight = FontWeight.SemiBold
-                    )
-                }
+                Text(
+                    text = title,
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = colors.textPrimary,
+                    textAlign = TextAlign.Center
+                )
 
-                // Confirm / Exit button
-                Box(
-                    modifier = Modifier
-                        .weight(1f)
-                        .height(dimens.primaryButtonHeight)
-                        .clip(RoundedCornerShape(dimens.cornerPill))
-                        .background(colors.error)
-                        .clickable(onClick = onConfirm),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Text(
-                        text = Strings.tr("Exit"),
-                        color = Color.White,
-                        fontSize = 15.sp,
-                        fontWeight = FontWeight.Bold
+                Spacer(Modifier.height(dimens.spacingSm))
+
+                Text(
+                    text = message,
+                    fontSize = 14.sp,
+                    color = colors.textSecondary,
+                    textAlign = TextAlign.Center
+                )
+
+                Spacer(Modifier.height(dimens.spacing2Xl))
+
+                if (dismissText != null && onDismissAction != null) {
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(dimens.spacingMd)
+                    ) {
+                        ActionDialogButton(
+                            text = dismissText,
+                            onClick = onDismissAction,
+                            isPrimary = false,
+                            isDestructive = false,
+                            modifier = Modifier.weight(1f)
+                        )
+                        ActionDialogButton(
+                            text = confirmText,
+                            onClick = onConfirm,
+                            isPrimary = true,
+                            isDestructive = confirmIsDestructive,
+                            modifier = Modifier.weight(1f)
+                        )
+                    }
+                } else {
+                    ActionDialogButton(
+                        text = confirmText,
+                        onClick = onConfirm,
+                        isPrimary = true,
+                        isDestructive = confirmIsDestructive,
+                        modifier = Modifier.fillMaxWidth()
                     )
                 }
             }
         }
+    }
+}
+
+@Composable
+private fun ActionDialogButton(
+    text: String,
+    onClick: () -> Unit,
+    isPrimary: Boolean,
+    isDestructive: Boolean,
+    modifier: Modifier = Modifier
+) {
+    val colors = AppTheme.colors
+    val shape = RoundedCornerShape(AppTheme.dimens.cornerPill)
+    val fill = when {
+        !isPrimary -> colors.surface
+        isDestructive -> colors.error
+        else -> colors.primary
+    }
+
+    Box(
+        modifier = modifier
+            .heightIn(min = 50.dp)
+            .clip(shape)
+            .background(fill)
+            .then(if (isPrimary) Modifier else Modifier.border(1.dp, colors.border, shape))
+            .clickable(onClick = onClick)
+            .padding(horizontal = 12.dp, vertical = 8.dp),
+        contentAlignment = Alignment.Center
+    ) {
+        Text(
+            text = text,
+            color = if (isPrimary) Color.White else colors.textPrimary,
+            fontSize = 15.sp,
+            fontWeight = FontWeight.SemiBold,
+            textAlign = TextAlign.Center,
+            maxLines = 2,
+            overflow = TextOverflow.Ellipsis
+        )
     }
 }
 

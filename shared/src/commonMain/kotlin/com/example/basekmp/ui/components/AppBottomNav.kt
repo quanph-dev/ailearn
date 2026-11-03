@@ -99,9 +99,10 @@ fun AppBottomNav(
                 Text(
                     text = Strings.tr(tab.labelKey),
                     color = contentColor,
-                    fontSize = 8.sp,
+                    fontSize = 10.sp,
                     fontWeight = if (isSelected) FontWeight.SemiBold else FontWeight.Normal,
-                    maxLines = 1,
+                    lineHeight = 11.sp,
+                    maxLines = 2,
                     overflow = TextOverflow.Ellipsis
                 )
             }

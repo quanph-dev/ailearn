@@ -30,10 +30,13 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import ailearn.shared.generated.resources.Res
 import ailearn.shared.generated.resources.streak_fire
+import com.example.basekmp.formatTime
+import com.example.basekmp.formatWeekdayShort
 import com.example.basekmp.localEpochDayAt
 import com.example.basekmp.data.LearningItem
 import com.example.basekmp.data.Strings
@@ -48,7 +51,14 @@ import com.example.basekmp.theme.TextSecondary
 import com.example.basekmp.ui.components.TabHeader
 import org.jetbrains.compose.resources.painterResource
 
-private val WEEKDAY_INITIALS = charArrayOf('T', 'F', 'S', 'S', 'M', 'T', 'W')
+private val WEEKDAY_INITIALS = arrayOf("T", "F", "S", "S", "M", "T", "W")
+private val VIETNAMESE_WEEKDAY_LABELS = arrayOf("T5", "T6", "T7", "CN", "T2", "T3", "T4")
+
+private fun shortWeekdayLabel(epochDay: Long): String {
+    val index = (((epochDay % 7L) + 7L) % 7L).toInt()
+    val labels = if (Strings.getLanguage() == "vi") VIETNAMESE_WEEKDAY_LABELS else WEEKDAY_INITIALS
+    return labels[index]
+}
 
 private const val CAT_AI_TUTOR = "AI Tutor"
 private const val CAT_LESSON = "Today's Lesson"
@@ -58,12 +68,13 @@ private fun epochDayOf(ts: Long): Long = localEpochDayAt(ts)
 
 private fun formatWhen(ts: Long): String {
     if (ts <= 0) return ""
+    val timeStr = formatTime(ts)
     val today = UserPrefs.todayEpochDay()
     val day = epochDayOf(ts)
     return when (day) {
-        today -> Strings.tr("Today")
-        today - 1L -> Strings.tr("Yesterday")
-        else -> "Past"
+        today -> "${Strings.tr("Today")}, $timeStr"
+        today - 1L -> "${Strings.tr("Yesterday")}, $timeStr"
+        else -> "${formatWeekdayShort(ts)}, $timeStr"
     }
 }
 
@@ -71,15 +82,7 @@ private fun categoryOf(title: String): String {
     return when (title) {
         CAT_AI_TUTOR -> CAT_AI_TUTOR
         CAT_LESSON -> CAT_LESSON
-        else -> if (title.startsWith("AI Tutor ", ignoreCase = true)) CAT_AI_TUTOR else CAT_PRACTICE
-    }
-}
-
-private fun countPracticeSessions(history: List<LearningItem>, feature: String): Int {
-    val practiceTitle = "$feature Practice"
-    return history.count { item ->
-        item.title.equals(practiceTitle, ignoreCase = true) ||
-            (item.title.equals(feature, ignoreCase = true) && item.detail.contains("Practice", ignoreCase = true))
+        else -> CAT_PRACTICE
     }
 }
 
@@ -92,12 +95,13 @@ fun ProgressScreen(
 ) {
     val today = UserPrefs.todayEpochDay()
     val lastActive = UserPrefs.lastActiveDayState.longValue
-    val streak = if (lastActive >= today - 1) UserPrefs.streakCountState.intValue else 0
+    val hasActiveStreak = lastActive == today || lastActive == today - 1L
+    val streak = if (hasActiveStreak) UserPrefs.streakCountState.intValue else 0
     val historyList = UserPrefs.learningHistoryState
 
-    val vocabCount = countPracticeSessions(historyList, "Vocabulary")
-    val grammarCount = countPracticeSessions(historyList, "Grammar")
-    val speakingCount = countPracticeSessions(historyList, "Speaking")
+    val vocabCount = historyList.count { it.title == "Vocabulary Practice" }
+    val grammarCount = historyList.count { it.title == "Grammar Practice" }
+    val speakingCount = historyList.count { it.title == "Speaking Practice" }
 
     val tutorSessions = historyList.filter {
         it.timestamp > 0 && epochDayOf(it.timestamp) == today && categoryOf(it.title) == CAT_AI_TUTOR
@@ -123,7 +127,7 @@ fun ProgressScreen(
         ) {
             Spacer(Modifier.height(16.dp))
 
-            // 1. Vocabulary & Grammar Stat Cards (Row)
+            // Keep the established 2–1 grouping while rendering all metrics consistently.
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(14.dp)
@@ -132,7 +136,7 @@ fun ProgressScreen(
                     title = Strings.tr("Vocabulary"),
                     value = vocabCount,
                     color = ProgressPink,
-                    onClick = { onStatClick("Vocabulary") },
+                    onClick = { onStatClick("vocabulary") },
                     modifier = Modifier.weight(1f).height(120.dp)
                 )
 
@@ -140,19 +144,18 @@ fun ProgressScreen(
                     title = Strings.tr("Grammar"),
                     value = grammarCount,
                     color = ProgressGreen,
-                    onClick = { onStatClick("Grammar") },
+                    onClick = { onStatClick("grammar") },
                     modifier = Modifier.weight(1f).height(120.dp)
                 )
             }
 
             Spacer(Modifier.height(14.dp))
 
-            // 2. Speaking Stat Card (Full Width)
             StatCard(
                 title = Strings.tr("Speaking"),
                 value = speakingCount,
                 color = ProgressBlue,
-                onClick = { onStatClick("Speaking") },
+                onClick = { onStatClick("speaking") },
                 modifier = Modifier.fillMaxWidth().height(120.dp)
             )
 
@@ -264,7 +267,9 @@ private fun StatCard(
             text = title,
             color = TextPrimary,
             fontSize = 17.sp,
-            fontWeight = FontWeight.Bold
+            fontWeight = FontWeight.Bold,
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis
         )
 
         Spacer(Modifier.weight(1f))
@@ -286,6 +291,8 @@ private fun StatCard(
                 text = Strings.tr("times"),
                 color = TextSecondary,
                 fontSize = 12.sp,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
                 modifier = Modifier.padding(bottom = 4.dp)
             )
 
@@ -354,14 +361,13 @@ private fun StreakCard(
             ) {
                 for (i in 0 until 7) {
                     val dayEpoch = (today - 6L) + i.toLong()
-                    val dayOfWeekIdx = (((dayEpoch % 7L) + 7L) % 7L).toInt()
-                    val initial = WEEKDAY_INITIALS[dayOfWeekIdx]
+                    val weekdayLabel = shortWeekdayLabel(dayEpoch)
                     val isDayActive = streak > 0 && dayEpoch <= lastActive && dayEpoch > lastActive - streak.toLong()
                     val isToday = dayEpoch == today
 
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
                         Text(
-                            text = initial.toString(),
+                            text = weekdayLabel,
                             color = TextSecondary,
                             fontSize = 11.sp
                         )
@@ -459,7 +465,7 @@ private fun LearningRow(
     ) {
         Column(modifier = Modifier.weight(1f)) {
             Text(
-                text = title,
+                text = Strings.tr(title),
                 color = TextPrimary,
                 fontSize = 15.sp,
                 fontWeight = FontWeight.SemiBold

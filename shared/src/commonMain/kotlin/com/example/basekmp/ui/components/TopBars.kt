@@ -50,13 +50,13 @@ fun TabHeader(
             fontSize = titleSize,
             fontWeight = FontWeight.Bold,
             color = TextPrimary,
-            maxLines = 1,
-            overflow = TextOverflow.Ellipsis
+            maxLines = 2,
+            overflow = TextOverflow.Ellipsis,
+            modifier = Modifier.weight(1f)
         )
 
-        Spacer(Modifier.weight(1f))
-
         if (leadingAction != null) {
+            Spacer(Modifier.width(8.dp))
             leadingAction()
         }
 
@@ -97,6 +97,42 @@ fun CircleIconButton(
     }
 }
 
+/** Standard 40 dp back control used by every navigable screen header. */
+@Composable
+fun BackButton(
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+    background: Color = OptionSurface,
+    tint: Color = TextPrimary
+) {
+    CircleIconButton(
+        icon = Icons.AutoMirrored.Rounded.ArrowBackIos,
+        contentDescription = Strings.tr("Back"),
+        onClick = onClick,
+        modifier = modifier,
+        background = background,
+        tint = tint
+    )
+}
+
+/** Standard 40 dp close control for lesson and modal headers. */
+@Composable
+fun CloseButton(
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+    background: Color = OptionSurface,
+    tint: Color = TextPrimary
+) {
+    CircleIconButton(
+        icon = Icons.Rounded.Close,
+        contentDescription = Strings.tr("Close"),
+        onClick = onClick,
+        modifier = modifier,
+        background = background,
+        tint = tint
+    )
+}
+
 /**
  * Standard Back navigation title bar.
  */
@@ -105,25 +141,20 @@ fun BackTitleBar(
     title: String,
     onBack: () -> Unit,
     modifier: Modifier = Modifier,
-    backIcon: ImageVector = Icons.AutoMirrored.Rounded.ArrowBackIos,
     rightContent: (@Composable () -> Unit)? = null
 ) {
     Row(
         modifier = modifier.fillMaxWidth(),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        CircleIconButton(
-            icon = backIcon,
-            contentDescription = Strings.tr("Back"),
-            onClick = onBack
-        )
+        BackButton(onClick = onBack)
         Spacer(Modifier.width(12.dp))
         Text(
             text = title,
             fontSize = 18.sp,
             fontWeight = FontWeight.Bold,
             color = TextPrimary,
-            maxLines = 1,
+            maxLines = 2,
             overflow = TextOverflow.Ellipsis,
             modifier = Modifier.weight(1f)
         )
@@ -146,18 +177,14 @@ fun CloseTitleBar(
         modifier = modifier.fillMaxWidth(),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        CircleIconButton(
-            icon = Icons.Rounded.Close,
-            contentDescription = Strings.tr("Close"),
-            onClick = onClose
-        )
+        CloseButton(onClick = onClose)
         Spacer(Modifier.width(12.dp))
         Text(
             text = title,
             fontSize = 18.sp,
             fontWeight = FontWeight.Bold,
             color = TextPrimary,
-            maxLines = 1,
+            maxLines = 2,
             overflow = TextOverflow.Ellipsis,
             modifier = Modifier.weight(1f)
         )

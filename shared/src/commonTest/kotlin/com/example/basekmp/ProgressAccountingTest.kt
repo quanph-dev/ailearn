@@ -3,6 +3,7 @@ package com.example.basekmp
 import com.example.basekmp.data.PlanProgress
 import com.example.basekmp.data.PlanQuizScore
 import com.example.basekmp.data.UserPrefs
+import com.example.basekmp.data.LearningItem
 import com.example.basekmp.localEpochDayAt
 import com.example.basekmp.ui.plan.averagePlanSpeakingScore
 import kotlin.test.Test
@@ -12,6 +13,37 @@ import kotlin.test.assertNull
 import kotlin.test.assertTrue
 
 class ProgressAccountingTest {
+    @Test
+    fun streakCountsOncePerLocalDayAndResetsAfterAMissedDay() = withCleanPrefs {
+        UserPrefs.recordStreakDay(20_000)
+        UserPrefs.recordStreakDay(20_000)
+        assertEquals(1, UserPrefs.streakCountState.intValue)
+
+        UserPrefs.recordStreakDay(20_001)
+        UserPrefs.recordStreakDay(20_001)
+        assertEquals(2, UserPrefs.streakCountState.intValue)
+
+        UserPrefs.recordStreakDay(20_003)
+        assertEquals(1, UserPrefs.streakCountState.intValue)
+        assertEquals(20_003L, UserPrefs.lastActiveDayState.longValue)
+
+        UserPrefs.recordStreakDay(20_002)
+        assertEquals(1, UserPrefs.streakCountState.intValue)
+        assertEquals(20_003L, UserPrefs.lastActiveDayState.longValue)
+    }
+
+    @Test
+    fun storeShareUsesInstalledPackageAndPolicyUrlsStayReadyForLater() {
+        assertEquals(
+            "https://play.google.com/store/apps/details?id=com.example.ailearn",
+            AppLinks.playStoreUrl("com.example.ailearn")
+        )
+        assertTrue(AppLinks.shareMessage("com.example.ailearn").contains(AppLinks.playStoreUrl("com.example.ailearn")))
+        assertEquals("", AppLinks.documentUrl("privacy"))
+        assertEquals("", AppLinks.documentUrl("terms"))
+        assertNull(AppLinks.supportEmailUrl())
+    }
+
     @Test
     fun completedPracticeAddsFixedMinutesAndTracksLocalDayAndStreak() = withCleanPrefs {
         UserPrefs.dailyGoalMinutes = 12
@@ -48,6 +80,61 @@ class ProgressAccountingTest {
         assertEquals(37, UserPrefs.learnedMinutesState.intValue)
         assertEquals(0, UserPrefs.minutesToday(20_000))
         assertFalse(UserPrefs.dailyGoalReachedToday(20_000))
+    }
+
+    @Test
+    fun legacyDuplicatePracticeRowsAreMergedOnceAndKeepTheirUsefulDetails() = withCleanPrefs {
+        val duplicatePracticeHistory = """
+            {"version":2,"history":[
+              {"title":"Speaking Practice","timestamp":4562,"score":44,"detail":"Speak Sentences","total":0,"level":"Intermediate"},
+              {"title":"Speaking Practice","timestamp":3162,"score":44,"detail":"","total":100,"level":"B1 Intermediate"},
+              {"title":"Grammar Practice","timestamp":9575,"score":2,"detail":"","total":5,"level":"Intermediate"},
+              {"title":"Grammar Practice","timestamp":8120,"score":2,"detail":"","total":5,"level":"B1 Intermediate"},
+              {"title":"Vocabulary Practice","timestamp":7498,"score":0,"detail":"Daily life","total":10,"level":"Intermediate"},
+              {"title":"Vocabulary Practice","timestamp":7493,"score":0,"detail":"","total":10,"level":"B1 Intermediate"},
+              {"title":"Speaking Practice","timestamp":20000,"score":70,"detail":"Speak Sentences","total":0,"level":"Intermediate"}
+            ]}
+        """.trimIndent()
+
+        assertTrue(UserPrefs.restoreLearningProgress(duplicatePracticeHistory))
+
+        val history = UserPrefs.learningHistoryState.toList()
+        assertEquals(4, history.size)
+        assertEquals(1, history.count { it.title == "Vocabulary Practice" })
+        assertEquals(1, history.count { it.title == "Grammar Practice" })
+        assertEquals(2, history.count { it.title == "Speaking Practice" })
+
+        val mergedSpeaking = history.single { it.title == "Speaking Practice" && it.score == 44 }
+        assertEquals(100, mergedSpeaking.total)
+        assertEquals("Speak Sentences", mergedSpeaking.detail)
+        assertEquals("Intermediate", mergedSpeaking.level)
+        assertEquals(3162L, mergedSpeaking.timestamp)
+
+        val legacySpeaking = history.single { it.title == "Speaking Practice" && it.score == 70 }
+        assertEquals(100, legacySpeaking.total)
+
+        val vocabulary = history.single { it.title == "Vocabulary Practice" }
+        assertEquals("Daily life", vocabulary.detail)
+        assertEquals("Intermediate", vocabulary.level)
+        assertEquals(7493L, vocabulary.timestamp)
+    }
+
+    @Test
+    fun separateMatchingPracticeSessionsAreCountedSeparately() = withCleanPrefs {
+        repeat(2) {
+            UserPrefs.recordPracticeDone(
+                feature = "vocabulary",
+                score = 4,
+                total = 5,
+                learnedMinutes = 6,
+                activityEpochDay = 20_000,
+                detail = "Daily life",
+                level = "Intermediate"
+            )
+        }
+
+        assertEquals(2, UserPrefs.learningHistoryState.count { it.title == "Vocabulary Practice" })
+        assertEquals(12, UserPrefs.learnedMinutesState.intValue)
     }
 
     @Test

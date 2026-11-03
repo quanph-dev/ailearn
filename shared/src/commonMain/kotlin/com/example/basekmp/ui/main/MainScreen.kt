@@ -47,6 +47,8 @@ fun MainScreen(
     onSeeAllHistory: () -> Unit = {},
     onNavigateToLanguage: () -> Unit = {},
     onNavigateToLegal: (String) -> Unit = {},
+    onContactSupport: () -> Unit = {},
+    onShareApp: () -> Unit = {},
     selectedTab: MainTab = MainTab.Home,
     onTabSelected: (MainTab) -> Unit = {},
     modifier: Modifier = Modifier
@@ -104,7 +106,9 @@ fun MainScreen(
                 MainTab.Settings -> {
                     SettingsScreen(
                         onNavigateToLanguage = onNavigateToLanguage,
-                        onNavigateToLegal = onNavigateToLegal
+                        onNavigateToLegal = onNavigateToLegal,
+                        onContactSupport = onContactSupport,
+                        onShareApp = onShareApp
                     )
                 }
             }

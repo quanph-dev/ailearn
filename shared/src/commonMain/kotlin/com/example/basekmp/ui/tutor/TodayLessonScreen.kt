@@ -43,8 +43,6 @@ import androidx.compose.material.icons.rounded.Keyboard
 import androidx.compose.material.icons.rounded.Lightbulb
 import androidx.compose.material.icons.rounded.Mic
 import androidx.compose.material.icons.rounded.Stop
-import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -74,12 +72,13 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.basekmp.components.RobotMood
-import com.example.basekmp.currentTimeMillis
+import com.example.basekmp.components.AppActionDialog
 import com.example.basekmp.data.PlanProgress
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
 import com.example.basekmp.ui.components.AnimatedRobot
 import com.example.basekmp.ui.components.RobotFrameAspect
+import com.example.basekmp.ui.lifecycle.rememberIsAppResumed
 import com.example.basekmp.ui.plan.PlanFlow
 import com.example.basekmp.ui.speaking.PlatformSpeechRecognition
 import com.example.basekmp.ui.speaking.rememberPlatformSpeaker
@@ -102,7 +101,7 @@ fun TodayLessonScreen(
     val coroutineScope = rememberCoroutineScope()
     val listState = rememberLazyListState()
     val clipboardManager = LocalClipboardManager.current
-    val sessionStartedAt = remember { currentTimeMillis() }
+    val isAppResumed = rememberIsAppResumed()
 
     val lessonTitle = title ?: "Greeting Someone New"
     val lessonLevel = level ?: "Beginner"
@@ -126,7 +125,7 @@ fun TodayLessonScreen(
     var copiedMessageIndex by remember { mutableStateOf<Int?>(null) }
 
     val speaker = rememberPlatformSpeaker(UserPrefs.tutorVoice)
-    var speakingMessageText by remember { mutableStateOf<String?>(null) }
+    var speakingMessageIndex by remember { mutableStateOf<Int?>(null) }
 
     val targetLocaleTag = remember(UserPrefs.targetLanguage) {
         speechLocaleTagFor(UserPrefs.targetLanguage)
@@ -154,6 +153,26 @@ fun TodayLessonScreen(
             )
         )
     }
+    var greetingStarted by remember { mutableStateOf(false) }
+
+    fun stopMessageSpeech() {
+        val activeIndex = speakingMessageIndex
+        speaker.stop()
+        speakingMessageIndex = null
+        if (activeIndex != null && activeIndex in messages.indices && messages[activeIndex].animate) {
+            messages[activeIndex] = messages[activeIndex].copy(animate = false)
+        }
+    }
+
+    fun activateMessageSpeech(index: Int) {
+        val previousIndex = speakingMessageIndex
+        if (previousIndex != null && previousIndex != index &&
+            previousIndex in messages.indices && messages[previousIndex].animate
+        ) {
+            messages[previousIndex] = messages[previousIndex].copy(animate = false)
+        }
+        speakingMessageIndex = index
+    }
 
     DisposableEffect(Unit) {
         onDispose {
@@ -162,9 +181,11 @@ fun TodayLessonScreen(
     }
 
     // Warm up TTS locales & auto-speak the opening greeting message immediately on screen entry
-    LaunchedEffect(Unit) {
+    LaunchedEffect(isAppResumed) {
+        if (!isAppResumed || greetingStarted) return@LaunchedEffect
+        greetingStarted = true
         speaker.warmUp(targetLocaleTag, nativeLocaleTag)
-        speakingMessageText = openingGreeting
+        activateMessageSpeech(messages.lastIndex)
         speaker.speak(
             text = openingGreeting,
             languageTag = targetLocaleTag,
@@ -173,29 +194,30 @@ fun TodayLessonScreen(
         )
     }
 
-    // Clear animate flag and speakingMessageText once speech & typewriter reveal finish
-    LaunchedEffect(messages.size, speaker.isSpeaking, speakingMessageText) {
-        if (!speaker.isSpeaking && speakingMessageText != null) {
-            val finishedText = speakingMessageText
-            val idx = messages.indexOfLast { !it.fromUser && it.text == finishedText }
-            if (idx >= 0 && messages[idx].animate) {
-                val len = messages[idx].text.length
+    // Clear the active message once speech and its typewriter reveal finish.
+    LaunchedEffect(messages.size, speaker.isSpeaking, speakingMessageIndex, isAppResumed) {
+        if (!isAppResumed) return@LaunchedEffect
+        val finishedIndex = speakingMessageIndex
+        if (!speaker.isSpeaking && finishedIndex != null) {
+            if (finishedIndex in messages.indices && !messages[finishedIndex].fromUser && messages[finishedIndex].animate) {
+                val len = messages[finishedIndex].text.length
                 if (speaker.spokenChars < len) {
                     delay((len * 18L).coerceAtMost(1500L))
                 }
-                if (idx < messages.size && messages[idx].animate) {
-                    messages[idx] = messages[idx].copy(animate = false)
+                if (speakingMessageIndex == finishedIndex && !speaker.isSpeaking &&
+                    finishedIndex in messages.indices && messages[finishedIndex].animate
+                ) {
+                    messages[finishedIndex] = messages[finishedIndex].copy(animate = false)
                 }
             }
-            speakingMessageText = null
+            if (speakingMessageIndex == finishedIndex) speakingMessageIndex = null
         }
     }
 
     val initialSystemBackRequest = remember { systemBackRequest }
     LaunchedEffect(systemBackRequest) {
         if (systemBackRequest != initialSystemBackRequest && !isCompleting && !showCompletionDialog) {
-            speaker.stop()
-            speakingMessageText = null
+            stopMessageSpeech()
             if (messages.any { it.fromUser }) {
                 showExitDialog = true
             } else {
@@ -205,15 +227,17 @@ fun TodayLessonScreen(
     }
 
     // Timer countdown
-    LaunchedEffect(Unit) {
-        while (remainingSeconds > 0) {
+    LaunchedEffect(isAppResumed) {
+        while (isAppResumed && remainingSeconds > 0) {
             delay(1000L)
+            if (!isAppResumed) return@LaunchedEffect
             remainingSeconds--
         }
     }
 
     // Auto-scroll when messages update
-    LaunchedEffect(messages.size, isThinking) {
+    LaunchedEffect(messages.size, isThinking, isAppResumed) {
+        if (!isAppResumed) return@LaunchedEffect
         if (messages.isNotEmpty()) {
             delay(50)
             listState.animateScrollToItem(messages.size - 1)
@@ -233,8 +257,7 @@ fun TodayLessonScreen(
     fun sendMessage(userText: String) {
         if (userText.isBlank() || isThinking) return
 
-        speaker.stop()
-        speakingMessageText = null
+        stopMessageSpeech()
 
         messages.add(ChatMessage(text = userText, fromUser = true))
         inputText = ""
@@ -263,7 +286,7 @@ fun TodayLessonScreen(
                 "Good effort! Say a full sentence in English and I'll help you make it sound natural."
             }
             messages.add(ChatMessage(text = cleanReply, fromUser = false, animate = true))
-            speakingMessageText = cleanReply
+            activateMessageSpeech(messages.lastIndex)
             speaker.speak(
                 text = cleanReply,
                 languageTag = targetLocaleTag,
@@ -292,22 +315,20 @@ fun TodayLessonScreen(
 
     fun completeLesson(showDialog: Boolean = true) {
         if (isCompleting || showCompletionDialog) return
-        speaker.stop()
-        speakingMessageText = null
+        stopMessageSpeech()
         isCompleting = true
+        val activityEpochDay = UserPrefs.todayEpochDay()
         coroutineScope.launch {
             try {
-                day?.let { PlanFlow.finish(it, PlanProgress.Activity.TALK) }
-                val minutesSpent = ((currentTimeMillis() - sessionStartedAt) / 60_000L).toInt().coerceAtLeast(1)
-                UserPrefs.addLearnedMinutes(minutesSpent)
+                day?.let { PlanFlow.finish(it, PlanProgress.Activity.TALK, activityEpochDay) }
+                val minutesSpent = ((5 * 60 - remainingSeconds) / 60).coerceAtLeast(1)
+                UserPrefs.addLearnedMinutes(minutesSpent, activityEpochDay)
                 UserPrefs.addLearning(
                     title = "Today's Lesson",
                     detail = lessonTitle,
                     total = 0,
                     level = lessonLevel
                 )
-                UserPrefs.recordStreakDay()
-
                 if (showDialog) {
                     showCompletionDialog = true
                 } else {
@@ -400,8 +421,7 @@ fun TodayLessonScreen(
                                 .clip(CircleShape)
                                 .background(Color.Black.copy(alpha = 0.35f))
                                 .clickable(enabled = !isCompleting) {
-                                    speaker.stop()
-                                    speakingMessageText = null
+                                    stopMessageSpeech()
                                     if (messages.any { it.fromUser }) {
                                         showExitDialog = true
                                     } else {
@@ -571,11 +591,11 @@ fun TodayLessonScreen(
                                 }
                             } else {
                                 // AI Bubble (Left Aligned)
-                                val isThisPlaying = speakingMessageText == msg.text && speaker.isSpeaking
+                                val isThisPlaying = speakingMessageIndex == index && speaker.isSpeaking
                                 val displayedText = rememberTypewriter(
                                     text = msg.text,
                                     enabled = msg.animate,
-                                    spokenChars = if (speakingMessageText == msg.text) speaker.spokenChars else null
+                                    spokenChars = if (speakingMessageIndex == index) speaker.spokenChars else null
                                 )
                                 Row(
                                     modifier = Modifier.fillMaxWidth(),
@@ -609,11 +629,7 @@ fun TodayLessonScreen(
                                                             .clip(CircleShape)
                                                             .background(Color(0xFF2B5CFF))
                                                             .clickable {
-                                                                speaker.stop()
-                                                                speakingMessageText = null
-                                                                if (msg.animate) {
-                                                                    messages[index] = msg.copy(animate = false)
-                                                                }
+                                                                stopMessageSpeech()
                                                             },
                                                         contentAlignment = Alignment.Center
                                                     ) {
@@ -629,7 +645,7 @@ fun TodayLessonScreen(
                                                         modifier = Modifier
                                                             .clip(CircleShape)
                                                             .clickable {
-                                                                speakingMessageText = msg.text
+                                                                activateMessageSpeech(index)
                                                                 speaker.speak(
                                                                     text = msg.text,
                                                                     languageTag = targetLocaleTag,
@@ -897,8 +913,7 @@ fun TodayLessonScreen(
                                             if (isListening) {
                                                 stopListening()
                                             } else {
-                                                speaker.stop()
-                                                speakingMessageText = null
+                                                stopMessageSpeech()
                                                 startListening()
                                             }
                                         },
@@ -949,73 +964,49 @@ fun TodayLessonScreen(
 
             // Exit Dialog
             if (showExitDialog) {
-                androidx.compose.material3.AlertDialog(
+                AppActionDialog(
+                    title = tr("Leave lesson?"),
+                    message = tr("Your progress in this session will be saved."),
                     onDismissRequest = { showExitDialog = false },
-                    title = { Text(tr("Leave lesson?")) },
-                    text = { Text(tr("Your progress in this session will be saved.")) },
-                    confirmButton = {
-                        Button(
-                            onClick = {
-                                showExitDialog = false
-                                speaker.stop()
-                                completeLesson()
-                            },
-                            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2B5CFF))
-                        ) {
-                            Text(tr("Complete"), color = Color.White)
-                        }
+                    confirmText = tr("Complete"),
+                    onConfirm = {
+                        showExitDialog = false
+                        completeLesson()
                     },
-                    dismissButton = {
-                        androidx.compose.material3.TextButton(
-                            onClick = {
-                                showExitDialog = false
-                                speaker.stop()
-                                onBack(false)
-                            }
-                        ) {
-                            Text(tr("Exit"), color = Color(0xFF667085))
-                        }
+                    dismissText = tr("Exit"),
+                    onDismissAction = {
+                        showExitDialog = false
+                        stopMessageSpeech()
+                        onBack(false)
                     }
                 )
             }
 
             // Completion Dialog
             if (showCompletionDialog) {
-                androidx.compose.material3.AlertDialog(
+                AppActionDialog(
+                    title = tr("Lesson Complete!"),
+                    message = tr("Great job completing today's English speaking lesson!"),
                     onDismissRequest = {
                         showCompletionDialog = false
                         onFinish?.invoke() ?: onBack(true)
                     },
-                    title = { Text(tr("Lesson Complete!")) },
-                    text = { Text(tr("Great job completing today's English speaking lesson!")) },
-                    confirmButton = {
-                        Button(
-                            onClick = {
-                                showCompletionDialog = false
-                                onFinish?.invoke() ?: onBack(true)
-                            },
-                            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2B5CFF))
-                        ) {
-                            Text(tr("Awesome"), color = Color.White)
-                        }
+                    confirmText = tr("Awesome"),
+                    onConfirm = {
+                        showCompletionDialog = false
+                        onFinish?.invoke() ?: onBack(true)
                     }
                 )
             }
 
             // Report Dialog
             if (showReportDialog) {
-                androidx.compose.material3.AlertDialog(
+                AppActionDialog(
+                    title = tr("Report an issue"),
+                    message = tr("Thank you for your feedback. We will review this conversation response."),
                     onDismissRequest = { showReportDialog = false },
-                    title = { Text(tr("Report an issue")) },
-                    text = { Text(tr("Thank you for your feedback. We will review this conversation response.")) },
-                    confirmButton = {
-                        Button(
-                            onClick = { showReportDialog = false },
-                            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2B5CFF))
-                        ) {
-                            Text(tr("OK"), color = Color.White)
-                        }
-                    }
+                    confirmText = tr("OK"),
+                    onConfirm = { showReportDialog = false }
                 )
             }
         }

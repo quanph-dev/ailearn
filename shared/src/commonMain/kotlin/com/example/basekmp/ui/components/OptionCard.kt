@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -25,6 +26,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.unit.Dp
 import com.example.basekmp.theme.BlueSelected
 import com.example.basekmp.theme.DividerColor
 import com.example.basekmp.theme.OptionSurface
@@ -36,12 +38,24 @@ data class SelectOption(
     val leading: (@Composable () -> Unit)? = null
 )
 
+object LanguageChoiceMetrics {
+    val rowHeight = 72.dp
+    val contentVerticalPadding = 8.dp
+    val leadingImageSize = 52.dp
+    val labelFontSize = 16.sp
+    val labelLineHeight = 20.sp
+    val horizontalPadding = 16.dp
+    val leadingSpacing = 14.dp
+    val selectionSize = 22.dp
+}
+
 @Composable
 fun OptionCard(
     options: List<SelectOption>,
     selectedId: String?,
     onSelect: (String) -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    rowMinHeight: Dp? = null
 ) {
     Column(
         modifier = modifier
@@ -54,6 +68,7 @@ fun OptionCard(
             OptionRow(
                 option = option,
                 selected = selected,
+                rowMinHeight = rowMinHeight,
                 onClick = { onSelect(option.id) }
             )
             if (index < options.lastIndex) {
@@ -71,19 +86,26 @@ fun OptionCard(
 private fun OptionRow(
     option: SelectOption,
     selected: Boolean,
+    rowMinHeight: Dp?,
     onClick: () -> Unit
 ) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .defaultMinSize(minHeight = 56.dp)
+            .then(
+                if (rowMinHeight == null) Modifier.defaultMinSize(minHeight = 56.dp)
+                else Modifier.heightIn(min = rowMinHeight)
+            )
             .clickable(onClick = onClick)
-            .padding(horizontal = 16.dp, vertical = 12.dp),
+            .padding(
+                horizontal = LanguageChoiceMetrics.horizontalPadding,
+                vertical = if (rowMinHeight == null) 12.dp else LanguageChoiceMetrics.contentVerticalPadding
+            ),
         verticalAlignment = Alignment.CenterVertically
     ) {
         if (option.leading != null) {
             option.leading.invoke()
-            Spacer(modifier = Modifier.width(14.dp))
+            Spacer(modifier = Modifier.width(LanguageChoiceMetrics.leadingSpacing))
         }
         Text(
             text = option.label,

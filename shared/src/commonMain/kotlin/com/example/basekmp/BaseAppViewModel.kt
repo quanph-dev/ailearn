@@ -75,12 +75,16 @@ open class BaseAppViewModel(
                 UserPrefs.restoreLearningProgress(savedLearningProgress)
             applyPlatformLanguage(languageCode)
             Strings.select(languageCode)
-            UserPrefs.nativeLanguage = languageCode
             delay(SPLASH_MINIMUM_DURATION_MS)
             UserPrefs.onboardingDone = route == BaseRoutes.Home
             UserPrefs.firstOpenDone = route == BaseRoutes.Home || route == BaseRoutes.Onboarding
             if (!restoredLearningProgress && savedOnboardingProgress.isNotBlank()) {
-                applyOnboardingProfile(OnboardingState.deserialize(savedOnboardingProgress))
+                val restoredProfile = OnboardingState.deserialize(savedOnboardingProgress)
+                applyOnboardingProfile(
+                    restoredProfile,
+                    includeNativeLanguage = restoredProfile.step !=
+                        com.example.basekmp.ui.onboarding.OnboardingStep.NativeLanguage
+                )
             }
             if (!restoredLearningProgress && surveyLanguage.isNotBlank()) {
                 UserPrefs.learningLanguage = surveyLanguage
@@ -141,7 +145,9 @@ open class BaseAppViewModel(
             if (completed) {
                 applyPlatformLanguage(current.selectedLanguageCode)
                 Strings.select(current.selectedLanguageCode)
-                UserPrefs.nativeLanguage = current.selectedLanguageCode
+                if (!isSettings) {
+                    UserPrefs.nativeLanguage = current.selectedLanguageCode
+                }
                 _uiState.value = current.copy(
                     route = if (isSettings) BaseRoutes.Home else BaseRoutes.ApplyLanguage,
                     languageCode = current.selectedLanguageCode,
@@ -212,7 +218,7 @@ open class BaseAppViewModel(
         if (isHandlingAction || current.route != BaseRoutes.FirstOpenSurvey || current.isSaving) return
         val selectedLanguage = current.firstOpenSurveyLanguage.takeIf { !skip && it.isNotBlank() }
         if (!skip && selectedLanguage == null) return
-        val nativeLanguage = current.languageCode.takeIf { code -> Languages.native.any { it.code == code } } ?: "en"
+        val nativeLanguage = Languages.defaultNativeLanguageCode(getSystemLanguageCode())
         val initialProfile = if (selectedLanguage != null) {
             OnboardingState(
                 step = com.example.basekmp.ui.onboarding.OnboardingStep.NativeLanguage,
@@ -259,16 +265,20 @@ open class BaseAppViewModel(
         val current = _uiState.value
         if (current.route != BaseRoutes.Onboarding || current.isSaving) return
         val profile = OnboardingState.deserialize(serialized)
-        val chosenNative = profile.nativeLanguage
-        val newLangCode = if (!chosenNative.isNullOrBlank() && Languages.native.any { it.code == chosenNative }) {
-            chosenNative
-        } else {
-            current.languageCode
+        val previousProfile = OnboardingState.deserialize(current.onboardingProgress)
+        val confirmedNativeLanguage = profile.nativeLanguage
+            ?.takeIf {
+                previousProfile.step == com.example.basekmp.ui.onboarding.OnboardingStep.NativeLanguage &&
+                    profile.step == previousProfile.next().step &&
+                    it in Languages.native.map { language -> language.code }
+            }
+        val newLangCode = confirmedNativeLanguage ?: current.languageCode
+        if (confirmedNativeLanguage != null) {
+            UserPrefs.nativeLanguage = confirmedNativeLanguage
         }
         if (newLangCode != current.languageCode) {
             applyPlatformLanguage(newLangCode)
             Strings.select(newLangCode)
-            UserPrefs.nativeLanguage = newLangCode
         }
         _uiState.value = current.copy(
             languageCode = newLangCode,
@@ -278,7 +288,12 @@ open class BaseAppViewModel(
         onboardingProgressSaveJob?.cancel()
         onboardingProgressSaveJob = viewModelScope.launch {
             delay(150)
-            val result = runCatchingCancellable { repository.saveOnboardingProgress(serialized) }
+            val result = runCatchingCancellable {
+                if (confirmedNativeLanguage != null && newLangCode != current.languageCode) {
+                    repository.saveLanguage(newLangCode, completeSetup = false)
+                }
+                repository.saveOnboardingProgress(serialized)
+            }
             if (result.isFailure) {
                 _uiState.value = _uiState.value.copy(hasError = true)
             }
@@ -327,9 +342,14 @@ open class BaseAppViewModel(
         }
     }
 
-    private fun applyOnboardingProfile(profile: OnboardingState) {
+    private fun applyOnboardingProfile(
+        profile: OnboardingState,
+        includeNativeLanguage: Boolean = true
+    ) {
         profile.learnLanguage?.let { UserPrefs.learningLanguage = it }
-        profile.nativeLanguage?.let { UserPrefs.nativeLanguage = it }
+        if (includeNativeLanguage) {
+            profile.nativeLanguage?.let { UserPrefs.nativeLanguage = it }
+        }
         profile.level?.let { selected ->
             UserPrefs.englishLevel = EnglishLevel.toFullName(selected)
             UserPrefs.englishLevelChosen = true

@@ -26,7 +26,6 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material.icons.rounded.Check
 import androidx.compose.material.icons.rounded.Person
 import androidx.compose.material.icons.rounded.SmartToy
@@ -34,7 +33,6 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -70,6 +68,7 @@ import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
 import com.example.basekmp.data.trf
 import com.example.basekmp.theme.AppTheme
+import com.example.basekmp.ui.components.BackButton
 import org.jetbrains.compose.resources.painterResource
 
 /**
@@ -184,13 +183,7 @@ fun PlanSetupScreen(
                     .padding(horizontal = AppTheme.dimens.spacingSm),
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                IconButton(onClick = { goBack() }) {
-                    Icon(
-                        imageVector = Icons.AutoMirrored.Rounded.ArrowBack,
-                        contentDescription = tr("Back"),
-                        tint = AppTheme.colors.textPrimary
-                    )
-                }
+                BackButton(onClick = { goBack() })
 
                 if (currentStep != SetupStep.START) {
                     AppLinearProgressBar(

@@ -39,6 +39,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberUpdatedState
@@ -53,6 +54,9 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
+import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.example.basekmp.data.Strings
 import com.example.basekmp.theme.AppTheme
 
@@ -62,9 +66,18 @@ actual fun PlatformSpeechRecognition(
     onResult: (String) -> Unit,
     onError: (String) -> Unit,
     onPartialResult: (String) -> Unit,
-    content: @Composable (Boolean, () -> Unit, () -> Unit, Boolean) -> Unit
+    content: @Composable (
+        isListening: Boolean,
+        start: () -> Unit,
+        stop: () -> Unit,
+        isAvailable: Boolean
+    ) -> Unit
 ) {
     val context = LocalContext.current
+    val lifecycle = LocalLifecycleOwner.current.lifecycle
+    val isAppResumed = remember(lifecycle) {
+        mutableStateOf(lifecycle.currentState.isAtLeast(Lifecycle.State.RESUMED))
+    }
     val appContext = remember(context) { context.applicationContext }
     val currentLanguageTag by rememberUpdatedState(languageTag)
     val currentOnResult by rememberUpdatedState(onResult)
@@ -84,18 +97,21 @@ actual fun PlatformSpeechRecognition(
         mutableStateOf(permissionPreferences.getBoolean(RECORD_AUDIO_REQUESTED, false))
     }
     var isListening by remember { mutableStateOf(false) }
+    var recognitionGeneration by remember { mutableIntStateOf(0) }
     var showPermissionRationale by remember { mutableStateOf(false) }
     var showSettingsDialog by remember { mutableStateOf(false) }
 
     val startRecognition: () -> Unit = {
         val speechRecognizer = recognizer
         when {
+            !isAppResumed.value -> Unit
             speechRecognizer == null -> currentOnError("unavailable")
             ContextCompat.checkSelfPermission(context, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED -> {
                 currentOnError("permission_required")
                 showPermissionRationale = true
             }
             else -> {
+                val session = ++recognitionGeneration
                 val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
                     putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
                     putExtra(RecognizerIntent.EXTRA_LANGUAGE, currentLanguageTag)
@@ -103,9 +119,53 @@ actual fun PlatformSpeechRecognition(
                     putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS, true)
                     putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 1)
                 }
+                speechRecognizer.setRecognitionListener(object : RecognitionListener {
+                    private fun isCurrentSession(): Boolean =
+                        isAppResumed.value && recognitionGeneration == session
+
+                    override fun onReadyForSpeech(params: Bundle?) = Unit
+                    override fun onBeginningOfSpeech() = Unit
+                    override fun onRmsChanged(rmsdB: Float) = Unit
+                    override fun onBufferReceived(buffer: ByteArray?) = Unit
+                    override fun onEndOfSpeech() = Unit
+                    override fun onEvent(eventType: Int, params: Bundle?) = Unit
+
+                    override fun onPartialResults(partialResults: Bundle?) {
+                        if (!isCurrentSession()) return
+                        val transcript = partialResults
+                            ?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
+                            ?.firstOrNull()
+                            .orEmpty()
+                        if (transcript.isNotBlank()) currentOnPartialResult(transcript)
+                    }
+
+                    override fun onResults(results: Bundle?) {
+                        if (!isCurrentSession()) return
+                        isListening = false
+                        val transcript = results
+                            ?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
+                            ?.firstOrNull()
+                            .orEmpty()
+                        if (transcript.isBlank()) currentOnError("no_match") else currentOnResult(transcript)
+                    }
+
+                    override fun onError(error: Int) {
+                        if (!isCurrentSession()) return
+                        isListening = false
+                        if (error == SpeechRecognizer.ERROR_INSUFFICIENT_PERMISSIONS) {
+                            currentOnError("permission_required")
+                            val permanentlyDenied = permissionPreferences.getBoolean(RECORD_AUDIO_REQUESTED, false) &&
+                                context.findActivity()?.shouldShowRequestPermissionRationale(Manifest.permission.RECORD_AUDIO) == false
+                            if (permanentlyDenied) showSettingsDialog = true else showPermissionRationale = true
+                        } else {
+                            currentOnError("no_match")
+                        }
+                    }
+                })
                 isListening = true
                 runCatching { speechRecognizer.startListening(intent) }
                     .onFailure {
+                        recognitionGeneration++
                         isListening = false
                         currentOnError("unavailable")
                     }
@@ -149,46 +209,26 @@ actual fun PlatformSpeechRecognition(
         }
     }
 
-    DisposableEffect(recognizer) {
-        if (recognizer != null) {
-            recognizer.setRecognitionListener(object : RecognitionListener {
-                override fun onReadyForSpeech(params: Bundle?) = Unit
-                override fun onBeginningOfSpeech() = Unit
-                override fun onRmsChanged(rmsdB: Float) = Unit
-                override fun onBufferReceived(buffer: ByteArray?) = Unit
-                override fun onEndOfSpeech() = Unit
-                override fun onEvent(eventType: Int, params: Bundle?) = Unit
-                override fun onPartialResults(partialResults: Bundle?) {
-                    val transcript = partialResults
-                        ?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
-                        ?.firstOrNull()
-                        .orEmpty()
-                    if (transcript.isNotBlank()) currentOnPartialResult(transcript)
-                }
-
-                override fun onResults(results: Bundle?) {
+    DisposableEffect(recognizer, lifecycle) {
+        val observer = LifecycleEventObserver { _, event ->
+            when (event) {
+                Lifecycle.Event.ON_RESUME -> isAppResumed.value = true
+                Lifecycle.Event.ON_PAUSE,
+                Lifecycle.Event.ON_STOP,
+                Lifecycle.Event.ON_DESTROY -> {
+                    isAppResumed.value = false
+                    recognitionGeneration++
                     isListening = false
-                    val transcript = results
-                        ?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
-                        ?.firstOrNull()
-                        .orEmpty()
-                    if (transcript.isBlank()) currentOnError("no_match") else currentOnResult(transcript)
+                    runCatching { recognizer?.cancel() }
                 }
-
-                override fun onError(error: Int) {
-                    isListening = false
-                    if (error == SpeechRecognizer.ERROR_INSUFFICIENT_PERMISSIONS) {
-                        currentOnError("permission_required")
-                        val permanentlyDenied = permissionPreferences.getBoolean(RECORD_AUDIO_REQUESTED, false) &&
-                            context.findActivity()?.shouldShowRequestPermissionRationale(Manifest.permission.RECORD_AUDIO) == false
-                        if (permanentlyDenied) showSettingsDialog = true else showPermissionRationale = true
-                    } else {
-                        currentOnError("no_match")
-                    }
-                }
-            })
+                else -> Unit
+            }
         }
+        lifecycle.addObserver(observer)
         onDispose {
+            lifecycle.removeObserver(observer)
+            recognitionGeneration++
+            isListening = false
             runCatching { recognizer?.cancel() }
             runCatching { recognizer?.destroy() }
         }
@@ -196,6 +236,7 @@ actual fun PlatformSpeechRecognition(
 
     val start: () -> Unit = {
         when {
+            !isAppResumed.value -> Unit
             recognizer == null -> currentOnError("unavailable")
             ContextCompat.checkSelfPermission(context, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED -> startRecognition()
             else -> {

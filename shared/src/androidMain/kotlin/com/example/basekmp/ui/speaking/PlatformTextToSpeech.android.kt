@@ -14,6 +14,9 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
+import androidx.lifecycle.compose.LocalLifecycleOwner
 import java.util.Locale
 import kotlin.random.Random
 import kotlinx.coroutines.Dispatchers
@@ -277,6 +280,7 @@ internal class EngineSetup {
     var appliedPitch: Float = -1f
     var appliedRate: Float = -1f
     var chunkEnds: IntArray = IntArray(0)
+    @Volatile
     var utteranceTag: Int = 0
 }
 
@@ -387,7 +391,8 @@ private fun performSpeak(
         }
 
         engineSetup.chunkEnds = ends
-        engineSetup.utteranceTag = request.text.hashCode()
+        // Use a request id so late callbacks from an earlier identical utterance are ignored.
+        engineSetup.utteranceTag += 1
         spokenCharsState.intValue = 0
 
         for ((index, pair) in chunks.withIndex()) {
@@ -419,6 +424,7 @@ class AndroidPlatformSpeaker internal constructor(
     private val _isReady: MutableState<Boolean>,
     private val _pending: MutableState<SpeechRequest?>,
     private val _warmLocales: MutableState<List<Locale>>,
+    private val _isAppResumed: MutableState<Boolean>,
     private val defaultVoiceStyle: VoiceStyle
 ) : PlatformSpeaker {
     private var speedMultiplier: Float = 1.0f
@@ -431,6 +437,7 @@ class AndroidPlatformSpeaker internal constructor(
     override val isAvailable: Boolean get() = _isReady.value
 
     override fun warmUp(vararg languageTags: String) {
+        if (!_isAppResumed.value) return
         val locales = languageTags.mapNotNull { tag ->
             Locale.forLanguageTag(speechLocaleTagFor(tag)).takeIf { it.language.isNotBlank() }
         }
@@ -444,7 +451,7 @@ class AndroidPlatformSpeaker internal constructor(
         speed: Float,
         altLanguageTag: String?
     ) {
-        if (text.isBlank()) return
+        if (text.isBlank() || !_isAppResumed.value) return
 
         val effectiveSpeed = if (speed != 1.0f && speed > 0f && speed.isFinite()) {
             speedMultiplier = speed
@@ -492,6 +499,7 @@ class AndroidPlatformSpeaker internal constructor(
     override fun stop() {
         mainHandler.removeCallbacks(clearSpeakingRunnable)
         _pending.value = null
+        engineSetup.utteranceTag += 1
         runCatching { tts.stop() }
         _isSpeaking.value = false
         _spokenChars.intValue = 0
@@ -507,6 +515,10 @@ class AndroidPlatformSpeaker internal constructor(
 @Composable
 actual fun rememberPlatformSpeaker(voicePreference: String?): PlatformSpeaker {
     val context = LocalContext.current
+    val lifecycle = LocalLifecycleOwner.current.lifecycle
+    val isAppResumed = remember(lifecycle) {
+        mutableStateOf(lifecycle.currentState.isAtLeast(Lifecycle.State.RESUMED))
+    }
     val style = voiceStyleFor(voicePreference)
     val isSpeaking = remember { mutableStateOf(false) }
     val audioStarted = remember { mutableStateOf(false) }
@@ -618,7 +630,8 @@ actual fun rememberPlatformSpeaker(voicePreference: String?): PlatformSpeaker {
         }
     }
 
-    LaunchedEffect(isReady.value, pending.value) {
+    LaunchedEffect(isReady.value, pending.value, isAppResumed.value) {
+        if (!isAppResumed.value) return@LaunchedEffect
         val request = pending.value
         if (isReady.value && request != null) {
             pending.value = null
@@ -633,8 +646,8 @@ actual fun rememberPlatformSpeaker(voicePreference: String?): PlatformSpeaker {
         }
     }
 
-    LaunchedEffect(isReady.value, warmLocales.value, style) {
-        if (!isReady.value) return@LaunchedEffect
+    LaunchedEffect(isReady.value, warmLocales.value, style, isAppResumed.value) {
+        if (!isAppResumed.value || !isReady.value) return@LaunchedEffect
         val requested = warmLocales.value
         if (requested.isEmpty() && (style == VoiceStyle.NEUTRAL || style == VoiceStyle.ROBOT)) {
             return@LaunchedEffect
@@ -660,7 +673,7 @@ actual fun rememberPlatformSpeaker(voicePreference: String?): PlatformSpeaker {
         }
     }
 
-    return remember(tts, style) {
+    val speaker = remember(tts, style, isAppResumed) {
         AndroidPlatformSpeaker(
             tts = tts,
             engineSetup = engineSetup,
@@ -672,9 +685,29 @@ actual fun rememberPlatformSpeaker(voicePreference: String?): PlatformSpeaker {
             _isReady = isReady,
             _pending = pending,
             _warmLocales = warmLocales,
+            _isAppResumed = isAppResumed,
             defaultVoiceStyle = style
         )
     }
+
+    DisposableEffect(lifecycle, speaker) {
+        val observer = LifecycleEventObserver { _, event ->
+            when (event) {
+                Lifecycle.Event.ON_RESUME -> isAppResumed.value = true
+                Lifecycle.Event.ON_PAUSE,
+                Lifecycle.Event.ON_STOP,
+                Lifecycle.Event.ON_DESTROY -> {
+                    isAppResumed.value = false
+                    speaker.stop()
+                }
+                else -> Unit
+            }
+        }
+        lifecycle.addObserver(observer)
+        onDispose { lifecycle.removeObserver(observer) }
+    }
+
+    return speaker
 }
 
 @Composable

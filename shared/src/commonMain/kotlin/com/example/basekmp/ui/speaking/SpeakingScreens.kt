@@ -177,7 +177,9 @@ fun SpeakingCardsScreen(
                 feature = "speaking",
                 score = avgScore,
                 total = 100,
-                learnedMinutes = 6
+                learnedMinutes = 6,
+                detail = PracticeConfig.speakingType,
+                level = PracticeConfig.speakingDifficulty
             )
             completionRecorded = true
         }
