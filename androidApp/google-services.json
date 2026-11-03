@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "923888383692",
+    "project_id": "ailearn-test-bc035",
+    "storage_bucket": "ailearn-test-bc035.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923888383692:android:4407e3f5feded1e1ff7469",
+        "android_client_info": {
+          "package_name": "com.example.ailearn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE_OxdOMMuB169Ya4IKK6pXhCcSeMqyT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

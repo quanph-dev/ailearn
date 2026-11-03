@@ -49,6 +49,12 @@ object Languages {
         Language("th", "Thai", "🇹🇭", "Thai", "th-TH")
     )
 
+    fun defaultNativeLanguageCode(systemLanguage: String): String {
+        val normalizedCode = systemLanguage.trim().lowercase().replace('_', '-')
+        val baseCode = normalizedCode.substringBefore('-')
+        return native.firstOrNull { it.code == baseCode }?.code ?: "vi"
+    }
+
     private val highlightedSurveyCodes = listOf("en", "es", "it", "de", "pt")
     val surveyOptions: List<Language> = highlightedSurveyCodes.map { code ->
         learnable.first { it.code == code }
