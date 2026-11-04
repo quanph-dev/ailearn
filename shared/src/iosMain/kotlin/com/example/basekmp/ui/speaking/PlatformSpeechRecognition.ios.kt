@@ -8,6 +8,7 @@ actual fun PlatformSpeechRecognition(
     onResult: (String) -> Unit,
     onError: (String) -> Unit,
     onPartialResult: (String) -> Unit,
+    onInteractionStateChange: (Boolean) -> Unit,
     content: @Composable (Boolean, () -> Unit, () -> Unit, Boolean) -> Unit
 ) {
     content(

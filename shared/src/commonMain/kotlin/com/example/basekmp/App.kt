@@ -160,8 +160,7 @@ fun App(
                             isSaving = uiState.isSaving,
                             hasError = uiState.hasError,
                             onSelectLanguage = viewModel::selectFirstOpenSurveyLanguage,
-                            onContinue = { viewModel.finishFirstOpenSurvey() },
-                            onSkip = { viewModel.finishFirstOpenSurvey(skip = true) }
+                            onContinue = { viewModel.finishFirstOpenSurvey() }
                         )
                         BaseRoutes.LanguageSettings -> com.example.basekmp.ui.settings.LanguageScreen(
                             onBack = { viewModel.closeLanguageSettings() },
@@ -507,7 +506,6 @@ private sealed interface ActiveSubScreen {
     data class SpeakingCards(val count: Int) : ActiveSubScreen
     data object ShadowingList : ActiveSubScreen
     data class ShadowingPlayer(val videoId: String) : ActiveSubScreen
-    data object SavedWords : ActiveSubScreen
     data class PathLesson(val lessonId: String) : ActiveSubScreen
     data object PlanSetup : ActiveSubScreen
     data object PlanGenerating : ActiveSubScreen
@@ -516,7 +514,7 @@ private sealed interface ActiveSubScreen {
     data class PlanSession(val day: Int) : ActiveSubScreen
     data class PlanSpeaking(val day: Int) : ActiveSubScreen
     data class PlanVideo(val day: Int, val videoId: String) : ActiveSubScreen
-    data class PlanTalk(val day: Int, val title: String, val level: String) : ActiveSubScreen
+    data class PlanTalk(val day: Int, val title: String, val level: String, val titleLanguage: String) : ActiveSubScreen
     data class ProgressDetail(val kind: String) : ActiveSubScreen
     data object LearningHistory : ActiveSubScreen
 }
@@ -530,17 +528,20 @@ private fun MainAppHost(
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     var activeSubScreen by remember { mutableStateOf<ActiveSubScreen?>(null) }
+    var showSavedWords by remember { mutableStateOf(false) }
     var lessonBackRequest by remember { mutableIntStateOf(0) }
     val planScope = androidx.compose.runtime.rememberCoroutineScope()
 
-    BackActionHandler(enabled = activeSubScreen != null) {
+    BackActionHandler(enabled = showSavedWords) {
+        showSavedWords = false
+    }
+    BackActionHandler(enabled = activeSubScreen != null && !showSavedWords) {
         val current = activeSubScreen
         if (current is ActiveSubScreen.TodayLesson || current is ActiveSubScreen.PlanTalk) {
             lessonBackRequest++
         } else {
             activeSubScreen = when (current) {
             is ActiveSubScreen.ShadowingPlayer -> ActiveSubScreen.ShadowingList
-            is ActiveSubScreen.SavedWords -> ActiveSubScreen.ShadowingList
             is ActiveSubScreen.PlanDay -> ActiveSubScreen.PlanRoadmap
             is ActiveSubScreen.PlanSession -> ActiveSubScreen.PlanDay(current.day)
             is ActiveSubScreen.PlanSpeaking -> ActiveSubScreen.PlanDay(current.day)
@@ -554,7 +555,7 @@ private fun MainAppHost(
             }
         }
     }
-    BackActionHandler(enabled = activeSubScreen == null) {
+    BackActionHandler(enabled = activeSubScreen == null && !showSavedWords) {
         if (uiState.selectedTab != com.example.basekmp.ui.components.MainTab.Home) {
             viewModel.selectTab(com.example.basekmp.ui.components.MainTab.Home)
         } else {
@@ -649,6 +650,7 @@ private fun MainAppHost(
                         title = screen.title,
                         level = screen.level,
                         day = screen.day,
+                        titleLanguage = screen.titleLanguage,
                         systemBackRequest = lessonBackRequest,
                         onBack = { activeSubScreen = ActiveSubScreen.PlanDay(screen.day) },
                         onFinish = { activeSubScreen = ActiveSubScreen.PlanDay(screen.day) }
@@ -704,30 +706,32 @@ private fun MainAppHost(
                     VideoShadowingListScreen(
                         onBack = { activeSubScreen = null },
                         onOpenVideo = { videoId -> activeSubScreen = ActiveSubScreen.ShadowingPlayer(videoId) },
-                        onOpenSavedWords = { activeSubScreen = ActiveSubScreen.SavedWords }
+                        onOpenSavedWords = { showSavedWords = true }
                     )
                 }
                 is ActiveSubScreen.ShadowingPlayer -> {
                     VideoShadowingPlayerScreen(
                         videoId = screen.videoId,
                         onClose = { activeSubScreen = ActiveSubScreen.ShadowingList },
-                        onOpenSavedWords = { activeSubScreen = ActiveSubScreen.SavedWords }
+                        onOpenSavedWords = { showSavedWords = true }
                     )
                 }
                 is ActiveSubScreen.PlanVideo -> {
                     VideoShadowingPlayerScreen(
                         videoId = screen.videoId,
                         onClose = { activeSubScreen = ActiveSubScreen.PlanDay(screen.day) },
-                        onOpenSavedWords = { activeSubScreen = ActiveSubScreen.SavedWords },
+                        onOpenSavedWords = { showSavedWords = true },
                         onSessionCompleted = {
+                            // Publish completion before the player routes directly to the quick quiz.
+                            PlanProgress.get().markDone(screen.day, PlanProgress.Activity.VIDEO)
                             planScope.launch {
                                 PlanFlow.finish(screen.day, PlanProgress.Activity.VIDEO)
                             }
+                        },
+                        onContinueToQuickQuiz = {
+                            activeSubScreen = ActiveSubScreen.PlanSession(screen.day)
                         }
                     )
-                }
-                ActiveSubScreen.SavedWords -> {
-                    SavedWordsScreen(onBack = { activeSubScreen = ActiveSubScreen.ShadowingList })
                 }
                 is ActiveSubScreen.PathLesson -> {
                     PathLessonScreen(
@@ -766,7 +770,8 @@ private fun MainAppHost(
                                 PlanProgress.Activity.TALK -> ActiveSubScreen.PlanTalk(
                                     day = screen.day,
                                     title = plan.stage.displayTitle(GoalPlan.learnCode(UserPrefs.targetLanguage)),
-                                    level = UserPrefs.englishLevel
+                                    level = UserPrefs.englishLevel,
+                                    titleLanguage = plan.stage.displayTitleLanguage(GoalPlan.learnCode(UserPrefs.targetLanguage))
                                 )
                             }
                         }
@@ -819,6 +824,10 @@ private fun MainAppHost(
                 }
                 null -> {}
             }
+        }
+
+        if (showSavedWords) {
+            SavedWordsScreen(onBack = { showSavedWords = false })
         }
     }
 }

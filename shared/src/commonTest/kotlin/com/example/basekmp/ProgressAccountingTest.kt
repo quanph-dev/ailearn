@@ -175,6 +175,33 @@ class ProgressAccountingTest {
     }
 
     @Test
+    fun completingADayUnlocksTheNextDayAndSurvivesRestore() = withCleanPrefs {
+        val plan = PlanProgress()
+        plan.start(goal = "conversation", name = "Learner")
+        assertFalse(plan.isUnlocked(2))
+        plan.markDone(1, PlanProgress.Activity.QUIZ)
+        assertTrue(plan.completeDay(1, setOf(PlanProgress.Activity.QUIZ)))
+        assertTrue(plan.isUnlocked(2))
+        assertEquals(0, plan.daysUntilUnlocked(2))
+        assertFalse(plan.isUnlocked(3))
+
+        val restored = PlanProgress()
+        assertTrue(restored.restore(plan.serialize()))
+        assertTrue(restored.isUnlocked(2))
+        assertFalse(restored.isUnlocked(3))
+    }
+
+    @Test
+    fun alreadyCompletedDayTwoUnlocksDayThree() {
+        val plan = PlanProgress()
+        val today = currentLocalEpochDay()
+        assertTrue(plan.restore("""{"version":1,"goalId":"conversation","startedEpochDay":$today,"completedDays":[1,2]}"""))
+        assertTrue(plan.isUnlocked(3))
+        assertEquals(3, plan.currentDay())
+        assertFalse(plan.isUnlocked(4))
+    }
+
+    @Test
     fun completedPlanQuizPersistsRightTotalAndVocabularyWordsAcrossRestore() = withCleanPrefs {
         val plan = PlanProgress()
         plan.start(goal = "conversation", name = "Learner")

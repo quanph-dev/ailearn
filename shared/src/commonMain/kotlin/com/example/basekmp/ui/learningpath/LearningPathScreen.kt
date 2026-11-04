@@ -37,7 +37,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.KeyboardArrowDown
 import androidx.compose.material.icons.rounded.Lock
-import androidx.compose.material.icons.rounded.NotificationsNone
 import androidx.compose.material.icons.rounded.PlayArrow
 import androidx.compose.material.icons.rounded.Star
 import androidx.compose.material3.DropdownMenu
@@ -75,7 +74,6 @@ import com.example.basekmp.data.PathCourse
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.theme.Blue
-import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.ui.components.TabHeader
 import com.example.basekmp.ui.components.tabBottomClearance
@@ -131,7 +129,6 @@ private val LockedLook = NodeLook(
 @Composable
 fun LearningPathScreen(
     onOpenLesson: (PathCourse.Lesson) -> Unit,
-    onNotificationsClick: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     var selectedLevel by remember {
@@ -162,27 +159,7 @@ fun LearningPathScreen(
         Column(modifier = Modifier.fillMaxSize()) {
             Spacer(Modifier.height(10.dp))
 
-            // Top bar and notifications.
-            TabHeader(
-                title = Strings.tr("Learning Path"),
-                trailing = {
-                    Box(
-                        modifier = Modifier
-                            .size(40.dp)
-                            .clip(CircleShape)
-                            .background(OptionSurface)
-                            .clickable { onNotificationsClick() },
-                        contentAlignment = Alignment.Center
-                    ) {
-                        Icon(
-                            imageVector = Icons.Rounded.NotificationsNone,
-                            contentDescription = Strings.tr("Notifications"),
-                            tint = TextPrimary,
-                            modifier = Modifier.size(22.dp)
-                        )
-                    }
-                }
-            )
+            TabHeader(title = Strings.tr("Learning Path"))
 
             Spacer(Modifier.height(16.dp))
 

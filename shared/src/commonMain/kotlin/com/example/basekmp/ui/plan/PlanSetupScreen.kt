@@ -469,6 +469,7 @@ private fun GoalStepContent(
                     onValueChange = onGoalNoteChange,
                     modifier = Modifier
                         .fillMaxWidth()
+                        .height(72.dp)
                         .clip(RoundedCornerShape(AppTheme.dimens.cornerMd))
                         .background(AppTheme.colors.surfaceCard)
                         .border(1.dp, AppTheme.colors.border, RoundedCornerShape(AppTheme.dimens.cornerMd))
@@ -477,10 +478,17 @@ private fun GoalStepContent(
                         color = AppTheme.colors.textPrimary,
                         fontSize = 15.sp
                     ),
+                    singleLine = true,
+                    maxLines = 1,
                     cursorBrush = SolidColor(AppTheme.colors.primary),
                     decorationBox = { innerTextField ->
                         if (goalNote.isEmpty()) {
-                            Text(tr("Tell us your personal goal"), color = AppTheme.colors.textTertiary, fontSize = 15.sp)
+                            Text(
+                                tr("Tell us your personal goal"),
+                                color = AppTheme.colors.textTertiary,
+                                fontSize = 15.sp,
+                                maxLines = 1
+                            )
                         }
                         innerTextField()
                     }

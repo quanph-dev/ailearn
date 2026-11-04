@@ -13,9 +13,11 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.ime
 import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.offset
@@ -25,6 +27,7 @@ import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
@@ -44,6 +47,7 @@ import androidx.compose.material.icons.rounded.Lightbulb
 import androidx.compose.material.icons.rounded.Mic
 import androidx.compose.material.icons.rounded.Stop
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -55,6 +59,7 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.snapshotFlow
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -65,6 +70,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.platform.LocalClipboardManager
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -73,6 +79,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.basekmp.components.RobotMood
 import com.example.basekmp.components.AppActionDialog
+import com.example.basekmp.components.ReportIssueDialog
 import com.example.basekmp.data.PlanProgress
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
@@ -85,7 +92,37 @@ import com.example.basekmp.ui.speaking.rememberPlatformSpeaker
 import com.example.basekmp.ui.speaking.rememberTypewriter
 import com.example.basekmp.ui.speaking.speechLocaleTagFor
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.flow.filter
+import kotlinx.coroutines.flow.filterNotNull
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
+
+internal data class TimedLessonCompletionState(
+    val remainingSeconds: Int,
+    val isResumed: Boolean,
+    val responsePending: Boolean = false,
+    val speechPending: Boolean = false,
+    val playbackPending: Boolean = false,
+    val dialogVisible: Boolean = false,
+    val completing: Boolean = false,
+    val editing: Boolean = false
+) {
+    val canComplete: Boolean get() = remainingSeconds == 0 && isResumed &&
+        !responsePending && !speechPending && !playbackPending && !dialogVisible && !completing && !editing
+}
+
+private suspend fun LazyListState.scrollToConversationEnd(index: Int, animate: Boolean) {
+    if (index !in 0 until layoutInfo.totalItemsCount) return
+    var item = layoutInfo.visibleItemsInfo.firstOrNull { it.index == index }
+    if (item == null) {
+        scrollToItem(index)
+        item = layoutInfo.visibleItemsInfo.firstOrNull { it.index == index }
+    }
+    val offset = item?.size ?: 0
+    if (animate) animateScrollToItem(index, offset) else scrollToItem(index, offset)
+}
 
 /** Interactive Today's Lesson conversation with voice/text input, hints, and a countdown. */
 @Composable
@@ -93,6 +130,7 @@ fun TodayLessonScreen(
     title: String? = null,
     level: String? = null,
     day: Int? = null,
+    titleLanguage: String? = null,
     systemBackRequest: Int = 0,
     onBack: (Boolean) -> Unit,
     onFinish: (() -> Unit)? = null,
@@ -102,6 +140,7 @@ fun TodayLessonScreen(
     val listState = rememberLazyListState()
     val clipboardManager = LocalClipboardManager.current
     val isAppResumed = rememberIsAppResumed()
+    val isKeyboardVisible = WindowInsets.ime.getBottom(LocalDensity.current) > 0
 
     val lessonTitle = title ?: "Greeting Someone New"
     val lessonLevel = level ?: "Beginner"
@@ -110,7 +149,6 @@ fun TodayLessonScreen(
     var speedIndex by remember { mutableIntStateOf(0) }
 
     var currentMood by remember { mutableStateOf(RobotMood.HAPPY) }
-    var brief by remember { mutableStateOf<TutorAi.ScenarioBrief?>(null) }
     var hintText by remember { mutableStateOf<String?>(null) }
     var isThinking by remember { mutableStateOf(false) }
     var isHintLoading by remember { mutableStateOf(false) }
@@ -122,6 +160,7 @@ fun TodayLessonScreen(
     var showExitDialog by remember { mutableStateOf(false) }
     var isCompleting by remember { mutableStateOf(false) }
     var showReportDialog by remember { mutableStateOf(false) }
+    var speechInteractionBusy by remember { mutableStateOf(false) }
     var copiedMessageIndex by remember { mutableStateOf<Int?>(null) }
 
     val speaker = rememberPlatformSpeaker(UserPrefs.tutorVoice)
@@ -184,13 +223,15 @@ fun TodayLessonScreen(
     LaunchedEffect(isAppResumed) {
         if (!isAppResumed || greetingStarted) return@LaunchedEffect
         greetingStarted = true
-        speaker.warmUp(targetLocaleTag, nativeLocaleTag)
+        speaker.warmUp("en-US", targetLocaleTag, nativeLocaleTag, titleLanguage ?: "en-US")
         activateMessageSpeech(messages.lastIndex)
         speaker.speak(
             text = openingGreeting,
-            languageTag = targetLocaleTag,
+            languageTag = "en-US",
             voicePreference = UserPrefs.tutorVoice,
-            speed = currentSpeedFactor()
+            speed = currentSpeedFactor(),
+            altLanguageTag = nativeLocaleTag,
+            quotedLanguageTag = titleLanguage
         )
     }
 
@@ -235,27 +276,48 @@ fun TodayLessonScreen(
         }
     }
 
-    // Auto-scroll when messages update
+    // Scroll to the actual last row, including the thinking row.
     LaunchedEffect(messages.size, isThinking, isAppResumed) {
         if (!isAppResumed) return@LaunchedEffect
-        if (messages.isNotEmpty()) {
-            delay(50)
-            listState.animateScrollToItem(messages.size - 1)
-        }
+        val thinkingItemCount = if (isThinking) 1 else 0
+        val targetItemIndex = messages.lastIndex + thinkingItemCount
+        snapshotFlow { listState.layoutInfo.totalItemsCount }
+            .first { itemCount -> itemCount > targetItemIndex }
+        listState.scrollToConversationEnd(targetItemIndex, animate = true)
     }
 
-    // Load scenario brief
-    LaunchedEffect(lessonTitle, lessonLevel) {
-        brief = TutorAi.scenarioBrief(
-            title = lessonTitle,
-            level = lessonLevel,
-            language = "English",
-            nativeLanguage = com.example.basekmp.data.Languages.nativeFor(UserPrefs.nativeLanguage).englishName
-        )
+    // The newest assistant bubble grows as TTS/typewriter text is revealed. Follow its
+    // measured height so newly revealed lines stay visible without scrolling each frame.
+    LaunchedEffect(messages.size, isAppResumed) {
+        if (!isAppResumed) return@LaunchedEffect
+        val latestMessage = messages.lastOrNull() ?: return@LaunchedEffect
+        if (latestMessage.fromUser) return@LaunchedEffect
+
+        val itemIndex = messages.lastIndex
+        snapshotFlow {
+            listState.layoutInfo.visibleItemsInfo
+                .firstOrNull { item -> item.index == itemIndex }
+                ?.size
+        }
+            .distinctUntilChanged()
+            .filterNotNull()
+            .collect {
+                listState.scrollToConversationEnd(itemIndex, animate = true)
+            }
+    }
+
+    // Follow the newest message as the keyboard changes the available chat height.
+    LaunchedEffect(isKeyboardVisible, messages.size, isThinking) {
+        if (!isKeyboardVisible) return@LaunchedEffect
+        val target = messages.lastIndex + if (isThinking) 1 else 0
+        snapshotFlow { listState.layoutInfo.viewportSize.height }
+            .filter { it > 0 }
+            .distinctUntilChanged()
+            .collectLatest { listState.scrollToConversationEnd(target, animate = false) }
     }
 
     fun sendMessage(userText: String) {
-        if (userText.isBlank() || isThinking) return
+        if (userText.isBlank() || isThinking || isCompleting || showCompletionDialog) return
 
         stopMessageSpeech()
 
@@ -275,6 +337,10 @@ fun TodayLessonScreen(
                 replyInNative = false,
                 withMood = true
             )
+            if (isCompleting || showCompletionDialog) {
+                isThinking = false
+                return@launch
+            }
 
             val cleanReply = if (rawReply != null) {
                 val (mood, text) = TutorAi.splitMood(rawReply)
@@ -299,7 +365,7 @@ fun TodayLessonScreen(
     }
 
     fun requestHint() {
-        if (isHintLoading || isThinking) return
+        if (isHintLoading || isThinking || isCompleting || showCompletionDialog || remainingSeconds <= 0) return
         isHintLoading = true
         coroutineScope.launch {
             val hint = TutorAi.hint(
@@ -313,9 +379,12 @@ fun TodayLessonScreen(
         }
     }
 
-    fun completeLesson(showDialog: Boolean = true) {
+    fun completeLesson() {
         if (isCompleting || showCompletionDialog) return
         stopMessageSpeech()
+        isThinking = false
+        showExitDialog = false
+        showReportDialog = false
         isCompleting = true
         val activityEpochDay = UserPrefs.todayEpochDay()
         coroutineScope.launch {
@@ -329,20 +398,10 @@ fun TodayLessonScreen(
                     total = 0,
                     level = lessonLevel
                 )
-                if (showDialog) {
-                    showCompletionDialog = true
-                } else {
-                    onFinish?.invoke() ?: onBack(true)
-                }
+                showCompletionDialog = true
             } finally {
                 isCompleting = false
             }
-        }
-    }
-
-    LaunchedEffect(remainingSeconds) {
-        if (remainingSeconds == 0) {
-            completeLesson(showDialog = false)
         }
     }
 
@@ -353,8 +412,23 @@ fun TodayLessonScreen(
                 sendMessage(recognizedText)
             }
         },
-        onError = { /* ignore or soft fail */ }
+        onError = { /* ignore or soft fail */ },
+        onInteractionStateChange = { speechInteractionBusy = it }
     ) { isListening, startListening, stopListening, _ ->
+
+        val completionState = TimedLessonCompletionState(
+            remainingSeconds = remainingSeconds,
+            isResumed = isAppResumed,
+            responsePending = isThinking || isHintLoading || hintText != null,
+            speechPending = isListening || speechInteractionBusy,
+            playbackPending = speaker.isSpeaking || speakingMessageIndex != null,
+            dialogVisible = showExitDialog || showReportDialog || showCompletionDialog,
+            completing = isCompleting,
+            editing = isKeyboardVisible || textMode || inputText.isNotBlank()
+        )
+        LaunchedEffect(completionState) {
+            if (completionState.canComplete) completeLesson()
+        }
 
         Surface(
             modifier = modifier.fillMaxSize(),
@@ -370,7 +444,7 @@ fun TodayLessonScreen(
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(240.dp)
+                        .height(if (isKeyboardVisible) 110.dp else 240.dp)
                         .drawBehind {
                             drawRect(
                                 brush = Brush.linearGradient(
@@ -473,8 +547,8 @@ fun TodayLessonScreen(
 
                     Box(
                         modifier = Modifier
-                            .align(Alignment.BottomStart)
-                            .padding(start = 20.dp, bottom = 14.dp)
+                            .align(if (isKeyboardVisible) Alignment.BottomCenter else Alignment.BottomStart)
+                            .padding(start = if (isKeyboardVisible) 0.dp else 20.dp, bottom = if (isKeyboardVisible) 2.dp else 14.dp)
                             .clip(RoundedCornerShape(50))
                             .background(Color.Black.copy(alpha = 0.35f))
                             .padding(horizontal = 14.dp, vertical = 7.dp)
@@ -505,35 +579,6 @@ fun TodayLessonScreen(
                         contentPadding = PaddingValues(top = 16.dp, bottom = 12.dp),
                         verticalArrangement = Arrangement.spacedBy(14.dp)
                     ) {
-                        // Scenario Info Card
-                        brief?.let { b ->
-                            item {
-                                Box(
-                                    modifier = Modifier
-                                        .fillMaxWidth()
-                                        .clip(RoundedCornerShape(16.dp))
-                                        .background(Color(0xFFF7F9FC))
-                                        .border(1.dp, Color(0xFFEAECF0), RoundedCornerShape(16.dp))
-                                        .padding(14.dp)
-                                ) {
-                                    Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                                        Text(
-                                            text = lessonTitle,
-                                            fontWeight = FontWeight.Bold,
-                                            fontSize = 15.sp,
-                                            color = Color(0xFF1D2939)
-                                        )
-                                        Text(
-                                            text = b.description,
-                                            fontSize = 13.sp,
-                                            color = Color(0xFF475467),
-                                            lineHeight = 18.sp
-                                        )
-                                    }
-                                }
-                            }
-                        }
-
                         // Message Bubbles
                         itemsIndexed(messages) { index, msg ->
                             val isCopied = copiedMessageIndex == index
@@ -648,10 +693,11 @@ fun TodayLessonScreen(
                                                                 activateMessageSpeech(index)
                                                                 speaker.speak(
                                                                     text = msg.text,
-                                                                    languageTag = targetLocaleTag,
+                                                                    languageTag = if (index == 0) "en-US" else targetLocaleTag,
                                                                     voicePreference = UserPrefs.tutorVoice,
                                                                     speed = currentSpeedFactor(),
-                                                                    altLanguageTag = nativeLocaleTag
+                                                                    altLanguageTag = nativeLocaleTag,
+                                                                    quotedLanguageTag = if (index == 0) titleLanguage else null
                                                                 )
                                                             }
                                                             .padding(4.dp),
@@ -696,14 +742,14 @@ fun TodayLessonScreen(
                                                 Spacer(Modifier.weight(1f))
 
                                                 // Report Flag Icon
-                                                Icon(
-                                                    imageVector = Icons.Rounded.Flag,
-                                                    contentDescription = tr("Report"),
-                                                    tint = Color(0xFF1D2939).copy(alpha = 0.4f),
-                                                    modifier = Modifier
-                                                        .size(16.dp)
-                                                        .clickable { showReportDialog = true }
-                                                )
+                                                IconButton(onClick = { showReportDialog = true }) {
+                                                    Icon(
+                                                        imageVector = Icons.Rounded.Flag,
+                                                        contentDescription = tr("Report"),
+                                                        tint = Color(0xFF1D2939).copy(alpha = 0.55f),
+                                                        modifier = Modifier.size(18.dp)
+                                                    )
+                                                }
                                             }
                                         }
                                     }
@@ -909,7 +955,7 @@ fun TodayLessonScreen(
                                         .height(56.dp)
                                         .clip(RoundedCornerShape(28.dp))
                                         .background(if (isListening) Color(0xFFE53935) else Color(0xFF2B5CFF))
-                                        .clickable {
+                                        .clickable(enabled = isListening || remainingSeconds > 0) {
                                             if (isListening) {
                                                 stopListening()
                                             } else {
@@ -1001,12 +1047,11 @@ fun TodayLessonScreen(
 
             // Report Dialog
             if (showReportDialog) {
-                AppActionDialog(
-                    title = tr("Report an issue"),
-                    message = tr("Thank you for your feedback. We will review this conversation response."),
-                    onDismissRequest = { showReportDialog = false },
-                    confirmText = tr("OK"),
-                    onConfirm = { showReportDialog = false }
+                ReportIssueDialog(
+                    place = tr("AI Tutor"),
+                    onDismiss = { showReportDialog = false },
+                    // The report form is local only; no review service is configured in this build.
+                    onSubmit = { _, _ -> }
                 )
             }
         }

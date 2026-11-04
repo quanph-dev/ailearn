@@ -32,9 +32,10 @@ object Strings {
         language.value = target
     }
 
-    fun isRtl(): Boolean {
-        return languages.firstOrNull { it.code == language.value }?.rtl ?: false
-    }
+    fun isRtl(): Boolean = isRtl(language.value)
+
+    fun isRtl(code: String): Boolean =
+        languages.firstOrNull { it.code == code.lowercase() }?.rtl ?: false
 
     fun tr(en: String): String {
         return trIn(language.value, en)
@@ -49,6 +50,7 @@ object Strings {
         val langMap = Translations.byLanguage[lang]
         val translated = langMap?.get(en)
             ?: ExtraTranslations.byLanguage[lang]?.get(en)
+            ?: Translations.congratsOverrides[lang]?.get(en)
             ?: Translations.practiceAndProgressOverrides[lang]?.get(en)
             ?: Translations.learningPathDialogOverrides[lang]?.get(en)
             ?: Translations.videoShadowingOverrides[lang]?.get(en)

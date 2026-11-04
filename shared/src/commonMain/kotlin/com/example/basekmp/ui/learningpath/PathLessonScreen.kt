@@ -96,7 +96,7 @@ fun PathLessonScreen(
 
     var questions by remember { mutableStateOf<List<PathLessonContent.Question>>(emptyList()) }
     var currentIndex by remember { mutableIntStateOf(0) }
-    var isLoading by remember { mutableStateOf(true) }
+    var isLoading by remember(lessonId) { mutableStateOf(true) }
     var selectedOptionIndex by remember { mutableStateOf<Int?>(null) }
     var isAnswerRevealed by remember { mutableStateOf(false) }
     var correctCount by remember { mutableIntStateOf(0) }
@@ -217,7 +217,8 @@ fun PathLessonScreen(
         PathLessonTopBar(
             currentStep = currentIndex + 1,
             totalSteps = questions.size,
-            onClose = { showExitDialog = true }
+            onClose = { showExitDialog = true },
+            modifier = Modifier.padding(horizontal = 20.dp)
         )
         Spacer(Modifier.height(20.dp))
 
@@ -237,7 +238,10 @@ fun PathLessonScreen(
                     .border(1.dp, PathLessonCardBorder, RoundedCornerShape(20.dp))
                     .padding(horizontal = 24.dp, vertical = 22.dp)
             ) {
-                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                Column(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
                     Box(
                         modifier = Modifier
                             .clip(CircleShape)
@@ -387,7 +391,7 @@ fun PathLessonScreen(
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(dimens.spacingLg)
+                    .padding(horizontal = 20.dp, vertical = dimens.spacingLg)
             ) {
                 PrimaryButton(
                     text = Strings.tr("Continue"),
@@ -408,7 +412,8 @@ fun PathLessonScreen(
 private fun PathLessonTopBar(
     currentStep: Int,
     totalSteps: Int,
-    onClose: () -> Unit
+    onClose: () -> Unit,
+    modifier: Modifier = Modifier
 ) {
     val progress by animateFloatAsState(
         targetValue = (currentStep.toFloat() / totalSteps.coerceAtLeast(1)).coerceIn(0.04f, 1f),
@@ -417,7 +422,7 @@ private fun PathLessonTopBar(
     )
 
     Row(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
             .height(40.dp),
         verticalAlignment = Alignment.CenterVertically
@@ -482,9 +487,11 @@ private fun PathFeedbackPanel(
                     if (isCorrect) "Well done! Continue with the quiz"
                     else "Whoops! Do better next time."
                 ),
+                modifier = Modifier.weight(1f),
                 color = textColor,
                 fontSize = 16.sp,
-                fontWeight = FontWeight.Medium
+                fontWeight = FontWeight.Medium,
+                textAlign = TextAlign.Center
             )
         }
         Spacer(Modifier.height(12.dp))

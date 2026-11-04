@@ -77,7 +77,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.sp
 import com.example.basekmp.data.GoalPlan
-import com.example.basekmp.data.PlanCatalogData
 import com.example.basekmp.data.PlanCatalogRepository
 import com.example.basekmp.data.PlanGoal
 import com.example.basekmp.data.PlanProgress
@@ -94,6 +93,7 @@ import ailearn.shared.generated.resources.plan_stage_plane
 import ailearn.shared.generated.resources.plan_stage_suitcase
 import ailearn.shared.generated.resources.tutor_robot
 import org.jetbrains.compose.resources.painterResource
+import kotlinx.coroutines.CancellationException
 
 private val PathBlue = Color(0xFF4B8DF5)
 private val PathBlueDark = Color(0xFF3678E7)
@@ -118,14 +118,21 @@ fun PlanScreen(
 ) {
     val progress = PlanProgress.get()
     val revision = progress.revision.intValue
-    var catalog by remember { mutableStateOf<PlanCatalogData?>(null) }
+    var isCatalogLoading by remember { mutableStateOf(true) }
     var currentGoal by remember { mutableStateOf<PlanGoal?>(null) }
     var assistantVoice by remember { mutableStateOf(UserPrefs.tutorVoice) }
 
     LaunchedEffect(revision) {
-        val loadedCatalog = PlanCatalogRepository.getCatalog()
-        catalog = loadedCatalog
+        isCatalogLoading = true
+        val loadedCatalog = try {
+            PlanCatalogRepository.getCatalog()
+        } catch (cancelled: CancellationException) {
+            throw cancelled
+        } catch (_: Exception) {
+            null
+        }
         currentGoal = loadedCatalog?.goal(progress.goalId)
+        isCatalogLoading = false
     }
 
     val completedDays = remember(revision) { progress.completedDays() }
@@ -140,8 +147,8 @@ fun PlanScreen(
     val listState = rememberLazyListState(initialFirstVisibleItemIndex = activeStageIndex)
     val dailyProgress = completedDays.size.toFloat() / GoalPlan.DAYS.toFloat()
 
-    LaunchedEffect(activeStageIndex, stageCount) {
-        listState.animateScrollToItem(activeStageIndex)
+    LaunchedEffect(activeStageIndex, stageCount, currentGoal) {
+        if (currentGoal != null) listState.animateScrollToItem(activeStageIndex)
     }
 
     Surface(modifier = modifier.fillMaxSize(), color = Color.Transparent) {
@@ -189,7 +196,7 @@ fun PlanScreen(
                                 horizontalAlignment = Alignment.CenterHorizontally,
                                 verticalArrangement = Arrangement.spacedBy(12.dp)
                             ) {
-                                if (catalog == null) {
+                                if (isCatalogLoading) {
                                     CircularProgressIndicator(color = PathBlue)
                                     Text(tr("Loading plan..."), color = PathMuted, fontSize = 14.sp)
                                 } else {

@@ -67,7 +67,7 @@ fun PlanSpeakingSessionScreen(
     var questions by remember { mutableStateOf<List<PlanQuestion>>(emptyList()) }
     var currentIndex by remember { mutableIntStateOf(0) }
     var loadAttempt by remember { mutableIntStateOf(0) }
-    var isLoading by remember { mutableStateOf(true) }
+    var isLoading by remember(day) { mutableStateOf(true) }
     var stageId by remember { mutableStateOf<String?>(null) }
     var learnCode by remember { mutableStateOf("") }
     var levelKey by remember { mutableStateOf("") }
@@ -209,7 +209,7 @@ fun PlanSpeakingSessionScreen(
                 )
                 Spacer(Modifier.height(AppTheme.dimens.spacingLg))
                 Button(
-                    onClick = { loadAttempt++ },
+                    onClick = { isLoading = true; loadAttempt++ },
                     colors = ButtonDefaults.buttonColors(containerColor = AppTheme.colors.primary)
                 ) { Text(tr("Try Again"), color = AppTheme.colors.textOnPrimary) }
                 Spacer(Modifier.height(AppTheme.dimens.spacingSm))

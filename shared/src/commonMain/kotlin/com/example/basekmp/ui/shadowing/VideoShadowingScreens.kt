@@ -2,6 +2,7 @@ package com.example.basekmp.ui.shadowing
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background
+import androidx.compose.foundation.basicMarquee
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.border
 import androidx.compose.foundation.horizontalScroll
@@ -24,6 +25,7 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.sizeIn
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
@@ -39,11 +41,14 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.KeyboardArrowRight
+import androidx.compose.material.icons.rounded.BookmarkBorder
 import androidx.compose.material.icons.rounded.Close
 import androidx.compose.material.icons.rounded.PlayArrow
 import androidx.compose.material.icons.rounded.Replay
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Badge
+import androidx.compose.material3.BadgedBox
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Slider
 import androidx.compose.material3.SliderDefaults
@@ -163,7 +168,7 @@ fun VideoShadowingListScreen(
                     Spacer(Modifier.height(dimens.spacingMd))
                     PrimaryButton(
                         text = Strings.tr("Try Again"),
-                        onClick = { loadAttempt++ },
+                        onClick = { isLoading = true; loadAttempt++ },
                         modifier = Modifier.fillMaxWidth(0.72f)
                     )
                 }
@@ -218,30 +223,35 @@ private fun ShadowingTopBar(
 
         Text(
             text = title,
-            modifier = Modifier.weight(1f),
+            modifier = Modifier.weight(1f).basicMarquee(),
             fontSize = titleFontSize,
             fontWeight = FontWeight.Bold,
             color = colors.textPrimary,
             textAlign = TextAlign.Center,
-            maxLines = 1,
-            overflow = TextOverflow.Ellipsis
+            maxLines = 1
         )
 
         if (savedWordCount > 0) {
-            Text(
-                text = Strings.trf("Saved words (%1\$d)", savedWordCount) + "  →",
+            Box(
                 modifier = Modifier
-                    .widthIn(max = 112.dp)
-                    .clip(RoundedCornerShape(dimens.cornerSm))
-                    .clickable(onClick = onOpenSavedWords)
-                    .padding(horizontal = 4.dp, vertical = 8.dp),
-                fontSize = 12.sp,
-                fontWeight = FontWeight.SemiBold,
-                color = colors.primary,
-                maxLines = 1,
-                overflow = TextOverflow.Ellipsis,
-                textAlign = TextAlign.End
-            )
+                    .size(56.dp)
+                    .clickable(onClick = onOpenSavedWords),
+                contentAlignment = Alignment.Center
+            ) {
+                BadgedBox(
+                    badge = {
+                        Badge(modifier = Modifier.sizeIn(minWidth = 28.dp, minHeight = 28.dp)) {
+                            Text(savedWordCount.toString(), maxLines = 1)
+                        }
+                    }
+                ) {
+                    Icon(
+                        imageVector = Icons.Rounded.BookmarkBorder,
+                        contentDescription = Strings.trf("Saved words (%1\$d)", savedWordCount),
+                        tint = colors.primary
+                    )
+                }
+            }
         }
     }
 }
@@ -350,22 +360,25 @@ fun VideoShadowingPlayerScreen(
     onClose: () -> Unit,
     onOpenSavedWords: () -> Unit,
     modifier: Modifier = Modifier,
-    onSessionCompleted: (() -> Unit)? = null
+    onSessionCompleted: (() -> Unit)? = null,
+    onContinueToQuickQuiz: (() -> Unit)? = null
 ) {
     val colors = AppTheme.colors
     val dimens = AppTheme.dimens
     val isAppResumed = rememberIsAppResumed()
 
-    var video by remember { mutableStateOf<ShadowingVideos.Video?>(null) }
-    var isLoading by remember { mutableStateOf(true) }
+    var video by remember(videoId) { mutableStateOf<ShadowingVideos.Video?>(null) }
+    var isLoading by remember(videoId) { mutableStateOf(true) }
     var loadAttempt by remember { mutableIntStateOf(0) }
     var currentLineIndex by remember { mutableIntStateOf(0) }
     var spokenTranscript by remember(videoId, currentLineIndex) { mutableStateOf("") }
+    var transcriptIsFinal by remember(videoId, currentLineIndex) { mutableStateOf(false) }
     var playbackSpeed by remember { mutableFloatStateOf(UserPrefs.shadowingSpeed) }
     var showLineTranslation by remember { mutableStateOf(false) }
     var isSpeechCapturing by remember(videoId) { mutableStateOf(false) }
     var speechScore by remember { mutableIntStateOf(0) }
     var lineScores by remember { mutableStateOf<Map<Int, Int>>(emptyMap()) }
+    var isReadyToFinish by remember(videoId) { mutableStateOf(false) }
     var isFinished by remember { mutableStateOf(false) }
     var completionRecorded by remember(videoId) { mutableStateOf(false) }
     var autoStartedVideoId by remember(videoId) { mutableStateOf<String?>(null) }
@@ -418,7 +431,7 @@ fun VideoShadowingPlayerScreen(
             Spacer(Modifier.height(dimens.spacingMd))
             PrimaryButton(
                 text = Strings.tr("Try Again"),
-                onClick = { loadAttempt++ },
+                onClick = { isLoading = true; loadAttempt++ },
                 modifier = Modifier.fillMaxWidth(0.76f)
             )
             Spacer(Modifier.height(dimens.spacingSm))
@@ -437,12 +450,12 @@ fun VideoShadowingPlayerScreen(
     }
 
     val lines = currentVideo.lines
-    val averageScore = if (lineScores.isEmpty()) 0 else lineScores.values.average().toInt()
 
-    fun recordShadowingCompletion() {
+    fun recordShadowingCompletion(scores: Map<Int, Int> = lineScores) {
         if (completionRecorded) return
         completionRecorded = true
         val activityEpochDay = UserPrefs.todayEpochDay()
+        val averageScore = if (scores.isEmpty()) 0 else scores.values.average().toInt()
         UserPrefs.markShadowingDone(videoId, averageScore)
         val currentSegmentMillis = activeSegmentStartedAt
             ?.let { (currentTimeMillis() - it).coerceAtLeast(0L) }
@@ -468,8 +481,19 @@ fun VideoShadowingPlayerScreen(
     if (isFinished) {
         CongratsDialog(
             subtitle = Strings.tr("Session Completed successfully"),
-            buttonText = Strings.tr("Done"),
-            onButtonClick = { completeShadowing() },
+            buttonText = if (onContinueToQuickQuiz != null) {
+                Strings.tr("Continue to Quick Quiz")
+            } else {
+                Strings.tr("Done")
+            },
+            onButtonClick = {
+                if (onContinueToQuickQuiz != null) {
+                    recordShadowingCompletion()
+                    onContinueToQuickQuiz.invoke()
+                } else {
+                    completeShadowing()
+                }
+            },
             onClose = { completeShadowing() },
             correct = lineScores.values.count { it >= 60 },
             incorrect = lines.size - lineScores.values.count { it >= 60 }
@@ -503,12 +527,11 @@ fun VideoShadowingPlayerScreen(
         assetPath = videoAssetPath,
         cacheKey = "shadowing:${currentVideo.id}:v${currentVideo.remote?.version ?: 1}",
         muted = false,
-        onCompletion = {},
         onStop = {}
     )
     val wordsList = remember(displayLineText) { ShadowingTranscript.tokens(displayLineText) }
-    val wordStatuses = remember(displayLineText, spokenTranscript) {
-        ShadowingTranscript.wordStatuses(displayLineText, spokenTranscript)
+    val wordStatuses = remember(displayLineText, spokenTranscript, transcriptIsFinal) {
+        ShadowingTranscript.wordStatuses(displayLineText, spokenTranscript, transcriptIsFinal)
     }
     val progressedWordCount by remember(
         videoController,
@@ -551,12 +574,17 @@ fun VideoShadowingPlayerScreen(
         val positionMs = videoController.positionMs
 
         // If this segment has ended, continue into the next one instead of replaying it.
-        if (positionMs >= line.endMs && lineIndex < lines.lastIndex) {
-            lineIndex += 1
-            currentLineIndex = lineIndex
-            speechScore = lineScores[lineIndex] ?: 0
-            spokenTranscript = ""
-            line = lines[lineIndex]
+        if (positionMs >= line.endMs) {
+            if (lineIndex < lines.lastIndex) {
+                lineIndex += 1
+                currentLineIndex = lineIndex
+                speechScore = lineScores[lineIndex] ?: 0
+                spokenTranscript = ""
+                line = lines[lineIndex]
+            } else {
+                // The source video may have ended; replay the final line instead of completing the session.
+                videoController.seekTo(line.startMs)
+            }
         }
 
         videoController.setSpeed(playbackSpeed)
@@ -564,10 +592,10 @@ fun VideoShadowingPlayerScreen(
         videoController.play()
     }
 
-    fun finishSession() {
-        if (isFinished) return
+    fun finishSession(scores: Map<Int, Int> = lineScores) {
+        if (isFinished || !isReadyToFinish) return
         videoController.pause()
-        recordShadowingCompletion()
+        recordShadowingCompletion(scores)
         isFinished = true
     }
 
@@ -580,7 +608,7 @@ fun VideoShadowingPlayerScreen(
             speechScore = lineScores[nextIndex] ?: 0
             playCurrentLine(nextIndex)
         } else {
-            finishSession()
+            playCurrentLine(lines.lastIndex)
         }
     }
 
@@ -593,6 +621,7 @@ fun VideoShadowingPlayerScreen(
         currentLineIndex = targetIndex
         speechScore = lineScores[targetIndex] ?: 0
         spokenTranscript = ""
+        transcriptIsFinal = false
         playCurrentLine(targetIndex, linePosition)
     }
 
@@ -775,8 +804,24 @@ fun VideoShadowingPlayerScreen(
                         val wordModifier = if (isNewVocabularyWord) {
                             Modifier
                                 .clip(wordShape)
-                                .background(if (isIncorrect) colors.errorBg else ChipBlueBg)
-                                .border(1.dp, if (isIncorrect) colors.error else colors.primary, wordShape)
+                                .background(
+                                    when (status) {
+                                        ShadowingTranscript.GOOD -> colors.successBg
+                                        ShadowingTranscript.CLOSE -> colors.accentGold.copy(alpha = 0.14f)
+                                        ShadowingTranscript.WRONG -> colors.errorBg
+                                        else -> ChipBlueBg
+                                    }
+                                )
+                                .border(
+                                    1.dp,
+                                    when (status) {
+                                        ShadowingTranscript.GOOD -> colors.success
+                                        ShadowingTranscript.CLOSE -> colors.accentGold
+                                        ShadowingTranscript.WRONG -> colors.error
+                                        else -> colors.primary
+                                    },
+                                    wordShape
+                                )
                                 .padding(horizontal = 6.dp, vertical = 1.dp)
                         } else {
                             Modifier
@@ -787,8 +832,9 @@ fun VideoShadowingPlayerScreen(
                             fontSize = 15.sp,
                             fontWeight = FontWeight.Medium,
                             color = when {
+                                status == ShadowingTranscript.GOOD -> colors.success
+                                status == ShadowingTranscript.CLOSE -> colors.accentGold
                                 isIncorrect -> colors.error
-                                isNewVocabularyWord -> colors.textPrimary
                                 index < progressedWordCount -> colors.primary
                                 else -> colors.textPrimary
                             },
@@ -920,11 +966,21 @@ fun VideoShadowingPlayerScreen(
 
                 ShadowingSpeechCapture(
                     targetText = displayLineText,
-                    onPartialResult = { transcript -> spokenTranscript = transcript },
-                    onResult = { score, transcript ->
+                    onPartialResult = { transcript ->
+                        transcriptIsFinal = false
                         spokenTranscript = transcript
-                        speechScore = score
-                        lineScores = lineScores + (currentLineIndex to score)
+                    },
+                    onResult = { score, transcript ->
+                        if (transcript.isNotBlank()) {
+                            val updatedScores = lineScores + (currentLineIndex to score)
+                            spokenTranscript = transcript
+                            transcriptIsFinal = true
+                            speechScore = score
+                            lineScores = updatedScores
+                            if (currentLineIndex == lines.lastIndex) {
+                                isReadyToFinish = true
+                            }
+                        }
                     },
                     onBeforeStartRecording = {
                         // Keep the source audio out of the microphone capture and speech grading.
@@ -940,7 +996,8 @@ fun VideoShadowingPlayerScreen(
                     text = Strings.tr(
                         when {
                             isSpeechCapturing -> "Wait for your turn"
-                            currentLineIndex == lines.lastIndex -> "Tap the video to finish"
+                            currentLineIndex == lines.lastIndex && isReadyToFinish -> "Great! You can finish now."
+                            currentLineIndex == lines.lastIndex -> "Say the last line, then tap Finish"
                             else -> "Tap the video for the next line"
                         }
                     ),
@@ -964,44 +1021,100 @@ fun VideoShadowingPlayerScreen(
                 Spacer(Modifier.height(12.dp))
             }
 
-            val actionText = when {
-                isFinished -> Strings.tr("Finish")
+            val vocabularyActionText = when {
                 vocabularyWords.isEmpty() -> Strings.tr("No new words")
                 allWordsSaved -> Strings.trf("All %1\$d words saved", vocabularyWords.size) + " · " + Strings.tr("View")
                 else -> Strings.trf("Save all new words (%1\$d)", unsavedWords.size)
             }
-            Box(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(horizontal = dimens.spacingLg, vertical = 8.dp)
-                    .height(64.dp)
-                    .clip(RoundedCornerShape(dimens.cornerPill))
-                    .then(
-                        if (isFinished) Modifier.background(colors.success)
-                        else Modifier.background(colors.primaryBrush)
+            fun handleVocabularyAction() {
+                when {
+                    allWordsSaved -> {
+                        videoController.pause()
+                        onOpenSavedWords()
+                    }
+                    unsavedWords.isNotEmpty() -> UserPrefs.saveWords(unsavedWords)
+                }
+            }
+
+            if (isReadyToFinish && vocabularyWords.isNotEmpty()) {
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = dimens.spacingLg, vertical = 8.dp),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Box(
+                        modifier = Modifier
+                            .weight(1f)
+                            .height(64.dp)
+                            .clip(RoundedCornerShape(dimens.cornerPill))
+                            .background(colors.surfaceVariant)
+                            .border(1.dp, colors.border, RoundedCornerShape(dimens.cornerPill))
+                            .clickable(enabled = !isSpeechCapturing, onClick = ::handleVocabularyAction),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = vocabularyActionText,
+                            color = colors.textPrimary,
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.SemiBold,
+                            textAlign = TextAlign.Center,
+                            lineHeight = 15.sp,
+                            modifier = Modifier.padding(horizontal = 8.dp)
+                        )
+                    }
+                    Box(
+                        modifier = Modifier
+                            .weight(1f)
+                            .height(64.dp)
+                            .clip(RoundedCornerShape(dimens.cornerPill))
+                            .background(colors.success)
+                            .clickable(enabled = !isSpeechCapturing, onClick = ::finishSession),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = Strings.tr("Finish"),
+                            color = Color.White,
+                            fontSize = 16.sp,
+                            fontWeight = FontWeight.SemiBold,
+                            textAlign = TextAlign.Center
+                        )
+                    }
+                }
+            } else {
+                val actionText = when {
+                    isFinished || isReadyToFinish -> Strings.tr("Finish")
+                    else -> vocabularyActionText
+                }
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = dimens.spacingLg, vertical = 8.dp)
+                        .height(64.dp)
+                        .clip(RoundedCornerShape(dimens.cornerPill))
+                        .then(
+                            if (isFinished || isReadyToFinish) Modifier.background(colors.success)
+                            else Modifier.background(colors.primaryBrush)
+                        )
+                        .clickable(enabled = !isSpeechCapturing) {
+                            when {
+                                isFinished -> completeShadowing()
+                                isReadyToFinish -> finishSession()
+                                else -> handleVocabularyAction()
+                            }
+                        },
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        text = actionText,
+                        color = Color.White,
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.SemiBold,
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.padding(horizontal = 12.dp)
                     )
-                    .clickable(enabled = !isSpeechCapturing) {
-                        when {
-                            isFinished -> {
-                                completeShadowing()
-                            }
-                            allWordsSaved -> {
-                                videoController.pause()
-                                onOpenSavedWords()
-                            }
-                            unsavedWords.isNotEmpty() -> UserPrefs.saveWords(unsavedWords)
-                        }
-                    },
-                contentAlignment = Alignment.Center
-            ) {
-                Text(
-                    text = actionText,
-                    color = Color.White,
-                    fontSize = 16.sp,
-                    fontWeight = FontWeight.SemiBold,
-                    textAlign = TextAlign.Center,
-                    modifier = Modifier.padding(horizontal = 12.dp)
-                )
+                }
             }
         }
     }

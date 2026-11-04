@@ -2,6 +2,7 @@ package com.example.basekmp.ui.speaking
 
 import android.os.Handler
 import android.os.Looper
+import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.speech.tts.UtteranceProgressListener
 import android.speech.tts.Voice
@@ -65,6 +66,26 @@ private val QUOTED = Regex(
 private val VIETNAMESE_DIACRITICS = Regex(
     "[\\u0102\\u0103\\u00C2\\u00E2\\u0110\\u0111\\u00CA\\u00EA\\u00D4\\u00F4\\u01A0\\u01A1\\u01AF\\u01B0\\u1EA0-\\u1EF9]"
 )
+private val SPEECH_DELIMITERS = Regex("${QUOTED.pattern}|[()]")
+private val PARENTHESIZED = Regex("\\([^()]*\\)")
+private val VIETNAMESE_ACCENTED_WORDS = setOf(
+    "chào", "cảm", "ơn", "có", "là", "và", "nhé", "tên", "bạn", "tôi", "đã", "nói", "thế", "này"
+)
+private val ENGLISH_CUES = setOf(
+    "hello", "hi", "good", "morning", "thank", "thanks", "you", "nice", "meet", "please",
+    "my", "name", "is", "how", "are", "what", "the", "and", "your", "to", "i", "am"
+)
+
+private fun hasNativeLanguageEvidence(text: String, locale: Locale): Boolean {
+    if (locale.language.equals("vi", ignoreCase = true)) {
+        if (VIETNAMESE_DIACRITICS.containsMatchIn(text)) return true
+        return text.lowercase(Locale.ROOT).split(Regex("[^\\p{L}]+")).any { it in VIETNAMESE_ACCENTED_WORDS }
+    }
+    return text.any { it.code > 127 && it.isLetter() }
+}
+
+private fun hasEnglishEvidence(text: String): Boolean =
+    text.lowercase(Locale.ROOT).split(Regex("[^\\p{L}]+")).any { it in ENGLISH_CUES }
 
 internal fun voiceStyleFor(pref: String?): VoiceStyle {
     return when (pref?.trim()?.lowercase(Locale.ROOT)) {
@@ -166,7 +187,7 @@ internal fun splitForSpeech(text: String, maxChars: Int = MAX_CHUNK_CHARS): List
             if (sb.length >= maxChars && !isSentenceEnd) {
                 val lastSpace = sb.lastIndexOf(" ")
                 if (lastSpace > MIN_CHUNK_CHARS) {
-                    rawChunks.add(sb.substring(0, lastSpace))
+                    rawChunks.add(sb.substring(0, lastSpace + 1))
                     val remainder = sb.substring(lastSpace + 1)
                     sb.setLength(0)
                     sb.append(remainder)
@@ -187,8 +208,23 @@ internal fun splitForSpeech(text: String, maxChars: Int = MAX_CHUNK_CHARS): List
 internal fun speechSegments(
     text: String,
     primary: Locale,
-    alt: Locale?
+    alt: Locale?,
+    quotedLanguage: Locale? = null
 ): List<Pair<String, Locale>> {
+    if (quotedLanguage != null) {
+        if (quotedLanguage.language.equals(primary.language, ignoreCase = true)) {
+            return listOf(text to primary)
+        }
+        val parts = mutableListOf<Pair<String, Locale>>()
+        var last = 0
+        for (match in QUOTED.findAll(text)) {
+            if (match.range.first > last) parts.add(text.substring(last, match.range.first) to primary)
+            parts.add(match.value to quotedLanguage)
+            last = match.range.last + 1
+        }
+        if (last < text.length) parts.add(text.substring(last) to primary)
+        return parts.ifEmpty { listOf(text to primary) }
+    }
     if (alt == null || alt.language.equals(primary.language, ignoreCase = true)) {
         return listOf(text to primary)
     }
@@ -225,33 +261,62 @@ internal fun speechSegments(
         val primaryIsEn = primary.language.equals("en", ignoreCase = true)
         val altIsEn = alt.language.equals("en", ignoreCase = true)
         val unquoted = QUOTED.replace(text, " ")
+        val nonEnLocale = if (primaryIsEn != altIsEn) {
+            if (primaryIsEn) alt else primary
+        } else null
 
         val (outerLocale, quotedLocale) = if (primaryIsEn != altIsEn) {
             val enLocale = if (primaryIsEn) primary else alt
-            val nonEnLocale = if (primaryIsEn) alt else primary
-            val unquotedHasNonEnChars = if (nonEnLocale.language.equals("vi", ignoreCase = true)) {
-                VIETNAMESE_DIACRITICS.containsMatchIn(unquoted)
-            } else {
-                unquoted.any { it.code > 127 && it.isLetter() }
-            }
-            if (!unquotedHasNonEnChars) {
-                return listOf(text to enLocale)
-            }
-            nonEnLocale to enLocale
+            val native = requireNotNull(nonEnLocale)
+            val outsideParentheses = PARENTHESIZED.replace(unquoted, " ")
+                .takeIf { candidate -> candidate.any { it.isLetter() } } ?: unquoted
+            val nativeOutside = hasNativeLanguageEvidence(outsideParentheses, native)
+            val nativeAnywhere = hasNativeLanguageEvidence(unquoted, native) ||
+                QUOTED.findAll(text).any { hasNativeLanguageEvidence(it.value, native) }
+            if (!nativeOutside && !nativeAnywhere) return listOf(text to enLocale)
+            (if (nativeOutside) native else enLocale) to enLocale
         } else {
             primary to alt
         }
 
         var last = 0
-        for (match in QUOTED.findAll(text)) {
+        var parenthesisDepth = 0
+        for (match in SPEECH_DELIMITERS.findAll(text)) {
             if (match.range.first > last) {
-                rawSegments.add(text.substring(last, match.range.first) to outerLocale)
+                val part = text.substring(last, match.range.first)
+                val locale = when {
+                    parenthesisDepth > 0 && nonEnLocale != null && hasNativeLanguageEvidence(part, nonEnLocale) -> nonEnLocale
+                    parenthesisDepth > 0 && nonEnLocale != null && hasEnglishEvidence(part) -> quotedLocale
+                    else -> outerLocale
+                }
+                rawSegments.add(part to locale)
             }
-            rawSegments.add(match.value to quotedLocale)
+            when (match.value) {
+                "(" -> {
+                    rawSegments.add(match.value to outerLocale)
+                    parenthesisDepth++
+                }
+                ")" -> {
+                    rawSegments.add(match.value to outerLocale)
+                    parenthesisDepth = (parenthesisDepth - 1).coerceAtLeast(0)
+                }
+                else -> {
+                    val locale = if (nonEnLocale != null && hasNativeLanguageEvidence(match.value, nonEnLocale)) {
+                        nonEnLocale
+                    } else quotedLocale
+                    rawSegments.add(match.value to locale)
+                }
+            }
             last = match.range.last + 1
         }
         if (last < text.length) {
-            rawSegments.add(text.substring(last) to outerLocale)
+            val part = text.substring(last)
+            val locale = when {
+                parenthesisDepth > 0 && nonEnLocale != null && hasNativeLanguageEvidence(part, nonEnLocale) -> nonEnLocale
+                parenthesisDepth > 0 && nonEnLocale != null && hasEnglishEvidence(part) -> quotedLocale
+                else -> outerLocale
+            }
+            rawSegments.add(part to locale)
         }
     }
 
@@ -289,7 +354,8 @@ internal data class SpeechRequest(
     val locale: Locale,
     val style: VoiceStyle,
     val speed: Float,
-    val altLocale: Locale?
+    val altLocale: Locale?,
+    val quotedLocale: Locale?
 )
 
 private fun applyVoice(
@@ -372,7 +438,7 @@ private fun performSpeak(
         mainHandler.removeCallbacks(clearSpeaking)
         mainHandler.postDelayed(clearSpeaking, timeoutMs)
 
-        val segments = speechSegments(request.text, request.locale, request.altLocale)
+        val segments = speechSegments(request.text, request.locale, request.altLocale, request.quotedLocale)
         val chunks = ArrayList<Pair<String, Locale>>()
         for ((segText, segLocale) in segments) {
             for (chunk in splitForSpeech(segText)) {
@@ -407,7 +473,12 @@ private fun performSpeak(
             val queueMode = if (index == 0) TextToSpeech.QUEUE_FLUSH else TextToSpeech.QUEUE_ADD
             val utteranceId = "utt-${engineSetup.utteranceTag}-$index"
             runCatching {
-                tts.speak(chunkText, queueMode, null, utteranceId)
+                // A non-empty bundle makes TextToSpeech copy its current voice parameters
+                // for this utterance before the next segment changes the voice.
+                val params = Bundle().apply {
+                    putString(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, utteranceId)
+                }
+                tts.speak(chunkText, queueMode, params, utteranceId)
             }
         }
     }
@@ -449,7 +520,8 @@ class AndroidPlatformSpeaker internal constructor(
         languageTag: String,
         voicePreference: String?,
         speed: Float,
-        altLanguageTag: String?
+        altLanguageTag: String?,
+        quotedLanguageTag: String?
     ) {
         if (text.isBlank() || !_isAppResumed.value) return
 
@@ -466,13 +538,17 @@ class AndroidPlatformSpeaker internal constructor(
         val altLocale = altLanguageTag?.takeIf { it.isNotBlank() }?.let { tag ->
             Locale.forLanguageTag(speechLocaleTagFor(tag)).takeIf { it.language.isNotBlank() }
         }
+        val quotedLocale = quotedLanguageTag?.takeIf { it.isNotBlank() }?.let { tag ->
+            Locale.forLanguageTag(speechLocaleTagFor(tag)).takeIf { it.language.isNotBlank() }
+        }
         val style = if (voicePreference != null) voiceStyleFor(voicePreference) else defaultVoiceStyle
         val request = SpeechRequest(
             text = text,
             locale = primaryLocale,
             style = style,
             speed = effectiveSpeed,
-            altLocale = altLocale
+            altLocale = altLocale,
+            quotedLocale = quotedLocale
         )
 
         _spokenChars.intValue = 0

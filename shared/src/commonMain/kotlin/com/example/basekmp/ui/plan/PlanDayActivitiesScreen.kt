@@ -20,6 +20,7 @@ import androidx.compose.material.icons.rounded.Check
 import androidx.compose.material.icons.rounded.Lock
 import androidx.compose.material.icons.rounded.PlayArrow
 import androidx.compose.material3.Icon
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -41,6 +42,7 @@ import com.example.basekmp.data.tr
 import com.example.basekmp.data.trf
 import com.example.basekmp.theme.AppTheme
 import com.example.basekmp.ui.components.BackButton
+import kotlinx.coroutines.CancellationException
 
 /** Day-level activity launcher; activity state changes only from the completed activity screens. */
 @Composable
@@ -53,9 +55,18 @@ fun PlanDayActivitiesScreen(
     val progress = PlanProgress.get()
     val revision = progress.revision.intValue
     var dayPlan by remember(day) { mutableStateOf<PlanFlow.DayPlan?>(null) }
+    var isLoading by remember(day) { mutableStateOf(true) }
 
     LaunchedEffect(day) {
-        dayPlan = PlanFlow.dayPlan(day)
+        isLoading = true
+        dayPlan = try {
+            PlanFlow.dayPlan(day)
+        } catch (cancelled: CancellationException) {
+            throw cancelled
+        } catch (_: Exception) {
+            null
+        }
+        isLoading = false
     }
 
     Surface(modifier = modifier.fillMaxSize(), color = AppTheme.colors.background) {
@@ -86,6 +97,12 @@ fun PlanDayActivitiesScreen(
             }
 
             val plan = dayPlan
+            if (isLoading) {
+                Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                    CircularProgressIndicator(color = AppTheme.colors.primary)
+                }
+                return@Surface
+            }
             if (plan == null) {
                 Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                     Text(tr("This plan day is unavailable"), color = AppTheme.colors.textSecondary)

@@ -64,7 +64,6 @@ import org.jetbrains.compose.resources.painterResource
 private val SurveyBlue = Color(0xFF4C8DF6)
 private val SurveyOptionBackground = Color(0xFFF8F8F8)
 private val SurveyText = Color(0xFF222222)
-private val SurveySkipBackground = Color(0xFFF3F3F4)
 private val SurveyFooterBackground = Color(0xFFFAFAFA)
 private val IntroSubtitle = Color(0xFF9AA0A6)
 
@@ -193,41 +192,23 @@ fun FirstOpenSurveyScreen(
     isSaving: Boolean,
     hasError: Boolean,
     onSelectLanguage: (String) -> Unit,
-    onContinue: () -> Unit,
-    onSkip: () -> Unit
+    onContinue: () -> Unit
 ) {
     Column(modifier = Modifier.fillMaxSize().background(Color.White).safeDrawingPadding()) {
       Column(modifier = Modifier.fillMaxWidth().weight(1f).padding(horizontal = 16.dp)) {
-        Row(
-            modifier = Modifier.fillMaxWidth().padding(top = 12.dp),
-            verticalAlignment = Alignment.Top
-        ) {
-            Column(modifier = Modifier.weight(1f)) {
-                Text(
-                    text = Strings.tr("What language do you want to learn?"),
-                    color = SurveyText,
-                    fontSize = 23.sp,
-                    lineHeight = 28.sp,
-                    fontWeight = FontWeight.Bold
-                )
-                Spacer(Modifier.height(8.dp))
-                Text(
-                    text = Strings.tr("Pick one to start learning"),
-                    color = SurveyText,
-                    fontSize = 14.sp,
-                )
-            }
+        Column(modifier = Modifier.fillMaxWidth().padding(top = 12.dp)) {
             Text(
-                text = Strings.tr("Skip").uppercase(),
+                text = Strings.tr("What language do you want to learn?"),
                 color = SurveyText,
-                fontSize = 13.sp,
-                fontWeight = FontWeight.SemiBold,
-                modifier = Modifier
-                    .padding(start = 12.dp, top = 4.dp)
-                    .clip(RoundedCornerShape(16.dp))
-                    .background(SurveySkipBackground)
-                    .clickable(enabled = !isSaving, onClick = onSkip)
-                    .padding(horizontal = 10.dp, vertical = 7.dp)
+                fontSize = 23.sp,
+                lineHeight = 28.sp,
+                fontWeight = FontWeight.Bold
+            )
+            Spacer(Modifier.height(8.dp))
+            Text(
+                text = Strings.tr("Pick one to start learning"),
+                color = SurveyText,
+                fontSize = 14.sp,
             )
         }
 

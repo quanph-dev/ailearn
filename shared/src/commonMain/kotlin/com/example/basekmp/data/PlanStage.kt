@@ -15,4 +15,15 @@ data class PlanStage(
     fun displayTitle(learn: String): String {
         return GoalPlanFormat.title(title, titles, learnTitles[learn])
     }
+
+    fun displayTitleLanguage(learn: String): String {
+        val language = Strings.getLanguage()
+        val translations = learnTitles[learn]
+        return when {
+            translations?.containsKey(language) == true -> language
+            translations?.containsKey("en") == true -> "en"
+            titles.containsKey(language) -> language
+            else -> "en"
+        }
+    }
 }

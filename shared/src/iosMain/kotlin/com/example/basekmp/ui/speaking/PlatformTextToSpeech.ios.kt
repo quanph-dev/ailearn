@@ -24,6 +24,7 @@ class IosPlatformSpeaker(
 ) : PlatformSpeaker {
     private val _spokenChars = mutableIntStateOf(0)
     private var activeUtterance: AVSpeechUtterance? = null
+    private var activeTextLength = 0
     private val delegate = object : NSObject(), AVSpeechSynthesizerDelegateProtocol {
         override fun speechSynthesizer(
             synthesizer: AVSpeechSynthesizer,
@@ -51,19 +52,37 @@ class IosPlatformSpeaker(
         languageTag: String,
         voicePreference: String?,
         speed: Float,
-        altLanguageTag: String?
+        altLanguageTag: String?,
+        quotedLanguageTag: String?
     ) {
         if (text.isBlank() || !isAppResumed.value) return
         if (synthesizer.isSpeaking()) {
             activeUtterance = null
             synthesizer.stopSpeakingAtBoundary(AVSpeechBoundary.AVSpeechBoundaryImmediate)
         }
-        val utterance = AVSpeechUtterance.speechUtteranceWithString(text)
-        utterance.voice = AVSpeechSynthesisVoice.voiceWithLanguage(languageTag)
-        activeUtterance = utterance
+        val parts = mutableListOf<Pair<String, String>>()
+        val quotedLanguage = quotedLanguageTag?.takeIf { it.isNotBlank() }?.let(::speechLocaleTagFor)
+        if (quotedLanguage != null && quotedLanguage.substringBefore('-') != languageTag.substringBefore('-')) {
+            val quotes = Regex("\"[^\"\\n]+\"|“[^”\\n]+”|«[^»\\n]+»|„[^“”\\n]+[“”]|「[^」\\n]+」|『[^』\\n]+』")
+            var start = 0
+            for (match in quotes.findAll(text)) {
+                if (match.range.first > start) parts.add(text.substring(start, match.range.first) to languageTag)
+                parts.add(match.value to quotedLanguage)
+                start = match.range.last + 1
+            }
+            if (start < text.length) parts.add(text.substring(start) to languageTag)
+        }
+        if (parts.isEmpty()) parts.add(text to languageTag)
+        val utterances = parts.map { (part, locale) ->
+            AVSpeechUtterance.speechUtteranceWithString(part).apply {
+                voice = AVSpeechSynthesisVoice.voiceWithLanguage(locale)
+            }
+        }
+        activeUtterance = utterances.last()
+        activeTextLength = text.length
         _spokenChars.intValue = 0
         _isSpeaking.value = true
-        synthesizer.speakUtterance(utterance)
+        utterances.forEach(synthesizer::speakUtterance)
     }
 
     override fun stop() {
@@ -77,7 +96,7 @@ class IosPlatformSpeaker(
 
     private fun finishIfCurrent(utterance: AVSpeechUtterance) {
         if (activeUtterance !== utterance) return
-        _spokenChars.intValue = utterance.speechString.length
+        _spokenChars.intValue = activeTextLength
         activeUtterance = null
         _isSpeaking.value = false
     }

@@ -63,9 +63,7 @@ open class BaseAppViewModel(
             val route = runCatchingCancellable { repository.resolveStartupRoute() }
                 .getOrDefault(BaseRoutes.FirstOpenIntro)
             val savedLanguageCode = runCatchingCancellable { repository.currentLanguageCode() }.getOrDefault("")
-            val languageCode = savedLanguageCode.ifBlank {
-                UserPrefs.nativeLanguage.ifBlank { deviceLanguageCode }
-            }
+            val languageCode = savedLanguageCode.ifBlank { deviceLanguageCode }
             val savedOnboardingProgress = runCatchingCancellable { repository.onboardingProgress() }.getOrDefault("")
             val surveyLanguage = runCatchingCancellable { repository.firstOpenSurveyLanguage() }.getOrDefault("")
             val savedPlanProgress = runCatchingCancellable { repository.planProgress() }.getOrDefault("")
@@ -213,22 +211,17 @@ open class BaseAppViewModel(
         )
     }
 
-    fun finishFirstOpenSurvey(skip: Boolean = false) {
+    fun finishFirstOpenSurvey() {
         val current = _uiState.value
         if (isHandlingAction || current.route != BaseRoutes.FirstOpenSurvey || current.isSaving) return
-        val selectedLanguage = current.firstOpenSurveyLanguage.takeIf { !skip && it.isNotBlank() }
-        if (!skip && selectedLanguage == null) return
+        val selectedLanguage = current.firstOpenSurveyLanguage.takeIf { it.isNotBlank() } ?: return
         val nativeLanguage = Languages.defaultNativeLanguageCode(getSystemLanguageCode())
-        val initialProfile = if (selectedLanguage != null) {
-            OnboardingState(
-                step = com.example.basekmp.ui.onboarding.OnboardingStep.NativeLanguage,
-                skipLearnLanguage = true,
-                learnLanguage = selectedLanguage,
-                nativeLanguage = nativeLanguage
-            )
-        } else {
-            OnboardingState(nativeLanguage = nativeLanguage)
-        }
+        val initialProfile = OnboardingState(
+            step = com.example.basekmp.ui.onboarding.OnboardingStep.NativeLanguage,
+            skipLearnLanguage = true,
+            learnLanguage = selectedLanguage,
+            nativeLanguage = nativeLanguage
+        )
         isHandlingAction = true
         _uiState.value = current.copy(isSaving = true, hasError = false)
         viewModelScope.launch {
@@ -237,10 +230,8 @@ open class BaseAppViewModel(
             }
             if (result.isSuccess) {
                 applyOnboardingProfile(initialProfile)
-                selectedLanguage?.let {
-                    UserPrefs.learningLanguage = it
-                    UserPrefs.learnLanguageFromSurvey = true
-                }
+                UserPrefs.learningLanguage = selectedLanguage
+                UserPrefs.learnLanguageFromSurvey = true
                 UserPrefs.firstOpenDone = true
                 val surveyBeforeHome = RemoteConfig.surveyBeforeHome
                 val nextRoute = if (surveyBeforeHome) BaseRoutes.Onboarding else BaseRoutes.Home
@@ -249,7 +240,7 @@ open class BaseAppViewModel(
                 }
                 _uiState.value = current.copy(
                     route = nextRoute,
-                    firstOpenSurveyLanguage = selectedLanguage.orEmpty(),
+                    firstOpenSurveyLanguage = selectedLanguage,
                     onboardingProgress = initialProfile.serialize(),
                     isSaving = false,
                     hasError = false

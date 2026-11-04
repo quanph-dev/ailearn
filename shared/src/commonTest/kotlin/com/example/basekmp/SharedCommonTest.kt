@@ -2,11 +2,15 @@ package com.example.basekmp
 
 import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.test.assertFalse
+import kotlin.test.assertNotEquals
+import kotlin.test.assertTrue
 import com.example.basekmp.data.GoalPlan
 import com.example.basekmp.data.PlanCatalogData
 import com.example.basekmp.data.PlanGoal
 import com.example.basekmp.data.PlanStage
 import com.example.basekmp.data.PlanProgress
+import com.example.basekmp.data.Strings
 import com.example.basekmp.data.Translations
 import com.example.basekmp.ui.plan.PlanFlow
 
@@ -128,6 +132,41 @@ class SharedCommonTest {
             ),
             PlanFlow.activitiesFor("video-id")
         )
+    }
+
+    @Test
+    fun finishingVideoUnlocksTheNextActivityInTheSameDay() {
+        val activities = PlanFlow.activitiesFor("video-id")
+        val plan = PlanFlow.DayPlan(
+            goal = PlanGoal(id = "goal", title = "Goal", emoji = "🎯"),
+            stage = PlanStage(id = "stage", title = "Stage"),
+            dayInStage = 1,
+            available = activities,
+            videoId = "video-id"
+        )
+        val completed = setOf(PlanProgress.Activity.VIDEO)
+
+        assertEquals(
+            setOf(PlanProgress.Activity.VIDEO, PlanProgress.Activity.QUIZ),
+            PlanFlow.unlocked(plan, completed, dayFinished = false)
+        )
+        assertEquals(PlanProgress.Activity.QUIZ, PlanFlow.next(plan, completed))
+    }
+
+    @Test
+    fun rtlFollowsTheSelectedInterfaceLanguage() {
+        assertTrue(Strings.isRtl("ar"))
+        assertTrue(Strings.isRtl("ur"))
+        assertFalse(Strings.isRtl("hi"))
+    }
+
+    @Test
+    fun congratulationsDialogLabelsAreLocalizedForEverySupportedLocale() {
+        Strings.languages.filterNot { it.code == "en" }.forEach { language ->
+            assertNotEquals("Congratulations", Strings.trIn(language.code, "Congratulations"), language.code)
+            assertNotEquals("Correct", Strings.trIn(language.code, "Correct"), language.code)
+            assertNotEquals("Incorrect", Strings.trIn(language.code, "Incorrect"), language.code)
+        }
     }
 
     @Test

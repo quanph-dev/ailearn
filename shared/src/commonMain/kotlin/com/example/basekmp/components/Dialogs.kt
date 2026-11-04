@@ -7,6 +7,10 @@ import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.relocation.BringIntoViewRequester
+import androidx.compose.foundation.relocation.bringIntoViewRequester
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -15,6 +19,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -33,10 +38,12 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -48,6 +55,7 @@ import androidx.compose.ui.window.DialogProperties
 import com.example.basekmp.data.Strings
 import com.example.basekmp.theme.AppTheme
 import kotlin.random.Random
+import kotlinx.coroutines.delay
 
 // ---------------------------------------------------------------------------
 // 1. CongratsDialog
@@ -167,7 +175,7 @@ fun CongratsDialog(
                 Spacer(Modifier.height(dimens.spacingLg))
 
                 Text(
-                    text = Strings.tr("Congratulations!"),
+                    text = Strings.tr("Congratulations") + if (Strings.getLanguage() == "en") "!" else "",
                     fontSize = 22.sp,
                     fontWeight = FontWeight.Bold,
                     color = colors.textPrimary,
@@ -532,6 +540,9 @@ private val DefaultReportCategories = listOf(
     "Other"
 )
 
+internal fun canSubmitReport(category: String, details: String): Boolean =
+    category != "Other" || details.isNotBlank()
+
 @Composable
 fun ReportIssueDialog(
     place: String,
@@ -544,6 +555,18 @@ fun ReportIssueDialog(
 
     var selectedCategory by remember { mutableStateOf(DefaultReportCategories.first()) }
     var detailsText by remember { mutableStateOf("") }
+    var detailsFocused by remember { mutableStateOf(false) }
+    val focusManager = LocalFocusManager.current
+    val detailsBringIntoView = remember { BringIntoViewRequester() }
+    val requiresDetails = selectedCategory == "Other"
+    val canSubmit = canSubmitReport(selectedCategory, detailsText)
+
+    LaunchedEffect(detailsFocused) {
+        if (detailsFocused) {
+            delay(250)
+            detailsBringIntoView.bringIntoView()
+        }
+    }
 
     Dialog(
         onDismissRequest = onDismiss,
@@ -553,9 +576,11 @@ fun ReportIssueDialog(
             modifier = modifier
                 .fillMaxWidth(0.92f)
                 .widthIn(max = 440.dp)
+                .imePadding()
                 .clip(RoundedCornerShape(dimens.cornerXl))
                 .background(Brush.verticalGradient(listOf(colors.surface, colors.background)))
                 .border(1.dp, colors.border, RoundedCornerShape(dimens.cornerXl))
+                .verticalScroll(rememberScrollState())
                 .padding(dimens.spacing2Xl),
             horizontalAlignment = Alignment.Start
         ) {
@@ -607,7 +632,10 @@ fun ReportIssueDialog(
                                 color = if (isSelected) colors.primary else Color.Transparent,
                                 shape = RoundedCornerShape(dimens.cornerSm)
                             )
-                            .clickable { selectedCategory = cat }
+                            .clickable {
+                                selectedCategory = cat
+                                if (cat != "Other") focusManager.clearFocus()
+                            }
                             .padding(horizontal = dimens.spacingMd, vertical = 10.dp),
                         verticalAlignment = Alignment.CenterVertically
                     ) {
@@ -637,44 +665,43 @@ fun ReportIssueDialog(
                 }
             }
 
-            Spacer(Modifier.height(dimens.spacingLg))
+            if (requiresDetails) {
+                Spacer(Modifier.height(dimens.spacingLg))
+                Text(
+                    text = Strings.tr("Details") + " *",
+                    fontSize = 13.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    color = colors.textSecondary
+                )
 
-            Text(
-                text = Strings.tr("Details (optional)"),
-                fontSize = 13.sp,
-                fontWeight = FontWeight.SemiBold,
-                color = colors.textSecondary
-            )
+                Spacer(Modifier.height(dimens.spacingSm))
 
-            Spacer(Modifier.height(dimens.spacingSm))
-
-            // Details Input Field
-            Box(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(90.dp)
-                    .clip(RoundedCornerShape(dimens.cornerMd))
-                    .background(colors.surfaceVariant)
-                    .border(1.dp, colors.border, RoundedCornerShape(dimens.cornerMd))
-                    .padding(dimens.spacingMd)
-            ) {
-                if (detailsText.isEmpty()) {
-                    Text(
-                        text = Strings.tr("Explain what happened..."),
-                        fontSize = 13.sp,
-                        color = colors.textTertiary
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(90.dp)
+                        .bringIntoViewRequester(detailsBringIntoView)
+                        .clip(RoundedCornerShape(dimens.cornerMd))
+                        .background(colors.surfaceVariant)
+                        .border(1.dp, colors.border, RoundedCornerShape(dimens.cornerMd))
+                        .padding(dimens.spacingMd)
+                ) {
+                    if (detailsText.isEmpty()) {
+                        Text(
+                            text = Strings.tr("Explain what happened..."),
+                            fontSize = 13.sp,
+                            color = colors.textTertiary
+                        )
+                    }
+                    BasicTextField(
+                        value = detailsText,
+                        onValueChange = { detailsText = it },
+                        textStyle = TextStyle(color = colors.textPrimary, fontSize = 13.sp),
+                        cursorBrush = SolidColor(colors.primary),
+                        maxLines = 3,
+                        modifier = Modifier.fillMaxWidth().onFocusChanged { detailsFocused = it.isFocused }
                     )
                 }
-                BasicTextField(
-                    value = detailsText,
-                    onValueChange = { detailsText = it },
-                    textStyle = TextStyle(
-                        color = colors.textPrimary,
-                        fontSize = 13.sp
-                    ),
-                    cursorBrush = SolidColor(colors.primary),
-                    modifier = Modifier.fillMaxWidth()
-                )
             }
 
             Spacer(Modifier.height(dimens.spacing2Xl))
@@ -705,16 +732,16 @@ fun ReportIssueDialog(
                         .weight(1f)
                         .height(dimens.primaryButtonHeight)
                         .clip(RoundedCornerShape(dimens.cornerPill))
-                        .background(colors.primaryBrush)
-                        .clickable {
-                            onSubmit(selectedCategory, detailsText)
+                        .background(if (canSubmit) colors.primaryBrush else Brush.linearGradient(listOf(colors.surfaceVariant, colors.surfaceVariant)))
+                        .clickable(enabled = canSubmit) {
+                            onSubmit(selectedCategory, if (requiresDetails) detailsText.trim() else "")
                             onDismiss()
                         },
                     contentAlignment = Alignment.Center
                 ) {
                     Text(
                         text = Strings.tr("Submit"),
-                        color = Color.White,
+                        color = if (canSubmit) Color.White else colors.textSecondary,
                         fontSize = 15.sp,
                         fontWeight = FontWeight.Bold
                     )

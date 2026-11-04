@@ -6,7 +6,7 @@ interface BaseAppRepository {
     suspend fun resolveStartupRoute(): String
     suspend fun currentLanguageCode(): String
     suspend fun saveLanguage(code: String, completeSetup: Boolean)
-    suspend fun completeFirstOpen(surveyLanguageCode: String?, initialOnboardingProgress: String)
+    suspend fun completeFirstOpen(surveyLanguageCode: String, initialOnboardingProgress: String)
     suspend fun firstOpenSurveyLanguage(): String
     suspend fun onboardingProgress(): String
     suspend fun saveOnboardingProgress(serialized: String)

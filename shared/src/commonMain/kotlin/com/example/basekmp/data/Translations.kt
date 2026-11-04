@@ -21,6 +21,25 @@ object Translations {
         )
     }
 
+    /** Labels shown by the shared completion popup aren't part of the legacy locale table. */
+    val congratsOverrides: Map<String, Map<String, String>> = mapOf(
+        "de" to mapOf("Congratulations" to "Glückwunsch!", "Correct" to "Richtig", "Incorrect" to "Falsch"),
+        "es" to mapOf("Congratulations" to "¡Felicidades!", "Correct" to "Correctas", "Incorrect" to "Incorrectas"),
+        "fr" to mapOf("Congratulations" to "Félicitations !", "Correct" to "Correctes", "Incorrect" to "Incorrectes"),
+        "it" to mapOf("Congratulations" to "Congratulazioni!", "Correct" to "Corrette", "Incorrect" to "Errate"),
+        "pt" to mapOf("Congratulations" to "Parabéns!", "Correct" to "Corretas", "Incorrect" to "Incorretas"),
+        "vi" to mapOf("Congratulations" to "Chúc mừng!", "Correct" to "Đúng", "Incorrect" to "Sai"),
+        "tr" to mapOf("Congratulations" to "Tebrikler!", "Correct" to "Doğru", "Incorrect" to "Yanlış"),
+        "ru" to mapOf("Congratulations" to "Поздравляем!", "Correct" to "Верно", "Incorrect" to "Неверно"),
+        "ar" to mapOf("Congratulations" to "تهانينا!", "Correct" to "صحيحة", "Incorrect" to "غير صحيحة"),
+        "ja" to mapOf("Congratulations" to "おめでとうございます！", "Correct" to "正解", "Incorrect" to "不正解"),
+        "zh" to mapOf("Congratulations" to "恭喜！", "Correct" to "正确", "Incorrect" to "错误"),
+        "ko" to mapOf("Congratulations" to "축하합니다!", "Correct" to "정답", "Incorrect" to "오답"),
+        "th" to mapOf("Congratulations" to "ยินดีด้วย!", "Correct" to "ถูกต้อง", "Incorrect" to "ไม่ถูกต้อง"),
+        "ur" to mapOf("Congratulations" to "مبارک ہو!", "Correct" to "درست", "Incorrect" to "غلط"),
+        "hi" to mapOf("Congratulations" to "बधाई हो!", "Correct" to "सही", "Incorrect" to "गलत")
+    )
+
     /** UI copy for the video-shadowing screen added after the original locale table was extracted. */
     val videoShadowingOverrides: Map<String, Map<String, String>> = mapOf(
         "vi" to mapOf(

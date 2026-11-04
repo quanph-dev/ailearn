@@ -27,7 +27,8 @@ interface PlatformSpeaker {
         languageTag: String = "en-US",
         voicePreference: String? = UserPrefs.tutorVoice,
         speed: Float = 1.0f,
-        altLanguageTag: String? = null
+        altLanguageTag: String? = null,
+        quotedLanguageTag: String? = null
     )
 
     fun stop()

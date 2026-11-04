@@ -17,9 +17,12 @@ object TutorAi {
     private const val SYSTEM_PROMPT =
         "You are a warm, encouraging language tutor. Keep replies short (1-3 sentences). Gently correct mistakes, give one natural example, and end by inviting the learner to keep going. Use simple, clear language. Reply in plain conversational text — no markdown, asterisks, or bullet points."
     private const val MOOD_LINE =
-        "\nBefore your reply, write exactly one tag that judges the student's LAST message: [great] if it was correct and natural, [ok] if it was understandable but had small mistakes, [oops] if it had clear mistakes, was off-topic or was not in the language being practised, or [hi] if the student has not said anything yet. Write the tag first, then a space, then your reply. The tag is hidden from the student."
+        "\nBefore your reply, write exactly one hidden mood tag for the student's LAST message: [great] if it was correct and natural, [ok] if it was understandable but had small mistakes, [oops] if it had clear mistakes, was off-topic or was not in the language being practised, or [hi] if the student has not said anything yet. Write the tag first, then one space, then your reply. Do not explain or repeat the tag in the reply."
 
-    private val MOOD_TAG = Regex("^\\s*\\[(great|ok|oops|hi)]\\s*", RegexOption.IGNORE_CASE)
+    // The original tutor protocol has four tags. Some responses add B or TB prefixes.
+    private val MOOD_TAG = Regex("^\\s*\\[\\s*(?:(?:TB|B)\\s*)?(great|ok|oops|hi)\\s*]\\s*", RegexOption.IGNORE_CASE)
+    private val MOOD_TAG_TOKEN = Regex("\\[\\s*(?:(?:TB|B)\\s*)?(?:great|ok|oops|hi)\\s*]\\s*", RegexOption.IGNORE_CASE)
+    private val PREFIXED_MOOD_TAG = Regex("\\[\\s*(?:TB|B)\\s*(great|ok|oops|hi)\\s*]", RegexOption.IGNORE_CASE)
     private val QUOTED = Regex("[\"“”„«][^\"“”„«»]*[\"“”»]|「[^」]*」|『[^』]*』")
 
     private val nativeReminder: Map<String, String> = mapOf(
@@ -80,7 +83,8 @@ object TutorAi {
     )
 
     fun splitMood(text: String): Pair<RobotMood?, String> {
-        val match = MOOD_TAG.find(text) ?: return Pair(null, text)
+        val leading = MOOD_TAG.find(text)
+        val match = leading ?: PREFIXED_MOOD_TAG.find(text) ?: return Pair(null, text)
         val tag = match.groupValues.getOrNull(1)?.lowercase() ?: ""
         val mood = when (tag) {
             "great", "hi" -> RobotMood.HAPPY
@@ -88,7 +92,11 @@ object TutorAi {
             "oops" -> RobotMood.SAD
             else -> RobotMood.NEUTRAL
         }
-        val cleanText = text.substring(match.range.last + 1).replace(Regex("\\[(great|ok|oops|hi)]\\s*", RegexOption.IGNORE_CASE), "").trim()
+        val cleanText = if (leading != null) {
+            text.substring(leading.range.last + 1).replace(MOOD_TAG_TOKEN, "").trim()
+        } else {
+            PREFIXED_MOOD_TAG.replace(text, "").trim()
+        }
         return Pair(mood, cleanText)
     }
 
@@ -148,7 +156,7 @@ object TutorAi {
                     }
                 }
             }
-            firstClean
+            firstClean.takeIf { splitMood(it).second.isNotBlank() }
         } catch (_: Exception) {
             null
         }

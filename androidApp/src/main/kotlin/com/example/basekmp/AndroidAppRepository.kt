@@ -51,7 +51,7 @@ class AndroidAppRepository @Inject constructor(
         LanguagePrefs.set(context, code)
     }
 
-    override suspend fun completeFirstOpen(surveyLanguageCode: String?, initialOnboardingProgress: String) {
+    override suspend fun completeFirstOpen(surveyLanguageCode: String, initialOnboardingProgress: String) {
         val surveyBeforeHome = com.example.basekmp.data.RemoteConfig.surveyBeforeHome
         dataStore.edit { values ->
             values[IS_LANGUAGE_SETUP] = true
@@ -59,7 +59,7 @@ class AndroidAppRepository @Inject constructor(
             if (!surveyBeforeHome) {
                 values[ONBOARDING_COMPLETED] = true
             }
-            values[FIRST_OPEN_SURVEY_LANGUAGE] = surveyLanguageCode.orEmpty()
+            values[FIRST_OPEN_SURVEY_LANGUAGE] = surveyLanguageCode
             values[ONBOARDING_PROGRESS] = initialOnboardingProgress
         }
     }

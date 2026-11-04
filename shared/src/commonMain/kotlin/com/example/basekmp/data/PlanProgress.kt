@@ -230,7 +230,7 @@ class PlanProgress internal constructor() {
 
     fun daysUntilUnlocked(day: Int): Int {
         if (goalId == null || day !in 1..GoalPlan.DAYS) return 0
-        if (_completedDays.contains(day) || AppConfig.BYPASS_PAYWALL) return 0
+        if (_completedDays.contains(day) || (day > 1 && _completedDays.contains(day - 1)) || AppConfig.BYPASS_PAYWALL) return 0
         return maxOf(day - todayDay(), 0)
     }
 

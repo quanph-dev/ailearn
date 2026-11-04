@@ -1,0 +1,1832 @@
+{
+  "Academic|Advanced": [
+    {
+      "example": "Our hypothesis turned out to be completely wrong.",
+      "meaning": "một ý tưởng bạn thử nghiệm để xem nó có đúng hay không",
+      "translation": "Ý tưởng chúng tôi đặt ra để thử nghiệm đã được chứng minh là hoàn toàn sai.",
+      "word": "hypothesis"
+    },
+    {
+      "example": "There is little empirical support for that claim.",
+      "meaning": "dựa trên quan sát thực tế chứ không phải chỉ dựa trên ý tưởng",
+      "translation": "Hầu như không có quan sát thực tế nào ủng hộ tuyên bố đó.",
+      "word": "empirical"
+    },
+    {
+      "example": "The reviewers criticised her methodology, not her results.",
+      "meaning": "toàn bộ hệ thống các phương pháp được sử dụng trong một nghiên cứu",
+      "translation": "Những người đánh giá nhận thấy có lỗi ở cách cô ấy thực hiện nghiên cứu chứ không phải ở những gì cô ấy tìm thấy.",
+      "word": "methodology"
+    },
+    {
+      "example": "The essay is interesting but not very coherent.",
+      "meaning": "rõ ràng và được kết nối logic",
+      "translation": "Bài luận có những ý tưởng hay nhưng chúng chưa kết hợp chặt chẽ với nhau.",
+      "word": "coherent"
+    },
+    {
+      "example": "He could not substantiate any of his claims.",
+      "meaning": "để chứng minh điều gì đó bằng bằng chứng",
+      "translation": "Anh ấy không thể sao lưu một tuyên bố nào của mình bằng bằng chứng.",
+      "word": "substantiate"
+    },
+    {
+      "example": "Your summary misses an important nuance in the argument.",
+      "meaning": "một sự khác biệt nhỏ về ý nghĩa có ý nghĩa quan trọng",
+      "translation": "Bản tóm tắt của bạn để lại một sắc thái ý nghĩa rõ ràng nhưng quan trọng trong lập luận.",
+      "word": "nuance"
+    },
+    {
+      "example": "That discovery shifted the paradigm in the field.",
+      "meaning": "toàn bộ cách suy nghĩ hướng dẫn một lĩnh vực",
+      "translation": "Phát hiện đó đã thay đổi cách suy nghĩ chủ đạo trong ngành học.",
+      "word": "paradigm"
+    },
+    {
+      "example": "The journal only accepts rigorous studies.",
+      "meaning": "rất cẩn thận, kỹ lưỡng và chính xác",
+      "translation": "Tạp chí này sẽ chỉ xuất bản những tác phẩm đã được thực hiện một cách cẩn thận.",
+      "word": "rigorous"
+    },
+    {
+      "example": "Two later studies corroborate her original result.",
+      "meaning": "để hỗ trợ phát hiện bằng bằng chứng sâu hơn",
+      "translation": "Hai nghiên cứu được thực hiện sau đó đã chứng minh những gì cô ấy tìm thấy trước tiên.",
+      "word": "corroborate"
+    },
+    {
+      "example": "The whole chapter rests on a shaky premise.",
+      "meaning": "một ý tưởng một lập luận được xây dựng trên",
+      "translation": "Toàn bộ chương được xây dựng dựa trên một giả định không đúng.",
+      "word": "premise"
+    },
+    {
+      "example": "Her book changed the discourse around climate policy.",
+      "meaning": "thảo luận hoặc viết nghiêm túc về một chủ đề",
+      "translation": "Cuốn sách của cô đã thay đổi cách mọi người viết và nói về chính sách khí hậu.",
+      "word": "discourse"
+    },
+    {
+      "example": "The wording of the question is ambiguous.",
+      "meaning": "có thể được hiểu theo nhiều cách",
+      "translation": "Câu hỏi được diễn đạt sao cho có thể có hai nghĩa khác nhau.",
+      "word": "ambiguous"
+    },
+    {
+      "example": "The final chapter is a synthesis of both traditions.",
+      "meaning": "kết hợp các ý tưởng riêng biệt thành một tổng thể",
+      "translation": "Chương cuối cùng gộp cả hai truyền thống lại thành một.",
+      "word": "synthesis"
+    },
+    {
+      "example": "That is a plausible explanation, but we need data.",
+      "meaning": "đáng tin cậy nhưng chưa được chứng minh",
+      "translation": "Lời giải thích nghe có vẻ đáng tin nhưng chúng ta vẫn cần số liệu để kiểm chứng.",
+      "word": "plausible"
+    },
+    {
+      "example": "There is an inherent bias in how the sample was chosen.",
+      "meaning": "tồn tại như một phần cơ bản của một thứ gì đó",
+      "translation": "Cách chọn mẫu mang theo một thành kiến ​​được tích hợp sẵn trong đó.",
+      "word": "inherent"
+    },
+    {
+      "example": "His figures did not survive close scrutiny.",
+      "meaning": "kiểm tra rất chặt chẽ và cẩn thận",
+      "translation": "Khi các con số của anh ấy được kiểm tra cẩn thận, chúng đã tan rã.",
+      "word": "scrutiny"
+    },
+    {
+      "example": "The introduction should delineate the scope of the study.",
+      "meaning": "để mô tả hoặc đánh dấu điều gì đó một cách rõ ràng",
+      "translation": "Phần mở đầu phải trình bày rõ ràng nội dung nghiên cứu.",
+      "word": "delineate"
+    },
+    {
+      "example": "The cut-off point looks completely arbitrary to me.",
+      "meaning": "được chọn mà không có lý do rõ ràng đằng sau nó",
+      "translation": "Theo như tôi thấy, điểm giới hạn được chọn không có lý do cụ thể.",
+      "word": "arbitrary"
+    },
+    {
+      "example": "These are only preliminary findings, so be careful.",
+      "meaning": "được thực hiện trước, trước công việc chính",
+      "translation": "Đây là những kết quả sớm, vì vậy hãy xử lý chúng một cách thận trọng.",
+      "word": "preliminary"
+    },
+    {
+      "example": "You cannot extrapolate from such a small sample.",
+      "meaning": "sử dụng các dữ kiện đã biết để đoán về những dữ kiện chưa biết",
+      "translation": "Một mẫu nhỏ không cho phép bạn rút ra kết luận rộng hơn.",
+      "word": "extrapolate"
+    }
+  ],
+  "Academic|Beginner": [
+    {
+      "example": "I have to study for my history test tonight.",
+      "meaning": "để dành thời gian tìm hiểu về một điều gì đó",
+      "translation": "Tôi cần dành thời gian để học lịch sử vì ngày mai có bài kiểm tra.",
+      "word": "study"
+    },
+    {
+      "example": "My math class starts at nine in the morning.",
+      "meaning": "một nhóm học sinh học cùng nhau vào một thời gian nhất định",
+      "translation": "Tiết học toán tôi tham dự bắt đầu lúc 9 giờ sáng.",
+      "word": "class"
+    },
+    {
+      "example": "Our teacher explained the answer twice.",
+      "meaning": "một người có nhiệm vụ dạy người khác",
+      "translation": "Người dạy chúng tôi ôn lại câu trả lời lần thứ hai.",
+      "word": "teacher"
+    },
+    {
+      "example": "Every student needs a library card.",
+      "meaning": "người đang học ở trường phổ thông hoặc cao đẳng",
+      "translation": "Mỗi người học ở đây phải có thẻ vào thư viện.",
+      "word": "student"
+    },
+    {
+      "example": "I borrowed this book from the school library.",
+      "meaning": "các trang in được ghép lại với nhau mà bạn đọc",
+      "translation": "Tôi đã lấy tài liệu đọc này từ thư viện trường một thời gian.",
+      "word": "book"
+    },
+    {
+      "example": "The test was easier than I expected.",
+      "meaning": "một bộ câu hỏi dùng để kiểm tra những gì bạn biết",
+      "translation": "Kỳ thi hóa ra đơn giản hơn tôi nghĩ.",
+      "word": "test"
+    },
+    {
+      "example": "She let me copy her notes from the lecture.",
+      "meaning": "những điều ngắn gọn bạn viết ra để sau này nhớ",
+      "translation": "Cô cho phép tôi chép lại những gì cô đã viết ra trong buổi giảng.",
+      "word": "notes"
+    },
+    {
+      "example": "I wrote the wrong answer on the last question.",
+      "meaning": "những gì bạn nói hoặc viết để trả lời một câu hỏi",
+      "translation": "Câu trả lời của tôi cho câu hỏi cuối cùng không chính xác.",
+      "word": "answer"
+    },
+    {
+      "example": "Can I ask you a quick question after class?",
+      "meaning": "điều bạn hỏi khi muốn biết thêm",
+      "translation": "Tôi có thể hỏi bạn một điều ngắn gọn sau khi bài học kết thúc không?",
+      "word": "question"
+    },
+    {
+      "example": "We learn ten new words every week.",
+      "meaning": "để có kiến ​​thức mới hoặc kỹ năng mới",
+      "translation": "Mỗi tuần chúng tôi học mười mục từ vựng mới.",
+      "word": "learn"
+    },
+    {
+      "example": "My little brother walks to school with me.",
+      "meaning": "nơi trẻ em đến được dạy",
+      "translation": "Tôi đi bộ đến nơi chúng tôi được dạy cùng với em trai mình.",
+      "word": "school"
+    },
+    {
+      "example": "I finished my homework before dinner.",
+      "meaning": "công việc giáo viên giao cho bạn làm ở nhà",
+      "translation": "Tôi đã hoàn thành bài tập ở nhà mà tôi phải làm ở nhà trước khi chúng tôi ăn.",
+      "word": "homework"
+    },
+    {
+      "example": "Please read the first two pages tonight.",
+      "meaning": "để nhìn vào các từ và hiểu chúng",
+      "translation": "Nhìn và học hai trang đầu tiên tối nay.",
+      "word": "read"
+    },
+    {
+      "example": "You have to write your name at the top.",
+      "meaning": "để viết chữ lên giấy hoặc màn hình",
+      "translation": "Viết tên của bạn vào khoảng trống ở đầu trang.",
+      "word": "write"
+    },
+    {
+      "example": "Give me an example so I understand better.",
+      "meaning": "một điều thể hiện điều bạn muốn nói",
+      "translation": "Hãy chỉ cho tôi một trường hợp về nó để tôi hiểu rõ hơn.",
+      "word": "example"
+    },
+    {
+      "example": "That is a really good idea for the project.",
+      "meaning": "một suy nghĩ hoặc kế hoạch trong đầu bạn",
+      "translation": "Suy nghĩ đó sẽ rất hiệu quả cho dự án của chúng tôi.",
+      "word": "idea"
+    },
+    {
+      "example": "The chart is on page forty.",
+      "meaning": "một mặt của một tờ trong cuốn sách",
+      "translation": "Bạn có thể tìm thấy biểu đồ trên trang thứ bốn mươi của cuốn sách.",
+      "word": "page"
+    },
+    {
+      "example": "She got a good grade on her essay.",
+      "meaning": "một điểm cho thấy bạn đã làm tốt như thế nào",
+      "translation": "Điểm cô ấy nhận được cho bài luận của mình rất cao.",
+      "word": "grade"
+    },
+    {
+      "example": "Science is my favourite subject at school.",
+      "meaning": "một lĩnh vực học tập như toán hoặc lịch sử",
+      "translation": "Trong tất cả các lĩnh vực tôi học, khoa học là lĩnh vực tôi thích nhất.",
+      "word": "subject"
+    },
+    {
+      "example": "A little practice every day really helps.",
+      "meaning": "làm đi làm lại một việc gì đó để trở nên tốt hơn",
+      "translation": "Lặp lại việc đó trong một khoảng thời gian ngắn mỗi ngày sẽ tạo nên sự khác biệt thực sự.",
+      "word": "practice"
+    }
+  ],
+  "Academic|Intermediate": [
+    {
+      "example": "I did some research before writing the essay.",
+      "meaning": "nghiên cứu cẩn thận để tìm ra những sự thật mới",
+      "translation": "Tôi đã xem xét chủ đề một cách cẩn thận trước khi bắt đầu bài luận.",
+      "word": "research"
+    },
+    {
+      "example": "Her analysis of the poem was very clear.",
+      "meaning": "nhìn kỹ vào một cái gì đó để hiểu các phần của nó",
+      "translation": "Cách cô chia nhỏ bài thơ rất dễ làm theo.",
+      "word": "analysis"
+    },
+    {
+      "example": "You need more evidence to support that claim.",
+      "meaning": "sự thật chứng minh điều gì đó là đúng",
+      "translation": "Tuyên bố của bạn cần những sự thật mạnh mẽ hơn đằng sau nó.",
+      "word": "evidence"
+    },
+    {
+      "example": "We studied his theory about how memory works.",
+      "meaning": "một ý tưởng giải thích tại sao điều gì đó xảy ra",
+      "translation": "Chúng tôi đã xem lời giải thích của anh ấy về cách thức hoạt động của bộ nhớ.",
+      "word": "theory"
+    },
+    {
+      "example": "The teacher showed us a faster method for solving it.",
+      "meaning": "một cách làm có kế hoạch",
+      "translation": "Giáo viên của chúng tôi đã trình bày một cách nhanh hơn để thực hiện việc đó.",
+      "word": "method"
+    },
+    {
+      "example": "Always name the source of your quotations.",
+      "meaning": "một cuốn sách, trang web hoặc người mà bạn lấy thông tin từ",
+      "translation": "Cho biết mỗi câu trích dẫn của bạn đến từ đâu.",
+      "word": "source"
+    },
+    {
+      "example": "Write a summary of the chapter in one paragraph.",
+      "meaning": "một phiên bản ngắn cung cấp các điểm chính",
+      "translation": "Đặt các điểm chính của chương vào một đoạn văn duy nhất.",
+      "word": "summary"
+    },
+    {
+      "example": "His argument was strong but a little too long.",
+      "meaning": "lý do bạn đưa ra để ủng hộ quan điểm",
+      "translation": "Trường hợp anh ấy đưa ra rất thuyết phục, mặc dù anh ấy dùng quá nhiều lời.",
+      "word": "argument"
+    },
+    {
+      "example": "In the conclusion she repeats her main point.",
+      "meaning": "phần cuối cùng nơi bạn nói những gì bạn đã quyết định",
+      "translation": "Ở cuối phần, cô ấy trình bày lại ý tưởng chính của mình.",
+      "word": "conclusion"
+    },
+    {
+      "example": "The assignment is due on Friday at noon.",
+      "meaning": "một phần công việc bạn được giao để hoàn thành",
+      "translation": "Công việc chúng tôi đã đặt ra phải được bàn giao vào giữa trưa ngày thứ Sáu.",
+      "word": "assignment"
+    },
+    {
+      "example": "I fell asleep during the second lecture.",
+      "meaning": "một bài nói chuyện dài để dạy một nhóm",
+      "translation": "Tôi đã ngủ gật trong khi bài nói chuyện thứ hai đang diễn ra.",
+      "word": "lecture"
+    },
+    {
+      "example": "Add a reference at the end of every quotation.",
+      "meaning": "ghi chú cho biết thông tin đến từ đâu",
+      "translation": "Sau mỗi trích dẫn, hãy ghi lại nơi bạn tìm thấy thông tin đó.",
+      "word": "reference"
+    },
+    {
+      "example": "Can you define the term in your own words?",
+      "meaning": "để nói chính xác ý nghĩa của một từ hoặc ý tưởng",
+      "translation": "Bạn có thể giải thích ý nghĩa của thuật ngữ đó bằng cách sử dụng cách diễn đạt của riêng bạn không?",
+      "word": "define"
+    },
+    {
+      "example": "We collected data from fifty students.",
+      "meaning": "sự kiện và con số được thu thập để nghiên cứu",
+      "translation": "Chúng tôi đã thu thập sự kiện và số liệu từ năm mươi sinh viên.",
+      "word": "data"
+    },
+    {
+      "example": "The essay asks you to compare the two poems.",
+      "meaning": "để xem hai thứ giống và khác nhau như thế nào",
+      "translation": "Trong bài luận, bạn phải chỉ ra hai bài thơ giống và khác nhau như thế nào.",
+      "word": "compare"
+    },
+    {
+      "example": "The concept sounds simple until you try it.",
+      "meaning": "ý tưởng chung về cách thức hoạt động của một thứ gì đó",
+      "translation": "Ý tưởng này có vẻ dễ dàng nhưng sẽ khó hơn một khi bạn thử thực hiện.",
+      "word": "concept"
+    },
+    {
+      "example": "There was a significant drop in test scores.",
+      "meaning": "đủ lớn hoặc quan trọng để dễ nhận thấy",
+      "translation": "Điểm kiểm tra đã giảm đủ nhiều để đáng chú ý.",
+      "word": "significant"
+    },
+    {
+      "example": "Let's try a different approach to this question.",
+      "meaning": "một cách giải quyết vấn đề cụ thể",
+      "translation": "Hãy giải quyết câu hỏi này theo một cách khác.",
+      "word": "approach"
+    },
+    {
+      "example": "I always write an outline before the first draft.",
+      "meaning": "một kế hoạch liệt kê các phần chính theo thứ tự",
+      "translation": "Trước khi soạn thảo, tôi luôn lên kế hoạch cho các phần chính theo thứ tự.",
+      "word": "outline"
+    },
+    {
+      "example": "You should revise the middle section once more.",
+      "meaning": "để tiếp tục làm việc và cải thiện nó",
+      "translation": "Quay lại phần giữa và làm cho nó tốt hơn.",
+      "word": "revise"
+    }
+  ],
+  "Business|Advanced": [
+    {
+      "example": "Every stakeholder was consulted before the merger was announced.",
+      "meaning": "bất kỳ ai bị ảnh hưởng hoặc quan tâm đến quyết định kinh doanh",
+      "translation": "Mọi người quan tâm đến kết quả đều được hỏi quan điểm của họ trước khi việc sáp nhập được công khai.",
+      "word": "stakeholder"
+    },
+    {
+      "example": "We can leverage our existing customer base to launch the new service.",
+      "meaning": "để sử dụng thứ gì đó bạn phải đạt được lợi thế",
+      "translation": "Những khách hàng mà chúng tôi đã có có thể giúp chúng tôi triển khai dịch vụ mới.",
+      "word": "leverage"
+    },
+    {
+      "example": "The buyers spent six weeks on due diligence before closing the deal.",
+      "meaning": "kiểm tra cẩn thận công ty trước khi giao dịch",
+      "translation": "Người mua đã điều tra kỹ lưỡng về công ty trong sáu tuần trước khi hoàn tất giao dịch mua.",
+      "word": "due diligence"
+    },
+    {
+      "example": "The lease turned out to be a significant liability on the balance sheet.",
+      "meaning": "một khoản nợ hoặc trách nhiệm pháp lý mà một công ty gánh chịu",
+      "translation": "Hợp đồng cho thuê được chứng minh là một gánh nặng tài chính nghiêm trọng trong tài khoản.",
+      "word": "liability"
+    },
+    {
+      "example": "The contract sends any dispute to arbitration rather than to the courts.",
+      "meaning": "giải quyết tranh chấp thông qua một thẩm phán độc lập thay vì tòa án",
+      "translation": "Theo thỏa thuận, những bất đồng sẽ được chuyển đến người ra quyết định độc lập thay vì thẩm phán tại tòa án.",
+      "word": "arbitration"
+    },
+    {
+      "example": "High attrition in the support team is costing us more than recruitment.",
+      "meaning": "việc mất dần nhân viên hoặc khách hàng theo thời gian",
+      "translation": "Việc mất quá nhiều nhân viên hỗ trợ đối với chúng tôi còn tốn kém hơn so với việc thuê nhân viên mới.",
+      "word": "attrition"
+    },
+    {
+      "example": "The bonus scheme is designed to incentivise long-term thinking.",
+      "meaning": "để trao phần thưởng cho ai đó khuyến khích hành vi",
+      "translation": "Kế hoạch thưởng nhằm khen thưởng những người quản lý vì đã nghĩ về tương lai xa.",
+      "word": "incentivise"
+    },
+    {
+      "example": "The group decided to consolidate its three regional offices into one.",
+      "meaning": "để kết hợp nhiều thứ thành một tổng thể mạnh mẽ hơn",
+      "translation": "Nhóm đã chọn hợp nhất ba văn phòng địa phương của mình vào một địa điểm duy nhất.",
+      "word": "consolidate"
+    },
+    {
+      "example": "We benchmark our margins against the top three firms in the sector.",
+      "meaning": "một tiêu chuẩn được sử dụng để so sánh hiệu suất",
+      "translation": "Chúng tôi so sánh mức lợi nhuận của mình với mức lợi nhuận của ba công ty hàng đầu trong ngành của chúng tôi.",
+      "word": "benchmark"
+    },
+    {
+      "example": "If the supplier misses the date again, escalate it to the director.",
+      "meaning": "chuyển vấn đề cho người cấp cao hơn",
+      "translation": "Nếu nhà cung cấp lại trễ một lần nữa, hãy đưa vấn đề lên giám đốc.",
+      "word": "escalate"
+    },
+    {
+      "example": "We built a ten percent contingency into the project budget.",
+      "meaning": "một kế hoạch dự phòng hoặc dự trữ cho điều gì đó có thể xảy ra sai sót",
+      "translation": "Chúng tôi dành thêm 10% tiền của dự án trong trường hợp có vấn đề.",
+      "word": "contingency"
+    },
+    {
+      "example": "The new chief executive has a clear mandate to cut costs.",
+      "meaning": "có thẩm quyền chính thức để hành động thay mặt cho người khác",
+      "translation": "Người đứng đầu mới của công ty đã được trao quyền chắc chắn để giảm chi tiêu.",
+      "word": "mandate"
+    },
+    {
+      "example": "We amortise the software licence over five years.",
+      "meaning": "để dàn trải chi phí dần dần trong vài năm",
+      "translation": "Chi phí của giấy phép phần mềm được trải đều trong 5 năm trong tài khoản của chúng tôi.",
+      "word": "amortise"
+    },
+    {
+      "example": "The board voted to divest the loss-making logistics arm.",
+      "meaning": "bán bớt một phần doanh nghiệp",
+      "translation": "Hội đồng quản trị quyết định bán bộ phận hậu cần đang thua lỗ.",
+      "word": "divest"
+    },
+    {
+      "example": "Procurement blocked the order because the supplier wasn't approved.",
+      "meaning": "công việc mua hàng hóa, dịch vụ cho một công ty",
+      "translation": "Bộ phận mua hàng dừng việc mua hàng vì nhà cung cấp không có trong danh sách được phê duyệt.",
+      "word": "procurement"
+    },
+    {
+      "example": "Compliance rejected the wording of the advertisement.",
+      "meaning": "tuân theo các quy tắc và luật áp dụng cho doanh nghiệp",
+      "translation": "Bộ phận kiểm tra các quy tắc và luật đã từ chối cách diễn đạt quảng cáo.",
+      "word": "compliance"
+    },
+    {
+      "example": "The aim is to streamline approvals so nothing waits a week.",
+      "meaning": "để thực hiện quy trình đơn giản và hiệu quả hơn",
+      "translation": "Mục tiêu là đơn giản hóa quy trình phê duyệt để không có gì bị bỏ sót trong một tuần.",
+      "word": "streamline"
+    },
+    {
+      "example": "The quarterly forecast now looks far too optimistic.",
+      "meaning": "ước tính về doanh thu, chi phí hoặc kết quả trong tương lai",
+      "translation": "Ước tính cho ba tháng tới hiện có vẻ quá hy vọng.",
+      "word": "forecast"
+    },
+    {
+      "example": "The prospectus sets out every risk facing the business.",
+      "meaning": "tài liệu chính thức chào bán cổ phiếu hoặc đầu tư ra công chúng",
+      "translation": "Tài liệu đầu tư chính thức liệt kê tất cả những nguy hiểm mà công ty phải đối mặt.",
+      "word": "prospectus"
+    },
+    {
+      "example": "Let's touch base on Thursday once the figures are in.",
+      "meaning": "để liên hệ ngắn gọn với ai đó để chia sẻ thông tin cập nhật",
+      "translation": "Chúng ta sẽ cập nhật nhanh vào thứ Năm sau khi có số liệu.",
+      "word": "touch base"
+    }
+  ],
+  "Business|Beginner": [
+    {
+      "example": "We have a short meeting every Monday morning.",
+      "meaning": "thời điểm mọi người cùng nhau nói chuyện về công việc",
+      "translation": "Nhóm của chúng tôi cùng nhau thảo luận nhanh về công việc vào đầu mỗi tuần.",
+      "word": "meeting"
+    },
+    {
+      "example": "Her office is on the third floor.",
+      "meaning": "nơi mọi người đến làm việc",
+      "translation": "Căn phòng nơi cô làm việc cách tầng trệt hai tầng.",
+      "word": "office"
+    },
+    {
+      "example": "My boss asked me to finish the report today.",
+      "meaning": "người phụ trách công việc của bạn",
+      "translation": "Người phụ trách công việc của tôi bảo tôi phải hoàn thành báo cáo trước khi kết thúc ngày.",
+      "word": "boss"
+    },
+    {
+      "example": "Our team is small, but we work fast.",
+      "meaning": "một nhóm người làm việc cùng nhau",
+      "translation": "Chỉ có một số người trong chúng tôi làm việc cùng nhau, nhưng chúng tôi hoàn thành công việc một cách nhanh chóng.",
+      "word": "team"
+    },
+    {
+      "example": "A customer called to ask about the price.",
+      "meaning": "một người mua thứ gì đó từ một cửa hàng hoặc công ty",
+      "translation": "Một người mua từ chúng tôi đã gọi điện để tìm hiểu xem nó có giá bao nhiêu.",
+      "word": "customer"
+    },
+    {
+      "example": "The company is saving money on travel this year.",
+      "meaning": "những gì mọi người sử dụng để mua bán đồ vật",
+      "translation": "Năm nay công ty đang chi tiêu ít hơn cho các chuyến đi.",
+      "word": "money"
+    },
+    {
+      "example": "Can you tell me the price of this laptop?",
+      "meaning": "bạn phải trả bao nhiêu cho một thứ gì đó",
+      "translation": "Vui lòng cho tôi biết chiếc máy tính xách tay này có giá bao nhiêu.",
+      "word": "price"
+    },
+    {
+      "example": "He started a new job at the bank last week.",
+      "meaning": "công việc ai đó làm để kiếm tiền",
+      "translation": "Anh ấy bắt đầu làm việc tại ngân hàng bảy ngày trước.",
+      "word": "job"
+    },
+    {
+      "example": "I will send you an email before lunch.",
+      "meaning": "tin nhắn bạn gửi từ máy tính hoặc điện thoại này đến máy tính hoặc điện thoại khác",
+      "translation": "Tôi sẽ viết thư trực tuyến cho bạn vào sáng nay.",
+      "word": "email"
+    },
+    {
+      "example": "We sell coffee to hotels and small cafés.",
+      "meaning": "bán một thứ gì đó cho người khác để nhận tiền",
+      "translation": "Các khách sạn và quán cà phê nhỏ mua cà phê từ chúng tôi.",
+      "word": "sell"
+    },
+    {
+      "example": "They want to buy fifty chairs for the new office.",
+      "meaning": "để có được thứ gì đó bằng cách trả tiền cho nó",
+      "translation": "Họ dự định trả tiền cho 50 chiếc ghế để đặt trong văn phòng mới.",
+      "word": "buy"
+    },
+    {
+      "example": "We pay our suppliers at the end of every month.",
+      "meaning": "để tặng tiền cho thứ bạn nhận được",
+      "translation": "Các nhà cung cấp của chúng tôi nhận tiền vào những ngày cuối cùng của mỗi tháng.",
+      "word": "pay"
+    },
+    {
+      "example": "The company has offices in three cities.",
+      "meaning": "một doanh nghiệp bán hàng hóa hoặc dịch vụ",
+      "translation": "Doanh nghiệp này điều hành các nơi làm việc ở ba thành phố khác nhau.",
+      "word": "company"
+    },
+    {
+      "example": "Every worker gets a free lunch on Fridays.",
+      "meaning": "một người làm công việc cho một công ty",
+      "translation": "Công ty cung cấp cho tất cả nhân viên của mình một bữa ăn miễn phí vào thứ Sáu hàng tuần.",
+      "word": "worker"
+    },
+    {
+      "example": "Please phone the client and say we are late.",
+      "meaning": "để gọi cho ai đó bằng điện thoại",
+      "translation": "Gọi cho khách hàng và cho họ biết chúng tôi sẽ không đến đúng giờ.",
+      "word": "phone"
+    },
+    {
+      "example": "We need a clear plan before we talk to the bank.",
+      "meaning": "ý tưởng về những gì bạn sẽ làm và như thế nào",
+      "translation": "Chúng ta phải quyết định chính xác những gì cần làm trước khi gặp ngân hàng.",
+      "word": "plan"
+    },
+    {
+      "example": "Our newest product went on sale in April.",
+      "meaning": "thứ mà một công ty sản xuất hoặc bán",
+      "translation": "Sản phẩm mới nhất mà chúng tôi cung cấp đã có sẵn để mua vào tháng Tư.",
+      "word": "product"
+    },
+    {
+      "example": "The manager wants to see the sales numbers.",
+      "meaning": "người lãnh đạo các công nhân khác",
+      "translation": "Người lãnh đạo nhóm đang yêu cầu số liệu bán hàng.",
+      "word": "manager"
+    },
+    {
+      "example": "Your order will arrive on Thursday.",
+      "meaning": "yêu cầu mua hoặc gửi hàng",
+      "translation": "Hàng hóa bạn yêu cầu sẽ được giao vào thứ Năm.",
+      "word": "order"
+    },
+    {
+      "example": "I work from home two days a week.",
+      "meaning": "để làm việc, thường là vì tiền",
+      "translation": "Hai lần một tuần, tôi làm việc ở nhà thay vì ở văn phòng.",
+      "word": "work"
+    }
+  ],
+  "Business|Intermediate": [
+    {
+      "example": "The deadline for the proposal is Friday at noon.",
+      "meaning": "ngày hoặc giờ cuối cùng một việc gì đó phải được hoàn thành",
+      "translation": "Đề xuất phải được nộp trước 12 giờ thứ Sáu.",
+      "word": "deadline"
+    },
+    {
+      "example": "We went over budget on the marketing campaign.",
+      "meaning": "số tiền dự định cho thứ gì đó",
+      "translation": "Chiến dịch tiếp thị tiêu tốn nhiều tiền hơn chúng tôi dự định.",
+      "word": "budget"
+    },
+    {
+      "example": "I still haven't received the invoice for last month.",
+      "meaning": "hóa đơn liệt kê những gì khách hàng phải trả",
+      "translation": "Hóa đơn của tháng trước vẫn chưa đến tay tôi.",
+      "word": "invoice"
+    },
+    {
+      "example": "Our biggest client renewed the contract for another year.",
+      "meaning": "một cá nhân hoặc công ty trả tiền cho các dịch vụ của bạn",
+      "translation": "Công ty quan trọng nhất mà chúng tôi làm việc đã đồng ý tiếp tục sử dụng chúng tôi trong 12 tháng nữa.",
+      "word": "client"
+    },
+    {
+      "example": "Read the contract carefully before you sign it.",
+      "meaning": "thỏa thuận bằng văn bản giữa hai bên",
+      "translation": "Xem kỹ thỏa thuận bằng văn bản trước khi thêm chữ ký của bạn.",
+      "word": "contract"
+    },
+    {
+      "example": "The shop made a small profit in its first year.",
+      "meaning": "còn lại số tiền sau khi thanh toán mọi chi phí",
+      "translation": "Sau khi thanh toán mọi thứ, cửa hàng còn lại một ít tiền trong năm đầu tiên.",
+      "word": "profit"
+    },
+    {
+      "example": "We spent two hours trying to negotiate a better price.",
+      "meaning": "để thảo luận điều gì đó nhằm đạt được thỏa thuận",
+      "translation": "Trong hai giờ, chúng tôi đã nói chuyện với họ, hy vọng sẽ thống nhất được mức giá thấp hơn.",
+      "word": "negotiate"
+    },
+    {
+      "example": "Please send me the agenda before tomorrow's call.",
+      "meaning": "danh sách những điều cần thảo luận trong cuộc họp",
+      "translation": "Hãy cho tôi biết chúng ta sẽ thảo luận những gì trước cuộc gọi ngày mai.",
+      "word": "agenda"
+    },
+    {
+      "example": "Can we schedule the interview for Wednesday afternoon?",
+      "meaning": "một kế hoạch cho biết khi nào mọi việc sẽ diễn ra",
+      "translation": "Liệu chiều thứ Tư có phải là thời gian cho cuộc phỏng vấn không?",
+      "word": "schedule"
+    },
+    {
+      "example": "Our supplier raised prices by ten percent.",
+      "meaning": "một công ty cung cấp hàng hóa cho một doanh nghiệp khác",
+      "translation": "Công ty bán hàng hóa cho chúng tôi đã tăng giá lên 10%.",
+      "word": "supplier"
+    },
+    {
+      "example": "Revenue grew steadily during the summer months.",
+      "meaning": "tất cả số tiền mà một doanh nghiệp thu được trong",
+      "translation": "Số tiền đổ vào doanh nghiệp tăng từng chút một trong mùa hè.",
+      "word": "revenue"
+    },
+    {
+      "example": "A colleague from the design team joined our call.",
+      "meaning": "người mà bạn làm việc cùng",
+      "translation": "Người mà tôi làm việc cùng trong nhóm thiết kế đã tham gia cuộc gọi của chúng tôi.",
+      "word": "colleague"
+    },
+    {
+      "example": "She got a promotion after only eighteen months.",
+      "meaning": "chuyển lên vị trí cao hơn trong công việc",
+      "translation": "Cô được chuyển lên vị trí công việc tốt hơn chỉ sau một năm rưỡi.",
+      "word": "promotion"
+    },
+    {
+      "example": "My manager gave me honest feedback on the presentation.",
+      "meaning": "nhận xét về việc ai đó đã làm tốt như thế nào",
+      "translation": "Quản lý của tôi đã thẳng thắn nói cho tôi biết cô ấy nghĩ gì về bài thuyết trình của tôi.",
+      "word": "feedback"
+    },
+    {
+      "example": "The sales team hit its target three weeks early.",
+      "meaning": "là kết quả mà bạn đang cố gắng đạt được",
+      "translation": "Nhóm bán hàng đã đạt được mục tiêu trước thời hạn 21 ngày.",
+      "word": "target"
+    },
+    {
+      "example": "Keep the receipt or you can't claim the expense.",
+      "meaning": "số tiền chi vì lý do công việc",
+      "translation": "Hãy giữ lại biên lai, nếu không công ty sẽ không trả lại cho bạn.",
+      "word": "expense"
+    },
+    {
+      "example": "His presentation lasted only ten minutes, thankfully.",
+      "meaning": "buổi nói chuyện trong đó bạn hiển thị thông tin cho một nhóm",
+      "translation": "May mắn thay, bài nói chuyện mà anh ấy đưa ra cho nhóm chỉ dài mười phút.",
+      "word": "presentation"
+    },
+    {
+      "example": "We plan to recruit two engineers before September.",
+      "meaning": "để tìm và thuê người mới cho công việc",
+      "translation": "Trước tháng 9, chúng tôi dự định thuê một vài kỹ sư.",
+      "word": "recruit"
+    },
+    {
+      "example": "You should delegate the smaller tasks to your assistant.",
+      "meaning": "để giao một phần công việc của bạn cho người khác",
+      "translation": "Giao những công việc ít quan trọng hơn cho trợ lý của bạn.",
+      "word": "delegate"
+    },
+    {
+      "example": "They sent us a quote for the office renovation.",
+      "meaning": "mức giá đưa ra cho một công việc trước khi công việc bắt đầu",
+      "translation": "Họ đã đưa cho chúng tôi một mức giá bằng văn bản để làm lại văn phòng.",
+      "word": "quote"
+    }
+  ],
+  "Daily life|Advanced": [
+    {
+      "example": "Even mundane tasks like folding shirts can be relaxing.",
+      "meaning": "bình thường và không thú vị chút nào",
+      "translation": "Những công việc nhàm chán, hàng ngày như gấp áo sơ mi vẫn có thể giúp bạn bình tĩnh lại.",
+      "word": "mundane"
+    },
+    {
+      "example": "He is meticulous about keeping the fridge organized.",
+      "meaning": "rất cẩn thận đến từng chi tiết nhỏ",
+      "translation": "Anh ấy cực kỳ chú ý đến cách sắp xếp tủ lạnh.",
+      "word": "meticulous"
+    },
+    {
+      "example": "They live a frugal life and still travel every year.",
+      "meaning": "cẩn thận không tiêu nhiều tiền hơn mức cần thiết",
+      "translation": "Họ chi tiêu rất ít mỗi ngày nhưng vẫn quản lý một chuyến đi mỗi năm.",
+      "word": "frugal"
+    },
+    {
+      "example": "Her culinary skills improved after she took evening classes.",
+      "meaning": "kết nối với nấu ăn",
+      "translation": "Lớp học buổi tối giúp cô nấu ăn giỏi hơn rất nhiều.",
+      "word": "culinary"
+    },
+    {
+      "example": "I always procrastinate when it is time to clean the bathroom.",
+      "meaning": "để tiếp tục trì hoãn việc gì đó bạn nên làm",
+      "translation": "Tôi liên tục trì hoãn việc dọn dẹp phòng tắm thay vì bắt tay vào làm.",
+      "word": "procrastinate"
+    },
+    {
+      "example": "A sedentary job means I have to walk in the evenings.",
+      "meaning": "phải ngồi nhiều và ít vận động",
+      "translation": "Vì ngồi làm việc cả ngày nên tôi bắt mình đi bộ khi trời tối.",
+      "word": "sedentary"
+    },
+    {
+      "example": "The clutter on the kitchen table drives me mad.",
+      "meaning": "rất nhiều thứ bừa bộn nằm xung quanh",
+      "translation": "Tất cả những đống bừa bộn chất đống trên bàn bếp thực sự khiến tôi khó chịu.",
+      "word": "clutter"
+    },
+    {
+      "example": "Her flat is always in impeccable order.",
+      "meaning": "hoàn hảo, không có gì sai cả",
+      "translation": "Căn hộ của cô ấy luôn được giữ gọn gàng hoàn hảo.",
+      "word": "impeccable"
+    },
+    {
+      "example": "Heavy meals leave me lethargic all afternoon.",
+      "meaning": "chậm chạp và thiếu năng lượng",
+      "translation": "Sau bữa ăn thịnh soạn, tôi không còn năng lượng cho phần còn lại của buổi chiều.",
+      "word": "lethargic"
+    },
+    {
+      "example": "Put the perishable food in the fridge first.",
+      "meaning": "có khả năng hỏng nhanh chóng",
+      "translation": "Bất cứ thứ gì hư hỏng nhanh nên cho vào tủ lạnh trước những thứ còn lại.",
+      "word": "perishable"
+    },
+    {
+      "example": "Ginger tea is her cure for every winter ailment.",
+      "meaning": "một căn bệnh nhẹ",
+      "translation": "Cô ấy điều trị mọi căn bệnh mùa đông nhỏ bằng trà gừng.",
+      "word": "ailment"
+    },
+    {
+      "example": "The picnic was moved indoors because of the inclement weather.",
+      "meaning": "lạnh, ẩm ướt hoặc có bão khó chịu",
+      "translation": "Thời tiết xấu, ẩm ướt buộc chúng tôi phải tổ chức buổi dã ngoại bên trong.",
+      "word": "inclement"
+    },
+    {
+      "example": "He adds some sort of condiment to absolutely everything.",
+      "meaning": "nước sốt hoặc gia vị được thêm vào thức ăn tại bàn",
+      "translation": "Anh ấy cho nước sốt hoặc gia vị vào mọi thứ anh ấy ăn.",
+      "word": "condiment"
+    },
+    {
+      "example": "I keep rice and pasta in the pantry.",
+      "meaning": "một căn phòng nhỏ hoặc tủ để đựng thực phẩm",
+      "translation": "Gạo và mì ống được cất trong tủ đựng thức ăn.",
+      "word": "pantry"
+    },
+    {
+      "example": "Let the sauce simmer for twenty minutes.",
+      "meaning": "nấu nhẹ nhàng ngay dưới điểm sôi",
+      "translation": "Nấu nước sốt từ từ trên lửa nhỏ trong hai mươi phút.",
+      "word": "simmer"
+    },
+    {
+      "example": "I am too squeamish to gut a fish.",
+      "meaning": "dễ chán ghét hoặc buồn nôn",
+      "translation": "Làm sạch cá khiến tôi cảm thấy buồn nôn nên không thể làm được.",
+      "word": "squeamish"
+    },
+    {
+      "example": "On Fridays we indulge in takeaway and a film.",
+      "meaning": "để cho phép bản thân làm điều gì đó thú vị Thứ sáu",
+      "translation": "là đêm chúng ta chiêu đãi bản thân đồ ăn mang đi và xem phim.",
+      "word": "indulge"
+    },
+    {
+      "example": "She has a knack for making yesterday's food taste new.",
+      "meaning": "một kỹ năng bẩm sinh để làm tốt việc gì đó",
+      "translation": "Cô ấy bẩm sinh rất giỏi trong việc biến thức ăn cũ thành thứ có vị tươi.",
+      "word": "knack"
+    },
+    {
+      "example": "It was so muggy that nobody could sleep.",
+      "meaning": "ấm áp và ẩm ướt khó chịu",
+      "translation": "Không khí nóng và nhớp nháp đến mức không ai có thể ngủ được.",
+      "word": "muggy"
+    },
+    {
+      "example": "I get irritable if I skip lunch.",
+      "meaning": "dễ khó chịu hoặc tức giận",
+      "translation": "Việc bỏ bữa trưa khiến tôi rất nhanh có tâm trạng tồi tệ.",
+      "word": "irritable"
+    }
+  ],
+  "Daily life|Beginner": [
+    {
+      "example": "I eat breakfast at seven every morning.",
+      "meaning": "bữa ăn đầu tiên trong ngày",
+      "translation": "Mỗi sáng lúc bảy giờ tôi ăn bữa đầu tiên trong ngày.",
+      "word": "breakfast"
+    },
+    {
+      "example": "My mother is making tea in the kitchen.",
+      "meaning": "phòng bạn nấu đồ ăn",
+      "translation": "Mẹ tôi đang ở trong phòng chúng tôi nấu ăn và bà đang chuẩn bị trà.",
+      "word": "kitchen"
+    },
+    {
+      "example": "I take a shower before I go to work.",
+      "meaning": "tắm dưới vòi nước rơi",
+      "translation": "Tôi tắm dưới vòi nước chảy trước khi đi làm.",
+      "word": "shower"
+    },
+    {
+      "example": "I feel tired after a long day at school.",
+      "meaning": "cần nghỉ ngơi hoặc ngủ",
+      "translation": "Sau một ngày học dài tôi không còn sức lực và muốn nghỉ ngơi.",
+      "word": "tired"
+    },
+    {
+      "example": "I don't have enough money for a new phone.",
+      "meaning": "những gì bạn dùng để mua đồ",
+      "translation": "Tôi không đủ khả năng mua một chiếc điện thoại mới ngay bây giờ.",
+      "word": "money"
+    },
+    {
+      "example": "We stayed home because of the heavy rain.",
+      "meaning": "nước từ trên mây rơi xuống",
+      "translation": "Bên ngoài đang đổ mưa nên chúng tôi không đi ra ngoài.",
+      "word": "rain"
+    },
+    {
+      "example": "I usually sleep for eight hours.",
+      "meaning": "nhắm mắt nghỉ ngơi vào ban đêm",
+      "translation": "Hầu hết các đêm tôi ngủ khoảng tám tiếng.",
+      "word": "sleep"
+    },
+    {
+      "example": "I clean my room every Saturday.",
+      "meaning": "để dọn sạch bụi bẩn khỏi một địa điểm hoặc đồ vật",
+      "translation": "Mỗi tuần một lần, vào Thứ Bảy, tôi dọn dẹp và giặt giũ phòng của mình.",
+      "word": "clean"
+    },
+    {
+      "example": "She buys fresh fruit at the market.",
+      "meaning": "nơi mọi người mua bán thực phẩm",
+      "translation": "Cô ấy lấy trái cây từ các quầy hàng bán thực phẩm.",
+      "word": "market"
+    },
+    {
+      "example": "The children were happy to see the snow.",
+      "meaning": "cảm thấy vui vẻ và hài lòng",
+      "translation": "Tuyết khiến bọn trẻ cảm thấy thực sự vui mừng.",
+      "word": "happy"
+    },
+    {
+      "example": "Can you buy some milk on your way home?",
+      "meaning": "đồ uống màu trắng làm từ bò",
+      "translation": "Vui lòng lấy một chai sữa khi bạn quay lại.",
+      "word": "milk"
+    },
+    {
+      "example": "I brush my teeth twice a day.",
+      "meaning": "để làm sạch răng hoặc tóc bằng một dụng cụ nhỏ",
+      "translation": "Tôi đánh răng vào buổi sáng và một lần nữa vào buổi tối.",
+      "word": "brush"
+    },
+    {
+      "example": "I go to bed at ten o'clock.",
+      "meaning": "đồ đạc bạn ngủ vào ngày",
+      "translation": "Mười giờ là lúc tôi nằm xuống ngủ.",
+      "word": "bed"
+    },
+    {
+      "example": "It is very cold outside this morning.",
+      "meaning": "có nhiệt độ thấp",
+      "translation": "Nhiệt độ ngoài trời hôm nay thực sự rất thấp.",
+      "word": "cold"
+    },
+    {
+      "example": "My father likes to cook rice and fish.",
+      "meaning": "để hâm nóng thức ăn và sẵn sàng để ăn",
+      "translation": "Bố tôi thích chuẩn bị bữa ăn gồm cơm và cá.",
+      "word": "cook"
+    },
+    {
+      "example": "My sister and I share a small room.",
+      "meaning": "một cô gái hoặc một người phụ nữ có cùng cha mẹ với bạn",
+      "translation": "Tôi sống trong một căn phòng nhỏ cùng với cô gái do bố mẹ tôi sinh ra.",
+      "word": "sister"
+    },
+    {
+      "example": "I have to see the doctor about my cough.",
+      "meaning": "người giúp đỡ bạn khi bạn ốm",
+      "translation": "Tôi cần đi khám vì bị ho.",
+      "word": "doctor"
+    },
+    {
+      "example": "I wake up at six every weekday.",
+      "meaning": "ngừng ngủ",
+      "translation": "Vào những ngày làm việc, giấc ngủ của tôi kết thúc lúc sáu giờ sáng.",
+      "word": "wake up"
+    },
+    {
+      "example": "Mornings are busy in our house.",
+      "meaning": "có rất nhiều việc phải làm",
+      "translation": "Có rất nhiều việc xảy ra trong nhà của chúng tôi vào đầu giờ.",
+      "word": "busy"
+    },
+    {
+      "example": "We eat dinner together at seven.",
+      "meaning": "bữa ăn chính vào buổi tối",
+      "translation": "Lúc bảy giờ cả gia đình ngồi xuống dùng bữa tối.",
+      "word": "dinner"
+    }
+  ],
+  "Daily life|Intermediate": [
+    {
+      "example": "Washing the dishes is the chore I hate most.",
+      "meaning": "một công việc nhỏ, nhàm chán bạn làm quanh nhà",
+      "translation": "Trong tất cả các công việc gia đình nhỏ nhặt, rửa bát là công việc tôi ít yêu thích nhất.",
+      "word": "chore"
+    },
+    {
+      "example": "My commute takes about forty minutes by bus.",
+      "meaning": "hành trình thường xuyên giữa nhà và nơi làm việc",
+      "translation": "Đi làm bằng xe buýt khiến tôi mất khoảng bốn mươi phút.",
+      "word": "commute"
+    },
+    {
+      "example": "I put the groceries away as soon as I got home.",
+      "meaning": "thực phẩm và đồ gia dụng bạn mua ở cửa hàng",
+      "translation": "Ngay khi bước vào, tôi đã mở gói đồ mua sắm và cất giữ.",
+      "word": "groceries"
+    },
+    {
+      "example": "We had leftovers from last night for lunch.",
+      "meaning": "thức ăn còn sót lại từ bữa ăn trước",
+      "translation": "Đối với bữa trưa, chúng tôi đã ăn hết thức ăn còn sót lại từ bữa tối hôm qua.",
+      "word": "leftovers"
+    },
+    {
+      "example": "I made an appointment with the dentist for Friday.",
+      "meaning": "đã sắp xếp thời gian để gặp ai đó",
+      "translation": "Tôi đã đặt lịch vào thứ Sáu để gặp nha sĩ.",
+      "word": "appointment"
+    },
+    {
+      "example": "I do the laundry on Sunday mornings.",
+      "meaning": "quần áo cần giặt, hay hành động giặt chúng",
+      "translation": "Sáng chủ nhật là lúc tôi giặt quần áo bẩn.",
+      "word": "laundry"
+    },
+    {
+      "example": "After the long shift I was completely exhausted.",
+      "meaning": "vô cùng mệt mỏi",
+      "translation": "Ca làm việc kéo dài khiến tôi chẳng còn chút năng lượng nào.",
+      "word": "exhausted"
+    },
+    {
+      "example": "These shoes were a real bargain at half price.",
+      "meaning": "thứ bạn mua với giá thấp hơn nhiều so với giá trị",
+      "translation": "Tôi mua được đôi giày này với giá rất rẻ, chỉ bằng một nửa giá thông thường.",
+      "word": "bargain"
+    },
+    {
+      "example": "The forecast says it will snow tomorrow.",
+      "meaning": "báo cáo thời tiết sẽ như thế nào",
+      "translation": "Theo báo cáo thời tiết, dự kiến ​​sẽ có tuyết vào ngày mai.",
+      "word": "forecast"
+    },
+    {
+      "example": "She sent me the recipe for her lentil soup.",
+      "meaning": "bộ hướng dẫn nấu một món ăn",
+      "translation": "Cô ấy đã chia sẻ với tôi hướng dẫn nấu món súp đậu lăng.",
+      "word": "recipe"
+    },
+    {
+      "example": "A distant relative is staying with us this week.",
+      "meaning": "một thành viên trong gia đình bạn",
+      "translation": "Một thành viên gia đình mà chúng tôi không có quan hệ họ hàng gần gũi là khách của chúng tôi trong tuần này.",
+      "word": "relative"
+    },
+    {
+      "example": "A sore throat was the first symptom of my cold.",
+      "meaning": "một dấu hiệu cho thấy bạn đang bị bệnh",
+      "translation": "Dấu hiệu đầu tiên của cơn cảm lạnh của tôi là đau họng.",
+      "word": "symptom"
+    },
+    {
+      "example": "My morning routine starts with a strong coffee.",
+      "meaning": "thứ tự làm việc thông thường của bạn",
+      "translation": "Điều đầu tiên trong thói quen buổi sáng thường ngày của tôi là một ly cà phê đậm đặc.",
+      "word": "routine"
+    },
+    {
+      "example": "I have to run errands after work.",
+      "meaning": "đi ra ngoài và làm những công việc nhỏ như mua sắm",
+      "translation": "Sau khi công việc kết thúc, tôi cần ra ngoài và lo những công việc nhỏ.",
+      "word": "run errands"
+    },
+    {
+      "example": "Please tidy up the living room before the guests arrive.",
+      "meaning": "để dọn dẹp lại nơi ở một cách gọn gàng",
+      "translation": "Hãy dọn dẹp phòng khách trước khi khách của chúng ta đến đây.",
+      "word": "tidy up"
+    },
+    {
+      "example": "We keep a monthly budget for food and bills.",
+      "meaning": "kế hoạch về số tiền bạn sẽ chi tiêu",
+      "translation": "Mỗi tháng, chúng tôi lên kế hoạch chính xác số tiền mình có thể chi cho thực phẩm và hóa đơn.",
+      "word": "budget"
+    },
+    {
+      "example": "Our neighbor lends us his ladder whenever we need it.",
+      "meaning": "ai đó sống gần bạn",
+      "translation": "Người đàn ông sống cạnh nhà rất vui khi cho chúng tôi mượn cái thang của anh ấy.",
+      "word": "neighbor"
+    },
+    {
+      "example": "I picked up my prescription at the pharmacy.",
+      "meaning": "đơn thuốc của bác sĩ",
+      "translation": "Tôi đã lấy thuốc mà bác sĩ đã kê đơn cho tôi.",
+      "word": "prescription"
+    },
+    {
+      "example": "A cold drizzle fell all afternoon.",
+      "meaning": "mưa nhẹ, mịn",
+      "translation": "Trời mưa nhẹ và lạnh suốt cả buổi chiều.",
+      "word": "drizzle"
+    },
+    {
+      "example": "The kitchen feels cozy when the oven is on.",
+      "meaning": "ấm áp, thoải mái và dễ chịu",
+      "translation": "Khi lò nướng hoạt động, căn bếp trở nên ấm áp và thoải mái.",
+      "word": "cozy"
+    }
+  ],
+  "IELTS|Advanced": [
+    {
+      "example": "Oil prices fluctuate a great deal from month to month.",
+      "meaning": "lên xuống liên tục",
+      "translation": "Giá dầu liên tục tăng giảm theo từng tháng.",
+      "word": "fluctuate"
+    },
+    {
+      "example": "Growth reached a plateau in the final two years.",
+      "meaning": "khoảng thời gian mà thứ gì đó ngừng thay đổi và giữ nguyên ở mức",
+      "translation": "Trong hai năm qua, các số liệu đã ngừng tăng và giữ ổn định.",
+      "word": "plateau"
+    },
+    {
+      "example": "The difference between the two groups was negligible.",
+      "meaning": "nhỏ đến mức hầu như không thành vấn đề",
+      "translation": "Hai nhóm gần như giống hệt nhau.",
+      "word": "negligible"
+    },
+    {
+      "example": "The company made a substantial investment in training.",
+      "meaning": "lớn và quan trọng về quy mô hoặc số lượng",
+      "translation": "Công ty đã đầu tư rất nhiều tiền vào việc đào tạo nhân viên của mình.",
+      "word": "substantial"
+    },
+    {
+      "example": "There is a wide disparity in income between the two regions.",
+      "meaning": "một sự khác biệt lớn và thường không công bằng",
+      "translation": "Người dân ở một khu vực kiếm được nhiều tiền hơn những người ở khu vực kia.",
+      "word": "disparity"
+    },
+    {
+      "example": "The prevalence of diabetes has risen in urban areas.",
+      "meaning": "mức độ phổ biến của một điều gì đó trong nhóm",
+      "translation": "Ngày nay, nhiều người ở các thành phố mắc bệnh tiểu đường hơn trước.",
+      "word": "prevalence"
+    },
+    {
+      "example": "Planting trees can help mitigate the effects of flooding.",
+      "meaning": "để làm cho điều xấu bớt nghiêm trọng hơn",
+      "translation": "Cây xanh có thể giảm bớt thiệt hại do lũ lụt gây ra.",
+      "word": "mitigate"
+    },
+    {
+      "example": "Cutting the bus service would only exacerbate traffic problems.",
+      "meaning": "khiến tình hình trở nên tồi tệ hơn",
+      "translation": "Ít xe buýt hơn sẽ khiến tình hình giao thông trở nên tồi tệ hơn.",
+      "word": "exacerbate"
+    },
+    {
+      "example": "Many economists advocate higher taxes on fuel.",
+      "meaning": "công khai ủng hộ một ý tưởng hoặc chính sách",
+      "translation": "Rất nhiều nhà kinh tế tranh luận ủng hộ việc đánh thuế nhiên liệu nặng nề hơn.",
+      "word": "advocate"
+    },
+    {
+      "example": "Long working hours can be detrimental to family life.",
+      "meaning": "gây tổn hại hoặc hư hỏng",
+      "translation": "Làm việc quá nhiều có thể hủy hoại cuộc sống gia đình.",
+      "word": "detrimental"
+    },
+    {
+      "example": "There is a small discrepancy between the two sets of figures.",
+      "meaning": "sự khác biệt giữa những thứ phải khớp",
+      "translation": "Hai bộ số không hoàn toàn giống nhau.",
+      "word": "discrepancy"
+    },
+    {
+      "example": "The study found a strong correlation between sleep and grades.",
+      "meaning": "mối liên hệ giữa hai điều thay đổi cùng nhau",
+      "translation": "Nghiên cứu cho thấy những học sinh ngủ nhiều hơn có xu hướng học tập tốt hơn ở trường.",
+      "word": "correlation"
+    },
+    {
+      "example": "The city saw an unprecedented number of tourists last summer.",
+      "meaning": "chưa từng xảy ra trước",
+      "translation": ". Mùa hè năm ngoái, lượng du khách đến thành phố nhiều hơn bao giờ hết.",
+      "word": "unprecedented"
+    },
+    {
+      "example": "Sales improved, albeit slowly, after the new manager arrived.",
+      "meaning": "mặc dù; được sử dụng để thêm chi tiết giới hạn",
+      "translation": "Doanh số bán hàng đã trở nên tốt hơn khi người quản lý mới bắt đầu, mặc dù chỉ với tốc độ chậm.",
+      "word": "albeit"
+    },
+    {
+      "example": "Rural areas lost people; conversely, the capital grew quickly.",
+      "meaning": "ngược lại",
+      "translation": "Vùng quê vắng tanh trong khi thủ đô lại tràn ngập nhanh chóng.",
+      "word": "conversely"
+    },
+    {
+      "example": "This is arguably the most useful chapter in the book.",
+      "meaning": "có thể, và bạn có thể đưa ra lý do cho điều đó",
+      "translation": "Có thể nói rằng chương này là chương hữu ích nhất.",
+      "word": "arguably"
+    },
+    {
+      "example": "That is a plausible explanation for the sudden drop.",
+      "meaning": "hợp lý và có khả năng đúng",
+      "translation": "Lý do đó có thể là lý do khiến các số liệu giảm nhanh như vậy.",
+      "word": "plausible"
+    },
+    {
+      "example": "There was only a marginal improvement in test scores.",
+      "meaning": "rất nhỏ và không quan trọng lắm. Kết quả thử nghiệm",
+      "translation": "trở nên tốt hơn chỉ bằng một lượng nhỏ.",
+      "word": "marginal"
+    },
+    {
+      "example": "Strong research should underpin any government policy.",
+      "meaning": "để hình thành cơ sở hỗ trợ điều gì đó.",
+      "translation": "Các quyết định của Chính phủ phải được xây dựng dựa trên nghiên cứu vững chắc.",
+      "word": "underpin"
+    },
+    {
+      "example": "The benefits of the scheme outweigh the costs.",
+      "meaning": "quan trọng hơn những thứ khác",
+      "translation": "Chương trình này đáng giá vì điểm tốt quan trọng hơn số tiền bỏ ra.",
+      "word": "outweigh"
+    }
+  ],
+  "IELTS|Beginner": [
+    {
+      "example": "The number of students continued to increase last year.",
+      "meaning": "trở nên lớn hơn về số lượng hoặc số lượng",
+      "translation": "Ngày càng có nhiều học sinh hơn trong năm qua.",
+      "word": "increase"
+    },
+    {
+      "example": "Sales began to decrease after the summer.",
+      "meaning": "trở nên nhỏ hơn về số lượng hoặc số lượng",
+      "translation": "Công ty bắt đầu bán ít hơn sau khi mùa hè kết thúc.",
+      "word": "decrease"
+    },
+    {
+      "example": "House prices rise every year in this city.",
+      "meaning": "tăng lên",
+      "translation": "Những ngôi nhà ở thành phố này có giá cao hơn mỗi năm.",
+      "word": "rise"
+    },
+    {
+      "example": "Temperatures usually fall in the evening.",
+      "meaning": "giảm",
+      "translation": "Trời thường lạnh hơn khi buổi tối đến.",
+      "word": "fall"
+    },
+    {
+      "example": "The number of visitors was higher in July.",
+      "meaning": "có bao nhiêu người hoặc đồ vật",
+      "translation": "Có nhiều người đến thăm hơn trong tháng Bảy.",
+      "word": "number"
+    },
+    {
+      "example": "A small amount of rain fell in March.",
+      "meaning": "có bao nhiêu thứ",
+      "translation": "Có rất ít mưa trong tháng ba.",
+      "word": "amount"
+    },
+    {
+      "example": "There was little change in the results.",
+      "meaning": "sự khác biệt so với trước",
+      "translation": ". Kết quả gần như giữ nguyên.",
+      "word": "change"
+    },
+    {
+      "example": "The result of the survey surprised everyone.",
+      "meaning": "điều gì xảy ra hoặc được tìm thấy ở phần cuối của một điều gì đó",
+      "translation": "Những gì cuộc khảo sát tìm thấy khiến mọi người ngạc nhiên.",
+      "word": "result"
+    },
+    {
+      "example": "The main reason for the drop was bad weather.",
+      "meaning": "tại sao có chuyện gì đó xảy ra",
+      "translation": "Thời tiết xấu phần lớn là nguyên nhân gây ra cú ngã.",
+      "word": "reason"
+    },
+    {
+      "example": "For example, more people now cycle to work.",
+      "meaning": "một điều bạn đề cập đến để thể hiện ý bạn",
+      "translation": "Để thể hiện điều này, người ta có thể chỉ ra rằng hiện nay có nhiều người đi xe đạp đi làm hơn.",
+      "word": "example"
+    },
+    {
+      "example": "If you compare the two charts, the pattern is clear.",
+      "meaning": "nhìn vào hai thứ để xem chúng khác nhau như thế nào",
+      "translation": "Nhìn cả hai biểu đồ cạnh nhau sẽ giúp bạn dễ dàng nhìn thấy mô hình.",
+      "word": "compare"
+    },
+    {
+      "example": "The total was just over five thousand.",
+      "meaning": "toàn bộ số tiền khi mọi thứ được cộng lại với nhau",
+      "translation": "Mọi thứ được cộng lại với nhau chỉ hơn năm nghìn một chút.",
+      "word": "total"
+    },
+    {
+      "example": "Sales were strong; however, profits stayed flat.",
+      "meaning": "một từ dùng để thêm điều gì đó đáng ngạc nhiên hoặc khác biệt",
+      "translation": "Công ty đã bán được rất nhiều nhưng không kiếm được thêm tiền.",
+      "word": "however"
+    },
+    {
+      "example": "The class was cancelled because the teacher was ill.",
+      "meaning": "vì lý do",
+      "translation": "Không có lớp vì giáo viên bị ốm.",
+      "word": "because"
+    },
+    {
+      "example": "The main problem is the cost of housing.",
+      "meaning": "lớn nhất hoặc quan trọng nhất",
+      "translation": "Vấn đề lớn nhất là giá nhà đắt đến mức nào.",
+      "word": "main"
+    },
+    {
+      "example": "The oldest group spent the least money.",
+      "meaning": "một số người hoặc đồ vật được tính cùng nhau",
+      "translation": "Những người trong độ tuổi lớn tuổi nhất chi tiêu ít hơn bất kỳ ai khác.",
+      "word": "group"
+    },
+    {
+      "example": "The high point on the graph is in June.",
+      "meaning": "ở mức độ hoặc số lượng lớn",
+      "translation": "Tháng 6 là nơi đường trên biểu đồ đạt đến đỉnh.",
+      "word": "high"
+    },
+    {
+      "example": "Spending stayed low for the rest of the year.",
+      "meaning": "ở mức độ nhỏ hoặc số lượng",
+      "translation": "Mọi người tiếp tục chi tiêu rất ít trong suốt thời gian còn lại của năm.",
+      "word": "low"
+    },
+    {
+      "example": "About twenty percent of the class travel by bus.",
+      "meaning": "cứ một trăm thì có một con số",
+      "translation": "Khoảng một phần năm học sinh đi xe buýt.",
+      "word": "percent"
+    },
+    {
+      "example": "These figures show a clear trend.",
+      "meaning": "để làm cho một cái gì đó rõ ràng để mọi người có thể nhìn thấy nó",
+      "translation": "Các con số làm cho mẫu dễ nhìn thấy.",
+      "word": "show"
+    }
+  ],
+  "IELTS|Intermediate": [
+    {
+      "example": "The trend in car ownership was clearly upward.",
+      "meaning": "hướng chung đang chuyển động trong",
+      "translation": "Ngày càng có nhiều người mua ô tô trong khoảng thời gian đó.",
+      "word": "trend"
+    },
+    {
+      "example": "There was a slow decline in newspaper sales.",
+      "meaning": "sự sụt giảm về số lượng, số lượng hoặc chất lượng",
+      "translation": "Báo dần dần bán được ngày càng ít bản.",
+      "word": "decline"
+    },
+    {
+      "example": "There was a significant drop in air pollution.",
+      "meaning": "đủ lớn để đáng chú ý",
+      "translation": "Không khí trở nên sạch hơn đáng kể.",
+      "word": "significant"
+    },
+    {
+      "example": "The population gradually increased over ten years.",
+      "meaning": "dần dần, trong một thời gian dài",
+      "translation": "Ngày càng có nhiều người đến sống ở đó, từng chút một, trong suốt một thập kỷ.",
+      "word": "gradually"
+    },
+    {
+      "example": "The majority of people said they felt safe.",
+      "meaning": "hầu hết nhóm",
+      "translation": "Hầu hết những người được hỏi đều cho biết họ cảm thấy an toàn.",
+      "word": "majority"
+    },
+    {
+      "example": "Only a small minority chose to work from home.",
+      "meaning": "một phần nhỏ của nhóm",
+      "translation": "Chỉ một số ít người quyết định làm việc tại nhà.",
+      "word": "minority"
+    },
+    {
+      "example": "Overall, the city became cleaner and quieter.",
+      "meaning": "khi bạn xem xét tổng thể",
+      "translation": "Kết hợp mọi thứ lại với nhau, thành phố đã được cải thiện về mức độ sạch sẽ và tiếng ồn. Theo biểu đồ,",
+      "word": "overall"
+    },
+    {
+      "example": "The chart shows a steady rise in energy use.",
+      "meaning": "diễn ra với tốc độ tương tự, không có bước nhảy vọt lớn.",
+      "translation": "Việc sử dụng năng lượng tăng lên với tốc độ đồng đều.",
+      "word": "steady"
+    },
+    {
+      "example": "Prices rose sharply in the first three months.",
+      "meaning": "nhanh chóng và nhiều",
+      "translation": "Giá tăng vọt trong quý đầu tiên.",
+      "word": "sharply"
+    },
+    {
+      "example": "Men preferred football, whereas women preferred swimming.",
+      "meaning": "từng thể hiện sự tương phản giữa hai điều.",
+      "translation": "Bóng đá được nam giới yêu thích, trong khi phụ nữ lại thích bơi lội hơn.",
+      "word": "whereas"
+    },
+    {
+      "example": "The average age of the group was thirty-two.",
+      "meaning": "số lượng thông thường hoặc trung bình",
+      "translation": "Thông thường, những người trong nhóm khoảng ba mươi hai tuổi.",
+      "word": "average"
+    },
+    {
+      "example": "Unemployment is expected to remain low this year.",
+      "meaning": "giữ nguyên",
+      "translation": "Rất ít người có thể sẽ thất nghiệp trong năm nay.",
+      "word": "remain"
+    },
+    {
+      "example": "The region has seen rapid growth in tourism.",
+      "meaning": "sự gia tăng về quy mô hoặc số lượng",
+      "translation": "Ngày càng có nhiều khách du lịch đến khu vực này hơn trước.",
+      "word": "growth"
+    },
+    {
+      "example": "The survey asked a thousand people about their diet.",
+      "meaning": "một bộ câu hỏi dành cho nhiều người",
+      "translation": "Một nghìn người đã được hỏi về những gì họ ăn.",
+      "word": "survey"
+    },
+    {
+      "example": "The new tax had a big impact on small shops.",
+      "meaning": "tác động mạnh mẽ đến điều gì đó",
+      "translation": "Các cửa hàng nhỏ bị ảnh hưởng mạnh mẽ bởi mức thuế mới.",
+      "word": "impact"
+    },
+    {
+      "example": "One clear benefit of cycling is better health.",
+      "meaning": "một kết quả hoặc lợi thế tốt",
+      "translation": "Đi xe đạp rất tốt cho bạn vì nó giúp cải thiện sức khỏe của bạn.",
+      "word": "benefit"
+    },
+    {
+      "example": "Cost is the main factor when choosing a university.",
+      "meaning": "một điều góp phần tạo nên kết quả",
+      "translation": "Giá cả là vấn đề quan trọng nhất khi sinh viên chọn trường đại học. có thể xảy ra",
+      "word": "factor"
+    },
+    {
+      "example": "Young people are more likely to shop online.",
+      "meaning": "; dự kiến ​​sẽ xảy ra",
+      "translation": "Mua đồ trên mạng phổ biến hơn ở giới trẻ.",
+      "word": "likely"
+    },
+    {
+      "example": "According to the report, the river is much cleaner now.",
+      "meaning": "như một người hoặc nguồn đã nêu",
+      "translation": "Báo cáo cho biết dòng sông đã được cải thiện rất nhiều về độ sạch.",
+      "word": "according to"
+    },
+    {
+      "example": "A large proportion of the budget goes on salaries.",
+      "meaning": "là một phần của tổng thể, so với phần còn lại",
+      "translation": "Phần lớn số tiền hiện có được dùng để trả lương cho nhân viên.",
+      "word": "proportion"
+    }
+  ],
+  "Travel|Advanced": [
+    {
+      "example": "She emailed me the itinerary with every train time on it.",
+      "meaning": "kế hoạch chi tiết của hành trình",
+      "translation": "Cô ấy gửi cho tôi kế hoạch chuyến đi đầy đủ liệt kê tất cả các giờ tàu.",
+      "word": "itinerary"
+    },
+    {
+      "example": "We had an eight-hour layover in Doha and slept in the lounge.",
+      "meaning": "nghỉ giữa các chuyến bay tại sân bay bạn đi qua",
+      "translation": "Chúng tôi đã đợi tám tiếng giữa các chuyến bay ở Doha và nghỉ ngơi trong phòng chờ.",
+      "word": "layover"
+    },
+    {
+      "example": "The hotel runs a day excursion to the ruins twice a week.",
+      "meaning": "một chuyến đi ngắn có tổ chức, thường là để giải trí",
+      "translation": "Hai lần một tuần, khách sạn tổ chức chuyến đi chơi một ngày đến khu di tích.",
+      "word": "excursion"
+    },
+    {
+      "example": "The village is well off the beaten track, which is exactly why we liked it.",
+      "meaning": "cách xa nơi hầu hết khách du lịch đến",
+      "translation": "Hầu như không có khách du lịch nào đến làng và đó chính xác là sức hấp dẫn của ngôi làng.",
+      "word": "off the beaten track"
+    },
+    {
+      "example": "The jet lag hit me hard on the second morning in Tokyo.",
+      "meaning": "sự mệt mỏi mà bạn cảm thấy sau khi bay qua các múi giờ",
+      "translation": "Sự mệt mỏi do thay đổi múi giờ khiến tôi cảm thấy tồi tệ nhất vào buổi sáng thứ hai ở Tokyo.",
+      "word": "jet lag"
+    },
+    {
+      "example": "He spent a decade as an itinerant photographer with no fixed address.",
+      "meaning": "đi du lịch từ nơi này đến nơi khác thay vì định cư",
+      "translation": "Trong mười năm, anh ấy di chuyển liên tục, chụp ảnh và không bao giờ định cư ở bất cứ đâu.",
+      "word": "itinerant"
+    },
+    {
+      "example": "I will never forget the hospitality we were shown in that tiny village.",
+      "meaning": "sự đối xử thân thiện, hào phóng với khách",
+      "translation": "Sự chào đón nồng nhiệt mà chúng tôi nhận được ở ngôi làng nhỏ đó vẫn còn trong tôi.",
+      "word": "hospitality"
+    },
+    {
+      "example": "The flight was overbooked, so they offered us a voucher to take a later one.",
+      "meaning": "đã bán cho nhiều người hơn số chỗ còn trống cho",
+      "translation": ". Họ đã bán quá nhiều chỗ nên thay vào đó họ trả tiền cho chúng tôi để bay sau.",
+      "word": "overbooked"
+    },
+    {
+      "example": "Arriving passengers had to spend five days in quarantine.",
+      "meaning": "khoảng thời gian cách ly để ngăn chặn dịch bệnh lây lan",
+      "translation": "Những người hạ cánh xuống đất nước này đã bị cách ly trong năm ngày.",
+      "word": "quarantine"
+    },
+    {
+      "example": "The harbour is so picturesque that half the town is painting it.",
+      "meaning": "xinh đẹp theo phong cách cổ điển, đáng để chụp ảnh",
+      "translation": "Bến cảng trông quyến rũ đến mức nhiều người dân địa phương đang vẽ tranh về nó.",
+      "word": "picturesque"
+    },
+    {
+      "example": "One documentary about Patagonia was enough to reawaken his wanderlust.",
+      "meaning": "niềm khao khát mãnh liệt được đi du lịch và ngắm nhìn thế giới",
+      "translation": "Một bộ phim duy nhất về Patagonia đã khơi dậy niềm khao khát đi du lịch của anh ấy.",
+      "word": "wanderlust"
+    },
+    {
+      "example": "Give yourself two days in Cusco to acclimatise before you start the trek.",
+      "meaning": "để làm quen với khí hậu hoặc điều kiện mới",
+      "translation": "Hãy dành hai ngày ở Cusco để làm quen với độ cao trước khi đi bộ đường dài.",
+      "word": "acclimatise"
+    },
+    {
+      "example": "Fill in the customs declaration before you land or you will be sent back.",
+      "meaning": "một biểu mẫu liệt kê hàng hóa bạn sẽ mang vào một quốc gia",
+      "translation": "Hãy hoàn thành biểu mẫu hàng hóa trước khi hạ cánh, nếu không họ sẽ yêu cầu bạn quay trở lại.",
+      "word": "customs declaration"
+    },
+    {
+      "example": "We turned the stopover in Singapore into two proper days of sightseeing.",
+      "meaning": "điểm dừng qua đêm theo kế hoạch trên một hành trình dài",
+      "translation": "Chúng tôi kéo dài thời gian nghỉ qua đêm ở Singapore thành hai ngày du lịch trọn vẹn.",
+      "word": "stopover"
+    },
+    {
+      "example": "For that price I expected better amenities than a kettle and a broken fan.",
+      "meaning": "những tiện nghi hữu ích mà một khách sạn hoặc địa điểm cung cấp",
+      "translation": "Với chi phí đó, tôi hy vọng có những tiện nghi tốt hơn một chiếc ấm đun nước và một chiếc quạt không hoạt động.",
+      "word": "amenities"
+    },
+    {
+      "example": "The airline gave each of us a voucher for a meal in the terminal.",
+      "meaning": "một phiếu in để bạn đổi lấy hàng hóa hoặc dịch vụ",
+      "translation": "Hãng hàng không đưa cho chúng tôi phiếu để chúng tôi có thể đổi lấy thực phẩm trong nhà ga.",
+      "word": "voucher"
+    },
+    {
+      "example": "Their expedition across the ice took eleven weeks.",
+      "meaning": "một cuộc hành trình có tổ chức với mục đích nghiêm túc",
+      "translation": "Cuộc hành trình vượt băng theo kế hoạch của họ kéo dài 11 tuần.",
+      "word": "expedition"
+    },
+    {
+      "example": "I took the red-eye and went straight to the meeting from the airport.",
+      "meaning": "chuyến bay qua đêm hạ cánh vào sáng sớm",
+      "translation": "Tôi bay qua đêm và đến thẳng cuộc họp từ sân bay.",
+      "word": "red-eye"
+    },
+    {
+      "example": "We keep some cash as a contingency in case the cards stop working abroad.",
+      "meaning": "một kế hoạch hoặc số tiền được chuẩn bị sẵn trong trường hợp có sự cố xảy ra",
+      "translation": "Chúng tôi giữ lại một số tiền mặt để dự phòng trong trường hợp thẻ của chúng tôi bị hỏng ở nước ngoài.",
+      "word": "contingency"
+    },
+    {
+      "example": "That courtyard café is a hidden gem, and the locals want to keep it that way.",
+      "meaning": "một địa điểm tuyệt vời mà ít người biết về",
+      "translation": "Hầu như không ai biết về quán cà phê sân trong xinh xắn đó và người dân địa phương thích nó được giữ bí mật.",
+      "word": "hidden gem"
+    }
+  ],
+  "Travel|Beginner": [
+    {
+      "example": "We got to the airport two hours before our flight.",
+      "meaning": "nơi máy bay cất cánh và hạ cánh",
+      "translation": "Chúng tôi đến nơi máy bay cất cánh sớm hai tiếng.",
+      "word": "airport"
+    },
+    {
+      "example": "Please show your ticket to the driver when you get on.",
+      "meaning": "giấy hoặc thẻ cho phép bạn đi du lịch",
+      "translation": "Đưa cho tài xế xem thẻ chứng minh bạn đã trả tiền cho chuyến đi.",
+      "word": "ticket"
+    },
+    {
+      "example": "My bag is too heavy to carry up the stairs.",
+      "meaning": "thùng đựng đồ bạn đựng đồ trong",
+      "translation": "Thùng đựng đồ của tôi nặng quá tôi không thể nhấc lên lầu được.",
+      "word": "bag"
+    },
+    {
+      "example": "Our hotel is right next to the beach.",
+      "meaning": "tòa nhà nơi bạn trả tiền để ngủ khi đi du lịch",
+      "translation": "Nơi chúng tôi đang ở rất gần bãi biển.",
+      "word": "hotel"
+    },
+    {
+      "example": "Our room is on the fourth floor.",
+      "meaning": "không gian trong khách sạn nơi bạn ngủ",
+      "translation": "Không gian chúng tôi ngủ nằm trên tầng 4 của tòa nhà.",
+      "word": "room"
+    },
+    {
+      "example": "I opened the map on my phone to find the museum.",
+      "meaning": "bản vẽ chỉ ra các địa điểm",
+      "translation": "Tôi đã sử dụng hình ảnh đường phố trên điện thoại của mình để tìm bảo tàng.",
+      "word": "map"
+    },
+    {
+      "example": "The bus to the city centre leaves every ten minutes.",
+      "meaning": "một phương tiện lớn chở nhiều người",
+      "translation": "Một phương tiện chở khách lớn đi vào trung tâm thành phố cứ sau mười phút.",
+      "word": "bus"
+    },
+    {
+      "example": "We took the night train from Rome to Venice.",
+      "meaning": "một phương tiện dài chạy trên đường ray",
+      "translation": "Chúng tôi đã đi từ Rome đến Venice qua đêm trên đường ray.",
+      "word": "train"
+    },
+    {
+      "example": "Can you call a taxi for us, please?",
+      "meaning": "xe bạn trả tiền để đưa bạn đi đâu đó",
+      "translation": "Vui lòng gọi điện yêu cầu xe có tài xế đến đón chúng tôi.",
+      "word": "taxi"
+    },
+    {
+      "example": "Our flight to Madrid takes about three hours.",
+      "meaning": "hành trình trên máy bay",
+      "translation": "Hành trình máy bay đến Madrid kéo dài khoảng ba giờ.",
+      "word": "flight"
+    },
+    {
+      "example": "Don't forget your passport, or they won't let you fly.",
+      "meaning": "cuốn sổ nhỏ chứng minh bạn là ai ở nước ngoài",
+      "translation": "Hãy nhớ sổ hộ khẩu du lịch của bạn, nếu không bạn không thể lên máy bay.",
+      "word": "passport"
+    },
+    {
+      "example": "We are planning a trip to the mountains this weekend.",
+      "meaning": "một chuyến đi ngắn đến một nơi và quay lại",
+      "translation": "Chúng tôi đang tổ chức một chuyến đi ngắn đến vùng núi vào cuối tuần.",
+      "word": "trip"
+    },
+    {
+      "example": "The kids played on the beach all afternoon.",
+      "meaning": "bãi cát cạnh biển",
+      "translation": "Các em đã dành cả buổi chiều bên biển trên bãi cát.",
+      "word": "beach"
+    },
+    {
+      "example": "I will meet you outside the station at six.",
+      "meaning": "nơi dừng xe lửa hoặc xe buýt",
+      "translation": "Tôi sẽ đợi bạn trước trạm dừng tàu lúc sáu giờ.",
+      "word": "station"
+    },
+    {
+      "example": "My seat is by the window, so I can see the clouds.",
+      "meaning": "nơi em ngồi",
+      "translation": "Tôi ngồi cạnh cửa sổ và có thể ngắm mây.",
+      "word": "seat"
+    },
+    {
+      "example": "I left the key on the table in the hotel room.",
+      "meaning": "vật nhỏ mở cửa",
+      "translation": "Tôi để quên dụng cụ mở cửa trên bàn trong phòng khách sạn của mình.",
+      "word": "key"
+    },
+    {
+      "example": "I changed some money at the airport before we left.",
+      "meaning": "số xu và giấy bạc bạn thanh toán bằng",
+      "translation": "Tôi đã đổi tiền mặt của mình lấy loại tiền địa phương tại sân bay.",
+      "word": "money"
+    },
+    {
+      "example": "We want to visit the old castle tomorrow morning.",
+      "meaning": "để đi xem một địa điểm hoặc một người",
+      "translation": "Chúng tôi dự định đi xem lâu đài cổ vào buổi sáng.",
+      "word": "visit"
+    },
+    {
+      "example": "She brought her camera to take pictures of the harbour.",
+      "meaning": "một chiếc máy nhỏ để chụp ảnh",
+      "translation": "Cô mang theo một thiết bị chụp ảnh để chụp ảnh bến cảng.",
+      "word": "camera"
+    },
+    {
+      "example": "We are going on holiday for two weeks in July.",
+      "meaning": "thời gian nghỉ làm hoặc đi học để đi du lịch và nghỉ ngơi",
+      "translation": "Chúng tôi sẽ đi nghỉ và đi du lịch trong hai tuần vào tháng Bảy.",
+      "word": "holiday"
+    }
+  ],
+  "Travel|Intermediate": [
+    {
+      "example": "Have your boarding pass ready before you reach the gate.",
+      "meaning": "thẻ cho phép bạn lên máy bay",
+      "translation": "Nhận thẻ cho phép bạn lên máy bay trước cổng.",
+      "word": "boarding pass"
+    },
+    {
+      "example": "Our luggage did not arrive with us in Lisbon.",
+      "meaning": "tất cả hành lý bạn mang theo trong chuyến hành trình",
+      "translation": "Hành lý của chúng tôi không thể xuất hiện ở Lisbon khi chúng tôi đến.",
+      "word": "luggage"
+    },
+    {
+      "example": "The departure time on the screen changed to nine forty.",
+      "meaning": "hành động khởi hành trên một hành trình",
+      "translation": "Màn hình hiện cho biết máy bay khởi hành lúc chín giờ bốn mươi.",
+      "word": "departure"
+    },
+    {
+      "example": "We will call you as soon as we hear the arrival announcement.",
+      "meaning": "ngay khi bạn đến địa điểm",
+      "translation": "Chúng tôi sẽ gọi điện cho bạn ngay khi họ thông báo rằng máy bay đã hạ cánh.",
+      "word": "arrival"
+    },
+    {
+      "example": "There was a two-hour delay because of the storm.",
+      "meaning": "sự chờ đợi khiến điều gì đó xảy ra muộn hơn dự định",
+      "translation": "Cơn bão khiến mọi thứ diễn ra muộn hơn hai giờ so với dự định.",
+      "word": "delay"
+    },
+    {
+      "example": "They stopped me at customs and looked inside my suitcase.",
+      "meaning": "nơi quan chức kiểm tra những gì bạn mang vào một quốc gia",
+      "translation": "Các quan chức biên giới kéo tôi sang một bên và lục soát vali của tôi.",
+      "word": "customs"
+    },
+    {
+      "example": "I made a reservation for two nights under my last name.",
+      "meaning": "sắp xếp để giữ phòng hoặc chỗ ngồi cho bạn",
+      "translation": "Tôi đã đặt phòng cho hai đêm và nó được liệt kê dưới họ của tôi.",
+      "word": "reservation"
+    },
+    {
+      "example": "We can check in at the hotel any time after two o'clock.",
+      "meaning": "để đăng ký thời gian đến của bạn tại khách sạn hoặc sân bay",
+      "translation": "Khách sạn sẽ đăng ký thời gian đến của chúng tôi từ hai giờ trở đi.",
+      "word": "check in"
+    },
+    {
+      "example": "The local currency is much weaker than it was last year.",
+      "meaning": "loại tiền mà một quốc gia sử dụng",
+      "translation": "Số tiền được sử dụng ở đây có giá trị thấp hơn nhiều so với một năm trước.",
+      "word": "currency"
+    },
+    {
+      "example": "My guidebook says the cathedral closes at five.",
+      "meaning": "cuốn sách có thông tin dành cho du khách đến một địa điểm",
+      "translation": "Theo cuốn sách thông tin dành cho du khách của tôi, nhà thờ đóng cửa lúc năm giờ.",
+      "word": "guidebook"
+    },
+    {
+      "example": "I bought a small wooden bird as a souvenir from Prague.",
+      "meaning": "thứ bạn mua để nhớ về một địa điểm trước",
+      "translation": "Tôi có một con chim gỗ nhỏ ở Praha để giúp tôi nhớ về chuyến đi.",
+      "word": "souvenir"
+    },
+    {
+      "example": "We spent the whole morning sightseeing in the old town.",
+      "meaning": "tham quan những địa điểm thú vị với tư cách là khách du lịch",
+      "translation": "Chúng tôi đã ngắm nhìn những khu vực thú vị của phố cổ suốt cả buổi sáng.",
+      "word": "sightseeing"
+    },
+    {
+      "example": "Accommodation near the station is cheaper than in the centre.",
+      "meaning": "một nơi để ở khi bạn đi du lịch",
+      "translation": "Những nơi ở gần nhà ga có giá thấp hơn những nơi ở trung tâm thành phố.",
+      "word": "accommodation"
+    },
+    {
+      "example": "If this train is late, I will miss my connection in Zurich.",
+      "meaning": "chuyến bay hoặc chuyến tàu thứ hai bạn đổi sang",
+      "translation": "Chuyến tàu muộn có nghĩa là tôi sẽ không bắt chuyến tiếp theo ở Zurich.",
+      "word": "connection"
+    },
+    {
+      "example": "I only booked a one-way ticket because I am not sure when I will come back.",
+      "meaning": "đi một chiều, không quay lại",
+      "translation": "Tôi chỉ mua vé cho chuyến đi vì chưa xác định được ngày về.",
+      "word": "one-way"
+    },
+    {
+      "example": "I always ask for a seat by the aisle so I can stretch my legs.",
+      "meaning": "lối đi giữa các hàng ghế",
+      "translation": "Tôi yêu cầu một chỗ ngồi cạnh lối đi để tôi có chỗ duỗi người.",
+      "word": "aisle"
+    },
+    {
+      "example": "The fare from the airport into town is about twenty euros.",
+      "meaning": "mức giá bạn phải trả để đi du lịch",
+      "translation": "Chi phí đi từ sân bay vào thị trấn là khoảng 20 euro.",
+      "word": "fare"
+    },
+    {
+      "example": "We made a short detour to see the waterfall on the way.",
+      "meaning": "chọn một tuyến đường dài hơn thay vì đi thẳng",
+      "translation": "Chúng tôi đã đi một đoạn đường dài hơn một chút để có thể nhìn thấy thác nước.",
+      "word": "detour"
+    },
+    {
+      "example": "Travel insurance covered the doctor's bill in Greece.",
+      "meaning": "bảo vệ tiền bạn mua trong trường hợp có sự cố xảy ra",
+      "translation": "Chính sách bảo vệ mà chúng tôi đã mua đã trả cho bác sĩ ở Hy Lạp.",
+      "word": "insurance"
+    },
+    {
+      "example": "The clock tower is the easiest landmark to find in this city.",
+      "meaning": "một tòa nhà hoặc đặc điểm nổi tiếng dễ nhận biết",
+      "translation": "Tháp đồng hồ là đặc điểm nổi tiếng đơn giản nhất có thể phát hiện ở đây.",
+      "word": "landmark"
+    }
+  ]
+}

@@ -12,6 +12,7 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.unit.LayoutDirection
+import com.example.basekmp.data.Strings
 import java.util.Locale
 
 actual object LocalAppLocale {
@@ -39,7 +40,7 @@ actual fun PlatformLocaleProvider(code: String, content: @Composable () -> Unit)
     val localizedContext = remember(context, localizedConfiguration) {
         context.createConfigurationContext(localizedConfiguration)
     }
-    val direction = if (code.startsWith("ar", ignoreCase = true)) {
+    val direction = if (Strings.isRtl(code)) {
         LayoutDirection.Rtl
     } else {
         LayoutDirection.Ltr

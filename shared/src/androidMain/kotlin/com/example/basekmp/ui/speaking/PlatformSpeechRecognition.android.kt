@@ -38,6 +38,8 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.SideEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
@@ -60,12 +62,26 @@ import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.example.basekmp.data.Strings
 import com.example.basekmp.theme.AppTheme
 
+internal class PendingMicrophoneStart {
+    var pending by mutableStateOf(false)
+        private set
+
+    fun request() { pending = true }
+    fun cancel() { pending = false }
+    fun takeIfResumed(isResumed: Boolean): Boolean {
+        if (!pending || !isResumed) return false
+        pending = false
+        return true
+    }
+}
+
 @Composable
 actual fun PlatformSpeechRecognition(
     languageTag: String,
     onResult: (String) -> Unit,
     onError: (String) -> Unit,
     onPartialResult: (String) -> Unit,
+    onInteractionStateChange: (Boolean) -> Unit,
     content: @Composable (
         isListening: Boolean,
         start: () -> Unit,
@@ -100,6 +116,8 @@ actual fun PlatformSpeechRecognition(
     var recognitionGeneration by remember { mutableIntStateOf(0) }
     var showPermissionRationale by remember { mutableStateOf(false) }
     var showSettingsDialog by remember { mutableStateOf(false) }
+    var awaitingPermissionResult by remember { mutableStateOf(false) }
+    val startAfterPermission = remember { PendingMicrophoneStart() }
 
     val startRecognition: () -> Unit = {
         val speechRecognizer = recognizer
@@ -176,11 +194,13 @@ actual fun PlatformSpeechRecognition(
     val settingsLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) {
+        awaitingPermissionResult = false
         showSettingsDialog = false
         if (ContextCompat.checkSelfPermission(context, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED) {
-            // The user granted access in Settings. Continue the action they initiated before leaving the app.
-            startRecognition()
+            // Activity results can arrive before ON_RESUME; start once the screen is active.
+            startAfterPermission.request()
         } else {
+            startAfterPermission.cancel()
             currentOnError("permission_required")
         }
     }
@@ -188,13 +208,14 @@ actual fun PlatformSpeechRecognition(
     val permissionLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.RequestPermission()
     ) { granted ->
+        awaitingPermissionResult = false
         permissionWasRequested = true
         if (granted) {
             showPermissionRationale = false
             showSettingsDialog = false
-            // Start immediately after the system grants permission; the user does not need to tap the mic again.
-            startRecognition()
+            startAfterPermission.request()
         } else {
+            startAfterPermission.cancel()
             isListening = false
             currentOnError("permission_required")
             val permanentlyDenied = permissionPreferences.getBoolean(RECORD_AUDIO_REQUESTED, false) &&
@@ -206,6 +227,12 @@ actual fun PlatformSpeechRecognition(
                 // Keep the next request behind a clear user action instead of prompting again automatically.
                 showPermissionRationale = true
             }
+        }
+    }
+
+    LaunchedEffect(startAfterPermission.pending, isAppResumed.value) {
+        if (startAfterPermission.takeIfResumed(isAppResumed.value)) {
+            startRecognition()
         }
     }
 
@@ -263,6 +290,7 @@ actual fun PlatformSpeechRecognition(
                     showPermissionRationale = false
                     permissionPreferences.edit().putBoolean(RECORD_AUDIO_REQUESTED, true).apply()
                     permissionWasRequested = true
+                    awaitingPermissionResult = true
                     permissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
             }
         )
@@ -281,12 +309,19 @@ actual fun PlatformSpeechRecognition(
                         Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
                         Uri.fromParts("package", context.packageName, null)
                     )
+                    awaitingPermissionResult = true
                     runCatching { settingsLauncher.launch(intent) }
-                        .onFailure { currentOnError("permission_required") }
+                        .onFailure {
+                            awaitingPermissionResult = false
+                            currentOnError("permission_required")
+                        }
             }
         )
     }
 
+    SideEffect {
+        onInteractionStateChange(isListening || showPermissionRationale || showSettingsDialog || awaitingPermissionResult || startAfterPermission.pending)
+    }
     content(isListening, start, stop, recognizer != null)
 }
 

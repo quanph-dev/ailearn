@@ -85,7 +85,7 @@ fun PlanSessionScreen(
     var planLevelKey by remember { mutableStateOf("") }
     var availableActivities by remember { mutableStateOf<List<PlanProgress.Activity>>(emptyList()) }
     var correctByQuestion by remember { mutableStateOf<Map<Int, Boolean>>(emptyMap()) }
-    var isLoading by remember { mutableStateOf(true) }
+    var isLoading by remember(day) { mutableStateOf(true) }
     var loadAttempt by remember { mutableIntStateOf(0) }
 
     // Load questions for the day
@@ -239,7 +239,7 @@ fun PlanSessionScreen(
                     )
                     Spacer(modifier = Modifier.height(AppTheme.dimens.spacingMd))
                     Button(
-                        onClick = { loadAttempt++ },
+                        onClick = { isLoading = true; loadAttempt++ },
                         colors = ButtonDefaults.buttonColors(containerColor = AppTheme.colors.primary)
                     ) {
                         Text(text = tr("Try Again"), color = AppTheme.colors.textOnPrimary)

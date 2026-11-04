@@ -15,9 +15,11 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.ime
 import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
@@ -44,7 +46,9 @@ import androidx.compose.material.icons.rounded.Flag
 import androidx.compose.material.icons.rounded.Mic
 import androidx.compose.material.icons.rounded.Stop
 import androidx.compose.ui.platform.LocalClipboardManager
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.AnnotatedString
+import androidx.compose.ui.text.style.TextAlign
 import com.example.basekmp.ui.components.AnimatedRobot
 import com.example.basekmp.ui.components.RobotFrameAspect
 import androidx.compose.material3.Icon
@@ -69,6 +73,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.basekmp.components.ReportIssueDialog
 import com.example.basekmp.components.RobotMood
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
@@ -104,6 +109,7 @@ fun AiTutorScreen(
 ) {
     val coroutineScope = rememberCoroutineScope()
     val listState = rememberLazyListState()
+    val isKeyboardVisible = WindowInsets.ime.getBottom(LocalDensity.current) > 0
 
     val messages = remember {
         mutableStateListOf(
@@ -118,6 +124,7 @@ fun AiTutorScreen(
     var inputText by remember { mutableStateOf("") }
     var isThinking by remember { mutableStateOf(false) }
     var connectionError by remember { mutableStateOf(false) }
+    var reportFormMessage by remember { mutableStateOf<String?>(null) }
     var closeReported by remember { mutableStateOf(false) }
     var assistantMood by remember { mutableStateOf(RobotMood.NEUTRAL) }
     val speaker = rememberPlatformSpeaker(UserPrefs.tutorVoice)
@@ -166,7 +173,8 @@ fun AiTutorScreen(
         speaker.speak(
             text = AI_TUTOR_GREETING,
             languageTag = targetLocaleTag,
-            voicePreference = UserPrefs.tutorVoice
+            voicePreference = UserPrefs.tutorVoice,
+            altLanguageTag = nativeLocaleTag
         )
     }
 
@@ -230,7 +238,7 @@ fun AiTutorScreen(
                 language = com.example.basekmp.data.Languages.learn(UserPrefs.targetLanguage).englishName,
                 nativeLanguage = com.example.basekmp.data.Languages.nativeFor(UserPrefs.nativeLanguage).englishName,
                 studentName = null,
-                withMood = false,
+                withMood = true,
                 greetInNative = true
             )
 
@@ -293,7 +301,8 @@ fun AiTutorScreen(
                         speaker.speak(
                             text = AI_TUTOR_GREETING,
                             languageTag = targetLocaleTag,
-                            voicePreference = UserPrefs.tutorVoice
+                            voicePreference = UserPrefs.tutorVoice,
+                            altLanguageTag = nativeLocaleTag
                         )
                     }) {
                         Icon(
@@ -316,7 +325,7 @@ fun AiTutorScreen(
                     isThinking -> RobotMood.THINKING
                     else -> assistantMood
                 }
-                val robotH = 150.dp
+                val robotH = if (isKeyboardVisible) 64.dp else 150.dp
                 AnimatedRobot(
                     modifier = Modifier.size(width = robotH * RobotFrameAspect, height = robotH),
                     talking = speaker.isSpeaking,
@@ -352,7 +361,8 @@ fun AiTutorScreen(
                         },
                         onStop = {
                             stopMessageSpeech()
-                        }
+                        },
+                        onReport = { reportFormMessage = msg.text }
                     )
                 }
 
@@ -379,33 +389,35 @@ fun AiTutorScreen(
                     .navigationBarsPadding()
                     .imePadding()
             ) {
-                // Quick Chips Horizontal Scroll
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(vertical = AppTheme.dimens.spacingXs)
-                        .horizontalScroll(rememberScrollState()),
-                    horizontalArrangement = Arrangement.spacedBy(AppTheme.dimens.spacingSm)
-                ) {
-                    Spacer(modifier = Modifier.width(AppTheme.dimens.spacingMd))
-                    quickChips.forEach { chip ->
-                        Box(
-                            modifier = Modifier
-                                .clip(RoundedCornerShape(AppTheme.dimens.cornerPill))
-                                .background(AppTheme.colors.surfaceCard)
-                                .border(1.dp, AppTheme.colors.border, RoundedCornerShape(AppTheme.dimens.cornerPill))
-                                .clickable { sendMessage(chip, mode = chip) }
-                                .padding(horizontal = AppTheme.dimens.spacingMd, vertical = AppTheme.dimens.spacingSm)
-                        ) {
-                            Text(
-                                text = chip,
-                                color = AppTheme.colors.primary,
-                                fontSize = 13.sp,
-                                fontWeight = FontWeight.Medium
-                            )
+                if (!isKeyboardVisible) {
+                    // Keep the conversation visible while the user types; quick actions return on close.
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = AppTheme.dimens.spacingXs)
+                            .horizontalScroll(rememberScrollState()),
+                        horizontalArrangement = Arrangement.spacedBy(AppTheme.dimens.spacingSm)
+                    ) {
+                        Spacer(modifier = Modifier.width(AppTheme.dimens.spacingMd))
+                        quickChips.forEach { chip ->
+                            Box(
+                                modifier = Modifier
+                                    .clip(RoundedCornerShape(AppTheme.dimens.cornerPill))
+                                    .background(AppTheme.colors.surfaceCard)
+                                    .border(1.dp, AppTheme.colors.border, RoundedCornerShape(AppTheme.dimens.cornerPill))
+                                    .clickable { sendMessage(chip, mode = chip) }
+                                    .padding(horizontal = AppTheme.dimens.spacingMd, vertical = AppTheme.dimens.spacingSm)
+                            ) {
+                                Text(
+                                    text = chip,
+                                    color = AppTheme.colors.primary,
+                                    fontSize = 13.sp,
+                                    fontWeight = FontWeight.Medium
+                                )
+                            }
                         }
+                        Spacer(modifier = Modifier.width(AppTheme.dimens.spacingMd))
                     }
-                    Spacer(modifier = Modifier.width(AppTheme.dimens.spacingMd))
                 }
 
                 // Bottom Input Bar
@@ -424,6 +436,7 @@ fun AiTutorScreen(
                             .clip(RoundedCornerShape(AppTheme.dimens.cornerLg))
                             .background(AppTheme.colors.surfaceCard)
                             .padding(horizontal = AppTheme.dimens.spacingLg, vertical = AppTheme.dimens.spacingMd),
+                        maxLines = 3,
                         textStyle = androidx.compose.ui.text.TextStyle(
                             color = AppTheme.colors.textPrimary,
                             fontSize = 15.sp
@@ -496,6 +509,15 @@ fun AiTutorScreen(
             }
         }
     }
+
+    if (reportFormMessage != null) {
+        ReportIssueDialog(
+            place = tr("AI Tutor"),
+            onDismiss = { reportFormMessage = null },
+            // This build has no report submission service; opening the in-app form is the available action.
+            onSubmit = { _, _ -> }
+        )
+    }
 }
 
 @Composable
@@ -504,7 +526,8 @@ private fun ChatBubble(
     isSpeaking: Boolean = false,
     spokenChars: Int? = null,
     onSpeak: (String) -> Unit = {},
-    onStop: () -> Unit = {}
+    onStop: () -> Unit = {},
+    onReport: () -> Unit = {}
 ) {
     val isUser = message.fromUser
     val alignment = if (isUser) Alignment.End else Alignment.Start
@@ -556,7 +579,8 @@ private fun ChatBubble(
                     text = displayedText,
                     color = Color(0xFF1D2939),
                     fontSize = 14.sp,
-                    lineHeight = 20.sp
+                    lineHeight = 20.sp,
+                    textAlign = TextAlign.Start
                 )
 
                 Spacer(Modifier.height(8.dp))
@@ -657,12 +681,14 @@ private fun ChatBubble(
                         Spacer(Modifier.weight(1f))
 
                         // Report Flag Icon
-                        Icon(
-                            imageVector = Icons.Rounded.Flag,
-                            contentDescription = tr("Report"),
-                            tint = Color(0xFF1D2939).copy(alpha = 0.4f),
-                            modifier = Modifier.size(16.dp)
-                        )
+                        IconButton(onClick = onReport) {
+                            Icon(
+                                imageVector = Icons.Rounded.Flag,
+                                contentDescription = tr("Report"),
+                                tint = Color(0xFF1D2939).copy(alpha = 0.55f),
+                                modifier = Modifier.size(18.dp)
+                            )
+                        }
                     }
                 }
             }
