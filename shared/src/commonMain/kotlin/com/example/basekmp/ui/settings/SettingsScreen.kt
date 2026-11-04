@@ -78,7 +78,7 @@ fun SettingsScreen(
     var currentEnglishLevel by remember { mutableStateOf(EnglishLevel.toFullName(UserPrefs.englishLevel)) }
     var currentDailyGoal by remember { mutableStateOf(UserPrefs.getDailyGoal()) }
     var currentLearnLang by remember { mutableStateOf(Languages.learn(UserPrefs.getLearnLanguage()).displayName) }
-    var currentNativeLang by remember { mutableStateOf(Languages.nativeFor(UserPrefs.nativeLanguage).displayName) }
+    val currentNativeLang = Languages.nativeFor(UserPrefs.nativeLanguage).displayName
     val currentInterfaceLang = Strings.languages.firstOrNull { it.code == Strings.getLanguage() }?.name.orEmpty()
 
     Column(
@@ -151,7 +151,6 @@ fun SettingsScreen(
                                 onSelect = { selectedName ->
                                     val lang = Languages.nativeFor(selectedName)
                                     UserPrefs.nativeLanguage = lang.code
-                                    currentNativeLang = lang.displayName
                                 }
                             )
                         }

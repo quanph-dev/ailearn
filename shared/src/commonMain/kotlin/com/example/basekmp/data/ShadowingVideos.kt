@@ -64,7 +64,7 @@ object ShadowingVideos {
         val endMs: Long
     ) {
         fun translation(nativeCode: String): String = translations[nativeCode].orEmpty()
-        fun textIn(scriptCode: String): String = if (scriptCode == "en") text else translations[scriptCode] ?: text
+        fun textIn(scriptCode: String): String = if (scriptCode == "en") text else translations[scriptCode]?.takeIf { it.isNotBlank() } ?: text
         fun translationFor(nativeCode: String, scriptCode: String): String =
             if (nativeCode == scriptCode) "" else if (nativeCode == "en") text else translation(nativeCode)
     }
@@ -74,7 +74,7 @@ object ShadowingVideos {
         val meaning: String,
         val translations: Map<String, String> = emptyMap()
     ) {
-        fun wordIn(scriptCode: String): String = if (scriptCode == "en") word else translations[scriptCode] ?: word
+        fun wordIn(scriptCode: String): String = if (scriptCode == "en") word else translations[scriptCode]?.takeIf { it.isNotBlank() } ?: word
     }
 
     data class Video(
@@ -163,6 +163,12 @@ object ShadowingVideos {
 
         try {
             val root = Json.parseToJsonElement(scriptText).jsonObject
+            // Bundled translations are safe to reuse only for the same source line/word.
+            val bundledRoot = bundledScript(id)?.let { text ->
+                runCatching { Json.parseToJsonElement(text).jsonObject }.getOrNull()
+            }
+            val bundledLines = bundledRoot?.get("lines")?.jsonArray.orEmpty()
+            val bundledWords = bundledRoot?.get("words")?.jsonArray.orEmpty()
             val scene = root["scene"]?.jsonPrimitive?.content ?: "☕"
             val colorsArray = root["colors"]?.jsonArray
             val c1 = color(colorsArray?.getOrNull(0)?.jsonPrimitive?.content, 0xFFFFE7CC)
@@ -178,14 +184,21 @@ object ShadowingVideos {
                 )
             } ?: emptyList()
 
-            val lines = root["lines"]?.jsonArray?.map { lElement ->
+            val lines = root["lines"]?.jsonArray?.mapIndexed { index, lElement ->
                 val lObj = lElement.jsonObject
                 val spIdx = lObj["speaker"]?.jsonPrimitive?.intOrNull ?: 0
                 val text = lObj["text"]?.jsonPrimitive?.content.orEmpty()
                 val start = lObj["start"]?.jsonPrimitive?.longOrNull ?: 0L
                 val end = lObj["end"]?.jsonPrimitive?.longOrNull ?: 0L
-                val trObj = lObj["tr"]?.jsonObject
-                val trMap = trObj?.mapValues { (_, v) -> v.jsonPrimitive.content } ?: emptyMap()
+                val bundledLine = bundledLines.getOrNull(index)?.jsonObject?.takeIf {
+                    it["text"]?.jsonPrimitive?.content == text &&
+                        (it["speaker"]?.jsonPrimitive?.intOrNull ?: 0) == spIdx
+                }
+                val fallback = (bundledLine?.get("tr") ?: bundledLine?.get("translations"))?.jsonObject
+                    ?.mapValues { (_, v) -> v.jsonPrimitive.content }.orEmpty()
+                val trObj = (lObj["tr"] ?: lObj["translations"])?.jsonObject
+                val trMap = fallback + trObj?.mapValues { (_, v) -> v.jsonPrimitive.content }
+                    .orEmpty().filterValues { it.isNotBlank() }
 
                 Line(
                     speaker = spIdx,
@@ -201,7 +214,13 @@ object ShadowingVideos {
                 val w = wObj["word"]?.jsonPrimitive?.content.orEmpty()
                 val m = wObj["meaning"]?.jsonPrimitive?.content.orEmpty()
                 val trObj = (wObj["translations"] ?: wObj["tr"])?.jsonObject
-                val trMap = trObj?.mapValues { (_, v) -> v.jsonPrimitive.content } ?: emptyMap()
+                val bundledWord = bundledWords.firstOrNull {
+                    it.jsonObject["word"]?.jsonPrimitive?.content?.equals(w, ignoreCase = true) == true
+                }?.jsonObject
+                val fallback = (bundledWord?.get("translations") ?: bundledWord?.get("tr"))?.jsonObject
+                    ?.mapValues { (_, v) -> v.jsonPrimitive.content }.orEmpty()
+                val trMap = fallback + trObj?.mapValues { (_, v) -> v.jsonPrimitive.content }
+                    .orEmpty().filterValues { it.isNotBlank() }
                 Word(word = w, meaning = m, translations = trMap)
             } ?: emptyList()
 
@@ -227,9 +246,20 @@ object ShadowingVideos {
         }
     }
 
-    fun title(video: Video, langCode: String = UserPrefs.nativeLanguage): String {
-        val titles = video.remote?.titles
-        return titles?.get(langCode) ?: video.title
+    fun title(video: Video, langCode: String = Strings.getLanguage()): String =
+        localizedTitle(video.title, video.remote?.titles.orEmpty(), langCode)
+
+    fun localizedTitle(title: String, titles: Map<String, String>, langCode: String = Strings.getLanguage()): String =
+        titles[langCode]?.takeIf(String::isNotBlank)
+            ?: Strings.trIn(langCode, title).takeIf { it != title && it.isNotBlank() }
+            ?: titles["en"]?.takeIf(String::isNotBlank)
+            ?: title
+
+    fun scriptCode(video: Video, learnCode: String): String {
+        val trimmed = learnCode.trim().lowercase()
+        if (trimmed.isEmpty() || trimmed == "en" || trimmed == "other") return "en"
+        val hasTranslations = video.lines.isNotEmpty() && video.lines.all { !it.translations[trimmed].isNullOrBlank() }
+        return if (hasTranslations) trimmed else "en"
     }
 
     fun thumbnailUrl(video: Video): String {
@@ -353,11 +383,12 @@ object ShadowingVideos {
                 platformWriteShadowingCache(CATALOG_URL_FILE, url)
                 catalogUrlCache = url
                 catalogRefreshedAt = lockedNow
-                return@withLock remoteEntries
+                return@withLock supplementCatalogTitles(remoteEntries, bundledCatalogEntries())
             }
 
-            val bundledEntries = if (cachedEntries.isNullOrEmpty()) bundledCatalogEntries() else null
-            val fallback = cachedEntries?.takeIf { it.isNotEmpty() } ?: bundledEntries.orEmpty()
+            val bundledEntries = bundledCatalogEntries()
+            val fallback = cachedEntries?.takeIf { it.isNotEmpty() }
+                ?.let { supplementCatalogTitles(it, bundledEntries) } ?: bundledEntries
             catalogUrlCache = url
             catalogRefreshedAt = lockedNow - CATALOG_REFRESH_MS + 30_000L
             fallback
@@ -387,6 +418,18 @@ object ShadowingVideos {
         parseCatalogEntries(Res.readBytes("files/shadowing/catalog.json").decodeToString())
     } catch (_: Exception) {
         emptyList()
+    }
+
+    internal fun supplementCatalogTitles(entries: List<CatalogEntry>, bundled: List<CatalogEntry>): List<CatalogEntry> {
+        val bundledById = bundled.associateBy { it.id }
+        return entries.map { entry ->
+            val fallback = bundledById[entry.id]?.takeIf {
+                entry.title.isNotBlank() && it.title.trim().equals(entry.title.trim(), ignoreCase = true)
+            }
+            if (fallback == null) entry else entry.copy(
+                titles = fallback.titles + entry.titles.filterValues(String::isNotBlank)
+            )
+        }
     }
 
     private fun parseCatalogEntries(text: String): List<CatalogEntry> = try {

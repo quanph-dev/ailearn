@@ -199,12 +199,23 @@ object GoalPlanFormat {
     }
 
     fun title(title: String, titles: Map<String, String>, learnTitles: Map<String, String>?): String {
-        val currentLang = Strings.getLanguage()
-        if (learnTitles != null) {
-            val match = learnTitles[currentLang] ?: learnTitles["en"]
-            if (match != null) return match
-        }
-        return titles[currentLang] ?: title
+        return titleAndLanguage(title, titles, learnTitles).first
+    }
+
+    fun titleAndLanguage(
+        title: String,
+        titles: Map<String, String>,
+        learnTitles: Map<String, String>?
+    ): Pair<String, String> {
+        val language = Strings.getLanguage()
+        val choices = listOf(
+            language to learnTitles?.get(language),
+            language to titles[language],
+            "en" to learnTitles?.get("en"),
+            "en" to titles["en"]
+        )
+        val choice = choices.firstOrNull { !it.second.isNullOrBlank() }
+        return if (choice != null) choice.second!! to choice.first else title to "en"
     }
 
     private fun parseStringsMap(obj: JsonObject?): Map<String, String> {

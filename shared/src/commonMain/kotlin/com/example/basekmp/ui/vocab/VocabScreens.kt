@@ -30,6 +30,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -51,11 +52,13 @@ import com.example.basekmp.data.Languages
 import com.example.basekmp.data.StaticContent
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
+import com.example.basekmp.data.VocabularyTranslations
 import com.example.basekmp.theme.AppTheme
 import com.example.basekmp.ui.components.DropdownField
 import com.example.basekmp.ui.components.PracticeSetupScaffold
 import com.example.basekmp.ui.speaking.SpeechCaptureMic
 import com.example.basekmp.ui.speaking.SpeechPlaybackButton
+import kotlinx.coroutines.launch
 
 /**
  * Vocabulary practice setup screen with Category, Level, and Count selectors.
@@ -130,13 +133,19 @@ fun VocabCardsScreen(
     var isFinished by remember { mutableStateOf(false) }
     var correctCount by remember { mutableIntStateOf(0) }
     var completionRecorded by remember { mutableStateOf(false) }
+    var retryingIndex by remember { mutableStateOf<Int?>(null) }
+    val scope = rememberCoroutineScope()
 
-    LaunchedEffect(wordCount) {
+    val learnLanguage = UserPrefs.targetLanguage
+    val nativeLanguage = UserPrefs.nativeLanguage
+    LaunchedEffect(wordCount, learnLanguage, nativeLanguage) {
         isLoading = true
         val words = StaticContent.vocab(
+            learnCode = learnLanguage,
+            nativeCode = nativeLanguage,
             category = PracticeConfig.vocabCategory,
             level = PracticeConfig.vocabLevel,
-            count = wordCount
+            n = wordCount
         )
         deck = words
         isLoading = false
@@ -162,11 +171,15 @@ fun VocabCardsScreen(
                 .padding(dimens.spacingLg),
             contentAlignment = Alignment.Center
         ) {
-            Text(
-                text = Strings.tr("No vocabulary cards available."),
-                color = colors.textSecondary,
-                fontSize = 15.sp
-            )
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                Text(
+                    text = Strings.tr("Content unavailable"),
+                    color = colors.textSecondary,
+                    fontSize = 15.sp
+                )
+                Spacer(Modifier.height(dimens.spacingMd))
+                PrimaryButton(text = Strings.tr("Go Back"), onClick = { onClose(0, 0) })
+            }
         }
         return
     }
@@ -202,6 +215,29 @@ fun VocabCardsScreen(
     }
 
     val currentWord = deck[currentIndex.coerceIn(0, deck.size - 1)]
+
+    fun retryTranslation() {
+        if (retryingIndex != null) return
+        val index = currentIndex
+        val word = currentWord
+        retryingIndex = index
+        scope.launch {
+            try {
+                val item = mapOf(
+                    "word" to word.word,
+                    "example" to (word.exampleBefore + word.exampleWord + word.exampleAfter)
+                )
+                val translated = VocabularyTranslations.translate(listOf(item), learnLanguage, nativeLanguage)[0]
+                if (translated != null && deck.getOrNull(index) == word) {
+                    deck = deck.toMutableList().apply {
+                        this[index] = word.copy(meaning = translated.meaning, translation = translated.translation)
+                    }
+                }
+            } finally {
+                retryingIndex = null
+            }
+        }
+    }
 
     Column(
         modifier = modifier
@@ -282,7 +318,7 @@ fun VocabCardsScreen(
 
                     // Meaning Definition
                     Text(
-                        text = currentWord.meaning,
+                        text = currentWord.meaning.ifBlank { Strings.tr("Translation unavailable") },
                         fontSize = 15.sp,
                         color = colors.textSecondary,
                         textAlign = TextAlign.Center
@@ -332,13 +368,24 @@ fun VocabCardsScreen(
                         contentAlignment = Alignment.Center
                     ) {
                         if (showTranslation) {
-                            Text(
-                                text = currentWord.translation,
-                                fontSize = 14.sp,
-                                color = colors.primary,
-                                fontWeight = FontWeight.SemiBold,
-                                textAlign = TextAlign.Center
-                            )
+                            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                                Text(
+                                    text = currentWord.translation.ifBlank { Strings.tr("Translation unavailable") },
+                                    fontSize = 14.sp,
+                                    color = colors.primary,
+                                    fontWeight = FontWeight.SemiBold,
+                                    textAlign = TextAlign.Center
+                                )
+                                if (currentWord.translation.isBlank()) {
+                                    Text(
+                                        text = Strings.tr(if (retryingIndex == currentIndex) "Translating…" else "Try Again"),
+                                        modifier = Modifier.clickable(enabled = retryingIndex == null) { retryTranslation() }
+                                            .padding(top = 8.dp),
+                                        color = colors.primary,
+                                        fontSize = 14.sp
+                                    )
+                                }
+                            }
                         } else {
                             Text(
                                 text = "👁️ ${Strings.tr("Tap to see translation")}",

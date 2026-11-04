@@ -147,10 +147,11 @@ object PlanFlow {
     suspend fun finish(
         day: Int,
         activity: PlanProgress.Activity,
-        activityEpochDay: Long = UserPrefs.todayEpochDay()
+        activityEpochDay: Long = UserPrefs.todayEpochDay(),
+        loadedDayPlan: DayPlan? = null
     ): Finish {
         val progress = PlanProgress.get()
-        val plan = dayPlan(day) ?: return Finish(
+        val plan = loadedDayPlan ?: dayPlan(day) ?: return Finish(
             dayCompleted = false,
             nextActivity = null,
             totalActivities = 0,

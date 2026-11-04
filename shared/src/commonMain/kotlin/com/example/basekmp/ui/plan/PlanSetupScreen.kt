@@ -20,8 +20,11 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.Image
 import com.example.basekmp.BackActionHandler
+import androidx.compose.foundation.relocation.BringIntoViewRequester
+import androidx.compose.foundation.relocation.bringIntoViewRequester
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
@@ -42,12 +45,16 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.focus.onFocusChanged
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -380,7 +387,7 @@ private fun GoalStepContent(
     Column(modifier = Modifier.fillMaxSize()) {
         Spacer(modifier = Modifier.height(AppTheme.dimens.spacingXl))
         Text(
-            text = trf("Why do you want to learn %s?", Languages.learn(UserPrefs.targetLanguage).displayName),
+            text = trf("Why do you want to learn %1\$s?", tr(Languages.learn(UserPrefs.targetLanguage).displayName)),
             color = AppTheme.colors.textPrimary,
             fontSize = 22.sp,
             fontWeight = FontWeight.Bold
@@ -415,7 +422,16 @@ private fun GoalStepContent(
                 }
             }
         } else {
+            val bringIntoViewRequester = remember { BringIntoViewRequester() }
+            val scope = rememberCoroutineScope()
+            val listState = rememberLazyListState()
+            LaunchedEffect(selectedGoalId, choices) {
+                if (selectedGoalId == "custom" && choices.any { it.id == "custom" && it.hasContent }) {
+                    listState.animateScrollToItem(choices.size)
+                }
+            }
             LazyColumn(
+                state = listState,
                 modifier = Modifier.weight(1f),
                 verticalArrangement = Arrangement.spacedBy(AppTheme.dimens.spacingSm)
             ) {
@@ -459,17 +475,22 @@ private fun GoalStepContent(
                         )
                     }
                 }
-            }
-            }
-
-            if (selectedGoalId == "custom" && choices.any { it.id == "custom" && it.hasContent }) {
-                Spacer(modifier = Modifier.height(AppTheme.dimens.spacingSm))
+                }
+                if (selectedGoalId == "custom" && choices.any { it.id == "custom" && it.hasContent }) {
+                    item(key = "custom_goal_input") {
                 BasicTextField(
                     value = goalNote,
                     onValueChange = onGoalNoteChange,
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(72.dp)
+                        .bringIntoViewRequester(bringIntoViewRequester)
+                        .onFocusChanged { focus ->
+                            if (focus.isFocused) scope.launch {
+                                delay(250)
+                                bringIntoViewRequester.bringIntoView()
+                            }
+                        }
                         .clip(RoundedCornerShape(AppTheme.dimens.cornerMd))
                         .background(AppTheme.colors.surfaceCard)
                         .border(1.dp, AppTheme.colors.border, RoundedCornerShape(AppTheme.dimens.cornerMd))
@@ -493,6 +514,8 @@ private fun GoalStepContent(
                         innerTextField()
                     }
                 )
+                    }
+                }
             }
         }
     }

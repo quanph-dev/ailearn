@@ -17,13 +17,6 @@ data class PlanStage(
     }
 
     fun displayTitleLanguage(learn: String): String {
-        val language = Strings.getLanguage()
-        val translations = learnTitles[learn]
-        return when {
-            translations?.containsKey(language) == true -> language
-            translations?.containsKey("en") == true -> "en"
-            titles.containsKey(language) -> language
-            else -> "en"
-        }
+        return GoalPlanFormat.titleAndLanguage(title, titles, learnTitles[learn]).second
     }
 }

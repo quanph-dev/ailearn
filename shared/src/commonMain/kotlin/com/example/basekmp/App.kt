@@ -514,7 +514,7 @@ private sealed interface ActiveSubScreen {
     data class PlanSession(val day: Int) : ActiveSubScreen
     data class PlanSpeaking(val day: Int) : ActiveSubScreen
     data class PlanVideo(val day: Int, val videoId: String) : ActiveSubScreen
-    data class PlanTalk(val day: Int, val title: String, val level: String, val titleLanguage: String) : ActiveSubScreen
+    data class PlanTalk(val day: Int, val title: String, val level: String, val titleLanguage: String, val plan: PlanFlow.DayPlan) : ActiveSubScreen
     data class ProgressDetail(val kind: String) : ActiveSubScreen
     data object LearningHistory : ActiveSubScreen
 }
@@ -651,6 +651,7 @@ private fun MainAppHost(
                         level = screen.level,
                         day = screen.day,
                         titleLanguage = screen.titleLanguage,
+                        loadedDayPlan = screen.plan,
                         systemBackRequest = lessonBackRequest,
                         onBack = { activeSubScreen = ActiveSubScreen.PlanDay(screen.day) },
                         onFinish = { activeSubScreen = ActiveSubScreen.PlanDay(screen.day) }
@@ -771,7 +772,8 @@ private fun MainAppHost(
                                     day = screen.day,
                                     title = plan.stage.displayTitle(GoalPlan.learnCode(UserPrefs.targetLanguage)),
                                     level = UserPrefs.englishLevel,
-                                    titleLanguage = plan.stage.displayTitleLanguage(GoalPlan.learnCode(UserPrefs.targetLanguage))
+                                    titleLanguage = plan.stage.displayTitleLanguage(GoalPlan.learnCode(UserPrefs.targetLanguage)),
+                                    plan = plan
                                 )
                             }
                         }

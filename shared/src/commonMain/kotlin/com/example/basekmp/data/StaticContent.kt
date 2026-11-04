@@ -59,15 +59,28 @@ object StaticContent {
         level: String,
         n: Int
     ): List<VocabWord> = withContext(Dispatchers.IO) {
-        val fileBase = "vocab_${norm(learnCode)}_${norm(nativeCode)}"
+        val learn = norm(learnCode)
+        val native = norm(nativeCode)
+        val fileBase = "vocab_${learn}_${native}"
         val normLevel = normalizeLevel(level)
         val poolKey = "$category|$normLevel"
-        val rawItems = takeRaw(fileBase, fallbackFile = "vocab_en_en", poolKey = poolKey, n = n)
-        rawItems.map { map ->
+        // A missing language pair must never silently become an English-English deck.
+        val localized = loadRawFile(fileBase, fallbackFile = fileBase)
+        val source = if (localized.isNotEmpty()) localized else {
+            val sourceFile = "vocab_${learn}_en"
+            loadRawFile(sourceFile, fallbackFile = sourceFile)
+        }
+        val rawItems = selectRaw(source, poolKey, n)
+        val translations = if (localized.isEmpty() && native != "en" && rawItems.isNotEmpty()) {
+            VocabularyTranslations.translate(rawItems, learn, native)
+        } else emptyMap()
+        rawItems.mapIndexed { index, map ->
             val word = map["word"].orEmpty()
-            val meaning = map["meaning"].orEmpty()
+            val meaning = if (localized.isNotEmpty() || native == "en") map["meaning"].orEmpty()
+                else translations[index]?.meaning.orEmpty()
             val example = map["example"].orEmpty()
-            val translation = map["translation"].orEmpty()
+            val translation = if (localized.isNotEmpty() || native == "en") map["translation"].orEmpty()
+                else translations[index]?.translation.orEmpty()
 
             val idx = if (word.isNotEmpty()) example.indexOf(word, ignoreCase = true) else -1
             val (before, targetWord, after) = if (idx >= 0) {
@@ -160,6 +173,14 @@ object StaticContent {
         n: Int
     ): List<Map<String, String>> {
         val map = loadRawFile(fileBase, fallbackFile)
+        return selectRaw(map, poolKey, n)
+    }
+
+    private fun selectRaw(
+        map: Map<String, List<Map<String, String>>>,
+        poolKey: String,
+        n: Int
+    ): List<Map<String, String>> {
         var pool = map[poolKey].orEmpty()
         if (pool.isEmpty()) {
             val prefix = poolKey.substringBefore("|")

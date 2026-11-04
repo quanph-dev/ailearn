@@ -54,6 +54,7 @@ import androidx.compose.material3.Slider
 import androidx.compose.material3.SliderDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -83,6 +84,8 @@ import com.example.basekmp.ui.components.VideoSurface
 import com.example.basekmp.ui.components.BackTitleBar
 import com.example.basekmp.ui.components.BackButton
 import com.example.basekmp.ui.components.rememberVideoPlayer
+import com.example.basekmp.ui.speaking.rememberPlatformSpeaker
+import com.example.basekmp.ui.speaking.speechLocaleTagFor
 import com.example.basekmp.data.ShadowingVideos
 import com.example.basekmp.data.Languages
 import com.example.basekmp.data.Strings
@@ -449,6 +452,22 @@ fun VideoShadowingPlayerScreen(
         return
     }
 
+    val requestedScript = Languages.learn(UserPrefs.targetLanguage).code
+    if (requestedScript != "en" && requestedScript != "other" &&
+        ShadowingVideos.scriptCode(currentVideo, requestedScript) != requestedScript
+    ) {
+        Column(
+            modifier = modifier.fillMaxSize().background(colors.background).padding(dimens.spacingLg),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(Strings.tr("Video content unavailable."), color = colors.textSecondary, textAlign = TextAlign.Center)
+            Spacer(Modifier.height(dimens.spacingMd))
+            PrimaryButton(text = Strings.tr("Go Back"), onClick = onClose, modifier = Modifier.fillMaxWidth(0.76f))
+        }
+        return
+    }
+
     val lines = currentVideo.lines
 
     fun recordShadowingCompletion(scores: Map<Int, Int> = lineScores) {
@@ -473,7 +492,142 @@ fun VideoShadowingPlayerScreen(
         onSessionCompleted?.invoke()
     }
 
+    val currentLine = lines[currentLineIndex.coerceIn(0, lines.lastIndex)]
+    val targetLangCode = Languages.learn(UserPrefs.targetLanguage).code
+    val scriptCode = remember(currentVideo, targetLangCode) {
+        ShadowingVideos.scriptCode(currentVideo, targetLangCode)
+    }
+    val isDubbed = scriptCode != "en"
+    val displayLineText = currentLine.textIn(scriptCode)
+    val savedWords by UserPrefs.savedWordsState
+    val vocabularyWords = remember(currentVideo.words, scriptCode) {
+        currentVideo.words
+            .map { it.wordIn(scriptCode).trim() }
+            .filter(String::isNotEmpty)
+            .distinctBy { it.lowercase() }
+    }
+    val vocabularyWordKeys = remember(vocabularyWords) {
+        vocabularyWords.map(ShadowingTranscript::normalizeToken)
+            .filter(String::isNotEmpty)
+            .toSet()
+    }
+    val unsavedWords = remember(vocabularyWords, savedWords) {
+        vocabularyWords.filter { it.lowercase() !in savedWords }
+    }
+    val allWordsSaved = vocabularyWords.isNotEmpty() && unsavedWords.isEmpty()
+
+    val femaleSpeaker = rememberPlatformSpeaker("female")
+    val maleSpeaker = rememberPlatformSpeaker("male")
+
+    fun stopVoices() {
+        if (isDubbed) {
+            femaleSpeaker.stop()
+            maleSpeaker.stop()
+        }
+    }
+
+    val videoAssetPath = remember(currentVideo.id, currentVideo.asset) {
+        ShadowingVideos.playbackUrl(currentVideo)
+    }
+    val videoController = rememberVideoPlayer(
+        assetPath = videoAssetPath,
+        cacheKey = "shadowing:${currentVideo.id}:v${currentVideo.remote?.version ?: 1}",
+        muted = isDubbed
+    )
+    val wordsList = remember(displayLineText) { ShadowingTranscript.tokens(displayLineText) }
+    val wordStatuses = remember(displayLineText, spokenTranscript, transcriptIsFinal) {
+        ShadowingTranscript.wordStatuses(displayLineText, spokenTranscript, transcriptIsFinal)
+    }
+    val progressedWordCount by remember(
+        videoController,
+        currentLine.startMs,
+        currentLine.endMs,
+        wordsList.size
+    ) {
+        derivedStateOf {
+            ShadowingTranscript.progressedWordCount(
+                positionMs = videoController.positionMs,
+                lineStartMs = currentLine.startMs,
+                lineEndMs = currentLine.endMs,
+                wordCount = wordsList.size
+            )
+        }
+    }
+    val isVideoPlaying = videoController.isPlaying
+    val isPlaybackActive = isVideoPlaying || (isDubbed && (femaleSpeaker.isSpeaking || maleSpeaker.isSpeaking))
+
+    val totalDurationMs = maxOf(videoController.durationMs, currentVideo.durationMs).coerceAtLeast(1L)
+    val playbackProgress = if (isSeeking) {
+        seekProgress
+    } else {
+        (videoController.positionMs.toFloat() / totalDurationMs).coerceIn(0f, 1f)
+    }
+
+    fun playCurrentLine(lineIndex: Int = currentLineIndex, startAtMs: Long? = null) {
+        if (isSpeechCapturing) return
+        val line = lines.getOrNull(lineIndex) ?: return
+        val startPosition = startAtMs?.coerceIn(line.startMs, line.endMs) ?: line.startMs
+        videoController.setSpeed(playbackSpeed)
+        videoController.stopAt(line.endMs)
+        videoController.seekTo(startPosition)
+        videoController.play()
+        if (isDubbed) {
+            stopVoices()
+            val speakerObj = currentVideo.speakers.getOrNull(line.speaker)
+            val isMale = speakerObj?.male == true
+            val activeSpeaker = if (isMale) maleSpeaker else femaleSpeaker
+            val spokenText = line.textIn(scriptCode)
+            if (spokenText.isNotBlank()) {
+                activeSpeaker.speak(
+                    text = spokenText,
+                    languageTag = speechLocaleTagFor(scriptCode),
+                    voicePreference = if (isMale) "male" else "female",
+                    speed = playbackSpeed
+                )
+            }
+        }
+    }
+
+    fun continueCurrentLine() {
+        if (isSpeechCapturing) return
+        var lineIndex = currentLineIndex
+        var line = lines.getOrNull(lineIndex) ?: return
+        val positionMs = videoController.positionMs
+
+        // If this segment has ended, continue into the next one instead of replaying it.
+        if (positionMs >= line.endMs) {
+            if (lineIndex < lines.lastIndex) {
+                lineIndex += 1
+                currentLineIndex = lineIndex
+                speechScore = lineScores[lineIndex] ?: 0
+                spokenTranscript = ""
+                line = lines[lineIndex]
+            } else {
+                // The source video may have ended; replay the final line instead of completing the session.
+                videoController.seekTo(line.startMs)
+            }
+        }
+
+        if (isDubbed) {
+            playCurrentLine(lineIndex)
+        } else {
+            videoController.setSpeed(playbackSpeed)
+            videoController.stopAt(line.endMs.takeIf { lineIndex < lines.lastIndex })
+            videoController.play()
+        }
+    }
+
+    fun finishSession(scores: Map<Int, Int> = lineScores) {
+        if (isFinished || !isReadyToFinish) return
+        videoController.pause()
+        stopVoices()
+        recordShadowingCompletion(scores)
+        isFinished = true
+    }
+
     fun completeShadowing() {
+        videoController.pause()
+        stopVoices()
         recordShadowingCompletion()
         onClose()
     }
@@ -500,108 +654,10 @@ fun VideoShadowingPlayerScreen(
         )
     }
 
-    val currentLine = lines[currentLineIndex.coerceIn(0, lines.lastIndex)]
-    val scriptCode = Languages.learn(UserPrefs.targetLanguage).code
-    val displayLineText = currentLine.textIn(scriptCode)
-    val savedWords by UserPrefs.savedWordsState
-    val vocabularyWords = remember(currentVideo.words, scriptCode) {
-        currentVideo.words
-            .map { it.wordIn(scriptCode).trim() }
-            .filter(String::isNotEmpty)
-            .distinctBy { it.lowercase() }
-    }
-    val vocabularyWordKeys = remember(vocabularyWords) {
-        vocabularyWords.map(ShadowingTranscript::normalizeToken)
-            .filter(String::isNotEmpty)
-            .toSet()
-    }
-    val unsavedWords = remember(vocabularyWords, savedWords) {
-        vocabularyWords.filter { it.lowercase() !in savedWords }
-    }
-    val allWordsSaved = vocabularyWords.isNotEmpty() && unsavedWords.isEmpty()
-
-    val videoAssetPath = remember(currentVideo.id, currentVideo.asset) {
-        ShadowingVideos.playbackUrl(currentVideo)
-    }
-    val videoController = rememberVideoPlayer(
-        assetPath = videoAssetPath,
-        cacheKey = "shadowing:${currentVideo.id}:v${currentVideo.remote?.version ?: 1}",
-        muted = false,
-        onStop = {}
-    )
-    val wordsList = remember(displayLineText) { ShadowingTranscript.tokens(displayLineText) }
-    val wordStatuses = remember(displayLineText, spokenTranscript, transcriptIsFinal) {
-        ShadowingTranscript.wordStatuses(displayLineText, spokenTranscript, transcriptIsFinal)
-    }
-    val progressedWordCount by remember(
-        videoController,
-        currentLine.startMs,
-        currentLine.endMs,
-        wordsList.size
-    ) {
-        derivedStateOf {
-            ShadowingTranscript.progressedWordCount(
-                positionMs = videoController.positionMs,
-                lineStartMs = currentLine.startMs,
-                lineEndMs = currentLine.endMs,
-                wordCount = wordsList.size
-            )
-        }
-    }
-    val isVideoPlaying = videoController.isPlaying
-
-    val totalDurationMs = maxOf(videoController.durationMs, currentVideo.durationMs).coerceAtLeast(1L)
-    val playbackProgress = if (isSeeking) {
-        seekProgress
-    } else {
-        (videoController.positionMs.toFloat() / totalDurationMs).coerceIn(0f, 1f)
-    }
-
-    fun playCurrentLine(lineIndex: Int = currentLineIndex, startAtMs: Long? = null) {
-        if (isSpeechCapturing) return
-        val line = lines.getOrNull(lineIndex) ?: return
-        val startPosition = startAtMs?.coerceIn(line.startMs, line.endMs) ?: line.startMs
-        videoController.setSpeed(playbackSpeed)
-        videoController.stopAt(line.endMs)
-        videoController.seekTo(startPosition)
-        videoController.play()
-    }
-
-    fun continueCurrentLine() {
-        if (isSpeechCapturing) return
-        var lineIndex = currentLineIndex
-        var line = lines.getOrNull(lineIndex) ?: return
-        val positionMs = videoController.positionMs
-
-        // If this segment has ended, continue into the next one instead of replaying it.
-        if (positionMs >= line.endMs) {
-            if (lineIndex < lines.lastIndex) {
-                lineIndex += 1
-                currentLineIndex = lineIndex
-                speechScore = lineScores[lineIndex] ?: 0
-                spokenTranscript = ""
-                line = lines[lineIndex]
-            } else {
-                // The source video may have ended; replay the final line instead of completing the session.
-                videoController.seekTo(line.startMs)
-            }
-        }
-
-        videoController.setSpeed(playbackSpeed)
-        videoController.stopAt(line.endMs.takeIf { lineIndex < lines.lastIndex })
-        videoController.play()
-    }
-
-    fun finishSession(scores: Map<Int, Int> = lineScores) {
-        if (isFinished || !isReadyToFinish) return
-        videoController.pause()
-        recordShadowingCompletion(scores)
-        isFinished = true
-    }
-
     fun advanceToNextLine() {
         if (isSpeechCapturing) return
         videoController.pause()
+        stopVoices()
         if (currentLineIndex < lines.lastIndex) {
             val nextIndex = currentLineIndex + 1
             currentLineIndex = nextIndex
@@ -614,6 +670,7 @@ fun VideoShadowingPlayerScreen(
 
     fun seekToPosition(positionMs: Long) {
         if (isSpeechCapturing) return
+        stopVoices()
         val target = positionMs.coerceIn(0L, totalDurationMs)
         val targetIndex = lines.indexOfLast { it.startMs <= target }.coerceIn(0, lines.lastIndex)
         val line = lines[targetIndex]
@@ -625,10 +682,20 @@ fun VideoShadowingPlayerScreen(
         playCurrentLine(targetIndex, linePosition)
     }
 
+    DisposableEffect(Unit) {
+        onDispose {
+            videoController.pause()
+            stopVoices()
+        }
+    }
+
     LaunchedEffect(currentVideo.id, isAppResumed) {
         if (isAppResumed && autoStartedVideoId != currentVideo.id) {
             autoStartedVideoId = currentVideo.id
             playCurrentLine(0)
+        } else if (!isAppResumed) {
+            videoController.pause()
+            stopVoices()
         }
     }
 
@@ -649,10 +716,12 @@ fun VideoShadowingPlayerScreen(
                 titleFontSize = 18.sp,
                 onBack = {
                     videoController.pause()
+                    stopVoices()
                     onClose()
                 },
                 onOpenSavedWords = {
                     videoController.pause()
+                    stopVoices()
                     onOpenSavedWords()
                 },
                 modifier = Modifier.padding(horizontal = dimens.spacingLg)
@@ -689,7 +758,7 @@ fun VideoShadowingPlayerScreen(
                         )
                 )
 
-                if (!isVideoPlaying && !isSpeechCapturing) {
+                if (!isPlaybackActive && !isSpeechCapturing) {
                     Box(
                         modifier = Modifier
                             .size(54.dp)
@@ -737,6 +806,7 @@ fun VideoShadowingPlayerScreen(
                         onValueChange = { value ->
                             if (!isSeeking) {
                                 videoController.pause()
+                                stopVoices()
                                 seekProgress = playbackProgress
                             }
                             isSeeking = true
@@ -882,6 +952,9 @@ fun VideoShadowingPlayerScreen(
                                 playbackSpeed = nextSpeed
                                 UserPrefs.shadowingSpeed = nextSpeed
                                 videoController.setSpeed(nextSpeed)
+                                if (isDubbed && (femaleSpeaker.isSpeaking || maleSpeaker.isSpeaking)) {
+                                    playCurrentLine()
+                                }
                             }
                             .height(32.dp)
                             .padding(horizontal = 10.dp),
@@ -985,6 +1058,7 @@ fun VideoShadowingPlayerScreen(
                     onBeforeStartRecording = {
                         // Keep the source audio out of the microphone capture and speech grading.
                         videoController.pause()
+                        stopVoices()
                     },
                     onRecordingStateChange = { isSpeechCapturing = it },
                     modifier = Modifier
@@ -1030,6 +1104,7 @@ fun VideoShadowingPlayerScreen(
                 when {
                     allWordsSaved -> {
                         videoController.pause()
+                        stopVoices()
                         onOpenSavedWords()
                     }
                     unsavedWords.isNotEmpty() -> UserPrefs.saveWords(unsavedWords)
@@ -1195,9 +1270,9 @@ fun SavedWordsScreen(
                     key = { it.key }
                 ) { entry ->
                     val detail = savedWordDetails[entry.key]
-                    val videoTitle = detail?.videoTitles?.get(nativeCode)
-                        ?.takeIf(String::isNotBlank)
-                        ?: detail?.videoTitle.orEmpty()
+                    val videoTitle = detail?.let {
+                        ShadowingVideos.localizedTitle(it.videoTitle, it.videoTitles)
+                    }.orEmpty()
                     SavedWordRow(
                         word = detail?.display ?: entry.key,
                         meaning = detail?.meaning.orEmpty(),

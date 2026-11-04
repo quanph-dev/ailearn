@@ -27,4 +27,37 @@ class ShadowingTranscriptTest {
             ShadowingTranscript.wordStatuses("Good morning", "Bad morning")
         )
     }
+
+    @Test
+    fun scriptCodeReturnsEnglishWhenLearningEnglishOrOther() {
+        val video = com.example.basekmp.data.ShadowingVideos.Video(
+            id = "test",
+            title = "Test",
+            level = "A1",
+            category = "daily",
+            scene = "☕",
+            colors = 0L to 0L,
+            asset = "test.mp4",
+            thumbMs = 500L,
+            speakers = emptyList(),
+            lines = listOf(
+                com.example.basekmp.data.ShadowingVideos.Line(
+                    speaker = 0,
+                    text = "Hello",
+                    translations = mapOf("es" to "Hola", "fr" to "Bonjour"),
+                    startMs = 0,
+                    endMs = 1000
+                )
+            ),
+            words = emptyList()
+        )
+        assertEquals("en", com.example.basekmp.data.ShadowingVideos.scriptCode(video, "en"))
+        assertEquals("en", com.example.basekmp.data.ShadowingVideos.scriptCode(video, "other"))
+        assertEquals("en", com.example.basekmp.data.ShadowingVideos.scriptCode(video, ""))
+        assertEquals("es", com.example.basekmp.data.ShadowingVideos.scriptCode(video, "es"))
+        assertEquals("fr", com.example.basekmp.data.ShadowingVideos.scriptCode(video, "fr"))
+        assertEquals("en", com.example.basekmp.data.ShadowingVideos.scriptCode(video, "de"))
+        val blankTranslation = video.copy(lines = video.lines.map { it.copy(translations = mapOf("es" to "   ")) })
+        assertEquals("en", com.example.basekmp.data.ShadowingVideos.scriptCode(blankTranslation, "es"))
+    }
 }

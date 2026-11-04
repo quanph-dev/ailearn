@@ -9,6 +9,7 @@ import com.example.basekmp.data.GoalPlan
 import com.example.basekmp.data.PlanCatalogData
 import com.example.basekmp.data.PlanGoal
 import com.example.basekmp.data.PlanStage
+import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.PlanProgress
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.Translations
@@ -151,6 +152,41 @@ class SharedCommonTest {
             PlanFlow.unlocked(plan, completed, dayFinished = false)
         )
         assertEquals(PlanProgress.Activity.QUIZ, PlanFlow.next(plan, completed))
+    }
+
+    @Test
+    fun goalQuestionUsesTranslatedLanguageNameAndTemplate() {
+        val language = com.example.basekmp.data.trIn("vi", "Arabic")
+        val question = com.example.basekmp.data.trfIn("vi", "Why do you want to learn %1\$s?", language)
+        assertTrue(question.contains(language))
+        assertFalse(question.contains("%1\$s"))
+        assertFalse(question.startsWith("Why do you"))
+    }
+
+    @Test
+    fun finalPlanActivityCompletesDayUsingLoadedPlan() = kotlinx.coroutines.runBlocking {
+        val progress = PlanProgress.get()
+        val oldPlan = progress.serialize()
+        val oldLearning = UserPrefs.serializeLearningProgress()
+        try {
+            progress.start(goal = "everyday", name = "Test")
+            val activities = PlanFlow.activitiesFor("video-id")
+            val plan = PlanFlow.DayPlan(
+                goal = PlanGoal(id = "everyday", title = "Goal", emoji = "🎯"),
+                stage = PlanStage(id = "stage", title = "Stage"),
+                dayInStage = 1,
+                available = activities,
+                videoId = "video-id"
+            )
+            activities.filterNot { it == PlanProgress.Activity.TALK }.forEach { progress.markDone(1, it) }
+            val result = PlanFlow.finish(1, PlanProgress.Activity.TALK, loadedDayPlan = plan)
+            assertTrue(result.dayCompleted)
+            assertTrue(progress.completedDays().contains(1))
+            assertTrue(progress.isUnlocked(2))
+        } finally {
+            progress.restore(oldPlan)
+            UserPrefs.restoreLearningProgress(oldLearning)
+        }
     }
 
     @Test

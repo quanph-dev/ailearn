@@ -83,6 +83,7 @@ import com.example.basekmp.components.ReportIssueDialog
 import com.example.basekmp.data.PlanProgress
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
+import com.example.basekmp.data.trf
 import com.example.basekmp.ui.components.AnimatedRobot
 import com.example.basekmp.ui.components.RobotFrameAspect
 import com.example.basekmp.ui.lifecycle.rememberIsAppResumed
@@ -131,6 +132,7 @@ fun TodayLessonScreen(
     level: String? = null,
     day: Int? = null,
     titleLanguage: String? = null,
+    loadedDayPlan: PlanFlow.DayPlan? = null,
     systemBackRequest: Int = 0,
     onBack: (Boolean) -> Unit,
     onFinish: (() -> Unit)? = null,
@@ -157,6 +159,8 @@ fun TodayLessonScreen(
 
     var remainingSeconds by remember { mutableIntStateOf(5 * 60) } // 5 minutes
     var showCompletionDialog by remember { mutableStateOf(false) }
+    var showCompletionError by remember { mutableStateOf(false) }
+    var dayCompleted by remember { mutableStateOf(false) }
     var showExitDialog by remember { mutableStateOf(false) }
     var isCompleting by remember { mutableStateOf(false) }
     var showReportDialog by remember { mutableStateOf(false) }
@@ -389,7 +393,12 @@ fun TodayLessonScreen(
         val activityEpochDay = UserPrefs.todayEpochDay()
         coroutineScope.launch {
             try {
-                day?.let { PlanFlow.finish(it, PlanProgress.Activity.TALK, activityEpochDay) }
+                val result = day?.let { PlanFlow.finish(it, PlanProgress.Activity.TALK, activityEpochDay, loadedDayPlan) }
+                if (day != null && PlanProgress.Activity.TALK !in PlanProgress.get().done(day)) {
+                    showCompletionError = true
+                    return@launch
+                }
+                dayCompleted = result?.dayCompleted == true
                 val minutesSpent = ((5 * 60 - remainingSeconds) / 60).coerceAtLeast(1)
                 UserPrefs.addLearnedMinutes(minutesSpent, activityEpochDay)
                 UserPrefs.addLearning(
@@ -399,6 +408,10 @@ fun TodayLessonScreen(
                     level = lessonLevel
                 )
                 showCompletionDialog = true
+            } catch (e: kotlinx.coroutines.CancellationException) {
+                throw e
+            } catch (_: Exception) {
+                showCompletionError = true
             } finally {
                 isCompleting = false
             }
@@ -419,12 +432,12 @@ fun TodayLessonScreen(
         val completionState = TimedLessonCompletionState(
             remainingSeconds = remainingSeconds,
             isResumed = isAppResumed,
-            responsePending = isThinking || isHintLoading || hintText != null,
+            responsePending = isThinking || isHintLoading,
             speechPending = isListening || speechInteractionBusy,
             playbackPending = speaker.isSpeaking || speakingMessageIndex != null,
-            dialogVisible = showExitDialog || showReportDialog || showCompletionDialog,
+            dialogVisible = showExitDialog || showReportDialog || showCompletionDialog || showCompletionError,
             completing = isCompleting,
-            editing = isKeyboardVisible || textMode || inputText.isNotBlank()
+            editing = isKeyboardVisible || inputText.isNotBlank()
         )
         LaunchedEffect(completionState) {
             if (completionState.canComplete) completeLesson()
@@ -992,7 +1005,7 @@ fun TodayLessonScreen(
                                         .size(52.dp)
                                         .clip(CircleShape)
                                         .background(Color(0xFFF2F4F7))
-                                        .clickable { textMode = true },
+                                        .clickable(enabled = remainingSeconds > 0) { textMode = true },
                                     contentAlignment = Alignment.Center
                                 ) {
                                     Icon(
@@ -1028,10 +1041,22 @@ fun TodayLessonScreen(
                 )
             }
 
+            if (showCompletionError) {
+                AppActionDialog(
+                    title = tr("Could not complete lesson"),
+                    message = tr("Please try again."),
+                    onDismissRequest = { showCompletionError = false; onBack(false) },
+                    confirmText = tr("Try Again"),
+                    onConfirm = { showCompletionError = false; completeLesson() },
+                    dismissText = tr("Go Back"),
+                    onDismissAction = { showCompletionError = false; onBack(false) }
+                )
+            }
+
             // Completion Dialog
             if (showCompletionDialog) {
                 AppActionDialog(
-                    title = tr("Lesson Complete!"),
+                    title = if (dayCompleted && day != null) trf("Day %1\$d complete! 🎉", day) else tr("Lesson Complete!"),
                     message = tr("Great job completing today's English speaking lesson!"),
                     onDismissRequest = {
                         showCompletionDialog = false

@@ -14,6 +14,9 @@ import platform.AVFAudio.AVSpeechSynthesisVoice
 import platform.AVFAudio.AVSpeechSynthesizer
 import platform.AVFAudio.AVSpeechSynthesizerDelegateProtocol
 import platform.AVFAudio.AVSpeechUtterance
+import platform.AVFAudio.AVSpeechUtteranceDefaultSpeechRate
+import platform.AVFAudio.AVSpeechUtteranceMinimumSpeechRate
+import platform.AVFAudio.AVSpeechUtteranceMaximumSpeechRate
 import platform.UIKit.UIApplicationDidBecomeActiveNotification
 import platform.UIKit.UIApplicationWillResignActiveNotification
 
@@ -76,6 +79,10 @@ class IosPlatformSpeaker(
         val utterances = parts.map { (part, locale) ->
             AVSpeechUtterance.speechUtteranceWithString(part).apply {
                 voice = AVSpeechSynthesisVoice.voiceWithLanguage(locale)
+                rate = (AVSpeechUtteranceDefaultSpeechRate * speed).coerceIn(
+                    AVSpeechUtteranceMinimumSpeechRate,
+                    AVSpeechUtteranceMaximumSpeechRate
+                )
             }
         }
         activeUtterance = utterances.last()

@@ -1,5 +1,7 @@
 package com.example.basekmp.data
 
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 import androidx.compose.runtime.MutableIntState
 import androidx.compose.runtime.MutableLongState
 import androidx.compose.runtime.MutableState
@@ -110,7 +112,7 @@ object UserPrefs {
     val openedLessonsState: MutableState<Set<String>> = mutableStateOf(emptySet())
 
     // User Profile
-    private var _nativeLanguage: String = "vi"
+    private var _nativeLanguage: String by mutableStateOf("vi")
     var nativeLanguage: String
         get() = _nativeLanguage
         set(value) {
@@ -119,7 +121,7 @@ object UserPrefs {
                 changed()
             }
         }
-    private var _targetLanguage: String = "en"
+    private var _targetLanguage: String by mutableStateOf("en")
     var targetLanguage: String
         get() = _targetLanguage
         set(value) {
