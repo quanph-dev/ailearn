@@ -624,7 +624,11 @@ object MyAdsUtils {
             val terminal = AtomicBoolean(false)
             AdsTechnicalLogger.log("load", placement, "start")
             try {
-                val banner = AdsUtils.loadBannerAds(activity, frame, placement, object : LoadAdsCallback() {
+                val displayMetrics = activity.resources.displayMetrics
+                val widthPixels = if (frame.width > 0) frame.width.toFloat() else displayMetrics.widthPixels.toFloat()
+                val adWidth = (widthPixels / displayMetrics.density).toInt()
+                val adSize = com.google.android.gms.ads.AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(activity, adWidth)
+                val banner = AdsUtils.loadBannerAds(activity, frame, placement, adSize, object : LoadAdsCallback() {
                     override fun onLoadSuccess(adsMeta: Boolean?) {
                         if (!terminal.compareAndSet(false, true)) return
                         AdsTechnicalLogger.log("load", placement, "success")
@@ -636,7 +640,7 @@ object MyAdsUtils {
                         AdsTechnicalLogger.log("load", placement, "fail", message ?: "load_failed")
                         completion.complete(false)
                     }
-                })
+                }, AdsUtils.shimmerBanner)
                 synchronized(lock) { if (banner != null) banners[placement] = banner }
                 val loaded = withTimeoutOrNull(DEFAULT_LOAD_TIMEOUT_MS) { completion.await() } == true
                 if (!loaded && terminal.compareAndSet(false, true)) {
@@ -644,6 +648,7 @@ object MyAdsUtils {
                 }
                 if (loaded) banner else null
             } catch (failure: Exception) {
+                if (failure is kotlin.coroutines.cancellation.CancellationException) throw failure
                 if (terminal.compareAndSet(false, true)) {
                     AdsTechnicalLogger.log("load", placement, "fail", failure.javaClass.simpleName)
                 }
@@ -663,6 +668,14 @@ object MyAdsUtils {
         AdsTechnicalLogger.log("show", placement, "start")
         return try {
             banner.showAds(frame)
+            for (i in 0 until frame.childCount) {
+                val child = frame.getChildAt(i)
+                child.layoutParams = FrameLayout.LayoutParams(
+                    FrameLayout.LayoutParams.MATCH_PARENT,
+                    FrameLayout.LayoutParams.WRAP_CONTENT,
+                    android.view.Gravity.CENTER
+                )
+            }
             true
         } catch (failure: Exception) {
             AdsTechnicalLogger.log("show", placement, "fail", failure.javaClass.simpleName)

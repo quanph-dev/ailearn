@@ -1,5 +1,6 @@
 package com.example.basekmp.ui.tutor
 
+import com.example.basekmp.AppAdsHost
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
@@ -143,6 +144,7 @@ fun TodayLessonScreen(
     titleLanguage: String? = null,
     loadedDayPlan: PlanFlow.DayPlan? = null,
     systemBackRequest: Int = 0,
+    adsHost: AppAdsHost? = null,
     onBack: (Boolean) -> Unit,
     onFinish: (() -> Unit)? = null,
     modifier: Modifier = Modifier
@@ -851,13 +853,16 @@ fun TodayLessonScreen(
                         }
                     }
 
-                    // 3. Bottom Controls Bar
-                    Box(
+                    // 3. Bottom Controls Bar & Banner Ad
+                    Column(
                         modifier = Modifier
                             .fillMaxWidth()
                             .background(Color.White)
                             .navigationBarsPadding()
                     ) {
+                        Box(
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
                         if (textMode) {
                             // Typing Mode
                             Row(
@@ -1027,8 +1032,14 @@ fun TodayLessonScreen(
                             }
                         }
                     }
+                    adsHost?.BannerAd(
+                        "B_Speak",
+                        modifier = Modifier.fillMaxWidth(),
+                        visible = !isKeyboardVisible
+                    )
                 }
             }
+        }
 
             // Exit Dialog
             if (showExitDialog) {

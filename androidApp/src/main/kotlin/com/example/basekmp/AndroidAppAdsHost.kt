@@ -5,6 +5,7 @@ import android.graphics.Color as AndroidColor
 import android.os.SystemClock
 import android.graphics.Rect
 import android.util.Log
+import android.view.ViewGroup
 import android.widget.FrameLayout
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -524,17 +525,24 @@ class AndroidAppAdsHost(private val activity: Activity) : AppAdsHost {
             ),
             factory = { context ->
                 FrameLayout(context).apply {
+                    layoutParams = ViewGroup.LayoutParams(
+                        ViewGroup.LayoutParams.MATCH_PARENT,
+                        ViewGroup.LayoutParams.WRAP_CONTENT
+                    )
                     setBackgroundColor(AndroidColor.TRANSPARENT)
                     frame = this
                 }
             },
-            update = { frame = it }
+            update = { if (frame !== it) frame = it }
         )
         LaunchedEffect(frame, placement) {
             val targetFrame = frame ?: return@LaunchedEffect
             if (!MyAdsUtils.initializeAfterConsent(activity)) return@LaunchedEffect
             val loaded = MyAdsUtils.loadBanner(activity, targetFrame, placement) ?: return@LaunchedEffect
             banner = loaded
+            if (!targetFrame.isAttachedToWindow) {
+                kotlinx.coroutines.delay(50)
+            }
             isVisible = MyAdsUtils.showBanner(placement, targetFrame)
         }
         DisposableEffect(placement) {

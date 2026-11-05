@@ -867,6 +867,7 @@ private fun MainAppHost(
                         title = screen.title,
                         level = screen.level,
                         systemBackRequest = lessonBackRequest,
+                        adsHost = adsHost,
                         onBack = { returnToMain { activeSubScreen = null } },
                         onFinish = { activeSubScreen = null }
                     )
@@ -879,6 +880,7 @@ private fun MainAppHost(
                         titleLanguage = screen.titleLanguage,
                         loadedDayPlan = screen.plan,
                         systemBackRequest = lessonBackRequest,
+                        adsHost = adsHost,
                         onBack = { activeSubScreen = ActiveSubScreen.PlanDay(screen.day) },
                         onFinish = { activeSubScreen = ActiveSubScreen.PlanDay(screen.day) }
                     )

@@ -426,97 +426,103 @@ fun AiTutorScreen(
                     }
                 }
 
-                // Bottom Input Bar
-                Row(
+                // Bottom Input Bar & Ad Container
+                Column(
                     modifier = Modifier
                         .fillMaxWidth()
                         .background(AppTheme.colors.surface)
-                        .padding(horizontal = AppTheme.dimens.spacingLg, vertical = AppTheme.dimens.spacingSm),
-                    verticalAlignment = Alignment.CenterVertically
+                        .navigationBarsPadding()
                 ) {
-                    BasicTextField(
-                        value = inputText,
-                        onValueChange = { inputText = it },
+                    Row(
                         modifier = Modifier
-                            .weight(1f)
-                            .clip(RoundedCornerShape(AppTheme.dimens.cornerLg))
-                            .background(AppTheme.colors.surfaceCard)
-                            .padding(horizontal = AppTheme.dimens.spacingLg, vertical = AppTheme.dimens.spacingMd),
-                        maxLines = 3,
-                        textStyle = androidx.compose.ui.text.TextStyle(
-                            color = AppTheme.colors.textPrimary,
-                            fontSize = 15.sp
-                        ),
-                        cursorBrush = SolidColor(AppTheme.colors.primary),
-                        keyboardOptions = KeyboardOptions(imeAction = ImeAction.Send),
-                        keyboardActions = KeyboardActions(onSend = { sendMessage(inputText) }),
-                        decorationBox = { innerTextField ->
-                            if (inputText.isEmpty()) {
-                                Text(
-                                    text = tr("Type a message…"),
-                                    color = AppTheme.colors.textTertiary,
-                                    fontSize = 15.sp
-                                )
-                            }
-                            innerTextField()
-                        }
-                    )
-
-                    Spacer(modifier = Modifier.width(AppTheme.dimens.spacingSm))
-
-                    PlatformSpeechRecognition(
-                        languageTag = "en-US",
-                        onResult = { transcript ->
-                            if (transcript.isNotBlank()) {
-                                sendMessage(transcript)
-                            }
-                        },
-                        onError = { }
-                    ) { isListening, startListening, stopListening, _ ->
-                        Box(
+                            .fillMaxWidth()
+                            .padding(horizontal = AppTheme.dimens.spacingLg, vertical = AppTheme.dimens.spacingSm),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        BasicTextField(
+                            value = inputText,
+                            onValueChange = { inputText = it },
                             modifier = Modifier
-                                .size(44.dp)
-                                .clip(CircleShape)
-                                .background(
-                                    if (inputText.isNotBlank()) AppTheme.colors.primary
-                                    else if (isListening) AppTheme.colors.error
-                                    else AppTheme.colors.primary
-                                )
-                                .clickable(enabled = !isThinking) {
-                                    if (inputText.isNotBlank()) {
-                                        sendMessage(inputText)
-                                    } else if (isListening) {
-                                        stopListening()
-                                    } else {
-                                        stopMessageSpeech()
-                                        startListening()
-                                    }
-                                },
-                            contentAlignment = Alignment.Center
-                        ) {
-                            if (inputText.isNotBlank()) {
-                                Icon(
-                                    imageVector = Icons.AutoMirrored.Rounded.Send,
-                                    contentDescription = tr("Send"),
-                                    tint = AppTheme.colors.textOnPrimary,
-                                    modifier = Modifier.size(20.dp)
-                                )
-                            } else {
-                                Icon(
-                                    imageVector = Icons.Rounded.Mic,
-                                    contentDescription = tr("Voice Input"),
-                                    tint = AppTheme.colors.textOnPrimary,
-                                    modifier = Modifier.size(22.dp)
-                                )
+                                .weight(1f)
+                                .clip(RoundedCornerShape(AppTheme.dimens.cornerLg))
+                                .background(AppTheme.colors.surfaceCard)
+                                .padding(horizontal = AppTheme.dimens.spacingLg, vertical = AppTheme.dimens.spacingMd),
+                            maxLines = 3,
+                            textStyle = androidx.compose.ui.text.TextStyle(
+                                color = AppTheme.colors.textPrimary,
+                                fontSize = 15.sp
+                            ),
+                            cursorBrush = SolidColor(AppTheme.colors.primary),
+                            keyboardOptions = KeyboardOptions(imeAction = ImeAction.Send),
+                            keyboardActions = KeyboardActions(onSend = { sendMessage(inputText) }),
+                            decorationBox = { innerTextField ->
+                                if (inputText.isEmpty()) {
+                                    Text(
+                                        text = tr("Type a message…"),
+                                        color = AppTheme.colors.textTertiary,
+                                        fontSize = 15.sp
+                                    )
+                                }
+                                innerTextField()
+                            }
+                        )
+
+                        Spacer(modifier = Modifier.width(AppTheme.dimens.spacingSm))
+
+                        PlatformSpeechRecognition(
+                            languageTag = "en-US",
+                            onResult = { transcript ->
+                                if (transcript.isNotBlank()) {
+                                    sendMessage(transcript)
+                                }
+                            },
+                            onError = { }
+                        ) { isListening, startListening, stopListening, _ ->
+                            Box(
+                                modifier = Modifier
+                                    .size(44.dp)
+                                    .clip(CircleShape)
+                                    .background(
+                                        if (inputText.isNotBlank()) AppTheme.colors.primary
+                                        else if (isListening) AppTheme.colors.error
+                                        else AppTheme.colors.primary
+                                    )
+                                    .clickable(enabled = !isThinking) {
+                                        if (inputText.isNotBlank()) {
+                                            sendMessage(inputText)
+                                        } else if (isListening) {
+                                            stopListening()
+                                        } else {
+                                            stopMessageSpeech()
+                                            startListening()
+                                        }
+                                    },
+                                contentAlignment = Alignment.Center
+                            ) {
+                                if (inputText.isNotBlank()) {
+                                    Icon(
+                                        imageVector = Icons.AutoMirrored.Rounded.Send,
+                                        contentDescription = tr("Send"),
+                                        tint = AppTheme.colors.textOnPrimary,
+                                        modifier = Modifier.size(20.dp)
+                                    )
+                                } else {
+                                    Icon(
+                                        imageVector = Icons.Rounded.Mic,
+                                        contentDescription = tr("Voice Input"),
+                                        tint = AppTheme.colors.textOnPrimary,
+                                        modifier = Modifier.size(22.dp)
+                                    )
+                                }
                             }
                         }
                     }
+                    adsHost?.BannerAd(
+                        "B_Speak",
+                        modifier = Modifier.fillMaxWidth(),
+                        visible = !isKeyboardVisible
+                    )
                 }
-                adsHost?.BannerAd(
-                    "B_Speak",
-                    modifier = Modifier.fillMaxWidth(),
-                    visible = !isKeyboardVisible
-                )
             }
         }
     }
