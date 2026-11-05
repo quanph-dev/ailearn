@@ -50,7 +50,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.basekmp.data.Strings
 import com.example.basekmp.theme.AppTheme
-import com.example.basekmp.theme.Blue
+import com.example.basekmp.theme.BrandPrimary
 import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.TrackColor
 import com.example.basekmp.ui.components.BackButton
@@ -105,13 +105,13 @@ data class SelectOption(
     val leading: (@Composable () -> Unit)? = null
 )
 
-/** Progress track styled with Engla's original palette and no trailing stop marker. */
+/** Progress track styled with Semavia's original palette and no trailing stop marker. */
 @Composable
 fun AppLinearProgressBar(
     progress: Float,
     modifier: Modifier = Modifier,
     height: Dp = 6.dp,
-    color: Color = Blue,
+    color: Color = BrandPrimary,
     trackColor: Color = TrackColor
 ) {
     val animatedProgress by animateFloatAsState(
@@ -202,7 +202,7 @@ fun OptionCard(
 
 @Composable
 fun SoundBars(
-    color: Color = Blue,
+    color: Color = BrandPrimary,
     modifier: Modifier = Modifier,
     height: Dp = 20.dp
 ) {
@@ -259,19 +259,19 @@ fun ListenButton(
                 isLoading -> {
                     CircularProgressIndicator(
                         modifier = Modifier.size(20.dp),
-                        color = Blue,
+                        color = BrandPrimary,
                         strokeWidth = 2.5.dp
                     )
                 }
                 isPlaying -> {
-                    SoundBars(color = Blue, height = 20.dp)
+                    SoundBars(color = BrandPrimary, height = 20.dp)
                 }
                 else -> {
                     Icon(
                         imageVector = Icons.AutoMirrored.Rounded.VolumeUp,
                         contentDescription = Strings.tr("Listen"),
                         modifier = Modifier.size(24.dp),
-                        tint = Blue
+                        tint = BrandPrimary
                     )
                 }
             }
@@ -283,7 +283,7 @@ fun ListenButton(
                 isPlaying -> Strings.tr("Playing…")
                 else -> Strings.tr("Tap to listen")
             },
-            color = Blue,
+            color = BrandPrimary,
             fontSize = 15.sp,
             fontWeight = FontWeight.SemiBold
         )

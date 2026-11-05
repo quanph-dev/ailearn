@@ -139,7 +139,7 @@ import ailearn.shared.generated.resources.tr_building_your_30_day_roadmap
 import ailearn.shared.generated.resources.tr_business
 import ailearn.shared.generated.resources.tr_buying_groceries
 import ailearn.shared.generated.resources.tr_buying_something
-import ailearn.shared.generated.resources.tr_by_using_engla_learn_language_with_ai_you_agree_to_these_terms_i
+import ailearn.shared.generated.resources.tr_by_using_semavia_you_agree_to_these_terms
 import ailearn.shared.generated.resources.tr_c1_advanced
 import ailearn.shared.generated.resources.tr_calling
 import ailearn.shared.generated.resources.tr_can_t_speak_now_skip
@@ -219,7 +219,7 @@ import ailearn.shared.generated.resources.tr_continue_day_1_d
 import ailearn.shared.generated.resources.tr_continue_learning_a2b3ad83
 import ailearn.shared.generated.resources.tr_continue_learning_acb708f6
 import ailearn.shared.generated.resources.tr_continue_lesson
-import ailearn.shared.generated.resources.tr_continue_the_conversation_in_engla
+import ailearn.shared.generated.resources.tr_continue_conversation_in_semavia
 import ailearn.shared.generated.resources.tr_continue_to_ai_conversation
 import ailearn.shared.generated.resources.tr_continue_to_quick_quiz
 import ailearn.shared.generated.resources.tr_continue_to_speaking
@@ -323,10 +323,10 @@ import ailearn.shared.generated.resources.tr_enable_app_notifications_for_contin
 import ailearn.shared.generated.resources.tr_enable_full_screen_intent_for_the_best_app_experience_and_instan
 import ailearn.shared.generated.resources.tr_enable_microphone_access_in_settings_to_use_voice_practice
 import ailearn.shared.generated.resources.tr_end_lesson
-import ailearn.shared.generated.resources.tr_engla
-import ailearn.shared.generated.resources.tr_engla_ai_tutor
-import ailearn.shared.generated.resources.tr_engla_learn_language_with_ai
-import ailearn.shared.generated.resources.tr_engla_learn_language_with_ai_stores_your_learning_preferences_ta
+import ailearn.shared.generated.resources.tr_semavia
+import ailearn.shared.generated.resources.tr_semavia_ai_tutor
+import ailearn.shared.generated.resources.tr_semavia_learn_languages
+import ailearn.shared.generated.resources.tr_semavia_stores_learning_preferences
 import ailearn.shared.generated.resources.tr_english
 import ailearn.shared.generated.resources.tr_english_learn_pro
 import ailearn.shared.generated.resources.tr_english_learn_pro_is_offered_as_weekly_and_yearly_auto_renewing
@@ -804,7 +804,7 @@ import ailearn.shared.generated.resources.tr_shadowing
 import ailearn.shared.generated.resources.tr_shadowing_accuracy
 import ailearn.shared.generated.resources.tr_shadowing_practice
 import ailearn.shared.generated.resources.tr_share_app
-import ailearn.shared.generated.resources.tr_share_engla_learn_language_with_ai
+import ailearn.shared.generated.resources.tr_share_semavia
 import ailearn.shared.generated.resources.tr_share_your_feedback_to_help_us_do_better
 import ailearn.shared.generated.resources.tr_shopping_basics
 import ailearn.shared.generated.resources.tr_shopping_for_clothes
@@ -1015,7 +1015,7 @@ import ailearn.shared.generated.resources.tr_we_may_update_these_terms_as_the_pr
 import ailearn.shared.generated.resources.tr_we_re_glad_you_like_it
 import ailearn.shared.generated.resources.tr_we_re_sorry
 import ailearn.shared.generated.resources.tr_we_re_sorry_about_it
-import ailearn.shared.generated.resources.tr_we_re_thrilled_you_love_engla_learn_language_with_ai
+import ailearn.shared.generated.resources.tr_we_re_glad_you_like_semavia
 import ailearn.shared.generated.resources.tr_weather
 import ailearn.shared.generated.resources.tr_weather_seasons
 import ailearn.shared.generated.resources.tr_wed_6_31_pm
@@ -1254,7 +1254,7 @@ internal val uiStringResourceByEnglish: Map<String, StringResource> = mapOf(
     "Business" to Res.string.tr_business,
     "Buying Groceries" to Res.string.tr_buying_groceries,
     "Buying something" to Res.string.tr_buying_something,
-    "By using Engla: Learn Language with AI you agree to these terms. If you do not agree, please discontinue use of the app." to Res.string.tr_by_using_engla_learn_language_with_ai_you_agree_to_these_terms_i,
+    "By using Semavia: Learn Languages you agree to these terms. If you do not agree, please discontinue use of the app." to Res.string.tr_by_using_semavia_you_agree_to_these_terms,
     "C1 Advanced" to Res.string.tr_c1_advanced,
     "CONTINUE LEARNING" to Res.string.tr_continue_learning_a2b3ad83,
     "Calling" to Res.string.tr_calling,
@@ -1332,7 +1332,7 @@ internal val uiStringResourceByEnglish: Map<String, StringResource> = mapOf(
     "Continue Day %1\$d" to Res.string.tr_continue_day_1_d,
     "Continue Learning" to Res.string.tr_continue_learning_acb708f6,
     "Continue lesson" to Res.string.tr_continue_lesson,
-    "Continue the conversation in Engla" to Res.string.tr_continue_the_conversation_in_engla,
+    "Continue the conversation in Semavia" to Res.string.tr_continue_conversation_in_semavia,
     "Continue to AI Conversation" to Res.string.tr_continue_to_ai_conversation,
     "Continue to Quick Quiz" to Res.string.tr_continue_to_quick_quiz,
     "Continue to Speaking" to Res.string.tr_continue_to_speaking,
@@ -1431,10 +1431,10 @@ internal val uiStringResourceByEnglish: Map<String, StringResource> = mapOf(
     "Enable app Notifications for continuous using when the app is closed." to Res.string.tr_enable_app_notifications_for_continuous_using_when_the_app_is_cl,
     "Enable microphone access in Settings to use voice practice." to Res.string.tr_enable_microphone_access_in_settings_to_use_voice_practice,
     "End lesson" to Res.string.tr_end_lesson,
-    "Engla" to Res.string.tr_engla,
-    "Engla AI Tutor" to Res.string.tr_engla_ai_tutor,
-    "Engla: Learn Language with AI" to Res.string.tr_engla_learn_language_with_ai,
-    "Engla: Learn Language with AI stores your learning preferences (target language, level, daily goal and tutor voice) only on your device. No personal data leaves your phone until a learning backend is connected." to Res.string.tr_engla_learn_language_with_ai_stores_your_learning_preferences_ta,
+    "Semavia" to Res.string.tr_semavia,
+    "Semavia AI Tutor" to Res.string.tr_semavia_ai_tutor,
+    "Semavia: Learn Languages" to Res.string.tr_semavia_learn_languages,
+    "Semavia: Learn Languages stores your learning preferences (target language, level, daily goal and tutor voice) only on your device. No personal data leaves your phone until a learning backend is connected." to Res.string.tr_semavia_stores_learning_preferences,
     "English" to Res.string.tr_english,
     "English Learn Pro" to Res.string.tr_english_learn_pro,
     "English Learn Pro is offered as weekly and yearly auto-renewing subscriptions with an optional free trial. Manage or cancel anytime from your Google Play account settings." to Res.string.tr_english_learn_pro_is_offered_as_weekly_and_yearly_auto_renewing,
@@ -1898,7 +1898,7 @@ internal val uiStringResourceByEnglish: Map<String, StringResource> = mapOf(
     "Shadowing Accuracy" to Res.string.tr_shadowing_accuracy,
     "Shadowing Practice" to Res.string.tr_shadowing_practice,
     "Share App" to Res.string.tr_share_app,
-    "Share Engla: Learn Language with AI" to Res.string.tr_share_engla_learn_language_with_ai,
+    "Share Semavia: Learn Languages" to Res.string.tr_share_semavia,
     "Share your feedback to help us do better." to Res.string.tr_share_your_feedback_to_help_us_do_better,
     "Shopping & Returns" to Res.string.tr_shopping_returns,
     "Shopping Basics" to Res.string.tr_shopping_basics,
@@ -2097,7 +2097,7 @@ internal val uiStringResourceByEnglish: Map<String, StringResource> = mapOf(
     "We're Glad You Like It!" to Res.string.tr_we_re_glad_you_like_it,
     "We're sorry about it!" to Res.string.tr_we_re_sorry_about_it,
     "We're sorry!" to Res.string.tr_we_re_sorry,
-    "We're thrilled you love Engla: Learn Language with AI!" to Res.string.tr_we_re_thrilled_you_love_engla_learn_language_with_ai,
+    "We're thrilled you love Semavia: Learn Languages!" to Res.string.tr_we_re_glad_you_like_semavia,
     "Weather" to Res.string.tr_weather,
     "Weather & Seasons" to Res.string.tr_weather_seasons,
     "Wed, 6:31 PM" to Res.string.tr_wed_6_31_pm,

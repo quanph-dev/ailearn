@@ -78,6 +78,11 @@ import com.example.basekmp.components.RobotMood
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
 import com.example.basekmp.theme.AppTheme
+import com.example.basekmp.theme.BrandPrimary
+import com.example.basekmp.theme.BubbleAi
+import com.example.basekmp.theme.BubbleUser
+import com.example.basekmp.theme.DividerColor
+import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.ui.components.BackTitleBar
 import com.example.basekmp.ui.lifecycle.rememberIsAppResumed
 import com.example.basekmp.ui.speaking.PlatformSpeechRecognition
@@ -556,10 +561,10 @@ private fun ChatBubble(
                         bottomEnd = if (isUser) 5.dp else 18.dp
                     )
                 )
-                .background(if (isUser) Color(0xFFE8F0FE) else Color(0xFFF7F9FC))
+                .background(if (isUser) BubbleUser else BubbleAi)
                 .border(
                     width = 1.dp,
-                    color = if (isUser) Color(0xFFD0E2FF) else Color(0xFFEAECF0),
+                    color = if (isUser) DividerColor else DividerColor,
                     shape = RoundedCornerShape(
                         topStart = 18.dp,
                         topEnd = 18.dp,
@@ -577,7 +582,7 @@ private fun ChatBubble(
                 )
                 Text(
                     text = displayedText,
-                    color = Color(0xFF1D2939),
+                    color = TextPrimary,
                     fontSize = 14.sp,
                     lineHeight = 20.sp,
                     textAlign = TextAlign.Start
@@ -600,14 +605,14 @@ private fun ChatBubble(
                         Icon(
                             imageVector = if (copied) Icons.Rounded.Check else Icons.Rounded.ContentCopy,
                             contentDescription = tr("Copy"),
-                            tint = if (copied) Color(0xFF2B5CFF) else Color(0xFF1D2939).copy(alpha = 0.55f),
+                            tint = if (copied) BrandPrimary else TextPrimary.copy(alpha = 0.55f),
                             modifier = Modifier.size(16.dp)
                         )
                         if (copied) {
                             Spacer(Modifier.width(4.dp))
                             Text(
                                 text = tr("Copied"),
-                                color = Color(0xFF2B5CFF),
+                                color = BrandPrimary,
                                 fontSize = 11.sp
                             )
                         }
@@ -623,7 +628,7 @@ private fun ChatBubble(
                                 modifier = Modifier
                                     .size(28.dp)
                                     .clip(CircleShape)
-                                    .background(Color(0xFF2B5CFF))
+                                    .background(BrandPrimary)
                                     .clickable { onStop() },
                                 contentAlignment = Alignment.Center
                             ) {
@@ -645,7 +650,7 @@ private fun ChatBubble(
                                 Icon(
                                     imageVector = Icons.AutoMirrored.Rounded.VolumeUp,
                                     contentDescription = tr("Listen"),
-                                    tint = Color(0xFF1D2939).copy(alpha = 0.7f),
+                                    tint = TextPrimary.copy(alpha = 0.7f),
                                     modifier = Modifier.size(16.dp)
                                 )
                             }
@@ -665,14 +670,14 @@ private fun ChatBubble(
                             Icon(
                                 imageVector = if (copied) Icons.Rounded.Check else Icons.Rounded.ContentCopy,
                                 contentDescription = tr("Copy"),
-                                tint = if (copied) Color(0xFF2B5CFF) else Color(0xFF1D2939).copy(alpha = 0.55f),
+                                tint = if (copied) BrandPrimary else TextPrimary.copy(alpha = 0.55f),
                                 modifier = Modifier.size(16.dp)
                             )
                             if (copied) {
                                 Spacer(Modifier.width(4.dp))
                                 Text(
                                     text = tr("Copied"),
-                                    color = Color(0xFF2B5CFF),
+                                    color = BrandPrimary,
                                     fontSize = 11.sp
                                 )
                             }
@@ -685,7 +690,7 @@ private fun ChatBubble(
                             Icon(
                                 imageVector = Icons.Rounded.Flag,
                                 contentDescription = tr("Report"),
-                                tint = Color(0xFF1D2939).copy(alpha = 0.55f),
+                                tint = TextPrimary.copy(alpha = 0.55f),
                                 modifier = Modifier.size(18.dp)
                             )
                         }

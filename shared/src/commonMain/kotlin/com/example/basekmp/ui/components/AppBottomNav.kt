@@ -32,7 +32,7 @@ import ailearn.shared.generated.resources.nav_practice
 import ailearn.shared.generated.resources.nav_progress
 import ailearn.shared.generated.resources.nav_settings
 import com.example.basekmp.data.Strings
-import com.example.basekmp.theme.Blue
+import com.example.basekmp.theme.BrandPrimary
 import com.example.basekmp.theme.NavBarBg
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.painterResource
@@ -62,7 +62,7 @@ fun AppBottomNav(
     modifier: Modifier = Modifier
 ) {
     val pillShape = RoundedCornerShape(50)
-    val unselectedColor = Blue.copy(alpha = 0.45f)
+    val unselectedColor = BrandPrimary.copy(alpha = 0.45f)
 
     Row(
         modifier = modifier
@@ -70,13 +70,13 @@ fun AppBottomNav(
             .shadow(10.dp, pillShape)
             .clip(pillShape)
             .background(NavBarBg)
-            .border(1.dp, Blue.copy(alpha = 0.12f), pillShape)
+            .border(1.dp, BrandPrimary.copy(alpha = 0.12f), pillShape)
             .padding(horizontal = 8.dp, vertical = 8.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
         MainTab.entries.forEach { tab ->
             val isSelected = tab == selectedTab
-            val contentColor = if (isSelected) Blue else unselectedColor
+            val contentColor = if (isSelected) BrandPrimary else unselectedColor
 
             Column(
                 modifier = Modifier

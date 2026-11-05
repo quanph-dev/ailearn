@@ -50,7 +50,7 @@ import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.formatDate
 import com.example.basekmp.formatDateTime
 import com.example.basekmp.formatTime
-import com.example.basekmp.theme.BlueSelected
+import com.example.basekmp.theme.BrandPrimaryPressed
 import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.theme.TextSecondary
@@ -293,7 +293,7 @@ private fun EntryCard(
                     val subLabel = "${Strings.tr(category)} • ${Strings.tr(level)}".uppercase()
                     Text(
                         text = subLabel,
-                        color = BlueSelected,
+                        color = BrandPrimaryPressed,
                         fontSize = 10.sp,
                         fontWeight = FontWeight.Bold,
                         maxLines = 1,

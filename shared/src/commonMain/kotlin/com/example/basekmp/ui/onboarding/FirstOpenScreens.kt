@@ -54,18 +54,23 @@ import ailearn.shared.generated.resources.ic_survey_option_de
 import ailearn.shared.generated.resources.ic_survey_option_pt
 import com.example.basekmp.data.Languages
 import com.example.basekmp.data.Strings
+import com.example.basekmp.theme.BrandPrimary
+import com.example.basekmp.theme.DividerColor
+import com.example.basekmp.theme.GradientBottom
+import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.TextPrimary
+import com.example.basekmp.theme.TextSecondary
 import com.example.basekmp.ui.components.LanguageChoiceMetrics
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.collect
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.painterResource
 
-private val SurveyBlue = Color(0xFF4C8DF6)
-private val SurveyOptionBackground = Color(0xFFF8F8F8)
-private val SurveyText = Color(0xFF222222)
-private val SurveyFooterBackground = Color(0xFFFAFAFA)
-private val IntroSubtitle = Color(0xFF9AA0A6)
+private val SurveyBlue = BrandPrimary
+private val SurveyOptionBackground = OptionSurface
+private val SurveyText = TextPrimary
+private val SurveyFooterBackground = Color.White
+private val IntroSubtitle = TextSecondary
 
 @Composable
 fun FirstOpenIntroScreen(
@@ -90,8 +95,7 @@ fun FirstOpenIntroScreen(
             .background(
                 Brush.verticalGradient(
                     colors = listOf(
-                        Color(0xFFEAF3FF),
-                        Color(0xFFF5F9FF),
+                        GradientBottom,
                         Color.White
                     )
                 )
@@ -119,7 +123,7 @@ fun FirstOpenIntroScreen(
                             .padding(horizontal = 4.dp)
                             .size(if (pagerState.currentPage == index) 8.dp else 7.dp)
                             .clip(CircleShape)
-                            .background(if (pagerState.currentPage == index) SurveyBlue else Color(0xFFD5D5D5))
+                            .background(if (pagerState.currentPage == index) SurveyBlue else DividerColor)
                     )
                 }
             }

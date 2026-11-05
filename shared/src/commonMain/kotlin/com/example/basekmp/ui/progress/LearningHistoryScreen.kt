@@ -40,7 +40,7 @@ import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.formatDate
 import com.example.basekmp.formatTime
-import com.example.basekmp.theme.BlueSelected
+import com.example.basekmp.theme.BrandPrimaryPressed
 import com.example.basekmp.theme.IncorrectRed
 import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.OptionSurfaceSelected
@@ -196,7 +196,7 @@ private fun HistoryCard(
             ) {
                 Text(
                     text = Strings.tr(category),
-                    color = BlueSelected,
+                    color = BrandPrimaryPressed,
                     fontSize = 11.sp,
                     fontWeight = FontWeight.SemiBold
                 )

@@ -34,7 +34,7 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import com.example.basekmp.data.Strings
-import com.example.basekmp.theme.BlueSelected
+import com.example.basekmp.theme.BrandPrimaryPressed
 import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.TextPrimary
 
@@ -103,7 +103,7 @@ fun SelectionDialog(
                                     .fillMaxWidth()
                                     .clip(RoundedCornerShape(16.dp))
                                     .background(
-                                        if (isSelected) BlueSelected.copy(alpha = 0.1f)
+                                        if (isSelected) BrandPrimaryPressed.copy(alpha = 0.1f)
                                         else OptionSurface
                                     )
                                     .clickable {
@@ -116,7 +116,7 @@ fun SelectionDialog(
                                 Text(
                                     text = Strings.tr(option),
                                     modifier = Modifier.weight(1f),
-                                    color = if (isSelected) BlueSelected else TextPrimary,
+                                    color = if (isSelected) BrandPrimaryPressed else TextPrimary,
                                     fontSize = 15.sp,
                                     fontWeight = if (isSelected) FontWeight.SemiBold else FontWeight.Normal
                                 )
@@ -126,7 +126,7 @@ fun SelectionDialog(
                                         modifier = Modifier
                                             .size(22.dp)
                                             .clip(CircleShape)
-                                            .background(BlueSelected),
+                                            .background(BrandPrimaryPressed),
                                         contentAlignment = Alignment.Center
                                     ) {
                                         Icon(

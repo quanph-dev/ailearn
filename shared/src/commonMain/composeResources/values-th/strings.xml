@@ -2,7 +2,7 @@
 <resources>
     <string name="cd_back">กลับ</string>
     <string name="fo_splash_describe_load_ad">กำลังเตรียมการ…</string>
-    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_title">Semavia: Learn Languages</string>
     <string name="language_confirm">ยืนยัน</string>
     <string name="language_save_error">บันทึกตัวเลือกของคุณไม่ได้ โปรดลองอีกครั้ง</string>
     <string name="language_title">ภาษา</string>
@@ -139,7 +139,7 @@
     <string name="tr_business">ธุรกิจ</string>
     <string name="tr_buying_groceries">ซื้อของชำ</string>
     <string name="tr_buying_something">การซื้อของ</string>
-    <string name="tr_by_using_engla_learn_language_with_ai_you_agree_to_these_terms_i">การใช้ Engla: Learn Language with AI ถือว่าคุณยอมรับข้อกำหนดเหล่านี้ หากคุณไม่ยอมรับ โปรดหยุดใช้แอป</string>
+    <string name="tr_by_using_semavia_you_agree_to_these_terms">การใช้ Semavia: Learn Languages ถือว่าคุณยอมรับข้อกำหนดเหล่านี้ หากคุณไม่ยอมรับ โปรดหยุดใช้แอป</string>
     <string name="tr_c1_advanced">C1 ระดับสูง</string>
     <string name="tr_calling">การโทรศัพท์</string>
     <string name="tr_can_t_speak_now_skip">ยังไม่สะดวกพูดใช่ไหม ข้ามไป</string>
@@ -215,7 +215,7 @@
     <string name="tr_continue_learning_a2b3ad83">เรียนต่อ</string>
     <string name="tr_continue_learning_acb708f6">เรียนต่อ</string>
     <string name="tr_continue_lesson">เรียนบทเรียนต่อ</string>
-    <string name="tr_continue_the_conversation_in_engla">คุยต่อใน Engla</string>
+    <string name="tr_continue_conversation_in_semavia">คุยต่อใน Semavia</string>
     <string name="tr_continue_to_ai_conversation">ไปที่สนทนากับ AI</string>
     <string name="tr_continue_to_quick_quiz">ไปที่ควิซด่วน</string>
     <string name="tr_continue_to_speaking">ไปที่ฝึกการพูด</string>
@@ -315,8 +315,8 @@
     <string name="tr_enable_full_screen_intent_for_the_best_app_experience_and_instan">เปิดการแจ้งเตือนแบบเต็มหน้าจอเพื่อประสบการณ์ที่ดีที่สุดและอัปเดตทันที</string>
     <string name="tr_enable_microphone_access_in_settings_to_use_voice_practice">เปิดการเข้าถึงไมโครโฟนในการตั้งค่าเพื่อใช้การฝึกพูด</string>
     <string name="tr_end_lesson">จบบทเรียน</string>
-    <string name="tr_engla_ai_tutor">ติวเตอร์ AI ของ Engla</string>
-    <string name="tr_engla_learn_language_with_ai_stores_your_learning_preferences_ta">Engla: Learn Language with AI จัดเก็บการตั้งค่าการเรียนรู้ของคุณ (ภาษาเป้าหมาย ระดับ เป้าหมายรายวัน และเสียงติวเตอร์) ไว้บนอุปกรณ์ของคุณเท่านั้น ไม่มีข้อมูลส่วนบุคคลใดออกจากโทรศัพท์ของคุณจนกว่าจะมีการเชื่อมต่อกับระบบเซิร์ฟเวอร์การเรียนรู้</string>
+    <string name="tr_semavia_ai_tutor">ติวเตอร์ AI ของ Semavia</string>
+    <string name="tr_semavia_stores_learning_preferences">Semavia: Learn Languages จัดเก็บการตั้งค่าการเรียนรู้ของคุณ (ภาษาเป้าหมาย ระดับ เป้าหมายรายวัน และเสียงติวเตอร์) ไว้บนอุปกรณ์ของคุณเท่านั้น ไม่มีข้อมูลส่วนบุคคลใดออกจากโทรศัพท์ของคุณจนกว่าจะมีการเชื่อมต่อกับระบบเซิร์ฟเวอร์การเรียนรู้</string>
     <string name="tr_english">ภาษาอังกฤษ</string>
     <string name="tr_english_learn_pro_is_offered_as_weekly_and_yearly_auto_renewing">English Learn Pro มีให้บริการในรูปแบบการสมัครสมาชิกแบบต่ออายุอัตโนมัติรายสัปดาห์และรายปี พร้อมทดลองใช้ฟรีตามเลือก จัดการหรือยกเลิกได้ทุกเมื่อจากการตั้งค่าบัญชี Google Play ของคุณ</string>
     <string name="tr_english_level">ระดับภาษาอังกฤษ</string>
@@ -744,7 +744,7 @@
     <string name="tr_shadowing">ชาโดว์อิ้ง</string>
     <string name="tr_shadowing_practice">ฝึกฝนการพูดตาม</string>
     <string name="tr_share_app">แชร์แอป</string>
-    <string name="tr_share_engla_learn_language_with_ai">แชร์ Engla: Learn Language with AI</string>
+    <string name="tr_share_semavia">แชร์ Semavia: Learn Languages</string>
     <string name="tr_share_your_feedback_to_help_us_do_better">แบ่งปันความคิดเห็นของคุณเพื่อช่วยให้เราทำได้ดีขึ้น</string>
     <string name="tr_shopping_basics">พื้นฐานการช็อปปิ้ง</string>
     <string name="tr_shopping_for_clothes">ซื้อเสื้อผ้า</string>
@@ -936,7 +936,7 @@
     <string name="tr_we_may_update_these_terms_as_the_product_evolves_continued_use_a">เราอาจอัปเดตข้อกำหนดเหล่านี้เมื่อผลิตภัณฑ์พัฒนาขึ้น การใช้งานต่อไปหลังจากการเปลี่ยนแปลงถือเป็นการยอมรับ</string>
     <string name="tr_we_re_glad_you_like_it">เราดีใจที่คุณชอบ!</string>
     <string name="tr_we_re_sorry_about_it">เราขอโทษด้วย!</string>
-    <string name="tr_we_re_thrilled_you_love_engla_learn_language_with_ai">เราดีใจมากที่คุณชื่นชอบ Engla: Learn Language with AI!</string>
+    <string name="tr_we_re_glad_you_like_semavia">เราดีใจมากที่คุณชื่นชอบ Semavia: Learn Languages!</string>
     <string name="tr_weather">สภาพอากาศ</string>
     <string name="tr_weather_seasons">สภาพอากาศและฤดูกาล</string>
     <string name="tr_wed_6_31_pm">พุธ, 6:31 PM</string>

@@ -1,7 +1,7 @@
 package com.example.basekmp.navigation
 
 /**
- * Complete route constants matching Engla decompiled Routes.java with 28 routes
+ * Complete route constants matching Semavia decompiled Routes.java with 28 routes
  * plus typed route constructor helpers.
  */
 object Routes {

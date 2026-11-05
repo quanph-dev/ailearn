@@ -74,7 +74,7 @@ import com.example.basekmp.data.PathCourse
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.formatString
-import com.example.basekmp.theme.Blue
+import com.example.basekmp.theme.BrandPrimary
 import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.ui.components.TabHeader
 import com.example.basekmp.ui.components.tabBottomClearance
@@ -254,7 +254,7 @@ private fun LevelChips(
             val selectedModifier = if (isSelected) {
                 Modifier
                     .background(ChipSelectedBg)
-                    .border(1.dp, Blue, shape)
+                    .border(1.dp, BrandPrimary, shape)
             } else {
                 Modifier
             }
@@ -349,7 +349,7 @@ private fun UnitCard(
                 bottom = if (isLast) 4.dp else 0.dp
             )
     ) {
-        // Blue Top Header Box of Unit
+        // BrandPrimary Top Header Box of Unit
         Column(
             modifier = Modifier
                 .fillMaxWidth()
@@ -467,7 +467,7 @@ private fun UnitJumpPill(
         Row(
             modifier = Modifier
                 .clip(CircleShape)
-                .background(Blue)
+                .background(BrandPrimary)
                 .clickable { expanded = true }
                 .padding(horizontal = 14.dp, vertical = 6.dp),
             verticalAlignment = Alignment.CenterVertically
@@ -496,7 +496,7 @@ private fun UnitJumpPill(
                     text = {
                         Text(
                             text = Strings.trf("Unit %1\$d: %2\$s", unit.number, Strings.tr(unit.title)),
-                            color = if (unit.number == currentUnitNumber) Blue else TextPrimary,
+                            color = if (unit.number == currentUnitNumber) BrandPrimary else TextPrimary,
                             fontSize = 14.sp,
                             fontWeight = if (unit.number == currentUnitNumber) FontWeight.SemiBold else FontWeight.Normal
                         )
@@ -591,17 +591,17 @@ private fun LessonTrail(
                     val filledPath = Path()
                     val filledLength = pathMeasure.length * fillFraction
                     pathMeasure.getSegment(0f, filledLength, filledPath, true)
-                    drawPath(path = filledPath, color = Blue, style = stroke)
+                    drawPath(path = filledPath, color = BrandPrimary, style = stroke)
 
                     if (fillFraction < 1f) {
                         val endpoint = pathMeasure.getPosition(filledLength)
                         drawCircle(
-                            color = Blue.copy(alpha = 0.22f),
+                            color = BrandPrimary.copy(alpha = 0.22f),
                             radius = 9.dp.toPx(),
                             center = endpoint
                         )
                         drawCircle(
-                            color = Blue,
+                            color = BrandPrimary,
                             radius = 4.5.dp.toPx(),
                             center = endpoint
                         )

@@ -34,7 +34,10 @@ import ailearn.shared.generated.resources.Res
 import ailearn.shared.generated.resources.fo_ic_logo_app
 import ailearn.shared.generated.resources.fo_splash_describe_load_ad
 import ailearn.shared.generated.resources.fo_splash_title
-import com.example.basekmp.theme.getInterFontFamily
+import com.example.basekmp.theme.BrandPrimary
+import com.example.basekmp.theme.TextPrimary
+import com.example.basekmp.theme.TextSecondary
+import com.example.basekmp.theme.getPlusJakartaFontFamily
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
 import kotlin.math.PI
@@ -46,7 +49,7 @@ private val SplashLineEasing = Easing { fraction ->
 
 @Composable
 fun SplashScreen() {
-    val inter = getInterFontFamily()
+    val plusJakarta = getPlusJakartaFontFamily()
 
     Column(
         modifier = Modifier
@@ -70,10 +73,10 @@ fun SplashScreen() {
 
                 Text(
                     text = stringResource(Res.string.fo_splash_title),
-                    color = Color(0xFF222222),
+                    color = TextPrimary,
                     fontSize = 20.sp,
                     fontWeight = FontWeight.SemiBold,
-                    fontFamily = inter,
+                    fontFamily = plusJakarta,
                     textAlign = TextAlign.Center
                 )
             }
@@ -85,10 +88,10 @@ fun SplashScreen() {
                 .fillMaxWidth()
                 .padding(horizontal = 24.dp)
                 .padding(bottom = 24.dp),
-            color = Color(0xFF9AA0A6),
+            color = TextSecondary,
             fontSize = 14.sp,
             lineHeight = 20.sp,
-            fontFamily = inter,
+            fontFamily = plusJakarta,
             textAlign = TextAlign.Center,
             maxLines = 2
         )
@@ -109,7 +112,7 @@ fun SplashScreen() {
             val barWidth = size.width * 0.4f
             val left = -barWidth + progress * (size.width + barWidth)
             drawRoundRect(
-                color = Color(0xFF2196F3),
+                color = BrandPrimary,
                 topLeft = Offset(left, 0f),
                 size = Size(barWidth, size.height),
                 cornerRadius = CornerRadius(size.height / 2f, size.height / 2f)

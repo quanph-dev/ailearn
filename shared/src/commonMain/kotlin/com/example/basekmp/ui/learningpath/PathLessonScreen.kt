@@ -55,7 +55,7 @@ import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.currentTimeMillis
 import com.example.basekmp.theme.AppTheme
-import com.example.basekmp.theme.Blue
+import com.example.basekmp.theme.BrandPrimary
 import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.theme.TextSecondary
 import com.example.basekmp.theme.TrackColor
@@ -250,7 +250,7 @@ fun PathLessonScreen(
                     ) {
                         Text(
                             text = Strings.tr(currentQuestion.kind.label),
-                            color = Blue,
+                            color = BrandPrimary,
                             fontSize = 15.sp
                         )
                     }
@@ -445,7 +445,7 @@ private fun PathLessonTopBar(
                     .fillMaxHeight()
                     .fillMaxWidth(progress)
                     .clip(CircleShape)
-                    .background(Blue)
+                    .background(BrandPrimary)
             )
         }
         Spacer(Modifier.width(22.dp))
@@ -525,7 +525,7 @@ private fun PathOptionItem(
     val borderColor by animateColorAsState(
         when (state) {
             OptionState.Idle -> PathOptionBorder
-            OptionState.Selected, OptionState.Correct -> Blue
+            OptionState.Selected, OptionState.Correct -> BrandPrimary
             OptionState.Wrong -> PathOptionWrong
         }
     )
@@ -586,7 +586,7 @@ private fun PathOptionItem(
                     modifier = Modifier
                         .size(26.dp)
                         .clip(CircleShape)
-                        .background(if (state == OptionState.Wrong) PathOptionWrong else Blue),
+                        .background(if (state == OptionState.Wrong) PathOptionWrong else BrandPrimary),
                     contentAlignment = Alignment.Center
                 ) {
                     Icon(

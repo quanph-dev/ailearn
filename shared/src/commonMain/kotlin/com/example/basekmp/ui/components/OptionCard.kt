@@ -28,7 +28,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.unit.Dp
 import com.example.basekmp.data.tr
-import com.example.basekmp.theme.BlueSelected
+import com.example.basekmp.theme.BrandPrimaryPressed
 import com.example.basekmp.theme.DividerColor
 import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.TextPrimary
@@ -111,7 +111,7 @@ private fun OptionRow(
         Text(
             text = option.label,
             modifier = Modifier.weight(1f),
-            color = if (selected) BlueSelected else TextPrimary,
+            color = if (selected) BrandPrimaryPressed else TextPrimary,
             fontSize = 16.sp,
             fontWeight = if (selected) FontWeight.SemiBold else FontWeight.Normal
         )
@@ -120,7 +120,7 @@ private fun OptionRow(
                 imageVector = Icons.Rounded.CheckCircle,
                 contentDescription = tr("Selected"),
                 modifier = Modifier.size(24.dp),
-                tint = BlueSelected
+                tint = BrandPrimaryPressed
             )
         }
     }

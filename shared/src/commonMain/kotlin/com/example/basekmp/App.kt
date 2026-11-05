@@ -57,8 +57,8 @@ import ailearn.shared.generated.resources.ui_yes_exit
 import com.example.basekmp.ui.onboarding.FirstOpenIntroScreen
 import com.example.basekmp.ui.onboarding.FirstOpenSurveyScreen
 import com.example.basekmp.ui.onboarding.OnboardingState
-import com.example.basekmp.theme.Blue
-import com.example.basekmp.theme.BlueSelected
+import com.example.basekmp.theme.BrandPrimary
+import com.example.basekmp.theme.BrandPrimaryPressed
 import com.example.basekmp.theme.DividerColor
 import com.example.basekmp.theme.EnglishLearningAppTheme
 import com.example.basekmp.theme.GradientBottom
@@ -285,7 +285,7 @@ private fun ExitPrimaryButton(text: String, onClick: () -> Unit) {
             .fillMaxWidth()
             .height(52.dp)
             .clip(RoundedCornerShape(18.dp))
-            .background(Blue)
+            .background(BrandPrimary)
             .clickable(role = Role.Button, onClick = onClick),
         contentAlignment = Alignment.Center
     ) {
@@ -354,7 +354,7 @@ private fun LanguageScreen(state: BaseAppUiState, viewModel: BaseAppViewModel) {
                 modifier = Modifier
                     .size(44.dp)
                     .clip(CircleShape)
-                    .background(Blue.copy(alpha = if (canConfirm) 1f else 0.5f))
+                    .background(BrandPrimary.copy(alpha = if (canConfirm) 1f else 0.5f))
                     .semantics { contentDescription = confirmAccessibilityLabel }
                     .clickable(
                         enabled = canConfirm,
@@ -385,7 +385,7 @@ private fun LanguageScreen(state: BaseAppUiState, viewModel: BaseAppViewModel) {
                             .background(OptionSurface)
                             .border(
                                 width = 1.5.dp,
-                                color = if (selected) BlueSelected else DividerColor,
+                                color = if (selected) BrandPrimaryPressed else DividerColor,
                                 shape = RoundedCornerShape(18.dp)
                             )
                             .clickable { viewModel.selectLanguage(option.code) }
@@ -403,7 +403,7 @@ private fun LanguageScreen(state: BaseAppUiState, viewModel: BaseAppViewModel) {
                             Text(
                                 option.nativeName,
                                 style = MaterialTheme.typography.titleMedium,
-                                color = if (selected) BlueSelected else TextPrimary,
+                                color = if (selected) BrandPrimaryPressed else TextPrimary,
                                 fontWeight = if (selected) FontWeight.Bold else FontWeight.SemiBold
                             )
                             Text(
@@ -413,7 +413,7 @@ private fun LanguageScreen(state: BaseAppUiState, viewModel: BaseAppViewModel) {
                             )
                         }
                         if (selected) {
-                            Text("✓", color = BlueSelected, fontWeight = FontWeight.Bold, fontSize = 18.sp)
+                            Text("✓", color = BrandPrimaryPressed, fontWeight = FontWeight.Bold, fontSize = 18.sp)
                         }
                     }
                 } else {
@@ -447,7 +447,7 @@ private fun StartupLanguageOptionRow(
             .background(if (selected) OptionSurfaceSelected else Color.White)
             .border(
                 width = if (selected) 1.5.dp else 1.dp,
-                color = if (selected) BlueSelected else DividerColor,
+                color = if (selected) BrandPrimaryPressed else DividerColor,
                 shape = shape
             )
             .clickable(role = Role.RadioButton, onClick = onClick)
@@ -470,7 +470,7 @@ private fun StartupLanguageOptionRow(
             text = option.nativeName,
             modifier = Modifier.weight(1f),
             style = MaterialTheme.typography.titleMedium,
-            color = if (selected) BlueSelected else TextPrimary,
+            color = if (selected) BrandPrimaryPressed else TextPrimary,
             fontWeight = if (selected) FontWeight.Bold else FontWeight.Medium,
             maxLines = 1
         )
@@ -479,8 +479,8 @@ private fun StartupLanguageOptionRow(
             modifier = Modifier
                 .size(22.dp)
                 .clip(CircleShape)
-                .background(if (selected) BlueSelected else Color.Transparent)
-                .border(1.5.dp, if (selected) BlueSelected else DividerColor, CircleShape),
+                .background(if (selected) BrandPrimaryPressed else Color.Transparent)
+                .border(1.5.dp, if (selected) BrandPrimaryPressed else DividerColor, CircleShape),
             contentAlignment = Alignment.Center
         ) {
             if (selected) {

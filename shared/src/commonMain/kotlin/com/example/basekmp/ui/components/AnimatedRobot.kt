@@ -29,6 +29,8 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
 import com.example.basekmp.components.RobotMood
+import com.example.basekmp.theme.BrandPrimary
+import com.example.basekmp.theme.BrandPrimarySoft
 import org.jetbrains.compose.resources.imageResource
 import ailearn.shared.generated.resources.*
 import kotlin.math.cos
@@ -69,17 +71,17 @@ private val LEDS = listOf(
     0.292f to 0.842f
 )
 
-private val HALO = listOf(Color(1497145599), Color.Transparent)
+private val HALO = listOf(BrandPrimary.copy(alpha = 0.35f), Color.Transparent)
 private val BLUSH = listOf(Color(2583662517L), Color(16748469))
 private val GLARE = listOf(Color(3875487808L), Color(2164203552L), Color(16711680))
-private val BLOOM = listOf(Color(3648572927L), Color(1495829759), Color(20680))
-private val BUBBLE_GLOW = listOf(Color(2350812415L), Color(2002175))
-private val DOT = listOf(Color.White, Color(4292866559L))
-private val SPARK = listOf(Color(4072598527L), Color(2151459583L), Color(23260))
-private val FLASH = listOf(Color(3872583935L), Color(1933357055), Color(23260))
-private val PING_COLOR = Color(3650542847L)
-private val LED = listOf(Color(3869958655L), Color(2660095))
-private val SCAN = listOf(Color(7918335), Color(3868647935L), Color(7918335))
+private val BLOOM = listOf(BrandPrimarySoft.copy(alpha = 0.85f), BrandPrimarySoft.copy(alpha = 0.35f), BrandPrimary.copy(alpha = 0f))
+private val BUBBLE_GLOW = listOf(BrandPrimarySoft.copy(alpha = 0.55f), BrandPrimary.copy(alpha = 0f))
+private val DOT = listOf(Color.White, BrandPrimarySoft.copy(alpha = 0.9f))
+private val SPARK = listOf(BrandPrimarySoft.copy(alpha = 0.95f), BrandPrimarySoft.copy(alpha = 0.5f), BrandPrimary.copy(alpha = 0f))
+private val FLASH = listOf(BrandPrimarySoft.copy(alpha = 0.9f), BrandPrimarySoft.copy(alpha = 0.45f), BrandPrimary.copy(alpha = 0f))
+private val PING_COLOR = BrandPrimarySoft.copy(alpha = 0.85f)
+private val LED = listOf(BrandPrimarySoft.copy(alpha = 0.9f), BrandPrimary.copy(alpha = 0f))
+private val SCAN = listOf(BrandPrimary.copy(alpha = 0f), BrandPrimarySoft.copy(alpha = 0.9f), BrandPrimary.copy(alpha = 0f))
 private val SOCKET = Color(4278719526L)
 
 private val GAZE_EASING = CubicBezierEasing(0.4f, 1.5f, 0.5f, 1.0f)

@@ -24,12 +24,12 @@ object AppTheme {
 }
 
 val LightColors = lightColorScheme(
-    primary = Blue,
+    primary = BrandPrimary,
     onPrimary = Color.White,
-    secondary = BlueSelected,
+    secondary = BrandPrimaryPressed,
     surface = Color.White,
     onSurface = TextPrimary,
-    background = Color.White,
+    background = SurfaceMint,
     onBackground = TextPrimary,
     surfaceVariant = OptionSurface,
     onSurfaceVariant = TextSecondary,

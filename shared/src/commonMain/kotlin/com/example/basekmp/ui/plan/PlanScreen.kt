@@ -83,6 +83,18 @@ import com.example.basekmp.data.PlanProgress
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
 import com.example.basekmp.data.trf
+import com.example.basekmp.theme.BrandAccent
+import com.example.basekmp.theme.BrandPrimary
+import com.example.basekmp.theme.BrandPrimaryPressed
+import com.example.basekmp.theme.BrandPrimarySoft
+import com.example.basekmp.theme.CardCyan
+import com.example.basekmp.theme.ChipOutlineText
+import com.example.basekmp.theme.DividerColor
+import com.example.basekmp.theme.OptionSurface
+import com.example.basekmp.theme.OptionSurfaceSelected
+import com.example.basekmp.theme.SurfaceMint
+import com.example.basekmp.theme.TextPrimary
+import com.example.basekmp.theme.TextSecondary
 import com.example.basekmp.theme.TrackColor
 import com.example.basekmp.ui.components.BackButton
 import ailearn.shared.generated.resources.Res
@@ -95,14 +107,14 @@ import ailearn.shared.generated.resources.tutor_robot
 import org.jetbrains.compose.resources.painterResource
 import kotlinx.coroutines.CancellationException
 
-private val PathBlue = Color(0xFF4B8DF5)
-private val PathBlueDark = Color(0xFF3678E7)
-private val PathBlueSoft = Color(0xFFDCEAFF)
-private val PathBackgroundTop = Color(0xFFEAF2FF)
-private val PathBackgroundBottom = Color(0xFFF6F9FF)
-private val PathText = Color(0xFF171B24)
-private val PathMuted = Color(0xFF7D8798)
-private val PathLocked = Color(0xFF9DA7B5)
+private val PathBlue = BrandPrimary
+private val PathBlueDark = BrandPrimaryPressed
+private val PathBlueSoft = OptionSurfaceSelected
+private val PathBackgroundTop = SurfaceMint
+private val PathBackgroundBottom = Color.White
+private val PathText = TextPrimary
+private val PathMuted = TextSecondary
+private val PathLocked = ChipOutlineText
 private val PathRowStep = 104.dp
 private val PathCurrentNodeSize = 92.dp
 private val PathNodeSize = 58.dp
@@ -302,7 +314,7 @@ private fun PersonalizeCards(
                 .clickable(onClick = onGoal),
             shape = RoundedCornerShape(20.dp),
             color = Color.White,
-            border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFD8E6FA))
+            border = androidx.compose.foundation.BorderStroke(1.dp, DividerColor)
         ) {
             Row(
                 modifier = Modifier.padding(horizontal = 9.dp),
@@ -354,7 +366,7 @@ private fun PersonalizeCards(
                 .clickable(onClick = onAssistant),
             shape = RoundedCornerShape(20.dp),
             color = Color.White,
-            border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFD8E6FA))
+            border = androidx.compose.foundation.BorderStroke(1.dp, DividerColor)
         ) {
             Row(
                 modifier = Modifier.padding(horizontal = 9.dp),
@@ -400,7 +412,7 @@ private fun GoalTargetMark() {
         modifier = Modifier
             .size(36.dp)
             .clip(CircleShape)
-            .background(Color(0xFFEAF2FF), CircleShape),
+            .background(OptionSurfaceSelected, CircleShape),
         contentAlignment = Alignment.Center
     ) {
         Canvas(Modifier.size(22.dp)) {
@@ -429,7 +441,7 @@ private fun PlanAssistantAvatar(voice: String, size: Dp) {
         modifier = Modifier
             .size(size)
             .clip(CircleShape)
-            .background(Color(0xFFE8F1FF)),
+            .background(SurfaceMint),
         contentAlignment = Alignment.Center
     ) {
         androidx.compose.foundation.Image(
@@ -493,7 +505,7 @@ internal fun PlanProgressBar(progress: Float, modifier: Modifier = Modifier, hei
                     .fillMaxWidth(animatedProgress)
                     .fillMaxSize()
                     .clip(RoundedCornerShape(height / 2))
-                    .background(Brush.horizontalGradient(listOf(Color(0xFF8AB7FF), PathBlue)))
+                    .background(Brush.horizontalGradient(listOf(BrandPrimarySoft, PathBlue)))
             )
         }
     }
@@ -507,7 +519,7 @@ private fun StageBanner(stageNumber: Int, firstDay: Int, lastDay: Int, title: St
             .fillMaxWidth()
             .shadow(8.dp, shape)
             .clip(shape)
-            .background(Brush.horizontalGradient(listOf(Color(0xFF64A0FF), PathBlueDark)))
+            .background(Brush.horizontalGradient(listOf(BrandPrimarySoft, PathBlueDark)))
             .padding(start = 15.dp, end = 14.dp, top = 12.dp, bottom = 12.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
@@ -621,11 +633,11 @@ private fun PlanStagePath(
                     val midY = (from.y + to.y) / 2f
                     cubicTo(from.x, midY, to.x, midY, to.x, to.y)
                 }
-                drawPath(route, Color(0xFFC9D2DF), style = style)
+                drawPath(route, DividerColor, style = style)
                 val day = days[index]
                 val nextDayOpen = days.getOrNull(index + 1)?.let(progress::isUnlocked) == true
                 if (day in completedDays || (day == currentDay && nextDayOpen)) {
-                    drawPath(route, Color(0xFF79AFFF), style = style)
+                    drawPath(route, BrandPrimarySoft, style = style)
                 }
             }
         }
@@ -734,9 +746,9 @@ private fun DayPathNode(
     val isDone = state == DayState.DONE
     val isOpen = state == DayState.OPEN
     val bottomColor = when {
-        isCurrent || isDone -> Color(0xFF2F70D6)
-        isOpen -> Color(0xFFAAC8F4)
-        else -> Color(0xFFD9DEE7)
+        isCurrent || isDone -> BrandPrimary
+        isOpen -> BrandPrimarySoft
+        else -> TrackColor
     }
     Box(
         modifier = modifier
@@ -758,16 +770,16 @@ private fun DayPathNode(
                 .clip(CircleShape)
                 .background(
                     when {
-                        isCurrent -> Brush.verticalGradient(listOf(Color(0xFF69A4FF), PathBlue))
-                        isDone -> Brush.verticalGradient(listOf(Color(0xFF6EB2FF), Color(0xFF4588EC)))
-                        isOpen -> Brush.verticalGradient(listOf(Color.White, Color(0xFFF3F7FE)))
-                        else -> Brush.verticalGradient(listOf(Color(0xFFF8FAFD), Color(0xFFE3E8EF)))
+                        isCurrent -> Brush.verticalGradient(listOf(BrandPrimarySoft, PathBlue))
+                        isDone -> Brush.verticalGradient(listOf(BrandPrimarySoft, BrandPrimaryPressed))
+                        isOpen -> Brush.verticalGradient(listOf(Color.White, SurfaceMint))
+                        else -> Brush.verticalGradient(listOf(OptionSurface, TrackColor))
                     }
                 )
                 .border(
                     width = if (isCurrent) 4.dp else 2.dp,
                     color = when {
-                        isCurrent -> Color(0xFFB5D1FF)
+                        isCurrent -> OptionSurfaceSelected
                         isDone -> Color.White.copy(alpha = 0.86f)
                         isOpen -> Color.White
                         else -> Color.White.copy(alpha = 0.9f)
@@ -807,7 +819,7 @@ private fun DayPathNode(
                     tint = when {
                         isCurrent || isDone -> Color.White
                         isOpen -> PathBlue
-                        else -> Color(0xFF9AA6B8)
+                        else -> ChipOutlineText
                     },
                     modifier = Modifier
                         .align(Alignment.Center)
@@ -880,7 +892,7 @@ private fun RobotSpeechBubble(
         shape = shape,
         color = Color.White,
         shadowElevation = 0.dp,
-        border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFDCE8FA))
+        border = androidx.compose.foundation.BorderStroke(1.dp, DividerColor)
     ) {
         Box(
             modifier = Modifier
@@ -889,8 +901,8 @@ private fun RobotSpeechBubble(
             contentAlignment = Alignment.Center
         ) {
             Text(
-                text = if (awake) tr("Ready to learn?") else tr("Zzz... Tap me to wake me up 💤"),
-                color = Color(0xFF30343C),
+                text = if (awake) tr("Ready to learn?") else tr("Zzz... Tap me to wake me up"),
+                color = TextPrimary,
                 fontSize = 13.sp,
                 lineHeight = 17.sp,
                 fontWeight = FontWeight.Medium,
@@ -1032,19 +1044,19 @@ private fun RobotFaceOverlay(sleeping: Boolean, modifier: Modifier = Modifier) {
                 }
                 drawPath(
                     eye,
-                    color = Color(0xFF58D4FF),
+                    color = BrandAccent,
                     style = Stroke(width = 2.1.dp.toPx(), cap = StrokeCap.Round)
                 )
             } else {
                 drawOval(
-                    color = Color(0xFF58D4FF),
+                    color = BrandAccent,
                     topLeft = Offset(left + eyeWidth * 0.25f, eyeY - eyeHeight * 0.35f),
                     size = androidx.compose.ui.geometry.Size(eyeWidth * 0.55f, eyeHeight * 0.75f)
                 )
             }
         }
         drawCircle(
-            color = Color(0xFF58D4FF),
+            color = BrandAccent,
             radius = size.width * 0.013f,
             center = Offset(size.width * 0.50f, size.height * 0.425f)
         )
@@ -1119,7 +1131,7 @@ private fun PathStartBar(
                 shape = RoundedCornerShape(32.dp),
                 colors = ButtonDefaults.buttonColors(
                     containerColor = PathBlue,
-                    disabledContainerColor = Color(0xFFCBD6E6),
+                    disabledContainerColor = DividerColor,
                     disabledContentColor = Color.White
                 ),
                 contentPadding = PaddingValues(horizontal = 18.dp)

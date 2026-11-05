@@ -2,7 +2,7 @@
 <resources>
     <string name="cd_back">Back</string>
     <string name="fo_splash_describe_load_ad">Getting things ready…</string>
-    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_title">Semavia: Learn Languages</string>
     <string name="language_confirm">Confirm</string>
     <string name="language_save_error">Could not save your selection. Please try again.</string>
     <string name="language_title">Language</string>
@@ -145,7 +145,7 @@
     <string name="tr_business">Business</string>
     <string name="tr_buying_groceries">Buying Groceries</string>
     <string name="tr_buying_something">Buying something</string>
-    <string name="tr_by_using_engla_learn_language_with_ai_you_agree_to_these_terms_i">By using Engla: Learn Language with AI you agree to these terms. If you do not agree, please discontinue use of the app.</string>
+    <string name="tr_by_using_semavia_you_agree_to_these_terms">By using Semavia: Learn Languages you agree to these terms. If you do not agree, please discontinue use of the app.</string>
     <string name="tr_c1_advanced">C1 Advanced</string>
     <string name="tr_calling">Calling</string>
     <string name="tr_can_t_speak_now_skip">Can't speak now? Skip</string>
@@ -225,7 +225,7 @@
     <string name="tr_continue_learning_a2b3ad83">CONTINUE LEARNING</string>
     <string name="tr_continue_learning_acb708f6">Continue Learning</string>
     <string name="tr_continue_lesson">Continue lesson</string>
-    <string name="tr_continue_the_conversation_in_engla">Continue the conversation in Engla</string>
+    <string name="tr_continue_conversation_in_semavia">Continue the conversation in Semavia</string>
     <string name="tr_continue_to_ai_conversation">Continue to AI Conversation</string>
     <string name="tr_continue_to_quick_quiz">Continue to Quick Quiz</string>
     <string name="tr_continue_to_speaking">Continue to Speaking</string>
@@ -329,10 +329,10 @@
     <string name="tr_enable_full_screen_intent_for_the_best_app_experience_and_instan">Enable Full Screen Intent for the best app experience and instant updates.</string>
     <string name="tr_enable_microphone_access_in_settings_to_use_voice_practice">Enable microphone access in Settings to use voice practice.</string>
     <string name="tr_end_lesson">End lesson</string>
-    <string name="tr_engla">Engla</string>
-    <string name="tr_engla_ai_tutor">Engla AI Tutor</string>
-    <string name="tr_engla_learn_language_with_ai">Engla: Learn Language with AI</string>
-    <string name="tr_engla_learn_language_with_ai_stores_your_learning_preferences_ta">Engla: Learn Language with AI stores your learning preferences (target language, level, daily goal and tutor voice) only on your device. No personal data leaves your phone until a learning backend is connected.</string>
+    <string name="tr_semavia">Semavia</string>
+    <string name="tr_semavia_ai_tutor">Semavia AI Tutor</string>
+    <string name="tr_semavia_learn_languages">Semavia: Learn Languages</string>
+    <string name="tr_semavia_stores_learning_preferences">Semavia: Learn Languages stores your learning preferences (target language, level, daily goal and tutor voice) only on your device. No personal data leaves your phone until a learning backend is connected.</string>
     <string name="tr_english">English</string>
     <string name="tr_english_learn_pro">English Learn Pro</string>
     <string name="tr_english_learn_pro_is_offered_as_weekly_and_yearly_auto_renewing">English Learn Pro is offered as weekly and yearly auto-renewing subscriptions with an optional free trial. Manage or cancel anytime from your Google Play account settings.</string>
@@ -810,7 +810,7 @@
     <string name="tr_shadowing_accuracy">Shadowing Accuracy</string>
     <string name="tr_shadowing_practice">Shadowing Practice</string>
     <string name="tr_share_app">Share App</string>
-    <string name="tr_share_engla_learn_language_with_ai">Share Engla: Learn Language with AI</string>
+    <string name="tr_share_semavia">Share Semavia: Learn Languages</string>
     <string name="tr_share_your_feedback_to_help_us_do_better">Share your feedback to help us do better.</string>
     <string name="tr_shopping_basics">Shopping Basics</string>
     <string name="tr_shopping_for_clothes">Shopping for Clothes</string>
@@ -1021,7 +1021,7 @@
     <string name="tr_we_re_glad_you_like_it">We're Glad You Like It!</string>
     <string name="tr_we_re_sorry">We're sorry!</string>
     <string name="tr_we_re_sorry_about_it">We're sorry about it!</string>
-    <string name="tr_we_re_thrilled_you_love_engla_learn_language_with_ai">We're thrilled you love Engla: Learn Language with AI!</string>
+    <string name="tr_we_re_glad_you_like_semavia">We're thrilled you love Semavia: Learn Languages!</string>
     <string name="tr_weather">Weather</string>
     <string name="tr_weather_seasons">Weather &amp; Seasons</string>
     <string name="tr_wed_6_31_pm">Wed, 6:31 PM</string>

@@ -84,6 +84,15 @@ import com.example.basekmp.data.PlanProgress
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
 import com.example.basekmp.data.trf
+import com.example.basekmp.theme.BrandAccent
+import com.example.basekmp.theme.BrandDarkElevated
+import com.example.basekmp.theme.BrandDarkSurface
+import com.example.basekmp.theme.BrandPrimary
+import com.example.basekmp.theme.BubbleAi
+import com.example.basekmp.theme.BubbleUser
+import com.example.basekmp.theme.DividerColor
+import com.example.basekmp.theme.TextPrimary
+import com.example.basekmp.theme.TextSecondary
 import com.example.basekmp.ui.components.AnimatedRobot
 import com.example.basekmp.ui.components.RobotFrameAspect
 import com.example.basekmp.ui.lifecycle.rememberIsAppResumed
@@ -445,12 +454,12 @@ fun TodayLessonScreen(
 
         Surface(
             modifier = modifier.fillMaxSize(),
-            color = Color(0xFF001438)
+            color = BrandDarkSurface
         ) {
             Column(
                 modifier = Modifier
                     .fillMaxSize()
-                    .background(Color(0xFF001438))
+                    .background(BrandDarkSurface)
                     .imePadding()
             ) {
                 // 1. Hero Section at top: Dark gradient + Animated Robot + Controls
@@ -461,7 +470,7 @@ fun TodayLessonScreen(
                         .drawBehind {
                             drawRect(
                                 brush = Brush.linearGradient(
-                                    colors = listOf(Color(0xFF001438), Color(0xFF001E52)),
+                                    colors = listOf(BrandDarkSurface, BrandDarkElevated),
                                     start = Offset.Zero,
                                     end = Offset(size.width, size.height)
                                 )
@@ -607,13 +616,13 @@ fun TodayLessonScreen(
                                         modifier = Modifier
                                             .widthIn(max = 300.dp)
                                             .clip(RoundedCornerShape(topStart = 18.dp, topEnd = 18.dp, bottomStart = 18.dp, bottomEnd = 5.dp))
-                                            .background(Color(0xFFE8F0FE))
+                                            .background(BubbleUser)
                                             .padding(horizontal = 15.dp, vertical = 12.dp)
                                     ) {
                                         Column {
                                             Text(
                                                 text = msg.text,
-                                                color = Color(0xFF1D2939),
+                                                color = TextPrimary,
                                                 fontSize = 14.sp,
                                                 lineHeight = 20.sp
                                             )
@@ -632,14 +641,14 @@ fun TodayLessonScreen(
                                                 Icon(
                                                     imageVector = if (isCopied) Icons.Rounded.Check else Icons.Rounded.ContentCopy,
                                                     contentDescription = tr("Copy"),
-                                                    tint = if (isCopied) Color(0xFF2B5CFF) else Color(0xFF1D2939).copy(alpha = 0.55f),
+                                                    tint = if (isCopied) BrandPrimary else TextPrimary.copy(alpha = 0.55f),
                                                     modifier = Modifier.size(16.dp)
                                                 )
                                                 if (isCopied) {
                                                     Spacer(Modifier.width(4.dp))
                                                     Text(
                                                         text = tr("Copied"),
-                                                        color = Color(0xFF2B5CFF),
+                                                        color = BrandPrimary,
                                                         fontSize = 11.sp
                                                     )
                                                 }
@@ -663,14 +672,14 @@ fun TodayLessonScreen(
                                         modifier = Modifier
                                             .widthIn(max = 300.dp)
                                             .clip(RoundedCornerShape(topStart = 18.dp, topEnd = 18.dp, bottomStart = 5.dp, bottomEnd = 18.dp))
-                                            .background(Color(0xFFF7F9FC))
-                                            .border(1.dp, Color(0xFFEAECF0), RoundedCornerShape(topStart = 18.dp, topEnd = 18.dp, bottomStart = 5.dp, bottomEnd = 18.dp))
+                                            .background(BubbleAi)
+                                            .border(1.dp, DividerColor, RoundedCornerShape(topStart = 18.dp, topEnd = 18.dp, bottomStart = 5.dp, bottomEnd = 18.dp))
                                             .padding(horizontal = 15.dp, vertical = 12.dp)
                                     ) {
                                         Column {
                                             Text(
                                                 text = displayedText,
-                                                color = Color(0xFF1D2939),
+                                                color = TextPrimary,
                                                 fontSize = 14.sp,
                                                 lineHeight = 20.sp
                                             )
@@ -685,7 +694,7 @@ fun TodayLessonScreen(
                                                         modifier = Modifier
                                                             .size(28.dp)
                                                             .clip(CircleShape)
-                                                            .background(Color(0xFF2B5CFF))
+                                                            .background(BrandPrimary)
                                                             .clickable {
                                                                 stopMessageSpeech()
                                                             },
@@ -719,7 +728,7 @@ fun TodayLessonScreen(
                                                         Icon(
                                                             imageVector = Icons.AutoMirrored.Rounded.VolumeUp,
                                                             contentDescription = tr("Listen"),
-                                                            tint = Color(0xFF1D2939).copy(alpha = 0.7f),
+                                                            tint = TextPrimary.copy(alpha = 0.7f),
                                                             modifier = Modifier.size(16.dp)
                                                         )
                                                     }
@@ -739,14 +748,14 @@ fun TodayLessonScreen(
                                                     Icon(
                                                         imageVector = if (isCopied) Icons.Rounded.Check else Icons.Rounded.ContentCopy,
                                                         contentDescription = tr("Copy"),
-                                                        tint = if (isCopied) Color(0xFF2B5CFF) else Color(0xFF1D2939).copy(alpha = 0.55f),
+                                                        tint = if (isCopied) BrandPrimary else TextPrimary.copy(alpha = 0.55f),
                                                         modifier = Modifier.size(16.dp)
                                                     )
                                                     if (isCopied) {
                                                         Spacer(Modifier.width(4.dp))
                                                         Text(
                                                             text = tr("Copied"),
-                                                            color = Color(0xFF2B5CFF),
+                                                            color = BrandPrimary,
                                                             fontSize = 11.sp
                                                         )
                                                     }
@@ -759,7 +768,7 @@ fun TodayLessonScreen(
                                                     Icon(
                                                         imageVector = Icons.Rounded.Flag,
                                                         contentDescription = tr("Report"),
-                                                        tint = Color(0xFF1D2939).copy(alpha = 0.55f),
+                                                        tint = TextPrimary.copy(alpha = 0.55f),
                                                         modifier = Modifier.size(18.dp)
                                                     )
                                                 }
@@ -781,15 +790,15 @@ fun TodayLessonScreen(
                                     Box(
                                         modifier = Modifier
                                             .clip(RoundedCornerShape(16.dp))
-                                            .background(Color(0xFFF7F9FC))
-                                            .border(1.dp, Color(0xFFEAECF0), RoundedCornerShape(16.dp))
+                                            .background(BubbleAi)
+                                            .border(1.dp, DividerColor, RoundedCornerShape(16.dp))
                                             .padding(horizontal = 16.dp, vertical = 10.dp)
                                     ) {
                                         Text(
                                             text = "...",
                                             fontSize = 18.sp,
                                             fontWeight = FontWeight.Bold,
-                                            color = Color(0xFF2B5CFF)
+                                            color = BrandPrimary
                                         )
                                     }
                                 }
@@ -869,7 +878,7 @@ fun TodayLessonScreen(
                                     Icon(
                                         imageVector = Icons.Rounded.Close,
                                         contentDescription = tr("Close keyboard"),
-                                        tint = Color(0xFF1D2939),
+                                        tint = TextPrimary,
                                         modifier = Modifier.size(20.dp)
                                     )
                                 }
@@ -895,14 +904,14 @@ fun TodayLessonScreen(
                                         onValueChange = { inputText = it },
                                         modifier = Modifier.fillMaxWidth(),
                                         textStyle = TextStyle(
-                                            color = Color(0xFF1D2939),
+                                            color = TextPrimary,
                                             fontSize = 14.sp
                                         ),
                                         keyboardOptions = KeyboardOptions(imeAction = ImeAction.Send),
                                         keyboardActions = KeyboardActions(onSend = {
                                             sendMessage(inputText)
                                         }),
-                                        cursorBrush = SolidColor(Color(0xFF2B5CFF)),
+                                        cursorBrush = SolidColor(BrandPrimary),
                                         singleLine = true
                                     )
                                 }
@@ -911,7 +920,7 @@ fun TodayLessonScreen(
                                     modifier = Modifier
                                         .size(44.dp)
                                         .clip(CircleShape)
-                                        .background(if (inputText.isNotBlank()) Color(0xFF2B5CFF) else Color(0xFFE4E7EC))
+                                        .background(if (inputText.isNotBlank()) BrandPrimary else Color(0xFFE4E7EC))
                                         .clickable(enabled = inputText.isNotBlank() && !isThinking) {
                                             sendMessage(inputText)
                                         },
@@ -949,13 +958,13 @@ fun TodayLessonScreen(
                                     Icon(
                                         imageVector = Icons.Rounded.Lightbulb,
                                         contentDescription = tr("Hint"),
-                                        tint = Color(0xFF1D2939),
+                                        tint = TextPrimary,
                                         modifier = Modifier.size(18.dp)
                                     )
                                     Spacer(Modifier.width(6.dp))
                                     Text(
                                         text = tr("Hint"),
-                                        color = Color(0xFF1D2939),
+                                        color = TextPrimary,
                                         fontSize = 14.sp,
                                         fontWeight = FontWeight.SemiBold
                                     )
@@ -967,7 +976,7 @@ fun TodayLessonScreen(
                                         .weight(1f)
                                         .height(56.dp)
                                         .clip(RoundedCornerShape(28.dp))
-                                        .background(if (isListening) Color(0xFFE53935) else Color(0xFF2B5CFF))
+                                        .background(if (isListening) Color(0xFFE53935) else BrandPrimary)
                                         .clickable(enabled = isListening || remainingSeconds > 0) {
                                             if (isListening) {
                                                 stopListening()
@@ -1011,7 +1020,7 @@ fun TodayLessonScreen(
                                     Icon(
                                         imageVector = Icons.Rounded.Keyboard,
                                         contentDescription = "Keyboard",
-                                        tint = Color(0xFF1D2939),
+                                        tint = TextPrimary,
                                         modifier = Modifier.size(22.dp)
                                     )
                                 }

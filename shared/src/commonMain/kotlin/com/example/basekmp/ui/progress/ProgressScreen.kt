@@ -41,7 +41,7 @@ import com.example.basekmp.localEpochDayAt
 import com.example.basekmp.data.LearningItem
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
-import com.example.basekmp.theme.BlueSelected
+import com.example.basekmp.theme.BrandPrimaryPressed
 import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.ProgressBlue
 import com.example.basekmp.theme.ProgressGreen
@@ -379,7 +379,7 @@ private fun StreakCard(
                             modifier = Modifier
                                 .size(18.dp)
                                 .clip(CircleShape)
-                                .background(if (isDayActive) BlueSelected else Color(0xFFEFF1F4)),
+                                .background(if (isDayActive) BrandPrimaryPressed else Color(0xFFEFF1F4)),
                             contentAlignment = Alignment.Center
                         ) {
                             if (isDayActive) {
@@ -394,7 +394,7 @@ private fun StreakCard(
                                     modifier = Modifier
                                         .size(7.dp)
                                         .clip(CircleShape)
-                                        .background(BlueSelected)
+                                        .background(BrandPrimaryPressed)
                                 )
                             }
                         }

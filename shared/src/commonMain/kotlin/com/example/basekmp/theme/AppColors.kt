@@ -7,29 +7,29 @@ import androidx.compose.ui.graphics.Color
 
 /**
  * Unified Semantic Design System Colors.
- * Matching authentic Engla design system: Light-first, clean whites, soft blue highlights.
+ * Semavia's light-first teal and coral system with semantic surfaces and feedback colors.
  */
 @Immutable
 data class AppColors(
     val isDark: Boolean = false,
 
     // Background & Surfaces
-    val background: Color = Color.White,
+    val background: Color = SurfaceMint,
     val surface: Color = Color.White,
     val surfaceVariant: Color = OptionSurface,
     val surfaceCard: Color = Color.White,
     val surfaceSelected: Color = OptionSurfaceSelected,
 
     // Brand Primary & Gradients
-    val primary: Color = Blue,
-    val primaryGradientStart: Color = Blue,
-    val primaryGradientEnd: Color = BlueSelected,
-    val secondary: Color = BlueSelected,
-    val secondarySelected: Color = BlueSelected,
+    val primary: Color = BrandPrimary,
+    val primaryGradientStart: Color = BrandPrimary,
+    val primaryGradientEnd: Color = BrandPrimaryPressed,
+    val secondary: Color = BrandPrimaryPressed,
+    val secondarySelected: Color = BrandPrimaryPressed,
 
     // Accent & Highlights
     val accentGold: Color = Gold,
-    val accentPink: Color = ProgressPink,
+    val accentPink: Color = BrandAccent,
 
     // Status Feedback
     val success: Color = CorrectGreen,
@@ -41,12 +41,12 @@ data class AppColors(
     // Typography & Content
     val textPrimary: Color = TextPrimary,
     val textSecondary: Color = TextSecondary,
-    val textTertiary: Color = ChipOutlineText,
+    val textTertiary: Color = TextSecondary,
     val textOnPrimary: Color = Color.White,
 
     // Borders & Dividers
     val border: Color = DividerColor,
-    val borderActive: Color = Blue,
+    val borderActive: Color = BrandPrimary,
     val divider: Color = DividerColor,
 
     // Mascots & Floating Glows
@@ -68,21 +68,24 @@ val LightAppColors = AppColors(isDark = false)
 
 val DarkAppColors = AppColors(
     isDark = true,
-    background = Color(0xFF14161B),
-    surface = Color(0xFF1C1F26),
-    surfaceVariant = Color(0xFF252932),
-    surfaceCard = Color(0xFF1C1F26),
-    surfaceSelected = Color(0xFF2B3242),
-    primary = Blue,
-    primaryGradientStart = Blue,
-    primaryGradientEnd = BlueSelected,
-    secondary = BlueSelected,
-    secondarySelected = BlueSelected,
+    background = Color(0xFF10211F),
+    surface = Color(0xFF172B28),
+    surfaceVariant = Color(0xFF203733),
+    surfaceCard = Color(0xFF172B28),
+    surfaceSelected = Color(0xFF25443E),
+    primary = Color(0xFF54B7A7),
+    primaryGradientStart = Color(0xFF54B7A7),
+    primaryGradientEnd = Color(0xFF2F9185),
+    secondary = Color(0xFF54B7A7),
+    secondarySelected = Color(0xFF2F9185),
+    accentPink = Color(0xFFFF907D),
     textPrimary = Color.White,
-    textSecondary = Color(0xFFA0A3AB),
-    border = Color(0xFF2E333D),
-    divider = Color(0xFF2E333D),
-    navBarBackground = Color(0xFF151821)
+    textSecondary = Color(0xFFB5C9C4),
+    textTertiary = Color(0xFFA9C8C0),
+    border = Color(0xFF35514B),
+    divider = Color(0xFF35514B),
+    borderActive = Color(0xFF54B7A7),
+    navBarBackground = Color(0xFF142522)
 )
 
 val LocalAppColors = staticCompositionLocalOf { LightAppColors }

@@ -1,6 +1,5 @@
 package com.example.basekmp.ui.plan
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -33,7 +32,7 @@ import ailearn.shared.generated.resources.Res
 import ailearn.shared.generated.resources.nav_learning
 import ailearn.shared.generated.resources.plan_route
 import com.example.basekmp.data.Strings
-import com.example.basekmp.theme.Blue
+import com.example.basekmp.theme.BrandPrimary
 import com.example.basekmp.theme.Grey
 import com.example.basekmp.theme.LineBlue
 import com.example.basekmp.theme.TextPrimary
@@ -56,7 +55,7 @@ fun PathTile(size: Int, iconSize: Int, corner: Int, modifier: Modifier = Modifie
             painter = painterResource(Res.drawable.nav_learning),
             contentDescription = null,
             modifier = Modifier.size(iconSize.dp),
-            tint = Blue
+            tint = BrandPrimary
         )
     }
 }
@@ -82,7 +81,7 @@ fun PlanPathButton(
             Text(
                 text = Strings.tr("My Path"),
                 modifier = Modifier.width(56.dp),
-                color = Blue,
+                color = BrandPrimary,
                 fontSize = 9.sp,
                 fontWeight = FontWeight.SemiBold,
                 textAlign = TextAlign.Center,
@@ -98,7 +97,7 @@ fun PlanPathButton(
                     .align(Alignment.TopEnd)
                     .offset(x = (-5).dp, y = (-5).dp)
                     .clip(RoundedCornerShape(50))
-                    .background(Blue)
+                    .background(BrandPrimary)
                     .border(1.dp, Color.White, RoundedCornerShape(50))
                     .padding(horizontal = 4.dp, vertical = 1.dp),
                 color = Color.White,
@@ -119,7 +118,7 @@ fun BluePill(text: String, modifier: Modifier = Modifier) {
     Row(
         modifier = modifier
             .clip(RoundedCornerShape(50))
-            .background(Blue)
+            .background(BrandPrimary)
             .padding(start = 12.dp, top = 6.dp, end = 6.dp, bottom = 6.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
@@ -157,10 +156,11 @@ fun PlanEntryCard(
             .padding(start = 12.dp, top = 10.dp, end = 10.dp, bottom = 10.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Image(
+        Icon(
             painter = painterResource(Res.drawable.plan_route),
             contentDescription = null,
-            modifier = Modifier.size(24.dp)
+            modifier = Modifier.size(24.dp),
+            tint = BrandPrimary
         )
         Spacer(Modifier.width(10.dp))
         Box(

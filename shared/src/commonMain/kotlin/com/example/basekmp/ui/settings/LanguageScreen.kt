@@ -36,7 +36,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UiLanguage
-import com.example.basekmp.theme.BlueSelected
+import com.example.basekmp.theme.BrandPrimaryPressed
 import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.ui.components.BackButton
@@ -144,7 +144,7 @@ private fun LanguageRow(
                 modifier = Modifier
                     .size(22.dp)
                     .clip(CircleShape)
-                    .background(BlueSelected),
+                    .background(BrandPrimaryPressed),
                 contentAlignment = Alignment.Center
             ) {
                 Icon(

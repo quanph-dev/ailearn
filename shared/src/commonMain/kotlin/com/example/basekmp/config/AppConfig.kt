@@ -1,7 +1,7 @@
 package com.example.basekmp.config
 
 /**
- * Global App Configuration for AILearn KMP.
+ * Global App Configuration for Semavia KMP.
  *
  * Designed to decouple the app from legacy hardcoded package names
  * and provide easy re-pointing for CDN, LLM endpoints, and testing bypass flags.
@@ -11,12 +11,12 @@ object AppConfig {
      * Sample configurable Package Name / App ID placeholder.
      * Prevents any hardcoded dependency on legacy packages.
      */
-    const val SAMPLE_APP_PACKAGE_NAME: String = "com.example.basekmp"
+    const val SAMPLE_APP_PACKAGE_NAME: String = BrandConfig.ANDROID_APPLICATION_ID
 
     /**
      * App Branding & Version
      */
-    const val APP_NAME: String = "AILearn"
+    const val APP_NAME: String = BrandConfig.NAME
     const val APP_VERSION_NAME: String = "1.0.0"
     const val APP_VERSION_CODE: Int = 1
 

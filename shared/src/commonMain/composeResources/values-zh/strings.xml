@@ -2,7 +2,7 @@
 <resources>
     <string name="cd_back">返回</string>
     <string name="fo_splash_describe_load_ad">正在准备…</string>
-    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_title">Semavia: Learn Languages</string>
     <string name="language_confirm">确认</string>
     <string name="language_save_error">无法保存您的选择，请重试。</string>
     <string name="language_title">语言</string>
@@ -139,7 +139,7 @@
     <string name="tr_business">商务</string>
     <string name="tr_buying_groceries">购买日用品</string>
     <string name="tr_buying_something">买东西</string>
-    <string name="tr_by_using_engla_learn_language_with_ai_you_agree_to_these_terms_i">使用 Engla: Learn Language with AI 即表示您同意这些条款。如果您不同意，请停止使用本应用。</string>
+    <string name="tr_by_using_semavia_you_agree_to_these_terms">使用 Semavia: Learn Languages 即表示您同意这些条款。如果您不同意，请停止使用本应用。</string>
     <string name="tr_c1_advanced">C1 高级</string>
     <string name="tr_calling">打电话</string>
     <string name="tr_can_t_speak_now_skip">现在不方便说话？跳过</string>
@@ -215,7 +215,7 @@
     <string name="tr_continue_learning_a2b3ad83">继续学习</string>
     <string name="tr_continue_learning_acb708f6">继续学习</string>
     <string name="tr_continue_lesson">继续课程</string>
-    <string name="tr_continue_the_conversation_in_engla">在 Engla 中继续对话</string>
+    <string name="tr_continue_conversation_in_semavia">在 Semavia 中继续对话</string>
     <string name="tr_continue_to_ai_conversation">前往 AI 对话</string>
     <string name="tr_continue_to_quick_quiz">前往快速测验</string>
     <string name="tr_continue_to_speaking">前往口语练习</string>
@@ -315,8 +315,8 @@
     <string name="tr_enable_full_screen_intent_for_the_best_app_experience_and_instan">开启全屏通知，获得最佳体验和即时更新。</string>
     <string name="tr_enable_microphone_access_in_settings_to_use_voice_practice">请在设置中开启麦克风权限以使用语音练习。</string>
     <string name="tr_end_lesson">结束课程</string>
-    <string name="tr_engla_ai_tutor">Engla AI 导师</string>
-    <string name="tr_engla_learn_language_with_ai_stores_your_learning_preferences_ta">Engla: Learn Language with AI 仅将您的学习偏好（目标语言、水平、每日目标和导师声音）存储在您的设备上。在连接学习后端之前，任何个人数据都不会离开您的手机。</string>
+    <string name="tr_semavia_ai_tutor">Semavia AI 导师</string>
+    <string name="tr_semavia_stores_learning_preferences">Semavia: Learn Languages 仅将您的学习偏好（目标语言、水平、每日目标和导师声音）存储在您的设备上。在连接学习后端之前，任何个人数据都不会离开您的手机。</string>
     <string name="tr_english">英语</string>
     <string name="tr_english_learn_pro_is_offered_as_weekly_and_yearly_auto_renewing">English Learn Pro 以每周和每年自动续订的订阅形式提供，并可选择免费试用。您可以随时在 Google Play 账户设置中管理或取消。</string>
     <string name="tr_english_level">英语水平</string>
@@ -744,7 +744,7 @@
     <string name="tr_shadowing">跟读练习</string>
     <string name="tr_shadowing_practice">跟读练习</string>
     <string name="tr_share_app">分享应用</string>
-    <string name="tr_share_engla_learn_language_with_ai">分享 Engla: Learn Language with AI</string>
+    <string name="tr_share_semavia">分享 Semavia: Learn Languages</string>
     <string name="tr_share_your_feedback_to_help_us_do_better">分享您的反馈，帮助我们做得更好。</string>
     <string name="tr_shopping_basics">购物基础</string>
     <string name="tr_shopping_for_clothes">购买衣服</string>
@@ -936,7 +936,7 @@
     <string name="tr_we_may_update_these_terms_as_the_product_evolves_continued_use_a">随着产品的发展，我们可能会更新这些条款；变更后继续使用即视为接受。</string>
     <string name="tr_we_re_glad_you_like_it">很高兴您喜欢！</string>
     <string name="tr_we_re_sorry_about_it">非常抱歉！</string>
-    <string name="tr_we_re_thrilled_you_love_engla_learn_language_with_ai">我们很高兴您喜欢 Engla: Learn Language with AI！</string>
+    <string name="tr_we_re_glad_you_like_semavia">我们很高兴您喜欢 Semavia: Learn Languages！</string>
     <string name="tr_weather">天气</string>
     <string name="tr_weather_seasons">天气与季节</string>
     <string name="tr_wed_6_31_pm">周三, 6:31 PM</string>

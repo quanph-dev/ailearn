@@ -20,7 +20,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
-import com.example.basekmp.theme.Blue
+import com.example.basekmp.theme.BrandPrimary
 import com.example.basekmp.theme.TrackColor
 
 @Composable
@@ -57,7 +57,7 @@ fun ProgressHeader(
                     .fillMaxHeight()
                     .fillMaxWidth(animatedProgress)
                     .clip(CircleShape)
-                    .background(Blue)
+                    .background(BrandPrimary)
             )
         }
     }

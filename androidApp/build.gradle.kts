@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import groovy.json.JsonSlurper
 
 plugins {
     alias(libs.plugins.androidApplication)
@@ -8,7 +9,17 @@ plugins {
 }
 
 val firebaseConfig = file("google-services.json")
-val firebaseConfigured = firebaseConfig.exists()
+val androidApplicationId = "com.semavia.language.learning.ai"
+val firebaseConfigured = firebaseConfig.exists() && runCatching {
+    val config = JsonSlurper().parse(firebaseConfig) as? Map<*, *>
+    val clients = config?.get("client") as? List<*>
+    clients?.any { item ->
+        val client = item as? Map<*, *>
+        val clientInfo = client?.get("client_info") as? Map<*, *>
+        val androidInfo = clientInfo?.get("android_client_info") as? Map<*, *>
+        androidInfo?.get("package_name") == androidApplicationId
+    } == true
+}.getOrDefault(false)
 
 if (firebaseConfigured) {
     pluginManager.apply("com.google.gms.google-services")
@@ -47,7 +58,7 @@ android {
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.example.ailearn"
+        applicationId = androidApplicationId
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 100

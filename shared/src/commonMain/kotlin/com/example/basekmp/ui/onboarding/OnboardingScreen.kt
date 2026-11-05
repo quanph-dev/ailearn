@@ -46,7 +46,7 @@ import ailearn.shared.generated.resources.tutor_random
 import ailearn.shared.generated.resources.tutor_robot
 import com.example.basekmp.data.Languages
 import com.example.basekmp.data.Strings
-import com.example.basekmp.theme.BlueSelected
+import com.example.basekmp.theme.BrandPrimaryPressed
 import com.example.basekmp.theme.CefrA1
 import com.example.basekmp.theme.CefrA2
 import com.example.basekmp.theme.CefrB1
@@ -287,7 +287,7 @@ private fun TutorCell(
     val shape = RoundedCornerShape(20.dp)
     val background = if (selected) OptionSurfaceSelected else OptionSurface
     val borderModifier = if (selected) {
-        Modifier.border(1.5.dp, BlueSelected, shape)
+        Modifier.border(1.5.dp, BrandPrimaryPressed, shape)
     } else {
         Modifier
     }
@@ -321,7 +321,7 @@ private fun TutorCell(
                     modifier = Modifier
                         .size(20.dp)
                         .align(Alignment.TopEnd),
-                    tint = BlueSelected
+                    tint = BrandPrimaryPressed
                 )
             }
         }
@@ -330,7 +330,7 @@ private fun TutorCell(
             text = option.label,
             fontSize = 16.sp,
             fontWeight = if (selected) FontWeight.SemiBold else FontWeight.Medium,
-            color = if (selected) BlueSelected else TextPrimary
+            color = if (selected) BrandPrimaryPressed else TextPrimary
         )
     }
 }

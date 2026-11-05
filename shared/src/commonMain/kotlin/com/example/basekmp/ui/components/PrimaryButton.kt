@@ -13,7 +13,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.basekmp.theme.Blue
+import com.example.basekmp.theme.BrandPrimary
 
 @Composable
 fun PrimaryButton(
@@ -30,9 +30,9 @@ fun PrimaryButton(
         enabled = enabled,
         shape = RoundedCornerShape(50),
         colors = ButtonDefaults.buttonColors(
-            containerColor = Blue,
+            containerColor = BrandPrimary,
             contentColor = Color.White,
-            disabledContainerColor = Blue.copy(alpha = 0.4f),
+            disabledContainerColor = BrandPrimary.copy(alpha = 0.4f),
             disabledContentColor = Color.White
         )
     ) {

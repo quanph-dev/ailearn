@@ -35,10 +35,10 @@ class ProgressAccountingTest {
     @Test
     fun storeShareUsesInstalledPackageAndPolicyUrlsStayReadyForLater() {
         assertEquals(
-            "https://play.google.com/store/apps/details?id=com.example.ailearn",
-            AppLinks.playStoreUrl("com.example.ailearn")
+            "https://play.google.com/store/apps/details?id=com.semavia.language.learning.ai",
+            AppLinks.playStoreUrl("com.semavia.language.learning.ai")
         )
-        assertTrue(AppLinks.shareMessage("com.example.ailearn").contains(AppLinks.playStoreUrl("com.example.ailearn")))
+        assertTrue(AppLinks.shareMessage("com.semavia.language.learning.ai").contains(AppLinks.playStoreUrl("com.semavia.language.learning.ai")))
         assertEquals("", AppLinks.documentUrl("privacy"))
         assertEquals("", AppLinks.documentUrl("terms"))
         assertNull(AppLinks.supportEmailUrl())

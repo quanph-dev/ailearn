@@ -92,7 +92,7 @@ import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.currentTimeMillis
 import com.example.basekmp.theme.AppTheme
-import com.example.basekmp.theme.Blue
+import com.example.basekmp.theme.BrandPrimary
 import com.example.basekmp.theme.ChipBlueBg
 import com.example.basekmp.theme.CardBorder
 import com.example.basekmp.theme.LevelPillBg
@@ -324,13 +324,14 @@ private fun VideoCatalogCard(
         Spacer(Modifier.height(10.dp))
         Text(
             text = Strings.tr(ShadowingVideos.title(video)),
-            fontSize = 16.sp,
+            modifier = Modifier.fillMaxWidth().basicMarquee(initialDelayMillis = 2_500),
+            fontSize = 14.sp,
             fontWeight = FontWeight.Medium,
             color = colors.textPrimary,
             minLines = 1,
-                maxLines = 2,
-            overflow = TextOverflow.Ellipsis,
-                lineHeight = 20.sp
+            maxLines = 1,
+            overflow = TextOverflow.Clip,
+            lineHeight = 20.sp
         )
 
         Spacer(Modifier.height(6.dp))
@@ -1451,13 +1452,13 @@ fun ShadowingPracticeSection(
                         text = Strings.tr("View all"),
                         fontSize = 14.sp,
                         fontWeight = FontWeight.SemiBold,
-                        color = Blue
+                        color = BrandPrimary
                     )
                     Icon(
                         imageVector = Icons.AutoMirrored.Rounded.KeyboardArrowRight,
                         contentDescription = null,
                         modifier = Modifier.size(20.dp),
-                        tint = Blue
+                        tint = BrandPrimary
                     )
                 }
             }
@@ -1485,7 +1486,7 @@ fun ShadowingPracticeSection(
                     textAlign = TextAlign.Center,
                     modifier = Modifier
                         .clip(RoundedCornerShape(50))
-                        .background(if (isSelected) Blue else Color(0xFFEFF1FA))
+                        .background(if (isSelected) BrandPrimary else Color(0xFFEFF1FA))
                         .clickable { selectedCategory = catId }
                         .padding(horizontal = 16.dp, vertical = 8.dp)
                 )
@@ -1568,18 +1569,19 @@ fun ShadowingPracticeSection(
 
                     Text(
                         text = Strings.tr(ShadowingVideos.title(video)),
+                        modifier = Modifier.fillMaxWidth().basicMarquee(initialDelayMillis = 2_500),
                         fontSize = 14.sp,
                         fontWeight = FontWeight.SemiBold,
                         color = TextPrimary,
-                        maxLines = 2,
-                        overflow = TextOverflow.Ellipsis
+                        maxLines = 1,
+                        overflow = TextOverflow.Clip
                     )
 
                     Spacer(Modifier.height(5.dp))
 
                     Text(
                         text = Strings.tr(ShadowingVideos.levelName(video)),
-                        color = Blue,
+                        color = BrandPrimary,
                         fontSize = 11.sp,
                         fontWeight = FontWeight.Medium,
                         modifier = Modifier

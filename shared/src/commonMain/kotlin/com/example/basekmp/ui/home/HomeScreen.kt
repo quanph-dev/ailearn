@@ -2,6 +2,7 @@ package com.example.basekmp.ui.home
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.basicMarquee
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -52,7 +53,6 @@ import kotlin.math.roundToInt
 import ailearn.shared.generated.resources.Res
 import ailearn.shared.generated.resources.home_ai_tutor
 import ailearn.shared.generated.resources.home_grammar
-import ailearn.shared.generated.resources.home_lesson_bg
 import ailearn.shared.generated.resources.home_lesson_robot
 import ailearn.shared.generated.resources.home_speaking
 import ailearn.shared.generated.resources.home_vocab
@@ -60,11 +60,20 @@ import com.example.basekmp.data.GoalPlan
 import com.example.basekmp.data.PlanProgress
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
-import com.example.basekmp.theme.Blue
+import com.example.basekmp.theme.BrandPrimary
+import com.example.basekmp.theme.BrandPrimaryPressed
 import com.example.basekmp.theme.CardBorder
+import com.example.basekmp.theme.CardCoral
+import com.example.basekmp.theme.CardIvory
+import com.example.basekmp.theme.CardMint
+import com.example.basekmp.theme.CardTeal
+import com.example.basekmp.theme.CorrectGreen
+import com.example.basekmp.theme.DividerColor
 import com.example.basekmp.theme.DarkBar
 import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.theme.TextSecondary
+import com.example.basekmp.theme.TrackColor
+import com.example.basekmp.theme.SurfaceMint
 import com.example.basekmp.ui.components.AppBottomNav
 import com.example.basekmp.ui.components.TabHeader
 import com.example.basekmp.ui.components.tabBottomClearance
@@ -83,10 +92,10 @@ private data class PracticeItem(
 )
 
 private val practices = listOf(
-    PracticeItem("ai_tutor", "AI Tutor", Res.drawable.home_ai_tutor, Color(0xFFFFF7C8)),
-    PracticeItem("vocabulary", "Vocabulary", Res.drawable.home_vocab, Color(0xFFFDEECB)),
-    PracticeItem("speaking", "Speaking", Res.drawable.home_speaking, Color(0xFFE2F4D9)),
-    PracticeItem("grammar", "Grammar", Res.drawable.home_grammar, Color(0xFFFCE1E3))
+    PracticeItem("ai_tutor", "AI Tutor", Res.drawable.home_ai_tutor, CardMint),
+    PracticeItem("vocabulary", "Vocabulary", Res.drawable.home_vocab, CardIvory),
+    PracticeItem("speaking", "Speaking", Res.drawable.home_speaking, CardTeal),
+    PracticeItem("grammar", "Grammar", Res.drawable.home_grammar, CardCoral)
 )
 
 @Composable
@@ -128,9 +137,9 @@ fun HomeScreen(
     ) {
         Spacer(Modifier.height(16.dp))
 
-        // TopBar: "Engla" title, "My Path" button with "New" badge, Blue Diamond & Notification bell
+        // Semavia title, learning-path shortcut, and notification action.
         TabHeader(
-            title = Strings.tr("Engla"),
+            title = Strings.tr("Semavia"),
             titleSize = 28.sp,
             leadingAction = {
                 PlanPathButton(
@@ -266,8 +275,8 @@ private fun ActivePlanCard(
         modifier = modifier
             .fillMaxWidth()
             .clip(shape)
-            .background(Brush.verticalGradient(listOf(Color(0xFFEAF2FE), Color.White)))
-            .border(1.dp, Color(0xFFD6E4FB), shape)
+            .background(Brush.verticalGradient(listOf(SurfaceMint, Color.White)))
+            .border(1.dp, DividerColor, shape)
             .clickable(onClick = onViewPath)
             .padding(16.dp)
     ) {
@@ -277,7 +286,7 @@ private fun ActivePlanCard(
                     imageVector = Icons.Rounded.Check,
                     contentDescription = null,
                     modifier = Modifier.size(20.dp),
-                    tint = Color(0xFF22A45D)
+                    tint = CorrectGreen
                 )
                 Spacer(Modifier.width(8.dp))
                 Text(
@@ -364,13 +373,13 @@ private fun ActivePlanCard(
                     .fillMaxWidth()
                     .height(6.dp)
                     .clip(RoundedCornerShape(50))
-                    .background(Color(0xFFE6F0FF))
+                    .background(TrackColor)
             ) {
                 Box(
                     modifier = Modifier
                         .fillMaxWidth(levelProgress)
                         .height(6.dp)
-                        .background(Blue)
+                        .background(BrandPrimary)
                 )
             }
 
@@ -433,7 +442,7 @@ private fun ActivePlanAction(
     Row(
         modifier = Modifier
             .clip(RoundedCornerShape(50))
-            .background(Blue)
+            .background(BrandPrimary)
             .clickable(onClick = onClick)
             .heightIn(min = 40.dp)
             .padding(start = 18.dp, top = 8.dp, end = if (arrow) 12.dp else 18.dp, bottom = 8.dp),
@@ -514,18 +523,11 @@ private fun LessonCard(
         modifier = modifier
             .fillMaxWidth()
             .clip(cardCorner)
+            .background(Brush.horizontalGradient(listOf(BrandPrimary, BrandPrimaryPressed)))
     ) {
         val cardH = maxWidth * 0.36842105f
         val robotH = cardH * 0.8f
         val robotW = robotH * 0.9497042f
-
-        // Background
-        Image(
-            painter = painterResource(Res.drawable.home_lesson_bg),
-            contentDescription = null,
-            modifier = Modifier.matchParentSize(),
-            contentScale = ContentScale.Crop
-        )
 
         // Text & CTA content
         Row(
@@ -540,7 +542,7 @@ private fun LessonCard(
                     text = Strings.tr("Speak with AI"),
                     fontSize = 22.sp,
                     fontWeight = FontWeight.Bold,
-                    color = TextPrimary,
+                    color = Color.White,
                     lineHeight = 26.sp,
                     maxLines = 2,
                     overflow = TextOverflow.Ellipsis
@@ -549,7 +551,7 @@ private fun LessonCard(
                 Text(
                     text = Strings.tr("Build confidence every day"),
                     fontSize = 13.sp,
-                    color = TextPrimary.copy(alpha = 0.85f),
+                    color = Color.White.copy(alpha = 0.88f),
                     lineHeight = 16.sp,
                     maxLines = 2,
                     overflow = TextOverflow.Ellipsis
@@ -570,11 +572,11 @@ private fun LessonCard(
                         imageVector = Icons.Rounded.Mic,
                         contentDescription = null,
                         modifier = Modifier.size(18.dp),
-                        tint = Blue
+                        tint = BrandPrimary
                     )
                     Text(
                         text = Strings.tr("Start speaking"),
-                        color = TextPrimary,
+                        color = BrandPrimaryPressed,
                         fontSize = 14.sp,
                         fontWeight = FontWeight.SemiBold
                     )
@@ -655,12 +657,13 @@ private fun MorePractice(
 
                     Text(
                         text = Strings.tr(practice.title),
+                        modifier = Modifier.fillMaxWidth().basicMarquee(initialDelayMillis = 2_500),
                         fontSize = 12.sp,
                         fontWeight = FontWeight.SemiBold,
                         color = TextPrimary,
                         textAlign = TextAlign.Center,
-                        maxLines = 2,
-                        overflow = TextOverflow.Ellipsis
+                        maxLines = 1,
+                        overflow = TextOverflow.Clip
                     )
 
                     Spacer(Modifier.height(3.dp))
@@ -689,12 +692,12 @@ private fun ProgressCard(
             .clip(shape)
             .aspectRatio(2.4358974f)
     ) {
-        // Top section: Blue surface with progress
+        // Top section: BrandPrimary surface with progress
         Column(
             modifier = Modifier
                 .weight(1f)
                 .fillMaxWidth()
-                .background(Blue)
+                .background(BrandPrimary)
                 .padding(horizontal = 16.dp, vertical = 10.dp),
             verticalArrangement = Arrangement.Center
         ) {

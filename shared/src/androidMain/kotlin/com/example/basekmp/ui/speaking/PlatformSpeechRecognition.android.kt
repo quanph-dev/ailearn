@@ -61,6 +61,11 @@ import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.example.basekmp.data.Strings
 import com.example.basekmp.theme.AppTheme
+import com.example.basekmp.theme.BrandPrimary
+import com.example.basekmp.theme.DividerColor
+import com.example.basekmp.theme.SurfaceMint
+import com.example.basekmp.theme.TextPrimary
+import com.example.basekmp.theme.TextSecondary
 
 internal class PendingMicrophoneStart {
     var pending by mutableStateOf(false)
@@ -345,7 +350,7 @@ private fun MicrophonePermissionDialog(
             modifier = Modifier
                 .fillMaxWidth()
                 .widthIn(max = 360.dp)
-                .border(1.dp, Color(0xFFE7ECF4), shape),
+                .border(1.dp, DividerColor, shape),
             shape = shape,
             color = colors.surfaceCard,
             shadowElevation = 20.dp
@@ -355,19 +360,19 @@ private fun MicrophonePermissionDialog(
                     Surface(
                         modifier = Modifier.size(48.dp),
                         shape = CircleShape,
-                        color = Color(0xFFEDF3FF)
+                        color = SurfaceMint
                     ) {
                         Icon(
                             imageVector = Icons.Rounded.Mic,
                             contentDescription = null,
                             modifier = Modifier.padding(12.dp),
-                            tint = Color(0xFF2B5CFF)
+                            tint = BrandPrimary
                         )
                     }
                     Spacer(Modifier.width(14.dp))
                     Text(
                         text = title,
-                        color = Color(0xFF14161B),
+                        color = TextPrimary,
                         fontSize = 19.sp,
                         lineHeight = 25.sp,
                         fontWeight = FontWeight.SemiBold
@@ -377,7 +382,7 @@ private fun MicrophonePermissionDialog(
                 Spacer(Modifier.height(16.dp))
                 Text(
                     text = message,
-                    color = Color(0xFF475467),
+                    color = TextSecondary,
                     fontSize = 14.sp,
                     lineHeight = 21.sp
                 )
@@ -392,7 +397,7 @@ private fun MicrophonePermissionDialog(
                         onClick = onDismiss,
                         modifier = Modifier.height(48.dp),
                         shape = RoundedCornerShape(14.dp),
-                        colors = ButtonDefaults.textButtonColors(contentColor = Color(0xFF475467)),
+                        colors = ButtonDefaults.textButtonColors(contentColor = TextSecondary),
                         contentPadding = PaddingValues(horizontal = 14.dp)
                     ) {
                         Text(
@@ -407,7 +412,7 @@ private fun MicrophonePermissionDialog(
                         modifier = Modifier.height(48.dp),
                         shape = RoundedCornerShape(14.dp),
                         colors = ButtonDefaults.buttonColors(
-                            containerColor = Color(0xFF2B5CFF),
+                            containerColor = BrandPrimary,
                             contentColor = Color.White
                         ),
                         contentPadding = PaddingValues(horizontal = 18.dp)

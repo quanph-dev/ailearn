@@ -2,7 +2,7 @@
 <resources>
     <string name="cd_back">뒤로</string>
     <string name="fo_splash_describe_load_ad">준비 중…</string>
-    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_title">Semavia: Learn Languages</string>
     <string name="language_confirm">확인</string>
     <string name="language_save_error">선택 사항을 저장하지 못했습니다. 다시 시도해 주세요.</string>
     <string name="language_title">언어</string>
@@ -139,7 +139,7 @@
     <string name="tr_business">비즈니스</string>
     <string name="tr_buying_groceries">장보기</string>
     <string name="tr_buying_something">물건 사기</string>
-    <string name="tr_by_using_engla_learn_language_with_ai_you_agree_to_these_terms_i">Engla: Learn Language with AI을 사용함으로써 귀하는 이 약관에 동의하게 됩니다. 동의하지 않으시면 앱 사용을 중단해 주세요.</string>
+    <string name="tr_by_using_semavia_you_agree_to_these_terms">Semavia: Learn Languages을 사용함으로써 귀하는 이 약관에 동의하게 됩니다. 동의하지 않으시면 앱 사용을 중단해 주세요.</string>
     <string name="tr_c1_advanced">C1 고급</string>
     <string name="tr_calling">전화 걸기</string>
     <string name="tr_can_t_speak_now_skip">지금 말하기 어려우신가요? 건너뛰기</string>
@@ -215,7 +215,7 @@
     <string name="tr_continue_learning_a2b3ad83">학습 이어하기</string>
     <string name="tr_continue_learning_acb708f6">계속 학습하기</string>
     <string name="tr_continue_lesson">레슨 계속하기</string>
-    <string name="tr_continue_the_conversation_in_engla">Engla에서 대화를 이어가세요</string>
+    <string name="tr_continue_conversation_in_semavia">Semavia에서 대화를 이어가세요</string>
     <string name="tr_continue_to_ai_conversation">AI 대화로 이동</string>
     <string name="tr_continue_to_quick_quiz">퀵 퀴즈로 이동</string>
     <string name="tr_continue_to_speaking">말하기 연습으로 이동</string>
@@ -315,8 +315,8 @@
     <string name="tr_enable_full_screen_intent_for_the_best_app_experience_and_instan">최상의 경험과 즉각적인 알림을 위해 전체 화면 알림을 켜세요.</string>
     <string name="tr_enable_microphone_access_in_settings_to_use_voice_practice">음성 연습을 사용하려면 설정에서 마이크 접근을 허용하세요.</string>
     <string name="tr_end_lesson">레슨 종료</string>
-    <string name="tr_engla_ai_tutor">Engla AI 튜터</string>
-    <string name="tr_engla_learn_language_with_ai_stores_your_learning_preferences_ta">Engla: Learn Language with AI은 학습 환경설정(대상 언어, 레벨, 일일 목표, 튜터 목소리)을 기기에만 저장합니다. 학습 백엔드가 연결되기 전까지는 어떤 개인 데이터도 휴대폰을 벗어나지 않습니다.</string>
+    <string name="tr_semavia_ai_tutor">Semavia AI 튜터</string>
+    <string name="tr_semavia_stores_learning_preferences">Semavia: Learn Languages은 학습 환경설정(대상 언어, 레벨, 일일 목표, 튜터 목소리)을 기기에만 저장합니다. 학습 백엔드가 연결되기 전까지는 어떤 개인 데이터도 휴대폰을 벗어나지 않습니다.</string>
     <string name="tr_english">영어</string>
     <string name="tr_english_learn_pro_is_offered_as_weekly_and_yearly_auto_renewing">English Learn Pro는 선택적 무료 체험이 포함된 주간 및 연간 자동 갱신 구독으로 제공됩니다. Google Play 계정 설정에서 언제든지 관리하거나 해지할 수 있습니다.</string>
     <string name="tr_english_level">영어 레벨</string>
@@ -744,7 +744,7 @@
     <string name="tr_shadowing">섀도잉</string>
     <string name="tr_shadowing_practice">섀도잉 연습</string>
     <string name="tr_share_app">앱 공유</string>
-    <string name="tr_share_engla_learn_language_with_ai">Engla: Learn Language with AI 공유</string>
+    <string name="tr_share_semavia">Semavia: Learn Languages 공유</string>
     <string name="tr_share_your_feedback_to_help_us_do_better">더 나아질 수 있도록 의견을 들려주세요.</string>
     <string name="tr_shopping_basics">쇼핑 기초</string>
     <string name="tr_shopping_for_clothes">옷 쇼핑하기</string>
@@ -936,7 +936,7 @@
     <string name="tr_we_may_update_these_terms_as_the_product_evolves_continued_use_a">제품이 발전함에 따라 약관이 업데이트될 수 있으며, 변경 후에도 계속 사용하시면 이에 동의하는 것으로 간주됩니다.</string>
     <string name="tr_we_re_glad_you_like_it">마음에 드신다니 기쁩니다!</string>
     <string name="tr_we_re_sorry_about_it">불편을 드려 죄송합니다!</string>
-    <string name="tr_we_re_thrilled_you_love_engla_learn_language_with_ai">Engla: Learn Language with AI을 좋아해 주셔서 정말 기쁩니다!</string>
+    <string name="tr_we_re_glad_you_like_semavia">Semavia: Learn Languages을 좋아해 주셔서 정말 기쁩니다!</string>
     <string name="tr_weather">날씨</string>
     <string name="tr_weather_seasons">날씨와 계절</string>
     <string name="tr_wed_6_31_pm">수, 6:31 PM</string>

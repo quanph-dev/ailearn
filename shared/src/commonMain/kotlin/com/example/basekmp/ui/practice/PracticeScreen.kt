@@ -40,7 +40,7 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.basekmp.data.Strings
-import com.example.basekmp.theme.Blue
+import com.example.basekmp.theme.BrandPrimary
 import com.example.basekmp.theme.ChipOutlineText
 import com.example.basekmp.theme.DividerColor
 import com.example.basekmp.theme.LessonCardBg
@@ -211,7 +211,7 @@ private fun FilterChip(
 ) {
     val shape = CircleShape
     val backgroundModifier = if (selected) {
-        Modifier.background(Blue)
+        Modifier.background(BrandPrimary)
     } else {
         Modifier
             .border(1.dp, DividerColor, shape)

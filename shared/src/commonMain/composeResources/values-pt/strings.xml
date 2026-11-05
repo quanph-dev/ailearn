@@ -2,7 +2,7 @@
 <resources>
     <string name="cd_back">Voltar</string>
     <string name="fo_splash_describe_load_ad">Preparando tudo…</string>
-    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_title">Semavia: Learn Languages</string>
     <string name="language_confirm">Confirmar</string>
     <string name="language_save_error">Não foi possível salvar sua seleção. Tente novamente.</string>
     <string name="language_title">Idioma</string>
@@ -133,7 +133,7 @@
     <string name="tr_business">Negócios</string>
     <string name="tr_buying_groceries">Comprando mantimentos</string>
     <string name="tr_buying_something">Comprar algo</string>
-    <string name="tr_by_using_engla_learn_language_with_ai_you_agree_to_these_terms_i">Ao utilizares a Engla: Learn Language with AI, aceitas estes termos. Se não concordas, deixa de utilizar a aplicação.</string>
+    <string name="tr_by_using_semavia_you_agree_to_these_terms">Ao utilizares a Semavia: Learn Languages, aceitas estes termos. Se não concordas, deixa de utilizar a aplicação.</string>
     <string name="tr_c1_advanced">C1 Avançado</string>
     <string name="tr_calling">Ligar</string>
     <string name="tr_can_t_speak_now_skip">Não pode falar agora? Pular</string>
@@ -208,7 +208,7 @@
     <string name="tr_continue_learning_a2b3ad83">CONTINUE APRENDENDO</string>
     <string name="tr_continue_learning_acb708f6">Continuar aprendendo</string>
     <string name="tr_continue_lesson">Continuar lição</string>
-    <string name="tr_continue_the_conversation_in_engla">Continue a conversa no Engla</string>
+    <string name="tr_continue_conversation_in_semavia">Continue a conversa no Semavia</string>
     <string name="tr_continue_to_ai_conversation">Ir para a conversa com IA</string>
     <string name="tr_continue_to_quick_quiz">Ir para o quiz rápido</string>
     <string name="tr_continue_to_speaking">Ir para a prática de conversação</string>
@@ -308,8 +308,8 @@
     <string name="tr_enable_full_screen_intent_for_the_best_app_experience_and_instan">Ative as notificações em tela cheia para a melhor experiência e avisos instantâneos.</string>
     <string name="tr_enable_microphone_access_in_settings_to_use_voice_practice">Ative o acesso ao microfone nas Configurações para usar a prática de voz.</string>
     <string name="tr_end_lesson">Terminar lição</string>
-    <string name="tr_engla_ai_tutor">Tutor de IA Engla</string>
-    <string name="tr_engla_learn_language_with_ai_stores_your_learning_preferences_ta">A Engla: Learn Language with AI armazena as tuas preferências de aprendizagem (língua-alvo, nível, objetivo diário e voz do tutor) apenas no teu dispositivo. Nenhum dado pessoal sai do teu telemóvel até que um backend de aprendizagem seja ligado.</string>
+    <string name="tr_semavia_ai_tutor">Tutor de IA Semavia</string>
+    <string name="tr_semavia_stores_learning_preferences">A Semavia: Learn Languages armazena as tuas preferências de aprendizagem (língua-alvo, nível, objetivo diário e voz do tutor) apenas no teu dispositivo. Nenhum dado pessoal sai do teu telemóvel até que um backend de aprendizagem seja ligado.</string>
     <string name="tr_english">Inglês</string>
     <string name="tr_english_learn_pro_is_offered_as_weekly_and_yearly_auto_renewing">O English Learn Pro é oferecido como subscrições semanais e anuais de renovação automática, com um período experimental gratuito opcional. Gere ou cancela a qualquer momento nas definições da tua conta Google Play.</string>
     <string name="tr_english_level">Nível de Inglês</string>
@@ -733,7 +733,7 @@
     <string name="tr_settings">Definições</string>
     <string name="tr_shadowing_practice">Prática de Shadowing</string>
     <string name="tr_share_app">Partilhar Aplicação</string>
-    <string name="tr_share_engla_learn_language_with_ai">Partilhar Engla: Learn Language with AI</string>
+    <string name="tr_share_semavia">Partilhar Semavia: Learn Languages</string>
     <string name="tr_share_your_feedback_to_help_us_do_better">Partilha a tua opinião para nos ajudares a melhorar.</string>
     <string name="tr_shopping_basics">Compras Básicas</string>
     <string name="tr_shopping_for_clothes">Comprando roupas</string>
@@ -924,7 +924,7 @@
     <string name="tr_we_may_update_these_terms_as_the_product_evolves_continued_use_a">Podemos atualizar estes termos à medida que o produto evolui; a utilização contínua após as alterações constitui aceitação.</string>
     <string name="tr_we_re_glad_you_like_it">Ainda bem que gostas!</string>
     <string name="tr_we_re_sorry_about_it">Lamentamos!</string>
-    <string name="tr_we_re_thrilled_you_love_engla_learn_language_with_ai">Estamos muito felizes por adorares a Engla: Learn Language with AI!</string>
+    <string name="tr_we_re_glad_you_like_semavia">Estamos muito felizes por adorares a Semavia: Learn Languages!</string>
     <string name="tr_weather">Clima</string>
     <string name="tr_weather_seasons">Clima e Estações</string>
     <string name="tr_wed_6_31_pm">Qua, 6:31 PM</string>

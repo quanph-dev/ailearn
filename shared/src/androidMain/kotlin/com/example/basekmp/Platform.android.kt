@@ -39,7 +39,7 @@ actual fun sharePlainText(text: String) {
         putExtra(Intent.EXTRA_TEXT, text)
     }
     context.startActivity(
-        Intent.createChooser(sendIntent, "Share Engla")
+        Intent.createChooser(sendIntent, "Share Semavia")
             .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
     )
 }

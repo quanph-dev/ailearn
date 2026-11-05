@@ -2,7 +2,7 @@
 <resources>
     <string name="cd_back">Quay lại</string>
     <string name="fo_splash_describe_load_ad">Đang chuẩn bị…</string>
-    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_title">Semavia: Learn Languages</string>
     <string name="language_confirm">Xác nhận</string>
     <string name="language_save_error">Không thể lưu lựa chọn. Vui lòng thử lại.</string>
     <string name="language_title">Ngôn ngữ</string>
@@ -140,7 +140,7 @@
     <string name="tr_business">Kinh doanh</string>
     <string name="tr_buying_groceries">Đi mua thực phẩm</string>
     <string name="tr_buying_something">Mua đồ</string>
-    <string name="tr_by_using_engla_learn_language_with_ai_you_agree_to_these_terms_i">Bằng cách sử dụng Engla: Learn Language with AI, bạn đồng ý với các điều khoản này. Nếu bạn không đồng ý, vui lòng ngừng sử dụng ứng dụng.</string>
+    <string name="tr_by_using_semavia_you_agree_to_these_terms">Bằng cách sử dụng Semavia: Learn Languages, bạn đồng ý với các điều khoản này. Nếu bạn không đồng ý, vui lòng ngừng sử dụng ứng dụng.</string>
     <string name="tr_c1_advanced">C1 Nâng cao</string>
     <string name="tr_calling">Gọi điện</string>
     <string name="tr_can_t_speak_now_skip">Bạn chưa tiện nói? Bỏ qua</string>
@@ -218,7 +218,7 @@
     <string name="tr_continue_learning_a2b3ad83">TIẾP TỤC HỌC</string>
     <string name="tr_continue_learning_acb708f6">Tiếp tục học</string>
     <string name="tr_continue_lesson">Tiếp tục bài học</string>
-    <string name="tr_continue_the_conversation_in_engla">Tiếp tục cuộc trò chuyện trong Engla</string>
+    <string name="tr_continue_conversation_in_semavia">Tiếp tục cuộc trò chuyện trong Semavia</string>
     <string name="tr_continue_to_ai_conversation">Chuyển sang Trò chuyện với AI</string>
     <string name="tr_continue_to_quick_quiz">Chuyển sang Quiz nhanh</string>
     <string name="tr_continue_to_speaking">Chuyển sang Luyện nói</string>
@@ -318,8 +318,8 @@
     <string name="tr_enable_full_screen_intent_for_the_best_app_experience_and_instan">Bật thông báo toàn màn hình để có trải nghiệm tốt nhất và cập nhật tức thì.</string>
     <string name="tr_enable_microphone_access_in_settings_to_use_voice_practice">Bật quyền truy cập micrô trong Cài đặt để sử dụng luyện nói.</string>
     <string name="tr_end_lesson">Kết thúc bài học</string>
-    <string name="tr_engla_ai_tutor">Gia sư AI Engla</string>
-    <string name="tr_engla_learn_language_with_ai_stores_your_learning_preferences_ta">Engla: Learn Language with AI lưu trữ các tùy chọn học tập của bạn (ngôn ngữ đích, trình độ, mục tiêu hằng ngày và giọng gia sư) chỉ trên thiết bị của bạn. Không có dữ liệu cá nhân nào rời khỏi điện thoại của bạn cho đến khi một hệ thống học tập phía máy chủ được kết nối.</string>
+    <string name="tr_semavia_ai_tutor">Gia sư AI Semavia</string>
+    <string name="tr_semavia_stores_learning_preferences">Semavia: Learn Languages lưu trữ các tùy chọn học tập của bạn (ngôn ngữ đích, trình độ, mục tiêu hằng ngày và giọng gia sư) chỉ trên thiết bị của bạn. Không có dữ liệu cá nhân nào rời khỏi điện thoại của bạn cho đến khi một hệ thống học tập phía máy chủ được kết nối.</string>
     <string name="tr_english">Tiếng Anh</string>
     <string name="tr_english_learn_pro_is_offered_as_weekly_and_yearly_auto_renewing">English Learn Pro được cung cấp dưới dạng gói đăng ký tự động gia hạn theo tuần và theo năm với bản dùng thử miễn phí tùy chọn. Quản lý hoặc hủy bất cứ lúc nào từ cài đặt tài khoản Google Play của bạn.</string>
     <string name="tr_english_level">Trình độ tiếng Anh</string>
@@ -759,7 +759,7 @@
     <string name="tr_shadowing">Luyện nói nhại (Shadowing)</string>
     <string name="tr_shadowing_practice">Luyện tập Shadowing</string>
     <string name="tr_share_app">Chia sẻ ứng dụng</string>
-    <string name="tr_share_engla_learn_language_with_ai">Chia sẻ Engla: Learn Language with AI</string>
+    <string name="tr_share_semavia">Chia sẻ Semavia: Learn Languages</string>
     <string name="tr_share_your_feedback_to_help_us_do_better">Chia sẻ phản hồi để giúp chúng tôi làm tốt hơn.</string>
     <string name="tr_shopping_basics">Mua sắm cơ bản</string>
     <string name="tr_shopping_for_clothes">Mua sắm quần áo</string>
@@ -956,7 +956,7 @@
     <string name="tr_we_may_update_these_terms_as_the_product_evolves_continued_use_a">Chúng tôi có thể cập nhật các điều khoản này khi sản phẩm phát triển; việc tiếp tục sử dụng sau khi có thay đổi đồng nghĩa với việc chấp nhận.</string>
     <string name="tr_we_re_glad_you_like_it">Chúng tôi rất vui vì bạn thích nó!</string>
     <string name="tr_we_re_sorry_about_it">Chúng tôi rất tiếc về điều đó!</string>
-    <string name="tr_we_re_thrilled_you_love_engla_learn_language_with_ai">Chúng tôi rất vui vì bạn yêu thích Engla: Learn Language with AI!</string>
+    <string name="tr_we_re_glad_you_like_semavia">Chúng tôi rất vui vì bạn yêu thích Semavia: Learn Languages!</string>
     <string name="tr_weather">Thời tiết</string>
     <string name="tr_weather_seasons">Thời tiết và các mùa</string>
     <string name="tr_wed_6_31_pm">Thứ 4, 6:31 PM</string>

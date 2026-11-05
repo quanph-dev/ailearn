@@ -2,7 +2,7 @@
 <resources>
     <string name="cd_back">رجوع</string>
     <string name="fo_splash_describe_load_ad">جارٍ تجهيز كل شيء…</string>
-    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_title">Semavia: Learn Languages</string>
     <string name="language_confirm">تأكيد</string>
     <string name="language_save_error">تعذر حفظ اختيارك. يُرجى المحاولة مرة أخرى.</string>
     <string name="language_title">اللغة</string>
@@ -139,7 +139,7 @@
     <string name="tr_business">الأعمال</string>
     <string name="tr_buying_groceries">شراء البقالة</string>
     <string name="tr_buying_something">شراء شيء</string>
-    <string name="tr_by_using_engla_learn_language_with_ai_you_agree_to_these_terms_i">باستخدامك Engla: Learn Language with AI فإنك توافق على هذه الشروط. إذا كنت لا توافق، فيرجى التوقف عن استخدام التطبيق.</string>
+    <string name="tr_by_using_semavia_you_agree_to_these_terms">باستخدامك Semavia: Learn Languages فإنك توافق على هذه الشروط. إذا كنت لا توافق، فيرجى التوقف عن استخدام التطبيق.</string>
     <string name="tr_c1_advanced">C1 متقدّم</string>
     <string name="tr_calling">إجراء المكالمات</string>
     <string name="tr_can_t_speak_now_skip">لا تستطيع التحدث الآن؟ تخطَّ</string>
@@ -215,7 +215,7 @@
     <string name="tr_continue_learning_a2b3ad83">تابع التعلّم</string>
     <string name="tr_continue_learning_acb708f6">متابعة التعلّم</string>
     <string name="tr_continue_lesson">متابعة الدرس</string>
-    <string name="tr_continue_the_conversation_in_engla">تابع المحادثة في Engla</string>
+    <string name="tr_continue_conversation_in_semavia">تابع المحادثة في Semavia</string>
     <string name="tr_continue_to_ai_conversation">الانتقال إلى المحادثة مع الذكاء الاصطناعي</string>
     <string name="tr_continue_to_quick_quiz">الانتقال إلى الاختبار السريع</string>
     <string name="tr_continue_to_speaking">الانتقال إلى تمرين المحادثة</string>
@@ -315,8 +315,8 @@
     <string name="tr_enable_full_screen_intent_for_the_best_app_experience_and_instan">فعّل إشعارات ملء الشاشة للحصول على أفضل تجربة وتحديثات فورية.</string>
     <string name="tr_enable_microphone_access_in_settings_to_use_voice_practice">فعّل الوصول إلى الميكروفون في الإعدادات لاستخدام التدريب الصوتي.</string>
     <string name="tr_end_lesson">إنهاء الدرس</string>
-    <string name="tr_engla_ai_tutor">معلّم Engla الذكي</string>
-    <string name="tr_engla_learn_language_with_ai_stores_your_learning_preferences_ta">يخزّن Engla: Learn Language with AI تفضيلات التعلّم الخاصة بك (اللغة المستهدفة، والمستوى، والهدف اليومي، وصوت المعلّم) على جهازك فقط. لا تغادر أي بيانات شخصية هاتفك حتى يتم توصيل خادم تعلّم.</string>
+    <string name="tr_semavia_ai_tutor">معلّم Semavia الذكي</string>
+    <string name="tr_semavia_stores_learning_preferences">يخزّن Semavia: Learn Languages تفضيلات التعلّم الخاصة بك (اللغة المستهدفة، والمستوى، والهدف اليومي، وصوت المعلّم) على جهازك فقط. لا تغادر أي بيانات شخصية هاتفك حتى يتم توصيل خادم تعلّم.</string>
     <string name="tr_english">الإنجليزية</string>
     <string name="tr_english_learn_pro_is_offered_as_weekly_and_yearly_auto_renewing">يُقدَّم English Learn Pro كاشتراكات أسبوعية وسنوية تُجدَّد تلقائيًا مع تجربة مجانية اختيارية. يمكنك الإدارة أو الإلغاء في أي وقت من إعدادات حساب Google Play الخاص بك.</string>
     <string name="tr_english_level">مستوى الإنجليزية</string>
@@ -744,7 +744,7 @@
     <string name="tr_shadowing">الترديد (Shadowing)</string>
     <string name="tr_shadowing_practice">تمرين المحاكاة</string>
     <string name="tr_share_app">مشاركة التطبيق</string>
-    <string name="tr_share_engla_learn_language_with_ai">مشاركة Engla: Learn Language with AI</string>
+    <string name="tr_share_semavia">مشاركة Semavia: Learn Languages</string>
     <string name="tr_share_your_feedback_to_help_us_do_better">شاركنا رأيك لمساعدتنا على التحسّن.</string>
     <string name="tr_shopping_basics">أساسيات التسوّق</string>
     <string name="tr_shopping_for_clothes">التسوق للملابس</string>
@@ -936,7 +936,7 @@
     <string name="tr_we_may_update_these_terms_as_the_product_evolves_continued_use_a">قد نحدّث هذه الشروط مع تطوّر المنتج؛ ويُعدّ استمرار الاستخدام بعد التغييرات قبولًا بها.</string>
     <string name="tr_we_re_glad_you_like_it">يسعدنا أن أعجبك!</string>
     <string name="tr_we_re_sorry_about_it">نأسف على ذلك!</string>
-    <string name="tr_we_re_thrilled_you_love_engla_learn_language_with_ai">يسعدنا كثيرًا أنك تحب Engla: Learn Language with AI!</string>
+    <string name="tr_we_re_glad_you_like_semavia">يسعدنا كثيرًا أنك تحب Semavia: Learn Languages!</string>
     <string name="tr_weather">الطقس</string>
     <string name="tr_weather_seasons">الطقس والفصول</string>
     <string name="tr_wed_6_31_pm">الأربعاء، 6:31 PM</string>

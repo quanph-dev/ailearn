@@ -2,7 +2,7 @@
 <resources>
     <string name="cd_back">पीछे</string>
     <string name="fo_splash_describe_load_ad">तैयारी हो रही है…</string>
-    <string name="fo_splash_title">Engla: Learn Language with AI</string>
+    <string name="fo_splash_title">Semavia: Learn Languages</string>
     <string name="language_confirm">पुष्टि करें</string>
     <string name="language_save_error">आपका चयन सहेजा नहीं जा सका। कृपया फिर से कोशिश करें।</string>
     <string name="language_title">भाषा</string>
@@ -140,7 +140,7 @@
     <string name="tr_business">व्यापार</string>
     <string name="tr_buying_groceries">किराने का सामान खरीदना</string>
     <string name="tr_buying_something">कुछ खरीदना</string>
-    <string name="tr_by_using_engla_learn_language_with_ai_you_agree_to_these_terms_i">इंग्लिश लर्निंग ऐप का उपयोग करके आप इन शर्तों से सहमत होते हैं। यदि आप सहमत नहीं हैं, तो कृपया ऐप का उपयोग बंद करें।</string>
+    <string name="tr_by_using_semavia_you_agree_to_these_terms">इंग्लिश लर्निंग ऐप का उपयोग करके आप इन शर्तों से सहमत होते हैं। यदि आप सहमत नहीं हैं, तो कृपया ऐप का उपयोग बंद करें।</string>
     <string name="tr_c1_advanced">C1 उन्नत</string>
     <string name="tr_calling">कॉल करना</string>
     <string name="tr_can_t_speak_now_skip">अभी बोलना संभव नहीं? छोड़ें</string>
@@ -216,7 +216,7 @@
     <string name="tr_continue_learning_a2b3ad83">सीखना जारी रखें</string>
     <string name="tr_continue_learning_acb708f6">सीखना जारी रखें</string>
     <string name="tr_continue_lesson">पाठ जारी रखें</string>
-    <string name="tr_continue_the_conversation_in_engla">Engla में बातचीत जारी रखें</string>
+    <string name="tr_continue_conversation_in_semavia">Semavia में बातचीत जारी रखें</string>
     <string name="tr_continue_to_ai_conversation">AI बातचीत पर जाएँ</string>
     <string name="tr_continue_to_quick_quiz">क्विक क्विज़ पर जाएँ</string>
     <string name="tr_continue_to_speaking">बोलने के अभ्यास पर जाएँ</string>
@@ -316,9 +316,9 @@
     <string name="tr_enable_full_screen_intent_for_the_best_app_experience_and_instan">सर्वोत्तम अनुभव और त्वरित अपडेट के लिए फ़ुल स्क्रीन सूचनाएं चालू करें।</string>
     <string name="tr_enable_microphone_access_in_settings_to_use_voice_practice">आवाज़ अभ्यास के लिए सेटिंग्स में माइक्रोफ़ोन एक्सेस सक्षम करें।</string>
     <string name="tr_end_lesson">पाठ समाप्त करें</string>
-    <string name="tr_engla_ai_tutor">Engla AI ट्यूटर</string>
-    <string name="tr_engla_learn_language_with_ai">इंग्लिश लर्निंग ऐप</string>
-    <string name="tr_engla_learn_language_with_ai_stores_your_learning_preferences_ta">इंग्लिश लर्निंग ऐप आपकी सीखने की प्राथमिकताएं (लक्ष्य भाषा, स्तर, दैनिक लक्ष्य और ट्यूटर आवाज़) केवल आपके डिवाइस पर संग्रहीत करता है। जब तक कोई लर्निंग बैकएंड कनेक्ट नहीं होता, तब तक कोई व्यक्तिगत डेटा आपके फ़ोन से बाहर नहीं जाता।</string>
+    <string name="tr_semavia_ai_tutor">Semavia AI ट्यूटर</string>
+    <string name="tr_semavia_learn_languages">इंग्लिश लर्निंग ऐप</string>
+    <string name="tr_semavia_stores_learning_preferences">इंग्लिश लर्निंग ऐप आपकी सीखने की प्राथमिकताएं (लक्ष्य भाषा, स्तर, दैनिक लक्ष्य और ट्यूटर आवाज़) केवल आपके डिवाइस पर संग्रहीत करता है। जब तक कोई लर्निंग बैकएंड कनेक्ट नहीं होता, तब तक कोई व्यक्तिगत डेटा आपके फ़ोन से बाहर नहीं जाता।</string>
     <string name="tr_english">अंग्रेज़ी</string>
     <string name="tr_english_learn_pro">इंग्लिश लर्न प्रो</string>
     <string name="tr_english_learn_pro_is_offered_as_weekly_and_yearly_auto_renewing">इंग्लिश लर्न प्रो साप्ताहिक और वार्षिक स्वतः-नवीनीकरण सदस्यताओं के रूप में एक वैकल्पिक निःशुल्क ट्रायल के साथ पेश किया जाता है। अपने Google Play खाता सेटिंग्स से कभी भी प्रबंधित या रद्द करें।</string>
@@ -749,7 +749,7 @@
     <string name="tr_shadowing">शैडोइंग</string>
     <string name="tr_shadowing_practice">शैडोइंग अभ्यास</string>
     <string name="tr_share_app">ऐप साझा करें</string>
-    <string name="tr_share_engla_learn_language_with_ai">इंग्लिश लर्निंग ऐप साझा करें</string>
+    <string name="tr_share_semavia">इंग्लिश लर्निंग ऐप साझा करें</string>
     <string name="tr_share_your_feedback_to_help_us_do_better">हमें बेहतर करने में मदद के लिए अपनी प्रतिक्रिया साझा करें।</string>
     <string name="tr_shopping_basics">खरीदारी की बुनियादी बातें</string>
     <string name="tr_shopping_for_clothes">कपड़ों की ख़रीदारी</string>
@@ -942,7 +942,7 @@
     <string name="tr_we_may_update_these_terms_as_the_product_evolves_continued_use_a">जैसे-जैसे उत्पाद विकसित होता है, हम इन शर्तों को अपडेट कर सकते हैं; परिवर्तनों के बाद जारी उपयोग स्वीकृति है।</string>
     <string name="tr_we_re_glad_you_like_it">हमें खुशी है कि आपको यह पसंद आया!</string>
     <string name="tr_we_re_sorry_about_it">हमें इसके लिए खेद है!</string>
-    <string name="tr_we_re_thrilled_you_love_engla_learn_language_with_ai">हमें खुशी है कि आपको इंग्लिश लर्निंग ऐप पसंद है!</string>
+    <string name="tr_we_re_glad_you_like_semavia">हमें खुशी है कि आपको इंग्लिश लर्निंग ऐप पसंद है!</string>
     <string name="tr_weather">मौसम</string>
     <string name="tr_weather_seasons">मौसम और ऋतुएँ</string>
     <string name="tr_wed_6_31_pm">बुध, 6:31 PM</string>
