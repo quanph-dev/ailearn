@@ -1109,9 +1109,17 @@ import ailearn.shared.generated.resources.tr_your_words_will_appear_here
 import ailearn.shared.generated.resources.tr_zzz_tap_me_to_wake_me_up_111758e0
 import ailearn.shared.generated.resources.tr_zzz_tap_me_to_wake_me_up_521f91ec
 import ailearn.shared.generated.resources.Res
+import ailearn.shared.generated.resources.ui_ads_loading
+import ailearn.shared.generated.resources.ui_ads_keep_free
+import ailearn.shared.generated.resources.ui_ads_close
+import ailearn.shared.generated.resources.ui_ads_hide
 import org.jetbrains.compose.resources.StringResource
 
 internal val uiStringResourceByEnglish: Map<String, StringResource> = mapOf(
+    "Loading ads" to Res.string.ui_ads_loading,
+    "Ads help keep AI Learn free" to Res.string.ui_ads_keep_free,
+    "Close ad" to Res.string.ui_ads_close,
+    "Hide ad" to Res.string.ui_ads_hide,
     " (just Rs 8,400/Year)" to Res.string.tr_just_rs_8_400_year,
     "%1\$d - Days Streak. Keep Learning!" to Res.string.tr_1_d_days_streak_keep_learning,
     "%1\$d / %2\$d min" to Res.string.tr_1_d_2_d_min,

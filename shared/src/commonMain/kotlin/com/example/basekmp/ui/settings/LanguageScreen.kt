@@ -39,7 +39,7 @@ import com.example.basekmp.data.UiLanguage
 import com.example.basekmp.theme.BrandPrimaryPressed
 import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.TextPrimary
-import com.example.basekmp.ui.components.BackButton
+import com.example.basekmp.ui.components.BackTitleBar
 
 @Composable
 fun LanguageScreen(
@@ -59,22 +59,12 @@ fun LanguageScreen(
     ) {
         Spacer(Modifier.height(14.dp))
 
-        // Top Bar
-        Row(
+        BackTitleBar(
+            title = Strings.tr("Interface Language"),
+            onBack = onBack,
             modifier = Modifier.fillMaxWidth(),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            BackButton(onClick = onBack)
-
-            Spacer(Modifier.width(12.dp))
-
-            Text(
-                text = Strings.tr("Interface Language"),
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold,
-                color = TextPrimary
-            )
-        }
+            titleSize = 20.sp
+        )
 
         Spacer(Modifier.height(16.dp))
 

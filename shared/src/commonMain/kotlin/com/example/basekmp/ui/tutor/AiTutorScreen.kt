@@ -76,6 +76,7 @@ import androidx.compose.ui.unit.sp
 import com.example.basekmp.components.ReportIssueDialog
 import com.example.basekmp.components.RobotMood
 import com.example.basekmp.data.UserPrefs
+import com.example.basekmp.AppAdsHost
 import com.example.basekmp.data.tr
 import com.example.basekmp.theme.AppTheme
 import com.example.basekmp.theme.BrandPrimary
@@ -110,6 +111,7 @@ private val AI_TUTOR_CANNED_REPLIES = listOf(
 @Composable
 fun AiTutorScreen(
     onBack: (Boolean) -> Unit,
+    adsHost: AppAdsHost? = null,
     modifier: Modifier = Modifier
 ) {
     val coroutineScope = rememberCoroutineScope()
@@ -286,7 +288,6 @@ fun AiTutorScreen(
                 onBack = ::closeTutor,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(AppTheme.dimens.topBarHeight)
                     .background(AppTheme.colors.surface)
                     .padding(horizontal = AppTheme.dimens.spacingSm),
                 rightContent = {
@@ -511,6 +512,11 @@ fun AiTutorScreen(
                         }
                     }
                 }
+                adsHost?.BannerAd(
+                    "B_Speak",
+                    modifier = Modifier.fillMaxWidth(),
+                    visible = !isKeyboardVisible
+                )
             }
         }
     }

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Semavia</string>
+    <string name="ads_disclosure">Ad</string>
+    <string name="ads_install">Install</string>
+    <string name="ads_choices_description">Ad choices</string>
+    <string name="ads_collapse_description">Hide ad</string>
 </resources>

@@ -58,11 +58,10 @@ import kotlinx.coroutines.launch
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import ailearn.shared.generated.resources.plan_start_robot
-import ailearn.shared.generated.resources.plan_survey_assistant
-import ailearn.shared.generated.resources.plan_survey_level
-import ailearn.shared.generated.resources.plan_survey_name
-import ailearn.shared.generated.resources.plan_survey_time
+import ailearn.shared.generated.resources.home_ai_tutor
+import ailearn.shared.generated.resources.plan_survey_assistant_teal
+import ailearn.shared.generated.resources.plan_survey_level_teal
+import ailearn.shared.generated.resources.plan_survey_time_teal
 import com.example.basekmp.components.AppLinearProgressBar
 import com.example.basekmp.data.EnglishLevel
 import com.example.basekmp.data.GoalPlan
@@ -74,6 +73,7 @@ import com.example.basekmp.data.PlanProgress
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
 import com.example.basekmp.data.trf
+import com.example.basekmp.AppAdsHost
 import com.example.basekmp.theme.AppTheme
 import com.example.basekmp.ui.components.BackButton
 import org.jetbrains.compose.resources.painterResource
@@ -86,6 +86,7 @@ import org.jetbrains.compose.resources.painterResource
 fun PlanSetupScreen(
     onBack: () -> Unit,
     onDone: () -> Unit,
+    adsHost: AppAdsHost? = null,
     modifier: Modifier = Modifier
 ) {
     val steps = SetupStep.entries
@@ -280,6 +281,9 @@ fun PlanSetupScreen(
                     )
                 }
             }
+            if (currentStep == SetupStep.NAME) {
+                adsHost?.NativeAd("N_LearningPath_Name", modifier = Modifier.fillMaxWidth())
+            }
         }
     }
 }
@@ -292,7 +296,7 @@ private fun StartStepContent() {
         verticalArrangement = Arrangement.Center
     ) {
         Image(
-            painter = painterResource(ailearn.shared.generated.resources.Res.drawable.plan_start_robot),
+            painter = painterResource(ailearn.shared.generated.resources.Res.drawable.home_ai_tutor),
             contentDescription = null,
             modifier = Modifier.size(220.dp)
         )
@@ -323,7 +327,7 @@ private fun NameStepContent(
 ) {
     Column(modifier = Modifier.fillMaxSize()) {
         Image(
-            painter = painterResource(ailearn.shared.generated.resources.Res.drawable.plan_survey_name),
+            painter = painterResource(ailearn.shared.generated.resources.Res.drawable.home_ai_tutor),
             contentDescription = null,
             modifier = Modifier
                 .fillMaxWidth()
@@ -528,7 +532,7 @@ private fun LevelStepContent(
 ) {
     Column(modifier = Modifier.fillMaxSize()) {
         Image(
-            painter = painterResource(ailearn.shared.generated.resources.Res.drawable.plan_survey_level),
+            painter = painterResource(ailearn.shared.generated.resources.Res.drawable.plan_survey_level_teal),
             contentDescription = null,
             modifier = Modifier.fillMaxWidth().height(154.dp)
         )
@@ -610,7 +614,7 @@ private fun TimeStepContent(
 
     Column(modifier = Modifier.fillMaxSize()) {
         Image(
-            painter = painterResource(ailearn.shared.generated.resources.Res.drawable.plan_survey_time),
+            painter = painterResource(ailearn.shared.generated.resources.Res.drawable.plan_survey_time_teal),
             contentDescription = null,
             modifier = Modifier.fillMaxWidth().height(154.dp)
         )
@@ -677,7 +681,7 @@ private fun AssistantStepContent(
 ) {
     Column(modifier = Modifier.fillMaxSize()) {
         Image(
-            painter = painterResource(ailearn.shared.generated.resources.Res.drawable.plan_survey_assistant),
+            painter = painterResource(ailearn.shared.generated.resources.Res.drawable.plan_survey_assistant_teal),
             contentDescription = null,
             modifier = Modifier.fillMaxWidth().height(154.dp)
         )

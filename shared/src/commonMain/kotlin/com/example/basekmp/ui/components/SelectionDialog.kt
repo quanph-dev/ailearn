@@ -22,8 +22,12 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Check
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -37,6 +41,9 @@ import com.example.basekmp.data.Strings
 import com.example.basekmp.theme.BrandPrimaryPressed
 import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.TextPrimary
+import com.example.basekmp.data.appStringResource
+import ailearn.shared.generated.resources.Res
+import ailearn.shared.generated.resources.language_confirm
 
 @Composable
 fun SelectionDialog(
@@ -44,8 +51,10 @@ fun SelectionDialog(
     options: List<String>,
     selected: String,
     onSelect: (String) -> Unit,
-    onDismiss: () -> Unit
+    onDismiss: () -> Unit,
+    requireConfirmation: Boolean = false
 ) {
+    var pending by remember(selected) { mutableStateOf(selected) }
     Dialog(
         onDismissRequest = onDismiss,
         properties = DialogProperties(
@@ -97,7 +106,7 @@ fun SelectionDialog(
                             .verticalScroll(rememberScrollState())
                     ) {
                         options.forEachIndexed { index, option ->
-                            val isSelected = option == selected
+                            val isSelected = option == if (requireConfirmation) pending else selected
                             Row(
                                 modifier = Modifier
                                     .fillMaxWidth()
@@ -107,8 +116,10 @@ fun SelectionDialog(
                                         else OptionSurface
                                     )
                                     .clickable {
-                                        onSelect(option)
-                                        onDismiss()
+                                        if (requireConfirmation) pending = option else {
+                                            onSelect(option)
+                                            onDismiss()
+                                        }
                                     }
                                     .padding(horizontal = 16.dp, vertical = 14.dp),
                                 verticalAlignment = Alignment.CenterVertically
@@ -143,6 +154,15 @@ fun SelectionDialog(
                                 Spacer(Modifier.height(8.dp))
                             }
                         }
+                    }
+                    if (requireConfirmation) {
+                        TextButton(
+                            onClick = {
+                                onSelect(pending)
+                                onDismiss()
+                            },
+                            modifier = Modifier.align(Alignment.End)
+                        ) { Text(appStringResource(Res.string.language_confirm)) }
                     }
                 }
             }

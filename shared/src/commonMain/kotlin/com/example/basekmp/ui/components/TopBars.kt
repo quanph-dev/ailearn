@@ -3,11 +3,10 @@ package com.example.basekmp.ui.components
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.ArrowBackIos
@@ -21,7 +20,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -41,28 +42,38 @@ fun TabHeader(
     leadingAction: (@Composable () -> Unit)? = null,
     titleSize: TextUnit = 20.sp
 ) {
-    Row(
-        modifier = modifier.fillMaxWidth(),
-        verticalAlignment = Alignment.CenterVertically
+    val sideSlot = if (leadingAction != null || trailing != null) 72.dp else 12.dp
+    Box(
+        modifier = modifier.fillMaxWidth().heightIn(min = 56.dp),
+        contentAlignment = Alignment.Center
     ) {
         Text(
             text = title,
+            modifier = Modifier.fillMaxWidth().padding(horizontal = sideSlot),
             fontSize = titleSize,
             fontWeight = FontWeight.Bold,
             color = TextPrimary,
             maxLines = 2,
             overflow = TextOverflow.Ellipsis,
-            modifier = Modifier.weight(1f)
+            textAlign = TextAlign.Center
         )
 
         if (leadingAction != null) {
-            Spacer(Modifier.width(8.dp))
-            leadingAction()
+            Box(
+                modifier = Modifier.align(Alignment.CenterStart).size(width = 72.dp, height = 56.dp),
+                contentAlignment = Alignment.CenterStart
+            ) {
+                leadingAction()
+            }
         }
 
         if (trailing != null) {
-            Spacer(Modifier.width(10.dp))
-            trailing()
+            Box(
+                modifier = Modifier.align(Alignment.CenterEnd).size(width = 72.dp, height = 56.dp),
+                contentAlignment = Alignment.CenterEnd
+            ) {
+                trailing()
+            }
         }
     }
 }
@@ -141,25 +152,43 @@ fun BackTitleBar(
     title: String,
     onBack: () -> Unit,
     modifier: Modifier = Modifier,
-    rightContent: (@Composable () -> Unit)? = null
+    rightContent: (@Composable () -> Unit)? = null,
+    titleSize: TextUnit = 18.sp,
+    titleColor: Color = TextPrimary,
+    buttonBackground: Color = OptionSurface,
+    buttonTint: Color = TextPrimary,
+    minHeight: Dp = 56.dp
 ) {
-    Row(
-        modifier = modifier.fillMaxWidth(),
-        verticalAlignment = Alignment.CenterVertically
+    Box(
+        modifier = modifier.fillMaxWidth().heightIn(min = minHeight),
+        contentAlignment = Alignment.Center
     ) {
-        BackButton(onClick = onBack)
-        Spacer(Modifier.width(12.dp))
         Text(
             text = title,
-            fontSize = 18.sp,
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 56.dp),
+            fontSize = titleSize,
             fontWeight = FontWeight.Bold,
-            color = TextPrimary,
+            color = titleColor,
+            textAlign = TextAlign.Center,
             maxLines = 2,
             overflow = TextOverflow.Ellipsis,
-            modifier = Modifier.weight(1f)
         )
-        if (rightContent != null) {
-            rightContent()
+
+        Box(
+            modifier = Modifier.align(Alignment.CenterStart).size(width = 56.dp, height = 56.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            BackButton(
+                onClick = onBack,
+                background = buttonBackground,
+                tint = buttonTint
+            )
+        }
+        Box(
+            modifier = Modifier.align(Alignment.CenterEnd).size(width = 56.dp, height = 56.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            rightContent?.invoke()
         }
     }
 }
@@ -171,22 +200,31 @@ fun BackTitleBar(
 fun CloseTitleBar(
     title: String,
     onClose: () -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    titleSize: TextUnit = 18.sp,
+    titleColor: Color = TextPrimary
 ) {
-    Row(
-        modifier = modifier.fillMaxWidth(),
-        verticalAlignment = Alignment.CenterVertically
+    Box(
+        modifier = modifier.fillMaxWidth().heightIn(min = 56.dp),
+        contentAlignment = Alignment.Center
     ) {
-        CloseButton(onClick = onClose)
-        Spacer(Modifier.width(12.dp))
         Text(
             text = title,
-            fontSize = 18.sp,
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 56.dp),
+            fontSize = titleSize,
             fontWeight = FontWeight.Bold,
-            color = TextPrimary,
+            color = titleColor,
+            textAlign = TextAlign.Center,
             maxLines = 2,
             overflow = TextOverflow.Ellipsis,
-            modifier = Modifier.weight(1f)
         )
+
+        Box(
+            modifier = Modifier.align(Alignment.CenterStart).size(width = 56.dp, height = 56.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            CloseButton(onClick = onClose)
+        }
+        Box(modifier = Modifier.align(Alignment.CenterEnd).size(56.dp))
     }
 }

@@ -2,6 +2,7 @@ package com.example.basekmp.ui.plan
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -33,16 +34,18 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.basekmp.components.AnimatedBuddy
+import ailearn.shared.generated.resources.Res
+import ailearn.shared.generated.resources.home_ai_tutor
 import com.example.basekmp.components.AppLinearProgressBar
-import com.example.basekmp.components.RobotMood
 import com.example.basekmp.data.PlanCatalogRepository
 import com.example.basekmp.data.tr
 import com.example.basekmp.theme.AppTheme
 import kotlinx.coroutines.delay
+import org.jetbrains.compose.resources.painterResource
 
 /**
  * Animated generating screen showing roadmap generation milestones.
@@ -94,7 +97,12 @@ fun PlanGeneratingScreen(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            AnimatedBuddy(mood = RobotMood.GOOD, size = 120.dp)
+            Image(
+                painter = painterResource(Res.drawable.home_ai_tutor),
+                contentDescription = null,
+                contentScale = ContentScale.Fit,
+                modifier = Modifier.size(160.dp)
+            )
 
             Spacer(modifier = Modifier.height(AppTheme.dimens.spacing2Xl))
 

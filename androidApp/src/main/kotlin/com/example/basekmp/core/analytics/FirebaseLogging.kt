@@ -14,39 +14,37 @@ private const val TAG = "AppAnalytics"
 @JvmOverloads
 fun logFirebaseEvent(eventName: String, bundle: Bundle? = null) {
     Log.d(TAG, eventName)
-    if (eventName.isBlank() || !BuildConfig.FIREBASE_CONFIGURED) return
+    if (eventName.isBlank()) return
 
     val application = BaseKmpApplication.instance ?: return
-    val firebaseReady = try {
-        FirebaseApp.getApps(application).any { it.name == FirebaseApp.DEFAULT_APP_NAME }
-    } catch (failure: Exception) {
-        failure.printStackTrace()
-        false
-    }
-    if (!firebaseReady) return
+    val firebaseApp = runCatching {
+        FirebaseApp.getApps(application).firstOrNull { it.name == FirebaseApp.DEFAULT_APP_NAME }
+    }.onFailure { Log.w(TAG, "Firebase app unavailable") }.getOrNull() ?: return
 
     if (BuildConfig.DEBUG) {
-        try {
-            FirebaseDatabase.getInstance()
+        runCatching {
+            FirebaseDatabase.getInstance(firebaseApp)
                 .getReference("events/${Build.MANUFACTURER}_${Build.DEVICE}")
                 .push()
                 .setValue(eventName)
-        } catch (failure: Exception) {
-            failure.printStackTrace()
-        }
+                .addOnFailureListener { Log.w(TAG, "Debug event write failed") }
+        }.onFailure { Log.w(TAG, "Debug event storage unavailable") }
     }
 
-    try {
-        FirebaseAnalytics.getInstance(application).logEvent(eventName, bundle)
-    } catch (failure: Exception) {
-        failure.printStackTrace()
-    }
+    runCatching { FirebaseAnalytics.getInstance(application).logEvent(eventName, bundle) }
+        .onFailure { Log.w(TAG, "Analytics unavailable") }
 }
 
-fun logAdsEvent(eventName: String, placement: String, bundle: Bundle? = null) {
-    if (placement.isBlank()) return
-    val eventBundle = Bundle(bundle ?: Bundle()).apply {
-        putString("placement", placement)
+/** Catalogued first-flow ad outcomes; technical ads_event records use RTDB only. */
+internal fun logFirstFlowAdResult(action: String, placement: String, success: Boolean) {
+    val prefix = when {
+        placement.startsWith("I_Splash_") && action in setOf("load", "show") -> "spl_ads_inter_$action"
+        placement == "N_Splash" && action == "load" -> "spl_ads_nat_pre_splash"
+        placement == "N_Splash" && action == "show" -> "spl_ads_nat_show"
+        action == "show" && placement in setOf("N_Onboard1_M", "N_Onboard1") -> "onb_ads_nat_show"
+        else -> return
     }
-    logFirebaseEvent(eventName, eventBundle)
+    logFirebaseEvent("${prefix}_${if (success) "done" else "fail"}", Bundle().apply {
+        putString("placement", placement)
+    })
 }

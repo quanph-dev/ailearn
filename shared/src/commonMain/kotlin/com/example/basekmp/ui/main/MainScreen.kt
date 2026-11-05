@@ -8,14 +8,13 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.runtime.setValue
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.pointer.PointerEventPass
+import androidx.compose.ui.input.pointer.PointerEventType
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import com.example.basekmp.AppAdsHost
 import com.example.basekmp.ui.components.AppBottomNav
 import com.example.basekmp.ui.components.MainTab
 import com.example.basekmp.ui.home.HomeScreen
@@ -46,24 +45,43 @@ fun MainScreen(
     onStatClick: (kind: String) -> Unit = {},
     onSeeAllHistory: () -> Unit = {},
     onNavigateToLanguage: () -> Unit = {},
+    onNativeLanguageSelected: (String) -> Unit = {},
+    onLearnLanguageSelected: (String) -> Unit = {},
+    languageSaveError: Boolean = false,
     onNavigateToLegal: (String) -> Unit = {},
     onContactSupport: () -> Unit = {},
     onShareApp: () -> Unit = {},
     selectedTab: MainTab = MainTab.Home,
     onTabSelected: (MainTab) -> Unit = {},
+    adsHost: AppAdsHost? = null,
+    onHomeInteraction: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
-    Box(
+    Column(
         modifier = modifier
             .fillMaxSize()
             .background(Color.White)
             .safeDrawingPadding()
     ) {
+        if (selectedTab == MainTab.Home) {
+            adsHost?.BannerAd("B_Home", modifier = Modifier.fillMaxWidth())
+        }
         // Tab Content with authentic horizontal 20.dp padding
         Box(
             modifier = Modifier
-                .fillMaxSize()
+                .weight(1f)
+                .fillMaxWidth()
                 .padding(horizontal = 20.dp)
+                .pointerInput(selectedTab, onHomeInteraction) {
+                    if (selectedTab == MainTab.Home) {
+                        awaitPointerEventScope {
+                            while (true) {
+                                val event = awaitPointerEvent(PointerEventPass.Initial)
+                                if (event.type == PointerEventType.Press) onHomeInteraction()
+                            }
+                        }
+                    }
+                }
         ) {
             when (selectedTab) {
                 MainTab.Home -> {
@@ -106,6 +124,9 @@ fun MainScreen(
                 MainTab.Settings -> {
                     SettingsScreen(
                         onNavigateToLanguage = onNavigateToLanguage,
+                        onNativeLanguageSelected = onNativeLanguageSelected,
+                        onLearnLanguageSelected = onLearnLanguageSelected,
+                        languageSaveError = languageSaveError,
                         onNavigateToLegal = onNavigateToLegal,
                         onContactSupport = onContactSupport,
                         onShareApp = onShareApp
@@ -114,23 +135,27 @@ fun MainScreen(
             }
         }
 
+        if (selectedTab == MainTab.Home) {
+            adsHost?.NativeAd(
+                placement = "N_Home1_M",
+                modifier = Modifier.fillMaxWidth(),
+                fallbacks = listOf("N_Home1_A"),
+                collapsible = true,
+                reloadAfterIdleMs = 15_000L,
+                onInteraction = onHomeInteraction
+            )
+        }
         // Persistent Floating Bottom Navigation Bar (wrapped in 20.dp horizontal, 10.dp bottom padding)
-        Column(
+        Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .align(Alignment.BottomCenter)
+                .padding(horizontal = 20.dp)
+                .padding(bottom = 10.dp)
         ) {
-            Box(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(horizontal = 20.dp)
-                    .padding(bottom = 10.dp)
-            ) {
-                AppBottomNav(
-                    selectedTab = selectedTab,
-                    onTabSelect = onTabSelected
-                )
-            }
+            AppBottomNav(
+                selectedTab = selectedTab,
+                onTabSelect = onTabSelected
+            )
         }
     }
 }

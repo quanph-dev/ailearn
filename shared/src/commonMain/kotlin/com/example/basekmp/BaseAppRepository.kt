@@ -4,8 +4,12 @@ import com.example.basekmp.data.Strings
 
 interface BaseAppRepository {
     suspend fun resolveStartupRoute(): String
+    suspend fun isReturningAppOpen(): Boolean
+    suspend fun markHomeViewed()
     suspend fun currentLanguageCode(): String
     suspend fun saveLanguage(code: String, completeSetup: Boolean)
+    suspend fun currentLearningLanguageCode(): String
+    suspend fun saveLearningLanguageCode(code: String)
     suspend fun completeFirstOpen(surveyLanguageCode: String, initialOnboardingProgress: String)
     suspend fun firstOpenSurveyLanguage(): String
     suspend fun onboardingProgress(): String
@@ -19,6 +23,7 @@ interface BaseAppRepository {
 
 expect fun getSystemLanguageCode(): String
 expect fun applyPlatformLanguage(code: String)
+expect fun ensureResourceLanguage(code: String)
 
 @androidx.compose.runtime.Composable
 expect fun PlatformLocaleProvider(code: String, content: @androidx.compose.runtime.Composable () -> Unit)
@@ -40,7 +45,9 @@ object BaseRoutes {
     const val ApplyLanguage = "apply_language"
     const val FirstOpenIntro = "first_open_intro"
     const val FirstOpenSurvey = "first_open_survey"
+    const val FirstOpenSurveyAd = "first_open_survey_ad"
     const val Onboarding = "onboarding"
+    const val Starting = "starting"
     const val Home = "browser_home"
     const val LanguageSettings = "language_settings"
 }

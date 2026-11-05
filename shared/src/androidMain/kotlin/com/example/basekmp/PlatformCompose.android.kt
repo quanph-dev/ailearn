@@ -1,11 +1,12 @@
 package com.example.basekmp
 
 import android.content.res.Configuration
+import android.os.Build
+import android.os.LocaleList
 import androidx.activity.compose.BackHandler
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.ProvidedValue
-import androidx.compose.runtime.key
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.platform.LocalConfiguration
@@ -29,15 +30,29 @@ actual object LocalAppLocale {
 @Composable
 actual fun PlatformLocaleProvider(code: String, content: @Composable () -> Unit) {
     val context = LocalContext.current
+    ensureResourceLanguage(code)
     val currentConfiguration = LocalConfiguration.current
     val localizedConfiguration = remember(context, currentConfiguration, code) {
         Configuration(currentConfiguration).apply {
-            val locale = Locale.forLanguageTag(code)
-            setLocale(locale)
+            val tag = code.trim().replace('_', '-')
+            val locale = Locale.forLanguageTag(tag)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                setLocales(LocaleList(locale))
+            } else {
+                @Suppress("DEPRECATION")
+                setLocale(locale)
+            }
             setLayoutDirection(locale)
         }
     }
     val localizedContext = remember(context, localizedConfiguration) {
+        @Suppress("DEPRECATION")
+        try {
+            context.resources.updateConfiguration(localizedConfiguration, context.resources.displayMetrics)
+            context.applicationContext?.resources?.let { appRes ->
+                appRes.updateConfiguration(localizedConfiguration, appRes.displayMetrics)
+            }
+        } catch (_: Throwable) {}
         context.createConfigurationContext(localizedConfiguration)
     }
     val direction = if (Strings.isRtl(code)) {
@@ -51,7 +66,7 @@ actual fun PlatformLocaleProvider(code: String, content: @Composable () -> Unit)
         LocalContext provides localizedContext,
         LocalLayoutDirection provides direction
     ) {
-        key(code) { content() }
+        content()
     }
 }
 

@@ -38,6 +38,7 @@ import com.example.basekmp.components.PrimaryButton
 import com.example.basekmp.data.LearningItem
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
+import com.example.basekmp.AppAdsHost
 import com.example.basekmp.formatDate
 import com.example.basekmp.formatTime
 import com.example.basekmp.theme.BrandPrimaryPressed
@@ -58,6 +59,7 @@ private fun formatHistoryWhen(ts: Long): String {
 @Composable
 fun LearningHistoryScreen(
     onBack: () -> Unit,
+    adsHost: AppAdsHost? = null,
     onOpenLesson: (String) -> Unit = {},
     onStartLearning: () -> Unit = {},
     modifier: Modifier = Modifier
@@ -140,12 +142,17 @@ fun LearningHistoryScreen(
                         items = items,
                         key = { "${it.title}_${it.timestamp}" }
                     ) { item ->
-                        HistoryCard(
-                            category = category,
-                            entry = item,
-                            onOpen = { onOpenLesson(item.title) },
-                            onDelete = { pendingDelete = item }
-                        )
+                        Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                            HistoryCard(
+                                category = category,
+                                entry = item,
+                                onOpen = { onOpenLesson(item.title) },
+                                onDelete = { pendingDelete = item }
+                            )
+                            if (item == lessonEntries.firstOrNull()) {
+                                adsHost?.NativeAd("N_Progress", modifier = Modifier.fillMaxWidth())
+                            }
+                        }
                     }
                 }
             }

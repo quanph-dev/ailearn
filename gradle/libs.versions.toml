@@ -17,6 +17,8 @@ firebaseBom = "34.19.0"
 media3 = "1.11.1"
 lottie = "6.7.1"
 proxUtilsMultipleMediation = "3.8.9-beta"
+googleUmp = "4.0.0"
+googleMobileAds = "25.4.0"
 hilt = "2.60.1"
 ksp = "2.3.6"
 googleServices = "4.5.0"
@@ -48,6 +50,8 @@ firebase-config = { module = "com.google.firebase:firebase-config" }
 firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics" }
 firebase-database = { module = "com.google.firebase:firebase-database" }
 prox-utils-multiple-mediation = { module = "prox-lib:prox-utils-multiple-mediation", version.ref = "proxUtilsMultipleMediation" }
+google-ump = { module = "com.google.android.ump:user-messaging-platform", version.ref = "googleUmp" }
+google-mobile-ads = { module = "com.google.android.gms:play-services-ads", version.ref = "googleMobileAds" }
 androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version = "1.1.7" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "androidx-lifecycle" }
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version = "1.2.0" }

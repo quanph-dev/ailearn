@@ -3,6 +3,7 @@ package com.example.basekmp
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -20,14 +21,19 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Close
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -44,12 +50,15 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import ailearn.shared.generated.resources.Res
 import ailearn.shared.generated.resources.cd_back
 import ailearn.shared.generated.resources.language_confirm
 import ailearn.shared.generated.resources.language_save_error
 import ailearn.shared.generated.resources.language_title
+import ailearn.shared.generated.resources.fo_ic_logo_app
 import ailearn.shared.generated.resources.ui_are_you_sure_you_want_to_exit_the_app_now
 import ailearn.shared.generated.resources.ui_exit_the_app
 import ailearn.shared.generated.resources.ui_no
@@ -96,29 +105,40 @@ import com.example.basekmp.ui.tutor.TodayLessonScreen
 import com.example.basekmp.ui.vocab.VocabCardsScreen
 import com.example.basekmp.ui.vocab.VocabSetupScreen
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
-import org.jetbrains.compose.resources.stringResource
+import androidx.compose.runtime.withFrameNanos
+import com.example.basekmp.data.appStringResource as stringResource
+import org.jetbrains.compose.resources.painterResource
 
 @Composable
 fun App(
     viewModel: BaseAppViewModel,
-    onLanguageApplied: () -> Unit = {},
+    adsHost: AppAdsHost? = null,
     onExitApp: () -> Unit = {}
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     var showExitConfirmation by remember { mutableStateOf(false) }
+    var introGateInProgress by remember { mutableStateOf(false) }
+    val appScope = rememberCoroutineScope()
+    val lifecycleOwner = LocalLifecycleOwner.current
+    val splashPhase = adsHost?.splashPhase?.collectAsStateWithLifecycle()?.value ?: 2
+    val isLoadingAds = adsHost?.isInterstitialLoading?.collectAsStateWithLifecycle()?.value ?: false
+    val fullscreenNativeState = adsHost?.fullscreenNativeState?.collectAsStateWithLifecycle()?.value
 
-    LaunchedEffect(viewModel) {
-        viewModel.events.collect { event ->
-            if (event is BaseAppEvent.LanguageApplied) {
-                onLanguageApplied()
+    fun passFirstIntroFullscreen(continueAction: () -> Unit) {
+        if (introGateInProgress) return
+        introGateInProgress = true
+        appScope.launch {
+            try {
+                adsHost?.showFullscreenNative("N_FS_12", closeDelaySeconds = 5)
+                continueAction()
+            } finally {
+                introGateInProgress = false
             }
         }
     }
-    LaunchedEffect(uiState.languageCode) {
-        applyPlatformLanguage(uiState.languageCode)
-        com.example.basekmp.data.Strings.select(uiState.languageCode)
-    }
+
     LaunchedEffect(uiState.route) {
         if (uiState.route == BaseRoutes.ApplyLanguage) {
             delay(250)
@@ -126,10 +146,45 @@ fun App(
         }
     }
 
-    BackActionHandler(enabled = uiState.route == BaseRoutes.LanguageSettings) {
+    LaunchedEffect(uiState.isLoading, uiState.route, uiState.startupTargetRoute, uiState.isReturningUser, adsHost) {
+        if (!uiState.isLoading && uiState.route == BaseRoutes.Splash && uiState.startupTargetRoute.isNotBlank()) {
+            adsHost?.showStartupAds(uiState.isReturningUser)
+            viewModel.finishStartup()
+        }
+    }
+    LaunchedEffect(uiState.route, adsHost) {
+        when (uiState.route) {
+            BaseRoutes.FirstOpenIntro -> adsHost?.showPendingStartupFallback()
+            BaseRoutes.FirstOpenSurveyAd -> {
+                adsHost?.showFullscreenNative("N_FS_Survey", closeDelaySeconds = 5)
+                viewModel.finishFirstOpenSurveyAd()
+            }
+            BaseRoutes.Starting -> {
+                adsHost?.showInterstitial("I_Start", timeoutMs = 8_000L)
+                viewModel.finishStartInterstitial()
+            }
+        }
+    }
+    LaunchedEffect(uiState.route, lifecycleOwner) {
+        if (uiState.route == BaseRoutes.Home) {
+            lifecycleOwner.lifecycle.currentStateFlow.first { it.isAtLeast(Lifecycle.State.RESUMED) }
+            withFrameNanos { }
+            viewModel.markHomeViewed()
+        }
+    }
+
+    val isAdsBlockingUi = isLoadingAds || fullscreenNativeState != null
+
+    BackActionHandler(enabled = uiState.route == BaseRoutes.LanguageSettings && !isAdsBlockingUi) {
         viewModel.closeLanguageSettings()
     }
-    BackActionHandler(enabled = !uiState.isLoading && uiState.route !in setOf(BaseRoutes.Home, BaseRoutes.LanguageSettings)) {
+    BackActionHandler(enabled = !isAdsBlockingUi && !uiState.isLoading && uiState.route !in setOf(
+        BaseRoutes.Home,
+        BaseRoutes.LanguageSettings,
+        BaseRoutes.Splash,
+        BaseRoutes.Starting,
+        BaseRoutes.FirstOpenSurveyAd
+    )) {
         when (uiState.route) {
             BaseRoutes.FirstOpenSurvey -> viewModel.backToFirstOpenIntro()
             BaseRoutes.FirstOpenIntro -> if (uiState.firstOpenPage > 0) viewModel.backFirstOpenIntro() else showExitConfirmation = true
@@ -146,14 +201,27 @@ fun App(
         PlatformLocaleProvider(uiState.languageCode) {
             Box(modifier = Modifier.fillMaxSize()) {
                 if (uiState.isLoading || uiState.route == BaseRoutes.Splash) {
-                    SplashScreen()
+                    SplashScreen(phase = if (uiState.isLoading) 1 else splashPhase, adsHost = adsHost)
                 } else {
                     when (uiState.route) {
                         BaseRoutes.StartupLanguage -> LanguageScreen(uiState, viewModel)
                         BaseRoutes.FirstOpenIntro -> FirstOpenIntroScreen(
                             page = uiState.firstOpenPage,
-                            onPageSelected = viewModel::selectFirstOpenPage,
-                            onNext = viewModel::advanceFirstOpenIntro
+                            onPageSelected = { page ->
+                                if (page > 0 && uiState.firstOpenPage == 0) {
+                                    passFirstIntroFullscreen { viewModel.selectFirstOpenPage(1) }
+                                } else {
+                                    viewModel.selectFirstOpenPage(page)
+                                }
+                            },
+                            onNext = {
+                                if (uiState.firstOpenPage == 0) {
+                                    passFirstIntroFullscreen(viewModel::advanceFirstOpenIntro)
+                                } else {
+                                    viewModel.advanceFirstOpenIntro()
+                                }
+                            },
+                            adsHost = adsHost
                         )
                         BaseRoutes.FirstOpenSurvey -> FirstOpenSurveyScreen(
                             selectedLanguage = uiState.firstOpenSurveyLanguage,
@@ -181,18 +249,77 @@ fun App(
                         }
                         BaseRoutes.Home -> MainAppHost(
                             viewModel = viewModel,
+                            adsHost = adsHost,
+                            isAdsBlockingUi = isAdsBlockingUi,
                             onOpenLanguageSettings = { viewModel.openLanguageSettings() },
                             onExitRequested = { showExitConfirmation = true }
                         )
-                        else -> SplashScreen()
+                        BaseRoutes.Starting,
+                        BaseRoutes.FirstOpenSurveyAd -> Box(Modifier.fillMaxSize().background(Color.White))
+                        else -> SplashScreen(phase = splashPhase, adsHost = adsHost)
                     }
                 }
 
                 if (showExitConfirmation) {
                     ExitConfirmationDialog(
+                        adsHost = adsHost,
                         onDismissRequest = { showExitConfirmation = false },
                         onExitApp = onExitApp
                     )
+                }
+                if (fullscreenNativeState != null) {
+                    FullscreenNativeAdDialog(
+                        state = fullscreenNativeState,
+                        adsHost = adsHost
+                    )
+                }
+                if (isLoadingAds && uiState.route != BaseRoutes.Splash) {
+                    LaunchedEffect(adsHost) {
+                        androidx.compose.runtime.withFrameNanos { }
+                        androidx.compose.runtime.withFrameNanos { }
+                        adsHost?.onLoadingAdsRendered()
+                    }
+                    Box(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .background(Color.White)
+                            .clickable { },
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Column(
+                            modifier = Modifier.fillMaxWidth().padding(horizontal = 32.dp),
+                            horizontalAlignment = Alignment.CenterHorizontally
+                        ) {
+                            Image(
+                                painter = painterResource(Res.drawable.fo_ic_logo_app),
+                                contentDescription = null,
+                                modifier = Modifier
+                                    .size(88.dp)
+                                    .clip(RoundedCornerShape(24.dp))
+                            )
+                            Spacer(Modifier.height(28.dp))
+                            CircularProgressIndicator(
+                                color = BrandPrimary,
+                                strokeWidth = 3.dp,
+                                modifier = Modifier.size(34.dp)
+                            )
+                            Spacer(Modifier.height(18.dp))
+                            Text(
+                                text = Strings.tr("Loading ads"),
+                                color = TextPrimary,
+                                fontSize = 20.sp,
+                                fontWeight = FontWeight.Bold,
+                                textAlign = TextAlign.Center
+                            )
+                            Spacer(Modifier.height(8.dp))
+                            Text(
+                                text = Strings.tr("Ads help keep AI Learn free"),
+                                color = TextSecondary,
+                                fontSize = 15.sp,
+                                textAlign = TextAlign.Center
+                            )
+                        }
+                    }
                 }
             }
         }
@@ -201,6 +328,7 @@ fun App(
 
 @Composable
 private fun ExitConfirmationDialog(
+    adsHost: AppAdsHost?,
     onDismissRequest: () -> Unit,
     onExitApp: () -> Unit
 ) {
@@ -233,7 +361,14 @@ private fun ExitConfirmationDialog(
                 color = TextSecondary,
                 textAlign = TextAlign.Center
             )
-            Spacer(Modifier.height(24.dp))
+            Spacer(Modifier.height(16.dp))
+            Box(
+                modifier = Modifier.fillMaxWidth(),
+                contentAlignment = Alignment.Center
+            ) {
+                adsHost?.NativeAd("N_Exit", modifier = Modifier.fillMaxWidth())
+            }
+            Spacer(Modifier.height(20.dp))
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(12.dp)
@@ -248,6 +383,51 @@ private fun ExitConfirmationDialog(
                     ExitPrimaryButton(
                         text = stringResource(Res.string.ui_yes_exit),
                         onClick = onExitApp
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun FullscreenNativeAdDialog(
+    state: FullscreenNativeState,
+    adsHost: AppAdsHost
+) {
+    Dialog(
+        onDismissRequest = {},
+        properties = DialogProperties(usePlatformDefaultWidth = false, dismissOnBackPress = false, dismissOnClickOutside = false)
+    ) {
+        Box(Modifier.fillMaxSize().background(Color(0xFF101828))) {
+            adsHost.NativeAd(
+                placement = state.placement,
+                modifier = Modifier.fillMaxSize(),
+                reuseOnly = true
+            )
+            Box(
+                modifier = Modifier
+                    .align(Alignment.TopEnd)
+                    .padding(top = 50.dp, end = 18.dp)
+                    .size(42.dp)
+                    .clip(CircleShape)
+                    .background(Color(0xFFE4E4E7))
+                    .clickable(enabled = state.canClose) { adsHost.closeFullscreenNative() },
+                contentAlignment = Alignment.Center
+            ) {
+                if (state.canClose) {
+                    Icon(
+                        imageVector = Icons.Rounded.Close,
+                        contentDescription = Strings.tr("Close ad"),
+                        modifier = Modifier.size(20.dp),
+                        tint = Color(0xFF70717A)
+                    )
+                } else {
+                    Text(
+                        text = state.secondsRemaining.toString(),
+                        color = Color(0xFF70717A),
+                        fontSize = 22.sp,
+                        fontWeight = FontWeight.Bold
                     )
                 }
             }
@@ -522,6 +702,8 @@ private sealed interface ActiveSubScreen {
 @Composable
 private fun MainAppHost(
     viewModel: BaseAppViewModel,
+    adsHost: AppAdsHost?,
+    isAdsBlockingUi: Boolean = false,
     onOpenLanguageSettings: () -> Unit,
     onExitRequested: () -> Unit = {},
     modifier: Modifier = Modifier
@@ -531,16 +713,50 @@ private fun MainAppHost(
     var showSavedWords by remember { mutableStateOf(false) }
     var lessonBackRequest by remember { mutableIntStateOf(0) }
     val planScope = androidx.compose.runtime.rememberCoroutineScope()
+    var backOperationRunning by remember { mutableStateOf(false) }
+    var tabOperationRunning by remember { mutableStateOf(false) }
+    val appScope = rememberCoroutineScope()
 
-    BackActionHandler(enabled = showSavedWords) {
+    fun returnToMain(action: () -> Unit) {
+        if (backOperationRunning) return
+        backOperationRunning = true
+        appScope.launch {
+            try {
+                adsHost?.showInterstitial("I_Back", timeoutMs = 8_000L)
+                action()
+            } finally {
+                backOperationRunning = false
+            }
+        }
+    }
+
+    fun selectMainTab(tab: com.example.basekmp.ui.components.MainTab) {
+        val currentTab = uiState.selectedTab
+        if (tab == currentTab || tabOperationRunning) return
+        if (tab == com.example.basekmp.ui.components.MainTab.Settings || currentTab == com.example.basekmp.ui.components.MainTab.Settings) {
+            viewModel.selectTab(tab)
+            return
+        }
+        tabOperationRunning = true
+        appScope.launch {
+            try {
+                adsHost?.showInterstitial("I_Switchtab", timeoutMs = 8_000L, minIntervalMs = 30_000L)
+                viewModel.selectTab(tab)
+            } finally {
+                tabOperationRunning = false
+            }
+        }
+    }
+
+    BackActionHandler(enabled = showSavedWords && !isAdsBlockingUi) {
         showSavedWords = false
     }
-    BackActionHandler(enabled = activeSubScreen != null && !showSavedWords) {
+    BackActionHandler(enabled = activeSubScreen != null && !showSavedWords && !isAdsBlockingUi) {
         val current = activeSubScreen
         if (current is ActiveSubScreen.TodayLesson || current is ActiveSubScreen.PlanTalk) {
             lessonBackRequest++
         } else {
-            activeSubScreen = when (current) {
+            val parent = when (current) {
             is ActiveSubScreen.ShadowingPlayer -> ActiveSubScreen.ShadowingList
             is ActiveSubScreen.PlanDay -> ActiveSubScreen.PlanRoadmap
             is ActiveSubScreen.PlanSession -> ActiveSubScreen.PlanDay(current.day)
@@ -553,11 +769,16 @@ private fun MainAppHost(
             is ActiveSubScreen.SpeakingCards -> ActiveSubScreen.SpeakingSetup
             else -> null
             }
+            if (parent == null) returnToMain { activeSubScreen = null } else activeSubScreen = parent
         }
     }
-    BackActionHandler(enabled = activeSubScreen == null && !showSavedWords) {
+    BackActionHandler(enabled = activeSubScreen == null && !showSavedWords && !isAdsBlockingUi) {
         if (uiState.selectedTab != com.example.basekmp.ui.components.MainTab.Home) {
-            viewModel.selectTab(com.example.basekmp.ui.components.MainTab.Home)
+            if (uiState.selectedTab == com.example.basekmp.ui.components.MainTab.Settings) {
+                viewModel.selectTab(com.example.basekmp.ui.components.MainTab.Home)
+            } else {
+                returnToMain { viewModel.selectTab(com.example.basekmp.ui.components.MainTab.Home) }
+            }
         } else {
             onExitRequested()
         }
@@ -613,6 +834,9 @@ private fun MainAppHost(
                     activeSubScreen = ActiveSubScreen.LearningHistory
                 },
                 onNavigateToLanguage = onOpenLanguageSettings,
+                onNativeLanguageSelected = viewModel::updateNativeLanguage,
+                onLearnLanguageSelected = viewModel::updateLearningLanguage,
+                languageSaveError = uiState.hasError,
                 onNavigateToLegal = { doc ->
                     AppLinks.documentUrl(doc)
                         .takeIf(String::isNotBlank)
@@ -623,17 +847,19 @@ private fun MainAppHost(
                 },
                 onShareApp = { sharePlainText(AppLinks.shareMessage(playStorePackageName())) },
                 selectedTab = uiState.selectedTab,
-                onTabSelected = { tab -> viewModel.selectTab(tab) }
+                adsHost = adsHost,
+                onHomeInteraction = { adsHost?.notifyHomeInteraction() },
+                onTabSelected = ::selectMainTab
             )
         } else {
             when (val screen = activeSubScreen) {
                 ActiveSubScreen.AiTutor -> {
-                    AiTutorScreen(onBack = { completed ->
+                    AiTutorScreen(adsHost = adsHost, onBack = { completed ->
                         if (completed) {
                             UserPrefs.addLearnedMinutes(6)
                             UserPrefs.addLearning(title = "AI Tutor", score = 0, total = 0)
                         }
-                        activeSubScreen = null
+                        returnToMain { activeSubScreen = null }
                     })
                 }
                 is ActiveSubScreen.TodayLesson -> {
@@ -641,7 +867,7 @@ private fun MainAppHost(
                         title = screen.title,
                         level = screen.level,
                         systemBackRequest = lessonBackRequest,
-                        onBack = { activeSubScreen = null },
+                        onBack = { returnToMain { activeSubScreen = null } },
                         onFinish = { activeSubScreen = null }
                     )
                 }
@@ -659,7 +885,7 @@ private fun MainAppHost(
                 }
                 ActiveSubScreen.VocabSetup -> {
                     VocabSetupScreen(
-                        onBack = { activeSubScreen = null },
+                        onBack = { returnToMain { activeSubScreen = null } },
                         onStart = { count -> activeSubScreen = ActiveSubScreen.VocabCards(count) }
                     )
                 }
@@ -667,13 +893,13 @@ private fun MainAppHost(
                     VocabCardsScreen(
                         wordCount = screen.count,
                         onClose = { _, _ ->
-                            activeSubScreen = null
+                            returnToMain { activeSubScreen = null }
                         }
                     )
                 }
                 ActiveSubScreen.GrammarSetup -> {
                     GrammarSetupScreen(
-                        onBack = { activeSubScreen = null },
+                        onBack = { returnToMain { activeSubScreen = null } },
                         onStart = { count -> activeSubScreen = ActiveSubScreen.GrammarQuiz(count) }
                     )
                 }
@@ -681,13 +907,13 @@ private fun MainAppHost(
                     GrammarQuizScreen(
                         questionCount = screen.count,
                         onClose = { _, _ ->
-                            activeSubScreen = null
+                            returnToMain { activeSubScreen = null }
                         }
                     )
                 }
                 ActiveSubScreen.SpeakingSetup -> {
                     SpeakingSetupScreen(
-                        onBack = { activeSubScreen = null },
+                        onBack = { returnToMain { activeSubScreen = null } },
                         onStart = { count -> activeSubScreen = ActiveSubScreen.SpeakingCards(count) }
                     )
                 }
@@ -699,13 +925,13 @@ private fun MainAppHost(
                             if (finished) {
                                 UserPrefs.markSpeakingDone(PracticeConfig.speakingDifficulty, PracticeConfig.speakingType)
                             }
-                            activeSubScreen = null
+                            returnToMain { activeSubScreen = null }
                         }
                     )
                 }
                 ActiveSubScreen.ShadowingList -> {
                     VideoShadowingListScreen(
-                        onBack = { activeSubScreen = null },
+                        onBack = { returnToMain { activeSubScreen = null } },
                         onOpenVideo = { videoId -> activeSubScreen = ActiveSubScreen.ShadowingPlayer(videoId) },
                         onOpenSavedWords = { showSavedWords = true }
                     )
@@ -737,12 +963,13 @@ private fun MainAppHost(
                 is ActiveSubScreen.PathLesson -> {
                     PathLessonScreen(
                         lessonId = screen.lessonId,
-                        onClose = { activeSubScreen = null }
+                        onClose = { returnToMain { activeSubScreen = null } }
                     )
                 }
                 ActiveSubScreen.PlanSetup -> {
                     PlanSetupScreen(
-                        onBack = { activeSubScreen = null },
+                        adsHost = adsHost,
+                        onBack = { returnToMain { activeSubScreen = null } },
                         onDone = { activeSubScreen = ActiveSubScreen.PlanGenerating }
                     )
                 }
@@ -753,7 +980,7 @@ private fun MainAppHost(
                 }
                 ActiveSubScreen.PlanRoadmap -> {
                     PlanScreen(
-                        onBack = { activeSubScreen = null },
+                        onBack = { returnToMain { activeSubScreen = null } },
                         onChangeGoal = { activeSubScreen = ActiveSubScreen.PlanSetup },
                         onOpenDay = { day -> activeSubScreen = ActiveSubScreen.PlanDay(day) }
                     )
@@ -761,6 +988,7 @@ private fun MainAppHost(
                 is ActiveSubScreen.PlanDay -> {
                     PlanDayActivitiesScreen(
                         day = screen.day,
+                        adsHost = adsHost,
                         onBack = { activeSubScreen = ActiveSubScreen.PlanRoadmap },
                         onOpenActivity = { activity, plan ->
                             activeSubScreen = when (activity) {
@@ -796,7 +1024,8 @@ private fun MainAppHost(
                 is ActiveSubScreen.ProgressDetail -> {
                     ProgressDetailScreen(
                         kind = screen.kind,
-                        onBack = { activeSubScreen = null },
+                        adsHost = adsHost,
+                        onBack = { returnToMain { activeSubScreen = null } },
                         onStartPractice = {
                             activeSubScreen = when (screen.kind.lowercase()) {
                                 "grammar" -> ActiveSubScreen.GrammarSetup
@@ -808,7 +1037,8 @@ private fun MainAppHost(
                 }
                 ActiveSubScreen.LearningHistory -> {
                     LearningHistoryScreen(
-                        onBack = { activeSubScreen = null },
+                        adsHost = adsHost,
+                        onBack = { returnToMain { activeSubScreen = null } },
                         onOpenLesson = { title ->
                             activeSubScreen = when {
                                 title.equals("AI Tutor", ignoreCase = true) || title.startsWith("AI Tutor ", ignoreCase = true) -> ActiveSubScreen.AiTutor

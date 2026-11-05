@@ -16,7 +16,7 @@
         android:theme="@android:style/Theme.Material.Light.NoActionBar">
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-1543141236149843~3509427130" />
+            android:value="ca-app-pub-2543141236149843~8611144764" />
         <meta-data
             android:name="com.google.android.gms.ads.AD_MANAGER_APP"
             android:value="true" />

@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.foundation.layout.size
@@ -22,6 +23,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
+import androidx.compose.foundation.gestures.detectHorizontalDragGestures
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CircularProgressIndicator
@@ -31,6 +33,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
@@ -61,6 +64,7 @@ import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.theme.TextSecondary
 import com.example.basekmp.ui.components.LanguageChoiceMetrics
+import com.example.basekmp.AppAdsHost
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.collect
 import org.jetbrains.compose.resources.DrawableResource
@@ -76,7 +80,8 @@ private val IntroSubtitle = TextSecondary
 fun FirstOpenIntroScreen(
     page: Int,
     onPageSelected: (Int) -> Unit,
-    onNext: () -> Unit
+    onNext: () -> Unit,
+    adsHost: AppAdsHost? = null
 ) {
     val pagerState = rememberPagerState(initialPage = page.coerceIn(0, 2), pageCount = { 3 })
     LaunchedEffect(page) {
@@ -104,7 +109,26 @@ fun FirstOpenIntroScreen(
     ) {
         HorizontalPager(
             state = pagerState,
-            modifier = Modifier.weight(1f),
+            userScrollEnabled = false,
+            modifier = Modifier
+                .weight(1f)
+                .pointerInput(pagerState.currentPage, onNext, onPageSelected) {
+                    var horizontalDrag = 0f
+                    detectHorizontalDragGestures(
+                        onHorizontalDrag = { change, dragAmount ->
+                            horizontalDrag += dragAmount
+                            change.consume()
+                        },
+                        onDragEnd = {
+                            when {
+                                horizontalDrag < -56f && pagerState.currentPage < 2 -> onNext()
+                                horizontalDrag > 56f && pagerState.currentPage > 0 -> onPageSelected(pagerState.currentPage - 1)
+                            }
+                            horizontalDrag = 0f
+                        },
+                        onDragCancel = { horizontalDrag = 0f }
+                    )
+                },
             key = { it }
         ) { currentPage ->
             FirstOpenIntroPage(
@@ -113,7 +137,7 @@ fun FirstOpenIntroScreen(
             )
         }
         Row(
-            modifier = Modifier.fillMaxWidth().height(58.dp).padding(horizontal = 12.dp),
+            modifier = Modifier.fillMaxWidth().height(52.dp).padding(horizontal = 16.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
             Row(verticalAlignment = Alignment.CenterVertically) {
@@ -142,6 +166,28 @@ fun FirstOpenIntroScreen(
                     .padding(horizontal = 12.dp, vertical = 10.dp)
             )
         }
+        val adModifier = Modifier
+            .fillMaxWidth()
+            .navigationBarsPadding()
+            .padding(bottom = 12.dp)
+
+        when (pagerState.currentPage) {
+            0 -> adsHost?.NativeAd(
+                placement = "N_Onboard1_M",
+                modifier = adModifier,
+                fallbacks = listOf("N_Onboard1")
+            )
+            1 -> adsHost?.NativeAd(
+                placement = "N_Onboard1_M",
+                modifier = adModifier,
+                fallbacks = listOf("N_Onboard1"),
+                reuseOnly = true
+            )
+            2 -> adsHost?.NativeAd(
+                placement = "N_Onboard3",
+                modifier = adModifier
+            )
+        }
     }
 }
 
@@ -164,13 +210,13 @@ private fun FirstOpenIntroPage(page: Int, isActive: Boolean) {
                 page = page,
                 isActive = isActive,
                 modifier = Modifier
-                    .fillMaxWidth(0.76f)
-                    .fillMaxHeight(0.82f)
+                    .fillMaxWidth(0.72f)
+                    .fillMaxHeight(0.78f)
                     .align(Alignment.Center)
             )
         }
         Column(
-            modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 12.dp),
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp),
             verticalArrangement = Arrangement.spacedBy(6.dp)
         ) {
             Text(

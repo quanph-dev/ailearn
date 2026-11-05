@@ -41,7 +41,10 @@ import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
 import com.example.basekmp.data.trf
 import com.example.basekmp.theme.AppTheme
-import com.example.basekmp.ui.components.BackButton
+import com.example.basekmp.ui.components.BackTitleBar
+import com.example.basekmp.AppAdsHost
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import kotlinx.coroutines.CancellationException
 
 /** Day-level activity launcher; activity state changes only from the completed activity screens. */
@@ -50,6 +53,7 @@ fun PlanDayActivitiesScreen(
     day: Int,
     onBack: () -> Unit,
     onOpenActivity: (PlanProgress.Activity, PlanFlow.DayPlan) -> Unit,
+    adsHost: AppAdsHost? = null,
     modifier: Modifier = Modifier
 ) {
     val progress = PlanProgress.get()
@@ -75,26 +79,19 @@ fun PlanDayActivitiesScreen(
                 .fillMaxSize()
                 .safeDrawingPadding()
         ) {
-            Row(
+            BackTitleBar(
+                title = "${tr("Day")} $day",
+                onBack = onBack,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(AppTheme.dimens.topBarHeight)
                     .background(AppTheme.colors.surface)
                     .padding(horizontal = AppTheme.dimens.spacingSm),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                BackButton(
-                    onClick = onBack,
-                    background = AppTheme.colors.background,
-                    tint = AppTheme.colors.textPrimary
-                )
-                Text(
-                    text = "${tr("Day")} $day",
-                    color = AppTheme.colors.textPrimary,
-                    fontSize = 18.sp,
-                    fontWeight = FontWeight.Bold
-                )
-            }
+                titleSize = 18.sp,
+                titleColor = AppTheme.colors.textPrimary,
+                buttonBackground = AppTheme.colors.background,
+                buttonTint = AppTheme.colors.textPrimary,
+                minHeight = AppTheme.dimens.topBarHeight
+            )
 
             val plan = dayPlan
             if (isLoading) {
@@ -145,7 +142,9 @@ fun PlanDayActivitiesScreen(
 
             Column(
                 modifier = Modifier
+                    .weight(1f)
                     .fillMaxWidth()
+                    .verticalScroll(rememberScrollState())
                     .padding(AppTheme.dimens.spacingLg),
                 verticalArrangement = Arrangement.spacedBy(AppTheme.dimens.spacingMd)
             ) {
@@ -236,6 +235,13 @@ fun PlanDayActivitiesScreen(
                     }
                 }
             }
+            adsHost?.NativeAd(
+                "N_LearningPath_Lessons",
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = AppTheme.dimens.spacingLg)
+                    .padding(bottom = AppTheme.dimens.spacingSm)
+            )
         }
     }
 }

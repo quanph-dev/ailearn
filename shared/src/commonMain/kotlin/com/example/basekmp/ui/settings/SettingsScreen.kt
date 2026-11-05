@@ -49,6 +49,11 @@ import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.theme.TextSecondary
 import com.example.basekmp.ui.components.SelectionDialog
+import com.example.basekmp.ui.components.TabHeader
+import com.example.basekmp.getSystemLanguageCode
+import com.example.basekmp.data.appStringResource
+import ailearn.shared.generated.resources.language_save_error
+import androidx.compose.material3.MaterialTheme
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.painterResource
 
@@ -56,6 +61,7 @@ private data class PickerSpec(
     val title: String,
     val options: List<String>,
     val selected: String,
+    val requireConfirmation: Boolean = false,
     val onSelect: (String) -> Unit
 )
 
@@ -69,6 +75,9 @@ private data class SettingItem(
 @Composable
 fun SettingsScreen(
     onNavigateToLanguage: () -> Unit = {},
+    onNativeLanguageSelected: (String) -> Unit = {},
+    onLearnLanguageSelected: (String) -> Unit = {},
+    languageSaveError: Boolean = false,
     onNavigateToLegal: (String) -> Unit = {},
     onContactSupport: () -> Unit = {},
     onShareApp: () -> Unit = {},
@@ -77,9 +86,8 @@ fun SettingsScreen(
     var activePicker by remember { mutableStateOf<PickerSpec?>(null) }
     var currentEnglishLevel by remember { mutableStateOf(EnglishLevel.toFullName(UserPrefs.englishLevel)) }
     var currentDailyGoal by remember { mutableStateOf(UserPrefs.getDailyGoal()) }
-    var currentLearnLang by remember { mutableStateOf(Languages.learn(UserPrefs.getLearnLanguage()).displayName) }
+    val currentLearnLang = Languages.learn(UserPrefs.getLearnLanguage()).displayName
     val currentNativeLang = Languages.nativeFor(UserPrefs.nativeLanguage).displayName
-    val currentInterfaceLang = Strings.languages.firstOrNull { it.code == Strings.getLanguage() }?.name.orEmpty()
 
     Column(
         modifier = modifier
@@ -87,12 +95,11 @@ fun SettingsScreen(
     ) {
         Spacer(Modifier.height(16.dp))
 
-        Text(
-            text = Strings.tr("Settings"),
-            fontSize = 20.sp,
-            fontWeight = FontWeight.Bold,
-            color = TextPrimary
-        )
+        TabHeader(title = Strings.tr("Settings"))
+
+        if (languageSaveError) {
+            Text(appStringResource(Res.string.language_save_error), color = MaterialTheme.colorScheme.error)
+        }
 
         Column(
             modifier = Modifier
@@ -115,10 +122,10 @@ fun SettingsScreen(
                                 title = "Select Learn Language",
                                 options = Languages.learnable.map { it.displayName },
                                 selected = currentLearnLang,
+                                requireConfirmation = true,
                                 onSelect = { selectedName ->
                                     val lang = Languages.learn(selectedName)
-                                    UserPrefs.setLearnLanguage(lang.code)
-                                    currentLearnLang = lang.displayName
+                                    onLearnLanguageSelected(lang.code)
                                 }
                             )
                         }
@@ -146,11 +153,12 @@ fun SettingsScreen(
                         onClick = {
                             activePicker = PickerSpec(
                                 title = "Select Native Language",
-                                options = Languages.native.map { it.displayName },
+                                options = Languages.nativeOptionsFor(getSystemLanguageCode()).map { it.displayName },
                                 selected = currentNativeLang,
+                                requireConfirmation = true,
                                 onSelect = { selectedName ->
                                     val lang = Languages.nativeFor(selectedName)
-                                    UserPrefs.nativeLanguage = lang.code
+                                    onNativeLanguageSelected(lang.code)
                                 }
                             )
                         }
@@ -176,20 +184,6 @@ fun SettingsScreen(
                                 }
                             )
                         }
-                    )
-                )
-            )
-
-            // 2. Appearance Section
-            SectionLabel(Strings.tr("Appearance"))
-
-            SettingsGroup(
-                items = listOf(
-                    SettingItem(
-                        label = Strings.tr("Interface Language"),
-                        icon = null,
-                        value = currentInterfaceLang,
-                        onClick = onNavigateToLanguage
                     )
                 )
             )
@@ -252,6 +246,7 @@ fun SettingsScreen(
             title = picker.title,
             options = picker.options,
             selected = picker.selected,
+            requireConfirmation = picker.requireConfirmation,
             onSelect = { option ->
                 picker.onSelect(option)
                 activePicker = null

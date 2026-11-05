@@ -1,0 +1,6 @@
+<resources>
+    <string name="ui_ads_loading">اشتہارات لوڈ ہو رہے ہیں</string>
+    <string name="ui_ads_keep_free">اشتہارات AI Learn کو مفت رکھنے میں مدد کرتے ہیں</string>
+    <string name="ui_ads_close">اشتہار بند کریں</string>
+    <string name="ui_ads_hide">اشتہار چھپائیں</string>
+</resources>

@@ -96,7 +96,7 @@ import com.example.basekmp.theme.SurfaceMint
 import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.theme.TextSecondary
 import com.example.basekmp.theme.TrackColor
-import com.example.basekmp.ui.components.BackButton
+import com.example.basekmp.ui.components.BackTitleBar
 import ailearn.shared.generated.resources.Res
 import ailearn.shared.generated.resources.plan_cel_body
 import ailearn.shared.generated.resources.plan_james_arm
@@ -266,30 +266,16 @@ fun PlanScreen(
 
 @Composable
 private fun PathTopBar(onBack: () -> Unit) {
-    Box(
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(54.dp)
-            .padding(horizontal = 20.dp),
-        contentAlignment = Alignment.Center
-    ) {
-        BackButton(
-            onClick = onBack,
-            modifier = Modifier.align(Alignment.CenterStart),
-            background = Color.White.copy(alpha = 0.72f),
-            tint = PathText
-        )
-        Text(
-            text = tr("My Learning Path"),
-            color = PathText,
-            fontSize = 21.sp,
-            fontWeight = FontWeight.Bold,
-            textAlign = TextAlign.Center,
-            maxLines = 1,
-            overflow = TextOverflow.Ellipsis,
-            modifier = Modifier.fillMaxWidth()
-        )
-    }
+    BackTitleBar(
+        title = tr("My Learning Path"),
+        onBack = onBack,
+        modifier = Modifier.padding(horizontal = 20.dp),
+        titleSize = 21.sp,
+        titleColor = PathText,
+        buttonBackground = Color.White.copy(alpha = 0.72f),
+        buttonTint = PathText,
+        minHeight = 56.dp
+    )
 }
 
 @Composable

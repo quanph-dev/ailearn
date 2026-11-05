@@ -1,10 +1,299 @@
 {
-  "status": false,
+  "status": true,
   "ads_type": "admob",
-  "app_open": { "status": false, "values": [] },
-  "splash": { "status": false, "values": [] },
-  "interstitials": { "status": false, "values": [] },
-  "rewards": { "status": false, "values": [] },
-  "banners": { "status": false, "values": [] },
-  "natives": { "status": false, "values": [] }
+  "app_open": {
+    "status": false,
+    "ads_type": "admob",
+    "id_ads": {
+      "id_admob": "",
+      "id_max": ""
+    }
+  },
+  "splash": {
+    "status": false,
+    "ads_type": "admob",
+    "type": "inter",
+    "timeout": 30000,
+    "id_inter_ads": {
+      "id_admob": "",
+      "id_max": ""
+    }
+  },
+  "interstitials": {
+    "ads_type": "admob",
+    "status": true,
+    "status_count_click": false,
+    "status_timeout_click": false,
+    "auto_reload": false,
+    "timeout_click": 0,
+    "max_retry_attempt": 0,
+    "dialog_loading": false,
+    "values": [
+      {
+        "description": "I_Resume",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/7976507917",
+          "id_max": ""
+        },
+        "id_show_ads": "I_Resume",
+        "status": true,
+        "count_click": 0,
+        "auto_reload": false,
+        "timeout_click": 0
+      },
+      {
+        "description": "I_Splash_High",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/4508036194",
+          "id_max": ""
+        },
+        "id_show_ads": "I_Splash_High",
+        "status": true,
+        "count_click": 0,
+        "auto_reload": false,
+        "timeout_click": 0
+      },
+      {
+        "description": "I_Splash_Medium",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/7784936222",
+          "id_max": ""
+        },
+        "id_show_ads": "I_Splash_Medium",
+        "status": true,
+        "count_click": 0,
+        "auto_reload": false,
+        "timeout_click": 0
+      },
+      {
+        "description": "I_Splash_A",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/5968282514",
+          "id_max": ""
+        },
+        "id_show_ads": "I_Splash_A",
+        "status": true,
+        "count_click": 0,
+        "auto_reload": false,
+        "timeout_click": 0
+      },
+      {
+        "description": "I_Start",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/9141240765",
+          "id_max": ""
+        },
+        "id_show_ads": "I_Start",
+        "status": true,
+        "count_click": 0,
+        "auto_reload": false,
+        "timeout_click": 0
+      },
+      {
+        "description": "I_Switchtab",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/4623411251",
+          "id_max": ""
+        },
+        "id_show_ads": "I_Switchtab",
+        "status": true,
+        "count_click": 0,
+        "auto_reload": false,
+        "timeout_click": 0
+      },
+      {
+        "description": "I_Back",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/5497509227",
+          "id_max": ""
+        },
+        "id_show_ads": "I_Back",
+        "status": true,
+        "count_click": 0,
+        "auto_reload": false,
+        "timeout_click": 0
+      }
+    ]
+  },
+  "rewards": {
+    "status": false,
+    "ads_type": "admob",
+    "values": []
+  },
+  "banners": {
+    "ads_type": "admob",
+    "status": true,
+    "values": [
+      {
+        "description": "B_Home",
+        "adSize":"BANNER",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/2532609540",
+          "id_max": ""
+        },
+        "id_show_ads": "B_Home",
+        "status": true,
+        "auto_reload": false,
+        "timeout_click": 0
+      },
+      {
+        "description": "B_Speak",
+        "adSize":"BANNER",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/7636587401",
+          "id_max": ""
+        },
+        "id_show_ads": "B_Speak",
+        "status": true,
+        "auto_reload": false,
+        "timeout_click": 0
+      }
+    ]
+  },
+  "natives": {
+    "status": true,
+    "values": [
+      {
+        "description": "N_Splash",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/5350344575",
+          "id_max": ""
+        },
+        "id_show_ads": "N_Splash",
+        "style": 101,
+        "status": true
+      },
+      {
+        "description": "N_Onboard1_M",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/3342119176",
+          "id_max": ""
+        },
+        "id_show_ads": "N_Onboard1_M",
+        "style": 102,
+        "status": true
+      },
+      {
+        "description": "N_Onboard1",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/5537424719",
+          "id_max": ""
+        },
+        "id_show_ads": "N_Onboard1",
+        "style": 102,
+        "status": true
+      },
+      {
+        "description": "N_FS_12",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/5585139135",
+          "id_max": ""
+        },
+        "id_show_ads": "N_FS_12",
+        "style": 103,
+        "status": true
+      },
+      {
+        "description": "N_Onboard3",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/9332812453",
+          "id_max": ""
+        },
+        "id_show_ads": "N_Onboard3",
+        "style": 102,
+        "status": true
+      },
+      {
+        "description": "N_FS_Survey",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/5393567440",
+          "id_max": ""
+        },
+        "id_show_ads": "N_FS_Survey",
+        "style": 103,
+        "status": true
+      },
+      {
+        "description": "N_Home1_M",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/3166859357",
+          "id_max": ""
+        },
+        "id_show_ads": "N_Home1_M",
+        "style": 104,
+        "status": true
+      },
+      {
+        "description": "N_Home1_A",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/9436754235",
+          "id_max": ""
+        },
+        "id_show_ads": "N_Home1_A",
+        "style": 104,
+        "status": true
+      },
+      {
+        "description": "N_LearningPath_Name",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/5010424063",
+          "id_max": ""
+        },
+        "id_show_ads": "N_LearningPath_Name",
+        "style": 105,
+        "status": true
+      },
+      {
+        "description": "N_LearningPath_Lessons",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/5010424063",
+          "id_max": ""
+        },
+        "id_show_ads": "N_LearningPath_Lessons",
+        "style": 105,
+        "status": true
+      },
+      {
+        "description": "N_Progress",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/5437974489",
+          "id_max": ""
+        },
+        "id_show_ads": "N_Progress",
+        "style": 106,
+        "status": true
+      },
+      {
+        "description": "N_Exit",
+        "ads_type": "admob",
+        "id_ads": {
+          "id_admob": "ca-app-pub-2543141236149843/9540696014",
+          "id_max": ""
+        },
+        "id_show_ads": "N_Exit",
+        "style": 107,
+        "status": true
+      }
+    ]
+  }
 }

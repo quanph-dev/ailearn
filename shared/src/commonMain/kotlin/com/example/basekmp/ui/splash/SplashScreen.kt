@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Text
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.animation.core.Easing
 import androidx.compose.animation.core.RepeatMode
 import androidx.compose.animation.core.animateFloat
@@ -38,8 +39,10 @@ import com.example.basekmp.theme.BrandPrimary
 import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.theme.TextSecondary
 import com.example.basekmp.theme.getPlusJakartaFontFamily
+import com.example.basekmp.AppAdsHost
+import com.example.basekmp.data.Strings
 import org.jetbrains.compose.resources.painterResource
-import org.jetbrains.compose.resources.stringResource
+import com.example.basekmp.data.appStringResource as stringResource
 import kotlin.math.PI
 import kotlin.math.cos
 
@@ -48,7 +51,7 @@ private val SplashLineEasing = Easing { fraction ->
 }
 
 @Composable
-fun SplashScreen() {
+fun SplashScreen(phase: Int = 2, adsHost: AppAdsHost? = null) {
     val plusJakarta = getPlusJakartaFontFamily()
 
     Column(
@@ -69,7 +72,7 @@ fun SplashScreen() {
                     modifier = Modifier.size(104.dp)
                 )
 
-                Spacer(modifier = Modifier.height(36.dp))
+                Spacer(modifier = Modifier.height(if (phase == 1) 24.dp else 36.dp))
 
                 Text(
                     text = stringResource(Res.string.fo_splash_title),
@@ -82,41 +85,48 @@ fun SplashScreen() {
             }
         }
 
-        Text(
-            text = stringResource(Res.string.fo_splash_describe_load_ad),
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 24.dp)
-                .padding(bottom = 24.dp),
-            color = TextSecondary,
-            fontSize = 14.sp,
-            lineHeight = 20.sp,
-            fontFamily = plusJakarta,
-            textAlign = TextAlign.Center,
-            maxLines = 2
-        )
-
-        val progress by rememberInfiniteTransition().animateFloat(
-            initialValue = 0f,
-            targetValue = 1f,
-            animationSpec = infiniteRepeatable(
-                animation = tween(durationMillis = 1_500, easing = SplashLineEasing),
-                repeatMode = RepeatMode.Reverse
+        if (phase == 1) {
+            Column(
+                modifier = Modifier.fillMaxWidth().padding(bottom = 32.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                CircularProgressIndicator(color = BrandPrimary, strokeWidth = 3.dp, modifier = Modifier.size(30.dp))
+                Spacer(Modifier.height(14.dp))
+                Text(
+                    text = Strings.tr("This action may contain ads"),
+                    color = TextSecondary,
+                    fontSize = 14.sp,
+                    fontFamily = plusJakarta,
+                    textAlign = TextAlign.Center
+                )
+            }
+        } else {
+            adsHost?.NativeAd(
+                placement = "N_Splash",
+                modifier = Modifier.fillMaxWidth()
             )
-        )
-        Canvas(
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(6.dp),
-        ) {
-            val barWidth = size.width * 0.4f
-            val left = -barWidth + progress * (size.width + barWidth)
-            drawRoundRect(
-                color = BrandPrimary,
-                topLeft = Offset(left, 0f),
-                size = Size(barWidth, size.height),
-                cornerRadius = CornerRadius(size.height / 2f, size.height / 2f)
+            val progress by rememberInfiniteTransition().animateFloat(
+                initialValue = 0f,
+                targetValue = 1f,
+                animationSpec = infiniteRepeatable(
+                    animation = tween(durationMillis = 1_500, easing = SplashLineEasing),
+                    repeatMode = RepeatMode.Reverse
+                )
             )
+            Canvas(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(6.dp),
+            ) {
+                val barWidth = size.width * 0.4f
+                val left = -barWidth + progress * (size.width + barWidth)
+                drawRoundRect(
+                    color = BrandPrimary,
+                    topLeft = Offset(left, 0f),
+                    size = Size(barWidth, size.height),
+                    cornerRadius = CornerRadius(size.height / 2f, size.height / 2f)
+                )
+            }
         }
     }
 }

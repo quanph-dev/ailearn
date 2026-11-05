@@ -1,15 +1,16 @@
 {
   "project_info": {
     "project_number": "923888383692",
+    "firebase_url": "https://ailearn-test-bc035-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "ailearn-test-bc035",
     "storage_bucket": "ailearn-test-bc035.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:923888383692:android:4407e3f5feded1e1ff7469",
+        "mobilesdk_app_id": "1:923888383692:android:5a1bc034dc23672bff7469",
         "android_client_info": {
-          "package_name": "com.example.ailearn"
+          "package_name": "com.semavia.language.learning.ai"
         }
       },
       "oauth_client": [],

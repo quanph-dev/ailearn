@@ -19,14 +19,23 @@ class AndroidAppRepository @Inject constructor(
     @ApplicationContext private val context: Context
 ) : BaseAppRepository {
     private val dataStore = context.baseDataStore
+    @Volatile private var lastAppOpenWasReturning = false
 
     override suspend fun resolveStartupRoute(): String {
         val preferences = dataStore.edit { values ->
-            val appOpenCount = (values[APP_OPEN_COUNT] ?: 0) + 1
+            val previousAppOpenCount = values[APP_OPEN_COUNT] ?: 0
+            val appOpenCount = previousAppOpenCount + 1
             values[APP_OPEN_COUNT] = appOpenCount
+            lastAppOpenWasReturning = values[HAS_OPENED_APP] ?: (previousAppOpenCount > 0)
+            values[HAS_OPENED_APP] = true
             val languageSetup = values[IS_LANGUAGE_SETUP] ?: false
             val onboardingCompleted = values[ONBOARDING_COMPLETED] ?: false
             val firstOpenCompleted = values[FIRST_OPEN_COMPLETED] ?: false
+            if (values[HOME_VIEW_TRACKING_INITIALIZED] != true) {
+                // Existing installs completed onboarding directly into Home before this flag existed.
+                if (languageSetup && onboardingCompleted) values[HAS_VIEWED_HOME] = true
+                values[HOME_VIEW_TRACKING_INITIALIZED] = true
+            }
             // Migrate users who completed the old onboarding before FirstOpen was introduced.
             if (!firstOpenCompleted && languageSetup && onboardingCompleted) {
                 values[FIRST_OPEN_COMPLETED] = true
@@ -40,8 +49,24 @@ class AndroidAppRepository @Inject constructor(
         )
     }
 
+    override suspend fun isReturningAppOpen(): Boolean = lastAppOpenWasReturning
+
+    override suspend fun markHomeViewed() {
+        dataStore.edit {
+            it[HAS_VIEWED_HOME] = true
+            it[HOME_VIEW_TRACKING_INITIALIZED] = true
+        }
+    }
+
     override suspend fun currentLanguageCode(): String =
         dataStore.data.first()[LANGUAGE_CODE].orEmpty()
+
+    override suspend fun currentLearningLanguageCode(): String =
+        dataStore.data.first()[LEARNING_LANGUAGE_CODE].orEmpty()
+
+    override suspend fun saveLearningLanguageCode(code: String) {
+        dataStore.edit { it[LEARNING_LANGUAGE_CODE] = code }
+    }
 
     override suspend fun saveLanguage(code: String, completeSetup: Boolean) {
         dataStore.edit { values ->
@@ -60,6 +85,7 @@ class AndroidAppRepository @Inject constructor(
                 values[ONBOARDING_COMPLETED] = true
             }
             values[FIRST_OPEN_SURVEY_LANGUAGE] = surveyLanguageCode
+            values[LEARNING_LANGUAGE_CODE] = surveyLanguageCode
             values[ONBOARDING_PROGRESS] = initialOnboardingProgress
         }
     }
@@ -96,11 +122,15 @@ class AndroidAppRepository @Inject constructor(
     }
 
     companion object {
-        private val LANGUAGE_CODE = stringPreferencesKey("language_code")
+        private val LANGUAGE_CODE = stringPreferencesKey("native_language_code")
+        private val LEARNING_LANGUAGE_CODE = stringPreferencesKey("learning_language_code")
         private val IS_LANGUAGE_SETUP = booleanPreferencesKey("is_language_setup")
         private val ONBOARDING_COMPLETED = booleanPreferencesKey("onboarding_completed")
         private val FIRST_OPEN_COMPLETED = booleanPreferencesKey("first_open_completed")
         private val APP_OPEN_COUNT = androidx.datastore.preferences.core.intPreferencesKey("app_open_count")
+        private val HAS_OPENED_APP = booleanPreferencesKey("has_opened_app")
+        private val HAS_VIEWED_HOME = booleanPreferencesKey("has_viewed_home")
+        private val HOME_VIEW_TRACKING_INITIALIZED = booleanPreferencesKey("home_view_tracking_initialized")
         private val FIRST_OPEN_SURVEY_LANGUAGE = stringPreferencesKey("first_open_survey_language")
         private val ONBOARDING_PROGRESS = stringPreferencesKey("onboarding_progress")
         private val PLAN_PROGRESS = stringPreferencesKey("plan_progress")

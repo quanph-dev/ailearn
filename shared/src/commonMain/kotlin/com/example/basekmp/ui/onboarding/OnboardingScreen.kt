@@ -46,6 +46,7 @@ import ailearn.shared.generated.resources.tutor_random
 import ailearn.shared.generated.resources.tutor_robot
 import com.example.basekmp.data.Languages
 import com.example.basekmp.data.Strings
+import com.example.basekmp.getSystemLanguageCode
 import com.example.basekmp.theme.BrandPrimaryPressed
 import com.example.basekmp.theme.CefrA1
 import com.example.basekmp.theme.CefrA2
@@ -65,7 +66,7 @@ import com.example.basekmp.ui.components.ProgressHeader
 import com.example.basekmp.ui.components.SelectOption
 import org.jetbrains.compose.resources.painterResource
 import ailearn.shared.generated.resources.language_save_error
-import org.jetbrains.compose.resources.stringResource
+import com.example.basekmp.data.appStringResource as stringResource
 
 @Composable
 fun OnboardingScreen(
@@ -97,7 +98,11 @@ fun OnboardingScreen(
         )
     }
 
-    val nativeLanguageOptions = Languages.native.map { lang ->
+    val systemLanguageCode = getSystemLanguageCode()
+    val orderedNativeLanguages = remember(systemLanguageCode) {
+        Languages.nativeOptionsFor(systemLanguageCode)
+    }
+    val nativeLanguageOptions = orderedNativeLanguages.map { lang ->
         SelectOption(
             id = lang.code,
             label = translated(lang.name),

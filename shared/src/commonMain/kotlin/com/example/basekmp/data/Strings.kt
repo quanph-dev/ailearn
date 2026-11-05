@@ -3,7 +3,21 @@ package com.example.basekmp.data
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.key
+import com.example.basekmp.LocalAppLocale
+import com.example.basekmp.ensureResourceLanguage
+import org.jetbrains.compose.resources.StringResource
 import org.jetbrains.compose.resources.stringResource
+
+@Composable
+fun appStringResource(resource: StringResource): String {
+    val language = LocalAppLocale.current
+    ensureResourceLanguage(language)
+    if (Strings.getLanguage() != language) {
+        Strings.select(language)
+    }
+    return key(language) { stringResource(resource) }
+}
 
 object Strings {
     val languages: List<UiLanguage> = listOf(
@@ -41,8 +55,8 @@ object Strings {
 
     @Composable
     fun tr(en: String): String {
-        val resource = uiStringResourceByEnglish[en] ?: return en
-        return stringResource(resource)
+        val resource = uiStringResourceByEnglish[en] ?: uiStringResourceByEnglish[en.trim()] ?: return en
+        return appStringResource(resource)
     }
 
     @Composable
@@ -50,5 +64,5 @@ object Strings {
         formatString(tr(en), args)
 
     internal fun hasTranslationResource(en: String): Boolean =
-        en in uiStringResourceByEnglish
+        en in uiStringResourceByEnglish || en.trim() in uiStringResourceByEnglish
 }

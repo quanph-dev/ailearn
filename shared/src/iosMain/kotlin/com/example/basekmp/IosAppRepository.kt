@@ -3,7 +3,6 @@ package com.example.basekmp
 import platform.Foundation.*
 import androidx.compose.runtime.ProvidedValue
 import androidx.compose.runtime.CompositionLocalProvider
-import androidx.compose.runtime.key
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.platform.LocalLayoutDirection
@@ -12,27 +11,52 @@ import com.example.basekmp.data.Strings
 
 internal class IosAppRepository : BaseAppRepository {
     private val defaults = NSUserDefaults.standardUserDefaults
+    private var lastAppOpenWasReturning = false
 
     override suspend fun resolveStartupRoute(): String {
-        val count = defaults.integerForKey(APP_OPEN_COUNT) + 1
+        val previousAppOpenCount = defaults.integerForKey(APP_OPEN_COUNT)
+        val count = previousAppOpenCount + 1
         defaults.setInteger(count, APP_OPEN_COUNT)
+        lastAppOpenWasReturning = if (defaults.objectForKey(HAS_OPENED_APP) != null) {
+            defaults.boolForKey(HAS_OPENED_APP)
+        } else {
+            previousAppOpenCount > 0
+        }
+        defaults.setBool(true, HAS_OPENED_APP)
         val languageSetup = defaults.boolForKey(IS_LANGUAGE_SETUP)
         val onboardingCompleted = defaults.boolForKey(ONBOARDING_COMPLETED)
-        var firstOpenCompleted = defaults.boolForKey(FIRST_OPEN_COMPLETED)
+        val firstOpenCompleted = defaults.boolForKey(FIRST_OPEN_COMPLETED)
+        if (!defaults.boolForKey(HOME_VIEW_TRACKING_INITIALIZED)) {
+            // Existing installs completed onboarding directly into Home before this flag existed.
+            if (languageSetup && onboardingCompleted) defaults.setBool(true, HAS_VIEWED_HOME)
+            defaults.setBool(true, HOME_VIEW_TRACKING_INITIALIZED)
+        }
         // Migrate users who completed the old onboarding before FirstOpen was introduced.
         if (!firstOpenCompleted && languageSetup && onboardingCompleted) {
             defaults.setBool(true, FIRST_OPEN_COMPLETED)
-            firstOpenCompleted = true
         }
         return StartupRouteResolver.resolve(
-            languageSetup,
-            onboardingCompleted,
-            firstOpenCompleted,
-            com.example.basekmp.data.RemoteConfig.surveyBeforeHome
+            languageSetup = languageSetup,
+            onboardingCompleted = onboardingCompleted,
+            firstOpenCompleted = firstOpenCompleted,
+            surveyBeforeHome = com.example.basekmp.data.RemoteConfig.surveyBeforeHome
         )
     }
 
+    override suspend fun isReturningAppOpen(): Boolean = lastAppOpenWasReturning
+
+    override suspend fun markHomeViewed() {
+        defaults.setBool(true, HAS_VIEWED_HOME)
+        defaults.setBool(true, HOME_VIEW_TRACKING_INITIALIZED)
+    }
+
     override suspend fun currentLanguageCode(): String = defaults.stringForKey(LANGUAGE_CODE).orEmpty()
+
+    override suspend fun currentLearningLanguageCode(): String = defaults.stringForKey(LEARNING_LANGUAGE_CODE).orEmpty()
+
+    override suspend fun saveLearningLanguageCode(code: String) {
+        defaults.setObject(code, LEARNING_LANGUAGE_CODE)
+    }
 
     override suspend fun saveLanguage(code: String, completeSetup: Boolean) {
         defaults.setObject(code, LANGUAGE_CODE)
@@ -47,6 +71,7 @@ internal class IosAppRepository : BaseAppRepository {
             defaults.setBool(true, ONBOARDING_COMPLETED)
         }
         defaults.setObject(surveyLanguageCode, FIRST_OPEN_SURVEY_LANGUAGE)
+        defaults.setObject(surveyLanguageCode, LEARNING_LANGUAGE_CODE)
         defaults.setObject(initialOnboardingProgress, ONBOARDING_PROGRESS)
     }
 
@@ -78,11 +103,15 @@ internal class IosAppRepository : BaseAppRepository {
     }
 
     private companion object {
-        const val LANGUAGE_CODE = "language_code"
+        const val LANGUAGE_CODE = "native_language_code"
+        const val LEARNING_LANGUAGE_CODE = "learning_language_code"
         const val IS_LANGUAGE_SETUP = "is_language_setup"
         const val ONBOARDING_COMPLETED = "onboarding_completed"
         const val FIRST_OPEN_COMPLETED = "first_open_completed"
         const val APP_OPEN_COUNT = "app_open_count"
+        const val HAS_OPENED_APP = "has_opened_app"
+        const val HAS_VIEWED_HOME = "has_viewed_home"
+        const val HOME_VIEW_TRACKING_INITIALIZED = "home_view_tracking_initialized"
         const val FIRST_OPEN_SURVEY_LANGUAGE = "first_open_survey_language"
         const val ONBOARDING_PROGRESS = "onboarding_progress"
         const val PLAN_PROGRESS = "plan_progress"
@@ -98,6 +127,8 @@ actual fun applyPlatformLanguage(code: String) {
     NSUserDefaults.standardUserDefaults.setObject(arrayListOf(normalizedCode), "AppleLanguages")
     NSUserDefaults.standardUserDefaults.synchronize()
 }
+
+actual fun ensureResourceLanguage(code: String) = Unit
 
 actual object LocalAppLocale {
     private val appLocale = staticCompositionLocalOf {
@@ -124,6 +155,6 @@ actual fun PlatformLocaleProvider(code: String, content: @Composable () -> Unit)
         LocalAppLocale provides normalizedCode,
         LocalLayoutDirection provides direction
     ) {
-        key(normalizedCode) { content() }
+        content()
     }
 }

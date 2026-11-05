@@ -1,29 +1,12 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-import groovy.json.JsonSlurper
 
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.ksp)
     alias(libs.plugins.hiltAndroid)
-}
-
-val firebaseConfig = file("google-services.json")
-val androidApplicationId = "com.semavia.language.learning.ai"
-val firebaseConfigured = firebaseConfig.exists() && runCatching {
-    val config = JsonSlurper().parse(firebaseConfig) as? Map<*, *>
-    val clients = config?.get("client") as? List<*>
-    clients?.any { item ->
-        val client = item as? Map<*, *>
-        val clientInfo = client?.get("client_info") as? Map<*, *>
-        val androidInfo = clientInfo?.get("android_client_info") as? Map<*, *>
-        androidInfo?.get("package_name") == androidApplicationId
-    } == true
-}.getOrDefault(false)
-
-if (firebaseConfigured) {
-    pluginManager.apply("com.google.gms.google-services")
-    pluginManager.apply("com.google.firebase.crashlytics")
+    alias(libs.plugins.googleServices)
+    alias(libs.plugins.firebaseCrashlytics)
 }
 
 kotlin {
@@ -36,6 +19,8 @@ dependencies {
 
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.appcompat)
+    implementation(libs.compose.foundation)
+    implementation(libs.compose.material3)
 
     implementation(libs.compose.uiToolingPreview)
     debugImplementation(libs.compose.uiTooling)
@@ -45,6 +30,8 @@ dependencies {
     implementation(libs.firebase.crashlytics)
     implementation(libs.firebase.database)
     implementation(libs.prox.utils.multiple.mediation)
+    implementation(libs.google.mobile.ads)
+    implementation(libs.google.ump)
     implementation(libs.androidx.datastore.preferences)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.hilt.navigation.compose)
@@ -58,12 +45,11 @@ android {
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = androidApplicationId
+        applicationId = "com.semavia.language.learning.ai"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 100
         versionName = "1.0.0"
-        buildConfigField("boolean", "FIREBASE_CONFIGURED", firebaseConfigured.toString())
     }
     packaging {
         resources {

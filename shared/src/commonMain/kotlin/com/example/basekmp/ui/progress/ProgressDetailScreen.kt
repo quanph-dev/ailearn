@@ -18,6 +18,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
@@ -47,6 +48,7 @@ import com.example.basekmp.components.PrimaryButton
 import com.example.basekmp.data.LearningItem
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
+import com.example.basekmp.AppAdsHost
 import com.example.basekmp.formatDate
 import com.example.basekmp.formatDateTime
 import com.example.basekmp.formatTime
@@ -54,7 +56,7 @@ import com.example.basekmp.theme.BrandPrimaryPressed
 import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.theme.TextSecondary
-import com.example.basekmp.ui.components.BackButton
+import com.example.basekmp.ui.components.BackTitleBar
 
 private val ScoreGreenBg = Color(0xFFDCFAE6)
 private val ScoreGreenText = Color(0xFF12864B)
@@ -70,6 +72,7 @@ fun ProgressDetailScreen(
     kind: String,
     onBack: () -> Unit,
     onStartPractice: () -> Unit,
+    adsHost: AppAdsHost? = null,
     modifier: Modifier = Modifier
 ) {
     val displayKind = if (kind.isNotEmpty()) {
@@ -94,24 +97,12 @@ fun ProgressDetailScreen(
     ) {
         Spacer(Modifier.height(10.dp))
 
-        // Top Navigation Bar
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(vertical = 10.dp),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            BackButton(onClick = onBack)
-
-            Spacer(Modifier.width(12.dp))
-
-            Text(
-                text = screenTitle,
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold,
-                color = TextPrimary
-            )
-        }
+        BackTitleBar(
+            title = screenTitle,
+            onBack = onBack,
+            modifier = Modifier.fillMaxWidth(),
+            titleSize = 20.sp
+        )
 
         Spacer(Modifier.height(18.dp))
 
@@ -146,18 +137,21 @@ fun ProgressDetailScreen(
                     .fillMaxWidth(),
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
-                items(items) { item ->
-                    EntryCard(
-                        sessionTitle = titleHeader,
-                        category = item.detail,
-                        level = item.level.ifBlank { UserPrefs.englishLevel },
-                        score = item.score,
-                        total = item.total,
-                        timestamp = item.timestamp,
-                        onDetail = { detailEntry = item },
-                        onDelete = { pendingDelete = item },
-                        kind = kind
-                    )
+                itemsIndexed(items, key = { _, item -> "${item.title}_${item.timestamp}" }) { index, item ->
+                    Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                        EntryCard(
+                            sessionTitle = titleHeader,
+                            category = item.detail,
+                            level = item.level.ifBlank { UserPrefs.englishLevel },
+                            score = item.score,
+                            total = item.total,
+                            timestamp = item.timestamp,
+                            onDetail = { detailEntry = item },
+                            onDelete = { pendingDelete = item },
+                            kind = kind
+                        )
+                        if (index == 0) adsHost?.NativeAd("N_Progress", modifier = Modifier.fillMaxWidth())
+                    }
                 }
 
                 item {

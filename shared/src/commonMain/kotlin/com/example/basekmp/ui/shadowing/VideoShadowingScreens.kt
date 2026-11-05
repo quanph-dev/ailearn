@@ -211,22 +211,29 @@ private fun ShadowingTopBar(
 ) {
     val colors = AppTheme.colors
     val dimens = AppTheme.dimens
-    Row(
+    Box(
         modifier = modifier
             .fillMaxWidth()
-            .height(dimens.topBarHeight),
-        verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.spacedBy(8.dp)
+            .height(dimens.topBarHeight)
     ) {
-        BackButton(
-            onClick = onBack,
-            background = colors.surfaceVariant,
-            tint = colors.textPrimary
-        )
+        Box(
+            modifier = Modifier.align(Alignment.CenterStart).size(width = 56.dp, height = 56.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            BackButton(
+                onClick = onBack,
+                background = colors.surfaceVariant,
+                tint = colors.textPrimary
+            )
+        }
 
         Text(
             text = title,
-            modifier = Modifier.weight(1f).basicMarquee(),
+            modifier = Modifier
+                .align(Alignment.Center)
+                .fillMaxWidth()
+                .padding(horizontal = 64.dp)
+                .basicMarquee(),
             fontSize = titleFontSize,
             fontWeight = FontWeight.Bold,
             color = colors.textPrimary,
@@ -234,25 +241,30 @@ private fun ShadowingTopBar(
             maxLines = 1
         )
 
-        if (savedWordCount > 0) {
-            Box(
-                modifier = Modifier
-                    .size(56.dp)
-                    .clickable(onClick = onOpenSavedWords),
-                contentAlignment = Alignment.Center
-            ) {
-                BadgedBox(
-                    badge = {
-                        Badge(modifier = Modifier.sizeIn(minWidth = 28.dp, minHeight = 28.dp)) {
-                            Text(savedWordCount.toString(), maxLines = 1)
-                        }
-                    }
+        Box(
+            modifier = Modifier.align(Alignment.CenterEnd).size(width = 56.dp, height = 56.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            if (savedWordCount > 0) {
+                Box(
+                    modifier = Modifier
+                        .size(56.dp)
+                        .clickable(onClick = onOpenSavedWords),
+                    contentAlignment = Alignment.Center
                 ) {
-                    Icon(
-                        imageVector = Icons.Rounded.BookmarkBorder,
-                        contentDescription = Strings.trf("Saved words (%1\$d)", savedWordCount),
-                        tint = colors.primary
-                    )
+                    BadgedBox(
+                        badge = {
+                            Badge(modifier = Modifier.sizeIn(minWidth = 28.dp, minHeight = 28.dp)) {
+                                Text(savedWordCount.toString(), maxLines = 1)
+                            }
+                        }
+                    ) {
+                        Icon(
+                            imageVector = Icons.Rounded.BookmarkBorder,
+                            contentDescription = Strings.trf("Saved words (%1\$d)", savedWordCount),
+                            tint = colors.primary
+                        )
+                    }
                 }
             }
         }
@@ -1228,8 +1240,7 @@ fun SavedWordsScreen(
         Spacer(Modifier.height(8.dp))
         BackTitleBar(
             title = "${Strings.tr("Saved Words")} (${savedWords.size})",
-            onBack = onBack,
-            modifier = Modifier.height(dimens.topBarHeight)
+            onBack = onBack
         )
 
         Spacer(Modifier.height(dimens.spacingMd))

@@ -14,6 +14,11 @@ data class Language(
 }
 
 object Languages {
+    fun resolveNativeLanguage(saved: String, restored: String?, system: String): String =
+        saved.takeIf { code -> native.any { it.code == code } }
+            ?: restored?.takeIf { code -> native.any { it.code == code } }
+            ?: defaultNativeLanguageCode(system)
+
     val learnable: List<Language> = listOf(
         Language("en", "English", "🇬🇧", "English", "en-US"),
         Language("es", "Spanish", "🇪🇸", "Spanish", "es-ES"),
@@ -50,9 +55,24 @@ object Languages {
     )
 
     fun defaultNativeLanguageCode(systemLanguage: String): String {
-        val normalizedCode = systemLanguage.trim().lowercase().replace('_', '-')
-        val baseCode = normalizedCode.substringBefore('-')
-        return native.firstOrNull { it.code == baseCode }?.code ?: "vi"
+        return nativeOptionsFor(systemLanguage).firstOrNull()?.code ?: "en"
+    }
+
+    /**
+     * Native language choices follow a popularity order, with a supported device
+     * language promoted to the first row. If the device language is unsupported,
+     * the popularity order is shown unchanged.
+     */
+    fun nativeOptionsFor(systemLanguage: String): List<Language> {
+        val popularityOrder = listOf(
+            "en", "es", "zh", "hi", "ar", "fr", "pt", "ru",
+            "de", "ja", "ko", "it", "tr", "vi", "ur", "th"
+        )
+        val rank = popularityOrder.withIndex().associate { (index, code) -> code to index }
+        val popular = native.sortedBy { rank[it.code] ?: Int.MAX_VALUE }
+        val systemCode = systemLanguage.trim().lowercase().replace('_', '-').substringBefore('-')
+        val systemOption = popular.firstOrNull { it.code == systemCode } ?: return popular
+        return listOf(systemOption) + popular.filterNot { it.code == systemOption.code }
     }
 
     private val highlightedSurveyCodes = listOf("en", "es", "it", "de", "pt")
