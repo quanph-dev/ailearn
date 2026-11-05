@@ -73,6 +73,7 @@ import androidx.compose.ui.unit.sp
 import com.example.basekmp.data.PathCourse
 import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
+import com.example.basekmp.data.formatString
 import com.example.basekmp.theme.Blue
 import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.ui.components.TabHeader
@@ -150,6 +151,9 @@ fun LearningPathScreen(
     val coroutineScope = rememberCoroutineScope()
     var lockedLessonMessage by remember { mutableStateOf<String?>(null) }
     var lockedLessonToastEvent by remember { mutableIntStateOf(0) }
+    val finishLevelMessageTemplate = Strings.tr("Finish the %1\$s level to unlock this one.")
+    val completeLessonMessage = Strings.tr("Complete the lesson before it to unlock this one.")
+    val translatedLevels = PathCourse.LEVELS.associateWith { Strings.tr(it) }
 
     LaunchedEffect(selectedLevel) {
         listState.scrollToItem(0)
@@ -206,9 +210,12 @@ fun LearningPathScreen(
                                     PathCourse.LEVELS.indexOf(selectedLevel) - 1
                                 )
                                 val message = if (!PathCourse.isLevelOpen(selectedLevel, UserPrefs) && previousLevel != null) {
-                                    Strings.trf("Finish the %1\$s level to unlock this one.", Strings.tr(previousLevel))
+                                    formatString(
+                                        finishLevelMessageTemplate,
+                                        arrayOf(translatedLevels[previousLevel] ?: previousLevel)
+                                    )
                                 } else {
-                                    Strings.tr("Complete the lesson before it to unlock this one.")
+                                    completeLessonMessage
                                 }
                                 lockedLessonMessage = message
                                 lockedLessonToastEvent++

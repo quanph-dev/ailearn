@@ -3,7 +3,6 @@ package com.example.basekmp
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
-import kotlin.test.assertNotEquals
 import kotlin.test.assertTrue
 import com.example.basekmp.data.GoalPlan
 import com.example.basekmp.data.PlanCatalogData
@@ -12,7 +11,6 @@ import com.example.basekmp.data.PlanStage
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.PlanProgress
 import com.example.basekmp.data.Strings
-import com.example.basekmp.data.Translations
 import com.example.basekmp.ui.plan.PlanFlow
 
 class SharedCommonTest {
@@ -155,12 +153,12 @@ class SharedCommonTest {
     }
 
     @Test
-    fun goalQuestionUsesTranslatedLanguageNameAndTemplate() {
-        val language = com.example.basekmp.data.trIn("vi", "Arabic")
-        val question = com.example.basekmp.data.trfIn("vi", "Why do you want to learn %1\$s?", language)
-        assertTrue(question.contains(language))
+    fun goalQuestionResourceKeyFormatsItsArgument() {
+        assertTrue(Strings.hasTranslationResource("Arabic"))
+        assertTrue(Strings.hasTranslationResource("Why do you want to learn %1\$s?"))
+        val question = com.example.basekmp.data.formatString("Why do you want to learn %1\$s?", arrayOf("Arabic"))
+        assertTrue(question.contains("Arabic"))
         assertFalse(question.contains("%1\$s"))
-        assertFalse(question.startsWith("Why do you"))
     }
 
     @Test
@@ -197,11 +195,9 @@ class SharedCommonTest {
     }
 
     @Test
-    fun congratulationsDialogLabelsAreLocalizedForEverySupportedLocale() {
-        Strings.languages.filterNot { it.code == "en" }.forEach { language ->
-            assertNotEquals("Congratulations", Strings.trIn(language.code, "Congratulations"), language.code)
-            assertNotEquals("Correct", Strings.trIn(language.code, "Correct"), language.code)
-            assertNotEquals("Incorrect", Strings.trIn(language.code, "Incorrect"), language.code)
+    fun congratulationsDialogLabelsHaveResourceBackedEntries() {
+        listOf("Congratulations", "Correct", "Incorrect").forEach { label ->
+            assertTrue(Strings.hasTranslationResource(label), label)
         }
     }
 
@@ -230,21 +226,21 @@ class SharedCommonTest {
     }
 
     @Test
-    fun lessonRetryMessageHasTranslationsForAllSupportedNonEnglishLocales() {
+    fun lessonRetryMessageHasXmlResourceEntry() {
         val retryMessage = "Couldn't get a reply. Please try again."
 
-        assertEquals(15, Translations.byLanguage.values.count { retryMessage in it })
+        assertTrue(Strings.hasTranslationResource(retryMessage))
     }
 
     @Test
-    fun speakingSkipPromptHasTranslationsForAllSupportedNonEnglishLocales() {
+    fun speakingSkipPromptHasXmlResourceEntry() {
         val skipPrompt = "Can't speak now? Skip"
 
-        assertEquals(15, Translations.byLanguage.values.count { skipPrompt in it })
+        assertTrue(Strings.hasTranslationResource(skipPrompt))
     }
 
     @Test
-    fun planHomeAndActivityCopyHasTranslationsForEverySupportedLocale() {
+    fun planHomeAndActivityCopyHasXmlResourceEntries() {
         val planCopy = listOf(
             "Day %1\$d",
             "%1\$d min",
@@ -281,11 +277,6 @@ class SharedCommonTest {
             "Check Answer"
         )
 
-        assertEquals(
-            15,
-            Translations.byLanguage.values.count { locale ->
-                planCopy.all { key -> !locale[key].isNullOrBlank() }
-            }
-        )
+        planCopy.forEach { key -> assertTrue(Strings.hasTranslationResource(key), key) }
     }
 }

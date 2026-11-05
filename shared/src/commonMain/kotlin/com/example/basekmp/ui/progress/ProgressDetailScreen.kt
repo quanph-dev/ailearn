@@ -269,12 +269,10 @@ private fun EntryCard(
     val scoreChipText = if (isGrammar) OrangeChipText else ScoreGreenText
 
     val formattedTime = remember(timestamp) { formatDateTime(timestamp) }
-    val scoreText = remember(score, total) {
-        when {
-            total >= 0 -> Strings.trf("Score: %1\$d/%2\$d", score, total)
-            score >= 0 -> Strings.trf("Score: %1\$d", score)
-            else -> null
-        }
+    val scoreText = when {
+        total >= 0 -> Strings.trf("Score: %1\$d/%2\$d", score, total)
+        score >= 0 -> Strings.trf("Score: %1\$d", score)
+        else -> null
     }
 
     Row(

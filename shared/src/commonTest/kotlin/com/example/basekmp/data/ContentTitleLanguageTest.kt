@@ -49,7 +49,7 @@ class ContentTitleLanguageTest {
             Strings.select("ko")
             assertEquals("상품 반품", ShadowingVideos.title(video))
             assertEquals("상품 반품", ShadowingVideos.localizedTitle(video.title, titles))
-            assertEquals(Strings.trIn("ko", video.title), ShadowingVideos.localizedTitle(video.title, mapOf("ja" to "商品の返品")))
+            assertEquals("Returning an Item", ShadowingVideos.localizedTitle(video.title, mapOf("ja" to "商品の返品")))
             assertEquals("Unknown scene", ShadowingVideos.localizedTitle("Unknown scene", mapOf("ja" to "未知")))
         } finally {
             Strings.select(oldUi)

@@ -631,7 +631,7 @@ fun TodayLessonScreen(
                                             ) {
                                                 Icon(
                                                     imageVector = if (isCopied) Icons.Rounded.Check else Icons.Rounded.ContentCopy,
-                                                    contentDescription = "Copy",
+                                                    contentDescription = tr("Copy"),
                                                     tint = if (isCopied) Color(0xFF2B5CFF) else Color(0xFF1D2939).copy(alpha = 0.55f),
                                                     modifier = Modifier.size(16.dp)
                                                 )
@@ -738,7 +738,7 @@ fun TodayLessonScreen(
                                                 ) {
                                                     Icon(
                                                         imageVector = if (isCopied) Icons.Rounded.Check else Icons.Rounded.ContentCopy,
-                                                        contentDescription = "Copy",
+                                                        contentDescription = tr("Copy"),
                                                         tint = if (isCopied) Color(0xFF2B5CFF) else Color(0xFF1D2939).copy(alpha = 0.55f),
                                                         modifier = Modifier.size(16.dp)
                                                     )
@@ -819,7 +819,7 @@ fun TodayLessonScreen(
                                 ) {
                                     Icon(
                                         imageVector = Icons.Rounded.Lightbulb,
-                                        contentDescription = "Hint",
+                                        contentDescription = tr("Hint"),
                                         tint = Color(0xFFFAAD14),
                                         modifier = Modifier.size(18.dp)
                                     )
@@ -831,7 +831,7 @@ fun TodayLessonScreen(
                                     )
                                     Icon(
                                         imageVector = Icons.Rounded.Close,
-                                        contentDescription = "Dismiss",
+                                        contentDescription = tr("Close"),
                                         tint = Color(0xFF874D00).copy(alpha = 0.6f),
                                         modifier = Modifier
                                             .size(16.dp)
@@ -868,7 +868,7 @@ fun TodayLessonScreen(
                                 ) {
                                     Icon(
                                         imageVector = Icons.Rounded.Close,
-                                        contentDescription = "Close keyboard",
+                                        contentDescription = tr("Close keyboard"),
                                         tint = Color(0xFF1D2939),
                                         modifier = Modifier.size(20.dp)
                                     )
@@ -919,7 +919,7 @@ fun TodayLessonScreen(
                                 ) {
                                     Icon(
                                         imageVector = Icons.AutoMirrored.Rounded.Send,
-                                        contentDescription = "Send",
+                                        contentDescription = tr("Send"),
                                         tint = if (inputText.isNotBlank()) Color.White else Color(0xFF98A2B3),
                                         modifier = Modifier.size(18.dp)
                                     )
@@ -948,7 +948,7 @@ fun TodayLessonScreen(
                                 ) {
                                     Icon(
                                         imageVector = Icons.Rounded.Lightbulb,
-                                        contentDescription = "Hint",
+                                        contentDescription = tr("Hint"),
                                         tint = Color(0xFF1D2939),
                                         modifier = Modifier.size(18.dp)
                                     )

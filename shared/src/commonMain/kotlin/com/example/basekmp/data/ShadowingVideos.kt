@@ -251,7 +251,6 @@ object ShadowingVideos {
 
     fun localizedTitle(title: String, titles: Map<String, String>, langCode: String = Strings.getLanguage()): String =
         titles[langCode]?.takeIf(String::isNotBlank)
-            ?: Strings.trIn(langCode, title).takeIf { it != title && it.isNotBlank() }
             ?: titles["en"]?.takeIf(String::isNotBlank)
             ?: title
 

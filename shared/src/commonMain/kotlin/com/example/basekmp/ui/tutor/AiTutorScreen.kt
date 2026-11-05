@@ -599,7 +599,7 @@ private fun ChatBubble(
                     ) {
                         Icon(
                             imageVector = if (copied) Icons.Rounded.Check else Icons.Rounded.ContentCopy,
-                            contentDescription = "Copy",
+                            contentDescription = tr("Copy"),
                             tint = if (copied) Color(0xFF2B5CFF) else Color(0xFF1D2939).copy(alpha = 0.55f),
                             modifier = Modifier.size(16.dp)
                         )
@@ -664,7 +664,7 @@ private fun ChatBubble(
                         ) {
                             Icon(
                                 imageVector = if (copied) Icons.Rounded.Check else Icons.Rounded.ContentCopy,
-                                contentDescription = "Copy",
+                                contentDescription = tr("Copy"),
                                 tint = if (copied) Color(0xFF2B5CFF) else Color(0xFF1D2939).copy(alpha = 0.55f),
                                 modifier = Modifier.size(16.dp)
                             )

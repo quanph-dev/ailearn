@@ -302,7 +302,7 @@ private fun VideoCatalogCard(
                 remoteUrl = ShadowingVideos.thumbnailUrl(video),
                 cacheKey = "${video.id}.v${video.remote?.version ?: 1}",
                 fallback = thumbnail,
-                contentDescription = ShadowingVideos.title(video),
+                contentDescription = Strings.tr(ShadowingVideos.title(video)),
                 modifier = Modifier.fillMaxSize()
             )
             Box(
@@ -323,7 +323,7 @@ private fun VideoCatalogCard(
 
         Spacer(Modifier.height(10.dp))
         Text(
-            text = ShadowingVideos.title(video),
+            text = Strings.tr(ShadowingVideos.title(video)),
             fontSize = 16.sp,
             fontWeight = FontWeight.Medium,
             color = colors.textPrimary,
@@ -711,7 +711,7 @@ fun VideoShadowingPlayerScreen(
             Spacer(Modifier.height(8.dp))
 
             ShadowingTopBar(
-                title = ShadowingVideos.title(currentVideo),
+                title = Strings.tr(ShadowingVideos.title(currentVideo)),
                 savedWordCount = savedWords.size,
                 titleFontSize = 18.sp,
                 onBack = {
@@ -1271,7 +1271,7 @@ fun SavedWordsScreen(
                 ) { entry ->
                     val detail = savedWordDetails[entry.key]
                     val videoTitle = detail?.let {
-                        ShadowingVideos.localizedTitle(it.videoTitle, it.videoTitles)
+                        Strings.tr(ShadowingVideos.localizedTitle(it.videoTitle, it.videoTitles))
                     }.orEmpty()
                     SavedWordRow(
                         word = detail?.display ?: entry.key,
@@ -1527,7 +1527,7 @@ fun ShadowingPracticeSection(
                             remoteUrl = ShadowingVideos.thumbnailUrl(video),
                             cacheKey = "${video.id}.v${video.remote?.version ?: 1}",
                             fallback = ShadowingVideos.thumbnailDrawable(video.id),
-                            contentDescription = ShadowingVideos.title(video),
+                            contentDescription = Strings.tr(ShadowingVideos.title(video)),
                             modifier = Modifier.fillMaxSize()
                         )
 
@@ -1567,7 +1567,7 @@ fun ShadowingPracticeSection(
                     Spacer(Modifier.height(8.dp))
 
                     Text(
-                        text = ShadowingVideos.title(video),
+                        text = Strings.tr(ShadowingVideos.title(video)),
                         fontSize = 14.sp,
                         fontWeight = FontWeight.SemiBold,
                         color = TextPrimary,

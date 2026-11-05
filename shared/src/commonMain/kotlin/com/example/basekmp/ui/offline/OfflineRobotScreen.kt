@@ -85,7 +85,16 @@ fun OfflineRobotScreen(
     val scope = rememberCoroutineScope()
 
     var robotState by remember { mutableStateOf(RobotState.IDLE) }
-    var speechText by remember { mutableStateOf(Strings.tr("I'm offline! Touch me to play!")) }
+    var speechTextOverride by remember { mutableStateOf<String?>(null) }
+    val speechText = speechTextOverride ?: Strings.tr("I'm offline! Touch me to play!")
+    val tooManyPokesText = Strings.tr("Hey! That's too much poking!")
+    val pokedText = Strings.tr("Ouch! You poked me!")
+    val tickledText = Strings.tr("Hehehe! Stop, that tickles!")
+    val dizzyText = Strings.tr("Wheee! I'm getting dizzy!")
+    val hoppingText = Strings.tr("Boing! Up we go!")
+    val squeakText = Strings.tr("*Squeeeak!* Beep boop!")
+    val awakeText = Strings.tr("Yawn! I'm wide awake now!")
+    val nodText = Strings.tr("Yes! Exactly right!")
     var pokeCount by remember { mutableIntStateOf(0) }
 
     // Animations for touch actions
@@ -112,7 +121,7 @@ fun OfflineRobotScreen(
         pokeCount++
         scope.launch {
             robotState = RobotState.POKED
-            speechText = if (pokeCount >= 4) Strings.tr("Hey! That's too much poking!") else Strings.tr("Ouch! You poked me!")
+            speechTextOverride = if (pokeCount >= 4) tooManyPokesText else pokedText
             squishScale.animateTo(0.85f, tween(80))
             squishScale.animateTo(1.1f, tween(100))
             squishScale.animateTo(1f, spring(0.4f, 200f))
@@ -125,7 +134,7 @@ fun OfflineRobotScreen(
     fun onTickle() {
         scope.launch {
             robotState = RobotState.TICKLED
-            speechText = Strings.tr("Hehehe! Stop, that tickles!")
+            speechTextOverride = tickledText
             repeat(3) {
                 wobbleX.animateTo(12f, tween(60))
                 wobbleX.animateTo(-12f, tween(60))
@@ -140,7 +149,7 @@ fun OfflineRobotScreen(
     fun onSpin() {
         scope.launch {
             robotState = RobotState.SPINNING
-            speechText = Strings.tr("Wheee! I'm getting dizzy!")
+            speechTextOverride = dizzyText
             spinAngle.snapTo(0f)
             spinAngle.animateTo(360f, tween(600, easing = FastOutSlowInEasing))
             delay(800)
@@ -152,7 +161,7 @@ fun OfflineRobotScreen(
     fun onHop() {
         scope.launch {
             robotState = RobotState.HOPPING
-            speechText = Strings.tr("Boing! Up we go!")
+            speechTextOverride = hoppingText
             hopY.animateTo(-60f, tween(250, easing = FastOutSlowInEasing))
             hopY.animateTo(0f, spring(0.6f, 300f))
             delay(600)
@@ -164,7 +173,7 @@ fun OfflineRobotScreen(
     fun onSqueak() {
         scope.launch {
             robotState = RobotState.SQUEAKING
-            speechText = Strings.tr("*Squeeeak!* Beep boop!")
+            speechTextOverride = squeakText
             squishScale.animateTo(1.15f, tween(100))
             squishScale.animateTo(1f, spring(0.5f, 250f))
             delay(1000)
@@ -176,7 +185,7 @@ fun OfflineRobotScreen(
     fun onWake() {
         scope.launch {
             robotState = RobotState.IDLE
-            speechText = Strings.tr("Yawn! I'm wide awake now!")
+            speechTextOverride = awakeText
             hopY.animateTo(-20f, tween(150))
             hopY.animateTo(0f, spring(0.5f, 200f))
         }
@@ -186,7 +195,7 @@ fun OfflineRobotScreen(
     fun onNod() {
         scope.launch {
             robotState = RobotState.NODDING
-            speechText = Strings.tr("Yes! Exactly right!")
+            speechTextOverride = nodText
             repeat(2) {
                 nodAngle.animateTo(15f, tween(120))
                 nodAngle.animateTo(-10f, tween(120))

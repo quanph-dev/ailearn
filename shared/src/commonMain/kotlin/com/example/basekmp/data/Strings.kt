@@ -1,7 +1,9 @@
 package com.example.basekmp.data
 
 import androidx.compose.runtime.MutableState
+import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
+import org.jetbrains.compose.resources.stringResource
 
 object Strings {
     val languages: List<UiLanguage> = listOf(
@@ -37,24 +39,16 @@ object Strings {
     fun isRtl(code: String): Boolean =
         languages.firstOrNull { it.code == code.lowercase() }?.rtl ?: false
 
+    @Composable
     fun tr(en: String): String {
-        return trIn(language.value, en)
+        val resource = uiStringResourceByEnglish[en] ?: return en
+        return stringResource(resource)
     }
 
-    fun trf(en: String, vararg args: Any?): String {
-        return trfIn(language.value, en, *args)
-    }
+    @Composable
+    fun trf(en: String, vararg args: Any?): String =
+        formatString(tr(en), args)
 
-    fun trIn(lang: String, en: String): String {
-        if (lang == "en") return en
-        val langMap = Translations.byLanguage[lang]
-        val translated = langMap?.get(en)
-            ?: ExtraTranslations.byLanguage[lang]?.get(en)
-            ?: Translations.congratsOverrides[lang]?.get(en)
-            ?: Translations.practiceAndProgressOverrides[lang]?.get(en)
-            ?: Translations.learningPathDialogOverrides[lang]?.get(en)
-            ?: Translations.videoShadowingOverrides[lang]?.get(en)
-        if (translated != null) return translated
-        return en
-    }
+    internal fun hasTranslationResource(en: String): Boolean =
+        en in uiStringResourceByEnglish
 }

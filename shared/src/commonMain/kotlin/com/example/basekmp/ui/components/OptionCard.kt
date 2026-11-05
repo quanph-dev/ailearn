@@ -27,6 +27,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.unit.Dp
+import com.example.basekmp.data.tr
 import com.example.basekmp.theme.BlueSelected
 import com.example.basekmp.theme.DividerColor
 import com.example.basekmp.theme.OptionSurface
@@ -117,7 +118,7 @@ private fun OptionRow(
         if (selected) {
             Icon(
                 imageVector = Icons.Rounded.CheckCircle,
-                contentDescription = "Selected",
+                contentDescription = tr("Selected"),
                 modifier = Modifier.size(24.dp),
                 tint = BlueSelected
             )

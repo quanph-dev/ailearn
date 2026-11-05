@@ -77,6 +77,7 @@ fun OnboardingScreen(
 ) {
     val uiLanguage = Strings.getLanguage()
 
+    @Composable
     fun titleFor(step: OnboardingStep): String = Strings.tr(when (step) {
         OnboardingStep.LearnLanguage -> "Which Language Do You Want to Learn?"
         OnboardingStep.NativeLanguage -> "What is Your Native Language?"
@@ -85,64 +86,55 @@ fun OnboardingScreen(
         OnboardingStep.TutorVoice -> "Choose Your AI Tutor Voice"
     })
 
-    fun translated(text: String): String = Strings.trIn(uiLanguage, text)
+    @Composable
+    fun translated(text: String): String = Strings.tr(text)
 
-    val learnLanguageOptions = remember(uiLanguage) {
-        Languages.learnable.map { lang ->
-            SelectOption(
-                id = lang.code,
-                label = translated(lang.name),
-                leading = { Text(lang.flag, fontSize = 22.sp) }
-            )
-        }
-    }
-
-    val nativeLanguageOptions = remember(uiLanguage) {
-        Languages.native.map { lang ->
-            SelectOption(
-                id = lang.code,
-                label = translated(lang.name),
-                leading = { Text(lang.flag, fontSize = 22.sp) }
-            )
-        }
-    }
-
-    val levelOptions = remember(uiLanguage) {
-        listOf(
-            SelectOption("a1", translated("Beginner"), leading = { CefrBadge("A1", CefrA1) }),
-            SelectOption("a2", translated("Elementary"), leading = { CefrBadge("A2", CefrA2) }),
-            SelectOption("b1", translated("Intermediate"), leading = { CefrBadge("B1", CefrB1) }),
-            SelectOption("b2", translated("Upper Intermediate"), leading = { CefrBadge("B2", CefrB2) }),
-            SelectOption("c1", translated("Advanced"), leading = { CefrBadge("C1", CefrC1) }),
-            SelectOption("unsure", translated("Not Sure"))
+    val learnLanguageOptions = Languages.learnable.map { lang ->
+        SelectOption(
+            id = lang.code,
+            label = translated(lang.name),
+            leading = { Text(lang.flag, fontSize = 22.sp) }
         )
     }
 
-    val dailyTimeOptions = remember(uiLanguage) {
-        listOf(
-            SelectOption("5", translated("5 min"), leading = {
-                Image(painterResource(Res.drawable.ob_clock_5), null, Modifier.size(30.dp))
-            }),
-            SelectOption("10", translated("10 min"), leading = {
-                Image(painterResource(Res.drawable.ob_clock_10), null, Modifier.size(30.dp))
-            }),
-            SelectOption("20", translated("20 min"), leading = {
-                Image(painterResource(Res.drawable.ob_clock_20), null, Modifier.size(30.dp))
-            }),
-            SelectOption("30", translated("30 min"), leading = {
-                Image(painterResource(Res.drawable.ob_clock_30), null, Modifier.size(30.dp))
-            })
+    val nativeLanguageOptions = Languages.native.map { lang ->
+        SelectOption(
+            id = lang.code,
+            label = translated(lang.name),
+            leading = { Text(lang.flag, fontSize = 22.sp) }
         )
     }
 
-    val tutorOptions = remember(uiLanguage) {
-        listOf(
-            TutorOption("male", translated("Male"), Res.drawable.tutor_male),
-            TutorOption("female", translated("Female"), Res.drawable.tutor_female),
-            TutorOption("random", translated("Random"), Res.drawable.tutor_random),
-            TutorOption("robot", translated("Robot"), Res.drawable.tutor_robot)
-        )
-    }
+    val levelOptions = listOf(
+        SelectOption("a1", translated("Beginner"), leading = { CefrBadge("A1", CefrA1) }),
+        SelectOption("a2", translated("Elementary"), leading = { CefrBadge("A2", CefrA2) }),
+        SelectOption("b1", translated("Intermediate"), leading = { CefrBadge("B1", CefrB1) }),
+        SelectOption("b2", translated("Upper Intermediate"), leading = { CefrBadge("B2", CefrB2) }),
+        SelectOption("c1", translated("Advanced"), leading = { CefrBadge("C1", CefrC1) }),
+        SelectOption("unsure", translated("Not Sure"))
+    )
+
+    val dailyTimeOptions = listOf(
+        SelectOption("5", translated("5 min"), leading = {
+            Image(painterResource(Res.drawable.ob_clock_5), null, Modifier.size(30.dp))
+        }),
+        SelectOption("10", translated("10 min"), leading = {
+            Image(painterResource(Res.drawable.ob_clock_10), null, Modifier.size(30.dp))
+        }),
+        SelectOption("20", translated("20 min"), leading = {
+            Image(painterResource(Res.drawable.ob_clock_20), null, Modifier.size(30.dp))
+        }),
+        SelectOption("30", translated("30 min"), leading = {
+            Image(painterResource(Res.drawable.ob_clock_30), null, Modifier.size(30.dp))
+        })
+    )
+
+    val tutorOptions = listOf(
+        TutorOption("male", translated("Male"), Res.drawable.tutor_male),
+        TutorOption("female", translated("Female"), Res.drawable.tutor_female),
+        TutorOption("random", translated("Random"), Res.drawable.tutor_random),
+        TutorOption("robot", translated("Robot"), Res.drawable.tutor_robot)
+    )
 
     Box(
         modifier = Modifier
@@ -325,7 +317,7 @@ private fun TutorCell(
             if (selected) {
                 Icon(
                     imageVector = Icons.Rounded.CheckCircle,
-                    contentDescription = "Selected",
+                    contentDescription = Strings.tr("Selected"),
                     modifier = Modifier
                         .size(20.dp)
                         .align(Alignment.TopEnd),

@@ -66,6 +66,7 @@ private const val CAT_PRACTICE = "Practice"
 
 private fun epochDayOf(ts: Long): Long = localEpochDayAt(ts)
 
+@Composable
 private fun formatWhen(ts: Long): String {
     if (ts <= 0) return ""
     val timeStr = formatTime(ts)
