@@ -14,8 +14,6 @@ class AILearnApplication : ProxApplication() {
     override fun onCreate() {
         instance = this
         AdsUtils.setKeyRemoteConfig("config_ads_v${BuildConfig.VERSION_CODE}")
-        // Debug builds use src/debug test placements; release keeps the production Remote Config.
-        AdsManager.enableLoadRemoteConfig(!BuildConfig.DEBUG)
         AdsUtils.disableOpenAds()
         super.onCreate()
         AdsUtils.addStyleNative(101, R.layout.layout_ads_custom_native_101)

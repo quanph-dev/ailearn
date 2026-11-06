@@ -56,6 +56,16 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
+    signingConfigs {
+        create("release") {
+            keyAlias = "key0"
+            keyPassword = "com.semavia.language.learning.ai"
+            storeFile = file("com.semavia.language.learning.ai.jks")
+            storePassword = "com.semavia.language.learning.ai"
+        }
+    }
+
     buildTypes {
         debug {
             versionNameSuffix = "-dev"
@@ -67,6 +77,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
         }
     }
     compileOptions {
