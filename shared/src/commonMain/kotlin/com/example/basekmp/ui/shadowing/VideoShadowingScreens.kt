@@ -83,6 +83,7 @@ import com.example.basekmp.components.ProgressHeader
 import com.example.basekmp.ui.components.VideoSurface
 import com.example.basekmp.ui.components.BackTitleBar
 import com.example.basekmp.ui.components.BackButton
+import com.example.basekmp.ui.components.StandardBackButtonInset
 import com.example.basekmp.ui.components.rememberVideoPlayer
 import com.example.basekmp.ui.speaking.rememberPlatformSpeaker
 import com.example.basekmp.ui.speaking.speechLocaleTagFor
@@ -135,7 +136,6 @@ fun VideoShadowingListScreen(
             .fillMaxSize()
             .background(colors.background)
             .safeDrawingPadding()
-            .padding(horizontal = dimens.spacingLg)
     ) {
         Spacer(Modifier.height(8.dp))
         ShadowingTopBar(
@@ -143,7 +143,8 @@ fun VideoShadowingListScreen(
             savedWordCount = savedWordCount,
             titleFontSize = 20.sp,
             onBack = onBack,
-            onOpenSavedWords = onOpenSavedWords
+            onOpenSavedWords = onOpenSavedWords,
+            modifier = Modifier.padding(horizontal = StandardBackButtonInset)
         )
 
         Spacer(Modifier.height(8.dp))
@@ -218,7 +219,7 @@ private fun ShadowingTopBar(
     ) {
         Box(
             modifier = Modifier.align(Alignment.CenterStart).size(width = 56.dp, height = 56.dp),
-            contentAlignment = Alignment.Center
+            contentAlignment = Alignment.CenterStart
         ) {
             BackButton(
                 onClick = onBack,
@@ -1235,7 +1236,6 @@ fun SavedWordsScreen(
             .fillMaxSize()
             .background(colors.background)
             .safeDrawingPadding()
-            .padding(horizontal = dimens.spacingLg)
     ) {
         Spacer(Modifier.height(8.dp))
         BackTitleBar(
@@ -1247,7 +1247,10 @@ fun SavedWordsScreen(
 
         if (savedWords.isEmpty()) {
             Box(
-                modifier = Modifier.weight(1f).fillMaxWidth(),
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth()
+                    .padding(horizontal = dimens.spacingLg),
                 contentAlignment = Alignment.Center
             ) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
@@ -1273,7 +1276,10 @@ fun SavedWordsScreen(
                 savedWords.entries.sortedByDescending { it.value }
             }
             LazyColumn(
-                modifier = Modifier.weight(1f),
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth()
+                    .padding(horizontal = dimens.spacingLg),
                 verticalArrangement = Arrangement.spacedBy(dimens.spacingMd),
                 contentPadding = PaddingValues(bottom = dimens.spacing2Xl)
             ) {

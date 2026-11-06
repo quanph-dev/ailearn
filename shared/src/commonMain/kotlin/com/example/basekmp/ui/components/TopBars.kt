@@ -30,6 +30,8 @@ import com.example.basekmp.data.Strings
 import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.TextPrimary
 
+internal val StandardBackButtonInset = 20.dp
+
 /**
  * Standard top header bar for primary tabs.
  */
@@ -160,7 +162,10 @@ fun BackTitleBar(
     minHeight: Dp = 56.dp
 ) {
     Box(
-        modifier = modifier.fillMaxWidth().heightIn(min = minHeight),
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(horizontal = StandardBackButtonInset)
+            .heightIn(min = minHeight),
         contentAlignment = Alignment.Center
     ) {
         Text(
@@ -176,7 +181,7 @@ fun BackTitleBar(
 
         Box(
             modifier = Modifier.align(Alignment.CenterStart).size(width = 56.dp, height = 56.dp),
-            contentAlignment = Alignment.Center
+            contentAlignment = Alignment.CenterStart
         ) {
             BackButton(
                 onClick = onBack,
@@ -186,7 +191,7 @@ fun BackTitleBar(
         }
         Box(
             modifier = Modifier.align(Alignment.CenterEnd).size(width = 56.dp, height = 56.dp),
-            contentAlignment = Alignment.Center
+            contentAlignment = Alignment.CenterEnd
         ) {
             rightContent?.invoke()
         }
@@ -205,7 +210,10 @@ fun CloseTitleBar(
     titleColor: Color = TextPrimary
 ) {
     Box(
-        modifier = modifier.fillMaxWidth().heightIn(min = 56.dp),
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(horizontal = StandardBackButtonInset)
+            .heightIn(min = 56.dp),
         contentAlignment = Alignment.Center
     ) {
         Text(
@@ -221,7 +229,7 @@ fun CloseTitleBar(
 
         Box(
             modifier = Modifier.align(Alignment.CenterStart).size(width = 56.dp, height = 56.dp),
-            contentAlignment = Alignment.Center
+            contentAlignment = Alignment.CenterStart
         ) {
             CloseButton(onClick = onClose)
         }

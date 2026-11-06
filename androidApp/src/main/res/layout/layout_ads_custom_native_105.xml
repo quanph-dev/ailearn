@@ -2,12 +2,12 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/bg_native_ad_card"
-    android:padding="8dp">
+    android:background="#FCFCFC">
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="152dp">
+        android:layout_height="152dp"
+        android:layout_margin="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -76,19 +76,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/ic_ad"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|start"
-            android:background="@drawable/bg_native_ad_badge"
-            android:paddingStart="6dp"
-            android:paddingTop="2dp"
-            android:paddingEnd="6dp"
-            android:paddingBottom="2dp"
-            android:text="@string/ads_disclosure"
-            android:textColor="#FF202124"
-            android:textSize="11sp" />
 
         <FrameLayout
             android:id="@+id/ad_options_view"
@@ -98,4 +85,18 @@
             android:contentDescription="@string/ads_choices_description"
             android:importantForAccessibility="yes" />
     </FrameLayout>
+
+    <TextView
+        android:id="@+id/ic_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:background="@drawable/bg_native_ad_badge"
+        android:paddingStart="6dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="6dp"
+        android:paddingBottom="2dp"
+        android:text="@string/ads_disclosure"
+        android:textColor="#FF202124"
+        android:textSize="11sp" />
 </FrameLayout>

@@ -14,7 +14,7 @@ class TutorMoodTagsTest {
             "hi" to RobotMood.HAPPY
         )
         for ((tag, mood) in moods) {
-            for (prefix in listOf("", "B", "TB")) {
+            for (prefix in listOf("", "B", "TB", "TD")) {
                 assertEquals(mood to "Hello!", TutorAi.splitMood("[$prefix$tag] Hello!"))
             }
         }

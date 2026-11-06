@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
@@ -29,11 +30,11 @@ fun PracticeSetupScaffold(
             .fillMaxSize()
             .background(Color.White)
             .safeDrawingPadding()
-            .padding(horizontal = 20.dp)
     ) {
         Column(
             modifier = Modifier
                 .weight(1f)
+                .fillMaxWidth()
                 .padding(top = 16.dp, bottom = 14.dp)
         ) {
             BackTitleBar(
@@ -43,14 +44,21 @@ fun PracticeSetupScaffold(
 
             Spacer(Modifier.height(24.dp))
 
-            fields()
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth()
+                    .padding(horizontal = StandardBackButtonInset)
+            ) {
+                fields()
 
-            Spacer(Modifier.weight(1f))
+                Spacer(Modifier.weight(1f))
 
-            PrimaryButton(
-                text = Strings.tr("Start"),
-                onClick = onStart
-            )
+                PrimaryButton(
+                    text = Strings.tr("Start"),
+                    onClick = onStart
+                )
+            }
         }
     }
 }

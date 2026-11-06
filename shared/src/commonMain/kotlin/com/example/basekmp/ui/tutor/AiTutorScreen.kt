@@ -67,6 +67,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.text.font.FontWeight
@@ -78,6 +79,7 @@ import com.example.basekmp.components.RobotMood
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.AppAdsHost
 import com.example.basekmp.data.tr
+import com.example.basekmp.data.trf
 import com.example.basekmp.theme.AppTheme
 import com.example.basekmp.theme.BrandPrimary
 import com.example.basekmp.theme.BubbleAi
@@ -92,9 +94,6 @@ import com.example.basekmp.ui.speaking.rememberTypewriter
 import com.example.basekmp.ui.speaking.speechLocaleTagFor
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-
-private const val AI_TUTOR_GREETING =
-    "Hi! I'm your AI English tutor. Ask me anything, or pick a quick action below to get started."
 
 private val AI_TUTOR_CANNED_REPLIES = listOf(
     "Great question! Let's break it down together — could you give me an example sentence?",
@@ -117,11 +116,15 @@ fun AiTutorScreen(
     val coroutineScope = rememberCoroutineScope()
     val listState = rememberLazyListState()
     val isKeyboardVisible = WindowInsets.ime.getBottom(LocalDensity.current) > 0
+    val tutorGreeting = trf(
+        "Hi! I'm your AI %1\$s tutor. Ask me anything, or pick a quick action below to get started.",
+        tr(com.example.basekmp.data.Languages.learn(UserPrefs.targetLanguage).displayName)
+    )
 
     val messages = remember {
         mutableStateListOf(
             ChatMessage(
-                text = AI_TUTOR_GREETING,
+                text = tutorGreeting,
                 fromUser = false,
                 animate = true
             )
@@ -178,8 +181,8 @@ fun AiTutorScreen(
         speaker.warmUp(targetLocaleTag, nativeLocaleTag)
         activateMessageSpeech(messages.lastIndex)
         speaker.speak(
-            text = AI_TUTOR_GREETING,
-            languageTag = targetLocaleTag,
+            text = tutorGreeting,
+            languageTag = nativeLocaleTag,
             voicePreference = UserPrefs.tutorVoice,
             altLanguageTag = nativeLocaleTag
         )
@@ -288,8 +291,7 @@ fun AiTutorScreen(
                 onBack = ::closeTutor,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .background(AppTheme.colors.surface)
-                    .padding(horizontal = AppTheme.dimens.spacingSm),
+                    .background(AppTheme.colors.surface),
                 rightContent = {
                     IconButton(onClick = {
                         stopMessageSpeech()
@@ -298,15 +300,15 @@ fun AiTutorScreen(
                         assistantMood = RobotMood.NEUTRAL
                         messages.add(
                             ChatMessage(
-                                text = AI_TUTOR_GREETING,
+                                text = tutorGreeting,
                                 fromUser = false,
                                 animate = true
                             )
                         )
                         activateMessageSpeech(messages.lastIndex)
                         speaker.speak(
-                            text = AI_TUTOR_GREETING,
-                            languageTag = targetLocaleTag,
+                            text = tutorGreeting,
+                            languageTag = nativeLocaleTag,
                             voicePreference = UserPrefs.tutorVoice,
                             altLanguageTag = nativeLocaleTag
                         )
@@ -327,6 +329,11 @@ fun AiTutorScreen(
                     .padding(vertical = 4.dp),
                 contentAlignment = Alignment.Center
             ) {
+                Box(
+                    modifier = Modifier
+                        .size(width = if (isKeyboardVisible) 130.dp else 230.dp, height = if (isKeyboardVisible) 64.dp else 150.dp)
+                        .background(Brush.radialGradient(listOf(AppTheme.colors.primary.copy(alpha = 0.14f), Color.Transparent)))
+                )
                 val robotMood = when {
                     isThinking -> RobotMood.THINKING
                     else -> assistantMood
@@ -406,16 +413,17 @@ fun AiTutorScreen(
                     ) {
                         Spacer(modifier = Modifier.width(AppTheme.dimens.spacingMd))
                         quickChips.forEach { chip ->
+                            val localizedChip = tr(chip)
                             Box(
                                 modifier = Modifier
                                     .clip(RoundedCornerShape(AppTheme.dimens.cornerPill))
                                     .background(AppTheme.colors.surfaceCard)
                                     .border(1.dp, AppTheme.colors.border, RoundedCornerShape(AppTheme.dimens.cornerPill))
-                                    .clickable { sendMessage(chip, mode = chip) }
+                                    .clickable { sendMessage(localizedChip, mode = chip) }
                                     .padding(horizontal = AppTheme.dimens.spacingMd, vertical = AppTheme.dimens.spacingSm)
                             ) {
                                 Text(
-                                    text = chip,
+                                    text = localizedChip,
                                     color = AppTheme.colors.primary,
                                     fontSize = 13.sp,
                                     fontWeight = FontWeight.Medium
@@ -436,7 +444,9 @@ fun AiTutorScreen(
                     Row(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(horizontal = AppTheme.dimens.spacingLg, vertical = AppTheme.dimens.spacingSm),
+                            .padding(horizontal = AppTheme.dimens.spacingLg, vertical = AppTheme.dimens.spacingSm)
+                            .border(1.dp, AppTheme.colors.border, RoundedCornerShape(AppTheme.dimens.cornerPill))
+                            .padding(start = 4.dp, end = 4.dp, top = 4.dp, bottom = 4.dp),
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         BasicTextField(

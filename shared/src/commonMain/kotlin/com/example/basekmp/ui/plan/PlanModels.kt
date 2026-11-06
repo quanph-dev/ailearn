@@ -48,7 +48,7 @@ data class LevelOption(
 ) {
     companion object {
         val ALL: List<LevelOption> = listOf(
-            LevelOption("I'm just starting", "I know little or no English", "A1 Beginner"),
+            LevelOption("I'm just starting", "I know little or no %1\$s", "A1 Beginner"),
             LevelOption("I know the basics", "I can use simple words and sentences", "A2 Elementary"),
             LevelOption("I can have conversations", "I can talk about familiar topics", "B1 Intermediate"),
             LevelOption("I'm quite confident", "I can discuss complex topics", "C1 Advanced"),
@@ -75,10 +75,10 @@ data class GoalOption(
         val ALL: List<GoalOption> = listOf(
             GoalOption("everyday", "Everyday Conversation", "Talk confidently in daily life"),
             GoalOption("travel", "Travel", "Communicate when traveling abroad"),
-            GoalOption("work_career", "Work & Career", "Use English at work or in interviews"),
-            GoalOption("school_study", "School & Study", "Learn English for classes or studying abroad"),
-            GoalOption("language_exams", "Prepare for IELTS, TOEIC, TOEFL", "Get ready for test day"),
-            GoalOption("improve_english", "Improve My English", "Build stronger overall English skills"),
+            GoalOption("work_career", "Work & Career", "Use %1\$s at work or in interviews"),
+            GoalOption("school_study", "School & Study", "Learn %1\$s for classes or studying abroad"),
+            GoalOption("language_exams", "Prepare for IELTS, TOEIC, TOEFL, or other tests", "Get ready for test day"),
+            GoalOption("improve_english", "Improve My %1\$s", "Build stronger overall %1\$s skills"),
             GoalOption("custom", "Something Else", "Tell us your personal goal")
         )
     }

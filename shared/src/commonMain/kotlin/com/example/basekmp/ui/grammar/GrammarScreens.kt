@@ -109,6 +109,7 @@ fun GrammarSetupScreen(
 fun GrammarQuizScreen(
     questionCount: Int,
     onClose: (correct: Int, total: Int) -> Unit,
+    onFinish: (correct: Int, total: Int) -> Unit,
     modifier: Modifier = Modifier
 ) {
     val colors = AppTheme.colors
@@ -182,8 +183,8 @@ fun GrammarQuizScreen(
         CongratsDialog(
             subtitle = Strings.tr("Grammar quiz completed successfully!"),
             buttonText = Strings.tr("Done"),
-            onButtonClick = { onClose(correctCount, questions.size) },
-            onClose = { onClose(correctCount, questions.size) },
+            onButtonClick = { onFinish(correctCount, questions.size) },
+            onClose = { onFinish(correctCount, questions.size) },
             correct = correctCount,
             incorrect = questions.size - correctCount
         )

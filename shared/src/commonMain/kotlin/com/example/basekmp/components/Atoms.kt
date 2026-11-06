@@ -55,6 +55,7 @@ import com.example.basekmp.theme.OptionSurface
 import com.example.basekmp.theme.TrackColor
 import com.example.basekmp.ui.components.BackButton
 import com.example.basekmp.ui.components.CloseButton
+import com.example.basekmp.ui.components.StandardBackButtonInset
 
 @Composable
 fun PrimaryButton(
@@ -371,7 +372,7 @@ fun ProgressHeader(
     val dimens = AppTheme.dimens
 
     Row(
-        modifier = modifier.fillMaxWidth().height(dimens.topBarHeight).padding(horizontal = dimens.spacingLg),
+        modifier = modifier.fillMaxWidth().height(dimens.topBarHeight).padding(horizontal = StandardBackButtonInset),
         verticalAlignment = Alignment.CenterVertically
     ) {
         BackButton(onClick = onBack)

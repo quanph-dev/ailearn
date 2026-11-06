@@ -188,7 +188,7 @@ fun SpeakingCardsScreen(
 
     if (isFinished) {
         CongratsDialog(
-            subtitle = Strings.tr("Great speaking session! Average score: $avgScore%"),
+            subtitle = Strings.tr("Average pronunciation score") + ": $avgScore%",
             buttonText = Strings.tr("Done"),
             onButtonClick = { onClose(avgScore, true) },
             onClose = { onClose(avgScore, true) },

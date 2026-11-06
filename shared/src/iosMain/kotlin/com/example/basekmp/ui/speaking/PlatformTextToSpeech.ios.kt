@@ -58,7 +58,8 @@ class IosPlatformSpeaker(
         altLanguageTag: String?,
         quotedLanguageTag: String?
     ) {
-        if (text.isBlank() || !isAppResumed.value) return
+        val speechText = speechTextWithoutControlTags(text)
+        if (!hasSpeakableContent(speechText) || !isAppResumed.value) return
         if (synthesizer.isSpeaking()) {
             activeUtterance = null
             synthesizer.stopSpeakingAtBoundary(AVSpeechBoundary.AVSpeechBoundaryImmediate)
@@ -68,15 +69,15 @@ class IosPlatformSpeaker(
         if (quotedLanguage != null && quotedLanguage.substringBefore('-') != languageTag.substringBefore('-')) {
             val quotes = Regex("\"[^\"\\n]+\"|“[^”\\n]+”|«[^»\\n]+»|„[^“”\\n]+[“”]|「[^」\\n]+」|『[^』\\n]+』")
             var start = 0
-            for (match in quotes.findAll(text)) {
-                if (match.range.first > start) parts.add(text.substring(start, match.range.first) to languageTag)
+            for (match in quotes.findAll(speechText)) {
+                if (match.range.first > start) parts.add(speechText.substring(start, match.range.first) to languageTag)
                 parts.add(match.value to quotedLanguage)
                 start = match.range.last + 1
             }
-            if (start < text.length) parts.add(text.substring(start) to languageTag)
+            if (start < speechText.length) parts.add(speechText.substring(start) to languageTag)
         }
-        if (parts.isEmpty()) parts.add(text to languageTag)
-        val utterances = parts.map { (part, locale) ->
+        if (parts.isEmpty()) parts.add(speechText to languageTag)
+        val utterances = parts.filter { hasSpeakableContent(it.first) }.map { (part, locale) ->
             AVSpeechUtterance.speechUtteranceWithString(part).apply {
                 voice = AVSpeechSynthesisVoice.voiceWithLanguage(locale)
                 rate = (AVSpeechUtteranceDefaultSpeechRate * speed).coerceIn(

@@ -93,7 +93,6 @@ fun ProgressDetailScreen(
             .fillMaxSize()
             .background(Color.White)
             .safeDrawingPadding()
-            .padding(horizontal = 20.dp)
     ) {
         Spacer(Modifier.height(10.dp))
 
@@ -110,7 +109,8 @@ fun ProgressDetailScreen(
             Column(
                 modifier = Modifier
                     .weight(1f)
-                    .fillMaxWidth(),
+                    .fillMaxWidth()
+                    .padding(horizontal = 20.dp),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
@@ -134,7 +134,8 @@ fun ProgressDetailScreen(
             LazyColumn(
                 modifier = Modifier
                     .weight(1f)
-                    .fillMaxWidth(),
+                    .fillMaxWidth()
+                    .padding(horizontal = 20.dp),
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
                 itemsIndexed(items, key = { _, item -> "${item.title}_${item.timestamp}" }) { index, item ->

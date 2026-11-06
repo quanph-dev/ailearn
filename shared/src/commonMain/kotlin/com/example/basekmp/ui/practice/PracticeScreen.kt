@@ -283,7 +283,7 @@ private fun LessonCard(
                     .padding(horizontal = 14.dp, vertical = 7.dp)
             ) {
                 Text(
-                    text = Strings.tr("${lesson.minutes} min"),
+                    text = Strings.trf("%1\$d min", lesson.minutes),
                     color = TextPrimary,
                     fontSize = 13.sp
                 )

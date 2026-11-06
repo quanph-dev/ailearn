@@ -1,6 +1,6 @@
 <resources>
     <string name="ui_ads_loading">Cargando anuncios</string>
-    <string name="ui_ads_keep_free">Los anuncios ayudan a mantener AI Learn gratis</string>
+    <string name="ui_ads_keep_free">Los anuncios ayudan a mantener Semavia gratis</string>
     <string name="ui_ads_close">Cerrar anuncio</string>
     <string name="ui_ads_hide">Ocultar anuncio</string>
 </resources>

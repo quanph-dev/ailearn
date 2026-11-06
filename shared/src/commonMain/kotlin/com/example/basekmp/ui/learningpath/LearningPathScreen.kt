@@ -75,15 +75,17 @@ import com.example.basekmp.data.Strings
 import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.formatString
 import com.example.basekmp.theme.BrandPrimary
+import com.example.basekmp.theme.CardTeal
+import com.example.basekmp.theme.ChipBlueBg
 import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.ui.components.TabHeader
 import com.example.basekmp.ui.components.tabBottomClearance
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.delay
 
-// Colors extracted from the original LearningPathScreen resources.
-private val UnitCardBg = Color(4292405244L) // 0xFFD7E5FB
-private val ChipSelectedBg = Color(4293587710L) // 0xFFEFF5FE
+// Use Semavia surface tokens for the unit card and selected level.
+private val UnitCardBg = CardTeal
+private val ChipSelectedBg = ChipBlueBg
 private val ProgressGreen = Color(4279681567L) // 0xFF12B76A
 private val MutedText = Color(4286283912L) // 0xFF717688
 private val DoneGreen = Color(4279411995L) // 0xFF0E931B

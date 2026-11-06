@@ -334,8 +334,8 @@
     <string name="tr_semavia_learn_languages">Semavia: Learn Languages</string>
     <string name="tr_semavia_stores_learning_preferences">Semavia: Learn Languages stores your learning preferences (target language, level, daily goal and tutor voice) only on your device. No personal data leaves your phone until a learning backend is connected.</string>
     <string name="tr_english">English</string>
-    <string name="tr_english_learn_pro">English Learn Pro</string>
-    <string name="tr_english_learn_pro_is_offered_as_weekly_and_yearly_auto_renewing">English Learn Pro is offered as weekly and yearly auto-renewing subscriptions with an optional free trial. Manage or cancel anytime from your Google Play account settings.</string>
+    <string name="tr_english_learn_pro">Semavia Learn Pro</string>
+    <string name="tr_english_learn_pro_is_offered_as_weekly_and_yearly_auto_renewing">Semavia Learn Pro is offered as weekly and yearly auto-renewing subscriptions with an optional free trial. Manage or cancel anytime from your Google Play account settings.</string>
     <string name="tr_english_level">English Level</string>
     <string name="tr_enjoying_the_app">Enjoying the App?</string>
     <string name="tr_enter_message">Enter message</string>
@@ -1028,7 +1028,7 @@
     <string name="tr_weekly">Weekly</string>
     <string name="tr_weekly_subscription_activated">Weekly subscription activated</string>
     <string name="tr_welcome">Welcome</string>
-    <string name="tr_welcome_to_english_learn_pro">Welcome to English Learn Pro! 🎉</string>
+    <string name="tr_welcome_to_english_learn_pro">Welcome to Semavia Learn Pro! 🎉</string>
     <string name="tr_well_done">Well done!</string>
     <string name="tr_well_done_continue_with_the_quiz">Well done! Continue with the quiz</string>
     <string name="tr_what">What</string>
@@ -1118,4 +1118,7 @@
     <string name="ui_exit_the_app">Exit the app</string>
     <string name="ui_no">No</string>
     <string name="ui_yes_exit">Yes, exit</string>
+    <string name="tr_learner">Learner</string>
+    <string name="tr_get_ready_for_test_day">Get ready for test day</string>
+    <string name="tr_age">Age</string>
 </resources>

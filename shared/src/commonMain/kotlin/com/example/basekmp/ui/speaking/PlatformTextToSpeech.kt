@@ -35,6 +35,18 @@ interface PlatformSpeaker {
     fun setSpeed(speed: Float) {}
 }
 
+// Replace internal mood markers with spaces so speech progress still maps to the displayed text.
+internal fun speechTextWithoutControlTags(text: String): String {
+    val prefix = "(?:TD|TB|B)"
+    val tag = "(?:great|ok|oops|hi)"
+    val pattern = Regex("\\[\\s*$prefix\\s*$tag\\s*]", RegexOption.IGNORE_CASE)
+    val leading = Regex("^\\s*\\[\\s*$tag\\s*]", RegexOption.IGNORE_CASE)
+    fun blankMatches(input: String, regex: Regex) = regex.replace(input) { " ".repeat(it.value.length) }
+    return blankMatches(blankMatches(text, pattern), leading)
+}
+
+internal fun hasSpeakableContent(text: String): Boolean = text.any { it.isLetterOrDigit() }
+
 fun speechLocaleTagFor(codeOrName: String?): String {
     return when (codeOrName.orEmpty().trim().lowercase()) {
         "en", "english", "en-us" -> "en-US"

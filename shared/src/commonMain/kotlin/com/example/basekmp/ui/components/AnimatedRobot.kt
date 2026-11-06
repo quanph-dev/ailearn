@@ -515,7 +515,6 @@ fun AnimatedRobot(
         try {
             glow(w * 0.5f, 0.26f * h, 0.23f * w, 0.06f * h, HALO, 1.0f, BlendMode.SrcOver)
             drawPart(imgRobot, ART_L, ART_T, ART_W, ART_H)
-
             val confusedWiggle = if (activeMood == RobotMood.CONFUSED) {
                 (sin(sweep * 2f * 3.1415927f * 3f)) * 0.14f
             } else 0f

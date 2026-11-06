@@ -60,6 +60,7 @@ import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.theme.TextSecondary
 import com.example.basekmp.theme.TrackColor
 import com.example.basekmp.ui.components.CircleIconButton
+import com.example.basekmp.ui.components.StandardBackButtonInset
 import com.example.basekmp.ui.grammar.OptionState
 import com.example.basekmp.ui.speaking.SpeechCaptureMic
 
@@ -89,6 +90,7 @@ expect fun PathFeedbackEmoji(isCorrect: Boolean, modifier: Modifier)
 fun PathLessonScreen(
     lessonId: String,
     onClose: () -> Unit,
+    onFinish: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val colors = AppTheme.colors
@@ -189,8 +191,8 @@ fun PathLessonScreen(
         CongratsDialog(
             subtitle = Strings.tr("You've Completed Today's Session!"),
             buttonText = Strings.tr("Continue"),
-            onButtonClick = onClose,
-            onClose = onClose,
+            onButtonClick = onFinish,
+            onClose = onFinish,
         )
     }
 
@@ -218,7 +220,7 @@ fun PathLessonScreen(
             currentStep = currentIndex + 1,
             totalSteps = questions.size,
             onClose = { showExitDialog = true },
-            modifier = Modifier.padding(horizontal = 20.dp)
+            modifier = Modifier.padding(horizontal = StandardBackButtonInset)
         )
         Spacer(Modifier.height(20.dp))
 

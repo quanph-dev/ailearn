@@ -19,6 +19,8 @@ import androidx.compose.animation.core.infiniteRepeatable
 import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.ui.draw.clip
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
@@ -40,6 +42,7 @@ import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.theme.TextSecondary
 import com.example.basekmp.theme.getPlusJakartaFontFamily
 import com.example.basekmp.AppAdsHost
+import ailearn.shared.generated.resources.ui_ads_keep_free
 import com.example.basekmp.data.Strings
 import org.jetbrains.compose.resources.painterResource
 import com.example.basekmp.data.appStringResource as stringResource
@@ -69,7 +72,7 @@ fun SplashScreen(phase: Int = 2, adsHost: AppAdsHost? = null) {
                 Image(
                     painter = painterResource(Res.drawable.fo_ic_logo_app),
                     contentDescription = null,
-                    modifier = Modifier.size(104.dp)
+                    modifier = Modifier.size(104.dp).clip(RoundedCornerShape(24.dp))
                 )
 
                 Spacer(modifier = Modifier.height(if (phase == 1) 24.dp else 36.dp))
@@ -93,7 +96,7 @@ fun SplashScreen(phase: Int = 2, adsHost: AppAdsHost? = null) {
                 CircularProgressIndicator(color = BrandPrimary, strokeWidth = 3.dp, modifier = Modifier.size(30.dp))
                 Spacer(Modifier.height(14.dp))
                 Text(
-                    text = Strings.tr("This action may contain ads"),
+                    text = com.example.basekmp.data.appStringResource(Res.string.ui_ads_keep_free),
                     color = TextSecondary,
                     fontSize = 14.sp,
                     fontFamily = plusJakarta,

@@ -119,6 +119,7 @@ fun VocabSetupScreen(
 fun VocabCardsScreen(
     wordCount: Int,
     onClose: (correct: Int, total: Int) -> Unit,
+    onFinish: (correct: Int, total: Int) -> Unit,
     modifier: Modifier = Modifier
 ) {
     val colors = AppTheme.colors
@@ -200,7 +201,7 @@ fun VocabCardsScreen(
     }
 
     fun closeCompletedSession() {
-        onClose(correctCount, deck.size)
+        onFinish(correctCount, deck.size)
     }
 
     if (isFinished) {

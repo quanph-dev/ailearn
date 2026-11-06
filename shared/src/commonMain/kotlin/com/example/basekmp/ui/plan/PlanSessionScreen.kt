@@ -56,6 +56,7 @@ import com.example.basekmp.data.UserPrefs
 import com.example.basekmp.data.tr
 import com.example.basekmp.theme.AppTheme
 import com.example.basekmp.ui.components.CloseButton
+import com.example.basekmp.ui.components.StandardBackButtonInset
 import kotlinx.coroutines.launch
 
 /**
@@ -267,7 +268,7 @@ fun PlanSessionScreen(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(AppTheme.dimens.topBarHeight)
-                    .padding(horizontal = AppTheme.dimens.spacingSm),
+                    .padding(horizontal = StandardBackButtonInset),
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 CloseButton(onClick = onBack)

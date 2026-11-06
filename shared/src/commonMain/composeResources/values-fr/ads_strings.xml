@@ -1,6 +1,6 @@
 <resources>
     <string name="ui_ads_loading">Chargement des publicités</string>
-    <string name="ui_ads_keep_free">Les publicités contribuent à garder AI Learn gratuit</string>
+    <string name="ui_ads_keep_free">Les publicités contribuent à garder Semavia gratuit</string>
     <string name="ui_ads_close">Fermer la publicité</string>
     <string name="ui_ads_hide">Masquer la publicité</string>
 </resources>

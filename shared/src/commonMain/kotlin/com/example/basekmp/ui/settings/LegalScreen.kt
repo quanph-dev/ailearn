@@ -61,7 +61,7 @@ fun LegalScreen(
             .fillMaxSize()
             .background(colors.background)
             .safeDrawingPadding()
-            .padding(horizontal = dimens.spacingLg, vertical = dimens.spacingSm)
+            .padding(vertical = dimens.spacingSm)
     ) {
         Spacer(Modifier.height(8.dp))
         BackTitleBar(
@@ -76,6 +76,7 @@ fun LegalScreen(
             modifier = Modifier
                 .weight(1f)
                 .fillMaxWidth()
+                .padding(horizontal = dimens.spacingLg)
                 .verticalScroll(scrollState)
         ) {
             Text(

@@ -84,8 +84,7 @@ fun PlanDayActivitiesScreen(
                 onBack = onBack,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .background(AppTheme.colors.surface)
-                    .padding(horizontal = AppTheme.dimens.spacingSm),
+                    .background(AppTheme.colors.surface),
                 titleSize = 18.sp,
                 titleColor = AppTheme.colors.textPrimary,
                 buttonBackground = AppTheme.colors.background,
@@ -239,7 +238,6 @@ fun PlanDayActivitiesScreen(
                 "N_LearningPath_Lessons",
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(horizontal = AppTheme.dimens.spacingLg)
                     .padding(bottom = AppTheme.dimens.spacingSm)
             )
         }

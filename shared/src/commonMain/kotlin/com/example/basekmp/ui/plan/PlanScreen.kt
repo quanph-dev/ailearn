@@ -269,7 +269,6 @@ private fun PathTopBar(onBack: () -> Unit) {
     BackTitleBar(
         title = tr("My Learning Path"),
         onBack = onBack,
-        modifier = Modifier.padding(horizontal = 20.dp),
         titleSize = 21.sp,
         titleColor = PathText,
         buttonBackground = Color.White.copy(alpha = 0.72f),
@@ -887,7 +886,7 @@ private fun RobotSpeechBubble(
             contentAlignment = Alignment.Center
         ) {
             Text(
-                text = if (awake) tr("Ready to learn?") else tr("Zzz... Tap me to wake me up"),
+                text = if (awake) tr("Ready to learn?") else tr("Zzz... Tap me to wake me up 💤"),
                 color = TextPrimary,
                 fontSize = 13.sp,
                 lineHeight = 17.sp,

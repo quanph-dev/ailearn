@@ -76,6 +76,7 @@ import com.example.basekmp.data.trf
 import com.example.basekmp.AppAdsHost
 import com.example.basekmp.theme.AppTheme
 import com.example.basekmp.ui.components.BackButton
+import com.example.basekmp.ui.components.StandardBackButtonInset
 import org.jetbrains.compose.resources.painterResource
 
 /**
@@ -92,7 +93,14 @@ fun PlanSetupScreen(
     val steps = SetupStep.entries
     var currentStepIndex by remember { mutableIntStateOf(0) }
 
-    var studentName by remember { mutableStateOf(PlanProgress.get().name.ifEmpty { "Learner" }) }
+    val localizedLearnerName = tr("Learner")
+    val storedLearnerName = PlanProgress.get().name
+    var studentName by remember {
+        mutableStateOf(
+            storedLearnerName.takeUnless { it.isBlank() || it.equals("Learner", ignoreCase = true) }
+                ?: localizedLearnerName
+        )
+    }
     var selectedGoalId by remember {
         mutableStateOf(GoalPlan.canonicalGoalId(PlanProgress.get().goalId) ?: "everyday")
     }
@@ -188,7 +196,7 @@ fun PlanSetupScreen(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(AppTheme.dimens.topBarHeight)
-                    .padding(horizontal = AppTheme.dimens.spacingSm),
+                    .padding(horizontal = StandardBackButtonInset),
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 BackButton(onClick = { goBack() })
@@ -457,13 +465,19 @@ private fun GoalStepContent(
                 ) {
                     Column(modifier = Modifier.weight(1f)) {
                         Text(
-                            text = tr(goal.title),
+                            text = if (goal.title.contains("%1\$s")) trf(goal.title, tr(Languages.learn(UserPrefs.targetLanguage).displayName)) else tr(goal.title),
                             color = if (goal.hasContent) AppTheme.colors.textPrimary else AppTheme.colors.textTertiary,
                             fontSize = 15.sp,
                             fontWeight = FontWeight.SemiBold
                         )
+                        val targetLanguageName = tr(Languages.learn(UserPrefs.targetLanguage).displayName)
+                        val goalDescription = if (goal.description.contains("%1\$s")) {
+                            trf(goal.description, targetLanguageName)
+                        } else {
+                            tr(goal.description)
+                        }
                         Text(
-                            text = tr(goal.description),
+                            text = goalDescription,
                             color = AppTheme.colors.textSecondary,
                             fontSize = 13.sp
                         )
@@ -545,7 +559,7 @@ private fun LevelStepContent(
         )
         Spacer(modifier = Modifier.height(4.dp))
         Text(
-            text = trf("How much %s do you know?", tr(UserPrefs.targetLanguage)),
+            text = trf("How much %1\$s do you know?", tr(Languages.learn(UserPrefs.targetLanguage).displayName)),
             color = AppTheme.colors.textSecondary,
             fontSize = 14.sp
         )
@@ -557,6 +571,11 @@ private fun LevelStepContent(
             items(LevelOption.ALL) { opt ->
                 val isSelected = opt.setting.equals(selectedLevel, ignoreCase = true) ||
                     EnglishLevel.toFullName(opt.setting).equals(EnglishLevel.toFullName(selectedLevel), ignoreCase = true)
+                val optionDescription = if (opt.text.contains("%1\$s")) {
+                    trf(opt.text, tr(Languages.learn(UserPrefs.targetLanguage).displayName))
+                } else {
+                    tr(opt.text)
+                }
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -594,7 +613,7 @@ private fun LevelStepContent(
                             fontWeight = FontWeight.SemiBold
                         )
                         Text(
-                            text = tr(opt.text),
+                            text = optionDescription,
                             color = AppTheme.colors.textSecondary,
                             fontSize = 13.sp
                         )
@@ -653,7 +672,7 @@ private fun TimeStepContent(
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
-                        text = "$mins min / day",
+                        text = trf("%1\$d min / day", mins),
                         color = AppTheme.colors.textPrimary,
                         fontSize = 16.sp,
                         fontWeight = FontWeight.SemiBold,

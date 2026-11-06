@@ -249,8 +249,18 @@ class AndroidAppAdsHost(private val activity: Activity) : AppAdsHost {
         }
         fullscreenBusy = true
         beginLoading()
+        val loadingFrame = loadingFrameReady
         val startedAt = SystemClock.elapsedRealtime()
         return try {
+            if (placement == "I_Back") {
+                val loadingSurfaceDrawn = withTimeoutOrNull(
+                    minOf(timeoutMs.coerceAtLeast(1L), LOADING_FRAME_READY_TIMEOUT_MS)
+                ) {
+                    loadingFrame.await()
+                    true
+                } == true
+                if (!loadingSurfaceDrawn) return false
+            }
             val ready = if (MyAdsUtils.isInterstitialLoaded(placement)) {
                 true
             } else {
@@ -588,6 +598,7 @@ class AndroidAppAdsHost(private val activity: Activity) : AppAdsHost {
         const val SPLASH_PHASE_ONE_TIMEOUT_MS = 10_000L
         const val STARTUP_DEADLINE_MS = 30_000L
         const val PLACEMENT_LOAD_TIMEOUT_MS = 8_000L
+        const val LOADING_FRAME_READY_TIMEOUT_MS = 1_500L
         const val FULLSCREEN_BIND_TIMEOUT_MS = 2_500L
     }
 }

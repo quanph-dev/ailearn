@@ -1,6 +1,6 @@
 <resources>
     <string name="ui_ads_loading">Đang tải quảng cáo</string>
-    <string name="ui_ads_keep_free">Quảng cáo giúp AI Learn miễn phí</string>
+    <string name="ui_ads_keep_free">Quảng cáo giúp Semavia miễn phí</string>
     <string name="ui_ads_close">Đóng quảng cáo</string>
     <string name="ui_ads_hide">Ẩn quảng cáo</string>
 </resources>

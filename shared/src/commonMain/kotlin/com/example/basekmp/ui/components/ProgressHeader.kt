@@ -19,6 +19,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.example.basekmp.theme.BrandPrimary
 import com.example.basekmp.theme.TrackColor
@@ -28,7 +29,8 @@ fun ProgressHeader(
     progress: Float,
     onBack: () -> Unit,
     modifier: Modifier = Modifier,
-    showBack: Boolean = true
+    showBack: Boolean = true,
+    horizontalInset: Dp = StandardBackButtonInset
 ) {
     val animatedProgress by animateFloatAsState(
         targetValue = progress.coerceIn(0.0f, 1.0f),
@@ -37,7 +39,7 @@ fun ProgressHeader(
     )
 
     Row(
-        modifier = modifier.fillMaxWidth(),
+        modifier = modifier.fillMaxWidth().padding(horizontal = horizontalInset),
         verticalAlignment = Alignment.CenterVertically
     ) {
         if (showBack) {

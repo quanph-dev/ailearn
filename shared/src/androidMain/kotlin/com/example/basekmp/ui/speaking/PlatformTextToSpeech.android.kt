@@ -440,21 +440,22 @@ private fun performSpeak(
 
         val segments = speechSegments(request.text, request.locale, request.altLocale, request.quotedLocale)
         val chunks = ArrayList<Pair<String, Locale>>()
-        for ((segText, segLocale) in segments) {
-            for (chunk in splitForSpeech(segText)) {
-                chunks.add(chunk to segLocale)
-            }
-        }
-
-        val ends = IntArray(chunks.size)
+        val chunkEndPositions = ArrayList<Int>()
         var cumulative = 0
-        for (i in chunks.indices) {
-            cumulative += chunks[i].first.length
-            ends[i] = cumulative
+        for ((segText, segLocale) in segments) {
+            var localOffset = 0
+            for (chunk in splitForSpeech(segText)) {
+                val start = segText.indexOf(chunk, localOffset).coerceAtLeast(localOffset)
+                localOffset = start + chunk.length
+                if (hasSpeakableContent(chunk)) {
+                    chunks.add(chunk to segLocale)
+                    chunkEndPositions.add(cumulative + localOffset)
+                }
+            }
+            cumulative += segText.length
         }
-        if (ends.isNotEmpty() && ends[ends.lastIndex] < request.text.length) {
-            ends[ends.lastIndex] = request.text.length
-        }
+        val ends = chunkEndPositions.toIntArray()
+        if (ends.isNotEmpty()) ends[ends.lastIndex] = request.text.length
 
         engineSetup.chunkEnds = ends
         // Use a request id so late callbacks from an earlier identical utterance are ignored.
@@ -523,7 +524,8 @@ class AndroidPlatformSpeaker internal constructor(
         altLanguageTag: String?,
         quotedLanguageTag: String?
     ) {
-        if (text.isBlank() || !_isAppResumed.value) return
+        val speechText = speechTextWithoutControlTags(text)
+        if (!hasSpeakableContent(speechText) || !_isAppResumed.value) return
 
         val effectiveSpeed = if (speed != 1.0f && speed > 0f && speed.isFinite()) {
             speedMultiplier = speed
@@ -543,7 +545,7 @@ class AndroidPlatformSpeaker internal constructor(
         }
         val style = if (voicePreference != null) voiceStyleFor(voicePreference) else defaultVoiceStyle
         val request = SpeechRequest(
-            text = text,
+            text = speechText,
             locale = primaryLocale,
             style = style,
             speed = effectiveSpeed,

@@ -8,7 +8,7 @@ import com.google.firebase.FirebaseApp
 import android.util.Log
 
 @HiltAndroidApp
-class BaseKmpApplication : ProxApplication() {
+class AILearnApplication : ProxApplication() {
     override fun onCreate() {
         instance = this
         AdsUtils.setKeyRemoteConfig("config_ads_v${BuildConfig.VERSION_CODE}")
@@ -29,7 +29,7 @@ class BaseKmpApplication : ProxApplication() {
 
     companion object {
         @Volatile
-        var instance: BaseKmpApplication? = null
+        var instance: AILearnApplication? = null
             private set
     }
 }

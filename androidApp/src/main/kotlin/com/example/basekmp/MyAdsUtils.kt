@@ -51,12 +51,25 @@ object MyAdsUtils {
         var terminalLogged: Boolean = false
     )
 
+    private data class BannerLoadEntry(
+        val completion: CompletableDeferred<BannerAds<*>?> = CompletableDeferred(),
+        val terminalLogged: AtomicBoolean = AtomicBoolean(false),
+        val callbackTerminal: AtomicBoolean = AtomicBoolean(false),
+        var banner: BannerAds<*>? = null,
+        var loadReturned: Boolean = false,
+        var success: Boolean? = null,
+        var failureReason: String? = null
+    )
+
     private val initMutex = Mutex()
     private val lock = Any()
     private val interstitialLoads = mutableMapOf<String, InterstitialLoad>()
     private val loadedInterstitials = mutableSetOf<String>()
     private val nativeAds = mutableMapOf<String, NativeEntry>()
     private val banners = mutableMapOf<String, BannerAds<*>>()
+    private val bannerLoads = mutableMapOf<String, BannerLoadEntry>()
+    private val bannerFailures = mutableSetOf<String>()
+    private val shownBanners = mutableMapOf<String, FrameLayout>()
     private val interstitialShowSuccessAt = mutableMapOf<String, Long>()
 
     @Volatile private var initialized = false
@@ -268,18 +281,17 @@ object MyAdsUtils {
         reason: String?,
         fromSdkResult: Boolean
     ) {
-        val shouldLog = synchronized(lock) {
+        synchronized(lock) {
             if (interstitialLoads[placement] !== operation || operation.completion.isCompleted) return
             if (success) loadedInterstitials += placement
             else interstitialLoads.remove(placement)
-            val logResult = !operation.terminalLogged
+            val shouldLog = !operation.terminalLogged
             operation.terminalLogged = true
+            if (shouldLog) {
+                AdsTechnicalLogger.log("load", placement, if (success) "success" else "fail", reason)
+                if (fromSdkResult) logFirstFlowAdResult("load", placement, success)
+            }
             operation.completion.complete(success)
-            logResult
-        }
-        if (shouldLog) {
-            AdsTechnicalLogger.log("load", placement, if (success) "success" else "fail", reason)
-            if (fromSdkResult) logFirstFlowAdResult("load", placement, success)
         }
     }
 
@@ -494,7 +506,6 @@ object MyAdsUtils {
             }
             val logResult = !entry.terminalLogged
             entry.terminalLogged = true
-            entry.completion.complete(succeeded)
             logResult
         }
         runCatching { rejectedAd?.destroyAds() }
@@ -502,6 +513,7 @@ object MyAdsUtils {
             AdsTechnicalLogger.log("load", placement, if (succeeded) "success" else "fail", if (succeeded) null else reason ?: "empty_result")
             if (fromSdkResult && entry.trackSplashPreload) logFirstFlowAdResult("load", placement, succeeded)
         }
+        entry.completion.complete(succeeded)
     }
 
     fun readyNative(placement: String): NativeAds<*>? = synchronized(lock) {
@@ -620,41 +632,111 @@ object MyAdsUtils {
                 AdsTechnicalLogger.log("load", placement, "fail", "disabled")
                 return@withContext null
             }
-            val completion = CompletableDeferred<Boolean>()
-            val terminal = AtomicBoolean(false)
-            AdsTechnicalLogger.log("load", placement, "start")
-            try {
-                val displayMetrics = activity.resources.displayMetrics
-                val widthPixels = if (frame.width > 0) frame.width.toFloat() else displayMetrics.widthPixels.toFloat()
-                val adWidth = (widthPixels / displayMetrics.density).toInt()
-                val adSize = com.google.android.gms.ads.AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(activity, adWidth)
-                val banner = AdsUtils.loadBannerAds(activity, frame, placement, adSize, object : LoadAdsCallback() {
-                    override fun onLoadSuccess(adsMeta: Boolean?) {
-                        if (!terminal.compareAndSet(false, true)) return
-                        AdsTechnicalLogger.log("load", placement, "success")
-                        completion.complete(true)
-                    }
 
-                    override fun onLoadFailed(message: String?) {
-                        if (!terminal.compareAndSet(false, true)) return
-                        AdsTechnicalLogger.log("load", placement, "fail", message ?: "load_failed")
-                        completion.complete(false)
-                    }
-                }, AdsUtils.shimmerBanner)
-                synchronized(lock) { if (banner != null) banners[placement] = banner }
-                val loaded = withTimeoutOrNull(DEFAULT_LOAD_TIMEOUT_MS) { completion.await() } == true
-                if (!loaded && terminal.compareAndSet(false, true)) {
-                    AdsTechnicalLogger.log("load", placement, "fail", "timeout")
+            val cached = synchronized(lock) { banners[placement] }
+            if (cached != null) return@withContext cached
+            if (synchronized(lock) { placement in bannerFailures }) return@withContext null
+
+            val (entry, ownsLoad) = synchronized(lock) {
+                val current = bannerLoads[placement]
+                if (current != null) {
+                    current to false
+                } else {
+                    BannerLoadEntry().also { bannerLoads[placement] = it } to true
                 }
-                if (loaded) banner else null
-            } catch (failure: Exception) {
-                if (failure is kotlin.coroutines.cancellation.CancellationException) throw failure
-                if (terminal.compareAndSet(false, true)) {
-                    AdsTechnicalLogger.log("load", placement, "fail", failure.javaClass.simpleName)
-                }
-                null
             }
+
+            if (ownsLoad) {
+                AdsTechnicalLogger.log("load", placement, "start")
+                try {
+                    val displayMetrics = activity.resources.displayMetrics
+                    val widthPixels = if (frame.width > 0) frame.width.toFloat() else displayMetrics.widthPixels.toFloat()
+                    val adWidth = (widthPixels / displayMetrics.density).toInt()
+                    val adSize = com.google.android.gms.ads.AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(activity, adWidth)
+                    val banner = AdsUtils.loadBannerAds(activity, frame, placement, adSize, object : LoadAdsCallback() {
+                        override fun onLoadSuccess(adsMeta: Boolean?) {
+                            if (!entry.callbackTerminal.compareAndSet(false, true)) return
+                            finishBannerLoad(placement, entry, true, null)
+                        }
+
+                        override fun onLoadFailed(message: String?) {
+                            if (!entry.callbackTerminal.compareAndSet(false, true)) return
+                            finishBannerLoad(placement, entry, false, message ?: "load_failed")
+                        }
+                    }, AdsUtils.shimmerBanner)
+
+                    val callbackSuccess = synchronized(lock) {
+                        entry.banner = banner
+                        entry.loadReturned = true
+                        entry.success
+                    }
+                    if (callbackSuccess != null) finishBannerLoad(placement, entry, callbackSuccess, null)
+                } catch (failure: Exception) {
+                    if (failure is kotlin.coroutines.cancellation.CancellationException) throw failure
+                    if (entry.callbackTerminal.compareAndSet(false, true)) {
+                        synchronized(lock) { entry.loadReturned = true }
+                        finishBannerLoad(placement, entry, false, failure.javaClass.simpleName)
+                    }
+                }
+            }
+
+            val loaded = withTimeoutOrNull(DEFAULT_LOAD_TIMEOUT_MS) { entry.completion.await() }
+            val timedOut = synchronized(lock) {
+                if (loaded != null || entry.completion.isCompleted || entry.terminalLogged.get()) {
+                    false
+                } else {
+                    entry.terminalLogged.set(true)
+                    entry.success = false
+                    bannerFailures += placement
+                    if (bannerLoads[placement] === entry) bannerLoads.remove(placement)
+                    true
+                }
+            }
+            if (timedOut) {
+                AdsTechnicalLogger.log("load", placement, "fail", "timeout")
+                entry.completion.complete(null)
+                runCatching { entry.banner?.destroyAds() }
+            }
+            loaded
         }
+
+    private fun finishBannerLoad(
+        placement: String,
+        entry: BannerLoadEntry,
+        callbackSuccess: Boolean,
+        reason: String?
+    ) {
+        var result: BannerAds<*>? = null
+        var succeeded = false
+        val shouldFinish = synchronized(lock) {
+            if (entry.terminalLogged.get()) return
+            entry.success = callbackSuccess
+            if (!reason.isNullOrBlank()) entry.failureReason = reason
+            if (!entry.loadReturned) return@synchronized false
+
+            val loadedBanner = entry.banner
+            succeeded = callbackSuccess && loadedBanner != null && bannerLoads[placement] === entry
+            if (succeeded) {
+                result = loadedBanner
+                banners[placement] = loadedBanner!!
+            } else {
+                bannerFailures += placement
+            }
+            if (bannerLoads[placement] === entry) bannerLoads.remove(placement)
+            entry.terminalLogged.set(true)
+            true
+        }
+        if (!shouldFinish) return
+
+        AdsTechnicalLogger.log(
+            "load",
+            placement,
+            if (succeeded) "success" else "fail",
+            if (succeeded) null else entry.failureReason ?: if (callbackSuccess) "empty_result" else "load_failed"
+        )
+        if (!succeeded) runCatching { entry.banner?.destroyAds() }
+        entry.completion.complete(result)
+    }
 
     fun showBanner(placement: String, frame: FrameLayout): Boolean {
         val banner = synchronized(lock) { banners[placement] } ?: run {
@@ -665,6 +747,19 @@ object MyAdsUtils {
             AdsTechnicalLogger.log("show", placement, "fail", "container_detached")
             return false
         }
+        val alreadyShown = synchronized(lock) {
+            val previousFrame = shownBanners[placement]
+            when {
+                previousFrame === frame -> true
+                previousFrame?.isAttachedToWindow == true -> true
+                else -> {
+                    shownBanners[placement] = frame
+                    false
+                }
+            }
+        }
+        if (alreadyShown) return true
+
         AdsTechnicalLogger.log("show", placement, "start")
         return try {
             banner.showAds(frame)
@@ -678,14 +773,31 @@ object MyAdsUtils {
             }
             true
         } catch (failure: Exception) {
+            synchronized(lock) { if (shownBanners[placement] === frame) shownBanners.remove(placement) }
             AdsTechnicalLogger.log("show", placement, "fail", failure.javaClass.simpleName)
             false
         }
     }
 
     fun releaseBanner(placement: String) {
-        val banner = synchronized(lock) { banners.remove(placement) } ?: return
-        runCatching { banner.destroyAds() }
+        var logReleasedLoad = false
+        val (banner, pending) = synchronized(lock) {
+            shownBanners.remove(placement)
+            bannerFailures.remove(placement)
+            val activeLoad = bannerLoads.remove(placement)
+            activeLoad?.let {
+                it.success = false
+                if (!it.terminalLogged.get()) {
+                    it.terminalLogged.set(true)
+                    logReleasedLoad = true
+                }
+            }
+            banners.remove(placement) to activeLoad
+        }
+        if (logReleasedLoad) AdsTechnicalLogger.log("load", placement, "fail", "released")
+        pending?.completion?.complete(null)
+        runCatching { pending?.banner?.destroyAds() }
+        runCatching { banner?.destroyAds() }
     }
 
     fun onActivityReleased(activity: Activity) {
@@ -712,7 +824,9 @@ object MyAdsUtils {
         }
         val nativePlacements = synchronized(lock) { nativeAds.keys.toList() }
         nativePlacements.forEach(::releaseNative)
-        val bannerPlacements = synchronized(lock) { banners.keys.toList() }
+        val bannerPlacements = synchronized(lock) {
+            (bannerLoads.keys + banners.keys + shownBanners.keys + bannerFailures).toList()
+        }
         bannerPlacements.forEach(::releaseBanner)
         activityShowingSdkFullscreen = false
         consentFormVisible = false

@@ -49,6 +49,7 @@ import com.example.basekmp.data.tr
 import com.example.basekmp.data.trf
 import com.example.basekmp.theme.AppTheme
 import com.example.basekmp.ui.components.CloseButton
+import com.example.basekmp.ui.components.StandardBackButtonInset
 import com.example.basekmp.ui.speaking.SpeechCaptureMic
 import kotlinx.coroutines.launch
 
@@ -230,7 +231,7 @@ fun PlanSpeakingSessionScreen(
                         modifier = Modifier
                             .fillMaxWidth()
                             .height(AppTheme.dimens.topBarHeight)
-                            .padding(horizontal = AppTheme.dimens.spacingSm),
+                            .padding(horizontal = StandardBackButtonInset),
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         CloseButton(onClick = onBack)

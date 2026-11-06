@@ -24,7 +24,7 @@ internal object AdsTechnicalLogger {
         Log.d(TAG, message)
         if (!BuildConfig.DEBUG) return
 
-        val application = BaseKmpApplication.instance ?: return
+        val application = AILearnApplication.instance ?: return
         val firebaseReady = runCatching {
             FirebaseApp.getApps(application).any { it.name == FirebaseApp.DEFAULT_APP_NAME }
         }.getOrDefault(false)

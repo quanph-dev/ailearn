@@ -4,7 +4,7 @@ import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import com.example.basekmp.BuildConfig
-import com.example.basekmp.BaseKmpApplication
+import com.example.basekmp.AILearnApplication
 import com.google.firebase.FirebaseApp
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.database.FirebaseDatabase
@@ -16,7 +16,7 @@ fun logFirebaseEvent(eventName: String, bundle: Bundle? = null) {
     Log.d(TAG, eventName)
     if (eventName.isBlank()) return
 
-    val application = BaseKmpApplication.instance ?: return
+    val application = AILearnApplication.instance ?: return
     val firebaseApp = runCatching {
         FirebaseApp.getApps(application).firstOrNull { it.name == FirebaseApp.DEFAULT_APP_NAME }
     }.onFailure { Log.w(TAG, "Firebase app unavailable") }.getOrNull() ?: return

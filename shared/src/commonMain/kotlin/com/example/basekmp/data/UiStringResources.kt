@@ -238,6 +238,7 @@ import ailearn.shared.generated.resources.tr_couldn_t_load_this_video
 import ailearn.shared.generated.resources.tr_couldn_t_load_your_plan
 import ailearn.shared.generated.resources.tr_couldn_t_start_recording
 import ailearn.shared.generated.resources.tr_country
+import ailearn.shared.generated.resources.tr_age
 import ailearn.shared.generated.resources.tr_create
 import ailearn.shared.generated.resources.tr_create_my_learning_plan
 import ailearn.shared.generated.resources.tr_create_my_plan
@@ -384,6 +385,7 @@ import ailearn.shared.generated.resources.tr_from_1_s
 import ailearn.shared.generated.resources.tr_german
 import ailearn.shared.generated.resources.tr_get_plan
 import ailearn.shared.generated.resources.tr_get_ready
+import ailearn.shared.generated.resources.tr_get_ready_for_test_day
 import ailearn.shared.generated.resources.tr_get_started
 import ailearn.shared.generated.resources.tr_get_unlimited_access
 import ailearn.shared.generated.resources.tr_getting_around
@@ -510,6 +512,7 @@ import ailearn.shared.generated.resources.tr_learn_english_speak_naturally
 import ailearn.shared.generated.resources.tr_learn_faster_and_reach_your_english_goals_with_personalized_supp
 import ailearn.shared.generated.resources.tr_learn_language
 import ailearn.shared.generated.resources.tr_learn_with_ai
+import ailearn.shared.generated.resources.tr_learner
 import ailearn.shared.generated.resources.tr_learning
 import ailearn.shared.generated.resources.tr_learning_board
 import ailearn.shared.generated.resources.tr_learning_goal
@@ -1358,6 +1361,7 @@ internal val uiStringResourceByEnglish: Map<String, StringResource> = mapOf(
     "Couldn't load your plan" to Res.string.tr_couldn_t_load_your_plan,
     "Couldn't start recording" to Res.string.tr_couldn_t_start_recording,
     "Country" to Res.string.tr_country,
+    "Age" to Res.string.tr_age,
     "Create" to Res.string.tr_create,
     "Create my learning plan" to Res.string.tr_create_my_learning_plan,
     "Create my plan" to Res.string.tr_create_my_plan,
@@ -1500,6 +1504,7 @@ internal val uiStringResourceByEnglish: Map<String, StringResource> = mapOf(
     "Get Started" to Res.string.tr_get_started,
     "Get Unlimited Access" to Res.string.tr_get_unlimited_access,
     "Get ready…" to Res.string.tr_get_ready,
+    "Get ready for test day" to Res.string.tr_get_ready_for_test_day,
     "Getting Around" to Res.string.tr_getting_around,
     "Getting Customer Support" to Res.string.tr_getting_customer_support,
     "Giving Your Opinion" to Res.string.tr_giving_your_opinion,
@@ -1620,6 +1625,7 @@ internal val uiStringResourceByEnglish: Map<String, StringResource> = mapOf(
     "Learn Language" to Res.string.tr_learn_language,
     "Learn faster and reach your English goals with personalized support." to Res.string.tr_learn_faster_and_reach_your_english_goals_with_personalized_supp,
     "Learn with AI" to Res.string.tr_learn_with_ai,
+    "Learner" to Res.string.tr_learner,
     "Learning" to Res.string.tr_learning,
     "Learning Board" to Res.string.tr_learning_board,
     "Learning History" to Res.string.tr_learning_history,

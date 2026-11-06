@@ -64,6 +64,7 @@ import com.example.basekmp.ui.components.LanguageChoiceMetrics
 import com.example.basekmp.ui.components.PrimaryButton
 import com.example.basekmp.ui.components.ProgressHeader
 import com.example.basekmp.ui.components.SelectOption
+import com.example.basekmp.ui.components.StandardBackButtonInset
 import org.jetbrains.compose.resources.painterResource
 import ailearn.shared.generated.resources.language_save_error
 import com.example.basekmp.data.appStringResource as stringResource
@@ -156,7 +157,7 @@ fun OnboardingScreen(
             modifier = Modifier
                 .fillMaxSize()
                 .safeDrawingPadding()
-                .padding(horizontal = 24.dp)
+                .padding(horizontal = StandardBackButtonInset)
                 .padding(top = 8.dp, bottom = 14.dp)
         ) {
             ProgressHeader(
@@ -166,7 +167,8 @@ fun OnboardingScreen(
                         onStateChange(state.previous())
                     }
                 },
-                showBack = !state.isFirstStep
+                showBack = !state.isFirstStep,
+                horizontalInset = 0.dp
             )
 
             Spacer(modifier = Modifier.height(28.dp))

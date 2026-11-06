@@ -717,7 +717,7 @@ private fun MainAppHost(
     var tabOperationRunning by remember { mutableStateOf(false) }
     val appScope = rememberCoroutineScope()
 
-    fun returnToMain(action: () -> Unit) {
+    fun returnToMainFromBack(action: () -> Unit) {
         if (backOperationRunning) return
         backOperationRunning = true
         appScope.launch {
@@ -769,7 +769,7 @@ private fun MainAppHost(
             is ActiveSubScreen.SpeakingCards -> ActiveSubScreen.SpeakingSetup
             else -> null
             }
-            if (parent == null) returnToMain { activeSubScreen = null } else activeSubScreen = parent
+            if (parent == null) returnToMainFromBack { activeSubScreen = null } else activeSubScreen = parent
         }
     }
     BackActionHandler(enabled = activeSubScreen == null && !showSavedWords && !isAdsBlockingUi) {
@@ -777,7 +777,7 @@ private fun MainAppHost(
             if (uiState.selectedTab == com.example.basekmp.ui.components.MainTab.Settings) {
                 viewModel.selectTab(com.example.basekmp.ui.components.MainTab.Home)
             } else {
-                returnToMain { viewModel.selectTab(com.example.basekmp.ui.components.MainTab.Home) }
+                returnToMainFromBack { viewModel.selectTab(com.example.basekmp.ui.components.MainTab.Home) }
             }
         } else {
             onExitRequested()
@@ -859,7 +859,7 @@ private fun MainAppHost(
                             UserPrefs.addLearnedMinutes(6)
                             UserPrefs.addLearning(title = "AI Tutor", score = 0, total = 0)
                         }
-                        returnToMain { activeSubScreen = null }
+                        returnToMainFromBack { activeSubScreen = null }
                     })
                 }
                 is ActiveSubScreen.TodayLesson -> {
@@ -868,7 +868,7 @@ private fun MainAppHost(
                         level = screen.level,
                         systemBackRequest = lessonBackRequest,
                         adsHost = adsHost,
-                        onBack = { returnToMain { activeSubScreen = null } },
+                        onBack = { returnToMainFromBack { activeSubScreen = null } },
                         onFinish = { activeSubScreen = null }
                     )
                 }
@@ -887,7 +887,7 @@ private fun MainAppHost(
                 }
                 ActiveSubScreen.VocabSetup -> {
                     VocabSetupScreen(
-                        onBack = { returnToMain { activeSubScreen = null } },
+                        onBack = { returnToMainFromBack { activeSubScreen = null } },
                         onStart = { count -> activeSubScreen = ActiveSubScreen.VocabCards(count) }
                     )
                 }
@@ -895,13 +895,14 @@ private fun MainAppHost(
                     VocabCardsScreen(
                         wordCount = screen.count,
                         onClose = { _, _ ->
-                            returnToMain { activeSubScreen = null }
-                        }
+                            returnToMainFromBack { activeSubScreen = null }
+                        },
+                        onFinish = { _, _ -> activeSubScreen = null }
                     )
                 }
                 ActiveSubScreen.GrammarSetup -> {
                     GrammarSetupScreen(
-                        onBack = { returnToMain { activeSubScreen = null } },
+                        onBack = { returnToMainFromBack { activeSubScreen = null } },
                         onStart = { count -> activeSubScreen = ActiveSubScreen.GrammarQuiz(count) }
                     )
                 }
@@ -909,13 +910,14 @@ private fun MainAppHost(
                     GrammarQuizScreen(
                         questionCount = screen.count,
                         onClose = { _, _ ->
-                            returnToMain { activeSubScreen = null }
-                        }
+                            returnToMainFromBack { activeSubScreen = null }
+                        },
+                        onFinish = { _, _ -> activeSubScreen = null }
                     )
                 }
                 ActiveSubScreen.SpeakingSetup -> {
                     SpeakingSetupScreen(
-                        onBack = { returnToMain { activeSubScreen = null } },
+                        onBack = { returnToMainFromBack { activeSubScreen = null } },
                         onStart = { count -> activeSubScreen = ActiveSubScreen.SpeakingCards(count) }
                     )
                 }
@@ -926,14 +928,16 @@ private fun MainAppHost(
                             UserPrefs.markFeatureUsed("speaking")
                             if (finished) {
                                 UserPrefs.markSpeakingDone(PracticeConfig.speakingDifficulty, PracticeConfig.speakingType)
+                                activeSubScreen = null
+                            } else {
+                                returnToMainFromBack { activeSubScreen = null }
                             }
-                            returnToMain { activeSubScreen = null }
                         }
                     )
                 }
                 ActiveSubScreen.ShadowingList -> {
                     VideoShadowingListScreen(
-                        onBack = { returnToMain { activeSubScreen = null } },
+                        onBack = { returnToMainFromBack { activeSubScreen = null } },
                         onOpenVideo = { videoId -> activeSubScreen = ActiveSubScreen.ShadowingPlayer(videoId) },
                         onOpenSavedWords = { showSavedWords = true }
                     )
@@ -965,13 +969,14 @@ private fun MainAppHost(
                 is ActiveSubScreen.PathLesson -> {
                     PathLessonScreen(
                         lessonId = screen.lessonId,
-                        onClose = { returnToMain { activeSubScreen = null } }
+                        onClose = { returnToMainFromBack { activeSubScreen = null } },
+                        onFinish = { activeSubScreen = null }
                     )
                 }
                 ActiveSubScreen.PlanSetup -> {
                     PlanSetupScreen(
                         adsHost = adsHost,
-                        onBack = { returnToMain { activeSubScreen = null } },
+                        onBack = { returnToMainFromBack { activeSubScreen = null } },
                         onDone = { activeSubScreen = ActiveSubScreen.PlanGenerating }
                     )
                 }
@@ -982,7 +987,7 @@ private fun MainAppHost(
                 }
                 ActiveSubScreen.PlanRoadmap -> {
                     PlanScreen(
-                        onBack = { returnToMain { activeSubScreen = null } },
+                        onBack = { returnToMainFromBack { activeSubScreen = null } },
                         onChangeGoal = { activeSubScreen = ActiveSubScreen.PlanSetup },
                         onOpenDay = { day -> activeSubScreen = ActiveSubScreen.PlanDay(day) }
                     )
@@ -1027,7 +1032,7 @@ private fun MainAppHost(
                     ProgressDetailScreen(
                         kind = screen.kind,
                         adsHost = adsHost,
-                        onBack = { returnToMain { activeSubScreen = null } },
+                        onBack = { returnToMainFromBack { activeSubScreen = null } },
                         onStartPractice = {
                             activeSubScreen = when (screen.kind.lowercase()) {
                                 "grammar" -> ActiveSubScreen.GrammarSetup
@@ -1040,7 +1045,7 @@ private fun MainAppHost(
                 ActiveSubScreen.LearningHistory -> {
                     LearningHistoryScreen(
                         adsHost = adsHost,
-                        onBack = { returnToMain { activeSubScreen = null } },
+                        onBack = { returnToMainFromBack { activeSubScreen = null } },
                         onOpenLesson = { title ->
                             activeSubScreen = when {
                                 title.equals("AI Tutor", ignoreCase = true) || title.startsWith("AI Tutor ", ignoreCase = true) -> ActiveSubScreen.AiTutor

@@ -19,10 +19,10 @@ object TutorAi {
     private const val MOOD_LINE =
         "\nBefore your reply, write exactly one hidden mood tag for the student's LAST message: [great] if it was correct and natural, [ok] if it was understandable but had small mistakes, [oops] if it had clear mistakes, was off-topic or was not in the language being practised, or [hi] if the student has not said anything yet. Write the tag first, then one space, then your reply. Do not explain or repeat the tag in the reply."
 
-    // The original tutor protocol has four tags. Some responses add B or TB prefixes.
-    private val MOOD_TAG = Regex("^\\s*\\[\\s*(?:(?:TB|B)\\s*)?(great|ok|oops|hi)\\s*]\\s*", RegexOption.IGNORE_CASE)
-    private val MOOD_TAG_TOKEN = Regex("\\[\\s*(?:(?:TB|B)\\s*)?(?:great|ok|oops|hi)\\s*]\\s*", RegexOption.IGNORE_CASE)
-    private val PREFIXED_MOOD_TAG = Regex("\\[\\s*(?:TB|B)\\s*(great|ok|oops|hi)\\s*]", RegexOption.IGNORE_CASE)
+    // The original tutor protocol has four tags. Some responses add B, TB, or TD prefixes.
+    private val MOOD_TAG = Regex("^\\s*\\[\\s*(?:(?:TD|TB|B)\\s*)?(great|ok|oops|hi)\\s*]\\s*", RegexOption.IGNORE_CASE)
+    private val MOOD_TAG_TOKEN = Regex("\\[\\s*(?:(?:TD|TB|B)\\s*)?(?:great|ok|oops|hi)\\s*]\\s*", RegexOption.IGNORE_CASE)
+    private val PREFIXED_MOOD_TAG = Regex("\\[\\s*(?:TD|TB|B)\\s*(great|ok|oops|hi)\\s*]", RegexOption.IGNORE_CASE)
     private val QUOTED = Regex("[\"“”„«][^\"“”„«»]*[\"“”»]|「[^」]*」|『[^』]*』")
 
     private val nativeReminder: Map<String, String> = mapOf(

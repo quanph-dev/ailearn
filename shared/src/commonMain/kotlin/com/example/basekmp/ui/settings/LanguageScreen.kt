@@ -55,7 +55,6 @@ fun LanguageScreen(
             .fillMaxSize()
             .background(Color.White)
             .safeDrawingPadding()
-            .padding(horizontal = 20.dp)
     ) {
         Spacer(Modifier.height(14.dp))
 
@@ -73,6 +72,7 @@ fun LanguageScreen(
             modifier = Modifier
                 .weight(1f)
                 .fillMaxWidth()
+                .padding(horizontal = 20.dp)
         ) {
             items(languages) { lang ->
                 val isSelected = lang.code == currentLang

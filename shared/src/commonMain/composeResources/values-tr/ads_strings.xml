@@ -1,6 +1,6 @@
 <resources>
     <string name="ui_ads_loading">Reklamlar yükleniyor</string>
-    <string name="ui_ads_keep_free">Reklamlar AI Learn uygulamasının ücretsiz kalmasını sağlar</string>
+    <string name="ui_ads_keep_free">Reklamlar Semavia uygulamasının ücretsiz kalmasını sağlar</string>
     <string name="ui_ads_close">Reklamı kapat</string>
     <string name="ui_ads_hide">Reklamı gizle</string>
 </resources>

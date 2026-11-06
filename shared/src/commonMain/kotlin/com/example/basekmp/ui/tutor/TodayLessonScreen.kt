@@ -65,6 +65,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.layout
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
@@ -96,6 +97,7 @@ import com.example.basekmp.theme.TextPrimary
 import com.example.basekmp.theme.TextSecondary
 import com.example.basekmp.ui.components.AnimatedRobot
 import com.example.basekmp.ui.components.RobotFrameAspect
+import com.example.basekmp.ui.components.StandardBackButtonInset
 import com.example.basekmp.ui.lifecycle.rememberIsAppResumed
 import com.example.basekmp.ui.plan.PlanFlow
 import com.example.basekmp.ui.speaking.PlatformSpeechRecognition
@@ -509,7 +511,7 @@ fun TodayLessonScreen(
                         modifier = Modifier
                             .fillMaxWidth()
                             .statusBarsPadding()
-                            .padding(horizontal = 20.dp, vertical = 10.dp),
+                            .padding(horizontal = StandardBackButtonInset, vertical = 10.dp),
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         // Close button (40.dp circle, black alpha 0.35f, 18.dp white Close icon)
@@ -572,7 +574,7 @@ fun TodayLessonScreen(
                     Box(
                         modifier = Modifier
                             .align(if (isKeyboardVisible) Alignment.BottomCenter else Alignment.BottomStart)
-                            .padding(start = if (isKeyboardVisible) 0.dp else 20.dp, bottom = if (isKeyboardVisible) 2.dp else 14.dp)
+                            .padding(start = if (isKeyboardVisible) 0.dp else 20.dp, bottom = if (isKeyboardVisible) 26.dp else 38.dp)
                             .clip(RoundedCornerShape(50))
                             .background(Color.Black.copy(alpha = 0.35f))
                             .padding(horizontal = 14.dp, vertical = 7.dp)
@@ -591,6 +593,16 @@ fun TodayLessonScreen(
                     modifier = Modifier
                         .weight(1f)
                         .fillMaxWidth()
+                        .layout { measurable, constraints ->
+                            val overlap = 24.dp.roundToPx()
+                            val content = measurable.measure(constraints.copy(
+                                minHeight = constraints.minHeight + overlap,
+                                maxHeight = constraints.maxHeight + overlap
+                            ))
+                            layout(content.width, content.height - overlap) {
+                                content.placeRelative(0, -overlap)
+                            }
+                        }
                         .clip(RoundedCornerShape(topStart = 24.dp, topEnd = 24.dp))
                         .background(Color.White)
                 ) {
@@ -948,30 +960,20 @@ fun TodayLessonScreen(
                                 verticalAlignment = Alignment.CenterVertically,
                                 horizontalArrangement = Arrangement.spacedBy(12.dp)
                             ) {
-                                // Hint button
-                                Row(
+                                // Match the keyboard button so the microphone stays centered.
+                                Box(
                                     modifier = Modifier
-                                        .height(52.dp)
-                                        .clip(RoundedCornerShape(26.dp))
+                                        .size(52.dp)
+                                        .clip(CircleShape)
                                         .background(Color(0xFFF2F4F7))
-                                        .clickable(enabled = !isHintLoading && !isThinking) {
-                                            requestHint()
-                                        }
-                                        .padding(horizontal = 16.dp),
-                                    verticalAlignment = Alignment.CenterVertically
+                                        .clickable(enabled = !isHintLoading && !isThinking) { requestHint() },
+                                    contentAlignment = Alignment.Center
                                 ) {
                                     Icon(
                                         imageVector = Icons.Rounded.Lightbulb,
                                         contentDescription = tr("Hint"),
                                         tint = TextPrimary,
-                                        modifier = Modifier.size(18.dp)
-                                    )
-                                    Spacer(Modifier.width(6.dp))
-                                    Text(
-                                        text = tr("Hint"),
-                                        color = TextPrimary,
-                                        fontSize = 14.sp,
-                                        fontWeight = FontWeight.SemiBold
+                                        modifier = Modifier.size(22.dp)
                                     )
                                 }
 
