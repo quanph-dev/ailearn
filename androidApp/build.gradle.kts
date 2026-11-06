@@ -41,7 +41,7 @@ dependencies {
 }
 
 android {
-    namespace = "com.example.basekmp"
+    namespace = "com.semavia.ailearn"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
@@ -57,6 +57,9 @@ android {
         }
     }
     buildTypes {
+        debug {
+            versionNameSuffix = "-dev"
+        }
         release {
             isMinifyEnabled = true
             isShrinkResources = true
