@@ -20,7 +20,7 @@ kotlin {
     }
     
     android {
-       namespace = "com.example.basekmp.shared"
+       namespace = "com.semavia.ailearn.shared"
        compileSdk = libs.versions.android.compileSdk.get().toInt()
        minSdk = libs.versions.android.minSdk.get().toInt()
     

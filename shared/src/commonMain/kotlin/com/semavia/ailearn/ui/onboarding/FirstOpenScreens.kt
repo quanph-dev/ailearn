@@ -1,0 +1,372 @@
+package com.semavia.ailearn.ui.onboarding
+
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.navigationBarsPadding
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.safeDrawingPadding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.pager.HorizontalPager
+import androidx.compose.foundation.pager.rememberPagerState
+import androidx.compose.foundation.gestures.detectHorizontalDragGestures
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.snapshotFlow
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import ailearn.shared.generated.resources.Res
+import ailearn.shared.generated.resources.ic_survey_option_1
+import ailearn.shared.generated.resources.ic_survey_option_10
+import ailearn.shared.generated.resources.ic_survey_option_2
+import ailearn.shared.generated.resources.ic_survey_option_3
+import ailearn.shared.generated.resources.ic_survey_option_4
+import ailearn.shared.generated.resources.ic_survey_option_5
+import ailearn.shared.generated.resources.ic_survey_option_6
+import ailearn.shared.generated.resources.ic_survey_option_7
+import ailearn.shared.generated.resources.ic_survey_option_8
+import ailearn.shared.generated.resources.ic_survey_option_9
+import ailearn.shared.generated.resources.ic_survey_option_de
+import ailearn.shared.generated.resources.ic_survey_option_pt
+import com.semavia.ailearn.data.Languages
+import com.semavia.ailearn.data.Strings
+import com.semavia.ailearn.theme.BrandPrimary
+import com.semavia.ailearn.theme.DividerColor
+import com.semavia.ailearn.theme.GradientBottom
+import com.semavia.ailearn.theme.OptionSurface
+import com.semavia.ailearn.theme.TextPrimary
+import com.semavia.ailearn.theme.TextSecondary
+import com.semavia.ailearn.ui.components.LanguageChoiceMetrics
+import com.semavia.ailearn.AppAdsHost
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.collect
+import org.jetbrains.compose.resources.DrawableResource
+import org.jetbrains.compose.resources.painterResource
+
+private val SurveyBlue = BrandPrimary
+private val SurveyOptionBackground = OptionSurface
+private val SurveyText = TextPrimary
+private val SurveyFooterBackground = Color.White
+private val IntroSubtitle = TextSecondary
+
+@Composable
+fun FirstOpenIntroScreen(
+    page: Int,
+    onPageSelected: (Int) -> Unit,
+    onNext: () -> Unit,
+    adsHost: AppAdsHost? = null
+) {
+    val pagerState = rememberPagerState(initialPage = page.coerceIn(0, 2), pageCount = { 3 })
+    LaunchedEffect(page) {
+        val targetPage = page.coerceIn(0, 2)
+        if (pagerState.currentPage != targetPage) pagerState.animateScrollToPage(targetPage)
+    }
+    LaunchedEffect(pagerState) {
+        snapshotFlow { pagerState.currentPage }
+            .distinctUntilChanged()
+            .collect(onPageSelected)
+    }
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(
+                Brush.verticalGradient(
+                    colors = listOf(
+                        GradientBottom,
+                        Color.White
+                    )
+                )
+            )
+            .safeDrawingPadding()
+    ) {
+        HorizontalPager(
+            state = pagerState,
+            userScrollEnabled = false,
+            modifier = Modifier
+                .weight(1f)
+                .pointerInput(pagerState.currentPage, onNext, onPageSelected) {
+                    var horizontalDrag = 0f
+                    detectHorizontalDragGestures(
+                        onHorizontalDrag = { change, dragAmount ->
+                            horizontalDrag += dragAmount
+                            change.consume()
+                        },
+                        onDragEnd = {
+                            when {
+                                horizontalDrag < -56f && pagerState.currentPage < 2 -> onNext()
+                                horizontalDrag > 56f && pagerState.currentPage > 0 -> onPageSelected(pagerState.currentPage - 1)
+                            }
+                            horizontalDrag = 0f
+                        },
+                        onDragCancel = { horizontalDrag = 0f }
+                    )
+                },
+            key = { it }
+        ) { currentPage ->
+            FirstOpenIntroPage(
+                page = currentPage,
+                isActive = pagerState.currentPage == currentPage
+            )
+        }
+        Row(
+            modifier = Modifier.fillMaxWidth().height(52.dp).padding(horizontal = 16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                repeat(3) { index ->
+                    Box(
+                        modifier = Modifier
+                            .padding(horizontal = 4.dp)
+                            .size(if (pagerState.currentPage == index) 8.dp else 7.dp)
+                            .clip(CircleShape)
+                            .background(if (pagerState.currentPage == index) SurveyBlue else DividerColor)
+                    )
+                }
+            }
+            Spacer(Modifier.weight(1f))
+            Text(
+                text = Strings.tr(
+                    if (pagerState.currentPage == 2) "Start"
+                    else "Next"
+                ),
+                color = SurveyBlue,
+                fontSize = 16.sp,
+                fontWeight = FontWeight.SemiBold,
+                modifier = Modifier
+                    .clip(RoundedCornerShape(12.dp))
+                    .clickable(onClick = onNext)
+                    .padding(horizontal = 12.dp, vertical = 10.dp)
+            )
+        }
+        val adModifier = Modifier
+            .fillMaxWidth()
+            .navigationBarsPadding()
+            .padding(bottom = 12.dp)
+
+        when (pagerState.currentPage) {
+            0 -> adsHost?.NativeAd(
+                placement = "N_Onboard1_M",
+                modifier = adModifier,
+                fallbacks = listOf("N_Onboard1")
+            )
+            1 -> adsHost?.NativeAd(
+                placement = "N_Onboard1_M",
+                modifier = adModifier,
+                fallbacks = listOf("N_Onboard1"),
+                reuseOnly = true
+            )
+            2 -> adsHost?.NativeAd(
+                placement = "N_Onboard3",
+                modifier = adModifier
+            )
+        }
+    }
+}
+
+@Composable
+private fun FirstOpenIntroPage(page: Int, isActive: Boolean) {
+    val title = when (page) {
+        0 -> Strings.tr("Learn with AI")
+        1 -> Strings.tr("Speak with Confidence")
+        else -> Strings.tr("Reach Your Goals")
+    }
+    val description = when (page) {
+        0 -> Strings.tr("Chat with your personal AI tutor and learn any language naturally, anytime.")
+        1 -> Strings.tr("Practice pronunciation and get instant feedback on every word.")
+        else -> Strings.tr("Stay consistent with daily streaks and track your progress step by step.")
+    }
+
+    Column(modifier = Modifier.fillMaxSize()) {
+        Box(modifier = Modifier.fillMaxWidth().weight(1f)) {
+            FirstOpenIntroArtwork(
+                page = page,
+                isActive = isActive,
+                modifier = Modifier
+                    .fillMaxWidth(0.72f)
+                    .fillMaxHeight(0.78f)
+                    .align(Alignment.Center)
+            )
+        }
+        Column(
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp),
+            verticalArrangement = Arrangement.spacedBy(6.dp)
+        ) {
+            Text(
+                text = title,
+                color = TextPrimary,
+                fontSize = 20.sp,
+                lineHeight = 25.sp,
+                fontWeight = FontWeight.SemiBold
+            )
+            Text(
+                text = description,
+                color = IntroSubtitle,
+                fontSize = 14.sp,
+                lineHeight = 20.sp
+            )
+        }
+    }
+}
+
+@Composable
+fun FirstOpenSurveyScreen(
+    selectedLanguage: String,
+    isSaving: Boolean,
+    hasError: Boolean,
+    onSelectLanguage: (String) -> Unit,
+    onContinue: () -> Unit
+) {
+    Column(modifier = Modifier.fillMaxSize().background(Color.White).safeDrawingPadding()) {
+      Column(modifier = Modifier.fillMaxWidth().weight(1f).padding(horizontal = 16.dp)) {
+        Column(modifier = Modifier.fillMaxWidth().padding(top = 12.dp)) {
+            Text(
+                text = Strings.tr("What language do you want to learn?"),
+                color = SurveyText,
+                fontSize = 23.sp,
+                lineHeight = 28.sp,
+                fontWeight = FontWeight.Bold
+            )
+            Spacer(Modifier.height(8.dp))
+            Text(
+                text = Strings.tr("Pick one to start learning"),
+                color = SurveyText,
+                fontSize = 14.sp,
+            )
+        }
+
+        Spacer(Modifier.height(20.dp))
+        LazyColumn(
+            modifier = Modifier.weight(1f),
+            verticalArrangement = Arrangement.spacedBy(10.dp)
+        ) {
+            items(Languages.surveyOptions, key = { it.code }) { language ->
+                val selected = selectedLanguage == language.code
+                val shape = RoundedCornerShape(18.dp)
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .heightIn(min = LanguageChoiceMetrics.rowHeight)
+                        .clip(shape)
+                        .background(SurveyOptionBackground)
+                        .clickable(enabled = !isSaving) { onSelectLanguage(language.code) }
+                        .padding(
+                            horizontal = LanguageChoiceMetrics.horizontalPadding,
+                            vertical = LanguageChoiceMetrics.contentVerticalPadding
+                        ),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Image(
+                        painter = painterResource(surveyIcon(language.code)),
+                        contentDescription = null,
+                        modifier = Modifier
+                            .size(LanguageChoiceMetrics.leadingImageSize)
+                            .clip(RoundedCornerShape(8.dp)),
+                        contentScale = ContentScale.Crop
+                    )
+                    Spacer(Modifier.width(LanguageChoiceMetrics.leadingSpacing))
+                    Text(
+                        text = Strings.tr(language.name),
+                        modifier = Modifier.weight(1f),
+                        color = if (selected) SurveyBlue else SurveyText,
+                        fontSize = LanguageChoiceMetrics.labelFontSize,
+                        lineHeight = LanguageChoiceMetrics.labelLineHeight,
+                        fontWeight = if (selected) FontWeight.SemiBold else FontWeight.Normal
+                    )
+                    Box(
+                        modifier = Modifier
+                            .size(LanguageChoiceMetrics.selectionSize)
+                            .clip(RoundedCornerShape(6.dp))
+                            .background(if (selected) SurveyBlue else SurveyOptionBackground)
+                            .then(
+                                if (selected) Modifier
+                                else Modifier.border(1.5.dp, Color(0xFFC6C5C9), RoundedCornerShape(6.dp))
+                            ),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        if (selected) Text("✓", color = Color.White, fontSize = 14.sp, fontWeight = FontWeight.Bold)
+                    }
+                }
+            }
+        }
+
+        if (hasError) {
+            Text(
+                text = Strings.tr("Failed to save language. Please try again."),
+                color = Color(0xFFB3261E),
+                fontSize = 13.sp,
+                modifier = Modifier.padding(top = 8.dp)
+            )
+        }
+      }
+      Box(
+            modifier = Modifier.fillMaxWidth().background(SurveyFooterBackground),
+            contentAlignment = Alignment.Center
+        ) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 24.dp, vertical = 16.dp)
+                    .height(52.dp)
+                    .clip(RoundedCornerShape(32.dp))
+                    .background(if (selectedLanguage.isNotBlank()) SurveyBlue else SurveyBlue.copy(alpha = 0.24f))
+                    .clickable(enabled = selectedLanguage.isNotBlank() && !isSaving, onClick = onContinue),
+                contentAlignment = Alignment.Center
+            ) {
+                if (isSaving) {
+                    CircularProgressIndicator(modifier = Modifier.size(24.dp), color = Color.White, strokeWidth = 2.dp)
+                } else {
+                    Text(
+                        text = Strings.tr("Start Learning").uppercase(),
+                        color = Color.White,
+                        fontSize = 18.sp,
+                        fontWeight = FontWeight.Bold,
+                        textAlign = TextAlign.Center
+                    )
+                }
+            }
+        }
+    }
+}
+
+private fun surveyIcon(code: String): DrawableResource = when (code) {
+    "en" -> Res.drawable.ic_survey_option_1
+    "es" -> Res.drawable.ic_survey_option_2
+    "fr" -> Res.drawable.ic_survey_option_3
+    "ar" -> Res.drawable.ic_survey_option_4
+    "ur" -> Res.drawable.ic_survey_option_5
+    "hi" -> Res.drawable.ic_survey_option_6
+    "zh" -> Res.drawable.ic_survey_option_7
+    "ja" -> Res.drawable.ic_survey_option_8
+    "ko" -> Res.drawable.ic_survey_option_9
+    "it" -> Res.drawable.ic_survey_option_10
+    "de" -> Res.drawable.ic_survey_option_de
+    else -> Res.drawable.ic_survey_option_pt
+}

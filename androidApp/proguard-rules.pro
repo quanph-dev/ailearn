@@ -42,27 +42,27 @@
 # Keep models and their fields to guarantee JSON parsing, API calls,
 # and DataStore caching never lose properties.
 # ===================================================================
--keep class com.example.basekmp.data.** { *; }
--keepclassmembers class com.example.basekmp.data.** { *; }
--keep class com.example.basekmp.ui.plan.PlanModels** { *; }
--keepclassmembers class com.example.basekmp.ui.plan.PlanModels** { *; }
--keep class com.example.basekmp.ui.plan.PlanFlow** { *; }
--keepclassmembers class com.example.basekmp.ui.plan.PlanFlow** { *; }
--keep class com.example.basekmp.ui.onboarding.OnboardingModels** { *; }
--keepclassmembers class com.example.basekmp.ui.onboarding.OnboardingModels** { *; }
--keep class com.example.basekmp.ui.grammar.GrammarQuestion** { *; }
--keepclassmembers class com.example.basekmp.ui.grammar.GrammarQuestion** { *; }
--keep class com.example.basekmp.ui.grammar.OptionState { *; }
--keep class com.example.basekmp.ui.vocab.VocabWord** { *; }
--keepclassmembers class com.example.basekmp.ui.vocab.VocabWord** { *; }
--keep class com.example.basekmp.ui.tutor.ChatMessage** { *; }
--keepclassmembers class com.example.basekmp.ui.tutor.ChatMessage** { *; }
--keep class com.example.basekmp.ui.tutor.TutorAi** { *; }
--keepclassmembers class com.example.basekmp.ui.tutor.TutorAi** { *; }
--keep class com.example.basekmp.ui.speaking.SpeakingCard** { *; }
--keepclassmembers class com.example.basekmp.ui.speaking.SpeakingCard** { *; }
--keep class com.example.basekmp.BaseLanguage** { *; }
--keep class com.example.basekmp.BaseAppRepository** { *; }
+-keep class com.semavia.ailearn.data.** { *; }
+-keepclassmembers class com.semavia.ailearn.data.** { *; }
+-keep class com.semavia.ailearn.ui.plan.PlanModels** { *; }
+-keepclassmembers class com.semavia.ailearn.ui.plan.PlanModels** { *; }
+-keep class com.semavia.ailearn.ui.plan.PlanFlow** { *; }
+-keepclassmembers class com.semavia.ailearn.ui.plan.PlanFlow** { *; }
+-keep class com.semavia.ailearn.ui.onboarding.OnboardingModels** { *; }
+-keepclassmembers class com.semavia.ailearn.ui.onboarding.OnboardingModels** { *; }
+-keep class com.semavia.ailearn.ui.grammar.GrammarQuestion** { *; }
+-keepclassmembers class com.semavia.ailearn.ui.grammar.GrammarQuestion** { *; }
+-keep class com.semavia.ailearn.ui.grammar.OptionState { *; }
+-keep class com.semavia.ailearn.ui.vocab.VocabWord** { *; }
+-keepclassmembers class com.semavia.ailearn.ui.vocab.VocabWord** { *; }
+-keep class com.semavia.ailearn.ui.tutor.ChatMessage** { *; }
+-keepclassmembers class com.semavia.ailearn.ui.tutor.ChatMessage** { *; }
+-keep class com.semavia.ailearn.ui.tutor.TutorAi** { *; }
+-keepclassmembers class com.semavia.ailearn.ui.tutor.TutorAi** { *; }
+-keep class com.semavia.ailearn.ui.speaking.SpeakingCard** { *; }
+-keepclassmembers class com.semavia.ailearn.ui.speaking.SpeakingCard** { *; }
+-keep class com.semavia.ailearn.BaseLanguage** { *; }
+-keep class com.semavia.ailearn.BaseAppRepository** { *; }
 
 # ===================================================================
 # AndroidX Room & SQLite
@@ -111,10 +111,10 @@
 -keepclassmembers class com.proxglobal.ads.** { *; }
 -keep class com.google.ads.pro.** { *; }
 -keepclassmembers class com.google.ads.pro.** { *; }
--keep class com.example.basekmp.MyAdsUtils** { *; }
--keepclassmembers class com.example.basekmp.MyAdsUtils** { *; }
--keep class com.example.basekmp.CollapsePassThroughFrameLayout { *; }
--keepclassmembers class com.example.basekmp.CollapsePassThroughFrameLayout { *; }
+-keep class com.semavia.ailearn.MyAdsUtils** { *; }
+-keepclassmembers class com.semavia.ailearn.MyAdsUtils** { *; }
+-keep class com.semavia.ailearn.CollapsePassThroughFrameLayout { *; }
+-keepclassmembers class com.semavia.ailearn.CollapsePassThroughFrameLayout { *; }
 
 # AdMob & Mediation Adapters
 -keep class com.google.ads.mediation.** { *; }
@@ -182,7 +182,7 @@
 # ===================================================================
 # Android Platform Speech & TTS
 # ===================================================================
--keep class com.example.basekmp.ui.speaking.PlatformTextToSpeech** { *; }
--keepclassmembers class com.example.basekmp.ui.speaking.PlatformTextToSpeech** { *; }
--keep class com.example.basekmp.ui.speaking.PlatformSpeechRecognition** { *; }
--keepclassmembers class com.example.basekmp.ui.speaking.PlatformSpeechRecognition** { *; }
+-keep class com.semavia.ailearn.ui.speaking.PlatformTextToSpeech** { *; }
+-keepclassmembers class com.semavia.ailearn.ui.speaking.PlatformTextToSpeech** { *; }
+-keep class com.semavia.ailearn.ui.speaking.PlatformSpeechRecognition** { *; }
+-keepclassmembers class com.semavia.ailearn.ui.speaking.PlatformSpeechRecognition** { *; }

@@ -5,7 +5,8 @@ Mẫu Kotlin Multiplatform dùng Compose cho Android và iOS. Luồng hiện có
 ## Định danh mặc định
 
 - Tên Gradle project: `BaseKMP`
-- Android namespace/application ID: `com.example.basekmp`
+- Android namespace: `com.semavia.ailearn`
+- Android application ID: `com.semavia.language.learning.ai`
 - iOS product name/bundle ID: `BaseKMP` / `com.example.basekmp`
 - Tên hiển thị Android: `BaseKMP`
 

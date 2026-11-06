@@ -1,0 +1,2237 @@
+package com.semavia.ailearn.data
+
+import ailearn.shared.generated.resources.tr_10_cards
+import ailearn.shared.generated.resources.tr_10_days_in_a_row_keep_it_up
+import ailearn.shared.generated.resources.tr_10_min
+import ailearn.shared.generated.resources.tr_10_min_day
+import ailearn.shared.generated.resources.tr_10_questions
+import ailearn.shared.generated.resources.tr_10_words
+import ailearn.shared.generated.resources.tr_15_cards
+import ailearn.shared.generated.resources.tr_15_min_day
+import ailearn.shared.generated.resources.tr_15_questions
+import ailearn.shared.generated.resources.tr_15_words
+import ailearn.shared.generated.resources.tr_1_d_2_d_activities
+import ailearn.shared.generated.resources.tr_1_d_2_d_activities_complete
+import ailearn.shared.generated.resources.tr_1_d_2_d_completed
+import ailearn.shared.generated.resources.tr_1_d_2_d_correct
+import ailearn.shared.generated.resources.tr_1_d_2_d_days
+import ailearn.shared.generated.resources.tr_1_d_2_d_days_completed
+import ailearn.shared.generated.resources.tr_1_d_2_d_min
+import ailearn.shared.generated.resources.tr_1_d_activities
+import ailearn.shared.generated.resources.tr_1_d_complete
+import ailearn.shared.generated.resources.tr_1_d_days
+import ailearn.shared.generated.resources.tr_1_d_days_streak_keep_learning
+import ailearn.shared.generated.resources.tr_1_d_done
+import ailearn.shared.generated.resources.tr_1_d_in_a_row
+import ailearn.shared.generated.resources.tr_1_d_min
+import ailearn.shared.generated.resources.tr_1_d_min_day
+import ailearn.shared.generated.resources.tr_1_d_min_spoken
+import ailearn.shared.generated.resources.tr_1_d_minute_speaking_with_ai
+import ailearn.shared.generated.resources.tr_1_d_new_words_today
+import ailearn.shared.generated.resources.tr_1_d_questions_vocabulary_translation
+import ailearn.shared.generated.resources.tr_1_d_sentences_to_say
+import ailearn.shared.generated.resources.tr_1_d_stages_2_d_days
+import ailearn.shared.generated.resources.tr_1_d_w
+import ailearn.shared.generated.resources.tr_1_d_words
+import ailearn.shared.generated.resources.tr_1_s_exams
+import ailearn.shared.generated.resources.tr_1_s_progress
+import ailearn.shared.generated.resources.tr_1_s_session
+import ailearn.shared.generated.resources.tr_20_min
+import ailearn.shared.generated.resources.tr_20_min_day
+import ailearn.shared.generated.resources.tr_20_questions
+import ailearn.shared.generated.resources.tr_2d_ago
+import ailearn.shared.generated.resources.tr_2h_ago
+import ailearn.shared.generated.resources.tr_30_min
+import ailearn.shared.generated.resources.tr_30_min_day
+import ailearn.shared.generated.resources.tr_50_off
+import ailearn.shared.generated.resources.tr_5_cards
+import ailearn.shared.generated.resources.tr_5_min
+import ailearn.shared.generated.resources.tr_5_min_day
+import ailearn.shared.generated.resources.tr_5_minute_ai_lesson
+import ailearn.shared.generated.resources.tr_5_questions
+import ailearn.shared.generated.resources.tr_5_second_1_s_quiz
+import ailearn.shared.generated.resources.tr_5_words
+import ailearn.shared.generated.resources.tr_a1_beginner
+import ailearn.shared.generated.resources.tr_a2_elementary
+import ailearn.shared.generated.resources.tr_a_job_interview
+import ailearn.shared.generated.resources.tr_a_little_every_day
+import ailearn.shared.generated.resources.tr_a_new_day_of_lessons_opens_each_day
+import ailearn.shared.generated.resources.tr_a_plan_built_around_you
+import ailearn.shared.generated.resources.tr_a_quick_session_keeps_your_progress_going
+import ailearn.shared.generated.resources.tr_a_short_voice_lesson_with_your_ai_tutor
+import ailearn.shared.generated.resources.tr_about_me
+import ailearn.shared.generated.resources.tr_academic
+import ailearn.shared.generated.resources.tr_acceptable_use
+import ailearn.shared.generated.resources.tr_acceptance_of_terms
+import ailearn.shared.generated.resources.tr_accepting_declining
+import ailearn.shared.generated.resources.tr_accuracy_score
+import ailearn.shared.generated.resources.tr_actions
+import ailearn.shared.generated.resources.tr_ad_free_experience
+import ailearn.shared.generated.resources.tr_advanced
+import ailearn.shared.generated.resources.tr_advanced_storytelling
+import ailearn.shared.generated.resources.tr_agreeing
+import ailearn.shared.generated.resources.tr_ai_assistant
+import ailearn.shared.generated.resources.tr_ai_assistant_robot
+import ailearn.shared.generated.resources.tr_ai_conversation
+import ailearn.shared.generated.resources.tr_ai_conversation_completed
+import ailearn.shared.generated.resources.tr_ai_tutor
+import ailearn.shared.generated.resources.tr_ai_tutor_sessions
+import ailearn.shared.generated.resources.tr_ai_tutor_vocabulary_speaking_and_grammar_practice_exactly_what_y
+import ailearn.shared.generated.resources.tr_all
+import ailearn.shared.generated.resources.tr_all_1_d_words_saved
+import ailearn.shared.generated.resources.tr_all_words_are_already_in_your_word_list
+import ailearn.shared.generated.resources.tr_allow
+import ailearn.shared.generated.resources.tr_allow_microphone
+import ailearn.shared.generated.resources.tr_almost_add_1_s_after_2_s
+import ailearn.shared.generated.resources.tr_almost_leave_out_1_s
+import ailearn.shared.generated.resources.tr_almost_start_with_1_s
+import ailearn.shared.generated.resources.tr_almost_there_005287e2
+import ailearn.shared.generated.resources.tr_almost_there_74c77704
+import ailearn.shared.generated.resources.tr_almost_use_1_s_after_2_s
+import ailearn.shared.generated.resources.tr_amazing
+import ailearn.shared.generated.resources.tr_analyzing_your_goal
+import ailearn.shared.generated.resources.tr_answer_a_few_questions_and_get_a_30_day_plan_made_for_your_goal
+import ailearn.shared.generated.resources.tr_answer_a_few_quick_questions_so_i_can_personalise_your_learning
+import ailearn.shared.generated.resources.tr_answer_correctly_to_earn_1_free_ai_chat
+import ailearn.shared.generated.resources.tr_answer_correctly_to_receive_1_d_free_chat_attempts
+import ailearn.shared.generated.resources.tr_appearance
+import ailearn.shared.generated.resources.tr_arabic
+import ailearn.shared.generated.resources.tr_are_you_sure
+import ailearn.shared.generated.resources.tr_arranging_times
+import ailearn.shared.generated.resources.tr_articles
+import ailearn.shared.generated.resources.tr_asking_for_directions
+import ailearn.shared.generated.resources.tr_asking_for_help
+import ailearn.shared.generated.resources.tr_asking_someone_s_name
+import ailearn.shared.generated.resources.tr_assistant
+import ailearn.shared.generated.resources.tr_at_the_bank
+import ailearn.shared.generated.resources.tr_at_the_bus_stop
+import ailearn.shared.generated.resources.tr_at_the_doctor_s_office
+import ailearn.shared.generated.resources.tr_at_the_pharmacy
+import ailearn.shared.generated.resources.tr_average
+import ailearn.shared.generated.resources.tr_average_pronunciation_score
+import ailearn.shared.generated.resources.tr_awesome
+import ailearn.shared.generated.resources.tr_aww_i_love_you_too
+import ailearn.shared.generated.resources.tr_aww_thank_you
+import ailearn.shared.generated.resources.tr_b1_intermediate
+import ailearn.shared.generated.resources.tr_b2_upper_intermediate
+import ailearn.shared.generated.resources.tr_back
+import ailearn.shared.generated.resources.tr_back_5_seconds
+import ailearn.shared.generated.resources.tr_back_online
+import ailearn.shared.generated.resources.tr_back_soon
+import ailearn.shared.generated.resources.tr_back_to_day_1_d
+import ailearn.shared.generated.resources.tr_back_to_learning_path
+import ailearn.shared.generated.resources.tr_baggage
+import ailearn.shared.generated.resources.tr_balanced_learning
+import ailearn.shared.generated.resources.tr_basic_directions
+import ailearn.shared.generated.resources.tr_beginner
+import ailearn.shared.generated.resources.tr_beginner_conversations
+import ailearn.shared.generated.resources.tr_best_value
+import ailearn.shared.generated.resources.tr_better_luck_next_time
+import ailearn.shared.generated.resources.tr_boarding
+import ailearn.shared.generated.resources.tr_boing_up_we_go
+import ailearn.shared.generated.resources.tr_booking_a_hotel_room
+import ailearn.shared.generated.resources.tr_boop
+import ailearn.shared.generated.resources.tr_build_confidence_every_day
+import ailearn.shared.generated.resources.tr_build_real_language_skills_with_interactive_daily_practice
+import ailearn.shared.generated.resources.tr_build_stronger_overall_1_s_skills
+import ailearn.shared.generated.resources.tr_build_your_english_skills_step_by_step_and_gain_the_confidence_t
+import ailearn.shared.generated.resources.tr_building_your_30_day_roadmap
+import ailearn.shared.generated.resources.tr_business
+import ailearn.shared.generated.resources.tr_buying_groceries
+import ailearn.shared.generated.resources.tr_buying_something
+import ailearn.shared.generated.resources.tr_by_using_semavia_you_agree_to_these_terms
+import ailearn.shared.generated.resources.tr_c1_advanced
+import ailearn.shared.generated.resources.tr_calling
+import ailearn.shared.generated.resources.tr_can_t_speak_now_skip
+import ailearn.shared.generated.resources.tr_can_you_catch_this
+import ailearn.shared.generated.resources.tr_can_you_remember_this_word
+import ailearn.shared.generated.resources.tr_cancel
+import ailearn.shared.generated.resources.tr_cancel_subscription
+import ailearn.shared.generated.resources.tr_casual_expressions
+import ailearn.shared.generated.resources.tr_category
+import ailearn.shared.generated.resources.tr_change
+import ailearn.shared.generated.resources.tr_change_assistant
+import ailearn.shared.generated.resources.tr_change_goal
+import ailearn.shared.generated.resources.tr_change_your_assistant
+import ailearn.shared.generated.resources.tr_change_your_goal
+import ailearn.shared.generated.resources.tr_changes
+import ailearn.shared.generated.resources.tr_chat_with_ai
+import ailearn.shared.generated.resources.tr_chat_with_your_ai_tutor_about_anything
+import ailearn.shared.generated.resources.tr_chat_with_your_personal_ai_tutor_and_learn_any_language_naturall
+import ailearn.shared.generated.resources.tr_check_answer
+import ailearn.shared.generated.resources.tr_check_in
+import ailearn.shared.generated.resources.tr_check_sentence
+import ailearn.shared.generated.resources.tr_checking_in_at_the_airport
+import ailearn.shared.generated.resources.tr_chinese
+import ailearn.shared.generated.resources.tr_choose_a_duration_that_works_for_you
+import ailearn.shared.generated.resources.tr_choose_a_new_goal
+import ailearn.shared.generated.resources.tr_choose_a_pace_that_works_for_you
+import ailearn.shared.generated.resources.tr_choose_another_goal
+import ailearn.shared.generated.resources.tr_choose_what_you_learn_and_who_guides_you
+import ailearn.shared.generated.resources.tr_choose_your_1_s_practice_partner
+import ailearn.shared.generated.resources.tr_choose_your_ai_assistant
+import ailearn.shared.generated.resources.tr_choose_your_ai_tutor_voice
+import ailearn.shared.generated.resources.tr_choose_your_english_level
+import ailearn.shared.generated.resources.tr_choose_your_level
+import ailearn.shared.generated.resources.tr_choose_your_main_goal_you_can_change_it_later
+import ailearn.shared.generated.resources.tr_choose_your_time
+import ailearn.shared.generated.resources.tr_clarifying_information
+import ailearn.shared.generated.resources.tr_clear
+import ailearn.shared.generated.resources.tr_clear_and_patient
+import ailearn.shared.generated.resources.tr_clear_chat
+import ailearn.shared.generated.resources.tr_close
+import ailearn.shared.generated.resources.tr_close_keyboard
+import ailearn.shared.generated.resources.tr_close_offer
+import ailearn.shared.generated.resources.tr_closer_to_your_goal
+import ailearn.shared.generated.resources.tr_colleagues
+import ailearn.shared.generated.resources.tr_colors
+import ailearn.shared.generated.resources.tr_colors_and_clothes
+import ailearn.shared.generated.resources.tr_combining_everything_in_short_real_life_dialogues
+import ailearn.shared.generated.resources.tr_come_back_tomorrow_for_a_new_question
+import ailearn.shared.generated.resources.tr_come_back_tomorrow_for_a_new_word
+import ailearn.shared.generated.resources.tr_come_back_tomorrow_for_your_next_lesson
+import ailearn.shared.generated.resources.tr_coming_soon
+import ailearn.shared.generated.resources.tr_coming_soon_in_1_s
+import ailearn.shared.generated.resources.tr_common_expressions_used_by_native_speakers
+import ailearn.shared.generated.resources.tr_common_foods
+import ailearn.shared.generated.resources.tr_common_problems
+import ailearn.shared.generated.resources.tr_communicate_when_traveling_abroad
+import ailearn.shared.generated.resources.tr_comparing_products
+import ailearn.shared.generated.resources.tr_complaints
+import ailearn.shared.generated.resources.tr_complete
+import ailearn.shared.generated.resources.tr_complete_a_session
+import ailearn.shared.generated.resources.tr_complete_each_activity_to_finish_this_day
+import ailearn.shared.generated.resources.tr_complete_lessons_and_practice_to_see_your_progress_here
+import ailearn.shared.generated.resources.tr_complete_the_lesson_before_it_to_unlock_this_one
+import ailearn.shared.generated.resources.tr_complete_the_previous_activity_first
+import ailearn.shared.generated.resources.tr_completed
+import ailearn.shared.generated.resources.tr_completed_1_d
+import ailearn.shared.generated.resources.tr_compromises
+import ailearn.shared.generated.resources.tr_congratulation
+import ailearn.shared.generated.resources.tr_congratulations
+import ailearn.shared.generated.resources.tr_congratulations_that_s_the_right_answer
+import ailearn.shared.generated.resources.tr_conjunctions
+import ailearn.shared.generated.resources.tr_contact
+import ailearn.shared.generated.resources.tr_contact_support
+import ailearn.shared.generated.resources.tr_content_unavailable
+import ailearn.shared.generated.resources.tr_continue
+import ailearn.shared.generated.resources.tr_continue_day_1_d
+import ailearn.shared.generated.resources.tr_continue_learning_a2b3ad83
+import ailearn.shared.generated.resources.tr_continue_learning_acb708f6
+import ailearn.shared.generated.resources.tr_continue_lesson
+import ailearn.shared.generated.resources.tr_continue_conversation_in_semavia
+import ailearn.shared.generated.resources.tr_continue_to_ai_conversation
+import ailearn.shared.generated.resources.tr_continue_to_quick_quiz
+import ailearn.shared.generated.resources.tr_continue_to_speaking
+import ailearn.shared.generated.resources.tr_continue_to_video
+import ailearn.shared.generated.resources.tr_contributing_ideas
+import ailearn.shared.generated.resources.tr_conversational_tone
+import ailearn.shared.generated.resources.tr_copied
+import ailearn.shared.generated.resources.tr_copy
+import ailearn.shared.generated.resources.tr_correct_0ad65ab6
+import ailearn.shared.generated.resources.tr_correct_48e09e45
+import ailearn.shared.generated.resources.tr_correct_and_clear
+import ailearn.shared.generated.resources.tr_correct_answer_1_s
+import ailearn.shared.generated.resources.tr_could_not_complete_lesson
+import ailearn.shared.generated.resources.tr_couldn_t_get_a_reply_please_try_again
+import ailearn.shared.generated.resources.tr_couldn_t_load_this_video
+import ailearn.shared.generated.resources.tr_couldn_t_load_your_plan
+import ailearn.shared.generated.resources.tr_couldn_t_start_recording
+import ailearn.shared.generated.resources.tr_country
+import ailearn.shared.generated.resources.tr_age
+import ailearn.shared.generated.resources.tr_create
+import ailearn.shared.generated.resources.tr_create_my_learning_plan
+import ailearn.shared.generated.resources.tr_create_my_plan
+import ailearn.shared.generated.resources.tr_create_your_learning_path
+import ailearn.shared.generated.resources.tr_creating_your_learning_path
+import ailearn.shared.generated.resources.tr_current_level
+import ailearn.shared.generated.resources.tr_custom
+import ailearn.shared.generated.resources.tr_custom_1_d_min_day
+import ailearn.shared.generated.resources.tr_daily_activities
+import ailearn.shared.generated.resources.tr_daily_chat
+import ailearn.shared.generated.resources.tr_daily_conversation
+import ailearn.shared.generated.resources.tr_daily_flash_card
+import ailearn.shared.generated.resources.tr_daily_goal
+import ailearn.shared.generated.resources.tr_daily_goal_1_d_min
+import ailearn.shared.generated.resources.tr_daily_goal_updated_to_1_d_min
+import ailearn.shared.generated.resources.tr_daily_lesson_reminder
+import ailearn.shared.generated.resources.tr_daily_life
+import ailearn.shared.generated.resources.tr_daily_listening
+import ailearn.shared.generated.resources.tr_daily_practice
+import ailearn.shared.generated.resources.tr_daily_quiz
+import ailearn.shared.generated.resources.tr_daily_routine
+import ailearn.shared.generated.resources.tr_daily_study_time
+import ailearn.shared.generated.resources.tr_daily_translation_and_grammar_quizzes
+import ailearn.shared.generated.resources.tr_data_retention
+import ailearn.shared.generated.resources.tr_data_sharing
+import ailearn.shared.generated.resources.tr_date
+import ailearn.shared.generated.resources.tr_dates
+import ailearn.shared.generated.resources.tr_day
+import ailearn.shared.generated.resources.tr_day_1_d
+import ailearn.shared.generated.resources.tr_day_1_d_2_d
+import ailearn.shared.generated.resources.tr_day_1_d_complete_b0b47607
+import ailearn.shared.generated.resources.tr_day_1_d_complete_cf3ee559
+import ailearn.shared.generated.resources.tr_day_1_d_completed_a04f064c
+import ailearn.shared.generated.resources.tr_day_1_d_completed_e37522ff
+import ailearn.shared.generated.resources.tr_day_1_d_done_you_re_amazing
+import ailearn.shared.generated.resources.tr_day_1_d_locked
+import ailearn.shared.generated.resources.tr_day_1_d_of_2_d
+import ailearn.shared.generated.resources.tr_day_1_d_unlocks_in_2_d_days
+import ailearn.shared.generated.resources.tr_day_1_d_unlocks_tomorrow
+import ailearn.shared.generated.resources.tr_days
+import ailearn.shared.generated.resources.tr_days_months_and_dates
+import ailearn.shared.generated.resources.tr_debating_a_topic
+import ailearn.shared.generated.resources.tr_decent_but_we_can_make_it_better_please_leave_suggestions
+import ailearn.shared.generated.resources.tr_deep_learning
+import ailearn.shared.generated.resources.tr_delete
+import ailearn.shared.generated.resources.tr_delete_this_activity
+import ailearn.shared.generated.resources.tr_delete_this_record
+import ailearn.shared.generated.resources.tr_describe_your_goal
+import ailearn.shared.generated.resources.tr_describing_a_complex_process
+import ailearn.shared.generated.resources.tr_describing_a_problem
+import ailearn.shared.generated.resources.tr_describing_basic_symptoms
+import ailearn.shared.generated.resources.tr_describing_people
+import ailearn.shared.generated.resources.tr_describing_your_home
+import ailearn.shared.generated.resources.tr_detail
+import ailearn.shared.generated.resources.tr_detailed_and_engaging_stories
+import ailearn.shared.generated.resources.tr_detailed_professional_answers_and_follow_ups
+import ailearn.shared.generated.resources.tr_details
+import ailearn.shared.generated.resources.tr_developing_and_supporting_an_argument
+import ailearn.shared.generated.resources.tr_diamonds
+import ailearn.shared.generated.resources.tr_did_i_say_it_right
+import ailearn.shared.generated.resources.tr_difficult_conversations
+import ailearn.shared.generated.resources.tr_difficulty
+import ailearn.shared.generated.resources.tr_disagreeing
+import ailearn.shared.generated.resources.tr_disagreements
+import ailearn.shared.generated.resources.tr_disclaimer
+import ailearn.shared.generated.resources.tr_discussing_culture_and_traditions
+import ailearn.shared.generated.resources.tr_discussing_current_events
+import ailearn.shared.generated.resources.tr_discussing_future_plans
+import ailearn.shared.generated.resources.tr_discussing_health_and_fitness
+import ailearn.shared.generated.resources.tr_discussing_the_news
+import ailearn.shared.generated.resources.tr_discussions_opinions
+import ailearn.shared.generated.resources.tr_do_you_know_this_word
+import ailearn.shared.generated.resources.tr_don_t_allow
+import ailearn.shared.generated.resources.tr_don_t_forget_this_word
+import ailearn.shared.generated.resources.tr_don_t_give_up_you_can_do_it_okay_i_forgive_you
+import ailearn.shared.generated.resources.tr_don_t_shout_at_me
+import ailearn.shared.generated.resources.tr_done
+import ailearn.shared.generated.resources.tr_double_tap
+import ailearn.shared.generated.resources.tr_downloading_video
+import ailearn.shared.generated.resources.tr_eek_don_t_shout_at_me
+import ailearn.shared.generated.resources.tr_elementary
+import ailearn.shared.generated.resources.tr_enable_app_notifications_for_continuous_using_when_the_app_is_cl
+import ailearn.shared.generated.resources.tr_enable_full_screen_intent_for_the_best_app_experience_and_instan
+import ailearn.shared.generated.resources.tr_enable_microphone_access_in_settings_to_use_voice_practice
+import ailearn.shared.generated.resources.tr_end_lesson
+import ailearn.shared.generated.resources.tr_semavia
+import ailearn.shared.generated.resources.tr_semavia_ai_tutor
+import ailearn.shared.generated.resources.tr_semavia_learn_languages
+import ailearn.shared.generated.resources.tr_semavia_stores_learning_preferences
+import ailearn.shared.generated.resources.tr_english
+import ailearn.shared.generated.resources.tr_english_learn_pro
+import ailearn.shared.generated.resources.tr_english_learn_pro_is_offered_as_weekly_and_yearly_auto_renewing
+import ailearn.shared.generated.resources.tr_english_level
+import ailearn.shared.generated.resources.tr_enjoying_the_app
+import ailearn.shared.generated.resources.tr_enter_message
+import ailearn.shared.generated.resources.tr_enter_name
+import ailearn.shared.generated.resources.tr_even_robots_need_a_rest_day
+import ailearn.shared.generated.resources.tr_every_mistake_is_a_step_forward_keep_going
+import ailearn.shared.generated.resources.tr_everyday_conversation
+import ailearn.shared.generated.resources.tr_everyday_questions
+import ailearn.shared.generated.resources.tr_example_answer
+import ailearn.shared.generated.resources.tr_example_sentence
+import ailearn.shared.generated.resources.tr_excellent
+import ailearn.shared.generated.resources.tr_excellent_clarity_and_accent
+import ailearn.shared.generated.resources.tr_excellent_pronunciation
+import ailearn.shared.generated.resources.tr_exchanges
+import ailearn.shared.generated.resources.tr_exit
+import ailearn.shared.generated.resources.tr_exit_session
+import ailearn.shared.generated.resources.tr_experiences_stories
+import ailearn.shared.generated.resources.tr_explain_this
+import ailearn.shared.generated.resources.tr_explain_what_happened
+import ailearn.shared.generated.resources.tr_explaining_a_problem_and_asking_for_help
+import ailearn.shared.generated.resources.tr_explaining_a_technical_problem
+import ailearn.shared.generated.resources.tr_explaining_ideas_clearly_and_confidently
+import ailearn.shared.generated.resources.tr_explaining_reasons
+import ailearn.shared.generated.resources.tr_explaining_where_you_live
+import ailearn.shared.generated.resources.tr_explore_all_features
+import ailearn.shared.generated.resources.tr_explore_more_in_the_app
+import ailearn.shared.generated.resources.tr_extra_practice
+import ailearn.shared.generated.resources.tr_failed_to_save_language_please_try_again
+import ailearn.shared.generated.resources.tr_family_friends
+import ailearn.shared.generated.resources.tr_family_members
+import ailearn.shared.generated.resources.tr_female
+import ailearn.shared.generated.resources.tr_fillers
+import ailearn.shared.generated.resources.tr_finish
+import ailearn.shared.generated.resources.tr_finish_1_s_first
+import ailearn.shared.generated.resources.tr_finish_day_1_d_first_2ff2e6ee
+import ailearn.shared.generated.resources.tr_finish_day_1_d_first_a7d472be
+import ailearn.shared.generated.resources.tr_finish_the_1_s_level_to_unlock_this_one
+import ailearn.shared.generated.resources.tr_fix_my_sentence
+import ailearn.shared.generated.resources.tr_fluency
+import ailearn.shared.generated.resources.tr_food_drinks
+import ailearn.shared.generated.resources.tr_for_you
+import ailearn.shared.generated.resources.tr_for_your_goals_level_and_schedule
+import ailearn.shared.generated.resources.tr_formal_vs_casual_workplace_language
+import ailearn.shared.generated.resources.tr_forward_5_seconds
+import ailearn.shared.generated.resources.tr_free_chat_time
+import ailearn.shared.generated.resources.tr_free_chat_time_available
+import ailearn.shared.generated.resources.tr_french
+import ailearn.shared.generated.resources.tr_fresh_grammar_tips_were_added_to_practice
+import ailearn.shared.generated.resources.tr_fri_5_48_pm
+import ailearn.shared.generated.resources.tr_friendly_and_encouraging
+import ailearn.shared.generated.resources.tr_from_1_s
+import ailearn.shared.generated.resources.tr_german
+import ailearn.shared.generated.resources.tr_get_plan
+import ailearn.shared.generated.resources.tr_get_ready
+import ailearn.shared.generated.resources.tr_get_ready_for_test_day
+import ailearn.shared.generated.resources.tr_get_started
+import ailearn.shared.generated.resources.tr_get_unlimited_access
+import ailearn.shared.generated.resources.tr_getting_around
+import ailearn.shared.generated.resources.tr_getting_customer_support
+import ailearn.shared.generated.resources.tr_give_examples
+import ailearn.shared.generated.resources.tr_giving_a_presentation
+import ailearn.shared.generated.resources.tr_giving_your_opinion
+import ailearn.shared.generated.resources.tr_go_back
+import ailearn.shared.generated.resources.tr_goal
+import ailearn.shared.generated.resources.tr_good
+import ailearn.shared.generated.resources.tr_good_job
+import ailearn.shared.generated.resources.tr_good_pronunciation
+import ailearn.shared.generated.resources.tr_goodbye
+import ailearn.shared.generated.resources.tr_google_play_is_unavailable_on_this_device
+import ailearn.shared.generated.resources.tr_grammar
+import ailearn.shared.generated.resources.tr_grammar_quiz_completed_successfully
+import ailearn.shared.generated.resources.tr_grammar_tips
+import ailearn.shared.generated.resources.tr_grammar_type
+import ailearn.shared.generated.resources.tr_great_job
+import ailearn.shared.generated.resources.tr_great_job_1_s
+import ailearn.shared.generated.resources.tr_great_job_completing_today_s_english_speaking_lesson
+import ailearn.shared.generated.resources.tr_great_job_you_ve_completed_all_1_d_activities_for_today
+import ailearn.shared.generated.resources.tr_great_to_meet_you
+import ailearn.shared.generated.resources.tr_great_you_can_finish_now
+import ailearn.shared.generated.resources.tr_greeting_someone_new
+import ailearn.shared.generated.resources.tr_greetings_introductions
+import ailearn.shared.generated.resources.tr_hahaha_stop_it
+import ailearn.shared.generated.resources.tr_handling_a_complaint
+import ailearn.shared.generated.resources.tr_health_appointments
+import ailearn.shared.generated.resources.tr_hehe_do_that_again
+import ailearn.shared.generated.resources.tr_hehe_i_m_up_to_something
+import ailearn.shared.generated.resources.tr_hehe_that_tickles
+import ailearn.shared.generated.resources.tr_hehehe_stop_that_tickles
+import ailearn.shared.generated.resources.tr_hello
+import ailearn.shared.generated.resources.tr_hello_i_m_your_1_s_tutor_how_can_i_help_you_practise_today
+import ailearn.shared.generated.resources.tr_hello_ready_for_today_s_five_minute_lesson_tap_the_mic_and_tell
+import ailearn.shared.generated.resources.tr_help_support
+import ailearn.shared.generated.resources.tr_hey_that_hurts
+import ailearn.shared.generated.resources.tr_hey_that_s_too_much_poking
+import ailearn.shared.generated.resources.tr_hi_1_s
+import ailearn.shared.generated.resources.tr_hi_i_m_your_ai_1_s_tutor_ask_me_anything_or_pick_a_quick_action
+import ailearn.shared.generated.resources.tr_hi_there
+import ailearn.shared.generated.resources.tr_hindi
+import ailearn.shared.generated.resources.tr_hint
+import ailearn.shared.generated.resources.tr_hint_unavailable
+import ailearn.shared.generated.resources.tr_hmm_did_you_say_something
+import ailearn.shared.generated.resources.tr_hmm_what_are_you_up_to
+import ailearn.shared.generated.resources.tr_hmm_which_one_will_you_pick
+import ailearn.shared.generated.resources.tr_hold_mic_and_speak_aloud
+import ailearn.shared.generated.resources.tr_hold_the_mic_and_speak_clearly
+import ailearn.shared.generated.resources.tr_hold_to_speak
+import ailearn.shared.generated.resources.tr_hold_to_tickle
+import ailearn.shared.generated.resources.tr_home
+import ailearn.shared.generated.resources.tr_home_neighborhood
+import ailearn.shared.generated.resources.tr_hop
+import ailearn.shared.generated.resources.tr_hotels_accommodation
+import ailearn.shared.generated.resources.tr_hours
+import ailearn.shared.generated.resources.tr_how
+import ailearn.shared.generated.resources.tr_how_are_you_feeling
+import ailearn.shared.generated.resources.tr_how_much_1_s_do_you_know
+import ailearn.shared.generated.resources.tr_how_much_s_do_you_know
+import ailearn.shared.generated.resources.tr_how_much_time_can_you_spend_learning_each_day
+import ailearn.shared.generated.resources.tr_how_much_time_can_you_study_each_day
+import ailearn.shared.generated.resources.tr_how_we_use_information
+import ailearn.shared.generated.resources.tr_httpheaders_age
+import ailearn.shared.generated.resources.tr_huh_i_m_awake
+import ailearn.shared.generated.resources.tr_humor_informal_english
+import ailearn.shared.generated.resources.tr_i_believe_in_you
+import ailearn.shared.generated.resources.tr_i_can_copy_anything_you_say
+import ailearn.shared.generated.resources.tr_i_can_discuss_complex_topics
+import ailearn.shared.generated.resources.tr_i_can_have_conversations
+import ailearn.shared.generated.resources.tr_i_can_talk_about_familiar_topics
+import ailearn.shared.generated.resources.tr_i_can_use_simple_words_and_sentences
+import ailearn.shared.generated.resources.tr_i_know_little_or_no_1_s
+import ailearn.shared.generated.resources.tr_i_know_the_basics
+import ailearn.shared.generated.resources.tr_i_m_back_let_s_try_again
+import ailearn.shared.generated.resources.tr_i_m_getting_angry
+import ailearn.shared.generated.resources.tr_i_m_just_starting
+import ailearn.shared.generated.resources.tr_i_m_listening
+import ailearn.shared.generated.resources.tr_i_m_not_sure
+import ailearn.shared.generated.resources.tr_i_m_offline_touch_me_to_play
+import ailearn.shared.generated.resources.tr_i_m_quite_confident
+import ailearn.shared.generated.resources.tr_idioms
+import ailearn.shared.generated.resources.tr_idioms_expressions
+import ailearn.shared.generated.resources.tr_ielts
+import ailearn.shared.generated.resources.tr_ielts_vocabulary
+import ailearn.shared.generated.resources.tr_immigration
+import ailearn.shared.generated.resources.tr_improve_my_1_s
+import ailearn.shared.generated.resources.tr_improve_your_vocabulary_grammar_and_pronunciation_every_day
+import ailearn.shared.generated.resources.tr_in_progress
+import ailearn.shared.generated.resources.tr_in_this_lesson
+import ailearn.shared.generated.resources.tr_incorrect
+import ailearn.shared.generated.resources.tr_information_we_collect
+import ailearn.shared.generated.resources.tr_interface_language
+import ailearn.shared.generated.resources.tr_intermediate
+import ailearn.shared.generated.resources.tr_interrupting_politely
+import ailearn.shared.generated.resources.tr_interviewing_a_candidate
+import ailearn.shared.generated.resources.tr_introducing_your_family
+import ailearn.shared.generated.resources.tr_invitations
+import ailearn.shared.generated.resources.tr_invite_friends
+import ailearn.shared.generated.resources.tr_it_s_okay_if_you_re_not_sure
+import ailearn.shared.generated.resources.tr_italian
+import ailearn.shared.generated.resources.tr_japanese
+import ailearn.shared.generated.resources.tr_job_interviews
+import ailearn.shared.generated.resources.tr_jokes
+import ailearn.shared.generated.resources.tr_jump_back_in
+import ailearn.shared.generated.resources.tr_just_rs_8_400_year
+import ailearn.shared.generated.resources.tr_keep_going
+import ailearn.shared.generated.resources.tr_keep_going_to_finish_today_s_lesson
+import ailearn.shared.generated.resources.tr_keep_practicing
+import ailearn.shared.generated.resources.tr_keep_practicing_with_these_features
+import ailearn.shared.generated.resources.tr_keep_practicing_your_listening_in_today_s_lesson
+import ailearn.shared.generated.resources.tr_keep_your_streak_alive_today
+import ailearn.shared.generated.resources.tr_key_vocabulary
+import ailearn.shared.generated.resources.tr_korean
+import ailearn.shared.generated.resources.tr_languages
+import ailearn.shared.generated.resources.tr_last_updated
+import ailearn.shared.generated.resources.tr_last_updated_july_2_2026
+import ailearn.shared.generated.resources.tr_learn
+import ailearn.shared.generated.resources.tr_learn_1_s_for_classes_or_studying_abroad
+import ailearn.shared.generated.resources.tr_learn_a_new_word
+import ailearn.shared.generated.resources.tr_learn_english_and_speak_with_confidence
+import ailearn.shared.generated.resources.tr_learn_english_speak_naturally
+import ailearn.shared.generated.resources.tr_learn_faster_and_reach_your_english_goals_with_personalized_supp
+import ailearn.shared.generated.resources.tr_learn_language
+import ailearn.shared.generated.resources.tr_learn_with_ai
+import ailearn.shared.generated.resources.tr_learner
+import ailearn.shared.generated.resources.tr_learning
+import ailearn.shared.generated.resources.tr_learning_board
+import ailearn.shared.generated.resources.tr_learning_goal
+import ailearn.shared.generated.resources.tr_learning_history
+import ailearn.shared.generated.resources.tr_learning_path
+import ailearn.shared.generated.resources.tr_learning_progress
+import ailearn.shared.generated.resources.tr_leave
+import ailearn.shared.generated.resources.tr_leave_lesson
+import ailearn.shared.generated.resources.tr_leave_this_lesson
+import ailearn.shared.generated.resources.tr_leave_us_suggestions_and_ideas_to_make_it_perfect
+import ailearn.shared.generated.resources.tr_legal
+import ailearn.shared.generated.resources.tr_lesson
+import ailearn.shared.generated.resources.tr_lesson_complete
+import ailearn.shared.generated.resources.tr_lesson_content_is_preparing
+import ailearn.shared.generated.resources.tr_lessons_and_ai_tutor_feedback_are_provided_as_is_for_educational
+import ailearn.shared.generated.resources.tr_let_me_use_the_microphone_so_i_can_hear_you
+import ailearn.shared.generated.resources.tr_let_s_finish_day_1_d
+import ailearn.shared.generated.resources.tr_let_s_make_your_learning_journey_more_personal
+import ailearn.shared.generated.resources.tr_let_s_practise_1_s_together_speak_naturally_and_i_ll_help_you_fe
+import ailearn.shared.generated.resources.tr_let_s_start
+import ailearn.shared.generated.resources.tr_let_s_take_the_first_step
+import ailearn.shared.generated.resources.tr_level_1_d_2_d_xp_to_go
+import ailearn.shared.generated.resources.tr_level_1_s
+import ailearn.shared.generated.resources.tr_level_6b9acfff
+import ailearn.shared.generated.resources.tr_level_7c7f5d04
+import ailearn.shared.generated.resources.tr_level_of_difficulty
+import ailearn.shared.generated.resources.tr_likes_and_dislikes
+import ailearn.shared.generated.resources.tr_limited_time_offer
+import ailearn.shared.generated.resources.tr_line_1_d_of_2_d
+import ailearn.shared.generated.resources.tr_listen
+import ailearn.shared.generated.resources.tr_listen_and_repeat
+import ailearn.shared.generated.resources.tr_listen_carefully
+import ailearn.shared.generated.resources.tr_listen_choose_7d4a6f90
+import ailearn.shared.generated.resources.tr_listen_choose_d5ad2782
+import ailearn.shared.generated.resources.tr_listen_first
+import ailearn.shared.generated.resources.tr_listen_repeat_and_speak
+import ailearn.shared.generated.resources.tr_listening_4fc2512a
+import ailearn.shared.generated.resources.tr_listening_6c19a476
+import ailearn.shared.generated.resources.tr_listening_let_go_when_you_finish
+import ailearn.shared.generated.resources.tr_listening_release_to_evaluate
+import ailearn.shared.generated.resources.tr_listening_tap_to_stop
+import ailearn.shared.generated.resources.tr_loading
+import ailearn.shared.generated.resources.tr_loading_plan
+import ailearn.shared.generated.resources.tr_longer_more_natural_everyday_conversations
+import ailearn.shared.generated.resources.tr_making_a_business_pitch
+import ailearn.shared.generated.resources.tr_making_a_phone_call
+import ailearn.shared.generated.resources.tr_making_appointments
+import ailearn.shared.generated.resources.tr_making_plans
+import ailearn.shared.generated.resources.tr_making_plans_with_a_friend
+import ailearn.shared.generated.resources.tr_making_small_talk
+import ailearn.shared.generated.resources.tr_male
+import ailearn.shared.generated.resources.tr_master_every_conversation
+import ailearn.shared.generated.resources.tr_match_the_word
+import ailearn.shared.generated.resources.tr_matching_lessons_to_your_level
+import ailearn.shared.generated.resources.tr_meeting_a_neighbor
+import ailearn.shared.generated.resources.tr_meetings
+import ailearn.shared.generated.resources.tr_microphone_access_lets_android_recognize_your_speech_and_show_th
+import ailearn.shared.generated.resources.tr_microphone_permission_is_required
+import ailearn.shared.generated.resources.tr_mini_conversation
+import ailearn.shared.generated.resources.tr_minutes
+import ailearn.shared.generated.resources.tr_misunderstandings
+import ailearn.shared.generated.resources.tr_mon_8_05_pm
+import ailearn.shared.generated.resources.tr_more
+import ailearn.shared.generated.resources.tr_more_focused_practice
+import ailearn.shared.generated.resources.tr_more_practice
+import ailearn.shared.generated.resources.tr_mulling_it_over
+import ailearn.shared.generated.resources.tr_my_30_day_plan
+import ailearn.shared.generated.resources.tr_my_learning_path
+import ailearn.shared.generated.resources.tr_my_path
+import ailearn.shared.generated.resources.tr_my_voice_is_funnier
+import ailearn.shared.generated.resources.tr_nailed_it
+import ailearn.shared.generated.resources.tr_name
+import ailearn.shared.generated.resources.tr_native_language
+import ailearn.shared.generated.resources.tr_natural_conversations
+import ailearn.shared.generated.resources.tr_natural_responses
+import ailearn.shared.generated.resources.tr_negotiating_a_salary
+import ailearn.shared.generated.resources.tr_negotiation
+import ailearn.shared.generated.resources.tr_networking_at_an_event
+import ailearn.shared.generated.resources.tr_new
+import ailearn.shared.generated.resources.tr_new_content
+import ailearn.shared.generated.resources.tr_new_features
+import ailearn.shared.generated.resources.tr_next
+import ailearn.shared.generated.resources.tr_next_activity
+import ailearn.shared.generated.resources.tr_next_day_1_d
+import ailearn.shared.generated.resources.tr_next_sentence
+import ailearn.shared.generated.resources.tr_nice_one
+import ailearn.shared.generated.resources.tr_nice_one_more_word_learned
+import ailearn.shared.generated.resources.tr_nice_work_keep_it_up
+import ailearn.shared.generated.resources.tr_no_activity_yet_finish_a_lesson_or_practice_to_see_it_here
+import ailearn.shared.generated.resources.tr_no_ai_tutor_sessions_yet
+import ailearn.shared.generated.resources.tr_no_commitment_cancel_anytime
+import ailearn.shared.generated.resources.tr_no_email_app_found_write_to_1_s
+import ailearn.shared.generated.resources.tr_no_grammar_questions_available
+import ailearn.shared.generated.resources.tr_no_history_found
+import ailearn.shared.generated.resources.tr_no_internet_connection
+import ailearn.shared.generated.resources.tr_no_internet_connection_please_check_your_connection_and_try_agai
+import ailearn.shared.generated.resources.tr_no_internet_no_problem_talk_to_me_and_i_ll_copy_you
+import ailearn.shared.generated.resources.tr_no_lessons_yet
+import ailearn.shared.generated.resources.tr_no_new_words
+import ailearn.shared.generated.resources.tr_no_peeking_ahead
+import ailearn.shared.generated.resources.tr_no_previous_purchase_found
+import ailearn.shared.generated.resources.tr_no_saved_words_yet_78e66aba
+import ailearn.shared.generated.resources.tr_no_saved_words_yet_a1fc3801
+import ailearn.shared.generated.resources.tr_no_sessions_yet_finish_a_practice_to_see_it_here
+import ailearn.shared.generated.resources.tr_no_speaking_cards_available
+import ailearn.shared.generated.resources.tr_nod
+import ailearn.shared.generated.resources.tr_not_quite_651b1933
+import ailearn.shared.generated.resources.tr_not_quite_756c7660
+import ailearn.shared.generated.resources.tr_not_quite_b421a9c8
+import ailearn.shared.generated.resources.tr_not_satisfied
+import ailearn.shared.generated.resources.tr_not_sure
+import ailearn.shared.generated.resources.tr_notifications
+import ailearn.shared.generated.resources.tr_now
+import ailearn.shared.generated.resources.tr_number_of_questions
+import ailearn.shared.generated.resources.tr_number_of_speaking_cards
+import ailearn.shared.generated.resources.tr_number_of_words
+import ailearn.shared.generated.resources.tr_numbers
+import ailearn.shared.generated.resources.tr_numbers_and_prices
+import ailearn.shared.generated.resources.tr_numbers_time
+import ailearn.shared.generated.resources.tr_objects
+import ailearn.shared.generated.resources.tr_offline_mode
+import ailearn.shared.generated.resources.tr_oh_you_re_too_kind
+import ailearn.shared.generated.resources.tr_okay_i_forgive_you
+import ailearn.shared.generated.resources.tr_one_day_at_a_time
+import ailearn.shared.generated.resources.tr_one_sec
+import ailearn.shared.generated.resources.tr_one_session_to_reach_1_d_days
+import ailearn.shared.generated.resources.tr_only_rs_8_400_year
+import ailearn.shared.generated.resources.tr_open_day_1_d
+import ailearn.shared.generated.resources.tr_open_settings
+import ailearn.shared.generated.resources.tr_opens_in_1_s
+import ailearn.shared.generated.resources.tr_opinions_preferences
+import ailearn.shared.generated.resources.tr_ordering
+import ailearn.shared.generated.resources.tr_ordering_a_coffee
+import ailearn.shared.generated.resources.tr_ordering_at_a_fast_food_place
+import ailearn.shared.generated.resources.tr_ordering_basics
+import ailearn.shared.generated.resources.tr_ordering_breakfast
+import ailearn.shared.generated.resources.tr_ordering_food_at_a_cafe
+import ailearn.shared.generated.resources.tr_ordering_water_at_a_table
+import ailearn.shared.generated.resources.tr_ouch_stop_poking_me
+import ailearn.shared.generated.resources.tr_ouch_you_poked_me
+import ailearn.shared.generated.resources.tr_our_ai_is_tailoring_lessons_to_your_answers
+import ailearn.shared.generated.resources.tr_patience_my_friend
+import ailearn.shared.generated.resources.tr_pause
+import ailearn.shared.generated.resources.tr_paying
+import ailearn.shared.generated.resources.tr_perfect
+import ailearn.shared.generated.resources.tr_personal_information
+import ailearn.shared.generated.resources.tr_personalize_your_path
+import ailearn.shared.generated.resources.tr_personalized_for_you
+import ailearn.shared.generated.resources.tr_personalized_learning_path
+import ailearn.shared.generated.resources.tr_persuading_your_team
+import ailearn.shared.generated.resources.tr_persuasion
+import ailearn.shared.generated.resources.tr_phew_everything_is_spinning
+import ailearn.shared.generated.resources.tr_phone_conversations
+import ailearn.shared.generated.resources.tr_pick_a_goal_and_get_a_plan_for_every_day
+import ailearn.shared.generated.resources.tr_pick_one_to_start_learning
+import ailearn.shared.generated.resources.tr_pick_up_where_you_left_off
+import ailearn.shared.generated.resources.tr_pick_up_your_30_day_plan_here_one_day_at_a_time
+import ailearn.shared.generated.resources.tr_places_near_home
+import ailearn.shared.generated.resources.tr_plan_complete
+import ailearn.shared.generated.resources.tr_plan_content_unavailable
+import ailearn.shared.generated.resources.tr_plan_goals_couldn_t_be_loaded_check_your_connection_and_try_agai
+import ailearn.shared.generated.resources.tr_planning_a_trip
+import ailearn.shared.generated.resources.tr_planning_your_daily_practice
+import ailearn.shared.generated.resources.tr_play
+import ailearn.shared.generated.resources.tr_play_with_me_until_the_internet_is_back
+import ailearn.shared.generated.resources.tr_playing
+import ailearn.shared.generated.resources.tr_please_check_your_internet_connection_and_try_again
+import ailearn.shared.generated.resources.tr_please_let_us_know_how_we_can_improve_your_learning_experience
+import ailearn.shared.generated.resources.tr_please_try_again
+import ailearn.shared.generated.resources.tr_poke
+import ailearn.shared.generated.resources.tr_poor
+import ailearn.shared.generated.resources.tr_portuguese
+import ailearn.shared.generated.resources.tr_practice
+import ailearn.shared.generated.resources.tr_practice_conversations
+import ailearn.shared.generated.resources.tr_practice_daily_to_improve_your_english_and_speak_with_confidence
+import ailearn.shared.generated.resources.tr_practice_makes_progress
+import ailearn.shared.generated.resources.tr_practice_now
+import ailearn.shared.generated.resources.tr_practice_pronunciation_and_get_instant_feedback_on_every_word
+import ailearn.shared.generated.resources.tr_practice_type
+import ailearn.shared.generated.resources.tr_preferences
+import ailearn.shared.generated.resources.tr_premium
+import ailearn.shared.generated.resources.tr_premium_activated
+import ailearn.shared.generated.resources.tr_prepare_for_1_s_language_tests
+import ailearn.shared.generated.resources.tr_prepare_for_ielts_toeic_toefl_or_other_tests
+import ailearn.shared.generated.resources.tr_preparing_speech_for_this_language_please_try_again_in_a_moment
+import ailearn.shared.generated.resources.tr_prepositions
+import ailearn.shared.generated.resources.tr_presentations
+import ailearn.shared.generated.resources.tr_preview_voice
+import ailearn.shared.generated.resources.tr_prices
+import ailearn.shared.generated.resources.tr_privacy_policy
+import ailearn.shared.generated.resources.tr_problems_solutions
+import ailearn.shared.generated.resources.tr_professional_communication
+import ailearn.shared.generated.resources.tr_profile
+import ailearn.shared.generated.resources.tr_progress
+import ailearn.shared.generated.resources.tr_pronunciation
+import ailearn.shared.generated.resources.tr_pronunciation_score_732abe93
+import ailearn.shared.generated.resources.tr_pronunciation_score_7a124fe7
+import ailearn.shared.generated.resources.tr_proposals
+import ailearn.shared.generated.resources.tr_purchases_are_unavailable_right_now_please_try_again
+import ailearn.shared.generated.resources.tr_purchases_restored_pro_is_active
+import ailearn.shared.generated.resources.tr_question
+import ailearn.shared.generated.resources.tr_questions_get_harder_as_your_level_goes_up
+import ailearn.shared.generated.resources.tr_quick_listening_check
+import ailearn.shared.generated.resources.tr_quick_practice
+import ailearn.shared.generated.resources.tr_quick_quiz
+import ailearn.shared.generated.resources.tr_quick_quiz_complete
+import ailearn.shared.generated.resources.tr_quick_quiz_completed
+import ailearn.shared.generated.resources.tr_quick_word_check
+import ailearn.shared.generated.resources.tr_quiz_content_is_unavailable
+import ailearn.shared.generated.resources.tr_quiz_me
+import ailearn.shared.generated.resources.tr_random
+import ailearn.shared.generated.resources.tr_rate_us
+import ailearn.shared.generated.resources.tr_reach_your_goals
+import ailearn.shared.generated.resources.tr_read_aloud
+import ailearn.shared.generated.resources.tr_ready_for_day_1_d
+import ailearn.shared.generated.resources.tr_ready_for_today_s_lesson
+import ailearn.shared.generated.resources.tr_ready_for_today_s_practice
+import ailearn.shared.generated.resources.tr_ready_to_learn
+import ailearn.shared.generated.resources.tr_real_world_fluency
+import ailearn.shared.generated.resources.tr_record
+import ailearn.shared.generated.resources.tr_refunds
+import ailearn.shared.generated.resources.tr_relationships
+import ailearn.shared.generated.resources.tr_reminders
+import ailearn.shared.generated.resources.tr_reminders_to_continue_learning
+import ailearn.shared.generated.resources.tr_reminders_to_keep_your_streak_and_finish_your_lessons
+import ailearn.shared.generated.resources.tr_remove
+import ailearn.shared.generated.resources.tr_renting_an_apartment
+import ailearn.shared.generated.resources.tr_repeat_the_sentence_aloud
+import ailearn.shared.generated.resources.tr_rephrase_naturally
+import ailearn.shared.generated.resources.tr_replay
+import ailearn.shared.generated.resources.tr_reply
+import ailearn.shared.generated.resources.tr_reply_by_voice
+import ailearn.shared.generated.resources.tr_reply_in_1_s
+import ailearn.shared.generated.resources.tr_report
+import ailearn.shared.generated.resources.tr_report_an_issue_05d4d931
+import ailearn.shared.generated.resources.tr_report_an_issue_bd7b4f00
+import ailearn.shared.generated.resources.tr_requests
+import ailearn.shared.generated.resources.tr_reservations
+import ailearn.shared.generated.resources.tr_resolving_a_conflict
+import ailearn.shared.generated.resources.tr_restaurants_cafes
+import ailearn.shared.generated.resources.tr_restore
+import ailearn.shared.generated.resources.tr_returning_an_item
+import ailearn.shared.generated.resources.tr_review_this_word_to_receive_1_d_free_chat_attempts
+import ailearn.shared.generated.resources.tr_robot
+import ailearn.shared.generated.resources.tr_roleplay
+import ailearn.shared.generated.resources.tr_rooms
+import ailearn.shared.generated.resources.tr_rs_1_400
+import ailearn.shared.generated.resources.tr_rs_8_400
+import ailearn.shared.generated.resources.tr_russian
+import ailearn.shared.generated.resources.tr_sat_7_15_pm
+import ailearn.shared.generated.resources.tr_save
+import ailearn.shared.generated.resources.tr_save_1_d_new_words
+import ailearn.shared.generated.resources.tr_save_a_clip_s_new_words_in_video_shadowing_to_see_them_here
+import ailearn.shared.generated.resources.tr_save_all_new_words_1_d
+import ailearn.shared.generated.resources.tr_saved_1_d_words_to_your_word_list
+import ailearn.shared.generated.resources.tr_saved_words
+import ailearn.shared.generated.resources.tr_saved_words_1_d
+import ailearn.shared.generated.resources.tr_say_something
+import ailearn.shared.generated.resources.tr_say_something_else
+import ailearn.shared.generated.resources.tr_say_something_i_ll_repeat_it_in_my_funny_voice
+import ailearn.shared.generated.resources.tr_say_the_last_line_then_tap_finish
+import ailearn.shared.generated.resources.tr_saying_goodbye
+import ailearn.shared.generated.resources.tr_schedules
+import ailearn.shared.generated.resources.tr_school_study
+import ailearn.shared.generated.resources.tr_score
+import ailearn.shared.generated.resources.tr_score_1_d
+import ailearn.shared.generated.resources.tr_score_1_d_2_d
+import ailearn.shared.generated.resources.tr_score_bar
+import ailearn.shared.generated.resources.tr_seasons
+import ailearn.shared.generated.resources.tr_seconds
+import ailearn.shared.generated.resources.tr_see_all_2941c5ce
+import ailearn.shared.generated.resources.tr_see_all_8196e424
+import ailearn.shared.generated.resources.tr_see_you_tomorrow_for_day_1_d
+import ailearn.shared.generated.resources.tr_select_daily_goal
+import ailearn.shared.generated.resources.tr_select_english_level
+import ailearn.shared.generated.resources.tr_select_learn_language
+import ailearn.shared.generated.resources.tr_select_level
+import ailearn.shared.generated.resources.tr_select_native_language
+import ailearn.shared.generated.resources.tr_select_the_correct_answer
+import ailearn.shared.generated.resources.tr_select_the_correct_answer_to_receive_1_d_free_chat_attempts
+import ailearn.shared.generated.resources.tr_select_the_correct_answer_to_receive_your_credits_instantly
+import ailearn.shared.generated.resources.tr_selected
+import ailearn.shared.generated.resources.tr_send
+import ailearn.shared.generated.resources.tr_send_feedback
+import ailearn.shared.generated.resources.tr_sentence
+import ailearn.shared.generated.resources.tr_session_completed_successfully
+import ailearn.shared.generated.resources.tr_set_my_own_time
+import ailearn.shared.generated.resources.tr_set_time
+import ailearn.shared.generated.resources.tr_set_your_daily_study_time
+import ailearn.shared.generated.resources.tr_settings
+import ailearn.shared.generated.resources.tr_shadowing
+import ailearn.shared.generated.resources.tr_shadowing_accuracy
+import ailearn.shared.generated.resources.tr_shadowing_practice
+import ailearn.shared.generated.resources.tr_share_app
+import ailearn.shared.generated.resources.tr_share_semavia
+import ailearn.shared.generated.resources.tr_share_your_feedback_to_help_us_do_better
+import ailearn.shared.generated.resources.tr_shopping_basics
+import ailearn.shared.generated.resources.tr_shopping_for_clothes
+import ailearn.shared.generated.resources.tr_shopping_in_a_store
+import ailearn.shared.generated.resources.tr_shopping_returns
+import ailearn.shared.generated.resources.tr_show_less
+import ailearn.shared.generated.resources.tr_sizes
+import ailearn.shared.generated.resources.tr_skip
+import ailearn.shared.generated.resources.tr_sleep
+import ailearn.shared.generated.resources.tr_social_conversations
+import ailearn.shared.generated.resources.tr_something_else
+import ailearn.shared.generated.resources.tr_soooo_bored
+import ailearn.shared.generated.resources.tr_spanish
+import ailearn.shared.generated.resources.tr_speak
+import ailearn.shared.generated.resources.tr_speak_and_get_instant_feedback_on_your_pronunciation
+import ailearn.shared.generated.resources.tr_speak_more_learn_faster
+import ailearn.shared.generated.resources.tr_speak_now_let_go_when_you_finish
+import ailearn.shared.generated.resources.tr_speak_now_tap_the_mic_when_you_finish
+import ailearn.shared.generated.resources.tr_speak_sentences
+import ailearn.shared.generated.resources.tr_speak_the_sentence_aloud
+import ailearn.shared.generated.resources.tr_speak_the_word_to_check_pronunciation
+import ailearn.shared.generated.resources.tr_speak_with_ai
+import ailearn.shared.generated.resources.tr_speak_with_confidence
+import ailearn.shared.generated.resources.tr_speaking
+import ailearn.shared.generated.resources.tr_speaking_complete
+import ailearn.shared.generated.resources.tr_speaking_content_is_unavailable
+import ailearn.shared.generated.resources.tr_speaking_practice
+import ailearn.shared.generated.resources.tr_speaking_practice_completed
+import ailearn.shared.generated.resources.tr_speaking_test_complete
+import ailearn.shared.generated.resources.tr_speaking_with_ai
+import ailearn.shared.generated.resources.tr_special_requests
+import ailearn.shared.generated.resources.tr_speech_needs_an_internet_connection_please_connect_and_try_again
+import ailearn.shared.generated.resources.tr_speech_recognition_isn_t_available_on_this_device
+import ailearn.shared.generated.resources.tr_spin
+import ailearn.shared.generated.resources.tr_spot_your_problem
+import ailearn.shared.generated.resources.tr_squeeeak_beep_boop
+import ailearn.shared.generated.resources.tr_stage
+import ailearn.shared.generated.resources.tr_stage_1_d
+import ailearn.shared.generated.resources.tr_stage_1_d_day_2_d_of_3
+import ailearn.shared.generated.resources.tr_stage_1_d_days_2_d_3_d
+import ailearn.shared.generated.resources.tr_start
+import ailearn.shared.generated.resources.tr_start_activity
+import ailearn.shared.generated.resources.tr_start_chatting
+import ailearn.shared.generated.resources.tr_start_day_1_d
+import ailearn.shared.generated.resources.tr_start_here_54acc280
+import ailearn.shared.generated.resources.tr_start_here_5c9f9ad7
+import ailearn.shared.generated.resources.tr_start_learning_02d279ce
+import ailearn.shared.generated.resources.tr_start_learning_91ad0a48
+import ailearn.shared.generated.resources.tr_start_learning_now_to_keep_your_path_active
+import ailearn.shared.generated.resources.tr_start_now
+import ailearn.shared.generated.resources.tr_start_over
+import ailearn.shared.generated.resources.tr_start_speaking
+import ailearn.shared.generated.resources.tr_start_with_1_s
+import ailearn.shared.generated.resources.tr_stay
+import ailearn.shared.generated.resources.tr_stay_consistent_with_daily_streaks_and_track_your_progress_step
+import ailearn.shared.generated.resources.tr_step_1_d_2_d
+import ailearn.shared.generated.resources.tr_still_offline_let_s_keep_playing
+import ailearn.shared.generated.resources.tr_still_thinking
+import ailearn.shared.generated.resources.tr_stop
+import ailearn.shared.generated.resources.tr_stop_recording
+import ailearn.shared.generated.resources.tr_streak_alert
+import ailearn.shared.generated.resources.tr_streak_milestone
+import ailearn.shared.generated.resources.tr_study
+import ailearn.shared.generated.resources.tr_submit
+import ailearn.shared.generated.resources.tr_subscription
+import ailearn.shared.generated.resources.tr_subscriptions
+import ailearn.shared.generated.resources.tr_suggested_answer
+import ailearn.shared.generated.resources.tr_sun_9_30_am
+import ailearn.shared.generated.resources.tr_super
+import ailearn.shared.generated.resources.tr_swipe_to_next
+import ailearn.shared.generated.resources.tr_swipe_to_spin
+import ailearn.shared.generated.resources.tr_take_a_break
+import ailearn.shared.generated.resources.tr_taking_messages
+import ailearn.shared.generated.resources.tr_talk_about_1_s
+import ailearn.shared.generated.resources.tr_talk_confidently_in_daily_life
+import ailearn.shared.generated.resources.tr_talk_to_me
+import ailearn.shared.generated.resources.tr_talk_with_the_tutor
+import ailearn.shared.generated.resources.tr_talk_with_your_ai_tutor_every_day_to_build_your_speaking_reflexe
+import ailearn.shared.generated.resources.tr_talking_about_books
+import ailearn.shared.generated.resources.tr_talking_about_food_preferences
+import ailearn.shared.generated.resources.tr_talking_about_movies
+import ailearn.shared.generated.resources.tr_talking_about_past_events_and_experiences
+import ailearn.shared.generated.resources.tr_talking_about_the_environment
+import ailearn.shared.generated.resources.tr_talking_about_the_weather
+import ailearn.shared.generated.resources.tr_talking_about_your_career
+import ailearn.shared.generated.resources.tr_talking_about_your_day
+import ailearn.shared.generated.resources.tr_talking_about_your_hobbies
+import ailearn.shared.generated.resources.tr_talking_about_your_weekend
+import ailearn.shared.generated.resources.tr_tap_any_word_while_watching_videos_to_save_it_here
+import ailearn.shared.generated.resources.tr_tap_card_to_reveal_meaning
+import ailearn.shared.generated.resources.tr_tap_me
+import ailearn.shared.generated.resources.tr_tap_me_i_dare_you
+import ailearn.shared.generated.resources.tr_tap_mic_and_speak_the_sentence_aloud
+import ailearn.shared.generated.resources.tr_tap_or_hold_to_speak
+import ailearn.shared.generated.resources.tr_tap_save_to_finish
+import ailearn.shared.generated.resources.tr_tap_the_mic_and_speak
+import ailearn.shared.generated.resources.tr_tap_the_mic_to_try_again
+import ailearn.shared.generated.resources.tr_tap_the_microphone_and_repeat_the_sentence
+import ailearn.shared.generated.resources.tr_tap_the_video_for_the_next_line
+import ailearn.shared.generated.resources.tr_tap_the_video_to_finish
+import ailearn.shared.generated.resources.tr_tap_the_words_to_make_a_sentence
+import ailearn.shared.generated.resources.tr_tap_to_listen
+import ailearn.shared.generated.resources.tr_tap_to_reveal_meaning
+import ailearn.shared.generated.resources.tr_tap_to_see_translation
+import ailearn.shared.generated.resources.tr_tap_to_speak
+import ailearn.shared.generated.resources.tr_tap_to_speak_again
+import ailearn.shared.generated.resources.tr_tap_to_try_again
+import ailearn.shared.generated.resources.tr_task_1_d_of_2_d
+import ailearn.shared.generated.resources.tr_tasks
+import ailearn.shared.generated.resources.tr_tell_us_how_we_can_improve_your_experience
+import ailearn.shared.generated.resources.tr_tell_us_your_personal_goal
+import ailearn.shared.generated.resources.tr_telling_the_time
+import ailearn.shared.generated.resources.tr_telling_time
+import ailearn.shared.generated.resources.tr_tenses
+import ailearn.shared.generated.resources.tr_terms_conditions
+import ailearn.shared.generated.resources.tr_terms_of_use
+import ailearn.shared.generated.resources.tr_test_your_ears
+import ailearn.shared.generated.resources.tr_textfieldimplkt_leadingid
+import ailearn.shared.generated.resources.tr_thai
+import ailearn.shared.generated.resources.tr_thank_you_for_your_feedback_we_will_review_this_conversation_res
+import ailearn.shared.generated.resources.tr_thank_you_for_your_trust
+import ailearn.shared.generated.resources.tr_thanks_for_the_honesty
+import ailearn.shared.generated.resources.tr_that_s_it_i_m_out
+import ailearn.shared.generated.resources.tr_the_app_is_for_personal_non_commercial_learning_do_not_copy_modi
+import ailearn.shared.generated.resources.tr_the_microphone_is_busy
+import ailearn.shared.generated.resources.tr_thinking_a60d9c9c
+import ailearn.shared.generated.resources.tr_thinking_d08d8da0
+import ailearn.shared.generated.resources.tr_this_is_a_time_session
+import ailearn.shared.generated.resources.tr_this_phone_can_t_recognize_speech_in_this_language
+import ailearn.shared.generated.resources.tr_this_plan_day_is_unavailable
+import ailearn.shared.generated.resources.tr_this_sets_how_many_questions_you_get_each_day
+import ailearn.shared.generated.resources.tr_this_will_remove_it_from_your_learning_history_49ab14f4
+import ailearn.shared.generated.resources.tr_this_will_remove_it_from_your_learning_history_c6a76441
+import ailearn.shared.generated.resources.tr_thu_8_22_pm
+import ailearn.shared.generated.resources.tr_tickle
+import ailearn.shared.generated.resources.tr_time
+import ailearn.shared.generated.resources.tr_time_for_your_5_minute_ai_lesson
+import ailearn.shared.generated.resources.tr_time_spent
+import ailearn.shared.generated.resources.tr_times
+import ailearn.shared.generated.resources.tr_today
+import ailearn.shared.generated.resources.tr_today_1_40_pm
+import ailearn.shared.generated.resources.tr_today_lesson
+import ailearn.shared.generated.resources.tr_today_s_lesson
+import ailearn.shared.generated.resources.tr_total_rs_12_800_year
+import ailearn.shared.generated.resources.tr_total_rs_16_800_year
+import ailearn.shared.generated.resources.tr_translate_2be17aa1
+import ailearn.shared.generated.resources.tr_translate_39a2c882
+import ailearn.shared.generated.resources.tr_translate_to
+import ailearn.shared.generated.resources.tr_translating
+import ailearn.shared.generated.resources.tr_translation
+import ailearn.shared.generated.resources.tr_translation_unavailable
+import ailearn.shared.generated.resources.tr_transportation
+import ailearn.shared.generated.resources.tr_travel
+import ailearn.shared.generated.resources.tr_travel_airports
+import ailearn.shared.generated.resources.tr_try_again
+import ailearn.shared.generated.resources.tr_try_it_now
+import ailearn.shared.generated.resources.tr_try_reconnecting
+import ailearn.shared.generated.resources.tr_try_saying
+import ailearn.shared.generated.resources.tr_try_something_new
+import ailearn.shared.generated.resources.tr_try_speaking_a_little_slower_and_clearer
+import ailearn.shared.generated.resources.tr_try_speaking_practice
+import ailearn.shared.generated.resources.tr_try_the_ai_tutor
+import ailearn.shared.generated.resources.tr_try_today_s_lesson
+import ailearn.shared.generated.resources.tr_turkish
+import ailearn.shared.generated.resources.tr_turn_up_the_volume_to_hear_me
+import ailearn.shared.generated.resources.tr_type_a_message_05586eee
+import ailearn.shared.generated.resources.tr_type_a_message_09bdffe9
+import ailearn.shared.generated.resources.tr_type_instead
+import ailearn.shared.generated.resources.tr_unit_1_d
+import ailearn.shared.generated.resources.tr_unit_1_d_2_s
+import ailearn.shared.generated.resources.tr_unlimited_lessons
+import ailearn.shared.generated.resources.tr_unlock_all_lessons_ai_tutor_and_ad_free_learning
+import ailearn.shared.generated.resources.tr_unlock_premium_access
+import ailearn.shared.generated.resources.tr_unlocks_in_1_d_days
+import ailearn.shared.generated.resources.tr_unlocks_tomorrow
+import ailearn.shared.generated.resources.tr_unscripted_longer_conversations_across_situations
+import ailearn.shared.generated.resources.tr_unstoppable
+import ailearn.shared.generated.resources.tr_upper_intermediate
+import ailearn.shared.generated.resources.tr_urdu
+import ailearn.shared.generated.resources.tr_use_1_s_at_work_or_in_interviews
+import ailearn.shared.generated.resources.tr_useful_phrases
+import ailearn.shared.generated.resources.tr_video
+import ailearn.shared.generated.resources.tr_video_completed
+import ailearn.shared.generated.resources.tr_video_content_unavailable
+import ailearn.shared.generated.resources.tr_video_shadowing
+import ailearn.shared.generated.resources.tr_videos_for_you
+import ailearn.shared.generated.resources.tr_vietnamese
+import ailearn.shared.generated.resources.tr_view
+import ailearn.shared.generated.resources.tr_view_all
+import ailearn.shared.generated.resources.tr_view_path
+import ailearn.shared.generated.resources.tr_vocabulary
+import ailearn.shared.generated.resources.tr_vocabulary_moment
+import ailearn.shared.generated.resources.tr_vocabulary_practice
+import ailearn.shared.generated.resources.tr_vocabulary_to_practise
+import ailearn.shared.generated.resources.tr_voice_input_06c8745e
+import ailearn.shared.generated.resources.tr_voice_input_c0b2cee0
+import ailearn.shared.generated.resources.tr_waaah_why_are_you_ignoring_me
+import ailearn.shared.generated.resources.tr_waaah_you_hurt_my_feelings
+import ailearn.shared.generated.resources.tr_wait_for_your_turn
+import ailearn.shared.generated.resources.tr_wake_up
+import ailearn.shared.generated.resources.tr_watch_short_real_life_videos_repeat_each_line_and_sound_more_nat
+import ailearn.shared.generated.resources.tr_we_do_not_sell_trade_or_share_your_information_with_third_partie
+import ailearn.shared.generated.resources.tr_we_heard
+import ailearn.shared.generated.resources.tr_we_ll_build_a_30_day_plan_around_it
+import ailearn.shared.generated.resources.tr_we_ll_start_at_a_comfortable_pace
+import ailearn.shared.generated.resources.tr_we_ll_use_it_to_greet_you
+import ailearn.shared.generated.resources.tr_we_may_update_these_terms_as_the_product_evolves_continued_use_a
+import ailearn.shared.generated.resources.tr_we_re_glad_you_like_it
+import ailearn.shared.generated.resources.tr_we_re_sorry
+import ailearn.shared.generated.resources.tr_we_re_sorry_about_it
+import ailearn.shared.generated.resources.tr_we_re_glad_you_like_semavia
+import ailearn.shared.generated.resources.tr_weather
+import ailearn.shared.generated.resources.tr_weather_seasons
+import ailearn.shared.generated.resources.tr_wed_6_31_pm
+import ailearn.shared.generated.resources.tr_weekly
+import ailearn.shared.generated.resources.tr_weekly_subscription_activated
+import ailearn.shared.generated.resources.tr_welcome
+import ailearn.shared.generated.resources.tr_welcome_to_english_learn_pro
+import ailearn.shared.generated.resources.tr_well_done
+import ailearn.shared.generated.resources.tr_well_done_continue_with_the_quiz
+import ailearn.shared.generated.resources.tr_what
+import ailearn.shared.generated.resources.tr_what_did_you_hear_2a1c28b7
+import ailearn.shared.generated.resources.tr_what_did_you_hear_dda2554a
+import ailearn.shared.generated.resources.tr_what_is_your_native_language
+import ailearn.shared.generated.resources.tr_what_language_do_you_want_to_learn
+import ailearn.shared.generated.resources.tr_what_s_your_learning_goal
+import ailearn.shared.generated.resources.tr_what_s_your_level
+import ailearn.shared.generated.resources.tr_what_should_we_call_you
+import ailearn.shared.generated.resources.tr_wheee
+import ailearn.shared.generated.resources.tr_wheee_i_m_getting_dizzy
+import ailearn.shared.generated.resources.tr_when
+import ailearn.shared.generated.resources.tr_where
+import ailearn.shared.generated.resources.tr_which_language_do_you_want_to_learn
+import ailearn.shared.generated.resources.tr_who
+import ailearn.shared.generated.resources.tr_who_would_you_like_to_learn_with
+import ailearn.shared.generated.resources.tr_whoa_i_m_getting_dizzy
+import ailearn.shared.generated.resources.tr_whoops_do_better_next_time
+import ailearn.shared.generated.resources.tr_why
+import ailearn.shared.generated.resources.tr_why_do_you_want_to_learn_1_s
+import ailearn.shared.generated.resources.tr_word
+import ailearn.shared.generated.resources.tr_word_of_the_day
+import ailearn.shared.generated.resources.tr_work
+import ailearn.shared.generated.resources.tr_work_career
+import ailearn.shared.generated.resources.tr_work_office
+import ailearn.shared.generated.resources.tr_workplace_vocabulary
+import ailearn.shared.generated.resources.tr_worst
+import ailearn.shared.generated.resources.tr_would_you_mind_leaving_us_a_high_rating_it_helps_us_immensely
+import ailearn.shared.generated.resources.tr_wow_you_re_a_genius
+import ailearn.shared.generated.resources.tr_wow_you_talk_so_much
+import ailearn.shared.generated.resources.tr_xp_earned
+import ailearn.shared.generated.resources.tr_yawn_i_m_wide_awake_now
+import ailearn.shared.generated.resources.tr_yay_we_re_back_online
+import ailearn.shared.generated.resources.tr_yearly
+import ailearn.shared.generated.resources.tr_yearly_subscription_activated
+import ailearn.shared.generated.resources.tr_yes_exactly_right
+import ailearn.shared.generated.resources.tr_yesterday
+import ailearn.shared.generated.resources.tr_yesterday_6_12_pm
+import ailearn.shared.generated.resources.tr_you_can_change_your_assistant_later
+import ailearn.shared.generated.resources.tr_you_can_clear_all_locally_stored_data_at_any_time_by_clearing_th
+import ailearn.shared.generated.resources.tr_you_earned_1_d_free_ai_chats
+import ailearn.shared.generated.resources.tr_you_earned_1_free_ai_chat
+import ailearn.shared.generated.resources.tr_you_finished_your_1_s_plan
+import ailearn.shared.generated.resources.tr_you_have_completed_1_d
+import ailearn.shared.generated.resources.tr_you_haven_t_started_today_s_lesson_yet
+import ailearn.shared.generated.resources.tr_you_haven_t_used_today_s_free_chat_time_yet
+import ailearn.shared.generated.resources.tr_you_re_1_d_done_pick_up_where_you_left_off
+import ailearn.shared.generated.resources.tr_you_re_offline
+import ailearn.shared.generated.resources.tr_you_re_on_fire
+import ailearn.shared.generated.resources.tr_you_re_saying
+import ailearn.shared.generated.resources.tr_you_said_17cb3ebb
+import ailearn.shared.generated.resources.tr_you_said_f105abd5
+import ailearn.shared.generated.resources.tr_you_ve_already_claimed_today_s_reward
+import ailearn.shared.generated.resources.tr_you_ve_completed_all_1_d_activities_for_today
+import ailearn.shared.generated.resources.tr_you_ve_completed_today_s_session
+import ailearn.shared.generated.resources.tr_you_ve_earned_50_xp_and_10_diamonds
+import ailearn.shared.generated.resources.tr_you_ve_got_this
+import ailearn.shared.generated.resources.tr_your_30_day_plan
+import ailearn.shared.generated.resources.tr_your_answers_in_this_lesson_won_t_be_saved
+import ailearn.shared.generated.resources.tr_your_assistant_guides_your_ai_conversations
+import ailearn.shared.generated.resources.tr_your_brain_grows_while_you_rest
+import ailearn.shared.generated.resources.tr_your_d_1_d_learning_path_has_been_unlocked
+import ailearn.shared.generated.resources.tr_your_daily_chat_is_waiting
+import ailearn.shared.generated.resources.tr_your_honest_feedback_helps_us_keep_improving
+import ailearn.shared.generated.resources.tr_your_learning_path
+import ailearn.shared.generated.resources.tr_your_learning_path_is_ready
+import ailearn.shared.generated.resources.tr_your_learning_path_is_ready_1_s
+import ailearn.shared.generated.resources.tr_your_learning_progress_stays_the_same
+import ailearn.shared.generated.resources.tr_your_name
+import ailearn.shared.generated.resources.tr_your_plan_will_start_again_from_day_1
+import ailearn.shared.generated.resources.tr_your_progress_44a680df
+import ailearn.shared.generated.resources.tr_your_progress_98399962
+import ailearn.shared.generated.resources.tr_your_progress_in_this_session_will_be_saved
+import ailearn.shared.generated.resources.tr_your_progress_so_far_will_be_saved
+import ailearn.shared.generated.resources.tr_your_roadmap
+import ailearn.shared.generated.resources.tr_your_selections_personalise_lessons_practice_sessions_and_remind
+import ailearn.shared.generated.resources.tr_your_speaking_activity_is_saved_complete_the_remaining_activitie
+import ailearn.shared.generated.resources.tr_your_streak
+import ailearn.shared.generated.resources.tr_your_turn
+import ailearn.shared.generated.resources.tr_your_turn_hold_the_mic_and_repeat
+import ailearn.shared.generated.resources.tr_your_turn_tap_or_hold_the_mic_and_repeat
+import ailearn.shared.generated.resources.tr_your_words_will_appear_here
+import ailearn.shared.generated.resources.tr_zzz_tap_me_to_wake_me_up_111758e0
+import ailearn.shared.generated.resources.tr_zzz_tap_me_to_wake_me_up_521f91ec
+import ailearn.shared.generated.resources.Res
+import ailearn.shared.generated.resources.ui_ads_loading
+import ailearn.shared.generated.resources.ui_ads_keep_free
+import ailearn.shared.generated.resources.ui_ads_close
+import ailearn.shared.generated.resources.ui_ads_hide
+import org.jetbrains.compose.resources.StringResource
+
+internal val uiStringResourceByEnglish: Map<String, StringResource> = mapOf(
+    "Loading ads" to Res.string.ui_ads_loading,
+    "Ads help keep AI Learn free" to Res.string.ui_ads_keep_free,
+    "Close ad" to Res.string.ui_ads_close,
+    "Hide ad" to Res.string.ui_ads_hide,
+    " (just Rs 8,400/Year)" to Res.string.tr_just_rs_8_400_year,
+    "%1\$d - Days Streak. Keep Learning!" to Res.string.tr_1_d_days_streak_keep_learning,
+    "%1\$d / %2\$d min" to Res.string.tr_1_d_2_d_min,
+    "%1\$d DAYS" to Res.string.tr_1_d_days,
+    "%1\$d activities" to Res.string.tr_1_d_activities,
+    "%1\$d in a row!" to Res.string.tr_1_d_in_a_row,
+    "%1\$d min" to Res.string.tr_1_d_min,
+    "%1\$d min / day" to Res.string.tr_1_d_min_day,
+    "%1\$d min spoken" to Res.string.tr_1_d_min_spoken,
+    "%1\$d questions · vocabulary + translation" to Res.string.tr_1_d_questions_vocabulary_translation,
+    "%1\$d sentences to say" to Res.string.tr_1_d_sentences_to_say,
+    "%1\$d stages · %2\$d days" to Res.string.tr_1_d_stages_2_d_days,
+    "%1\$d w" to Res.string.tr_1_d_w,
+    "%1\$d words" to Res.string.tr_1_d_words,
+    "%1\$d%% Complete" to Res.string.tr_1_d_complete,
+    "%1\$d%% done" to Res.string.tr_1_d_done,
+    "%1\$d-minute speaking with AI" to Res.string.tr_1_d_minute_speaking_with_ai,
+    "%1\$d/%2\$d activities" to Res.string.tr_1_d_2_d_activities,
+    "%1\$d/%2\$d activities complete" to Res.string.tr_1_d_2_d_activities_complete,
+    "%1\$d/%2\$d completed" to Res.string.tr_1_d_2_d_completed,
+    "%1\$d/%2\$d correct" to Res.string.tr_1_d_2_d_correct,
+    "%1\$d/%2\$d days" to Res.string.tr_1_d_2_d_days,
+    "%1\$d/%2\$d days completed" to Res.string.tr_1_d_2_d_days_completed,
+    "%1\$s Exams" to Res.string.tr_1_s_exams,
+    "%1\$s Progress" to Res.string.tr_1_s_progress,
+    "%1\$s Session" to Res.string.tr_1_s_session,
+    "(This is a time session)" to Res.string.tr_this_is_a_time_session,
+    "*Squeeeak!* Beep boop!" to Res.string.tr_squeeeak_beep_boop,
+    "+%1\$d new words today" to Res.string.tr_1_d_new_words_today,
+    "10 cards" to Res.string.tr_10_cards,
+    "10 days in a row — keep it up!" to Res.string.tr_10_days_in_a_row_keep_it_up,
+    "10 min" to Res.string.tr_10_min,
+    "10 min / day" to Res.string.tr_10_min_day,
+    "10 questions" to Res.string.tr_10_questions,
+    "10 words" to Res.string.tr_10_words,
+    "15 cards" to Res.string.tr_15_cards,
+    "15 min / day" to Res.string.tr_15_min_day,
+    "15 questions" to Res.string.tr_15_questions,
+    "15 words" to Res.string.tr_15_words,
+    "20 min" to Res.string.tr_20_min,
+    "20 min / day" to Res.string.tr_20_min_day,
+    "20 questions" to Res.string.tr_20_questions,
+    "2d ago" to Res.string.tr_2d_ago,
+    "2h ago" to Res.string.tr_2h_ago,
+    "30 min" to Res.string.tr_30_min,
+    "30 min / day" to Res.string.tr_30_min_day,
+    "5 cards" to Res.string.tr_5_cards,
+    "5 min" to Res.string.tr_5_min,
+    "5 min / day" to Res.string.tr_5_min_day,
+    "5 questions" to Res.string.tr_5_questions,
+    "5 words" to Res.string.tr_5_words,
+    "5-Second %1\$s Quiz" to Res.string.tr_5_second_1_s_quiz,
+    "5-minute AI lesson" to Res.string.tr_5_minute_ai_lesson,
+    "50% off" to Res.string.tr_50_off,
+    "A Job Interview" to Res.string.tr_a_job_interview,
+    "A little every day" to Res.string.tr_a_little_every_day,
+    "A new day of lessons opens each day." to Res.string.tr_a_new_day_of_lessons_opens_each_day,
+    "A plan built around you" to Res.string.tr_a_plan_built_around_you,
+    "A quick session keeps your progress going." to Res.string.tr_a_quick_session_keeps_your_progress_going,
+    "A short voice lesson with your AI tutor" to Res.string.tr_a_short_voice_lesson_with_your_ai_tutor,
+    "A1 Beginner" to Res.string.tr_a1_beginner,
+    "A2 Elementary" to Res.string.tr_a2_elementary,
+    "AI Conversation" to Res.string.tr_ai_conversation,
+    "AI Conversation completed!" to Res.string.tr_ai_conversation_completed,
+    "AI Tutor" to Res.string.tr_ai_tutor,
+    "AI Tutor, Vocabulary, Speaking and Grammar: practice exactly what you need." to Res.string.tr_ai_tutor_vocabulary_speaking_and_grammar_practice_exactly_what_y,
+    "AI assistant" to Res.string.tr_ai_assistant,
+    "AI assistant robot" to Res.string.tr_ai_assistant_robot,
+    "AI tutor sessions" to Res.string.tr_ai_tutor_sessions,
+    "About Me" to Res.string.tr_about_me,
+    "Academic" to Res.string.tr_academic,
+    "Acceptable Use" to Res.string.tr_acceptable_use,
+    "Acceptance of Terms" to Res.string.tr_acceptance_of_terms,
+    "Accepting/declining" to Res.string.tr_accepting_declining,
+    "Accuracy Score" to Res.string.tr_accuracy_score,
+    "Actions" to Res.string.tr_actions,
+    "Ad-Free Experience" to Res.string.tr_ad_free_experience,
+    "Advanced" to Res.string.tr_advanced,
+    "Advanced Storytelling" to Res.string.tr_advanced_storytelling,
+    "Agreeing" to Res.string.tr_agreeing,
+    "All" to Res.string.tr_all,
+    "All %1\$d words saved" to Res.string.tr_all_1_d_words_saved,
+    "All words are already in your word list" to Res.string.tr_all_words_are_already_in_your_word_list,
+    "Allow" to Res.string.tr_allow,
+    "Allow microphone" to Res.string.tr_allow_microphone,
+    "Almost there" to Res.string.tr_almost_there_005287e2,
+    "Almost there!" to Res.string.tr_almost_there_74c77704,
+    "Almost! Add “%1\$s” after “%2\$s”." to Res.string.tr_almost_add_1_s_after_2_s,
+    "Almost! Leave out “%1\$s”." to Res.string.tr_almost_leave_out_1_s,
+    "Almost! Start with “%1\$s”." to Res.string.tr_almost_start_with_1_s,
+    "Almost! Use “%1\$s” after “%2\$s”." to Res.string.tr_almost_use_1_s_after_2_s,
+    "Amazing!" to Res.string.tr_amazing,
+    "Analyzing your goal" to Res.string.tr_analyzing_your_goal,
+    "Answer a few questions and get a 30-day plan made for your goal." to Res.string.tr_answer_a_few_questions_and_get_a_30_day_plan_made_for_your_goal,
+    "Answer a few quick questions so I can personalise your learning path for the best fit." to Res.string.tr_answer_a_few_quick_questions_so_i_can_personalise_your_learning,
+    "Answer correctly to earn 1 free AI chat." to Res.string.tr_answer_correctly_to_earn_1_free_ai_chat,
+    "Answer correctly to receive %1\$d free chat attempts!" to Res.string.tr_answer_correctly_to_receive_1_d_free_chat_attempts,
+    "Appearance" to Res.string.tr_appearance,
+    "Arabic" to Res.string.tr_arabic,
+    "Are you sure? 😬" to Res.string.tr_are_you_sure,
+    "Arranging times" to Res.string.tr_arranging_times,
+    "Articles" to Res.string.tr_articles,
+    "Asking Someone's Name" to Res.string.tr_asking_someone_s_name,
+    "Asking for Directions" to Res.string.tr_asking_for_directions,
+    "Asking for Help" to Res.string.tr_asking_for_help,
+    "Assistant" to Res.string.tr_assistant,
+    "At the Bank" to Res.string.tr_at_the_bank,
+    "At the Bus Stop" to Res.string.tr_at_the_bus_stop,
+    "At the Doctor's Office" to Res.string.tr_at_the_doctor_s_office,
+    "At the Pharmacy" to Res.string.tr_at_the_pharmacy,
+    "Average" to Res.string.tr_average,
+    "Average pronunciation score" to Res.string.tr_average_pronunciation_score,
+    "Awesome" to Res.string.tr_awesome,
+    "Aww, I love you too! 💕" to Res.string.tr_aww_i_love_you_too,
+    "Aww, thank you! 🥰" to Res.string.tr_aww_thank_you,
+    "B1 Intermediate" to Res.string.tr_b1_intermediate,
+    "B2 Upper Intermediate" to Res.string.tr_b2_upper_intermediate,
+    "Back" to Res.string.tr_back,
+    "Back 5 seconds" to Res.string.tr_back_5_seconds,
+    "Back online" to Res.string.tr_back_online,
+    "Back soon… 🚶" to Res.string.tr_back_soon,
+    "Back to Day %1\$d" to Res.string.tr_back_to_day_1_d,
+    "Back to Learning Path" to Res.string.tr_back_to_learning_path,
+    "Baggage" to Res.string.tr_baggage,
+    "Balanced learning" to Res.string.tr_balanced_learning,
+    "Basic directions" to Res.string.tr_basic_directions,
+    "Beginner" to Res.string.tr_beginner,
+    "Beginner Conversations" to Res.string.tr_beginner_conversations,
+    "Best Value" to Res.string.tr_best_value,
+    "Better luck next time!" to Res.string.tr_better_luck_next_time,
+    "Boarding" to Res.string.tr_boarding,
+    "Boing! Up we go!" to Res.string.tr_boing_up_we_go,
+    "Booking a Hotel Room" to Res.string.tr_booking_a_hotel_room,
+    "Boop! 😄" to Res.string.tr_boop,
+    "Build confidence every day" to Res.string.tr_build_confidence_every_day,
+    "Build real language skills with interactive daily practice." to Res.string.tr_build_real_language_skills_with_interactive_daily_practice,
+    "Build stronger overall %1\$s skills" to Res.string.tr_build_stronger_overall_1_s_skills,
+    "Build your English skills step by step and gain the confidence to speak fluently in real-life conversations." to Res.string.tr_build_your_english_skills_step_by_step_and_gain_the_confidence_t,
+    "Building your 30-day roadmap" to Res.string.tr_building_your_30_day_roadmap,
+    "Business" to Res.string.tr_business,
+    "Buying Groceries" to Res.string.tr_buying_groceries,
+    "Buying something" to Res.string.tr_buying_something,
+    "By using Semavia: Learn Languages you agree to these terms. If you do not agree, please discontinue use of the app." to Res.string.tr_by_using_semavia_you_agree_to_these_terms,
+    "C1 Advanced" to Res.string.tr_c1_advanced,
+    "CONTINUE LEARNING" to Res.string.tr_continue_learning_a2b3ad83,
+    "Calling" to Res.string.tr_calling,
+    "Can't speak now? Skip" to Res.string.tr_can_t_speak_now_skip,
+    "Cancel" to Res.string.tr_cancel,
+    "Cancel Subscription" to Res.string.tr_cancel_subscription,
+    "Casual expressions" to Res.string.tr_casual_expressions,
+    "Category" to Res.string.tr_category,
+    "Change" to Res.string.tr_change,
+    "Change assistant" to Res.string.tr_change_assistant,
+    "Change goal" to Res.string.tr_change_goal,
+    "Change your assistant" to Res.string.tr_change_your_assistant,
+    "Change your goal?" to Res.string.tr_change_your_goal,
+    "Changes" to Res.string.tr_changes,
+    "Chat with AI" to Res.string.tr_chat_with_ai,
+    "Chat with your AI tutor about anything" to Res.string.tr_chat_with_your_ai_tutor_about_anything,
+    "Chat with your personal AI tutor and learn any language naturally, anytime." to Res.string.tr_chat_with_your_personal_ai_tutor_and_learn_any_language_naturall,
+    "Check Answer" to Res.string.tr_check_answer,
+    "Check sentence" to Res.string.tr_check_sentence,
+    "Check-in" to Res.string.tr_check_in,
+    "Checking In at the Airport" to Res.string.tr_checking_in_at_the_airport,
+    "Chinese" to Res.string.tr_chinese,
+    "Choose Your AI Tutor Voice" to Res.string.tr_choose_your_ai_tutor_voice,
+    "Choose Your English Level" to Res.string.tr_choose_your_english_level,
+    "Choose Your Level" to Res.string.tr_choose_your_level,
+    "Choose a duration that works for you." to Res.string.tr_choose_a_duration_that_works_for_you,
+    "Choose a new goal" to Res.string.tr_choose_a_new_goal,
+    "Choose a pace that works for you." to Res.string.tr_choose_a_pace_that_works_for_you,
+    "Choose another goal" to Res.string.tr_choose_another_goal,
+    "Choose what you learn and who guides you." to Res.string.tr_choose_what_you_learn_and_who_guides_you,
+    "Choose your %1\$s practice partner." to Res.string.tr_choose_your_1_s_practice_partner,
+    "Choose your AI assistant" to Res.string.tr_choose_your_ai_assistant,
+    "Choose your main goal. You can change it later." to Res.string.tr_choose_your_main_goal_you_can_change_it_later,
+    "Choose your time" to Res.string.tr_choose_your_time,
+    "Clarifying information" to Res.string.tr_clarifying_information,
+    "Clear" to Res.string.tr_clear,
+    "Clear and patient" to Res.string.tr_clear_and_patient,
+    "Clear chat" to Res.string.tr_clear_chat,
+    "Close" to Res.string.tr_close,
+    "Close keyboard" to Res.string.tr_close_keyboard,
+    "Close offer" to Res.string.tr_close_offer,
+    "Closer to your goal!" to Res.string.tr_closer_to_your_goal,
+    "Colleagues" to Res.string.tr_colleagues,
+    "Colors" to Res.string.tr_colors,
+    "Colors and Clothes" to Res.string.tr_colors_and_clothes,
+    "Combining everything in short real-life dialogues" to Res.string.tr_combining_everything_in_short_real_life_dialogues,
+    "Come back tomorrow for a new question." to Res.string.tr_come_back_tomorrow_for_a_new_question,
+    "Come back tomorrow for a new word." to Res.string.tr_come_back_tomorrow_for_a_new_word,
+    "Come back tomorrow for your next lesson." to Res.string.tr_come_back_tomorrow_for_your_next_lesson,
+    "Coming soon" to Res.string.tr_coming_soon,
+    "Coming soon in %1\$s" to Res.string.tr_coming_soon_in_1_s,
+    "Common expressions used by native speakers" to Res.string.tr_common_expressions_used_by_native_speakers,
+    "Common foods" to Res.string.tr_common_foods,
+    "Common problems" to Res.string.tr_common_problems,
+    "Communicate when traveling abroad" to Res.string.tr_communicate_when_traveling_abroad,
+    "Comparing products" to Res.string.tr_comparing_products,
+    "Complaints" to Res.string.tr_complaints,
+    "Complete" to Res.string.tr_complete,
+    "Complete a session" to Res.string.tr_complete_a_session,
+    "Complete each activity to finish this day" to Res.string.tr_complete_each_activity_to_finish_this_day,
+    "Complete lessons and practice to see your progress here!" to Res.string.tr_complete_lessons_and_practice_to_see_your_progress_here,
+    "Complete the lesson before it to unlock this one." to Res.string.tr_complete_the_lesson_before_it_to_unlock_this_one,
+    "Complete the previous activity first" to Res.string.tr_complete_the_previous_activity_first,
+    "Completed" to Res.string.tr_completed,
+    "Completed · %1\$d%%" to Res.string.tr_completed_1_d,
+    "Compromises" to Res.string.tr_compromises,
+    "Congratulation" to Res.string.tr_congratulation,
+    "Congratulations" to Res.string.tr_congratulations,
+    "Congratulations! That's the right answer." to Res.string.tr_congratulations_that_s_the_right_answer,
+    "Conjunctions" to Res.string.tr_conjunctions,
+    "Contact" to Res.string.tr_contact,
+    "Contact Support" to Res.string.tr_contact_support,
+    "Content unavailable" to Res.string.tr_content_unavailable,
+    "Continue" to Res.string.tr_continue,
+    "Continue Day %1\$d" to Res.string.tr_continue_day_1_d,
+    "Continue Learning" to Res.string.tr_continue_learning_acb708f6,
+    "Continue lesson" to Res.string.tr_continue_lesson,
+    "Continue the conversation in Semavia" to Res.string.tr_continue_conversation_in_semavia,
+    "Continue to AI Conversation" to Res.string.tr_continue_to_ai_conversation,
+    "Continue to Quick Quiz" to Res.string.tr_continue_to_quick_quiz,
+    "Continue to Speaking" to Res.string.tr_continue_to_speaking,
+    "Continue to Video" to Res.string.tr_continue_to_video,
+    "Contributing ideas" to Res.string.tr_contributing_ideas,
+    "Conversational tone" to Res.string.tr_conversational_tone,
+    "Copied" to Res.string.tr_copied,
+    "Copy" to Res.string.tr_copy,
+    "Correct" to Res.string.tr_correct_48e09e45,
+    "Correct and clear!" to Res.string.tr_correct_and_clear,
+    "Correct answer: %1\$s" to Res.string.tr_correct_answer_1_s,
+    "Could not complete lesson" to Res.string.tr_could_not_complete_lesson,
+    "Couldn't get a reply. Please try again." to Res.string.tr_couldn_t_get_a_reply_please_try_again,
+    "Couldn't load this video" to Res.string.tr_couldn_t_load_this_video,
+    "Couldn't load your plan" to Res.string.tr_couldn_t_load_your_plan,
+    "Couldn't start recording" to Res.string.tr_couldn_t_start_recording,
+    "Country" to Res.string.tr_country,
+    "Age" to Res.string.tr_age,
+    "Create" to Res.string.tr_create,
+    "Create my learning plan" to Res.string.tr_create_my_learning_plan,
+    "Create my plan" to Res.string.tr_create_my_plan,
+    "Create your Learning Path" to Res.string.tr_create_your_learning_path,
+    "Creating your learning path…" to Res.string.tr_creating_your_learning_path,
+    "Current level" to Res.string.tr_current_level,
+    "Custom" to Res.string.tr_custom,
+    "Custom: %1\$d min / day" to Res.string.tr_custom_1_d_min_day,
+    "DAILY PRACTICE" to Res.string.tr_daily_practice,
+    "Daily Chat" to Res.string.tr_daily_chat,
+    "Daily Conversation" to Res.string.tr_daily_conversation,
+    "Daily Flash Card" to Res.string.tr_daily_flash_card,
+    "Daily Goal" to Res.string.tr_daily_goal,
+    "Daily Routine" to Res.string.tr_daily_routine,
+    "Daily activities" to Res.string.tr_daily_activities,
+    "Daily goal updated to %1\$d min" to Res.string.tr_daily_goal_updated_to_1_d_min,
+    "Daily goal: %1\$d min" to Res.string.tr_daily_goal_1_d_min,
+    "Daily lesson reminder" to Res.string.tr_daily_lesson_reminder,
+    "Daily life" to Res.string.tr_daily_life,
+    "Daily quiz" to Res.string.tr_daily_quiz,
+    "Daily study time" to Res.string.tr_daily_study_time,
+    "Daily translation and grammar quizzes" to Res.string.tr_daily_translation_and_grammar_quizzes,
+    "Data Retention" to Res.string.tr_data_retention,
+    "Data Sharing" to Res.string.tr_data_sharing,
+    "Date" to Res.string.tr_date,
+    "Dates" to Res.string.tr_dates,
+    "Day" to Res.string.tr_day,
+    "Day %1\$d" to Res.string.tr_day_1_d,
+    "Day %1\$d - %2\$d" to Res.string.tr_day_1_d_2_d,
+    "Day %1\$d Completed!" to Res.string.tr_day_1_d_completed_e37522ff,
+    "Day %1\$d complete!" to Res.string.tr_day_1_d_complete_b0b47607,
+    "Day %1\$d complete! 🎉" to Res.string.tr_day_1_d_complete_cf3ee559,
+    "Day %1\$d completed" to Res.string.tr_day_1_d_completed_a04f064c,
+    "Day %1\$d done! You're amazing! 🎉" to Res.string.tr_day_1_d_done_you_re_amazing,
+    "Day %1\$d locked" to Res.string.tr_day_1_d_locked,
+    "Day %1\$d of %2\$d" to Res.string.tr_day_1_d_of_2_d,
+    "Day %1\$d unlocks in %2\$d days" to Res.string.tr_day_1_d_unlocks_in_2_d_days,
+    "Day %1\$d unlocks tomorrow" to Res.string.tr_day_1_d_unlocks_tomorrow,
+    "Days" to Res.string.tr_days,
+    "Days, Months and Dates" to Res.string.tr_days_months_and_dates,
+    "Debating a Topic" to Res.string.tr_debating_a_topic,
+    "Decent, but we can make it better. Please leave suggestions." to Res.string.tr_decent_but_we_can_make_it_better_please_leave_suggestions,
+    "Deep learning" to Res.string.tr_deep_learning,
+    "Delete" to Res.string.tr_delete,
+    "Delete this activity?" to Res.string.tr_delete_this_activity,
+    "Delete this record?" to Res.string.tr_delete_this_record,
+    "Describe your goal" to Res.string.tr_describe_your_goal,
+    "Describing Your Home" to Res.string.tr_describing_your_home,
+    "Describing a Complex Process" to Res.string.tr_describing_a_complex_process,
+    "Describing a Problem" to Res.string.tr_describing_a_problem,
+    "Describing basic symptoms" to Res.string.tr_describing_basic_symptoms,
+    "Describing people" to Res.string.tr_describing_people,
+    "Detail" to Res.string.tr_detail,
+    "Detailed and engaging stories" to Res.string.tr_detailed_and_engaging_stories,
+    "Detailed professional answers and follow-ups" to Res.string.tr_detailed_professional_answers_and_follow_ups,
+    "Details" to Res.string.tr_details,
+    "Developing and supporting an argument" to Res.string.tr_developing_and_supporting_an_argument,
+    "Diamonds" to Res.string.tr_diamonds,
+    "Did I say it right? 😄" to Res.string.tr_did_i_say_it_right,
+    "Difficult Conversations" to Res.string.tr_difficult_conversations,
+    "Difficulty" to Res.string.tr_difficulty,
+    "Disagreeing" to Res.string.tr_disagreeing,
+    "Disagreements" to Res.string.tr_disagreements,
+    "Disclaimer" to Res.string.tr_disclaimer,
+    "Discussing Culture and Traditions" to Res.string.tr_discussing_culture_and_traditions,
+    "Discussing Current Events" to Res.string.tr_discussing_current_events,
+    "Discussing Future Plans" to Res.string.tr_discussing_future_plans,
+    "Discussing Health and Fitness" to Res.string.tr_discussing_health_and_fitness,
+    "Discussing the News" to Res.string.tr_discussing_the_news,
+    "Discussions & Opinions" to Res.string.tr_discussions_opinions,
+    "Don't allow" to Res.string.tr_don_t_allow,
+    "Don't give up, you can do it! 💪 Okay… I forgive you 😌" to Res.string.tr_don_t_give_up_you_can_do_it_okay_i_forgive_you,
+    "Don't shout at me! 🙉" to Res.string.tr_don_t_shout_at_me,
+    "Done" to Res.string.tr_done,
+    "Downloading video…" to Res.string.tr_downloading_video,
+    "Eek! Don't shout at me! 🙉" to Res.string.tr_eek_don_t_shout_at_me,
+    "Elementary" to Res.string.tr_elementary,
+    "Enable Full Screen Intent for the best app experience and instant updates." to Res.string.tr_enable_full_screen_intent_for_the_best_app_experience_and_instan,
+    "Enable app Notifications for continuous using when the app is closed." to Res.string.tr_enable_app_notifications_for_continuous_using_when_the_app_is_cl,
+    "Enable microphone access in Settings to use voice practice." to Res.string.tr_enable_microphone_access_in_settings_to_use_voice_practice,
+    "End lesson" to Res.string.tr_end_lesson,
+    "Semavia" to Res.string.tr_semavia,
+    "Semavia AI Tutor" to Res.string.tr_semavia_ai_tutor,
+    "Semavia: Learn Languages" to Res.string.tr_semavia_learn_languages,
+    "Semavia: Learn Languages stores your learning preferences (target language, level, daily goal and tutor voice) only on your device. No personal data leaves your phone until a learning backend is connected." to Res.string.tr_semavia_stores_learning_preferences,
+    "English" to Res.string.tr_english,
+    "English Learn Pro" to Res.string.tr_english_learn_pro,
+    "English Learn Pro is offered as weekly and yearly auto-renewing subscriptions with an optional free trial. Manage or cancel anytime from your Google Play account settings." to Res.string.tr_english_learn_pro_is_offered_as_weekly_and_yearly_auto_renewing,
+    "English Level" to Res.string.tr_english_level,
+    "Enjoying the App?" to Res.string.tr_enjoying_the_app,
+    "Enter Name" to Res.string.tr_enter_name,
+    "Enter message" to Res.string.tr_enter_message,
+    "Even robots need a rest day! 😴" to Res.string.tr_even_robots_need_a_rest_day,
+    "Every mistake is a step forward! Keep going 💪" to Res.string.tr_every_mistake_is_a_step_forward_keep_going,
+    "Everyday Conversation" to Res.string.tr_everyday_conversation,
+    "Everyday Questions" to Res.string.tr_everyday_questions,
+    "Example Sentence" to Res.string.tr_example_sentence,
+    "Example answer:" to Res.string.tr_example_answer,
+    "Excellent clarity and accent!" to Res.string.tr_excellent_clarity_and_accent,
+    "Excellent pronunciation!" to Res.string.tr_excellent_pronunciation,
+    "Excellent!" to Res.string.tr_excellent,
+    "Exchanges" to Res.string.tr_exchanges,
+    "Exit" to Res.string.tr_exit,
+    "Exit session?" to Res.string.tr_exit_session,
+    "Experiences & Stories" to Res.string.tr_experiences_stories,
+    "Explain what happened..." to Res.string.tr_explain_what_happened,
+    "Explaining Where You Live" to Res.string.tr_explaining_where_you_live,
+    "Explaining a Technical Problem" to Res.string.tr_explaining_a_technical_problem,
+    "Explaining a problem and asking for help" to Res.string.tr_explaining_a_problem_and_asking_for_help,
+    "Explaining ideas clearly and confidently" to Res.string.tr_explaining_ideas_clearly_and_confidently,
+    "Explaining reasons" to Res.string.tr_explaining_reasons,
+    "Explore all features" to Res.string.tr_explore_all_features,
+    "Explore more in the app" to Res.string.tr_explore_more_in_the_app,
+    "Extra practice" to Res.string.tr_extra_practice,
+    "FREE CHAT TIME" to Res.string.tr_free_chat_time,
+    "Failed to save language. Please try again." to Res.string.tr_failed_to_save_language_please_try_again,
+    "Family & Friends" to Res.string.tr_family_friends,
+    "Family members" to Res.string.tr_family_members,
+    "Female" to Res.string.tr_female,
+    "Fillers" to Res.string.tr_fillers,
+    "Finish" to Res.string.tr_finish,
+    "Finish %1\$s first." to Res.string.tr_finish_1_s_first,
+    "Finish Day %1\$d first" to Res.string.tr_finish_day_1_d_first_a7d472be,
+    "Finish Day %1\$d first." to Res.string.tr_finish_day_1_d_first_2ff2e6ee,
+    "Finish the %1\$s level to unlock this one." to Res.string.tr_finish_the_1_s_level_to_unlock_this_one,
+    "Fluency" to Res.string.tr_fluency,
+    "Food & Drinks" to Res.string.tr_food_drinks,
+    "For you" to Res.string.tr_for_you,
+    "For your goals, level and schedule." to Res.string.tr_for_your_goals_level_and_schedule,
+    "Formal vs casual workplace language" to Res.string.tr_formal_vs_casual_workplace_language,
+    "Forward 5 seconds" to Res.string.tr_forward_5_seconds,
+    "Free chat time available" to Res.string.tr_free_chat_time_available,
+    "French" to Res.string.tr_french,
+    "Fresh Grammar Tips were added to Practice." to Res.string.tr_fresh_grammar_tips_were_added_to_practice,
+    "Fri, 5:48 PM" to Res.string.tr_fri_5_48_pm,
+    "Friendly and encouraging" to Res.string.tr_friendly_and_encouraging,
+    "From: %1\$s" to Res.string.tr_from_1_s,
+    "German" to Res.string.tr_german,
+    "Get Plan" to Res.string.tr_get_plan,
+    "Get Started" to Res.string.tr_get_started,
+    "Get Unlimited Access" to Res.string.tr_get_unlimited_access,
+    "Get ready…" to Res.string.tr_get_ready,
+    "Get ready for test day" to Res.string.tr_get_ready_for_test_day,
+    "Getting Around" to Res.string.tr_getting_around,
+    "Getting Customer Support" to Res.string.tr_getting_customer_support,
+    "Giving Your Opinion" to Res.string.tr_giving_your_opinion,
+    "Giving a Presentation" to Res.string.tr_giving_a_presentation,
+    "Go Back" to Res.string.tr_go_back,
+    "Goal" to Res.string.tr_goal,
+    "Good" to Res.string.tr_good,
+    "Good job!" to Res.string.tr_good_job,
+    "Good pronunciation!" to Res.string.tr_good_pronunciation,
+    "Goodbye" to Res.string.tr_goodbye,
+    "Google Play is unavailable on this device." to Res.string.tr_google_play_is_unavailable_on_this_device,
+    "Grammar" to Res.string.tr_grammar,
+    "Grammar Tips" to Res.string.tr_grammar_tips,
+    "Grammar Type" to Res.string.tr_grammar_type,
+    "Grammar quiz completed successfully!" to Res.string.tr_grammar_quiz_completed_successfully,
+    "Great Job!" to Res.string.tr_great_job,
+    "Great Job! You've completed all %1\$d activities for today." to Res.string.tr_great_job_you_ve_completed_all_1_d_activities_for_today,
+    "Great Job, %1\$s!" to Res.string.tr_great_job_1_s,
+    "Great job completing today's English speaking lesson!" to Res.string.tr_great_job_completing_today_s_english_speaking_lesson,
+    "Great to meet you" to Res.string.tr_great_to_meet_you,
+    "Great! You can finish now." to Res.string.tr_great_you_can_finish_now,
+    "Greeting Someone New" to Res.string.tr_greeting_someone_new,
+    "Greetings & Introductions" to Res.string.tr_greetings_introductions,
+    "Hahaha, stop it! 🤣" to Res.string.tr_hahaha_stop_it,
+    "Handling a Complaint" to Res.string.tr_handling_a_complaint,
+    "Health & Appointments" to Res.string.tr_health_appointments,
+    "Hehe, I'm up to something 😏" to Res.string.tr_hehe_i_m_up_to_something,
+    "Hehe, do that again 😏" to Res.string.tr_hehe_do_that_again,
+    "Hehe, that tickles! 😆" to Res.string.tr_hehe_that_tickles,
+    "Hehehe! Stop, that tickles!" to Res.string.tr_hehehe_stop_that_tickles,
+    "Hello" to Res.string.tr_hello,
+    "Hello! I'm your %1\$s tutor. How can I help you practise today?" to Res.string.tr_hello_i_m_your_1_s_tutor_how_can_i_help_you_practise_today,
+    "Hello! Ready for today's five-minute lesson? Tap the mic and tell me about your morning in %1\$s." to Res.string.tr_hello_ready_for_today_s_five_minute_lesson_tap_the_mic_and_tell,
+    "Help & Support" to Res.string.tr_help_support,
+    "Hey! That hurts! 😤" to Res.string.tr_hey_that_hurts,
+    "Hey! That's too much poking!" to Res.string.tr_hey_that_s_too_much_poking,
+    "Hi %1\$s! 👋" to Res.string.tr_hi_1_s,
+    "Hi there! 👋" to Res.string.tr_hi_there,
+    "Hi! I'm your AI %1\$s tutor. Ask me anything, or pick a quick action below to get started." to Res.string.tr_hi_i_m_your_ai_1_s_tutor_ask_me_anything_or_pick_a_quick_action,
+    "Hindi" to Res.string.tr_hindi,
+    "Hint" to Res.string.tr_hint,
+    "Hint unavailable" to Res.string.tr_hint_unavailable,
+    "Hmm, which one will you pick? 🤔" to Res.string.tr_hmm_which_one_will_you_pick,
+    "Hmm? Did you say something? 🤔" to Res.string.tr_hmm_did_you_say_something,
+    "Hmm… what are you up to? 🧐" to Res.string.tr_hmm_what_are_you_up_to,
+    "Hold mic and speak aloud:" to Res.string.tr_hold_mic_and_speak_aloud,
+    "Hold the mic and speak clearly." to Res.string.tr_hold_the_mic_and_speak_clearly,
+    "Hold to speak" to Res.string.tr_hold_to_speak,
+    "Home" to Res.string.tr_home,
+    "Home & Neighborhood" to Res.string.tr_home_neighborhood,
+    "Hop" to Res.string.tr_hop,
+    "Hotels & Accommodation" to Res.string.tr_hotels_accommodation,
+    "Hours" to Res.string.tr_hours,
+    "How" to Res.string.tr_how,
+    "How Much Time Can You Spend Learning Each Day?" to Res.string.tr_how_much_time_can_you_spend_learning_each_day,
+    "How We Use Information" to Res.string.tr_how_we_use_information,
+    "How are you feeling?" to Res.string.tr_how_are_you_feeling,
+    "How much %1\$s do you know?" to Res.string.tr_how_much_1_s_do_you_know,
+    "How much %s do you know?" to Res.string.tr_how_much_s_do_you_know,
+    "How much time can you study each day?" to Res.string.tr_how_much_time_can_you_study_each_day,
+    "HttpHeaders.AGE" to Res.string.tr_httpheaders_age,
+    "Huh? I'm awake! ⏰" to Res.string.tr_huh_i_m_awake,
+    "Humor & Informal English" to Res.string.tr_humor_informal_english,
+    "I believe in you! 🙌" to Res.string.tr_i_believe_in_you,
+    "I can copy anything you say! 🦜" to Res.string.tr_i_can_copy_anything_you_say,
+    "I can discuss complex topics" to Res.string.tr_i_can_discuss_complex_topics,
+    "I can have conversations" to Res.string.tr_i_can_have_conversations,
+    "I can talk about familiar topics" to Res.string.tr_i_can_talk_about_familiar_topics,
+    "I can use simple words and sentences" to Res.string.tr_i_can_use_simple_words_and_sentences,
+    "I know little or no %1\$s" to Res.string.tr_i_know_little_or_no_1_s,
+    "I know the basics" to Res.string.tr_i_know_the_basics,
+    "I'm back! Let's try again 😌" to Res.string.tr_i_m_back_let_s_try_again,
+    "I'm getting angry! 💢" to Res.string.tr_i_m_getting_angry,
+    "I'm just starting" to Res.string.tr_i_m_just_starting,
+    "I'm listening… 👂" to Res.string.tr_i_m_listening,
+    "I'm not sure" to Res.string.tr_i_m_not_sure,
+    "I'm offline! Touch me to play!" to Res.string.tr_i_m_offline_touch_me_to_play,
+    "I'm quite confident" to Res.string.tr_i_m_quite_confident,
+    "IELTS" to Res.string.tr_ielts,
+    "IELTS Vocabulary" to Res.string.tr_ielts_vocabulary,
+    "Idioms" to Res.string.tr_idioms,
+    "Idioms & Expressions" to Res.string.tr_idioms_expressions,
+    "Immigration" to Res.string.tr_immigration,
+    "Improve My %1\$s" to Res.string.tr_improve_my_1_s,
+    "Improve your vocabulary, grammar, and pronunciation every day." to Res.string.tr_improve_your_vocabulary_grammar_and_pronunciation_every_day,
+    "In Progress" to Res.string.tr_in_progress,
+    "In this lesson" to Res.string.tr_in_this_lesson,
+    "Incorrect" to Res.string.tr_incorrect,
+    "Information We Collect" to Res.string.tr_information_we_collect,
+    "Interface Language" to Res.string.tr_interface_language,
+    "Intermediate" to Res.string.tr_intermediate,
+    "Interrupting politely" to Res.string.tr_interrupting_politely,
+    "Interviewing a Candidate" to Res.string.tr_interviewing_a_candidate,
+    "Introducing Your Family" to Res.string.tr_introducing_your_family,
+    "Invitations" to Res.string.tr_invitations,
+    "Invite Friends" to Res.string.tr_invite_friends,
+    "It's okay if you're not sure." to Res.string.tr_it_s_okay_if_you_re_not_sure,
+    "Italian" to Res.string.tr_italian,
+    "Japanese" to Res.string.tr_japanese,
+    "Job Interviews" to Res.string.tr_job_interviews,
+    "Jokes" to Res.string.tr_jokes,
+    "Jump Back In" to Res.string.tr_jump_back_in,
+    "Keep going to finish today's lesson" to Res.string.tr_keep_going_to_finish_today_s_lesson,
+    "Keep going!" to Res.string.tr_keep_going,
+    "Keep practicing with these features." to Res.string.tr_keep_practicing_with_these_features,
+    "Keep practicing your listening in today's lesson." to Res.string.tr_keep_practicing_your_listening_in_today_s_lesson,
+    "Keep practicing!" to Res.string.tr_keep_practicing,
+    "Keep your streak alive today" to Res.string.tr_keep_your_streak_alive_today,
+    "Key Vocabulary" to Res.string.tr_key_vocabulary,
+    "Korean" to Res.string.tr_korean,
+    "Languages" to Res.string.tr_languages,
+    "Last updated" to Res.string.tr_last_updated,
+    "Last updated: July 2, 2026" to Res.string.tr_last_updated_july_2_2026,
+    "Learn" to Res.string.tr_learn,
+    "Learn %1\$s for classes or studying abroad" to Res.string.tr_learn_1_s_for_classes_or_studying_abroad,
+    "Learn English and Speak With Confidence!" to Res.string.tr_learn_english_and_speak_with_confidence,
+    "Learn English, Speak Naturally" to Res.string.tr_learn_english_speak_naturally,
+    "Learn Language" to Res.string.tr_learn_language,
+    "Learn faster and reach your English goals with personalized support." to Res.string.tr_learn_faster_and_reach_your_english_goals_with_personalized_supp,
+    "Learn with AI" to Res.string.tr_learn_with_ai,
+    "Learner" to Res.string.tr_learner,
+    "Learning" to Res.string.tr_learning,
+    "Learning Board" to Res.string.tr_learning_board,
+    "Learning History" to Res.string.tr_learning_history,
+    "Learning Path" to Res.string.tr_learning_path,
+    "Learning goal" to Res.string.tr_learning_goal,
+    "Learning progress" to Res.string.tr_learning_progress,
+    "Leave" to Res.string.tr_leave,
+    "Leave lesson?" to Res.string.tr_leave_lesson,
+    "Leave this lesson?" to Res.string.tr_leave_this_lesson,
+    "Leave us suggestions and ideas to make it perfect!" to Res.string.tr_leave_us_suggestions_and_ideas_to_make_it_perfect,
+    "Legal" to Res.string.tr_legal,
+    "Lesson" to Res.string.tr_lesson,
+    "Lesson Complete!" to Res.string.tr_lesson_complete,
+    "Lesson content is preparing." to Res.string.tr_lesson_content_is_preparing,
+    "Lessons and AI tutor feedback are provided \"as is\" for educational purposes and may contain inaccuracies while the service is in development." to Res.string.tr_lessons_and_ai_tutor_feedback_are_provided_as_is_for_educational,
+    "Let me use the microphone so I can hear you 🎤" to Res.string.tr_let_me_use_the_microphone_so_i_can_hear_you,
+    "Let's finish Day %1\$d!" to Res.string.tr_let_s_finish_day_1_d,
+    "Let's make your learning journey more personal." to Res.string.tr_let_s_make_your_learning_journey_more_personal,
+    "Let's practise \"%1\$s\" together — speak naturally and I'll help you feel confident." to Res.string.tr_let_s_practise_1_s_together_speak_naturally_and_i_ll_help_you_fe,
+    "Let's start!" to Res.string.tr_let_s_start,
+    "Let's take the first step!" to Res.string.tr_let_s_take_the_first_step,
+    "Level" to Res.string.tr_level_7c7f5d04,
+    "Level %1\$d · %2\$d XP to go" to Res.string.tr_level_1_d_2_d_xp_to_go,
+    "Level of Difficulty" to Res.string.tr_level_of_difficulty,
+    "Level: " to Res.string.tr_level_6b9acfff,
+    "Level: %1\$s" to Res.string.tr_level_1_s,
+    "Likes and dislikes" to Res.string.tr_likes_and_dislikes,
+    "Limited Time Offer" to Res.string.tr_limited_time_offer,
+    "Line %1\$d of %2\$d" to Res.string.tr_line_1_d_of_2_d,
+    "Listen" to Res.string.tr_listen,
+    "Listen & Choose" to Res.string.tr_listen_choose_7d4a6f90,
+    "Listen and repeat" to Res.string.tr_listen_and_repeat,
+    "Listen first" to Res.string.tr_listen_first,
+    "Listen, repeat, and speak" to Res.string.tr_listen_repeat_and_speak,
+    "Listening..." to Res.string.tr_listening_4fc2512a,
+    "Listening... release to evaluate" to Res.string.tr_listening_release_to_evaluate,
+    "Listening…" to Res.string.tr_listening_6c19a476,
+    "Listening… let go when you finish." to Res.string.tr_listening_let_go_when_you_finish,
+    "Listening… tap to stop" to Res.string.tr_listening_tap_to_stop,
+    "Loading plan..." to Res.string.tr_loading_plan,
+    "Loading…" to Res.string.tr_loading,
+    "Longer, more natural everyday conversations" to Res.string.tr_longer_more_natural_everyday_conversations,
+    "Making Plans" to Res.string.tr_making_plans,
+    "Making Plans With a Friend" to Res.string.tr_making_plans_with_a_friend,
+    "Making Small Talk" to Res.string.tr_making_small_talk,
+    "Making a Business Pitch" to Res.string.tr_making_a_business_pitch,
+    "Making a Phone Call" to Res.string.tr_making_a_phone_call,
+    "Making appointments" to Res.string.tr_making_appointments,
+    "Male" to Res.string.tr_male,
+    "Master Every Conversation" to Res.string.tr_master_every_conversation,
+    "Matching lessons to your level" to Res.string.tr_matching_lessons_to_your_level,
+    "Meeting a Neighbor" to Res.string.tr_meeting_a_neighbor,
+    "Meetings" to Res.string.tr_meetings,
+    "Microphone access lets Android recognize your speech and show the transcript for this practice. It starts only when you tap the mic." to Res.string.tr_microphone_access_lets_android_recognize_your_speech_and_show_th,
+    "Microphone permission is required" to Res.string.tr_microphone_permission_is_required,
+    "Mini Conversation" to Res.string.tr_mini_conversation,
+    "Minutes" to Res.string.tr_minutes,
+    "Misunderstandings" to Res.string.tr_misunderstandings,
+    "Mon, 8:05 PM" to Res.string.tr_mon_8_05_pm,
+    "More" to Res.string.tr_more,
+    "More focused practice" to Res.string.tr_more_focused_practice,
+    "More practice" to Res.string.tr_more_practice,
+    "Mulling it over" to Res.string.tr_mulling_it_over,
+    "My 30-day plan" to Res.string.tr_my_30_day_plan,
+    "My Learning Path" to Res.string.tr_my_learning_path,
+    "My Path" to Res.string.tr_my_path,
+    "My voice is funnier! 🤪" to Res.string.tr_my_voice_is_funnier,
+    "Nailed it!" to Res.string.tr_nailed_it,
+    "Name" to Res.string.tr_name,
+    "Native Language" to Res.string.tr_native_language,
+    "Natural Conversations" to Res.string.tr_natural_conversations,
+    "Natural responses" to Res.string.tr_natural_responses,
+    "Negotiating a Salary" to Res.string.tr_negotiating_a_salary,
+    "Negotiation" to Res.string.tr_negotiation,
+    "Networking at an Event" to Res.string.tr_networking_at_an_event,
+    "New" to Res.string.tr_new,
+    "New Features" to Res.string.tr_new_features,
+    "New content" to Res.string.tr_new_content,
+    "Next" to Res.string.tr_next,
+    "Next Day %1\$d" to Res.string.tr_next_day_1_d,
+    "Next activity" to Res.string.tr_next_activity,
+    "Next sentence" to Res.string.tr_next_sentence,
+    "Nice one! 😉" to Res.string.tr_nice_one,
+    "Nice work! Keep it up! 🎉" to Res.string.tr_nice_work_keep_it_up,
+    "Nice — one more word learned." to Res.string.tr_nice_one_more_word_learned,
+    "No AI tutor sessions yet" to Res.string.tr_no_ai_tutor_sessions_yet,
+    "No Commitment, Cancel Anytime" to Res.string.tr_no_commitment_cancel_anytime,
+    "No activity yet — finish a lesson or practice to see it here." to Res.string.tr_no_activity_yet_finish_a_lesson_or_practice_to_see_it_here,
+    "No email app found. Write to %1\$s" to Res.string.tr_no_email_app_found_write_to_1_s,
+    "No grammar questions available." to Res.string.tr_no_grammar_questions_available,
+    "No history found" to Res.string.tr_no_history_found,
+    "No internet connection" to Res.string.tr_no_internet_connection,
+    "No internet connection. Please check your connection and try again." to Res.string.tr_no_internet_connection_please_check_your_connection_and_try_agai,
+    "No internet? No problem! Talk to me and I'll copy you 🎤" to Res.string.tr_no_internet_no_problem_talk_to_me_and_i_ll_copy_you,
+    "No lessons yet" to Res.string.tr_no_lessons_yet,
+    "No new words" to Res.string.tr_no_new_words,
+    "No peeking ahead! 🙈" to Res.string.tr_no_peeking_ahead,
+    "No previous purchase found." to Res.string.tr_no_previous_purchase_found,
+    "No saved words yet" to Res.string.tr_no_saved_words_yet_a1fc3801,
+    "No saved words yet." to Res.string.tr_no_saved_words_yet_78e66aba,
+    "No sessions yet — finish a practice to see it here." to Res.string.tr_no_sessions_yet_finish_a_practice_to_see_it_here,
+    "No speaking cards available." to Res.string.tr_no_speaking_cards_available,
+    "Nod" to Res.string.tr_nod,
+    "Not Sure" to Res.string.tr_not_sure,
+    "Not quite" to Res.string.tr_not_quite_756c7660,
+    "Not quite." to Res.string.tr_not_quite_651b1933,
+    "Not satisfied?" to Res.string.tr_not_satisfied,
+    "Notifications" to Res.string.tr_notifications,
+    "Number of Questions" to Res.string.tr_number_of_questions,
+    "Number of Speaking Cards" to Res.string.tr_number_of_speaking_cards,
+    "Number of Words" to Res.string.tr_number_of_words,
+    "Numbers" to Res.string.tr_numbers,
+    "Numbers & Time" to Res.string.tr_numbers_time,
+    "Numbers and Prices" to Res.string.tr_numbers_and_prices,
+    "Objects" to Res.string.tr_objects,
+    "Offline Mode" to Res.string.tr_offline_mode,
+    "Oh… you're too kind 🙈" to Res.string.tr_oh_you_re_too_kind,
+    "Okay… I forgive you 😌" to Res.string.tr_okay_i_forgive_you,
+    "One day at a time 🌱" to Res.string.tr_one_day_at_a_time,
+    "One sec" to Res.string.tr_one_sec,
+    "One session to reach %1\$d days" to Res.string.tr_one_session_to_reach_1_d_days,
+    "Only Rs 8,400 / Year" to Res.string.tr_only_rs_8_400_year,
+    "Open Settings" to Res.string.tr_open_settings,
+    "Open day %1\$d" to Res.string.tr_open_day_1_d,
+    "Opens in %1\$s" to Res.string.tr_opens_in_1_s,
+    "Opinions & Preferences" to Res.string.tr_opinions_preferences,
+    "Ordering" to Res.string.tr_ordering,
+    "Ordering Breakfast" to Res.string.tr_ordering_breakfast,
+    "Ordering Food at a Café" to Res.string.tr_ordering_food_at_a_cafe,
+    "Ordering Water at a Table" to Res.string.tr_ordering_water_at_a_table,
+    "Ordering a Coffee" to Res.string.tr_ordering_a_coffee,
+    "Ordering at a Fast-Food Place" to Res.string.tr_ordering_at_a_fast_food_place,
+    "Ordering basics" to Res.string.tr_ordering_basics,
+    "Ouch! Stop poking me! 😠" to Res.string.tr_ouch_stop_poking_me,
+    "Ouch! You poked me!" to Res.string.tr_ouch_you_poked_me,
+    "Our AI is tailoring lessons to your answers." to Res.string.tr_our_ai_is_tailoring_lessons_to_your_answers,
+    "Patience, my friend! ⏳" to Res.string.tr_patience_my_friend,
+    "Pause" to Res.string.tr_pause,
+    "Paying" to Res.string.tr_paying,
+    "Perfect!" to Res.string.tr_perfect,
+    "Personal information" to Res.string.tr_personal_information,
+    "Personalize your path" to Res.string.tr_personalize_your_path,
+    "Personalized Learning Path" to Res.string.tr_personalized_learning_path,
+    "Personalized for you" to Res.string.tr_personalized_for_you,
+    "Persuading Your Team" to Res.string.tr_persuading_your_team,
+    "Persuasion" to Res.string.tr_persuasion,
+    "Phew… everything is spinning 😵" to Res.string.tr_phew_everything_is_spinning,
+    "Phone Conversations" to Res.string.tr_phone_conversations,
+    "Pick a goal and get a plan for every day" to Res.string.tr_pick_a_goal_and_get_a_plan_for_every_day,
+    "Pick one to start learning" to Res.string.tr_pick_one_to_start_learning,
+    "Pick up where you left off." to Res.string.tr_pick_up_where_you_left_off,
+    "Pick up your 30-day plan here, one day at a time." to Res.string.tr_pick_up_your_30_day_plan_here_one_day_at_a_time,
+    "Places near home" to Res.string.tr_places_near_home,
+    "Plan complete!" to Res.string.tr_plan_complete,
+    "Plan content unavailable" to Res.string.tr_plan_content_unavailable,
+    "Plan goals couldn't be loaded. Check your connection and try again." to Res.string.tr_plan_goals_couldn_t_be_loaded_check_your_connection_and_try_agai,
+    "Planning a Trip" to Res.string.tr_planning_a_trip,
+    "Planning your daily practice" to Res.string.tr_planning_your_daily_practice,
+    "Play" to Res.string.tr_play,
+    "Play with me until the internet is back" to Res.string.tr_play_with_me_until_the_internet_is_back,
+    "Playing…" to Res.string.tr_playing,
+    "Please check your internet connection and try again." to Res.string.tr_please_check_your_internet_connection_and_try_again,
+    "Please let us know how we can improve your learning experience." to Res.string.tr_please_let_us_know_how_we_can_improve_your_learning_experience,
+    "Please try again." to Res.string.tr_please_try_again,
+    "Poke" to Res.string.tr_poke,
+    "Poor" to Res.string.tr_poor,
+    "Portuguese" to Res.string.tr_portuguese,
+    "Practice" to Res.string.tr_practice,
+    "Practice Type" to Res.string.tr_practice_type,
+    "Practice conversations" to Res.string.tr_practice_conversations,
+    "Practice daily to improve your English and speak with confidence." to Res.string.tr_practice_daily_to_improve_your_english_and_speak_with_confidence,
+    "Practice makes progress! ✨" to Res.string.tr_practice_makes_progress,
+    "Practice now" to Res.string.tr_practice_now,
+    "Practice pronunciation and get instant feedback on every word." to Res.string.tr_practice_pronunciation_and_get_instant_feedback_on_every_word,
+    "Preferences" to Res.string.tr_preferences,
+    "Premium" to Res.string.tr_premium,
+    "Premium activated" to Res.string.tr_premium_activated,
+    "Prepare for %1\$s language tests" to Res.string.tr_prepare_for_1_s_language_tests,
+    "Prepare for IELTS, TOEIC, TOEFL, or other tests" to Res.string.tr_prepare_for_ielts_toeic_toefl_or_other_tests,
+    "Preparing speech for this language. Please try again in a moment." to Res.string.tr_preparing_speech_for_this_language_please_try_again_in_a_moment,
+    "Prepositions" to Res.string.tr_prepositions,
+    "Presentations" to Res.string.tr_presentations,
+    "Preview Voice" to Res.string.tr_preview_voice,
+    "Prices" to Res.string.tr_prices,
+    "Privacy Policy" to Res.string.tr_privacy_policy,
+    "Problems & Solutions" to Res.string.tr_problems_solutions,
+    "Professional Communication" to Res.string.tr_professional_communication,
+    "Profile" to Res.string.tr_profile,
+    "Progress" to Res.string.tr_progress,
+    "Pronunciation Score" to Res.string.tr_pronunciation_score_7a124fe7,
+    "Pronunciation score" to Res.string.tr_pronunciation_score_732abe93,
+    "Pronunciation: " to Res.string.tr_pronunciation,
+    "Proposals" to Res.string.tr_proposals,
+    "Purchases are unavailable right now. Please try again." to Res.string.tr_purchases_are_unavailable_right_now_please_try_again,
+    "Purchases restored — Pro is active!" to Res.string.tr_purchases_restored_pro_is_active,
+    "Question" to Res.string.tr_question,
+    "Questions get harder as your level goes up." to Res.string.tr_questions_get_harder_as_your_level_goes_up,
+    "Quick Quiz" to Res.string.tr_quick_quiz,
+    "Quick Quiz complete!" to Res.string.tr_quick_quiz_complete,
+    "Quick Quiz completed!" to Res.string.tr_quick_quiz_completed,
+    "Quick practice" to Res.string.tr_quick_practice,
+    "Quiz content is unavailable" to Res.string.tr_quiz_content_is_unavailable,
+    "Random" to Res.string.tr_random,
+    "Rate Us" to Res.string.tr_rate_us,
+    "Reach Your Goals" to Res.string.tr_reach_your_goals,
+    "Read Aloud" to Res.string.tr_read_aloud,
+    "Ready for Day %1\$d?" to Res.string.tr_ready_for_day_1_d,
+    "Ready for Today's Lesson?" to Res.string.tr_ready_for_today_s_lesson,
+    "Ready for today's practice?" to Res.string.tr_ready_for_today_s_practice,
+    "Ready to learn?" to Res.string.tr_ready_to_learn,
+    "Real-World Fluency" to Res.string.tr_real_world_fluency,
+    "Record" to Res.string.tr_record,
+    "Refunds" to Res.string.tr_refunds,
+    "Relationships" to Res.string.tr_relationships,
+    "Reminders" to Res.string.tr_reminders,
+    "Reminders to continue learning" to Res.string.tr_reminders_to_continue_learning,
+    "Reminders to keep your streak and finish your lessons" to Res.string.tr_reminders_to_keep_your_streak_and_finish_your_lessons,
+    "Remove" to Res.string.tr_remove,
+    "Renting an Apartment" to Res.string.tr_renting_an_apartment,
+    "Repeat the sentence aloud" to Res.string.tr_repeat_the_sentence_aloud,
+    "Replay" to Res.string.tr_replay,
+    "Reply" to Res.string.tr_reply,
+    "Reply by voice" to Res.string.tr_reply_by_voice,
+    "Reply in %1\$s…" to Res.string.tr_reply_in_1_s,
+    "Report" to Res.string.tr_report,
+    "Report an Issue" to Res.string.tr_report_an_issue_05d4d931,
+    "Report an issue" to Res.string.tr_report_an_issue_bd7b4f00,
+    "Requests" to Res.string.tr_requests,
+    "Reservations" to Res.string.tr_reservations,
+    "Resolving a Conflict" to Res.string.tr_resolving_a_conflict,
+    "Restaurants & Cafés" to Res.string.tr_restaurants_cafes,
+    "Restore" to Res.string.tr_restore,
+    "Returning an Item" to Res.string.tr_returning_an_item,
+    "Review this word to receive %1\$d free chat attempts!" to Res.string.tr_review_this_word_to_receive_1_d_free_chat_attempts,
+    "Robot" to Res.string.tr_robot,
+    "Rooms" to Res.string.tr_rooms,
+    "Rs 1,400" to Res.string.tr_rs_1_400,
+    "Rs 8,400" to Res.string.tr_rs_8_400,
+    "Russian" to Res.string.tr_russian,
+    "START HERE" to Res.string.tr_start_here_5c9f9ad7,
+    "STREAK MILESTONE" to Res.string.tr_streak_milestone,
+    "Sat, 7:15 PM" to Res.string.tr_sat_7_15_pm,
+    "Save" to Res.string.tr_save,
+    "Save %1\$d new words" to Res.string.tr_save_1_d_new_words,
+    "Save a clip's new words in Video Shadowing to see them here." to Res.string.tr_save_a_clip_s_new_words_in_video_shadowing_to_see_them_here,
+    "Save all new words (%1\$d)" to Res.string.tr_save_all_new_words_1_d,
+    "Saved %1\$d words to your word list" to Res.string.tr_saved_1_d_words_to_your_word_list,
+    "Saved Words" to Res.string.tr_saved_words,
+    "Saved words (%1\$d)" to Res.string.tr_saved_words_1_d,
+    "Say something else! 🎤" to Res.string.tr_say_something_else,
+    "Say something — I'll repeat it in my funny voice!" to Res.string.tr_say_something_i_ll_repeat_it_in_my_funny_voice,
+    "Say something! 🎤" to Res.string.tr_say_something,
+    "Say the last line, then tap Finish" to Res.string.tr_say_the_last_line_then_tap_finish,
+    "Saying Goodbye" to Res.string.tr_saying_goodbye,
+    "Schedules" to Res.string.tr_schedules,
+    "School & Study" to Res.string.tr_school_study,
+    "Score" to Res.string.tr_score,
+    "Score Bar" to Res.string.tr_score_bar,
+    "Score: %1\$d" to Res.string.tr_score_1_d,
+    "Score: %1\$d/%2\$d" to Res.string.tr_score_1_d_2_d,
+    "Seasons" to Res.string.tr_seasons,
+    "Seconds" to Res.string.tr_seconds,
+    "See All" to Res.string.tr_see_all_8196e424,
+    "See all" to Res.string.tr_see_all_2941c5ce,
+    "See you tomorrow for Day %1\$d!" to Res.string.tr_see_you_tomorrow_for_day_1_d,
+    "Select Daily Goal" to Res.string.tr_select_daily_goal,
+    "Select English Level" to Res.string.tr_select_english_level,
+    "Select Learn Language" to Res.string.tr_select_learn_language,
+    "Select Level" to Res.string.tr_select_level,
+    "Select Native Language" to Res.string.tr_select_native_language,
+    "Select the correct answer to receive %1\$d free chat attempts!" to Res.string.tr_select_the_correct_answer_to_receive_1_d_free_chat_attempts,
+    "Select the correct answer to receive your credits instantly." to Res.string.tr_select_the_correct_answer_to_receive_your_credits_instantly,
+    "Select the correct answer." to Res.string.tr_select_the_correct_answer,
+    "Selected" to Res.string.tr_selected,
+    "Send" to Res.string.tr_send,
+    "Send Feedback" to Res.string.tr_send_feedback,
+    "Sentence" to Res.string.tr_sentence,
+    "Session Completed successfully" to Res.string.tr_session_completed_successfully,
+    "Set my own time" to Res.string.tr_set_my_own_time,
+    "Set time" to Res.string.tr_set_time,
+    "Set your daily study time" to Res.string.tr_set_your_daily_study_time,
+    "Settings" to Res.string.tr_settings,
+    "Shadowing" to Res.string.tr_shadowing,
+    "Shadowing Accuracy" to Res.string.tr_shadowing_accuracy,
+    "Shadowing Practice" to Res.string.tr_shadowing_practice,
+    "Share App" to Res.string.tr_share_app,
+    "Share Semavia: Learn Languages" to Res.string.tr_share_semavia,
+    "Share your feedback to help us do better." to Res.string.tr_share_your_feedback_to_help_us_do_better,
+    "Shopping & Returns" to Res.string.tr_shopping_returns,
+    "Shopping Basics" to Res.string.tr_shopping_basics,
+    "Shopping for Clothes" to Res.string.tr_shopping_for_clothes,
+    "Shopping in a Store" to Res.string.tr_shopping_in_a_store,
+    "Show Less" to Res.string.tr_show_less,
+    "Sizes" to Res.string.tr_sizes,
+    "Skip" to Res.string.tr_skip,
+    "Sleep" to Res.string.tr_sleep,
+    "Social Conversations" to Res.string.tr_social_conversations,
+    "Something Else" to Res.string.tr_something_else,
+    "Soooo bored… 🥱" to Res.string.tr_soooo_bored,
+    "Spanish" to Res.string.tr_spanish,
+    "Speak" to Res.string.tr_speak,
+    "Speak More, Learn Faster" to Res.string.tr_speak_more_learn_faster,
+    "Speak Sentences" to Res.string.tr_speak_sentences,
+    "Speak and get instant feedback on your pronunciation" to Res.string.tr_speak_and_get_instant_feedback_on_your_pronunciation,
+    "Speak now. Let go when you finish." to Res.string.tr_speak_now_let_go_when_you_finish,
+    "Speak now. Tap the mic when you finish." to Res.string.tr_speak_now_tap_the_mic_when_you_finish,
+    "Speak the sentence aloud" to Res.string.tr_speak_the_sentence_aloud,
+    "Speak the word to check pronunciation" to Res.string.tr_speak_the_word_to_check_pronunciation,
+    "Speak with AI" to Res.string.tr_speak_with_ai,
+    "Speak with Confidence" to Res.string.tr_speak_with_confidence,
+    "Speaking" to Res.string.tr_speaking,
+    "Speaking Practice" to Res.string.tr_speaking_practice,
+    "Speaking Practice completed!" to Res.string.tr_speaking_practice_completed,
+    "Speaking complete" to Res.string.tr_speaking_complete,
+    "Speaking content is unavailable" to Res.string.tr_speaking_content_is_unavailable,
+    "Speaking test complete!" to Res.string.tr_speaking_test_complete,
+    "Speaking with AI" to Res.string.tr_speaking_with_ai,
+    "Special requests" to Res.string.tr_special_requests,
+    "Speech needs an internet connection. Please connect and try again." to Res.string.tr_speech_needs_an_internet_connection_please_connect_and_try_again,
+    "Speech recognition isn't available on this device" to Res.string.tr_speech_recognition_isn_t_available_on_this_device,
+    "Spin" to Res.string.tr_spin,
+    "Stage" to Res.string.tr_stage,
+    "Stage %1\$d" to Res.string.tr_stage_1_d,
+    "Stage %1\$d · Day %2\$d of 3" to Res.string.tr_stage_1_d_day_2_d_of_3,
+    "Stage %1\$d · Days %2\$d–%3\$d" to Res.string.tr_stage_1_d_days_2_d_3_d,
+    "Start" to Res.string.tr_start,
+    "Start Day %1\$d" to Res.string.tr_start_day_1_d,
+    "Start Learning" to Res.string.tr_start_learning_91ad0a48,
+    "Start Now" to Res.string.tr_start_now,
+    "Start activity" to Res.string.tr_start_activity,
+    "Start chatting" to Res.string.tr_start_chatting,
+    "Start here" to Res.string.tr_start_here_54acc280,
+    "Start learning" to Res.string.tr_start_learning_02d279ce,
+    "Start learning now to keep your path active." to Res.string.tr_start_learning_now_to_keep_your_path_active,
+    "Start over" to Res.string.tr_start_over,
+    "Start speaking" to Res.string.tr_start_speaking,
+    "Start with: “%1\$s”" to Res.string.tr_start_with_1_s,
+    "Stay" to Res.string.tr_stay,
+    "Stay consistent with daily streaks and track your progress step by step." to Res.string.tr_stay_consistent_with_daily_streaks_and_track_your_progress_step,
+    "Step %1\$d/%2\$d" to Res.string.tr_step_1_d_2_d,
+    "Still offline… let's keep playing! 🎮" to Res.string.tr_still_offline_let_s_keep_playing,
+    "Still thinking…" to Res.string.tr_still_thinking,
+    "Stop" to Res.string.tr_stop,
+    "Stop recording" to Res.string.tr_stop_recording,
+    "Streak alert 🔥" to Res.string.tr_streak_alert,
+    "Study" to Res.string.tr_study,
+    "Submit" to Res.string.tr_submit,
+    "Subscription" to Res.string.tr_subscription,
+    "Subscriptions" to Res.string.tr_subscriptions,
+    "Suggested answer" to Res.string.tr_suggested_answer,
+    "Sun, 9:30 AM" to Res.string.tr_sun_9_30_am,
+    "Super" to Res.string.tr_super,
+    "Swipe to next" to Res.string.tr_swipe_to_next,
+    "TRY SOMETHING NEW" to Res.string.tr_try_something_new,
+    "Take a Break" to Res.string.tr_take_a_break,
+    "Taking messages" to Res.string.tr_taking_messages,
+    "Talk about “%1\$s”" to Res.string.tr_talk_about_1_s,
+    "Talk confidently in daily life" to Res.string.tr_talk_confidently_in_daily_life,
+    "Talk with the Tutor" to Res.string.tr_talk_with_the_tutor,
+    "Talk with your AI tutor every day to build your speaking reflexes." to Res.string.tr_talk_with_your_ai_tutor_every_day_to_build_your_speaking_reflexe,
+    "Talking About Books" to Res.string.tr_talking_about_books,
+    "Talking About Food Preferences" to Res.string.tr_talking_about_food_preferences,
+    "Talking About Movies" to Res.string.tr_talking_about_movies,
+    "Talking About Your Career" to Res.string.tr_talking_about_your_career,
+    "Talking About Your Day" to Res.string.tr_talking_about_your_day,
+    "Talking About Your Hobbies" to Res.string.tr_talking_about_your_hobbies,
+    "Talking About Your Weekend" to Res.string.tr_talking_about_your_weekend,
+    "Talking About the Environment" to Res.string.tr_talking_about_the_environment,
+    "Talking About the Weather" to Res.string.tr_talking_about_the_weather,
+    "Talking about past events and experiences" to Res.string.tr_talking_about_past_events_and_experiences,
+    "Tap Save to finish" to Res.string.tr_tap_save_to_finish,
+    "Tap any word while watching videos to save it here." to Res.string.tr_tap_any_word_while_watching_videos_to_save_it_here,
+    "Tap card to reveal meaning" to Res.string.tr_tap_card_to_reveal_meaning,
+    "Tap me, I dare you! 😜" to Res.string.tr_tap_me_i_dare_you,
+    "Tap mic and speak the sentence aloud" to Res.string.tr_tap_mic_and_speak_the_sentence_aloud,
+    "Tap or hold to speak" to Res.string.tr_tap_or_hold_to_speak,
+    "Tap the mic and speak" to Res.string.tr_tap_the_mic_and_speak,
+    "Tap the mic to try again" to Res.string.tr_tap_the_mic_to_try_again,
+    "Tap the microphone and repeat the sentence" to Res.string.tr_tap_the_microphone_and_repeat_the_sentence,
+    "Tap the video for the next line" to Res.string.tr_tap_the_video_for_the_next_line,
+    "Tap the video to finish" to Res.string.tr_tap_the_video_to_finish,
+    "Tap the words to make a sentence" to Res.string.tr_tap_the_words_to_make_a_sentence,
+    "Tap to listen" to Res.string.tr_tap_to_listen,
+    "Tap to reveal meaning" to Res.string.tr_tap_to_reveal_meaning,
+    "Tap to see translation" to Res.string.tr_tap_to_see_translation,
+    "Tap to speak" to Res.string.tr_tap_to_speak,
+    "Tap to speak again" to Res.string.tr_tap_to_speak_again,
+    "Tap to try again" to Res.string.tr_tap_to_try_again,
+    "Task %1\$d of %2\$d" to Res.string.tr_task_1_d_of_2_d,
+    "Tasks" to Res.string.tr_tasks,
+    "Tell us how we can improve your experience." to Res.string.tr_tell_us_how_we_can_improve_your_experience,
+    "Tell us your personal goal" to Res.string.tr_tell_us_your_personal_goal,
+    "Telling the Time" to Res.string.tr_telling_the_time,
+    "Telling time" to Res.string.tr_telling_time,
+    "Tenses" to Res.string.tr_tenses,
+    "Terms & Conditions" to Res.string.tr_terms_conditions,
+    "Terms of Use" to Res.string.tr_terms_of_use,
+    "TextFieldImplKt.LeadingId" to Res.string.tr_textfieldimplkt_leadingid,
+    "Thai" to Res.string.tr_thai,
+    "Thank You For Your Trust!" to Res.string.tr_thank_you_for_your_trust,
+    "Thank you for your feedback. We will review this conversation response." to Res.string.tr_thank_you_for_your_feedback_we_will_review_this_conversation_res,
+    "Thanks for the Honesty!" to Res.string.tr_thanks_for_the_honesty,
+    "That's it, I'm out! 😤" to Res.string.tr_that_s_it_i_m_out,
+    "The app is for personal, non-commercial learning. Do not copy, modify or redistribute the app or its content." to Res.string.tr_the_app_is_for_personal_non_commercial_learning_do_not_copy_modi,
+    "The microphone is busy" to Res.string.tr_the_microphone_is_busy,
+    "Thinking" to Res.string.tr_thinking_d08d8da0,
+    "Thinking…" to Res.string.tr_thinking_a60d9c9c,
+    "This phone can't recognize speech in this language." to Res.string.tr_this_phone_can_t_recognize_speech_in_this_language,
+    "This plan day is unavailable" to Res.string.tr_this_plan_day_is_unavailable,
+    "This sets how many questions you get each day." to Res.string.tr_this_sets_how_many_questions_you_get_each_day,
+    "This will remove it from your Learning History." to Res.string.tr_this_will_remove_it_from_your_learning_history_49ab14f4,
+    "This will remove it from your learning history." to Res.string.tr_this_will_remove_it_from_your_learning_history_c6a76441,
+    "Thu, 8:22 PM" to Res.string.tr_thu_8_22_pm,
+    "Tickle" to Res.string.tr_tickle,
+    "Time" to Res.string.tr_time,
+    "Time Spent" to Res.string.tr_time_spent,
+    "Time for your 5-minute AI lesson!" to Res.string.tr_time_for_your_5_minute_ai_lesson,
+    "Today" to Res.string.tr_today,
+    "Today Lesson" to Res.string.tr_today_lesson,
+    "Today's Lesson" to Res.string.tr_today_s_lesson,
+    "Today, 1:40 PM" to Res.string.tr_today_1_40_pm,
+    "Total Rs 12,800/Year" to Res.string.tr_total_rs_12_800_year,
+    "Total Rs 16,800/Year" to Res.string.tr_total_rs_16_800_year,
+    "Translate" to Res.string.tr_translate_2be17aa1,
+    "Translate to" to Res.string.tr_translate_to,
+    "Translating…" to Res.string.tr_translating,
+    "Translation" to Res.string.tr_translation,
+    "Translation unavailable" to Res.string.tr_translation_unavailable,
+    "Transportation" to Res.string.tr_transportation,
+    "Travel" to Res.string.tr_travel,
+    "Travel & Airports" to Res.string.tr_travel_airports,
+    "Try Again" to Res.string.tr_try_again,
+    "Try Reconnecting" to Res.string.tr_try_reconnecting,
+    "Try Speaking Practice" to Res.string.tr_try_speaking_practice,
+    "Try Today's Lesson" to Res.string.tr_try_today_s_lesson,
+    "Try it now" to Res.string.tr_try_it_now,
+    "Try saying" to Res.string.tr_try_saying,
+    "Try speaking a little slower and clearer." to Res.string.tr_try_speaking_a_little_slower_and_clearer,
+    "Try the AI Tutor" to Res.string.tr_try_the_ai_tutor,
+    "Turkish" to Res.string.tr_turkish,
+    "Turn up the volume to hear me! 🔊" to Res.string.tr_turn_up_the_volume_to_hear_me,
+    "Type a message..." to Res.string.tr_type_a_message_09bdffe9,
+    "Type a message…" to Res.string.tr_type_a_message_05586eee,
+    "Type instead" to Res.string.tr_type_instead,
+    "Unit %1\$d" to Res.string.tr_unit_1_d,
+    "Unit %1\$d: %2\$s" to Res.string.tr_unit_1_d_2_s,
+    "Unlimited Lessons" to Res.string.tr_unlimited_lessons,
+    "Unlock Premium Access" to Res.string.tr_unlock_premium_access,
+    "Unlock all lessons, AI tutor and ad-free learning." to Res.string.tr_unlock_all_lessons_ai_tutor_and_ad_free_learning,
+    "Unlocks in %1\$d days" to Res.string.tr_unlocks_in_1_d_days,
+    "Unlocks tomorrow" to Res.string.tr_unlocks_tomorrow,
+    "Unscripted, longer conversations across situations" to Res.string.tr_unscripted_longer_conversations_across_situations,
+    "Unstoppable!" to Res.string.tr_unstoppable,
+    "Upper Intermediate" to Res.string.tr_upper_intermediate,
+    "Urdu" to Res.string.tr_urdu,
+    "Use %1\$s at work or in interviews" to Res.string.tr_use_1_s_at_work_or_in_interviews,
+    "Useful Phrases" to Res.string.tr_useful_phrases,
+    "Video" to Res.string.tr_video,
+    "Video Shadowing" to Res.string.tr_video_shadowing,
+    "Video completed!" to Res.string.tr_video_completed,
+    "Video content unavailable." to Res.string.tr_video_content_unavailable,
+    "Videos for you" to Res.string.tr_videos_for_you,
+    "Vietnamese" to Res.string.tr_vietnamese,
+    "View" to Res.string.tr_view,
+    "View all" to Res.string.tr_view_all,
+    "View path" to Res.string.tr_view_path,
+    "Vocabulary" to Res.string.tr_vocabulary,
+    "Vocabulary Practice" to Res.string.tr_vocabulary_practice,
+    "Vocabulary to practise:" to Res.string.tr_vocabulary_to_practise,
+    "Voice Input" to Res.string.tr_voice_input_06c8745e,
+    "Voice input" to Res.string.tr_voice_input_c0b2cee0,
+    "Waaah… why are you ignoring me? 😭" to Res.string.tr_waaah_why_are_you_ignoring_me,
+    "Waaah… you hurt my feelings 😭" to Res.string.tr_waaah_you_hurt_my_feelings,
+    "Wait for your turn" to Res.string.tr_wait_for_your_turn,
+    "Wake up" to Res.string.tr_wake_up,
+    "Watch short real-life videos, repeat each line and sound more natural." to Res.string.tr_watch_short_real_life_videos_repeat_each_line_and_sound_more_nat,
+    "We do not sell, trade or share your information with third parties. Purchases are processed by Google Play; we never see your payment details." to Res.string.tr_we_do_not_sell_trade_or_share_your_information_with_third_partie,
+    "We heard" to Res.string.tr_we_heard,
+    "We may update these terms as the product evolves; continued use after changes constitutes acceptance." to Res.string.tr_we_may_update_these_terms_as_the_product_evolves_continued_use_a,
+    "We'll build a 30-day plan around it." to Res.string.tr_we_ll_build_a_30_day_plan_around_it,
+    "We'll start at a comfortable pace" to Res.string.tr_we_ll_start_at_a_comfortable_pace,
+    "We'll use it to greet you." to Res.string.tr_we_ll_use_it_to_greet_you,
+    "We're Glad You Like It!" to Res.string.tr_we_re_glad_you_like_it,
+    "We're sorry about it!" to Res.string.tr_we_re_sorry_about_it,
+    "We're sorry!" to Res.string.tr_we_re_sorry,
+    "We're thrilled you love Semavia: Learn Languages!" to Res.string.tr_we_re_glad_you_like_semavia,
+    "Weather" to Res.string.tr_weather,
+    "Weather & Seasons" to Res.string.tr_weather_seasons,
+    "Wed, 6:31 PM" to Res.string.tr_wed_6_31_pm,
+    "Weekly" to Res.string.tr_weekly,
+    "Weekly subscription activated" to Res.string.tr_weekly_subscription_activated,
+    "Welcome" to Res.string.tr_welcome,
+    "Welcome to English Learn Pro! 🎉" to Res.string.tr_welcome_to_english_learn_pro,
+    "Well done!" to Res.string.tr_well_done,
+    "Well done! Continue with the quiz" to Res.string.tr_well_done_continue_with_the_quiz,
+    "What" to Res.string.tr_what,
+    "What did you hear?" to Res.string.tr_what_did_you_hear_dda2554a,
+    "What is Your Native Language?" to Res.string.tr_what_is_your_native_language,
+    "What language do you want to learn?" to Res.string.tr_what_language_do_you_want_to_learn,
+    "What should we call you?" to Res.string.tr_what_should_we_call_you,
+    "What's your learning goal?" to Res.string.tr_what_s_your_learning_goal,
+    "What's your level?" to Res.string.tr_what_s_your_level,
+    "Wheee! I'm getting dizzy!" to Res.string.tr_wheee_i_m_getting_dizzy,
+    "Wheee! 🎡" to Res.string.tr_wheee,
+    "When" to Res.string.tr_when,
+    "Where" to Res.string.tr_where,
+    "Which Language Do You Want to Learn?" to Res.string.tr_which_language_do_you_want_to_learn,
+    "Who" to Res.string.tr_who,
+    "Who would you like to learn with?" to Res.string.tr_who_would_you_like_to_learn_with,
+    "Whoa… I'm getting dizzy! 💫" to Res.string.tr_whoa_i_m_getting_dizzy,
+    "Whoops! Do better next time." to Res.string.tr_whoops_do_better_next_time,
+    "Why" to Res.string.tr_why,
+    "Why do you want to learn %1\$s?" to Res.string.tr_why_do_you_want_to_learn_1_s,
+    "Word" to Res.string.tr_word,
+    "Work" to Res.string.tr_work,
+    "Work & Career" to Res.string.tr_work_career,
+    "Work & Office" to Res.string.tr_work_office,
+    "Workplace vocabulary" to Res.string.tr_workplace_vocabulary,
+    "Worst" to Res.string.tr_worst,
+    "Would you mind leaving us a high rating? It helps us immensely!" to Res.string.tr_would_you_mind_leaving_us_a_high_rating_it_helps_us_immensely,
+    "Wow, you talk so much! 🤩" to Res.string.tr_wow_you_talk_so_much,
+    "Wow, you're a genius!" to Res.string.tr_wow_you_re_a_genius,
+    "XP earned" to Res.string.tr_xp_earned,
+    "Yawn! I'm wide awake now!" to Res.string.tr_yawn_i_m_wide_awake_now,
+    "Yay! We're back online! 🎉" to Res.string.tr_yay_we_re_back_online,
+    "Yearly" to Res.string.tr_yearly,
+    "Yearly subscription activated" to Res.string.tr_yearly_subscription_activated,
+    "Yes! Exactly right!" to Res.string.tr_yes_exactly_right,
+    "Yesterday" to Res.string.tr_yesterday,
+    "Yesterday, 6:12 PM" to Res.string.tr_yesterday_6_12_pm,
+    "You can change your assistant later." to Res.string.tr_you_can_change_your_assistant_later,
+    "You can clear all locally stored data at any time by clearing the app's storage from Android settings or uninstalling the app." to Res.string.tr_you_can_clear_all_locally_stored_data_at_any_time_by_clearing_th,
+    "You earned %1\$d free AI chats!" to Res.string.tr_you_earned_1_d_free_ai_chats,
+    "You earned 1 free AI chat!" to Res.string.tr_you_earned_1_free_ai_chat,
+    "You finished your %1\$s plan!" to Res.string.tr_you_finished_your_1_s_plan,
+    "You have completed %1\$d%%" to Res.string.tr_you_have_completed_1_d,
+    "You haven't started today's lesson yet" to Res.string.tr_you_haven_t_started_today_s_lesson_yet,
+    "You haven't used today's free chat time yet" to Res.string.tr_you_haven_t_used_today_s_free_chat_time_yet,
+    "You said" to Res.string.tr_you_said_f105abd5,
+    "You said:" to Res.string.tr_you_said_17cb3ebb,
+    "You're %1\$d%% done — pick up where you left off" to Res.string.tr_you_re_1_d_done_pick_up_where_you_left_off,
+    "You're offline" to Res.string.tr_you_re_offline,
+    "You're on fire!" to Res.string.tr_you_re_on_fire,
+    "You're saying…" to Res.string.tr_you_re_saying,
+    "You've Completed Today's Session!" to Res.string.tr_you_ve_completed_today_s_session,
+    "You've already claimed today's reward." to Res.string.tr_you_ve_already_claimed_today_s_reward,
+    "You've completed all %1\$d activities for today." to Res.string.tr_you_ve_completed_all_1_d_activities_for_today,
+    "You've earned +50 XP and +10 Diamonds!" to Res.string.tr_you_ve_earned_50_xp_and_10_diamonds,
+    "You've got this! 💪" to Res.string.tr_you_ve_got_this,
+    "Your 30-day plan" to Res.string.tr_your_30_day_plan,
+    "Your D%1\$d Learning Path has been unlocked!" to Res.string.tr_your_d_1_d_learning_path_has_been_unlocked,
+    "Your Learning Path" to Res.string.tr_your_learning_path,
+    "Your Progress" to Res.string.tr_your_progress_98399962,
+    "Your Streak" to Res.string.tr_your_streak,
+    "Your answers in this lesson won't be saved." to Res.string.tr_your_answers_in_this_lesson_won_t_be_saved,
+    "Your assistant guides your AI conversations." to Res.string.tr_your_assistant_guides_your_ai_conversations,
+    "Your brain grows while you rest! 🧠" to Res.string.tr_your_brain_grows_while_you_rest,
+    "Your daily chat is waiting" to Res.string.tr_your_daily_chat_is_waiting,
+    "Your honest feedback helps us keep improving." to Res.string.tr_your_honest_feedback_helps_us_keep_improving,
+    "Your learning path is ready!" to Res.string.tr_your_learning_path_is_ready,
+    "Your learning path is ready, %1\$s!" to Res.string.tr_your_learning_path_is_ready_1_s,
+    "Your learning progress stays the same." to Res.string.tr_your_learning_progress_stays_the_same,
+    "Your name" to Res.string.tr_your_name,
+    "Your plan will start again from Day 1." to Res.string.tr_your_plan_will_start_again_from_day_1,
+    "Your progress" to Res.string.tr_your_progress_44a680df,
+    "Your progress in this session will be saved." to Res.string.tr_your_progress_in_this_session_will_be_saved,
+    "Your progress so far will be saved." to Res.string.tr_your_progress_so_far_will_be_saved,
+    "Your roadmap" to Res.string.tr_your_roadmap,
+    "Your selections personalise lessons, practice sessions and reminders. Usage statistics shown in Progress are computed locally from your practice history." to Res.string.tr_your_selections_personalise_lessons_practice_sessions_and_remind,
+    "Your speaking activity is saved. Complete the remaining activities to finish this day." to Res.string.tr_your_speaking_activity_is_saved_complete_the_remaining_activitie,
+    "Your turn!" to Res.string.tr_your_turn,
+    "Your turn! Hold the mic and repeat." to Res.string.tr_your_turn_hold_the_mic_and_repeat,
+    "Your turn! Tap or hold the mic and repeat." to Res.string.tr_your_turn_tap_or_hold_the_mic_and_repeat,
+    "Your words will appear here" to Res.string.tr_your_words_will_appear_here,
+    "Zzz... Tap me to wake me up 💤" to Res.string.tr_zzz_tap_me_to_wake_me_up_521f91ec,
+    "Zzz… Tap me to wake me up 💤" to Res.string.tr_zzz_tap_me_to_wake_me_up_111758e0,
+    "now" to Res.string.tr_now,
+    "times" to Res.string.tr_times,
+    "✋ Hold to tickle" to Res.string.tr_hold_to_tickle,
+    "✍️ Fix My Sentence" to Res.string.tr_fix_my_sentence,
+    "✨ Learn a new word" to Res.string.tr_learn_a_new_word,
+    "🌐 Translate" to Res.string.tr_translate_39a2c882,
+    "🎉 Correct!" to Res.string.tr_correct_0ad65ab6,
+    "🎓 Quiz Me" to Res.string.tr_quiz_me,
+    "🎤 Talk to me" to Res.string.tr_talk_to_me,
+    "🎧 Daily listening" to Res.string.tr_daily_listening,
+    "🎧 Listen & choose" to Res.string.tr_listen_choose_d5ad2782,
+    "🎯 Explain This" to Res.string.tr_explain_this,
+    "🎯 Quick listening check" to Res.string.tr_quick_listening_check,
+    "🎯 Quick word check" to Res.string.tr_quick_word_check,
+    "👀 Do you know this word?" to Res.string.tr_do_you_know_this_word,
+    "👂 Test your ears" to Res.string.tr_test_your_ears,
+    "👂 What did you hear?" to Res.string.tr_what_did_you_hear_2a1c28b7,
+    "👆 Tap me" to Res.string.tr_tap_me,
+    "👉 Swipe to spin" to Res.string.tr_swipe_to_spin,
+    "💕 Double-tap" to Res.string.tr_double_tap,
+    "💡 Give Examples" to Res.string.tr_give_examples,
+    "💡 Vocabulary moment" to Res.string.tr_vocabulary_moment,
+    "📚 Word of the day" to Res.string.tr_word_of_the_day,
+    "📷 Spot Your Problem" to Res.string.tr_spot_your_problem,
+    "🔄 Rephrase Naturally" to Res.string.tr_rephrase_naturally,
+    "🔊 Can you catch this?" to Res.string.tr_can_you_catch_this,
+    "🔊 Listen carefully" to Res.string.tr_listen_carefully,
+    "🔥 Don't forget this word!" to Res.string.tr_don_t_forget_this_word,
+    "🗣️ Roleplay" to Res.string.tr_roleplay,
+    "😔 Not quite" to Res.string.tr_not_quite_b421a9c8,
+    "🧠 Can you remember this word?" to Res.string.tr_can_you_remember_this_word,
+    "🧩 Match the word" to Res.string.tr_match_the_word,
+)

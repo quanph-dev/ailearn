@@ -5,7 +5,7 @@ import Network
 
 final class NetworkConnectionMonitor: ObservableObject {
     private let monitor = NWPathMonitor()
-    private let queue = DispatchQueue(label: "com.example.basekmp.network-monitor")
+    private let queue = DispatchQueue(label: "com.semavia.ailearn.network-monitor")
 
     init() {
         monitor.pathUpdateHandler = { path in
