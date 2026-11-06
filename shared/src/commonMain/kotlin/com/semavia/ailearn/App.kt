@@ -191,8 +191,11 @@ fun App(
         when (uiState.route) {
             BaseRoutes.FirstOpenIntro -> adsHost?.showPendingStartupFallback()
             BaseRoutes.FirstOpenSurveyAd -> {
-                adsHost?.showFullscreenNative("N_FS_Survey", closeDelaySeconds = 5)
-                viewModel.finishFirstOpenSurveyAd()
+                try {
+                    adsHost?.showFullscreenNative("N_FS_Survey", closeDelaySeconds = 5)
+                } finally {
+                    viewModel.finishFirstOpenSurveyAd()
+                }
             }
             BaseRoutes.Starting -> {
                 adsHost?.showInterstitial("I_Start", timeoutMs = 8_000L)
@@ -340,7 +343,12 @@ fun App(
                 if (fullscreenNativeState != null) {
                     FullscreenNativeAdDialog(
                         state = fullscreenNativeState,
-                        adsHost = adsHost
+                        adsHost = adsHost,
+                        onClose = {
+                            if (fullscreenNativeState.placement == "N_FS_Survey") {
+                                viewModel.finishFirstOpenSurveyAd()
+                            }
+                        }
                     )
                 }
                 if (isLoadingAds && uiState.route != BaseRoutes.Splash) {
@@ -464,7 +472,8 @@ private fun ExitConfirmationDialog(
 @Composable
 private fun FullscreenNativeAdDialog(
     state: FullscreenNativeState,
-    adsHost: AppAdsHost
+    adsHost: AppAdsHost,
+    onClose: () -> Unit = {}
 ) {
     Dialog(
         onDismissRequest = {},
@@ -483,7 +492,12 @@ private fun FullscreenNativeAdDialog(
                     .size(42.dp)
                     .clip(CircleShape)
                     .background(Color(0xFFE4E4E7))
-                    .clickable(enabled = state.canClose) { adsHost.closeFullscreenNative() },
+                    .clickable(enabled = state.canClose) {
+                        if (state.canClose) {
+                            adsHost.closeFullscreenNative()
+                            onClose()
+                        }
+                    },
                 contentAlignment = Alignment.Center
             ) {
                 if (state.canClose) {

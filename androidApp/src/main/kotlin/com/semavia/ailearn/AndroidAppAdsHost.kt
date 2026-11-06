@@ -359,9 +359,19 @@ class AndroidAppAdsHost(private val activity: Activity) : AppAdsHost {
         resumePreparationJob = currentCoroutineContext()[Job]
         var handedToSdk = false
         return try {
-            val ready = withTimeoutOrNull(8_000L) {
+            val loadingSurfaceReady = withTimeoutOrNull(
+                minOf(LOADING_FRAME_READY_TIMEOUT_MS, remaining(deadline).coerceAtLeast(1L))
+            ) {
                 loadingFrameReady.await()
-                MyAdsUtils.initializeAfterConsent(activity) && MyAdsUtils.loadInterstitial(activity, "I_Resume", remaining(deadline).coerceAtLeast(1L))
+                true
+            } == true
+            if (!loadingSurfaceReady) {
+                Log.w("AndroidAppAdsHost", "I_Resume loading surface did not render before timeout; continuing ad request")
+            }
+            val loadBudget = remaining(deadline).coerceAtLeast(1L)
+            val ready = withTimeoutOrNull(loadBudget) {
+                MyAdsUtils.initializeAfterConsent(activity) &&
+                    MyAdsUtils.loadInterstitial(activity, "I_Resume", remaining(deadline).coerceAtLeast(1L))
             } == true
             if (!ready || epoch != pauseEpoch || !activity.isResumedForAds() || remaining(deadline) <= 0L) {
                 false
