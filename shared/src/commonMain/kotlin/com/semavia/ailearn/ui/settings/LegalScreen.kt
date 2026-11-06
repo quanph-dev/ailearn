@@ -21,6 +21,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.semavia.ailearn.data.Strings
+import com.semavia.ailearn.AppLinks
 import com.semavia.ailearn.theme.AppTheme
 import com.semavia.ailearn.ui.components.BackTitleBar
 
@@ -31,7 +32,7 @@ private val PrivacySections = listOf(
     "Analytics" to "We collect anonymous product interaction events to understand how features are used (such as which lesson or practice is completed) so we can continuously refine the learning experience.",
     "Data Control" to "You can clear your local progress and preferences at any time in Settings. Uninstalling the app also removes all cached session logs.",
     "Children's Privacy" to "Semavia: Learn Languages is not directed at children under 13, and we do not knowingly collect personal information from children under 13.",
-    "Contact Us" to "Questions about this privacy policy? Contact us at support@example.com."
+    "Contact Us" to "Questions about this privacy policy? Contact us at ${AppLinks.SUPPORT_EMAIL}."
 )
 
 private val TermsSections = listOf(

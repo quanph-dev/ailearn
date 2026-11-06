@@ -33,15 +33,15 @@ class ProgressAccountingTest {
     }
 
     @Test
-    fun storeShareUsesInstalledPackageAndPolicyUrlsStayReadyForLater() {
+    fun storeShareAndSupportUseConfiguredLinks() {
         assertEquals(
             "https://play.google.com/store/apps/details?id=com.semavia.language.learning.ai",
             AppLinks.playStoreUrl("com.semavia.language.learning.ai")
         )
         assertTrue(AppLinks.shareMessage("com.semavia.language.learning.ai").contains(AppLinks.playStoreUrl("com.semavia.language.learning.ai")))
-        assertEquals("", AppLinks.documentUrl("privacy"))
+        assertEquals("https://greenpinellc.store/privacy-green.html", AppLinks.documentUrl("privacy"))
         assertEquals("", AppLinks.documentUrl("terms"))
-        assertNull(AppLinks.supportEmailUrl())
+        assertEquals("mailto:wyattphillip5507913@gmail.com", AppLinks.supportEmailUrl())
     }
 
     @Test

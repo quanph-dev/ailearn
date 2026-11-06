@@ -1,14 +1,13 @@
 {
   "project_info": {
-    "project_number": "923888383692",
-    "firebase_url": "https://ailearn-test-bc035-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "ailearn-test-bc035",
-    "storage_bucket": "ailearn-test-bc035.firebasestorage.app"
+    "project_number": "344932820022",
+    "project_id": "learntrending-green",
+    "storage_bucket": "learntrending-green.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:923888383692:android:5a1bc034dc23672bff7469",
+        "mobilesdk_app_id": "1:344932820022:android:72ee17f7d46f7f91516497",
         "android_client_info": {
           "package_name": "com.semavia.language.learning.ai"
         }
@@ -16,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBE_OxdOMMuB169Ya4IKK6pXhCcSeMqyT8"
+          "current_key": "AIzaSyBi-4HpzFIW7w0JqIxxNDgVCCRJbTOOGxw"
         }
       ],
       "services": {

@@ -2,12 +2,12 @@ package com.semavia.ailearn
 
 import com.semavia.ailearn.config.BrandConfig
 
-/** External links owned by the app. Keep policy URLs empty until their public pages are ready. */
+/** External links owned by the app. */
 object AppLinks {
     const val ANDROID_PACKAGE_NAME = BrandConfig.ANDROID_APPLICATION_ID
-    const val PRIVACY_POLICY_URL = ""
-    const val TERMS_OF_SERVICE_URL = ""
-    const val SUPPORT_EMAIL = ""
+    const val PRIVACY_POLICY_URL = "https://greenpinellc.store/privacy-green.html"
+    const val TERMS_OF_SERVICE_URL = "https://greenpinellc.store/privacy-green.html"
+    const val SUPPORT_EMAIL = "wyattphillip5507913@gmail.com"
 
     fun playStoreUrl(packageName: String): String =
         "https://play.google.com/store/apps/details?id=$packageName"
